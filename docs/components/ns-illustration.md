@@ -10,6 +10,8 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 
 To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-illustrations--gas)
 
+{% embed url="https://nucleus.bgdigital.xyz/demo/iframe.html?id=ns-illustrations--boiler %}
+
 ```markup
 <ns-illustration type="gas" inactive="false" size="2" aria-hidden="true"></ns-illustration>
 ```
