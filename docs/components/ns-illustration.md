@@ -1,4 +1,4 @@
-# [ns-illustration]
+# ns-illustration
 
 ## Introduction
 
