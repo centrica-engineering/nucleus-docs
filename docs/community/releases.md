@@ -91,3 +91,49 @@ A big thank you to everyone involved in contributing to this release!
 - *Energy Sales* - for working with us to run a joint user testing session using a Nucleus coded prototype.
 - *New Boiler* - For collaborating with us to make sure the recent journeys contained Nucleus components.
 - *Help & Support* - for their patience with the Nucleus CMS page, allowing us time to build the video component.
+
+-------
+
+## Version 1.0.0 our first major release! 🎉
+
+*Release Notes 2019-04-15: Ember commons*
+
+### What’s new around here 🌶
+
+_Integration with Ember commons._
+
+_Sketch Nucleus Pattern Library_
+- Added all available icons
+- Added Accordions
+- Added more screen sizes to each Component
+
+_Documentation_
+- Becoming Nucleus https://bit.ly/2GslcLC
+- Best practices https://bit.ly/2L23kvx
+- Events https://bit.ly/2ZnTmaX
+- Modular scale https://bit.ly/2IGIMpo
+- Typography - Sizes https://bit.ly/2Xik9TS
+- Photography - Optimise your images https://bit.ly/2ItySIi
+- Our documentation https://bit.ly/2Gqbecb
+- Accordion https://bit.ly/2IGTZpU
+
+### Bug fixes 🐞
+
+- Vertical spacing adjustments
+- Adjusting the style of the heading within our Accordion
+- Setting all Actions to be 100% width at small screen
+- Removing the duplicate BG Flame font loading
+- Fixed the hierarchy of the screen sizes in Sketch library
+
+### Feedback 🐳
+
+The following request for changes have been started
+
+- #491 RFC - Main navigation :banana: https://github.com/ConnectedHomes/nucleus/issues/491
+- #587 RFC - Tab panel :card_index_dividers: https://github.com/ConnectedHomes/nucleus/issues/587
+- #582 RFC - Selection cards :female-construction-worker: https://github.com/ConnectedHomes/nucleus/issues/582
+- #579 RFC - Form fields :pencil2: https://github.com/ConnectedHomes/nucleus/issues/579
+
+All our RFC’s can be found under the Requests milestone in our Github https://bit.ly/2Zl6Eos
+
+Any questions? Let us know 🙌🏼
