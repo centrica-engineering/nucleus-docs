@@ -65,7 +65,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Related links
 
-* ns-cta [https://github.com/ConnectedHomes/nucleus/issues/659](https://github.com/ConnectedHomes/nucleus/issues/659)
+* [ns-cta](https://docs.britishgas.design/components/ns-cta)
 * How to create icons guide \(LINK\)
 * Guiding Customers with our icons and the difference between icons and illustrations in [Brand Guidlines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/icons/guiding-our-customers-with-our-icons) 
 * If you wish to have us consider adding a new icon to the library please consult Brand Visual Identity managers. 
