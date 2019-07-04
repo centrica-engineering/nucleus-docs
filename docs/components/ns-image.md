@@ -11,7 +11,7 @@ British Gas has a variety of images to enhance content on the website annd helps
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-images--lazy-loading-img)
 
 ```markup
-    <ns-image ratio="16x9" src="https://www.britishgas.co.uk/aem6/content/dam/britishgas/images/jumbotron/home-services/20-Home-Services-wilbur.jpg"></ns-image>
+<ns-image ratio="16x9" src="https://www.britishgas.co.uk/aem6/content/dam/britishgas/images/jumbotron/home-services/20-Home-Services-wilbur.jpg"></ns-image>
 ```
 
 ## Component Relationship
