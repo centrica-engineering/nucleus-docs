@@ -53,4 +53,4 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
 
 ## Related links
-- [ns-panel] (LINK TO NS-PANEL)
+- [ns-panel](https://docs.britishgas.design/components/ns-panel)
