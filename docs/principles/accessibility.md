@@ -1,4 +1,4 @@
-# Accessibility
+# Accessibility principles
 
 > At minimum, features must conform to Web Content Accessibility Guidelines 2.1 at Level AA
 
@@ -26,7 +26,7 @@ The four accessibility principles (POUR) are derived straight from [WCAG 2.1](ht
 - Users relying on user agents, including assistive technologies, must be served with compatible content
 - A piece of content or operation needs to be compatible with evolving user agents, including assistive technologies, browsers, and other applications involved in rendering content
 
-# Conformance with the principles
+## Conformance with the principles
 
 To rate how well an instance conforms to the principles, [WCAG 2.1](https://www.w3.org/TR/WCAG21/#perceivable) provides three three conformance levels:
 
