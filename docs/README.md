@@ -1,2 +1,6 @@
-# Welcome to the Nucleus design system!
+---
+description: a design system by and for British Gas
+---
+
+# Welcome to Nucleus
 
