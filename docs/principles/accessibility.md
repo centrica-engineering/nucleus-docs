@@ -9,7 +9,7 @@ The four accessibility principles (POUR) are derived straight from [WCAG 2.1](ht
 ## Perceivable
 
 - Users must be able to perceive that information is available
-- nformation becomes invisible if it can't be perceived with any available senses
+- Information becomes invisible if it can't be perceived with any available senses
 
 ## Operable
 
