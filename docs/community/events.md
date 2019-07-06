@@ -4,9 +4,19 @@ We're hosting regular events to keep the discussions going.
 
 Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel #product-nucleus... or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
 
-## 2 July / Nucleus Sessions 
+## 2 July / Nucleus Sessions - Nucleus Common Myths
+- Dispel the common myths we’ve been hearing
+- Answer any Nucleus related questions you may have!
 
-## 25 June / Nucleus Sessions 
+* [Common Myths.pdf](https://github.com/ConnectedHomes/nucleus/files/3364944/Common.Myths.pdf)
+
+## 25 June / Nucleus Sessions - Bring it home 
+- What we’ve learned from the homepage and what’s next
+- How to create content for Nucleus components using templates (ns-landmark & ns-lockup)
+- Tools for a quick content sense check and Clockwork approval
+
+* [Bring it home Nucleus Session.pdf](https://github.com/ConnectedHomes/nucleus/files/3364940/Bring.it.home.Nucleus.Session.pdf)
+* [Creating content for the British Gas homepage .docx](https://github.com/ConnectedHomes/nucleus/files/3364939/Creating.content.for.the.British.Gas.homepage.docx)
 
 ## 18 June / Nucleus Sessions - Sketch Library what's new?
 
@@ -28,6 +38,8 @@ Browse below to gain a sense of our past events. The best way to learn about our
 - Why can’t we make everything look like the intended design?
 - Answer any questions you may have.
 
+* [You experience the web your way.pdf](https://github.com/ConnectedHomes/nucleus/files/3364946/You.experience.the.web.your.way.pdf)
+
 ## 21 May / Nucleus Sessions - Speedy Nucleus CMS Page
 
 - Who we are 
@@ -38,6 +50,8 @@ Browse below to gain a sense of our past events. The best way to learn about our
 - CMS & UAT tips 
 - Questions
 
+* [Nucleus CMS Presentation.pdf](https://github.com/ConnectedHomes/nucleus/files/3364945/Nucleus.CMS.Presentation.pdf)
+
 ## 14 May / Nucleus Sessions - Accessibility 
 
 - Accessibility is a mindset 
@@ -46,6 +60,8 @@ Browse below to gain a sense of our past events. The best way to learn about our
 - Common myths
 - Ongoing initiatives
 - Three things you can do for accessibility
+
+* [Nucleus Session_ Accessibility .pdf](https://github.com/ConnectedHomes/nucleus/files/3364948/Nucleus.Session_.Accessibility.pdf)
 
 ## 7 May / Nucleus Sessions - SKETCH REFRESH - Let's build a page
 
@@ -96,10 +112,14 @@ Browse below to gain a sense of our past events. The best way to learn about our
 - Discuss core reasons why and when our accessibility is lacking
 - Collecting ideas on what kinds of actionable guidance would be needed, be it through Nucleus or otherwise
 
+* [Nucleus - Accessibility roundtable report - 190315.pdf](https://github.com/ConnectedHomes/nucleus/files/3364949/Nucleus.-.Accessibility.roundtable.report.-.190315.pdf)
+
 ## 13 Feb / CMS Hubpages workshop 2/2
 
 - On-boarding a first set of teams and content managers
 - Smoothing the way for updating hub pages to our latest visual identity
+
+* [Nucleus workshop CMS hubpages 20190213.pdf](https://github.com/ConnectedHomes/nucleus/files/3364951/Nucleus.workshop.CMS.hubpages.20190213.pdf)
 
 ## 7 Feb / CMS Hubpages 1/2
 
