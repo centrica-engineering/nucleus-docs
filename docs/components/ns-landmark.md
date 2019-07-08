@@ -53,7 +53,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | **Description** | The `<ns-cta>` component  contained within a `<a>` |
 | **Type** | string |
 | **Default** | n/a |
-| **Options** | href, label |
+| **Options** | `<ns-cta>`, `<a>` |
 
 | **Name** | Background image |
 | :--- | :--- |
@@ -66,7 +66,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 | ✅ Do's | 💔 Don'ts |
 | :--- | :--- |
-| Keep content in Landmarks very concise |  |
+| Keep content in Landmarks very concise | Always add a cta |
 | Content must be relevant to the page |  |
 |  |  |
 |  |  |
@@ -76,7 +76,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 * Shorter and simpler words tend to work better in the heading
 * The recommended copy length is between 1 and 5 words for the Subheading
-* Xyz
+* Having cta's that skip the rest of the page to go into a journey or next action is considered bad practise, as users will more likely drop out. This is because users believe the next step is to click the cta, rather than reading the page to get a better understanding of how they should proceed.
 
 ## Image
 
