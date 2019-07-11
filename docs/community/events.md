@@ -12,17 +12,16 @@ Browse below to gain a sense of our past events. The best way to learn about our
 - Dispel the common myths we’ve been hearing
 - Answer any Nucleus related questions you may have!
 
-* [Common Myths.pdf](https://github.com/ConnectedHomes/nucleus/files/3364944/Common.Myths.pdf)*
+[Common Myths.pdf](https://github.com/ConnectedHomes/nucleus/files/3364944/Common.Myths.pdf) [†]
 
 ## 25 June / Nucleus Sessions - Bring it home 
 - What we’ve learned from the homepage and what’s next
 - How to create content for Nucleus components using templates (ns-landmark & ns-lockup)
 - Tools for a quick content sense check and Clockwork approval
 
-* [Bring it home Nucleus Session.pdf](https://github.com/ConnectedHomes/nucleus/files/3364940/Bring.it.home.Nucleus.Session.pdf)[*]
-* [Creating content for the British Gas homepage .docx](https://github.com/ConnectedHomes/nucleus/files/3364939/Creating.content.for.the.British.Gas.homepage.docx)[*]
+[Bring it home Nucleus Session.pdf](https://github.com/ConnectedHomes/nucleus/files/3364940/Bring.it.home.Nucleus.Session.pdf) [†]
 
-## 18 June / Nucleus Sessions - Sketch Library what's new?
+[Creating content for the British Gas homepage.pdf](https://github.com/ConnectedHomes/nucleus/files/3382944/Creating.content.for.the.British.Gas.homepage.pdf) [†]
 
 - Demo what is new in the Sketch Library
 - Take a look at building a page using templates and guides.
@@ -42,7 +41,7 @@ Browse below to gain a sense of our past events. The best way to learn about our
 - Why can’t we make everything look like the intended design?
 - Answer any questions you may have.
 
-* [You experience the web your way.pdf](https://github.com/ConnectedHomes/nucleus/files/3364946/You.experience.the.web.your.way.pdf)[*]
+[You experience the web your way.pdf](https://github.com/ConnectedHomes/nucleus/files/3364946/You.experience.the.web.your.way.pdf) [†]
 
 ## 21 May / Nucleus Sessions - Speedy Nucleus CMS Page
 
@@ -54,7 +53,7 @@ Browse below to gain a sense of our past events. The best way to learn about our
 - CMS & UAT tips 
 - Questions
 
-* [Nucleus CMS Presentation.pdf](https://github.com/ConnectedHomes/nucleus/files/3364945/Nucleus.CMS.Presentation.pdf)[*]
+[Nucleus CMS Presentation.pdf](https://github.com/ConnectedHomes/nucleus/files/3364945/Nucleus.CMS.Presentation.pdf) [†]
 
 ## 14 May / Nucleus Sessions - Accessibility 
 
@@ -65,7 +64,7 @@ Browse below to gain a sense of our past events. The best way to learn about our
 - Ongoing initiatives
 - Three things you can do for accessibility
 
-* [Nucleus Session_ Accessibility .pdf](https://github.com/ConnectedHomes/nucleus/files/3364948/Nucleus.Session_.Accessibility.pdf)[*]
+[Nucleus Session_ Accessibility .pdf](https://github.com/ConnectedHomes/nucleus/files/3364948/Nucleus.Session_.Accessibility.pdf) [†]
 
 ## 7 May / Nucleus Sessions - SKETCH REFRESH - Let's build a page
 
@@ -116,14 +115,14 @@ Browse below to gain a sense of our past events. The best way to learn about our
 - Discuss core reasons why and when our accessibility is lacking
 - Collecting ideas on what kinds of actionable guidance would be needed, be it through Nucleus or otherwise
 
-* [Nucleus - Accessibility roundtable report - 190315.pdf](https://github.com/ConnectedHomes/nucleus/files/3364949/Nucleus.-.Accessibility.roundtable.report.-.190315.pdf)[*]
+[Nucleus - Accessibility roundtable report - 190315.pdf](https://github.com/ConnectedHomes/nucleus/files/3364949/Nucleus.-.Accessibility.roundtable.report.-.190315.pdf) [†]
 
 ## 13 Feb / CMS Hubpages workshop 2/2
 
 - On-boarding a first set of teams and content managers
 - Smoothing the way for updating hub pages to our latest visual identity
 
-* [Nucleus workshop CMS hubpages 20190213.pdf](https://github.com/ConnectedHomes/nucleus/files/3364951/Nucleus.workshop.CMS.hubpages.20190213.pdf)[*]
+[Nucleus workshop CMS hubpages 20190213.pdf](https://github.com/ConnectedHomes/nucleus/files/3364951/Nucleus.workshop.CMS.hubpages.20190213.pdf) [†]
 
 ## 7 Feb / CMS Hubpages 1/2
 
@@ -137,4 +136,4 @@ Browse below to gain a sense of our past events. The best way to learn about our
 - Understanding what community and contributing to Nucleus [means](https://docs.britishgas.design/community/best-practices) to UX designers
 - Co-creating first drafts of contribution processes
 
-[*] This can only be accessed from approved Github accounts, please make sure you are logged in to access.
+[†] This can only be accessed from approved Github accounts, please make sure you are logged in to access.
