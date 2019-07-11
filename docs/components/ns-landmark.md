@@ -76,7 +76,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 * Shorter and simpler words tend to work better in the heading
 * The recommended copy length is between 1 and 5 words for the Subheading
-* Having cta's that skip the rest of the page to go into a journey or next action is considered bad practise, as users will more likely drop out. This is because users believe the next step is to click the cta, rather than reading the page to get a better understanding of how they should proceed.
+* If the purpose of the page is to understand more about a product or service, then it is considered bad practice to to include a CTA within the landmark, as users are likely to drop out. This is because users believe the next step is to click the CTA, rather than reading the page to get a better understanding of how they should proceed.
 
 ## Image
 
