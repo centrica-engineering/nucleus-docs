@@ -47,21 +47,21 @@ Browse below to gain a sense of our past events. The best way to learn about our
 
 ## 2019-05-21 / Speedy Nucleus CMS Page
 
-- Who we are 
+- Who we are
 - What are we talking about
-- The personas 
-- Brand tips 
-- Design tips 
-- CMS & UAT tips 
+- The personas
+- Brand tips
+- Design tips
+- CMS & UAT tips
 - Questions
 
 [Nucleus CMS Presentation.pdf](https://github.com/ConnectedHomes/nucleus/files/3364945/Nucleus.CMS.Presentation.pdf) [†]
 
 ## 2019-05-14 / Accessibility
 
-- Accessibility is a mindset 
-- Why is this important? 
-- Common problems 
+- Accessibility is a mindset
+- Why is this important?
+- Common problems
 - Common myths
 - Ongoing initiatives
 - Three things you can do for accessibility
@@ -77,21 +77,23 @@ Browse below to gain a sense of our past events. The best way to learn about our
 
 ## 2019-04-30 / Modular Scale
 
-- Intro to modular scale 
+{% embed url="https://soapbox.wistia.com/videos/v2LAAl5UnT" %}
+
+- Intro to modular scale
 - How we've used this technique in our design system  
 
 ## 2019-04-23  / Foundations
 
 - Intro to Nucleus foundations
-- Accessibility in our design system 
-- Colour, typography, spacing and viewports 
+- Accessibility in our design system
+- Colour, typography, spacing and viewports
 - Time for unanswered questions + Nucleus love
 
 ## 2019-04-16 / Better, faster, stronger
 
-- Intro to Nucleus Sessions & this topic 
-- Create a page quickly 
-- Page iterations and requesting changes 
+- Intro to Nucleus Sessions & this topic
+- Create a page quickly
+- Page iterations and requesting changes
 - Updates to the page + Stronger design system
 - Time for unanswered questions + Nucleus love
 
