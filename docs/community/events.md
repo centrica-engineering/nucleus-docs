@@ -1,3 +1,7 @@
+---
+description: List of our Nucleus Sessions
+---
+
 # Events
 
 We're hosting regular events to keep the discussions going.
