@@ -185,11 +185,11 @@ Note - Currently we don't have the ability to have radio button side by side
 
 ### Select
 
-| ✅ Do's | 💔 Don'ts |
-| :----- | :------- |
-|        |          |
-|        |          |
-|        |          |
+| ✅ Do's                                               | 💔 Don'ts |
+| :--------------------------------------------------- | :------- |
+| If adding a "Please Select" option then add value="" |          |
+|                                                      |          |
+|                                                      |          |
 
 
 
