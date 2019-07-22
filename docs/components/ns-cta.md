@@ -79,7 +79,7 @@ A CTA should always live inside another component.
 
 ## Best practises
 
-| ✅ Do's | 💔 Dont's |
+| 💚 Do's | 💔 Dont's |
 | :--- | :--- |
 | Make it short and actionable | Make it vague |
 | Only use loading on an action | Make it overly wordy |
@@ -91,7 +91,7 @@ A CTA should always live inside another component.
 ### Considerations of best practises
 
 * To be aware of the distinct roles of the CTA's types `direct` and `text` and that they don't always act as a `primary` and `secondary` button.
-* Try not to have multiple CTA's next to each other. 
+* Try not to have multiple CTA's next to each other.
 * Don't overload the page with the same type of CTA or too many CTA's.
 * Loading message should be the action of the text of the CTA. E.g. "Get a quote" becomes "Getting your quote…".
 
@@ -105,4 +105,3 @@ A CTA should always live inside another component.
 ## Related links
 
 * [CTA examples in the homepage](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-homepage--2019-01)
-

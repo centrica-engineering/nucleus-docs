@@ -64,7 +64,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Best practises
 
-| ✅ Do's | 💔 Dont's |
+| 💚 Do's | 💔 Dont's |
 | :--- | :--- |
 | Resize your image \(\[see optimise your image \(LINK\)\] | Use images as the primary content |
 | Use the correct image format png/jpg | Put text inside the image |
@@ -74,9 +74,9 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ### Considerations of best practices
 
-* Reduce images to the smallest size that does not degrade the image too much where it becomes distracting to the customer. 
-* The components that hold images will take care of the rounded corners and any masking or overlaying of illustrations. Read about the component you wish to use with the image. 
-* Always use this component to add images to the website. 
+* Reduce images to the smallest size that does not degrade the image too much where it becomes distracting to the customer.
+* The components that hold images will take care of the rounded corners and any masking or overlaying of illustrations. Read about the component you wish to use with the image.
+* Always use this component to add images to the website.
 
 ## Feedback
 
@@ -90,4 +90,3 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 * How to optimise images [guide](https://centrica.frontify.com/d/nZrm1Ao1wccK/foundations#/photography/how-to-optimise-your-images)
 * Brand image [library](https://centrica.frontify.com/d/pDUbkrcf54Nh/our-assets)
 * Examples of where it is used
-

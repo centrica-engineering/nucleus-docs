@@ -49,7 +49,7 @@ To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?p
 
 ## Best practises
 
-| ✅ Do's | 💔 Dont's |
+| 💚 Do's | 💔 Dont's |
 | :--- | :--- |
 | Use them to convey depth | Make the illustrations small |
 |  | Use on their own as the primary visual element |
@@ -59,7 +59,7 @@ To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?p
 
 ### Considerations of best practices
 
-* List of when to use which illustration \(need to talk to Will about it\) 
+* List of when to use which illustration \(need to talk to Will about it\)
 
 ## Feedback
 
@@ -70,9 +70,9 @@ To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?p
 
 ## Related links
 
-* Creating illustrations [guide](https://centrica.frontify.com/document/158#/illustrations/creating-illustrations) 
+* Creating illustrations [guide](https://centrica.frontify.com/document/158#/illustrations/creating-illustrations)
 * Exporting illustrations SVG in Sketch [https://github.com/ConnectedHomes/nucleus/issues/670](https://github.com/ConnectedHomes/nucleus/issues/670)
 
-  -Creating an engaging experience through illustrations and the difference between icons and illustrations in [Brand Guidlines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/illustrations/creating-an-engaging-experience-through-illustration) 
+  -Creating an engaging experience through illustrations and the difference between icons and illustrations in [Brand Guidlines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/illustrations/creating-an-engaging-experience-through-illustration)
 
-* If you wish to have us consider adding a new illustrations to the library please consult Brand Visual Identity managers. 
+* If you wish to have us consider adding a new illustrations to the library please consult Brand Visual Identity managers.

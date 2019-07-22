@@ -2,9 +2,9 @@
 
 ## Introduction
 
-> To add background decoration to components
+> Adds background decoration to components
 
-Holds the svg decoration and masks that builds the layout decoration for panels. 
+Holds the SVG decoration and masks that display the layout decoration for panels.
 
 ## Usage
 
@@ -22,20 +22,20 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 - Atomic type: (atom)
 
 ## Specification
-| **Name**| type |
-| ----------- | ------------------------------- |
+| **Name**        | type |
+| --------------- | ------------------------------- |
 | **Description** | Name  |
 | **Type**        | String |
 | **Default**     | invert-concave |
 | **Options**     | invert-concave, invert-convex, invert-ramp, invert-bridge, circle-yellow, circle-green |
 
 | **Name**| position |
-| ----------- | ------------------------------- |
+| --------------- | ------------------------------- |
 | **Description** | Name  |
 | **Type**        | String |
 | **Default**     | '' |
 | **Options**     | left, right, top, bottom |
-| **Notes**     | Used for styling only |
+| **Notes**       | Used for styling only |
 
 ## Best practises
 

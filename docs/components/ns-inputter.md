@@ -108,7 +108,7 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 
 ### Headings
 
-| ✅ Do's                                                | 💔 Don'ts |
+| 💚 Do's                                                | 💔 Don'ts |
 | :---------------------------------------------------- | :------- |
 | Use to Introduce a set of checkboxes or radio buttons |          |
 | Use for questions                                     |          |
@@ -118,7 +118,7 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 
 ### Labels
 
-| ✅ Do's                | 💔 Don'ts              |
+| 💚 Do's                | 💔 Don'ts              |
 | :-------------------- | :-------------------- |
 | Be concise            | Use full stops        |
 | Use `<label>` element | Add classes to labels |
@@ -127,7 +127,7 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 
 ### Helper text
 
-| ✅ Do's                                          | 💔 Don'ts                      |
+| 💚 Do's                                          | 💔 Don'ts                      |
 | :---------------------------------------------- | :---------------------------- |
 | Keep it to one line                             | Use for error messaging       |
 | Use it to explain why we need information       | Put examples of inputs inside |
@@ -136,7 +136,7 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 
 ### Tip Detail
 
-| ✅ Do's                                           | 💔 Don'ts                                     |
+| 💚 Do's                                           | 💔 Don'ts                                     |
 | :----------------------------------------------- | :------------------------------------------- |
 | Use to provide additional context to helper text | Repeat helper text                           |
 | Use basic formatting for copy                    | Add imagery                                  |
@@ -145,21 +145,21 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 
 ### Placeholder
 
-| ✅ Do's                            | 💔 Don'ts                          |
+| 💚 Do's                            | 💔 Don'ts                          |
 | :-------------------------------- | :-------------------------------- |
 | Provide example of expected input | Use real data                     |
 | Use 'eg.' before example          | Use as an explanation or a prompt |
 
 ### Validation
 
-| ✅ Do's                                       | 💔 Don'ts          |
+| 💚 Do's                                       | 💔 Don'ts          |
 | :------------------------------------------- | :---------------- |
 | Use only when required                       | Use real data     |
 | Only use to validate the format of the input | Don't used for... |
 
 ### Text Input
 
-| ✅ Do's                                                       | 💔 Don'ts                                        |
+| 💚 Do's                                                       | 💔 Don'ts                                        |
 | :----------------------------------------------------------- | :---------------------------------------------- |
 | Only use our specified text type. \(eg. Text, Password, etc\) | Use more than one text input within an inputter |
 | Use autocomplete attribute                                   | Put anything inside the text input              |
@@ -167,7 +167,7 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 
 ### Radio Buttons
 
-| ✅ Do's                                                       | 💔 Don'ts     |
+| 💚 Do's                                                       | 💔 Don'ts     |
 | :----------------------------------------------------------- | :----------- |
 | Use a label with each radio button                           | Use just one |
 | Associate  every radio button with it's label using ID & for attributes |              |
@@ -177,7 +177,7 @@ Note - Currently we don't have the ability to have radio button side by side
 
 ### Checkboxes
 
-| ✅ Do's                                                       | 💔 Don'ts                            |
+| 💚 Do's                                                       | 💔 Don'ts                            |
 | :----------------------------------------------------------- | :---------------------------------- |
 | Use only one label with each checkbox                        | Use as lists                        |
 | Allow user to opt in as opposed to opt out                   | Don't try and use as a radio button |
@@ -185,7 +185,7 @@ Note - Currently we don't have the ability to have radio button side by side
 
 ### Select
 
-| ✅ Do's                                               | 💔 Don'ts |
+| 💚 Do's                                               | 💔 Don'ts |
 | :--------------------------------------------------- | :------- |
 | If adding a "Please Select" option then add value="" |          |
 |                                                      |          |

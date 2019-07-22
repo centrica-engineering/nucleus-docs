@@ -48,7 +48,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Best practises
 
-| ✅ Do's | 💔 Dont's |
+| 💚 Do's | 💔 Dont's |
 | :--- | :--- |
 | Use videos from Centrica YouTube channels | Use over 3 videos on a page |
 | Use inside another component \(see relationship\) | Use video as the primary content |
@@ -71,4 +71,3 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ## Related links
 
 * [https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-video-panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-video-panel)
-

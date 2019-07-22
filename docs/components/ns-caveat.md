@@ -57,7 +57,7 @@ To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?p
 
 ## Best practises
 
-| ✅ Do's | 💔 Don'ts |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Try to make the caveats positive | Use the caveat to hide information |
 | Be transparent, if the legal details are short, add it to the content | Add images, iconography, etc. |
@@ -68,7 +68,7 @@ To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?p
 
 ### Considerations of best practises
 
-* We highly recommend that there are no more than three caveats in a single piece of communication 
+* We highly recommend that there are no more than three caveats in a single piece of communication
 * Link to additional information, if needed such as terms, but should always be accompanied with a related description.
 
 ## Feedback
@@ -82,4 +82,3 @@ To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?p
 
 * link caveats \[ADD LINK\]
 * [Homepage example](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-homepage--2019-01)
-

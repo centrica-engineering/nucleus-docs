@@ -42,7 +42,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Best practices
 
-| ✅ Do's | 💔 Dont's |
+| 💚 Do's | 💔 Dont's |
 | :--- | :--- |
 | Use icons within the component | Create your own icons |
 | Use this when building new Nucleus components | Add them as content |
@@ -53,8 +53,8 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ### Considerations of best practices
 
 * Icons can be used as navigational elements as solid or outline single colour
-* If you want to use larger iconography have a look at ns-illustration 
-* Use outline icons when... and solid icons when... 
+* If you want to use larger iconography have a look at ns-illustration
+* Use outline icons when... and solid icons when...
 
 ## Feedback
 
@@ -67,6 +67,5 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 * [ns-cta](https://docs.britishgas.design/components/ns-cta)
 * How to create icons guide \(LINK\)
-* Guiding Customers with our icons and the difference between icons and illustrations in [Brand Guidlines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/icons/guiding-our-customers-with-our-icons) 
-* If you wish to have us consider adding a new icon to the library please consult Brand Visual Identity managers. 
-
+* Guiding Customers with our icons and the difference between icons and illustrations in [Brand Guidlines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/icons/guiding-our-customers-with-our-icons)
+* If you wish to have us consider adding a new icon to the library please consult Brand Visual Identity managers.

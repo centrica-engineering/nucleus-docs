@@ -68,7 +68,7 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 
 ## Best practises
 
-| ✅ Do's | 💔 Don'ts |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use at least two tabs | Use an excessive amount of tabs |
 | Be mindful of the extra page weight | Use more than two words for your tab label |
@@ -94,4 +94,3 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 * Blog posts
 * MDN articles
 * Examples of where it is used
-

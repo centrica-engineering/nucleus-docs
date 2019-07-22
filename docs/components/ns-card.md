@@ -86,7 +86,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Best practises
 
-| ✅ Do's | 💔 Don'ts |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Always use them in the triple layout | Use the text CTA in the section card |
 | Use to direct customers to the actions | Use the key CTA in any of the cards |
@@ -116,4 +116,3 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 * [ns-card section panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--section-cards)
 * [ns-card support panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--support-image-cards)
-

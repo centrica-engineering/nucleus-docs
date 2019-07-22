@@ -46,7 +46,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Best practises
 
-| ✅ Do's | 💔 Don'ts |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Always add heading text | Add an icon to one tab and not to the other tabs |
 |  | Add more than 2 words to the heading |
@@ -68,4 +68,3 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 * Blog posts
 * MDN articles
 * Examples of where it is used
-

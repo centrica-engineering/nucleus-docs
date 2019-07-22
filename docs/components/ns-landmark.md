@@ -64,7 +64,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Best practises
 
-| ✅ Do's | 💔 Don'ts |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Keep content in Landmarks very concise | Always add a cta |
 | Content must be relevant to the page |  |
@@ -80,7 +80,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Image
 
-| ✅ Do | 💔 Don't |
+| 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Capture the moment | Allow the card to cover important content |
 | ![do-father-child](https://user-images.githubusercontent.com/28779/59792082-5430a000-92cb-11e9-942b-7e457c34859c.jpg) | ![dont-child-lady-eng](https://user-images.githubusercontent.com/28779/59792183-82ae7b00-92cb-11e9-8a6f-b5322a5f6eb4.jpg) |
@@ -117,7 +117,7 @@ Using Sketch to overlay the Landmark focus template to check alignment.
 
 ![Screenshot 2019-06-20 at 12 30 08](https://user-images.githubusercontent.com/43471890/59846281-54767d00-9357-11e9-805a-96487c8ecc7f.png)
 
-| ✅ Do | 💔 Don't |
+| 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Here, the focus of the photo is located within the safe-area | The subject fills the entire photo, and the lady on the left will be obscured |
 | ![landmark-16x9-testcard-1440-01](https://user-images.githubusercontent.com/28779/59754143-6be13780-927d-11e9-8175-75b6a46cf2d4.jpg) | ![landmark-16x9-testcard-1440-00](https://user-images.githubusercontent.com/28779/59792749-cb1a6880-92cc-11e9-8f19-9d4caab0d169.jpg) |
@@ -150,4 +150,3 @@ Using Sketch to overlay the Landmark focus template to check alignment.
 * Blog posts
 * MDN articles
 * Examples of where it is used
-

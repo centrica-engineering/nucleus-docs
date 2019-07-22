@@ -94,7 +94,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Best practises
 
-| ✅ Do's | 💔 Don'ts |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Embolden the key message in the heading | Include more than one CTA |
 | Keep the heading length to 4-12 words | Exceed more than two paragraphs of 3 lines each |
@@ -104,9 +104,9 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ### Considerations of best practices
 
-* Alternate the position of image/video when using more than one lockup 
+* Alternate the position of image/video when using more than one lockup
 * Paragraph works best as a single, short paragraph
-* Use real-life photographs 
+* Use real-life photographs
 
 ## Content guidance
 
@@ -134,4 +134,3 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 * Blog posts
 * MDN articles
 * Examples of where it is used
-
