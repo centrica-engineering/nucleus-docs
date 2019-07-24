@@ -1,21 +1,23 @@
 # Typography
 
-## BG Flame Light
+## Typeface
+
+### BG Flame Light
 
 Weight: **normal**  
 Style: **normal**
 
-## BG Flame Regular
+### BG Flame Regular
 
 Weight: **normal**  
 Style: **normal**
 
-## BG Flame Bold
+### BG Flame Bold
 
 Weight: **normal**  
 Style: **normal**
 
-## Usage
+### Usage
 
 CSS
 ```css
@@ -25,7 +27,7 @@ font-family: "BG Flame Light", sans-serif;
 ```
 
 
-# Sizes
+## Sizes
 
 > A universal typographic system which is consistent and efficient to use for both developers and designers.
 
@@ -39,7 +41,7 @@ A double stranded scale for each set of typographic sizes using two bases.
 
 The result of which is:
 
-## Heading
+### Heading
 
 |    | Style     | Small - 1.125 | Medium - 1.2 | Large - 1.25 |
 | -- | --------- | ------------- | ------------ | ------------ |
@@ -50,7 +52,7 @@ The result of which is:
 | 3  | ♜ Rook    | 1.22222em     | 1.375em      | 1.375em      |
 | 2  | ♟ Pawn    | 1.125em       | 1.2em        | 1.25em       |
 
-## Paragraph
+### Paragraph
 
 |    | Style       | Small - 1.125 | Medium - 1.2 | Large - 1.25 |
 | -- | ----------- | ------------- | ------------ | ------------ |
@@ -60,7 +62,7 @@ The result of which is:
 | 0  | 🐹 Hamster  | 1.0em         | 1.0em        | 1.0em        |
 | -1 | 🐭 Mouse    | 0.875em       | 0.875em      | 0.875em      |
 
-# Semantics vs. styles
+## Semantics vs. styles
 
 The definitions we have covered here refer to typographic styles. It's important understand the separation of visual directions and encoded semantics:
 

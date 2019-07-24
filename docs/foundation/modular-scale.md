@@ -1,4 +1,4 @@
-# Modular Scale
+# Modular scale
 
 > The implementation of modular scale simplifies and beautifies our designs.
 

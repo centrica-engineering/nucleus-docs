@@ -1,8 +1,10 @@
-# Nucleus
+# Getting started
+
+## Nucleus
 
 Nucleus first came into being in 2018. During the first months, we set up a core team and went through an incubation stage. In 2019, we've moved into a stage of growth and early adoption.
 
-## Our vision
+### Our vision
 
 > A design system that unites our business and allows us to create a coherent, engaging experience for our customers.
 
@@ -20,7 +22,7 @@ In order to realize this vision, our Nucleus product team is...
 - ensuring our communication is clear and usable for the product teams
 - building a community to sustain these processes
 
-## Why does this matter?
+### Why does this matter?
 
 The better we succeed at making it easier for individuals and teams to learn about what it takes to create experiences that feel uniquely and genuinely British Gas, to better we will be able to...
 
@@ -31,7 +33,7 @@ The better we succeed at making it easier for individuals and teams to learn abo
 
 > It's a system of concepts. It embodies our collective knowledge and shared values.
 
-## Who is it for?
+### Who is it for?
 
 #### For front-end developers
 
