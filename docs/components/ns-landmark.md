@@ -107,7 +107,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | Convey activity related to topic | Use images with a white background |
 | ![do-couple-mobile](https://user-images.githubusercontent.com/28779/59792122-63afe900-92cb-11e9-9553-638cd20f53f2.jpg) | ![dont-wilbur](https://user-images.githubusercontent.com/28779/59792199-87732f00-92cb-11e9-9c9d-51676e6c2aba.jpg) |
 
-### Best practises for Landmark-Hillside
+### Best practises for `hillside`
 
 | ✅ Do's | 💔 Don'ts |
 | :--- | :--- |
