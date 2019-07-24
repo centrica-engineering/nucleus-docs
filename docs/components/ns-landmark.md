@@ -96,7 +96,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | Content must be relevant to the page |  |
 
 
-### Best practises for Landmark-Summit
+### Best practises for `summit`
 
 | ✅ Do | 💔 Don't |
 | :--- | :--- |
