@@ -12,21 +12,21 @@ description: Here are our release notes - enjoy!
 
 #### Sketch Library 🐳
 
-- Fixed broken and duplicated Components / Templates.
+* Fixed broken and duplicated Components / Templates.
 
 ### Bug fixes 🏏
 
-- Fixed the inconsistent positioning of the accordion chevron when multiple expanders were used.
-- Addressed the IE11 bug where the incorrect text colour appeared within `ns-cta` and `ns-tab`.
-- Enable the position `right` for the circle decoration.
-- Fix initial value overwrite in `ns-inputter`.
+* Fixed the inconsistent positioning of the accordion chevron when multiple expanders were used.
+* Addressed the IE11 bug where the incorrect text colour appeared within `ns-cta` and `ns-tab`.
+* Enable the position `right` for the circle decoration.
+* Fix initial value overwrite in `ns-inputter`.
 
 ### Improvements 🌻
 
-- Removed `slot="label"` from `ns-inputter` as we use the anonymous slot.
-- Improve the `ns-tabs` Storybook story.
-- Include the tap illustration.
-- Adding the solid and outline *Energy* icon.
+* Removed `slot="label"` from `ns-inputter` as we use the anonymous slot.
+* Improve the `ns-tabs` Storybook story.
+* Include the tap illustration.
+* Adding the solid and outline *Energy* icon.
 
 ### Feedback 🦕
 
@@ -55,26 +55,26 @@ Any questions? Let us know 🙌🏼
 
 #### Sketch Library 🐍
 
-- Official release *Version 2.0* - _(Out of Pre-release)_ :star2:
-- *Download* the latest: https://github.com/ConnectedHomes/centrica-ux/releases
-- Added *Guides* to give indication of where components can be placed.
-- Included *Templates* to quickly mockup a page and placing components in a layout.
+* Official release *Version 2.0* - _(Out of Pre-release)_ :star2:
+* *Download* the latest: https://github.com/ConnectedHomes/centrica-ux/releases
+* Added *Guides* to give indication of where components can be placed.
+* Included *Templates* to quickly mockup a page and placing components in a layout.
 
 ### Bug fixes 🐞
 
-- Replace previous green outline on `ns-cta` with current yellow outline.
-- Ensuring that the class of `blur` is implemented when required.
-- Address the removal of `margin-bottom` on the last element.
-- Improve specificity of typographic styling.
-- Including robust techniques for setting attributes.
+* Replace previous green outline on `ns-cta` with current yellow outline.
+* Ensuring that the class of `blur` is implemented when required.
+* Address the removal of `margin-bottom` on the last element.
+* Improve specificity of typographic styling.
+* Including robust techniques for setting attributes.
 
 ### Improvements 🌸
 
-- Storybook, split Playground and Foundations.
-- Remove unused properties from our components.
-- Setting a white background to `ns-expander` within `ns-accordion`.
-- Including a variable for `@outline` colour.
-- Adding the solid and outline *Rewards* icon.
+* Storybook, split Playground and Foundations.
+* Remove unused properties from our components.
+* Setting a white background to `ns-expander` within `ns-accordion`.
+* Including a variable for `@outline` colour.
+* Adding the solid and outline *Rewards* icon.
 
 ### Feedback 🐢
 
@@ -87,10 +87,10 @@ Any questions? Let us know 🙌🏼
 
 A big thank you to everyone involved in contributing to this release!
 
-- *OAM* - for their collaboration throughout this release.
-- *Energy Sales* - for working with us to run a joint user testing session using a Nucleus coded prototype.
-- *New Boiler* - For collaborating with us to make sure the recent journeys contained Nucleus components.
-- *Help & Support* - for their patience with the Nucleus CMS page, allowing us time to build the video component.
+* *OAM* - for their collaboration throughout this release.
+* *Energy Sales* - for working with us to run a joint user testing session using a Nucleus coded prototype.
+* *New Boiler* - For collaborating with us to make sure the recent journeys contained Nucleus components.
+* *Help & Support* - for their patience with the Nucleus CMS page, allowing us time to build the video component.
 
 -------
 
@@ -103,36 +103,36 @@ A big thank you to everyone involved in contributing to this release!
 _Integration with Ember commons._
 
 _Sketch Nucleus Pattern Library_
-- Added all available icons
-- Added Accordions
-- Added more screen sizes to each Component
+* Added all available icons
+* Added Accordions
+* Added more screen sizes to each Component
 
 _Documentation_
-- Becoming Nucleus https://bit.ly/2GslcLC
-- Best practices https://bit.ly/2L23kvx
-- Events https://bit.ly/2ZnTmaX
-- Modular scale https://bit.ly/2IGIMpo
-- Typography - Sizes https://bit.ly/2Xik9TS
-- Photography - Optimise your images https://bit.ly/2ItySIi
-- Our documentation https://bit.ly/2Gqbecb
-- Accordion https://bit.ly/2IGTZpU
+* Becoming Nucleus https://bit.ly/2GslcLC
+* Best practices https://bit.ly/2L23kvx
+* Events https://bit.ly/2ZnTmaX
+* Modular scale https://bit.ly/2IGIMpo
+* Typography - Sizes https://bit.ly/2Xik9TS
+* Photography - Optimise your images https://bit.ly/2ItySIi
+* Our documentation https://bit.ly/2Gqbecb
+* Accordion https://bit.ly/2IGTZpU
 
 ### Bug fixes 🐞
 
-- Vertical spacing adjustments
-- Adjusting the style of the heading within our Accordion
-- Setting all Actions to be 100% width at small screen
-- Removing the duplicate BG Flame font loading
-- Fixed the hierarchy of the screen sizes in Sketch library
+* Vertical spacing adjustments
+* Adjusting the style of the heading within our Accordion
+* Setting all Actions to be 100% width at small screen
+* Removing the duplicate BG Flame font loading
+* Fixed the hierarchy of the screen sizes in Sketch library
 
 ### Feedback 🐳
 
 The following request for changes have been started
 
-- #491 RFC - Main navigation :banana: https://github.com/ConnectedHomes/nucleus/issues/491
-- #587 RFC - Tab panel :card_index_dividers: https://github.com/ConnectedHomes/nucleus/issues/587
-- #582 RFC - Selection cards :female-construction-worker: https://github.com/ConnectedHomes/nucleus/issues/582
-- #579 RFC - Form fields :pencil2: https://github.com/ConnectedHomes/nucleus/issues/579
+* #491 RFC - Main navigation :banana: https://github.com/ConnectedHomes/nucleus/issues/491
+* #587 RFC - Tab panel :card_index_dividers: https://github.com/ConnectedHomes/nucleus/issues/587
+* #582 RFC - Selection cards :female-construction-worker: https://github.com/ConnectedHomes/nucleus/issues/582
+* #579 RFC - Form fields :pencil2: https://github.com/ConnectedHomes/nucleus/issues/579
 
 All our RFC’s can be found under the Requests milestone in our Github https://bit.ly/2Zl6Eos
 

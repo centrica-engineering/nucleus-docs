@@ -10,13 +10,13 @@ Cards give a story about why the user should go to the next action. This can be 
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-card--section)
 
-```markup
+```html
 <ns-card type="section" decoration="bulb">
-  <h2 slot="heading">Get energy with us</h2>
-  <p slot="paragraph">We've got a tariff to suit every home and family.</p>
-  <a slot="cta" href="#!">
-    <ns-cta type="direct">Get a quote</ns-cta>
-  </a>
+    <h2 slot="heading">Get energy with us</h2>
+    <p slot="paragraph">We've got a tariff to suit every home and family.</p>
+    <a slot="cta" href="#!">
+        <ns-cta type="direct">Get a quote</ns-cta>
+    </a>
 </ns-card>
 ```
 
@@ -94,7 +94,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | Make your CTA copy unique, stating the action | Have two or more cta's for a card |
 | Use section cards to navigate users to primary actions | Repeat the CTA copy in each card |
 | Consider using decoration in the panel to add emphasis on the cards | Use inline links in the paragraph |
-|  | Use the section card without a decoration |
+| | Use the section card without a decoration |
 
 ### Considerations of best practises
 

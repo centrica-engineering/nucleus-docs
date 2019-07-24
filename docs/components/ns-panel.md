@@ -10,7 +10,7 @@ Adding a decoration to an `ns-panel` using a gradient background provides visual
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-decoration-panel&knob-Decoration=invert-concave-cyan)
 
-```markup
+```html
 <ns-panel>
     ...
 </ns-panel>

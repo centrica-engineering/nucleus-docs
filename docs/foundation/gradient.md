@@ -12,13 +12,13 @@ Gradients create a feeling of depth and richness.
 
 ## Gradient colours
 
-| Gradient       | Handle        | [Colour] -> [Colour]   |
-| -------------- | ------------- | ---------------------- |
-| **Blue**       | @cyan         | @blue -> @cyan         |
-| **Green**      | @green-light  | @green -> @green-light |
-| **Yellow**     | @yellow       | @orange -> @yellow     |
-| **Red**        | @red          | @red-dark -> @red      |
-| **Light Grey** | @grey-light   | @white -> @grey-light  |
+| Gradient | Handle | [Colour] -> [Colour] |
+| :--- | :--- | :--- |
+| **Blue** | @cyan | @blue -> @cyan |
+| **Green** | @green-light | @green -> @green-light |
+| **Yellow** | @yellow | @orange -> @yellow |
+| **Red** | @red | @red-dark -> @red |
+| **Light Grey** | @grey-light | @white -> @grey-light |
 
 ## Action
 

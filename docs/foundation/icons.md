@@ -12,16 +12,14 @@ They are functional, rather than decorative and should be used sparingly, only w
 
 We use icons in number of different ways to convey meaning:
 
-- Signpost and navigate
-- Navigational or informational signposts for content
-- Illustrates content with a simple and clear visual
-- Used by themselves at large size or smaller within a roundel
+* Signpost and navigate
+* Navigational or informational signposts for content
+* Illustrates content with a simple and clear visual
+* Used by themselves at large size or smaller within a roundel
 
 ```
 If you are using the icon at a very large size to engage and visual impact, consider if an illustration might be better.
 ```
-
----
 
 ## Categories
 
@@ -52,7 +50,7 @@ We can make use of brand logos and marks when we discuss products and companies.
 ## Colour
 
 | 💚 Do | 💔 Don'ts |
-| ----- | --------- |
+| :--- | :--- |
 | Start with using BG Cyan or BG Slate | Mix two secondary colours together |
 | Use white icons in coloured roundels | Use BG Slate in coloured roundels |
 | Choose colours to suit the design, as long as it’s not a key part of the information | |

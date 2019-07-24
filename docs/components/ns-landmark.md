@@ -10,16 +10,16 @@ Landmarks can be used to set the scene for what the page is for, what offers mig
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-landmark--hub)
 
-```markup
+```html
 <ns-landmark image="this-is-my-image.jpg">
-  <h1 slot="heading">
-    <span class="h5">Ennui umami locavore.</span>
-    <span class="h1 enlighten">Typewriter enamel pin post-ironic. <b>Chambray mixtape</b></span>
-  </h1>
-  <p slot="paragraph">Cred sartorial shaman pitchfork mumblecore braid cronut shaman gastropub taiyaki godard roof party. <a href="#caveat">1</a></p>
-  <a slot="cta" href="#!">
-    <ns-cta type="direct">Single-origin coffee</ns-cta>
-  </a>
+    <h1 slot="heading">
+        <span class="h5">Ennui umami locavore.</span>
+        <span class="h1 enlighten">Typewriter enamel pin post-ironic. <b>Chambray mixtape</b></span>
+    </h1>
+    <p slot="paragraph">Cred sartorial shaman pitchfork mumblecore braid cronut shaman gastropub taiyaki godard roof party. <a href="#caveat">1</a></p>
+    <a slot="cta" href="#!">
+        <ns-cta type="direct">Single-origin coffee</ns-cta>
+    </a>
 </ns-landmark>
 ```
 
@@ -67,10 +67,10 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Keep content in Landmarks very concise | Always add a cta |
-| Content must be relevant to the page |  |
-|  |  |
-|  |  |
-|  |  |
+| Content must be relevant to the page | |
+| | |
+| | |
+| | |
 
 ### Considerations of best practises
 

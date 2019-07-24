@@ -10,7 +10,7 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-icon--gas)
 
-```markup
+```html
 <ns-icon type="gas" size="2" aria-hidden="true"></ns-icon>
 ```
 
@@ -46,9 +46,9 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | :--- | :--- |
 | Use icons within the component | Create your own icons |
 | Use this when building new Nucleus components | Add them as content |
-| Use them in colours |  |
-| Keep them small |  |
-|  |  |
+| Use them in colours | |
+| Keep them small | |
+| | |
 
 ### Considerations of best practices
 

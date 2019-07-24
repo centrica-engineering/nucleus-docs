@@ -18,15 +18,15 @@ You can get our Nucleus Sketch Library via Github. The step-by-step instructions
 
 **Centrica UX Sketch Library** (to be fazed out):
 
-    - for now, contains a broader set of styles and assets
-    - allows you to test out the proposed structure for this (and the upcoming Nucleus) library
+* for now, contains a broader set of styles and assets
+* allows you to test out the proposed structure for this (and the upcoming Nucleus) library
 
 **Nucleus Sketch Library** (to be ramped up):
 
-    - containing the latest styles, including new grid
-    - contains a first set of shared components, as covered by Nucleus
-    - starting small and growing over time
-    - allows you to explore the latest evolution of our visual identity
+* containing the latest styles, including new grid
+* contains a first set of shared components, as covered by Nucleus
+* starting small and growing over time
+* allows you to explore the latest evolution of our visual identity
 
 We trust your team will be able to make an informed decision on when to use each during this time of transition.
 

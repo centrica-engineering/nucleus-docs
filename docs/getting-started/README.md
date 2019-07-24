@@ -12,24 +12,24 @@ Nucleus first came into being in 2018. During the first months, we set up a core
 
 In order to realize this vision, our Nucleus product team is...
 
-- taking in brand and accessibility guidelines
-- working with product teams to identify proven assets and related insights
-- looking for the shared, unifying concepts behind these
-- creating and curating high-quality, plug-and-play UI components and styles for product teams to use
-- establishing processes and tools that enable us to roll out updates to these assets easily
-- introducing ways for others to contribute to Nucleus, as well as flag any potential issues
-- following up on our adoption and impact
-- ensuring our communication is clear and usable for the product teams
-- building a community to sustain these processes
+* taking in brand and accessibility guidelines
+* working with product teams to identify proven assets and related insights
+* looking for the shared, unifying concepts behind these
+* creating and curating high-quality, plug-and-play UI components and styles for product teams to use
+* establishing processes and tools that enable us to roll out updates to these assets easily
+* introducing ways for others to contribute to Nucleus, as well as flag any potential issues
+* following up on our adoption and impact
+* ensuring our communication is clear and usable for the product teams
+* building a community to sustain these processes
 
 ### Why does this matter?
 
 The better we succeed at making it easier for individuals and teams to learn about what it takes to create experiences that feel uniquely and genuinely British Gas, to better we will be able to...
 
-- truly represent our brand identity across our digital, customer-facing solutions
-- reduce repetitive work, especially when it comes to design and front end development
-- reduce design and maintenance debt that tends to slow down updates
-- enable teams to focus on high value, creative work to solve problems and identify opportunities
+* truly represent our brand identity across our digital, customer-facing solutions
+* reduce repetitive work, especially when it comes to design and front end development
+* reduce design and maintenance debt that tends to slow down updates
+* enable teams to focus on high value, creative work to solve problems and identify opportunities
 
 > It's a system of concepts. It embodies our collective knowledge and shared values.
 

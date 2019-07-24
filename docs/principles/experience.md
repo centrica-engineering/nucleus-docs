@@ -10,9 +10,9 @@ We tailor our experiences to the individuality of each customer and channel they
 
 Examples of how it works:
 
-- If we know a customer’s name, we prefill their details
-- We don’t promote products customer’s already have
-- We don’t use a "cookie-cutter" to create our designs. We create for the purpose, the customer, the device and the outcome
+* If we know a customer’s name, we prefill their details
+* We don’t promote products customer’s already have
+* We don’t use a "cookie-cutter" to create our designs. We create for the purpose, the customer, the device and the outcome
 
 ## Leave no one out
 
@@ -20,11 +20,11 @@ Inclusivity and accessibility are fundamental. No one should be left out. Ever.
 
 Examples of how it works:
 
-- If in doubt, test it in the lab
-- Consider how the page will be read
-- Consider how you are writing – would you say this to your mum?
-- Our code and content are optimised for screen readers
-- Learn about different types of barriers (physical, cognitive, sensory limitations that can be either temporary or permanent)
+* If in doubt, test it in the lab
+* Consider how the page will be read
+* Consider how you are writing – would you say this to your mum?
+* Our code and content are optimised for screen readers
+* Learn about different types of barriers (physical, cognitive, sensory limitations that can be either temporary or permanent)
 
 ## Always there
 
@@ -32,9 +32,9 @@ The relationship we have with our customers is a two-way conversation.  We liste
 
 Examples of how it works:
 
-- Guides, tool-tips and fast-serving links so customers have all the info they need
-- Use our Tone of Voice to sound human, reassuring and helpful
-- Webchat when a customer hesitates
+* Guides, tool-tips and fast-serving links so customers have all the info they need
+* Use our Tone of Voice to sound human, reassuring and helpful
+* Webchat when a customer hesitates
 
 ## Make life simple
 
@@ -44,10 +44,10 @@ We create them this way so our customers have time to get on with what’s impor
 
 Examples of how it works:
 
-- Take steps out where possible and strip-back
-- Focus on one message at a time
-- Keep messages concise and clear
-- Our designs are intuitive and our back-end systems do the 'thinking' – so customers shouldn’t have to
+* Take steps out where possible and strip-back
+* Focus on one message at a time
+* Keep messages concise and clear
+* Our designs are intuitive and our back-end systems do the 'thinking' – so customers shouldn’t have to
 
 ## Go beyond
 
@@ -55,7 +55,7 @@ We always go further than creating functional experiences by seeking out surpris
 
 Examples of how it works:
 
-- The smallest gesture can make the biggest differences
-- Look at an experience end to end and understand where customers have come from and where they are going, and what state of mind they are in!
-- Terms & Conditions written in simple terms
-- Using thoughtful animation at the right time to add delight
+* The smallest gesture can make the biggest differences
+* Look at an experience end to end and understand where customers have come from and where they are going, and what state of mind they are in!
+* Terms & Conditions written in simple terms
+* Using thoughtful animation at the right time to add delight

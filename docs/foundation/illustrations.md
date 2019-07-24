@@ -12,7 +12,7 @@ Nucleus illustrations
 
 ## How we use illustrations
 
-- Within infographics to make our messages easier to understand
-- Used on their own as the primary visual element
-- Layered over photography to enhance our stories
-- We use illustrations at larger sizes to draw use attention to areas of interest.
+* Within infographics to make our messages easier to understand
+* Used on their own as the primary visual element
+* Layered over photography to enhance our stories
+* We use illustrations at larger sizes to draw use attention to areas of interest.

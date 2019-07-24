@@ -2,15 +2,15 @@
 
 ## Introduction
 
-> Illustrations are visual symbos used to bring the warmth of British Gas brand and personilaity to the website.
+> Illustrations are visual symbols used to bring the warmth of British Gas brand and personality to the website.
 
-Illustrations simplify products and services to users in a friendly manner. Illustrations always accompnay content.
+Illustrations simplify products and services to users in a friendly manner. Illustrations always accompany content.
 
 ## Usage
 
-To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-illustrations--gas)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-illustrations--gas)
 
-```markup
+```html
 <ns-illustration type="gas" inactive="false" size="2" aria-hidden="true"></ns-illustration>
 ```
 
@@ -52,10 +52,10 @@ To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?p
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
 | Use them to convey depth | Make the illustrations small |
-|  | Use on their own as the primary visual element |
-|  |  |
-|  |  |
-|  |  |
+| | Use on their own as the primary visual element |
+| | |
+| | |
+| | |
 
 ### Considerations of best practices
 

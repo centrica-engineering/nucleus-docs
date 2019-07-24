@@ -110,12 +110,12 @@ Motion and animation
 
 ### To assure quality in our designs:
 
-- Read and understand our creative principles
-- Understand the usage of each foundational asset
-- Understand how our assets come together to express our creative principles
-- Ensure you’re not designing a component that already exists to meet that purpose
-- Seek opinions and feedback from your peers to assess your purpose and use of creative principles
-- Understand that if you need to deviate from any of our guidelines you take accountability for updating any affected teams or frameworks
+* Read and understand our creative principles
+* Understand the usage of each foundational asset
+* Understand how our assets come together to express our creative principles
+* Ensure you’re not designing a component that already exists to meet that purpose
+* Seek opinions and feedback from your peers to assess your purpose and use of creative principles
+* Understand that if you need to deviate from any of our guidelines you take accountability for updating any affected teams or frameworks
 
 We are looking to create the following, in the future for further support:
 Design decision tree

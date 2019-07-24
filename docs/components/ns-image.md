@@ -4,13 +4,13 @@
 
 > An image allows British Gas to share visual content.
 
-British Gas has a variety of images to enhance content on the website annd helps sell a story. This component allows having images on the website, while making sure that the page loads quickly \(lazy loading\) and follows the right ratios.
+British Gas has a variety of images to enhance content on the website and helps sell a story. This component allows having images on the website, while making sure that the page loads quickly (lazy loading) and follows the right ratios.
 
 ## Usage
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-images--lazy-loading-img)
 
-```markup
+```html
 <ns-image ratio="16x9" src="https://www.britishgas.co.uk/aem6/content/dam/britishgas/images/jumbotron/home-services/20-Home-Services-wilbur.jpg"></ns-image>
 ```
 
@@ -69,8 +69,8 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | Resize your image \(\[see optimise your image \(LINK\)\] | Use images as the primary content |
 | Use the correct image format png/jpg | Put text inside the image |
 | Use brand approved images | Use a white background in images |
-| Think about the image responsive behaviour |  |
-|  |  |
+| Think about the image responsive behaviour | |
+| | |
 
 ### Considerations of best practices
 

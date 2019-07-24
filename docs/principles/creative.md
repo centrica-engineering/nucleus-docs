@@ -16,17 +16,17 @@ We’re a brand full of energy. Being modern and dynamic helps us lead the way t
 
 It has energy
 
-- We use our different assets to make our content feel more alive
-- We pick the right assets to hero our brand, direct users, and help our content flow
+* We use our different assets to make our content feel more alive
+* We pick the right assets to hero our brand, direct users, and help our content flow
 
 It is layered
 
-- Build up the different assets and content in layers and groups for depth
-- Subtle layering helps to make it feel richer without becoming overwhelming
+* Build up the different assets and content in layers and groups for depth
+* Subtle layering helps to make it feel richer without becoming overwhelming
 
 It is fluid
 
-- Break out of the grid and containing panels to create a more varied rhythm
+* Break out of the grid and containing panels to create a more varied rhythm
 
 ### Do's and Don'ts
 
@@ -44,16 +44,16 @@ At our heart, we’re a blue and white brand. Being clean and fresh helps us sho
 
 It is considered
 
-- Only show users what they need, when they need it
-- Take away the unnecessary and give users the option to delve deeper if they want to
+* Only show users what they need, when they need it
+* Take away the unnecessary and give users the option to delve deeper if they want to
 
 It has highlights
 
-- Focus into and draw attention to the key information or action
+* Focus into and draw attention to the key information or action
 
 It is balanced
 
-- Contrast clean and fresh assets with assets that are more human, playful, and rich
+* Contrast clean and fresh assets with assets that are more human, playful, and rich
 
 ### Dos and don'ts
 
@@ -73,18 +73,18 @@ We’re a brand with clarity, but we’re never clinical. Being warm and friendl
 
 It feels natural
 
-- We use tighter crops of our photography for added focus
-- We pepper in our secondary colours
-- We use softer gradients and shadows
+* We use tighter crops of our photography for added focus
+* We pepper in our secondary colours
+* We use softer gradients and shadows
 
 It has texture
 
-- We have added details to our base elements, bringing them together for richness
-- We bring photography to life by layering over our graphical assets or typography
+* We have added details to our base elements, bringing them together for richness
+* We bring photography to life by layering over our graphical assets or typography
 
 It is contextual
 
-- We go rich, engaging, functional, or minimal, depending on the [purpose](https://centrica.frontify.com/r/jmWK0vSYlZD1r980jDCf_iwljZbvaeHIbY67XEyDDIk,)
+* We go rich, engaging, functional, or minimal, depending on the [purpose](https://centrica.frontify.com/r/jmWK0vSYlZD1r980jDCf_iwljZbvaeHIbY67XEyDDIk,)
 
 ### Dos and don'ts
 

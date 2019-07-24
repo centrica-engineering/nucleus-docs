@@ -10,7 +10,7 @@ We allow users to perform certain actions through the use of our call to actions
 
 To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-cta--direct-link)
 
-```markup
+```html
 <ns-cta>
     ...
 </ns-cta>
@@ -85,8 +85,8 @@ A CTA should always live inside another component.
 | Only use loading on an action | Make it overly wordy |
 | Relate the action to the content it sits beside | Use icons for icons' sake |
 | Use 'direct' for the primary action on the page | Use more than 24 characters |
-|  | Have multiple lines or sentences within a CTA |
-|  | Repeat CTA copy within the same page |
+| | Have multiple lines or sentences within a CTA |
+| | Repeat CTA copy within the same page |
 
 ### Considerations of best practises
 

@@ -2,10 +2,10 @@
 
 ### Links
 
-- https://imageoptim.com/mac
-- https://squoosh.app/
-- https://kraken.io/web-interface
-- https://tinypng.com/
+* https://imageoptim.com/mac
+* https://squoosh.app/
+* https://kraken.io/web-interface
+* https://tinypng.com/
 
 ### Why optimise?
 
@@ -21,10 +21,10 @@ The answer is: The smallest size that does not degrade the image too much that i
 
 These numbers are just a guide and shouldn’t be treated as “I have hit the number, so I don’t need to optimise it anymore”. If they can go much lower than these numbers - then they should.
 
-- Full width image: < 200kb
-- Side image: < 100kb
-- Additional image: < 50kb
-- Decoration: < 10kb
+* Full width image: < 200kb
+* Side image: < 100kb
+* Additional image: < 50kb
+* Decoration: < 10kb
 
 (For PNGs add an additional 50kb)
 

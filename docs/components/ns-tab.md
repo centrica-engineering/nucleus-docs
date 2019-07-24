@@ -10,7 +10,7 @@ The tab is the button that can be clicked to change the content in the `ns-tabs`
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-tab--tab)
 
-```markup
+```html
 <ns-tab>Electricity</ns-tab>
 ```
 
@@ -49,8 +49,8 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Always add heading text | Add an icon to one tab and not to the other tabs |
-|  | Add more than 2 words to the heading |
-|  | Add different types of icons \(solid, outline, functional\) |
+| | Add more than 2 words to the heading |
+| | Add different types of icons \(solid, outline, functional\) |
 
 ### Considerations of best practises
 

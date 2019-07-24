@@ -8,18 +8,18 @@ Caveats link to content in the page, providing more information about legality a
 
 ## Usage
 
-To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-caveat--caveat)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-caveat--caveat)
 
-```markup
+```html
 <ns-caveat>
-  <h2 slot="heading">Legal information</h2>
-  <div slot="caveat">
-    <ol>
-      <li>
-          ...
-      </li>
-    </ol>
-  </div>
+    <h2 slot="heading">Legal information</h2>
+    <div slot="caveat">
+        <ol>
+            <li>
+            ...
+            </li>
+        </ol>
+    </div>
 </ns-caveat>
 ```
 
@@ -62,9 +62,9 @@ To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?p
 | Try to make the caveats positive | Use the caveat to hide information |
 | Be transparent, if the legal details are short, add it to the content | Add images, iconography, etc. |
 | Always have the legal caveats at the bottom of the page, before the footer | Try to change the font size of the caveats |
-| Use an ordered list for the caveats |  |
-| Only use text in the caveats |  |
-| Embolden text that is important |  |
+| Use an ordered list for the caveats | |
+| Only use text in the caveats | |
+| Embolden text that is important | |
 
 ### Considerations of best practises
 

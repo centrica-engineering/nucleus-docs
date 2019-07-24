@@ -14,41 +14,41 @@ Experimentation is run by our whole Nucleus community, not just the Nucleus team
 
 The most advanced experiments made by teams may be Nucleus aligned in the sense that they've been validated against our shared [principles](https://centrica.frontify.com/r/H8d45JWTxNGZdp-L1DGMpJa5LWf4NNGRpNPa7DEzmvM,) and make use of the latest styles. However, these will still need to be reviewed, adjusted if needed, and included in an official Nucleus release to be available for all teams (and make use of later updates).
 
-- Share ideas and explorations
-- Discuss pros and cons
-- Gather evidence on your hypotheses
-- Ask for a early input / review session
-- Use our workshop templates to run an ideation / review session within the team
-- Check GitHub for existing, open RFCs on upcoming assets (used for discovery)
-- Share your learnings
+* Share ideas and explorations
+* Discuss pros and cons
+* Gather evidence on your hypotheses
+* Ask for a early input / review session
+* Use our workshop templates to run an ideation / review session within the team
+* Check GitHub for existing, open RFCs on upcoming assets (used for discovery)
+* Share your learnings
 
 ## What kind of reviews should we have?
 
 We're building a living system. This means we're constantly looking for improvements to implement and scale to all teams through Nucleus.
 
-- How might we best apply our [principles](https://centrica.frontify.com/r/_QvqaUItgk_o3lMszTVrg9wsLBvmqP741OEGFwMVmTg,)?
-- Are we in line with our foundational [guidelines](https://centrica.frontify.com/r/9oId0Uau-QEr414m5h45_GU6MzIuoBXGQdygVmsYCCo,)?
-- What kind of shared [assets](https://centrica.frontify.com/r/_QvqaUItgk_o3lMszTVrg9wsLBvmqP741OEGFwMVmTg,) might / should we have?
+* How might we best apply our [principles](https://centrica.frontify.com/r/_QvqaUItgk_o3lMszTVrg9wsLBvmqP741OEGFwMVmTg,)?
+* Are we in line with our foundational [guidelines](https://centrica.frontify.com/r/9oId0Uau-QEr414m5h45_GU6MzIuoBXGQdygVmsYCCo,)?
+* What kind of shared [assets](https://centrica.frontify.com/r/_QvqaUItgk_o3lMszTVrg9wsLBvmqP741OEGFwMVmTg,) might / should we have?
 
 We're also helping to make our internal processes more efficient.
 
-- How might we improve our tools and processes?
-- How might we improve our documentation?
+* How might we improve our tools and processes?
+* How might we improve our documentation?
 
 ## Who builds the assets?
 
 In short, there tend to be two alternative ways to proceed:
 
-- Our Nucleus core team builds it
-- Our Nucleus core team facilitates product teams to build assets that are so aligned with Nucleus (both in terms of development and design) that it's easier to take them "into the system"
+* Our Nucleus core team builds it
+* Our Nucleus core team facilitates product teams to build assets that are so aligned with Nucleus (both in terms of development and design) that it's easier to take them "into the system"
 
 In terms of responsibilities:
 
-- Our core team is ultimately responsible for curating the system and what's in it
-- Our community is ultimately responsible for implementing the assets in customer-facing solutions
-- We work together to share learnings, surfacing potential issues and opportunities
-- We work together to make sure that what's in the system represents our best knowledge (so far)
-- We work together to make sure updates can flow smoothly to existing, already implemented assets
+* Our core team is ultimately responsible for curating the system and what's in it
+* Our community is ultimately responsible for implementing the assets in customer-facing solutions
+* We work together to share learnings, surfacing potential issues and opportunities
+* We work together to make sure that what's in the system represents our best knowledge (so far)
+* We work together to make sure updates can flow smoothly to existing, already implemented assets
 
 ---
 

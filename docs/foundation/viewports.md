@@ -10,14 +10,14 @@ Using a modular scale of 2:3 (1.5) we set the base of 16px to equal 1em, then ca
 
 Taking a device independent approach to deciding on the widths to design to in order to illustrate how a design could adapt at different sizes, we start small and use a modular scale of 1.5 resulting:
 
-| Size                 | Viewport           | Column   | Offset |
-| -------------------- | ------------------ | -------- | ------ |
-| 🔵 Squash court      | 320px (20em)       | 288px    | 16px   |
-| 🎾 Tennis court      | 480px (30em)       | 432px    | 24px   |
-| 🏀 Basketball court  | 720px (45em)       | 648px    | 36px   |
-| 🏑 Hockey pitch      | 1080px (67.5em)    | 972px    | 54px   |
-| 🏉 Rugby pitch       | 1620px (101.25em)  | 1458px   | 81px   |
-| 👕 Polo field        | 2430px (151.875em) | 1600px * | 415px  |
+| Size | Viewport | Column | Offset |
+| :--- | :--- | :--- | :--- |
+| 🔵 Squash court | 320px (20em) | 288px | 16px |
+| 🎾 Tennis court | 480px (30em) | 432px | 24px |
+| 🏀 Basketball court | 720px (45em) | 648px | 36px |
+| 🏑 Hockey pitch | 1080px (67.5em) | 972px | 54px |
+| 🏉 Rugby pitch | 1620px (101.25em) | 1458px | 81px |
+| 👕 Polo field | 2430px (151.875em) | 1600px * | 415px |
 
 ## Viewport
 
