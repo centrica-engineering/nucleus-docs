@@ -12,7 +12,7 @@ To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?p
 
 ```markup
 <ns-cta>
-  Learn more about Hive
+    ...
 </ns-cta>
 ```
 
