@@ -50,7 +50,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | :--- | :--- |
 | **Description** | The variant of the landmark |
 | **Type** | string |
-| **Default** | n/a |
+| **Default** | summit |
 | **Options** | summit, hillside |
 
 | **Name** | Named slot `heading` |
@@ -95,7 +95,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 | ✅ Do's | 💔 Don'ts |
 | :--- | :--- |
-| Keep content in Landmarks very concise | Always add a cta to  |
+| Keep content in Landmarks very concise | Always add a cta  |
 | Content must be relevant to the page |  |
 
 
@@ -185,9 +185,3 @@ Using Sketch to overlay the Landmark focus template to check alignment.
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-landmark])
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
-## Related links
-
-* Blog posts
-* MDN articles
-* Examples of where it is used
