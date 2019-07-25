@@ -16,11 +16,11 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? \(no\)
+* Does it live in a panel? (no)
 * Does it live inside other components?
   * ns-lockup
   * ns-card
-* Atomic type: \(atom\)
+* Atomic type: (atom)
 
 ## Specification
 
@@ -53,13 +53,10 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | :--- | :--- |
 | Use them to convey depth | Make the illustrations small |
 | | Use on their own as the primary visual element |
-| | |
-| | |
-| | |
 
 ### Considerations of best practices
 
-* List of when to use which illustration \(need to talk to Will about it\)
+* List of when to use which illustration (need to talk to Will about it)
 
 ## Feedback
 

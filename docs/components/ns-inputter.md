@@ -188,10 +188,6 @@ Note - Currently we don't have the ability to have radio button side by side
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | If adding a "Please Select" option then add value="" | |
-| | |
-| | |
-
-
 
 ### Considerations of best practices
 
@@ -209,7 +205,3 @@ Note - Currently we don't have the ability to have radio button side by side
 💩 🎉 🦄 You can also contact the team on Slack on the `product-nucleus` channel!
 
 ## Related links
-
-* Blog posts
-* MDN articles
-* Examples of where it is used

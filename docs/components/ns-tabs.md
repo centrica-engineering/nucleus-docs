@@ -14,23 +14,29 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 <ns-tabs>
     <ns-tab slot="tab">Electricity</ns-tab>
     <ns-panel slot="panel">
+
         ...
+
     </ns-panel>
     <ns-tab slot="tab">Home Services</ns-tab>
     <ns-panel slot="panel">
+
         ...
+
     </ns-panel>
+
     ...
+
 </ns-tabs>
 ```
 
 ## Component Relationship
 
-* Does it live in a panel? \(no\)
-  * What layout classes can be used? \(n/a\)
+* Does it live in a panel? (no)
+  * What layout classes can be used? (n/a)
 * Does it live inside other components?
   * n/a
-* Atomic type: \(organism\)
+* Atomic type: (organism)
 
 A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a number of `ns-tab` and `ns-panel` pairs exist. Each of these pairs provide a tab to select and a panel to place a layout and related content.
 
@@ -84,7 +90,3 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
 
 ## Related links
-
-* Blog posts
-* MDN articles
-* Examples of where it is used

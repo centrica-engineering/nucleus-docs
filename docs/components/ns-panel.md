@@ -4,11 +4,11 @@
 
 `ns-panel` is an empty container that holds each section of a page. Each `ns-panel` provides an area to place a layout and add an optional decoration.
 
-Adding a decoration to an `ns-panel` using a gradient background provides visual separation from the other sections of the page and introduces brand [colour](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/foundations-colours--brand-pallette) and style. Using the circle decoration provides subtle emphasis to an `ns-panel`.
+Adding a decoration to an `ns-panel` using a gradient background provides visual separation from the other sections of the page and introduces brand [colour](https://docs.britishgas.design/foundation/colours) and style. Using the circle decoration provides subtle emphasis to an `ns-panel`.
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-decoration-panel&knob-Decoration=invert-concave-cyan)
+To see examples visit [Storybook](https://library.britishgas.design)
 
 ```html
 <ns-panel>
@@ -24,11 +24,11 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 | **Name** | Decoration |
 | :--- | :--- |
-| **Description** | The [gradient](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/foundations-colours--gradient-pallette) used to decorate the page |
+| **Description** | The [gradient](https://docs.britishgas.design/foundation/gradients) used to decorate the page |
 | **Type** | string |
 | **Default** | n/a |
-| **Options** | `invert-concave-[[colour](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/foundations-colours--brand-pallette)]`, `invert-bridge-[[colour](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/foundations-colours--brand-pallette)]`, `circle-[[colour](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/foundations-colours--brand-pallette)]-left`,`circle-[[colour](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/foundations-colours--brand-pallette)]-right` |
-| **Note** | The [gradient](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/foundations-colours--gradient-pallette) palette |
+| **Options** | `circle-yellow-left`, `circle-yellow-right`, `circle-green-left`, `circle-green-right`, `invert-concave-cyan`, `invert-concave-grey-light`, `invert-concave-green-light`, `invert-concave-yellow`, `invert-concave-blue`, `invert-bridge-cyan`, `invert-bridge-grey-light`, `invert-bridge-green-light`, `invert-bridge-yellow`, `invert-bridge-blue` |
+| **Note** | The [gradient](https://docs.britishgas.design/foundation/gradients) palette |
 
 | **Name** | Anonymous slot |
 | :--- | :--- |
@@ -43,13 +43,13 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | :--- | :--- |
 | Use decoration to visually separate content | Add decoration to an `ns-panel` where the previous `ns-panel` has a decoration |
 | Use appropriate colour for the purpose of page in decorations | Nest a panel in a panel |
-| Include more than one layout in a `ns-panel` |  |
+| Include more than one layout in a `ns-panel` | |
 
 ### Considerations of best practises
 
 * Treat each `ns-panel` as a section of the page.
 * Include no more than two `ns-lockups` in one `ns-panel` with a decoration.
-* Examples of a layout could be a class of [`.splish` | `.splash`] or an `ns-lockup`.
+* Layout is either a class of [`.splish` | `.splash`] or an `ns-lockup`.
 
 ## Feedback
 
@@ -59,7 +59,3 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
 
 ## Related links
-
-* Blog posts
-* MDN articles
-* Examples of where it is used

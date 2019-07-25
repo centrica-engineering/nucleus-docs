@@ -4,7 +4,7 @@
 
 > A call-to-action allows users to take action once they are ready for it.
 
-We allow users to perform certain actions through the use of our call to actions \(CTAs\). It should always be clear to the user what the CTA's action is through text.
+We allow users to perform certain actions through the use of our call to actions (CTAs). It should always be clear to the user what the CTA's action is through text.
 
 ## Usage
 
@@ -12,13 +12,14 @@ To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?p
 
 ```html
 <ns-cta>
+    Learn more about Hive
     ...
 </ns-cta>
 ```
 
 ## Component Relationship
 
-* Does it live in a panel? \(no\)
+* Does it live in a panel? (no)
 * Does it live inside other components?
   * ns-lockup
   * ns-landmark

@@ -16,11 +16,11 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? \(no\)
+* Does it live in a panel? (no)
 * Does it live inside other components?
   * ns-lockup
   * ns-card
-* Atomic type: \(atom\)
+* Atomic type: (atom)
 
 ## Specification
 
@@ -66,11 +66,10 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
-| Resize your image \(\[see optimise your image \(LINK\)\] | Use images as the primary content |
+| Resize your image [see optimise your image](LINK) | Use images as the primary content |
 | Use the correct image format png/jpg | Put text inside the image |
 | Use brand approved images | Use a white background in images |
 | Think about the image responsive behaviour | |
-| | |
 
 ### Considerations of best practices
 

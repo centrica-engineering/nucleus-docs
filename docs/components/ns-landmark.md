@@ -25,11 +25,11 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? \(no\)
-  * What layout classes can be used? \(n/a\)
+* Does it live in a panel? (no)
+  * What layout classes can be used? (n/a)
 * Does it live inside other components?
   * no
-* Atomic type: \(organism\)
+* Atomic type: (organism)
 
 ## Specification
 
@@ -68,9 +68,6 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | :--- | :--- |
 | Keep content in Landmarks very concise | Always add a cta |
 | Content must be relevant to the page | |
-| | |
-| | |
-| | |
 
 ### Considerations of best practises
 
@@ -146,7 +143,3 @@ Using Sketch to overlay the Landmark focus template to check alignment.
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
 
 ## Related links
-
-* Blog posts
-* MDN articles
-* Examples of where it is used

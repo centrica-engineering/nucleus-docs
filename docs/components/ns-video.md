@@ -16,10 +16,10 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? \(no\)
+* Does it live in a panel? (no)
 * Does it live inside other components?
   * ns-lockup
-* Atomic type: \(atom\)
+* Atomic type: (atom)
 
 ## Specification
 
@@ -51,14 +51,12 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
 | Use videos from Centrica YouTube channels | Use over 3 videos on a page |
-| Use inside another component \(see relationship\) | Use video as the primary content |
+| Use inside another component (see relationship) | Use video as the primary content |
 | Use as supplementary content | |
-| | |
-| | |
 
 ### Considerations of best practices
 
-* The ratio is not related to \(or affect\) the ratio of the video. Changing the ratio should be used to allow the video player to fit better inside its parent component.
+* The ratio is not related to (or affect) the ratio of the video. Changing the ratio should be used to allow the video player to fit better inside its parent component.
 * Make sure that the video has closed caption, a good title and useful thumbnail.
 
 ## Feedback

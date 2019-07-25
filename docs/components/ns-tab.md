@@ -16,10 +16,10 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? \(no\)
+* Does it live in a panel? (no)
 * Does it live inside other components?
   * ns-tabs
-* Atomic type: \(atom\)
+* Atomic type: (atom)
 
 ## Specification
 
@@ -50,7 +50,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | :--- | :--- |
 | Always add heading text | Add an icon to one tab and not to the other tabs |
 | | Add more than 2 words to the heading |
-| | Add different types of icons \(solid, outline, functional\) |
+| | Add different types of icons (solid, outline, functional) |
 
 ### Considerations of best practises
 
@@ -64,7 +64,3 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
 
 ## Related links
-
-* Blog posts
-* MDN articles
-* Examples of where it is used

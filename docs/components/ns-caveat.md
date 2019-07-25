@@ -25,10 +25,10 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? \(no\)
+* Does it live in a panel? (no)
 * Does it live inside other components?
   * no
-* Atomic type: \(organism\)
+* Atomic type: (organism)
 
 ## Specification
 
@@ -80,5 +80,5 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Related links
 
-* link caveats \[ADD LINK\]
+* link caveats [ADD LINK]
 * [Homepage example](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-homepage--2019-01)

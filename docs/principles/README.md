@@ -33,6 +33,5 @@ We have multiple sets of principles, with a slightly different perspectives. Ide
 
 As a rule of thumb, we encourage you to refer to the shared principles often, the better to learn their meaning in practice. In order to pick the right set of principles, please consider what you're working on:
 
-1. To ensure all of our current and potential customers have equal access and are able to complete journeys to satisfaction, dive into [accessibility principles](https://centrica.frontify.com/r/lUEdXVvtfufWGAcMq883LHr3USn390x6etw4LsVD3k4,)
-2. To work on what the journey is going to feel like, dive into [experience principles](https://centrica.frontify.com/r/fJzwMc-z1kyAy-jwTKeIAj4c00hwAnTW19gZDuSC0jQ,)
-3. To ensure the visual language reflects our brand, dive into [creative principles](https://centrica.frontify.com/r/VdzYOA3vy4NAT6r1rehm-6X5Q6InAo3cCGoU_e3NxVo,)
+1. To ensure all of our current and potential customers have equal access and are able to complete journeys to satisfaction, dive into [accessibility principles](https://docs.britishgas.design/principles/accessibility)
+2. To work on what the journey is going to feel like, dive into [experience principles](https://docs.britishgas.design/principles/experience)

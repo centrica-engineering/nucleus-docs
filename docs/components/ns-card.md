@@ -22,11 +22,11 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? \(yes\)
-  * What layout classes can be used? \(Splash triple, Splish triple\)
+* Does it live in a panel? (yes)
+  * What layout classes can be used? (Splash triple, Splish triple)
 * Does it live inside other components?
   * no
-* Atomic type: \(molecule\)
+* Atomic type: (molecule)
 
 ## Specification
 
