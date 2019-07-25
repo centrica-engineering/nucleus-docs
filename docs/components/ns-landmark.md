@@ -6,30 +6,20 @@
 
 Landmarks can be used to set the scene for what the page is for, what offers might be available and give helpful best next actions for users. This is where the main heading for the page will sit and give the overarching context to the rest of the page.
 
-
-## Available variants
-
-Currently there are two available variants. The purpose of the page should help you define the type of variants to use.
-
-| ns-landmark type="summit"  | ns-landmark type="hillside" |
-| :--- | :--- |
-| ![do-father-child](https://user-images.githubusercontent.com/28779/59792082-5430a000-92cb-11e9-942b-7e457c34859c.jpg) | ![ns-landmark-type-ridge-orange](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg)
-| Consider using using this variant for promotional pages, product pages and hub pages | Consider using this landmark for informative, educational and journey pages |
-
 ## Usage
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-landmark--hub)
 
 ### Summit
 ```html
-<ns-landmark image="this-is-my-image.jpg">
+<ns-landmark type="summit" image="xxxxxxxxx">
   <h1 slot="heading">
-    <span class="h5">Ennui umami locavore.</span>
-    <span class="h1 enlighten">Typewriter enamel pin post-ironic. <b>Chambray mixtape</b></span>
+    <span class="h5">Our product and services.</span>
+    <span class="h1 enlighten">When things break down, <b>we've got you covered</b></span>
   </h1>
-  <p slot="paragraph">Cred sartorial shaman pitchfork mumblecore braid cronut shaman gastropub taiyaki godard roof party. <a href="#caveat">1</a></p>
+  <p slot="paragraph">Protect your boiler, heating, drains and more. And call on our friendly engineers whenever you need them. </p>
   <a slot="cta" href="#!">
-    <ns-cta type="direct">Single-origin coffee</ns-cta>
+    <ns-cta type="direct">View our products</ns-cta>
   </a>
 </ns-landmark>
 ```
@@ -37,15 +27,12 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ### Hillside
 
 ```html
-<ns-landmark image="this-is-my-image.jpg">
+<ns-landmark type="hillside">
   <h1 slot="heading">
-    <span class="h5">Ennui umami locavore.</span>
-    <span class="h1 enlighten">Typewriter enamel pin post-ironic. <b>Chambray mixtape</b></span>
+    <span class="h5">Boiler replacement.</span>
+    <span class="h1 enlighten">What's the <b> right boiler for me? </b></span>
   </h1>
-  <p slot="paragraph">Cred sartorial shaman pitchfork mumblecore braid cronut shaman gastropub taiyaki godard roof party. <a href="#caveat">1</a></p>
-  <a slot="cta" href="#!">
-    <ns-cta type="direct">Single-origin coffee</ns-cta>
-  </a>
+  <p slot="paragraph"> With so many types of boiler, <b>finding the right one</b> for you can feel like a daunting task. Here's the difference between the three main boiler types </p>
 </ns-landmark>
 ```
 
