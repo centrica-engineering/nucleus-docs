@@ -45,7 +45,7 @@ If you want to get a specific quality percentage, kraken.io web interface has an
 Double click your image in Finder to open it in Preview. In the menu, Tools > Adjust Size...
 An overlay will appear. Keep "Scale proportionally" ticked and change your dimension to what is the required size. After that click OK and then save the image.
 
-<img src="/assets/resizing.png" alt="Resizing image in Preview (macOS)" />
+![Resizing image in Preview (macOS)](https://user-images.githubusercontent.com/43471890/62051302-00d73900-b20b-11e9-9a42-7845f06d7dda.png)
 
 ### Optimising with ImageOptim
 
@@ -55,9 +55,7 @@ It is best for each iteration of optimisation to create a new folder of duplicat
 
 1. Click the setting button, at the bottom right corner. Go into Optimisation level and set it to insane; in General, tick PNGCrush and in Quality, disable loss minification.
 
-<img src="/assets/imageoptim-settings.png" alt="ImageOptim settings" />
-<br>
-<br>
+![ImageOptim settings](https://user-images.githubusercontent.com/43471890/62051350-18162680-b20b-11e9-8a4a-d8badfbe5cc2.png)
 
 2. Drag and drop images and wait for them to tick green ✅
 3. With the duplicated versions of these images, enable lossy minification and go down on the level of quality (as explained in "How to Optimise").  

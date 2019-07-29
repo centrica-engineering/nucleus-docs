@@ -4,7 +4,7 @@
 
 We have three aspect ratios, 1:1, 4:3 and 16:9, which we use in various ways. Take a considered approach and do not overload with too many variants.
 
-<img src="/assets/aspect-ratios.png" alt="Two of our core aspect ratios 1:1 and 16:9." />
+![Two of our core aspect ratios 1:1 and 16:9](https://user-images.githubusercontent.com/43471890/62045313-0037a600-b1fd-11e9-93b7-2250a4ac6e6c.png)
 
 Two of our core aspect ratios 1:1 and 16:9.
 
@@ -12,7 +12,7 @@ Two of our core aspect ratios 1:1 and 16:9.
 
 For all of our aspect ratios, our rule is that all images scale proportionally to their ratio. This means that they will retain their shape from large screens to small ones.
 
-<img src="/assets/image-resize.png" alt="Our aspect ratios always scale proportionally." />
+![Our aspect ratios always scale proportionally](https://user-images.githubusercontent.com/43471890/62045417-2a896380-b1fd-11e9-817a-4ae34e985743.png)
 
 Our aspect ratios always scale proportionally.
 

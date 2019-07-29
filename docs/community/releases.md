@@ -44,11 +44,11 @@ Any questions? Let us know 🙌🏼
 ### What’s new around here 🌶
 
 *`ns-inputter`* - the 'vanilla first' of our form elements.
- - Text, Email, Telephone, Password, Number, Radio, Checkbox
- - Field-level validation
- - Placeholder
- - Helper text
- - Helper details
+* Text, Email, Telephone, Password, Number, Radio, Checkbox
+* Field-level validation
+* Placeholder
+* Helper text
+* Helper details
 *`ns-video`* - include a YouTube video into a lockup.
 *`ns-tab`* - the tab that lives within tabs.
 *`ns-tabs`* - include a few tab to make a tabs.

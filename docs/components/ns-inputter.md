@@ -22,11 +22,17 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? (yes)
-  * What layout classes can be used? (Splash)
-* Does it live inside other components?
-  * ns-inputter components are typically contained within a ns-form
-* Atomic type: (molecule)
+**Does it live in a panel?**  
+Yes
+
+**What layout class can be used?**  
+* Splash
+
+**Does it live inside other components?**  
+* ns-inputter components are typically contained within a ns-form
+
+**Atomic type**  
+Molecule
 
 ## Specification
 

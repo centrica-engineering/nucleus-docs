@@ -43,24 +43,32 @@ The result of which is:
 
 ### Heading
 
-| | Style | Small - 1.125 | Medium - 1.2 | Large - 1.25 |
-| :--- | :--- | :--- | :--- | :--- |
-| 12 | ♚ King | 2.02729em | 2.98598em | 3.8147em |
-| 9 | ♛ Queen | 1.74023em | 2.376em | 2.68555em |
-| 6 | ♝ Bishop | 1.42383em | 1.728em | 1.95312em |
-| 5 | ♞ Knight | 1.375em | 1.65em | 1.71875em |
-| 3 | ♜ Rook | 1.22222em | 1.375em | 1.375em |
-| 2 | ♟ Pawn | 1.125em | 1.2em | 1.25em |
+Small - 1.125  
+Medium - 1.2  
+Large - 1.25
+
+| | Style |
+| :--- | :--- |
+| 12 | ♚ King |
+| 9 | ♛ Queen |
+| 6 | ♝ Bishop |
+| 5 | ♞ Knight |
+| 3 | ♜ Rook |
+| 2 | ♟ Pawn |
 
 ### Paragraph
 
-| | Style | Small - 1.125 | Medium - 1.2 | Large - 1.25 |
-| :--- | :--- | :--- | :--- | :--- |
-| 6 | 🐶 Dog | 1.42383em | 1.728em | 1.95312em |
-| 4 | 🐱 Cat | 1.26562em | 1.44em | 1.5625em |
-| 2 | 🐰 Rabbit | 1.125em | 1.2em | 1.25em |
-| 0 | 🐹 Hamster | 1.0em | 1.0em | 1.0em |
-| -1 | 🐭 Mouse | 0.875em | 0.875em | 0.875em |
+Small - 1.125  
+Medium - 1.2  
+Large - 1.25
+
+| | Style |
+| :--- | :--- |
+| 6 | p-large |
+| 4 | p-feature |
+| 2 | p-normal |
+| 0 | p-small |
+| -1 | p-caption |
 
 ## Semantics vs. styles
 

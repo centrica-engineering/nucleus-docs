@@ -4,9 +4,7 @@
 
 We use illustrations to bring warmth of our brand personality to the website. We use bold, geometric shapes to make our complicated world feel friendly and accessible.
 
-<img src="/assets/illustrations.png" alt="Illustrations" />
-<br>
-<br>
+![Illustrations](https://user-images.githubusercontent.com/43471890/62045274-e8602200-b1fc-11e9-94ec-948ec0ae2a77.png)
 
 Nucleus illustrations
 

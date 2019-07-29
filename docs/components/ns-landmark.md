@@ -25,11 +25,17 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? (no)
-  * What layout classes can be used? (n/a)
-* Does it live inside other components?
-  * no
-* Atomic type: (organism)
+**Does it live in a panel?**  
+No
+
+**What layout class can be used?**  
+N/A
+
+**Does it live inside other components?**  
+No
+
+**Atomic type**  
+Organism
 
 ## Specification
 

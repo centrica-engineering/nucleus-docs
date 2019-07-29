@@ -4,9 +4,7 @@
 
 ## What if we can't find a suitable asset?
 
-<img src="/assets/nucleus-funnel.png" alt="Nucleus funnel" />
-<br>
-<br>
+![Nucleus funnel](https://user-images.githubusercontent.com/43471890/62045060-4dffde80-b1fc-11e9-8991-a9bcebd65cd3.png)
 
 ## What happens with experiments?
 

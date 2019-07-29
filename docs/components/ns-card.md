@@ -22,11 +22,18 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? (yes)
-  * What layout classes can be used? (Splash triple, Splish triple)
-* Does it live inside other components?
-  * no
-* Atomic type: (molecule)
+**Does it live in a panel?**  
+Yes
+
+**What layout classes can be used?**  
+Splash triple  
+Splish triple
+
+**Does it live inside other components?**  
+No
+
+**Atomic type**  
+Molecule
 
 ## Specification
 
@@ -42,7 +49,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | **Description** | Illustration that is show in the section type card |
 | **Type** | String |
 | **Default** | '' |
-| **Options** | See Illustration component documentation |
+| **Options** | See [Illustration component documentation](https://docs.britishgas.design/component/ns-illustration) |
 | **Notes** | Required if the type is section |
 
 | **Name** | image |
@@ -82,7 +89,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | **Type** | HTMLElement |
 | **Default** | '' |
 | **Options** | n/a |
-| **Notes** | This should be an anchor with the ns-cta or just the ns-cta |
+| **Notes** | This should be an anchor with the [ns-cta](https://britishgas.design/components/ns-cta) or just the [ns-cta](https://britishgas.design/components/ns-cta) |
 
 ## Best practises
 

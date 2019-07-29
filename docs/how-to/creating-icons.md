@@ -16,11 +16,9 @@
 
 We use a grid for icon creation to give consistency across our icons. You should also be considering where your paths sit, to be as close to pixel perfect as possible. Here are examples of the grid and basic shapes to show it's usage:
 
-<img src="/assets/grid.jpg" width="25%" align="left" border="4" alt="Grid for creating icons" />
-<img src="/assets/grid-vertical.jpg" width="25%" align="left" border="4" alt="Grid with vertical highlight for creating icons" />
-<img src="/assets/grid-horizontal.jpg" width="25%" align="left" border="4" alt="Grid with horizontal highlight for creating icons" />
-<img src="/assets/grid-circle.jpg" width="25%" align="left" border="4" alt="Grid with circle highlight for creating icons" />
-
+| Grid | Grid - Vertical | Grid - Horizontal | Grid - Circle |
+| :--- | :--- | :--- | :--- |
+| ![Grid for creating icons](https://user-images.githubusercontent.com/43471890/62045505-66bcc400-b1fd-11e9-949e-572e2dc40bf8.jpg) | ![Grid with vertical highlight for creating icons](https://user-images.githubusercontent.com/43471890/62050044-6b3aaa00-b208-11e9-8adb-3df5d4c240dd.jpg) | ![Grid with horizontal highlight for creating icons](https://user-images.githubusercontent.com/43471890/62050140-a5a44700-b208-11e9-8bf8-555ec87242a8.jpg) | ![Grid with circle highlight for creating icons](https://user-images.githubusercontent.com/43471890/62050739-c91bc180-b209-11e9-8561-134bd845fb4b.jpg) |
 
 ## Sizing
 
@@ -36,9 +34,7 @@ Once you’re icons are completed (and signed off!) they need to be made ready f
 2. Select the icon and choose Object > Expand appearance
 3. Then using the top menu select File > Export > Export for Screens and export the icon to .svg file type.
 
-<img src="/assets/icons-illustrator-export.jpg" alt="Exporting icons from illustrator" />
-<br>
-<br>
+![Exporting icons from illustrator](https://user-images.githubusercontent.com/43471890/62050909-2283f080-b20a-11e9-8c05-fa13100c5222.jpg)
 
 ## Importing icons into Nucleus
 

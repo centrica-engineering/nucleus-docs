@@ -41,5 +41,5 @@ You can always reach us on Slack, via `#product-nucleus`. If there's anything on
 ### Events and updates
 
 Having all these resources available anytime is great. But we don't think we can do without face-to-face sessions. Neither do we think that we have all the right answers. That's why we want to meet you in person, as well as connect you to other teams dealing with similar issues.
-- We are hosting sessions and workshops focused on our current tasks as we go along, normally every Tuesday at 1:30pm.
-- Just like other product teams, we're participating in weekly and monthly cross-team ceremonies.
+* We are hosting sessions and workshops focused on our current tasks as we go along, normally every Tuesday at 1:30pm.
+* Just like other product teams, we're participating in weekly and monthly cross-team ceremonies.

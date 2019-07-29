@@ -11,23 +11,26 @@ We allow users to perform certain actions through the use of our call to actions
 To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-cta--direct-link)
 
 ```html
-<ns-cta>
-    Learn more about Hive
-    ...
-</ns-cta>
+<ns-cta>Learn more about Hive</ns-cta>
 ```
 
 ## Component Relationship
 
-* Does it live in a panel? (no)
-* Does it live inside other components?
-  * ns-lockup
-  * ns-landmark
-  * ns-card
-  * Content of ns-extender inside ns-accordion
-* Atomic type: molecule
+**Does it live in a panel?**  
+No
 
-A CTA should always live inside another component.
+**Does it live inside other components?**  
+* ns-lockup
+* ns-landmark
+* ns-card
+* Content of ns-extender inside ns-accordion
+
+**Atomic type**  
+Molecule
+
+```
+Note: A CTA should always live inside another component.
+```
 
 ## Specification
 

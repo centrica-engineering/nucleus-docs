@@ -16,11 +16,15 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? (no)
-* Does it live inside other components?
-  * ns-cta
-  * ns-tab
-* Atomic type: (atom)
+**Does it live in a panel?**  
+No
+
+**Does it live inside other components?**  
+* ns-cta
+* ns-tab
+
+**Atomic type**  
+Atom
 
 ## Specification
 

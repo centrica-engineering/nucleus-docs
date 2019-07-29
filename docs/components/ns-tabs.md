@@ -32,11 +32,17 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? (no)
-  * What layout classes can be used? (n/a)
-* Does it live inside other components?
-  * n/a
-* Atomic type: (organism)
+**Does it live in a panel?**  
+No
+
+**What layout class can be used?**  
+N/A
+
+**Does it live inside other components?**  
+N/A
+
+**Atomic type**  
+Organism
 
 A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a number of `ns-tab` and `ns-panel` pairs exist. Each of these pairs provide a tab to select and a panel to place a layout and related content.
 

@@ -25,10 +25,14 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? (no)
-* Does it live inside other components?
-  * no
-* Atomic type: (organism)
+**Does it live in a panel?**  
+No
+
+**Does it live inside other components?**  
+No
+
+**Atomic type**  
+Organism
 
 ## Specification
 
