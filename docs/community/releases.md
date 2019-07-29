@@ -4,6 +4,35 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
+
+## Version 1.1.4
+
+Release Notes 2019-07-31: Additional components, Improvements and bugfixes
+
+### What’s new around here
+
+Landmark - Hillside variant - description here
+ns-form - Simple form container that can manage the validation of the inputs.
+ns-inputter - now supports “Select” component
+
+### Bug fixes
+
+### Improvements
+
+- Validation improvements ns-inputter now supports minLength, maxLength and isBetweenLength validations.
+- Validation for radio buttons and new select component.
+- Lockup CTA in Storybook now has an optional CTA with options 'none', 'direct' or 'text'
+- Landmark has been renamed “Summit” and the story now has optional CTA
+
+### Feedback 🦕
+
+All our Requests For Change can be found under the Requests milestone in GitHub.
+https://github.com/ConnectedHomes/nucleus/milestone/18
+
+Any questions? Let us know 🙌🏼
+
+-------
+
 ## Version 1.1.3 👩🏼‍💻
 
 *Release Notes 2019-06-24: Improvements and bugfixes*
