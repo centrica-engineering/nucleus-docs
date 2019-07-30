@@ -1,3 +1,7 @@
+---
+description: [include description]
+---
+
 # Becoming Nucleus
 
 > It's not just a question of assets becoming part of the latest, stable Nucleus release, but also of being adopted into customer-facing solutions
