@@ -134,6 +134,7 @@ The following request for changes have been started
 * #582 RFC - Selection cards :female-construction-worker: https://github.com/ConnectedHomes/nucleus/issues/582.
 * #579 RFC - Form fields :pencil2: https://github.com/ConnectedHomes/nucleus/issues/579.
 
-All our RFC’s can be found under the Requests milestone in our Github https://github.com/ConnectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rfc
+All our Requests For Change can be found under the Requests milestone in GitHub.
+https://github.com/ConnectedHomes/nucleus/milestone/18
 
 Any questions? Let us know 🙌🏼
