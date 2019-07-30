@@ -7,17 +7,55 @@ description: List of Nucleus events including Nucleus Sessions.
 We're hosting regular events to keep the discussions going.
 
 Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel #product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
-## 2019-07-30 / [Upcoming]
-[write some stuff]
+## 2019-07-30 / Drop in session
+
+### Topics raised
+
+* OAM usability testing on Monday.
+* Feedback user testing by adding relevant pages to the RFC.
+* Testing in ember twiddle.
+* Setup Direct debit journey - twiddle.
+* Interested in developing using Nucleus.
+* Enhanced selection RFC.
+* Release soon.
+* Landmark variants.
+* Select drop down.
+* New Starters on boarding resources.
+* Rewards team touchpoint for `article` component.
+* Fredy suggested a Technical session.
 
 ## 2019-07-23 / Drop in session
-[grab some stuff from: https://centricadigital.slack.com/archives/CCQDEPKBJ/p1563878629007600]
+
+### Planned topics
+
+* We are planning our roadmap / backlog and we are finding it difficult to plan what will and won’t be Nucleus and where we prioritise.
+* We have content heavy pages that we need to redesign using Nucleus components.
+* We’ve designed a new journey but unsure if a component can be used in this way.
+* Filling out an RFC is really difficult, is there a way to make it easier?
+* Where do we go for guidance and the best way to use Storybook?
+* What RFCs are currently in progress and who is leading on them?
 
 ## 2019-07-16 / Drop in session
-[grab some stuff from: https://centricadigital.slack.com/archives/CCQDEPKBJ/p1563272446138100]
+
+### Planned topics
+
+* We are planning our roadmap / backlog and we are finding it difficult to plan what will and won’t be Nucleus and where we prioritise.
+* We have content heavy pages that we need to redesign using Nucleus components.
+* We’re writing content for Nucleus components but we’re unsure how much copy to include.
+* We’ve designed a new journey but unsure if a component can be used in this way.
+* What is an RFC (request for change) and how do I create one?
+* Filling out an RFC is really difficult, is there a way to make it easier?
+* We’re unsure where to go for guidance and the best way to use Storybook.
 
 ## 2019-07-09 / Update party what's going on?
-[grab some stuff from: https://centricadigital.slack.com/archives/CCQDEPKBJ/p1562670160114100]
+
+### Planned topics
+
+* What the team is currently working on.
+* What's about to become available.
+* Current work supporting product teams.
+* RFC (request for change) in progress.
+
 ## 2019-07-02 / Nucleus Common Myths
 * Dispel the common myths we’ve been hearing.
 * Answer any Nucleus related questions you may have!.
