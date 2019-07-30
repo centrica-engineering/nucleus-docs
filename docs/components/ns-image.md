@@ -90,6 +90,6 @@ Atom
 
 ## Related links
 
-* How to optimise images [guide](https://centrica.frontify.com/d/nZrm1Ao1wccK/foundations#/photography/how-to-optimise-your-images)
+* How to optimise images [guide](https://docs.britishgas.design/how-to/optimise-images)
 * Brand image [library](https://centrica.frontify.com/d/pDUbkrcf54Nh/our-assets)
 * Examples of where it is used

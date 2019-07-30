@@ -15,7 +15,7 @@ Taking this approach and applying it to our Structure, Typography, Spacing and e
 ### Scale
 **1.5**
 
-We have six [viewports](https://centrica.frontify.com/d/nZrm1Ao1wccK/foundations#/structure/viewports), the smallest width being 320px. This is our initial value that all the other viewports are based from.
+We have six [viewports](https://docs.britishgas.design/foundation/viewports), the smallest width being 320px. This is our initial value that all the other viewports are based from.
 
 **320px is 1em**
 
@@ -27,7 +27,7 @@ Then we scale from here in increments of 1.5x as follows:
 **1080** * 1.5 = **1620**  
 **1620** * 1.5 = **2430**  
 
-Read more about our [Viewports](https://centrica.frontify.com/d/nZrm1Ao1wccK/foundations#/structure/viewports) and see our table of [Nucleus viewport sizes](https://centrica.frontify.com/d/nZrm1Ao1wccK/foundations#/structure/viewports).
+Read more about our [Viewports](https://docs.britishgas.design/foundation/viewports) and see our table of [Nucleus viewport sizes](https://docs.britishgas.design/foundation/viewports).
 
 ### Typography
 
@@ -43,4 +43,4 @@ These are applied to our Viewport sizes in the following way:
 🏑 Hockey & 🏀 Basketball uses `Minor Third`  
 🎾 Tennis & 🔵 Squash uses `Major Second`
 
-Read more about our [Typography](https://centrica.frontify.com/d/nZrm1Ao1wccK/foundations#/typography/our-typeface-1549905015) and how Modular Scale applies.
+Read more about our [Typography](https://docs.britishgas.design/foundation/typography) and how Modular Scale applies.

@@ -1,7 +1,7 @@
 # Standards
 
 
-Accessibility needs to be build in. In addition to [accessibility principles](https://centrica.frontify.com/r/lUEdXVvtfufWGAcMq883LHr3USn390x6etw4LsVD3k4,) and starting points to work around [different types of barriers](https://centrica.frontify.com/r/BM51HZ6bchTNLIpsCA6o1TzzBnXkkBc0kC19eMPOT64,), we've made sure [Nucleus components](https://centrica.frontify.com/r/pEPpUugQu0a5Hn0D3K7ytMHXb1JUxWhfHBWe4EOZGxo,) integrate  [WCAG 2.1](https://www.w3.org/TR/WCAG21) Level AA practices.
+Accessibility needs to be build in. In addition to [accessibility principles](https://docs.britishgas.design/principles/accessibility) and starting points to work around [different types of barriers](https://docs.britishgas.design/how-to/barriers), we've made sure [Nucleus components](https://docs.britishgas.design/components) integrate  [WCAG 2.1](https://www.w3.org/TR/WCAG21) Level AA practices.
 
 Within this section, we've covered accessibility standards on elements and components that are currently not covered within Nucleus, but which have a significant impact on accessibility.
 

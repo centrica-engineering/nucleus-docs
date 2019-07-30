@@ -32,4 +32,4 @@ We trust your team will be able to make an informed decision on when to use each
 
 ## Be a champion
 
-We think Nucleus is one of the many initiatives that will help us create ever better outcomes. But it will all amount to nothing without you. Adopting Nucleus might require some new habits, or letting go of old ones. We'll be [doing our best](https://centrica.frontify.com/r/fJzwMc-z1kyAy-jwTKeIAj4c00hwAnTW19gZDuSC0jQ,) to make sure it's an easy transition to make.
+We think Nucleus is one of the many initiatives that will help us create ever better outcomes. But it will all amount to nothing without you. Adopting Nucleus might require some new habits, or letting go of old ones. We'll be doing our best to make sure it's an easy transition to make.

@@ -10,7 +10,7 @@
 
 Experimentation is run by our whole Nucleus community, not just the Nucleus team. Some contributions will start as open-ended questions. Some in testing, seeing how current assets perform. Some in talking to our current and potential customers, or internal stakeholders working daily with the same audiences.
 
-The most advanced experiments made by teams may be Nucleus aligned in the sense that they've been validated against our shared [principles](https://centrica.frontify.com/r/H8d45JWTxNGZdp-L1DGMpJa5LWf4NNGRpNPa7DEzmvM,) and make use of the latest styles. However, these will still need to be reviewed, adjusted if needed, and included in an official Nucleus release to be available for all teams (and make use of later updates).
+The most advanced experiments made by teams may be Nucleus aligned in the sense that they've been validated against our shared principles and make use of the latest styles. However, these will still need to be reviewed, adjusted if needed, and included in an official Nucleus release to be available for all teams (and make use of later updates).
 
 * Share ideas and explorations
 * Discuss pros and cons
@@ -24,9 +24,9 @@ The most advanced experiments made by teams may be Nucleus aligned in the sense 
 
 We're building a living system. This means we're constantly looking for improvements to implement and scale to all teams through Nucleus.
 
-* How might we best apply our [principles](https://centrica.frontify.com/r/_QvqaUItgk_o3lMszTVrg9wsLBvmqP741OEGFwMVmTg,)?
-* Are we in line with our foundational [guidelines](https://centrica.frontify.com/r/9oId0Uau-QEr414m5h45_GU6MzIuoBXGQdygVmsYCCo,)?
-* What kind of shared [assets](https://centrica.frontify.com/r/_QvqaUItgk_o3lMszTVrg9wsLBvmqP741OEGFwMVmTg,) might / should we have?
+* How might we best apply our principles?
+* Are we in line with our foundational guidelines?
+* What kind of shared assets might / should we have?
 
 We're also helping to make our internal processes more efficient.
 

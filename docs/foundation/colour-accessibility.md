@@ -9,4 +9,4 @@ Our components follow the two main rules of accessibility as it relates to colou
 
 ![Background colour and text combinations that meet our accessibility criteria](https://user-images.githubusercontent.com/43471890/62045112-725bbb00-b1fc-11e9-80ad-a9230a6eb6c9.png)
 
-If you couldn't find the answer you were looking for here, maybe one of the [online tools](https://centrica.frontify.com/r/8KfhZYfGO9sUTTUBfKdaXJun-aWeTWGL0pq1tYMeeTo,) we've listed to help you out will.
+If you couldn't find the answer you were looking for here, maybe one of the [online tools](https://docs.britishgas.design/foundation/tools) we've listed to help you out will.

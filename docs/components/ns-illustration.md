@@ -71,7 +71,7 @@ Atom
 
 ## Related links
 
-* Creating illustrations [guide](https://centrica.frontify.com/document/158#/illustrations/creating-illustrations)
+* Creating illustrations [guide](https://docs.britishgas.design/how-to/creating-illustrations)
 * Exporting illustrations SVG in Sketch [https://github.com/ConnectedHomes/nucleus/issues/670](https://github.com/ConnectedHomes/nucleus/issues/670)
 
   -Creating an engaging experience through illustrations and the difference between icons and illustrations in [Brand Guidlines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/illustrations/creating-an-engaging-experience-through-illustration)
