@@ -53,7 +53,7 @@ Molecule
 | **Description** | Illustration that is show in the section type card |
 | **Type** | String |
 | **Default** | '' |
-| **Options** | See [Illustration component documentation](https://docs.britishgas.design/component/ns-illustration) |
+| **Options** | See [Illustration component in Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-illustrations--appliance) |
 | **Notes** | Required if the type is section |
 
 | **Name** | image |
