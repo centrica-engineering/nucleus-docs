@@ -93,7 +93,7 @@ Molecule
 | **Type** | HTMLElement |
 | **Default** | '' |
 | **Options** | n/a |
-| **Notes** | This should be an anchor with the [ns-cta](https://britishgas.design/components/ns-cta) or just the [ns-cta](https://britishgas.design/components/ns-cta) |
+| **Notes** | This should be an anchor with the [ns-cta](https://docs.britishgas.design/components/ns-cta) or just the [ns-cta](https://docs.britishgas.design/components/ns-cta) |
 
 ## Best practises
 
