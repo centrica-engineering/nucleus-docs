@@ -12,7 +12,7 @@ While we're working on rooting down processes and related tools, the easiest way
 
 ## Get the Sketch Library
 
-You can get our Nucleus Sketch Library via Github. The step-by-step instructions can be found [here](https://centrica.frontify.com/d/d5BuWPqlVMmG/design-tools#/design-tools/our-sketch-library/setting-up-the-sketch-library).
+You can get our Nucleus Sketch Library via Github. The step-by-step instructions can be found [here](https://centrica.frontify.com/d/d5BuWPqlVMmG/design-tools#/design-tools/our-sketch-library).
 
 **Please note**: As we're transitioning to the latest evolution of our visual identity, we'll have two UI libraries living side-by-side for some time:
 
