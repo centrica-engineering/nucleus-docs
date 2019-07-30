@@ -16,11 +16,11 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ```html
 <ns-card type="section" decoration="bulb">
-    <h2 slot="heading">Get energy with us</h2>
-    <p slot="paragraph">We've got a tariff to suit every home and family.</p>
-    <a slot="cta" href="#!">
-        <ns-cta type="direct">Get a quote</ns-cta>
-    </a>
+  <h2 slot="heading">Get energy with us</h2>
+  <p slot="paragraph">We've got a tariff to suit every home and family.</p>
+  <a slot="cta" href="#!">
+    <ns-cta type="direct">Get a quote</ns-cta>
+  </a>
 </ns-card>
 ```
 

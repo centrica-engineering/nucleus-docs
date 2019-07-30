@@ -16,14 +16,14 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ```html
 <ns-caveat>
-    <h2 slot="heading">Legal information</h2>
-    <div slot="caveat">
-        <ol>
-            <li>
-            ...
-            </li>
-        </ol>
-    </div>
+  <h2 slot="heading">Legal information</h2>
+  <div slot="caveat">
+    <ol>
+      <li>
+        ...
+      </li>
+    </ol>
+  </div>
 </ns-caveat>
 ```
 

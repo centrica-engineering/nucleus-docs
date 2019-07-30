@@ -16,20 +16,20 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ```html
 <ns-tabs>
-    <ns-tab slot="tab">Electricity</ns-tab>
-    <ns-panel slot="panel">
-
-        ...
-
-    </ns-panel>
-    <ns-tab slot="tab">Home Services</ns-tab>
-    <ns-panel slot="panel">
-
-        ...
-
-    </ns-panel>
+  <ns-tab slot="tab">Electricity</ns-tab>
+  <ns-panel slot="panel">
 
     ...
+
+  </ns-panel>
+  <ns-tab slot="tab">Home Services</ns-tab>
+  <ns-panel slot="panel">
+
+    ...
+
+  </ns-panel>
+
+  ...
 
 </ns-tabs>
 ```

@@ -16,15 +16,15 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ```html
 <ns-lockup type="lockbox">
-    <h2 slot="heading">
-        <span class="h5">Our Home Services.</span>
-        <span class="h1 enlighten"><b>Your home should just work,</b> we get that</span>
-    </h2>
-    <p slot="paragraph">We bring you the latest offers on boilers, repairs and more. And we're always here when you need us.</p>
-    <a slot="cta" href="#!">
-        <ns-cta type="direct">View HomeCare</ns-cta>
-    </a>
-    <ns-image slot="image" ratio="4x3" src="/aem6/content/dam/britishgas/images/ns/image4_3.png"></ns-image>
+  <h2 slot="heading">
+    <span class="h5">Our Home Services.</span>
+    <span class="h1 enlighten"><b>Your home should just work,</b> we get that</span>
+  </h2>
+  <p slot="paragraph">We bring you the latest offers on boilers, repairs and more. And we're always here when you need us.</p>
+  <a slot="cta" href="#!">
+    <ns-cta type="direct">View HomeCare</ns-cta>
+  </a>
+  <ns-image slot="image" ratio="4x3" src="/aem6/content/dam/britishgas/images/ns/image4_3.png"></ns-image>
 </ns-lockup>
 ```
 

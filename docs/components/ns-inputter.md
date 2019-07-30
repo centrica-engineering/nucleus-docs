@@ -19,8 +19,8 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ```html
 <ns-inputter validation="['isRequired']" helper="So we can send you love letters">
-    <label slot="label">First name</label>
-    <input type="text">
+  <label slot="label">First name</label>
+  <input type="text">
 </ns-inputter>
 ```
 

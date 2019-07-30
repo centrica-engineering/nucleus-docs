@@ -16,7 +16,7 @@ To see examples visit [Storybook](https://library.britishgas.design).
 
 ```html
 <ns-panel>
-    ...
+  ...
 </ns-panel>
 ```
 
