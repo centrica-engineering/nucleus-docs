@@ -1,5 +1,5 @@
 ---
-description: [include description].
+description: Colour accessibility.
 ---
 
 # Colour accessibility
