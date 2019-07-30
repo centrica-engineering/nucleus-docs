@@ -11,9 +11,9 @@ Release Notes 2019-07-31: Additional components, Improvements and bugfixes
 
 ### What’s new around here
 
-Landmark - Hillside variant - description here
-ns-form - Simple form container that can manage the validation of the inputs.
-ns-inputter - now supports “Select” component
+- Landmark - Hillside variant - description here
+- ns-form - Simple form container that can manage the validation of the inputs.
+- ns-inputter - now supports “Select” component
 
 ### Bug fixes
 
