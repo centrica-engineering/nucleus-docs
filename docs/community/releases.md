@@ -22,7 +22,7 @@ Release Notes 2019-07-31: Additional components, Improvements and bugfixes
 - Validation improvements ns-inputter now supports minLength, maxLength and isBetweenLength validations.
 - Validation for radio buttons and new select component.
 - Lockup CTA in Storybook now has an optional CTA with options 'none', 'direct' or 'text'
-- Landmark has been renamed “Summit” and the story now has optional CTA
+- Landmark has been renamed “Summit” and the story now has optional CTA with options 'none', 'direct' or 'text'
 
 ### Feedback 🦕
 
