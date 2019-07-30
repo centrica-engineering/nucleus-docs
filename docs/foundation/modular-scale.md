@@ -25,11 +25,11 @@ We have six [viewports](https://docs.britishgas.design/foundation/viewports), th
 
 Then we scale from here in increments of 1.5x as follows:
 
-**320** * 1.5 = **480**  
-**480** * 1.5 = **720**  
-**720** * 1.5 = **1080**  
-**1080** * 1.5 = **1620**  
-**1620** * 1.5 = **2430**  
+**320** x 1.5 = **480**  
+**480** x 1.5 = **720**  
+**720** x 1.5 = **1080**  
+**1080** x 1.5 = **1620**  
+**1620** x 1.5 = **2430**  
 
 Read more about our [Viewports](https://docs.britishgas.design/foundation/viewports) and see our table of [Nucleus viewport sizes](https://docs.britishgas.design/foundation/viewports).
 
@@ -38,8 +38,8 @@ Read more about our [Viewports](https://docs.britishgas.design/foundation/viewpo
 For Typography, we have three multipliers to generate our scales.
 
 **Major Second** = **1.125**  
-**Minor Third**  = **1.2**  
-**Major Third**  = **1.25**  
+**Minor Third** = **1.2**  
+**Major Third** = **1.25**  
 
 These are applied to our Viewport sizes in the following way:
 
