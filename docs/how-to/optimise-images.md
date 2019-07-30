@@ -1,11 +1,15 @@
+---
+description: How to optimise your images for production.
+---
+
 # How to optimise your images
 
 ### Links
 
-* [ImageOptim](https://imageoptim.com/mac).
-* [Squoosh](https://squoosh.app/).
-* [Kraken](https://kraken.io/web-interface).
-* [TinyPNG](https://tinypng.com/).
+* [ImageOptim](https://imageoptim.com/mac)
+* [Squoosh](https://squoosh.app/)
+* [Kraken](https://kraken.io/web-interface)
+* [TinyPNG](https://tinypng.com/)
 
 ### Why optimise?
 

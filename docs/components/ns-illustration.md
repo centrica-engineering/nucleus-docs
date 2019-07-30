@@ -1,3 +1,7 @@
+---
+description: Illustration component.
+---
+
 # ns-illustration
 
 ## Introduction

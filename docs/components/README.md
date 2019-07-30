@@ -1,1 +1,5 @@
+---
+description: Components documentation.
+---
+
 # Components

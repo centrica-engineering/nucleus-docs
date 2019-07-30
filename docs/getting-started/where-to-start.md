@@ -1,3 +1,7 @@
+---
+description: Getting involved with Nucleus.
+---
+
 # Where to start?
 
 > To get you up and running with Nucleus, we've prepared the following list.

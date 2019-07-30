@@ -1,6 +1,10 @@
+---
+description: Accessibility principles for Nucleus.
+---
+
 # Accessibility principles
 
-> At minimum, features must conform to Web Content Accessibility Guidelines 2.1 at Level AA
+> At minimum, features must conform to Web Content Accessibility Guidelines 2.1 at Level AA.
 
 Accessibility ensures that all persons can access and benefit from a website, system or application, regardless of their gender, age, culture, or ability. Considerations must also be made around different screen sizes, browser types and settings, or those who do not have plug-ins such as Flash.
 

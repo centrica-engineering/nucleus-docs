@@ -1,3 +1,7 @@
+---
+description: Community documentation.
+---
+
 # Community
 
 > Our design system is a living organism, one that reflects and evolves with our collective learning.

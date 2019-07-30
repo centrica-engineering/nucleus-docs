@@ -1,8 +1,12 @@
+---
+description: Tab component.
+---
+
 # ns-tab
 
 ## Introduction
 
-> The singular tab that dictates what the area is about
+> The singular tab that dictates what the area is about.
 
 The tab is the button that can be clicked to change the content in the `ns-tabs`. It shows the user what content there is with a heading and an optional icon.
 

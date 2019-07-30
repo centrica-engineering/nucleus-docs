@@ -1,3 +1,7 @@
+---
+description: Lockup component.
+---
+
 # ns-lockup
 
 ## Introduction

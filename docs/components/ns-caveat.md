@@ -1,3 +1,7 @@
+---
+description: Caveat component.
+---
+
 # ns-caveat
 
 ## Introduction

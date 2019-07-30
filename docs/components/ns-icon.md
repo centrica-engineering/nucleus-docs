@@ -1,3 +1,7 @@
+---
+description: Icon component.
+---
+
 # ns-icon
 
 ## Introduction

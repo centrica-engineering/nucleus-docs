@@ -1,3 +1,7 @@
+---
+description: How to contribute to Nucleus.
+---
+
 # Contributing
 
 ## Who can contribute?

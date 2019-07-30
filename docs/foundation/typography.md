@@ -1,3 +1,7 @@
+---
+description: Typeface, sizing and usage of BG Flame font.
+---
+
 # Typography
 
 ## Typeface

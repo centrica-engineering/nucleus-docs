@@ -1,3 +1,7 @@
+---
+description: Landmark component.
+---
+
 # ns-landmark
 
 ## Introduction

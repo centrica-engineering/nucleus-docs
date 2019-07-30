@@ -1,3 +1,7 @@
+---
+description: Panel component.
+---
+
 # ns-panel
 
 ## Introduction

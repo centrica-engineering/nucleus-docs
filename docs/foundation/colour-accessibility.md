@@ -1,3 +1,7 @@
+---
+description: [include description].
+---
+
 # Colour accessibility
 
 Good colour contrast assists people with sight loss, including colour blindness, as well as people with cognitive disabilities when viewing content.

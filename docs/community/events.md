@@ -1,5 +1,5 @@
 ---
-description: List of our Nucleus Sessions
+description: List of Nucleus events including Nucleus Sessions.
 ---
 
 # Events

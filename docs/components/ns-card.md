@@ -1,3 +1,7 @@
+---
+description: Card component.
+---
+
 # ns-card
 
 ## Introduction

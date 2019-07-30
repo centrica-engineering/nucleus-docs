@@ -1,5 +1,8 @@
-# Standards
+---
+description: Accessibility standards.
+---
 
+# Standards
 
 Accessibility needs to be build in. In addition to [accessibility principles](https://docs.britishgas.design/principles/accessibility) and starting points to work around [different types of barriers](https://docs.britishgas.design/how-to/barriers), we've made sure [Nucleus components](https://docs.britishgas.design/components) integrate  [WCAG 2.1](https://www.w3.org/TR/WCAG21) Level AA practices.
 

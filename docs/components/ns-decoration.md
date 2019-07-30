@@ -1,3 +1,7 @@
+---
+description: Decoration component.
+---
+
 # ns-decoration
 
 ## Introduction

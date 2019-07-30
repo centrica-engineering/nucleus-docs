@@ -1,3 +1,7 @@
+---
+description: Nucleus colour palette.
+---
+
 # Colours
 
 ## Introduction

@@ -1,8 +1,12 @@
+---
+description: Tabs component.
+---
+
 # ns-tabs
 
 ## Introduction
 
-> Tabs provide organisation of content separated within the same context
+> Tabs provide organisation of content separated within the same context.
 
 Related content can be separated into clearly labelled sections.
 

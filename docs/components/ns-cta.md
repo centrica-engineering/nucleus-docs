@@ -1,3 +1,7 @@
+---
+description: CTA component.
+---
+
 # ns-cta
 
 ## Introduction

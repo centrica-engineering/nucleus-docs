@@ -1,3 +1,7 @@
+---
+description: Inputter component.
+---
+
 # ns-inputter
 
 ## Introduction

@@ -1,3 +1,7 @@
+---
+description: Nucleus gradient palette.
+---
+
 # Gradients
 
 ## Introduction

@@ -1,3 +1,7 @@
+---
+description: Introduction to modular scale and how it is implemented in Nucleus.
+---
+
 # Modular scale
 
 > The implementation of modular scale simplifies and beautifies our designs.

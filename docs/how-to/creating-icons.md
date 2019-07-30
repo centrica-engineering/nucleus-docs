@@ -1,3 +1,7 @@
+---
+description: Creating icons guidelines.
+---
+
 # Creating icons
 
 ## Principles

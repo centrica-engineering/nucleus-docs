@@ -1,3 +1,7 @@
+---
+description: Nucleus illustration suite.
+---
+
 # Understanding our illustrations
 
 ## Why we use illustrations

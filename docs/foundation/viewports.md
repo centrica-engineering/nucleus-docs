@@ -1,3 +1,7 @@
+---
+description: Breakpoints of viewports.
+---
+
 # Viewports
 
 It's important to understand the foundational responsive behaviour of the layouts required, for all device types and sizes.

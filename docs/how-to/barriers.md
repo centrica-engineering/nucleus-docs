@@ -1,3 +1,7 @@
+---
+description: Accessibility barriers.
+---
+
 # Types of barriers
 
 > Inclusivity and accessibility are fundamental. No one should be left out. Ever.

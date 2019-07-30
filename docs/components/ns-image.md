@@ -1,3 +1,7 @@
+---
+description: Image component.
+---
+
 # ns-image
 
 ## Introduction

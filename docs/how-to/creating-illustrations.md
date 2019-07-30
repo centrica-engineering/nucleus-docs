@@ -1,3 +1,7 @@
+---
+description: Creating illustrations guidelines.
+---
+
 # Creating illustrations
 
 ## Principles

@@ -1,5 +1,5 @@
 ---
-description: [include description]
+description: Nucleus in a nutshell.
 ---
 
 # Becoming Nucleus

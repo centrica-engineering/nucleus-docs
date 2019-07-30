@@ -1,3 +1,7 @@
+---
+description: Video component.
+---
+
 # ns-video
 
 ## Introduction

@@ -1,6 +1,10 @@
+---
+description: Experience principles for Nucleus.
+---
+
 # Experience principles
 
-> Our experience principles were born iteratively, working closely with our DesignOps team
+> Our experience principles were born iteratively, working closely with our DesignOps team.
 
 Our five experience principles describe the core values that underpin our Nucleus Design System. They are the foundations that we measure ourselves against and which we hold ourselves accountable to.
 

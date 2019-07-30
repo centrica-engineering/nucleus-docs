@@ -1,6 +1,10 @@
+---
+description: Community best practices.
+---
+
 # Best practices
 
-> Our community guidelines were born in a participatory workshop
+> Our community guidelines were born in a participatory workshop.
 
 ## Sharing ownership
 
