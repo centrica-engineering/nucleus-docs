@@ -1,3 +1,7 @@
+---
+description: Card component.
+---
+
 # ns-card
 
 ## Introduction
@@ -8,9 +12,9 @@ Cards give a story about why the user should go to the next action. This can be 
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-card--section)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-card--section).
 
-```markup
+```html
 <ns-card type="section" decoration="bulb">
   <h2 slot="heading">Get energy with us</h2>
   <p slot="paragraph">We've got a tariff to suit every home and family.</p>
@@ -22,11 +26,19 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? \(yes\)
-  * What layout classes can be used? \(Splash triple, Splish triple\)
-* Does it live inside other components?
-  * no
-* Atomic type: \(molecule\)
+**Does it live in a panel?**  
+Yes
+
+**What layout classes can be used?**  
+Splash triple  
+Splish triple
+
+**Does it live inside other components?**  
+* ns-landmark
+* ns-lockup
+
+**Atomic type**  
+Molecule
 
 ## Specification
 
@@ -42,7 +54,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | **Description** | Illustration that is show in the section type card |
 | **Type** | String |
 | **Default** | '' |
-| **Options** | See Illustration component documentation |
+| **Options** | See [Illustration component in Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-illustrations--appliance) |
 | **Notes** | Required if the type is section |
 
 | **Name** | image |
@@ -82,11 +94,11 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | **Type** | HTMLElement |
 | **Default** | '' |
 | **Options** | n/a |
-| **Notes** | This should be an anchor with the ns-cta or just the ns-cta |
+| **Notes** | This should be an anchor with the [ns-cta](https://docs.britishgas.design/components/ns-cta) or just the [ns-cta](https://docs.britishgas.design/components/ns-cta) |
 
 ## Best practises
 
-| ✅ Do's | 💔 Don'ts |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Always use them in the triple layout | Use the text CTA in the section card |
 | Use to direct customers to the actions | Use the key CTA in any of the cards |
@@ -94,7 +106,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 | Make your CTA copy unique, stating the action | Have two or more cta's for a card |
 | Use section cards to navigate users to primary actions | Repeat the CTA copy in each card |
 | Consider using decoration in the panel to add emphasis on the cards | Use inline links in the paragraph |
-|  | Use the section card without a decoration |
+| | Use the section card without a decoration |
 
 ### Considerations of best practises
 
@@ -108,12 +120,11 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-card]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-card])
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-card]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
 
 ## Related links
 
-* [ns-card section panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--section-cards)
-* [ns-card support panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--support-image-cards)
-
+* [ns-card section panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--section-cards).
+* [ns-card support panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--support-image-cards).

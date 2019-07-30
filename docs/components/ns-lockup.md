@@ -1,3 +1,7 @@
+---
+description: Lockup component.
+---
+
 # ns-lockup
 
 ## Introduction
@@ -8,9 +12,9 @@ Lockups can be used to display key information about a product, a service or tel
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-decoration-panel)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-decoration-panel).
 
-```markup
+```html
 <ns-lockup type="lockbox">
   <h2 slot="heading">
     <span class="h5">Our Home Services.</span>
@@ -26,11 +30,17 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* Does it live in a panel? \(yes\)
-  * What layout classes can be used? \(n/a\)
-* Does it live inside other components?
-  * no
-* Atomic type: \(organism\)
+**Does it live in a panel?**  
+Yes
+
+**What layout class can be used?**  
+N/A
+
+**Does it live inside other components?**  
+No
+
+**Atomic type**  
+Organism
 
 ## Specification
 
@@ -94,19 +104,18 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Best practises
 
-| ✅ Do's | 💔 Don'ts |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Embolden the key message in the heading | Include more than one CTA |
 | Keep the heading length to 4-12 words | Exceed more than two paragraphs of 3 lines each |
-| Keep subheading length between 1-5 words |  |
-| Optimise the lockup image \(see image optimise LINK\) | Use images with a white background |
-|  |  |
+| Keep subheading length between 1-5 words | |
+| Optimise the lockup image (see image optimise LINK) | Use images with a white background |
 
 ### Considerations of best practices
 
-* Alternate the position of image/video when using more than one lockup 
-* Paragraph works best as a single, short paragraph
-* Use real-life photographs 
+* Alternate the position of image/video when using more than one lockup.
+* Paragraph works best as a single, short paragraph.
+* Use real-life photographs.
 
 ## Content guidance
 
@@ -125,13 +134,6 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20ns-lockup).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+ns-lockup)
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+ns-lockup).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
-## Related links
-
-* Blog posts
-* MDN articles
-* Examples of where it is used
-

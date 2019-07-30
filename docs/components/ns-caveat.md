@@ -1,3 +1,7 @@
+---
+description: Caveat component.
+---
+
 # ns-caveat
 
 ## Introduction
@@ -8,15 +12,15 @@ Caveats link to content in the page, providing more information about legality a
 
 ## Usage
 
-To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-caveat--caveat)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-caveat--caveat)
 
-```markup
+```html
 <ns-caveat>
   <h2 slot="heading">Legal information</h2>
   <div slot="caveat">
     <ol>
       <li>
-          ...
+        ...
       </li>
     </ol>
   </div>
@@ -25,10 +29,14 @@ To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?p
 
 ## Component Relationship
 
-* Does it live in a panel? \(no\)
-* Does it live inside other components?
-  * no
-* Atomic type: \(organism\)
+**Does it live in a panel?**  
+No
+
+**Does it live inside other components?**  
+No
+
+**Atomic type**  
+Organism
 
 ## Specification
 
@@ -57,29 +65,28 @@ To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?p
 
 ## Best practises
 
-| ✅ Do's | 💔 Don'ts |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Try to make the caveats positive | Use the caveat to hide information |
 | Be transparent, if the legal details are short, add it to the content | Add images, iconography, etc. |
 | Always have the legal caveats at the bottom of the page, before the footer | Try to change the font size of the caveats |
-| Use an ordered list for the caveats |  |
-| Only use text in the caveats |  |
-| Embolden text that is important |  |
+| Use an ordered list for the caveats | |
+| Only use text in the caveats | |
+| Embolden text that is important | |
 
 ### Considerations of best practises
 
-* We highly recommend that there are no more than three caveats in a single piece of communication 
+* We highly recommend that there are no more than three caveats in a single piece of communication.
 * Link to additional information, if needed such as terms, but should always be accompanied with a related description.
 
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-caveat]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-caveat])
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-caveat]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
 
 ## Related links
 
-* link caveats \[ADD LINK\]
-* [Homepage example](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-homepage--2019-01)
-
+* [ns-caveat component in Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-caveat--caveat).
+* [Homepage example in Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-homepage--2019-01).

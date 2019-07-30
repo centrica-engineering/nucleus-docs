@@ -1,16 +1,20 @@
+---
+description: Panel component.
+---
+
 # ns-panel
 
 ## Introduction
 
-Think of `ns-panel` as an empty container for each section of a page. Each `ns-panel` provides an area to place a layout and add an optional decoration.
+`ns-panel` is an empty container that holds each section of a page. Each `ns-panel` provides an area to place a layout and add an optional decoration.
 
-Decorating a panel with a gradient background provides separation from the other sections of the page and introduces brand colour and style. Including the circle provides subtle emphasis.
+Adding a decoration to an `ns-panel` using a gradient background provides visual separation from the other sections of the page and introduces brand [colour](https://docs.britishgas.design/foundation/colours) and style. Using the circle decoration provides subtle emphasis to an `ns-panel`.
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-decoration-panel&knob-Decoration=invert-concave-cyan)
+To see examples visit [Storybook](https://library.britishgas.design).
 
-```markup
+```html
 <ns-panel>
   ...
 </ns-panel>
@@ -18,17 +22,17 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Component Relationship
 
-* `ns-panel` is always a child of the `<main>` element  
+* `ns-panel` is **always** a child of the `<main>` element.
 
 ## Specification
 
 | **Name** | Decoration |
 | :--- | :--- |
-| **Description** | The coloured gradients including circle, bridge, etc used to decorate the page |
+| **Description** | The [gradient](https://docs.britishgas.design/foundation/gradients) used to decorate the page |
 | **Type** | string |
 | **Default** | n/a |
-| **Options** | `invert-concave-colour`, `invert-bridge-colour`, `circle-colour-left`,`circle-colour-right` |
-| **Note** | The [gradient palette](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/foundations-colours--gradient-pallette) available: `white`, `cyan`, `yellow`, `green-light`, `grey-light`, `blue` |
+| **Options** | `circle-yellow-left`, `circle-yellow-right`, `circle-green-left`, `circle-green-right`, `invert-concave-cyan`, `invert-concave-grey-light`, `invert-concave-green-light`, `invert-concave-yellow`, `invert-concave-blue`, `invert-bridge-cyan`, `invert-bridge-grey-light`, `invert-bridge-green-light`, `invert-bridge-yellow`, `invert-bridge-blue` |
+| **Note** | The [gradient](https://docs.britishgas.design/foundation/gradients) palette |
 
 | **Name** | Anonymous slot |
 | :--- | :--- |
@@ -39,28 +43,21 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ## Best practises
 
-| ✅ Do's | 💔 Don'ts |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Alternate with and without the use of decoration | Don't add a decoration to every `ns-panel` |
-| Use appropriate colour for purpose of page in decorations | Nest a panel in a panel |
-| Include more than one layout in a `ns-panel` |  |
+| Use decoration to visually separate content | Add decoration to an `ns-panel` where the previous `ns-panel` has a decoration |
+| Use appropriate colour for the purpose of page in decorations | Nest a panel in a panel |
+| Include more than one layout in a `ns-panel` | |
 
 ### Considerations of best practises
 
-* Treat each `ns-panel` as a section of the page
-* Include no more than two `ns-lockups` in an `ns-panel` with a decoration
-* Examples of a layout would be: `.splash` or an `ns-lockup`
+* Treat each `ns-panel` as a section of the page.
+* Include no more than two `ns-lockups` in one `ns-panel` with a decoration.
+* Layout is either a class of [`.splish` | `.splash`] or an `ns-lockup`.
 
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-panel]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-panel])
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-panel]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
-## Related links
-
-* Blog posts
-* MDN articles
-* Examples of where it is used
-
