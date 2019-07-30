@@ -34,7 +34,8 @@ Splash triple
 Splish triple
 
 **Does it live inside other components?**  
-No
+* ns-landmark
+* ns-lockup
 
 **Atomic type**  
 Molecule

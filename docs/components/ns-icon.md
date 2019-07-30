@@ -15,7 +15,7 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-icon--gas).
 
 ```html
-<ns-icon type="gas" size="2" aria-hidden="true"></ns-icon>
+<ns-icon type="gas"></ns-icon>
 ```
 
 ## Component Relationship
@@ -73,6 +73,6 @@ Atom
 ## Related links
 
 * [ns-cta](https://docs.britishgas.design/components/ns-cta).
-* How to create icons guide (LINK).
-* Guiding Customers with our icons and the difference between icons and illustrations in [Brand Guidlines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/icons/guiding-our-customers-with-our-icons).
+* [How to create icons guide](https://docs.britishgas.design/how-to/creating-icons).
+* Guiding Customers with our icons and the difference between icons and illustrations in Brand Guidelines.
 * If you wish to have us consider adding a new icon to the library please consult Brand Visual Identity managers.

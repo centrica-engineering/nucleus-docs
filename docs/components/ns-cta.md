@@ -27,7 +27,6 @@ No
 * ns-lockup
 * ns-landmark
 * ns-card
-* Content of ns-extender inside ns-accordion
 
 **Atomic type**  
 Molecule

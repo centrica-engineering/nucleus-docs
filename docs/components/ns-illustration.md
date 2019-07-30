@@ -15,7 +15,7 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-illustrations--gas).
 
 ```html
-<ns-illustration type="gas" inactive="false" size="2" aria-hidden="true"></ns-illustration>
+<ns-illustration type="gas"></ns-illustration>
 ```
 
 ## Component Relationship
