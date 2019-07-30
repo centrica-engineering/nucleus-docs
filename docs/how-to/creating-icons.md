@@ -2,15 +2,15 @@
 
 ## Principles
 
-1. Make sure that a similar icon is not already in use
-2. Think about the icon you want to create and which category it fits in
-3. Use the icon grid to ensure consistency with existing icons
-4. Make sure icon works across different sizes
-5. Remember to create both solid and outline versions of your icon (Use solid over outline, unless icon is interactive)
-6. Use a consistent stroke thickness based on sizes (Use at least 2px for stroke to avoid odd resizing issues or using fills with strokes)
-7. Design clean and simple forms using our shapes
-8. Use flat shapes over 3d forms
-9. Rounded corners should make an icon feel friendly, not childish
+1. Make sure that a similar icon is not already in use.
+2. Think about the icon you want to create and which category it fits in.
+3. Use the icon grid to ensure consistency with existing icons.
+4. Make sure icon works across different sizes.
+5. Remember to create both solid and outline versions of your icon (Use solid over outline, unless icon is interactive).
+6. Use a consistent stroke thickness based on sizes (Use at least 2px for stroke to avoid odd resizing issues or using fills with strokes).
+7. Design clean and simple forms using our shapes.
+8. Use flat shapes over 3d forms.
+9. Rounded corners should make an icon feel friendly, not childish.
 
 ## The icon grid
 
@@ -30,8 +30,8 @@ Icons are created using illustrator with a 32px x 32px art-board. This allows sc
 
 Once you’re icons are completed (and signed off!) they need to be made ready for development. Follow these steps to a happy developer:
 
-1. Make sure your icon is set to black
-2. Select the icon and choose Object > Expand appearance
+1. Make sure your icon is set to black.
+2. Select the icon and choose Object > Expand appearance.
 3. Then using the top menu select File > Export > Export for Screens and export the icon to .svg file type.
 
 ![Exporting icons from illustrator](https://user-images.githubusercontent.com/43471890/62050909-2283f080-b20a-11e9-8c05-fa13100c5222.jpg)

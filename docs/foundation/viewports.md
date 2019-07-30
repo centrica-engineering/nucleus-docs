@@ -26,16 +26,13 @@ Using a modular scale of 1:5, starting at the narrowest (popular) smartphone vie
 ### Column
 
 Our Column width is determined by setting the left and right Offset to be 5%.
-* The maximum width of our Column is 1600px
+* The maximum width of our Column is 1600px.
 
 ### Offset
 
 The offset refers to the space to the left and right of the Column taking up 5% of the width of the viewport each side. At 320px the Offset is 16px.
 
-## Resources
-
 ### Our Sketch library
 
-Getting the library
-
+Getting the library  
 [Sketch Library - GitHub Wiki](https://github.com/ConnectedHomes/centrica-ux/wiki)

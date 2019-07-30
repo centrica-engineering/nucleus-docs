@@ -8,7 +8,7 @@ We allow users to perform certain actions through the use of our call to actions
 
 ## Usage
 
-To see examples vist [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-cta--direct-link)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-cta--direct-link).
 
 ```html
 <ns-cta>Learn more about Hive</ns-cta>
@@ -97,15 +97,15 @@ Note: A CTA should always live inside another component.
 * To be aware of the distinct roles of the CTA's types `direct` and `text` and that they don't always act as a `primary` and `secondary` button.
 * Try not to have multiple CTA's next to each other.
 * Don't overload the page with the same type of CTA or too many CTA's.
-* Loading message should be the action of the text of the CTA. E.g. "Get a quote" becomes "Getting your quote…".
+* Loading message should be the action of the text of the CTA. E.g. "Get a quote" becomes "Getting your quote...".
 
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20ns-cta).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+ns-cta)
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+ns-cta).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `product-nucleus` channel!
 
 ## Related links
 
-* [CTA examples in the homepage](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-homepage--2019-01)
+* [CTA examples in the homepage](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-homepage--2019-01).

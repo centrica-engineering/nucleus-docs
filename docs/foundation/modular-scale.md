@@ -39,8 +39,8 @@ For Typography, we have three multipliers to generate our scales.
 
 These are applied to our Viewport sizes in the following way:
 
-⚪️ Polo & 🏉 Rugby uses `Major Third`  
-🏑 Hockey & 🏀 Basketball uses `Minor Third`  
-🎾 Tennis & 🔵 Squash uses `Major Second`
+⚪️ Polo & 🏉 Rugby uses `Major Third`.  
+🏑 Hockey & 🏀 Basketball uses `Minor Third`.  
+🎾 Tennis & 🔵 Squash uses `Major Second`.
 
 Read more about our [Typography](https://docs.britishgas.design/foundation/typography) and how Modular Scale applies.

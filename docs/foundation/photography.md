@@ -4,8 +4,7 @@
 
 We have three aspect ratios, 1:1, 4:3 and 16:9, which we use in various ways. Take a considered approach and do not overload with too many variants.
 
-![Two of our core aspect ratios 1:1 and 16:9](https://user-images.githubusercontent.com/43471890/62045313-0037a600-b1fd-11e9-93b7-2250a4ac6e6c.png)
-
+![Two of our core aspect ratios 1:1 and 16:9](https://user-images.githubusercontent.com/43471890/62045313-0037a600-b1fd-11e9-93b7-2250a4ac6e6c.png)  
 Two of our core aspect ratios 1:1 and 16:9.
 
 ## Responsive rules

@@ -1,3 +1,3 @@
 # Brand
 
-[Brand site](https://centrica.frontify.com/d/nfz7xmW4vrF9)
+[Brand site](https://centrica.frontify.com/d/nfz7xmW4vrF9).

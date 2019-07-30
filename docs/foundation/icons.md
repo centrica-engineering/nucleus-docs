@@ -12,10 +12,10 @@ They are functional, rather than decorative and should be used sparingly, only w
 
 We use icons in number of different ways to convey meaning:
 
-* Signpost and navigate
-* Navigational or informational signposts for content
-* Illustrates content with a simple and clear visual
-* Used by themselves at large size or smaller within a roundel
+* Signpost and navigate.
+* Navigational or informational signposts for content.
+* Illustrates content with a simple and clear visual.
+* Used by themselves at large size or smaller within a roundel.
 
 ```
 If you are using the icon at a very large size to engage and visual impact, consider if an illustration might be better.

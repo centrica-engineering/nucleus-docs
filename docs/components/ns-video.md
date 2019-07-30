@@ -8,7 +8,7 @@ British Gas creates many videos to engage customers. This component allows havin
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-video--youtube)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-video--youtube).
 
 ```html
 <ns-video id="dQw4w9WgXcQ" ratio="16x9" title="Rick Astley, Never going to give you up music video"></ns-video>
@@ -66,10 +66,10 @@ Atom
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-video]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-video])
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-video]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `product-nucleus` channel!
 
 ## Related links
 
-* [https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-video-panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-video-panel)
+* [https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-video-panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-video-panel).

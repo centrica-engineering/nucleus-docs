@@ -11,7 +11,7 @@ Inputters are used to help people enter and select information. Inputters are no
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-inputter--text)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-inputter--text).
 
 ```html
 <ns-inputter validation="['isRequired']" helper="So we can send you love letters">
@@ -60,8 +60,6 @@ Some of the validation options can be configured by passing in values within the
 minLength(x) - Shows error if the input value is less than x chars.
 
 maxLength(x) - Shows error if the input value is greater than x chars.
-
-
 
 | **Name** | Execute |
 | :--- | :--- |
@@ -197,17 +195,15 @@ Note - Currently we don't have the ability to have radio button side by side
 
 ### Considerations of best practices
 
-* Use defined conventions for common fields
-* Use standard examples for placeholder copy
-* If you are asking for first and last name within a text input, spell check should be disabled
-* Refer to the text input auto complete definitions
-* Always try and have a default selected radio button unless....
+* Use defined conventions for common fields.
+* Use standard examples for placeholder copy.
+* If you are asking for first and last name within a text input, spell check should be disabled.
+* Refer to the text input auto complete definitions.
+* Always try and have a default selected radio button unless... .
 
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[NAME%20OF%20COMPONENET]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[NAME%20OF%20COMPONENET])
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[NAME%20OF%20COMPONENET]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `product-nucleus` channel!
-
-## Related links
+💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!

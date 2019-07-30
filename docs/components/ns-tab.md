@@ -8,7 +8,7 @@ The tab is the button that can be clicked to change the content in the `ns-tabs`
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-tab--tab)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-tab--tab).
 
 ```html
 <ns-tab>Electricity</ns-tab>
@@ -58,13 +58,11 @@ Atom
 
 ### Considerations of best practises
 
-* Only use inside `ns-tabs` as a slot of `tab`
+* Only use inside `ns-tabs` as a slot of `tab`.
 
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-tab]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-tab])
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-tab]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
-## Related links

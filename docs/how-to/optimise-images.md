@@ -2,10 +2,10 @@
 
 ### Links
 
-* https://imageoptim.com/mac
-* https://squoosh.app/
-* https://kraken.io/web-interface
-* https://tinypng.com/
+* [ImageOptim](https://imageoptim.com/mac).
+* [Squoosh](https://squoosh.app/).
+* [Kraken](https://kraken.io/web-interface).
+* [TinyPNG](https://tinypng.com/).
 
 ### Why optimise?
 
@@ -21,12 +21,12 @@ The answer is: The smallest size that does not degrade the image too much that i
 
 These numbers are just a guide and shouldn’t be treated as “I have hit the number, so I don’t need to optimise it anymore”. If they can go much lower than these numbers - then they should.
 
-* Full width image: < 200kb
-* Side image: < 100kb
-* Additional image: < 50kb
-* Decoration: < 10kb
+* Full width image: < 200kb.
+* Side image: < 100kb.
+* Additional image: < 50kb.
+* Decoration: < 10kb.
 
-(For PNGs add an additional 50kb)
+(For PNGs add an additional 50kb).
 
 ### How to optimise
 
@@ -50,15 +50,15 @@ An overlay will appear. Keep "Scale proportionally" ticked and change your dimen
 ### Optimising with ImageOptim
 
 ```
-It is best for each iteration of optimisation to create a new folder of duplicates as ImageOptim will overwrite
+It is best for each iteration of optimisation to create a new folder of duplicates as ImageOptim will overwrite.
 ```
 
 1. Click the setting button, at the bottom right corner. Go into Optimisation level and set it to insane; in General, tick PNGCrush and in Quality, disable loss minification.
 
 ![ImageOptim settings](https://user-images.githubusercontent.com/43471890/62051350-18162680-b20b-11e9-8a4a-d8badfbe5cc2.png)
 
-2. Drag and drop images and wait for them to tick green ✅
-3. With the duplicated versions of these images, enable lossy minification and go down on the level of quality (as explained in "How to Optimise").  
+2. Drag and drop images and wait for them to tick green ✅.
+3. With the duplicated versions of these images, enable lossy minification and go down on the level of quality (as explained in "How to Optimise").
 4. Compare the original lossless version to the lossy, to check there isn't too much degradation.
 
 ### Squoosh

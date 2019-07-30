@@ -8,7 +8,7 @@ Lockups can be used to display key information about a product, a service or tel
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-decoration-panel)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-decoration-panel).
 
 ```html
 <ns-lockup type="lockbox">
@@ -109,9 +109,9 @@ Organism
 
 ### Considerations of best practices
 
-* Alternate the position of image/video when using more than one lockup
-* Paragraph works best as a single, short paragraph
-* Use real-life photographs
+* Alternate the position of image/video when using more than one lockup.
+* Paragraph works best as a single, short paragraph.
+* Use real-life photographs.
 
 ## Content guidance
 
@@ -130,8 +130,6 @@ Organism
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20ns-lockup).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+ns-lockup)
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+ns-lockup).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
-## Related links

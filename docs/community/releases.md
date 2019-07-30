@@ -44,19 +44,19 @@ Any questions? Let us know 🙌🏼
 ### What’s new around here 🌶
 
 *`ns-inputter`* - the 'vanilla first' of our form elements.
-* Text, Email, Telephone, Password, Number, Radio, Checkbox
-* Field-level validation
-* Placeholder
-* Helper text
-* Helper details
+* Text, Email, Telephone, Password, Number, Radio, Checkbox.
+* Field-level validation.
+* Placeholder.
+* Helper text.
+* Helper details.
 *`ns-video`* - include a YouTube video into a lockup.
 *`ns-tab`* - the tab that lives within tabs.
 *`ns-tabs`* - include a few tab to make a tabs.
 
 #### Sketch Library 🐍
 
-* Official release *Version 2.0* - _(Out of Pre-release)_ :star2:
-* *Download* the latest: https://github.com/ConnectedHomes/centrica-ux/releases
+* Official release *Version 2.0* - _(Out of Pre-release)_ :star2:.
+* *Download* the latest: https://github.com/ConnectedHomes/centrica-ux/releases.
 * Added *Guides* to give indication of where components can be placed.
 * Included *Templates* to quickly mockup a page and placing components in a layout.
 
@@ -103,36 +103,36 @@ A big thank you to everyone involved in contributing to this release!
 _Integration with Ember commons._
 
 _Sketch Nucleus Pattern Library_
-* Added all available icons
-* Added Accordions
-* Added more screen sizes to each Component
+* Added all available icons.
+* Added Accordions.
+* Added more screen sizes to each Component.
 
 _Documentation_
-* Becoming Nucleus https://docs.britishgas.design/community/becoming-nucleus
-* Best practices https://docs.britishgas.design/community/best-practices
-* Events https://docs.britishgas.design/community/events
-* Modular scale https://docs.britishgas.design/foundation/modular-scale
-* Typography - Sizes https://docs.britishgas.design/foundation/typography
-* Photography - Optimise your images https://docs.britishgas.design/foundation/photography
-* Our documentation https://docs.britishgas.design
-* Accordion https://docs.britishgas.design/components/ns-accordion
+* Becoming Nucleus https://docs.britishgas.design/community/becoming-nucleus.
+* Best practices https://docs.britishgas.design/community/best-practices.
+* Events https://docs.britishgas.design/community/events.
+* Modular scale https://docs.britishgas.design/foundation/modular-scale.
+* Typography - Sizes https://docs.britishgas.design/foundation/typography.
+* Photography - Optimise your images https://docs.britishgas.design/foundation/photography.
+* Our documentation https://docs.britishgas.design.
+* Accordion https://docs.britishgas.design/components/ns-accordion.
 
 ### Bug fixes 🐞
 
-* Vertical spacing adjustments
-* Adjusting the style of the heading within our Accordion
-* Setting all Actions to be 100% width at small screen
-* Removing the duplicate BG Flame font loading
-* Fixed the hierarchy of the screen sizes in Sketch library
+* Vertical spacing adjustments.
+* Adjusting the style of the heading within our Accordion.
+* Setting all Actions to be 100% width at small screen.
+* Removing the duplicate BG Flame font loading.
+* Fixed the hierarchy of the screen sizes in Sketch library.
 
 ### Feedback 🐳
 
 The following request for changes have been started
 
-* #491 RFC - Main navigation :banana: https://github.com/ConnectedHomes/nucleus/issues/491
-* #587 RFC - Tab panel :card_index_dividers: https://github.com/ConnectedHomes/nucleus/issues/587
-* #582 RFC - Selection cards :female-construction-worker: https://github.com/ConnectedHomes/nucleus/issues/582
-* #579 RFC - Form fields :pencil2: https://github.com/ConnectedHomes/nucleus/issues/579
+* #491 RFC - Main navigation :banana: https://github.com/ConnectedHomes/nucleus/issues/491.
+* #587 RFC - Tab panel :card_index_dividers: https://github.com/ConnectedHomes/nucleus/issues/587.
+* #582 RFC - Selection cards :female-construction-worker: https://github.com/ConnectedHomes/nucleus/issues/582.
+* #579 RFC - Form fields :pencil2: https://github.com/ConnectedHomes/nucleus/issues/579.
 
 All our RFC’s can be found under the Requests milestone in our Github https://github.com/ConnectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rfc
 

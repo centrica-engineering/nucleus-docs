@@ -2,13 +2,13 @@
 
 ## Principles
 
-1. Make sure that a similar illustration is not already in use
-2. Use the illustration grid to ensure consistency with current icons
-3. Make sure illustration works across different sizes
-4. Design clean and simple forms using our shapes
-5. Use flat shapes over 3d forms, depth can be added through the use of gradients
-6. Use consistent gradients and colours. Do not use multiply when using opacity
-7. Rounded corners should make icon feel friendly, not childish
+1. Make sure that a similar illustration is not already in use.
+2. Use the illustration grid to ensure consistency with current icons.
+3. Make sure illustration works across different sizes.
+4. Design clean and simple forms using our shapes.
+5. Use flat shapes over 3d forms, depth can be added through the use of gradients.
+6. Use consistent gradients and colours. Do not use multiply when using opacity.
+7. Rounded corners should make icon feel friendly, not childish.
 
 ## The illustration grid
 
@@ -48,14 +48,14 @@ Illustrations use `@slate` (#333f48) over half of the object in order to add dep
 
 Once you’re illustrations are completed (and signed off!) they need to be made ready for development. Follow these steps to a happy developer:
 
-1. Check your gradients are not multiplied opacity
-2. Select the icon and choose Object > Expand appearance
-3. Check shapes have been turned to paths. Go to Object > Compound path > Make (you will need to do this for each individual shape separately)
-4. When you have completed this use the top menu select File > Export > Export for Screens > press the small cog (see below)
+1. Check your gradients are not multiplied opacity.
+2. Select the icon and choose Object > Expand appearance.
+3. Check shapes have been turned to paths. Go to Object > Compound path > Make (you will need to do this for each individual shape separately).
+4. When you have completed this use the top menu select File > Export > Export for Screens > press the small cog (see below).
 
 ![Exporting illustrations](https://user-images.githubusercontent.com/43471890/62051136-a2aa5600-b20a-11e9-814b-a1a8f418dfd0.jpg)
 
-Select SVG in the left hand panel > choose Inline Style in the Styling dropdown (see below)
+Select SVG in the left hand panel > choose Inline Style in the Styling dropdown (see below).
 
 ![Exporting illustrations](https://user-images.githubusercontent.com/43471890/62051134-a211bf80-b20a-11e9-8787-f72f2d4579c3.jpg)
 

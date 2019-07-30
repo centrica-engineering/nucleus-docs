@@ -8,23 +8,23 @@ The four accessibility principles (POUR) are derived straight from [WCAG 2.1](ht
 
 ## Perceivable
 
-* Users must be able to perceive that information is available
-* Information becomes invisible if it can't be perceived with any available senses
+* Users must be able to perceive that information is available.
+* Information becomes invisible if it can't be perceived with any available senses.
 
 ## Operable
 
-* Users must be able to operate the interface
-* An action becomes unattainable if it relies on an interaction that a user cannot perform
+* Users must be able to operate the interface.
+* An action becomes unattainable if it relies on an interaction that a user cannot perform.
 
 ## Understandable
 
-* Users must be able to understand both the information and interface provided
-* A piece of content or operation becomes a burden if it goes beyond a users understanding
+* Users must be able to understand both the information and interface provided.
+* A piece of content or operation becomes a burden if it goes beyond a users understanding.
 
 ## Robust
 
-* Users relying on user agents, including assistive technologies, must be served with compatible content
-* A piece of content or operation needs to be compatible with evolving user agents, including assistive technologies, browsers, and other applications involved in rendering content
+* Users relying on user agents, including assistive technologies, must be served with compatible content.
+* A piece of content or operation needs to be compatible with evolving user agents, including assistive technologies, browsers, and other applications involved in rendering content.
 
 ## Conformance with the principles
 

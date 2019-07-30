@@ -74,15 +74,15 @@ Large - 1.25
 
 The definitions we have covered here refer to typographic styles. It's important understand the separation of visual directions and encoded semantics:
 
-* Encoded semantics are used to define hierarchy and relationships, making text programmatically legible for screen readers and other assistive technologies
-* Visual directions like the ones outlined here are used to ensure optimal readability and legibility, as well as convey a specific brand
+* Encoded semantics are used to define hierarchy and relationships, making text programmatically legible for screen readers and other assistive technologies.
+* Visual directions like the ones outlined here are used to ensure optimal readability and legibility, as well as convey a specific brand.
 
 Without semantically correct HTML, our content won't be accessible  Consider for example the following guidance on headings:
 
-* The page headings must follow an order, starting from H1 to H6
-* A page must only have one H1 element
+* The page headings must follow an order, starting from H1 to H6.
+* A page must only have one H1 element.
 
 ... and a suitable style may be applied on each of these headings. To avoid confusion, please remember the following:
 
-* Refer to H1, H2, etc. only when it comes to semantic choices and accessibility
-* Use Nucleus naming conventions to discuss typographic style choices
+* Refer to H1, H2, etc. only when it comes to semantic choices and accessibility.
+* Use Nucleus naming conventions to discuss typographic style choices.

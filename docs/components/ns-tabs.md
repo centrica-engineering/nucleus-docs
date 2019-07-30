@@ -8,7 +8,7 @@ Related content can be separated into clearly labelled sections.
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-tabs--tabs)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-tabs--tabs).
 
 ```html
 <ns-tabs>
@@ -83,16 +83,12 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 
 * It is advisable to use tabs alongside other components to avoid building a page that consists only of tabs.
 * If you see that the tabs are bleeding over the edge of the page in Polo or Rugby, and you have followed the guidance on not using more than two words on the tab label, then you probably have too many tabs.
-
-  Consider breaking out some of your content and make sure the content is all relevant to that page.
-
+* Consider breaking out some of your content and make sure the content is all relevant to that page.
 * Related tab and panel slots should be put together in order when adding the content.
 
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[NAME%20OF%20COMPONENT]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[NAME%20OF%20COMPONENT])
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[NAME%20OF%20COMPONENT]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
-## Related links

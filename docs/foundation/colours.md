@@ -10,8 +10,8 @@ Our primary colours should always take the centre stage across our communication
 
 ## Brand colours
 
-[Brand colour palette](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/foundations-colours--brand-pallette)
+[Brand colour palette](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/foundations-colours--brand-pallette).
 
 ## System
 
-[System colour palette](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/foundations-colours--system-pallette)
+[System colour palette](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/foundations-colours--system-pallette).

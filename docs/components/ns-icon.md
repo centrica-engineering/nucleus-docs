@@ -8,7 +8,7 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-icon--gas)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-icon--gas).
 
 ```html
 <ns-icon type="gas" size="2" aria-hidden="true"></ns-icon>
@@ -55,20 +55,20 @@ Atom
 
 ### Considerations of best practices
 
-* Icons can be used as navigational elements as solid or outline single colour
-* If you want to use larger iconography have a look at ns-illustration
-* Use outline icons when... and solid icons when...
+* Icons can be used as navigational elements as solid or outline single colour.
+* If you want to use larger iconography have a look at ns-illustration.
+* Use outline icons when... and solid icons when... .
 
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-icon]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-icon])
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-icon]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
 
 ## Related links
 
-* [ns-cta](https://docs.britishgas.design/components/ns-cta)
-* How to create icons guide (LINK)
-* Guiding Customers with our icons and the difference between icons and illustrations in [Brand Guidlines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/icons/guiding-our-customers-with-our-icons)
+* [ns-cta](https://docs.britishgas.design/components/ns-cta).
+* How to create icons guide (LINK).
+* Guiding Customers with our icons and the difference between icons and illustrations in [Brand Guidlines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/icons/guiding-our-customers-with-our-icons).
 * If you wish to have us consider adding a new icon to the library please consult Brand Visual Identity managers.

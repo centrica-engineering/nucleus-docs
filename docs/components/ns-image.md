@@ -8,7 +8,7 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-images--lazy-loading-img)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-images--lazy-loading-img).
 
 ```html
 <ns-image ratio="16x9" src="https://www.britishgas.co.uk/aem6/content/dam/britishgas/images/jumbotron/home-services/20-Home-Services-wilbur.jpg"></ns-image>
@@ -84,12 +84,12 @@ Atom
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-image]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-image])
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-image]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `product-nucleus` channel!
 
 ## Related links
 
-* How to optimise images [guide](https://docs.britishgas.design/how-to/optimise-images)
-* Brand image [library](https://centrica.frontify.com/d/pDUbkrcf54Nh/our-assets)
-* Examples of where it is used
+* How to optimise images [guide](https://docs.britishgas.design/how-to/optimise-images).
+* Brand image [library](https://centrica.frontify.com/d/pDUbkrcf54Nh/our-assets).
+* Examples of where it is used.

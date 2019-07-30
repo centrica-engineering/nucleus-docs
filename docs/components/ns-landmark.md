@@ -8,7 +8,7 @@ Landmarks can be used to set the scene for what the page is for, what offers mig
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-landmark--hub)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-landmark--hub).
 
 ### Summit
 ```html
@@ -125,8 +125,8 @@ Organism
 
 ### Considerations of best practises
 
-* Shorter and simpler words tend to work better in the heading
-* The recommended copy length is between 1 and 5 words for the Subheading
+* Shorter and simpler words tend to work better in the heading.
+* The recommended copy length is between 1 and 5 words for the Subheading.
 * If the purpose of the page is to understand more about a product or service, then it is considered bad practice to include a CTA within the landmark, as users are likely to drop out. This is because users believe the next step is to click the CTA, rather than reading the page to get a better understanding of how they should proceed.
 * Let the page type define the type of landmark you use. For example if the page purpose is to be informative / educational then we recommend using`<ns-landmark type="hillside”>`. If the page purpose is promotional we recommend using `<ns-landmark type="summit" >`.
 * If you are designing a series of informative / educational pages that all follow a similar theme eg boilers, it would be considered best practice to use the same coloured decoration within the `<ns-landmark type="hillside">`.
@@ -186,6 +186,6 @@ Using Sketch to overlay the Landmark focus template to check alignment.
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-landmark]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-landmark])
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-landmark]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
