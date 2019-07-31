@@ -11,9 +11,9 @@ Release Notes 2019-07-31: Additional components, Improvements and bugfixes
 
 ### What’s new around here
 
-- Landmark - Hillside variant - description here
-- ns-form - Simple form container that can manage the validation of the inputs.
-- ns-inputter - now supports “Select” component
+Landmark - Hillside variant - A landmark variant designed to be less promotional, requiring no image. Intended to be used across guide and article pages.
+ns-form - Simple form container that can manage the validation of the inputs.
+ns-inputter - now supports “Select” component
 
 ### Bug fixes
 
@@ -22,7 +22,7 @@ Release Notes 2019-07-31: Additional components, Improvements and bugfixes
 - Validation improvements ns-inputter now supports minLength, maxLength and isBetweenLength validations.
 - Validation for radio buttons and new select component.
 - Lockup CTA in Storybook now has an optional CTA with options 'none', 'direct' or 'text'
-- Landmark has been renamed “Summit” and the story now has optional CTA with options 'none', 'direct' or 'text'
+- Landmark has been renamed “Summit” and the story now has optional CTA
 
 ### Feedback 🦕
 
