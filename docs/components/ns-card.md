@@ -101,11 +101,11 @@ Molecule
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Always use them in the triple layout | Use the text CTA in the section card |
-| Use to direct customers to the actions | Use the key CTA in any of the cards |
-| Embolden text in the paragrah that is important | Mix card types in a row |
-| Make your CTA copy unique, stating the action | Have two or more cta's for a card |
-| Use section cards to navigate users to primary actions | Repeat the CTA copy in each card |
-| Consider using decoration in the panel to add emphasis on the cards | Use inline links in the paragraph |
+| Use to direct customers to the actions | Mix card types in a row |
+| Embolden text in the paragrah that is important | Have two or more cta's for a card |
+| Make your CTA copy unique, stating the action | Repeat the CTA copy in each card |
+| Use section cards to navigate users to primary actions | Use inline links in the paragraph |
+| Consider using decoration in the panel to add emphasis on the cards |  |
 | | Use the section card without a decoration |
 
 ### Considerations of best practises

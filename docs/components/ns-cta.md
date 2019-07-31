@@ -42,8 +42,7 @@ Note: A CTA should always live inside another component.
 | **Description** | The different variants of the CTA. |
 | **Type** | String |
 | **Default** | "direct" |
-| **Options** | key, direct, text |
-| **Notes** | We currently don't have a use for `key` and it might be removed in the future. |
+| **Options** | direct, text |
 
 | **Name** | loading |
 | :--- | :--- |
@@ -89,7 +88,7 @@ Note: A CTA should always live inside another component.
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
 | Make it short and actionable | Make it vague |
-| Only use loading on an action | Make it overly wordy |
+| Only use 'loading' on an action | Make it overly wordy |
 | Relate the action to the content it sits beside | Use icons for icons' sake |
 | Use 'direct' for the primary action on the page | Use more than 24 characters |
 | | Have multiple lines or sentences within a CTA |
