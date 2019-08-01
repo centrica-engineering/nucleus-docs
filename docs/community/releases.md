@@ -7,24 +7,31 @@ description: Here are our release notes - enjoy!
 
 ## Version 1.1.4
 
-Release Notes 2019-07-31: Additional components, Improvements and bugfixes
+*Release Notes 2019-07-31: Additional components, Improvements and bugfixes*
 
-### What’s new around here
+### What’s new around here 🕑
 
-Landmark - Hillside variant - A landmark variant designed to be less promotional, requiring no image. Intended to be used across guide and article pages.
-ns-form - Simple form container that can manage the validation of the inputs.
-ns-inputter - now supports “Select” component
+* A Landmark variant `hillside` designed to be less promotional, with no image and no call to action.
+* `ns-form` - The container for all `ns-inputter` components which manages the validation.
+* Introducing the `select` variant of `ns-inputter` commonly known as - the dropdown.
 
-### Bug fixes
+### Bug fixes 🦋
 
-### Improvements
+* Addressing an issue where the BG-VI.css anchor styles were overriding Nucleus.
+* Ensuring that `ns-cta` is tabbable when not contained within an `<a>`.
+* Slight change to the implementation of the CSS box model.
+* Adding slot styling to the heading within the `flat` variant of `ns-card`.
 
-- Validation improvements ns-inputter now supports minLength, maxLength and isBetweenLength validations.
-- Validation for radio buttons and new select component.
-- Lockup CTA in Storybook now has an optional CTA with options 'none', 'direct' or 'text'
-- Landmark has been renamed “Summit” and the story now has optional CTA
+### Improvements 🐶
 
-### Feedback 🦕
+* Validation improvements to `ns-inputter` suppoting minLength, maxLength and isBetweenLength validations.
+* Validation for radio buttons and `ns-inputter` `select` component.
+* Deprecated "Key" variant from the `ns-cta` component.
+* The default Landmark has been renamed from `hub` to `summit`.
+* The `ns-cta` within `ns-lockup` and `ns-landmark` is now optional.
+  * Choose 'none' from the 'CTA type' dropdown in the Knobs addon.
+
+### Feedback 🦉
 
 All our Requests For Change can be found under the Requests milestone in GitHub.
 https://github.com/ConnectedHomes/nucleus/milestone/18
