@@ -23,6 +23,7 @@ ns-inputter - now supports “Select” component
 - Validation for radio buttons and new select component.
 - Lockup CTA in Storybook now has an optional CTA with options 'none', 'direct' or 'text'
 - Landmark has been renamed “Summit” and the story now has optional CTA
+- Deprecated “Key” variant from the ns-cta component
 
 ### Feedback 🦕
 
