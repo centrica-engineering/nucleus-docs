@@ -9,8 +9,6 @@ We're hosting regular events to keep the discussions going.
 Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel #product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
 ## 2019-07-30 / Drop in session
 
-### Topics raised
-
 * OAM usability testing on Monday.
 * Feedback user testing by adding relevant pages to the RFC.
 * Testing in ember twiddle.
@@ -26,8 +24,6 @@ Browse below to gain a sense of our past events. The best way to learn about our
 
 ## 2019-07-23 / Drop in session
 
-### Planned topics
-
 * We are planning our roadmap / backlog and we are finding it difficult to plan what will and won’t be Nucleus and where we prioritise.
 * We have content heavy pages that we need to redesign using Nucleus components.
 * We’ve designed a new journey but unsure if a component can be used in this way.
@@ -36,8 +32,6 @@ Browse below to gain a sense of our past events. The best way to learn about our
 * What RFCs are currently in progress and who is leading on them?
 
 ## 2019-07-16 / Drop in session
-
-### Planned topics
 
 * We are planning our roadmap / backlog and we are finding it difficult to plan what will and won’t be Nucleus and where we prioritise.
 * We have content heavy pages that we need to redesign using Nucleus components.
