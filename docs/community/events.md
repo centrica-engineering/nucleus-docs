@@ -7,6 +7,22 @@ description: List of Nucleus events including Nucleus Sessions.
 We're hosting regular events to keep the discussions going.
 
 Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel #product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
+
+## 2019-08-06 / Welcome - Yuri & Kaidi
+
+* Today Nucleus welcome both Kaidi and Yuri to the team.
+* We shared our Request for change kanban Github board.
+* Showcase the 'pre-alpha' Drag and drop page designer.
+* Launch our Gitbook documentation.
+* Share our latest release 1.1.4.
+
+[Nucleus Design System](https://docs.britishgas.design/)
+
+[RFC Project Board](https://github.com/ConnectedHomes/nucleus/projects/6) [†]
+
+[Nucleus release 1.1.4](https://docs.britishgas.design/community/releases#version-1-1-4)
+
+
 ## 2019-07-30 / Drop in session
 
 * OAM usability testing on Monday.
@@ -42,8 +58,6 @@ Browse below to gain a sense of our past events. The best way to learn about our
 * We’re unsure where to go for guidance and the best way to use Storybook.
 
 ## 2019-07-09 / Update party what's going on?
-
-### Planned topics
 
 * What the team is currently working on.
 * What's about to become available.
