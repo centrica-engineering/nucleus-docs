@@ -199,6 +199,7 @@ Our colours are named with common colour names and have a suffix for the intensi
 ```
 
 **System palette**
+
 ```LESS
 @info: #209CEE;
 @success: #23D160;
@@ -206,7 +207,7 @@ Our colours are named with common colour names and have a suffix for the intensi
 @danger: #FF3860;
 ```
 
-## Spacing
+### Spacing
 
 Spacing is directly related to our typography and infers its sizing using modular scale.
 We have not yet implemented a naming convention for spacing, in our LESS we use our modular scale mixin which currently looks like:
@@ -248,7 +249,7 @@ space-tiny
 space-nano
 ```
 
-## Shadows
+### Shadows
 
 Our shadows currently have a strange naming convention
 
@@ -268,7 +269,7 @@ shadow-afternoon
 shadow-evening
 ```
 
-## Lozenges
+### Lozenges
 
 The names of these are very much incomplete. This technique is inconsistent with our other naming styles.
 
@@ -280,7 +281,7 @@ This is based on `straight:rounded`
 ```
 Alongside the concept of 'which corner(s)' are rounded, there are associated corner sizes to consider depending on how much of the percentage of the viewport the lozenge width consumes.
 
-## Cards
+### Cards
 
 We currently have the following name given to the variants of our cards.
 
@@ -292,13 +293,14 @@ support
 flat
 ```
 
-## Structure
+### Structure
 
 We refer to `structure` instead of `grid`.
 
 Structure is built with CSS Grid and utilises fraction `fr` units.
 
-## Layouts
+
+### Layout
 
 Our `layout`'s are contained within a `panel`, we can include more than one layout in a panel.
 
@@ -311,7 +313,7 @@ The `splish` layout is exclusively to contain three 'section cards'
 
 For the Rewards section on the Homepage we included a class of `malcolm` to hide the confetti at narrow viewports. This approach is unique and has proven to be problematic.
 
-## Page types
+### Page types
 
 Currently we use `Hub` and `Sub-hub` to refer to two types of brochure type pages.
 
@@ -323,7 +325,7 @@ At this point we're not using a 'templating' approach to constructing pages. We 
 
 Additional page types will include those that are part of a journey. Some maybe repeatable across many different journeys e.g. 'Confirmation page' there maybe unique page types for specific journeys e.g. 'My Account page'
 
-## Lists
+### Lists
 
 We use three different types of lists
 
@@ -331,9 +333,9 @@ We use three different types of lists
 ul-bullet
 ul-ticked
 ol-numbered
-````
+```
 
-## Gradients
+### Gradients
 
 We haven't produced names for our gradients. However, we have included them in our decorations.
 
@@ -351,7 +353,7 @@ decoration-grey-light
 decoration-blue
 ```
 
-## Decoration
+### Decoration
 
 Decorations can be applied to our Panels
 We have two types of decoration, Mask and Circle
@@ -397,7 +399,7 @@ circle-grey-light
 circle-blue
 ```
 
-## Name our Releases
+### Name our Releases
 
 We could name our releases. Take a look at how Ionic name theirs.
 
