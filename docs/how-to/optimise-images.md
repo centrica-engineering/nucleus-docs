@@ -2,7 +2,7 @@
 description: How to optimise your images for production.
 ---
 
-# How to optimise your images
+# Optimise your images
 
 ### Links
 
