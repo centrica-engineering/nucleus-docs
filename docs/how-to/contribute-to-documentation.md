@@ -21,7 +21,7 @@ Find the pencil icon and edit this file.
 
 ### Committing your changes
 
-Once you're happy, briefly describe your changes underneath the 'Commit changes' section.
+Once you've completed your amendments or additions, briefly describe your changes below the 'Commit changes' section.
 
 Within the 'Name the branch' field to `update/filename` (where `filename` is the file you're changing.)
 
