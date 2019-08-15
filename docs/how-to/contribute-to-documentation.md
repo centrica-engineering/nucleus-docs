@@ -33,7 +33,7 @@ This will create your branch and show the next step to 'Open a pull request'.
 
 Check the changes that have been made by comparing the existing file and your file.
 
-Feel free to include a comment in the pull request, then click on 'Create pull request'.
+If you think it would be helpful, include a comment in the pull request and then click on 'Create pull request'.
 
 Your pull request will be listed in our repository for review.
 
