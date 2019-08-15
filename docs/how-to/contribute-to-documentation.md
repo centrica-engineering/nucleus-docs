@@ -18,7 +18,6 @@ This will take you to the same page within our GitHub documentation repository h
 
 Find the pencil icon and edit this file.
 
-Make any changes that you feel will help others understand. To reduce confusion, improve spelling and grammar. Any suggestions and contributions are welcomed.
 
 ### Committing your changes
 
