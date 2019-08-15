@@ -2,7 +2,7 @@
 description: One of the ways in which you can help improve our documentation.
 ---
 
-# Contributing to documentation
+# Contribute to documentation
 
 ## Introduction
 
