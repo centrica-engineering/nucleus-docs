@@ -8,7 +8,7 @@ description: Community documentation.
 
 ## What to expect?
 
-The Nucleus team is responsible for curating and growing the design system. That means, just like you, we have a roadmap and priorities to meet. Luckily, one of these priorities is to be there to support you as you integrate Nucleus components into your roadmap.
+The Nucleus team is responsible for driving the growth and adoption of the design system. This means we have a roadmap and priorities to meet. One of these priorities is to be there to support you in adopting Nucleus.
 
 The growth, and adoption of the Nucleus design system involves a steep learning curve for everyone. To help on this journey, we want to ensure we provide you with helpful and relevant resources. But it'll ultimately be you designing and developing your journeys with Nucleus components.
 
