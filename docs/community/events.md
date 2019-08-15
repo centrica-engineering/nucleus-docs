@@ -8,17 +8,6 @@ We're hosting regular events to keep the discussions going.
 
 Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel #product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
 
-## 2019-08-13 / Digital Journey and trade show
-
-Some highlights of our experience:
-
-* Some of our audience didn't yet know what Nucleus was, now they do.
-* During the 'innovate an idea with your favourite service' workshop. The Sexy Engineer won the funniest customer obsessed feature. (Congrats Adam, Oli, Sarah, Daryll, Maude 🏆)
-* Drew scored 6 out of 7 questions with a total score of 5,471 points in the Kahoot trade show quiz to come 2nd (behind Paul Roberts).
-* Sadly, Jon was knocked out of the first round of the Rock Paper Scissors world championship!
-
-[Nucleus trade show presentation 2019-08-13.pdf](https://github.com/ConnectedHomes/nucleus/files/3505183/Nucleus.trade.show.presentation.2019-08-13.pdf) [†]
-
 ## 2019-08-06 / Welcome - Yuri & Kaidi
 
 * Today Nucleus welcome both Kaidi and Yuri to the team.
