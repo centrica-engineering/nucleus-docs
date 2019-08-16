@@ -10,7 +10,7 @@ Browse below to gain a sense of our past events. The best way to learn about our
 
 ## 2019-08-13 / Digital Journey and Trade Show
 
-Some highlights of our experience:
+Highlights of our experience:
 
 * Some of our audience didn't yet know what Nucleus was, now they do.
 * During the 'innovate an idea with your favourite service' workshop. The Sexy Engineer won the funniest customer obsessed feature. (Congrats Adam, Oli, Sarah, Daryll, Maude 🏆)
