@@ -16,9 +16,19 @@ description: Editorial.
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-inputter--text [EDIT LINK])
 
 ```html
-<ns-xyz>
-  ...
-</ns-xyz>
+<ns-editorial image="/my-images/my-image.png">
+  <h2 slot="heading">Put your heading here</h2>
+  <slot>
+    <h3>Sub heading</h3>
+    <p>Content here. Glossier hot chicken literally vegan, hoodie artisan sustainable forage lyft gentrify bespoke vinyl. Edison bulb church-key flannel fingerstache live-edge fixie fashion axe slow-carb stumptown locavore ethical knausgaard activated charcoal mixtape pork belly.</p>
+    <ul class="ul-bullet">
+      <li>Edison bulb</li>
+      <li>Ethical knausgaard</li>
+      <li>Activated</li>
+      <li>Charcoal mixtape</li>
+    </ul>
+  </slot>
+</ns-editorial>
 ```
 
 
