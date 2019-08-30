@@ -9,11 +9,9 @@ description: Editorial.
 > The editorial component is a self-contained or supporting piece of content that is more informative than promotional in nature. In some cases, it is necessary to explain something in more detail without the user needing to take an immediate action.
 
 
-[What and why details here (2-3 lines)]
-
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-inputter--text [EDIT LINK])
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-editorial--editorial)
 
 ```html
 <ns-editorial image="/my-images/my-image.png">
