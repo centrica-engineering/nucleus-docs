@@ -40,23 +40,37 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
   - xyz
   - xyz
   - xyz
-- Atomic type: (atom/molecule/organism)
+- Atomic type: molecule
 
 ## Specification
-| **Name**|  |
-| ----------- | ------------------------------- |
-| **Description** |  |
-| **Type**        | |
-| **Default**     | |
-| **Options**     | |
 
-[copy and paste the table for each property and slot]
+| **Name**| image |
+| ----------- | ------------------------------- |
+| **Description** | The url of the image |
+| **Type**        | string |
+| **Default**     | n/a |
+| **Options**     | n/a |
+
+| **Name**| Named slot `heading` |
+| ----------- | ------------------------------- |
+| **Description** | The headline of the editorial, this will appear within an h2. |
+| **Type**        | string |
+| **Default**     | n/a |
+| **Options**     | n/a |
+
+| **Name**| Anonymous slot |
+| ----------- | ------------------------------- |
+| **Description** | The HTML content of the article |
+| **Type**        | html |
+| **Default**     | n/a |
+| **Options**     | n/a |
+
 
 ## Best practises
 
 | ✅ Do's | 💔 Don'ts |
 | ------ | -------- |
-| Use subheaders to split large paragraphs up  |          |
+| Use subheaders to split large paragraphs up | Add images to the article content |
 |        |          |
 |        |          |
 |        |          |
