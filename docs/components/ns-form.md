@@ -19,7 +19,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ### Form Example
 ```html
 <ns-form>
-		<ns-inputter name="option" validation="[&quot;isRequired&quot;]" heading="Select an option" helper="">
+    <ns-inputter name="option" validation="[&quot;isRequired&quot;]" heading="Select an option" helper="">
       <label slot="label">Select an option</label>
       <select name="select">
         <option value="">Please Select an option</option>
@@ -45,20 +45,27 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
     </ns-inputter>
     <ns-inputter name="firstname" validation='["isRequired", "minLength(10)"]'>
         <label slot="label" for="input-first-name">First name</label>
-        {{input value=model.firstname type="text"}}
     </ns-inputter>
     <ns-inputter name="surname" validation='["isRequired", "maxLength(15)"]'>
         <label slot="label" for="input-surname">Surname</label>
-        {{input value=model.surname type="text"}}
     </ns-inputter>
     <ns-inputter name="email" validation='["isRequired", "isEmail"]'>
         <label slot="label" for="input-email">Email</label>
-        {{input value=model.email type="text"}}
     </ns-inputter>
     <ns-cta ennable onClick={{action "submitForm"}}>Submit</ns-cta>
 </ns-form>
 ```
 Ember twiddle: (https://ember-twiddle.com/0de7a10c20cdef6c19d57aacbd560b50?openFiles=form-test.template.hbs%2C)
+
+Validate
+
+Calling the ns-form's validate() method will run all of the validations from the forms ns-inputters.  The validate method returns an object with information about the forms validity and it's fields and their individual validation statuses.
+
+```
+const form = document.querySelector('ns-form');
+const formData = form.validate();
+```
+
 
 ## Component Relationship
 
