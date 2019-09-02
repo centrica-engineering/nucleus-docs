@@ -12,13 +12,14 @@ Additional intro text...
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-form--form).
-
-(https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-inputter--text)
+To see examples visit:
+[Storybook - ns-form](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-form--form)
+[Storybook - ns-inputter](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-inputter--text)
 
 ### Form Example
 ```html
 <ns-form>
+    
     <ns-inputter name="option" validation="[&quot;isRequired&quot;]" heading="Select an option" helper="">
       <label slot="label">Select an option</label>
       <select name="select">
@@ -31,28 +32,32 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
     </ns-inputter>
   
     <ns-inputter name="customer" validation='["isRequired"]' heading="Are you a British Gas customer?" helper="Are you a customer?">
-    <div slot="tip-details">Answer this yes if you are!</div>
+        <div slot="tip-details">Answer this yes if you are!</div>
         <input type="radio" id="question-yes" name="question" value="yes">
         <label for="question-yes">Yes</label>
         <input type="radio" id="question-no" name="question" value="no">
         <label for="question-no">No</label>
-      </ns-inputter>
+    </ns-inputter>
+    
     <ns-inputter name="products" validation='["isRequired"]' heading="What do you want?" helper="">
       <input type="checkbox" id="question-gas" name="question" value="gas" checked="">
       <label for="question-gas">Gas</label>
       <input type="checkbox" id="question-elec" name="question" value="electricity">
       <label for="question-elec">Electricity</label>
     </ns-inputter>
+    
     <ns-inputter name="firstname" validation='["isRequired", "minLength(10)"]'>
         <label slot="label" for="input-first-name">First name</label>
     </ns-inputter>
+    
     <ns-inputter name="surname" validation='["isRequired", "maxLength(15)"]'>
         <label slot="label" for="input-surname">Surname</label>
     </ns-inputter>
+    
     <ns-inputter name="email" validation='["isRequired", "isEmail"]'>
         <label slot="label" for="input-email">Email</label>
     </ns-inputter>
-    <ns-cta ennable onClick={{action "submitForm"}}>Submit</ns-cta>
+    
 </ns-form>
 ```
 Ember twiddle: (https://ember-twiddle.com/0de7a10c20cdef6c19d57aacbd560b50?openFiles=form-test.template.hbs%2C)
