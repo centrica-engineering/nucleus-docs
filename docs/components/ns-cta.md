@@ -83,7 +83,7 @@ Note: A CTA should always live inside another component.
 | **Default** | "" |
 | **Options** | n/a |
 
-## Best practises
+## Best practice
 
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
@@ -94,7 +94,7 @@ Note: A CTA should always live inside another component.
 | | Have multiple lines or sentences within a CTA |
 | | Repeat CTA copy within the same page |
 
-### Considerations of best practises
+### Considerations of best practice
 
 * To be aware of the distinct roles of the CTA's types `direct` and `text` and that they don't always act as a `primary` and `secondary` button.
 * Try not to have multiple CTA's next to each other.

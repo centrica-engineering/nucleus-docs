@@ -76,14 +76,14 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 | **Options** | n/a |
 | **Notes** | Multiple panels can be added |
 
-## Best practises
+## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use at least two tabs | Use an excessive amount of tabs |
 | Be mindful of the extra page weight | Use more than two words for your tab label |
 
-### Considerations of best practises
+### Considerations of best practice
 
 * It is advisable to use tabs alongside other components to avoid building a page that consists only of tabs.
 * If you see that the tabs are bleeding over the edge of the page in Polo or Rugby, and you have followed the guidance on not using more than two words on the tab label, then you probably have too many tabs.

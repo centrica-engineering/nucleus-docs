@@ -55,7 +55,7 @@ Atom
 | **Options** | true, false |
 | **Notes** | This is for decorative purporses only |
 
-## Best practises
+## Best practice
 
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |

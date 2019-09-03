@@ -54,7 +54,7 @@ Atom
 | **Options** | n/a |
 | **Notes** | This should always be added. This should be unique on the page. |
 
-## Best practises
+## Best practice
 
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |

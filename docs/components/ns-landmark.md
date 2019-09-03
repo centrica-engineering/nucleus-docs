@@ -99,7 +99,7 @@ Organism
 | **Default** | invert-ramp-cyan |
 | **Options** | invert-ramp-cyan, invert-ramp-grey-light, invert-ramp-green-light, invert-ramp-yellow, invert-ramp-blue |
 
-## Best practises
+## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -107,7 +107,7 @@ Organism
 | Content must be relevant to the page | |
 
 
-### Best practises for `summit`
+### Best practice for `summit`
 
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
@@ -118,7 +118,7 @@ Organism
 | Convey activity related to topic | Use images with a white background |
 | ![do-couple-mobile](https://user-images.githubusercontent.com/28779/59792122-63afe900-92cb-11e9-9553-638cd20f53f2.jpg) | ![dont-wilbur](https://user-images.githubusercontent.com/28779/59792199-87732f00-92cb-11e9-9c9d-51676e6c2aba.jpg) |
 
-### Best practises for `hillside`
+### Best practice for `hillside`
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -127,7 +127,7 @@ Organism
 | Keep the content consise | Don't add a direct cta to hillside landmark. We want to encourage the user to discover more on the page |
 | ![Do-keep-content-conise](https://user-images.githubusercontent.com/50207859/61779546-c7f92780-adf8-11e9-973c-541c7d46d46d.jpg) | ![Donts---direct-cta](https://user-images.githubusercontent.com/50207859/61779195-2540a900-adf8-11e9-8c5c-1dced44d53f6.jpg) |
 
-### Considerations of best practises
+### Considerations of best practice
 
 * Shorter and simpler words tend to work better in the heading.
 * The recommended copy length is between 1 and 5 words for the Subheading.

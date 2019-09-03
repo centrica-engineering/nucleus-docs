@@ -45,9 +45,9 @@ Atom
 | **Options** | left, right, top, bottom |
 | **Notes** | Used for styling only |
 
-## Best practises
+## Best practice
 
-### Considerations of best practises
+### Considerations of best practice
 
 * This is a building block component that is used to add decoration for the panel.
 * These should be used as backgrounds and should not be in the foreground.

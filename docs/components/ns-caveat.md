@@ -63,7 +63,7 @@ Organism
 | **Default** | "" |
 | **Options** | n/a |
 
-## Best practises
+## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -74,7 +74,7 @@ Organism
 | Only use text in the caveats | |
 | Embolden text that is important | |
 
-### Considerations of best practises
+### Considerations of best practice
 
 * We highly recommend that there are no more than three caveats in a single piece of communication.
 * Link to additional information, if needed such as terms, but should always be accompanied with a related description.
