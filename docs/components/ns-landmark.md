@@ -12,7 +12,9 @@ Landmarks can be used to set the scene for what the page is for, what offers mig
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-landmark--hub).
+To see examples of the Summit Landmark visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-landmark--summit).
+
+To see examples of the Hillside Landmark visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-landmark--hillside).
 
 ### Summit
 ```html
@@ -76,16 +78,16 @@ Organism
 | **Description** | A single line of paragraph text |
 | **Type** | string |
 | **Default** | n/a |
-| **Options** | Include an optional link to `#caveat` by placing [1](ns-landmark.md#caveat) at the end |
+| **Options** | Include an optional link to `#caveat` by placing `<a href="#caveat">1</a>` at the end |
 
-| **Name** | Named slot `cta` |
+| **Name** | Named slot `cta` (summit only) |
 | :--- | :--- |
-| **Description** | The `<ns-cta>` component  contained within a `<a>` |
+| **Description** | The `<ns-cta>` component contained within a `<a>` |
 | **Type** | string |
 | **Default** | n/a |
 | **Options** | `<ns-cta>`, `<a>` |
 
-| **Name** | Background image |
+| **Name** | Background image (summit only) |
 | :--- | :--- |
 | **Description** | A 16:9 image following our Landmark focus template |
 | **Type** | JPEG |
@@ -122,9 +124,9 @@ Organism
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use the same colour for a theme of pages, eg. boiler guides | Don't use the 'arc' decoration  |
-| ![ns-landmark-type-ridge-orange](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg) | ![Landmark-ridge-donts](https://user-images.githubusercontent.com/50207859/61697584-73d64080-ad2f-11e9-89a2-c2bbc18f7db7.jpg)
-| Keep the content consise | Don't add a direct cta to hillside landmark. We want to encourage the user to discover more on the page |
+| Use the same colour for a theme of pages, eg. boiler guides | Don't use the 'arc' decoration |
+| ![ns-landmark-type-ridge-orange](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg) | ![Landmark-ridge-donts](https://user-images.githubusercontent.com/50207859/61697584-73d64080-ad2f-11e9-89a2-c2bbc18f7db7.jpg) |
+| Keep the content consise | Don't add a CTA to hillside landmark. The aim is to encourage the user to discover more on the page |
 | ![Do-keep-content-conise](https://user-images.githubusercontent.com/50207859/61779546-c7f92780-adf8-11e9-973c-541c7d46d46d.jpg) | ![Donts---direct-cta](https://user-images.githubusercontent.com/50207859/61779195-2540a900-adf8-11e9-8c5c-1dced44d53f6.jpg) |
 
 ### Considerations of best practises
@@ -132,8 +134,8 @@ Organism
 * Shorter and simpler words tend to work better in the heading.
 * The recommended copy length is between 1 and 5 words for the Subheading.
 * If the purpose of the page is to understand more about a product or service, then it is considered bad practice to include a CTA within the landmark, as users are likely to drop out. This is because users believe the next step is to click the CTA, rather than reading the page to get a better understanding of how they should proceed.
-* Let the page type define the type of landmark you use. For example if the page purpose is to be informative / educational then we recommend using`<ns-landmark type="hillside”>`. If the page purpose is promotional we recommend using `<ns-landmark type="summit" >`.
-* If you are designing a series of informative / educational pages that all follow a similar theme eg boilers, it would be considered best practice to use the same coloured decoration within the `<ns-landmark type="hillside">`.
+* Let the page type define the type of landmark you use. For example if the page purpose is to be informative / educational then we recommend using `<ns-landmark type="hillside”>`. If the page purpose is promotional we recommend using `<ns-landmark type="summit">`.
+* If you are designing a series of informative / educational pages that all follow a similar theme, it would be considered best practice to use the same coloured decoration within the `<ns-landmark type="hillside">`.
 
 ## Landmark focus template
 
@@ -141,9 +143,9 @@ This provides the safe-area to the position of the focal point of the image.
 
 [Download the 1440x810px Landmark testcard image](https://user-images.githubusercontent.com/28779/59753927-0ee58180-927d-11e9-84fa-d72b48aa1fcf.png) and place over your Landmark photos in your image editing software.
 
---- Or ---
+**Or**
 
-Find it under `Guides` in the Nucleus Sketch Library.
+Find it under 'Guides' in the Nucleus Sketch Library.
 
 ![Landmark focal area guide - insert menu](https://user-images.githubusercontent.com/43471890/59842158-d82b6c00-934d-11e9-861a-e7ee6c6f358c.jpg)
 
@@ -168,12 +170,12 @@ Using Sketch to overlay the Landmark focus template to check alignment.
 | Here, the focus of the photo is located within the safe-area | The subject fills the entire photo, and the lady on the left will be obscured |
 | ![landmark-16x9-testcard-1440-01](https://user-images.githubusercontent.com/28779/59754143-6be13780-927d-11e9-8175-75b6a46cf2d4.jpg) | ![landmark-16x9-testcard-1440-00](https://user-images.githubusercontent.com/28779/59792749-cb1a6880-92cc-11e9-8f19-9d4caab0d169.jpg) |
 | Capture the story within. This photo is about the lady and her phone | Unfortunately, this photo is completely unsuitable for a Landmark |
-| ![landmark-16x9-testcard-1440-02](https://user-images.githubusercontent.com/28779/59754184-83b8bb80-927d-11e9-9e81-2a64704e1a92.jpg) | ![landmark-16x9-testcard-1440-04](https://user-images.githubusercontent.com/28779/59754330-c7abc080-927d-11e9-8960-4726cf73f651.jpg) |  Capture the story within. This photo is about the lady and her phone | Unfortunately, this photo is completely unsuitable for a Landmark |![ns-landmark-type-ridge-orange](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg)|
-
-
+| ![landmark-16x9-testcard-1440-02](https://user-images.githubusercontent.com/28779/59754184-83b8bb80-927d-11e9-9e81-2a64704e1a92.jpg) | ![landmark-16x9-testcard-1440-04](https://user-images.githubusercontent.com/28779/59754330-c7abc080-927d-11e9-8960-4726cf73f651.jpg) |  Capture the story within. This photo is about the lady and her phone | ![ns-landmark-type-ridge-orange](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg)|
 
 
 ## Content guidance
+
+### Summit Landmark
 
 ![image](https://user-images.githubusercontent.com/28779/59835657-fd19e200-9341-11e9-8731-0985fd5de8c0.png)
 
@@ -186,6 +188,19 @@ Using Sketch to overlay the Landmark focus template to check alignment.
 | cta-text | Keep them ‘short, relevant, and actionable’ It should not exceed more than 24 characters |
 | cta-link | This is the URL that the user will be taken too when they tap or click the CTA. |
 | image-path | This is the image that will be used inside the ns-landmark. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. |
+
+
+### Hillside Landmark
+
+TODO: include supporting image for these content guidelines.
+
+| field-type | Guidelines |
+| :--- | :--- |
+| sub-heading | sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words |
+| heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| paragraph | A single, short paragraph works best |
+| caveat | Should be placed at the end of the paragraph if necessary |
+
 
 ## Feedback
 
