@@ -8,6 +8,20 @@ We're hosting regular events to keep the discussions going.
 
 Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel #product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
 
+## 2019-09-03 / Nucleus x product teams drop in session
+* Yuri has shared the progress of the RFC CTA variant ticket with the wider product team so far https://github.com/ConnectedHomes/nucleus/issues/782
+
+and asked if the team has any other examples of CTAs they can think of where there is a need for a button without an icon.
+Conversations around needing bigger work on reworking the experience (not just lift and shift), aligning similar journeys across teams, the possibilities of using other icons in place where a < or > do not fit, changing the behaviour of a page (eg.scroll down) rather than fixing the button itself thereby working around the need for a button without an icon. 
+
+Next steps (before deciding if we should go ahead with the work or not):
+--> Gurdish to share his concept design he had explored earlier around a button that took the user to a lower part of a page
+--> catch up with Oli and Sathu around their "Find an address" journey
+--> talk to Ed/ Supriya and see if they can think of any examples
+
+* Sathu has mentioned he has raised a ticket around 1) progress bars - another component that appears across different journeys, and 2) text area ticket.
+* Adam has mentioned he is working on data grid and would like input from other product teams if they have real data examples he could experiment with e.g. high volume data examples
+
 ## 2019-08-13 / Digital Journey and Trade Show
 
 Highlights of our experience:
