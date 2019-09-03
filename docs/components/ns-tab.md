@@ -52,7 +52,7 @@ Atom
 | **Default** | '' |
 | **Options** | n/a |
 
-## Best practises
+## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -60,7 +60,7 @@ Atom
 | | Add more than 2 words to the heading |
 | | Add different types of icons (solid, outline, functional) |
 
-### Considerations of best practises
+### Considerations of best practice
 
 * Only use inside `ns-tabs` as a slot of `tab`.
 

@@ -70,7 +70,7 @@ Atom
 | **Default** | cover |
 | **Options** | cover, contain |
 
-## Best practises
+## Best practice
 
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |

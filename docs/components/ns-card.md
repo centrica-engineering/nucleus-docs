@@ -96,7 +96,7 @@ Molecule
 | **Options** | n/a |
 | **Notes** | This should be an anchor with the [ns-cta](https://docs.britishgas.design/components/ns-cta) or just the [ns-cta](https://docs.britishgas.design/components/ns-cta) |
 
-## Best practises
+## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -108,7 +108,7 @@ Molecule
 | Consider using decoration in the panel to add emphasis on the cards |  |
 | | Use the section card without a decoration |
 
-### Considerations of best practises
+### Considerations of best practice
 
 * Consider your CTA type and try to keep them consistent between rows across the cards, unless there is a need.
 * There can be less than three cards in a row, but it should always use the triple layout. Always consider a lockup for this, before using the cards.

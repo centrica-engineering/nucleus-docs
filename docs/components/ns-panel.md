@@ -41,7 +41,7 @@ To see examples visit [Storybook](https://library.britishgas.design).
 | **Default** | "" |
 | **Options** | n/a |
 
-## Best practises
+## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -49,7 +49,7 @@ To see examples visit [Storybook](https://library.britishgas.design).
 | Use appropriate colour for the purpose of page in decorations | Nest a panel in a panel |
 | Include more than one layout in a `ns-panel` | |
 
-### Considerations of best practises
+### Considerations of best practice
 
 * Treat each `ns-panel` as a section of the page.
 * Include no more than two `ns-lockups` in one `ns-panel` with a decoration.

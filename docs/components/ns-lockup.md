@@ -102,7 +102,7 @@ Organism
 | **Default** | `<ns-image>` |
 | **Options** | `<ns-image>`, `<ns-video>` |
 
-## Best practises
+## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |

@@ -112,7 +112,7 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 | **Options** | "" |
 | **Notes** | This requires helper property which is intially hidden and can be revealed by the user when they click on the helper text |
 
-## Best practises
+## Best practice
 
 ### Headings
 
