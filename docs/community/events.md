@@ -8,6 +8,22 @@ We're hosting regular events to keep the discussions going.
 
 Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel #product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
 
+## 2019-09-03 / Drop in session
+
+* Yuri shared the progress of [CTA variant](https://github.com/ConnectedHomes/nucleus/issues/782) [†]
+  * Asked if anyone has any other examples of CTAs they can think of where there is a need for a button without an icon.
+  * The possibilities of using other icons where an arrrow-left or arrow-right do not fit.
+  * Next steps before deciding if we should proceed with [CTA variant](https://github.com/ConnectedHomes/nucleus/issues/782) [†]:
+    * Gurdish to share his concept design where a CTA took the user to a lower part of a page.
+    * Catch up with Oli and Sathu around their "Find an address" journey.
+    * Talk to Ed / Supriya and see if they can think of any examples.
+* Conversations around reworking the journey experience (not just lift and shift), and aligning similar journeys across teams.
+* Considering changing the behaviour of a journey, using progressive disclosure rather than scrolling down.
+* Sathu mentioned he and Oli raised RFCs for components known to appear across different journeys:
+  * [Progress bar](https://github.com/ConnectedHomes/nucleus/issues/804) [†]
+  * [Text area](https://github.com/ConnectedHomes/nucleus/issues/791) [†]
+* Adam mentioned he is working on [Data grid](https://github.com/ConnectedHomes/nucleus/issues/628) [†] and would like input from other product teams to provide real data examples he could experiment with.
+
 ## 2019-08-13 / Digital Journey and Trade Show
 
 Highlights of our experience:
@@ -26,8 +42,6 @@ Highlights of our experience:
 * Showcase the 'pre-alpha' Drag and drop page designer.
 * Launch our Gitbook documentation.
 * Share our latest release 1.1.4.
-
-[Nucleus Design System](https://docs.britishgas.design/)
 
 [RFC Project Board](https://github.com/ConnectedHomes/nucleus/projects/6) [†]
 
@@ -132,7 +146,7 @@ Highlights of our experience:
 * Ongoing initiatives.
 * Three things you can do for accessibility.
 
-[Nucleus Session_ Accessibility .pdf](https://github.com/ConnectedHomes/nucleus/files/3364948/Nucleus.Session_.Accessibility.pdf) [†]
+[Nucleus Session Accessibility.pdf](https://github.com/ConnectedHomes/nucleus/files/3364948/Nucleus.Session_.Accessibility.pdf) [†]
 
 ## 2019-05-07 / Sketch, let's build a page
 
