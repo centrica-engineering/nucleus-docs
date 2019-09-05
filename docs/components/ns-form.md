@@ -88,12 +88,12 @@ Organism
 
 ## Specification
 
-| **Name** | Type |
+| **Name** | validate |
 | :--- | :--- |
-| **Description** |  |
-| **Type** | string |
-| **Default** | summit |
-| **Options** | summit, hillside |
+| **Description** | validates all of the fields withing the form and returns an object containg the field and validation data |
+| **Type** | Function |
+| **Default** | n/a |
+| **Options** | n/a |
 
 
 ## Best practises
