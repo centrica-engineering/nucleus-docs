@@ -90,7 +90,7 @@ Organism
 
 | **Name** | Type |
 | :--- | :--- |
-| **Description** | The variant of the landmark |
+| **Description** |  |
 | **Type** | string |
 | **Default** | summit |
 | **Options** | summit, hillside |
@@ -100,12 +100,11 @@ Organism
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use ns-inpputters for your form fields |  |
+| Use ns-inputters for your form fields |  |
+| Use ns-inputters to validate the fields | Don't write your own validations |
 
 
 ### Considerations of best practises
-
-* Shorter and simpler words tend to work better in the heading.
 
 
 ## Feedback
