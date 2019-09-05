@@ -6,9 +6,9 @@ description: Form component.
 
 ## Introduction
 
-> The form component is used to wrap around ns-inputters and manage their validation.
+> The form component is used to contain ns-inputters and manage their validations.
 
-Additional intro text...
+ns-form acts as a wrapper for your ns-inputters.  It's main purpose is to manage the validations of it's child ns-inputters.  When the validate() method is called the form will validate each of it's ns-inputters and return an object with all the relevant information about the form fields and their validations.
 
 ## Usage
 
@@ -100,17 +100,12 @@ Organism
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Keep content in Landmarks very concise | Always add a cta |
-| Content must be relevant to the page | |
+| Use ns-inpputters for your form fields |  |
 
 
 ### Considerations of best practises
 
 * Shorter and simpler words tend to work better in the heading.
-* The recommended copy length is between 1 and 5 words for the Subheading.
-* If the purpose of the page is to understand more about a product or service, then it is considered bad practice to include a CTA within the landmark, as users are likely to drop out. This is because users believe the next step is to click the CTA, rather than reading the page to get a better understanding of how they should proceed.
-* Let the page type define the type of landmark you use. For example if the page purpose is to be informative / educational then we recommend using`<ns-landmark type="hillside”>`. If the page purpose is promotional we recommend using `<ns-landmark type="summit" >`.
-* If you are designing a series of informative / educational pages that all follow a similar theme eg boilers, it would be considered best practice to use the same coloured decoration within the `<ns-landmark type="hillside">`.
 
 
 ## Feedback
