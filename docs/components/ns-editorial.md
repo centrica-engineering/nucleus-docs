@@ -2,7 +2,7 @@
 description: A self-contained or supporting piece of content.
 ---
 
-# ns-editorial (🛠 Under development)
+# ns-editorial [draft]
 
 ## Introduction
 
