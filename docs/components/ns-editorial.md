@@ -74,16 +74,17 @@ Organism
 | ✅ Do's | 💔 Don'ts |
 | ------ | -------- |
 | Use subheaders to split large paragraphs up | Add images to the editorial content |
-|        |          |
-|        |          |
-|        |          |
-|        |          |
+| Use a 4:3 ratio for imagery | Include a text or direct CTA |
+| Include contextual text links with content | Use imagery with white backgrounds |
+|  | Use imagery with copy embedded |
+|  |          |
 
 ### Considerations of best practice
 
-- xyz
-- xyz
-- Xyz
+- When starting a page using ns-editorial, start with the text on the left and image on the right
+- Break up long paragraphs with subheadings to make content more readable
+- Keep each editorial focused on one subject
+
 
 ## Feedback
 
