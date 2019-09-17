@@ -39,11 +39,11 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 **Does it live in a panel?**  
 No
 
-**What layout class can be used?**  
-N/A
+**What layout classes can be used?**  
+None
 
 **Does it live inside other components?**  
-N/A
+No
 
 **Atomic type**  
 Organism

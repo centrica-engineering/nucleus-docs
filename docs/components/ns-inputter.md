@@ -27,13 +27,13 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ## Component Relationship
 
 **Does it live in a panel?**  
-Yes
+No
 
-**What layout class can be used?**  
-* Splash
+**What layout classes can be used?**  
+None
 
 **Does it live inside other components?**  
-* ns-inputter components are typically contained within a ns-form
+`ns-form`  
 
 **Atomic type**  
 Molecule

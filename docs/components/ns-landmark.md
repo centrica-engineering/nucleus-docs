@@ -18,7 +18,7 @@ To see examples of the Hillside Landmark visit [Storybook](https://nucleus.bgdig
 
 ### Summit
 ```html
-<ns-landmark type="summit" image="xxxxxxxxx">
+<ns-landmark type="summit" image="/my-images/my-image.png">
   <h1 slot="heading">
     <span class="h5">Our product and services.</span>
     <span class="h1 enlighten">When things break down, <b>we've got you covered</b></span>
@@ -47,8 +47,8 @@ To see examples of the Hillside Landmark visit [Storybook](https://nucleus.bgdig
 **Does it live in a panel?**  
 No
 
-**What layout class can be used?**  
-N/A
+**What layout classes can be used?**  
+None
 
 **Does it live inside other components?**  
 No
