@@ -8,10 +8,7 @@ description: Inputter component.
 
 Inputters are used to help people enter and select information. Inputters are normally found within forms. There are different types of inputters including text, radio button, checkbox and select (drop-downs).
 
-> A way to communicate with British Gas (that isn't picking up the ☎)  
 > A wrapper of native inputs to create a form. There are many types of inputs including text, radio button, checkbox and select.
-
-[What and why details here (2-3 lines)] Use an inputter to capture and validate information from users and inform them why they need to give it.
 
 ## Usage
 
@@ -27,13 +24,13 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ## Component Relationship
 
 **Does it live in a panel?**  
-Yes
+No
 
-**What layout class can be used?**  
-* Splash
+**What layout classes can be used?**  
+None
 
 **Does it live inside other components?**  
-* ns-inputter components are typically contained within a ns-form
+`ns-form`  
 
 **Atomic type**  
 Molecule
@@ -42,7 +39,7 @@ Molecule
 
 | **Name** | Value |
 | :--- | :--- |
-| **Description** | The value of the input or group of inputs inside ns-inputter. This can be used to add an intial value |
+| **Description** | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an intial value |
 | **Type** | string |
 | **Default** | n/a |
 | **Options** | |
@@ -179,9 +176,7 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 | :--- | :--- |
 | Use a label with each radio button | Use just one |
 | Associate  every radio button with it's label using ID & for attributes | |
-| Consider using a select for more than 5 | |
-
-Note - Currently we don't have the ability to have radio button side by side
+| Consider using a select for more than 5 | Place radio button side by side |
 
 ### Checkboxes
 
@@ -195,7 +190,13 @@ Note - Currently we don't have the ability to have radio button side by side
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| If adding a "Please Select" option then add value="" | |
+| If adding a "Please Select" option then add an empty `value=""` attribute | |
+
+### Textarea
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Always include a label | Add placeholder content |
 
 ### Considerations of best practices
 

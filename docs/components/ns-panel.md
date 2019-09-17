@@ -14,6 +14,8 @@ Adding a decoration to an `ns-panel` using a gradient background provides visual
 
 To see examples visit [Storybook](https://library.britishgas.design).
 
+`ns-panel` is **always** a child of the `<main>` element.
+
 ```html
 <ns-panel>
   ...
@@ -22,7 +24,18 @@ To see examples visit [Storybook](https://library.britishgas.design).
 
 ## Component Relationship
 
-* `ns-panel` is **always** a child of the `<main>` element.
+**Does it live in a panel?**  
+No
+
+**What layout classes can be used?**
+None
+
+**Does it live inside other components?**  
+`ns-caveat`  
+`ns-landmark`  
+
+**Atomic type**  
+Molecule
 
 ## Specification
 

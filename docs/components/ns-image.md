@@ -23,9 +23,13 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 **Does it live in a panel?**  
 No
 
+**What layout classes can be used?**  
+None
+
 **Does it live inside other components?**  
-* ns-lockup
-* ns-card
+`ns-card`  
+`ns-landmark`  
+`ns-lockup`  
 
 **Atomic type**  
 Atom
