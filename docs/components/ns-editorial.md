@@ -40,7 +40,7 @@ No
 N/A
 
 **Does it live inside other components?**  
-`ns-panel`
+No
 
 **Atomic type**  
 Organism
@@ -108,6 +108,7 @@ Organism
 - See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-editorial])
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+
 
 ## Related links
 - Blog posts
