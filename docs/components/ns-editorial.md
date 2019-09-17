@@ -40,7 +40,7 @@ No
 N/A
 
 **Does it live inside other components?**  
-No
+`ns-panel`
 
 **Atomic type**  
 Organism
@@ -48,36 +48,42 @@ Organism
 ## Specification
 
 | **Name**| image |
-| ----------- | ------------------------------- |
+| :--- | :--- |
 | **Description** | The url of the image |
-| **Type**        | string |
-| **Default**     | n/a |
-| **Options**     | n/a |
+| **Type** | string |
+| **Default** | n/a |
+| **Options** | n/a |
 
 | **Name**| Named slot `heading` |
-| ----------- | ------------------------------- |
+| :--- | :--- |
 | **Description** | The headline of the editorial, this will appear within an h2. |
-| **Type**        | string |
-| **Default**     | n/a |
-| **Options**     | n/a |
+| **Type** | string |
+| **Default** | n/a |
+| **Options** | n/a |
 
 | **Name**| Anonymous slot |
-| ----------- | ------------------------------- |
+| :--- | :--- |
 | **Description** | The HTML content of the editorial |
-| **Type**        | html |
-| **Default**     | n/a |
-| **Options**     | n/a |
+| **Type** | html |
+| **Default** | n/a |
+| **Options** | n/a |
 
 
 ## Best practice
 
-| ✅ Do's | 💔 Don'ts |
-| ------ | -------- |
-| Use subheaders to split large paragraphs up | Add images to the editorial content |
+| 💚 Do's | 💔 Dont's |
+| :--- | :--- |
+| Use Subheadings to split large paragraphs | Add images to the editorial content |
 | Use a 4:3 ratio for imagery | Include a text or direct CTA |
 | Include contextual text links with content | Use imagery with white backgrounds |
 |  | Use imagery with copy embedded |
 |  |          |
+
+## Best practice
+
+| 💚 Do's | 💔 Dont's |
+| :--- | :--- |
+| | |
 
 ### Considerations of best practice
 
