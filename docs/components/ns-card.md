@@ -30,12 +30,12 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 Yes
 
 **What layout classes can be used?**  
-`.splash.triple`
-`.splish.triple`
+Splash triple  
+Splish triple
 
 **Does it live inside other components?**  
-`ns-landmark`
-`ns-lockup`
+* ns-landmark
+* ns-lockup
 
 **Atomic type**  
 Molecule
