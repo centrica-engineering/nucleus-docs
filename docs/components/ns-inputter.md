@@ -15,70 +15,18 @@ Inputters are used to help people enter and select information. Inputters are no
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-inputter--text).
 
 ```html
-<ns-inputter validation='["isRequired"]' helper="So we can send you love letters">
+<ns-inputter validation="['isRequired']" helper="So we can send you love letters">
   <label slot="label">First name</label>
   <input type="text">
 </ns-inputter>
 ```
-
-### Text
-```html
-<ns-inputter validation='["isRequired"]' helper="So we can send you love letters">
-  <label slot="label">First name</label>
-  <input type="text">
-</ns-inputter>
-```
-
-### Number
-```html
-<ns-inputter validation='["isRequired"]' helper="We need to know how many radiators you have">
-  <label slot="label">Number of radiators</label>
-  <input type="number">
-</ns-inputter>
-```
-
-### Radio
-```html
-<ns-inputter name="customer" validation='["isRequired"]' heading="Are you a British Gas customer?" helper="Are you a customer?">
-  <div slot="tip-details">Answer this yes if you are!</div>
-  <input type="radio" id="question-yes" name="question" value="yes">
-  <label for="question-yes">Yes</label>
-  <input type="radio" id="question-no" name="question" value="no">
-  <label for="question-no">No</label>
-</ns-inputter>
-```
-
-### Checkbox
-```html
-<ns-inputter name="products" validation='["isRequired"]' heading="What do you want?" helper="">
-  <input type="checkbox" id="question-gas" name="question" value="gas" checked="">
-  <label for="question-gas">Gas</label>
-  <input type="checkbox" id="question-elec" name="question" value="electricity">
-  <label for="question-elec">Electricity</label>
-</ns-inputter>
-```
-
-### Select
-```html
-<ns-inputter name="option" validation='["isRequired"]' heading="Select an option" helper="">
-  <label slot="label">Select an option</label>
-  <select name="select">
-    <option value="">Please Select an option</option>
-    <option value="value-01">One</option>
-    <option value="value-02">Two</option>
-    <option value="value-03">Three</option>
-    <option value="value-04">Four</option>
-  </select>
-</ns-inputter>
-```
-
 
 ## Component Relationship
 
 **Does it live in a panel?**  
-Yes
+No
 
-**What layout class can be used?**  
+**What layout classes can be used?**  
 `.splash`
 
 **Does it live inside other components?**  

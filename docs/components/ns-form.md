@@ -8,114 +8,148 @@ description: Form component.
 
 > The form component is used to contain ns-inputters and manage their validations.
 
-`ns-form` acts as a wrapper for your `ns-inputters`.  It's main purpose is to manage the validations of it's child `ns-inputters`.  When the validate() method is called the form will validate each of it's `ns-inputters` and return an object with all the relevant information about the form fields and their validations.
+The `ns-form` component is a wrapper for `ns-inputters`.  It's main purpose is to manage the validations of these `ns-inputters`.
 
 ## Usage
 
-To see examples visit:
-- [Storybook - ns-form](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-form--form)
-- [Storybook - ns-inputter](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-inputter--text)
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-form--form)
 
-### Form Example
 
 ```html
 <ns-form>
-  <!-- Select example -->
-  <ns-inputter name="option" validation='["isRequired"]' heading="Select an option" helper="">
-    <label slot="label">Select an option</label>
-    <select name="select">
-      <option value="">Please Select an option</option>
-      <option value="value-01">One</option>
-      <option value="value-02">Two</option>
-      <option value="value-03">Three</option>
-      <option value="value-04">Four</option>
-    </select>
+  <ns-inputter validation='["isRequired"]'>
+    ...
   </ns-inputter>
-  <!--  Radio example -->  
-  <ns-inputter name="customer" validation='["isRequired"]' heading="Are you a British Gas customer?" helper="Are you a customer?">
-    <div slot="tip-details">Answer this yes if you are!</div>
-    <input type="radio" id="question-yes" name="question" value="yes">
-    <label for="question-yes">Yes</label>
-    <input type="radio" id="question-no" name="question" value="no">
-    <label for="question-no">No</label>
-  </ns-inputter>
-  <!-- Checkbox example -->  
-  <ns-inputter name="products" validation='["isRequired"]' heading="What do you want?" helper="">
-    <input type="checkbox" id="question-gas" name="question" value="gas" checked="">
-    <label for="question-gas">Gas</label>
-    <input type="checkbox" id="question-elec" name="question" value="electricity">
-    <label for="question-elec">Electricity</label>
-  </ns-inputter>
-  <!-- Text examples -->  
-  <ns-inputter validation='["isTitle"]' helper="">
-    <label slot="label">Title</label>
-    <input type="text" name="title" autocomplete="honorific-prefix" spellcheck="false">
-  </ns-inputter>
-  <ns-inputter validation='["isRequired", "isFirstName"]' helper="We'll call you by your first name">
-    <label slot="label">First name</label>
-    <input type="text" name="first-name" autocomplete="given-name" spellcheck="false">
-  </ns-inputter>
-  <ns-inputter validation='["isRequired", "isLastName"]'>
-    <label slot="label">Last name</label>
-    <input type="text" name="last-name" autocomplete="family-name" spellcheck="false">
-  </ns-inputter>
-  <!-- Email example -->  
-  <ns-inputter validation='["isRequired", "isEmail"]'>
-    <label slot="label">Email</label>
-    <input type="email" validation='["isRequired"]' autocomplete="email">
-  </ns-inputter>
+  <ns-cta onClick="submitForm">Submit</ns-cta>
 </ns-form>
 ```
-[https://ember-twiddle.com/0de7a10c20cdef6c19d57aacbd560b50?openFiles=form-test.template.hbs](https://ember-twiddle.com/0de7a10c20cdef6c19d57aacbd560b50?openFiles=form-test.template.hbs%2C)
 
-### Validate
 
-Calling the `ns-form`'s `validate()` method will run all of the validations from the forms `ns-inputters`.  The validate method returns an object with information about the forms validity and it's fields and their individual validation statuses.
-
-```
-const form = document.querySelector('ns-form');
-const formData = form.validate();
+```javascript
+submitForm() {
+  const form = document.querySelector('ns-form');
+  const formData = form.validate();
+}
 ```
 
 
 ## Component Relationship
 
 **Does it live in a panel?**  
-No
+Yes
 
-**What layout class can be used?**  
-N/A
+**What layout classes can be used?**  
+`splash`  
+`splosh`  
 
 **Does it live inside other components?**  
 No
 
 **Atomic type**  
-Organism
+Atom
 
 ## Specification
 
 | **Name** | validate |
 | :--- | :--- |
-| **Description** | validates all of the fields withing the form and returns an object containg the field and validation data |
+| **Description** | validates all of the fields within the form and returns an object containing the field and validation data |
 | **Type** | Function |
 | **Default** | n/a |
 | **Options** | n/a |
+
+An **invalid validate return response** looks like:
+```json
+{
+  "isValid": false,
+  "fields": [
+    {
+      "name": "email-address",
+      "isValid": false,
+      "value": "",
+      "error": "This field is required",
+      "input": {}
+    },
+    {
+      "name": "password",
+      "isValid": false,
+      "value": "",
+      "error": "This field is required",
+      "input": {}
+    }
+  ],
+  "fieldsByName": {
+    "email-address": {
+      "name": "email-address",
+      "isValid": false,
+      "value": "",
+      "error": "This field is required",
+      "input": {}
+    },
+    "password": {
+      "name": "password",
+      "isValid": false,
+      "value": "",
+      "error": "This field is required",
+      "input": {}
+    }
+  }
+}
+```
+
+A **valid validate return response** looks like:
+
+```json
+{
+  "isValid": true,
+  "fields": [
+    {
+      "name": "email-address",
+      "isValid": true,
+      "value": "hello@example.com",
+      "input": {}
+    },
+    {
+      "name": "password",
+      "isValid": true,
+      "value": "password12",
+      "input": {}
+    }
+  ],
+  "fieldsByName": {
+    "email-address": {
+      "name": "email-address",
+      "isValid": true,
+      "value": "hello@example.com",
+      "input": {}
+    },
+    "password": {
+      "name": "password",
+      "isValid": true,
+      "value": "password12",
+      "input": {}
+    }
+  }
+}
+
+```
 
 
 ## Best practises
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use `ns-inputters` for your form fields |  |
-| Use `ns-inputters` to validate the fields | Don't write your own validations |
+| Use `ns-inputter` for your form fields | Don't write your own validations |
+| Use `ns-cta` to submit your form | Don't rely on front end validation alone. |
 
 
 ### Considerations of best practises
 
+* Alyways use the `ns-inputter` component inside `ns-form`, input and other form elements shouldn't be on their own.
+* Speak with the Nucleus team for advice on experience patterns.
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-landmark]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-landmark]).
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-form]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-form]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
