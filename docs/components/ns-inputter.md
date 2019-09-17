@@ -8,10 +8,7 @@ description: Inputter component.
 
 Inputters are used to help people enter and select information. Inputters are normally found within forms. There are different types of inputters including text, radio button, checkbox and select (drop-downs).
 
-> A way to communicate with British Gas (that isn't picking up the ☎)  
 > A wrapper of native inputs to create a form. There are many types of inputs including text, radio button, checkbox and select.
-
-[What and why details here (2-3 lines)] Use an inputter to capture and validate information from users and inform them why they need to give it.
 
 ## Usage
 
@@ -42,7 +39,7 @@ Molecule
 
 | **Name** | Value |
 | :--- | :--- |
-| **Description** | The value of the input or group of inputs inside ns-inputter. This can be used to add an intial value |
+| **Description** | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an intial value |
 | **Type** | string |
 | **Default** | n/a |
 | **Options** | |
