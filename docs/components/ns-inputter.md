@@ -179,9 +179,7 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 | :--- | :--- |
 | Use a label with each radio button | Use just one |
 | Associate  every radio button with it's label using ID & for attributes | |
-| Consider using a select for more than 5 | |
-
-Note - Currently we don't have the ability to have radio button side by side
+| Consider using a select for more than 5 | Place radio button side by side |
 
 ### Checkboxes
 
@@ -195,7 +193,13 @@ Note - Currently we don't have the ability to have radio button side by side
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| If adding a "Please Select" option then add value="" | |
+| If adding a "Please Select" option then add an empty `value=""` attribute | |
+
+### Textarea
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Always include a label | Add placeholder content |
 
 ### Considerations of best practices
 
