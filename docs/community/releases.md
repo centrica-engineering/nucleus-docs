@@ -5,6 +5,45 @@ description: Here are our release notes - enjoy!
 # Release notes
 
 
+## Version 1.2.0
+
+*Release Notes 2019-09-20: New components and documentation*
+
+### What’s new around here 👾
+
+* The long awaited `ns-editorial` has made it into this release.
+  * Introducing a new layout `.splosh` which, at this time is exclusively for `ns-editorial`.
+* We have added the ability to include a `textarea` within `ns-inputter`.
+* Prototype of the Nucleus header and footer.
+  * Including `ns-header` and `ns-footer`.
+  * Simple `cookie-message` included.
+  * Additional `nav` variant of the `ns-card`.
+  * Adding the (burger) `menu` icon.
+
+**Documentation**
+* Component `ns-editorial` - https://docs.britishgas.design/components/ns-editorial.
+* Textarea - https://docs.britishgas.design/components/ns-inputter#textarea.
+
+### Bug fixes 🙊
+
+* Ensuring that the Nucleus container `.ndsn` class fills the width of the browser.
+* Resolving an issue where text within in the reversed `lockjaw` Lockup was against the edge.
+
+### Improvements 🌺
+
+* Creating a `gradient-colour` mixin.
+* Updating the Landmark Storybook stories to better reflect the different types.
+* Tidying up a few stories within Storybook.
+
+### Feedback 👩🏽‍💻
+
+All our Requests For Change can be found under the Requests milestone in GitHub.
+https://github.com/ConnectedHomes/nucleus/milestone/18
+
+Any questions? Let us know 🙌🏼
+
+-------
+
 ## Version 1.1.4
 
 *Release Notes 2019-07-31: Additional components, Improvements and bugfixes*
