@@ -18,6 +18,7 @@ description: Here are our release notes - enjoy!
   * Including `ns-header` and `ns-footer`.
   * Simple `cookie-message` included.
   * Additional `nav` variant of the `ns-card`.
+  * To support the header and footer, we have added `type="nav"` to `ns-panel` 
   * Adding the (burger) `menu` icon.
 
 **Documentation**
@@ -27,7 +28,7 @@ description: Here are our release notes - enjoy!
 ### Bug fixes 🙊
 
 * Ensuring that the Nucleus container `.ndsn` class fills the width of the browser.
-* Resolving an issue where text within in the reversed `lockjaw` Lockup was against the edge.
+* Resolving an issue where text within the reversed `lockjaw` Lockup was against the edge of the browser.
 
 ### Improvements 🌺
 
