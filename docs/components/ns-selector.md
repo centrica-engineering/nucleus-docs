@@ -21,9 +21,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
   <ns-selector selectedvalue="product1" image="image001.png" decoration="boiler" label="This is the label text" type="radio">
     <h2 slot="heading">Wolf plaid crucifix hammock</h2>
     <p slot="subheading">Kale chips live-edge</p>
-    <div slot="content">
-      <p>Subway tile squid godard occupy shabby chic blog hell</p>
-    </div>
+    <div slot="content">Subway tile squid godard occupy shabby chic blog hell</div>
   </ns-selector>
 
   <ns-selector selectedvalue="product2" image="image001.png" decoration="appliance" label="This is the label text" type="radio">
