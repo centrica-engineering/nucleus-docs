@@ -16,7 +16,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 
 ```html
-<ns-inputter validation="[&quot;isRequired&quot;]" heading="Chose a product" helper="" name="product">
+<ns-inputter validation="['isRequired']" heading="Chose a product" helper="" name="product">
 
   <ns-selector selectedvalue="product1" image="image001.png" decoration="boiler" label="This is the label text" type="radio">
     <h2 slot="heading">Wolf plaid crucifix hammock</h2>
