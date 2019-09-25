@@ -18,7 +18,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ```html
 <ns-inputter validation="[&quot;isRequired&quot;]" heading="Chose a product" helper="" name="product">
 
-  <ns-selector selectedvalue="product1" style="left:0px; top:200px;" image="image001.png" decoration="boiler" label="This is the label text" type="radio">
+  <ns-selector selectedvalue="product1" image="image001.png" decoration="boiler" label="This is the label text" type="radio">
     <h2 slot="heading">Wolf plaid crucifix hammock</h2>
     <p slot="subheading">Kale chips live-edge</p>
     <div slot="content">
@@ -26,7 +26,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
     </div>
   </ns-selector>
 
-  <ns-selector selectedvalue="product2" style="left:600px; top:200px" image="image001.png" decoration="appliance" label="This is the label text" type="radio">
+  <ns-selector selectedvalue="product2" image="image001.png" decoration="appliance" label="This is the label text" type="radio">
     <h2 slot="heading">Fixie snackwave fam, chambray</h2>
     <p slot="subheading">Tbh before they sold out blue bottle</p>
     <div slot="content">Salvia yuccie stumptown, 90's portland quinoa chambray.</div>
@@ -56,6 +56,48 @@ Molecule
 | :--- | :--- |
 | **Description** | validates all of the fields within the form and returns an object containing the field and validation data |
 | **Type** | Function |
+| **Default** | n/a |
+| **Options** | n/a |
+
+| **Name**| Named slot `type` |
+| :--- | :--- |
+| **Description** | The type of selector button to use radio or checkbox |
+| **Type** | string |
+| **Default** | n/a |
+| **Options** | radio, checkbox |
+
+| **Name**| Named slot `heading` |
+| :--- | :--- |
+| **Description** | The heading of the selector, this will appear within an h2. |
+| **Type** | string |
+| **Default** | n/a |
+| **Options** | n/a |
+
+| **Name**| Named slot `subheading` |
+| :--- | :--- |
+| **Description** | The sub-heading of the selector, this will appear within an h3. |
+| **Type** | string |
+| **Default** | n/a |
+| **Options** | n/a |
+
+| **Name**| Named slot `content` |
+| :--- | :--- |
+| **Description** | The text content of the selector, this will appear within a paragraph |
+| **Type** | string |
+| **Default** | n/a |
+| **Options** | n/a |
+
+| **Name**| Named slot `image` |
+| :--- | :--- |
+| **Description** | The url of the image (optional) |
+| **Type** | string |
+| **Default** | n/a |
+| **Options** | n/a |
+
+| **Name**| Named slot `decoration` |
+| :--- | :--- |
+| **Description** | The name of the illustration (optional) |
+| **Type** | string |
 | **Default** | n/a |
 | **Options** | n/a |
 
