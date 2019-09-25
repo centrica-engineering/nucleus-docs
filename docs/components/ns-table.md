@@ -8,7 +8,18 @@ description: A reusable table that can hold data with multiple rows and multiple
 
 > A reusable table that can hold data with multiple rows and multiple columns.
 
-Related content can be separated into clearly labelled sections.
+The table component consumes basic HTML table markup and makes it accessible and responsive as well as styling it.
+
+## Accessibility
+
+### Aria
+The ns-table component adds all the necessary Aria tags to the table to make it accessible for screen readers.
+
+### Keyboard
+Keyboard controls are automatically added to the table to make it perform as a data grid.  You can select cells and use the arrow keys to navigate.
+
+### Responsive
+If your table has table headers <th> in the first column, the component will make these “sticky” so that the table data can be scrolled horizontally whilst the first column headers stay in place.
 
 ## Usage
 
@@ -50,8 +61,10 @@ Atom
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Add a `<caption>` to the `ns-table` |  |
-| Use `h5` inside `th` cells |  |
+| Add a `<caption>` to the `ns-table` | Use for laying out components |
+| Use for displaying data in tables |  |
+| Use basic text, numbers. | |
+| Add lists? Bold, italic, what are the rules??? | | 
 
 ### Considerations of best practice
 
