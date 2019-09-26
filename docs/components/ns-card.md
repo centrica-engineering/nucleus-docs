@@ -14,7 +14,7 @@ Cards give a story about why the user should go to the next action. This can be 
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-card--section).
 
-{% embed url="https://jsfiddle.net/jonholt91/21vh7z4e/embed/result" %}
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-card" %}
 
 ```html
 <ns-card type="section" decoration="bulb">
