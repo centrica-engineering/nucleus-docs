@@ -14,6 +14,8 @@ The `ns-form` component is a wrapper for `ns-inputters`.  It's main purpose is t
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-form--form)
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-form" %}
+
 
 ```html
 <ns-form>

@@ -14,6 +14,8 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-icon--gas).
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-icon" %}
+
 ```html
 <ns-icon type="gas"></ns-icon>
 ```

@@ -14,6 +14,8 @@ The tab is the button that can be clicked to change the content in the `ns-tabs`
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-tab--tab).
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-tab" %}
+
 ```html
 <ns-tab>Electricity</ns-tab>
 ```

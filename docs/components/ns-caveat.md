@@ -14,6 +14,8 @@ Caveats link to content in the page, providing more information about legality a
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-caveat--caveat)
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-caveat" %}
+
 ```html
 <ns-caveat>
   <h2 slot="heading">Legal information</h2>

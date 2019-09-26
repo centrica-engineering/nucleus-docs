@@ -14,6 +14,8 @@ Inputters are used to help people enter and select information. Inputters are no
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-inputter--text).
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter" %}
+
 ```html
 <ns-inputter validation="['isRequired']" helper="So we can send you love letters">
   <label slot="label">First name</label>

@@ -16,6 +16,8 @@ To see examples of the Summit Landmark visit [Storybook](https://nucleus.bgdigit
 
 To see examples of the Hillside Landmark visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-landmark--hillside).
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-landmark" %}
+
 ### Summit
 ```html
 <ns-landmark type="summit" image="/my-images/my-image.png">

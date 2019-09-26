@@ -14,6 +14,8 @@ Lockups can be used to display key information about a product, a service or tel
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-decoration-panel).
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-lockup" %}
+
 ```html
 <ns-lockup type="lockbox">
   <h2 slot="heading">

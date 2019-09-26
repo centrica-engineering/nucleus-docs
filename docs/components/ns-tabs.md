@@ -14,6 +14,8 @@ Related content can be separated into clearly labelled sections.
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-tabs--tabs).
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-tabs" %}
+
 ```html
 <ns-tabs>
   <ns-tab slot="tab">Electricity</ns-tab>

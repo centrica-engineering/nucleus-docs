@@ -16,6 +16,8 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 `ns-cta` should always live inside another component.
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-cta" %}
+
 ```html
 <ns-cta>Learn more about Hive</ns-cta>
 ```
