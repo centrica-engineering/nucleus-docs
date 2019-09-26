@@ -13,6 +13,8 @@ description: A self-contained or supporting piece of content.
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-editorial--editorial)
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-editorial" %}
+
 ```html
 <ns-editorial image="/my-images/my-image.png">
   <h2 slot="heading">Typewriter seitan chartreuse musta</h2>

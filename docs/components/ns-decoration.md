@@ -14,6 +14,8 @@ Holds the SVG decoration and masks that display the layout decoration for panels
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-decoration--circle-green).
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-decoration" %}
+
 ```html
 <ns-decoration type="circle-green"></ns-decoration>
 ```

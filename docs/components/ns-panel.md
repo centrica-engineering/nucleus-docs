@@ -16,6 +16,8 @@ To see examples visit [Storybook](https://library.britishgas.design).
 
 `ns-panel` is **always** a child of the `<main>` element.
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-panel" %}
+
 ```html
 <ns-panel>
   ...

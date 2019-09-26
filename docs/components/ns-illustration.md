@@ -14,6 +14,8 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-illustrations--gas).
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-illustration" %}
+
 ```html
 <ns-illustration type="gas"></ns-illustration>
 ```

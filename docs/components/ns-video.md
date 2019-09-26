@@ -14,6 +14,8 @@ British Gas creates many videos to engage customers. This component allows havin
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-video--youtube).
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-video" %}
+
 ```html
 <ns-video id="dQw4w9WgXcQ" ratio="16x9" title="Rick Astley, Never going to give you up music video"></ns-video>
 ```
