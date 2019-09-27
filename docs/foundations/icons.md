@@ -2,7 +2,7 @@
 description: Nucleus icon suite.
 ---
 
-# Understanding our icons
+# Icons
 
 ## Why we use icons
 
