@@ -27,9 +27,11 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ```html
 <ns-table>
-  <thead> ... </thead>
-  <tbody> ... </tbody>
-  <tfoot> ... </tfoot>
+  <table>
+    <thead> ... </thead>
+    <tbody> ... </tbody>
+    <tfoot> ... </tfoot>
+  </table>
 </ns-table>
 ```
 
@@ -64,12 +66,12 @@ Atom
 | Add a `<caption>` to the `ns-table` | Use for laying out components |
 | Use for displaying data in tables |  |
 | Use basic text, numbers. | |
-| Add lists? Bold, italic, what are the rules??? | | 
+| Add lists? Bold, italic, what are the rules??? | |
 
 ### Considerations of best practice
 
-* Use `normal` paragraph font
-* Use `h5` for `th` cells
+* `td` cells will be styled as `normal` paragraph font
+* `th` cells will be styled as `h5` heading font
 * Fill cells with:
   * Paragraph
   * Bullet list
