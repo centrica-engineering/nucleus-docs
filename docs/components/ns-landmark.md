@@ -171,7 +171,7 @@ TODO: include supporting image for these content guidelines.
 
 ### Image guidance
 
-| Component | Ratio | Dimensions | Size |  Type
+| Variant | Ratio | Dimensions | Size |  Type
 | :--- | :--- | :--- | :--- |:--- | 
 | summit | 16:9 | 1440x810px | < 200kb | jpeg |
 
