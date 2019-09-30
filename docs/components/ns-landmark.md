@@ -204,7 +204,7 @@ Find it under 'Guides' in the Nucleus Sketch Library.
 | Here, the focus of the photo is located within the safe-area | The subject fills the entire photo, and the lady on the left will be obscured |
 | ![landmark-16x9-testcard-1440-01](https://user-images.githubusercontent.com/28779/59754143-6be13780-927d-11e9-8175-75b6a46cf2d4.jpg) | ![landmark-16x9-testcard-1440-00](https://user-images.githubusercontent.com/28779/59792749-cb1a6880-92cc-11e9-8f19-9d4caab0d169.jpg) |
 | Capture the story within. This photo is about the lady and her phone | Unfortunately, this photo is completely unsuitable for a Landmark |
-| ![landmark-16x9-testcard-1440-02](https://user-images.githubusercontent.com/28779/59754184-83b8bb80-927d-11e9-9e81-2a64704e1a92.jpg) | ![landmark-16x9-testcard-1440-04](https://user-images.githubusercontent.com/28779/59754330-c7abc080-927d-11e9-8960-4726cf73f651.jpg) |  Capture the story within. This photo is about the lady and her phone | ![ns-landmark-type-ridge-orange](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg)|
+| ![landmark-16x9-testcard-1440-02](https://user-images.githubusercontent.com/28779/59754184-83b8bb80-927d-11e9-9e81-2a64704e1a92.jpg) | ![landmark-16x9-testcard-1440-04](https://user-images.githubusercontent.com/28779/59754330-c7abc080-927d-11e9-8960-4726cf73f651.jpg) |
 
 
 
