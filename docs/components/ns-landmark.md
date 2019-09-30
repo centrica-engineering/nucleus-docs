@@ -173,7 +173,7 @@ TODO: include supporting image for these content guidelines.
 
 | Variant | Ratio | Dimensions | Size |  Type
 | :--- | :--- | :--- | :--- |:--- | 
-| summit | 16:9 | 1440x810px | < 200kb | jpeg |
+| `summit` | 16:9 | 1440x810px | < 200kb | jpeg |
 
 ### The template
 
