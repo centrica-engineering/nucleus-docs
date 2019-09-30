@@ -14,9 +14,9 @@ The Nucleus team is responsible for driving the growth and adoption of the desig
 
 Everyone plays a part in creating a coherent, consistent and engaging customer experience.
 
-To help do this, we want to ensure we provide everyone with helpful and relevant resources. If you would like to contribute to the Nucleus documentation please reach out to one of our team.
+To help do this, we want to ensure we provide everyone with helpful and relevant resources. If you would like to contribute to Nucleus please reach out to one of our team.
 
-Whether it's using the resources provided by Nucleus or contributing to them, it's your turn now.
+Whether it's using the resources and documentation provided by Nucleus or contributing to them, it's your turn now.
 
 ### Who can contribute?
 
@@ -24,9 +24,9 @@ Everyone. Whether you are a designer, a software engineer, a tester, a solutions
 
 ### Where to start
 
-1. Take some time to get started with Nucleus and explore what it offers.
-2. Make use of our three feedback channels: Github, Slack, and face-to-face sessions.
-3. Repeat.
+1. Take some time to get accustomed with Nucleus and explore what it offers.
+2. Make use of our feedback channels: Github, Slack, and face-to-face sessions.
+3. Reach out to any member of the Nucleus team, start a conversation and ask questions.
 
 ### Sending it in
 
