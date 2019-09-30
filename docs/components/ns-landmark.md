@@ -169,7 +169,7 @@ TODO: include supporting image for these content guidelines.
 | caveat | Should be placed at the end of the paragraph if necessary |
 
 
-## Image guidance
+### Image guidance
 
 | Component | Ratio | Dimensions | Size |  Type
 | :--- | :--- | :--- | :--- |:--- | 
@@ -177,7 +177,9 @@ TODO: include supporting image for these content guidelines.
 
 ### The template
 
-[Download the 1440x810px Landmark testcard image](https://user-images.githubusercontent.com/28779/59753927-0ee58180-927d-11e9-84fa-d72b48aa1fcf.png) 
+This provides the safe-area to the position of the focal point of the image.
+
+[Download the 1440x810px Landmark testcard image](https://user-images.githubusercontent.com/28779/59753927-0ee58180-927d-11e9-84fa-d72b48aa1fcf.png) and place over your Landmark photos in your image editing software.
 
 ![landmark-16x9-testcard-1440](https://user-images.githubusercontent.com/28779/59753927-0ee58180-927d-11e9-84fa-d72b48aa1fcf.png)
 
