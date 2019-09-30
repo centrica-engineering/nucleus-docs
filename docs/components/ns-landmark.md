@@ -139,41 +139,6 @@ Organism
 * Let the page type define the type of landmark you use. For example if the page purpose is to be informative / educational then we recommend using `<ns-landmark type="hillside”>`. If the page purpose is promotional we recommend using `<ns-landmark type="summit">`.
 * If you are designing a series of informative / educational pages that all follow a similar theme, it would be considered best practice to use the same coloured decoration within the `<ns-landmark type="hillside">`.
 
-## Landmark focus template
-
-This provides the safe-area to the position of the focal point of the image.
-
-[Download the 1440x810px Landmark testcard image](https://user-images.githubusercontent.com/28779/59753927-0ee58180-927d-11e9-84fa-d72b48aa1fcf.png) and place over your Landmark photos in your image editing software.
-
-**Or**
-
-Find it under 'Guides' in the Nucleus Sketch Library.
-
-![Landmark focal area guide - insert menu](https://user-images.githubusercontent.com/43471890/59842158-d82b6c00-934d-11e9-861a-e7ee6c6f358c.jpg)
-
-### The template
-
-![landmark-16x9-testcard-1440](https://user-images.githubusercontent.com/28779/59753927-0ee58180-927d-11e9-84fa-d72b48aa1fcf.png)
-
-### Photoshop
-
-Using Photoshop to overlay the Landmark focus template to check alignment.
-
-![image](https://user-images.githubusercontent.com/28779/59829941-7c091d80-9336-11e9-829b-9d1ab69d49a3.png)
-
-### Sketch
-
-Using Sketch to overlay the Landmark focus template to check alignment.
-
-![Screenshot 2019-06-20 at 12 30 08](https://user-images.githubusercontent.com/43471890/59846281-54767d00-9357-11e9-805a-96487c8ecc7f.png)
-
-| 💚 Do | 💔 Don't |
-| :--- | :--- |
-| Here, the focus of the photo is located within the safe-area | The subject fills the entire photo, and the lady on the left will be obscured |
-| ![landmark-16x9-testcard-1440-01](https://user-images.githubusercontent.com/28779/59754143-6be13780-927d-11e9-8175-75b6a46cf2d4.jpg) | ![landmark-16x9-testcard-1440-00](https://user-images.githubusercontent.com/28779/59792749-cb1a6880-92cc-11e9-8f19-9d4caab0d169.jpg) |
-| Capture the story within. This photo is about the lady and her phone | Unfortunately, this photo is completely unsuitable for a Landmark |
-| ![landmark-16x9-testcard-1440-02](https://user-images.githubusercontent.com/28779/59754184-83b8bb80-927d-11e9-9e81-2a64704e1a92.jpg) | ![landmark-16x9-testcard-1440-04](https://user-images.githubusercontent.com/28779/59754330-c7abc080-927d-11e9-8960-4726cf73f651.jpg) |  Capture the story within. This photo is about the lady and her phone | ![ns-landmark-type-ridge-orange](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg)|
-
 
 ## Content guidance
 
@@ -204,9 +169,47 @@ TODO: include supporting image for these content guidelines.
 | caveat | Should be placed at the end of the paragraph if necessary |
 
 
+## Image guidance
+
+| Component | Ratio | Dimensions | Size |  Type
+| :--- | :--- | :--- | :--- |:--- | 
+| summit | 16:9 | 1440x810px | < 200kb | jpeg |
+
+### The template
+
+[Download the 1440x810px Landmark testcard image](https://user-images.githubusercontent.com/28779/59753927-0ee58180-927d-11e9-84fa-d72b48aa1fcf.png) 
+
+![landmark-16x9-testcard-1440](https://user-images.githubusercontent.com/28779/59753927-0ee58180-927d-11e9-84fa-d72b48aa1fcf.png)
+
+### Using Photoshop
+
+Using Photoshop to overlay the Landmark focus template to check alignment.
+
+![image](https://user-images.githubusercontent.com/28779/59829941-7c091d80-9336-11e9-829b-9d1ab69d49a3.png)
+
+### Using Sketch
+
+Using Sketch to overlay the Landmark focus template to check alignment.
+
+![Screenshot 2019-06-20 at 12 30 08](https://user-images.githubusercontent.com/43471890/59846281-54767d00-9357-11e9-805a-96487c8ecc7f.png)
+
+Find it under 'Guides' in the Nucleus Sketch Library.
+
+![Landmark focal area guide - insert menu](https://user-images.githubusercontent.com/43471890/59842158-d82b6c00-934d-11e9-861a-e7ee6c6f358c.jpg)
+
+| 💚 Do | 💔 Don't |
+| :--- | :--- |
+| Here, the focus of the photo is located within the safe-area | The subject fills the entire photo, and the lady on the left will be obscured |
+| ![landmark-16x9-testcard-1440-01](https://user-images.githubusercontent.com/28779/59754143-6be13780-927d-11e9-8175-75b6a46cf2d4.jpg) | ![landmark-16x9-testcard-1440-00](https://user-images.githubusercontent.com/28779/59792749-cb1a6880-92cc-11e9-8f19-9d4caab0d169.jpg) |
+| Capture the story within. This photo is about the lady and her phone | Unfortunately, this photo is completely unsuitable for a Landmark |
+| ![landmark-16x9-testcard-1440-02](https://user-images.githubusercontent.com/28779/59754184-83b8bb80-927d-11e9-9e81-2a64704e1a92.jpg) | ![landmark-16x9-testcard-1440-04](https://user-images.githubusercontent.com/28779/59754330-c7abc080-927d-11e9-8960-4726cf73f651.jpg) |  Capture the story within. This photo is about the lady and her phone | ![ns-landmark-type-ridge-orange](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg)|
+
+
+
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-landmark]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-landmark]).
+.
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
