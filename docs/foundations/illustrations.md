@@ -2,7 +2,7 @@
 description: Nucleus illustration suite.
 ---
 
-# Understanding our illustrations
+# Illustrations
 
 ## Why we use illustrations
 
