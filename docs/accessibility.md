@@ -6,7 +6,6 @@ description: Ensuring that no one is left out.
 
 Nucleus cares deeply about inclusivity. To help everyone, we aim to understand the impact each and every decision we make.
 
-
 ## Guidance
 
 Accessibility is a fundamental foundation of Nucleus.
@@ -30,7 +29,7 @@ There are a number of tools that we've listed in our [Tools](https://docs.britis
 
 * Audio and video content including important speech or sound must have a text equivalent.
 * Captions are provided for all pre-recorded audio content in synchronised media, except when the media is a media alternative for text and is clearly labelled as such.
-* Audio and/or video embedded in an application (including audio that is part of a video or multimedia file) must play for no more than 3 seconds before pausing or plays only when the user chooses.
+* Audio and/or video embedded in an application \(including audio that is part of a video or multimedia file\) must play for no more than 3 seconds before pausing or plays only when the user chooses.
 * When pressing play a screen reader user must be able to use a single button press to pause it again.
 * Disabled users have access to clearly labelled play and pause controls for the audio/video player.
 
@@ -44,7 +43,7 @@ There are a number of tools that we've listed in our [Tools](https://docs.britis
 
 * Gestures must be intuitive and consistent.
 * The solution will allow use of familiar gesture controls such as finger swipe, taps, zoom pinch/pull.
-* Do not insert functions that can only be managed via gestures (such as swiping motion).
+* Do not insert functions that can only be managed via gestures \(such as swiping motion\).
 * Always add a button/link so that users who have limited dexterity can tap a button to navigate.
 
 ### Images
@@ -52,7 +51,7 @@ There are a number of tools that we've listed in our [Tools](https://docs.britis
 * All images must have a valid alt attribute values.
 * Link images describe the destination page.
 * Button images have an alt attribute that describes the function of the button.
-* Images used for decorative and spacing purposes rather than providing essential, contextual and functional guidance must have a null alt attribute (`aria-hidden=true` or `alt=''`) to hide it from screen readers.
+* Images used for decorative and spacing purposes rather than providing essential, contextual and functional guidance must have a null alt attribute \(`aria-hidden=true` or `alt=''`\) to hide it from screen readers.
 
 ### Links
 
@@ -76,7 +75,6 @@ There are a number of tools that we've listed in our [Tools](https://docs.britis
 * Users will be able to use external hardware to navigate the solution, such as Bluetooth keyboards.
 * All aspects of the navigation can be accessed using keyboard-only control and screen readers.
 
-
 ## Types of barriers
 
 Inclusivity and accessibility are fundamental. No one should be left out. Ever.
@@ -96,7 +94,7 @@ When designing experiences for users who have physical disabilities which impact
 When designing experiences for users who have cognitive disabilities, it is important to acknowledge the following:
 
 * Reading age may be lower.
-* Busy page layout can be confusing (Keep it simple!).
+* Busy page layout can be confusing \(Keep it simple!\).
 * Ambiguous labels and icons can be confusing.
 * Users may be easily distracted by moving animation.
 * Short term memory may be affected.
@@ -114,18 +112,19 @@ When designing experiences for users who have hearing loss, it is important to a
 
 When designing experiences for users who have sight loss, it is important to acknowledge the following:
 
-* Contrast between text and the background may not be sufficient (W3C ratio 4.5:1).
+* Contrast between text and the background may not be sufficient \(W3C ratio 4.5:1\).
 * Text may not be large enough to read so would need to resize or zoom into content.
 * Do not cause content to update elsewhere on screen after selecting an item.
 
 Screen readers are used to translate written text into speech:
 
-* All non-text elements (images, multimedia) require a text alternative.
+* All non-text elements \(images, multimedia\) require a text alternative.
 * Visual structure must be represented in a logical order, use headings.
-* Navigation must be obvious to users (scrolling content confusing).
+* Navigation must be obvious to users \(scrolling content confusing\).
 
 ### Permanent vs. temporary
 
 Some barriers are permanent, some temporary. Suffering from an injury or illness can limit the use of a limb. Not being fluent in a language lowers our reading age. We might want to watch a video with its sound muted but not have any headphones at hand.
 
 In fact, it's likely that all of us experience these barriers at some point in our lives. Whether temporary or permanent, we don't need to think that our abilities are any less than those of others. It's simply a different approach to getting on and taking action in our lives.
+

@@ -14,9 +14,9 @@ Lockups can be used to display key information about a product, a service or tel
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-decoration-panel).
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-lockup" %}
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-lockup" caption="" %}
 
-```html
+```markup
 <ns-lockup type="lockbox">
   <h2 slot="heading">
     <span class="h5">Our Home Services.</span>
@@ -110,8 +110,8 @@ Organism
 | :--- | :--- |
 | Embolden the key message in the heading | Include more than one CTA |
 | Keep the heading length to 4-12 words | Exceed more than two paragraphs of 3 lines each |
-| Keep subheading length between 1-5 words | |
-| Optimise the lockup image (see image optimise LINK) | Use images with a white background |
+| Keep subheading length between 1-5 words |  |
+| Optimise the lockup image \(see image optimise LINK\) | Use images with a white background |
 
 ### Considerations of best practices
 
@@ -139,3 +139,4 @@ Organism
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+ns-lockup).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+

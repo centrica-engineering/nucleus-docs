@@ -22,13 +22,12 @@ Producing names for our custom elements we prefix with `ns-` the result of which
 
 An example of one of our custom elements is `<ns-landmark>`
 
-https://www.webcomponents.org/introduction
-
+[https://www.webcomponents.org/introduction](https://www.webcomponents.org/introduction)
 
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
-| Place the name as a prefix followed by a modifier using a hyphen to separate the two. `name-thing` `name-stuff`| Place the name as a suffix, it confuses the convention. `thing-name` `stuff-name`|
-| Adding a third part to describe in more detail different things. `name-thing-bob` `name-thing-dod` `name-thing-qoq` `name-thing-pop`| Name a thing by what it could represent ✏️ `icon-edit` |
+| Place the name as a prefix followed by a modifier using a hyphen to separate the two. `name-thing` `name-stuff` | Place the name as a suffix, it confuses the convention. `thing-name` `stuff-name` |
+| Adding a third part to describe in more detail different things. `name-thing-bob` `name-thing-dod` `name-thing-qoq` `name-thing-pop` | Name a thing by what it could represent ✏️ `icon-edit` |
 | Use a descriptive name for the content of the icon. This is clearly a pencil ✏️ `icon-pencil` |  |
 
 ## Given names
@@ -175,10 +174,9 @@ Our colours are named with common colour names and have a suffix for the intensi
 | :--- | :--- |
 | Call this colour 🔷 blue-light | Call this colour 🔷 sky-blue |
 
-
 **Brand palette**
 
-```LESS
+```css
 @slate: #333F48;
 @white: #FFFFFF;
 @cyan: #0099FF;
@@ -200,7 +198,7 @@ Our colours are named with common colour names and have a suffix for the intensi
 
 **System palette**
 
-```LESS
+```css
 @info: #209CEE;
 @success: #23D160;
 @warning: #FFDD57;
@@ -209,15 +207,15 @@ Our colours are named with common colour names and have a suffix for the intensi
 
 ### Spacing
 
-Spacing is directly related to our typography and infers its sizing using modular scale.
-We have not yet implemented a naming convention for spacing, in our LESS we use our modular scale mixin which currently looks like:
+Spacing is directly related to our typography and infers its sizing using modular scale. We have not yet implemented a naming convention for spacing, in our LESS we use our modular scale mixin which currently looks like:
 
-```LESS
+```css
 padding-top: .ms(6, @ratio: @minor-third)[@result];
 ```
+
 In this example we have a `medium` space across three viewports:
 
-```LESS
+```css
 .responsive-min(@squash-court, {
   padding: .ms(6, @ratio: @major-second)[@result];
 });
@@ -229,7 +227,6 @@ In this example we have a `medium` space across three viewports:
 .responsive-min(@hockey-pitch, {
   padding: .ms(6, @ratio: @major-third)[@result];
 });
-
 ```
 
 Each viewport will automatically adjust the dimensions of each of these sizes.
@@ -237,7 +234,7 @@ Each viewport will automatically adjust the dimensions of each of these sizes.
 * A `large` space on `hockey-pitch` will measure `2.68555em`
 * A `large` space on `squash-court` will measure `1.74023em`
 
-An example of a collection of names given to space (if we were to need 7!)
+An example of a collection of names given to space \(if we were to need 7!\)
 
 ```markup
 space-vast
@@ -279,7 +276,8 @@ This is based on `straight:rounded`
 1:3
 3:1
 ```
-Alongside the concept of 'which corner(s)' are rounded, there are associated corner sizes to consider depending on how much of the percentage of the viewport the lozenge width consumes.
+
+Alongside the concept of 'which corner\(s\)' are rounded, there are associated corner sizes to consider depending on how much of the percentage of the viewport the lozenge width consumes.
 
 ### Cards
 
@@ -299,7 +297,6 @@ We refer to `structure` instead of `grid`.
 
 Structure is built with CSS Grid and utilises fraction `fr` units.
 
-
 ### Layout
 
 Our `layout`'s are contained within a `panel`, we can include more than one layout in a panel.
@@ -317,7 +314,7 @@ For the Rewards section on the Homepage we included a class of `malcolm` to hide
 
 Currently we use `Hub` and `Sub-hub` to refer to two types of brochure type pages.
 
-These are also referred to across the business as their position in the information architecture: `Level 0`, `Level 1`, `Level 2` (where `Level 0` and `Level 1` currently use the same page template)
+These are also referred to across the business as their position in the information architecture: `Level 0`, `Level 1`, `Level 2` \(where `Level 0` and `Level 1` currently use the same page template\)
 
 Oli produced a metaphor of a shop to describe the different page types, it would be worth revisiting this to see if it's suitable.
 
@@ -341,7 +338,7 @@ We haven't produced names for our gradients. However, we have included them in o
 
 **Suggestion**
 
-Use the convention of the first colour (top) of the gradient as part of the name.
+Use the convention of the first colour \(top\) of the gradient as part of the name.
 
 `decoration-firstcolour`
 
@@ -355,8 +352,7 @@ decoration-blue
 
 ### Decoration
 
-Decorations can be applied to our Panels
-We have two types of decoration, Mask and Circle
+Decorations can be applied to our Panels We have two types of decoration, Mask and Circle
 
 **Mask**
 
@@ -388,8 +384,7 @@ invert-bridge-blue
 
 **Circle**
 
-A circle can be applied to the left or the right of a panel
-These are currently named `circle-firstcolor`
+A circle can be applied to the left or the right of a panel These are currently named `circle-firstcolor`
 
 ```markup
 circle-yellow
@@ -403,12 +398,13 @@ circle-blue
 
 We could name our releases. Take a look at how Ionic name theirs.
 
-https://ionicframework.com/docs/release-notes
+[https://ionicframework.com/docs/release-notes](https://ionicframework.com/docs/release-notes)
 
 Refer to Apple's MacOS, Andriod and others for examples...
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github](https://github.com/ConnectedHomes/nucleus-docs/issues/new?assignees=&labels=Bug&title=[names-of-things]). [†]
+* Do you have insights or concerns to share? You can raise an issue via [Github](https://github.com/ConnectedHomes/nucleus-docs/issues/new?assignees=&labels=Bug&title=[names-of-things]). \[†\]
 
-[†] This can only be accessed from approved Github accounts, please make sure you are logged in to access.
+\[†\] This can only be accessed from approved Github accounts, please make sure you are logged in to access.
+

@@ -14,9 +14,9 @@ Related content can be separated into clearly labelled sections.
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-tabs--tabs).
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-tabs" %}
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-tabs" caption="" %}
 
-```html
+```markup
 <ns-tabs>
   <ns-tab slot="tab">Electricity</ns-tab>
   <ns-panel slot="panel">
@@ -98,3 +98,4 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[NAME%20OF%20COMPONENT]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+

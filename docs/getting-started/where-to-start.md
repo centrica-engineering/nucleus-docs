@@ -12,13 +12,13 @@ To create a coherent, accessible experience for everyone.
 
 ## Our documentation
 
-This site serves as a learning resource [docs.britishgas.design](https://docs.britishgas.design/), come back to it when you need it.  We don't expect you to know everything but do take time to study it.
+This site serves as a learning resource [docs.britishgas.design](https://docs.britishgas.design/), come back to it when you need it. We don't expect you to know everything but do take time to study it.
 
 The more familiar you are the better. It will serve you well when you're faced with a complicated situation.
 
 ## Join our Slack channel
 
-The easiest way to stay updated on what's going on is to join our Slack channel, [#product-nucleus](https://centricadigital.slack.com/messages/CCQDEPKBJ).
+The easiest way to stay updated on what's going on is to join our Slack channel, [\#product-nucleus](https://centricadigital.slack.com/messages/CCQDEPKBJ).
 
 ## Be a champion
 

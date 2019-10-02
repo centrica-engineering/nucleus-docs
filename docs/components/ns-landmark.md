@@ -16,10 +16,11 @@ To see examples of the Summit Landmark visit [Storybook](https://nucleus.bgdigit
 
 To see examples of the Hillside Landmark visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-landmark--hillside).
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-landmark" %}
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-landmark" caption="" %}
 
 ### Summit
-```html
+
+```markup
 <ns-landmark type="summit" image="/my-images/my-image.png">
   <h1 slot="heading">
     <span class="h5">Our product and services.</span>
@@ -34,7 +35,7 @@ To see examples of the Hillside Landmark visit [Storybook](https://nucleus.bgdig
 
 ### Hillside
 
-```html
+```markup
 <ns-landmark type="hillside">
   <h1 slot="heading">
     <span class="h5">Boiler replacement.</span>
@@ -82,21 +83,21 @@ Organism
 | **Default** | n/a |
 | **Options** | Include an optional link to `#caveat` by placing `<a href="#caveat">1</a>` at the end |
 
-| **Name** | Named slot `cta` (summit only) |
+| **Name** | Named slot `cta` \(summit only\) |
 | :--- | :--- |
 | **Description** | The `<ns-cta>` component contained within a `<a>` |
 | **Type** | string |
 | **Default** | n/a |
 | **Options** | `<ns-cta>`, `<a>` |
 
-| **Name** | Background image (summit only) |
+| **Name** | Background image \(summit only\) |
 | :--- | :--- |
 | **Description** | A 16:9 image following our Landmark focus template |
 | **Type** | JPEG |
 | **Default** | n/a |
 | **Options** | 1440 x 810px |
 
-| **Name** | Gradient (hillside only) |
+| **Name** | Gradient \(hillside only\) |
 | :--- | :--- |
 | **Description** | The colour of the background gradient on hillside |
 | **Type** | string |
@@ -108,8 +109,7 @@ Organism
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Keep content in Landmarks very concise | Always add a cta |
-| Content must be relevant to the page | |
-
+| Content must be relevant to the page |  |
 
 ### Best practice for `summit`
 
@@ -139,7 +139,6 @@ Organism
 * Let the page type define the type of landmark you use. For example if the page purpose is to be informative / educational then we recommend using `<ns-landmark type="hillside”>`. If the page purpose is promotional we recommend using `<ns-landmark type="summit">`.
 * If you are designing a series of informative / educational pages that all follow a similar theme, it would be considered best practice to use the same coloured decoration within the `<ns-landmark type="hillside">`.
 
-
 ## Content guidance
 
 ### Summit Landmark
@@ -156,7 +155,6 @@ Organism
 | cta-link | This is the URL that the user will be taken too when they tap or click the CTA. |
 | image-path | This is the image that will be used inside the ns-landmark. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. |
 
-
 ### Hillside Landmark
 
 TODO: include supporting image for these content guidelines.
@@ -168,12 +166,11 @@ TODO: include supporting image for these content guidelines.
 | paragraph | A single, short paragraph works best |
 | caveat | Should be placed at the end of the paragraph if necessary |
 
-
 ### Image guidance
 
-| Variant | Ratio | Dimensions | Size |  Type
-| :--- | :--- | :--- | :--- |:--- | 
-| `summit` | 16:9 | 1440x810px | < 200kb | jpeg |
+| Variant | Ratio | Dimensions | Size | Type |
+| :--- | :--- | :--- | :--- | :--- |
+| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg |
 
 ### The template
 
@@ -206,11 +203,10 @@ Find it under 'Guides' in the Nucleus Sketch Library.
 | Capture the story within. This photo is about the lady and her phone | Unfortunately, this photo is completely unsuitable for a Landmark |
 | ![landmark-16x9-testcard-1440-02](https://user-images.githubusercontent.com/28779/59754184-83b8bb80-927d-11e9-9e81-2a64704e1a92.jpg) | ![landmark-16x9-testcard-1440-04](https://user-images.githubusercontent.com/28779/59754330-c7abc080-927d-11e9-8960-4726cf73f651.jpg) |
 
-
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-landmark]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-landmark]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+

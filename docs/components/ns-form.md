@@ -8,16 +8,15 @@ description: Form component.
 
 > The form component is used to contain ns-inputters and manage their validations.
 
-The `ns-form` component is a wrapper for `ns-inputters`.  It's main purpose is to manage the validations of these `ns-inputters`.
+The `ns-form` component is a wrapper for `ns-inputters`. It's main purpose is to manage the validations of these `ns-inputters`.
 
 ## Usage
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-form--form)
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-form" %}
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-form" caption="" %}
 
-
-```html
+```markup
 <ns-form>
   <ns-inputter validation='["isRequired"]'>
     ...
@@ -26,14 +25,12 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 </ns-form>
 ```
 
-
 ```javascript
 submitForm() {
   const form = document.querySelector('ns-form');
   const formData = form.validate();
 }
 ```
-
 
 ## Component Relationship
 
@@ -42,7 +39,7 @@ Yes
 
 **What layout classes can be used?**  
 `splash`  
-`splosh`  
+`splosh`
 
 **Does it live inside other components?**  
 No
@@ -60,7 +57,8 @@ Atom
 | **Options** | n/a |
 
 An **invalid validate return response** looks like:
-```json
+
+```javascript
 {
   "isValid": false,
   "fields": [
@@ -100,7 +98,7 @@ An **invalid validate return response** looks like:
 
 A **valid validate return response** looks like:
 
-```json
+```javascript
 {
   "isValid": true,
   "fields": [
@@ -132,9 +130,7 @@ A **valid validate return response** looks like:
     }
   }
 }
-
 ```
-
 
 ## Best practises
 
@@ -142,7 +138,6 @@ A **valid validate return response** looks like:
 | :--- | :--- |
 | Use `ns-inputter` for your form fields | Don't write your own validations |
 | Use `ns-cta` to submit your form | Don't rely on front end validation alone. |
-
 
 ### Considerations of best practises
 
@@ -155,3 +150,4 @@ A **valid validate return response** looks like:
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-form]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+

@@ -20,7 +20,6 @@ In order to realise this brand vision.
 * Ensuring our communication is clear and usable for the product teams.
 * Building a community to sustain these processes.
 
-
 We aim to make it easier for individuals and teams to learn about what it takes to create British Gas digital experiences.
 
 * Truly represent our brand identity across our digital, customer-facing solutions.

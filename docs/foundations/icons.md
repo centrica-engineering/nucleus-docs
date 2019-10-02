@@ -6,7 +6,7 @@ description: Nucleus icon suite.
 
 ## Why we use icons
 
-Icons are used within our design system to represent an object or action visually to our users. Helping customers visually navigate our world. Done well, icons should help provide clarity to users reducing the cognitive load required to complete a task.  
+Icons are used within our design system to represent an object or action visually to our users. Helping customers visually navigate our world. Done well, icons should help provide clarity to users reducing the cognitive load required to complete a task.
 
 They are functional, rather than decorative and should be used sparingly, only within the parameters they were created for.
 
@@ -47,6 +47,7 @@ We can make use of brand logos and marks when we discuss products and companies.
 | :--- | :--- |
 | Start with using BG Cyan or BG Slate | Mix two secondary colours together |
 | Use white icons in coloured roundels | Use BG Slate in coloured roundels |
-| Choose colours to suit the design, as long as it’s not a key part of the information | |
-| If it is a crucial element then it needs to meet accessibility and colour contrast | |
-| The colour of our interactive functional icons should be in our interaction colour, the mid blue | |
+| Choose colours to suit the design, as long as it’s not a key part of the information |  |
+| If it is a crucial element then it needs to meet accessibility and colour contrast |  |
+| The colour of our interactive functional icons should be in our interaction colour, the mid blue |  |
+

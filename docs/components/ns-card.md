@@ -14,9 +14,9 @@ Cards give a story about why the user should go to the next action. This can be 
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-card--section).
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-card" %}
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-card" caption="" %}
 
-```html
+```markup
 <ns-card type="section" decoration="bulb">
   <h2 slot="heading">Get energy with us</h2>
   <p slot="paragraph">We've got a tariff to suit every home and family.</p>
@@ -33,12 +33,12 @@ Yes
 
 **What layout classes can be used?**  
 `.splash` `.triple`  
-`.splish` `.triple`  
+`.splish` `.triple`
 
 **Does it live inside other components?**  
 `ns-caveat`  
 `ns-landmark`  
-`ns-tabs`  
+`ns-tabs`
 
 **Atomic type**  
 Molecule
@@ -109,7 +109,7 @@ Molecule
 | Make your CTA copy unique, stating the action | Repeat the CTA copy in each card |
 | Use section cards to navigate users to primary actions | Use inline links in the paragraph |
 | Consider using decoration in the panel to add emphasis on the cards |  |
-| | Use the section card without a decoration |
+|  | Use the section card without a decoration |
 
 ### Considerations of best practice
 
@@ -131,3 +131,4 @@ Molecule
 
 * [ns-card section panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--section-cards).
 * [ns-card support panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--support-image-cards).
+

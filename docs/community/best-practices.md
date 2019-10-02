@@ -22,7 +22,8 @@ Working with primitive design and development decisions is educational and rewar
 
 ## Growing and evolving
 
-We want to enshrine some best practices and  keep in pace with our customers. One requires ensuring each stable, official Nucleus release is adopted widely. The other entails creating a space of exploration for ideas and experiments bubbling within teams.
+We want to enshrine some best practices and keep in pace with our customers. One requires ensuring each stable, official Nucleus release is adopted widely. The other entails creating a space of exploration for ideas and experiments bubbling within teams.
 
 * Use our shared principles as inspiration and to ensure even the wildest, most ambitious contributions tie back to the same, unifying vision.
 * Share learnings from discovery and testing, whether they confirm or go against our existing beliefs.
+

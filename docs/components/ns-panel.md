@@ -16,9 +16,9 @@ To see examples visit [Storybook](https://library.britishgas.design).
 
 `ns-panel` is **always** a child of the `<main>` element.
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-panel" %}
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-panel" caption="" %}
 
-```html
+```markup
 <ns-panel>
   ...
 </ns-panel>
@@ -29,12 +29,11 @@ To see examples visit [Storybook](https://library.britishgas.design).
 **Does it live in a panel?**  
 No
 
-**What layout classes can be used?**
-None
+**What layout classes can be used?** None
 
 **Does it live inside other components?**  
 `ns-caveat`  
-`ns-landmark`  
+`ns-landmark`
 
 **Atomic type**  
 Molecule
@@ -62,13 +61,13 @@ Molecule
 | :--- | :--- |
 | Use decoration to visually separate content | Add decoration to an `ns-panel` where the previous `ns-panel` has a decoration |
 | Use appropriate colour for the purpose of page in decorations | Nest a panel in a panel |
-| Include more than one layout in a `ns-panel` | |
+| Include more than one layout in a `ns-panel` |  |
 
 ### Considerations of best practice
 
 * Treat each `ns-panel` as a section of the page.
 * Include no more than two `ns-lockups` in one `ns-panel` with a decoration.
-* Layout is either a class of [`.splish` | `.splash`] or an `ns-lockup`.
+* Layout is either a class of \[`.splish` \| `.splash`\] or an `ns-lockup`.
 
 ## Feedback
 
@@ -76,3 +75,4 @@ Molecule
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-panel]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+
