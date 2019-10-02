@@ -7,7 +7,15 @@ description: Ensuring that no one is left out.
 Nucleus cares deeply about inclusivity. To help everyone, we aim to understand the impact each and every decision we make.
 
 
-## Colour
+## Guidance
+
+Accessibility is a fundamental foundation of Nucleus.
+
+In addition to [accessibility principles](https://docs.britishgas.design/principles/accessibility) and starting points to accommodate [different types of barriers](https://docs.britishgas.design/foundation/accessibility#types-of-barriers), we've made sure our [components](https://docs.britishgas.design/components) integrate [WCAG 2.1](https://www.w3.org/TR/WCAG21) Level AA practices.
+
+The following guidance has been provided by our accessibility partner DAC.
+
+### Colour
 
 A high level of colour contrast assists people with sight loss, including colour blindness, as well as people with cognitive disabilities.
 
@@ -17,15 +25,6 @@ We follow two primary rules of accessibility related to colour.
 * The combinations of text and their background colours do not fall below the [WCAG recommended threshold ratio](https://www.w3.org/TR/WCAG21/#contrast-minimum) of 4.5:1 for standard or small text and 3:1 for larger text.
 
 There are a number of tools that we've listed in our [Tools](https://docs.britishgas.design/foundation/tools) page which may help.
-
-
-## Guidance
-
-Accessibility is a fundamental foundation of Nucleus.
-
-In addition to [accessibility principles](https://docs.britishgas.design/principles/accessibility) and starting points to accommodate [different types of barriers](https://docs.britishgas.design/foundation/accessibility#types-of-barriers), we've made sure our [components](https://docs.britishgas.design/components) integrate [WCAG 2.1](https://www.w3.org/TR/WCAG21) Level AA practices.
-
-The following guidance has been provided by our accessibility partner DAC.
 
 ### Audio and video
 
