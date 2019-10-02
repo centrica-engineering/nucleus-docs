@@ -4,18 +4,18 @@ description: Nucleus principles.
 
 # Principles
 
-> Our shared values are captured in these principles.
+> Principles capture our shared values.
 
-We measure ourselves against our principles and we hold ourselves accountable.
+## Why do we have principles?
 
-## Introduction
+Principles are definitions based on hard-won insights. They allow us to...
 
 * Use a consistent vision that we all work towards.
 * Help us concentrate on creating consistent and coherent experiences.
 * Root down shared success criteria for decision making and prioritisation.
 * Be flexible to change.
 
-### We have three sets of principles that we abide by.
+Principles work only when they are consistently applied across our various teams. However, while their definition should remain relatively stable, how to best apply them changes with each task. That's both the difficult and exciting part of working with shared principles!
 
 * [Accessibility principles](principles.md#accessibility-principles)
 * [Experience principles](principles.md#experience-principles)
@@ -121,17 +121,21 @@ Building our visual language from our creative principles.
 
 We’re a brand full of energy. Being modern and dynamic helps us lead the way to change how things are done in our industry, making sure our customers always feel in control.
 
-### Clean and fresh
+Most of the time, our product teams will be working on specific challenges to meet short and medium term targets. Our principles go beyond that to provide shared, long-term targets.
 
-At our heart, we’re a blue and white brand, we use the white space of a page in a considered way so our customers are never overwhelmed.
+A key activity for us  is to come up with new, alternative solutions time and time again to see what works best. Some of these solutions might be solid solutions in their own right but not quite fit the desired experience, accessibility criteria, or visual language we're aiming for as British Gas. Identifying these differences is not always easy, but that's where principles can be of use to your team.
 
-Being clean and fresh helps us show our content simply, so our customers can get what they need - and get on with their day.
+Use principles...
 
-### Warm and friendly
+* In ideation to provide constructive constraints.
+* In user research and testing to learn how these principles might best be met.
+* During design and sprint reviews as shared evaluation criteria.
+* As metrics to provide cross-team, cross-journey data.
+* In analytics to track changes over time.
 
-We’re a brand with clarity, but we’re never clinical. Being warm and friendly helps us make a genuine connection with our customers.
+## Which set of principles should we follow?
 
-## What's the best use for the principles?
+We have multiple sets of principles, with a slightly different perspectives. Ideally, this helps us to keep them at an appropriate level: high-level enough to unleash your creativity and defined enough to provide purpose driven outcomes.
 
 A key activity for us is to come up with new, alternative solutions time and time again to see what works best. Some of these solutions might be solid solutions in their own right but not quite fit the desired experience, accessibility criteria, or visual language we're aiming for as British Gas. Identifying these differences is not always easy, but that's where principles can be of use to your team.
 
@@ -140,4 +144,3 @@ A key activity for us is to come up with new, alternative solutions time and tim
 * During design and sprint reviews as shared evaluation criteria.
 * As metrics to provide cross-team, cross-journey data.
 * In analytics to track changes over time.
-

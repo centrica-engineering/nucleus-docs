@@ -26,4 +26,3 @@ We aim to make it easier for individuals and teams to learn about what it takes 
 * Reduce repetitive work, especially when it comes to design and front end development.
 * Reduce design and maintenance debt that tends to slow down updates.
 * Enable teams to focus on high value, creative work to solve problems and identify opportunities.
-
