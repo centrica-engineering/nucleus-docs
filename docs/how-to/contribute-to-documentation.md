@@ -22,7 +22,7 @@ Find the pencil icon and edit this file.
 
 Once you've completed your amendments or additions, briefly describe your changes below the 'Commit changes' section.
 
-Within the 'branch name' field, change to `update/filename` \(where `filename` is the file you're changing.\)
+Within the 'branch name' field, change to `update/filename` (where `filename` is the file you're changing.)
 
 Click on the 'Commit changes' button.
 

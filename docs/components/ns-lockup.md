@@ -111,7 +111,7 @@ Organism
 | Embolden the key message in the heading | Include more than one CTA |
 | Keep the heading length to 4-12 words | Exceed more than two paragraphs of 3 lines each |
 | Keep subheading length between 1-5 words |  |
-| Optimise the lockup image \(see image optimise LINK\) | Use images with a white background |
+| Optimise the lockup image (see image optimise LINK) | Use images with a white background |
 
 ### Considerations of best practices
 

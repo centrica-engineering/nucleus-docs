@@ -234,7 +234,7 @@ Each viewport will automatically adjust the dimensions of each of these sizes.
 * A `large` space on `hockey-pitch` will measure `2.68555em`
 * A `large` space on `squash-court` will measure `1.74023em`
 
-An example of a collection of names given to space \(if we were to need 7!\)
+An example of a collection of names given to space (if we were to need 7!)
 
 ```markup
 space-vast
@@ -277,7 +277,7 @@ This is based on `straight:rounded`
 3:1
 ```
 
-Alongside the concept of 'which corner\(s\)' are rounded, there are associated corner sizes to consider depending on how much of the percentage of the viewport the lozenge width consumes.
+Alongside the concept of 'which corner(s)' are rounded, there are associated corner sizes to consider depending on how much of the percentage of the viewport the lozenge width consumes.
 
 ### Cards
 
@@ -314,7 +314,7 @@ For the Rewards section on the Homepage we included a class of `malcolm` to hide
 
 Currently we use `Hub` and `Sub-hub` to refer to two types of brochure type pages.
 
-These are also referred to across the business as their position in the information architecture: `Level 0`, `Level 1`, `Level 2` \(where `Level 0` and `Level 1` currently use the same page template\)
+These are also referred to across the business as their position in the information architecture: `Level 0`, `Level 1`, `Level 2` (where `Level 0` and `Level 1` currently use the same page template)
 
 Oli produced a metaphor of a shop to describe the different page types, it would be worth revisiting this to see if it's suitable.
 
@@ -338,7 +338,7 @@ We haven't produced names for our gradients. However, we have included them in o
 
 **Suggestion**
 
-Use the convention of the first colour \(top\) of the gradient as part of the name.
+Use the convention of the first colour (top) of the gradient as part of the name.
 
 `decoration-firstcolour`
 
@@ -404,7 +404,7 @@ Refer to Apple's MacOS, Andriod and others for examples...
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github](https://github.com/ConnectedHomes/nucleus-docs/issues/new?assignees=&labels=Bug&title=[names-of-things]). \[†\]
+* Do you have insights or concerns to share? You can raise an issue via [Github](https://github.com/ConnectedHomes/nucleus-docs/issues/new?assignees=&labels=Bug&title=[names-of-things]). [†]
 
-\[†\] This can only be accessed from approved Github accounts, please make sure you are logged in to access.
+[†] This can only be accessed from approved Github accounts, please make sure you are logged in to access.
 

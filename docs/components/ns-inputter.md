@@ -6,7 +6,7 @@ description: Inputter component.
 
 ## Introduction
 
-Inputters are used to help people enter and select information. Inputters are normally found within forms. There are different types of inputters including text, radio button, checkbox and select \(drop-downs\).
+Inputters are used to help people enter and select information. Inputters are normally found within forms. There are different types of inputters including text, radio button, checkbox and select (drop-downs).
 
 > A wrapper of native inputs to create a form. There are many types of inputs including text, radio button, checkbox and select.
 
@@ -51,16 +51,16 @@ Molecule
 | **Description** | A way to assist valid values are added and to show an error message when they're not. |
 | **Type** | array |
 | **Default** | n/a |
-| **Options** | isRequired, isNumber,  isInteger, isPostcode, isFirstName, isLastName, isTitle, isEmail, isPhoneNumber, isMobileNumber, isDateOfBirth, minLength\(x\), maxLength\(x\) |
-| **Notes** | It is possible to have multiple validations. For example: \["isRequired", "isNumber", "isInteger"\] |
+| **Options** | isRequired, isNumber,  isInteger, isPostcode, isFirstName, isLastName, isTitle, isEmail, isPhoneNumber, isMobileNumber, isDateOfBirth, minLength(x), maxLength(x) |
+| **Notes** | It is possible to have multiple validations. For example: ["isRequired", "isNumber", "isInteger"] |
 
 ### Advanced validation
 
 Some of the validation options can be configured by passing in values within the parentheses:
 
-minLength\(x\) - Shows error if the input value is less than x chars.
+minLength(x) - Shows error if the input value is less than x chars.
 
-maxLength\(x\) - Shows error if the input value is greater than x chars.
+maxLength(x) - Shows error if the input value is greater than x chars.
 
 | **Name** | Execute |
 | :--- | :--- |
@@ -166,7 +166,7 @@ maxLength\(x\) - Shows error if the input value is greater than x chars.
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Only use our specified text type. \(eg. Text, Password, etc\) | Use more than one text input within an inputter |
+| Only use our specified text type. (eg. Text, Password, etc) | Use more than one text input within an inputter |
 | Use autocomplete attribute | Put anything inside the text input |
 | Base width of input on expected length of input |  |
 

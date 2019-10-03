@@ -4,22 +4,23 @@ description: Nucleus principles.
 
 # Principles
 
-> Principles capture our shared values.
+> Our shared values are captured in these principles.
 
-## Why do we have principles?
+We measure ourselves against our principles and we hold ourselves accountable.
 
-Principles are definitions based on hard-won insights. They allow us to...
+## Introduction
 
 * Use a consistent vision that we all work towards.
 * Help us concentrate on creating consistent and coherent experiences.
 * Root down shared success criteria for decision making and prioritisation.
 * Be flexible to change.
 
-Principles work only when they are consistently applied across our various teams. However, while their definition should remain relatively stable, how to best apply them changes with each task. That's both the difficult and exciting part of working with shared principles!
+### We have three sets of principles that we abide by.
 
-* [Accessibility principles](principles.md#accessibility-principles)
-* [Experience principles](principles.md#experience-principles)
-* [Creative principles](principles.md#creative-principles)
+* [Accessibility principles](#accessibility-principles)
+* [Experience principles](#experience-principles)
+* [Creative principles](#creative-principles)
+
 
 ## Accessibility principles
 
@@ -27,7 +28,7 @@ At minimum, features must conform to Web Content Accessibility Guidelines 2.1 at
 
 Accessibility ensures that all persons can access and benefit from a website, system or application, regardless of their gender, age, culture, or ability. Considerations must also be made around different screen sizes, browser types and settings, or those who do not have plug-ins such as Flash.
 
-The four accessibility principles \(POUR\) are derived straight from [WCAG 2.1](https://www.w3.org/TR/WCAG21/). For each principle, WCAG provides in-depth documentation and guidance. Below, we've restated the principles as well as provided bit of background into Level AA conformance.
+The four accessibility principles (POUR) are derived straight from [WCAG 2.1](https://www.w3.org/TR/WCAG21/). For each principle, WCAG provides in-depth documentation and guidance. Below, we've restated the principles as well as provided bit of background into Level AA conformance.
 
 Our [Accessibility foundations](https://docs.britishgas.design/foundations/accessibility) describe in further detail how these principles have been applied.
 
@@ -63,6 +64,7 @@ Our aim is to ensure **Level AA conformance**. Within Nucleus, this means that a
 
 In-depth documentation on accessibility straight from the source can be found in [WCAG 2.1](https://www.w3.org/TR/WCAG21/#location). Because each level of conformance includes 'lower' levels, any specific requirement labeled as A or AA applies to us.
 
+
 ## Experience principles
 
 Our five experience principles describe the core values that underpin our Nucleus Design System.
@@ -83,11 +85,11 @@ Inclusivity and accessibility are fundamental. No one should be left out. Ever.
 * Consider how the page will be read.
 * Consider how you are writing – would you say this to your mum?
 * Our code and content are optimised for screen readers.
-* Learn about different types of barriers \(physical, cognitive, sensory limitations that can be either temporary or permanent\).
+* Learn about different types of barriers (physical, cognitive, sensory limitations that can be either temporary or permanent).
 
 ### Always there
 
-The relationship we have with our customers is a two-way conversation. We listen, we don’t just talk and look to offer reassurance and expertise whenever and however our customers might need it.
+The relationship we have with our customers is a two-way conversation.  We listen, we don’t just talk and look to offer reassurance and expertise whenever and however our customers might need it.
 
 * Guides, tool-tips and fast-serving links so customers have all the info they need.
 * Use our Tone of Voice to sound human, reassuring and helpful.
@@ -113,6 +115,7 @@ We always go further than creating functional experiences by seeking out surpris
 * Terms & Conditions written in simple terms.
 * Using thoughtful animation at the right time to add delight.
 
+
 ## Creative principles
 
 Building our visual language from our creative principles.
@@ -121,23 +124,19 @@ Building our visual language from our creative principles.
 
 We’re a brand full of energy. Being modern and dynamic helps us lead the way to change how things are done in our industry, making sure our customers always feel in control.
 
-Most of the time, our product teams will be working on specific challenges to meet short and medium term targets. Our principles go beyond that to provide shared, long-term targets.
+### Clean and fresh
+
+At our heart, we’re a blue and white brand, we use the white space of a page in a considered way so our customers are never overwhelmed.
+
+Being clean and fresh helps us show our content simply, so our customers can get what they need - and get on with their day.
+
+### Warm and friendly
+
+We’re a brand with clarity, but we’re never clinical. Being warm and friendly helps us make a genuine connection with our customers.
+
+## What's the best use for the principles?
 
 A key activity for us  is to come up with new, alternative solutions time and time again to see what works best. Some of these solutions might be solid solutions in their own right but not quite fit the desired experience, accessibility criteria, or visual language we're aiming for as British Gas. Identifying these differences is not always easy, but that's where principles can be of use to your team.
-
-Use principles...
-
-* In ideation to provide constructive constraints.
-* In user research and testing to learn how these principles might best be met.
-* During design and sprint reviews as shared evaluation criteria.
-* As metrics to provide cross-team, cross-journey data.
-* In analytics to track changes over time.
-
-## Which set of principles should we follow?
-
-We have multiple sets of principles, with a slightly different perspectives. Ideally, this helps us to keep them at an appropriate level: high-level enough to unleash your creativity and defined enough to provide purpose driven outcomes.
-
-A key activity for us is to come up with new, alternative solutions time and time again to see what works best. Some of these solutions might be solid solutions in their own right but not quite fit the desired experience, accessibility criteria, or visual language we're aiming for as British Gas. Identifying these differences is not always easy, but that's where principles can be of use to your team.
 
 * Ideate to provide constructive constraints.
 * User research and testing to learn how these principles might best be met.

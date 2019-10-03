@@ -8,7 +8,7 @@ description: Image component.
 
 > An image allows British Gas to share visual content.
 
-British Gas has a variety of images to enhance content on the website and helps sell a story. This component allows having images on the website, while making sure that the page loads quickly \(lazy loading\) and follows the right ratios.
+British Gas has a variety of images to enhance content on the website and helps sell a story. This component allows having images on the website, while making sure that the page loads quickly (lazy loading) and follows the right ratios.
 
 ## Usage
 

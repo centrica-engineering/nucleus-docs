@@ -40,32 +40,32 @@ Illustrations use a set of three different gradients:
 
 ### Highlights
 
-Our illustrations use `@white` \(\#FFFFFF\) to pull out details within the object.
+Our illustrations use `@white` (#FFFFFF) to pull out details within the object.
 
 ### Depth
 
-Illustrations use `@slate` \(\#333f48\) over half of the object in order to add depth.
+Illustrations use `@slate` (#333f48) over half of the object in order to add depth.
 
 ## Technical bit
 
 ### Exporting illustrations for developers
 
-Once you’re illustrations are completed \(and signed off!\) they need to be made ready for development. Follow these steps to a happy developer:
+Once you’re illustrations are completed (and signed off!) they need to be made ready for development. Follow these steps to a happy developer:
 
 1. Check your gradients are not multiplied opacity.
 2. Select the icon and choose Object &gt; Expand appearance.
-3. Check shapes have been turned to paths. Go to Object &gt; Compound path &gt; Make \(you will need to do this for each individual shape separately\).
-4. When you have completed this use the top menu select File &gt; Export &gt; Export for Screens &gt; press the small cog \(see below\).
+3. Check shapes have been turned to paths. Go to Object &gt; Compound path &gt; Make (you will need to do this for each individual shape separately).
+4. When you have completed this use the top menu select File &gt; Export &gt; Export for Screens &gt; press the small cog (see below).
 
 ![Exporting illustrations](https://user-images.githubusercontent.com/43471890/62051136-a2aa5600-b20a-11e9-814b-a1a8f418dfd0.jpg)
 
-Select SVG in the left hand panel &gt; choose Inline Style in the Styling dropdown \(see below\).
+Select SVG in the left hand panel &gt; choose Inline Style in the Styling dropdown (see below).
 
 ![Exporting illustrations](https://user-images.githubusercontent.com/43471890/62051134-a211bf80-b20a-11e9-8787-f72f2d4579c3.jpg)
 
 ## Super Saiyan level
 
-The rendering of illustrations differs among different browsers \(I'm looking at you Safari and IE\).
+The rendering of illustrations differs among different browsers (I'm looking at you Safari and IE).
 
 ![View Page Source on Illustration](https://user-images.githubusercontent.com/43471890/62051137-a2aa5600-b20a-11e9-988f-a6787298f7ef.jpg) ![SVG in browser inspector](https://user-images.githubusercontent.com/43471890/62051139-a342ec80-b20a-11e9-87c1-c0acaa24ce09.jpg) ![Exporting illustrations](https://user-images.githubusercontent.com/43471890/62051138-a2aa5600-b20a-11e9-8d10-1dddeb451164.jpg)
 
