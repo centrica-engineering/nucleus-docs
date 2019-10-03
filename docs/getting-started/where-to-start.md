@@ -18,7 +18,7 @@ The more familiar you are the better. It will serve you well when you're faced w
 
 ## Join our Slack channel
 
-The easiest way to stay updated on what's going on is to join our Slack channel, [\#product-nucleus](https://centricadigital.slack.com/messages/CCQDEPKBJ).
+The easiest way to stay updated on what's going on is to join our Slack channel, [#product-nucleus](https://centricadigital.slack.com/messages/CCQDEPKBJ).
 
 ## Be a champion
 

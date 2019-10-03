@@ -40,11 +40,11 @@ Illustrations use a set of three different gradients:
 
 ### Highlights
 
-Our illustrations use `@white` (\#FFFFFF) to pull out details within the object.
+Our illustrations use `@white` (#FFFFFF) to pull out details within the object.
 
 ### Depth
 
-Illustrations use `@slate` (\#333f48) over half of the object in order to add depth.
+Illustrations use `@slate` (#333f48) over half of the object in order to add depth.
 
 ## Technical bit
 

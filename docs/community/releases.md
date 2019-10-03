@@ -17,13 +17,13 @@ _Release Notes 2019-09-20: New components and documentation_
   * Including `ns-header` and `ns-footer`.
   * Simple `cookie-message` included.
   * Additional `nav` variant of the `ns-card`.
-  * To support the header and footer, we have added `type="nav"` to `ns-panel` 
+  * To support the header and footer, we have added `type="nav"` to `ns-panel`
   * Adding the (burger) `menu` icon.
 
 **Documentation**
 
 * Component `ns-editorial` - [https://docs.britishgas.design/components/ns-editorial](https://docs.britishgas.design/components/ns-editorial).
-* Textarea - [https://docs.britishgas.design/components/ns-inputter\#textarea](https://docs.britishgas.design/components/ns-inputter#textarea).
+* Textarea - [https://docs.britishgas.design/components/ns-inputter#textarea](https://docs.britishgas.design/components/ns-inputter#textarea).
 
 #### Bug fixes 🙊
 

@@ -6,7 +6,7 @@ description: List of Nucleus events including Nucleus Sessions.
 
 We're hosting regular events to keep the discussions going.
 
-Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel \#product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
+Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel #product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
 
 ## 2019-09-03 / Drop in session
 
