@@ -10,19 +10,19 @@ Browse below to gain a sense of our past events. The best way to learn about our
 
 ## 2019-09-03 / Drop in session
 
-* Yuri shared the progress of [CTA variant](https://github.com/ConnectedHomes/nucleus/issues/782) \[†\]
+* Yuri shared the progress of [CTA variant](https://github.com/ConnectedHomes/nucleus/issues/782) [†]
   * Asked if anyone has any other examples of CTAs they can think of where there is a need for a button without an icon.
   * The possibilities of using other icons where an arrrow-left or arrow-right do not fit.
-  * Next steps before deciding if we should proceed with [CTA variant](https://github.com/ConnectedHomes/nucleus/issues/782) \[†\]:
+  * Next steps before deciding if we should proceed with [CTA variant](https://github.com/ConnectedHomes/nucleus/issues/782) [†]:
     * Gurdish to share his concept design where a CTA took the user to a lower part of a page.
     * Catch up with Oli and Sathu around their "Find an address" journey.
     * Talk to Ed / Supriya and see if they can think of any examples.
 * Conversations around reworking the journey experience (not just lift and shift), and aligning similar journeys across teams.
 * Considering changing the behaviour of a journey, using progressive disclosure rather than scrolling down.
 * Sathu mentioned he and Oli raised RFCs for components known to appear across different journeys:
-  * [Progress bar](https://github.com/ConnectedHomes/nucleus/issues/804) \[†\]
-  * [Text area](https://github.com/ConnectedHomes/nucleus/issues/791) \[†\]
-* Adam mentioned he is working on [Data grid](https://github.com/ConnectedHomes/nucleus/issues/628) \[†\] and would like input from other product teams to provide real data examples he could experiment with.
+  * [Progress bar](https://github.com/ConnectedHomes/nucleus/issues/804) [†]
+  * [Text area](https://github.com/ConnectedHomes/nucleus/issues/791) [†]
+* Adam mentioned he is working on [Data grid](https://github.com/ConnectedHomes/nucleus/issues/628) [†] and would like input from other product teams to provide real data examples he could experiment with.
 
 ## 2019-08-13 / Digital Journey and Trade Show
 
@@ -33,7 +33,7 @@ Highlights of our experience:
 * Drew scored 6 out of 7 questions with a total score of 5,471 points in the Kahoot trade show quiz to come 2nd (behind Paul Roberts).
 * Sadly, Jon was knocked out of the first round of the Rock Paper Scissors world championship!
 
-[Nucleus trade show presentation 2019-08-13.pdf](https://github.com/ConnectedHomes/nucleus/files/3505183/Nucleus.trade.show.presentation.2019-08-13.pdf) \[†\]
+[Nucleus trade show presentation 2019-08-13.pdf](https://github.com/ConnectedHomes/nucleus/files/3505183/Nucleus.trade.show.presentation.2019-08-13.pdf) [†]
 
 ## 2019-08-06 / Welcome - Yuri & Kaidi
 
@@ -43,7 +43,7 @@ Highlights of our experience:
 * Launch our Gitbook documentation.
 * Share our latest release 1.1.4.
 
-[RFC Project Board](https://github.com/ConnectedHomes/nucleus/projects/6) \[†\]
+[RFC Project Board](https://github.com/ConnectedHomes/nucleus/projects/6) [†]
 
 [Nucleus release 1.1.4](https://docs.britishgas.design/community/releases#version-1-1-4)
 
@@ -93,7 +93,7 @@ Highlights of our experience:
 * Dispel the common myths we’ve been hearing.
 * Answer any Nucleus related questions you may have!.
 
-[Common Myths.pdf](https://github.com/ConnectedHomes/nucleus/files/3364944/Common.Myths.pdf) \[†\]
+[Common Myths.pdf](https://github.com/ConnectedHomes/nucleus/files/3364944/Common.Myths.pdf) [†]
 
 ## 2019-06-25 / Bring it home
 
@@ -101,9 +101,9 @@ Highlights of our experience:
 * How to create content for Nucleus components using templates (ns-landmark & ns-lockup).
 * Tools for a quick content sense check and Clockwork approval.
 
-[Bring it home Nucleus Session.pdf](https://github.com/ConnectedHomes/nucleus/files/3364940/Bring.it.home.Nucleus.Session.pdf) \[†\]
+[Bring it home Nucleus Session.pdf](https://github.com/ConnectedHomes/nucleus/files/3364940/Bring.it.home.Nucleus.Session.pdf) [†]
 
-[Creating content for the British Gas homepage.pdf](https://github.com/ConnectedHomes/nucleus/files/3382944/Creating.content.for.the.British.Gas.homepage.pdf) \[†\]
+[Creating content for the British Gas homepage.pdf](https://github.com/ConnectedHomes/nucleus/files/3382944/Creating.content.for.the.British.Gas.homepage.pdf) [†]
 
 ## 2019-06-18 / Sketch Library what's new?
 
@@ -125,7 +125,7 @@ Highlights of our experience:
 * Why can’t we make everything look like the intended design?.
 * Answer any questions you may have.
 
-[You experience the web your way.pdf](https://github.com/ConnectedHomes/nucleus/files/3364946/You.experience.the.web.your.way.pdf) \[†\]
+[You experience the web your way.pdf](https://github.com/ConnectedHomes/nucleus/files/3364946/You.experience.the.web.your.way.pdf) [†]
 
 ## 2019-05-21 / Speedy Nucleus CMS Page
 
@@ -137,7 +137,7 @@ Highlights of our experience:
 * CMS & UAT tips.
 * Questions.
 
-[Nucleus CMS Presentation.pdf](https://github.com/ConnectedHomes/nucleus/files/3364945/Nucleus.CMS.Presentation.pdf) \[†\]
+[Nucleus CMS Presentation.pdf](https://github.com/ConnectedHomes/nucleus/files/3364945/Nucleus.CMS.Presentation.pdf) [†]
 
 ## 2019-05-14 / Accessibility
 
@@ -148,7 +148,7 @@ Highlights of our experience:
 * Ongoing initiatives.
 * Three things you can do for accessibility.
 
-[Nucleus Session Accessibility.pdf](https://github.com/ConnectedHomes/nucleus/files/3364948/Nucleus.Session_.Accessibility.pdf) \[†\]
+[Nucleus Session Accessibility.pdf](https://github.com/ConnectedHomes/nucleus/files/3364948/Nucleus.Session_.Accessibility.pdf) [†]
 
 ## 2019-05-07 / Sketch, let's build a page
 
@@ -201,14 +201,14 @@ Highlights of our experience:
 * Discuss core reasons why and when our accessibility is lacking.
 * Collecting ideas on what kinds of actionable guidance would be needed, be it through Nucleus or otherwise.
 
-[Nucleus - Accessibility roundtable report - 190315.pdf](https://github.com/ConnectedHomes/nucleus/files/3364949/Nucleus.-.Accessibility.roundtable.report.-.190315.pdf) \[†\]
+[Nucleus - Accessibility roundtable report - 190315.pdf](https://github.com/ConnectedHomes/nucleus/files/3364949/Nucleus.-.Accessibility.roundtable.report.-.190315.pdf) [†]
 
 ## 2019-02-13 / CMS Hubpages workshop 2/2
 
 * On-boarding a first set of teams and content managers.
 * Smoothing the way for updating hub pages to our latest visual identity.
 
-[Nucleus workshop CMS hubpages 20190213.pdf](https://github.com/ConnectedHomes/nucleus/files/3364951/Nucleus.workshop.CMS.hubpages.20190213.pdf) \[†\]
+[Nucleus workshop CMS hubpages 20190213.pdf](https://github.com/ConnectedHomes/nucleus/files/3364951/Nucleus.workshop.CMS.hubpages.20190213.pdf) [†]
 
 ## 2019-02-07 / CMS Hubpages 1/2
 
@@ -222,5 +222,5 @@ Highlights of our experience:
 * Understanding what community and contributing to Nucleus [means](https://docs.britishgas.design/community/best-practices) to UX designers.
 * Co-creating first drafts of contribution processes.
 
-\[†\] This can only be accessed from approved Github accounts, please make sure you are logged in to access.
+[†] This can only be accessed from approved Github accounts, please make sure you are logged in to access.
 

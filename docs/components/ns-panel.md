@@ -67,7 +67,7 @@ Molecule
 
 * Treat each `ns-panel` as a section of the page.
 * Include no more than two `ns-lockups` in one `ns-panel` with a decoration.
-* Layout is either a class of \[`.splish` \| `.splash`\] or an `ns-lockup`.
+* Layout is either a class of [`.splish` \| `.splash`] or an `ns-lockup`.
 
 ## Feedback
 

@@ -404,7 +404,7 @@ Refer to Apple's MacOS, Andriod and others for examples...
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github](https://github.com/ConnectedHomes/nucleus-docs/issues/new?assignees=&labels=Bug&title=[names-of-things]). \[†\]
+* Do you have insights or concerns to share? You can raise an issue via [Github](https://github.com/ConnectedHomes/nucleus-docs/issues/new?assignees=&labels=Bug&title=[names-of-things]). [†]
 
-\[†\] This can only be accessed from approved Github accounts, please make sure you are logged in to access.
+[†] This can only be accessed from approved Github accounts, please make sure you are logged in to access.
 

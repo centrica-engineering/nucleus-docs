@@ -52,7 +52,7 @@ Molecule
 | **Type** | array |
 | **Default** | n/a |
 | **Options** | isRequired, isNumber,  isInteger, isPostcode, isFirstName, isLastName, isTitle, isEmail, isPhoneNumber, isMobileNumber, isDateOfBirth, minLength(x), maxLength(x) |
-| **Notes** | It is possible to have multiple validations. For example: \["isRequired", "isNumber", "isInteger"\] |
+| **Notes** | It is possible to have multiple validations. For example: ["isRequired", "isNumber", "isInteger"] |
 
 ### Advanced validation
 
