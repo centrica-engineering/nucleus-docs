@@ -69,7 +69,7 @@ Atom
 
 ### Considerations of best practices
 
-* List of when to use which illustration \(need to talk to Will about it\).
+* List of when to use which illustration (need to talk to Will about it).
 
 ## Feedback
 

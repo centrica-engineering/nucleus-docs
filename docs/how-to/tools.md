@@ -24,7 +24,7 @@ Total Validator will validate your HTML and CSS, check that pages are accessible
 ### Web Accessibility Toolbar
 
 [https://developer.paciellogroup.com/resources/wat/](https://developer.paciellogroup.com/resources/wat/)  
-The Web Accessibility Toolbar \(WAT\) has been developed to aid manual examination of web pages for a variety of aspects of accessibility.
+The Web Accessibility Toolbar (WAT) has been developed to aid manual examination of web pages for a variety of aspects of accessibility.
 
 ### Wave toolbar
 
@@ -34,7 +34,7 @@ Web accessibility evaluation tool.
 ### Colour Contrast Analyser
 
 [https://developer.paciellogroup.com/resources/contrastanalyser/](https://developer.paciellogroup.com/resources/contrastanalyser/)  
-The Colour Contrast Analyser \(CCA\) helps you determine the legibility of text and the contrast of visual elements, such as graphical controls and visual indicators.
+The Colour Contrast Analyser (CCA) helps you determine the legibility of text and the contrast of visual elements, such as graphical controls and visual indicators.
 
 ### Sim Daltonism
 
@@ -44,7 +44,7 @@ Sim Daltonism lets you visualise colours as they are perceived with various type
 ### Colour Contrast Analyser for Sketch
 
 [https://github.com/getflourish/Sketch-Color-Contrast-Analyser](https://github.com/getflourish/Sketch-Color-Contrast-Analyser)  
-This plugin will allow you to test the accessibility of your designs for users who are colorblind, while you work directly within Sketch. ‘Color Contrast Analyzer’ gives you the ability to calculate the color contrast ratio of two layers \(or a single layer against the artboard\), and evaluate that value against WCAG standards.
+This plugin will allow you to test the accessibility of your designs for users who are colorblind, while you work directly within Sketch. ‘Color Contrast Analyzer’ gives you the ability to calculate the color contrast ratio of two layers (or a single layer against the artboard), and evaluate that value against WCAG standards.
 =======
 [Sortsite](https://www.powermapper.com/products/desktop/try/).  
 A website accessibility checking tool.  

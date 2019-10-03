@@ -39,8 +39,8 @@ We've implemented the following modular scale to inform our typographic hierarch
 
 A double stranded scale for each set of typographic sizes using two bases.
 
-1em \(16px\)  
-1.375em \(22px\)
+1em (16px)  
+1.375em (22px)
 
 The result of which is:
 

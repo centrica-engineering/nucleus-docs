@@ -18,7 +18,7 @@ _Release Notes 2019-09-20: New components and documentation_
   * Simple `cookie-message` included.
   * Additional `nav` variant of the `ns-card`.
   * To support the header and footer, we have added `type="nav"` to `ns-panel` 
-  * Adding the \(burger\) `menu` icon.
+  * Adding the (burger) `menu` icon.
 
 **Documentation**
 
@@ -126,7 +126,7 @@ _`ns-inputter`_ - the 'vanilla first' of our form elements.
 
 **Sketch Library 🐍**
 
-* Official release _Version 2.0_ - _\(Out of Pre-release\)_ :star2:.
+* Official release _Version 2.0_ - _(Out of Pre-release)_ :star2:.
 * _Download_ the latest: [https://github.com/ConnectedHomes/centrica-ux/releases](https://github.com/ConnectedHomes/centrica-ux/releases).
 * Added _Guides_ to give indication of where components can be placed.
 * Included _Templates_ to quickly mockup a page and placing components in a layout.

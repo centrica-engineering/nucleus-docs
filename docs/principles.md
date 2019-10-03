@@ -27,7 +27,7 @@ At minimum, features must conform to Web Content Accessibility Guidelines 2.1 at
 
 Accessibility ensures that all persons can access and benefit from a website, system or application, regardless of their gender, age, culture, or ability. Considerations must also be made around different screen sizes, browser types and settings, or those who do not have plug-ins such as Flash.
 
-The four accessibility principles \(POUR\) are derived straight from [WCAG 2.1](https://www.w3.org/TR/WCAG21/). For each principle, WCAG provides in-depth documentation and guidance. Below, we've restated the principles as well as provided bit of background into Level AA conformance.
+The four accessibility principles (POUR) are derived straight from [WCAG 2.1](https://www.w3.org/TR/WCAG21/). For each principle, WCAG provides in-depth documentation and guidance. Below, we've restated the principles as well as provided bit of background into Level AA conformance.
 
 Our [Accessibility foundations](https://docs.britishgas.design/foundations/accessibility) describe in further detail how these principles have been applied.
 
@@ -83,7 +83,7 @@ Inclusivity and accessibility are fundamental. No one should be left out. Ever.
 * Consider how the page will be read.
 * Consider how you are writing – would you say this to your mum?
 * Our code and content are optimised for screen readers.
-* Learn about different types of barriers \(physical, cognitive, sensory limitations that can be either temporary or permanent\).
+* Learn about different types of barriers (physical, cognitive, sensory limitations that can be either temporary or permanent).
 
 ### Always there
 

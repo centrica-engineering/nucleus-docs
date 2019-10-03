@@ -63,7 +63,7 @@ Atom
 | :--- | :--- |
 | Always add heading text | Add an icon to one tab and not to the other tabs |
 |  | Add more than 2 words to the heading |
-|  | Add different types of icons \(solid, outline, functional\) |
+|  | Add different types of icons (solid, outline, functional) |
 
 ### Considerations of best practice
 

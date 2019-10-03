@@ -83,21 +83,21 @@ Organism
 | **Default** | n/a |
 | **Options** | Include an optional link to `#caveat` by placing `<a href="#caveat">1</a>` at the end |
 
-| **Name** | Named slot `cta` \(summit only\) |
+| **Name** | Named slot `cta` (summit only) |
 | :--- | :--- |
 | **Description** | The `<ns-cta>` component contained within a `<a>` |
 | **Type** | string |
 | **Default** | n/a |
 | **Options** | `<ns-cta>`, `<a>` |
 
-| **Name** | Background image \(summit only\) |
+| **Name** | Background image (summit only) |
 | :--- | :--- |
 | **Description** | A 16:9 image following our Landmark focus template |
 | **Type** | JPEG |
 | **Default** | n/a |
 | **Options** | 1440 x 810px |
 
-| **Name** | Gradient \(hillside only\) |
+| **Name** | Gradient (hillside only) |
 | :--- | :--- |
 | **Description** | The colour of the background gradient on hillside |
 | **Type** | string |

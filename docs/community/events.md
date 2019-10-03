@@ -6,7 +6,7 @@ description: List of Nucleus events including Nucleus Sessions.
 
 We're hosting regular events to keep the discussions going.
 
-Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel \#product-nucleus.. or be invited \(we post invites via other Slack channels and email, depending on the purpose of the event\).
+Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel \#product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
 
 ## 2019-09-03 / Drop in session
 
@@ -17,7 +17,7 @@ Browse below to gain a sense of our past events. The best way to learn about our
     * Gurdish to share his concept design where a CTA took the user to a lower part of a page.
     * Catch up with Oli and Sathu around their "Find an address" journey.
     * Talk to Ed / Supriya and see if they can think of any examples.
-* Conversations around reworking the journey experience \(not just lift and shift\), and aligning similar journeys across teams.
+* Conversations around reworking the journey experience (not just lift and shift), and aligning similar journeys across teams.
 * Considering changing the behaviour of a journey, using progressive disclosure rather than scrolling down.
 * Sathu mentioned he and Oli raised RFCs for components known to appear across different journeys:
   * [Progress bar](https://github.com/ConnectedHomes/nucleus/issues/804) \[†\]
@@ -29,8 +29,8 @@ Browse below to gain a sense of our past events. The best way to learn about our
 Highlights of our experience:
 
 * Some of our audience didn't yet know what Nucleus was, now they do.
-* During the 'innovate an idea with your favourite service' workshop. The Sexy Engineer won the funniest customer obsessed feature. \(Congrats Adam, Oli, Sarah, Daryll, Maude 🏆\)
-* Drew scored 6 out of 7 questions with a total score of 5,471 points in the Kahoot trade show quiz to come 2nd \(behind Paul Roberts\).
+* During the 'innovate an idea with your favourite service' workshop. The Sexy Engineer won the funniest customer obsessed feature. (Congrats Adam, Oli, Sarah, Daryll, Maude 🏆)
+* Drew scored 6 out of 7 questions with a total score of 5,471 points in the Kahoot trade show quiz to come 2nd (behind Paul Roberts).
 * Sadly, Jon was knocked out of the first round of the Rock Paper Scissors world championship!
 
 [Nucleus trade show presentation 2019-08-13.pdf](https://github.com/ConnectedHomes/nucleus/files/3505183/Nucleus.trade.show.presentation.2019-08-13.pdf) \[†\]
@@ -77,7 +77,7 @@ Highlights of our experience:
 * We have content heavy pages that we need to redesign using Nucleus components.
 * We’re writing content for Nucleus components but we’re unsure how much copy to include.
 * We’ve designed a new journey but unsure if a component can be used in this way.
-* What is an RFC \(request for change\) and how do I create one?
+* What is an RFC (request for change) and how do I create one?
 * Filling out an RFC is really difficult, is there a way to make it easier?
 * We’re unsure where to go for guidance and the best way to use Storybook.
 
@@ -86,7 +86,7 @@ Highlights of our experience:
 * What the team is currently working on.
 * What's about to become available.
 * Current work supporting product teams.
-* RFC \(request for change\) in progress.
+* RFC (request for change) in progress.
 
 ## 2019-07-02 / Nucleus Common Myths
 
@@ -98,7 +98,7 @@ Highlights of our experience:
 ## 2019-06-25 / Bring it home
 
 * What we’ve learned from the homepage and what’s next.
-* How to create content for Nucleus components using templates \(ns-landmark & ns-lockup\).
+* How to create content for Nucleus components using templates (ns-landmark & ns-lockup).
 * Tools for a quick content sense check and Clockwork approval.
 
 [Bring it home Nucleus Session.pdf](https://github.com/ConnectedHomes/nucleus/files/3364940/Bring.it.home.Nucleus.Session.pdf) \[†\]
@@ -109,7 +109,7 @@ Highlights of our experience:
 
 * Demo what is new in the Sketch Library.
 * Take a look at building a page using templates and guides.
-* BYOL \(Bring your own laptop\) so we can build pages together.
+* BYOL (Bring your own laptop) so we can build pages together.
 
 ## 2019-06-11 / Release party 1.1.1 what's new?
 
@@ -197,7 +197,7 @@ Highlights of our experience:
 
 ## 2019-03-07 / Accessibility roundtable
 
-* Quick check-in on initiatives already going on \(to be sure we're aware of them\).
+* Quick check-in on initiatives already going on (to be sure we're aware of them).
 * Discuss core reasons why and when our accessibility is lacking.
 * Collecting ideas on what kinds of actionable guidance would be needed, be it through Nucleus or otherwise.
 
