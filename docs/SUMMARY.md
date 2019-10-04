@@ -12,6 +12,7 @@
   * [Creating illustrations](how-to/creating-illustrations.md)
   * [Creating icons](how-to/creating-icons.md)
 * [Components](components/README.md)
+  * [ns-accordion](components/ns-accordion.md)
   * [ns-card](components/ns-card.md)
   * [ns-caveat](components/ns-caveat.md)
   * [ns-cta](components/ns-cta.md)
