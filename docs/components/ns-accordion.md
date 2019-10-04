@@ -53,100 +53,28 @@ Atom
 
 ## Specification
 
-| **Name** | validate |
+| **Name** | Named slot `heading` |
 | :--- | :--- |
-| **Description** | validates all of the fields within the form and returns an object containing the field and validation data |
-| **Type** | Function |
+| **Description** | The heading for the entire accordion |
+| **Type** | String |
 | **Default** | n/a |
 | **Options** | n/a |
 
-An **invalid validate return response** looks like:
-
-```javascript
-{
-  "isValid": false,
-  "fields": [
-    {
-      "name": "email-address",
-      "isValid": false,
-      "value": "",
-      "error": "This field is required",
-      "input": {}
-    },
-    {
-      "name": "password",
-      "isValid": false,
-      "value": "",
-      "error": "This field is required",
-      "input": {}
-    }
-  ],
-  "fieldsByName": {
-    "email-address": {
-      "name": "email-address",
-      "isValid": false,
-      "value": "",
-      "error": "This field is required",
-      "input": {}
-    },
-    "password": {
-      "name": "password",
-      "isValid": false,
-      "value": "",
-      "error": "This field is required",
-      "input": {}
-    }
-  }
-}
-```
-
-A **valid validate return response** looks like:
-
-```javascript
-{
-  "isValid": true,
-  "fields": [
-    {
-      "name": "email-address",
-      "isValid": true,
-      "value": "hello@example.com",
-      "input": {}
-    },
-    {
-      "name": "password",
-      "isValid": true,
-      "value": "password12",
-      "input": {}
-    }
-  ],
-  "fieldsByName": {
-    "email-address": {
-      "name": "email-address",
-      "isValid": true,
-      "value": "hello@example.com",
-      "input": {}
-    },
-    "password": {
-      "name": "password",
-      "isValid": true,
-      "value": "password12",
-      "input": {}
-    }
-  }
-}
-```
+| **Name** | Anonymous slot |
+| :--- | :--- |
+| **Description** | Place ns-expanders into this slot (see components/ns-expander) |
+| **Type** | ns-expander |
+| **Default** | n/a |
+| **Options** | n/a |
 
 ## Best practises
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use `ns-inputter` for your form fields | Don't write your own validations |
-| Use `ns-cta` to submit your form | Don't rely on front end validation alone. |
 
 ### Considerations of best practises
 
-* Alyways use the `ns-inputter` component inside `ns-form`, input and other form elements shouldn't be on their own.
-* Speak with the Nucleus team for advice on experience patterns.
+* 
 
 ## Feedback
 
