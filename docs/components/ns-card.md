@@ -6,9 +6,9 @@ description: Card component.
 
 ## Introduction
 
-> Cards give users a set of options for users to choose from
+> Cards can be used to contain content in a consistent and structured way.
 
-Cards give a story about why the user should go to the next action. This can be done through imagery, illustrations and typography. They can nudge users to a specific subject or area.
+Cards are used to apply a container around a related grouping of information; this can be done through imagery, illustrations and typography.
 
 ## Usage
 
