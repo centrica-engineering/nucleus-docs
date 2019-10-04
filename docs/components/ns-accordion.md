@@ -13,7 +13,13 @@ We use accordions to break down information or to link content to other pages th
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-accordion)
+- We use accordions to break down information or to link content to other pages through text links. 
+- Accordions allow us to reduce the information overload by using progressive disclosure.
+- Having the collapsed and expandable state, helps the user to read or find information that is divided by a meaningful order or area.
+- Accordions are useful for things like frequently asked questions or displaying multiple blocks of content such as tariffs.
+- We don't use key/important information in accordions.
+
+To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-accordion--singular)
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-accordion" caption="" %}
 
