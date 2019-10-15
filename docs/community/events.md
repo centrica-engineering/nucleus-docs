@@ -8,6 +8,18 @@ description: List of Nucleus events including Nucleus Sessions.
 
 Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel #product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
 
+## 2019-10-15 / A simpler, easy to use RFC template
+
+* Nick introduced the [latest Nucleus RFC](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC%2C+draft&template=b--request-a-change.md&title=%5BRFC%5D+Title+of+the+request) [†] (Request for change) template.
+  * What is the difference between our old RFC template and the new one.
+  * Understanding - What is an RFC?
+  * Listening to the feedback we've received to date.
+  * Described how to create an RFC.
+  * Showcased a few of our current RFCs and how these move across our [Requests kanban board](https://github.com/ConnectedHomes/nucleus/projects/6) [†]
+* Dave shared experience of the [Meter Read RFC](https://github.com/ConnectedHomes/nucleus/issues/839) workshop. [†]
+
+[RFC Improvement.pdf](https://github.com/ConnectedHomes/nucleus/files/3729954/RFC.Improvement.pdf) [†]
+
 ## 2019-09-24 / Drop in session
 
 * The Nucleus team introduced the recently released `ns-editorial` component and `<textarea>` variant of the `ns-inputter`.
