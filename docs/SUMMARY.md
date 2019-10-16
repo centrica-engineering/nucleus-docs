@@ -41,7 +41,7 @@
   * [Becoming Nucleus](community/becoming-nucleus.md)
   * [Events](community/events.md)
   * [Best practices](community/best-practices.md)
-  * [Welcome](community/welcome.md)
+  * [Contribute to Nucleus](community/contribute-to-nucleus.md)
   * [Release notes](community/releases.md)
 * [Accessibility](accessibility.md)
 * [Principles](principles.md)
