@@ -97,7 +97,7 @@ Organism
 
 | Component | Variant | Ratio | Dimensions | Size | Type | Placeholder
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-editorial`| n/a | 4:3 | 493x370px | &lt; 50kb | jpeg | [ns-editorial_493x370px](https://user-images.githubusercontent.com/50207859/66921312-d2544780-f01c-11e9-8b3e-0938731d0d86.jpg)
+| `ns-editorial`| n/a | 4:3 | 493x370px | &lt; 50kb | jpeg | [ns-editorial-493x370px](https://user-images.githubusercontent.com/50207859/66921312-d2544780-f01c-11e9-8b3e-0938731d0d86.jpg)
 
 ### Considerations of best practice
 
