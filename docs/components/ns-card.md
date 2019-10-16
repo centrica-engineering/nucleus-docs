@@ -120,6 +120,14 @@ Molecule
 * Be careful when using decoration in the panel with the section cards as the blue on blue with the CTA's will make them not accessible.
 * There should always be a heading to the group of cards inside the panel.
 
+## Content guidance
+
+### Image guidance
+
+| Component | Variant | Ratio | Dimensions | Size | Type | Placeholder
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `ns-card`| `support` | 16:9 | 648x365px | &lt; 50kb | jpeg | [ns-card-support-648x365px](https://user-images.githubusercontent.com/50207859/66921311-d2544780-f01c-11e9-8432-b3206186daa8.jpg)
+
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-card]).
