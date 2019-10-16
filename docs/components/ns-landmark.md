@@ -168,9 +168,9 @@ TODO: include supporting image for these content guidelines.
 
 ### Image guidance
 
-| Variant | Ratio | Dimensions | Size | Type |
-| :--- | :--- | :--- | :--- | :--- |
-| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg |
+| Component | Variant | Ratio | Dimensions | Size | Type | Placeholder
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `ns-landmark`| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg | [ns-landmark_summit_1440x810px](https://user-images.githubusercontent.com/50207859/66921308-d1bbb100-f01c-11e9-8971-c438c336feb2.jpg)
 
 ### The template
 
