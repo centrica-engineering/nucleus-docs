@@ -133,10 +133,20 @@ Organism
 | cta-link | This is the URL that the user will be taken too when they tap or click the CTA. |
 | image-path | This is the image that will be used inside the ns-lockup. It should have an aspect ratio of 4:3, the dimensions should be 728x547px, the file type should be jpg, and the file size should be no more than 100kb. Don't use imagery with white backgrounds. Please make sure you work with a designer when selecting any imagery for the ns-lockups. |
 
+### Image guidance
+
+| Component | Variant | Ratio | Dimensions | Size | Type | Placeholder
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `ns-lockup`| `lockbox` | 4:3 | 728x546px | &lt; 100kb | jpeg | [ns-lockup-lockbox_728x546px](https://user-images.githubusercontent.com/50207859/66921314-d2544780-f01c-11e9-8912-4b3573d95b0d.jpg)
+| `ns-lockup`| `lockbox` | 1:1 | 728x728px | &lt; 100kb | jpeg | [ns-lockup-lockbox_728x728px](https://user-images.githubusercontent.com/50207859/66921308-d1bbb100-f01c-11e9-8971-c438c336feb2.jpg)
+| `ns-lockup`| `lockjaw` | 4:3 | 768x576px | &lt; 100kb | jpeg | [ns-lockup-lockjaw_768x576px](https://user-images.githubusercontent.com/50207859/66921313-d2544780-f01c-11e9-98dd-7393cf65a510.jpg)
+| `ns-lockup`| `locknut` | 1:1 | 768x768px | &lt; 100kb | jpeg | [ns-lockup-locknut_768x768px](https://user-images.githubusercontent.com/50207859/66921309-d1bbb100-f01c-11e9-867c-9f69b6108e2c.jpg)
+
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20ns-lockup).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+ns-lockup).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+
 
