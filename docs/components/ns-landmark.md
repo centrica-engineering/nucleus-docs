@@ -168,9 +168,9 @@ TODO: include supporting image for these content guidelines.
 
 ### Image guidance
 
-| Variant | Ratio | Dimensions | Size | Type |
-| :--- | :--- | :--- | :--- | :--- |
-| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg |
+| Component | Variant | Ratio | Dimensions | Size | Type | Placeholder
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `ns-landmark`| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg | [ns-landmark_summit_1440x810px](https://user-images.githubusercontent.com/50207859/66927533-ddf93b80-f027-11e9-8c3f-edfee2c56dd0.jpg)
 
 ### The template
 
@@ -209,4 +209,5 @@ Find it under 'Guides' in the Nucleus Sketch Library.
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-landmark]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+
 
