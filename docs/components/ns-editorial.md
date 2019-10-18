@@ -93,6 +93,12 @@ Organism
 | Reverse the editorial |  |
 | ![image](https://user-images.githubusercontent.com/28779/65036012-61990d00-d942-11e9-9e7a-f51f4ef7c47e.png) |  |
 
+### Image guidance
+
+| Component | Variant | Ratio | Dimensions | Size | Type | Placeholder
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `ns-editorial`| n/a | 4:3 | 493x370px | &lt; 50kb | jpeg | [ns-editorial-493x370px](https://user-images.githubusercontent.com/50207859/66921312-d2544780-f01c-11e9-8b3e-0938731d0d86.jpg)
+
 ### Considerations of best practice
 
 * When starting a page using `ns-editorial`, start with the text on the left and image on the right
@@ -111,4 +117,5 @@ Organism
 * Blog posts
 * MDN articles
 * Examples of where it is used
+
 
