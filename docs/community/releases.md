@@ -149,34 +149,32 @@ All our Requests For Change can be found under the Requests milestone in GitHub.
 
 Any questions? Let us know 🙌🏼
 
-### Version 1.1.1 something for you, you and you! 🎉
+## Version 1.1.1
 
-_Release Notes 2019-06-11: Additional components_
+**Something for you, you and you! 🎉**
 
-#### What’s new around here 🌶
+Release date - 2019-06-11
 
-_`ns-inputter`_ - the 'vanilla first' of our form elements.
+**What’s new around here 🌶**
 
-* Text, Email, Telephone, Password, Number, Radio, Checkbox.
-* Field-level validation.
-* Placeholder.
-* Helper text.
-* Helper details.
+* `ns-inputter` - the vanilla first of our form elements.
+  * Text, Email, Telephone, Password, Number, Radio, Checkbox.
+  * Field-level validation.
+  * Placeholder.
+  * Helper text.
+  * Helper details.
+* `ns-video` - include a YouTube video into a lockup.
+* `ns-tab` - the tab that lives within tabs.
+* `ns-tabs` - include a few tab to make a tabs.
 
-  _`ns-video`_ - include a YouTube video into a lockup.
+**Sketch Library**
 
-  _`ns-tab`_ - the tab that lives within tabs.
+* Release 2.0 - (Out of Pre-release).
+  * Download the latest: https://github.com/ConnectedHomes/centrica-ux/releases.
+* Added Guides to give indication of where components can be placed.
+* Included Templates to quickly mockup a page and placing components in a layout.
 
-  _`ns-tabs`_ - include a few tab to make a tabs.
-
-**Sketch Library 🐍**
-
-* Official release _Version 2.0_ - _(Out of Pre-release)_ :star2:.
-* _Download_ the latest: [https://github.com/ConnectedHomes/centrica-ux/releases](https://github.com/ConnectedHomes/centrica-ux/releases).
-* Added _Guides_ to give indication of where components can be placed.
-* Included _Templates_ to quickly mockup a page and placing components in a layout.
-
-#### Bug fixes 🐞
+**Bugfixes 🐞**
 
 * Replace previous green outline on `ns-cta` with current yellow outline.
 * Ensuring that the class of `blur` is implemented when required.
@@ -184,28 +182,31 @@ _`ns-inputter`_ - the 'vanilla first' of our form elements.
 * Improve specificity of typographic styling.
 * Including robust techniques for setting attributes.
 
-#### Improvements 🌸
+**Improvements 🌸**
 
 * Storybook, split Playground and Foundations.
 * Remove unused properties from our components.
 * Setting a white background to `ns-expander` within `ns-accordion`.
 * Including a variable for `@outline` colour.
-* Adding the solid and outline _Rewards_ icon.
+* Adding the solid and outline Rewards icon.
 
-#### Feedback 🐢
-
-All our RFC’s can be found under the Requests milestone in our GitHub Milestones. [https://github.com/ConnectedHomes/nucleus/milestone/18](https://github.com/ConnectedHomes/nucleus/milestone/18)
-
-Any questions? Let us know 🙌🏼
-
-#### Collaboration 🤗
+**Collaboration 🤗**
 
 A big thank you to everyone involved in contributing to this release!
 
-* _OAM_ - for their collaboration throughout this release.
-* _Energy Sales_ - for working with us to run a joint user testing session using a Nucleus coded prototype.
-* _New Boiler_ - For collaborating with us to make sure the recent journeys contained Nucleus components.
-* _Help & Support_ - for their patience with the Nucleus CMS page, allowing us time to build the video component.
+* OAM - for their collaboration throughout this release.
+* Energy Sales - for working with us to run a joint user testing session using a Nucleus coded prototype.
+* New Boilers - For collaborating with us to make sure their recent journey contained Nucleus components.
+* Help & Support - for their patience with the Nucleus CMS page, allowing us time to build the video component.
+
+**Feedback 🐢**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
 
 ## Version 1.0.0
 
