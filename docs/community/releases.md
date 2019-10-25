@@ -4,6 +4,51 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
+## Version 1.2.1
+
+**Selector and Table**
+
+Release date - [2019-10-31]
+
+**What’s new around here 🐣**
+
+* We have included `ns-selector` in this release.
+  * Enhanced radio button or checkbox group.
+  * Include either an illustration or an image and additional content to support decision.
+* Our first release of `ns-table`
+  * A 'vanilla first' table with responsive behaviour
+  * Specifically a Data Table
+
+**Documentation 🍂**
+
+* Introducing *image guidance* and image templates to our components which use an image.
+  * Component `ns-editorial` - https://docs.britishgas.design/components/ns-editorial#image-guidance
+  * Component `ns-landmark` - https://docs.britishgas.design/components/ns-landmark#image-guidance
+  * Component `ns-lockup` - https://docs.britishgas.design/components/ns-lockup#image-guidance
+  * Component `ns-card` - https://docs.britishgas.design/components/ns-card#image-guidance
+
+**Bug fixes 🎒**
+
+* [include a list of things]
+  * [second level item]
+  * [wrap `ns-component` names and code references in backticks]
+* [title followed by - http://the.url-of.choice]
+
+**Improvements 🐬**
+
+* [include a list of things]
+  * [second level item]
+  * [wrap `ns-component` names and code references in backticks]
+* [title followed by - http://the.url-of.choice]
+
+**Feedback 👩🏻‍🍳**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
 ### Version 1.2.0
 
 _Release Notes 2019-09-20: New components and documentation_
