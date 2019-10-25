@@ -21,11 +21,11 @@ Release date - [2019-10-31]
 
 **Documentation 🍂**
 
-* Introducing *image guidance* and image templates to our components which use an image.
-  * Component `ns-editorial` - https://docs.britishgas.design/components/ns-editorial#image-guidance
-  * Component `ns-landmark` - https://docs.britishgas.design/components/ns-landmark#image-guidance
-  * Component `ns-lockup` - https://docs.britishgas.design/components/ns-lockup#image-guidance
-  * Component `ns-card` - https://docs.britishgas.design/components/ns-card#image-guidance
+* Introducing **Image guidance** and supporting image templates to our components which use an image.
+  * `ns-editorial` - https://docs.britishgas.design/components/ns-editorial#image-guidance
+  * `ns-landmark` - https://docs.britishgas.design/components/ns-landmark#image-guidance
+  * `ns-lockup` - https://docs.britishgas.design/components/ns-lockup#image-guidance
+  * `ns-card` - https://docs.britishgas.design/components/ns-card#image-guidance
 
 **Bug fixes 🎒**
 
