@@ -207,32 +207,33 @@ A big thank you to everyone involved in contributing to this release!
 * _New Boiler_ - For collaborating with us to make sure the recent journeys contained Nucleus components.
 * _Help & Support_ - for their patience with the Nucleus CMS page, allowing us time to build the video component.
 
-### Version 1.0.0 our first major release! 🎉
+## Version 1.0.0
 
-_Release Notes 2019-04-15: Ember commons_
+**Our first major release! 🎉**
 
-#### What’s new around here 🌶
+Release date - 2019-04-15
 
-_Integration with Ember commons._
+**What’s new around here 🌶**
 
-_Sketch Nucleus Pattern Library_
+**Integration with Ember Commons**
+* A feature flag exists in Ember Commons to enable Nucleus.
 
+**Sketch Nucleus Pattern Library**
 * Added all available icons.
 * Added Accordions.
 * Added more screen sizes to each Component.
 
-_Documentation_
+**Documentation**
+* Becoming Nucleus - https://docs.britishgas.design/community/becoming-nucleus
+* Best practices - https://docs.britishgas.design/community/best-practices
+* Events - https://docs.britishgas.design/community/events
+* Modular scale - https://docs.britishgas.design/foundation/modular-scale
+* Typography sizes - https://docs.britishgas.design/foundation/typography
+* Optimise your images - https://docs.britishgas.design/foundation/photography
+* Our documentation - https://docs.britishgas.design
+* Accordion - https://docs.britishgas.design/components/ns-accordion
 
-* Becoming Nucleus [https://docs.britishgas.design/community/becoming-nucleus](https://docs.britishgas.design/community/becoming-nucleus).
-* Best practices [https://docs.britishgas.design/community/best-practices](https://docs.britishgas.design/community/best-practices).
-* Events [https://docs.britishgas.design/community/events](https://docs.britishgas.design/community/events).
-* Modular scale [https://docs.britishgas.design/foundation/modular-scale](https://docs.britishgas.design/foundation/modular-scale).
-* Typography - Sizes [https://docs.britishgas.design/foundation/typography](https://docs.britishgas.design/foundation/typography).
-* Photography - Optimise your images [https://docs.britishgas.design/foundation/photography](https://docs.britishgas.design/foundation/photography).
-* Our documentation [https://docs.britishgas.design](https://docs.britishgas.design).
-* Accordion [https://docs.britishgas.design/components/ns-accordion](https://docs.britishgas.design/components/ns-accordion).
-
-#### Bug fixes 🐞
+**Bugfixes 🐞**
 
 * Vertical spacing adjustments.
 * Adjusting the style of the heading within our Accordion.
@@ -240,16 +241,18 @@ _Documentation_
 * Removing the duplicate BG Flame font loading.
 * Fixed the hierarchy of the screen sizes in Sketch library.
 
-#### Feedback 🐳
+**Feedback 🐳**
 
 The following request for changes have been started
 
-* **491 RFC - Main navigation :banana:** [**https://github.com/ConnectedHomes/nucleus/issues/491**](https://github.com/ConnectedHomes/nucleus/issues/491)**.**
-* **587 RFC - Tab panel :card\_index\_dividers:** [**https://github.com/ConnectedHomes/nucleus/issues/587**](https://github.com/ConnectedHomes/nucleus/issues/587)**.**
-* **582 RFC - Selection cards :female-construction-worker:** [**https://github.com/ConnectedHomes/nucleus/issues/582**](https://github.com/ConnectedHomes/nucleus/issues/582)**.**
-* **579 RFC - Form fields :pencil2:** [**https://github.com/ConnectedHomes/nucleus/issues/579**](https://github.com/ConnectedHomes/nucleus/issues/579)**.**
+* Main navigation - https://github.com/ConnectedHomes/nucleus/issues/491
+* Tab panel - https://github.com/ConnectedHomes/nucleus/issues/587
+* Selection cards - https://github.com/ConnectedHomes/nucleus/issues/582
+* Form fields - https://github.com/ConnectedHomes/nucleus/issues/579
 
-All our Requests For Change can be found under the Requests milestone in GitHub. [https://github.com/ConnectedHomes/nucleus/milestone/18](https://github.com/ConnectedHomes/nucleus/milestone/18)
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
 
 Any questions? Let us know 🙌🏼
+
 
