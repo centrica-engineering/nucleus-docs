@@ -119,35 +119,37 @@ All our Requests For Change can be found under the Requests milestone in GitHub.
 
 Any questions? Let us know 🙌🏼
 
-### Version 1.1.3 👩🏼‍💻
+## Version 1.1.3
 
-_Release Notes 2019-06-24: Improvements and bugfixes_
+**Bugfixes and improvements**
 
-#### What’s new around here 🌶
+Release date - 2019-06-24
 
 **Sketch Library 🐳**
 
 * Fixed broken and duplicated Components / Templates.
 
-#### Bug fixes 🏏
+**Bugfixes 🏏**
 
 * Fixed the inconsistent positioning of the accordion chevron when multiple expanders were used.
 * Addressed the IE11 bug where the incorrect text colour appeared within `ns-cta` and `ns-tab`.
 * Enable the position `right` for the circle decoration.
 * Fix initial value overwrite in `ns-inputter`.
 
-#### Improvements 🌻
+**Improvements 🌻**
 
 * Removed `slot="label"` from `ns-inputter` as we use the anonymous slot.
 * Improve the `ns-tabs` Storybook story.
 * Include the tap illustration.
-* Adding the solid and outline _Energy_ icon.
+* Adding the solid and outline Energy icon.
 
-#### Feedback 🦕
+**Feedback 🦕**
 
-All our Requests For Change can be found under the Requests milestone in GitHub. [https://github.com/ConnectedHomes/nucleus/milestone/18](https://github.com/ConnectedHomes/nucleus/milestone/18)
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
 
 Any questions? Let us know 🙌🏼
+
 
 ## Version 1.1.1
 
