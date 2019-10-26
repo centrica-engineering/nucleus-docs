@@ -89,22 +89,25 @@ Any questions? Let us know 🙌🏼
 
 ### Version 1.1.4
 
-_Release Notes 2019-07-31: Additional components, Improvements and bugfixes_
+**Additional components, bugfixes and improvements**
 
-#### What’s new around here 🕑
+Release date - 2019-07-31
 
-* A Landmark variant `hillside` designed to be less promotional, with no image and no call to action.
+**What’s new around here 🕑**
+
+* A Landmark variant `hillside` which is less promotional than `summit`
+  * It has no image and no call to action.
 * `ns-form` - The container for all `ns-inputter` components which manages the validation.
 * Introducing the `select` variant of `ns-inputter` commonly known as - the dropdown.
 
-#### Bug fixes 🦋
+**Bugfixes 🦋**
 
 * Addressing an issue where the BG-VI.css anchor styles were overriding Nucleus.
 * Ensuring that `ns-cta` is tabbable when not contained within an `<a>`.
 * Slight change to the implementation of the CSS box model.
 * Adding slot styling to the heading within the `flat` variant of `ns-card`.
 
-#### Improvements 🐶
+**Improvements 🐶**
 
 * Validation improvements to `ns-inputter` suppoting minLength, maxLength and isBetweenLength validations.
 * Validation for radio buttons and `ns-inputter` `select` component.
@@ -113,9 +116,10 @@ _Release Notes 2019-07-31: Additional components, Improvements and bugfixes_
 * The `ns-cta` within `ns-lockup` and `ns-landmark` is now optional.
   * Choose 'none' from the 'CTA type' dropdown in the Knobs addon.
 
-#### Feedback 🦉
+**Feedback 🦉**
 
-All our Requests For Change can be found under the Requests milestone in GitHub. [https://github.com/ConnectedHomes/nucleus/milestone/18](https://github.com/ConnectedHomes/nucleus/milestone/18)
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
 
 Any questions? Let us know 🙌🏼
 
