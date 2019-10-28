@@ -51,9 +51,11 @@ Any questions? Let us know 🙌🏼
 
 ### Version 1.2.0
 
-_Release Notes 2019-09-20: New components and documentation_
+**New components and documentation**
 
-#### What’s new around here 👾
+Release Notes 2019-09-20
+
+**What’s new around here 👾**
 
 * The long awaited `ns-editorial` has made it into this release.
   * Introducing a new layout `.splosh` which, at this time is exclusively for `ns-editorial`.
@@ -70,24 +72,25 @@ _Release Notes 2019-09-20: New components and documentation_
 * Component `ns-editorial` - [https://docs.britishgas.design/components/ns-editorial](https://docs.britishgas.design/components/ns-editorial).
 * Textarea - [https://docs.britishgas.design/components/ns-inputter#textarea](https://docs.britishgas.design/components/ns-inputter#textarea).
 
-#### Bug fixes 🙊
+**Bug fixes 🙊**
 
 * Ensuring that the Nucleus container `.ndsn` class fills the width of the browser.
 * Resolving an issue where text within the reversed `lockjaw` Lockup was against the edge of the browser.
 
-#### Improvements 🌺
+**Improvements 🌺**
 
 * Creating a `gradient-colour` mixin.
 * Updating the Landmark Storybook stories to better reflect the different types.
 * Tidying up a few stories within Storybook.
 
-#### Feedback 👩🏽‍💻
+**Feedback 👩🏽‍💻**
 
-All our Requests For Change can be found under the Requests milestone in GitHub. [https://github.com/ConnectedHomes/nucleus/milestone/18](https://github.com/ConnectedHomes/nucleus/milestone/18)
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
 
 Any questions? Let us know 🙌🏼
 
-### Version 1.1.4
+## Version 1.1.4
 
 **Additional components, bugfixes and improvements**
 
