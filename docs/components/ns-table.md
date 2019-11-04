@@ -10,16 +10,6 @@ description: A reusable table that can hold data with multiple rows and multiple
 
 The table component consumes basic HTML table markup and makes it accessible and responsive as well as styling it.
 
-## Accessibility
-
-### Aria
-The `ns-table` component adds all the necessary Aria tags to the table to make it accessible for screen readers.
-
-### Keyboard
-Keyboard controls are automatically added to the table to make it perform as a data grid.  You can select cells and use the arrow keys to navigate.
-
-### Responsive
-If your table has table headers <th> in the first column, the component will make these “sticky” so that the table data can be scrolled horizontally whilst the first column headers stay in place.
 
 ## Usage
 
@@ -76,6 +66,9 @@ Atom
 * Not all tables necessarily need captions, but it's recommended you provide one.
 * Column header names should describe the type of content displayed in each column. Each row should contain data related to a single entity.
 * Think about the experience on a smaller screen size. 
+* The `ns-table` component adds all the necessary Aria tags to the table to make it accessible for screen readers.
+* Keyboard controls are automatically added to the table to make it perform as a data grid.  You can select cells and use the arrow keys to navigate.
+* If your table has table headers <th> in the first column, the component will make these “sticky” so that the table data can be scrolled horizontally whilst the first column headers stay in place.
 
 
 ## Feedback
