@@ -18,6 +18,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ```html
 <ns-table>
   <table>
+    <caption> ... </caption>
     <thead> ... </thead>
     <tbody> ... </tbody>
     <tfoot> ... </tfoot>
@@ -41,13 +42,16 @@ Atom
 
 ## Specification
 
-| **Name** |  |
-| :--- | :--- |
-| **Description** |  |
-| **Type** |  |
-| **Default** |  |
-| **Options** |  |
-| **Notes** |  |
+ns-table doesn't expect any attributes to be added to it, you simply need to insert HTML table markup and it will render the table in an accessible and responsive way.
+
+### caption
+Be sure to add a <caption> tag inside the <table>.  The caption should explain what the table is representing.
+  
+  ```
+  <table>
+    <caption>European countries in order of population</caption>
+  </table>
+  ```
 
 ## Best practice
 
