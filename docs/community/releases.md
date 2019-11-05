@@ -21,6 +21,8 @@ Release date - [2019-10-31]
 
 **Documentation 🍂**
 
+* Supporting documentation for `ns-selector` - https://docs.britishgas.design/components/ns-selector
+* Also, the initial documentation for `ns-table` - https://docs.britishgas.design/components/ns-table
 * Introducing **Image guidance** and supporting image templates to our components which use an image.
   * `ns-editorial` - https://docs.britishgas.design/components/ns-editorial#image-guidance
   * `ns-landmark` - https://docs.britishgas.design/components/ns-landmark#image-guidance
