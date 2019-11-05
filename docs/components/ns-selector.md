@@ -18,18 +18,30 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ```html
 <ns-inputter validation="['isRequired']" heading="Chose a product" helper="" name="product">
 
-  <ns-selector selectedvalue="product1" image="image001.png" decoration="boiler" label="This is the label text" type="radio">
-    <h2 slot="heading">Wolf plaid crucifix hammock</h2>
-    <p slot="subheading">Kale chips live-edge</p>
-    <div slot="content">Subway tile squid godard occupy shabby chic blog hell</div>
+  <ns-selector decoration="boiler" image="gas.png">
+    <input type="radio" aria-describedby="item-1" name="question" value="gas" checked="">
+    <label for="question-gas">Gas</label>
+    <div slot="description" id="item-1">
+      <ul class="ul-bullet">
+        <li>Wolf plaid crucifix hammock</li>
+        <li>Kale chips live-edge</li>
+        <li>Subway tile squid godard occupy shabby chic blog hell</li>
+      </ul>
+    </div>
   </ns-selector>
-
-  <ns-selector selectedvalue="product2" image="image001.png" decoration="appliance" label="This is the label text" type="radio">
-    <h2 slot="heading">Fixie snackwave fam, chambray</h2>
-    <p slot="subheading">Tbh before they sold out blue bottle</p>
-    <div slot="content">Salvia yuccie stumptown, 90's portland quinoa chambray.</div>
+  
+  <ns-selector decoration="boiler" image="electricity.png">
+    <input type="radio" aria-describedby="item-1" name="question" value="electricity" checked="">
+    <label for="question-gas">Electricity</label>
+    <div slot="description" id="item-1">
+      <ul class="ul-bullet">
+        <li>Wolf plaid crucifix hammock</li>
+        <li>Kale chips live-edge</li>
+        <li>Subway tile squid godard occupy shabby chic blog hell</li>
+      </ul>
+    </div>
   </ns-selector>
-
+  
 </ns-inputter>
 ```
 
@@ -50,35 +62,7 @@ Molecule
 
 ## Specification
 
-| **Name** | validate |
-| :--- | :--- |
-| **Description** | validates all of the fields within the form and returns an object containing the field and validation data |
-| **Type** | Function |
-| **Default** | n/a |
-| **Options** | n/a |
-
-| **Name**| Named slot `type` |
-| :--- | :--- |
-| **Description** | The type of selector button to use radio or checkbox |
-| **Type** | string |
-| **Default** | n/a |
-| **Options** | radio, checkbox |
-
-| **Name**| Named slot `heading` |
-| :--- | :--- |
-| **Description** | The heading of the selector, this will appear within an h2. |
-| **Type** | string |
-| **Default** | n/a |
-| **Options** | n/a |
-
-| **Name**| Named slot `subheading` |
-| :--- | :--- |
-| **Description** | The sub-heading of the selector, this will appear within an h3. |
-| **Type** | string |
-| **Default** | n/a |
-| **Options** | n/a |
-
-| **Name**| Named slot `content` |
+| **Name**| Named slot `description` |
 | :--- | :--- |
 | **Description** | The text content of the selector, this will appear within a paragraph |
 | **Type** | string |
