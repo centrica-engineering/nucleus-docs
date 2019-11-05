@@ -51,7 +51,7 @@ https://github.com/ConnectedHomes/nucleus/projects/6
 Any questions? Let us know 🙌🏼
 
 
-### Version 1.2.0
+## Version 1.2.0
 
 **New components and documentation**
 
