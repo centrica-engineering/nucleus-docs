@@ -64,8 +64,8 @@ Molecule
 
 | **Name**| Named slot `description` |
 | :--- | :--- |
-| **Description** | The text content of the selector, this will appear within a paragraph |
-| **Type** | string |
+| **Description** | The text content of the selector, this can contain paragraphs and lists |
+| **Type** | HTML |
 | **Default** | n/a |
 | **Options** | n/a |
 
@@ -84,7 +84,7 @@ Molecule
 | **Options** | n/a |
 
 
-## Best practises
+## Best practices
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -97,7 +97,7 @@ Molecule
 
 
 
-### Considerations of best practises
+### Considerations of best practices
 
 * When deciding to use the ns-selector. It’s important to consider the option to just use a radio or checkbox button.
 * In a many cases, a simple radio button or checkbox is all the user needs to make the choice. So only use the ns selector when adding more supporting information makes the decisioin for the user easier
