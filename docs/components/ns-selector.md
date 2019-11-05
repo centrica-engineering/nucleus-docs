@@ -18,7 +18,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ```html
 <ns-inputter validation="['isRequired']" heading="Chose a product" helper="" name="product">
 
-  <ns-selector decoration="boiler" image="gas.png">
+  <ns-selector decoration="gas" image="gas.png">
     <input type="radio" aria-describedby="item-1" name="question" value="gas" checked="">
     <label for="question-gas">Gas</label>
     <div slot="description" id="item-1">
@@ -30,7 +30,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
     </div>
   </ns-selector>
   
-  <ns-selector decoration="boiler" image="electricity.png">
+  <ns-selector decoration="electricity" image="electricity.png">
     <input type="radio" aria-describedby="item-1" name="question" value="electricity" checked="">
     <label for="question-gas">Electricity</label>
     <div slot="description" id="item-1">
