@@ -42,9 +42,9 @@ Atom
 
 ## Specification
 
-ns-table doesn't expect any attributes to be added to it, you simply need to insert HTML table markup and it will render the table in an accessible and responsive way.
+`ns-table` doesn't expect any attributes to be added to it, you simply need to insert HTML table markup and it will render the table in an accessible and responsive way.
 
-### caption
+### `<caption>`
 Be sure to add a <caption> tag inside the <table>.  The caption should explain what the table is representing.
   
   ```
@@ -52,6 +52,19 @@ Be sure to add a <caption> tag inside the <table>.  The caption should explain w
     <caption>European countries in order of population</caption>
   </table>
   ```
+  
+### `<thead>`
+If your table data has column headings across the first row then place header cells (`<th>`) within the `<thead>` tag.
+
+```
+  <table>
+    <thead>
+      <th>Country</th>
+      <th>Population</th>
+    </thead>
+  </table>
+```
+  
 
 ## Best practice
 
