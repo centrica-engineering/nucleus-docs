@@ -126,7 +126,7 @@ Molecule
 
 | Component | Variant | Ratio | Dimensions | Size | Type | Placeholder
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-card`| `support` | 16:9 | 648x365px | &lt; 50kb | jpeg | [ns-card-support-648x365px](https://user-images.githubusercontent.com/50207859/66921311-d2544780-f01c-11e9-8432-b3206186daa8.jpg)
+| `ns-card`| `support` | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-card-support-640x360px](https://user-images.githubusercontent.com/50207859/67642149-d3c91e00-f900-11e9-983c-9b812217b801.jpg)
 
 ## Feedback
 
