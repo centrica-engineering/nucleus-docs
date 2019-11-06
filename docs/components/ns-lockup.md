@@ -137,10 +137,10 @@ Organism
 
 | Component | Variant | Ratio | Dimensions | Size | Type | Placeholder
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-lockup`| `lockbox` | 4:3 | 728x546px | &lt; 100kb | jpeg | [ns-lockup-lockbox_728x546px](https://user-images.githubusercontent.com/50207859/66921314-d2544780-f01c-11e9-8912-4b3573d95b0d.jpg)
-| `ns-lockup`| `lockbox` | 1:1 | 728x728px | &lt; 100kb | jpeg | [ns-lockup-lockbox_728x728px](https://user-images.githubusercontent.com/50207859/66921308-d1bbb100-f01c-11e9-8971-c438c336feb2.jpg)
-| `ns-lockup`| `lockjaw` | 4:3 | 768x576px | &lt; 100kb | jpeg | [ns-lockup-lockjaw_768x576px](https://user-images.githubusercontent.com/50207859/66921313-d2544780-f01c-11e9-98dd-7393cf65a510.jpg)
-| `ns-lockup`| `locknut` | 1:1 | 768x768px | &lt; 100kb | jpeg | [ns-lockup-locknut_768x768px](https://user-images.githubusercontent.com/50207859/66921309-d1bbb100-f01c-11e9-867c-9f69b6108e2c.jpg)
+| `ns-lockup`| `lockbox` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-lockup-lockbox-720x540px](https://user-images.githubusercontent.com/50207859/67642153-d461b480-f900-11e9-9520-11204c64a11b.jpg)
+| `ns-lockup`| `lockbox` | 1:1 | 720x720px | &lt; 100kb | jpeg | [ns-lockup-lockbox-720x720px](https://user-images.githubusercontent.com/50207859/67642154-d461b480-f900-11e9-9581-212ede25f362.jpg)
+| `ns-lockup`| `lockjaw` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-lockup-lockjaw-720x540px](https://user-images.githubusercontent.com/50207859/67642155-d4fa4b00-f900-11e9-9ba6-a31f61ddb0ef.jpg)
+| `ns-lockup`| `locknut` | 1:1 | 720x720px | &lt; 100kb | jpeg | [ns-lockup-locknut-720x720px](https://user-images.githubusercontent.com/50207859/67642156-d4fa4b00-f900-11e9-8400-548625a1648f.jpg)
 
 ## Feedback
 
