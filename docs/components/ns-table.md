@@ -15,6 +15,8 @@ The table component consumes basic HTML table markup and makes it accessible and
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-table).
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-table" caption="" %}
+
 ```html
 <ns-table>
   <table>
@@ -47,13 +49,13 @@ Atom
 ### Caption
 
 Be sure to add a `<caption>` tag inside the `<table>`.  The caption should explain what the table is representing.
-  
+
   ```
   <table>
     <caption>European countries in order of population</caption>
   </table>
   ```
-  
+
 ### Column headers
 If your table data has column headings across the first row then place header cells (`<th>`) within the `<thead>` tag.
 
@@ -117,10 +119,10 @@ If your table has row headers in the left-most column then place these headers i
 
 
 ### Considerations of best practice
-  
+
 * Not all tables necessarily need captions, but it's recommended you provide one.
 * Column header names should describe the type of content displayed in each column. Each row should contain data related to a single entity.
-* Think about the experience on a smaller screen size. 
+* Think about the experience on a smaller screen size.
 * The `ns-table` component adds all the necessary Aria tags to the table to make it accessible for screen readers.
 * Keyboard controls are automatically added to the table to make it perform as a data grid.  You can select cells and use the arrow keys to navigate.
 * If your table has table headers <th> in the first column, the component will make these “sticky” so that the table data can be scrolled horizontally whilst the first column headers stay in place.
