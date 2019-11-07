@@ -27,6 +27,7 @@
   * [ns-panel](components/ns-panel.md)
   * [ns-tab](components/ns-tab.md)
   * [ns-tabs](components/ns-tabs.md)
+  * [ns-table](components/ns-table.md)
   * [ns-video](components/ns-video.md)
 * [Foundations](foundations/README.md)
   * [Colours](foundations/colours.md)
