@@ -4,11 +4,11 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
-## Version 1.2.1
+## Version 1.3.0
 
 **Selector and Table**
 
-Release date - [2019-10-31]
+Release date - [2019-11-07]
 
 **What’s new around here 🐣**
 
