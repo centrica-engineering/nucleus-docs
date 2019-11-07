@@ -31,17 +31,13 @@ Release date - [2019-11-07]
 
 **Bug fixes 🎒**
 
-* [include a list of things]
-  * [second level item]
-  * [wrap `ns-component` names and code references in backticks]
-* [title followed by - http://the.url-of.choice]
+* In `ns-accordion` we moved the aria `role="tablist"` from the ShadowDOM into the LightDOM to improve accessibility.
+* Ensuring every page fills at least 100% of the viewport.
+* Setting the correct alignment of `slot="heading"` when `ns-editorial` is reversed when there is no image to push the heading to the right.
 
 **Improvements 🐬**
 
-* [include a list of things]
-  * [second level item]
-  * [wrap `ns-component` names and code references in backticks]
-* [title followed by - http://the.url-of.choice]
+* We have added a WebP version of the Superflame asset for the `summit` `ns-landmark` optimised for small screens. The original asset has been impacting our performance.
 
 **Feedback 👩🏻‍🍳**
 
