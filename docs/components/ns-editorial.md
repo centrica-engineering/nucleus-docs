@@ -8,12 +8,13 @@ description: A self-contained or supporting piece of content.
 
 > The editorial component is a self-contained or supporting piece of content that is more informative than promotional in nature. In some cases, it is necessary to explain something in more detail without the user needing to take an immediate action.
 
-
 ## Usage
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-editorial--editorial)
 
-```html
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-editorial" caption="" %}
+
+```markup
 <ns-editorial image="/my-images/my-image.png">
   <h2 slot="heading">Typewriter seitan chartreuse musta</h2>
   <p>Polaroid actually neutra readymade. Glossier hot chicken literally vegan, hoodie artisan sustainable forage lyft gentrify bespoke vinyl.</p>
@@ -45,30 +46,28 @@ No
 **Atomic type**  
 Organism
 
-
 ## Specification
 
-| **Name**| image |
+| **Name** | image |
 | :--- | :--- |
 | **Description** | The url of the image |
 | **Type** | string |
 | **Default** | n/a |
 | **Options** | n/a |
 
-| **Name**| Named slot `heading` |
+| **Name** | Named slot `heading` |
 | :--- | :--- |
 | **Description** | The heading of the editorial, this will appear within an h2. |
 | **Type** | string |
 | **Default** | n/a |
 | **Options** | n/a |
 
-| **Name**| Anonymous slot |
+| **Name** | Anonymous slot |
 | :--- | :--- |
 | **Description** | The HTML content of the editorial |
 | **Type** | html |
 | **Default** | n/a |
 | **Options** | n/a |
-
 
 ## Best practice
 
@@ -78,7 +77,6 @@ Organism
 | Use a 4:3 ratio for imagery | Include a text or direct CTA |
 | Include contextual text links with content | Use imagery with white backgrounds |
 |  | Use imagery with copy embedded |
-
 
 ## Content guidance
 
@@ -95,23 +93,29 @@ Organism
 | Reverse the editorial |  |
 | ![image](https://user-images.githubusercontent.com/28779/65036012-61990d00-d942-11e9-9e7a-f51f4ef7c47e.png) |  |
 
+### Image guidance
+
+| Component | Variant | Ratio | Dimensions | Size | Type | Placeholder
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `ns-editorial`| n/a | 4:3 | 480x360px | &lt; 50kb | jpeg | [ns-editorial-480x360px](https://user-images.githubusercontent.com/50207859/67642150-d461b480-f900-11e9-9803-5ff4df7ad9a7.jpg)
 
 ### Considerations of best practice
 
-- When starting a page using `ns-editorial`, start with the text on the left and image on the right
-- Break up long paragraphs with sub-headings to make content more readable
-- Keep each editorial focused on one subject
-
+* When starting a page using `ns-editorial`, start with the text on the left and image on the right
+* Break up long paragraphs with sub-headings to make content more readable
+* Keep each editorial focused on one subject
 
 ## Feedback
 
-- Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-editorial]).
-- See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-editorial])
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-editorial]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-editorial])
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
 
-
 ## Related links
-- Blog posts
-- MDN articles
-- Examples of where it is used
+
+* Blog posts
+* MDN articles
+* Examples of where it is used
+
+

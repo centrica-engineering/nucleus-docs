@@ -16,7 +16,9 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 `ns-cta` should always live inside another component.
 
-```html
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-cta" caption="" %}
+
+```markup
 <ns-cta>Learn more about Hive</ns-cta>
 ```
 
@@ -31,7 +33,7 @@ None
 **Does it live inside other components?**  
 `ns-lockup`  
 `ns-landmark`  
-`ns-card`  
+`ns-card`
 
 **Atomic type**  
 Molecule
@@ -92,8 +94,8 @@ Molecule
 | Only use 'loading' on an action | Make it overly wordy |
 | Relate the action to the content it sits beside | Use icons for icons' sake |
 | Use 'direct' for the primary action on the page | Use more than 24 characters |
-| | Have multiple lines or sentences within a CTA |
-| | Repeat CTA copy within the same page |
+|  | Have multiple lines or sentences within a CTA |
+|  | Repeat CTA copy within the same page |
 
 ### Considerations of best practice
 
@@ -112,3 +114,4 @@ Molecule
 ## Related links
 
 * [CTA examples in the homepage](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-homepage--2019-01).
+

@@ -21,7 +21,7 @@ Taking a device independent approach to deciding on the widths to design to in o
 | 🏀 Basketball court | 720px (45em) | 648px | 36px |
 | 🏑 Hockey pitch | 1080px (67.5em) | 972px | 54px |
 | 🏉 Rugby pitch | 1620px (101.25em) | 1458px | 81px |
-| 👕 Polo field | 2430px (151.875em) | 1600px * | 415px |
+| 👕 Polo field | 2430px (151.875em) | 1600px \* | 415px |
 
 ## Viewport
 
@@ -30,6 +30,7 @@ Using a modular scale of 1:5, starting at the narrowest (popular) smartphone vie
 ### Column
 
 Our Column width is determined by setting the left and right Offset to be 5%.
+
 * The maximum width of our Column is 1600px.
 
 ### Offset
@@ -40,3 +41,4 @@ The offset refers to the space to the left and right of the Column taking up 5% 
 
 Getting the library  
 [Sketch Library - GitHub Wiki](https://github.com/ConnectedHomes/centrica-ux/wiki)
+

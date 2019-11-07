@@ -24,3 +24,4 @@ Our aspect ratios always scale proportionally.
 When selecting photography think about the subject matter and the customer benefit you want to convey. This is made stronger when paired with copy that links the story together.
 
 Our library can be accessed [here](https://centrica.frontify.com/d/pDUbkrcf54Nh/our-assets). Please refer to our brand guidelines for more further details on photography selection and art direction.
+

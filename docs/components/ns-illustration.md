@@ -14,7 +14,9 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-illustrations--gas).
 
-```html
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-illustration" caption="" %}
+
+```markup
 <ns-illustration type="gas"></ns-illustration>
 ```
 
@@ -28,7 +30,7 @@ None
 
 **Does it live inside other components?**  
 `ns-lockup`  
-`ns-card`  
+`ns-card`
 
 **Atomic type**  
 Atom
@@ -63,7 +65,7 @@ Atom
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
 | Use them to convey depth | Make the illustrations small |
-| | Use on their own as the primary visual element |
+|  | Use on their own as the primary visual element |
 
 ### Considerations of best practices
 
@@ -82,3 +84,4 @@ Atom
 * Exporting illustrations SVG in Sketch [https://github.com/ConnectedHomes/nucleus/issues/670](https://github.com/ConnectedHomes/nucleus/issues/670).
 * Creating an engaging experience through illustrations and the difference between icons and illustrations in [Brand Guidlines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/illustrations/creating-an-engaging-experience-through-illustration).
 * If you wish to have us consider adding a new illustrations to the library please consult Brand Visual Identity managers.
+

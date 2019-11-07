@@ -14,7 +14,9 @@ The tab is the button that can be clicked to change the content in the `ns-tabs`
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-tab--tab).
 
-```html
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-tab" caption="" %}
+
+```markup
 <ns-tab>Electricity</ns-tab>
 ```
 
@@ -27,7 +29,7 @@ No
 None
 
 **Does it live inside other components?**  
-`ns-tabs`  
+`ns-tabs`
 
 **Atomic type**  
 Atom
@@ -60,8 +62,8 @@ Atom
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Always add heading text | Add an icon to one tab and not to the other tabs |
-| | Add more than 2 words to the heading |
-| | Add different types of icons (solid, outline, functional) |
+|  | Add more than 2 words to the heading |
+|  | Add different types of icons (solid, outline, functional) |
 
 ### Considerations of best practice
 
@@ -73,3 +75,4 @@ Atom
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-tab]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+

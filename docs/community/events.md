@@ -4,9 +4,39 @@ description: List of Nucleus events including Nucleus Sessions.
 
 # Events
 
-We're hosting regular events to keep the discussions going.
+> We hosting regular events to keep the discussions going.
 
 Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel #product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
+
+## 2019-10-15 / A simpler, easy to use RFC template
+
+* Nick introduced the [latest Nucleus RFC](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC%2C+draft&template=b--request-a-change.md&title=%5BRFC%5D+Title+of+the+request) [†] (Request for change) template.
+  * What is the difference between our old RFC template and the new one.
+  * Understanding - What is an RFC?
+  * Listening to the feedback we've received to date.
+  * Described how to create an RFC.
+  * Showcased a few of our current RFCs and how these move across our [Requests kanban board](https://github.com/ConnectedHomes/nucleus/projects/6) [†]
+* Dave shared experience of the [Meter Read RFC](https://github.com/ConnectedHomes/nucleus/issues/839) workshop. [†]
+
+[RFC Improvement.pdf](https://github.com/ConnectedHomes/nucleus/files/3729954/RFC.Improvement.pdf) [†]
+
+## 2019-09-24 / Drop in session
+
+* The Nucleus team introduced the recently released `ns-editorial` component and `<textarea>` variant of the `ns-inputter`.
+* Yuri showed the team how to compress image sizes effectively, and shared a number of useful tools.
+* Charles shared the success of the meter read workshop, which will now provide the model for RFC discovery progression in the future.
+  * Early in discovery all product teams who are affected by the new component will attend an early scope and roles & responsibilities workshop.
+  * This will speed up the time taken to get from discovery to design.
+* Introduced Nucleus team plan to deliver bespoke product sessions.
+  * These sessions are designed to increase enthusiasm around Nucleus adoption, and educate the product, engineering and test community on the Nucleus design system.
+
+## 2019-09-17 / Drop in session
+
+* This session was run as an open surgery session.
+  * The Nucleus team were on hand to run through any questions, ideas or challenges faced by product teams.
+* Discussed deprioritising work on Calendar/ Date picker for now to progress meter read components and gather learning from this process.
+* Introduced the desire to do a full site wide audit of Nucleus component coverage.
+  * Tom has already started this work with Nikki and will share it as the blueprint once complete.
 
 ## 2019-09-03 / Drop in session
 
@@ -89,12 +119,14 @@ Highlights of our experience:
 * RFC (request for change) in progress.
 
 ## 2019-07-02 / Nucleus Common Myths
+
 * Dispel the common myths we’ve been hearing.
 * Answer any Nucleus related questions you may have!.
 
 [Common Myths.pdf](https://github.com/ConnectedHomes/nucleus/files/3364944/Common.Myths.pdf) [†]
 
 ## 2019-06-25 / Bring it home
+
 * What we’ve learned from the homepage and what’s next.
 * How to create content for Nucleus components using templates (ns-landmark & ns-lockup).
 * Tools for a quick content sense check and Clockwork approval.
@@ -157,7 +189,7 @@ Highlights of our experience:
 
 ## 2019-04-30 / Modular Scale
 
-{% embed url="https://soapbox.wistia.com/videos/v2LAAl5UnT" %}
+{% embed url="https://soapbox.wistia.com/videos/v2LAAl5UnT" caption="" %}
 
 * Intro to modular scale.
 * How we've used this technique in our design system.
@@ -221,3 +253,4 @@ Highlights of our experience:
 * Co-creating first drafts of contribution processes.
 
 [†] This can only be accessed from approved Github accounts, please make sure you are logged in to access.
+
