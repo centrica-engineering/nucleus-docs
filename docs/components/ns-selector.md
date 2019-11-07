@@ -14,6 +14,7 @@ Ns-selector can be single selection (radio) or multiple selection (checkbox) it 
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-inputter--selectorradio)
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-selector" caption="" %}
 
 ```html
 <ns-inputter validation="['isRequired']" heading="Chose a product" helper="" name="product">
@@ -29,7 +30,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
       </ul>
     </div>
   </ns-selector>
-  
+
   <ns-selector decoration="electricity" image="electricity.png">
     <input type="radio" aria-describedby="item-1" name="question" value="electricity" checked="">
     <label for="question-gas">Electricity</label>
@@ -41,7 +42,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
       </ul>
     </div>
   </ns-selector>
-  
+
 </ns-inputter>
 ```
 
@@ -102,7 +103,7 @@ Molecule
 * When deciding to use the ns-selector. It’s important to consider the option to just use a radio or checkbox button.
 * In a many cases, a simple radio button or checkbox is all the user needs to make the choice. So only use the ns selector when adding more supporting information makes the decisioin for the user easier
 * If you are using the ns-selector with an illustration, it is important to make sure you are using a Nucleus illustration. [View illustrations in Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-illustrations--appliance)
-* Make sure the supporting copy is clear and concise. 
+* Make sure the supporting copy is clear and concise.
 * Make sure the labels explain exactly what the user is selecting. As a rule of thumb. If all the content is removed aside from the label. The user would understand what they are selecting.
 
 ## Content guidance
