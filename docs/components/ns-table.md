@@ -50,60 +50,60 @@ Atom
 
 Be sure to add a `<caption>` tag inside the `<table>`.  The caption should explain what the table is representing.
 
-  ```
-  <table>
-    <caption>European countries in order of population</caption>
-  </table>
-  ```
+```html
+<table>
+  <caption>European countries in order of population</caption>
+</table>
+```
 
 ### Column headers
 If your table data has column headings across the first row then place header cells (`<th>`) within the `<thead>` tag.
 
-```
-  <table>
-    <thead>
-      <tr>
-        <th>Country</th>
-        <th>Population</th>
-      </tr>
-    </thead>
-  </table>
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Population</th>
+    </tr>
+  </thead>
+</table>
 ```
 
 ### Row headers
 If your table has row headers in the left-most column then place these headers in `<th>` within the `<tbody>`.  The component will automatically make these headings 'sticky' so that on smaller screens you can scroll the table horizontally while the row headers stay in place.
 
-```
-  <table>
-    <thead>
-      <tr>
-        <th>&nbsp;</th>
-        <th>Month 1</th>
-        <th>Month 2</th>
-        ...
-        <th>Month 11</th>
-        <th>Month 12</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>Company A<th>
-        <td>100</td>
-        <td>200</td>
-        ...
-        <td>1100</td>
-        <td>1200</td>
-      </tr>
-      <tr>
-        <th>Company B<th>
-        <td>100</td>
-        <td>200</td>
-        ...
-        <td>1100</td>
-        <td>1200</td>
-      </tr>
-    </tbody>
-  </table>
+```html
+<table>
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>Month 1</th>
+      <th>Month 2</th>
+      ...
+      <th>Month 11</th>
+      <th>Month 12</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Company A<th>
+      <td>100</td>
+      <td>200</td>
+      ...
+      <td>1100</td>
+      <td>1200</td>
+    </tr>
+    <tr>
+      <th>Company B<th>
+      <td>100</td>
+      <td>200</td>
+      ...
+      <td>1100</td>
+      <td>1200</td>
+    </tr>
+  </tbody>
+</table>
 ```
 
 ## Best practice

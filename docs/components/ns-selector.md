@@ -17,28 +17,28 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-selector" caption="" %}
 
 ```html
-<ns-inputter validation="['isRequired']" heading="Chose a product" helper="" name="product">
+<ns-inputter validation="['isRequired']" heading="Choose a product" name="product">
 
   <ns-selector decoration="gas" image="gas.png">
-    <input type="radio" aria-describedby="item-1" name="question" value="gas" checked="">
+    <input type="radio" aria-describedby="item-1" name="question" value="gas">
     <label for="question-gas">Gas</label>
     <div slot="description" id="item-1">
       <ul class="ul-bullet">
         <li>Wolf plaid crucifix hammock</li>
         <li>Kale chips live-edge</li>
-        <li>Subway tile squid godard occupy shabby chic blog hell</li>
+        <li>Subway tile squid godard occupy shabby chic blog</li>
       </ul>
     </div>
   </ns-selector>
 
   <ns-selector decoration="electricity" image="electricity.png">
-    <input type="radio" aria-describedby="item-1" name="question" value="electricity" checked="">
+    <input type="radio" aria-describedby="item-2" name="question" value="electricity">
     <label for="question-gas">Electricity</label>
-    <div slot="description" id="item-1">
+    <div slot="description" id="item-2">
       <ul class="ul-bullet">
         <li>Wolf plaid crucifix hammock</li>
         <li>Kale chips live-edge</li>
-        <li>Subway tile squid godard occupy shabby chic blog hell</li>
+        <li>Subway tile squid godard occupy shabby chic blog</li>
       </ul>
     </div>
   </ns-selector>
