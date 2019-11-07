@@ -15,9 +15,9 @@ Release date - [2019-11-07]
 * We have included `ns-selector` in this release.
   * Enhanced radio button or checkbox group.
   * Include either an illustration or an image and additional content to support decision.
-* Our first release of `ns-table`
-  * A 'vanilla first' table with responsive behaviour
-  * Specifically a Data Table
+* Our first release of `ns-table`.
+  * A 'vanilla first' table with responsive behaviour.
+  * Specifically a table to display data.
 
 **Documentation 🍂**
 
