@@ -14,7 +14,11 @@ We allow users to perform certain actions through the use of our call to actions
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-cta--direct-link).
 
-```html
+`ns-cta` should always live inside another component.
+
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-cta" caption="" %}
+
+```markup
 <ns-cta>Learn more about Hive</ns-cta>
 ```
 
@@ -23,17 +27,16 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 **Does it live in a panel?**  
 No
 
+**What layout classes can be used?**  
+None
+
 **Does it live inside other components?**  
-* ns-lockup
-* ns-landmark
-* ns-card
+`ns-lockup`  
+`ns-landmark`  
+`ns-card`
 
 **Atomic type**  
 Molecule
-
-```
-Note: A CTA should always live inside another component.
-```
 
 ## Specification
 
@@ -91,8 +94,8 @@ Note: A CTA should always live inside another component.
 | Only use 'loading' on an action | Make it overly wordy |
 | Relate the action to the content it sits beside | Use icons for icons' sake |
 | Use 'direct' for the primary action on the page | Use more than 24 characters |
-| | Have multiple lines or sentences within a CTA |
-| | Repeat CTA copy within the same page |
+|  | Have multiple lines or sentences within a CTA |
+|  | Repeat CTA copy within the same page |
 
 ### Considerations of best practice
 
@@ -111,3 +114,4 @@ Note: A CTA should always live inside another component.
 ## Related links
 
 * [CTA examples in the homepage](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-homepage--2019-01).
+

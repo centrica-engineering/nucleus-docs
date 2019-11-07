@@ -15,6 +15,9 @@ description: Creating icons guidelines.
 7. Design clean and simple forms using our shapes.
 8. Use flat shapes over 3d forms.
 9. Rounded corners should make an icon feel friendly, not childish.
+10. An icon should be one topic, therefore don't overlay or intersect an icon with another icon.
+11. Don't add text to an icon as this will break accessibility.
+12. Icons are only one colour, but they can be any of our colours. Make sure that the icons work with different colours.
 
 ## The icon grid
 
@@ -35,13 +38,8 @@ Icons are created using illustrator with a 32px x 32px art-board. This allows sc
 Once you’re icons are completed (and signed off!) they need to be made ready for development. Follow these steps to a happy developer:
 
 1. Make sure your icon is set to black.
-2. Select the icon and choose Object > Expand appearance.
-3. Then using the top menu select File > Export > Export for Screens and export the icon to .svg file type.
+2. Select the icon and choose Object &gt; Expand appearance.
+3. Then using the top menu select File &gt; Export &gt; Export for Screens and export the icon to .svg file type.
 
 ![Exporting icons from illustrator](https://user-images.githubusercontent.com/43471890/62050909-2283f080-b20a-11e9-8c05-fa13100c5222.jpg)
 
-## Importing icons into Nucleus
-
-```
-Todo: Needs some input from Jon Holt
-```

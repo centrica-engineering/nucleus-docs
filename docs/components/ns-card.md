@@ -6,15 +6,17 @@ description: Card component.
 
 ## Introduction
 
-> Cards give users a set of options for users to choose from
+> Cards can be used to contain content in a consistent and structured way.
 
-Cards give a story about why the user should go to the next action. This can be done through imagery, illustrations and typography. They can nudge users to a specific subject or area.
+Cards are used to apply a container around a related grouping of information; this can be done through imagery, illustrations and typography.
 
 ## Usage
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-card--section).
 
-```html
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-card" caption="" %}
+
+```markup
 <ns-card type="section" decoration="bulb">
   <h2 slot="heading">Get energy with us</h2>
   <p slot="paragraph">We've got a tariff to suit every home and family.</p>
@@ -30,12 +32,13 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 Yes
 
 **What layout classes can be used?**  
-Splash triple  
-Splish triple
+`.splash` `.triple`  
+`.splish` `.triple`
 
 **Does it live inside other components?**  
-* ns-landmark
-* ns-lockup
+`ns-caveat`  
+`ns-landmark`  
+`ns-tabs`
 
 **Atomic type**  
 Molecule
@@ -106,7 +109,7 @@ Molecule
 | Make your CTA copy unique, stating the action | Repeat the CTA copy in each card |
 | Use section cards to navigate users to primary actions | Use inline links in the paragraph |
 | Consider using decoration in the panel to add emphasis on the cards |  |
-| | Use the section card without a decoration |
+|  | Use the section card without a decoration |
 
 ### Considerations of best practice
 
@@ -116,6 +119,14 @@ Molecule
 * Please check the imagery guidlines when adding an image to the card.
 * Be careful when using decoration in the panel with the section cards as the blue on blue with the CTA's will make them not accessible.
 * There should always be a heading to the group of cards inside the panel.
+
+## Content guidance
+
+### Image guidance
+
+| Component | Variant | Ratio | Dimensions | Size | Type | Placeholder
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `ns-card`| `support` | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-card-support-640x360px](https://user-images.githubusercontent.com/50207859/67642149-d3c91e00-f900-11e9-983c-9b812217b801.jpg)
 
 ## Feedback
 
@@ -128,3 +139,5 @@ Molecule
 
 * [ns-card section panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--section-cards).
 * [ns-card support panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--support-image-cards).
+
+

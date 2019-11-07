@@ -10,14 +10,13 @@ description: One of the ways in which you can help improve our documentation.
 
 ## Contributing to a page
 
-Take a look at our design system documentation https://docs.britishgas.design
+Take a look at our design system documentation [https://docs.britishgas.design](https://docs.britishgas.design)
 
 If you find something that you'd like to improve, change, adapt or remove; click the 'Edit on GitHub' link.
 
-This will take you to the same page within our GitHub documentation repository https://github.com/ConnectedHomes/nucleus-docs.
+This will take you to the same page within our GitHub documentation repository [https://github.com/ConnectedHomes/nucleus-docs](https://github.com/ConnectedHomes/nucleus-docs).
 
 Find the pencil icon and edit this file.
-
 
 ### Committing your changes
 
@@ -39,8 +38,9 @@ Your pull request will be listed in our repository for review.
 
 One of our team will review your pull request.
 
-Once approved, the changes will be merged into our documentation and make their way to the page on https://docs.britishgas.design where it all began.
+Once approved, the changes will be merged into our documentation and make their way to the page on [https://docs.britishgas.design](https://docs.britishgas.design) where it all began.
 
 ## Thank you
 
 For every little change or improvement our documentation receives from our community, we promise to give a kitten a belly rub.
+

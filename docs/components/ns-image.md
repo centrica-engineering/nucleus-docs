@@ -14,7 +14,9 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-images--lazy-loading-img).
 
-```html
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-image" caption="" %}
+
+```markup
 <ns-image ratio="16x9" src="https://www.britishgas.co.uk/aem6/content/dam/britishgas/images/jumbotron/home-services/20-Home-Services-wilbur.jpg"></ns-image>
 ```
 
@@ -23,9 +25,13 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 **Does it live in a panel?**  
 No
 
+**What layout classes can be used?**  
+None
+
 **Does it live inside other components?**  
-* ns-lockup
-* ns-card
+`ns-card`  
+`ns-landmark`  
+`ns-lockup`
 
 **Atomic type**  
 Atom
@@ -74,10 +80,10 @@ Atom
 
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
-| Resize your image [see optimise your image](LINK) | Use images as the primary content |
+| Resize your image [see optimise your image](https://github.com/ConnectedHomes/nucleus-docs/tree/95a2be6f2144582507005e4179765f23924879dc/docs/components/LINK/README.md) | Use images as the primary content |
 | Use the correct image format png/jpg | Put text inside the image |
 | Use brand approved images | Use a white background in images |
-| Think about the image responsive behaviour | |
+| Think about the image responsive behaviour |  |
 
 ### Considerations of best practices
 
@@ -97,3 +103,4 @@ Atom
 * How to optimise images [guide](https://docs.britishgas.design/how-to/optimise-images).
 * Brand image [library](https://centrica.frontify.com/d/pDUbkrcf54Nh/our-assets).
 * Examples of where it is used.
+

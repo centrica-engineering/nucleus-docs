@@ -14,7 +14,9 @@ Holds the SVG decoration and masks that display the layout decoration for panels
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-decoration--circle-green).
 
-```html
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-decoration" caption="" %}
+
+```markup
 <ns-decoration type="circle-green"></ns-decoration>
 ```
 
@@ -23,13 +25,17 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 **Does it live in a panel?**  
 No
 
+**What layout classes can be used?**  
+None
+
 **Does it live inside other components?**  
-* ns-panel
+`ns-panel`
 
 **Atomic type**  
 Atom
 
 ## Specification
+
 | **Name** | type |
 | :--- | :--- |
 | **Description** | Name |
@@ -37,7 +43,7 @@ Atom
 | **Default** | invert-concave |
 | **Options** | invert-concave, invert-convex, invert-ramp, invert-bridge, circle-yellow, circle-green |
 
-| **Name**| position |
+| **Name** | position |
 | :--- | :--- |
 | **Description** | Name |
 | **Type** | String |
@@ -63,3 +69,4 @@ Atom
 ## Related links
 
 * [ns-panel](https://docs.britishgas.design/components/ns-panel).
+

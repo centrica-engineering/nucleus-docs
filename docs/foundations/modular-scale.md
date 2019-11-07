@@ -6,7 +6,7 @@ description: Introduction to modular scale and how it is implemented in Nucleus.
 
 > The implementation of modular scale simplifies and beautifies our designs.
 
-{% embed url="https://soapbox.wistia.com/videos/v2LAAl5UnT" %}
+{% embed url="https://soapbox.wistia.com/videos/v2LAAl5UnT" caption="" %}
 
 Scales are everywhere. Most notably in nature where the presence of the golden ratio can be found from the microscopic DNA's double helix to vast spiral galaxies.
 
@@ -17,6 +17,7 @@ Taking this approach and applying it to our Structure, Typography, Spacing and e
 ## Viewports
 
 ### Scale
+
 **1.5**
 
 We have six [viewports](https://docs.britishgas.design/foundation/viewports), the smallest width being 320px. This is our initial value that all the other viewports are based from.
@@ -29,7 +30,7 @@ Then we scale from here in increments of 1.5x as follows:
 **480** x 1.5 = **720**  
 **720** x 1.5 = **1080**  
 **1080** x 1.5 = **1620**  
-**1620** x 1.5 = **2430**  
+**1620** x 1.5 = **2430**
 
 Read more about our [Viewports](https://docs.britishgas.design/foundation/viewports) and see our table of [Nucleus viewport sizes](https://docs.britishgas.design/foundation/viewports).
 
@@ -39,7 +40,7 @@ For Typography, we have three multipliers to generate our scales.
 
 **Major Second** = **1.125**  
 **Minor Third** = **1.2**  
-**Major Third** = **1.25**  
+**Major Third** = **1.25**
 
 These are applied to our Viewport sizes in the following way:
 
@@ -48,3 +49,4 @@ These are applied to our Viewport sizes in the following way:
 🎾 Tennis & 🔵 Squash uses `Major Second`.
 
 Read more about our [Typography](https://docs.britishgas.design/foundation/typography) and how Modular Scale applies.
+

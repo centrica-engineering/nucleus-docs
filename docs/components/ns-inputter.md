@@ -8,16 +8,15 @@ description: Inputter component.
 
 Inputters are used to help people enter and select information. Inputters are normally found within forms. There are different types of inputters including text, radio button, checkbox and select (drop-downs).
 
-> A way to communicate with British Gas (that isn't picking up the ☎)  
 > A wrapper of native inputs to create a form. There are many types of inputs including text, radio button, checkbox and select.
-
-[What and why details here (2-3 lines)] Use an inputter to capture and validate information from users and inform them why they need to give it.
 
 ## Usage
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-inputter--text).
 
-```html
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter" caption="" %}
+
+```markup
 <ns-inputter validation="['isRequired']" helper="So we can send you love letters">
   <label slot="label">First name</label>
   <input type="text">
@@ -27,13 +26,13 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ## Component Relationship
 
 **Does it live in a panel?**  
-Yes
+No
 
-**What layout class can be used?**  
-* Splash
+**What layout classes can be used?**  
+None
 
 **Does it live inside other components?**  
-* ns-inputter components are typically contained within a ns-form
+`ns-form`
 
 **Atomic type**  
 Molecule
@@ -42,10 +41,10 @@ Molecule
 
 | **Name** | Value |
 | :--- | :--- |
-| **Description** | The value of the input or group of inputs inside ns-inputter. This can be used to add an intial value |
+| **Description** | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an intial value |
 | **Type** | string |
 | **Default** | n/a |
-| **Options** | |
+| **Options** |  |
 
 | **Name** | Validation |
 | :--- | :--- |
@@ -54,8 +53,6 @@ Molecule
 | **Default** | n/a |
 | **Options** | isRequired, isNumber,  isInteger, isPostcode, isFirstName, isLastName, isTitle, isEmail, isPhoneNumber, isMobileNumber, isDateOfBirth, minLength(x), maxLength(x) |
 | **Notes** | It is possible to have multiple validations. For example: ["isRequired", "isNumber", "isInteger"] |
-
-
 
 ### Advanced validation
 
@@ -118,11 +115,11 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use to Introduce a set of checkboxes or radio buttons | |
-| Use for questions | |
-| Use sentence case | |
-| Only use text | |
-| Punctuate sentences | |
+| Use to Introduce a set of checkboxes or radio buttons |  |
+| Use for questions |  |
+| Use sentence case |  |
+| Only use text |  |
+| Punctuate sentences |  |
 
 ### Labels
 
@@ -131,7 +128,7 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 | Be concise | Use full stops |
 | Use `<label>` element | Add classes to labels |
 | Use sentence case | Use as links |
-| Only use text | |
+| Only use text |  |
 
 ### Helper text
 
@@ -139,8 +136,8 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 | :--- | :--- |
 | Keep it to one line | Use for error messaging |
 | Use it to explain why we need information | Put examples of inputs inside |
-| Use it when the reason for asking maybe unclear | |
-| Use as a prompt | |
+| Use it when the reason for asking maybe unclear |  |
+| Use as a prompt |  |
 
 ### Tip Detail
 
@@ -149,7 +146,7 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 | Use to provide additional context to helper text | Repeat helper text |
 | Use basic formatting for copy | Add imagery |
 | Use as an explanation | Exceed two paragraphs. Link off if necessary |
-| Use as a prompt | |
+| Use as a prompt |  |
 
 ### Placeholder
 
@@ -171,17 +168,15 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 | :--- | :--- |
 | Only use our specified text type. (eg. Text, Password, etc) | Use more than one text input within an inputter |
 | Use autocomplete attribute | Put anything inside the text input |
-| Base width of input on expected length of input | |
+| Base width of input on expected length of input |  |
 
 ### Radio Buttons
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use a label with each radio button | Use just one |
-| Associate  every radio button with it's label using ID & for attributes | |
-| Consider using a select for more than 5 | |
-
-Note - Currently we don't have the ability to have radio button side by side
+| Associate  every radio button with it's label using ID & for attributes |  |
+| Consider using a select for more than 5 | Place radio button side by side |
 
 ### Checkboxes
 
@@ -189,13 +184,19 @@ Note - Currently we don't have the ability to have radio button side by side
 | :--- | :--- |
 | Use only one label with each checkbox | Use as lists |
 | Allow user to opt in as opposed to opt out | Don't try and use as a radio button |
-| Consider splitting question out for when more than 5 checkboxes are required | |
+| Consider splitting question out for when more than 5 checkboxes are required |  |
 
 ### Select
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| If adding a "Please Select" option then add value="" | |
+| If adding a "Please Select" option then add an empty `value=""` attribute |  |
+
+### Textarea
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Always include a label | Add placeholder content |
 
 ### Considerations of best practices
 
@@ -211,3 +212,4 @@ Note - Currently we don't have the ability to have radio button side by side
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[NAME%20OF%20COMPONENET]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+

@@ -15,9 +15,9 @@ description: How to optimise your images for production.
 
 Reducing the size of images benefits the user by allowing their page to feel like the page has rendered quicker and will save data on their mobile networks. A perceptively faster-running page, for us, reduces bounce rates and increases conversion.
 
-> A 1-second delay in page load time equals 11% fewer page views, a 16% decrease in customer satisfaction, and 7% loss in conversions  
+> A 1-second delay in page load time equals 11% fewer page views, a 16% decrease in customer satisfaction, and 7% loss in conversions
 
-https://headspin.io/resources/marketing/reports/5136-RR-performance-web-application.pdf
+[https://headspin.io/resources/marketing/reports/5136-RR-performance-web-application.pdf](https://headspin.io/resources/marketing/reports/5136-RR-performance-web-application.pdf)
 
 ### What image size should I be aiming for?
 
@@ -25,10 +25,10 @@ The answer is: The smallest size that does not degrade the image too much that i
 
 These numbers are just a guide and shouldn’t be treated as “I have hit the number, so I don’t need to optimise it anymore”. If they can go much lower than these numbers - then they should.
 
-* Full width image: < 200kb.
-* Side image: < 100kb.
-* Additional image: < 50kb.
-* Decoration: < 10kb.
+* Full width image: &lt; 200kb.
+* Side image: &lt; 100kb.
+* Additional image: &lt; 50kb.
+* Decoration: &lt; 10kb.
 
 (For PNGs add an additional 50kb).
 
@@ -46,14 +46,13 @@ If you want to get a specific quality percentage, kraken.io web interface has an
 
 ### Resizing
 
-Double click your image in Finder to open it in Preview. In the menu, Tools > Adjust Size...
-An overlay will appear. Keep "Scale proportionally" ticked and change your dimension to what is the required size. After that click OK and then save the image.
+Double click your image in Finder to open it in Preview. In the menu, Tools &gt; Adjust Size... An overlay will appear. Keep "Scale proportionally" ticked and change your dimension to what is the required size. After that click OK and then save the image.
 
 ![Resizing image in Preview (macOS)](https://user-images.githubusercontent.com/43471890/62051302-00d73900-b20b-11e9-9a42-7845f06d7dda.png)
 
 ### Optimising with ImageOptim
 
-```
+```text
 It is best for each iteration of optimisation to create a new folder of duplicates as ImageOptim will overwrite.
 ```
 
@@ -61,9 +60,9 @@ It is best for each iteration of optimisation to create a new folder of duplicat
 
 ![ImageOptim settings](https://user-images.githubusercontent.com/43471890/62051350-18162680-b20b-11e9-8a4a-d8badfbe5cc2.png)
 
-2. Drag and drop images and wait for them to tick green ✅.
-3. With the duplicated versions of these images, enable lossy minification and go down on the level of quality (as explained in "How to Optimise").
-4. Compare the original lossless version to the lossy, to check there isn't too much degradation.
+1. Drag and drop images and wait for them to tick green ✅.
+2. With the duplicated versions of these images, enable lossy minification and go down on the level of quality (as explained in "How to Optimise").
+3. Compare the original lossless version to the lossy, to check there isn't too much degradation.
 
 ### Squoosh
 
@@ -72,3 +71,4 @@ This is a nice web interface that allows the comparison of the original and the 
 ### Kraken
 
 Kraken gets similar results to ImageOptim and has more advanced controls, but has a limit on file size uploaded which can be an issue at the start if you are given a 10-20mb image.
+

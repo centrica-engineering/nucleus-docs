@@ -14,7 +14,9 @@ British Gas creates many videos to engage customers. This component allows havin
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-video--youtube).
 
-```html
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-video" caption="" %}
+
+```markup
 <ns-video id="dQw4w9WgXcQ" ratio="16x9" title="Rick Astley, Never going to give you up music video"></ns-video>
 ```
 
@@ -23,8 +25,11 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 **Does it live in a panel?**  
 No
 
+**What layout classes can be used?**  
+None
+
 **Does it live inside other components?**  
-* ns-lockup
+`ns-lockup`
 
 **Atomic type**  
 Atom
@@ -60,7 +65,7 @@ Atom
 | :--- | :--- |
 | Use videos from Centrica YouTube channels | Use over 3 videos on a page |
 | Use inside another component (see relationship) | Use video as the primary content |
-| Use as supplementary content | |
+| Use as supplementary content |  |
 
 ### Considerations of best practices
 
@@ -77,3 +82,4 @@ Atom
 ## Related links
 
 * [https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-video-panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-video-panel).
+
