@@ -25,6 +25,7 @@
   * [ns-landmark](components/ns-landmark.md)
   * [ns-lockup](components/ns-lockup.md)
   * [ns-panel](components/ns-panel.md)
+  * [ns-selector](components/ns-selector.md)
   * [ns-tab](components/ns-tab.md)
   * [ns-tabs](components/ns-tabs.md)
   * [ns-video](components/ns-video.md)
