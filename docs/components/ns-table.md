@@ -6,9 +6,9 @@ description: A reusable table that can hold data with multiple rows and multiple
 
 ## Introduction
 
-> `ns-table` displays information in a grid-like format of rows and columns. They organize information in a way that’s easy to scan, so that users can look for patterns and insights.
+> `ns-table` displays information in a grid-like format of rows and columns. It organizes information in a way that’s easy to scan, so that users can look for patterns and insights.
 
-The table component consumes basic HTML table markup and makes it accessible and responsive as well as styling it.
+The table component consumes basic HTML table markup, which makes it accessible and responsive as well as styling it.
 
 
 ## Usage
@@ -110,9 +110,9 @@ If your table has row headers in the left-most column then place these headers i
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Add a `<caption>` to the `ns-table` | Use ns-table just for layout or, to be more clear, don't use tables for anything but tabular data |
+| Add a `<caption>` to the `ns-table` | Use ns-table just for layout |
 | Use for displaying data in tables | Use for laying out components |
-| Use basic text, numbers | |
+| Use basic text, numbers | Use tables for anything but tabular data |
 | Include at least one column header or row header | |
 | Keep column and row headers short and concise | |
 | Structure them in a logical and expected way | |
