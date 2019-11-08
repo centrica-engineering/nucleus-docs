@@ -6,7 +6,7 @@ description: Selector component.
 
 ## Introduction
 
-> Ns-selectors are used to group an image or illustration with a label into a card. They  showcase a product, service or option that allow users to select. They can be a single selection or the user to select more than one.
+> Ns-selectors are used to group an image or illustration with a label into a card. They  showcase a product, service or option, which users can select. They can function as single, or multiple selection for the user.
 
 ## Usage
 
@@ -56,7 +56,7 @@ No
 N/A
 
 **Does it live inside other components?**  
-No
+No - Does it not live inside inputter?
 
 **Atomic type**  
 Molecule
@@ -100,11 +100,11 @@ Molecule
 
 ### Considerations of best practices
 
-* When deciding to use the ns-selector. It’s important to consider the option to just use a radio or checkbox button.
-* In a many cases, a simple radio button or checkbox is all the user needs to make the choice. So only use the ns selector when adding more supporting information makes the decisioin for the user easier
-* If you are using the ns-selector with an illustration, it is important to make sure you are using a Nucleus illustration. [View illustrations in Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-illustrations--appliance)
+* When deciding to use the ns-selector, it’s important to consider whether a radio or checkbox button itself would be more appropriate.
+* In a many cases, a simple radio button or checkbox is all the user needs to make the choice. Only use the ns selector when adding more supporting information makes the decisioin for the user easier.
+* If you are using the ns-selector with an illustration, it's important to make sure you are using a Nucleus illustration. [View illustrations in Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-illustrations--appliance)
 * Make sure the supporting copy is clear and concise.
-* Make sure the labels explain exactly what the user is selecting. As a rule of thumb. If all the content is removed aside from the label. The user would understand what they are selecting.
+* Make sure the labels explain exactly what the user is selecting. If all content is removed other than the label, then the user would still understand what they are selecting.
 
 ## Content guidance
 
