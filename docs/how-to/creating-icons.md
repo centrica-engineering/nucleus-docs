@@ -21,7 +21,7 @@ description: Creating icons guidelines.
 12. Icons are only one colour, but they can be any of our colours. Make sure that the icons work with different colours.
 
 
-## Building the icons
+## Constructing the icons
 
 
 ### The grid
