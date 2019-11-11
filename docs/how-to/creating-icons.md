@@ -48,14 +48,14 @@ Once you’re icons are completed (and signed off!) they need to be made ready f
 ![Exporting icons from illustrator](https://user-images.githubusercontent.com/43471890/62050909-2283f080-b20a-11e9-8c05-fa13100c5222.jpg)
 
 
-### Best practices
+## Best practices
 
 * When designing the icons, use only paths not shapes.
 * Make sure all unnecessary attributes in the SVG document have been removed including;
-   * <title> attribute 
-   * id=”” attribute
-   * data-name=”” attribute
-   * Colour information
+   * `<title>` element 
+   * `id=””` attribute
+   * `data-name=””` attribute
+   * All colour information e.g. `fill="#000000"`
 * The position of each icon within the artboard must be consistent. This is very important when creating different states of the same icon.
 * Make sure the paths align to the pixel grid.
 * When creating a corner, ensure it has only 2 points. Too many points per shape will overcomplicate the icon and increase file size.
