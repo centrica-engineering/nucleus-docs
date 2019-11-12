@@ -8,7 +8,7 @@ description: Here are our release notes - enjoy!
 
 **Selector and Table**
 
-Release date - [2019-11-11]
+Release date - 2019-11-11
 
 **What’s new around here 🐣**
 
@@ -56,7 +56,7 @@ Any questions? Let us know 🙌🏼
 
 **New components and documentation**
 
-Release Notes 2019-09-20
+Release date - 2019-09-20
 
 **What’s new around here 👾**
 
@@ -267,5 +267,3 @@ All our Requests For Change can be found in our Requests project board in Github
 https://github.com/ConnectedHomes/nucleus/projects/6
 
 Any questions? Let us know 🙌🏼
-
-
