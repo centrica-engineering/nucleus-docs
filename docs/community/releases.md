@@ -40,7 +40,7 @@ Release date - [2019-11-11]
 
 **Improvements 🐬**
 
-* We have added a WebP version of the Superflame asset for the `summit` `ns-landmark` optimised for small screens. The original asset has been impacting our performance.
+* We have added a compressed mobile version of the Superflame asset for the `summit` `ns-landmark` optimised for small screens. The original asset has been impacting our performance.
 * Removed the Frontify documentation styles.
 * Including the British Gas logo into Nucleus.
 
