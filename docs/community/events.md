@@ -8,6 +8,24 @@ description: List of Nucleus events including Nucleus Sessions.
 
 Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel #product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
 
+## 2019-11-06 / Squad achievement session
+
+This was the first of the monthly Squad Achievements sessions. We gave a presentation to the whole UK home digital team. Focused on introducing what Nucleus is and why we have a design system as a company. 
+
+The presentation talked through the following points;
+
+  * An introduction to the team and our roles.
+  * We explained what a design system is, and more importantly what it’s not. 
+  * We talked through the main advantages of the design system including: efficiency, consistency, code quality and accessibility. 
+  * We then discussed how we make this happen as a team on a day to day basis. 
+  * We also highlighted the current pressure on the design community being the sole advocates of Nucleus in each team. We made the point that everyone in each team has a role to play.
+  * Finishing off by congratulating everyone on how far we have come but reinforced the point that we still have a long way to go.
+
+The audience had the opportunity to ask questions via slack after the event. We will add a link to the questions and our responses here as soon as they are up.
+
+[Squad achievements.pdf](https://github.com/ConnectedHomes/nucleus/files/3824249/Squad.achievements.pdf) [†]
+
+
 ## 2019-10-15 / A simpler, easy to use RFC template
 
 * Nick introduced the [latest Nucleus RFC](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC%2C+draft&template=b--request-a-change.md&title=%5BRFC%5D+Title+of+the+request) [†] (Request for change) template.

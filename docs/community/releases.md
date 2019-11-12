@@ -18,7 +18,7 @@ Release date - [2019-11-11]
   * Include either an illustration or an image and additional content to support decision.
 * Our first release of `ns-table`.
   * A 'vanilla first' table with responsive behaviour.
-  * Specifically a table to display data.
+  * A table specifically for displaying data.
 
 **Documentation 🍂**
 
