@@ -8,10 +8,11 @@ description: Here are our release notes - enjoy!
 
 **Selector and Table**
 
-Release date - [2019-11-07]
+Release date - [2019-11-11]
 
 **What’s new around here 🐣**
 
+* We've simplified our [Request for change](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC%2C+draft&template=b--request-a-change.md&title=%5BRFC%5D+Title+of+the+request) GitHub ticket template.
 * We have included `ns-selector` in this release.
   * Enhanced radio button or checkbox group.
   * Include either an illustration or an image and additional content to support decision.
@@ -28,16 +29,20 @@ Release date - [2019-11-07]
   * `ns-landmark` - https://docs.britishgas.design/components/ns-landmark#image-guidance
   * `ns-lockup` - https://docs.britishgas.design/components/ns-lockup#image-guidance
   * `ns-card` - https://docs.britishgas.design/components/ns-card#image-guidance
+* We have introduced [Stale](https://github.com/apps/stale) to add a 'stale' label to RFCs that have had no activity in the previous 14 days.
 
 **Bug fixes 🎒**
 
 * In `ns-accordion` we moved the aria `role="tablist"` from the ShadowDOM into the LightDOM to improve accessibility.
 * Ensuring every page fills at least 100% of the viewport.
 * Setting the correct alignment of `slot="heading"` when `ns-editorial` is reversed when there is no image to push the heading to the right.
+* Improving the performance of `ns-inputter`.
 
 **Improvements 🐬**
 
 * We have added a WebP version of the Superflame asset for the `summit` `ns-landmark` optimised for small screens. The original asset has been impacting our performance.
+* Removed the Frontify documentation styles.
+* Including the British Gas logo into Nucleus.
 
 **Feedback 👩🏻‍🍳**
 
