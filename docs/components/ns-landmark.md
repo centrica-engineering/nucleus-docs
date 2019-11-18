@@ -147,6 +147,14 @@ Organism
 | Keep the content consise | Don't add a CTA to hillside landmark. The aim is to encourage the user to discover more on the page |
 | ![Do-keep-content-conise](https://user-images.githubusercontent.com/50207859/61779546-c7f92780-adf8-11e9-973c-541c7d46d46d.jpg) | ![Donts---direct-cta](https://user-images.githubusercontent.com/50207859/61779195-2540a900-adf8-11e9-8c5c-1dced44d53f6.jpg) |
 
+### Best practice for `lakeside`
+
+| 💚 Do | 💔 Don't |
+| :--- | :--- |
+| Capture the moment | Allow the card to cover important content |
+
+
+
 ### Considerations of best practice
 
 * Shorter and simpler words tend to work better in the heading.
@@ -181,6 +189,18 @@ TODO: include supporting image for these content guidelines.
 | heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | paragraph | A single, short paragraph works best |
 | caveat | Should be placed at the end of the paragraph if necessary |
+
+### Lakeside Landmark
+
+| field-type | Guidelines |
+| :--- | :--- |
+| sub-heading | sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words |
+| heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| paragraph | A single, short paragraph works best |
+| subparagraph | A single, short paragraph works best |
+| caveat | Should be placed at the end of the paragraph if necessary |
+| cta-text | Keep them ‘short, relevant, and actionable’ It should not exceed more than 24 characters |
+| cta-link | This is the URL that the user will be taken too when they tap or click the CTA. |
 
 ### Image guidance
 
