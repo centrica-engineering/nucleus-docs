@@ -45,6 +45,22 @@ To see examples of the Hillside Landmark visit [Storybook](https://nucleus.bgdig
 </ns-landmark>
 ```
 
+### Lakeside
+
+```markup
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h1 enlighten">Sorry, we’re having technical problems at the moment</span>
+  </h1>
+  <p slot="paragraph">We’re unable to process your request right now. Please try again later.</p>
+  <p slot="subparagraph">Alternatively you can get in touch directly. <a href="#caveat">1</a></p>
+  <a slot="cta" href="#!">
+    <ns-cta type="direct">Contact customer services</ns-cta>
+  </a>
+</ns-landmark>
+```
+
+
 ## Component Relationship
 
 **Does it live in a panel?**  
@@ -66,7 +82,7 @@ Organism
 | **Description** | The variant of the landmark |
 | **Type** | string |
 | **Default** | summit |
-| **Options** | summit, hillside |
+| **Options** | summit, hillside, lakeside |
 
 | **Name** | Named slot `heading` |
 | :--- | :--- |
