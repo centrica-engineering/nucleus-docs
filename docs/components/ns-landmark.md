@@ -53,7 +53,7 @@ To see examples of the Hillside Landmark visit [Storybook](https://nucleus.bgdig
     <span class="h1 enlighten">Sorry, we’re having technical problems at the moment</span>
   </h1>
   <p slot="paragraph">We’re unable to process your request right now. Please try again later.</p>
-  <p slot="subparagraph">Alternatively you can get in touch directly. <a href="#caveat">1</a></p>
+  <p slot="paragraph">Alternatively you can get in touch directly. <a href="#caveat">1</a></p>
   <a slot="cta" href="#!">
     <ns-cta type="direct">Contact customer services</ns-cta>
   </a>
@@ -196,8 +196,7 @@ TODO: include supporting image for these content guidelines.
 | :--- | :--- |
 | sub-heading | sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words |
 | heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
-| paragraph | A single, short paragraph works best |
-| subparagraph | A single, short paragraph works best |
+| paragraph | Lakeside can have multiple paragraph slots, the first will be displayed as 'p-large', all subsequent paragraphs will be styled as 'p-normal'  |
 | caveat | Should be placed at the end of the paragraph if necessary |
 | cta-text | Keep them ‘short, relevant, and actionable’ It should not exceed more than 24 characters |
 | cta-link | This is the URL that the user will be taken too when they tap or click the CTA. |
