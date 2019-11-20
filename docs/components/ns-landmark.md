@@ -47,6 +47,13 @@ To see examples of the Hillside Landmark visit [Storybook](https://nucleus.bgdig
 
 ### Lakeside
 
+Lakeside is a variant component of ns-landmark.
+It has no card or illustration and subtitle is optional. Like all other landmark variants, it is used to set the scene for what the page is for, what offers might be available and give helpful best next actions for users.
+2 uses of this variant have identified:
+
+- To start the beginning of a page
+- To be used for the page status pattern - where It communicates an error at page level when the user meets a dead end and cannot continue with their original journey. It can alert users that there is a problem with the service (400 client side errors or 500 internal server error pages)
+
 ```markup
 <ns-landmark type="lakeside">
   <h1 slot="heading">
@@ -151,14 +158,17 @@ Organism
 
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
-| Capture the moment | Allow the card to cover important content |
-
+| Use it at the top of the page | use it in the middle or end of a page |
+| Communicate the message in a clear and concise way as possible. | use it to hold random content - ns-editorial may be better use for this |
+| Be relevant to the purpose of the page | |
+| Be clear and concise | | 
 
 
 ### Considerations of best practice
 
 * Shorter and simpler words tend to work better in the heading.
 * The recommended copy length is between 1 and 5 words for the Subheading.
+* The message must be in plain English, and help the user out of the situation by providing an actionable link if possible.
 * If the purpose of the page is to understand more about a product or service, then it is considered bad practice to include a CTA within the landmark, as users are likely to drop out. This is because users believe the next step is to click the CTA, rather than reading the page to get a better understanding of how they should proceed.
 * Let the page type define the type of landmark you use. For example if the page purpose is to be informative / educational then we recommend using `<ns-landmark type="hillside”>`. If the page purpose is promotional we recommend using `<ns-landmark type="summit">`.
 * If you are designing a series of informative / educational pages that all follow a similar theme, it would be considered best practice to use the same coloured decoration within the `<ns-landmark type="hillside">`.
