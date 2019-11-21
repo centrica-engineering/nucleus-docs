@@ -6,7 +6,7 @@ description: Lockups are a promotional component that signpost to a product or s
 
 ## Introduction
 
-Lockups are promotional signposts to a product or service. Used to highlight key messages in a concise, engaging way.
+Lockups should signposts to a product or service, and highlight key messages in a concise, engaging way.
 
 ## Usage
 
@@ -146,4 +146,3 @@ Organism
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+ns-lockup).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
