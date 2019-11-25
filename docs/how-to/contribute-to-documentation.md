@@ -6,11 +6,9 @@ description: One of the ways in which you can help improve our documentation.
 
 ## Introduction
 
-> Our documentation is rather important. The more help we have the better it will be.
+Our documentation is rather important. The more help we have the better it will be.
 
 ## Contributing to a page
-
-Take a look at our design system documentation [https://docs.britishgas.design](https://docs.britishgas.design)
 
 If you find something that you'd like to improve, change, adapt or remove; click the 'Edit on GitHub' link.
 
@@ -43,4 +41,3 @@ Once approved, the changes will be merged into our documentation and make their 
 ## Thank you
 
 For every little change or improvement our documentation receives from our community, we promise to give a kitten a belly rub.
-
