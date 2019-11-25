@@ -68,10 +68,3 @@ Select SVG in the left hand panel &gt; choose Inline Style in the Styling dropdo
 The rendering of illustrations differs among different browsers (I'm looking at you Safari and IE).
 
 ![View Page Source on Illustration](https://user-images.githubusercontent.com/43471890/62051137-a2aa5600-b20a-11e9-988f-a6787298f7ef.jpg) ![SVG in browser inspector](https://user-images.githubusercontent.com/43471890/62051139-a342ec80-b20a-11e9-87c1-c0acaa24ce09.jpg) ![Exporting illustrations](https://user-images.githubusercontent.com/43471890/62051138-a2aa5600-b20a-11e9-8d10-1dddeb451164.jpg)
-
-## Importing illustrations into Nucleus
-
-```text
-Todo: Needs some input from Jon Holt
-```
-
