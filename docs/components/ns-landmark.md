@@ -161,7 +161,7 @@ TODO: include supporting image for these content guidelines.
 
 | field-type | Guidelines |
 | :--- | :--- |
-| sub-heading | sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words |
+| sub-heading | sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. NB For guide pages (i.e. non-product pages produced with strong SEO focus in mind) a subheading is not required. |
 | heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | paragraph | A single, short paragraph works best |
 | caveat | Should be placed at the end of the paragraph if necessary |
