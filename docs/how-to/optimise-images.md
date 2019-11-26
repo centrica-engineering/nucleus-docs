@@ -36,7 +36,7 @@ These numbers are just a guide and shouldn’t be treated as “I have hit the n
 
 Resize your image to the smallest it can be. If it is a full-width image the highest width should be 1440px.
 
-Images such be JPEGs, unless they have some transparency which in that case should be PNGs. Lossless compression is the first step. We need to remove all the metadata and additional garbage from the image, while not removing the quality of the image. This will reduce the image by 5-20%. With the lossless compressed image, incrementally reduce the quality by 10%. Depending on the initial size, there will probably be a reduction of 70% in file size.
+If an image has some transparency save as a PNG, otherwise save as JPEG. Lossless compression is the first step. We need to remove all the metadata and additional garbage from the image, while not removing the quality of the image. This will reduce the image by 5-20%. With the lossless compressed image, incrementally reduce the quality by 10%. Depending on the initial size, there will probably be a reduction of 70% in file size.
 
 Sometimes with PNG images that have transparency, corners, gradients and shadows the images will degrade really quickly. For these images, it is essential to resize the image optimally. If these parts of the images aren’t required they should be removed to allow the image to reduce properly (such as shadows can be added via CSS).
 
@@ -52,9 +52,9 @@ Double click your image in Finder to open it in Preview. In the menu, Tools &gt;
 
 ### Optimising with ImageOptim
 
-```text
+[Get ImageOptim](https://imageoptim.com/mac)
+
 It is best for each iteration of optimisation to create a new folder of duplicates as ImageOptim will overwrite.
-```
 
 1. Click the setting button, at the bottom right corner. Go into Optimisation level and set it to insane; in General, tick PNGCrush and in Quality, disable loss minification.
 
@@ -66,9 +66,12 @@ It is best for each iteration of optimisation to create a new folder of duplicat
 
 ### Squoosh
 
+[Squoosh URL](https://squoosh.app/)
+
 This is a nice web interface that allows the comparison of the original and the compressed version. It gets almost comparative results to ImageOptim, but they are slightly (5%) larger. It can also resize images.
 
 ### Kraken
 
-Kraken gets similar results to ImageOptim and has more advanced controls, but has a limit on file size uploaded which can be an issue at the start if you are given a 10-20mb image.
+[Kraken URL](https://kraken.io/web-interface)
 
+Kraken gets similar results to ImageOptim and has more advanced controls, but has a limit on file size uploaded which can be an issue at the start if you are given a 10-20mb image.
