@@ -23,7 +23,7 @@ We follow two primary rules of accessibility related to colour.
 * We never use colour as the only means of providing information or requesting an action.
 * The combinations of text and their background colours do not fall below the [WCAG recommended threshold ratio](https://www.w3.org/TR/WCAG21/#contrast-minimum) of 4.5:1 for standard or small text and 3:1 for larger text.
 
-There are a number of tools that we've listed in our [Tools](https://docs.britishgas.design/foundation/tools) page which may help.
+There are a number of tools that we've listed in our [Tools](https://docs.britishgas.design/how-to/tools) page which may help.
 
 ### Audio and video
 
