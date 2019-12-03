@@ -151,9 +151,11 @@ Organism
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use the same colour for a theme of pages, eg. boiler guides | Don't use the 'arc' decoration |
-| ![ns-landmark-type-ridge-orange](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg) | ![Landmark-ridge-donts](https://user-images.githubusercontent.com/50207859/61697584-73d64080-ad2f-11e9-89a2-c2bbc18f7db7.jpg) |
+| ![do-use-same-colour-for-themed-pages](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg) | ![dont-use-arc-decoration](https://user-images.githubusercontent.com/50207859/61697584-73d64080-ad2f-11e9-89a2-c2bbc18f7db7.jpg) |
 | Keep the content consise | Don't add a CTA to hillside landmark. The aim is to encourage the user to discover more on the page |
-| ![Do-keep-content-conise](https://user-images.githubusercontent.com/50207859/61779546-c7f92780-adf8-11e9-973c-541c7d46d46d.jpg) | ![Donts---direct-cta](https://user-images.githubusercontent.com/50207859/61779195-2540a900-adf8-11e9-8c5c-1dced44d53f6.jpg) |
+| ![do-keep-content-consise](https://user-images.githubusercontent.com/50207859/61779546-c7f92780-adf8-11e9-973c-541c7d46d46d.jpg) | ![dont-use-direct-cta](https://user-images.githubusercontent.com/50207859/61779195-2540a900-adf8-11e9-8c5c-1dced44d53f6.jpg) |
+|  | Don't use only the light font weight, if there's one weight, use bold. |
+|  | ![dont-use-only-light-font](https://user-images.githubusercontent.com/28779/70074651-0696be00-15f3-11ea-8f4b-a7d2f90ea87c.png) |
 
 ### Best practice for `lakeside`
 
