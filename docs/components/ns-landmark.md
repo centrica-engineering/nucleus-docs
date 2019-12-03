@@ -190,7 +190,7 @@ Organism
 | caveat | Should be placed at the end of the paragraph if necessary. |
 | cta-text | Keep them ‘short, relevant, and actionable’ It should not exceed more than 24 characters |
 | cta-link | This is the URL that the user will be taken too when they tap or click the CTA. |
-| image-path | This is the image that will be used inside the ns-landmark. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. |
+| image-path | This is the image that will be used inside `ns-landmark`. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. |
 
 ### Hillside Landmark
 
