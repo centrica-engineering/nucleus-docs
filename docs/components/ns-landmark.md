@@ -1,5 +1,5 @@
 ---
-description: Landmark component.
+description: A perfect introduction to the page.
 ---
 
 # ns-landmark
