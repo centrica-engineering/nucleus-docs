@@ -94,7 +94,7 @@ Organism
 
 | **Name** | Named slot `heading` |
 | :--- | :--- |
-| **Description** | A single line of text containing subheading and heading |
+| **Description** | A single line of text containing sub-heading and heading |
 | **Type** | string |
 | **Default** | n/a |
 | **Options** | n/a |
