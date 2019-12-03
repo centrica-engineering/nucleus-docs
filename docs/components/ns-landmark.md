@@ -192,8 +192,6 @@ Organism
 
 ### Hillside Landmark
 
-TODO: include supporting image for these content guidelines.
-
 | field-type | Guidelines |
 | :--- | :--- |
 | sub-heading | sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words |
