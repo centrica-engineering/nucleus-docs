@@ -8,7 +8,7 @@ description: Landmark component.
 
 > Landmarks are used to introduce the page, informing users of their current location and its primary purpose.
 
-Landmarks can be used to set the scene for what the page is for, what offers might be available and give helpful best next actions for users. This is where the main heading for the page will sit and give the overarching context to the rest of the page.
+Landmarks are used to set the scene for what the page is for, what offers might be available and give helpful best next actions for users. This is where the main heading for the page will sit and give the overarching context to the rest of the page.
 
 ## Usage
 
@@ -49,12 +49,11 @@ To see examples of the Lakeside Landmark visit [Storybook](https://nucleus.bgdig
 
 ### Lakeside
 
-Lakeside is a variant component of ns-landmark.
-It has no card or illustration and subtitle is optional. Like all other landmark variants, it is used to set the scene for what the page is for, what offers might be available and give helpful best next actions for users.
-2 uses of this variant have identified:
+Like all other landmark variants, Lakeside is used to set the scene for what the page is for.
 
-- To start the beginning of a page
-- To be used for the page status pattern - where It communicates an error at page level when the user meets a dead end and cannot continue with their original journey. It can alert users that there is a problem with the service (400 client side errors or 500 internal server error pages)
+It's initial purpose is to be used for the Roadblock content pattern - where it communicates an error at page level when the user meets a dead end and can not continue with their original journey.
+
+It can alert users that there is a problem with the service (400 Client errors or 500 Server errors)
 
 ```markup
 <ns-landmark type="lakeside">
