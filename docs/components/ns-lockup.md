@@ -1,12 +1,14 @@
 ---
-description: Lockups are a promotional component that signpost to a product or service.
+description: Deliver key content in an engaging way.
 ---
 
 # ns-lockup
 
 ## Introduction
 
-Lockups should signposts to a product or service, and highlight key messages in a concise, engaging way.
+> Lockups are a promotional component that signpost to a product or service, highlighting key messages.
+
+We use lockups to engage customers, in particular to promote a key product or service. The more relevant and contextual the content is for intended customers, the better.
 
 ## Usage
 
