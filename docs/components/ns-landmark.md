@@ -159,10 +159,10 @@ Organism
 
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
-| Use it at the top of the page | use it in the middle or end of a page |
-| Communicate the message in a clear and concise way as possible. | use it to hold random content - ns-editorial may be better use for this |
+| Use it at the top of the page | Use it in the middle or end of a page |
+| Communicate the message in a clear and concise way as possible. | Use it to hold random content - `ns-editorial` may be better use for this |
 | Be relevant to the purpose of the page | |
-| Be clear and concise | | 
+| Be clear and concise | |
 
 
 ### Considerations of best practice
