@@ -58,7 +58,7 @@ It can alert users that there is a problem with the service (400 Client errors o
 ```markup
 <ns-landmark type="lakeside">
   <h1 slot="heading">
-    <span class="h1 enlighten">Sorry, we’re having technical problems at the moment</span>
+    <span class="h1">Sorry, we’re having technical problems at the moment</span>
   </h1>
   <p slot="paragraph">We’re unable to process your request right now. Please try again later.</p>
   <p slot="paragraph">Alternatively you can get in touch directly. <a href="#caveat">1</a></p>
