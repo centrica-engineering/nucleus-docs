@@ -208,7 +208,7 @@ Organism
 | :--- | :--- |
 | sub-heading | sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
 | heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
-| paragraph | Lakeside can have multiple paragraph slots, the first will be displayed as 'p-large', all subsequent paragraphs will be styled as 'p-normal'  |
+| paragraph | Lakeside can accommodate multiple paragraph slots. However, be mindful of keeping it consise. |
 | caveat | Should be placed at the end of the paragraph if necessary. |
 | cta-text | Keep it ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
 | cta-link | This is the URL that the user will be taken too when they tap or click the CTA. |
