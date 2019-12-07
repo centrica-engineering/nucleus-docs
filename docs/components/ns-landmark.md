@@ -174,11 +174,11 @@ Organism
 
 | field-type | Guidelines |
 | :--- | :--- |
-| sub-heading | sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
+| sub-heading | Sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
 | heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | paragraph | A single, short paragraph works best. |
 | caveat | Should be placed at the end of the paragraph if necessary. |
-| cta-text | Keep them ‘short, relevant, and actionable’ It should not exceed more than 24 characters |
+| cta-text | Keep them ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
 | cta-link | This is the URL that the user will be taken too when they tap or click the CTA. |
 | image-path | This is the image that will be used inside `ns-landmark`. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. |
 
@@ -186,7 +186,7 @@ Organism
 
 | field-type | Guidelines |
 | :--- | :--- |
-| sub-heading | sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
+| sub-heading | Sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
 |  | **Note:** Guide pages (non-product pages produced with strong SEO focus in mind) a sub-heading is not required. |
 | heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | paragraph | A single, short paragraph works best. |
@@ -196,9 +196,9 @@ Organism
 
 | field-type | Guidelines |
 | :--- | :--- |
-| sub-heading | sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
+| sub-heading | Sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
 | heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
-| paragraph | Lakeside can accommodate multiple paragraph slots. However, be mindful of keeping it consise. |
+| paragraph | Lakeside can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a minimum of 1 and a maximum of 3. |
 | caveat | Should be placed at the end of the paragraph if necessary. |
 | cta-text | Keep it ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
 | cta-link | This is the URL that the user will be taken too when they tap or click the CTA. |
