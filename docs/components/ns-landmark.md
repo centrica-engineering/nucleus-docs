@@ -144,7 +144,7 @@ Organism
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use the same colour for a theme of pages, eg. boiler guides | Don't use the 'arc' decoration |
+| Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Don't use the 'invert-bridge' decoration. |
 | ![do-use-same-colour-for-themed-pages](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg) | ![dont-use-arc-decoration](https://user-images.githubusercontent.com/50207859/61697584-73d64080-ad2f-11e9-89a2-c2bbc18f7db7.jpg) |
 | Keep the content concise. | Don't add a CTA. The aim is to encourage the user to discover more on the page. |
 | ![do-keep-content-concise](https://user-images.githubusercontent.com/50207859/61779546-c7f92780-adf8-11e9-973c-541c7d46d46d.jpg) | ![dont-use-direct-cta](https://user-images.githubusercontent.com/50207859/61779195-2540a900-adf8-11e9-8c5c-1dced44d53f6.jpg) |
@@ -163,8 +163,11 @@ Organism
 * The recommended copy length is between 1 and 5 words for the sub-heading.
 * The message must be in plain English, and help the user out of the situation by providing an actionable link if possible.
 * If the purpose of the page is to understand more about a product or service, then it is considered bad practice to include a CTA within the landmark, as users are likely to drop out. This is because users believe the next step is to click the CTA, rather than reading the page to get a better understanding of how they should proceed.
-* Let the page type define the type of landmark you use. For example if the page purpose is to be informative / educational then we recommend using `<ns-landmark type="hillside”>`. If the page purpose is promotional we recommend using `<ns-landmark type="summit">`.
-* If you are designing a series of informative / educational pages that all follow a similar theme, it would be considered best practice to use the same coloured decoration within the `<ns-landmark type="hillside">`.
+* Let the page type define the type of landmark you use.
+  * If the page purpose is to be informative / educational then we recommend using `hillside`.
+  * If the page purpose is promotional we recommend using `summit`.
+  * If the page purpose is a 400 or 500 error page, use `lakeside`.
+* If you are designing a series of informative / educational pages that all follow a similar theme, it would be considered best practice to use the same coloured decoration within the `hillside`.
 
 ## Content guidance
 
