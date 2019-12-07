@@ -49,12 +49,6 @@ To see examples of the Lakeside Landmark visit [Storybook](https://nucleus.bgdig
 
 ### Lakeside
 
-Like all other landmark variants, Lakeside is used to set the scene for what the page is for.
-
-It's initial purpose is to be used for the Roadblock content pattern - where it communicates an error at page level when the user meets a dead end and can not continue with their original journey.
-
-It can alert users that there is a problem with the service (400 Client errors or 500 Server errors)
-
 ```markup
 <ns-landmark type="lakeside">
   <h1 slot="heading">
@@ -67,7 +61,6 @@ It can alert users that there is a problem with the service (400 Client errors o
   </a>
 </ns-landmark>
 ```
-
 
 ## Component Relationship
 
@@ -132,8 +125,9 @@ Organism
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Keep content in Landmarks very concise | Always add a cta |
-| Content must be relevant to the page |  |
+| Use it at the top of the page. | Use it in the middle or end of a page. |
+| Communicate the primary purpose in a clear and concise way. | Always add a cta (It'll drive traffic away). |
+| Content must be relevant to the page. | Use it to hold random content - `ns-editorial` may be better use for this. |
 
 ### Best practice for `summit`
 
@@ -161,10 +155,6 @@ Organism
 
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
-| Use it at the top of the page | Use it in the middle or end of a page |
-| Communicate the message in a clear and concise way as possible. | Use it to hold random content - `ns-editorial` may be better use for this |
-| Be relevant to the purpose of the page | |
-| Be clear and concise | |
 
 
 ### Considerations of best practice
