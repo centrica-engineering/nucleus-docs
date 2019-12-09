@@ -15,7 +15,7 @@ In the first part of the presentation we covered:
 
 * The content of our newest release, including the new components now available.
 * Updated headline metrics showing the progress the everyone is making.
-* Examples of product journeys & guide pages reaping the benefits of Nucleus
+* Examples of product journeys & guide pages reaping the benefits of Nucleus.
 * Different types of user testing that’s been conducted over the last 4 weeks using Nucleus as the basis of the design.
 * Success stories in our ways of working with other teams.
 * Finally, we finished the fist part with a preview of what’s coming in our next release.
@@ -289,4 +289,3 @@ Highlights of our experience:
 * Co-creating first drafts of contribution processes.
 
 [†] This can only be accessed from approved Github accounts, please make sure you are logged in to access.
-
