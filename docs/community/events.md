@@ -8,6 +8,24 @@ description: List of Nucleus events including Nucleus Sessions.
 
 Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel #product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
 
+## 2019-12-04 / Squad achievement session
+This was the second opportunity for the Nucleus team to present to the BG Home digital team. On this occasion we focused on celebrating the success the other teams are having using the design system.
+
+In the first part of the presentation we covered:
+
+* The content of our newest release, including the new components now available.
+* Updated headline metrics showing the progress the everyone is making.
+* Examples of product journeys & guide pages reaping the benefits of Nucleus
+* Different types of user testing that’s been conducted over the last 4 weeks using Nucleus as the basis of the design.
+* Success stories in our ways of working with other teams.
+* Finally, we finished the fist part with a preview of what’s coming in our next release.
+
+As a bonus we introduced the team to the topic of systems thinking. This was intended to get the team thinking more about the ‘system’ aspect of a design system, and hopefully dispel the myth that it's all about design! 
+
+The final message was a nudge to get teams to think about how their requirements fit in with other products and journeys (i.e. as part of the system), and we provided some example questions they to use in order to be more 'system focused' when raising requests for change to the design system. 
+
+[Squad achievements December.pdf](https://github.com/ConnectedHomes/nucleus/files/3940301/Squad.session._December_final.pdf) [†]
+
 ## 2019-11-06 / Squad achievement session
 
 This was the first of the monthly Squad Achievements sessions. We gave a presentation to the whole UK home digital team. Focused on introducing what Nucleus is and why we have a design system as a company. 
@@ -23,7 +41,7 @@ The presentation talked through the following points;
 
 The audience had the opportunity to ask questions via slack after the event. We will add a link to the questions and our responses here as soon as they are up.
 
-[Squad achievements.pdf](https://github.com/ConnectedHomes/nucleus/files/3824249/Squad.achievements.pdf) [†]
+[Squad achievements November.pdf](https://github.com/ConnectedHomes/nucleus/files/3824249/Squad.achievements.pdf) [†]
 
 
 ## 2019-10-15 / A simpler, easy to use RFC template
