@@ -44,23 +44,10 @@ Atom
 
 ## Specification
 
-| **Name** | open |
-| :--- | :--- |
-| **Description** | The state of the expander |
-| **Type** | Boolean |
-| **Default** | false |
-| **Options** | true, false |
-
-| **Name** | Named slot `heading` |
-| :--- | :--- |
-| **Description** | A single line of text containing the heading |
-| **Type** | string |
-| **Default** | n/a |
-| **Options** | Include an optional link to `#caveat` by placing `<a href="#caveat">1</a>` at the end |
 
 | **Name** | Anonymous slot |
 | :--- | :--- |
-| **Description** | The text to be shown when the skyline is open |
+| **Description** | The thing to be shown in the skyline |
 | **Type** | TextNode |
 | **Default** | '' |
 | **Options** | n/a |
