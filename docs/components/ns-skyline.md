@@ -1,19 +1,19 @@
 ---
-description: Skyline component.
+description: A high level message component.
 ---
 
 # ns-skyline
 
 ## Introduction
 
-> A global high level message component that can span across several different pages. It's position will always be directly beneath the global navigation.
+> Notifying visitors of current, ongoing or upcoming events that they may be relevant to them.
 
-Ns-Global message are used to communicate site-wide or non-page specific important messages that will be relevant to and may affect the experience of users visiting the British Gas website.
+Positioned directly beneath the global navigation and above any content, `ns-skyline` performs a high level messaging function which is designed to communicate site-wide or non-page specific important messages that will be relevant to and may affect the experience of users visiting the British Gas website.
 
 They are either:
 
-* Informational - to show useful information that the user may want to be aware of, e.g. upcoming price changes
-* Warning - to warn users of potential upcoming or current issues e.g. weather warning
+* Informational - to show useful information that the user may want to be aware of, e.g. upcoming price changes.
+* Warning - to warn users of potential upcoming or current issues e.g. weather warning.
 
 ## Usage
 
@@ -23,7 +23,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 <ns-skyline>
   <ns-expander icon="warning" type="skyline">
     <h2 slot="heading">We are experiencing issues</h2>
-    This is what we're doing to fix it and what you can do to <a href="#">help us</a>
+    <p>This is what we're doing to fix it and what you can do to <a href="#">help us</a></p>
   </ns-expander>
 </ns-skyline>
 ```
@@ -40,10 +40,9 @@ None
 No
 
 **Atomic type**  
-Atom
+Organism
 
 ## Specification
-
 
 | **Name** | Anonymous slot |
 | :--- | :--- |
@@ -56,21 +55,20 @@ Atom
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Communicate the message in a clear and concise way as possible. Ideally, it should be able to be explained in the heading in one sentence, where possible | Use it for page specific messages |
-| Use inline text links into supporting content if necessary | Use if for non-important messages |
-| Only add additional information in the expanded copy if necessary | Make the message longer than necessary |
-| Add inline links to aid the user to helpful information where possible | Use for error messaging |
-| Add the icon that matches to the context of the message; warning or information | |
+| Position `ns-skyline` directly underneath the main navigation. | Use for error messaging. |
+| Communicate the message in a clear and concise way as possible. Ideally, it should be able to be explained in the heading in one sentence. | Use it for page specific messages. |
+| Use inline text links to support content and aid the user find helpful information. | Use if for non-important messages. |
+| Add the icon that matches the context of the message; `warning` or `info`. | Make the message longer than necessary. |
 
 ### Considerations of best practice
 
-* Use sparingly for only the most important information
+* Use sparingly for only the most important information.
 * Not be used as the primary entry point to information or actions users need on a regular basis.
-* Do not use for marketing information or up sell
+* Do not use for marketing information or up-sell.
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-tab]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-tab]).
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-skyline]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-skyline]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
