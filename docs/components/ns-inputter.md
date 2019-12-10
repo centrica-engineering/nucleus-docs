@@ -184,7 +184,7 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Only use an input type | Use a textarea, checkbox or radio button |
-| Only use a character for a separator | Use a placeholder |
+| Only use a character for a separator | Use a "placeholder" attribute on the input |
 |  | Put more than one separator together, e.g. `00--00` |
 |  | Start or end with a separator |
 
