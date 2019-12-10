@@ -21,7 +21,7 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 ```markup
 <ns-skyline>
-  <ns-expander icon="warning" type="skyline">
+  <ns-expander icon="warning">
     <h2 slot="heading">We are experiencing issues</h2>
     <p>This is what we're doing to fix it and what you can do to <a href="#">help us</a></p>
   </ns-expander>
