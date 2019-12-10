@@ -8,7 +8,7 @@ description: A high level message component.
 
 > Notifying visitors of current, ongoing or upcoming events that they may be relevant to them.
 
-Positioned directly beneath the global navigation and above any content, `ns-skyline` displays high level messages to the user.  `ns-skyline` should be used to notify the user of important site-wide or non-page specific events that may affect the experience of users visiting the British Gas website.
+Positioned directly beneath the global navigation and above any content, `ns-skyline` displays high level messages to the user.  The purpose of `ns-skyline` is to notify the user of important site-wide or non-page specific events that may affect their experience of using the British Gas website.
 
 They are either:
 
