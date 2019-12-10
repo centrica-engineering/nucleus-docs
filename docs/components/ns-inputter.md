@@ -93,6 +93,23 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 | **Options** | "" |
 | **Notes** | This will generate the `<label>`. Don't use for single `<input>` such as text. |
 
+| **Name** | Mask |
+| :--- | :--- |
+| **Description** | To hint at how content should be added, such as length or starting characters. |
+| **Type** | string |
+| **Default** | n/a |
+| **Options** | "" |
+| **Notes** | This will create a max length on the input to the length of the mask. |
+
+| **Name** | Separator |
+| :--- | :--- |
+| **Description** | Used to alter the inputted text to follow the pattern in the mask. |
+| **Type** | string |
+| **Default** | n/a |
+| **Options** | "" |
+| **Notes** | Requires a mask. Can only be one character. |
+
+
 | **Name** | Anonymous slot |
 | :--- | :--- |
 | **Description** | This is the place to add the `<label>` and `<input>` html elements |
@@ -162,6 +179,15 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 | Use only when required | Use real data |
 | Only use to validate the format of the input | Don't used for... |
 
+### Masks and separators
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Only use an input type | Use a textarea, checkbox or radio button |
+| Only use a character for a separator | Use a placeholder |
+|  | Put more than one separator together, e.g. `00--00` |
+|  | Start or end with a separator |
+
 ### Text Input
 
 | 💚 Do's | 💔 Don'ts |
@@ -212,4 +238,3 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[NAME%20OF%20COMPONENET]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
