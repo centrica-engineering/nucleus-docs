@@ -26,6 +26,7 @@
   * [ns-lockup](components/ns-lockup.md)
   * [ns-panel](components/ns-panel.md)
   * [ns-selector](components/ns-selector.md)
+  * [ns-skyline](components/ns-skyline.md)
   * [ns-tab](components/ns-tab.md)
   * [ns-tabs](components/ns-tabs.md)
   * [ns-table](components/ns-table.md)
