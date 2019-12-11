@@ -1,14 +1,14 @@
 ---
-description: Lockup component.
+description: Deliver key content in an engaging way.
 ---
 
 # ns-lockup
 
 ## Introduction
 
-> Lockups are used to house content and inform users about a single topic.
+> Lockups are a promotional component that signpost to a product or service, highlighting key messages.
 
-Lockups can be used to display key information about a product, a service or tell a short story.
+We use lockups to engage customers, in particular to promote a key product or service. The more relevant and contextual the content is for intended customers, the better.
 
 ## Usage
 
@@ -148,5 +148,3 @@ Organism
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+ns-lockup).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
-
