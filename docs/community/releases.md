@@ -22,6 +22,8 @@ Release date - 2019-12-11
 * Introducing `ns-skyline`, a high level messaging component.
   * Notify the user of events that may affect their experience.
   * Weather warning, price changes etc.
+* Adding 4 new icons to support messaging components.
+  * `error`, `info`, `success`, `warning`
 
 **Documentation 🐧**
 
