@@ -80,15 +80,13 @@ Atom
 | **Options** | n/a |
 
 ## Best practises
-We highly recommend that there are no more than eight content headings in a multiple accordion.
-If more than eight are used we should stop to reassess why and perhaps breakdown the content even more.
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 
 ### Considerations of best practises
-
-* 
+We highly recommend that there are no more than eight content headings in a multiple accordion.
+If more than eight are used we should stop to reassess why and perhaps breakdown the content even more.
 
 ## Feedback
 
