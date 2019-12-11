@@ -52,6 +52,15 @@ molecule
 | **Default** | n/a |
 | **Options** | n/a |
 
+| **Name** | open |
+| :--- | :--- |
+| **Description** | Defines if the expander is in an open or closed state |
+| **Type** | Boolean |
+| **Default** | false |
+| **Options** | true,false |
+
+open="false"
+
 | **Name** | Anonymous slot |
 | :--- | :--- |
 | **Description** | Place html content into this slot |
