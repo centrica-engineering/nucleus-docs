@@ -55,13 +55,15 @@ Organism
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Position `ns-skyline` directly underneath the main navigation. | Use for error messaging. |
-| Communicate the message in a clear and concise way as possible. Ideally, it should be able to be explained in the heading in one sentence. | Use it for page specific messages. |
-| Use inline text links to support content and aid the user find helpful information. | Use if for non-important messages. |
-| Add the icon that matches the context of the message; `warning` or `info`. | Make the message longer than necessary. |
+| Position `ns-skyline` directly underneath the main navigation. | Include a link in the heading. |
+| Communicate the message in a clear and concise way as possible. Ideally, it should be able to be explained in the heading in one sentence. | Use for error messaging. |
+| Use inline links to support content and aid the user find helpful information. | Use it for page specific messages. |
+| Add the icon that matches the context of the message; `warning` or `info`. | Use if for non-important messages. |
+|  | Make the message longer than necessary. |
 
 ### Considerations of best practice
 
+* Do not include a link in the heading. It's used to open and close the content of `ns-expander` and won't be clickable.
 * Use sparingly for only the most important information.
 * Not be used as the primary entry point to information or actions users need on a regular basis.
 * Do not use for marketing information or up-sell.
