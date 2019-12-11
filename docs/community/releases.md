@@ -4,6 +4,50 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
+## Version 1.4.0
+
+**Skyline, Lakeside, Masks and Separators**
+
+Release date - 2019-12-11
+
+**What’s new around here 🚤**
+
+* The masked `ns-inputter`.
+  * Don't be fooled by it's apparent simplicity, this is a **BIG** introduction to Nucleus.
+  * The outcome of everyone's hard work on the [Meter read RFC](https://github.com/ConnectedHomes/nucleus/issues/839).
+  * With the power to assist data entry such as sort codes and reference numbers.
+* The Lakeside variant of our Landmark.
+  * Used for conveying blocking messages e.g. 404 & 500, what we call Roadblock messages.
+  * Useful as the primary component for confirmation pages.
+* Introducing `ns-skyline`, a high level messaging component.
+  * Notify the user of events that may affect their experience.
+  * Weather warning, price changes etc.
+
+**Documentation 🐧**
+
+* Details of how to use masks and separators with `ns-inputter` - https://docs.britishgas.design/components/ns-inputter#masks-and-separators
+* Supporting the new additions to our component library.
+  * Take a look at our documentation for `ns-skyline` - https://docs.britishgas.design/components/ns-skyline
+  * Check out the best practice for `lakeside` Landmark - https://docs.britishgas.design/components/ns-landmark#best-practice-for-lakeside
+* Include a summary of our Squad achievements on December 4th - https://docs.britishgas.design/community/events
+
+**Bug fixes 🐜**
+
+* Resolving an issue with BG-VI styles overriding form labels.
+
+**Improvements 🐑**
+
+* Introduce ES Lint to keep our Javascript in check.
+* Adding additional icons to support `ns-skyline`.
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
 ## Version 1.3.0
 
 **Selector and Table**
