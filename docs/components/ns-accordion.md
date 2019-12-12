@@ -7,17 +7,11 @@ description: Accordion component.
 
 ## Introduction
 
-> Accordion enables users to expand and collapse sections of content.
+> Accordion enables users to expand and collapse multiple sections of content.
 
-We use accordions to break down information or to link content to other pages through text links. 
+We use accordions to break down content into meaningful sections, helping to reduce information overload. Accordions are useful for things like frequently asked questions or displaying multiple blocks of related content such as tariffs.
 
 ## Usage
-
-- We use accordions to break down information or to link content to other pages through text links. 
-- Accordions allow us to reduce the information overload by using progressive disclosure.
-- Having the collapsed and expandable state, helps the user to read or find information that is divided by a meaningful order or area.
-- Accordions are useful for things like frequently asked questions or displaying multiple blocks of content such as tariffs.
-- We don't use key/important information in accordions.
 
 To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-accordion--singular)
 
@@ -81,11 +75,15 @@ Atom
 
 ## Best practises
 
-| 💚 Do's | 💔 Don'ts |
+| 💚 Do | 💔 Don't |
 | :--- | :--- |
+| Use for FAQs | Use a background with an accordion as the expanded state is white|
+| Use to split up related content | Use more than 8 expanders |
+| Make sure section headings relate to content | Use for critical information (such as caveats) |
+| | Use as a solution to excessive copy on a page |
 
 ### Considerations of best practises
-We highly recommend that there are no more than eight content headings in a multiple accordion.
+Accordions should be used for FAQs or splitting related content into sections.  They should not be used for showing critical information such as caveats. We highly recommend that there are no more than eight content headings in a multiple accordion.
 If more than eight are used we should stop to reassess why and perhaps breakdown the content even more.
 
 ## Feedback
