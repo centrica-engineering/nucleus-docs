@@ -68,11 +68,11 @@ open="false"
 
 ## Best practises
 
-| 💚 Do's | 💔 Don'ts |
+| 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Use instead of modal | Use to hide important information (such as caveats) |
 | Use headings, paragraphs, lists for content | Use as a solution to excessive copy on a page |
-|  | Nest expanders within expanders |
+| Make sure heading relates to content | Nest expanders within expanders |
 
 ## Feedback
 
