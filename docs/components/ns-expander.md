@@ -74,10 +74,6 @@ open="false"
 | Use headings, paragraphs, lists for content | Use as a solution to excessive copy on a page |
 |  | Nest expanders within expanders |
 
-### Considerations of best practises
-
-* 
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-form]).
