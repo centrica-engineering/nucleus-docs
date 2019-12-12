@@ -7,10 +7,10 @@ description: Expander component.
 
 ## Introduction
 
-> Expanders are used to show or hide content within an accordion component.
+> Expanders are used to show or hide content.
 
-An expander consists of a heading and a content slot.  When the heading is clicked the component expands to reveal the content.
-When in an expanded state, clicking the heading will hide the content.
+An expander consists of a heading and a content slot.  When the heading is clicked the component opens to reveal the content.
+When in an open state, clicking the heading will hide the content.
 
 ## Usage
 
@@ -21,11 +21,9 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 ```markup
 <ns-expander>
   <h3 slot="heading">Can I manage my account online?</h3>
-
-  Yes, with an online account you can arrange a service visit,
+  <p>Yes, with an online account you can arrange a service visit,
   find out whatʼs happening with your appointment, submit a meter reading and book an engineer.
-  Weʼve even got a free smartphone app.
-
+  Weʼve even got a free smartphone app.</p>
 </ns-expander>
 ```
 
@@ -38,7 +36,7 @@ No
 N/A
 
 **Does it live inside other components?**  
-ns-accordion
+ns-accordion, ns-skyline
 
 **Atomic type**  
 molecule
@@ -72,6 +70,9 @@ open="false"
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
+| Use instead of modal | Use to hide important information (such as caveats) |
+| Use headings, paragraphs, lists for content | Use as a solution to excessive copy on a page |
+|  | Nest expanders within expanders |
 
 ### Considerations of best practises
 
