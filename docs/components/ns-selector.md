@@ -93,8 +93,9 @@ Molecule
 | Use if you need to support the label with an illustration | Use if the image or illustration make the selection harder to understand |
 | Use a heading within the content when providing supporting copy | Add too much content, they should not be miniature web pages |
 | Use inline text links into supporting content if necessary | Use without an image or an illustration |
-| Bolden key messages eg. price within heading to highlight | Use imagery within ns-selector with copy embedded inside | Use a radio button or checkbox |  Use an image and an illustration together |
-||Add a decoration behind the selectors |
+| Bolden key messages eg. price within heading to highlight | Use imagery within ns-selector with copy embedded inside |
+| Use a radio button or checkbox |  Use an image and an illustration together |
+|  |Add a decoration behind the selectors |
 
 
 
