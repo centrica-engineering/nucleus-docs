@@ -52,7 +52,7 @@ Once you’re icons are completed (and signed off!) they need to be made ready f
 
 * When designing the icons, use only paths not shapes.
 * Make sure all unnecessary attributes in the SVG document have been removed including;
-   * `<title>` element
+   * `<title>` element.
    * Any `id=””` attributes.
    * All `data-name=””` attributes if they exist.
    * All colour information e.g. `fill="#000000"`.
