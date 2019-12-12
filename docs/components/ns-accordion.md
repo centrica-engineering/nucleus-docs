@@ -30,7 +30,7 @@ This should be used when there's more than one piece of related content to commu
 
 
 ```markup
-<ns-accordion role="tablist">
+<ns-accordion>
   <h3 slot="heading">Frequently asked questions</h3>
   <ns-expander open="false">
     <h4 slot="heading">Can I manage my account online?</h4>
@@ -92,4 +92,3 @@ If more than eight are used we should stop to reassess why and perhaps breakdown
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-form]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
