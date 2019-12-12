@@ -17,18 +17,6 @@ To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-accordion" caption="" %}
 
-### Available variants
-We're using two variants of accordions, Singular and Multiple.
-
-#### Singular
-An accordion has an Accordion Heading to describe the content topic.
-It has Heading Expander to as the content title and Expander Message for the content.
-The entire Accordion Header area is clickable.
-The Accordion should only be expanded or collapsed via user action.
-#### Multiple
-This should be used when there's more than one piece of related content to communicate to the user.
-
-
 ```markup
 <ns-accordion>
   <h3 slot="heading">Frequently asked questions</h3>
