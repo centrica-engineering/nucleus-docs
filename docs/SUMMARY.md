@@ -18,6 +18,7 @@
   * [ns-cta](components/ns-cta.md)
   * [ns-decoration](components/ns-decoration.md)
   * [ns-editorial](components/ns-editorial.md)
+  * [ns-expander](components/ns-expander.md)
   * [ns-form](components/ns-form.md)
   * [ns-icon](components/ns-icon.md)
   * [ns-illustration](components/ns-illustration.md)
