@@ -52,10 +52,12 @@ Once you’re icons are completed (and signed off!) they need to be made ready f
 
 * When designing the icons, use only paths not shapes.
 * Make sure all unnecessary attributes in the SVG document have been removed including;
-   * `<title>` element 
-   * `id=””` attribute
-   * `data-name=””` attribute
-   * All colour information e.g. `fill="#000000"`
+   * `<title>` element
+   * Any `id=””` attributes.
+   * All `data-name=””` attributes if they exist.
+   * All colour information e.g. `fill="#000000"`.
+   * `<style>` and any `classes`.
+   * Nested and empty `<g>` (groups).
 * The position of each icon within the artboard must be consistent. This is very important when creating different states of the same icon.
 * Make sure the paths align to the pixel grid.
 * When creating a corner, ensure it has only 2 points. Too many points per shape will overcomplicate the icon and increase file size.
