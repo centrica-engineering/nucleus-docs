@@ -34,6 +34,8 @@ Nucleus is for anybody who is involved in shaping our digital real estates.
 
 In addition to the shared principles, you will be able to use already tested, plug-and-play front-end components. Design mock-ups and prototypes are great for exploring what would be desirable, but in our digital world, it's the fully developed assets that put feasibility to the test. We hope that with a growing body of re-usable assets and knowledge, you'll be able to tackle the tough issues, explore more alternative flows and solutions to realise the right one, together with your team.
 
+[More details here](https://github.com/ConnectedHomes/ember-commons/wiki/Nucleus) 
+
 ### For designers
 
 Many of us are proud of our craft and eye for details. But if we can't use these skills to truly impact the lives of our end users for the better, we'll have failed in one of our key objectives. We hope that if you have to worry less about finding the latest guidelines, or making the smallest tweak possible to get an idea through, you'll be able to spend more time exploring alternative flows, collaborating, and learning to build a strong case for your team's proposals.
