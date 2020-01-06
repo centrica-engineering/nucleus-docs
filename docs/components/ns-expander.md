@@ -57,8 +57,6 @@ molecule
 | **Default** | false |
 | **Options** | true,false |
 
-open="false"
-
 | **Name** | Anonymous slot |
 | :--- | :--- |
 | **Description** | Place html content into this slot |
