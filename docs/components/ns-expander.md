@@ -36,7 +36,7 @@ No
 N/A
 
 **Does it live inside other components?**  
-ns-accordion, ns-skyline
+`ns-accordion`, `ns-skyline`
 
 **Atomic type**  
 molecule
