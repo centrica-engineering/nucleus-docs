@@ -16,5 +16,5 @@ Applying a gradient to `ns-panel` can create a feeling of depth and richness for
 
 ## Gradient colours
 
-Within Storybook we have published the [gradient colour palette](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/foundations-colours--gradient-pallette).
+Within Storybook we have published the [gradient colour palette](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-colours--gradient-pallette).
 

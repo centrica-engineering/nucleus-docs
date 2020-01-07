@@ -10,7 +10,7 @@ description: A self-contained or supporting piece of content.
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-editorial--editorial)
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-editorial--editorial)
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-editorial" caption="" %}
 

@@ -12,7 +12,7 @@ Caveats link to content in the page, providing more information about legality a
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-caveat--caveat)
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-caveat--caveat)
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-caveat" caption="" %}
 
@@ -93,6 +93,6 @@ Molecule
 
 ## Related links
 
-* [ns-caveat component in Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-caveat--caveat).
-* [Homepage example in Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-homepage--2019-01).
+* [ns-caveat component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-caveat--caveat).
+* [Homepage example in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-homepage--2019-01).
 

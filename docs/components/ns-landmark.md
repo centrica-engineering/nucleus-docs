@@ -12,11 +12,11 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ## Usage
 
-To see examples of the Summit Landmark visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-landmark--summit).
+To see examples of the Summit Landmark visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--summit).
 
-To see examples of the Hillside Landmark visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-landmark--hillside).
+To see examples of the Hillside Landmark visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--hillside).
 
-To see examples of the Lakeside Landmark visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-landmark--lakeside).
+To see examples of the Lakeside Landmark visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--lakeside).
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-landmark" caption="" %}
 

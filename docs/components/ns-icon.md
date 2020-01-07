@@ -12,7 +12,7 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-icon--gas).
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--gas).
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-icon" caption="" %}
 

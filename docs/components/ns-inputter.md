@@ -12,7 +12,7 @@ Inputters are used to help people enter and select information. Inputters are no
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-inputter--text).
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-inputter--text).
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter" caption="" %}
 

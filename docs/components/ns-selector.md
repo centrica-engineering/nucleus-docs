@@ -12,7 +12,7 @@ description: Selector component.
 
 Ns-selector can be single selection (radio) or multiple selection (checkbox) it should be placed within a ns-inputter.
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-inputter--selectorradio)
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-inputter--selectorradio)
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-selector" caption="" %}
 
@@ -103,7 +103,7 @@ Molecule
 
 * When deciding to use the ns-selector, it’s important to consider whether a radio or checkbox button itself would be more appropriate.
 * In a many cases, a simple radio button or checkbox is all the user needs to make the choice. Only use the ns selector when adding more supporting information makes the decisioin for the user easier.
-* If you are using the ns-selector with an illustration, it's important to make sure you are using a Nucleus illustration. [View illustrations in Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-illustrations--appliance)
+* If you are using the ns-selector with an illustration, it's important to make sure you are using a Nucleus illustration. [View illustrations in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)
 * Make sure the supporting copy is clear and concise.
 * Make sure the labels explain exactly what the user is selecting. If all content is removed other than the label, then the user would still understand what they are selecting.
 
