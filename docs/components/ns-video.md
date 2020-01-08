@@ -12,7 +12,7 @@ British Gas creates many videos to engage customers. This component allows havin
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-video--youtube).
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-video--youtube).
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-video" caption="" %}
 
@@ -81,5 +81,5 @@ Atom
 
 ## Related links
 
-* [https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-video-panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--lockup-video-panel).
+* [https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--lockup-video-panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--lockup-video-panel).
 

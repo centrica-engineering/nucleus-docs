@@ -12,7 +12,7 @@ Cards are used to apply a container around a related grouping of information; th
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-card--section).
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-card--section).
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-card" caption="" %}
 
@@ -57,7 +57,7 @@ Molecule
 | **Description** | Illustration that is show in the section type card |
 | **Type** | String |
 | **Default** | '' |
-| **Options** | See [Illustration component in Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-illustrations--appliance) |
+| **Options** | See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance) |
 | **Notes** | Required if the type is section |
 
 | **Name** | image |
@@ -137,7 +137,7 @@ Molecule
 
 ## Related links
 
-* [ns-card section panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--section-cards).
-* [ns-card support panel](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-panels--support-image-cards).
+* [ns-card section panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--section-cards).
+* [ns-card support panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--support-image-cards).
 
 

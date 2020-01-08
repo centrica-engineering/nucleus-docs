@@ -12,7 +12,7 @@ We allow users to perform certain actions through the use of our call to actions
 
 ## Usage
 
-To see examples visit [Storybook](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/ns-cta--direct-link).
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-cta--direct-link).
 
 `ns-cta` should always live inside another component.
 
@@ -113,5 +113,5 @@ Molecule
 
 ## Related links
 
-* [CTA examples in the homepage](https://nucleus.bgdigital.xyz/demo/index.html?path=/story/playground-homepage--2019-01).
+* [CTA examples in the homepage](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-homepage--2019-01).
 
