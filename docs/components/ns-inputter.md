@@ -224,6 +224,11 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 | :--- | :--- |
 | Always include a label | Add placeholder content |
 
+### Autocomplete and input sizing
+
+* Use native autocompletes on inputs ([Autocomplete attribute docmentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete))
+* Inputs will resize when using the autocomplete attribute for `honorific-prefix`, `given-name`, `family-name` and `postal-code`.
+
 ### Considerations of best practices
 
 * Use defined conventions for common fields.
