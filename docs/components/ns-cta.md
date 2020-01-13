@@ -12,10 +12,10 @@ We allow users to perform certain actions through the use of our call to actions
 
 ## Content guidance
 
-| Field type   | Guidelines          |
-|--------------|---------------------|
-| Text    	   |                     |
-| Icon		     |                     |
+| Field type | Guidelines |
+| :--- | :--- |
+| Text    	   |  |
+| Icon		     |  |
 
 ## Best practice
 
@@ -49,37 +49,37 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Component Relationship
 
-| **Relationship**                          |                   |
-| :---------------------------------------- | :---------------- |
-| **Does it live in a panel?**              | ❌ No             |
-| **Does it live inside other components?** | ✅ Yes - `ns-lockup`, `ns-landmark`, `ns-card`      |
+| **Relationship** |  |
+| :--- | :--- |
+| **Does it live in a panel?**              | ❌ No |
+| **Does it live inside other components?** | ✅ Yes - `ns-lockup`, `ns-landmark`, `ns-card` |
 | **What layout classes can be used?**      | None |
 
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `type`    | `string`            | `direct` | `direct`, `text` | Different variants of the CTA. |
-| `href` | `string`            |           || Linking to another location. |
-| `icon`  | `string`            | `arrow-right` | `arrow-left`, `arrow-right`, `download` See [`ns-icon` component](https://britishgas.design/components/ns-icon) | The icon inside the CTA |
-| `loading` | `string`            | `false` | `true`, `false` | Change the state of the CTA for loading. |
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `type`    | `string` | `direct` | `direct`, `text` | Different variants of the CTA. |
+| `href` | `string` |           || Linking to another location. |
+| `icon`  | `string` | `arrow-right` | `arrow-left`, `arrow-right`, `download` See [`ns-icon` component](https://britishgas.design/components/ns-icon) | The icon inside the CTA |
+| `loading` | `string` | `false` | `true`, `false` | Change the state of the CTA for loading. |
 | `loadingMessage` | `string` | `Loading...` |  | Overwrites the CTA anonymous slot for the loading state. |
 
-| Slots        | Type                |
-|--------------|---------------------|
-| Anonymous    | textNode                |
+| Slots | Type |
+| :--- | :--- |
+| Anonymous | textNode |
 
 ## Specification notes
 
 ### Icons
 
-- Icons are not descriptive, they are supplementary to the text.
+* Icons are not descriptive, they are supplementary to the text.
 
 ### Href
 
-- Can be used instead of having a wrapper anchor
-- This shouldn't be used if `onClick` event is added.
+* Can be used instead of having a wrapper anchor
+* This shouldn't be used if `onClick` event is added.
 
 ## Feedback
 
@@ -91,4 +91,3 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 ## Related links
 
 * [CTA examples in the homepage](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-homepage--2019-01).
-

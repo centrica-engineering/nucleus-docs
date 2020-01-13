@@ -54,19 +54,19 @@ submitForm() {
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `validate` | `function`  |           |           | Validates all of the fields within the form and returns an object containing the field and validation data |
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `validate` | `function`  |  |  | Validates all of the fields within the form and returns an object containing the field and validation data |
 
-| Event       | Description                                                  |
-| ----------- | ------------------------------------------------------------ |
+| Event | Description |
+| :--- | :--- |
 | `validated` | Will pass the object of the fields and validation when validate is called. |
 
 ## Specification notes
 
 ### Validated
 
-- This is only required if you need to listen for an event. The `validate` attribute will pass back the same object.
+* This is only required if you need to listen for an event. The `validate` attribute will pass back the same object.
 
 ### Validation data
 

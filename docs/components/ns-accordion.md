@@ -51,16 +51,16 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Component Relationship
 
-| **Relationship**                          |                   |
-| :---------------------------------------- | :---------------- |
+| **Relationship**|  |
+| :---  | :--- |
 | **Does it live in a panel?**              | ✅ Yes            |
 | **Does it live inside other components?** | ❌ No             |
 | **What layout classes can be used?**      | `splash` `splosh` |
 
 ## Specification
 
-| Slots     | Type            |
-| --------- | --------------- |
+| Slots | Type |
+| :--- | :--- |
 | `heading` | `h tag`         |
 | Anonymous | `<ns-expander>` |
 
@@ -68,13 +68,13 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ### Heading
 
-- The heading is for the entire accordion.
-- Heading level should be h2 or h3 depending on if it is part of another heading.
+* The heading is for the entire accordion.
+* Heading level should be h2 or h3 depending on if it is part of another heading.
 
 ### Anonymous
 
-- Place ns-expanders into this slot.
-- Check the [ns-expander documentation](https://docs.britishgas.design/components/ns-expander) for more information.
+* Place ns-expanders into this slot.
+* Check the [ns-expander documentation](https://docs.britishgas.design/components/ns-expander) for more information.
 
 ## Feedback
 

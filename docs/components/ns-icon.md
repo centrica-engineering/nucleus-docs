@@ -47,7 +47,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 ## Specification
 
 | Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
+| :--- | :--- | :--- | :--- | :--- |
 | `size`    | `number`   | `''` | `''`, `1`, `2`, `3`, `4`, `5` | Changes the size of the icon, with 1 being the smallest. |
 | `type` | `string`            | `arrow` |`appliance`, `appliance-outline`, `appliance-solid`, `arrow`, `arrow-left`, `arrow-right`, `bill`, `bill-outline`, `bill-solid`, `boiler` , `boiler-outline`, `boiler-solid`, `chevron`, `chevron-down`, `chevron-left`, `chevron-right`, `chevron-up`, `cross`, `download`, `electricity`, `electricity-outline`, `electricity-solid`, `gas`, `gas-outline`, `gas-solid`, `hive`, `home`, `home-outline`,`home-solid`, `loading,meter`, `meter-outline`, `meter-solid`, `minus`, `plus`, `protect`, `protect-outline`, `protect-solid`, `rewards`, `rewards-outline`, `rewards-solid`, `settings`, `tick`, `warning ` See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance) | Picks the icon that is wanted to be shown. |
 
@@ -55,11 +55,11 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ### Type
 
-- Functional icons like 'arrow' only have one version while products and services like 'gas' have an outline and solid versions where solid is the default
+* Functional icons like 'arrow' only have one version while products and services like 'gas' have an outline and solid versions where solid is the default
 
 ### Size
 
-- If you pass an empty size the icon will fill the parent element
+* If you pass an empty size the icon will fill the parent element
 
 ## Feedback
 
@@ -74,4 +74,3 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 * [How to create icons guide](https://docs.britishgas.design/how-to/creating-icons).
 * Guiding Customers with our icons and the difference between icons and illustrations in Brand Guidelines.
 * If you wish to have us consider adding a new icon to the library please consult Brand Visual Identity managers.
-

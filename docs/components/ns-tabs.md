@@ -12,10 +12,10 @@ Related content can be separated into clearly labelled sections.
 
 ## Content guidance
 
-| Field type   | Guidelines          |
-|--------------|---------------------|
-| Tabs      |                     |
-| Panels    |                     |
+| Field type | Guidelines |
+| :--- | :--- |
+| Tabs |  |
+| Panels |  |
 
 ## Best practice
 
@@ -69,28 +69,28 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
+| Attribute | Type | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- |
 | `open` | `number`    | `0` |  | Number relates to the order of the tabs |
 
-| Slots   | Type           |
-| ------- | -------------- |
+| Slots | Type |
+| :--- | :--- |
 | `tab`   | `ns-tab tag`   |
 | `panel` | `ns-panel tag` |
 
-| Event       | Description                                   |
-| ----------- | --------------------------------------------- |
+| Event | Description |
+| :--- | :--- |
 | `tabchange` | Fires an event when the tab has been changed. |
 
 ## Specification notes
 
 ### Tab
 
-- Multiple tab slots should be added to add multiple tabs. There should be the same amount of tab slots as panel slots.
+* Multiple tab slots should be added to add multiple tabs. There should be the same amount of tab slots as panel slots.
 
 ### Panel
 
-- Multiple panel slots should be added to add multiple panels. There should be the same amount of panel slots as tab slots.
+* Multiple panel slots should be added to add multiple panels. There should be the same amount of panel slots as tab slots.
 
 ## Feedback
 
@@ -98,4 +98,3 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[NAME%20OF%20COMPONENT]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-

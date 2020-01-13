@@ -12,10 +12,10 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 
 ## Content guidance
 
-| Field type   | Guidelines          |
-|--------------|---------------------|
-| Heading      |                     |
-| Content      |                     |
+| Field type   | Guidelines |
+| :--- | :--- |
+| Heading |  |
+| Content |  |
 
 ## Best practises
 
@@ -50,14 +50,14 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `type`    | `string`            | `standard` | `skyline`, `standard` |  |
+| Attribute | Type | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `type` | `string` | `standard` | `skyline`, `standard` |  |
 | `open` | `string` | `false` | `true`, `false` |  |
 | `icon` | `string` |  | `info`, `warning`. See [`ns-icon` component](https://britishgas.design/components/ns-icon) | Only used for skyline type |
 
-| Slots     | Type         |
-| --------- | ------------ |
+| Slots | Type |
+| :--- | :--- |
 | `heading` | `h tag`      |
 | anonymous | html content |
 
@@ -65,15 +65,15 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ### Heading
 
-- This is the heading to the anonymous content.
+* This is the heading to the anonymous content.
 
 ### Open
 
-- Defines if the expander is in an open or closed state.
+* Defines if the expander is in an open or closed state.
 
 ### Anonymous
 
-- Place the content of what you want to be expanded (or hidden) in this slot.
+* Place the content of what you want to be expanded (or hidden) in this slot.
 
 ## Feedback
 

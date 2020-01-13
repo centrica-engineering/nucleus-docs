@@ -11,10 +11,10 @@ description: Molecule | Selector component.
 ## Content guidance
 
 | Field type | Guidelines |
-| ---------- | ---------- |
-| Label      |            |
-| Paragraph  |            |
-| Heading    |            |
+| :--- | :--- |
+| Label |  |
+| Paragraph |  |
+| Heading |  |
 
 ### Image guidance
 
@@ -91,17 +91,17 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `checked` | `string`            |           |           | Check the value. |
-| `decoration` | `string`            |           |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)| Illustration that is show in the section type card |
-| `image`      | `string`            |           |           | Optional image |
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `checked` | `string` |  |  | Check the value. |
+| `decoration` | `string` |  |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)| Illustration that is show in the section type card |
+| `image`      | `string` |  |  | Optional image |
 | `value` | `any`     |  |  | Value of selection |
 
-| Slots         | Type            |
-| ------------- | --------------- |
-| `description` | `div`           |
-| `anonymous`   | `input` `label` |
+| Slots | Type |
+| :--- | :--- |
+| `description` | `div` |
+| `anonymous` | `input` `label` |
 
 ## Feedback
 

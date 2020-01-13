@@ -13,12 +13,12 @@ Inputters are used to help people enter and select information. Inputters are no
 ## Content guidance
 
 | Field type  | Guidelines |
-| ----------- | ---------- |
-| Heading     |            |
-| Labels      |            |
-| Placeholder |            |
-| Helper      |            |
-| Tip         |            |
+| :--- | :--- |
+| Heading |  |
+| Labels |  |
+| Placeholder |  |
+| Helper |  |
+| Tip |  |
 
 ## Best practice
 
@@ -154,9 +154,9 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `value`   | `string`            | `''` |           | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an intial value |
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `value`   | `string` | `''` |  | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an intial value |
 | `validation` | `array` |  | `isRequired`, `isNumber`,  `isInteger`, `isPostcode`, `isFirstName`, `isLastName`, `isTitle`, `isEmail`, `isPhoneNumber`, `isMobileNumber`, `isDateOfBirth`, `minLength(x)`, `maxLength(x)` | A way to assist that valid values are added and to show an error message when they're not. |
 | `execute` | `boolean` | `false` | `true`, `false` |  |
 | `helper` | `string` |  |  | Adds a message between the label and the input. Used to convey a message to help the user to fill in the input |
@@ -165,59 +165,59 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | `mask` | `string` |  |  | Shows what can be entered. Similar to a placeholder, but stays when values are entered. |
 | `separator` | `string` |  |  | Allows the mask to manipulate the inputted value if it needs to be formatted in a certain way. |
 
-| Slots         | Type                     |
-| ------------- | ------------------------ |
-| `label`       | `label tag`              |
-| `tip-details` | `p tag`                  |
-| `anonymous`   | `label` `input` `select` |
+| Slots | Type |
+| :--- | :--- |
+| `label` | `label tag` |
+| `tip-details` | `p tag` |
+| `anonymous` | `label` `input` `select` |
 
-| Event       | Description                                                  |
-| ----------- | ------------------------------------------------------------ |
+| Event | Description |
+| :--- | :--- |
 | `change` | Will be dispatched when input changes |
 
 ## Specification notes
 
 ### Helper
 
-- A way to help the user understand why or why not enter information
+* A way to help the user understand why or why not enter information
 
 ### LabelID
 
-- Used if the label is outside of `ns-inputter`, such as a heading for the page. Always try to use a label or the heading first. Only use this if the element you are referring to and the label are the same.
+* Used if the label is outside of `ns-inputter`, such as a heading for the page. Always try to use a label or the heading first. Only use this if the element you are referring to and the label are the same.
 
 ### Mask
 
-- This will create a max length on the input to the length of the mask.
+* This will create a max length on the input to the length of the mask.
 
 ### Seperator
 
-- Requires a mask. Can only be one character.
+* Requires a mask. Can only be one character.
 
 ### Anonymous slot
 
-- For single type inputs (text, email, etc), there's no need to add id/for unless you need to on the `<label>` and `<input>`
-- Make sure to add id/for if it is a checkbox, select or radio input type.
-- Be careful when adding additional elements outside of input and label - these scenarios haven't been tested and may need a request for change raised.
+* For single type inputs (text, email, etc), there's no need to add id/for unless you need to on the `<label>` and `<input>`
+* Make sure to add id/for if it is a checkbox, select or radio input type.
+* Be careful when adding additional elements outside of input and label * these scenarios haven't been tested and may need a request for change raised.
 
 ### Label slot
 
-- To be used for single input types (text, email, etc).
+* To be used for single input types (text, email, etc).
 
 ### Tip-details slot
 
-- This requires helper property which is intially hidden and can be revealed by the user when they click on the helper text.
+* This requires helper property which is intially hidden and can be revealed by the user when they click on the helper text.
 
 ### Validation
 
-- It is possible to have multiple validations. For example: ["isRequired", "isNumber", "isInteger"]
+* It is possible to have multiple validations. For example: ["isRequired", "isNumber", "isInteger"]
 
 ### Advanced validation
 
-- Some of the validation options can be configured by passing in values within the parentheses:
+* Some of the validation options can be configured by passing in values within the parentheses:
 
-  - minLength(x) - Shows error if the input value is less than x chars.
+  * minLength(x) - Shows error if the input value is less than x chars.
 
-  - maxLength(x) - Shows error if the input value is greater than x chars.
+  * maxLength(x) - Shows error if the input value is greater than x chars.
 
 ## Feedback
 

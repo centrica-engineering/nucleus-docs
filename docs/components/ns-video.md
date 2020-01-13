@@ -43,9 +43,9 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `id`  | `string`            |  |  | Can be found in the YouTube video URL under `v`parameter |
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `id`  | `string` |  |  | Can be found in the YouTube video URL under `v`parameter |
 | `ratio` | `string` | `16x9` | `16x9`, `4x3`, `1x1` | Ratio of the video player |
 | `title` | `string` | `YouTube video` |  | The YouTube iframe title |
 
@@ -53,7 +53,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ### Title
 
-- This is required for accessibility. The title should be unique. If there are multiple videos on the page, they should all have different titles (even if they are the same video).
+* This is required for accessibility. The title should be unique. If there are multiple videos on the page, they should all have different titles (even if they are the same video).
 
 ## Feedback
 
@@ -65,4 +65,3 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 ## Related links
 
 * [https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--lockup-video-panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--lockup-video-panel).
-

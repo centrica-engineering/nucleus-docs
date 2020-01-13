@@ -12,11 +12,11 @@ Caveats link to content in the page, providing more information about legality a
 
 ## Content guidance
 
-| Field type   | Guidelines          |
-|--------------|---------------------|
-| Heading      |                     |
-| Paragraph    |                     |
-| CTA          |                     |
+| Field type | Guidelines |
+| :--- | :--- |
+| Heading      |  |
+| Paragraph    |  |
+| CTA          |  |
 
 ## Best practice
 
@@ -63,12 +63,12 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `type`    | `string`            | `standard` | `alert`, `standard` | Currently alert is in alpha |
+| Attribute    | Type | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `type`    | `string` | `standard` | `alert`, `standard` | Currently alert is in alpha |
 
 | Slots     | Type          |
-| --------- | ------------- |
+| :--- | :--- |
 | `heading` | `h tag`       |
 | Anonymous | `ol list tag` |
 
@@ -83,4 +83,3 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 * [ns-caveat component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-caveat--caveat).
 * [Homepage example in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-homepage--2019-01).
-

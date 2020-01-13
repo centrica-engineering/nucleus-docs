@@ -13,8 +13,8 @@ The tab is the button that can be clicked to change the content in the `ns-tabs`
 ## Content guidance
 
 | Field type | Guidelines |
-| ---------- | ---------- |
-| Text    |            |
+| :--- | :--- |
+| Text    |  |
 | Icon  |  |
 
 ## Best practice
@@ -49,17 +49,17 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `icon`    | `string`            |           | Please see the [documentation for ns-icon](https://britishgas.design/components/ns-icon) | Optional icon to add to the tab. |
-| `selected` | `boolean`     | `false` |`true`, `false`| Pre-selected tab |
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `icon`    | `string` |  | Please see the [documentation for ns-icon](https://britishgas.design/components/ns-icon) | Optional icon to add to the tab. |
+| `selected` | `boolean` | `false` |`true`, `false`| Pre-selected tab |
 
-| Event         | Description                         |
-| ------------- | ----------------------------------- |
+| Event | Description |
+| :--- | :--- |
 | `tabselected` | Sends a event when tab is selected. |
 
-| Slots       | Type       |
-| ----------- | ---------- |
+| Slots | Type |
+| :--- | :--- |
 | `anonymous` | `textNode` |
 
 ## Feedback
@@ -68,4 +68,3 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-tab]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-

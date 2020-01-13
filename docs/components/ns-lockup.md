@@ -79,30 +79,30 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 ## Specification
 
 | Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `type`    | `string`            | `lockbox` | `lockjaw`, `lockbox`, `locknut` | Different style variants. |
-| `reversed` | `boolean`     | `false` |`true`, `false`| Switches the order of the text and image. Default is text to the left. |
-| `ratio` | `string`            | `4x3` | `4:3`, `16:9`, `1:1` | Ratio for the image. |
-| `decoration` | `string`            |  | See [Decoration component](https://britishgas.design/components/ns-decoration) | Adds illustration between the text and image. |
+| :--- | :--- | :--- | :--- | :--- |
+| `type` | `string` | `lockbox` | `lockjaw`, `lockbox`, `locknut` | Different style variants. |
+| `reversed` | `boolean` | `false` |`true`, `false`| Switches the order of the text and image. Default is text to the left. |
+| `ratio` | `string` | `4x3` | `4:3`, `16:9`, `1:1` | Ratio for the image. |
+| `decoration` | `string` |  | See [Decoration component](https://britishgas.design/components/ns-decoration) | Adds illustration between the text and image. |
 
-| Slots       | Type                                 |
-| ----------- | ------------------------------------ |
-| `heading`   | `h2 tag`                             |
+| Slots | Type |
+| :--- | :--- |
+| `heading` | `h2 tag`                             |
 | `paragraph` | `<p>`, `<a>`, `<ul>`, `<ol>`, `<li>` |
-| `cta`       | `ns-cta`                             |
-| `image`     | `ns-image` `ns-video`                |
+| `cta` | `ns-cta` |
+| `image` | `ns-image` `ns-video` |
 
 ## Specification notes
 
 ### Heading
 
-- Should be a `h2` tag.
+* Should be a `h2` tag.
 
-- The sub-heading is part of the heading to allow screen readers to read the heading properly.
-- Sub heading is a `<span>` tag with a `h5` class.
-- Main heading is a `<span>` tag with a `h1` class.
-- `enlighten` class in the main heading `<span>` to make the heading light.
-  - Use `<b>` tag to embolden specific text.
+* The sub-heading is part of the heading to allow screen readers to read the heading properly.
+* Sub heading is a `<span>` tag with a `h5` class.
+* Main heading is a `<span>` tag with a `h1` class.
+* `enlighten` class in the main heading `<span>` to make the heading light.
+  * Use `<b>` tag to embolden specific text.
 
 ## Feedback
 

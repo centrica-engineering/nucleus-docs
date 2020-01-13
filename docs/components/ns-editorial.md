@@ -11,10 +11,10 @@ description: Organism |  Editorial component.
 ## Content guidance
 
 | Field type | Guidelines |
-| ---------- | ---------- |
-| Heading    |            |
-| Image      |            |
-| Content    |            |
+| :--- | :--- |
+| Heading    |  |
+| Image      |  |
+| Content    |  |
 
 ### Image guidance
 
@@ -86,9 +86,9 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `image`    | `string`            |  |                | Url of the image. |
+| Attribute    | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `image` | `string` |  |  | Url of the image. |
 | `reverse` | `boolean` | `false` | `true`,`false` | Switches the image and content position. Default is text on the left and image on the right. |
 
 | Slots       | Type          |
@@ -100,7 +100,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ### Heading
 
--  This should be a heading level 2.
+*  This should be a heading level 2.
 
 ## Feedback
 
@@ -108,5 +108,3 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-editorial])
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
-

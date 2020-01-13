@@ -169,38 +169,38 @@ To see examples of the Lakeside Landmark visit [Storybook](https://britishgas.co
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `type`    | `string`            | `summit` | `summit`, `hillside`, `lakeside` | The variant of the landmark. |
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `type` | `string` | `summit` | `summit`, `hillside`, `lakeside` | The variant of the landmark. |
 | `image` | `string` |  |  | Background image used summit variant. |
 | `gradient` | `string` | `invert-ramp-cyan` | `invert-ramp-cyan`, `invert-ramp-grey-light`, `invert-ramp-green-light`, `invert-ramp-yellow`, `invert-ramp-blue` | Background gradient and colour used for hillside variant. |
 
-| Slots       | Type              |
-| ----------- | ----------------- |
-| `heading`   | `h1 tag`          |
+| Slots | Type |
+| :--- | :--- |
+| `heading` | `h1 tag` |
 | `paragraph` | `p tag` `div tag` |
-| `cta`       | `ns-cta` `a tag`  |
+| `cta` | `ns-cta` `a tag`  |
 
 ## Specification notes
 
 ### Heading
 
-- This needs to be a `h1` heading
-- The sub-heading is part of the heading to allow screen readers to read the heading properly.
-- The sub-heading is part of the heading to allow screen readers to read the heading properly.
-- Sub heading is a `<span>` tag with a `h5` class.
-- Main heading is a `<span>` tag with a `h1` class.
-- `enlighten` class in the main heading `<span>` to make the heading light.
-  - Use `<b>` tag to embolden specific text.
+* This needs to be a `h1` heading
+* The sub-heading is part of the heading to allow screen readers to read the heading properly.
+* The sub-heading is part of the heading to allow screen readers to read the heading properly.
+* Sub heading is a `<span>` tag with a `h5` class.
+* Main heading is a `<span>` tag with a `h1` class.
+* `enlighten` class in the main heading `<span>` to make the heading light.
+  * Use `<b>` tag to embolden specific text.
 
 ### Paragraph
 
-- Include an optional link to `#caveat` by placing `<a href="#caveat">1</a>` at the end
+* Include an optional link to `#caveat` by placing `<a href="#caveat">1</a>` at the end
 
 ### Image
 
-- 16x9
-- 1440 x 810px
+* 16x9
+* 1440 x 810px
 
 ## Image template
 
@@ -239,5 +239,3 @@ Find it under 'Guides' in the Nucleus Sketch Library.
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-landmark]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
-

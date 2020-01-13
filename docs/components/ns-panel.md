@@ -46,34 +46,32 @@ To see examples visit [Storybook](https://library.britishgas.design).
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `decoration` | `string`            |  | `circle-yellow-left`, `circle-yellow-right`, `circle-green-left`, `circle-green-right`, `invert-concave-cyan`, `invert-concave-grey-light`, `invert-concave-green-light`, `invert-concave-yellow`, `invert-concave-blue`, `invert-bridge-cyan`, `invert-bridge-grey-light`, `invert-bridge-green-light`, `invert-bridge-yellow`, `invert-bridge-blue` | Decoration for the background, including the colour. |
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- |-------------|
+| `decoration` | `string` |  | `circle-yellow-left`, `circle-yellow-right`, `circle-green-left`, `circle-green-right`, `invert-concave-cyan`, `invert-concave-grey-light`, `invert-concave-green-light`, `invert-concave-yellow`, `invert-concave-blue`, `invert-bridge-cyan`, `invert-bridge-grey-light`, `invert-bridge-green-light`, `invert-bridge-yellow`, `invert-bridge-blue` | Decoration for the background, including the colour. |
 | `type` | `string` | `panel` | `panel`, `nav` | The variant of the panel. |
 
-| Slots       | Type               |
-| ----------- | ------------------ |
+| Slots | Type |
+| :--- | :--- |
 | `anonymous` | `div`, `ns-lockup` |
 
 ## Specification notes
 
-- `ns-panel` is **always** a child of the `<main>` element.
+* `ns-panel` is **always** a child of the `<main>` element.
 
 ### Decoration
 
-- Check the [gradient](https://docs.britishgas.design/foundation/gradients) palette.
+* Check the [gradient](https://docs.britishgas.design/foundation/gradients) palette.
 
 ### Anonymous
 
-- The first child is the layout child, which should always be a `div` except when adding a lockup component.
+* The first child is the layout child, which should always be a `div` except when adding a lockup component.
 
-- The layout classes are:
+* The layout classes are:
 
-  - `splash` - this should be used almost always.
-  - `splish ` - used for `<ns-card type="section">` .
-  - `splosh` 
-
-  
+  * `splash` - this should be used almost always.
+  * `splish ` - used for `<ns-card type="section">`.
+  * `splosh`.
 
 ## Feedback
 
@@ -81,4 +79,3 @@ To see examples visit [Storybook](https://library.britishgas.design).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-panel]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-

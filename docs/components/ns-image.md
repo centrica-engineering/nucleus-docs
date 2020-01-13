@@ -58,12 +58,12 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `src`     | `string`            |           |           | URL to the image. |
-| `alt` | `string`            |           || Give a text alternative for screen readers.                  |
-| `ratio` | `string`            | `16x9` | `16x9`, `4x3`, `1x1` | Ratio of the image.                                          |
-| `background` | `boolean`     | `false` | `true`, `false` | To make it CSS background image instead of an inline image tag. |
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `src` | `string`|  |  | URL to the image. |
+| `alt` | `string`|  |  | Give a text alternative for screen readers. |
+| `ratio` | `string` | `16x9` | `16x9`, `4x3`, `1x1` | Ratio of the image. |
+| `background` | `boolean` | `false` | `true`, `false` | To make it CSS background image instead of an inline image tag. |
 | `backgroundSize` | `string` | `cover` | `cover`, `contain` | To change the CSS size for a background image. |
 
 ## Specification notes

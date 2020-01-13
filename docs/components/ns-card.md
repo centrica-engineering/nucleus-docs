@@ -12,11 +12,11 @@ Cards are used to apply a container around a related grouping of information; th
 
 ## Content guidance
 
-| Field type   | Guidelines          |
-|--------------|---------------------|
-| Heading      |                     |
-| Paragraph    |                     |
-| CTA          |                     |
+| Field type | Guidelines |
+| :--- | :--- |
+| Heading      |  |
+| Paragraph    |  |
+| CTA          |  |
 
 ### Image guidance
 
@@ -72,36 +72,36 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `alt`        | `string`            |           |           | The alternative text for the image |
-| `decoration` | `string`            |           |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)| Illustration that is show in the section type card |
-| `image`      | `string`            |           |           | Adds an image above the card content for the support |
-| `type`       | `string`            | "section" | "section", "support", "flat" | Defines the role of the card and changing the style |
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `alt`        | `string` |           |           | The alternative text for the image |
+| `decoration` | `string` |           |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)| Illustration that is show in the section type card |
+| `image`      | `string` |           |           | Adds an image above the card content for the support |
+| `type`       | `string` | "section" | "section", "support", "flat" | Defines the role of the card and changing the style |
 
 | Slots        | Type                |
-|--------------|---------------------|
-| `heading`    | `h tag`             |
-| `paragraph`  | `p tag`             |
-| `cta`        | `ns-cta`            |
+| :--- | :--- |
+| `heading`    | `h tag` |
+| `paragraph`  | `p tag` |
+| `cta`        | `ns-cta` |
 
 ## Specification notes
 
 ### Decoration
 
-- Required if the type is section
+* Required if the type is section
 
 ### Image
 
-- Images are always at a ratio of 4x3
+* Images are always at a ratio of 4x3
 
 ### Heading
 
-- This should be a heading level 3
+* This should be a heading level 3
 
 ### CTA
 
-- This should be an anchor with the [ns-cta](https://docs.britishgas.design/components/ns-cta) or just the [ns-cta](https://docs.britishgas.design/components/ns-cta)
+* This should be an anchor with the [ns-cta](https://docs.britishgas.design/components/ns-cta) or just the [ns-cta](https://docs.britishgas.design/components/ns-cta)
 
 ## Feedback
 

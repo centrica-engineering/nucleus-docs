@@ -41,9 +41,9 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `type`    | `string`            | `gas` | `gas`, `bulb`, `boiler`, `protect`, `home`, `clock`, `oven`, `tap`, `appliance`[Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance) | Picks the illustration that is wanted to be shown. |
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `type`| `string`  | `gas` | `gas`, `bulb`, `boiler`, `protect`, `home`, `clock`, `oven`, `tap`, `appliance`[Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance) | Picks the illustration that is wanted to be shown. |
 | `size` | `number` | `''` | `''`, `1`, `2`, `3`, `4`, `5` | Changes the size of the illustration, with 1 being the smallest. |
 | `inactive` | `string` | `false` | `true`, `false` | Will grey out the illustration. |
 
@@ -51,11 +51,11 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ### Size
 
-- If you pass an empty size the icon will fill the parent element
+* If you pass an empty size the icon will fill the parent element
 
 ### Inactive
 
-- This is for decorative purporses only (does not work in IE11).
+* This is for decorative purporses only (does not work in IE11).
 
 ## Feedback
 
@@ -70,4 +70,3 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 * Exporting illustrations SVG in Sketch [https://github.com/ConnectedHomes/nucleus/issues/670](https://github.com/ConnectedHomes/nucleus/issues/670).
 * Creating an engaging experience through illustrations and the difference between icons and illustrations in [Brand Guidlines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/illustrations/creating-an-engaging-experience-through-illustration).
 * If you wish to have us consider adding a new illustrations to the library please consult Brand Visual Identity managers.
-

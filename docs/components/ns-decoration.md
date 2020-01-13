@@ -8,7 +8,7 @@ description: Atom | Decoration component.
 
 > Adds background decoration to components
 
-Holds the SVG decoration and masks that display the layout decoration for panels. 
+Holds the SVG decoration and masks that display the layout decoration for panels.
 
 >  If you are looking for decorations for pages using `ns-panel` check the [`ns-panel` documentation](https://britishgas.design/components/ns-panel).
 
@@ -40,16 +40,16 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-|--------------|---------------------|-----------|-----------|-------------|
-| `type`    | `string`            | `invert-concave` | `invert-concave`, `invert-convex`, `invert-ramp`, `invert-bridge`, `circle-yellow`, `circle-green` | Picks the type of svg. |
-| `position` | `string`            |           |`left`, `right`, `top`, `bottom`| Dictates the location of the decoration on the page. |
+| Attribute | Type | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `type` | `string` | `invert-concave` | `invert-concave`, `invert-convex`, `invert-ramp`, `invert-bridge`, `circle-yellow`, `circle-green` | Picks the type of svg. |
+| `position` | `string` |  |`left`, `right`, `top`, `bottom`| Dictates the location of the decoration on the page. |
 
 ## Specification notes
 
 ### Position
 
-- Used only for styling.
+* Used only for styling.
 
 ## Feedback
 
@@ -61,4 +61,3 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 ## Related links
 
 * [ns-panel](https://docs.britishgas.design/components/ns-panel).
-
