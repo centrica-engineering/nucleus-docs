@@ -1,5 +1,5 @@
 ---
-description: CTA component.
+description: Molecule | CTA component.
 ---
 
 # ns-cta
@@ -10,81 +10,12 @@ description: CTA component.
 
 We allow users to perform certain actions through the use of our call to actions (CTAs). It should always be clear to the user what the CTA's action is through text.
 
-## Usage
+## Content guidance
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-cta--direct-link).
-
-`ns-cta` should always live inside another component.
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-cta" caption="" %}
-
-```markup
-<ns-cta>Learn more about Hive</ns-cta>
-```
-
-## Component Relationship
-
-**Does it live in a panel?**  
-No
-
-**What layout classes can be used?**  
-None
-
-**Does it live inside other components?**  
-`ns-lockup`  
-`ns-landmark`  
-`ns-card`
-
-**Atomic type**  
-Molecule
-
-## Specification
-
-| **Name** | type |
-| :--- | :--- |
-| **Description** | The different variants of the CTA. |
-| **Type** | String |
-| **Default** | "direct" |
-| **Options** | direct, text |
-
-| **Name** | loading |
-| :--- | :--- |
-| **Description** | Changes the CTA to a loading state. |
-| **Type** | Boolean |
-| **Default** | false |
-| **Options** | n/a |
-| **Notes** | This relates to the `loadingMessage`, which replaces the copy of the CTA. |
-
-| **Name** | loadingMessage |
-| :--- | :--- |
-| **Description** | This is the message that gets shown when the CTA is in the loading state. |
-| **Type** | String |
-| **Default** | "Loading..." |
-| **Options** | n/a |
-| **Notes** | Requires `loading` to be true |
-
-| **Name** | icon |
-| :--- | :--- |
-| **Description** | This is a icon inside the CTA |
-| **Type** | String |
-| **Default** | "arrow-right" |
-| **Options** | arrow-left, arrow-right, download |
-| **Notes** | Icons are not descriptive, they are supplementary to the text. |
-
-| **Name** | href |
-| :--- | :--- |
-| **Description** | linking to another location |
-| **Type** | String |
-| **Default** | "" |
-| **Options** | n/a |
-| **Notes** | Can be used instead of a wrapper anchor |
-
-| **Name** | Anonymous slot |
-| :--- | :--- |
-| **Description** | The text inside the CTA |
-| **Type** | textNode |
-| **Default** | "" |
-| **Options** | n/a |
+| Field type   | Guidelines          |
+|--------------|---------------------|
+| Text    	   |                     |
+| Icon		     |                     |
 
 ## Best practice
 
@@ -103,6 +34,52 @@ Molecule
 * Try not to have multiple CTA's next to each other.
 * Don't overload the page with the same type of CTA or too many CTA's.
 * Loading message should be the action of the text of the CTA. E.g. "Get a quote" becomes "Getting your quote...".
+
+## Usage
+
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-cta--direct-link).
+
+`ns-cta` should always live inside another component.
+
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-cta" caption="" %}
+
+```markup
+<ns-cta>Learn more about Hive</ns-cta>
+```
+
+## Component Relationship
+
+| **Relationship**                          |                   |
+| :---------------------------------------- | :---------------- |
+| **Does it live in a panel?**              | ❌ No             |
+| **Does it live inside other components?** | ✅ Yes - `ns-lockup`, `ns-landmark`, `ns-card`      |
+| **What layout classes can be used?**      | None |
+
+
+## Specification
+
+| Attribute    | Type                | Default   | Options   | Description |
+|--------------|---------------------|-----------|-----------|-------------|
+| `type`    | `string`            | `direct` | `direct`, `text` | Different variants of the CTA. |
+| `href` | `string`            |           || Linking to another location. |
+| `icon`  | `string`            | `arrow-right` | `arrow-left`, `arrow-right`, `download` See [`ns-icon` component](https://britishgas.design/components/ns-icon) | The icon inside the CTA |
+| `loading` | `string`            | `false` | `true`, `false` | Change the state of the CTA for loading. |
+| `loadingMessage` | `string` | `Loading...` |  | Overwrites the CTA anonymous slot for the loading state. |
+
+| Slots        | Type                |
+|--------------|---------------------|
+| Anonymous    | textNode                |
+
+## Specification notes
+
+### Icons
+
+- Icons are not descriptive, they are supplementary to the text.
+
+### Href
+
+- Can be used instead of having a wrapper anchor
+- This shouldn't be used if `onClick` event is added.
 
 ## Feedback
 

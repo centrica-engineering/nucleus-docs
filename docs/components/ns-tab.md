@@ -1,5 +1,5 @@
 ---
-description: Tab component.
+description: Atom | Tab component.
 ---
 
 # ns-tab
@@ -9,6 +9,25 @@ description: Tab component.
 > The singular tab that dictates what the area is about.
 
 The tab is the button that can be clicked to change the content in the `ns-tabs`. It shows the user what content there is with a heading and an optional icon.
+
+## Content guidance
+
+| Field type | Guidelines |
+| ---------- | ---------- |
+| Text    |            |
+| Icon  |  |
+
+## Best practice
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Always add heading text | Add an icon to one tab and not to the other tabs |
+|  | Add more than 2 words to the heading |
+|  | Add different types of icons (solid, outline, functional) |
+
+### Considerations of best practice
+
+* Only use inside `ns-tabs` as a slot of `tab`.
 
 ## Usage
 
@@ -22,52 +41,26 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Component Relationship
 
-**Does it live in a panel?**  
-No
-
-**What layout classes can be used?**  
-None
-
-**Does it live inside other components?**  
-`ns-tabs`
-
-**Atomic type**  
-Atom
+|  **Relationship**  |  |
+| :--- | :--- |
+| **Does it live in a panel?** | ❌ No |
+| **Does it live inside other components?** | ✅ Yes - `ns-tabs` |
+| **What layout classes can be used?**  | None |
 
 ## Specification
 
-| **Name** | selected |
-| :--- | :--- |
-| **Description** | The state of the tab |
-| **Type** | Boolean |
-| **Default** | false |
-| **Options** | true, false |
+| Attribute    | Type                | Default   | Options   | Description |
+|--------------|---------------------|-----------|-----------|-------------|
+| `icon`    | `string`            |           | Please see the [documentation for ns-icon](https://britishgas.design/components/ns-icon) | Optional icon to add to the tab. |
+| `selected` | `boolean`     | `false` |`true`, `false`| Pre-selected tab |
 
-| **Name** | icon |
-| :--- | :--- |
-| **Description** | Optional decoration for the text |
-| **Type** | String |
-| **Default** | '' |
-| **Options** | Please see the documentation for ns-icon |
+| Event         | Description                         |
+| ------------- | ----------------------------------- |
+| `tabselected` | Sends a event when tab is selected. |
 
-| **Name** | Anonymous slot |
-| :--- | :--- |
-| **Description** | The heading text |
-| **Type** | TextNode |
-| **Default** | '' |
-| **Options** | n/a |
-
-## Best practice
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Always add heading text | Add an icon to one tab and not to the other tabs |
-|  | Add more than 2 words to the heading |
-|  | Add different types of icons (solid, outline, functional) |
-
-### Considerations of best practice
-
-* Only use inside `ns-tabs` as a slot of `tab`.
+| Slots       | Type       |
+| ----------- | ---------- |
+| `anonymous` | `textNode` |
 
 ## Feedback
 

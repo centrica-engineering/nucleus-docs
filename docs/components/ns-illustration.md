@@ -1,5 +1,5 @@
 ---
-description: Illustration component.
+description: Atom | Illustration component.
 ---
 
 # ns-illustration
@@ -9,6 +9,17 @@ description: Illustration component.
 > Illustrations are visual symbols used to bring the warmth of British Gas brand and personality to the website.
 
 Illustrations simplify products and services to users in a friendly manner. Illustrations always accompany content.
+
+## Best practice
+
+| 💚 Do's | 💔 Dont's |
+| :--- | :--- |
+| Use them to convey depth | Make the illustrations small |
+|  | Use on their own as the primary visual element |
+
+### Considerations of best practices
+
+* List of when to use which illustration (need to talk to Will about it).
 
 ## Usage
 
@@ -22,54 +33,29 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Component Relationship
 
-**Does it live in a panel?**  
-No
-
-**What layout classes can be used?**  
-None
-
-**Does it live inside other components?**  
-`ns-lockup`  
-`ns-card`
-
-**Atomic type**  
-Atom
+|  **Relationship**  |  |
+| :--- | :--- |
+| **Does it live in a panel?** | ❌ No |
+| **Does it live inside other components?** |  ✅ Yes -  `ns-lockup` `ns-card` |
+| **What layout classes can be used?**  | None |
 
 ## Specification
 
-| **Name** | Type |
-| :--- | :--- |
-| **Description** | The name of the illustration |
-| **Type** | string |
-| **Default** | gas |
-| **Options** | gas, bulb, boiler, protect, home, clock, oven, tap, appliance |
+| Attribute    | Type                | Default   | Options   | Description |
+|--------------|---------------------|-----------|-----------|-------------|
+| `type`    | `string`            | `gas` | `gas`, `bulb`, `boiler`, `protect`, `home`, `clock`, `oven`, `tap`, `appliance`[Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance) | Picks the illustration that is wanted to be shown. |
+| `size` | `number` | `''` | `''`, `1`, `2`, `3`, `4`, `5` | Changes the size of the illustration, with 1 being the smallest. |
+| `inactive` | `string` | `false` | `true`, `false` | Will grey out the illustration. |
 
-| **Name** | Size |
-| :--- | :--- |
-| **Description** | The size of the illustration |
-| **Type** | string |
-| **Default** | "" |
-| **Options** | "", 1, 2, 3, 4, 5 |
-| **Notes** | If you pass an empty size the illustration will fill the parent element |
+## Specification notes
 
-| **Name** | Inactive |
-| :--- | :--- |
-| **Description** | The incative/grey scale state of the illustration |
-| **Type** | boolean |
-| **Default** | false |
-| **Options** | true, false |
-| **Notes** | This is for decorative purporses only |
+### Size
 
-## Best practice
+- If you pass an empty size the icon will fill the parent element
 
-| 💚 Do's | 💔 Dont's |
-| :--- | :--- |
-| Use them to convey depth | Make the illustrations small |
-|  | Use on their own as the primary visual element |
+### Inactive
 
-### Considerations of best practices
-
-* List of when to use which illustration (need to talk to Will about it).
+- This is for decorative purporses only (does not work in IE11).
 
 ## Feedback
 

@@ -1,5 +1,5 @@
 ---
-description: A high level message component.
+description: Organism | Skyline component.
 ---
 
 # ns-skyline
@@ -14,42 +14,6 @@ They are either:
 
 * Informational - to show useful information that the user may want to be aware of, e.g. upcoming price changes.
 * Warning - to warn users of potential upcoming or current issues e.g. weather warning.
-
-## Usage
-
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-skyline--singular).
-
-```markup
-<ns-skyline>
-  <ns-expander icon="warning">
-    <h2 slot="heading">We are experiencing issues</h2>
-    <p>This is what we're doing to fix it and what you can do to <a href="#">help us</a></p>
-  </ns-expander>
-</ns-skyline>
-```
-
-## Component Relationship
-
-**Does it live in a panel?**  
-No
-
-**What layout classes can be used?**  
-None
-
-**Does it live inside other components?**  
-No
-
-**Atomic type**  
-Organism
-
-## Specification
-
-| **Name** | Anonymous slot |
-| :--- | :--- |
-| **Description** | The thing to be shown in the skyline |
-| **Type** | TextNode |
-| **Default** | '' |
-| **Options** | n/a |
 
 ## Best practice
 
@@ -67,6 +31,33 @@ Organism
 * Use sparingly for only the most important information.
 * Not be used as the primary entry point to information or actions users need on a regular basis.
 * Do not use for marketing information or up-sell.
+
+## Usage
+
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-skyline--singular).
+
+```markup
+<ns-skyline>
+  <ns-expander icon="warning">
+    <h2 slot="heading">We are experiencing issues</h2>
+    <p>This is what we're doing to fix it and what you can do to <a href="#">help us</a></p>
+  </ns-expander>
+</ns-skyline>
+```
+
+## Component Relationship
+
+|  **Relationship**  |  |
+| :--- | :--- |
+| **Does it live in a panel?** | ❌ No |
+| **Does it live inside other components?** |  ❌ No |
+| **What layout classes can be used?**  | None |
+
+## Specification
+
+| Slots     | Type          |
+| --------- | ------------- |
+| Anonymous | `ns-expander tag` |
 
 ## Feedback
 

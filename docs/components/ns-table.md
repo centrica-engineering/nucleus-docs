@@ -1,5 +1,5 @@
 ---
-description: A reusable table that can hold data with multiple rows and multiple columns.
+description: Atom | Table component.
 ---
 
 # ns-table
@@ -10,6 +10,26 @@ description: A reusable table that can hold data with multiple rows and multiple
 
 The table component consumes basic HTML table markup, which makes it accessible and responsive as well as styling it.
 
+## Best practice
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Add a `<caption>` to the `ns-table` | Use ns-table just for layout |
+| Use for displaying data in tables | Use for laying out components |
+| Use basic text, numbers | Use tables for anything but tabular data |
+| Include at least one column header or row header | |
+| Keep column and row headers short and concise | |
+| Structure them in a logical and expected way | |
+
+
+### Considerations of best practice
+
+* Not all tables necessarily need captions, but it's recommended you provide one.
+* Column header names should describe the type of content displayed in each column. Each row should contain data related to a single entity.
+* Think about the experience on a smaller screen size.
+* The `ns-table` component adds all the necessary Aria tags to the table to make it accessible for screen readers.
+* Keyboard controls are automatically added to the table to make it perform as a data grid.  You can select cells and use the arrow keys to navigate.
+* If your table has table headers <th> in the first column, the component will make these “sticky” so that the table data can be scrolled horizontally whilst the first column headers stay in place.
 
 ## Usage
 
@@ -30,17 +50,11 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Component Relationship
 
-**Does it live in a panel?**  
-No
-
-**What layout class can be used?**  
-N/A
-
-**Does it live inside other components?**  
-N/A
-
-**Atomic type**  
-Atom
+|  **Relationship**  |  |
+| :--- | :--- |
+| **Does it live in a panel?** | ✅ Yes |
+| **Does it live inside other components?** |  ✅ Yes |
+| **What layout classes can be used?**  | `splash` |
 
 ## Specification
 
@@ -105,27 +119,6 @@ If your table has row headers in the left-most column then place these headers i
   </tbody>
 </table>
 ```
-
-## Best practice
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Add a `<caption>` to the `ns-table` | Use ns-table just for layout |
-| Use for displaying data in tables | Use for laying out components |
-| Use basic text, numbers | Use tables for anything but tabular data |
-| Include at least one column header or row header | |
-| Keep column and row headers short and concise | |
-| Structure them in a logical and expected way | |
-
-
-### Considerations of best practice
-
-* Not all tables necessarily need captions, but it's recommended you provide one.
-* Column header names should describe the type of content displayed in each column. Each row should contain data related to a single entity.
-* Think about the experience on a smaller screen size.
-* The `ns-table` component adds all the necessary Aria tags to the table to make it accessible for screen readers.
-* Keyboard controls are automatically added to the table to make it perform as a data grid.  You can select cells and use the arrow keys to navigate.
-* If your table has table headers <th> in the first column, the component will make these “sticky” so that the table data can be scrolled horizontally whilst the first column headers stay in place.
 
 
 ## Feedback
