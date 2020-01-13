@@ -13,17 +13,17 @@ We use accordions to break down content into meaningful sections, helping to red
 ## Content guidance
 
 | Field type | Guidelines |
-| ---------- | ---------- |
-| Heading    |            |
+| :---  | :---  |
+| Heading |  |
 
 ## Best practises
 
-| 💚 Do                                         | 💔 Don't                                                      |
-| :------------------------------------------- | :----------------------------------------------------------- |
-| Use for FAQs                                 | Use a background with an accordion as the expanded state is white |
-| Use to split up related content              | Use more than 8 expanders                                    |
-| Make sure section headings relate to content | Use for critical information (such as caveats)               |
-|                                              | Use as a solution to excessive copy on a page                |
+| 💚 Do | 💔 Don't |
+| :---  | :---  |
+| Use for FAQs | Use a background with an accordion as the expanded state is white |
+| Use to split up related content | Use more than 8 expanders |
+| Make sure section headings relate to content | Use for critical information (such as caveats) |
+|  | Use as a solution to excessive copy on a page |
 
 ### Considerations of best practises
 
@@ -53,15 +53,15 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 | **Relationship**|  |
 | :---  | :--- |
-| **Does it live in a panel?**              | ✅ Yes            |
-| **Does it live inside other components?** | ❌ No             |
-| **What layout classes can be used?**      | `splash` `splosh` |
+| **Does it live in a panel?** | ✅ Yes |
+| **Does it live inside other components?** | ❌ No |
+| **What layout classes can be used?** | `splash` `splosh` |
 
 ## Specification
 
 | Slots | Type |
 | :--- | :--- |
-| `heading` | `h tag`         |
+| `heading` | `h tag` |
 | Anonymous | `<ns-expander>` |
 
 ## Specification notes
