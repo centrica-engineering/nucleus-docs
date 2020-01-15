@@ -1,5 +1,5 @@
 ---
-description: Inputter component.
+description: Molecule | Inputter component.
 ---
 
 # ns-inputter
@@ -10,121 +10,15 @@ Inputters are used to help people enter and select information. Inputters are no
 
 > A wrapper of native inputs to create a form. There are many types of inputs including text, radio button, checkbox and select.
 
-## Usage
+## Content guidance
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-inputter--text).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter" caption="" %}
-
-```markup
-<ns-inputter validation="['isRequired']" helper="So we can send you love letters">
-  <label slot="label">First name</label>
-  <input type="text">
-</ns-inputter>
-```
-
-## Component Relationship
-
-**Does it live in a panel?**  
-No
-
-**What layout classes can be used?**  
-None
-
-**Does it live inside other components?**  
-`ns-form`
-
-**Atomic type**  
-Molecule
-
-## Specification
-
-| **Name** | Value |
+| Field type  | Guidelines |
 | :--- | :--- |
-| **Description** | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an intial value |
-| **Type** | string |
-| **Default** | n/a |
-| **Options** |  |
-
-| **Name** | Validation |
-| :--- | :--- |
-| **Description** | A way to assist valid values are added and to show an error message when they're not. |
-| **Type** | array |
-| **Default** | n/a |
-| **Options** | isRequired, isNumber,  isInteger, isPostcode, isFirstName, isLastName, isTitle, isEmail, isPhoneNumber, isMobileNumber, isDateOfBirth, minLength(x), maxLength(x) |
-| **Notes** | It is possible to have multiple validations. For example: ["isRequired", "isNumber", "isInteger"] |
-
-### Advanced validation
-
-Some of the validation options can be configured by passing in values within the parentheses:
-
-minLength(x) - Shows error if the input value is less than x chars.
-
-maxLength(x) - Shows error if the input value is greater than x chars.
-
-| **Name** | Execute |
-| :--- | :--- |
-| **Description** | Executes the validation to check the input's validity |
-| **Type** | boolean |
-| **Default** | false |
-| **Options** | true, false |
-
-| **Name** | Helper |
-| :--- | :--- |
-| **Description** | A single line of text between the label and input |
-| **Type** | string |
-| **Default** | n/a |
-| **Options** | "" |
-| **Notes** | A way to help the user understand why or why not enter information |
-
-| **Name** | LabelID |
-| :--- | :--- |
-| **Description** | The ID of the element that you'd like as an alternative to the label |
-| **Type** | string |
-| **Default** | n/a |
-| **Options** | "" |
-| **Notes** | Always try to use a label or the heading. Only use this if the element and the label are the same. |
-
-| **Name** | Heading |
-| :--- | :--- |
-| **Description** | This is used instead of a label for grouped inputs such as radio and checkbox. |
-| **Type** | string |
-| **Default** | n/a |
-| **Options** | "" |
-| **Notes** | This will generate the `<label>`. Don't use for single `<input>` such as text. |
-
-| **Name** | Mask |
-| :--- | :--- |
-| **Description** | To hint at how content should be added, such as length or starting characters. |
-| **Type** | string |
-| **Default** | n/a |
-| **Options** | "" |
-| **Notes** | This will create a max length on the input to the length of the mask. |
-
-| **Name** | Separator |
-| :--- | :--- |
-| **Description** | Used to alter the inputted text to follow the pattern in the mask. |
-| **Type** | string |
-| **Default** | n/a |
-| **Options** | "" |
-| **Notes** | Requires a mask. Can only be one character. |
-
-
-| **Name** | Anonymous slot |
-| :--- | :--- |
-| **Description** | This is the place to add the `<label>` and `<input>` html elements |
-| **Type** | HTMLElement |
-| **Default** | n/a |
-| **Options** | "" |
-| **Notes** | There's no need to add id/for unless you need to on the `<label>` and `<input>` |
-
-| **Name** | Named slot `tip-details` |
-| :--- | :--- |
-| **Description** | Additional information that corresponds to the helper |
-| **Type** | HTMLElement |
-| **Default** | n/a |
-| **Options** | "" |
-| **Notes** | This requires helper property which is intially hidden and can be revealed by the user when they click on the helper text |
+| Heading |  |
+| Labels |  |
+| Placeholder |  |
+| Helper |  |
+| Tip |  |
 
 ## Best practice
 
@@ -236,6 +130,94 @@ maxLength(x) - Shows error if the input value is greater than x chars.
 * If you are asking for first and last name within a text input, spell check should be disabled.
 * Refer to the text input auto complete definitions.
 * Always try and have a default selected radio button unless... .
+
+## Usage
+
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-inputter--text).
+
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter" caption="" %}
+
+```markup
+<ns-inputter validation="['isRequired']" helper="So we can send you love letters">
+  <label slot="label">First name</label>
+  <input type="text">
+</ns-inputter>
+```
+
+## Component Relationship
+
+|  **Relationship**  |  |
+| :--- | :--- |
+| **Does it live in a panel?** | ❌ No |
+| **Does it live inside other components?** |  ✅ Yes -  `ns-form` |
+| **What layout classes can be used?**  | None |
+
+## Specification
+
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `value`   | `string` | `''` |  | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an intial value |
+| `validation` | `array` |  | `isRequired`, `isNumber`,  `isInteger`, `isPostcode`, `isFirstName`, `isLastName`, `isTitle`, `isEmail`, `isPhoneNumber`, `isMobileNumber`, `isDateOfBirth`, `minLength(x)`, `maxLength(x)` | A way to assist that valid values are added and to show an error message when they're not. |
+| `execute` | `boolean` | `false` | `true`, `false` |  |
+| `helper` | `string` |  |  | Adds a message between the label and the input. Used to convey a message to help the user to fill in the input |
+| `labelID` | `string` |  |  | Used if the label isn't part of the inputter |
+| `heading` | `string` |  |  | Used for checkboxes and radio buttons instead of a label |
+| `mask` | `string` |  |  | Shows what can be entered. Similar to a placeholder, but stays when values are entered. |
+| `separator` | `string` |  |  | Allows the mask to manipulate the inputted value if it needs to be formatted in a certain way. |
+
+| Slots | Type |
+| :--- | :--- |
+| `label` | `label tag` |
+| `tip-details` | `p tag` |
+| `anonymous` | `label` `input` `select` |
+
+| Event | Description |
+| :--- | :--- |
+| `change` | Will be dispatched when input changes |
+
+## Specification notes
+
+### Helper
+
+* A way to help the user understand why or why not enter information
+
+### LabelID
+
+* Used if the label is outside of `ns-inputter`, such as a heading for the page. Always try to use a label or the heading first. Only use this if the element you are referring to and the label are the same.
+
+### Mask
+
+* This will create a max length on the input to the length of the mask.
+
+### Seperator
+
+* Requires a mask. Can only be one character.
+
+### Anonymous slot
+
+* For single type inputs (text, email, etc), there's no need to add id/for unless you need to on the `<label>` and `<input>`
+* Make sure to add id/for if it is a checkbox, select or radio input type.
+* Be careful when adding additional elements outside of input and label * these scenarios haven't been tested and may need a request for change raised.
+
+### Label slot
+
+* To be used for single input types (text, email, etc).
+
+### Tip-details slot
+
+* This requires helper property which is intially hidden and can be revealed by the user when they click on the helper text.
+
+### Validation
+
+* It is possible to have multiple validations. For example: ["isRequired", "isNumber", "isInteger"]
+
+### Advanced validation
+
+* Some of the validation options can be configured by passing in values within the parentheses:
+
+  * minLength(x) - Shows error if the input value is less than x chars.
+
+  * maxLength(x) - Shows error if the input value is greater than x chars.
 
 ## Feedback
 

@@ -1,5 +1,5 @@
 ---
-description: Accordion component.
+description: Organism | Accordion component.
 ---
 
 # ns-accordion
@@ -9,6 +9,26 @@ description: Accordion component.
 > Accordion enables users to expand and collapse multiple sections of content.
 
 We use accordions to break down content into meaningful sections, helping to reduce information overload. Accordions are useful for things like frequently asked questions or displaying multiple blocks of related content such as tariffs.
+
+## Content guidance
+
+| Field type | Guidelines |
+| :---  | :---  |
+| Heading |  |
+
+## Best practises
+
+| 💚 Do | 💔 Don't |
+| :---  | :---  |
+| Use for FAQs | Use a background with an accordion as the expanded state is white |
+| Use to split up related content | Use more than 8 expanders |
+| Make sure section headings relate to content | Use for critical information (such as caveats) |
+|  | Use as a solution to excessive copy on a page |
+
+### Considerations of best practises
+
+Accordions should be used for FAQs or splitting related content into sections.  They should not be used for showing critical information such as caveats. We highly recommend that there are no more than eight content headings in a multiple accordion.
+If more than eight are used we should stop to reassess why and perhaps breakdown the content even more.
 
 ## Usage
 
@@ -31,47 +51,30 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Component Relationship
 
-**Does it live in a panel?**  
-Yes
-
-**What layout classes can be used?**  
-`splash`  
-`splosh`
-
-**Does it live inside other components?**  
-No
-
-**Atomic type**  
-Atom
+| **Relationship**|  |
+| :---  | :--- |
+| **Does it live in a panel?** | ✅ Yes |
+| **Does it live inside other components?** | ❌ No |
+| **What layout classes can be used?** | `splash` `splosh` |
 
 ## Specification
 
-| **Name** | Named slot `heading` |
+| Slots | Type |
 | :--- | :--- |
-| **Description** | The heading for the entire accordion |
-| **Type** | String |
-| **Default** | n/a |
-| **Options** | n/a |
+| `heading` | `h tag` |
+| Anonymous | `<ns-expander>` |
 
-| **Name** | Anonymous slot |
-| :--- | :--- |
-| **Description** | Place ns-expanders into this slot (see components/ns-expander) |
-| **Type** | ns-expander |
-| **Default** | n/a |
-| **Options** | n/a |
+## Specification notes
 
-## Best practises
+### Heading
 
-| 💚 Do | 💔 Don't |
-| :--- | :--- |
-| Use for FAQs | Use a background with an accordion as the expanded state is white|
-| Use to split up related content | Use more than 8 expanders |
-| Make sure section headings relate to content | Use for critical information (such as caveats) |
-| | Use as a solution to excessive copy on a page |
+* The heading is for the entire accordion.
+* Heading level should be h2 or h3 depending on if it is part of another heading.
 
-### Considerations of best practises
-Accordions should be used for FAQs or splitting related content into sections.  They should not be used for showing critical information such as caveats. We highly recommend that there are no more than eight content headings in a multiple accordion.
-If more than eight are used we should stop to reassess why and perhaps breakdown the content even more.
+### Anonymous
+
+* Place ns-expanders into this slot.
+* Check the [ns-expander documentation](https://docs.britishgas.design/components/ns-expander) for more information.
 
 ## Feedback
 

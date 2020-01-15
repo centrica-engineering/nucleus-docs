@@ -1,5 +1,5 @@
 ---
-description: Card component.
+description: Molecule | Card component.
 ---
 
 # ns-card
@@ -10,94 +10,19 @@ description: Card component.
 
 Cards are used to apply a container around a related grouping of information; this can be done through imagery, illustrations and typography.
 
-## Usage
+## Content guidance
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-card--section).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-card" caption="" %}
-
-```markup
-<ns-card type="section" decoration="bulb">
-  <h2 slot="heading">Get energy with us</h2>
-  <p slot="paragraph">We've got a tariff to suit every home and family.</p>
-  <a slot="cta" href="#!">
-    <ns-cta type="direct">Get a quote</ns-cta>
-  </a>
-</ns-card>
-```
-
-## Component Relationship
-
-**Does it live in a panel?**  
-Yes
-
-**What layout classes can be used?**  
-`.splash` `.triple`  
-`.splish` `.triple`
-
-**Does it live inside other components?**  
-`ns-caveat`  
-`ns-landmark`  
-`ns-tabs`
-
-**Atomic type**  
-Molecule
-
-## Specification
-
-| **Name** | type |
+| Field type | Guidelines |
 | :--- | :--- |
-| **Description** | Defines the role of the card and changing the style |
-| **Type** | String |
-| **Default** | section |
-| **Options** | section, support, flat |
+| Heading      |  |
+| Paragraph    |  |
+| CTA          |  |
 
-| **Name** | decoration |
-| :--- | :--- |
-| **Description** | Illustration that is show in the section type card |
-| **Type** | String |
-| **Default** | '' |
-| **Options** | See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance) |
-| **Notes** | Required if the type is section |
+### Image guidance
 
-| **Name** | image |
-| :--- | :--- |
-| **Description** | Adds an image above the card content for the support card |
-| **Type** | String |
-| **Default** | '' |
-| **Options** | n/a |
-| **Notes** | Images is always at a ratio of 4x3 |
-
-| **Name** | alt |
-| :--- | :--- |
-| **Description** | The alternative text for the image |
-| **Type** | String |
-| **Default** | '' |
-| **Options** | n/a |
-
-| **Name** | Named slot: heading |
-| :--- | :--- |
-| **Description** | Heading title text |
-| **Type** | HTMLElement |
-| **Default** | '' |
-| **Options** | n/a |
-| **Notes** | This should be a heading 3 |
-
-| **Name** | Named slot: paragraph |
-| :--- | :--- |
-| **Description** | Paragraph content for the card |
-| **Type** | HTMLElement |
-| **Default** | '' |
-| **Options** | n/a |
-| **Notes** | This should be a paragraph tag |
-
-| **Name** | Named slot: cta |
-| :--- | :--- |
-| **Description** | Action for the card |
-| **Type** | HTMLElement |
-| **Default** | '' |
-| **Options** | n/a |
-| **Notes** | This should be an anchor with the [ns-cta](https://docs.britishgas.design/components/ns-cta) or just the [ns-cta](https://docs.britishgas.design/components/ns-cta) |
+| Component | Variant | Ratio | Dimensions | Size | Type | Placeholder |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `ns-card`| `support` | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-card-support-640x360px](https://user-images.githubusercontent.com/50207859/67642149-d3c91e00-f900-11e9-983c-9b812217b801.jpg) |
 
 ## Best practice
 
@@ -120,13 +45,63 @@ Molecule
 * Be careful when using decoration in the panel with the section cards as the blue on blue with the CTA's will make them not accessible.
 * There should always be a heading to the group of cards inside the panel.
 
-## Content guidance
+## Usage
 
-### Image guidance
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-card--section).
 
-| Component | Variant | Ratio | Dimensions | Size | Type | Placeholder
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-card`| `support` | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-card-support-640x360px](https://user-images.githubusercontent.com/50207859/67642149-d3c91e00-f900-11e9-983c-9b812217b801.jpg)
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-card" caption="" %}
+
+```markup
+<ns-card type="section" decoration="bulb">
+  <h2 slot="heading">Get energy with us</h2>
+  <p slot="paragraph">We've got a tariff to suit every home and family.</p>
+  <a slot="cta" href="#!">
+    <ns-cta type="direct">Get a quote</ns-cta>
+  </a>
+</ns-card>
+```
+
+
+## Component Relationship
+
+|  **Relationship**  |  |
+| :--- | :--- |
+| **Does it live in a panel?** | ✅ Yes |
+| **Does it live inside other components?** |  ✅ Yes -  `ns-caveat` `ns-landmark` `ns-tabs` |
+| **What layout classes can be used?**  | `splash` `splash triple`  `splish` `splish triple` |
+
+## Specification
+
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `alt`        | `string` |           |           | The alternative text for the image |
+| `decoration` | `string` |           |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)| Illustration that is show in the section type card |
+| `image`      | `string` |           |           | Adds an image above the card content for the support |
+| `type`       | `string` | "section" | "section", "support", "flat" | Defines the role of the card and changing the style |
+
+| Slots        | Type                |
+| :--- | :--- |
+| `heading`    | `h tag` |
+| `paragraph`  | `p tag` |
+| `cta`        | `ns-cta` |
+
+## Specification notes
+
+### Decoration
+
+* Required if the type is section
+
+### Image
+
+* Images are always at a ratio of 4x3
+
+### Heading
+
+* This should be a heading level 3
+
+### CTA
+
+* This should be an anchor with the [ns-cta](https://docs.britishgas.design/components/ns-cta) or just the [ns-cta](https://docs.britishgas.design/components/ns-cta)
 
 ## Feedback
 
@@ -139,5 +114,3 @@ Molecule
 
 * [ns-card section panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--section-cards).
 * [ns-card support panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--support-image-cards).
-
-
