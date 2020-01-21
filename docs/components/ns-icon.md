@@ -40,7 +40,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 |  **Relationship**  |  |
 | :--- | :--- |
-| **Does it live in a panel?** | ✅ No |
+| **Does it live in a panel?** | ❌ No |
 | **Does it live inside other components?** |  ✅ Yes -  `ns-cta` `ns-expander` `ns-inputter` `ns-tab` `ns-expander` |
 | **What layout classes can be used?**  | None |
 

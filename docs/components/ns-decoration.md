@@ -10,7 +10,7 @@ description: Atom | Decoration component.
 
 Holds the SVG decoration and masks that display the layout decoration for panels.
 
->  If you are looking for decorations for pages using `ns-panel` check the [`ns-panel` documentation](https://britishgas.design/components/ns-panel).
+>  NOTE: If you are looking for decorations for pages using `ns-panel` check the [`ns-panel` documentation](https://britishgas.design/components/ns-panel).
 
 ## Best practice
 
