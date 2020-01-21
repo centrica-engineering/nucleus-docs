@@ -52,8 +52,8 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 | Attribute | Type | Default   | Options   | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `type` | `string` | `standard` | `skyline`, `standard` |  |
-| `open` | `string` | `false` | `true`, `false` |  |
+| `type` | `string` | `standard` | `skyline`, `standard` | Variants for the expander. |
+| `open` | `string` | `false` | `true`, `false` | If true will open the expander to show the content. |
 | `icon` | `string` |  | `info`, `warning`. See [`ns-icon` component](https://britishgas.design/components/ns-icon) | Only used for skyline type |
 
 | Slots | Type |

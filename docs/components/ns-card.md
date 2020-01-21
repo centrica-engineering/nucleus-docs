@@ -33,8 +33,7 @@ Cards are used to apply a container around a related grouping of information; th
 | Embolden text in the paragrah that is important | Have two or more cta's for a card |
 | Make your CTA copy unique, stating the action | Repeat the CTA copy in each card |
 | Use section cards to navigate users to primary actions | Use inline links in the paragraph |
-| Consider using decoration in the panel to add emphasis on the cards |  |
-|  | Use the section card without a decoration |
+| Consider using decoration in the panel to add emphasis on the cards | Use the section card without a decoration |
 
 ### Considerations of best practice
 
