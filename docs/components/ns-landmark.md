@@ -178,9 +178,9 @@ To see examples of the Lakeside Landmark visit [Storybook](https://britishgas.co
 
 | Slots | Type |
 | :--- | :--- |
-| `heading` | `h1 tag` |
-| `paragraph` | `p tag` `div tag` |
-| `cta` | `ns-cta` `a tag`  |
+| `heading` | `<h1>` |
+| `paragraph` | `<p>` `<div>` |
+| `cta` | `ns-cta` `<a>`  |
 
 ## Specification notes
 
