@@ -63,7 +63,7 @@ markup
 
 ### Logo
 
-* Only change if the footer will be used in a non British Gas journey, for example a partnership with Bord Gais.
+* Only change if the header will be used in a non British Gas journey, for example a partnership with Bord Gais.
 * Remember to give a new `alt` value.
 
 ### Alt
