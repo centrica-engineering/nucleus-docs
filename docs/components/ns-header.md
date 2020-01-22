@@ -12,6 +12,8 @@ The header provides the primary navigation for the website, whilst also being ou
 
 > NOTE: This is the UI component for the header - if you are looking for the header with the navigational content please use `nsx-header`.
 
+The default choice of header across the main British Gas UK home site should be the nsx-header. 
+
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
@@ -61,7 +63,7 @@ markup
 
 ### Logo
 
-* Only change if not going to be the British Gas brand.
+* Only change if the footer will be used in a non British Gas journey, for example a partnership with Bord Gais.
 * Remember to give a new `alt` value.
 
 ### Alt
