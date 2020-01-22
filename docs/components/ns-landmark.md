@@ -18,12 +18,11 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | sub-heading | Sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
-| B | main-heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
-| C | content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | cta-text | Keep the text ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
-|   | cta-link | This is the URL that the user will be taken too when they tap or click the CTA. |
-| E | image-path | This is the image that will be used inside `ns-landmark`. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. |
+| A | Sub heading | Sub headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
+| B | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| C | Content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| D | CTA text | Keep the text ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
+| E | Image path | This is the image that will be used inside `ns-landmark`. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. |
 
 ### Hillside Landmark
 
@@ -33,10 +32,10 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | sub-heading | Sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. **Note:** Guide pages (non-product pages produced with strong SEO focus) a sub-heading is not required. |
-| B | main-heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
-| C | content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | decoration | Apply a colourful gradient decoration to the landmark. [The specification table](#specification) has a list of options. |
+| A | Sub heading | Sub headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. **Note:** Guide pages (non-product pages produced with strong SEO focus) a Sub heading is not required. |
+| B | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| C | Content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| D | Decoration | Apply a colourful gradient decoration to the landmark. [The specification table](#specification) has a list of options. |
 
 ### Lakeside Landmark
 
@@ -44,11 +43,10 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | sub-heading | Sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
-| B | main-heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
-| C | content | Lakeside can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a minimum of 1 and a maximum of 3. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | cta-text | Keep the text ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
-|   | cta-link | This is the URL that the user will be taken too when they tap or click |
+| A | Sub heading | Sub headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
+| B | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| C | Content | Lakeside can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a minimum of 1 and a maximum of 3. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| D | CTA text | Keep the text ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
 
 ### Image guidance
 
@@ -94,14 +92,14 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | ![do-use-more-than-one-paragraph](https://user-images.githubusercontent.com/28779/70374602-3512e280-18ec-11ea-9222-0a67806898bc.png) | ![dont-use-more-than-three-paragraphs](https://user-images.githubusercontent.com/28779/70374611-465bef00-18ec-11ea-8ac6-0aa2cecab292.png) |
 | Display 400 and 500 error pages. | Even think about building a page with it. |
 | ![display-400-and-500-error-pages](https://user-images.githubusercontent.com/28779/70374582-f9781880-18eb-11ea-9fde-b45f70e5c28b.png) | ![dont-even-this-about-building-a-page-with-it](https://user-images.githubusercontent.com/28779/70374723-d3ec0e80-18ed-11ea-8d71-9328de25089a.png) |
-| Get to the point, in this scenario the sub-heading and CTA have been omitted. |  |
+| Get to the point, in this scenario the Sub heading and CTA have been omitted. |  |
 | ![do-get-to-the-point](https://user-images.githubusercontent.com/28779/70374643-88853080-18ec-11ea-8c03-94ef23815720.png) |  |
 
 
 ### Considerations of best practice
 
 * Shorter and simpler words tend to work better in the heading.
-* The recommended copy length is between 1 and 5 words for the sub-heading.
+* The recommended copy length is between 1 and 5 words for the Sub heading.
 * The message must be in plain English, and help the user out of the situation by providing an actionable link if possible.
 * If the purpose of the page is to understand more about a product or service, then it is considered bad practice to include a CTA within the landmark, as users are likely to drop out. This is because users believe the next step is to click the CTA, rather than reading the page to get a better understanding of how they should proceed.
 * Let the page type define the type of landmark you use.
@@ -189,8 +187,8 @@ To see examples of the Lakeside Landmark visit [Storybook](https://britishgas.co
 ### Heading
 
 * This needs to be a `h1` heading
-* The sub-heading is part of the heading to allow screen readers to read the heading properly.
-* The sub-heading is part of the heading to allow screen readers to read the heading properly.
+* The Sub heading is part of the heading to allow screen readers to read the heading properly.
+* The Sub heading is part of the heading to allow screen readers to read the heading properly.
 * Sub heading is a `<span>` tag with a `h5` class.
 * Main heading is a `<span>` tag with a `h1` class.
 * `enlighten` class in the main heading `<span>` to make the heading light.
