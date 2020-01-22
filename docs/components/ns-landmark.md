@@ -14,7 +14,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Summit Landmark
 
-![Landmark - Summit](https://user-images.githubusercontent.com/28779/72883329-06b26080-3cfc-11ea-962c-6bb2d74694e7.png)
+![Landmark - Summit](https://user-images.githubusercontent.com/45626534/72897291-8995e400-3d19-11ea-8ba1-88aa418581c9.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -26,7 +26,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Hillside Landmark
 
-![Landmark - Hillside](https://user-images.githubusercontent.com/28779/72883333-06b26080-3cfc-11ea-973b-caca877c5a91.png)
+![Landmark - Hillside](https://user-images.githubusercontent.com/45626534/72897289-88fd4d80-3d19-11ea-8647-f83eeac414b3.png)
 
 > NOTE: There is no CTA in the hillside landmark as the objective is to consume the content within the page.
 
@@ -39,7 +39,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Lakeside Landmark
 
-![Landmark - Lakeside](https://user-images.githubusercontent.com/28779/72883331-06b26080-3cfc-11ea-9e73-23473d45fa92.png)
+![Landmark - Lakeside](https://user-images.githubusercontent.com/45626534/72897290-88fd4d80-3d19-11ea-9db6-857280dcb172.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
