@@ -29,7 +29,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ![Landmark - Hillside](https://user-images.githubusercontent.com/28779/72883333-06b26080-3cfc-11ea-973b-caca877c5a91.png)
 
-> There is no CTA in the hillside landmark as the objective is to consume the content within the page.
+> NOTE: There is no CTA in the hillside landmark as the objective is to consume the content within the page.
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
