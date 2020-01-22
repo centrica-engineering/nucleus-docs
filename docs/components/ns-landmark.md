@@ -14,38 +14,41 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Summit Landmark
 
-![image](https://user-images.githubusercontent.com/28779/59835657-fd19e200-9341-11e9-8731-0985fd5de8c0.png)
+![Landmark - Summit](https://user-images.githubusercontent.com/28779/72883329-06b26080-3cfc-11ea-962c-6bb2d74694e7.png)
 
-| Field type | Guidelines |
-| :--- | :--- |
-| sub-heading | Sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
-| heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
-| paragraph | A single, short paragraph works best. |
-| caveat | Should be placed at the end of the paragraph if necessary. |
-| cta-text | Keep them ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
-| cta-link | This is the URL that the user will be taken too when they tap or click the CTA. |
-| image-path | This is the image that will be used inside `ns-landmark`. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. |
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | sub-heading | Sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
+| B | main-heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| C | content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| D | cta-text | Keep the text ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
+|   | cta-link | This is the URL that the user will be taken too when they tap or click the CTA. |
+| E | image-path | This is the image that will be used inside `ns-landmark`. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. |
 
 ### Hillside Landmark
 
-| Field type | Guidelines |
-| :--- | :--- |
-| sub-heading | Sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
-|  | **Note:** Guide pages (non-product pages produced with strong SEO focus in mind) a sub-heading is not required. |
-| heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
-| paragraph | A single, short paragraph works best. |
-| caveat | Should be placed at the end of the paragraph if necessary. |
+![Landmark - Hillside](https://user-images.githubusercontent.com/28779/72883333-06b26080-3cfc-11ea-973b-caca877c5a91.png)
+
+> There is no CTA in the hillside landmark as the objective is to consume the content within the page.
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | sub-heading | Sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. **Note:** Guide pages (non-product pages produced with strong SEO focus) a sub-heading is not required. |
+| B | main-heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| C | content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| D | decoration | Apply a colourful gradient decoration to the landmark. [The specification table](#specification) has a list of options. |
 
 ### Lakeside Landmark
 
-| Field type | Guidelines |
-| :--- | :--- |
-| sub-heading | Sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
-| heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
-| paragraph | Lakeside can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a minimum of 1 and a maximum of 3. |
-| caveat | Should be placed at the end of the paragraph if necessary. |
-| cta-text | Keep it ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
-| cta-link | This is the URL that the user will be taken too when they tap or click the CTA. |
+![Landmark - Lakeside](https://user-images.githubusercontent.com/28779/72883331-06b26080-3cfc-11ea-9e73-23473d45fa92.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | sub-heading | Sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. |
+| B | main-heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| C | content | Lakeside can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a minimum of 1 and a maximum of 3. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| D | cta-text | Keep the text ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
+|   | cta-link | This is the URL that the user will be taken too when they tap or click |
 
 ### Image guidance
 
