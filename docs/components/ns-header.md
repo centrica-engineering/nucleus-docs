@@ -26,6 +26,8 @@ The default choice of header across the main British Gas UK home site should be 
 ### Considerations of best practice
 
 * There needs to be a very good reason to use this component instead of `nsx-header`.
+* If changing the logo - use an SVG. Make sure that the SVG has been compressed.
+* Logo can only have a max height of `62px` i.e. the British Gas logo is 160px x 62px
 
 ## Usage
 
@@ -65,6 +67,8 @@ markup
 
 * Only change if the header will be used in a non British Gas journey, for example a partnership with Bord Gais.
 * Remember to give a new `alt` value.
+* Logo can only have a max height of `62px` i.e. the British Gas logo is 160px x 62px.
+* Hosting of the logo should be within our own systems not pointing to an outside resource.
 
 ### Alt
 
