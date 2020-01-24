@@ -8,7 +8,7 @@ description: Organism | Footer component.
 
 > Required links and information that need to be repeated on every page.
 
-> NOTE: This is the UI component for the footer - if you are looking for the footer with the correct links please use `nsx-footer`.
+> NOTE: This is the UI component for producing a customised footer. If you are looking for the default British Gas footer which contains the links please use `nsx-footer`.
 
 The last component on the page, this holds links and copyright notices that are legally required.
 It also holds information about the company.
