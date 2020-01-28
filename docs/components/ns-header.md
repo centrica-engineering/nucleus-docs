@@ -12,7 +12,7 @@ The header provides the primary navigation for the website, whilst also being ou
 
 > NOTE: This is the UI component for the header - if you are looking for the header with the navigational content please use `nsx-header`.
 
-The default choice of header across the main British Gas UK home site should be the nsx-header. 
+The default choice of header across the main British Gas UK home site should be the nsx-header.
 
 ## Best practice
 
@@ -31,12 +31,13 @@ The default choice of header across the main British Gas UK home site should be 
 
 ## Usage
 
-To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-footer--component).
+To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-header--component).
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-footer" %}
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-header" %}
 
-markup
+```markup
 <ns-header></ns-header>
+```
 
 ## Component Relationship
 
@@ -122,7 +123,7 @@ The anonymous slot is an unordered list. Each list is a section and each list in
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-footer]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-footer])
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-header]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-header])
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
