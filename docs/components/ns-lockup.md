@@ -83,7 +83,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | `type` | `string` | `lockbox` | `lockjaw`, `lockbox`, `locknut` | Different style variants. |
 | `reversed` | `boolean` | `false` |`true`, `false`| Switches the order of the text and image. Default is text to the left. |
 | `ratio` | `string` | `4x3` | `4:3`, `16:9`, `1:1` | Ratio for the image. |
-| `decoration` | `string` |  | See [Decoration component](https://britishgas.design/components/ns-decoration) | Adds illustration between the text and image. |
+| `decoration` | `string` |  | `invert-bridge-blue`,`invert-bridge-yellow`,`invert-bridge-green-light`,`invert-bridge-grey-light`,`invert-bridge-cyan`,`invert-concave-blue`,`invert-concave-yellow`,`invert-concave-green-light`,`invert-concave-grey-light`,`invert-concave-cyan`,`circle-green-right`,`circle-green-left`,`circle-yellow-right`,`circle-yellow-left` | Adds illustration between the text and image. |
 
 | Slots | Type |
 | :--- | :--- |
