@@ -36,7 +36,7 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-header" %}
 
 markup
-<ns-header></ns-header>
+`<ns-header></ns-header>`
 
 ## Component Relationship
 
