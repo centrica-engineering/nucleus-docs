@@ -1,5 +1,5 @@
 ---
-description: Decoration component.
+description: Atom | Decoration component.
 ---
 
 # ns-decoration
@@ -9,6 +9,16 @@ description: Decoration component.
 > Adds background decoration to components
 
 Holds the SVG decoration and masks that display the layout decoration for panels.
+
+>  NOTE: If you are looking for decorations for pages using `ns-panel` check the [`ns-panel` documentation](https://britishgas.design/components/ns-panel).
+
+## Best practice
+
+### Considerations of best practice
+
+* This is a building block component that is used to add decoration for the panel.
+* These should be used as backgrounds and should not be in the foreground.
+* Don't add these to layouts or pages, instead raise an [RFC](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=&template=b--request-a-change.md&title=%5BRFC%5D), if you believe something is missing in another component.
 
 ## Usage
 
@@ -22,42 +32,24 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Component Relationship
 
-**Does it live in a panel?**  
-No
-
-**What layout classes can be used?**  
-None
-
-**Does it live inside other components?**  
-`ns-panel`
-
-**Atomic type**  
-Atom
+|  **Relationship**  |  |
+| :--- | :--- |
+| **Does it live in a panel?** | ❌ No |
+| **Does it live inside other components?** | ✅ Yes -  `ns-panel` |
+| **What layout classes can be used?**  | None |
 
 ## Specification
 
-| **Name** | type |
-| :--- | :--- |
-| **Description** | Name |
-| **Type** | String |
-| **Default** | invert-concave |
-| **Options** | invert-concave, invert-convex, invert-ramp, invert-bridge, circle-yellow, circle-green |
+| Attribute | Type | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `type` | `string` | `invert-concave` | `invert-concave`, `invert-convex`, `invert-ramp`, `invert-bridge`, `circle-yellow`, `circle-green` | Picks the type of svg. |
+| `position` | `string` |  |`left`, `right`, `top`, `bottom`| Dictates the location of the decoration on the page. |
 
-| **Name** | position |
-| :--- | :--- |
-| **Description** | Name |
-| **Type** | String |
-| **Default** | '' |
-| **Options** | left, right, top, bottom |
-| **Notes** | Used for styling only |
+## Specification notes
 
-## Best practice
+### Position
 
-### Considerations of best practice
-
-* This is a building block component that is used to add decoration for the panel.
-* These should be used as backgrounds and should not be in the foreground.
-* Don't add these to layouts or pages, instead raise an [RFC](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=&template=b--request-a-change.md&title=%5BRFC%5D), if you believe something is missing in another component.
+* Used only for styling.
 
 ## Feedback
 
@@ -69,4 +61,3 @@ Atom
 ## Related links
 
 * [ns-panel](https://docs.britishgas.design/components/ns-panel).
-
