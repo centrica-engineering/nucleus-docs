@@ -12,7 +12,7 @@ The header provides the primary navigation for the website, whilst also being ou
 
 > NOTE: This is the UI component for the header - if you are looking for the header with the navigational content please use `nsx-header`.
 
-The default choice of header across the main British Gas UK home site should be the nsx-header. 
+The default choice of header across the main British Gas UK home site should be the nsx-header.
 
 ## Best practice
 
@@ -35,8 +35,9 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-header" %}
 
-markup
-`<ns-header></ns-header>`
+```markup
+<ns-header></ns-header>
+```
 
 ## Component Relationship
 

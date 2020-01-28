@@ -30,8 +30,9 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-footer" %}
 
-markup
+```markup
 <ns-footer></ns-footer>
+```
 
 ## Component Relationship
 
