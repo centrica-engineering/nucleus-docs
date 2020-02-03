@@ -2,7 +2,7 @@
 description: Organism | Highlighter component.
 ---
 
-# ns-card
+# ns-highlighter
 
 ## Introduction
 
