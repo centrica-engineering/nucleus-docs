@@ -17,18 +17,12 @@ A component that communicates the message that a service is not available to the
 | Heading      |  |
 | Paragraph    |  |
 
-### Image guidance
-
-| Component | Variant | Ratio | Dimensions | Size | Type | Placeholder |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ` `| ` ` |  |  |  |  |  |
-
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-|  |  |
-|  |  |
+| Keep the messages concise |  Use for generic message that is not in context to the page it is displayed in |
+| Use an icon to alert the user what type of message it is |  Use it for error messaging |
 
 ### Considerations of best practice
 
