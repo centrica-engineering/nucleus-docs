@@ -37,7 +37,11 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-highlighter" %}
 
 ```markup
-<ns-highlighter></ns-highlighter>
+<ns-highlighter type="error">
+    <h2 slot="heading">Unfortunately, we're having technical problems at the moment.</h2>
+    <p slot="paragraph">Either stay on this page and try again in a few moments, or try again later.</p>
+    <p slot="paragraph">Thank you for your patience. We’re sorry for the inconvenience this might cause.</p>
+</ns-highlighter>
 ```
 ## Component Relationship
 
