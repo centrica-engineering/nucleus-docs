@@ -10,11 +10,13 @@ description: Organism |  Editorial component.
 
 ## Content guidance
 
-| Field type | Guidelines |
-| :--- | :--- |
-| Heading    |  |
-| Image      |  |
-| Content    |  |
+![Editorial](https://user-images.githubusercontent.com/45626534/73436310-2ec84200-4342-11ea-85de-d9394fdf2f67.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total.  |
+| B | Image | This is the image that will be used inside ns-editorial. It should have an aspect ratio of 4:3, the dimensions should be 480x360px, the file type should be jpg, and the file size should be no more than 50kb. Don't use imagery with white backgrounds. |
+| C | Content | The content in `ns-editorial` can accommodate multiple sub headings, lists and paragraphs. The content should be concise and use sub headings to introduce each piece. Divide content into short paragraphs as it's easier to consume and aids effective page scanning. Content can contain bold copy `<b>` `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`.|
 
 ### Image guidance
 
