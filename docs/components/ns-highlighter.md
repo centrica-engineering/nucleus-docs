@@ -1,12 +1,12 @@
 ---
-description: [Atom / Molecule / Organism] | [insert component] component.
+description: Organism | Highlighter component.
 ---
 
-# ns-[component name]
+# ns-card
 
 ## Introduction
 
-> [Component introduction]
+> Highlighters can be used to communicate information or error, warning and success messages.
 
 A component that communicates the message that a service is not available to them or that there are technical issues on specific pages only. These messages are different to global messages as they only apply to some pages not site wide e.g. a message that says the top up service is not available would only apply to pages that customers will look at in order to top up.
 
@@ -14,7 +14,8 @@ A component that communicates the message that a service is not available to the
 
 | Field type | Guidelines |
 | :--- | :--- |
-|  |  |
+| Heading      |  |
+| Paragraph    |  |
 
 ### Image guidance
 
