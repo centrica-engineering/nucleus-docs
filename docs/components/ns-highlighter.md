@@ -26,7 +26,9 @@ A component that communicates the message that a service is not available to the
 
 ### Considerations of best practice
 
-* [Best practice]
+* Be clear and concise
+
+The message must be in plain English, and help the user out of the situation by providing an actionable link if possible.
 
 ## Usage
 
