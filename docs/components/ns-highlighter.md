@@ -55,15 +55,13 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| ` `    | ` ` |  |  |
+| `decoration` | `string` |           |See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--error)| Icon that is shown in the error type of highlighter |
+| `type`       | `string` | "error" | "error", "success", "warning", "info" | Defines the role of the highlighter and changes the styles |
 
-| Event | Description |
+| Slots        | Type                |
 | :--- | :--- |
-| ` ` |  |
-
-| Slots | Type |
-| :--- | :--- |
-| ` ` | ` ` |
+| `heading`    | `h tag` |
+| `paragraph`  | `p tag` |
 
 ## Feedback
 
