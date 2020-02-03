@@ -63,6 +63,17 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 | `heading`    | `h tag` |
 | `paragraph`  | `p tag` |
 
+## Specification notes
+
+### Type
+
+* Required for all four types of highlighter
+
+### Heading
+
+* This should be a heading level 2
+
+
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-highlighter]).
