@@ -12,6 +12,8 @@ We allow users to perform certain actions through the use of our call to actions
 
 ## Content guidance
 
+### CTA Direct
+
 ![CTA - Direct](https://user-images.githubusercontent.com/45626534/74147664-9d878400-4bfb-11ea-9c30-1ede80931c69.png)
 ### CTA Text
 
