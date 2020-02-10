@@ -18,7 +18,7 @@ We allow users to perform certain actions through the use of our call to actions
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | Text | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
-| B | Icon | This is the icon inside the CTA. The ![specification table](https://docs.britishgas.design/components/ns-cta#specification) has a list of options. |
+| B | Icon | This is the icon inside the CTA. The [specification table](https://docs.britishgas.design/components/ns-cta#specification) has a list of options. |
 
 ## Best practice
 
