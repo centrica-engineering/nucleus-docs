@@ -12,15 +12,22 @@ Related content can be separated into clearly labelled sections.
 
 ## Content guidance
 
-| Field type | Guidelines |
-| :--- | :--- |
-| Tabs |  |
-| Panels |  |
+![Tabs](https://user-images.githubusercontent.com/45626534/74163002-9a9b8c00-4c19-11ea-9a93-b2c841d1c458.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Icon | This is the icon inside the tab. This should relate to the label text. The [specification table](https://docs.britishgas.design/components/ns-tabs#specification-for-individual-tab) has a list of options. |
+| B | Heading | Use 1 or 2 words to inform the user of information found within each panel below. |
+| C | Selected Tab | This is the visual state of a selected tab. Used to show the user which content is visible below. |
+| D | Panel | This is the area in which the content for each `ns-tab` will be displayed. |
 
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
+| Always add heading text | Add an icon to one tab and not to the other tabs |
+|  | Add more than 2 words to the heading |
+|  | Add different types of icons (solid, outline, functional) |
 | Use at least two tabs | Use an excessive amount of tabs |
 | Be mindful of the extra page weight | Use more than two words for your tab label |
 
@@ -67,7 +74,22 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a number of `ns-tab` and `ns-panel` pairs exist. Each of these pairs provide a tab to select and a panel to place a layout and related content.
 
-## Specification
+## Specification for Individual Tab
+
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `icon`    | `string` |  | Please see the [documentation for ns-icon](https://britishgas.design/components/ns-icon) | Optional icon to add to the tab. |
+| `selected` | `boolean` | `false` |`true`, `false`| Pre-selected tab |
+
+| Event | Description |
+| :--- | :--- |
+| `tabselected` | Sends a event when tab is selected. |
+
+| Slots | Type |
+| :--- | :--- |
+| `anonymous` | `textNode` |
+
+## Specification for Tabs
 
 | Attribute | Type | Default   | Options   | Description |
 | :--- | :--- | :--- | :--- | :--- |
