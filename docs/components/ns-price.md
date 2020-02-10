@@ -28,7 +28,7 @@ Why pence? Passing values in pence gives the component complete control of the o
 
 If `negative="true"` and  `pence="0"` then the outputted price will not have the minus symbol. i.e. "£0"
 
-Prices of £10000 and higher will include commas. i.e. "£10000" becomes "£10,000" and "£1000000" becomes "£1,000,000"
+Prices of £10000 and higher will include commas. i.e. "£10000" becomes "£10,000" and "£1000000" becomes "£1,000,000". Values of less than £10,000 will not have commas as it can make numbers appear larger than they actually are. 
 
 Prices of less than £1 include zero pounds. eg. `pence="1"` becomes "£0.01"
 
