@@ -8,15 +8,18 @@ description: Molecule | Caveat component.
 
 > Caveats provide additional information and legal details to content.
 
-Caveats link to content in the page, providing more information about legality and eligibility, by seperating it to the bottom of the page.
+Caveats link to content in the page, providing more information about legality and eligibility, by separating it to the bottom of the page.
 
 ## Content guidance
 
-| Field type | Guidelines |
-| :--- | :--- |
-| Heading      |  |
-| Paragraph    |  |
-| CTA          |  |
+![Caveat - Link](https://user-images.githubusercontent.com/45626534/74146740-ad9e6400-4bf9-11ea-8c26-091b21b7aaf4.png)
+![Caveat](https://user-images.githubusercontent.com/45626534/74146791-c9096f00-4bf9-11ea-936b-75b2f6dc13de.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | CTA | The link used to highlight there is further relevant information the user should read. This might  provide specific stipulations, conditions, or limitations. Clicking on this should take the user to the content at the bottom of the page. |
+| B | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| C | Content | A single, short paragraph works best. You can link to additional information if needed, such as terms. These should always be accompanied with a related description.|
 
 ## Best practice
 
