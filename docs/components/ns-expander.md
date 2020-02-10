@@ -12,10 +12,12 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 
 ## Content guidance
 
-| Field type   | Guidelines |
-| :--- | :--- |
-| Heading |  |
-| Content |  |
+![Expander - Being used in an Accordion](https://user-images.githubusercontent.com/45626534/74158381-e34f4700-4c11-11ea-9dd9-9185d449c454.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Heading | This is the heading to the anonymous content. When the heading is clicked the component opens to reveal the content.   |
+| B | Content | Expander can accommodate multiple paragraph slots, these should be concise, using sub-headings to split large paragraphs. Can contain bold copy `<b>`, inline links `<a>`, and lists `<ul>` `<ol>`. |
 
 ## Best practises
 
