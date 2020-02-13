@@ -36,7 +36,7 @@ Prices of less than £1 include zero pounds. eg. `pence="1"` becomes "£0.01"
 
 To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-price--standard)
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-accordion" caption="" %}
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-price" caption="" %}
 
 ```markup
 <ns-price pence"123456"></ns-price>
@@ -55,14 +55,14 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
 | `pence` | `string` | `0` | | The value in pence that is to be displayed |
-| `showDecimal` | `boolean` | `false` | | Set true to show ".00" when there whole pound values |
+| `showDecimal` | `boolean` | `false` | | Set true to show ".00" when there are whole pound values |
 | `negative` | `boolean` | `false` | | Set true to show a minus symbol at the start of the number |
 
 ## Specification notes
 
 ### pence
 
-* Price is passed in as an attribute to prevent the unformatted price being crawled by Google and subsequently displaying the wrong price in search results
+Price is passed in as an attribute to prevent the unformatted price being crawled by Google and subsequently displaying the wrong price in search results
 
 ### negative
 
