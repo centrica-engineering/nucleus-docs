@@ -10,6 +10,17 @@ description: Atom | Table component.
 
 The table component consumes basic HTML table markup, which makes it accessible and responsive as well as styling it.
 
+## Content guidance
+
+![Table](https://user-images.githubusercontent.com/45626534/74148366-2fdc5780-4bfd-11ea-9877-225e2ceaf388.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Heading | Use to provide context to the table content. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| B | Column Headings | A short description of the data or information found in the column cells below. |
+| C | Fixable Row Headings | This column can be used for data or information. It can also be set to a fixed column of headings for each row. |
+| D | Table Cells | This should contain the data or information required for each relevant column and row. |
+
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
