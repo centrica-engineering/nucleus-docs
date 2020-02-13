@@ -12,9 +12,12 @@ We use accordions to break down content into meaningful sections, helping to red
 
 ## Content guidance
 
-| Field type | Guidelines |
-| :---  | :---  |
-| Heading |  |
+![Accordion](https://user-images.githubusercontent.com/45626534/74158689-6a9cba80-4c12-11ea-8917-7bfabfd8582d.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total.  |
+| B | Content | Use between 1 and 8 ns-expanders. Each expander consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content. See [ns-expander](https://docs.britishgas.design/components/ns-expander) for further content guidance. |
 
 ## Best practises
 
