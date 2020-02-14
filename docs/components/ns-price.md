@@ -20,11 +20,11 @@ Only works for pound sterling.
 | Avoid using the showDecimal option | Use for currencies other than pound sterling |
 |  | Use decimal pence values |
 
-### Considerations of best practises
+### Considerations of best practice
 
 Try to avoid using the showDecimal option - adding extra zeros can make values appear larger than they actually are.
 
-Why pence? Passing values in pence gives the component complete control of the output format, if a new best practice should arise then there will not be a need for consumers of the component to make modifications.
+Why pence? Passing values in pence gives the component complete control of the output format. If a new best practice should arise then consumers of the component will not need to make modifications.
 
 If `negative="true"` and  `pence="0"` then the outputted price will not have the minus symbol. i.e. "£0"
 
@@ -62,7 +62,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ### pence
 
-Price is passed in as an attribute to prevent the unformatted price being crawled by Google and subsequently displaying the wrong price in search results
+Price is passed in as an attribute to prevent the unformatted price being crawled by Google and subsequently displaying the wrong price in search results.
 
 ### negative
 
