@@ -12,7 +12,7 @@ Takes an input in pence and outputs it into the correct price format, prepends a
 
 Only works for pound sterling.
 
-## Best practises
+## Best practice
 
 | 💚 Do | 💔 Don't |
 | :---  | :---  |
