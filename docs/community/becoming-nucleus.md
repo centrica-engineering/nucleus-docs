@@ -60,7 +60,7 @@ The usual ways to proceed are:
 Responsibilities:
 
 * Our core team is responsible for curating the system and what it contains
-* Our community is responsible for integrating Nucleus in customer-facing channels
+* Our community is responsible for integrating Nucleus into customer-facing channels
 * We work together to share learnings, surface issues and opportunities
 * We work together to make sure the system is up to date and contains our best knowledge
 * We work together to make sure updates are smooth and issue free
