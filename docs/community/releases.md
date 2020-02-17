@@ -4,6 +4,37 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
+## Version 1.5.0
+
+**Highlighter, price and focus/warning colour**
+
+Release date - 2020-02-17
+
+**What’s new around here 🚤**
+
+* ns-highlighter.
+  * 4 different types, `warning`, `error`, `success` and `info`.
+* ns-price.
+  * Formating currency.
+* Focus and warning colour.
+  * Focus colour added that takes the previous warning colour and warning colour now has a more accessible colour.
+
+**Bug fixes 🐜**
+
+* Fixed IE11 includes issue.
+
+**Improvements 🐑**
+
+* Removed old `nds-structure` class in favour of `ndsn` wrapper class.
+* Optional ignore separator for validation for `ns-inputter`.
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
 ## Version 1.4.0
 
 **Skyline, Lakeside, Masks and Separators**
