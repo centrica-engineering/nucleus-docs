@@ -12,11 +12,11 @@ Release date - 2020-02-17
 
 **What’s new around here 🚤**
 
-* ns-highlighter.
+* To present messaging in context `ns-highlighter`.
   * 4 different types, `warning`, `error`, `success` and `info`.
-* ns-price.
+* Uniformly display prices with `ns-price`.
   * Formating currency.
-* Focus and warning colour.
+* Introducing a replacement colour for `@warning` and reserving the yellow for `@focus`.
   * Focus colour added that takes the previous warning colour and warning colour now has a more accessible colour.
 
 **Bug fixes 🐜**
