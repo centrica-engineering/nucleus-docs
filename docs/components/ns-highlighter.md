@@ -38,9 +38,9 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 
 ```markup
 <ns-highlighter type="error">
-    <h2 slot="heading">Unfortunately, we're having technical problems at the moment.</h2>
-    <p slot="paragraph">Either stay on this page and try again in a few moments, or try again later.</p>
-    <p slot="paragraph">Thank you for your patience. We’re sorry for the inconvenience this might cause.</p>
+  <h2 slot="heading">Unfortunately, we're having technical problems at the moment.</h2>
+  <p>Either stay on this page and try again in a few moments, or try again later.</p>
+  <p>Thank you for your patience. We’re sorry for the inconvenience this might cause.</p>
 </ns-highlighter>
 ```
 ## Component Relationship
