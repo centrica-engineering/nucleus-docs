@@ -12,10 +12,17 @@ We allow users to perform certain actions through the use of our call to actions
 
 ## Content guidance
 
-| Field type | Guidelines |
-| :--- | :--- |
-| Text    	   |  |
-| Icon		     |  |
+### CTA Direct
+
+![CTA - Direct](https://user-images.githubusercontent.com/45626534/74147664-9d878400-4bfb-11ea-9c30-1ede80931c69.png)
+### CTA Text
+
+![CTA - Text](https://user-images.githubusercontent.com/45626534/74147667-9eb8b100-4bfb-11ea-9425-b7dbf2908a5d.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Text | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+| B | Icon | This is the icon inside the CTA. The [specification table](https://docs.britishgas.design/components/ns-cta#specification) has a list of options. |
 
 ## Best practice
 
