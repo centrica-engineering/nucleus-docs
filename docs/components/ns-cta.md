@@ -27,6 +27,7 @@ We allow users to perform certain actions through the use of our call to actions
 | Use 'direct' for the primary action on the page | Use more than 24 characters |
 |  | Have multiple lines or sentences within a CTA |
 |  | Repeat CTA copy within the same page |
+|  | Use for downloads. Use the [`ns-download` component](https://britishgas.design/components/ns-icon) instead |
 
 ### Considerations of best practice
 
@@ -62,7 +63,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | :--- | :--- | :--- | :--- | :--- |
 | `type`    | `string` | `direct` | `direct`, `text` | Different variants of the CTA. |
 | `href` | `string` |           || Linking to another location. |
-| `icon`  | `string` | `arrow-right` | `arrow-left`, `arrow-right`, `download` See [`ns-icon` component](https://britishgas.design/components/ns-icon) | The icon inside the CTA |
+| `icon`  | `string` | `arrow-right` | `arrow-left`, `arrow-right` See [`ns-icon` component](https://britishgas.design/components/ns-icon) | The icon inside the CTA |
 | `loading` | `string` | `false` | `true`, `false` | Change the state of the CTA for loading. |
 | `loadingMessage` | `string` | `Loading...` |  | Overwrites the CTA anonymous slot for the loading state. |
 
