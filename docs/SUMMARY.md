@@ -34,6 +34,7 @@
   * [ns-tabs](components/ns-tabs.md)
   * [ns-table](components/ns-table.md)
   * [ns-video](components/ns-video.md)
+  * [nsx-marketing-consent](components/nsx-marketing-consent.md)
 * [Foundations](foundations/README.md)
   * [Colours](foundations/colours.md)
   * [Modular scale](foundations/modular-scale.md)
