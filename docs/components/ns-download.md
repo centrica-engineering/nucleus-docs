@@ -15,7 +15,7 @@ Currently only allows '.pdf' file types, other types can be added but it will re
 | 💚 Do | 💔 Don't |
 | :---  | :---  |
 | Use for all downloads | Use the instructions in the body e.g. 'download here'|
-| Include file size |  |
+| Include file size | Don't describe the file as a file |
 | Describe what the file is |  |
 
 ### Considerations of best practice
