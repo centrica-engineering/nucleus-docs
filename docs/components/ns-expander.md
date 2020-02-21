@@ -12,7 +12,7 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 
 ## Content guidance
 
-![Expander - Being used in an Accordion](https://user-images.githubusercontent.com/45626534/74158381-e34f4700-4c11-11ea-9dd9-9185d449c454.png)
+![Expander - Being used in an Accordion](https://user-images.githubusercontent.com/45626534/75039379-7315b080-54b0-11ea-9816-8b679a290a19.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
