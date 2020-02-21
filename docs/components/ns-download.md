@@ -8,7 +8,7 @@ description: Atom | Download component.
 
 > Highlights an item that can be downloaded.
 
-Currently only allows '.pdf' file types, other types can be added but it will require a new release.
+Currently only allows '.pdf' and '.xls' file types, other types can be added but it will require a new release.
 
 ## Best practice
 
@@ -46,7 +46,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
-| `href` | `string` | | '.pdf' | The url for the file to be downloaded (including file extension) |
+| `href` | `string` | | '.pdf','.xls' | The url for the file to be downloaded (including file extension) |
 | `fileSize` | `string` | | Units 'B','kB', 'MB', 'GB' | The size of the file to be downloaded (including unit).|
 
 | Slots | Type |
