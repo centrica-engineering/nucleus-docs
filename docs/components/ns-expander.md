@@ -19,7 +19,7 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 | A | Heading | This is the heading to the anonymous content. When the heading is clicked the component opens to reveal the content.   |
 | B | Content | Expander can accommodate multiple paragraph slots, these should be concise, using sub-headings to split large paragraphs. Can contain bold copy `<b>`, inline links `<a>`, and lists `<ul>` `<ol>`. |
 
-## Best practises
+## Best practice
 
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
