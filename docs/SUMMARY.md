@@ -21,6 +21,7 @@
   * [ns-footer](components/ns-footer.md)
   * [ns-form](components/ns-form.md)
   * [ns-header](components/ns-header.md)
+  * [ns-highlighter](components/ns-highlighter.md)
   * [ns-icon](components/ns-icon.md)
   * [ns-illustration](components/ns-illustration.md)
   * [ns-image](components/ns-image.md)
