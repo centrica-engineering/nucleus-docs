@@ -17,7 +17,7 @@ Positioned directly beneath the global navigation and above any content, `ns-sky
 
 ## Content Guidance
 
-![Skyline](https://user-images.githubusercontent.com/45626534/74161417-cff2aa80-4c16-11ea-95ca-a3d1a8b2432a.png)
+![Skyline](https://user-images.githubusercontent.com/45626534/75039520-c556d180-54b0-11ea-9c34-a3bdd6f35751.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
