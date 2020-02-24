@@ -22,7 +22,6 @@ We use lockups to engage customers, in particular to promote a key product or se
 | D | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
 | E | Image | There is a choice of two image sizes depending on your choice of Lockup - the first has an aspect ratio of 4:3, the dimensions should be 720x540px, the second has an aspect ratio of 1:1, the dimensions should be 720x720px. Both versions should be jpg file types, and the file size should be no more than 100kb. To see which image you can use - please see the <b>Image Guidence</b> section below. Don't use imagery with white backgrounds. Please make sure you work with a designer when selecting any imagery for the `ns-lockup`. |
 | F | Decoration | Use this optional illustration to support and highlight the content. The illustration should relate to the product or service you are talking about. Only available on the Lockjaw and Locknut variants. The [specification table](https://docs.britishgas.design/components/ns-lockup#specification) has a list of options. |
-| G | Decoration | An optional background decoration added to the surrounding panel. Use for styling and to provide depth to the content. Only available on the Lockjaw variant. |
 
 ### Image guidance
 
