@@ -20,7 +20,7 @@ Currently only allows '.pdf' and '.xls' file types, other types can be added but
 
 ### Considerations of best practice
 
-Include file size - this is particularly nice for customers that are on reduced data allowences (i.e. mobile), and also offers an indication on how long a file might take to download
+Include file size - this is particularly nice for customers that are on reduced data allowences (i.e. mobile), and also offers an indication on how long a file might take to download.
 
 Text Content - the text provided between the ns-download tags is used to create the filename for the downloaded file. This helps users identify the file that has been downloaded.
 
