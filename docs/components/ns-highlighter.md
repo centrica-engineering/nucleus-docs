@@ -12,10 +12,24 @@ A component that communicates the message that a service is not available to the
 
 ## Content guidance
 
-| Field type | Guidelines |
-| :--- | :--- |
-| Heading      |  |
-| Paragraph    |  |
+The content for highlighters is dependent on the type that is used:
+
+### Error Messages `type="error"`
+
+For communicating failure with urgence. A task cannot be completed without the user remedying something.
+
+### Informational Messages `type="info"`
+
+For communicating a useful piece of information that the user might find helpful to carry out their action.
+
+### Success Messages `type="success"`
+
+For communicating that an action has been successful.
+
+### Warning Messages `type="warning"`
+
+For communicating a piece of information with less severity. These include foreseeable problematic events, failures, outages and how to avoid errors.
+
 
 ## Best practice
 
