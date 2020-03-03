@@ -157,7 +157,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `value`   | `string` | `''` |  | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an intial value |
-| `validation` | `array` |  | `isRequired`, `isNumber`,  `isInteger`, `isPostcode`, `isFirstName`, `isLastName`, `isTitle`, `isEmail`, `isPhoneNumber`, `isMobileNumber`, `isDate`, `isDateOfBirth`, `minLength(x)`, `maxLength(x)` | A way to assist that valid values are added and to show an error message when they're not. |
+| `validation` | `array` |  | `isRequired`, `isNumber`,  `isInteger`, `isPostcode(includeEIR)`, `isFirstName`, `isLastName`, `isTitle`, `isEmail`, `isPhoneNumber`, `isMobileNumber`, `isDate`, `minDate(date)`, `maxDate(date)`, `isDateOfBirth`, `minLength(x)`, `maxLength(x)` | A way to assist that valid values are added and to show an error message when they're not. |
 | `ignoreseparator` | `boolean` | `false` | `true`, `false` | Setting this to true will force length validations to not include the separator when calculating the length|
 | `execute` | `boolean` | `false` | `true`, `false` | Will trigger the validation even if the input hasn't been touched. |
 | `helper` | `string` |  |  | Adds a message between the label and the input. Used to convey a message to help the user to fill in the input |
