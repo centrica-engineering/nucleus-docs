@@ -10,10 +10,20 @@ description: Organism | Skyline component.
 
 Positioned directly beneath the global navigation and above any content, `ns-skyline` displays high level messages to the user.  The purpose of `ns-skyline` is to notify the user of important site-wide or non-page specific events that may affect their experience of using the British Gas website.
 
-They are either:
+<b>They are either:</b>
 
 * Informational - to show useful information that the user may want to be aware of, e.g. upcoming price changes.
 * Warning - to warn users of potential upcoming or current issues e.g. weather warning.
+
+## Content Guidance
+
+![Skyline](https://user-images.githubusercontent.com/45626534/75039520-c556d180-54b0-11ea-9c34-a3bdd6f35751.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Icon | This is the icon inside the `ns-skyline`, it can be either an information or warning icon depending on the type of message you wish to display. |
+| B | Heading | This is the heading to the anonymous content. When the heading is clicked the component opens to reveal the content. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| C | Content | `ns-skyline` can accommodate multiple paragraph slots, these should be concise, using sub-headings to split large paragraphs. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`.| 
 
 ## Best practice
 
