@@ -4,6 +4,36 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
+## Version 1.6.0
+
+**Download component and Irish postcode validation**
+
+Release date - 2020-02-26
+
+**What’s new around here 🚤**
+
+* Download link component
+* Irish postcode validation for ns-inputter
+
+**Bug fixes 🐜**
+
+* ns-skyline style fix for aem6
+* Accessibility group fix for ns-inputter
+
+**Improvements 🐑**
+
+* Subset fonts
+* Storybook theme
+* Storybook codesandbox
+* Forbidden download ns-cta icon
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌
+
 ## Version 1.5.0
 
 **Highlighter, price and focus/warning colour**
