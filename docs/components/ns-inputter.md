@@ -222,7 +222,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
   * maxLength(x) - Shows error if the input value is greater than x chars.
   
-  * isDate() - Shows error if the input value is not a valid date, the expected format is DD/MM/YYYY
+  * isDate() - Shows error if the input value is not a valid date, the expected format is dd/mm/yyyy
   
   * minDate(date) - Shows an error if the input value date is less than provided date.  eg. `minDate('20/12/2020')`
   
