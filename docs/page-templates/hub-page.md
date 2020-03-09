@@ -29,7 +29,7 @@ Promotional / Navigational / Informative
 - Direct users down more specific paths, this might be toward a product page or into a product journey.
 - Tie the related pages within the product/ service area together.
 - Promote latest offers, and direct users to strategically important products/ services (e.g. by adjusting content hierarchy). 
-- Guide existing customers to the best action, since many of them use hub pages as a starting point rather than logging in.
+- Guide existing customers to the best next action since many of them use hub pages as a starting point rather than logging in.
 - Showcase and navigate. 
 - Strong SEO potential, primarily because of link authority. This means, when done properly majority of the organic traffic lands on these pages
 
