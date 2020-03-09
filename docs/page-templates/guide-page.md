@@ -28,7 +28,7 @@ Functional / Informative
 
 - Some guide pages are intended to provide specific detail relating to the products and services the organisation offers. Others answer important customer questions relating to our product and services.
 - To give customers the confidence then need to make a purchase.
-- Educate customers on a particular topic.
+- To educate customers on a particular topic.
 - This might take the form of instructions on how to do something, breaking down a complex topic or deeper reading to help make a decision. 
 
 
