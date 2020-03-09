@@ -6,7 +6,7 @@ description: Page Template | Home Page
 
 ## Introduction
 
-Think of this page as the shop window. It is the primary display point of the brand, it needs to capture attention, and peak interest. But it is also the starting point for many users to navigate into specific product journeys, or begin education before purchase. It has to work very hard, and wear many hats without being overwhelming. 
+Think of this page as the shop window. It is the primary display point of the brand. It needs to capture attention, and peak interest. It is also the starting point for many users to navigate into specific product journeys, or learn before they purchase. The homepage has to work hard and wear many hats without being an overwhelming barage of information. 
 
 ## Example
 
