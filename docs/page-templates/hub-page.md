@@ -31,7 +31,7 @@ Promotional / Navigational / Informative
 - Promote latest offers, and direct users to strategically important products/ services (e.g. by adjusting content hierarchy). 
 - Guide existing customers to the best next action since many of them use hub pages as a starting point rather than logging in.
 - Showcase and navigate. 
-- Strong SEO potential, primarily because of link authority. This means, when done properly majority of the organic traffic lands on these pages
+- Strong SEO potential, primarily because of link authority. This means, when done properly, majority of the organic traffic lands on these pages.
 
 ## Feedback
 
