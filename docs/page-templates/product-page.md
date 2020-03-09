@@ -6,7 +6,7 @@ description: Page Template | Product Page
 
 ## Introduction
 
-Product pages introduce more a more granular level of detail than hub pages. They often display pricing, product terms and promotion details. Primary actions on the page drive customers into the sales journey, and conversion rate should be measured into these journeys to deduce how to optimise page performance.
+Product pages introduce more granular detail than hub pages. They often display pricing, product terms and promotion details. Primary actions on the page drive customers into the sales journey, and conversion rate should be measured into these journeys to deduce how to optimise page performance.
 
 ## Principles to follow
 
