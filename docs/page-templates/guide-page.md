@@ -6,11 +6,11 @@ description: Page Template | Guide Page
 
 ## Introduction
 
-Guide pages unsurprisingly, give guidance to the reader. This guidance is often on a wide range of topics related in some way to the products and services the organisation offers. Guide pages are also an essential SEO tool, designed to drive traffic to the site by proving the organisation to be an expert on a range of (well considered and relevant) topics. 
+Guide pages unsurprisingly, give guidance to the reader. This guidance is often on a wide range of topics related in some way to the products and services the organisation offers. Guide pages are also an essential SEO tool, designed to drive traffic to the site by proving the organisation to be an expert on a range of (well considered and relevant) topics.
 
-## Example 
+## Example
 
-https://www.britishgas.co.uk/energy/thinking-of-going-electric.html 
+https://www.britishgas.co.uk/energy/thinking-of-going-electric.html
 
 ## Principles to follow
 
@@ -29,7 +29,7 @@ Functional / Informative
 - Some guide pages are intended to provide specific detail relating to the products and services the organisation offers. Others answer important customer questions relating to our product and services.
 - To give customers the confidence they need to make a purchase.
 - To educate customers on a particular topic.
-- This might take the form of instructions on how to do something, breaking down a complex topic or deeper reading to help make a decision. 
+- This might take the form of instructions on how to do something, breaking down a complex topic or deeper reading to help make a decision.
 
 
 ## Feedback

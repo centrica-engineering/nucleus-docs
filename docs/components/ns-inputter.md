@@ -149,7 +149,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 |  **Relationship**  |  |
 | :--- | :--- |
 | **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-form` |
+| **Does it live inside other components?** |  ✅ Yes -  `ns-form` and `ns-fieldset` |
 | **What layout classes can be used?**  | None |
 
 ## Specification
@@ -221,13 +221,13 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
   * minLength(x) - Shows error if the input value is less than x chars.
 
   * maxLength(x) - Shows error if the input value is greater than x chars.
-  
+
   * isDate() - Shows error if the input value is not a valid date, the expected format is dd/mm/yyyy
-  
+
   * minDate(date) - Shows an error if the input value date is less than provided date.  eg. `minDate('20/12/2020')`
-  
+
   * maxDate(date) - Shows an error if the input vale date is greater than the provided date.  eg. `maxDate('31/12/2022')`
-  
+
   * isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode.  This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function.  eg. `isPostcode(true)`
 
 ## Feedback
@@ -236,3 +236,8 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[NAME%20OF%20COMPONENET]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+
+## Related links
+
+* [ns-inputter](https://docs.britishgas.design/components/ns-inputter)
+* [ns-fieldset](https://docs.britishgas.design/components/ns-fieldset)
