@@ -2,7 +2,7 @@
 description: Getting involved with Nucleus.
 ---
 
-# Where to start?
+# Introduction
 
 > To get you up and running with Nucleus.
 
