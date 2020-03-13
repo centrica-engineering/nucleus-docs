@@ -20,6 +20,14 @@ Our system colours are used to support and enhance communication to users throug
 
 Find our [system colour palette](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-colours--system-pallette) in storybook.
 
+## Our Gradients
+
+Our gradients are used to add depth and richness to our brand. They can be used as bold backgrounds. Each gradient is created from two brand colours. Gradients are 205° from one colour to the next, except for the gradient applied to `ns-cta` which runs vertically.
+
+Applying a gradient to `ns-panel` can create a feeling of depth and richness for a page. Each and every `ns-illustration` uses gradients as they are rich in colour and personality. The `hillside` variant of `ns-landmark` uses our gradients.
+
+Find our [gradient colour palette](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-colours--gradient-pallette) in storybook.
+
 ## Accessibility
 
 Always be mindful of how colour contrast many impact accessibility when dealing with type online and use our range of tools to ensure that your colour combinations are fully WCAG AA compliant.
