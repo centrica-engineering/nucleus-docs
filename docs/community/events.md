@@ -285,7 +285,7 @@ Highlights of our experience:
 
 ## 2018-12-13 / Community and Contributing workshop
 
-* Understanding what community and contributing to Nucleus [means](https://docs.britishgas.design/community/best-practices) to UX designers.
+* Understanding what community and contributing to Nucleus [means](https://docs.britishgas.design/getting-started/best-practices) to UX designers.
 * Co-creating first drafts of contribution processes.
 
 [†] This can only be accessed from approved Github accounts, please make sure you are logged in to access.

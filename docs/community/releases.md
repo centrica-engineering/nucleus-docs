@@ -315,7 +315,7 @@ Release date - 2019-04-15
 
 **Documentation**
 * Becoming Nucleus - https://docs.britishgas.design/community/becoming-nucleus
-* Best practices - https://docs.britishgas.design/community/best-practices
+* Best practices - https://docs.britishgas.design/getting-started/best-practices
 * Events - https://docs.britishgas.design/community/events
 * Modular scale - https://docs.britishgas.design/foundation/modular-scale
 * Typography sizes - https://docs.britishgas.design/foundation/typography

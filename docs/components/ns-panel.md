@@ -61,7 +61,7 @@ To see examples visit [Storybook](https://library.britishgas.design).
 
 ### Decoration
 
-* Check the [gradient](https://docs.britishgas.design/foundation/gradients) palette.
+* Check the [gradient](https://docs.britishgas.design/foundations/colours#gradients) palette.
 
 ### Anonymous
 
