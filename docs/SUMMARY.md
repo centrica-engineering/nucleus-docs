@@ -38,6 +38,7 @@
   * [ns-tabs](components/ns-tabs.md)
   * [ns-table](components/ns-table.md)
   * [ns-video](components/ns-video.md)
+  * [nsx-marketing-consent](components/nsx-marketing-consent.md)
 * [Page Templates](page-templates/README.md)
   * [Home Page](page-templates/home-page.md)
   * [Hub Page](page-templates/hub-page.md)
