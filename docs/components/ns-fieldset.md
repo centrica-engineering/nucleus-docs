@@ -6,7 +6,7 @@ description: Molecule | Form component.
 
 ## Introduction
 
-> The form component is used to group related ns-inputters.
+> The ns-fieldset component is used to group related ns-inputters.
 
 Use where you would normally use a vanilla html fieldset element. This element extends the layout for `ns-form`.
 
