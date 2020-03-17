@@ -1,0 +1,20 @@
+
+---
+description: How has the Nucleus Design System been created?
+---
+
+# How has Nucleus been created
+
+## Atomic Design
+
+Nucleus is built using Atomic Design Principles: 
+
+* Atoms - individual elements such as colours, typographic styles, buttons and form fields
+* Molecules - by combining atoms you make molecules; such as combining a form field and a button. 
+* Organisms - complex series of combined atoms - such as the navigation - which is a collection of individual links, images, text and colours. 
+
+For more information on this subject we would recommend reading _“Atomic Design”_ by Brad Frost - (https://atomicdesign.bradfrost.com/)
+
+## Meticulously considered
+
+Each element of the design system has been rigorously researched, designed, built and tested, to conform with our principles. By completing this discovery work, we hope that everyone is able to concentrate on creating consistent and coherent experiences for our customers. 
