@@ -15,7 +15,7 @@ Use where you would normally use a vanilla html fieldset element. This element e
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Try to add a legend. | Don't group unrelated ns-inputters |
-| Only use inside the ns-form component | |
+| Only use inside the ns-form component | Nest `ns-fieldset`s unnecessarily, as this can lead to confusion |
 
 ## Usage
 
