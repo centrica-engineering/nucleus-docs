@@ -14,8 +14,16 @@ Use where you would normally use a vanilla html fieldset element. This element e
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Try to add a legend. | Don't group unrelated ns-inputters |
+| Add a legend | Group unrelated ns-inputters |
 | Only use inside the ns-form component | Nest `ns-fieldset`s unnecessarily, as this can lead to confusion |
+
+### Considerations of best practises
+
+A legend is required to make the fieldset accessible
+
+https://www.w3.org/WAI/WCAG21/Techniques/html/H71
+
+> The first element inside the fieldset must be a legend element, which provides a label or description for the group
 
 ## Usage
 
