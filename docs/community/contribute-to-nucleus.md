@@ -22,24 +22,18 @@ Whether it's using the resources and documentation provided by Nucleus or contri
 
 Everyone. Whether you are a designer, a software engineer, a tester, a solutions architect, a product owner, or a director: everyone is invited to advance Nucleus.
 
-### Where to start
+To get started, visit [Working with Nucleus](https://docs.britishgas.design/getting-started/working-with-nucleus).
 
-1. Take some time to get accustomed with Nucleus and explore what it offers.
-2. Make use of our feedback channels: Github, Slack, and face-to-face sessions.
-3. Reach out to any member of the Nucleus team, start a conversation and ask questions.
+### Insights on existing Nucleus assets
 
-### Sending it in
-
-#### Insights on existing Nucleus assets
-
-For any feedback related to our Nucleus components and related documentation, we're using Github. This helps us provide a transparent track of all contributions and potential issues, as well as tie these into our own [backlog](https://github.com/ConnectedHomes/nucleus/milestone/18).
+For any feedback related to our Nucleus components and related documentation, we're using Github. This helps us provide a transparent track of all contributions and potential issues.
 
 1. You can view our [requests status](https://github.com/ConnectedHomes/nucleus/projects/6).
 2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=%5Bns-COMPONENT%5D), add a new [change request (RFC)](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request), as well as react or comment on existing feedback.
 3. We've prepared a template to structure incoming feedback, gather relevant insights, and help us respond accordingly.
 4. If and once an issue is picked up, we'll ask to meet you to swap ideas and listen to your insights or make use of weekly design critique sessions.
 
-#### Suggestions for new Nucleus assets
+### Suggestions for new Nucleus assets
 
 We're working hard to grow Nucleus without sacrificing quality.
 
@@ -47,16 +41,16 @@ We're working hard to grow Nucleus without sacrificing quality.
 2. Feel free to explore the styles and assets provided to suggest new components.
 3. Please make sure to submit your experiments and learning. It helps us to track potential variations and roll out stable additions to all teams via Nucleus.
 
-#### Feedback on anything related to Nucleus
+### Feedback on anything related to Nucleus
 
-Reach us on Slack, via `#product-nucleus`. If there's anything on your mind, please reach out!
+Reach us on Slack, via `#product-nucleus`. If there's anything on your mind.
 
-#### Events and updates
+### Events and updates
 
 Having all these resources available anytime is great, but we can't do without face-to-face sessions.
 
 We know we don't have all the right answers, that's why we want to meet you in person, as well as connect you to other teams dealing with similar issues.
 
-* We are hosting sessions and workshops focused on our current tasks as we go along, normally every Tuesday at 3:00pm.
+* We help to host and facilitate sessions and workshops focused on our current tasks as we go along. If you'd like us to help organise or be involved in something you're doing, do let us know.
 * Just like other product teams, we're participating in weekly and monthly cross-team ceremonies.
 
