@@ -2,7 +2,7 @@
 description: How do I use the Nucleus Design System?
 ---
 
-# How do I use the Nucleus?
+# How do I use Nucleus?
 
 Many of us are proud of our craft and eye for details. But if we can't use these skills to truly impact the lives of our end users for the better, we'll have failed in one of our key objectives.  
 
