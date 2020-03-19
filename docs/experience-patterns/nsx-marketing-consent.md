@@ -1,5 +1,5 @@
 ---
-description: Experience | Marketing consent component.
+description: Experience | Marketing consent.
 ---
 
 # Marketing consent
@@ -8,7 +8,8 @@ description: Experience | Marketing consent component.
 
 > Marketing consent is the capture of a customer's contact preferences for marketing purposes.
 
-This experience pattern should be used in any journey where customer marketing preferences are **captured.**  
+This experience pattern should be used in any journey where customer marketing preferences are captured.
+
 This component is _only_ used to capture and submit customer preferences, not view or change existing preferences.
 
 ## Content Guidance
