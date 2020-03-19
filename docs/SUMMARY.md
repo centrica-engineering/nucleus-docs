@@ -25,6 +25,7 @@
   * [ns-download](components/ns-download.md)
   * [ns-editorial](components/ns-editorial.md)
   * [ns-expander](components/ns-expander.md)
+  * [ns-fieldset](components/ns-fieldset.md)
   * [ns-footer](components/ns-footer.md)
   * [ns-form](components/ns-form.md)
   * [ns-header](components/ns-header.md)
