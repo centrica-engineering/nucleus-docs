@@ -1,5 +1,5 @@
 ---
-description: 'Typeface, sizing and usage of BG Flame font.'
+description: Typeface, sizing and usage of BG Flame font
 ---
 
 # Typography

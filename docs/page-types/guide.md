@@ -1,5 +1,5 @@
 ---
-description: Page Template | Guide Page
+description: Page Type | Guide Page
 ---
 
 # 📗 Guide Page

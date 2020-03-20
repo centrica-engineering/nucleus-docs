@@ -1,5 +1,5 @@
 ---
-description: Page Template | Home Page
+description: Page Type | Home Page
 ---
 
 # 📘 Home Page 

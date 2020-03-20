@@ -1,5 +1,5 @@
 ---
-description: Page Template | Product Page
+description: Page Type | Product Page
 ---
 
 # 📒 Product Page

@@ -1,5 +1,5 @@
 ---
-description: Page Template | Hub Page
+description: Page Type | Hub Page
 ---
 
 # 📕 Hub Page 
