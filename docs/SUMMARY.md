@@ -3,7 +3,7 @@
 * [Welcome to Nucleus](README.md)
 * [Getting started](getting-started/README.md)
   * [Introduction](getting-started/introduction.md)
-  * [How do I use Nucleus?](getting-started/how-do-i-use-nucleus.md)
+  * [Working with Nucleus](getting-started/working-with-nucleus.md)
   * [Best practices](getting-started/best-practices.md)
   * [Need something new?](getting-started/need-something-new.md)
   * [Brand](getting-started/brand.md)
