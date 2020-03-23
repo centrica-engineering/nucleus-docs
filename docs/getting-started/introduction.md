@@ -22,13 +22,11 @@ Nucleus exists so we can efficiently design consistent and accessible experience
 
 ## How has the design system been created?
 
-The Nucleus design system is built using Atomic Design Principles: 
+Nucleus is built from small elements, such as typographic styles, colours, scale and visual assets - these form our foundations. 
 
-* Atoms - individual elements such as colours, typographic styles, buttons and form fields
-* Molecules - by combining atoms you make molecules; such as combining a form field and a button. 
-* Organisms - complex series of combined atoms - such as the navigation - which is a collection of individual links, images, text and colours. 
+These foundations are brought together to form components. These range from elemental items such as a CTA - which is comprised of an icon and text, to more complex organisms containing multiple typographic styles and/or visual elements.
 
-For more information on this subject we would recommend reading _“Atomic Design”_ by Brad Frost - (https://atomicdesign.bradfrost.com/)
+Through continuous exploration and implementation we also have begun to develop patterns. These are highly complex structures, which contain groups of elements or components.
 
 ## Join our Slack channel
 
