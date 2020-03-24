@@ -23,11 +23,11 @@ Promotional / Informative
 ## Purpose
 
 - Immediately convey the value of the featured product (or service).
-- Explain the key features of the the product or service, this could be visually or verbally. 
+- Explain the key features of the the product or service, this could be visually or verbally.
 - Make customers believe this is the product or service they need.
-- Convince the customer of the product offering the drive them into the top of the sales funnel. 
-- Carry all relevant legal or regulatory information (this could be a link to or caveat etc) required for the product & service offerings on the page. 
-- Direct users to more information if they’re not at the sales part of their buying journey. 
+- Convince the customer of the product offering the drive them into the top of the sales funnel.
+- Carry all relevant legal or regulatory information (this could be a link to or caveat etc) required for the product & service offerings on the page.
+- Direct users to more information if they’re not at the sales part of their buying journey.
 
 ## Feedback
 

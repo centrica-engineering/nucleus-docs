@@ -6,7 +6,7 @@ description: Page Type | Home Page
 
 ## Introduction
 
-Think of this page as the shop window. It is the primary display point of the brand. It needs to capture attention, and peak interest. It is also the starting point for many users to navigate into specific product journeys, or learn before they purchase. The homepage has to work hard and wear many hats without being an overwhelming barage of information. 
+Think of this page as the shop window. It is the primary display point of the brand. It needs to capture attention, and peak interest. It is also the starting point for many users to navigate into specific product journeys, or learn before they purchase. The homepage has to work hard and wear many hats without being an overwhelming barage of information.
 
 ## Example
 
@@ -30,8 +30,8 @@ Promotional / Navigational / Informative / Memorable
 - Promote specific products or services offered by British Gas.
 - Drive traffic to strategically important products and services.
 - Provide a starting point for customers to easily find what they need.
-- Promote the latest offers. 
-- Act as a ‘meeting point’, which a user can return to at any point during their interaction with the site. 
+- Promote the latest offers.
+- Act as a ‘meeting point’, which a user can return to at any point during their interaction with the site.
 
 ## Feedback
 

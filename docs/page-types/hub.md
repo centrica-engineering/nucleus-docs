@@ -6,11 +6,11 @@ description: Page Type | Hub Page
 
 ## Introduction
 
-Hub pages are designed to link other pages (often product pages) and navigate users down the right path. That means hub pages contain lots of links and snippets of information. They’re essential site navigation tools, but they can also be powerful SEO tools. We know existing customers often use hub pages to navigate to their end goal. 
+Hub pages are designed to link other pages (often product pages) and navigate users down the right path. That means hub pages contain lots of links and snippets of information. They’re essential site navigation tools, but they can also be powerful SEO tools. We know existing customers often use hub pages to navigate to their end goal.
 
 ## Example
 
-https://www.britishgas.co.uk/home-services.html 
+https://www.britishgas.co.uk/home-services.html
 
 ## Principles to follow
 
@@ -28,9 +28,9 @@ Promotional / Navigational / Informative
 
 - Direct users down more specific paths, this might be toward a product page or into a product journey.
 - Tie the related pages within the product/ service area together.
-- Promote latest offers, and direct users to strategically important products/ services (e.g. by adjusting content hierarchy). 
+- Promote latest offers, and direct users to strategically important products/ services (e.g. by adjusting content hierarchy).
 - Guide existing customers to the best next action since many of them use hub pages as a starting point rather than logging in.
-- Showcase and navigate. 
+- Showcase and navigate.
 - Strong SEO potential, primarily because of link authority. This means, when done properly, majority of the organic traffic lands on these pages.
 
 ## Feedback
