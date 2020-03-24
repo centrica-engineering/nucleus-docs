@@ -2,7 +2,7 @@
 description: Page Type | Home Page
 ---
 
-# 📘 Home Page 
+# Home Page
 
 ## Introduction
 

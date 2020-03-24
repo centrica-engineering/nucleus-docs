@@ -2,7 +2,7 @@
 description: Page Type | Product Page
 ---
 
-# 📒 Product Page
+# Product Page
 
 ## Introduction
 

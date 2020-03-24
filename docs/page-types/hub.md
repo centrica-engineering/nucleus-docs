@@ -2,7 +2,7 @@
 description: Page Type | Hub Page
 ---
 
-# 📕 Hub Page 
+# Hub Page
 
 ## Introduction
 

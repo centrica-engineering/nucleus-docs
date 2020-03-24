@@ -2,7 +2,7 @@
 description: Page Type | Guide Page
 ---
 
-# 📗 Guide Page
+# Guide Page
 
 ## Introduction
 
