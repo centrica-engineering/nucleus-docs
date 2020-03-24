@@ -1,37 +1,43 @@
 ---
-description: Typeface, sizing and usage of BG Flame font
+description: British Gas typeface - BG Flame
 ---
 
 # Typography
 
 ## Typeface
 
-### BG Flame Light
+The BG Flame font is a typeface unique to British Gas. Is has a clear, legible and elegant style.
 
-Weight: **normal**  
-Style: **normal**
+We fallback to `sans-serif` to allow the operating system to provide the substitute.
 
-### BG Flame Regular
 
-Weight: **normal**  
-Style: **normal**
+## Weights
 
-### BG Flame Bold
+There are three weights of BG Flame; bold, regular and light.
 
-Weight: **normal**  
-Style: **normal**
+Each of these weights are to be used to ensure variety through our content and messaging, in turn enabling us to create visual clarity, pace and hierarchy.
 
-### Usage
+This helps us to highlight different details and make sure legibility and readability is prominent in all our communications.
 
-CSS
+## Semantics vs. styles
 
-```css
-font-family: "BG Flame Regular", sans-serif;
-font-family: "BG Flame Bold", sans-serif;
-font-family: "BG Flame Light", sans-serif;
-```
+The definitions we cover here refer to typographic styles. It's important understand the separation of styles and semantics:
 
-## Sizes
+* The semantics of a page informs the hierarchy and relationships, making text logically  structured for screen readers and other assistive technologies.
+* Styles are used to ensure optimal readability and legibility, as well as convey our brand.
+
+Without semantically correct HTML, our content won't be accessible. Consider for example the following guidance on headings:
+
+* The page headings must follow an order, starting from H1 to H6.
+* A page must only have one H1 element.
+* Ensure heading levels are sequential: H1, H2 then H3. Not H1, H3 then H2.
+
+It is possible to style each heading. A suitable style may be applied on each of these headings. To avoid confusion, please remember the following:
+
+* Refer to H1, H2, etc. only when it comes to semantic choices and accessibility.
+* Use Nucleus naming conventions to discuss typographic style choices.
+
+## Modular scale
 
 > A universal typographic system which is consistent and efficient to use for both developers and designers.
 
@@ -39,54 +45,143 @@ We've implemented the following modular scale to inform our typographic hierarch
 
 A double stranded scale for each set of typographic sizes using two bases.
 
+### Bases
+
 1em (16px)  
 1.375em (22px)
 
-The result of which is:
+### Ratios
 
-### Heading
+| Scale | Ratio | Viewport |
+| :--- | :--- | :--- |
+| Major second | 1.125 | Small |
+| Minor third | 1.2 | Medium |
+| Major third | 1.25 | Large |
 
-Small - 1.125  
-Medium - 1.2  
-Large - 1.25
+### Sizes
 
-|  | Style |
-| :--- | :--- |
-| 12 | ♚ King |
-| 9 | ♛ Queen |
-| 6 | ♝ Bishop |
-| 5 | ♞ Knight |
-| 3 | ♜ Rook |
-| 2 | ♟ Pawn |
+|  | Heading | Paragraph |
+| :--- | :--- | :--- |
+| 12 | `<h1>` |  |
+| 9 | `<h2>` |  |
+| 6 | `<h3>` | `.p-large` |
+| 5 | `<h4>` |  |
+| 4 |  | `.p-feature` |
+| 3 | `<h5>` |  |
+| 2 | `<h6>` | `.p-normal` |
+| 0 |  | `.p-small` |
+| -1 |  | `.p-caption` |
 
-### Paragraph
 
-Small - 1.125  
-Medium - 1.2  
-Large - 1.25
+To learn more visit our foundation page on [Modular scale](https://docs.britishgas.design/v/release-candidate/foundations/modular-scale)
 
-|  | Style |
-| :--- | :--- |
-| 6 | p-large |
-| 4 | p-feature |
-| 2 | p-normal |
-| 0 | p-small |
-| -1 | p-caption |
+## Lists
 
-## Semantics vs. styles
+We have three different types of lists;  an unordered list, an ordered list and a description list.
 
-The definitions we have covered here refer to typographic styles. It's important understand the separation of visual directions and encoded semantics:
+There are a number of components that are designed to include these lists. To find out which, visit the Content guidance section of the component and you'll find the types of content that can be included.
 
-* Encoded semantics are used to define hierarchy and relationships, making text programmatically legible for screen readers and other assistive technologies.
-* Visual directions like the ones outlined here are used to ensure optimal readability and legibility, as well as convey a specific brand.
+Take a look at this example of the `ns-editorial` which can display these lists [ns-editorial content guidance](https://docs.britishgas.design/v/release-candidate/components/ns-editorial#content-guidance).
 
-Without semantically correct HTML, our content won't be accessible Consider for example the following guidance on headings:
+These lists can be nested up to four levels deep.
 
-* The page headings must follow an order, starting from H1 to H6.
-* A page must only have one H1 element.
+### Unordered list
 
-... and a suitable style may be applied on each of these headings. To avoid confusion, please remember the following:
+An unordered list is the most common, often referred to as a bullet list.
 
-* Refer to H1, H2, etc. only when it comes to semantic choices and accessibility.
-* Use Nucleus naming conventions to discuss typographic style choices.
+There are two types of unordered list, one with bullets and the other with ticks.
 
+#### Bullet list
+
+```markup
+<ul class="ul-bullet">
+  <li>...</li>
+  <li>...
+    <ul>
+      <li>...</li>
+      <li>...</li>
+    </ul>
+  </li>
+</ul>
+```
+#### Ticked list
+
+```markup
+<ul class="ul-ticked">
+  <li>...</li>
+  <li>...
+    <ul>
+      <li>...</li>
+      <li>...</li>
+    </ul>
+  </li>
+</ul>
+```
+
+### Ordered list
+
+```markup
+<ol class="ol-numbered">
+  <li>...</li>
+  <li>...
+    <ol>
+      <li>...</li>
+      <li>...</li>
+    </ol>
+  </li>
+</ol>
+```
+
+### Label and data list
+
+Displaying data alongside it's accompanying label is accomplished using the Description List element `<dl>` and it's children `<dt>` and `<dd>` wrapped in a `<div>`.
+
+There are two types of Label and data lists, one is displayed as rows at wide viewports and stacked on narrow viewports. The other is always stacked.
+
+These lists can not be nested.
+
+#### Label and data row
+
+```markup
+<dl class="dl-row">
+  <div>
+    <dt>...</dt>
+    <dd>...</dd>
+  </div>
+  <div>
+    <dt>...</dt>
+    <dd>...</dd>
+  </div>
+</dl>
+```
+
+It is not possible to nest these label and data lists. However, it is possible to add an ordered or unordered list within the Description Details `<dd>` element.
+
+```markup
+<dl class="dl-row">
+  <div>
+    <dt>...</dt>
+    <dd>
+      <ul class="ul-bullet">
+        <li>...</li>
+        <li>...</li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+```
+
+#### Label and data stacked
+
+```markup
+<dl class="dl-stacked">
+  <div>
+    <dt>...</dt>
+    <dd>...</dd>
+  </div>
+  <div>
+    <dt>...</dt>
+    <dd>...</dd>
+  </div>
+</dl>
+```
