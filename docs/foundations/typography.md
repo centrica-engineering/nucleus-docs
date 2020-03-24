@@ -23,7 +23,7 @@ This helps us to highlight different details and make sure legibility and readab
 
 The definitions we cover here refer to typographic styles. It's important understand the separation of styles and semantics:
 
-* The semantics of a page informs the hierarchy and relationships, making text logically  structured for screen readers and other assistive technologies.
+* The semantics of a page informs the hierarchy and relationships, making text logically structured for screen readers and other assistive technologies.
 * Styles are used to ensure optimal readability and legibility, as well as convey our brand.
 
 Without semantically correct HTML, our content won't be accessible. Consider for example the following guidance on headings:
@@ -60,7 +60,7 @@ A double stranded scale for each set of typographic sizes using two bases.
 
 ### Sizes
 
-|  | Heading | Paragraph |
+| Modular scale | Heading | Paragraph |
 | :--- | :--- | :--- |
 | 12 | `<h1>` |  |
 | 9 | `<h2>` |  |
@@ -77,7 +77,7 @@ To learn more visit our foundation page on [Modular scale](https://docs.britishg
 
 ## Lists
 
-We have three different types of lists;  an unordered list, an ordered list and a description list.
+We have three different types of lists;  an unordered list, an ordered list and a label and data list.
 
 There are a number of components that are designed to include these lists. To find out which, visit the Content guidance section of the component and you'll find the types of content that can be included.
 
