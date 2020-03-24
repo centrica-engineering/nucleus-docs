@@ -27,7 +27,7 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
-| Resize your image [see optimise your image](https://github.com/ConnectedHomes/nucleus-docs/tree/95a2be6f2144582507005e4179765f23924879dc/docs/components/LINK/README.md) | Use images as the primary content |
+| Resize your image [see optimise your image](https://docs.britishgas.design/v/release-candidate/how-to/optimise-images) | Use images as the primary content |
 | Use the correct image format png/jpg | Put text inside the image |
 | Use brand approved images | Use a white background in images |
 | Think about the image responsive behaviour |  |
