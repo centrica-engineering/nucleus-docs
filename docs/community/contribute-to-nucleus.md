@@ -29,7 +29,7 @@ To get started, visit [Working with Nucleus](https://docs.britishgas.design/gett
 For any feedback related to our Nucleus components and related documentation, we're using Github. This helps us provide a transparent track of all contributions and potential issues.
 
 1. You can view our [requests status](https://github.com/ConnectedHomes/nucleus/projects/6).
-2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=%5Bns-COMPONENT%5D), add a new [change request (RFC)](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request), as well as react or comment on existing feedback.
+2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-COMPONENT]), add a new [change request (RFC)](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request), as well as react or comment on existing feedback.
 3. We've prepared a template to structure incoming feedback, gather relevant insights, and help us respond accordingly.
 4. If and once an issue is picked up, we'll ask to meet you to swap ideas and listen to your insights or make use of weekly design critique sessions.
 

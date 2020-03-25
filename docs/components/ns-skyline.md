@@ -23,7 +23,7 @@ Positioned directly beneath the global navigation and above any content, `ns-sky
 | :--- | :--- | :--- |
 | A | Icon | This is the icon inside the `ns-skyline`, it can be either an information or warning icon depending on the type of message you wish to display. |
 | B | Heading | This is the heading to the anonymous content. When the heading is clicked the component opens to reveal the content. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
-| C | Content | `ns-skyline` can accommodate multiple paragraph slots, these should be concise, using sub-headings to split large paragraphs. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`.| 
+| C | Content | `ns-skyline` can accommodate multiple paragraph slots, these should be concise, using sub-headings to split large paragraphs. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`.|
 
 ## Best practice
 

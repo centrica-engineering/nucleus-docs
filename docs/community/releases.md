@@ -89,7 +89,7 @@ Release date - 2019-11-11
 
 **What’s new around here 🐣**
 
-* We've simplified our [Request for change](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC%2C+draft&template=b--request-a-change.md&title=%5BRFC%5D+Title+of+the+request) GitHub ticket template.
+* We've simplified our [Request for change](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request) GitHub ticket template.
 * We have included `ns-selector` in this release.
   * Enhanced radio button or checkbox group.
   * Include either an illustration or an image and additional content to support decision.
