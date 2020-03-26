@@ -96,49 +96,41 @@ There are two types of unordered list, one with bullets and the other with ticks
 ```markup
 <ul class="ul-bullet">
   <li>...</li>
-  <li>...
-    <ul>
-      <li>...</li>
-      <li>...</li>
-    </ul>
-  </li>
+  <li>...</li>
 </ul>
 ```
+
+To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--example).
+
 #### Ticked list
 
 ```markup
 <ul class="ul-ticked">
   <li>...</li>
-  <li>...
-    <ul>
-      <li>...</li>
-      <li>...</li>
-    </ul>
-  </li>
+  <li>...</li>
 </ul>
 ```
 
+To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--example).
+
 ### Ordered list
+
+The ordered list will display an incremental number alongside each list item.
 
 ```markup
 <ol class="ol-numbered">
   <li>...</li>
-  <li>...
-    <ol>
-      <li>...</li>
-      <li>...</li>
-    </ol>
-  </li>
+  <li>...</li>
 </ol>
 ```
+
+To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--example).
 
 ### Label and data list
 
 Displaying data alongside it's accompanying label is accomplished using the Description List element `<dl>` and it's children `<dt>` and `<dd>` wrapped in a `<div>`.
 
 There are two types of Label and data lists, one is displayed as rows at wide viewports and stacked on narrow viewports. The other is always stacked.
-
-These lists can not be nested.
 
 #### Label and data row
 
@@ -155,33 +147,4 @@ These lists can not be nested.
 </dl>
 ```
 
-It is not possible to nest these label and data lists. However, it is possible to add an ordered or unordered list within the Description Details `<dd>` element.
-
-```markup
-<dl class="dl-row">
-  <div>
-    <dt>...</dt>
-    <dd>
-      <ul class="ul-bullet">
-        <li>...</li>
-        <li>...</li>
-      </ul>
-    </dd>
-  </div>
-</dl>
-```
-
-#### Label and data stacked
-
-```markup
-<dl class="dl-stacked">
-  <div>
-    <dt>...</dt>
-    <dd>...</dd>
-  </div>
-  <div>
-    <dt>...</dt>
-    <dd>...</dd>
-  </div>
-</dl>
-```
+To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--example).
