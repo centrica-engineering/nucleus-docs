@@ -6,8 +6,6 @@ description: Experience patterns.
 
 ## What is the difference between a component and an experience pattern?
 
-Looking into the differences for Nucleus for when should create a component and when to create an experience pattern.
-
 | Components | Experience patterns |
 | :---- | :----|
 | Can be an atom, molecule or organism. | Built using Nucleus components and foundations. |
