@@ -24,6 +24,8 @@ Release date - 2020-02-26
 
 **Improvements 🐑**
 
+Some of the biggest improvements we've made have come from our community.
+
 * Subset fonts
 * Storybook theme
 * Storybook codesandbox
