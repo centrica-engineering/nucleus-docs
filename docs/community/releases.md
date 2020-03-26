@@ -12,7 +12,8 @@ Release date - 2020-02-26
 
 **What’s new around here 🚤**
 
-* Download link component
+* Download link component.
+- A standardised way to download from our site, paying special attention to  the experience of our customers using screenreaders.
 * Irish postcode validation for ns-inputter
 
 **Bug fixes 🐜**
