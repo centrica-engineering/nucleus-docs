@@ -6,9 +6,17 @@ description: Getting involved with Nucleus.
 
 > To get you up and running with Nucleus.
 
-## Our vision
+## Our vision 🌟
 
-To create a coherent, accessible experience for everyone.
+To create an industry leading design system that is known and respected across the community.
+
+## Our mission 🚀
+
+Nucleus is an inclusive, community driven design system. It brings together our brand personality and world class experiences.
+
+## Our purpose 🧩
+
+To enable teams across British Gas to deliver consistent, accessible experiences that delight our customers.
 
 ## What is a design system?
 
