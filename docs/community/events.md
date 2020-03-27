@@ -20,22 +20,22 @@ In the first part of the presentation we covered:
 * Success stories in our ways of working with other teams.
 * Finally, we finished the fist part with a preview of what’s coming in our next release.
 
-As a bonus we introduced the team to the topic of systems thinking. This was intended to get the team thinking more about the ‘system’ aspect of a design system, and hopefully dispel the myth that it's all about design! 
+As a bonus we introduced the team to the topic of systems thinking. This was intended to get the team thinking more about the ‘system’ aspect of a design system, and hopefully dispel the myth that it's all about design!
 
-The final message was a nudge to get teams to think about how their requirements fit in with other products and journeys (i.e. as part of the system), and we provided some example questions they to use in order to be more 'system focused' when raising requests for change to the design system. 
+The final message was a nudge to get teams to think about how their requirements fit in with other products and journeys (i.e. as part of the system), and we provided some example questions they to use in order to be more 'system focused' when raising requests for change to the design system.
 
 [Squad achievements December.pdf](https://github.com/ConnectedHomes/nucleus/files/3940301/Squad.session._December_final.pdf) [†]
 
 ## 2019-11-06 / Squad achievement session
 
-This was the first of the monthly Squad Achievements sessions. We gave a presentation to the whole UK home digital team. Focused on introducing what Nucleus is and why we have a design system as a company. 
+This was the first of the monthly Squad Achievements sessions. We gave a presentation to the whole UK home digital team. Focused on introducing what Nucleus is and why we have a design system as a company.
 
 The presentation talked through the following points;
 
   * An introduction to the team and our roles.
-  * We explained what a design system is, and more importantly what it’s not. 
-  * We talked through the main advantages of the design system including: efficiency, consistency, code quality and accessibility. 
-  * We then discussed how we make this happen as a team on a day to day basis. 
+  * We explained what a design system is, and more importantly what it’s not.
+  * We talked through the main advantages of the design system including: efficiency, consistency, code quality and accessibility.
+  * We then discussed how we make this happen as a team on a day to day basis.
   * We also highlighted the current pressure on the design community being the sole advocates of Nucleus in each team. We made the point that everyone in each team has a role to play.
   * Finishing off by congratulating everyone on how far we have come but reinforced the point that we still have a long way to go.
 
@@ -46,7 +46,7 @@ The audience had the opportunity to ask questions via slack after the event. We 
 
 ## 2019-10-15 / A simpler, easy to use RFC template
 
-* Nick introduced the [latest Nucleus RFC](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC%2C+draft&template=b--request-a-change.md&title=%5BRFC%5D+Title+of+the+request) [†] (Request for change) template.
+* Nick introduced the [latest Nucleus RFC](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request) [†] (Request for change) template.
   * What is the difference between our old RFC template and the new one.
   * Understanding - What is an RFC?
   * Listening to the feedback we've received to date.
@@ -285,7 +285,7 @@ Highlights of our experience:
 
 ## 2018-12-13 / Community and Contributing workshop
 
-* Understanding what community and contributing to Nucleus [means](https://docs.britishgas.design/community/best-practices) to UX designers.
+* Understanding what community and contributing to Nucleus [means](https://docs.britishgas.design/getting-started/best-practices) to UX designers.
 * Co-creating first drafts of contribution processes.
 
 [†] This can only be accessed from approved Github accounts, please make sure you are logged in to access.

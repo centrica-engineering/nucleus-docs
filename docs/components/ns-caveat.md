@@ -13,6 +13,7 @@ Caveats link to content in the page, providing more information about legality a
 ## Content guidance
 
 ![Caveat - Link](https://user-images.githubusercontent.com/45626534/74146740-ad9e6400-4bf9-11ea-8c26-091b21b7aaf4.png)
+
 ![Caveat](https://user-images.githubusercontent.com/45626534/74146791-c9096f00-4bf9-11ea-936b-75b2f6dc13de.png)
 
 | Key | Field type | Guidelines |
