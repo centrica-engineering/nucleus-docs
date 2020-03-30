@@ -6,13 +6,13 @@ description: Need something new from the Design System?
 
 ## Re-use and recycle
 
-We believe there is much more value and efficiency in using existing assets before attempting to build custom, once-off components and experience. By collaborating with other teams, growing body of reusable assets, tools, methods and knowledge.
+We believe there is much more value and efficiency in using existing assets before attempting to build custom, one off components and experience patterns. By collaborating with other teams we want to grow the body of reusable assets, tools, methods and knowledge.
 
-That said; Nucleus is a living system, and we're constantly looking for improvements on how it's implemented and methods to scale across all teams. If you have an idea you think is worth exploring then the best thing to do is to come and talk to the team - we can help you explore your options, or help with your research and testing using the design system.  
+That said; Nucleus is a living system. We're constantly looking for improvements on how it's implemented and methods to scale across all teams. If you have an idea you think is worth exploring then the best thing to do is to come and talk to the team - we can help you explore your options, or help with your research and testing using the design system.  
 
 ## Insights on existing Nucleus assets
 
-For any feedback related to our Nucleus components and related documentation, we're using Github. This helps us provide a transparent track of all contributions and potential issues, as well as tie these into our own [backlog](https://github.com/ConnectedHomes/nucleus/milestone/18).
+For any feedback related to our Nucleus components and related documentation, we're using Github. This helps us provide a transparent trail of all contributions and potential issues, as well as tie these into our own [backlog](https://github.com/ConnectedHomes/nucleus/milestone/18).
 
 1. You can view our [requests status](https://github.com/ConnectedHomes/nucleus/projects/6).
 2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-COMPONENT]), add a new [change request (RFC)](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request), as well as react or comment on existing feedback.
