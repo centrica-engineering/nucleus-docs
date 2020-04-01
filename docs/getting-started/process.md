@@ -4,7 +4,7 @@ description: Understanding our processes
 
 # Process
 
-> Explaining how we do what we do
+> Explaining how we do what we do.
 
 ![Process timeline for changes to Nucleus](https://user-images.githubusercontent.com/7101754/78082493-0f35b000-73ab-11ea-81ed-97970477736d.jpg)
 
@@ -18,9 +18,9 @@ This is where the gaps in the design system are identified.
 
 ### Creating an RFC
 
-Anyone of our stakeholders can create an RFC in our Github repository as an [RFC issue](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC%2C+draft&template=b--request-a-change.md&title=%5BRFC%5D+Title+of+the+request).
+Any one of our stakeholders can create an RFC in our Github repository as an [RFC issue](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC%2C+draft&template=b--request-a-change.md&title=%5BRFC%5D+Title+of+the+request).
 
-An RFC should only be raised after all other possibilities have been extinguished with using what is currently available in the design system.
+An RFC should only be raised after all other possibilities have been extinguished with what is currently available in the design system.
 
 ### Community involvement
 
@@ -56,7 +56,7 @@ Following the [vanilla first approach](https://docs.britishgas.design/how-to/van
 
 ### Delivering the development spec and discovery
 
-The conclusion of the discovery is added to the story ticket and an initial development specification for the change is outlined. This update to the story ticket is to be announced in the RFC.
+The conclusion of the discovery is added to the story ticket and an initial development specification for the change is outlined. This update to the story ticket is to be announced in the RFC by the team to keep the open conversation going with the community.
 
 ## Design
 
@@ -80,7 +80,7 @@ Testing should be completed with functional, regression, behaviour-driven develo
 
 ## Releasing
 
-When we all are confident with our changes, we can release, following [semver](https://semver.org/).
+When we are all confident with our changes, we can release, following [semver](https://semver.org/).
 
 We can now shout out about our changes throughout our channels to inform community and to get feedback from usage.
 
