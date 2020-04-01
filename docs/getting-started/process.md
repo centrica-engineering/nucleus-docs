@@ -44,7 +44,7 @@ A story ticket is created once the problem has been identified, loosely outlinin
 
 ### Testing
 
-This is where we find out if our potential solutions are the right way to go. This can be done in a variety of ways. Asking  teams to A/B test the idea, perform some gorilla testing, introduce the solution into other teams user testing sessions or to create our own user testing.
+This is where we find out if our potential solutions are the right way to go. This can be done in a variety of ways. Asking  teams to A/B test the idea, perform some guerrilla testing, introduce the solution into other teams user testing sessions or to create our own user testing.
 
 ### Refining the ticket
 
