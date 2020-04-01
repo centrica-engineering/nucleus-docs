@@ -4,7 +4,7 @@ description: Vanilla first thinking
 
 # Vanilla first
 
-> It's a mindset
+> It's a mindset, an undercurrent supporting our process.
 
 ## What is vanilla first?
 
