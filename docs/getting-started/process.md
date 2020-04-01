@@ -66,7 +66,7 @@ Time will be spent looking at how these changes interact with all parts of the d
 
 ## Development
 
-The creation of the changes to the design system will now begin and will be delivered through development. At all times we will follow our digital development process and code of conduct.
+The creation of the changes to the design system will now begin and will be delivered through development. At all times we will follow our digital development process and [code of conduct](https://github.com/ConnectedHomes/ember-commons/blob/master/CODE_OF_CONDUCT.md).
 
 ## Documentation
 
