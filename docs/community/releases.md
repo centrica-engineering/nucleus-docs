@@ -4,6 +4,28 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
+## Version 1.7.0
+
+**Label and Data**
+
+Release date - 2020-04-02
+
+**What’s new around here 🚤**
+
+* Label and Data - description list classes that can be used to present labelled content.
+
+**Bug fixes 🐜**
+
+* We've fixed a missing paragraph margin in the landmark component
+* Textarea font size now matches other inputs
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌
+
 ## Version 1.6.0
 
 **Download component and Irish postcode validation**
