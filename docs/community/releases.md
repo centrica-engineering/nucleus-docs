@@ -12,12 +12,12 @@ Release date - 2020-04-02
 
 **What’s new around here 🚤**
 
-* Label and Data - description list classes
+* Label and Data - description list classes that can be used to present labelled content.
 
 **Bug fixes 🐜**
 
-* [ns-landmark] We've fixed the missing paragraph margin
-* Fix [ns-inputter] textarea font size
+* We've fixed a missing paragraph margin in the landmark component
+* Textarea font size now matches other inputs
 
 **Feedback 💌**
 
