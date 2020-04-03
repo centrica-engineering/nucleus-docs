@@ -16,7 +16,7 @@ Release date - 2020-04-02
 
 **Bug fixes 🐜**
 
-* [ns-landmark] missing paragraph margin
+* [ns-landmark] We've fixed the missing paragraph margin
 * Fix [ns-inputter] textarea font size
 
 **Feedback 💌**
