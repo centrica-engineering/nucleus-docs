@@ -8,13 +8,11 @@ description: Vanilla first thinking
 
 ## What is vanilla first?
 
-Vanilla isn't extraordinary; vanilla is considered to be ice cream's default flavour. It's not mint & choc chip, nor is it Ferrero Rocher.
+When it comes to ice cream; vanilla is a stand out success. It may not have the complexity of mint choc chip, or the extravagance of Ferrero Rocher, but its simplicity is what makes it so extraordinary.
 
-A solution stops being vanilla when it is customised beyond the needs to satisfy a specific need.
+Its modest nature makes vanilla so popular; it can complement other flavours and satisfy multiple needs. Customise vanilla and you begin to gratify fewer needs.
 
-So, a vanilla component does the absolute minimum needed to implement a solution, while a non-vanilla component would take it one or more steps further to do something above and beyond the ordinary.
-
-Every iteration of a feature or component should follow this vanilla first approach.
+Applying this analogy to creating solutions - a vanilla component should solve a problem with the simplest solution. Every iteration of a feature or component should use this approach first.
 
 ## Why we do it
 
