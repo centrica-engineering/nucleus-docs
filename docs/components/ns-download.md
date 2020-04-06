@@ -45,7 +45,18 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-download--list" caption="" %}
 
 ```markup
-<ns-download href="link/to/file.pdf" fileSize="123MB">Text to display</ns-download>
+
+<ul class="download-list">
+  <li><ns-download href="link/to/file.pdf" fileSize="123MB">Text to display</ns-download></li>
+  <li><ns-download href="link/to/file.pdf" fileSize="123MB">Text to display</ns-download></li>
+  <li><ns-download href="link/to/file.pdf" fileSize="123MB">Text to display</ns-download></li>
+</ul>
+
+<ol class="download-list">
+  <li><ns-download href="link/to/file.pdf" fileSize="123MB">Bill for January</ns-download></li>
+  <li><ns-download href="link/to/file.pdf" fileSize="123MB">Bill for February</ns-download></li>
+  <li><ns-download href="link/to/file.pdf" fileSize="123MB">Bill for March</ns-download></li>
+</ol>
 ```
 
 ## Component Relationship
