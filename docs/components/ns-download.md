@@ -17,7 +17,7 @@ Currently only allows '.pdf' and '.xls' file types, other types can be added but
 | Use for all downloads | Use the instructions in the body e.g. 'download here'|
 | Include file size | Don't describe the file as a file |
 | Describe what the file is |  |
-| Place in download-list when you have more than 1 download link in row|  |
+| Place in a list element with class `download-list` when you have more than 1 download link in row|  |
 
 ### Considerations of best practice
 
