@@ -19,7 +19,7 @@ We use accordions to break down content into meaningful sections, helping to red
 | A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total.  |
 | B | Content | Use between 1 and 8 ns-expanders. Each expander consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content. See [ns-expander](https://docs.britishgas.design/components/ns-expander) for further content guidance. |
 
-## Best practises
+## Best practice
 
 | 💚 Do | 💔 Don't |
 | :---  | :---  |
