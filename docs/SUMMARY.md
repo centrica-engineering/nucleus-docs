@@ -22,6 +22,7 @@
   * [ns-card](components/ns-card.md)
   * [ns-caveat](components/ns-caveat.md)
   * [ns-cta](components/ns-cta.md)
+  * [ns-customer-testimonial](components/ns-customer-testimonial.md)
   * [ns-download](components/ns-download.md)
   * [ns-editorial](components/ns-editorial.md)
   * [ns-expander](components/ns-expander.md)
@@ -65,5 +66,3 @@
   * [Events](community/events.md)
   * [Contribute to Nucleus](community/contribute-to-nucleus.md)
   * [Release notes](community/releases.md)
-
-
