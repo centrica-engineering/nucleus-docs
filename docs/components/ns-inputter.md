@@ -138,7 +138,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter" caption="" %}
 
 ```markup
-<ns-inputter validation="['isRequired']" helper="So we can send you love letters">
+<ns-inputter validation="['isRequired']" helper="So we can send you love letters" name="first-name">
   <label slot="label">First name</label>
   <input type="text">
 </ns-inputter>
@@ -165,6 +165,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | `heading` | `string` |  |  | Used for checkboxes and radio buttons instead of a label |
 | `mask` | `string` |  |  | Shows what can be entered. Similar to a placeholder, but stays when values are entered. |
 | `separator` | `string` |  |  | Allows the mask to manipulate the inputted value if it needs to be formatted in a certain way. |
+| `name` | `string` |  |  | The name of this field as it will display in the form data. |
 
 | Slots | Type |
 | :--- | :--- |
