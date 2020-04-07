@@ -8,7 +8,7 @@ description: Atom | Customer testimonial component.
 
 > This component is currently under development.
 
-A new component to display all the lovely things that customers say about us
+A new component to display all the lovely things that customers say about us. The customer testimonial should be used as an enticement to buy British Gas products and services. It works by providing the customer with confidence.
 
 ## Best practice
 
