@@ -1,12 +1,12 @@
 ---
-description: Atom | Customer testimonial component.
+description: Atom | Customer testimonial component **EXPERIMENTAL**.
 ---
 
-# ns-customer-testimonial [experimental]
+# ns-customer-testimonial **EXPERIMENTAL**
 
 ## Introduction
 
-> This component is currently under development.
+> **EXPERIMENTAL** This component is currently under development.
 
 A new component to display all the lovely things that customers say about us. The customer testimonial should be used as an enticement to buy British Gas products and services. It works by providing the customer with confidence.
 
@@ -25,15 +25,18 @@ A new component to display all the lovely things that customers say about us. Th
 ## Usage
 
 <!--
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-customer-testimonal--standard)
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-customer-testimonial--standard)
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-customer-testimonal" caption="" %}
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-customer-testimonial" caption="" %}
 -->
-```Suggested markup
-<ns-customer-testimonal citeUrl="https://url-to-quote" customer="Charles Spencer" medium="twitter">
+
+### Suggested markup:
+
+```markup
+<ns-customer-testimonial citeUrl="https://url-to-quote" customer="Charles Spencer" medium="twitter">
   <p slot="quote">Check your rewards if you've got an account with British Gas. There are fantastic rewards to choose from at the moment. <b>Many thanks @britishgas</b></p>
 </blockquote>
-</ns-customer-testimonal>
+</ns-customer-testimonial>
 ```
 
 
@@ -59,7 +62,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-customer-testimonal]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-customer-testimonal]).
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-customer-testimonial]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-customer-testimonial]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
