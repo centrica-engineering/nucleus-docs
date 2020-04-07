@@ -10,7 +10,7 @@ description: Atom | Icon component.
 
 Icons provide clarity to users reducing the cognitive load. Icons always supplement a single line of text and are not treated as a description. They are solid or outline a single colour.
 
-## Best practices
+## Best practice
 
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |

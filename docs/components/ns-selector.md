@@ -22,7 +22,7 @@ description: Molecule | Selector component.
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | `ns-selector`| n/a | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-selector-640x360px](https://user-images.githubusercontent.com/50207859/68392177-1ee4fb80-0161-11ea-8826-14326d2c976a.jpg) |
 
-## Best practices
+## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
