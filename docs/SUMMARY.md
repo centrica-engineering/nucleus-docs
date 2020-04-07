@@ -52,6 +52,7 @@
   * [Hub](page-types/hub.md)
   * [Product](page-types/product.md)
   * [Guide](page-types/guide.md)
+  * [Roadblock](page-types/roadblock.md)
 * [How to's](how-to/README.md)
   * [Contribute to documentation](how-to/contribute-to-documentation.md)
   * [Optimise your images](how-to/optimise-images.md)
