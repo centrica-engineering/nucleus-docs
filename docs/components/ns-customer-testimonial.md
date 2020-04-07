@@ -2,7 +2,7 @@
 description: Atom | Customer testimonial component.
 ---
 
-# ns-customer-testimonal [experimental]
+# ns-customer-testimonial [experimental]
 
 ## Introduction
 
