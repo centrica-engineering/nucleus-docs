@@ -87,7 +87,7 @@ These lists can be nested up to four levels deep.
 
 ### Unordered list
 
-An unordered list is the most common, often referred to as a bullet list.
+An unordered list is the most common, often referred to as a bullet list. Use the Unordered list element `<ul>` as the parent element and a List item `<li>` for each line.
 
 There are two types of unordered list, one with bullets and the other with ticks.
 
@@ -100,7 +100,7 @@ There are two types of unordered list, one with bullets and the other with ticks
 </ul>
 ```
 
-To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--example).
+To see a more complex example of the Bullet list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--ul-bullet).
 
 #### Ticked list
 
@@ -111,11 +111,17 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 </ul>
 ```
 
-To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--example).
+To see a more complex example of the Ticked list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--ul-ticked).
 
 ### Ordered list
 
-The ordered list will display an incremental number alongside each list item.
+There is one type of ordered list, this displays numbers for each list item. Use the Ordered list element `<ol>` as the parent element and a List item `<li>` for each line.
+
+We refer to this list as the numbered list.
+
+#### Numbered list
+
+The numbered list will display an incremental number alongside each list item.
 
 ```markup
 <ol class="ol-numbered">
@@ -124,9 +130,9 @@ The ordered list will display an incremental number alongside each list item.
 </ol>
 ```
 
-To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--example).
+To see a more complex example of the Numbered list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--ol-numbered).
 
-### Label and data list
+### Description list
 
 Displaying data alongside it's accompanying label is accomplished using the Description List element `<dl>` and it's children `<dt>` and `<dd>` wrapped in a `<div>`.
 
@@ -147,4 +153,21 @@ There are two types of Label and data lists, one is displayed as rows at wide vi
 </dl>
 ```
 
-To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--example).
+To see a more complex example of the Label and data row visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--dl-row).
+
+#### Label and data stack
+
+```markup
+<dl class="dl-stack">
+  <div>
+    <dt>...</dt>
+    <dd>...</dd>
+  </div>
+  <div>
+    <dt>...</dt>
+    <dd>...</dd>
+  </div>
+</dl>
+```
+
+To see a more complex example of the Label and data stack visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--dl-stack).
