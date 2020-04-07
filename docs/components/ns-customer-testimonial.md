@@ -16,7 +16,8 @@ A new component to display all the lovely things that customers say about us. Th
 | :---  | :---  |
 | Use a single sentence | Use multiple paragraphs |
 | Use `<b>` to highlight keyphrases |  |
-|  |  |
+| Use positive feedback | Include anything negative, rude or which may be misconstrued  |
+| | Include any personal information beyond first name or twitter handle |
 
 ### Considerations of best practice
 
