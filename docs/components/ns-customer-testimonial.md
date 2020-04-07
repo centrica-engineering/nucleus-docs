@@ -15,7 +15,7 @@ A new component to display all the lovely things that customers say about us. Th
 | 💚 Do | 💔 Don't |
 | :---  | :---  |
 | Use a single sentence | Use multiple paragraphs |
-| Use `<b>` to highlight keyphrases |  |
+| Use `<b>` to highlight keyphrases | Link to a live twitter handle |
 | Use positive feedback | Include anything negative, rude or which may be misconstrued  |
 | | Include any personal information beyond first name or twitter handle |
 
@@ -29,8 +29,8 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-customer-testimonal" caption="" %}
 -->
-```markup
-<ns-customer-testimonal citeUrl="https://url-to-quote" customerName="Charles Spencer" medium="twitter">
+```Suggested markup
+<ns-customer-testimonal citeUrl="https://url-to-quote" customer="Charles Spencer" medium="twitter">
   <p slot="quote">Check your rewards if you've got an account with British Gas. There are fantastic rewards to choose from at the moment. <b>Many thanks @britishgas</b></p>
 </blockquote>
 </ns-customer-testimonal>
@@ -50,7 +50,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
 | citeUrl | `string` |  |  | This attribute should point to information explaining the context or the reference for the quote. |
-| customerName | `string` |  |  | The name of the customer that provided the quote |
+| customer | `string` |  |  | The name or twitter handle of the customer that provided the quote |
 | medium | `string` |  |  | The name of the platform that the customer used to leave their message |
 | quote | `string` |  |  | What the customer said |
 
