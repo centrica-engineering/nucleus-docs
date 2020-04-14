@@ -62,13 +62,13 @@ A double stranded scale for each set of typographic sizes using two bases.
 
 | Modular scale | Heading | Paragraph |
 | :--- | :--- | :--- |
-| 12 | `<h1>` |  |
-| 9 | `<h2>` |  |
-| 6 | `<h3>` | `.p-large` |
-| 5 | `<h4>` |  |
+| 12 | `<h1>` `.h1` |  |
+| 9 | `<h2>` `.h2` |  |
+| 6 | `<h3>` `.h3` | `.p-large` |
+| 5 | `<h4>` `.h4` |  |
 | 4 |  | `.p-feature` |
-| 3 | `<h5>` |  |
-| 2 | `<h6>` | `.p-normal` |
+| 3 | `<h5>` `.h5` |  |
+| 2 | `<h6>` `.h6` | `.p-normal` |
 | 0 |  | `.p-small` |
 | -1 |  | `.p-caption` |
 
