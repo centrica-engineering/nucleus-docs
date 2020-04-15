@@ -25,7 +25,11 @@ Include file size - this is particularly nice for customers that are on reduced 
 
 Text Content - the text provided between the ns-download tags is used to create the filename for the downloaded file. This helps users identify the file that has been downloaded.
 
-The download-list class can only be used on `<ul>` and `<ol>` html tags. Each ns-download must be a direct child of a `<li>`
+The download-list class can only be used on `<ul>` and `<ol>` html tags. Each ns-download must be a direct child of a `<li>`.
+
+#### Accessibility 
+
+In order to comply with accessibility standards you should not force a file to open in a new tab. It must be left up to the user to decide whether to download a file, or open in a new tab.
 
 ## Usage
 
