@@ -43,7 +43,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `type`| `string`  | `gas` | `gas`, `appliance`,`oven`,`boiler`,`bulb`,`clock`,`gas`,`home`,`protect`,`tap`, `appliance`[Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance) | Picks the illustration that is wanted to be shown. |
+| `type`| `string`  | `gas` | `gas`, `appliance`, `oven`, `boiler`, `bulb`, `clock`, `gas`, `home`, `protect`, `tap`, `appliance`[Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance) | Picks the illustration that is wanted to be shown. |
 | `size` | `number` | `''` | `''`, `1`, `2`, `3`, `4`, `5` | Changes the size of the illustration, with 1 being the smallest. |
 | `inactive` | `string` | `false` | `true`, `false` | Will grey out the illustration. |
 
