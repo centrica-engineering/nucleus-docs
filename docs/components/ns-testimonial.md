@@ -1,12 +1,12 @@
 ---
-description: Atom | Customer testimonial component.
+description: Atom | Testimonial component.
 ---
 
 # ns-testimonial
 
 ## Introduction
 
-A new component to display all the lovely things that customers say about us. The customer testimonial should be used as an enticement to buy British Gas products and services. It works by providing the customer with confidence.
+A new component to display all the lovely things that people say about us. The testimonial should be used as an enticement to buy British Gas products and services. It works by providing the customer with confidence.
 
 ## Best practice
 
@@ -46,9 +46,9 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
 | citeUrl | `string` |  |  | This attribute should point to information explaining the context or the reference for the quote. |
-| author | `string` |  |  | The name or twitter handle of the customer that provided the quote |
-| medium | `string` |  |  | The name of the platform that the customer used to leave their message |
-| quote | `string` |  |  | What the customer said |
+| author | `string` |  |  | The name or handle of the author that provided the quote. |
+| medium | `string` |  |  | The name of the platform that the author used to leave their message eg twitter.|
+| quote | `string` |  |  | What the author wrote or said. |
 
 ## Specification notes
 
