@@ -48,7 +48,7 @@ Illustrations use `@slate` (#333f48) over half of the object in order to add dep
 
 ## Exporting illustrations
 
-Once you’re illustrations are completed (and signed off!) they need to be made ready for development. Follow these steps to a happy developer:
+Once your illustrations are completed (and signed off!) they need to be made ready for development. Follow these steps to a happy developer:
 
 1. Check your gradients are not multiplied opacity.
 2. Select the icon and choose Object &gt; Expand appearance.
