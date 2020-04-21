@@ -46,11 +46,9 @@ Our illustrations use `@white` (#FFFFFF) to pull out details within the object.
 
 Illustrations use `@slate` (#333f48) over half of the object in order to add depth.
 
-## Technical bit
+## Exporting illustrations
 
-### Exporting illustrations for developers
-
-Once you’re illustrations are completed (and signed off!) they need to be made ready for development. Follow these steps to a happy developer:
+Once your illustrations are completed (and signed off!) they need to be made ready for development. Follow these steps to a happy developer:
 
 1. Check your gradients are not multiplied opacity.
 2. Select the icon and choose Object &gt; Expand appearance.
@@ -63,7 +61,46 @@ Select SVG in the left hand panel &gt; choose Inline Style in the Styling dropdo
 
 ![Exporting illustrations](https://user-images.githubusercontent.com/43471890/62051134-a211bf80-b20a-11e9-8787-f72f2d4579c3.jpg)
 
-## Super Saiyan level
+## Cross browser compatibility issues
+
+### Unique id's
+
+ie11 has issues displaying svgs if two or more svgs on a single page share the same id. Each id used on all svgs will need to be unique at a global level.
+
+### LinearGradient and  `xlink:href` / `href`
+
+Older versions of Safari and Chrome on iOS do not render gradients when `xlink:href` and `href` attributes are used on linearGradients. These will need to be refactored so that they duplicate the gradients rather than link to them.
+
+**For example:**
+
+```html
+<defs>
+  <linearGradient id="svg-a" x1="31.44" x2="94.95" y1="-95" y2="15" gradientTransform="translate(0 120)" gradientUnits="userSpaceOnUse">
+    <stop offset=".37" stop-color="#005eb8"/>
+    <stop offset="1" stop-color="#003c71"/>
+  </linearGradient>
+  <linearGradient id="svg-b" x1="164.41" x2="62.4" y1="-173.62" y2="3.08" xlink:href="#svg-a"/>
+</defs>
+```
+
+**Will become:**
+
+Note: every attribute that does not exist on `#svg-b` will need to be copied over.
+
+```html
+<defs>
+  <linearGradient id="svg-a" x1="31.44" x2="94.95" y1="-95" y2="15" gradientTransform="translate(0 120)" gradientUnits="userSpaceOnUse">
+    <stop offset=".37" stop-color="#005eb8"/>
+    <stop offset="1" stop-color="#003c71"/>
+  </linearGradient>
+  <linearGradient id="svg-b" x1="164.41" x2="62.4" y1="-173.62" y2="3.08" gradientTransform="translate(0 120)" gradientUnits="userSpaceOnUse">
+    <stop offset=".37" stop-color="#005eb8"/>
+    <stop offset="1" stop-color="#003c71"/>
+  </linearGradient>
+</defs>
+```
+
+### Super Saiyan level
 
 The rendering of illustrations differs among different browsers (I'm looking at you Safari and IE).
 
