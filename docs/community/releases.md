@@ -4,13 +4,49 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
+## Version 1.8.0
+
+**Multiple download links, new illustrations, testimonials and more**
+
+Release date - 2020-04-23
+
+**What's new around here? 🛥**
+
+* Multiple download links
+  * First we created a standardised way to download documents. Now we've extended that to handle multiple documents in way that that helps the user find what they're looking for.
+* Our illustration suite has expanded based on your feedback.
+  * 6 new illustrations have been added, and can now be used to decorate pages:
+  * `boiler-repair`, `dual-fuel`, `electric-vehicle`, `engineer`, `help`, `savings`
+* Version 1 of our `ns-testimonial` component, born out of a successful AB test.
+  * Use this to display positive customer feedback. Watch out for its evolution in our next release.
+
+**Bug fixes 🐞**
+
+You brought a couple of accessibility defects to our attention recently, and we've work hard to solve what turned out to be tricky problems. You'll now see:
+
+* Better colour contrast of the placeholder text on the `ns-inputter`.
+* Better colour contrast of the mask text on the `ns-inputter`.
+
+**Improvements 🐑**
+
+The design system is constantly evolving, that means improving what we have as well as adding something new. In this release we:
+
+* Added syntax highlighting in html snippets to improve the Storybook experience.
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌
+
 ## Version 1.7.0
 
 **Label and Data**
 
 Release date - 2020-04-02
 
-**What’s new around here 🚤**
+**What’s new around here? 🚤**
 
 * Label and Data - description list classes that can be used to present labelled content.
 
@@ -32,12 +68,12 @@ Any questions? Let us know 🙌
 
 Release date - 2020-02-26
 
-**What’s new around here 🚤**
+**What’s new around here? 🚤**
 
 * Download link component.
-- A standardised way to download from our site, paying special attention to  the experience of our customers using screenreaders.
+  * A standardised way to download from our site, paying special attention to  the experience of our customers using screenreaders.
 * Irish postcode validation for ns-inputter.
-- Improving the inputter to ensure customers across all of our markets have the same great experiences. 
+  * Improving the inputter to ensure customers across all of our markets have the same great experiences.
 
 **Bug fixes 🐜**
 
@@ -66,7 +102,7 @@ Any questions? Let us know 🙌
 
 Release date - 2020-02-17
 
-**What’s new around here 🚤**
+**What’s new around here? 🚤**
 
 * To present messaging in context `ns-highlighter`.
   * 4 different types, `warning`, `error`, `success` and `info`.
@@ -97,7 +133,7 @@ Any questions? Let us know 🙌🏼
 
 Release date - 2019-12-11
 
-**What’s new around here 🚤**
+**What’s new around here? 🚤**
 
 * The masked `ns-inputter`.
   * Don't be fooled by it's apparent simplicity, this is a **BIG** introduction to Nucleus.
@@ -143,7 +179,7 @@ Any questions? Let us know 🙌🏼
 
 Release date - 2019-11-11
 
-**What’s new around here 🐣**
+**What’s new around here? 🐣**
 
 * We've simplified our [Request for change](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request) GitHub ticket template.
 * We have included `ns-selector` in this release.
