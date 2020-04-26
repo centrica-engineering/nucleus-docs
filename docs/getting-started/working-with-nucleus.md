@@ -30,6 +30,34 @@ https://github.com/ConnectedHomes/ember-commons/wiki/Nucleus
 
 We have already had a number of successful collaborations with engineers across our teams. We would love you to help shape and improve our design system - come and speak to us.
 
+## Testing
+
+Once we completed the development phase of the nucleus,we have to make sure the quality of our product and provide the assurance to the users and stakeholders.So Testing plays a vital role here to validate/check the quality of the product we created.In addition to that,regression testing is performed to confirm that a recent program or code change has not adversely affected existing features.
+
+As everyone aware,many browsers and devices are used across different customers.So we have prioritised the below list of browsers and devices used by customers based on analytics for testing.
+
+|Device        |Operating System                    |Browser                  |Version    |
+|--------------|------------------------------------|-------------------------|-----------|
+|Desktop/PC    |Windows 10                          |Chrome                   |81         |
+|              |                                    |Edge                     |80         |
+|              |                                    |Internet Explorer        |11         |
+|              |                                    |Firefox                  |74         |
+|              |                                    |Edge                     |18         |
+|              | MacOS Catalania                    |Safari                   |13         |
+|              | MacOS Mojave                       |Safari                   |12.1       |
+|iPhone        | iOS 12 (iPhone6)                   |Safari                   |13         |
+|              | iOS 13 (iPhone XS)                 |Safari                   |13         |
+|              | iOS 12 (iPhone X)                  |Safari                   |12         |
+|              | iOS 12 (iPhone 8)                  |Safari                   |12         |
+|              | iOS 12 (iPhone6)                   |Chrome                   |80         |
+|              | iOS 13 (iPhone XS)                 |Chrome                   |80         |
+|              | iOS 12 (iPhone X)                  |Chrome                   |80         |
+|              | iOS 12 (iPhone 8)                  |Chrome                   |80         |
+|Android       | Android OS 8(Samsung Galaxy S9)    |Chrome                   |80         |
+|              | Android OS 7(Samsung Galaxy S8)    |Chrome                   |80         |
+|              | Android OS 10(Samsung Galaxy S20)  |Samsung Browser          |11.1       |
+|iPad          | iPad OS 13(iPad 7th)               |Safari                   |13         |
+
 ## For product owners and business analysts
 
 While you might not need in-depth knowledge of our shared UI styles and components, understanding their principles and requirements will help when you're reviewing current proposals and discussing work ahead. We hope that you push your product teams to explore feasibility of existing assets before resolving to build custom, once-off components. After all, we believe the former will lead to better results for our business in the long run.
