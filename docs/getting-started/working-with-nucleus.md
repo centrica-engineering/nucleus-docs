@@ -36,27 +36,27 @@ Once we completed the development phase of the nucleus,we have to make sure the 
 
 As everyone aware,many browsers and devices are used across different customers.So we have prioritised the below list of browsers and devices used by customers based on analytics for testing.
 
-|Device        |Operating System                    |Browser                  |Version    |
-|--------------|------------------------------------|-------------------------|-----------|
-|Desktop/PC    |Windows 10                          |Chrome                   |81         |
-|              |                                    |Edge                     |80         |
-|              |                                    |Internet Explorer        |11         |
-|              |                                    |Firefox                  |74         |
-|              |                                    |Edge                     |18         |
-|              | MacOS Catalania                    |Safari                   |13         |
-|              | MacOS Mojave                       |Safari                   |12.1       |
-|iPhone        | iOS 12 (iPhone6)                   |Safari                   |13         |
-|              | iOS 13 (iPhone XS)                 |Safari                   |13         |
-|              | iOS 12 (iPhone X)                  |Safari                   |12         |
-|              | iOS 12 (iPhone 8)                  |Safari                   |12         |
-|              | iOS 12 (iPhone6)                   |Chrome                   |80         |
-|              | iOS 13 (iPhone XS)                 |Chrome                   |80         |
-|              | iOS 12 (iPhone X)                  |Chrome                   |80         |
-|              | iOS 12 (iPhone 8)                  |Chrome                   |80         |
-|Android       | Android OS 8(Samsung Galaxy S9)    |Chrome                   |80         |
-|              | Android OS 7(Samsung Galaxy S8)    |Chrome                   |80         |
-|              | Android OS 10(Samsung Galaxy S20)  |Samsung Browser          |11.1       |
-|iPad          | iPad OS 13(iPad 7th)               |Safari                   |13         |
+| Device | Operating System | Browser | Version |
+| :--- | :--- | :--- | :--- |
+| Computer | Windows 10 | Chrome | 81 |
+| Computer | Windows 10 | Edge | 80 |
+| Computer | Windows 10 | Internet Explorer | 11 |
+| Computer | Windows 10 | Firefox | 74 |
+| Computer | Windows 10 | Edge | 18 |
+| Computer | MacOS Catalania | Safari | 13 |
+| Computer | MacOS Mojave | Safari | 12.1 |
+| iPhone | iOS 12 (iPhone 6) | Safari |13 |
+| iPhone | iOS 13 (iPhone XS) | Safari | 13 |
+| iPhone | iOS 12 (iPhone X) | Safari | 12 |
+| iPhone | iOS 12 (iPhone 8) | Safari | 12 |
+| iPhone | iOS 12 (iPhone 6) | Chrome | 80 |
+| iPhone | iOS 13 (iPhone XS) | Chrome | 80 |
+| iPhone | iOS 12 (iPhone X) | Chrome | 80 |
+| iPhone | iOS 12 (iPhone 8) | Chrome | 80 |
+| Android | Android OS 8 (Samsung Galaxy S9) | Chrome | 80 |
+| Android | Android OS 7 (Samsung Galaxy S8) | Chrome | 80 |
+| Android | Android OS 10 (Samsung Galaxy S20) | Samsung Browser | 11.1 |
+| iPad | iPad OS 13 (iPad 7th) | Safari | 13 |
 
 ## For product owners and business analysts
 
