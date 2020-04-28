@@ -32,9 +32,17 @@ We have already had a number of successful collaborations with engineers across 
 
 ## Testing
 
-Once we completed the development phase of the nucleus,we have to make sure the quality of our product and provide the assurance to the users and stakeholders.So Testing plays a vital role here to validate/check the quality of the product we created.In addition to that,regression testing is performed to confirm that a recent program or code change has not adversely affected existing features.
+Once we have completed development we make sure the quality of Nucleus meets our standards.
 
-As everyone aware,many browsers and devices are used across different customers.So we have prioritised the below list of browsers and devices used by customers based on analytics for testing.
+Testing plays a vital role in order to validate and check the quality of our work. In addition to this, regression testing is performed to confirm that any recent addition or changes have not adversely affected existing features.
+
+There are many ways to access www.britishgas.co.uk and we strive to ensure it's as accessible as possible.
+
+### Browsers and devices
+
+We prioritise the following list of browsers and devices identified as the most popular used by our customers.
+
+**Last updated - 2020-04-27**
 
 | Device | Operating System | Browser | Version |
 | :--- | :--- | :--- | :--- |
