@@ -30,6 +30,42 @@ https://github.com/ConnectedHomes/ember-commons/wiki/Nucleus
 
 We have already had a number of successful collaborations with engineers across our teams. We would love you to help shape and improve our design system - come and speak to us.
 
+## Testing
+
+Once we have completed development we make sure the quality of Nucleus meets our standards.
+
+Testing plays a vital role in order to validate and check the quality of our work. In addition to this, regression testing is performed to confirm that any recent addition or changes have not adversely affected existing features.
+
+There are many ways to access www.britishgas.co.uk and we strive to ensure it's as accessible as possible.
+
+### Browsers and devices
+
+We prioritise the following list of browsers and devices identified as the most popular used by our customers.
+
+**Last updated - 2020-04-27**
+
+| Device | Operating System | Browser | Version |
+| :--- | :--- | :--- | :--- |
+| Computer | Windows 10 | Chrome | 81 |
+| Computer | Windows 10 | Edge | 80 |
+| Computer | Windows 10 | Internet Explorer | 11 |
+| Computer | Windows 10 | Firefox | 74 |
+| Computer | Windows 10 | Edge | 18 |
+| Computer | MacOS Catalania | Safari | 13 |
+| Computer | MacOS Mojave | Safari | 12.1 |
+| iPhone | iOS 12 (iPhone 6) | Safari |13 |
+| iPhone | iOS 13 (iPhone XS) | Safari | 13 |
+| iPhone | iOS 12 (iPhone X) | Safari | 12 |
+| iPhone | iOS 12 (iPhone 8) | Safari | 12 |
+| iPhone | iOS 12 (iPhone 6) | Chrome | 80 |
+| iPhone | iOS 13 (iPhone XS) | Chrome | 80 |
+| iPhone | iOS 12 (iPhone X) | Chrome | 80 |
+| iPhone | iOS 12 (iPhone 8) | Chrome | 80 |
+| Android | Android OS 8 (Samsung Galaxy S9) | Chrome | 80 |
+| Android | Android OS 7 (Samsung Galaxy S8) | Chrome | 80 |
+| Android | Android OS 10 (Samsung Galaxy S20) | Samsung Browser | 11.1 |
+| iPad | iPad OS 13 (iPad 7th) | Safari | 13 |
+
 ## For product owners and business analysts
 
 While you might not need in-depth knowledge of our shared UI styles and components, understanding their principles and requirements will help when you're reviewing current proposals and discussing work ahead. We hope that you push your product teams to explore feasibility of existing assets before resolving to build custom, once-off components. After all, we believe the former will lead to better results for our business in the long run.
