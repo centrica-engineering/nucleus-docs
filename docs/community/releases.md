@@ -4,7 +4,7 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
-## Version 1.9
+## Version 1.9.0
 
 **ns-download in ns-form and testimonial a/b tests**
 
