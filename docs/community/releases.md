@@ -6,7 +6,7 @@ description: Here are our release notes - enjoy!
 
 ## Version 1.9.0
 
-**ns-download in ns-form and testimonial a/b tests**
+**ns-download in ns-form and A/B test designs for ns-testimonial**
 
 Release date - 2020-05-04
 
