@@ -27,7 +27,7 @@ Text Content - the text provided between the ns-download tags is used to create 
 
 The download-list class can only be used on `<ul>` and `<ol>` html tags. Each ns-download must be a direct child of a `<li>`.
 
-#### Accessibility
+### Accessibility
 
 In order to comply with accessibility standards you should not force a file to open in a new tab. It must be left up to the user to decide whether to download a file, or open in a new tab.
 
