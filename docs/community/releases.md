@@ -4,6 +4,25 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
+## Version 1.9.0
+
+**ns-download in ns-form and A/B test designs for ns-testimonial**
+
+Release date - 2020-05-04
+
+**What's new around here? 🛥**
+
+* When `ns-download` is used in `ns-form`, files now open in a new tab (if the browser can display the file type).
+* New designs for `ns-tesimonial` that will be A/B tested.
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌
+
+
 ## Version 1.8.0
 
 **Multiple download links, new illustrations, testimonials and more**
