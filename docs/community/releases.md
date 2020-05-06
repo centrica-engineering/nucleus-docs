@@ -13,7 +13,7 @@ Release date - 2020-05-04
 **What's new around here? 🛥**
 
 * When `ns-download` is used in `ns-form`, files now open in a new tab (if the browser can display the file type).
-* New designs for `ns-tesimonial` that will be A/B tested.
+* New designs for `ns-testimonial` that will be A/B tested.
 
 **Feedback 💌**
 
