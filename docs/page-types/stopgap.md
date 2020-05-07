@@ -18,7 +18,7 @@ If closing or refreshing their browser window will result in failure, we must co
 
 ## Content Guidance
 
-Use the `ns-landmark` - `lakeside variant to display clear messaging.
+Use the `ns-landmark` - `lakeside` variant to display clear messaging.
 
 Include the `ns-icon` - `loading` within a `<p slot="paragraph">` to provide visual feedback that their action is being processed.
 
