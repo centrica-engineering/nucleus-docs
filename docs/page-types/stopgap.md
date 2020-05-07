@@ -34,7 +34,7 @@ You should not use:
 
 | 💚 Do | 💔 Don't |
 | :---  | :---  |
-| Use for wait times in excess of 10 seconds | To load in individual components |
+| Use for wait times in excess of 10 seconds | Use as a placeholder when loading in individual components |
 | Use for end of journey processing and purchases | Rely on this page type instead of optimising your journey |
 | Communicate the message in a clear and concise way as possible | Use the subheading |
 | Provide a transparent expectation of their wait time | Encourage the user to abandon if it would result in failure |
