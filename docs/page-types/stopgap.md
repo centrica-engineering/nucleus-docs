@@ -36,15 +36,16 @@ You should not use:
 | :---  | :---  |
 | Use for wait times in excess of 10 seconds | Use as a placeholder when loading in individual components |
 | Use for end of journey processing and purchases | Rely on this page type instead of optimising your journey |
-| Communicate the message in a clear and concise way as possible | Use the subheading |
-| Provide a transparent expectation of their wait time | Encourage the user to abandon if it would result in failure |
+| Communicate the message in a clear and concise way as possible | Encourage the user to abandon if it would result in failure |
+| Provide a transparent expectation of their wait time |  |
 
 ## Code example
 
 ```
 <ns-landmark type="lakeside">
   <h1 slot="heading">
-    <span class="h1 enlighten">Nearly there. <b>We're processing your order.</b></span>
+    <span class="h5">Nearly there.</span>
+    <span class="h1 enlighten">We're <b>processing</b> your order</span>
   </h1>
   <p slot="paragraph">
     <ns-icon type="loading" size="5"></ns-icon>
