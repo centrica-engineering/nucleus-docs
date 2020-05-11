@@ -14,7 +14,7 @@ Only works for pound sterling.
 
 ## Best practice
 
-| 💚 Do | 💔 Don't |
+| 💚 Do's | 💔 Don'ts |
 | :---  | :---  |
 | Use for all price values | Use negative letter spacing as this reduces legibility |
 | Avoid using the showDecimal option | Use for currencies other than pound sterling |

@@ -43,7 +43,7 @@ We can make use of brand logos and marks when we discuss products and companies.
 
 ## Colour
 
-| 💚 Do | 💔 Don'ts |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Start with using BG Cyan or BG Slate | Mix two secondary colours together |
 | Use white icons in coloured roundels | Use BG Slate in coloured roundels |

@@ -12,7 +12,7 @@ Currently only allows '.pdf' and '.xls' file types, other types can be added but
 
 ## Best practice
 
-| 💚 Do | 💔 Don't |
+| 💚 Do's | 💔 Don'ts |
 | :---  | :---  |
 | Use for all downloads | Use the instructions in the body e.g. 'download here'|
 | Include file size | Don't describe the file as a file |

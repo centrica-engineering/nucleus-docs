@@ -16,7 +16,7 @@ The page should describe to the user what has happened and tell them how to fix 
 
 ## Content Guidance
 
-Use the `ns-landmark` - `lakeside` variant to display clear messaging. 
+Use the `ns-landmark` - `lakeside` variant to display clear messaging.
 
 The copy must be in plain English, and if possible help the user out of the situation by providing an actionable.
 
@@ -26,11 +26,11 @@ You should not use:
 - Humourous, informal language like ‘oops’
 - Negative language
 
-If supporting information is needed, consider using `ns-lockup` or `ns-editorial`. This should not detract from the original purpose of the page. 
+If supporting information is needed, consider using `ns-lockup` or `ns-editorial`. This should not detract from the original purpose of the page.
 
 ## Best practice
 
-| 💚 Do | 💔 Don't |
+| 💚 Do's | 💔 Don'ts |
 | :---  | :---  |
 | Communicate the message in a clear and concise way as possible | Use the subheading |
 | Suggest a next step the customer could take e.g. direct them to webchat or a phone number | Use as errors that are specific to ui elements (such as form fields) or parts of a page ([See `ns-highlighter`](https://docs.britishgas.design/components/ns-highlighter) ) |

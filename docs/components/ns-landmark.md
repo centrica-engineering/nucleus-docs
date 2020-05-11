@@ -77,11 +77,11 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Don't use the 'invert-bridge' decoration. |
+| Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Use the 'invert-bridge' decoration. |
 | ![do-use-same-colour-for-themed-pages](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg) | ![dont-use-arc-decoration](https://user-images.githubusercontent.com/50207859/61697584-73d64080-ad2f-11e9-89a2-c2bbc18f7db7.jpg) |
-| Keep the content concise. | Don't add a CTA. The aim is to encourage the user to discover more on the page. |
+| Keep the content concise. | Add a CTA. The aim is to encourage the user to discover more on the page. |
 | ![do-keep-content-concise](https://user-images.githubusercontent.com/50207859/61779546-c7f92780-adf8-11e9-973c-541c7d46d46d.jpg) | ![dont-use-direct-cta](https://user-images.githubusercontent.com/50207859/61779195-2540a900-adf8-11e9-8c5c-1dced44d53f6.jpg) |
-|  | Don't use only the light font weight. If there's one weight, use bold. |
+|  | Use only the light font weight. If there's one weight, use bold. |
 |  | ![dont-use-only-light-font](https://user-images.githubusercontent.com/28779/70074651-0696be00-15f3-11ea-8f4b-a7d2f90ea87c.png) |
 
 ### Best practice for `lakeside`
@@ -227,7 +227,7 @@ Find it under 'Guides' in the Nucleus Sketch Library.
 
 ![Landmark focal area guide - insert menu](https://user-images.githubusercontent.com/43471890/59842158-d82b6c00-934d-11e9-861a-e7ee6c6f358c.jpg)
 
-| 💚 Do | 💔 Don't |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Here, the focus of the photo is located within the safe-area | The subject fills the entire photo, and the lady on the left will be obscured |
 | ![landmark-16x9-testcard-1440-01](https://user-images.githubusercontent.com/28779/59754143-6be13780-927d-11e9-8175-75b6a46cf2d4.jpg) | ![landmark-16x9-testcard-1440-00](https://user-images.githubusercontent.com/28779/59792749-cb1a6880-92cc-11e9-8f19-9d4caab0d169.jpg) |
