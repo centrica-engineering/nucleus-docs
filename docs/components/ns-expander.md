@@ -21,7 +21,7 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 
 ## Best practice
 
-| 💚 Do | 💔 Don't |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use instead of modal | Use to hide important information (such as caveats) |
 | Use headings, paragraphs, lists for content | Use as a solution to excessive copy on a page |

@@ -32,7 +32,7 @@ You should not use:
 
 ## Best practice
 
-| 💚 Do | 💔 Don't |
+| 💚 Do's | 💔 Don'ts |
 | :---  | :---  |
 | Use for wait times in excess of 10 seconds | Use as a placeholder when loading in individual components |
 | Use for end of journey processing and purchases | Rely on this page type instead of optimising your journey |

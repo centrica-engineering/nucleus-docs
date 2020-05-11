@@ -21,7 +21,7 @@ We use accordions to break down content into meaningful sections, helping to red
 
 ## Best practice
 
-| 💚 Do | 💔 Don't |
+| 💚 Do's | 💔 Don'ts |
 | :---  | :---  |
 | Use for FAQs | Use a background with an accordion as the expanded state is white |
 | Use to split up related content | Use more than 8 expanders |
