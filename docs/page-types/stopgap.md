@@ -41,7 +41,7 @@ You should not use:
 
 ## Code example
 
-```
+```markup
 <ns-landmark type="lakeside">
   <h1 slot="heading">
     <span class="h5">Nearly there.</span>
