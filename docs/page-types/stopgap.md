@@ -39,6 +39,22 @@ You should not use:
 | Communicate the message in a clear and concise way as possible | Use the subheading |
 | Provide a transparent expectation of their wait time | Encourage the user to abandon if it would result in failure |
 
+## Code example
+
+```
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h1 enlighten">Nearly there. <b>We're processing your order.</b></span>
+  </h1>
+  <p slot="paragraph">
+    <ns-icon type="loading" size="5"></ns-icon>
+  </p>
+  <p slot="paragraph">We are processing your payment and confirming your engineer appointment.</p>
+  <p slot="paragraph"> This may take up to <b>2 minutes</b>.</p>
+  <p slot="paragraph"><b>Please do not close your browser.</b></p>
+</ns-landmark>
+```
+
 ## Principles to follow
 
 Clean and fresh
