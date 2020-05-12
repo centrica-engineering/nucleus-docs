@@ -24,6 +24,19 @@ We allow users to perform certain actions through the use of our call to actions
 | A | Text | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
 | B | Icon | This is the icon inside the CTA. The [specification table](https://docs.britishgas.design/components/ns-cta#specification) has a list of options. |
 
+## Loading state
+
+The `ns-cta` is capable of handling a loading interaction using the `loading` and `loadingMessage` attributes, these can be found in the [specification table](https://docs.britishgas.design/components/ns-cta#specification) below.
+
+This loading state can be used to provide the user with visual feedback that their action is being handled. It also provides a user with reassurance when that action takes a number of seconds to be completed. 
+
+Your loading message should be contextual to the action of the text of the CTA. E.g. "Get a quote" becomes "Getting your quote...". 
+
+![CTA - Loading state](https://user-images.githubusercontent.com/45626534/81697144-bc94ec80-945c-11ea-854a-39e0ecb86aa4.gif)
+
+You can see the live example of the loading state on [storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-cta--direct-button-loading).
+
+
 ## Best practice
 
 | 💚 Do's | 💔 Dont's |
