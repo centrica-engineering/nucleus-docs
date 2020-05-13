@@ -2,7 +2,7 @@
 description: Vanilla first thinking
 ---
 
-# Vanilla first
+# Be vanilla first
 
 > It's a mindset, an undercurrent supporting our process.
 

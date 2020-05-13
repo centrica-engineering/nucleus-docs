@@ -2,7 +2,7 @@
 description: Creating illustrations guidelines.
 ---
 
-# Creating illustrations
+# Create illustrations
 
 ## Principles
 
