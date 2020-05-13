@@ -103,7 +103,7 @@ Inputters are used to help people enter and select information. Inputters are no
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use only one label with each checkbox | Use as lists |
-| Allow user to opt in as opposed to opt out | Don't try and use as a radio button |
+| Allow user to opt in as opposed to opt out | Use as a radio button |
 | Consider splitting question out for when more than 5 checkboxes are required |  |
 
 ### Select
@@ -230,7 +230,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
   * maxDate(date) - Shows an error if the input vale date is greater than the provided date.  eg. `maxDate('31/12/2022')`
 
   * isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode.  This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function.  eg. `isPostcode(true)`
-  
+
    * isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number.  This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function.  eg. `isPhoneNumber(true)`
 
 ## Feedback

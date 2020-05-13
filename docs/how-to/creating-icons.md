@@ -2,7 +2,7 @@
 description: Creating icons guidelines.
 ---
 
-# Creating icons
+# Create icons
 
 
 ## The principles

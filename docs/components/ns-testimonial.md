@@ -10,7 +10,7 @@ A new component to display all the lovely things that people say about us. The t
 
 ## Best practice
 
-| 💚 Do | 💔 Don't |
+| 💚 Do's | 💔 Don'ts |
 | :---  | :---  |
 | Use a single sentence | Use multiple paragraphs |
 | Use `<b>` to highlight key phrases | Link to a live twitter handle |

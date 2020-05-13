@@ -2,7 +2,7 @@
 description: Tools that the Nucleus team has collated and used.
 ---
 
-# Tools
+# Use our tools
 
 We use tools in our everyday, here are a few that we find useful.
 

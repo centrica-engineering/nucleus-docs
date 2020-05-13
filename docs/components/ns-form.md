@@ -14,8 +14,8 @@ The `ns-form` component is a wrapper for `ns-inputters`. It's main purpose is to
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use `ns-inputter` for your form fields | Don't write your own validations |
-| Use `ns-cta` to submit your form | Don't rely on front end validation alone. |
+| Use `ns-inputter` for your form fields | Write your own validations |
+| Use `ns-cta` to submit your form | Rely on front end validation alone. |
 
 ### Considerations of best practises
 
