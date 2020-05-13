@@ -12,7 +12,7 @@ The Stopgap is a page type used to provide customers with an interstitial loadin
 
 The purpose of the Stopgap is to inform the customer that there is a temporary pause in their experience, whilst we action or process the information they have provided. It should be clear that this is the expected behaviour of the journey they are using.
 
-This page type should provide a clear message to reassure the customer. If possible, we should set their expectations by providing them with a realistic time frame, for how long they are likely to have to wait for. 
+This page type should provide a clear message to reassure the customer. If possible, we should set their expectations by providing them with a realistic time frame of how long they are likely to have to wait. 
 
 If closing or refreshing their browser window will result in failure, we must convey this message clearly.
 
