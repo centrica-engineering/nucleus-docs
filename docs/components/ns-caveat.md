@@ -18,7 +18,7 @@ Caveats link to content in the page, providing more information about legality a
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | CTA | The link used to highlight there is further relevant information the user should read. This might  provide specific stipulations, conditions, or limitations. Clicking on this should take the user to the content at the bottom of the page. |
+| A | Link | The link used to highlight there is further relevant information the user should read. This might  provide specific stipulations, conditions, or limitations. Clicking on this should take the user to the content at the bottom of the page. |
 | B | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
 | C | Content | A single, short paragraph works best. You can link to additional information if needed, such as terms. These should always be accompanied with a related description.|
 
@@ -32,6 +32,7 @@ Caveats link to content in the page, providing more information about legality a
 | Use an ordered list for the caveats |  |
 | Only use text in the caveats |  |
 | Embolden text that is important |  |
+| Prepend the link with `&nbsp;` so that it doesn't become widowed |  |
 
 ### Considerations of best practice
 
@@ -45,6 +46,8 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-caveat" caption="" %}
 
 ```markup
+<p>Some text with a caveat&nbsp;<a href="#caveat">1</a></p>
+
 <ns-caveat>
   <h2 slot="heading">Legal information</h2>
   <div slot="caveat">
