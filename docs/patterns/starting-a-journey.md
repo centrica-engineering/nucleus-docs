@@ -30,8 +30,11 @@ This pattern may not be needed in full if users are coming from a hub page where
 | :--- | :--- |
 | F | Signposting to a secondary journey or action for frequently misdirected users  | 
 
+Starting a journey: 
 
-![Starting a Journey](https://user-images.githubusercontent.com/3082819/82671128-38015580-9c36-11ea-95aa-f2549bc37b37.png)
+![Starting_a_journey](https://user-images.githubusercontent.com/3082819/82671128-38015580-9c36-11ea-95aa-f2549bc37b37.png)
+
+Optional additional signposting: 
 
 ![Additional signposting](https://user-images.githubusercontent.com/3082819/82550723-e930be80-9b56-11ea-8294-e4d1bdb5c09d.png)
 
