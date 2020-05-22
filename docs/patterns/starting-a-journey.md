@@ -2,6 +2,8 @@
 description: Journey pattern: Starting a Journey
 ---
 
+_Note: This pattern is currently in beta and needs additional research and testing._  
+
 # Starting a Journey
 
 ### When to use this pattern.  
@@ -14,23 +16,26 @@ This pattern may not be needed in full if users are coming from a hub page where
  
 ### This step should include:  
 
-![Starting a Journey](https://user-images.githubusercontent.com/3082819/82550706-e33add80-9b56-11ea-80d9-1fbc03c1403d.png)
-
 | Key | Guidelines |
 | :--- | :--- |
-| A | A navigational subtitle to orient your user. |
+| A | A navigational subtitle or topic reference to orient your user.|
 | B | A hillside landmark that clarifies the task at hand for the user. This should have a warm and welcoming tone |
 | C | A short bulleted list to outline any information that the user needs to know to complete the journey. |
 | D | A prominent direct call to action. |
 | E | Links to relevant help and support content | 
- 
-### This step may also include: 
 
-![Additional signposting](https://user-images.githubusercontent.com/3082819/82550723-e930be80-9b56-11ea-8294-e4d1bdb5c09d.png)
+### This step may also include: 
 
 | Key | Guidelines |
 | :--- | :--- |
-| F | Signposting to a secondary journey or action for frequently misdirected users  |  
+| F | Signposting to a secondary journey or action for frequently misdirected users  | 
+
+
+![Starting a Journey](https://user-images.githubusercontent.com/3082819/82671128-38015580-9c36-11ea-95aa-f2549bc37b37.png)
+
+![Additional signposting](https://user-images.githubusercontent.com/3082819/82550723-e930be80-9b56-11ea-8294-e4d1bdb5c09d.png)
+
+ 
 
 
 
