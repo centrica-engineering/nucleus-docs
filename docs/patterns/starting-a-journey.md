@@ -6,7 +6,7 @@ description: Journey pattern: Starting a Journey
 
 ### When to use this pattern?  
 
-This pattern should be used to clarify a task for the user at the start of a functional journey. It sets expectations and provides any contextual information a user may need for a successful journey. 
+This pattern should be used to clarify a task for the user at the start of a functional journey. It sets expectations and provides any contextual information a user may need to complete their journey successfully. 
  
 ### This step should include:  
 
@@ -32,7 +32,6 @@ This pattern should be used to clarify a task for the user at the start of a fun
 ### When not to use this pattern?  
 
 This pattern may not be needed in full if users are coming from a hub page where a task is already clearly clarified. This pattern may also vary in shorter journeys, particularly where form elements may need to be present at the first step.
-
 
 
 
