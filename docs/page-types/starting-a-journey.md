@@ -31,7 +31,7 @@ This page sets expectations and provides any contextual information that a user 
 | F | Signposting to a secondary journey or action for frequently misdirected users  | 
 
 
-![Starting a journey_28 05](https://user-images.githubusercontent.com/3082819/83137827-b69c3e00-a0e1-11ea-823b-4cc4a67ec968.png)
+![Starting a journey_28 05_b](https://user-images.githubusercontent.com/3082819/83170682-d1d07300-a10c-11ea-9eee-02bd34307d81.png)
 
 Optional additional signposting: 
 
