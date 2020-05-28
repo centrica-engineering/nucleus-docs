@@ -25,3 +25,10 @@ When selecting photography think about the subject matter and the customer benef
 
 Our library can be accessed [here](https://centrica.frontify.com/d/pDUbkrcf54Nh/our-assets). Please refer to our brand guidelines for more further details on photography selection and art direction.
 
+## Storing imagery
+
+Images that are used on our site, need to be stored in the CMS. This allows for imagery to be updated and shared amongst the different journeys.
+
+Due to limitations of our CMS, we can only store images as `jpeg` or `png`. We are unable at this time to use newer modern image file types such as `webp`.
+
+You can learn more about how we can [optimise images](https://docs.britishgas.design/how-to/optimise-images) in the how to section of our documentation.
