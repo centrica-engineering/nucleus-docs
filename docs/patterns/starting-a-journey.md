@@ -1,20 +1,20 @@
 ---
-description: Journey pattern: Starting a Journey
+description: Page type: Starting a journey
 ---
 
-_Note: This pattern is currently in beta and needs additional research and testing._  
+_Note: This page type is currently in beta and needs additional research and testing._  
 
 # Starting a Journey
 
-### When to use this pattern.  
+### Introduction  
 
-This pattern should be used to clarify a task for the user at the start of a functional journey. It sets expectations and provides any contextual information a user may need to complete their journey successfully. 
+This page type should be used to clarify and set up a task for a user at the beginning of a functional journey.  
 
-### When not to use this pattern.  
+### Purpose
 
-This pattern may not be needed in full if users are coming from a hub page where a task is already clearly clarified. This pattern may also vary in shorter journeys, particularly where form elements may need to be present at the first step.
+This page sets expectations and provides any contextual information that a user may need to complete their journey successfully. A dedicated setup page may not be needed in full if users are coming from a hub page if their task is already clearly clarified. This page may also vary in shorter journeys, particularly where form elements may need to be present at the first step.
  
-### This step should include:  
+### This page should include:  
 
 | Key | Guidelines |
 | :--- | :--- |
@@ -24,7 +24,7 @@ This pattern may not be needed in full if users are coming from a hub page where
 | D | A prominent direct call to action. |
 | E | Links to relevant help and support content | 
 
-### This step may also include: 
+### This page may also include: 
 
 | Key | Guidelines |
 | :--- | :--- |
@@ -32,7 +32,7 @@ This pattern may not be needed in full if users are coming from a hub page where
 
 Starting a journey: 
 
-![Starting_a_journey](https://user-images.githubusercontent.com/3082819/82671128-38015580-9c36-11ea-95aa-f2549bc37b37.png)
+![Starting a journey_28 05](https://user-images.githubusercontent.com/3082819/83137827-b69c3e00-a0e1-11ea-823b-4cc4a67ec968.png)
 
 Optional additional signposting: 
 
