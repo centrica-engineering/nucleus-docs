@@ -30,7 +30,6 @@ This page sets expectations and provides any contextual information that a user 
 | :--- | :--- |
 | F | Signposting to a secondary journey or action for frequently misdirected users  | 
 
-Starting a journey: 
 
 ![Starting a journey_28 05](https://user-images.githubusercontent.com/3082819/83137827-b69c3e00-a0e1-11ea-823b-4cc4a67ec968.png)
 
