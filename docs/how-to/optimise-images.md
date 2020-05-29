@@ -11,6 +11,8 @@ description: How to optimise your images for production.
 * [Kraken](https://kraken.io/web-interface)
 * [TinyPNG](https://tinypng.com/)
 
+To learn more about our imagery, such as ratio and responsive rules, check out our [foundation photography section](https://docs.britishgas.design/foundations/photography).
+
 ### Why optimise?
 
 Reducing the size of images benefits the user by allowing their page to feel like the page has rendered quicker and will save data on their mobile networks. A perceptively faster-running page, for us, reduces bounce rates and increases conversion.
