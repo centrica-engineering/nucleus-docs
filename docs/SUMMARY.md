@@ -56,6 +56,7 @@
   * [Guide](page-types/guide.md)
   * [Roadblock](page-types/roadblock.md)
   * [Stopgap](page-types/stopgap.md)
+  * [Confirmation](page-types/confirmation.md)
 * [How to](how-to/README.md)
   * [Be vanilla first](how-to/vanilla-first.md)
   * [Contribute to documentation](how-to/contribute-to-documentation.md)
