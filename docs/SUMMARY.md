@@ -49,6 +49,7 @@
 * [Patterns](patterns/README.md)
   * [Journeys](patterns/journeys.md)
   * [Experiences](patterns/experiences.md)
+  * [Loading](patterns/loading.md)
 * [Page Types](page-types/README.md)
   * [Home](page-types/home.md)
   * [Hub](page-types/hub.md)
