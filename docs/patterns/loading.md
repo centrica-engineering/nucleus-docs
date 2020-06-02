@@ -26,7 +26,7 @@ For some experiences, there can be a long delay in processing an action. Whether
 
 Unlike the `<ns-cta>`, which can help provide context for short term pauses, when a user is expected to wait for a longer period of time, we should provide a clearer explanation and visual cue that their submission is being handled. 
 
-We handle these transitions using the Stopgap page type. This consists of using an `<ns-landmark type=”lakeside”>` and an `<ns-icon type=”loading”>`. It is recommended that we play back what their expected time to completion is. This should help reduce users feeling anxious and impatient.
+We handle these transitions using the Stopgap page type. This consists of using an `<ns-landmark type="lakeside">` and an `<ns-icon type="loading">`. It is recommended that we play back what their expected time to completion is. This should help reduce users feeling anxious and impatient.
 
 You can [read more information about the Stopgap here](https://docs.britishgas.design/page-types/stopgap).
 
@@ -38,7 +38,7 @@ You can [read more information about the Stopgap here](https://docs.britishgas.d
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-guide]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-guide]).
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[patterns-loading]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[patterns-loading]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
