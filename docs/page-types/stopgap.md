@@ -39,6 +39,10 @@ You should not use:
 | Communicate the message in a clear and concise way as possible | Encourage the user to abandon if it would result in failure |
 | Provide a transparent expectation of their wait time |  |
 
+## Visual example
+
+![Stopgap - visual example](https://user-images.githubusercontent.com/45626534/83498763-39dbdc00-a4b4-11ea-92aa-0df3118a730a.gif)
+
 ## Code example
 
 ```markup
