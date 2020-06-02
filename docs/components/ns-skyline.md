@@ -46,6 +46,8 @@ Positioned directly beneath the global navigation and above any content, `ns-sky
 
 To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-skyline--singular).
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-skyline" caption="" %}
+
 ```markup
 <ns-skyline>
   <ns-expander icon="warning">

@@ -36,21 +36,31 @@ If supporting information is needed, consider using `ns-lockup` or `ns-editorial
 | Suggest a next step the customer could take e.g. direct them to webchat or a phone number | Use as errors that are specific to ui elements (such as form fields) or parts of a page ([See `ns-highlighter`](https://docs.britishgas.design/components/ns-highlighter) ) |
 |  | Use for global messaging ([See `ns-skyline`](https://docs.britishgas.design/components/ns-skyline) ) |
 
-## Principles to follow
+## Visual example
 
-Clean and fresh
+<img width="1160" alt="Screen Shot 2020-06-02 at 09 54 47" src="https://user-images.githubusercontent.com/45626534/83500827-31d16b80-a4b7-11ea-9e53-315c9108950a.png">
 
-## Tone of voice
+[View the `<ns-landmark type=lakeside>` on storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--lakeside)
 
-Be helpful
+## Code example
 
-## Keywords
-
-Functional / Informative
+```markup
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h1">We're sad to see you go</span>
+  </h1>
+  <p slot="paragraph">Thanks for being with us <b>we hope you'll join us</b> again. We are working on making Rewards even better.</p>
+  <p slot="paragraph">If you'd like to join us again, click on Rewards in your Account Overview.</p>
+  <a slot="cta" href="#!">
+    <ns-cta type="direct">Your account</ns-cta>
+  </a>
+</ns-landmark>
+```
+[View the `<ns-landmark type=lakeside>` on storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--lakeside)
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-guide]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-guide]).
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-roadblock]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-roadblock]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!

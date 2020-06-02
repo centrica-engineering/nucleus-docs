@@ -39,6 +39,10 @@ You should not use:
 | Communicate the message in a clear and concise way as possible | Encourage the user to abandon if it would result in failure |
 | Provide a transparent expectation of their wait time |  |
 
+## Visual example
+
+![Stopgap - visual example](https://user-images.githubusercontent.com/45626534/83498763-39dbdc00-a4b4-11ea-92aa-0df3118a730a.gif)
+
 ## Code example
 
 ```markup
@@ -56,21 +60,9 @@ You should not use:
 </ns-landmark>
 ```
 
-## Principles to follow
-
-Clean and fresh
-
-## Tone of voice
-
-Be helpful
-
-## Keywords
-
-Functional / Informative
-
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-guide]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-guide]).
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-stopgap]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-stopgap]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
