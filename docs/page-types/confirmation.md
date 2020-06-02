@@ -29,21 +29,9 @@ Supplementary content relating to their completed journey can be displayed furth
 
 In addition to this page, a confirmation email containing this information should be sent to the customer as well. This is especially important if the customer cannot bookmark or revisit this page once they navigated away from it.
 
-## Principles to follow
-
-Warm, friendly and informative
-
-## Tone of voice
-
-Be helpful
-
-## Keywords
-
-Functional / Informative
-
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-guide]).
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-confirmation]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-guide]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
