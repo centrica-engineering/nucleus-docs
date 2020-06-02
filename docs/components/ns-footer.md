@@ -47,9 +47,7 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `company`    | `string` | `British Gas` |  | Change the company name in the copyright notice. |
-| `cookie`    | `string` | `/global-maintenance/cookies-policy.html` |  | Change the link for cookie |
-| `privacy`    | `string` | `/privacy-policy.html` |  | Change the link for privacy |
-| `terms`    | `string` | `/terms-and-conditions.html` |  | Change the link for terms |
+| `hideLogo`   | `boolean` | `false` | `true` `false` | Show or hide the British Gas logo. |
 
 | Slots | Type |
 | :--- | :--- |
