@@ -1,14 +1,14 @@
 ---
-description: Page type | Start
+description: Page Type | Start
 ---
-
-> Note: This page type is currently in beta and needs additional research and testing.
 
 # Start
 
 ## Introduction
 
 This page type should be used to clarify and set up a task for a user at the beginning of a journey.
+
+> NOTE: This page type is currently in beta and needs additional research and testing.
 
 ## Purpose
 
@@ -46,7 +46,7 @@ Example: Optional signposting to a secondary journey (F)
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-confirmation]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-guide]).
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-start]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-start]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
