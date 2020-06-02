@@ -57,7 +57,7 @@
   * [Guide](page-types/guide.md)
   * [Roadblock](page-types/roadblock.md)
   * [Stopgap](page-types/stopgap.md)
-  * [Starting a journey](page-types/starting-a-journey.md)
+  * [Start](page-types/start.md)
   * [Confirmation](page-types/confirmation.md)
 * [How to](how-to/README.md)
   * [Be vanilla first](how-to/vanilla-first.md)
