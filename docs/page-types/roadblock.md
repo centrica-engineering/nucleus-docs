@@ -36,6 +36,28 @@ If supporting information is needed, consider using `ns-lockup` or `ns-editorial
 | Suggest a next step the customer could take e.g. direct them to webchat or a phone number | Use as errors that are specific to ui elements (such as form fields) or parts of a page ([See `ns-highlighter`](https://docs.britishgas.design/components/ns-highlighter) ) |
 |  | Use for global messaging ([See `ns-skyline`](https://docs.britishgas.design/components/ns-skyline) ) |
 
+## Visual example
+
+<img width="1160" alt="Screen Shot 2020-06-02 at 09 54 47" src="https://user-images.githubusercontent.com/45626534/83500827-31d16b80-a4b7-11ea-9e53-315c9108950a.png">
+
+[View the `<ns-landmark type=lakeside>` on storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--lakeside)
+
+## Code example
+
+```markup
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h1">We're sad to see you go</span>
+  </h1>
+  <p slot="paragraph">Thanks for being with us <b>we hope you'll join us</b> again. We are working on making Rewards even better.</p>
+  <p slot="paragraph">If you'd like to join us again, click on Rewards in your Account Overview.</p>
+  <a slot="cta" href="#!">
+    <ns-cta type="direct">Your account</ns-cta>
+  </a>
+</ns-landmark>
+```
+[View the `<ns-landmark type=lakeside>` on storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--lakeside)
+
 ## Principles to follow
 
 Clean and fresh
