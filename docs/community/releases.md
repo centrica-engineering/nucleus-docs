@@ -6,7 +6,7 @@ description: Here are our release notes - enjoy!
 
 ## Version 1.10.0
 
-**The all new nsx-footer, an improvement to ns-inputter and 5 bugs squashed**
+**The all new Footer, an improvement to our Inputter and 5 bugs squashed**
 
 Release date - 2020-06-03
 
