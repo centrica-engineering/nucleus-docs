@@ -6,11 +6,11 @@ description: Experience | Footer component.
 
 ## Introduction
 
-> The required links and information for each page of the British Gas website.
+The footer holds legally required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps.
 
-> NOTE: This is the experience pattern for the footer. If you are looking to use a footer with different links (why?) please use `ns-footer`.
+This experience pattern is a wrapper of the `ns-footer`. The footer experience pattern is broken into 3 parts. Legal links, SEO links and brand and copyright notice.
 
-This experience pattern is a wrapper of the `ns-footer` and holds the links that are legally required for the website. If a link needs to be updated for the website footer, it needs to be done in this experience pattern.
+If a link needs to be updated for the website footer, it needs to be done in this experience pattern.
 
 ## Best practice
 
