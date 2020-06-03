@@ -64,7 +64,7 @@ Release date - 2020-04-23
   * First we created a standardised way to download documents. Now we've extended that to handle multiple documents in way that that helps the user find what they're looking for.
 * Our illustration suite has expanded based on your feedback.
   * 6 new illustrations have been added, and can now be used to decorate pages:
-  * `boiler-repair`[, `dual-fuel`, `electric-vehicle`, `engineer`, `help`, `savings`
+  * `boiler-repair`, `dual-fuel`, `electric-vehicle`, `engineer`, `help`, `savings`
 * Version 1 of our `ns-testimonial` component, born out of a successful AB test.
   * Use this to display positive customer feedback. Watch out for its evolution in our next release.
 
