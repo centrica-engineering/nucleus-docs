@@ -4,6 +4,35 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
+## Version 1.10.0
+
+**The all new nsx-footer, an improvement to ns-inputter and 5 bugs squashed**
+
+Release date - 2020-06-03
+
+**What's new around here? 🛥**
+
+* The nsx-footer (experience pattern) has been updated beyond proof of concept in storybook. This will be the primary choice footer across the majority of the site, replacing the existing footer on CMS pages and many app screens. It looks nicer and performs better, what a result.😁
+* We added ignoreSeparator knob in storybook for ns-inputter.
+
+**Bug fixes 🐞**
+
+We had a number of bugs to squash, thanks for spotting them! 
+
+* We resolved the `ns-caveat` link size issue, which was making the link tiny or MASSIVE.
+* In the `ns-landmark` the BG-VI css is no longer overriding paragraph style.
+* In the `ns-expander` the BG-VI css is no longer overriding heading style.
+* We've made validation messages on `ns-inputter` more user friendly.
+* We fixed the overlap in download app images and britishgas logo text in `ns-footer` for IE11.
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌
+
+
 ## Version 1.9.0
 
 **ns-download in ns-form and A/B test designs for ns-testimonial**
@@ -35,7 +64,7 @@ Release date - 2020-04-23
   * First we created a standardised way to download documents. Now we've extended that to handle multiple documents in way that that helps the user find what they're looking for.
 * Our illustration suite has expanded based on your feedback.
   * 6 new illustrations have been added, and can now be used to decorate pages:
-  * `boiler-repair`, `dual-fuel`, `electric-vehicle`, `engineer`, `help`, `savings`
+  * `boiler-repair`[, `dual-fuel`, `electric-vehicle`, `engineer`, `help`, `savings`
 * Version 1 of our `ns-testimonial` component, born out of a successful AB test.
   * Use this to display positive customer feedback. Watch out for its evolution in our next release.
 
