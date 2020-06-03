@@ -12,7 +12,7 @@ Release date - 2020-06-03
 
 **What's new around here? 🛥**
 
-* The nsx-footer (experience pattern) has been updated beyond proof of concept in storybook. This will be the primary choice footer across the majority of the site, replacing the existing footer on CMS pages and many app screens. It looks nicer and performs better, what a result.😁
+* The `nsx-footer` (experience pattern) has been updated beyond proof of concept in storybook. This will be the primary choice footer across the majority of the site, replacing the existing footer on CMS pages and many app screens. It looks nicer and performs better, what a result.😁
 * We added `ignoreSeparator` knob in storybook for `ns-inputter`.
 
 **Bug fixes 🐞**
