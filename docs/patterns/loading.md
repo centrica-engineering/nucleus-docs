@@ -14,7 +14,7 @@ Below we highlight two main formats of loading - **interim** and **interstitial*
 
 The `<ns-cta>` is capable of handling an interim loading experience. When used as the primary action to complete a task or progress to the next step of an experience, the `<ns-cta>` can display a loading icon and message that supports the task the user is looking to complete.
 
-You can [read more information about the loading state of `<ns-cta>` here](https://docs.britishgas.design/v/release-candidate/components/ns-cta#loading-state).
+You can [read more information about the loading state of `<ns-cta>` here](https://docs.britishgas.design//components/ns-cta#loading-state).
 
 ## Interstitial loading
 
