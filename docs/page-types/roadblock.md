@@ -14,7 +14,7 @@ The Roadblock page type is there to present key information to a user when they 
 
 The page should describe to the user what has happened and tell them how to fix it if possible.
 
-## Content Guidance
+## Content guidance
 
 Use the `ns-landmark` - `lakeside` variant to display clear messaging.
 
