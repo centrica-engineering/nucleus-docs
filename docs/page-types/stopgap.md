@@ -1,5 +1,5 @@
 ---
-description: Page Type | Stopgap
+description: Page type | Stopgap
 ---
 
 # Stopgap

@@ -1,5 +1,5 @@
 ---
-description: Page Type | Roadblock
+description: Page type | Roadblock
 ---
 
 # Roadblock

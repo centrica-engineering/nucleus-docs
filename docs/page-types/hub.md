@@ -1,5 +1,5 @@
 ---
-description: Page Type | Hub Page
+description: Page type | Hub Page
 ---
 
 # Hub Page

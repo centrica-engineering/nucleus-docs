@@ -1,5 +1,5 @@
 ---
-description: Page Type | Product Page
+description: Page type | Product Page
 ---
 
 # Product Page

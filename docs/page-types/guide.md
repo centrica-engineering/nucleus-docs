@@ -1,5 +1,5 @@
 ---
-description: Page Type | Guide Page
+description: Page type | Guide Page
 ---
 
 # Guide Page

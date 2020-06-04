@@ -50,7 +50,7 @@
   * [Journeys](patterns/journeys.md)
   * [Experiences](patterns/experiences.md)
   * [Loading](patterns/loading.md)
-* [Page Types](page-types/README.md)
+* [Page types](page-types/README.md)
   * [Confirmation](page-types/confirmation.md)
   * [Guide](page-types/guide.md)
   * [Home](page-types/home.md)
