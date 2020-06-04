@@ -160,7 +160,7 @@ To see examples of the Lakeside Landmark visit [Storybook](https://britishgas.co
 </ns-landmark>
 ```
 
-## Component Relationship
+## Component relationship
 
 |  **Relationship**  |  |
 | :--- | :--- |

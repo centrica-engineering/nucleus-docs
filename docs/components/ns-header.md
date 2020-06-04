@@ -39,7 +39,7 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 <ns-header></ns-header>
 ```
 
-## Component Relationship
+## Component relationship
 
 | **Relationship**|  |
 | :---  | :--- |

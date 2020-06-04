@@ -36,7 +36,7 @@ To see examples visit [Storybook](https://library.britishgas.design).
 </ns-panel>
 ```
 
-## Component Relationship
+## Component relationship
 
 |  **Relationship**  |  |
 | :--- | :--- |

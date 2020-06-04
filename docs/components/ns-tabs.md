@@ -64,7 +64,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 </ns-tabs>
 ```
 
-## Component Relationship
+## Component relationship
 
 |  **Relationship**  |  |
 | :--- | :--- |
