@@ -14,7 +14,7 @@ We use tools in our everyday, here are a few that we find useful.
 
 A collection of accessibility tools.
 
-### Sortsite
+### SortSite
 
 [https://www.powermapper.com/products/desktop/try/](https://www.powermapper.com/products/desktop/try/)  
 A website accessibility checking tool.
@@ -29,7 +29,7 @@ Total Validator will validate your HTML and CSS, check that pages are accessible
 [https://developer.paciellogroup.com/resources/wat/](https://developer.paciellogroup.com/resources/wat/)  
 The Web Accessibility Toolbar (WAT) has been developed to aid manual examination of web pages for a variety of aspects of accessibility.
 
-### Wave toolbar
+### WAVE Web Accessibility Evaluation Tool
 
 [http://wave.webaim.org/](http://wave.webaim.org/)  
 Web accessibility evaluation tool.
