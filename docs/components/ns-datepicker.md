@@ -12,7 +12,8 @@ description: Molecule | Date picker component.
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use the default type for picking a date from a range or date that the user might not be sure of (e.g. Next Friday)|  |
+| Use the default type for picking a date from a range |  |
+| Use the default type for picking a date that the user might not be sure of (e.g. Next Friday) |  |
 | Use the mask type for picking a dates that are well know to the user (e.g. Date of birth) |  |
 
 ### Considerations of best practices
@@ -61,7 +62,7 @@ The shadow DOM of this component contains an ns-inputter component. Hence many o
 | `min`          | `string`  |           |         | The minimum date allowed to be entered into the input. Must be in YYYY-MM-DD format. Validation will trigger if date is before after this value |
 | `name`         | `string`  | "date"    |         | See [ns-inputter](https://docs.britishgas.design/components/ns-inputter#Specification). |
 | `type`         | `string`  | "default" | `default`, `mask` | Use to select the input format. Default is the native date input. |
-| `validation`   | `array`   |           |         | See [ns-inputter](https://docs.britishgas.design/components/ns-inputter#Specification). |
+| `validation`   | `array`   |           |         | See [ns-inputter](https://docs.britishgas.design/components/ns-inputter#Specification). minDate and Max date are automatically applied if the min and max values are populated. |
 | `value`        | `string`  |           |         | The value the input inside the component. This can be used to add an intial value. |
 
 | Slots | Type |
