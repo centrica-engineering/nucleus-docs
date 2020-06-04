@@ -1,8 +1,8 @@
 ---
-description: Page type | Guide Page
+description: Page type | Guide page
 ---
 
-# Guide Page
+# Guide page
 
 ## Introduction
 

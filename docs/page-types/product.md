@@ -1,8 +1,8 @@
 ---
-description: Page type | Product Page
+description: Page type | Product page
 ---
 
-# Product Page
+# Product page
 
 ## Introduction
 
