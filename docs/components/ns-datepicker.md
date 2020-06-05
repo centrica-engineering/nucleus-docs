@@ -9,7 +9,7 @@ description: Molecule | Date picker component.
 > Use to help the user enter a date in a form.
 
 This component wraps our ns-inputter component. Guidelines defined on the ns-inputter should also be followed when using this component.
-[ns-inputter Documentation](https://docs.britishgas.design/components/ns-inputter)
+[ns-inputter documentation](https://docs.britishgas.design/components/ns-inputter)
 
 ## Best practice
 
