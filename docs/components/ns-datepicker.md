@@ -17,7 +17,7 @@ Also see ns-inputter [best practices](https://docs.britishgas.design/components/
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use the default type for picking a date from a range |  |
+| Use the default type for picking a date from a range | Change the date format |
 | Use the default type for picking a date that the user might not be sure of (e.g. Next Friday) |  |
 | Use the mask type for picking a dates that are well know to the user (e.g. Date of birth) |  |
 
