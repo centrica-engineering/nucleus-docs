@@ -1,8 +1,8 @@
 ---
-description: Page Type | Hub Page
+description: Page type | Hub page
 ---
 
-# Hub Page
+# Hub page
 
 ## Introduction
 

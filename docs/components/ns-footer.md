@@ -34,7 +34,7 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 <ns-footer></ns-footer>
 ```
 
-## Component Relationship
+## Component relationship
 
 | **Relationship**|  |
 | :---  | :--- |

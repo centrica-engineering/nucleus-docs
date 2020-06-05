@@ -2,7 +2,7 @@
 description: Welcoming each and everyone to the Nucleus Design System.
 ---
 
-# Contribute To Nucleus
+# Contribute to Nucleus
 
 > Our design system is a living organism, one that reflects and evolves with our collective learning.
 

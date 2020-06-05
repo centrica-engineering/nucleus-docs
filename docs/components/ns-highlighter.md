@@ -75,7 +75,7 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
   <p>Thank you for your patience. We’re sorry for the inconvenience this might cause.</p>
 </ns-highlighter>
 ```
-## Component Relationship
+## Component relationship
 
 | **Relationship** |  |
 | :---  | :--- |
