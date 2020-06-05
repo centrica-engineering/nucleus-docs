@@ -1,5 +1,5 @@
 ---
-description: Page Type | Confirmation
+description: Page type | Confirmation
 ---
 
 # Confirmation
