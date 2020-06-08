@@ -53,24 +53,24 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-selector" caption="" %}
 
 ```html
-<ns-inputter validation="['isRequired']" heading="Choose a product" name="product">
+<ns-inputter class="triple" validation="['isRequired']" heading="Listicle street art shaman">
 
-  <ns-selector decoration="gas" image="gas.png">
-    <input type="radio" aria-describedby="item-1" name="question" value="gas">
-    <label for="question-gas">Gas</label>
-    <div slot="description" id="item-1">
+  <ns-selector decoration="gas">
+    <input type="radio" id="item-1" name="question" value="crucifix">
+    <label for="item-1">Raclette crucifix messenger bag</label>
+    <div slot="description">
       <ul class="ul-bullet">
-        <li>Wolf plaid crucifix hammock</li>
-        <li>Kale chips live-edge</li>
-        <li>Subway tile squid godard occupy shabby chic blog</li>
+        <li>Leggings synth normcore wayfarers</li>
+        <li>Mlkshk trust fund helvetica banjo drinking</li>
+        <li>Gochujang semiotics bicycle</li>
       </ul>
     </div>
   </ns-selector>
 
-  <ns-selector decoration="electricity" image="electricity.png">
-    <input type="radio" aria-describedby="item-2" name="question" value="electricity">
-    <label for="question-gas">Electricity</label>
-    <div slot="description" id="item-2">
+  <ns-selector decoration="electricity">
+    <input type="radio" id="item-2" name="question" value="hammock">
+    <label for="item-2">Pug enamel pin post</label>
+    <div slot="description">
       <ul class="ul-bullet">
         <li>Wolf plaid crucifix hammock</li>
         <li>Kale chips live-edge</li>
