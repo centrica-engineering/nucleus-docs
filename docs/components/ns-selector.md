@@ -10,13 +10,26 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ## Content guidance
 
-![ns-selector](https://user-images.githubusercontent.com/3082819/84010531-b1a27e80-a96c-11ea-94de-a534834f7aff.png)
+### Selector - Illustration
+
+![Selector - Illustration](https://user-images.githubusercontent.com/28779/84029138-d22d0180-a989-11ea-8ac5-7974bd24a3df.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | Label | The label should describe the selection being made using the most concise content possible. The recommended length is 21 characters maximum. |
 | B | Heading | The heading can provide an expanded description of the item being selected. The recommended length is between 3 and 21 characters. This heading should use a light font weight to allow the emphasis on the label. |
 | C | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](https://docs.britishgas.design/components/ns-card#specification) has a list of options. |
+
+### Selector - Image
+
+![Selector - Image](https://user-images.githubusercontent.com/28779/84029133-d0fbd480-a989-11ea-97fd-a1fb92bd5362.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Label | The label should describe the selection being made using the most concise content possible. The recommended length is 21 characters maximum. |
+| B | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| C | Image | This is the image that will be used above the ns-card. It should have an aspect ratio of 16:9, the dimensions should be 640x360px, the file type should be jpg, and the file size should be no more than 50kb. |
 
 ### Image guidance
 
