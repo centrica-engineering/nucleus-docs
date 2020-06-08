@@ -12,7 +12,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ### Selector - Illustration
 
-![Selector - Illustration](https://user-images.githubusercontent.com/28779/84029138-d22d0180-a989-11ea-8ac5-7974bd24a3df.png)
+![Selector - Illustration](https://user-images.githubusercontent.com/28779/84039057-98172c00-a998-11ea-83de-93034e1aea93.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
