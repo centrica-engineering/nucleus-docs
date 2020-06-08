@@ -1,5 +1,5 @@
 ---
-description: Page Type | Stopgap
+description: Page type | Stopgap
 ---
 
 # Stopgap
@@ -16,7 +16,7 @@ This page type should provide a clear message to reassure the customer. If possi
 
 If closing or refreshing their browser window will result in failure, we must convey this message clearly.
 
-## Content Guidance
+## Content guidance
 
 Use the `ns-landmark` - `lakeside` variant to display clear messaging.
 

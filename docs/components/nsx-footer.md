@@ -29,7 +29,7 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus-experienc
 <nsx-footer></nsx-footer>
 ```
 
-## Component Relationship
+## Component relationship
 
 | **Relationship**|  |
 | :---  | :--- |

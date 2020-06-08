@@ -1,5 +1,5 @@
 ---
-description: Page Type | Confirmation
+description: Page type | Confirmation
 ---
 
 # Confirmation
@@ -12,7 +12,7 @@ The confirmation page type is used to show a customer that their journey or task
 
 The purpose of the confirmation page is to show customer that their action has been completed. It is important to differentiate this from their previous steps so they know there is a clear change.
 
-## Content Guidance
+## Content guidance
 
 The page should always begin with a clear completion message. Any key information the customer needs to remember or save for a later date should be presented back to them at the top of the page. 
 

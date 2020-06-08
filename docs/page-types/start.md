@@ -1,5 +1,5 @@
 ---
-description: Page Type | Start
+description: Page type | Start
 ---
 
 # Start

@@ -44,7 +44,7 @@ submitForm() {
 }
 ```
 
-## Component Relationship
+## Component relationship
 
 |  **Relationship**  |  |
 | :--- | :--- |

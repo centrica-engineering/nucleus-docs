@@ -15,7 +15,7 @@ Positioned directly beneath the global navigation and above any content, `ns-sky
 * Informational - to show useful information that the user may want to be aware of, e.g. upcoming price changes.
 * Warning - to warn users of potential upcoming or current issues e.g. weather warning.
 
-## Content Guidance
+## Content guidance
 
 ![Skyline](https://user-images.githubusercontent.com/45626534/75039520-c556d180-54b0-11ea-9c34-a3bdd6f35751.png)
 
@@ -57,7 +57,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 </ns-skyline>
 ```
 
-## Component Relationship
+## Component relationship
 
 |  **Relationship**  |  |
 | :--- | :--- |

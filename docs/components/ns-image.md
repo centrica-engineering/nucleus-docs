@@ -27,7 +27,7 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
-| Resize your image [see optimise your image](https://docs.britishgas.design/v/release-candidate/how-to/optimise-images) | Use images as the primary content |
+| Resize your image [see optimise your image](https://docs.britishgas.design/how-to/optimise-images) | Use images as the primary content |
 | Use the correct image format png/jpg | Put text inside the image |
 | Use brand approved images | Use a white background in images |
 | Think about the image responsive behaviour |  |
@@ -48,7 +48,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 <ns-image ratio="16x9" src="https://www.britishgas.co.uk/aem6/content/dam/britishgas/images/jumbotron/home-services/20-Home-Services-wilbur.jpg"></ns-image>
 ```
 
-## Component Relationship
+## Component relationship
 
 |  **Relationship**  |  |
 | :--- | :--- |

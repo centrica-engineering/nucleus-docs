@@ -1,5 +1,5 @@
 ---
-description: Page Types documentation.
+description: Page types documentation.
 ---
 
-# Page Types
+# Page types

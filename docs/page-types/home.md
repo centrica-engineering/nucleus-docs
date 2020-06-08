@@ -1,8 +1,8 @@
 ---
-description: Page Type | Home Page
+description: Page type | Home page
 ---
 
-# Home Page
+# Home page
 
 ## Introduction
 

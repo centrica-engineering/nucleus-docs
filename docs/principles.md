@@ -15,7 +15,7 @@ We measure ourselves against our principles and we hold ourselves accountable.
 * Root down shared success criteria for decision making and prioritisation.
 * Be flexible to change.
 
-### We have three sets of principles that we abide by.
+### We have three sets of principles that we abide by
 
 * [Accessibility principles](#accessibility-principles)
 * [Experience principles](#experience-principles)

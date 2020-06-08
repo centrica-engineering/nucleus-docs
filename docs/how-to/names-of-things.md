@@ -314,7 +314,7 @@ For the Rewards section on the Homepage we included a class of `malcolm` to hide
 
 Currently we use `Hub` and `Sub-hub` to refer to two types of brochure type pages.
 
-These are also referred to across the business as their position in the information architecture: `Level 0`, `Level 1`, `Level 2` (where `Level 0` and `Level 1` currently use the same Page Type)
+These are also referred to across the business as their position in the information architecture: `Level 0`, `Level 1`, `Level 2` (where `Level 0` and `Level 1` currently use the same Page type)
 
 Oli produced a metaphor of a shop to describe the different page types, it would be worth revisiting this to see if it's suitable.
 
