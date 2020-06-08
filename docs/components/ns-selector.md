@@ -12,8 +12,8 @@ description: Molecule | Selector component.
 
 ![ns-selector](https://user-images.githubusercontent.com/3082819/84010531-b1a27e80-a96c-11ea-94de-a534834f7aff.png)
 
-| Field type | Guidelines |
-| :--- | :--- |
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
 | A | Label | The label should describe the selection being made using the most concise content possible. The recommended length is 21 characters maximum. |
 | B | Heading | The heading can provide an expanded description of the item being selected. The recommended length is between 3 and 21 characters. This heading should use a light font weight to allow the emphasis on the label. |
 | C| Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy <b>, inline links <a>, lists <ul> <ol>, and a caveat at the end of the relevant paragraph if required <a href="#caveat">1</a>. |
