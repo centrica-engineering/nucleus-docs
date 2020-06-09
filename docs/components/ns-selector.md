@@ -6,15 +6,30 @@ description: Molecule | Selector component.
 
 ## Introduction
 
-> Ns-selectors are used to group an image or illustration with a label into a card. They  showcase a product, service or option, which users can select. They can function as single, or multiple selection for the user.
+Selectors are used to group an image or illustration with a label into a card. They showcase a product, service or option, which users can select. They can function as single, or multiple selection for the user.
 
 ## Content guidance
 
-| Field type | Guidelines |
-| :--- | :--- |
-| Label |  |
-| Paragraph |  |
-| Heading |  |
+### Selector - Illustration
+
+![Selector - Illustration](https://user-images.githubusercontent.com/28779/84039057-98172c00-a998-11ea-83de-93034e1aea93.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Label | The label should describe the selection being made using the most concise content possible. The recommended length is 21 characters maximum. |
+| B | Heading | The heading can provide an expanded description of the item being selected. The recommended length is between 3 and 21 characters. This heading should use a light font weight to allow the emphasis on the label. |
+| C | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](https://docs.britishgas.design/components/ns-card#specification) has a list of options. |
+
+### Selector - Image
+
+![Selector - Image](https://user-images.githubusercontent.com/28779/84029133-d0fbd480-a989-11ea-97fd-a1fb92bd5362.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Label | The label should describe the selection being made using the most concise content possible. The recommended length is 21 characters maximum. |
+| B | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| C | Image | This is the image that will be used above the ns-card. It should have an aspect ratio of 16:9, the dimensions should be 640x360px, the file type should be jpg, and the file size should be no more than 50kb. |
 
 ### Image guidance
 
@@ -51,24 +66,24 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-selector" caption="" %}
 
 ```html
-<ns-inputter validation="['isRequired']" heading="Choose a product" name="product">
+<ns-inputter class="triple" validation="['isRequired']" heading="Listicle street art shaman">
 
-  <ns-selector decoration="gas" image="gas.png">
-    <input type="radio" aria-describedby="item-1" name="question" value="gas">
-    <label for="question-gas">Gas</label>
-    <div slot="description" id="item-1">
+  <ns-selector decoration="gas">
+    <input type="radio" id="item-1" name="question" value="crucifix">
+    <label for="item-1">Raclette crucifix messenger bag</label>
+    <div slot="description">
       <ul class="ul-bullet">
-        <li>Wolf plaid crucifix hammock</li>
-        <li>Kale chips live-edge</li>
-        <li>Subway tile squid godard occupy shabby chic blog</li>
+        <li>Leggings synth normcore wayfarers</li>
+        <li>Mlkshk trust fund helvetica banjo drinking</li>
+        <li>Gochujang semiotics bicycle</li>
       </ul>
     </div>
   </ns-selector>
 
-  <ns-selector decoration="electricity" image="electricity.png">
-    <input type="radio" aria-describedby="item-2" name="question" value="electricity">
-    <label for="question-gas">Electricity</label>
-    <div slot="description" id="item-2">
+  <ns-selector decoration="electricity">
+    <input type="radio" id="item-2" name="question" value="hammock">
+    <label for="item-2">Pug enamel pin post</label>
+    <div slot="description">
       <ul class="ul-bullet">
         <li>Wolf plaid crucifix hammock</li>
         <li>Kale chips live-edge</li>
