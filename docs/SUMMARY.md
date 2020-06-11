@@ -23,7 +23,7 @@
   * [ns-card](components/ns-card.md)
   * [ns-caveat](components/ns-caveat.md)
   * [ns-cta](components/ns-cta.md)
-  * [ns-datepicker](components/ns-patepicker.md)
+  * [ns-datepicker](components/ns-datepicker.md)
   * [ns-download](components/ns-download.md)
   * [ns-editorial](components/ns-editorial.md)
   * [ns-expander](components/ns-expander.md)
