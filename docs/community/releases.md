@@ -6,7 +6,7 @@ description: Here are our release notes - enjoy!
 
 ## Version 1.11.0
 
-**Iteration 1 of the ns-datepicker**
+**Introducing the Datepicker and fixing a few bugs**
 
 Release date - 2020-06-10
 
