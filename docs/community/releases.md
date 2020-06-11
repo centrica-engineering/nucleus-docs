@@ -4,6 +4,29 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
+## Version 1.11.0
+
+**Iteration 1 of the ns-datepicker**
+
+Release date - 2020-06-10
+
+**What's new around here? 🛶**
+
+* We've been working hard to create a solution that allows customers to select a date. The first iteration of `ns-datepicker` allows users to manually enter a date, or utilise their native browser calendar. 
+* We're developing a bespoke `ns-calendar` capability right now, in future this will form part of the next iteration of `ns-datepicker` 
+
+**Bug fixes 🐛**
+
+* `ns-landmark type="lakeside"` alignment fix; you should see better left alignment in functional journeys now, where `ns-landmark` is used.
+* `ns-lockup` illustration placement fixed in `type=locknut`; when you use lots of content in the `type=locknut`, the illustration will display in the right place.
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌
+
 ## Version 1.10.0
 
 **The all new Footer, an improvement to our Inputter and 5 bugs squashed**
