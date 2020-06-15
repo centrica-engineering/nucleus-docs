@@ -73,8 +73,8 @@ You can provide context and a description for groups of form controls using eith
 
 We have a growing number of page types and patterns that have been researched and developed across multiple teams. These can help to provide a consistent experience for the customer, and also to make your delivery more efficient, we advise you to use these patterns. They include:
 
-- [Start](https://docs.britishgas.design/page-types/start)
-- [Confirmation](https://docs.britishgas.design/page-types/confirmation)
+- [Start - page type](https://docs.britishgas.design/page-types/start)
+- [Confirmation - page type](https://docs.britishgas.design/page-types/confirmation)
 - Addresses (In development)
 - Appointment selection (In development)
 - Date selection (In development)
