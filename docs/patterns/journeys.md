@@ -42,7 +42,7 @@ British Gas customers engage with a variety of complex tasks in our digital real
 
 ### Pages rather than sections
 
-At this stage, our documentation focuses on creating new experiences using a page by page structure. Further research is required to understand the accessibility of creating progressively disclosed sections of a journey. These areas include:
+At this stage, our documentation focuses on creating new experiences using a page by page structure. Further research is required to document creating progressively disclosed sections of a journey. These areas include:
 
 - Motion choreography, transitions, and loading
 - Screen readers and other assistive technology
