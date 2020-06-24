@@ -8,6 +8,18 @@ description: List of Nucleus events including Nucleus Sessions.
 
 Browse below to gain a sense of our past events. The best way to learn about our upcoming events is to follow our Slack channel #product-nucleus.. or be invited (we post invites via other Slack channels and email, depending on the purpose of the event).
 
+## 2020-06-03 / Squad achievement session
+For the fifth time Nucleus presented at the internal squad achievements session. It was packed full of achievements from the last 2 months. The presentation was split into 3 areas:
+
+* What have we done?
+Some of the highlights from the last two months including, the `nsx-footer`, `ns-testimonial` variants & date picker testing (and more).
+* What are we doing?
+We introduced the work we've been undertaking around Nucleus usage data, the 2 new Page types available in our documentation and discussed HTML prototype support.
+* What's next?
+On the horizon are functional journey patterns, redesigning the header and dedicating resource to helping teams implement the Nucleus.
+
+[Nucleus-SquadAchievements-June.pdf](https://github.com/ConnectedHomes/nucleus/files/4745589/Nucleus-SquadAchievements-June2nd.pdf)
+
 ## 2019-12-04 / Squad achievement session
 This was the second opportunity for the Nucleus team to present to the BG Home digital team. On this occasion we focused on celebrating the success the other teams are having using the design system.
 
