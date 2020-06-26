@@ -93,13 +93,21 @@ We have a growing number of page types and patterns that have been researched an
 
 - [Start - page type](https://docs.britishgas.design/page-types/start)
 - [Confirmation - page type](https://docs.britishgas.design/page-types/confirmation)
+- [Loading](https://docs.britishgas.design/patterns/loading)
+- [Marketing consent](https://docs.britishgas.design/components/nsx-marketing-consent)
+- [Messaging](https://docs.britishgas.design/patterns/messaging)
+
+
+## Proposed patterns
+
+The following is a list of patterns currently in development or proposal stage:
+
 - Addresses (In development)
 - Appointment selection (In development)
 - Date selection (In development)
-- Direct Debit information (TBC)
-- [Marketing consent](https://docs.britishgas.design/components/nsx-marketing-consent)
+- Direct Debit information
 - Meter readings (In development)
-- Payment Card information (TBC)
+- Payment Card information
 
 
 ## Best practice
