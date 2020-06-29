@@ -33,15 +33,8 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
   <ns-inputter validation='["isRequired"]'>
     ...
   </ns-inputter>
-  <ns-cta onClick="submitForm">Submit</ns-cta>
+  <ns-cta>Submit</ns-cta>
 </ns-form>
-```
-
-```javascript
-submitForm() {
-  const form = document.querySelector('ns-form');
-  const formData = form.validate();
-}
 ```
 
 ## Component relationship
@@ -60,15 +53,57 @@ submitForm() {
 
 | Event | Description |
 | :--- | :--- |
+| `submit` | Dispatched when the user tries to submit a form. |
 | `validated` | Will pass the object of the fields and validation when validate is called. |
 
 ## Specification notes
+
+### Submit
+
+The submit event is triggered in one of two ways:
+
+* Clicking on ns-cta (without href attribute)
+* Pressing enter when focused on an input
+
+Exceptions:
+
+* Nested ns-forms will not dispatch the submit event to a parent ns-form
+* The nsx-address selector will dispatch a submit event as it is a self contained experience.
+
+
+#### Handling submit events
+
+You will need to set up a way to listen for the submit event. This can be done using via `onsubmit` or using an event listener.
+
+The returned event contains `event.detail.submitter` - this is the element that triggered the ns-form submit.
+
+Note: submitting the form does not trigger validation, this will need to be handled separately. See Validated below.
+
+onsubmit example:
+
+```markup
+<ns-form onsubmit="submittedForm(event)">
+  <ns-inputter validation='["isRequired"]'>
+    ...
+  </ns-inputter>
+  <ns-cta>Submit</ns-cta>
+</ns-form>
+
+<script>
+  function submittedForm(event) {
+    // do something as a result of the event
+
+    // validate the form
+    event.target.validate();
+  }
+</script>
+```
 
 ### Validated
 
 * This is only required if you need to listen for an event. The `validate` attribute will pass back the same object.
 
-### Validation data
+#### Validation data
 
 An **invalid validate return response** looks like:
 
