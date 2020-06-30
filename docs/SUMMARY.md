@@ -54,6 +54,7 @@
   * [Journeys](patterns/journeys.md)
   * [Experiences](patterns/experiences.md)
   * [Loading](patterns/loading.md)
+  * [Messaging](patterns/messaging.md)
 * [Page types](page-types/README.md)
   * [Confirmation](page-types/confirmation.md)
   * [Guide](page-types/guide.md)
