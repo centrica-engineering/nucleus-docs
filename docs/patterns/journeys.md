@@ -69,9 +69,14 @@ You can provide context and a description for groups of form controls using eith
 - You can read more information about grouping questions here.(TBC)
 - You can [read more information about the Fieldset component here](https://docs.britishgas.design/components/ns-fieldset).
 
-### Playback and Summary (BETA)
+### Playing back information
 
-Providing the customer with a summary of their answers can help reduce error rates and reassure them of what they have completed. At this stage there are two distinct patterns being used for playing back and summarising a customer’s answers, they are using a flat card or a description list. Both can be used to play back a representative structure of the sections a customer has completed. 
+Providing the customer with a summary of their answers can help reduce error rates and reassure them of what they have completed. Further research is required for when to playback information to users: 
+
+- After each individual question/section
+- Grouped summary at the end of a journey
+
+At this stage there are two distinct methods being used for playing back and summarising a customer’s answers, they are using a flat card or a description list. Both can be used to play back a representative structure of the sections a customer has completed. 
 
 #### ns-card
 
@@ -80,34 +85,15 @@ The `<ns-card>` has a variant type “flat”, this variant is a version that co
 #### Description list
 
 The design system contains a typographic list style that uses the markup element called the description list, or <dl> tag. This element is used for presenting pairs of information - a label and a piece of data. This is ideal for summarising a series of customer responses. In addition to the label and data, a call to action can be used to allow navigation back to their answers for amendment.
-  
-#### Call to actions - Further research required
 
-To create a consistent pattern we would like all “change” call to actions to have the same wording. Because these call to actions are placed next to the information they relate to, sighted users should be provided with enough context for what they do. However, for users of assistive technologies this is problematic and makes the pattern less accessible for them. More research is needed to be conducted in relation to providing more accessible call to actions. 
+## Supporting pages for journeys
 
-If you would like to help research and define the playback & summary journey pattern, please engage with the team on Slack **#product-nucleus**
+We have a growing number of page types that have been researched and developed across multiple teams. These can help to provide a consistent experience for the customer, and also to make your delivery more efficient, we advise you to use these pages when they are required. They include:
 
-## Existing pages and patterns
-
-We have a growing number of page types and patterns that have been researched and developed across multiple teams. These can help to provide a consistent experience for the customer, and also to make your delivery more efficient, we advise you to use these patterns. They include:
-
-- [Start - page type](https://docs.britishgas.design/page-types/start)
-- [Confirmation - page type](https://docs.britishgas.design/page-types/confirmation)
-- [Loading](https://docs.britishgas.design/patterns/loading)
-- [Marketing consent](https://docs.britishgas.design/components/nsx-marketing-consent)
-- [Messaging](https://docs.britishgas.design/patterns/messaging)
-
-
-## Proposed patterns
-
-The following is a list of patterns currently in development or proposal stage:
-
-- Addresses (In development)
-- Appointment selection (In development)
-- Date selection (In development)
-- Direct Debit information
-- Meter readings (In development)
-- Payment Card information
+- [Start - for introducing a journey](https://docs.britishgas.design/page-types/start)
+- [Confirmation - for closing a journey](https://docs.britishgas.design/page-types/confirmation)
+- [Stopgap - to help during long processing times](https://docs.britishgas.design/page-types/stopgap)
+- [Roadblock - to help when a journey is unavailable](https://docs.britishgas.design/page-types/roadblock)
 
 
 ## Best practice
