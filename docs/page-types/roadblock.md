@@ -38,7 +38,7 @@ If supporting information is needed, consider using `ns-lockup` or `ns-editorial
 
 ## Visual example
 
-<img width="1160" alt="Screen Shot 2020-06-02 at 09 54 47" src="https://user-images.githubusercontent.com/45626534/83500827-31d16b80-a4b7-11ea-9e53-315c9108950a.png">
+![Example of the Roadblock message](https://user-images.githubusercontent.com/45626534/83500827-31d16b80-a4b7-11ea-9e53-315c9108950a.png)
 
 [View the `<ns-landmark type=lakeside>` on storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--lakeside)
 
