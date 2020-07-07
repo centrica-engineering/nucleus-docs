@@ -78,6 +78,8 @@ Providing the customer with a summary of their answers can help reduce error rat
 
 At this stage there are two distinct methods being used for playing back and summarising a customer’s answers, they are using a flat card or a description list. Both can be used to play back a representative structure of the sections a customer has completed. 
 
+![Description list used for personal information summary](https://user-images.githubusercontent.com/45626534/86791461-75446a00-c061-11ea-8bcd-4898823cadf9.png)
+
 #### ns-card
 
 The `<ns-card>` has a variant type “flat”, this variant is a version that contains no additional decoration, just typographic styles - a heading, content, and a call to action. The heading can be aligned with the section it represents, the content with the information provided, and the call to action can utilised to provide the user with an option to navigate back to that section and amend their responses.
