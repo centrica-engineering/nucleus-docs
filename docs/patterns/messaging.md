@@ -10,6 +10,8 @@ There are a number of components and methods available to display messages and i
 
 ### Using `<ns-skyline>`
 
+![Global message on britishgas.co.uk](https://user-images.githubusercontent.com/45626534/86783221-ec750080-c057-11ea-9aa7-7b76a9c69c1c.png)
+
 In order to notify customers of important site-wide or non-page specific events, we have the `<ns-skyline>`. This component is positioned directly beneath the global navigation and above any content. `<ns-skyline>` displays high-level messages to the user, specifically:
 
 - **Informational** - to show useful information that the user may want to be aware of, e.g. upcoming price changes.
@@ -21,12 +23,16 @@ You can [read more information about the `<ns-skyline>` here](https://docs.briti
 
 ### Form control validation
 
+![Validation message on radio buttons](https://user-images.githubusercontent.com/45626534/86784027-f3e8d980-c058-11ea-837e-5afb39fd11da.png)
+
 Our form controls are handled by the `<ns-inputter>` component, these include several variants of the text input, along with radio buttons and checkboxes, a select drop down, and a textarea. Validation requirements can be added to the component for a number of general or specific types of information. The validation messages are there to assist that valid values are added and to show an error message when they're not. 
 
 - You can [read more information about the `<ns-inputter>` here](https://docs.britishgas.design/components/ns-inputter).
 - You can [see examples of `<ns-inputter>` here](https://docs.britishgas.design/components/ns-inputter).
 
-### Using `<ns-highlighter>` for errors
+### Using `<ns-highlighter>` for errors and warnings
+
+![Warning message displayed in journey](https://user-images.githubusercontent.com/45626534/86784458-72de1200-c059-11ea-98fe-75700c5056c0.png)
 
 The `<ns-highlighter>` has two variants that can be used for displaying warning or error messages:
 
@@ -42,6 +48,8 @@ These messages are to be communicated during a customers engagement with a journ
 
 ### Using the Roadblock page type
 
+![Roadblock message](https://user-images.githubusercontent.com/45626534/83500827-31d16b80-a4b7-11ea-9e53-315c9108950a.png)
+
 The Roadblock page type is there to present key information to a user when they reach an unexpected end to the task they were trying to complete. This can be related to a problem with a service that their task requires - these are 400 client side errors or 500 internal server error pages.
 
 The page should describe to the user what has happened and tell them how to fix it if possible.
@@ -51,6 +59,8 @@ You can [read more information about the Roadblock page type here](https://docs.
 ## Valuable information & success messages
 
 ### Using `<ns-highlighter>`
+
+![Messaging example for submitting a meter reading](https://user-images.githubusercontent.com/45626534/86784635-a7ea6480-c059-11ea-96a4-b54f141a1a69.png)
 
 Along with handling warning and error messages, the `<ns-highlighter>` has two further variants that can be used for messaging:
 
