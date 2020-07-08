@@ -4,18 +4,10 @@ description: Nucleus principles.
 
 # Principles
 
-> Our shared values are captured in these principles.
-
-We measure ourselves against our principles and we hold ourselves accountable.
 
 ## Introduction
 
-* Use a consistent vision that we all work towards.
-* Help us concentrate on creating consistent and coherent experiences.
-* Root down shared success criteria for decision making and prioritisation.
-* Be flexible to change.
-
-### We have three sets of principles that we abide by
+The design system is here to enable teams across British Gas to deliver consistent, accessible experiences that delight our customers. We should be flexible to change, and use shared success criteria for decision making and prioritisation. This is an inclusive, community driven design system. In order to help deliver this, we hold ourselves accountable and measure ourselves against three sets of principles: 
 
 * [Accessibility principles](#accessibility-principles)
 * [Experience principles](#experience-principles)
