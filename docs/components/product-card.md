@@ -42,7 +42,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
     <ns-price pence="14400"></ns-price> / year
   </p>
   <div slot="description">
-    <p>A decription of this product</p>
+    <p>A description of this product</p>
     <ul class="ul-ticked">
       <li>Feature 1</li>
       <li>Feature 2</li>
@@ -50,15 +50,15 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
       <li>Feature 4</li>
     </ul>
   </div>
-  <ns-expander slot="expander" role="tab">
+  <ns-expander slot="expander">
     <h3 slot="heading">Expander</h3>
     <p>Expander details</p>
   </ns-expander>
-  <ns-expander slot="expander" role="tab">
+  <ns-expander slot="expander">
     <h3 slot="heading">Expander</h3>
     <p>Expander details</p>
   </ns-expander>
-  <ns-cta href="#" slot="cta">Hey ho let's go</ns-cta>
+  <ns-cta href="#" slot="cta">Do something</ns-cta>
 </ns-product-card>
 ```
 
