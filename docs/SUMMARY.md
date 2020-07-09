@@ -40,6 +40,7 @@
   * [ns-lockup](components/ns-lockup.md)
   * [ns-panel](components/ns-panel.md)
   * [ns-price](components/ns-price.md)
+  * [ns-product-card](components/ns-product-card.md)
   * [ns-selector](components/ns-selector.md)
   * [ns-skyline](components/ns-skyline.md)
   * [ns-tab](components/ns-tab.md)
