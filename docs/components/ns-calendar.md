@@ -59,7 +59,7 @@ Also see ns-inputter [specification](https://docs.britishgas.design/components/n
 | `year` | `number`  | 1  |         | Year (eg. 2020)
 | `minDate` | `string`  |  |         | Minimum date allowed on calendar in iso format: eg. `'2020-07-29'`
 | `maxDate` | `string`  |  |         | Maximum date allowed on calendar in iso format: eg. `'2020-10-04'`
-| `selectOnFocus` | `boolean` | `false` | true,false | When set to true, the calendar will automatically select any date in focus
+| `selectOnFocus` | `boolean` | `false` | `true`,`false` | When set to true, the calendar will automatically select any date in focus
 | `disabledDates` | `array` | `[]` | | An array of dates that shuld not be selectable.  eg. `['2020-07-19', '2020-07-20', '2020-07-21']`
 
 
