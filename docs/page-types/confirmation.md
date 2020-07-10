@@ -12,11 +12,17 @@ The confirmation page type is used to show a customer that their journey or task
 
 The purpose of the confirmation page is to show customer that their action has been completed. It is important to differentiate this from their previous steps so they know there is a clear change.
 
+For more information on how to book end your journeys [see the Start page type](https://docs.britishgas.design/page-types/start).
+
+## Visual Examaple
+
+![Confirmation page example](https://user-images.githubusercontent.com/45626534/87127391-c0d75d80-c285-11ea-9299-d9318c6d9fde.png)
+
 ## Content guidance
 
 The page should always begin with a clear completion message. Any key information the customer needs to remember or save for a later date should be presented back to them at the top of the page. 
 
-Examples of this include:
+### This page should include
 
 * any reference numbers
 * an appointment date and/or time
@@ -25,7 +31,11 @@ Examples of this include:
 
 This page should positively affirm to the customer that they have successful completed their current task, and set their expectations for any further steps required. You can use supporting content to playback their purchase and inform them of what will happen next. If the customer is required to complete any additional follow up tasks then they should be highlighted as close to the top of the page as possible.
 
+### This page may also include
+
 Supplementary content relating to their completed journey can be displayed further down the page, with hierarchical importance reducing with scroll depth. If you believe there is related tasks that meet their next best action, then these can be highlighted with a primary call to action.
+
+### Supporting email comms
 
 In addition to this page, a confirmation email containing this information should be sent to the customer as well. This is especially important if the customer cannot bookmark or revisit this page once they navigated away from it.
 
