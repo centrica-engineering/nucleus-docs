@@ -7,7 +7,11 @@ description: Nucleus principles.
 
 ## Introduction
 
-The design system is here to enable teams across British Gas to deliver consistent, accessible experiences that delight our customers. We should be flexible to change, and use shared success criteria for decision making and prioritisation. This is an inclusive, community driven design system. In order to help deliver this, we hold ourselves accountable and measure ourselves against three sets of principles: 
+Nucleus is here to enable teams across British Gas deliver consistent, accessible experiences that delight our customers.
+
+We are flexible to change, and use shared success criteria for decision making and prioritisation.
+
+This is an inclusive, community driven design system. In order to help deliver this, we hold ourselves accountable and measure ourselves against these principles: 
 
 * [Accessibility principles](#accessibility-principles)
 * [Experience principles](#experience-principles)
