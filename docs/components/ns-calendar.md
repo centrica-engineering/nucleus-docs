@@ -62,7 +62,9 @@ Also see ns-inputter [specification](https://docs.britishgas.design/components/n
 | `selectOnFocus` | `boolean` | `false` | `true`,`false` | When set to true, the calendar will automatically select any date in focus
 | `disabledDates` | `array` | `[]` | | An array of dates that shuld not be selectable.  eg. `['2020-07-19', '2020-07-20', '2020-07-21']`
 
-
+| Event	| Description |
+|-------|-------------|
+| `change` |	Will be dispatched when a date is selected by the user |
 
 ## Feedback
 
