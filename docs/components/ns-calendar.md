@@ -21,7 +21,7 @@ The component allows user to:
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| | Use ns-calendar directly for data entry, it should be used within other components. eg. ns-date-picker |
+| Use inside other components that require a calendar view  | Use ns-calendar directly for data entry, it should be used within other components. eg. ns-date-picker |
 
 
 ### Considerations of best practices
