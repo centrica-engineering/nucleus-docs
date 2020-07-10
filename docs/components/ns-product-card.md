@@ -28,7 +28,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-product-card" caption="" %}
 
 ```markup
-<ns-product-card keyline="green">
+<ns-product-card keyline="green-light">
   <ns-image slot="image" src="/aem6/content/dam/britishgas/images/ns/image16_9.png" alt="Description of image" ratio="16x9"></ns-image>
   <p slot="highlight">Recommended</p>
   <h2 slot="name">Product Name</h2>
