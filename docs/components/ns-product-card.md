@@ -13,7 +13,7 @@ description: Organism | Product card component.
 | 💚 Do's | 💔 Don'ts |
 | :---  | :---  |
 | Use for products | Use for other content types, use ns-card instead |
-| Use the same sections for all products in a section | Use in a form |
+| Use the same sections for all products in a group | Use in a form |
 | Give multiple cards one parent | |
 | Use `role="list` and `role="listitem"` when used in multiples | |
 
@@ -32,15 +32,11 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
   <ns-image slot="image" src="/aem6/content/dam/britishgas/images/ns/image16_9.png" alt="Description of image" ratio="16x9"></ns-image>
   <p slot="highlight">Recommended</p>
   <h2 slot="name">Product Name</h2>
-  <h3 slot="priceHeading">Estimated</h3>
-  <p slot="price">
-    <b>
-      <ns-price pence="1200"></ns-price>
-    </b> / month
-  </p>
-  <p slot="secondaryPrice">
-    <ns-price pence="14400"></ns-price> / year
-  </p>
+  <h3 slot="price-heading">Estimated</h3>
+  <div slot="price">
+    <p><b><ns-price pence="1200"></ns-price></b> / month</p>
+    <p><ns-price pence="14400"></ns-price> / year</p>
+  </div>
   <div slot="description">
     <p>A description of this product</p>
     <ul class="ul-ticked">
@@ -74,7 +70,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
-| `keyline` | `string` | none | `blue`, `yellow`, `green`, `cyan` | Add a graident accross the top of the card |
+| `keyline` | `string` | none | `blue`, `yellow`, `green-light`, `cyan` | Add a graident accross the top of the card |
 
 
 | Slots | Type |
@@ -82,9 +78,8 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | `image` | `<ns-image>` |
 | `highlight` | `<p>` |
 | `name` | `<h2>`, `<h3>` |
-| `priceHeading` | `<h3>`, `<h4>` |
-| `price` | `<p>` |
-| `secondaryPrice` | `<p>` |
+| `price-heading` | `<h3>`, `<h4>` |
+| `price` | `<div>` |
 | `description` | `<div>` |
 | `expander` | `<ns-expander>` |
 | `cta` | `<ns-cta >` |
@@ -95,13 +90,13 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 * Check the [ns-image documentation](https://docs.britishgas.design/components/ns-image) for more information.
 
-### name and priceHeading
+### name and price-heading
 
 * priceHeading should be one heading level lower than name
 
-### Price (price and secondaryPrice)
+### Price
 
-* Should be wrapped around `<ns-price>`
+* Use multiple `<p>` containing `<ns-price>`
 * Check the [ns-price documentation](https://docs.britishgas.design/components/ns-price) for more information.
 
 ### Description
