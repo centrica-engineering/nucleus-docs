@@ -6,17 +6,23 @@ description: Molecule | Calendar component.
 
 ## Introduction
 
-> Displays a single month in an interactive calendar layout
+> Displays a single month in an interactive calendar table
 
-This component can used to display a month and allow the user to select a date.
+ns-calendar should be used inside of other components that are required to display dates in a calendar.
+
+The component allows user to:
+- View dates in a month as a calendar layout
+- Navigate from month to month
+- Select a date
+- Restrict selectable dates to a date range
+
 
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use the default type for picking a date from a range | Change the date format |
-| Use the default type for picking a date that the user might not be sure of (e.g. Next Friday) |  |
-| Use the mask type for picking a dates that are well know to the user (e.g. Date of birth) |  |
+| | Use ns-calendar directly for data entry, it should be used within other components. eg. ns-date-picker |
+
 
 ### Considerations of best practices
 
@@ -38,7 +44,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 |  **Relationship**  |  |
 | :--- | :--- |
 | **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes - `ns-form` |
+| **Does it live inside other components?** | ✅ Yes - `ns-date-picker (coming soon)` |
 | **What layout classes can be used?**  | None |
 
 ## Specification
@@ -48,6 +54,10 @@ Also see ns-inputter [specification](https://docs.britishgas.design/components/n
 | Attribute      | Type      | Default   | Options | Description |
 |----------------|-----------|-----------|---------|-----------|
 | `month` | `number`  | 1  |         | Month number (Jan=1, Feb=2 etc)
+| `year` | `number`  | 1  |         | Year (eg. 2020)
+| `minDate` | `string`  |  |         | Minimum date allowed on calendar in iso format: eg. '2020-07-29'
+| `maxDate` | `string`  |  |         | Maximum date allowed on calendar in iso format: eg. '2020-10-04'
+| `selectOnFocus` | `boolean` | false | true,false | When set to true, the calendar will automatically select any date navigated to with keyboard
 
 
 ## Feedback
