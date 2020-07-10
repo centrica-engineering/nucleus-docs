@@ -14,11 +14,15 @@ This page type should be used to clarify and set up a task for a user at the beg
 
 This page sets expectations and provides any contextual information that a user may need to complete their journey successfully. 
 
+For more information on how to book end your journeys [see the Confirmation page type](https://docs.britishgas.design/page-types/confirmation).
+
 ## Content guidance
 
 The outline below provides an overview of the content that is likely to be required at this stage in the user's journey. This is is not prescriptive guidance and the unique needs of each journey should always also be considered. A dedicated start page may not be needed if users are coming from a hub page where their task is already clearly clarified. This page may also vary in shorter journeys, particularly where form elements may need to be present at the first step.
 
 ### This page should include
+
+![Example: Start (A - E)](https://user-images.githubusercontent.com/3082819/83170682-d1d07300-a10c-11ea-9eee-02bd34307d81.png)
 
 | Key | Guidelines |
 | :--- | :--- |
@@ -29,6 +33,8 @@ The outline below provides an overview of the content that is likely to be requi
 
 ### This page may also include
 
+![Example: Optional signposting to a secondary journey (F)](https://user-images.githubusercontent.com/3082819/82550723-e930be80-9b56-11ea-8294-e4d1bdb5c09d.png)
+
 | Key | Guidelines |
 | :--- | :--- |
 | E | Links to relevant help and support content |
@@ -36,13 +42,6 @@ The outline below provides an overview of the content that is likely to be requi
 
 This supplementary content may be displayed further down the page as needed, with hierarchical importance reducing with scroll depth. Decorative background elements should be adapted to create balance with the surrounding page elements.
 
-Example: Start (A - E)
-
-![Start](https://user-images.githubusercontent.com/3082819/83170682-d1d07300-a10c-11ea-9eee-02bd34307d81.png)
-
-Example: Optional signposting to a secondary journey (F)
-
-![Optional](https://user-images.githubusercontent.com/3082819/82550723-e930be80-9b56-11ea-8294-e4d1bdb5c09d.png)
 
 ## Feedback
 
