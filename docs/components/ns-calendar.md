@@ -13,7 +13,9 @@ ns-calendar should be used inside of other components that are required to displ
 The component allows user to:
 - View dates in a month as a calendar layout
 - Navigate from month to month
+- Navigate from day to day using arrow keys
 - Select a date
+- Disable particular days
 - Restrict selectable dates to a date range
 
 
@@ -55,9 +57,11 @@ Also see ns-inputter [specification](https://docs.britishgas.design/components/n
 |----------------|-----------|-----------|---------|-----------|
 | `month` | `number`  | 1  |         | Month number (Jan=1, Feb=2 etc)
 | `year` | `number`  | 1  |         | Year (eg. 2020)
-| `minDate` | `string`  |  |         | Minimum date allowed on calendar in iso format: eg. '2020-07-29'
-| `maxDate` | `string`  |  |         | Maximum date allowed on calendar in iso format: eg. '2020-10-04'
-| `selectOnFocus` | `boolean` | false | true,false | When set to true, the calendar will automatically select any date navigated to with keyboard
+| `minDate` | `string`  |  |         | Minimum date allowed on calendar in iso format: eg. `'2020-07-29'`
+| `maxDate` | `string`  |  |         | Maximum date allowed on calendar in iso format: eg. `'2020-10-04'`
+| `selectOnFocus` | `boolean` | `false` | true,false | When set to true, the calendar will automatically select any date in focus
+| `disabledDates` | `array` | `[]` | | An array of dates that shuld not be selectable.  eg. `['2020-07-19', '2020-07-20', '2020-07-21']`
+
 
 
 ## Feedback
