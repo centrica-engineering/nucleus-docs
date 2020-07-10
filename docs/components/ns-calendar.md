@@ -8,7 +8,7 @@ description: Molecule | Calendar component.
 
 > Displays a single month in an interactive calendar table
 
-ns-calendar should be used inside of other components that are required to display dates in a calendar.
+ns-calendar should be used inside components that are required to display dates in a calendar layout.
 
 The component allows user to:
 - View dates in a month as a calendar layout
