@@ -63,7 +63,7 @@ These messages are to be communicated during a customers engagement with a journ
 
 ### Using the Roadblock page type
 
-![Roadblock message](https://user-images.githubusercontent.com/28779/87281192-e0bb8b00-c4ea-11ea-8bbb-7472ee6b0419.png)
+![Roadblock message](https://user-images.githubusercontent.com/28779/87285140-106c9200-c4ef-11ea-9cdf-10f82f76ff42.png)
 
 The Roadblock page type presents key information when a user reaches an unexpected end to the task they were trying to complete.
 
