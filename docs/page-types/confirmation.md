@@ -10,11 +10,11 @@ The confirmation page type is used to show a customer that their journey or task
 
 ## Purpose
 
-The purpose of the confirmation page is to show customer that their action has been completed. It is important to differentiate this from their previous steps so they know there is a clear change.
+The purpose of the confirmation page is to show a customer that their action has been completed. It is important to differentiate this from their previous steps so they know there is a clear change.
 
 For more information on how to book end your journeys [see the Start page type](https://docs.britishgas.design/page-types/start).
 
-## Visual Examaple
+## Visual Example
 
 ![Confirmation page example](https://user-images.githubusercontent.com/45626534/87127391-c0d75d80-c285-11ea-9299-d9318c6d9fde.png)
 
