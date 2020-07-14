@@ -14,11 +14,11 @@ This page type should be used to clarify and set up a task for a user at the beg
 
 This page sets expectations and provides any contextual information that a user may need to complete their journey successfully. 
 
-For more information on how to book end your journeys [see the Confirmation page type](https://docs.britishgas.design/page-types/confirmation).
+For more information on how to bookend your journeys [see the Confirmation page type](https://docs.britishgas.design/page-types/confirmation).
 
 ## Content guidance
 
-The outline below provides an overview of the content that is likely to be required at this stage in the user's journey. This is is not prescriptive guidance and the unique needs of each journey should always also be considered. A dedicated start page may not be needed if users are coming from a hub page where their task is already clearly clarified. This page may also vary in shorter journeys, particularly where form elements may need to be present at the first step.
+The outline below provides an overview of the content that is likely to be required at this stage in the user's journey. This is not prescriptive guidance and the unique needs of each journey should always also be considered. A dedicated start page may not be needed if users are coming from a hub page where their task is already clearly clarified. This page may also vary in shorter journeys, particularly where form elements may need to be present at the first step.
 
 ### This page should include
 
