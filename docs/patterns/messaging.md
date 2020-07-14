@@ -39,7 +39,7 @@ An example of general validation is: If the field is required or to restrict the
 
 An example of specific validation is: First name and last name, also telephone and mobile numbers.
 
-These validation rules ensure that the expected data is provided, and will display an inline validaiton message when incorrect.
+These validation rules ensure that the expected data is provided, and will display an inline validation message when incorrect.
 
 - You can [read more information about the different `<ns-inputter>` validation options](https://docs.britishgas.design/components/ns-inputter#specification).
 - You can [see examples of `<ns-inputter>` here](https://docs.britishgas.design/components/ns-inputter).
