@@ -29,11 +29,11 @@ The page should always begin with a clear completion message. Any key informatio
 * a start or end date, or duration of a product or service
 * an address or contact information
 
-This page should positively affirm to the customer that they have successful completed their current task, and set their expectations for any further steps required. You can use supporting content to playback their purchase and inform them of what will happen next. If the customer is required to complete any additional follow up tasks then they should be highlighted as close to the top of the page as possible.
+This page should positively affirm to the customer that they have successfully completed their current task, and set their expectations for any further steps required. You can use supporting content to playback their purchase and inform them of what will happen next. If the customer is required to complete any additional follow up tasks then they should be highlighted as close to the top of the page as possible.
 
 ### This page may also include
 
-Supplementary content relating to their completed journey can be displayed further down the page, with hierarchical importance reducing with scroll depth. If you believe there is related tasks that meet their next best action, then these can be highlighted with a primary call to action.
+Supplementary content relating to their completed journey can be displayed further down the page, with hierarchical importance reducing with scroll depth. If you believe there are related tasks that meet their next best action, then these can be highlighted with a primary call to action.
 
 ### Supporting email comms
 
