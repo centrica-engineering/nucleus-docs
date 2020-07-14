@@ -6,7 +6,7 @@ description: Messaging patterns.
 
 We have a number of methods available to display messages and information to the customer. 
 
-Whether displaying a global message, a task specific message, a success or error message. Here are examples of how our components should be used to display those, and other types of messages.
+Whether displaying a global message, a task specific message, a success, or error message. Here are examples of how our components should be used to display those, and other types of messages.
 
 ## Global messages
 
