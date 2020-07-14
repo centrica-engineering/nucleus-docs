@@ -40,7 +40,7 @@ The page should describe to the user what has happened and tell them how to fix 
 
 Use the `ns-landmark` - `lakeside` variant to display clear messaging.
 
-The copy must be in plain English, and if possible help the user out of the situation by providing an actionable.
+The copy must be in plain English, and if possible help the user out of the situation by providing an actionable option.
 
 You should not use:
 
