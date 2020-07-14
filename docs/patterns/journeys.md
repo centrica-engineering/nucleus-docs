@@ -24,7 +24,7 @@ Using these tools helps designers and engineers focus on solving complex user pr
 
 When building a new experience for our customers, we advise that you employ a step-by-step journey pattern.
 
-By understanding the customers mental model and breaking the journey in to logical steps will help them to complete their tasks easily. 
+By understanding the customers mental model and breaking the journey into logical steps will help them to complete their tasks easily. 
 
 ![Step-by-step](https://user-images.githubusercontent.com/45626534/84635485-2fc1d080-aeeb-11ea-970b-df59140d234a.png)
 
@@ -71,9 +71,8 @@ Grouping related form elements is a purposeful way of helping the customer to co
 
 Use a single page to group questions or tasks together, such as asking the customer for personal details or to provide their address. 
 
-Provide context and a description for groups of form controls by using the fieldset and legend. Using these will help customers understand the objective of the task, and will naturally interact with the form better.
+Provide context and a description for groups of form controls by using the fieldset and legend atributes. Using these will help customers understand the objective of the task, and will naturally interact with the form better.
 
-- You can read more information about grouping questions here.(TBC)
 - You can [read more information about the Fieldset component here](https://docs.britishgas.design/components/ns-fieldset).
 
 ### Playing back information
