@@ -6,7 +6,30 @@ description: Organism | Product card component.
 
 ## Introduction
 
-> Product card enables users to compare multiple products
+> Product card enables users to browse and compare multiple products
+
+## Content guidance
+
+![Product card](https://user-images.githubusercontent.com/3082819/87520796-5c4c4200-c67b-11ea-91a9-951c3ae9cb5c.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Product name | The product name should be brief and memorable, ideally 2 to 3 words (10 to 15 characters). Maximum 25 characters. |
+| B | Price subtitle | This should be used to give context to your product price. 15 to 23 characters maximum. |
+| C | Primary price | The is the leading product price. This is optional as a product price may not always be available. |
+| D | Seconday price | This is the secondary product price. This is also optional.|
+| E | Product description | The product description can accommodate multiple sub headings, lists and paragraphs. The content should be concise and use bulleted or checked lists to support skim reading. Comparable product features should be repeated in the same list order across all products. Content can contain bold copy <b> <strong>, inline links <a>, lists <ul> <ol>, and caveats if required <a href="#caveat">1</a>. |
+| F | Expander | Expanders can be used to provide additional product detail. Each product should have a maximum of 3 expanders. |
+| G | Call to action | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 10 characters. |
+| H | Keyline | An optional colour keyline can be added to distguish and draw attention to your products. |
+| I | Image | An optional image (16x9, 4x3 or 1x1) can be added to support your product description. |
+
+| 💚 Do's | 💔 Don'ts |
+| :---  | :---  |
+| Use for products | Use for other content types, use ns-card instead |
+| Use the same sections for all products in a group | Use in a form |
+| Give multiple cards one parent | |
+| Use `role="list` and `role="listitem"` when used in multiples | |
 
 ## Best practice
 
