@@ -4,6 +4,54 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
+## Version 1.13.0
+
+**Adding new form validations**
+
+Release date - 2020-07-13
+
+**What's new around here? 🛶**
+
+* We've added password and full name validation
+
+**Bug fixes 🐛**
+
+* `ns-inputter` first name and last name validation now accepts a broader range of characters (including accents)
+* `ns-inputter` storybook snippets now include `id` and `for` attributes
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌
+
+
+## Version 1.12.0
+
+**Improving the accessibility of our forms**
+
+Release date - 2020-06-25
+
+**What's new around here? 🛶**
+
+* We've added a new feature to `ns-form` that allows users to press enter to submit a form
+* We've also added a new javascript `submit` event that gets dispatched for each submission attempt
+
+**Bug fixes 🐛**
+
+* `ns-editorial` bold can now be used in lists
+* `ns-cta` and `ns-inputter` label widths have been narrowed
+* `ns-cta` is now full width below device widths of 320px
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌
+
+
 ## Version 1.11.0
 
 **Introducing the Datepicker and fixing a few bugs**
