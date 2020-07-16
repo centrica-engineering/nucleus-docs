@@ -24,12 +24,6 @@ description: Organism | Product card component.
 | H | Keyline | An optional colour keyline can be added to distguish and draw attention to your products. |
 | I | Image | An optional image (16x9, 4x3 or 1x1) can be added to support your product description. |
 
-| 💚 Do's | 💔 Don'ts |
-| :---  | :---  |
-| Use for products | Use for other content types, use ns-card instead |
-| Use the same sections for all products in a group | Use in a form |
-| Give multiple cards one parent | |
-| Use `role="list` and `role="listitem"` when used in multiples | |
 
 ## Best practice
 
