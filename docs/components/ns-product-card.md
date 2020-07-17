@@ -40,7 +40,7 @@ description: Organism | Product card component.
 
 ### Considerations of best practises
 
-Give multiple cards one parent - To improve scanabilty between multiple products the name, price, and description sections will adjust to be the same height. They do this using a common parent.
+Ensure all related product cards are contained within the same `ns-panel`. Doing this improves scan-ability and aids product comparison.
 
 ## Usage
 
