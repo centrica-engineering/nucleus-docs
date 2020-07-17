@@ -17,17 +17,13 @@ description: Organism | Product card component.
 | A | Product name | The product name should be brief and memorable, ideally 2 to 3 words (10 to 15 characters). Maximum 25 characters. |
 | B | Price subtitle | This should be used to give context to your product price. 15 to 23 characters maximum. |
 | C | Primary price | The is the leading product price. This is optional as a product price may not always be available. |
-| D | Seconday price | This is the secondary product price. This is also optional.|
+| D | Secondary price | This is the secondary product price. This is also optional.|
 | E | Product description | The product description can accommodate multiple sub headings, lists and paragraphs. The content should be concise and use bulleted or checked lists to support skim reading. Comparable product features should be repeated in the same list order across all products. Content can contain bold copy `<b>` `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`, and caveats if required `<a href="#caveat">1</a>`. |
 | F | Expander | Expanders can be used to provide additional product detail. Each product should have a maximum of 3 expanders. |
 | G | Call to action | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 10 characters. |
-| H | Keyline | An optional colour keyline can be added to distguish and draw attention to your products. |
+| H | Keyline | An optional colour keyline can be added to distinguish and draw attention to your products. |
 | I | Image | An optional image (16x9, 4x3 or 1x1) can be added to support your product description. |
-### Image guidance
 
-| Component | Ratio | Dimensions | Size | Type | Placeholder |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-product-card`| 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-product-card-640x360px](https://user-images.githubusercontent.com/50207859/67642149-d3c91e00-f900-11e9-983c-9b812217b801.jpg) |
 
 ## Best practice
 
@@ -35,12 +31,40 @@ description: Organism | Product card component.
 | :---  | :---  |
 | Use for products | Use for other content types, use ns-card instead |
 | Use the same sections for all products in a group | Use in a form |
-| Give multiple cards one parent | |
+| Give multiple cards the same html parent | |
 | Use `role="list` and `role="listitem"` when used in multiples | |
 
 ### Considerations of best practises
 
-Ensure all related product cards are contained within the same `ns-panel`. Doing this improves scan-ability and aids product comparison.
+Give multiple cards the same html parent - To improve scannability between multiple products; the name, price, and description sections will adjust to be the same height. They do this using a common html parent that's used to share css variables.
+
+For example
+
+💚 Do
+
+```markup
+<div role="list`>
+  <ns-product-card role="listitem">...</ns-product-card>
+  <ns-product-card role="listitem">...</ns-product-card>
+  <ns-product-card role="listitem">...</ns-product-card>
+</div>
+```
+
+💔 Don't
+
+```markup
+<div role="list`>
+  <div role="listitem">
+    <ns-product-card >...</ns-product-card>
+  </div>
+  <div role="listitem">
+    <ns-product-card >...</ns-product-card>
+  </div>
+  <div role="listitem">
+    <ns-product-card >...</ns-product-card>
+  </div>
+</div>
+```
 
 ## Usage
 
