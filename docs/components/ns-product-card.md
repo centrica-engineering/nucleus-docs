@@ -18,7 +18,7 @@ description: Organism | Product card component.
 | B | Price subtitle | This should be used to give context to your product price. 15 to 23 characters maximum. |
 | C | Primary price | The is the leading product price. This is optional as a product price may not always be available. |
 | D | Seconday price | This is the secondary product price. This is also optional.|
-| E | Product description | The product description can accommodate multiple sub headings, lists and paragraphs. The content should be concise and use bulleted or checked lists to support skim reading. Comparable product features should be repeated in the same list order across all products. Content can contain bold copy <b> <strong>, inline links <a>, lists <ul> <ol>, and caveats if required <a href="#caveat">1</a>. |
+| E | Product description | The product description can accommodate multiple sub headings, lists and paragraphs. The content should be concise and use bulleted or checked lists to support skim reading. Comparable product features should be repeated in the same list order across all products. Content can contain bold copy `<b>` `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`, and caveats if required `<a href="#caveat">1</a>`. |
 | F | Expander | Expanders can be used to provide additional product detail. Each product should have a maximum of 3 expanders. |
 | G | Call to action | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 10 characters. |
 | H | Keyline | An optional colour keyline can be added to distguish and draw attention to your products. |
