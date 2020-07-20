@@ -22,7 +22,7 @@ description: Organism | Product card component.
 | F | Expander | Expanders can be used to provide additional product detail. Each product should have a maximum of 3 expanders. |
 | G | Call to action | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 10 characters. |
 | H | Keyline | An optional colour keyline can be added to distinguish and draw attention to your products. |
-| I | Image | An optional image (16x9, 4x3 or 1x1) can be added to support your product description. |
+| I | Image | An optional image with an aspect ratio of 16:9 can be added to support your product description. |
 
 
 ## Best practice
