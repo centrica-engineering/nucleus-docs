@@ -109,7 +109,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | :---  | :--- |
 | **Does it live in a panel?** | ✅ Yes |
 | **Does it live inside other components?** | ✅ Yes |
-| **What layout classes can be used?** | `splash` `splosh` `triple` |
+| **What layout classes can be used?** | `splash` `triple` |
 
 ## Specification
 
