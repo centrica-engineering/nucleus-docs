@@ -35,9 +35,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-calendar" caption="" %}
 
 ```html
-<ns-calendar>
-  <ns-datepicker year="2020" month="6"></ns-datepicker>
-</ns-calendar>
+<ns-calendar year="2020" month="6"></ns-calendar>
 ```
 
 
