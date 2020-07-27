@@ -6,11 +6,11 @@ description: Organism | Product card component.
 
 ## Introduction
 
-> Product card enables users to browse and compare multiple products
+> The product card enables users to browse, compare and choose a product.
 
 ## Content guidance
 
-![Product card](https://user-images.githubusercontent.com/3082819/87520796-5c4c4200-c67b-11ea-91a9-951c3ae9cb5c.png)
+![Product card_v3](https://user-images.githubusercontent.com/3082819/88544166-e51a9480-d010-11ea-80eb-983fd466bcfb.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -18,7 +18,7 @@ description: Organism | Product card component.
 | B | Price subtitle | This should be used to give context to your product price. 15 to 23 characters maximum. |
 | C | Primary price | The is the leading product price. This is optional as a product price may not always be available. |
 | D | Secondary price | This is the secondary product price. This is also optional.|
-| E | Product description | The product description can accommodate multiple sub headings, lists and paragraphs. The content should be concise and use bulleted or checked lists to support skim reading. Comparable product features should be repeated in the same list order across all products. Content can contain bold copy `<b>` `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`, and caveats if required `<a href="#caveat">1</a>`. |
+| E | Product description | The product description can accommodate multiple sub headings, lists and paragraphs. The content should be concise and use bulleted or checked lists to support skim reading. Comparable product features should be repeated in the same list order across all products. Content can contain bold copy `<b>` `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`, and caveats if required `<a href="#caveat">Caveat</a>`. |
 | F | Expander | Expanders can be used to provide additional product detail. Each product should have a maximum of 3 expanders. |
 | G | Call to action | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 10 characters. |
 | H | Keyline | An optional colour keyline can be added to distinguish and draw attention to your products. |
