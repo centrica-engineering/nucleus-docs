@@ -23,7 +23,11 @@ description: Organism | Product card component.
 | G | Call to action | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 10 characters. |
 | H | Keyline | An optional colour keyline can be added to distinguish and draw attention to your products. |
 | I | Image | An optional image with an aspect ratio of 16:9 can be added to support your product description. |
+### Image guidance
 
+| Component | Ratio | Dimensions | Size | Type | Placeholder |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `ns-product-card`| 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-product-card-640x360px](https://user-images.githubusercontent.com/50207859/67642149-d3c91e00-f900-11e9-983c-9b812217b801.jpg) |
 
 ## Best practice
 
