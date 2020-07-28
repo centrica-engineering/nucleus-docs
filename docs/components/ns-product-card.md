@@ -32,7 +32,7 @@ description: Organism | Product card component.
 | Use for products | Use for other content types, use ns-card instead |
 | Use the same sections for all products in a group | Use in a form |
 | Give multiple cards the same html parent | |
-| Use `role="list` and `role="listitem"` when used in multiples | |
+| Use `role="list"` and `role="listitem"` when used in multiples | |
 
 ### Considerations of best practises
 
