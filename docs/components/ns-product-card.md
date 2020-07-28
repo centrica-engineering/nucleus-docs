@@ -10,7 +10,7 @@ description: Organism | Product card component.
 
 ## Content guidance
 
-![Product card_v3](https://user-images.githubusercontent.com/3082819/88544166-e51a9480-d010-11ea-80eb-983fd466bcfb.png)
+![Product card_v4](https://user-images.githubusercontent.com/3082819/88666199-aa2f6400-d0d7-11ea-8eb0-51a55d818351.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
