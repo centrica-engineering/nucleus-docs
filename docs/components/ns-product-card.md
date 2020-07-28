@@ -43,7 +43,7 @@ For example
 💚 Do
 
 ```markup
-<div role="list`>
+<div role="list">
   <ns-product-card role="listitem">...</ns-product-card>
   <ns-product-card role="listitem">...</ns-product-card>
   <ns-product-card role="listitem">...</ns-product-card>
