@@ -53,7 +53,7 @@ For example
 💔 Don't
 
 ```markup
-<div role="list`>
+<div role="list">
   <div role="listitem">
     <ns-product-card >...</ns-product-card>
   </div>
