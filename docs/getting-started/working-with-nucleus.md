@@ -46,25 +46,26 @@ We prioritise the following list of browsers and devices identified as the most 
 
 | Device | Operating System | Browser | Version |
 | :--- | :--- | :--- | :--- |
-| Computer | Windows 10 | Chrome | 81 |
-| Computer | Windows 10 | Edge | 80 |
+| Computer | Windows 10 | Chrome | 83 |
+| Computer | Windows 10 | Edge | 83 |
 | Computer | Windows 10 | Internet Explorer | 11 |
-| Computer | Windows 10 | Firefox | 74 |
+| Computer | Windows 10 | Firefox | 77 |
 | Computer | Windows 10 | Edge | 18 |
-| Computer | MacOS Catalania | Safari | 13 |
-| Computer | MacOS Mojave | Safari | 12.1 |
-| iPhone | iOS 12 (iPhone 6) | Safari |13 |
+| Computer | MacOS Catalania | Safari | 13.1 |
+| Computer | MacOS Catalania | Chrome | 83 |
+| iPhone | iOS 12 (iPhone 7) | Safari |13 |
 | iPhone | iOS 13 (iPhone XS) | Safari | 13 |
-| iPhone | iOS 12 (iPhone X) | Safari | 12 |
-| iPhone | iOS 12 (iPhone 8) | Safari | 12 |
-| iPhone | iOS 12 (iPhone 6) | Chrome | 80 |
+| iPhone | iOS 12 (iPhone XR) | Safari | 13 |
+| iPhone | iOS 13 (iPhone 11) | Safari | 13 |
+| iPhone | iOS 12 (iPhone 7) | Chrome | 80 |
 | iPhone | iOS 13 (iPhone XS) | Chrome | 80 |
-| iPhone | iOS 12 (iPhone X) | Chrome | 80 |
-| iPhone | iOS 12 (iPhone 8) | Chrome | 80 |
-| Android | Android OS 8 (Samsung Galaxy S9) | Chrome | 80 |
-| Android | Android OS 7 (Samsung Galaxy S8) | Chrome | 80 |
+| iPhone | iOS 12 (iPhone XR) | Chrome | 80 |
+| iPhone | iOS 13 (iPhone 11) | Chrome | 80 |
+| Android | Android OS 8 (Samsung Galaxy S9) | Chrome | 83 |
+| Android | Android OS 7 (Samsung Galaxy S8) | Chrome | 83 |
 | Android | Android OS 10 (Samsung Galaxy S20) | Samsung Browser | 11.1 |
 | iPad | iPad OS 13 (iPad 7th) | Safari | 13 |
+| iPad | iPad OS 13 (iPad 7th) | Chrome | 80 |
 
 ## For product owners and business analysts
 
