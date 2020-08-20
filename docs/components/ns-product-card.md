@@ -119,7 +119,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
-| `keyline` | `string` | none | `blue`, `yellow`, `green-light`, `cyan` | Add a graident accross the top of the card |
+| `keyline` | `string` | none | `blue`, `yellow`, `green-light`, `cyan`, `red` | Add a graident accross the top of the card |
 
 
 | Slots | Type |
