@@ -77,7 +77,7 @@ To learn more visit our foundation page on [Modular scale](https://docs.britishg
 
 ## Lists
 
-We have three different types of lists;  an unordered list, an ordered list and a label and data list.
+We have three different types of lists; three types of unordered lists, an ordered list and a label and data list.
 
 There are a number of components that are designed to include these lists. To find out which, visit the Content guidance section of the component and you'll find the types of content that can be included.
 
@@ -89,7 +89,7 @@ These lists can be nested up to four levels deep.
 
 An unordered list is the most common, often referred to as a bullet list. Use the Unordered list element `<ul>` as the parent element and a List item `<li>` for each line.
 
-There are two types of unordered list, one with bullets and the other with ticks.
+There are three types of unordered list, one with bullets, one with ticks and the other with crosses.
 
 #### Bullet list
 
@@ -112,6 +112,36 @@ To see a more complex example of the Bullet list visit [Storybook](https://www.b
 ```
 
 To see a more complex example of the Ticked list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--ul-ticked).
+
+#### Crossed list
+
+When using the Crossed list to represent services or features that are **not available** it's important to present this list with a heading identifying this fact.
+
+Screenreaders and assistive technologies will see the Crossed list exactly the same as the Bullet list and Ticked list, which could be misleading and confusing, which is why a heading is so important.
+
+Ensure that the heading level is correct. For example, use an `<h3>`, not an `<h4>` if the previous heading is an `<h2>`. Heading levels should only increase by one.
+
+```markup
+<h4>What's not available</h4>
+<ul class="ul-crossed">
+  <li>...</li>
+  <li>...</li>
+</ul>
+```
+
+Here is an example of how the Crossed list should be used within `ns-expander`.
+
+```markup
+<ns-expander>
+  <h3 slot="heading">What's not included?</h3>
+  <ul class="ul-crossed">
+    <li>...</li>
+    <li>...</li>
+  </ul>
+</ns-expander>
+```
+
+To see a more complex example of the Crossed list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--ul-crossed).
 
 ### Ordered list
 
