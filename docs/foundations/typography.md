@@ -77,19 +77,19 @@ To learn more visit our foundation page on [Modular scale](https://docs.britishg
 
 ## Lists
 
-We have three different types of lists; three types of unordered lists, an ordered list and a label and data list.
+We have a number of different types of lists:
+* Unordered lists
+* Ordered lists
+* Decorative lists
+* Label and data lists
 
-There are a number of components that are designed to include these lists. To find out which, visit the Content guidance section of the component and you'll find the types of content that can be included.
+Some components are specifically designed to include these lists. To find out which, visit the Content guidance section of the component and you'll find the types of content that can be included.
 
 Take a look at this example of the `ns-editorial` which can display these lists [ns-editorial content guidance](https://docs.britishgas.design/components/ns-editorial#content-guidance).
-
-These lists can be nested up to four levels deep.
 
 ### Unordered list
 
 An unordered list is the most common, often referred to as a bullet list. Use the Unordered list element `<ul>` as the parent element and a List item `<li>` for each line.
-
-There are three types of unordered list, one with bullets, one with ticks and the other with crosses.
 
 #### Bullet list
 
@@ -100,26 +100,66 @@ There are three types of unordered list, one with bullets, one with ticks and th
 </ul>
 ```
 
+A Bullet list can be nested up to four levels deep.
+
 To see a more complex example of the Bullet list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--ul-bullet).
+
+### Ordered list
+
+An ordered list is used when the order is important or if there's a need to identify or refer to an individial list item within a list.
+
+Use the Ordered list element `<ol>` as the parent element and a List item `<li>` for each line.
+
+#### Numbered list
+
+The Numbered list will display an incremental number alongside each list item.
+
+```markup
+<ol class="ol-numbered">
+  <li>...</li>
+  <li>...</li>
+</ol>
+```
+
+A Numbered list can be nested up to four levels deep.
+
+To see a more complex example of the Numbered list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--ol-numbered).
+
+## Decorative list
+
+Decorative lists display different bullet styles, we have a ticked list and a crossed list.
+
+When using the these Decorative lists to represent services or features that are either **available** or **not available** it's important to present this list with a heading identifying this fact.
+
+Screenreaders and assistive technologies will see a Decorative list as either an unordered list or an ordered list, depending on if it's marked up with an `<ul>` or an `<ol>`. The style of the bullet does not convey meaning to assistive technology. This could be very misleading and confusing, which is why a heading is so important.
+
+Ensure that the heading level is correct. For example, use an `<h3>`, not an `<h4>` if the previous heading is an `<h2>`. Heading levels should only increase by one.
 
 #### Ticked list
 
 ```markup
+<h4>What's available</h4>
 <ul class="ul-ticked">
   <li>...</li>
   <li>...</li>
 </ul>
 ```
 
+Here is an example of how the Ticked list should be used within `ns-expander`.
+
+```markup
+<ns-expander>
+  <h3 slot="heading">What's included?</h3>
+  <ul class="ul-ticked">
+    <li>...</li>
+    <li>...</li>
+  </ul>
+</ns-expander>
+```
+
 To see a more complex example of the Ticked list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--ul-ticked).
 
 #### Crossed list
-
-When using the Crossed list to represent services or features that are **not available** it's important to present this list with a heading identifying this fact.
-
-Screenreaders and assistive technologies will see the Crossed list exactly the same as the Bullet list and Ticked list, which could be misleading and confusing, which is why a heading is so important.
-
-Ensure that the heading level is correct. For example, use an `<h3>`, not an `<h4>` if the previous heading is an `<h2>`. Heading levels should only increase by one.
 
 ```markup
 <h4>What's not available</h4>
@@ -143,24 +183,7 @@ Here is an example of how the Crossed list should be used within `ns-expander`.
 
 To see a more complex example of the Crossed list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--ul-crossed).
 
-### Ordered list
-
-There is one type of ordered list, this displays numbers for each list item. Use the Ordered list element `<ol>` as the parent element and a List item `<li>` for each line.
-
-We refer to this list as the numbered list.
-
-#### Numbered list
-
-The numbered list will display an incremental number alongside each list item.
-
-```markup
-<ol class="ol-numbered">
-  <li>...</li>
-  <li>...</li>
-</ol>
-```
-
-To see a more complex example of the Numbered list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--ol-numbered).
+A Decorative list can be nested up to four levels deep.
 
 ### Description list
 
