@@ -125,7 +125,7 @@ A Numbered list can be nested up to four levels deep.
 
 To see a more complex example of the Numbered list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-typography--ol-numbered).
 
-## Decorative list
+### Decorative list
 
 Decorative lists display different bullet styles, we have a ticked list and a crossed list.
 
