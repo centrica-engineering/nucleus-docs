@@ -43,6 +43,7 @@
   * [ns-product-card](components/ns-product-card.md)
   * [ns-selector](components/ns-selector.md)
   * [ns-skyline](components/ns-skyline.md)
+  * [ns-slot-picker](components/ns-slot-picker.md)
   * [ns-tab](components/ns-tab.md)
   * [ns-tabs](components/ns-tabs.md)
   * [ns-table](components/ns-table.md)
