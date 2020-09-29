@@ -53,6 +53,7 @@
   * [nsx-marketing-consent](components/nsx-marketing-consent.md)
 * [Patterns](patterns/README.md)
   * [Journeys](patterns/journeys.md)
+  * [Asking for information](patterns/asking-for-information.md)
   * [Experiences](patterns/experiences.md)
   * [Loading](patterns/loading.md)
   * [Messaging](patterns/messaging.md)
