@@ -6,23 +6,129 @@ description: Molecule | Inputter component.
 
 ## Introduction
 
-Inputters are used to help people enter and select information. Inputters are normally found within forms. There are different types of inputters including text, radio button, checkbox and select (drop-downs).
+The ns-inputter is a multi-purpose wrapper component that helps with the display of the following form control types:
 
-> A wrapper of native inputs to create a form. There are many types of inputs including text, radio button, checkbox and select.
+- text (including tel, email, password, and number)
+- radio buttons
+- checkboxes
+- select (drop-downs)
+- textareas
 
-## Content guidance
+These types of inputs are used to help customers enter and select information. Inputs are normally found within forms. 
 
-| Field type  | Guidelines |
+## Most common input types
+
+### Text Input
+
+The text input is ideal for entering text that takes up a single line, such as asking a customer their name or email address. If you require a longer answer from a customer then you should use the textarea input type.
+
+#### Code Example
+
+```
+<ns-inputter validation="[&quot;isRequired&quot;]" name="first-name">  
+  <label slot="label" for="text-input">First name</label>  
+  <input type="text" id="text-input">
+</ns-inputter>
+```
+
+You can [see examples of <ns-inputter> text input here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--text-input).
+
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Heading |  |
-| Labels |  |
-| Placeholder |  |
-| Helper |  |
-| Tip |  |
+| Only use our specified text type. (eg. Text, Password, etc) | Use more than one text input within an inputter |
+| Use autocomplete attribute | Put anything inside the text input |
+| Base width of input on expected length of input |  |
+| Make your labels easy to read and understand |  |
 
-## Best practice
+### Radio Buttons
+
+Radio buttons are for when customers need to select only one option from a list. If you need them to select multiple options then you should use checkboxes. If there are many items to choose from then you should consider a select instead. 
+
+Radio buttons are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Are you a British Gas customer?".
+
+#### Code Example
+
+```
+<ns-inputter validation="[&quot;isRequired&quot;]" heading="Are you a British Gas customer?" name="question">
+  <input type="radio" id="question-yes" name="question" value="yes">
+  <label for="question-yes">Yes</label>
+  <input type="radio" id="question-no" name="question" value="no">
+  <label for="question-no">No</label>
+</ns-inputter>
+```
+You can [see an example of <ns-inputter> radio buttons here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--radio).
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Keep you heading/legend short | Use just one |
+| Make your labels easy to read and understand | Pre-select an option |
+| Use a label with each radio button | Place radio button side by side |
+| Associate every radio button with it's label using ID & for attributes |  |
+| Consider using a select for more than 5 |  |
+
+### Checkboxes
+
+Checkboxes are for when customers can select multiple options from a list, or choose to toggle a single option on or off. If you need them to select a single option from a list then you should use radio buttons. If there are many items to choose from then you should consider a select instead. 
+
+Checkboxes are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Which British Gas services would you like to choose?".
+
+#### Code Example
+
+```
+<ns-inputter validation="[&quot;isRequired&quot;]" heading="Which British Gas services do you have?" name="question">
+  <input type="checkbox" id="question-gas" name="question" value="gas">
+  <label for="question-gas">Gas</label>
+  <input type="checkbox" id="question-electric" name="question" value="electric">
+  <label for="question-electric">Electric</label>
+  <input type="checkbox" id="question-homecare" name="question" value="homecare">
+  <label for="question-homecare">Homecare</label>
+</ns-inputter>
+```
+You can [see an example of <ns-inputter> checkboxes here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--checkbox).
+
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Keep you heading/legend short | Use as lists |
+| Make your labels easy to read and understand | Use as a radio button |
+| Use only one label with each checkbox | Pre-select any option(s) |
+| Allow user to opt in as opposed to opt out |  |
+| Consider splitting question out for when more than 5 checkboxes are required |  |
+
+### Select
+
+Selects should be used to select an item from a list of many choices. Selects can be problematic for screen reader users if there is a long list of options. Consider distilling your questions so that there are fewer options, this might allow you to use radio buttons instead.
+
+You can [see an example of <ns-inputter> select here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--select).
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| If adding a "Please Select" option then add an empty `value=""` attribute |  |
+| Consider improving your questions to offer fewer options |  |
+
+### Textarea
+
+Textareas are used for capturing a longer answer. Always consider whether or not you need to ask a customer a free form question before doing so.
+
+You can [see an example of <ns-inputter> textarea here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--textarea).
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Always include a label | Add placeholder content |
+| Consider askign more specific questions | Use this for addresses |
+
+### Date input
+
+[Use the `ns-datepicker` compontent instead](https://docs.britishgas.design/components/ns-datepicker)
+
+
+## Functionality
+
+The ns-inputter provides the following attributes and functionality:
 
 ### Headings
+
+The `heading` attribute is used for checkboxes and radio buttons to provide a `<legend>`. These are usually in the form of a question - such as "Are you a British Gas customer?".
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -34,14 +140,20 @@ Inputters are used to help people enter and select information. Inputters are no
 
 ### Labels
 
+Every input requires a label. Your labels should be easy to read and understand. You must not use a placeholder as a label.
+
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Be concise | Use full stops |
 | Use `<label>` element | Add classes to labels |
 | Use sentence case | Use as links |
-| Only use text |  |
+| Only use text | Rely on placeholders |
 
 ### Helper text
+
+The `helper` attribute allows you to add a message between the label and the input to help the user to fill in the input.
+
+When used with radio buttons or checkboxes, this will appear between the `<legend>` and the options.
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -52,6 +164,8 @@ Inputters are used to help people enter and select information. Inputters are no
 
 ### Tip Detail
 
+If you need to provide more detailed context to the options available, you can use the tip detail in conjuntion with the `helper`.
+
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use to provide additional context to helper text | Repeat helper text |
@@ -61,12 +175,16 @@ Inputters are used to help people enter and select information. Inputters are no
 
 ### Placeholder
 
+The `placeholder` is for providing the customer with an example of what you expect them to input into the field. This should not be used as a replacement for either a `<label>` or `helper` text.
+
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Provide example of expected input | Use real data |
 | Use 'eg.' before example | Use as an explanation or a prompt |
 
 ### Validation
+
+To assist that valid values are added and to show an error message when they're not
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -75,6 +193,13 @@ Inputters are used to help people enter and select information. Inputters are no
 
 ### Masks and separators
 
+The `mask` is similar to a placeholder, this can be used to show what can be entered. However it stays when values are entered. 
+
+The `separator` is used with the mask to manipulate the inputted value if it needs to be formatted in a certain way, like as a sort code or reference number.
+
+- You can [see an example of the <ns-inputter> mask here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--mask).
+- You can [see an example of the <ns-inputter> separator here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--separator).
+
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Only use an input type | Use a textarea, checkbox or radio button |
@@ -82,54 +207,13 @@ Inputters are used to help people enter and select information. Inputters are no
 |  | Put more than one separator together, e.g. `00--00` |
 |  | Start or end with a separator |
 
-### Text Input
 
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Only use our specified text type. (eg. Text, Password, etc) | Use more than one text input within an inputter |
-| Use autocomplete attribute | Put anything inside the text input |
-| Base width of input on expected length of input |  |
-
-### Radio Buttons
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Use a label with each radio button | Use just one |
-| Associate  every radio button with it's label using ID & for attributes |  |
-| Consider using a select for more than 5 | Place radio button side by side |
-
-### Checkboxes
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Use only one label with each checkbox | Use as lists |
-| Allow user to opt in as opposed to opt out | Use as a radio button |
-| Consider splitting question out for when more than 5 checkboxes are required |  |
-
-### Select
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| If adding a "Please Select" option then add an empty `value=""` attribute |  |
-
-### Textarea
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Always include a label | Add placeholder content |
-
-### Date input
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Use ns-datepicker instead | |
-
-### Autocomplete and input sizing
+## Autocomplete and input sizing
 
 * Use native autocompletes on inputs ([Autocomplete attribute documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete))
 * Inputs will resize when using the autocomplete attribute for `honorific-prefix`, `given-name`, `family-name` and `postal-code`.
 
-### Considerations of best practices
+## Considerations of best practices
 
 * Use defined conventions for common fields.
 * Use standard examples for placeholder copy.
@@ -248,6 +332,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Related links
 
-* [ns-inputter](https://docs.britishgas.design/components/ns-inputter)
+* [ns-form](https://docs.britishgas.design/components/ns-form)
 * [ns-fieldset](https://docs.britishgas.design/components/ns-fieldset)
-* [ns-fieldset](https://docs.britishgas.design/components/ns-datepicker)
+* [ns-datepicker](https://docs.britishgas.design/components/ns-datepicker)
+* [ns-cta](https://docs.britishgas.design/components/ns-cta)
