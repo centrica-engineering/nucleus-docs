@@ -42,6 +42,8 @@ Radio buttons and checkboxes should be grouped in their own respective fieldsets
 
 The `ns-inputter` component is a multi-purpose wrapper component for displaying form controls such as text inputs, radio buttons, and checkboxes. The component has a number of features that allow for things such as validation, masking, and formatting. 
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter" caption="Regular text input" %}
+
 ### Common types of information
 
 The `ns-inputter` component is capable of supporting the following common types of information you might ask a customer for:
@@ -58,6 +60,8 @@ Along with these, you can use a combination of validation, mask, and separator t
 - Sort codes
 - Reference numbers
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--mask" caption="Meter reads" %}
+
 **Further research:** We are currently developing pattern documention for the use of these patterns, by doing this we look to ensure that there is a consistent approach to asking customers for this information across customer journeys.
 
 ## Radio buttons and checkboxes
@@ -66,6 +70,8 @@ These are extremely common form control elements used to ask customers to make c
 
 Radio buttons and checkboxes are automatically grouped together in a `<fieldset>`. For accessibility, the `heading` attribute found on the `ns-inputter` must be used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Are you a British Gas customer?" or "Which British Gas services would you like to choose?".
 
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--radio" caption="Radio buttons" %}
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--checkbox" caption="Checkboxes" %}
 
 ## Feedback
 
