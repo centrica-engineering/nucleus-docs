@@ -22,16 +22,11 @@ These types of inputs are used to help customers enter and select information. I
 
 The text input is ideal for entering text that takes up a single line, such as asking a customer their name or email address. If you require a longer answer from a customer then you should use the textarea input type.
 
-#### Code Example
+#### Example
 
-```
-<ns-inputter validation="[&quot;isRequired&quot;]" name="first-name">  
-  <label slot="label" for="text-input">First name</label>  
-  <input type="text" id="text-input">
-</ns-inputter>
-```
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter" caption="" %}
 
-You can [see examples of <ns-inputter> text input here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--text-input).
+[See `<ns-inputter>` text input on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--text-input).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -46,17 +41,11 @@ Radio buttons are for when customers need to select only one option from a list.
 
 Radio buttons are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Are you a British Gas customer?".
 
-#### Code Example
+#### Example
 
-```
-<ns-inputter validation="[&quot;isRequired&quot;]" heading="Are you a British Gas customer?" name="question">
-  <input type="radio" id="question-yes" name="question" value="yes">
-  <label for="question-yes">Yes</label>
-  <input type="radio" id="question-no" name="question" value="no">
-  <label for="question-no">No</label>
-</ns-inputter>
-```
-You can [see an example of <ns-inputter> radio buttons here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--radio).
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--radio" caption="" %}
+
+[See `<ns-inputter>` radio buttons on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--radio).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -72,19 +61,11 @@ Checkboxes are for when customers can select multiple options from a list, or ch
 
 Checkboxes are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Which British Gas services would you like to choose?".
 
-#### Code Example
+#### Example
 
-```
-<ns-inputter validation="[&quot;isRequired&quot;]" heading="Which British Gas services do you have?" name="question">
-  <input type="checkbox" id="question-gas" name="question" value="gas">
-  <label for="question-gas">Gas</label>
-  <input type="checkbox" id="question-electric" name="question" value="electric">
-  <label for="question-electric">Electric</label>
-  <input type="checkbox" id="question-homecare" name="question" value="homecare">
-  <label for="question-homecare">Homecare</label>
-</ns-inputter>
-```
-You can [see an example of <ns-inputter> checkboxes here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--checkbox).
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--radio" caption="" %}
+
+[See `<ns-inputter>` checkboxes on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--checkbox).
 
 
 | 💚 Do's | 💔 Don'ts |
@@ -99,7 +80,11 @@ You can [see an example of <ns-inputter> checkboxes here](https://www.britishgas
 
 Selects should be used to select an item from a list of many choices. Selects can be problematic for screen reader users if there is a long list of options. Consider distilling your questions so that there are fewer options, this might allow you to use radio buttons instead.
 
-You can [see an example of <ns-inputter> select here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--select).
+#### Example
+
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--select" caption="" %}
+
+[See `<ns-inputter>` select on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--select).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -197,8 +182,16 @@ The `mask` is similar to a placeholder, this can be used to show what can be ent
 
 The `separator` is used with the mask to manipulate the inputted value if it needs to be formatted in a certain way, like as a sort code or reference number.
 
-- You can [see an example of the <ns-inputter> mask here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--mask).
-- You can [see an example of the <ns-inputter> separator here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--separator).
+#### Examples
+
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--mask" caption="" %}
+
+[See `<ns-inputter>` mask on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--mask).
+
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--separator" caption="" %}
+
+[See `<ns-inputter>` separator on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--separator).
+
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
