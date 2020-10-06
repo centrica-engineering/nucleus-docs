@@ -22,7 +22,7 @@ These types of inputs are used to help customers enter and select information. I
 
 The text input is ideal for entering text that takes up a single line, such as asking a customer their name or email address. If you require a longer answer from a customer then you should use the textarea input type.
 
-[embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter" caption="Text input"]
+{% embed url="https://codesandbox.io/embed/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter" caption="Text input" %}
 
 [See `<ns-inputter>` text input on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--text-input).
 
@@ -39,7 +39,7 @@ Radio buttons are for when customers need to select only one option from a list.
 
 Radio buttons are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Are you a British Gas customer?".
 
-[[embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--radio" caption="Radio buttons"]]
+{% embed url="https://codesandbox.io/embed/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--radio" caption="Radio buttons" %}
 
 [See `<ns-inputter>` radio buttons on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--radio).
 
@@ -57,7 +57,7 @@ Checkboxes are for when customers can select multiple options from a list, or ch
 
 Checkboxes are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Which British Gas services would you like to choose?".
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--radio" caption="Checkboxes" %}
+{% embed url="https://codesandbox.io/embed/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--checkbox" caption="Checkboxes" %}
 
 [See `<ns-inputter>` checkboxes on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--checkbox).
 
@@ -74,7 +74,7 @@ Checkboxes are automatically grouped together in a `<fieldset>`, the `heading` a
 
 Selects should be used to select an item from a list of many choices. Selects can be problematic for screen reader users if there is a long list of options. Consider distilling your questions so that there are fewer options, this might allow you to use radio buttons instead.
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--select" caption="Select" %}
+{% embed url="https://codesandbox.io/embed/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--select" caption="Select" %}
 
 [See `<ns-inputter>` select on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--select).
 
@@ -174,11 +174,11 @@ The `mask` is similar to a placeholder, this can be used to show what can be ent
 
 The `separator` is used with the mask to manipulate the inputted value if it needs to be formatted in a certain way, like as a sort code or reference number.
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--mask" caption="Mask" %}
+{% embed url="https://codesandbox.io/embed/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--mask" caption="Mask" %}
 
 [See `<ns-inputter>` mask on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--mask).
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--separator" caption="Separator" %}
+{% embed url="https://codesandbox.io/embed/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--separator" caption="Separator" %}
 
 [See `<ns-inputter>` separator on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--separator).
 
