@@ -2,7 +2,7 @@
 description: Understanding our processes
 ---
 
-# Process
+# Our process
 
 > Explaining how we do what we do.
 
