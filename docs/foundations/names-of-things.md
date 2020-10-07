@@ -45,7 +45,7 @@ Using a metaphor of popular sports games and the physical dimensions of the area
 👕 polo-field
 ```
 
-## Headings
+### Headings
 
 Using the hierarchy of chess pieces
 
@@ -58,7 +58,7 @@ Using the hierarchy of chess pieces
 ♙ pawn
 ```
 
-## Paragraphs
+### Paragraphs
 
 Our paragraph styles lack a nice naming convention.
 
