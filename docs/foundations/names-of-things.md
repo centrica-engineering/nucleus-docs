@@ -324,12 +324,15 @@ Additional page types will include those that are part of a journey. Some maybe 
 
 ### Lists
 
-We use three different types of lists
+We use 6 different types of lists
 
 ```markup
 ul-bullet
 ul-ticked
+ul-crossed
 ol-numbered
+dl-row
+dl-stacked
 ```
 
 ### Gradients
