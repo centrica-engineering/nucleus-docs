@@ -51,3 +51,46 @@ We can make use of brand logos and marks when we discuss products and companies.
 | If it is a crucial element then it needs to meet accessibility and colour contrast |  |
 | The colour of our interactive functional icons should be in our interaction colour, the mid blue |  |
 
+## Creating new icons
+
+If you are looking to create a new icon then please check there is not something similar already in use. If there is no suitable icon then you should let us know and we can look at creating it for the design system.
+
+### Icon creation guidelines
+
+- We make sure that a similar icon is not already in use.
+- Use the icon grid to ensure consistency with existing icons.
+- We make sure icon works across different sizes.
+- We create both solid and outline versions (Solid over outline, unless icon is interactive).
+- Consistent stroke thickness based on sizes (At least 2px for stroke to avoid odd resizing issues or using fills with strokes).
+- Clean and simple forms using our shapes.
+- Flat shapes over 3d forms.
+- Rounded corners should make an icon feel friendly, not childish.
+- Icon should be one topic, we don't overlay or intersect an icon with another icon.
+- Text shouldn't be added to an icon as this will break accessibility.
+- Icons are only one colour, but they can be any of our colours.
+
+### Icon grid
+
+We use a grid for icon creation to give consistency across our icons. You should also be considering where your paths sit, to be as close to pixel perfect as possible. Here are examples of the grid and basic shapes to show it's usage:
+
+| Grid | Grid - Vertical | Grid - Horizontal | Grid - Circle |
+| :--- | :--- | :--- | :--- |
+| ![Grid for creating icons](https://user-images.githubusercontent.com/43471890/62045505-66bcc400-b1fd-11e9-949e-572e2dc40bf8.jpg) | ![Grid with vertical highlight for creating icons](https://user-images.githubusercontent.com/43471890/62050044-6b3aaa00-b208-11e9-8adb-3df5d4c240dd.jpg) | ![Grid with horizontal highlight for creating icons](https://user-images.githubusercontent.com/43471890/62050140-a5a44700-b208-11e9-8bf8-555ec87242a8.jpg) | ![Grid with circle highlight for creating icons](https://user-images.githubusercontent.com/43471890/62050739-c91bc180-b209-11e9-8561-134bd845fb4b.jpg) |
+
+### Sizing
+
+Icons are created using illustrator with a 32px x 32px art-board. This allows scaling both up and down of the icon’s size. The Nucleus Design System scales across different screen sizes meaning elements, including the icon’s scale to retain their visual proportions. We ensure icon works between 16px and 72px.
+
+### SVG best practices
+
+- We use only paths not shapes.
+- Paths align to the pixel grid.
+- Corners have only 2 points to minimise file size.
+- Icon colour is set to black.
+- All unnecessary attributes in the SVG document are removed including:
+   * `<title>` element.
+   * Any `id=””` attributes.
+   * All `data-name=””` attributes if they exist.
+   * All colour information e.g. `fill="#000000"`.
+   * `<style>` and any `classes`.
+   * Nested and empty `<g>` (groups).
