@@ -66,7 +66,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 If you are looking to create a new icon then please check there is not something similar already in use. If there is no suitable icon then you should let us know and we can look at creating it for the design system.
 
-Read our [icon foundation page](https://docs.britishgas.design/foundations/icons#creating-new-icons) for more information on creating icons
+Read our [icon foundation page](https://docs.britishgas.design/foundations/icons#creating-new-icons) for more information on creating icons.
 
 ## Feedback
 
