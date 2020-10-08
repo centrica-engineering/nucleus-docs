@@ -77,3 +77,7 @@ When we are all confident with our changes, we can release, following [semver](h
 We can now shout out about our changes throughout our channels to inform community and to get feedback from usage.
 
 And we shouldn't forget to take the time to congratulate ourselves for strengthening Nucleus!
+
+## Contributing to Nucleus
+
+If you would like to contribute to the design system, either with a change, or if you're looking for something new, then please read [Contribute to Nucleus](https://docs.britishgas.design/community/contribute-to-nucleus).
