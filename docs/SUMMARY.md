@@ -66,8 +66,6 @@
   * [Start](page-types/start.md)
   * [Stopgap](page-types/stopgap.md)
 * [Community](community/README.md)
-  * [Becoming Nucleus](community/becoming-nucleus.md)
-  * [Need something new](community/need-something-new.md)
   * [Contribute to Nucleus](community/contribute-to-nucleus.md)
   * [Be vanilla first](community/vanilla-first.md)
   * [Contribute to documentation](community/contribute-to-documentation.md)
