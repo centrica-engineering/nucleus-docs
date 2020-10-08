@@ -4,55 +4,47 @@ description: Understanding our processes
 
 # Our process
 
-> Explaining how we do what we do.
+![How the Nucleus team works](https://user-images.githubusercontent.com/45626534/95470033-37185880-0978-11eb-83cb-79bea6fe1e9a.png)
 
-![Process timeline for changes to Nucleus](https://user-images.githubusercontent.com/7101754/78082493-0f35b000-73ab-11ea-81ed-97970477736d.jpg)
+When we introduce a change to our design system it should go through a number of defined steps. Every change takes a different length of time to complete. Not each step takes the same length of time.
 
-This diagram shows the timeline of our process. When we introduce a change to our design system it should follow these steps. It does not mean that every change will take as long in each step as another change. Sometimes, for example, a change can be quite _simple_ or _obvious_ and therefore it might need a quick community validation without a workshop. Other times it might need several workshops, a whole round of communication with the community and several iterations of discovery.
+If a change is quite _simple_ or _obvious_ it might need a quick community validation without a workshop. Other times it might need several workshops, a whole round of communication with the community and several iterations of discovery.
 
 By following this process we will find requirements and issues earlier, allowing the design system to evolve effectively and the changes to be robust and future proof.
 
+![Process timeline for changes to Nucleus](https://user-images.githubusercontent.com/7101754/78082493-0f35b000-73ab-11ea-81ed-97970477736d.jpg)
+
+
 ## Request for change (RFC)
 
-This is where the gaps in the design system are identified.
+This is where the gaps in the design system are identified. We encourage everyone to comment and contribute to an RFC, with enough community involvement a pattern will hopefully appear, we can then identify and articule the problem the team is interested in solving. 
+
+If there is large community interest in the proposed change, or the change has complexities, workshops are an ideal way to bring stakeholders together. They can help identify priorities, provide the opportunity to deep dive into related problems, and share any relevant experience, research and business logic. 
 
 ### Creating an RFC
 
 Any one of our stakeholders can create an RFC in our Github repository as an [RFC issue](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC%2C+draft&template=b--request-a-change.md&title=%5BRFC%5D+Title+of+the+request).
 
-An RFC should only be raised after all other possibilities have been extinguished with what is currently available in the design system.
+An RFC should be raised after all other possibilities have been explored using what is currently available in the design system.
 
-### Community involvement
-
-RFCs are to be shared with our stakeholders and we actively encourage everyone to comment and get involved if they believe this change will affect them. Our stakeholders include all product team members, leadership, search engine optimisation, brand, copywriters, legal and more.
-
-### Workshops
-
-Collaborating through workshops is best done when there is a large community interested in the proposed change or the change has complexities. Workshops identify stakeholder priorities and provide the opportunity to deep dive into related problems and share any relevant experience, research and business logic.
-
-### Identifying the problem
-
-Once enough community involvement has occurred, a pattern to the problem will hopefully appear. This is to be added to the RFC articulating the problem the team is interested in solving.
 
 ## Discovery
 
-This is where research into the solution is conducted.
-
-### Creating a story ticket with scope
-
-A story ticket is created once the problem has been identified, loosely outlining the scope we will tackle. If the requested change is prioritised, then this ticket will be picked up by the team. A story ticket is to be based on deliverables, if multiple things are needed then multiple story tickets are to be created.
+Once the problem has been identified, we begin research into a solution. We loosely outline the scope we will tackle. If the requested change is prioritised, then  it will be picked up by the team. We base our story tickets on deliverables, if multiple things are needed then multiple story tickets are to be created.
 
 ### Testing
 
-This is where we find out if our potential solutions are the right way to go. This can be done in a variety of ways. Asking  teams to A/B test the idea, perform some guerrilla testing, introduce the solution into other teams user testing sessions or to create our own user testing.
+As this stage testing plays a key part in discovery. Testing potential solutions can be done in a variety of ways:
 
-### Refining the ticket
+- A/B or multi-variant tests 
+- Remote or lab based usability testing
+- Guerrilla testing
 
-A designer and engineer can now team up together to do the bulk of the discovery, feeding back to the team through open communication and official refinement sessions. This part of the process will produce a firmly defined scope.
+### Refining and defining
 
-### Defining the outcome
+Design and engineering team up together to do the bulk of the discovery, feeding back to the team. This will produce a firmly defined scope. 
 
-Following the [vanilla first approach](https://docs.britishgas.design/how-to/vanilla-first) to the problem identified in the story will help understand where the starting point of the solution is. Which, in turn will help define the outcome of the ticket.
+Our [vanilla first approach](https://docs.britishgas.design/getting-started/vanilla-first) will help understand where the starting point of the solution is. Which, in turn will help define the outcome of the work.
 
 ### Delivering the development spec and discovery
 
