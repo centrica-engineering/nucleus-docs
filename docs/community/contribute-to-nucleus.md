@@ -41,15 +41,15 @@ We're working hard to grow Nucleus without sacrificing quality.
 2. Feel free to explore the styles and assets provided to suggest new components.
 3. Please make sure to submit your experiments and learning. It helps us to track potential variations and roll out stable additions to all teams via Nucleus.
 
+To understand how the Nucleus team works, visit [Our Process](https://docs.britishgas.design/getting-started/our-process).
+
 ### Feedback on anything related to Nucleus
 
 Reach us on Slack, via `#product-nucleus`. If there's anything on your mind.
 
 ### Events and updates
 
-Having all these resources available anytime is great, but we can't do without face-to-face sessions.
-
-We know we don't have all the right answers, that's why we want to meet you in person, as well as connect you to other teams dealing with similar issues.
+We know we don't have all the right answers, that's why we want to work with you in person, as well as connect you to other teams dealing with similar issues.
 
 * We help to host and facilitate sessions and workshops focused on our current tasks as we go along. If you'd like us to help organise or be involved in something you're doing, do let us know.
 * Just like other product teams, we're participating in weekly and monthly cross-team ceremonies.
