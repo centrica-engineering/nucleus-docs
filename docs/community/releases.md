@@ -13,16 +13,20 @@ Release date - 2020/10/06
 **New components 📆**
 
 * First, we released `ns-columns`, to open up support for more column options, and we'll start with a 4-columns layout! Stay tuned for more options.
-
 * Very excited to release this one: `ns-slot-picker` is the last piece of something big to come... a complete appointment selector.
 `ns-slot-picker` + `ns-calendar` = `ns-appointment-selector` !
 
+
+**Improvement 🅰/🅱**
+
+* We have chosen the winner of the testimonial A/B test. The winning version is the card version, and the loser is the flat version. This is now available as of today!
 * We add bubbles to the manual-address event on `nsx-address-selector`
 
 **Bug fixes 🐛**
 
 * The _lockjaw_ version of `ns-lockup`had its layout breaking when the image failed to load.... well not anymore!
-
+* The values passed by the experience pattern `nsx-marketing-consent` was not consistent with the API, they now speak the same language.
+* There was an issue when firing multiple change events for radio buttons and checkboxes in `ns-inputter`... no more.
 
 **Feedback 💌**
 
@@ -30,6 +34,9 @@ All our Requests For Change can be found in our Requests project board in Github
 https://github.com/ConnectedHomes/nucleus/projects/6
 
 Any questions? Let us know 🙌🏼
+
+
+
 
 
 ## Version 1.17.0
@@ -45,13 +52,20 @@ Release date - 2020/09/16
 **Improvement 👂**
 
 * We added an event on `nsx-address-selector` when a user clicks to add an address manually
-* We have chosen the winner of the testimonial A/B test. The winning version is the card version, and the loser is the flat version. This is now available as of today!
-* We add bubbles to the manual-address event on `nsx-address-selector`
+* We added dot and backslash as seperators for masked `ns-inputter` text inputs.
+
 
 **Bug fixes 🐛**
 
-* The values passed by the experience pattern `nsx-marketing-consent` was not consistent with the API, they now speak the same language.
-* There was an issue when firing multiple change events for radio buttons and checkboxes in `ns-inputter`... no more.
+* The validation for `ns-inputter` when entering letters in number type inputs wasn't working on IE11. This is now fixed!
+* The header logo wasn't displaying correctly on the `ns-header`, it now looks wonderful.
+* The underline from the direct link type for `ns-cta`  was visible on primary CTAs on Android devices. We fixed this.
+* We fixed an issue where the scroll wasn't showing for a `ns-table` with a long fixed value
+* We captured and exterminated a rogue margin in the `ns-landmark` if there is no CTA.
+* we fixed the margin of the paragraph for the lakeside `ns-lanmdmark`
+* When multiple values were passed using the `ns-inputter`, it would mean that nothing was passed. We have fixed this now and made it possible.
+
+
 
 **Feedback 💌**
 
@@ -75,39 +89,6 @@ Release date - 2020/08/20
 
 **Improvements 🔨**
 
-* We added dot and backslash as seperators for masked `ns-inputter` text inputs.
-
-**Bug fixes 🐛**
-
-* The validation for `ns-inputter` when entering letters in number type inputs wasn't working on IE11. This is now fixed!
-* The header logo wasn't displaying correctly on the `ns-header`, it now looks wonderful.
-* The underline from the direct link type for `ns-cta`  was visible on primary CTAs on Android devices. We fixed this.
-* We fixed an issue where the scroll wasn't showing for a `ns-table` with a long fixed value
-* We captured and exterminated a rogue margin in the `ns-landmark` if there is no CTA.
-* we fixed the margin of the paragraph for the lakeside `ns-lanmdmark`
-* When multiple values were passed using the `ns-inputter`, it would mean that nothing was passed. We have fixed this now and made it possible.
-
-**Feedback 💌**
-
-All our Requests For Change can be found in our Requests project board in Github.
-https://github.com/ConnectedHomes/nucleus/projects/6
-
-Any questions? Let us know 🙌🏼
-
-## Version 1.15.0
-
-**Exciting news, our custom branded calendar is now ready! That's right! It's been a huge piece of work. It's probably the best looking and most accessible calendar that we ever built.**
-
-Release date - 2020/08/10
-
-**What’s new around here 💫**
-
-**New component 🗓**
-
-* `ns-calendar` is now released. It will enable users to pick a day, and can display current date, selected date, unavailable dates. And it is fully accessible. 
-
-**Improvements 🔨**
-
 * The rendering of `nsx-footer` was so fast that the cookie policy/settings link didn't have time to check for the presence of the OneTrust script to display the right link. We tamed it a little to allow time for the right link to be populated.
 * We have made the radio and checkbox labels for `ns-inputter` more consistent
 
@@ -127,6 +108,38 @@ https://github.com/ConnectedHomes/nucleus/projects/6
 
 Any questions? Let us know 🙌🏼
 
+
+## Version 1.15.0
+
+**Exciting news, our custom branded calendar is now ready! That's right! It's been a huge piece of work. It's probably the best looking and most accessible calendar that we ever built.**
+
+Release date - 2020/08/10
+
+**What’s new around here 💫**
+
+**New component 🗓**
+
+* `ns-calendar` is now released. It will enable users to pick a day, and can display current date, selected date, unavailable dates. And it is fully accessible. 
+
+**Improvements 🔨**
+* We removed `tablist` from accordion to improve keyboard navigation and make the `ns-accordion` more accessible so it comes up on screen readers correctly.
+* We made small changes to the manual address capture for the `nsx-address-selector`
+
+**Bug fixes 🐛**
+* we fixed an issue where `nsx-address-selector` was scrolling sideways on validation error
+* We fixed an issue where `ns-panel` did not support more than two rows on IE11
+* `ns-form` spacing issue between selectors in IE11 is now fixed
+* We fixed the tab lock for `ns-expander`. This means that users won't be stuck on the first expander when navigating with their keyboard.
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
 ## Version 1.14.0
 
 **We are excited to announce the release of a component we have been working hard on: the product card!**
@@ -140,18 +153,11 @@ Release date - 2020/07/20
 **Improvements 🔨**
 
 * `nsx-` experience patterns are now inheriting styles
-* We removed `tablist` from accordion to improve keyboard navigation and make the `ns-accordion` more accessible so it comes up on screen readers correctly.
-* We made small changes to the manual address capture for the `nsx-address-selector`
+
 
 **Bug fixes 🐛**
 
 * `nsx-address-selector` and `nsx-marketing-consent` were too wide on mobile screens, and we fixed this issue
-* we fixed an issue where `nsx-address-selector` was scrolling sideways on validation error
-* We fixed an issue where `ns-panel` did not support more than two rows on IE11
-* `ns-form` spacing issue between selectors in IE11 is now fixed
-* We fixed the tab lock for `ns-expander`. This means that users won't be stuck on the first expander when navigating with their keyboard.
-
-
 
 **Feedback 💌**
 
