@@ -42,7 +42,7 @@ Radio buttons and checkboxes should be grouped in their own respective fieldsets
 
 The `ns-inputter` component is a multi-purpose wrapper component for displaying form controls such as text inputs, radio buttons, and checkboxes. The component has a number of features that allow for things such as validation, masking, and formatting. 
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter" caption="Regular text input" %}
+![Text input](https://user-images.githubusercontent.com/45626534/95720272-ec912780-0c68-11eb-815c-c0e57f311374.jpg)
 
 ### Common types of information
 
@@ -60,7 +60,7 @@ Along with these, you can use a combination of validation, mask, and separator t
 - Sort codes
 - Reference numbers
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--mask" caption="Meter reads" %}
+![Mask - used for meter readings](https://user-images.githubusercontent.com/45626534/95720262-eac76400-0c68-11eb-9378-0009e25087cc.jpg)
 
 **Further research:** We are currently developing pattern documention for the use of these patterns, by doing this we look to ensure that there is a consistent approach to asking customers for this information across customer journeys.
 
@@ -70,8 +70,11 @@ These are extremely common form control elements used to ask customers to make c
 
 Radio buttons and checkboxes are automatically grouped together in a `<fieldset>`. For accessibility, the `heading` attribute found on the `ns-inputter` must be used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Are you a British Gas customer?" or "Which British Gas services would you like to choose?".
 
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--radio" caption="Radio buttons" %}
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter--checkbox" caption="Checkboxes" %}
+![Checkboxes](https://user-images.githubusercontent.com/45626534/95720257-e9963700-0c68-11eb-8980-26d511829195.jpg)
+![Radio buttons](https://user-images.githubusercontent.com/45626534/95720264-eac76400-0c68-11eb-9619-4453cb5171d1.jpg)
+
+You can [read more information about how to use `<ns-inputter>` here](https://docs.britishgas.design/components/ns-inputter)
+See [`<ns-inputter>` on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--text-input)
 
 ## Feedback
 
