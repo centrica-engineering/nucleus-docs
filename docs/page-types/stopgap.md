@@ -16,6 +16,27 @@ This page type should provide a clear message to reassure the customer. If possi
 
 If closing or refreshing their browser window will result in failure, we must convey this message clearly.
 
+## Visual example
+
+![Stopgap - visual example](https://user-images.githubusercontent.com/45626534/83498763-39dbdc00-a4b4-11ea-92aa-0df3118a730a.gif)
+
+## Code example
+
+```markup
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h5">Nearly there.</span>
+    <span class="h1 enlighten">We're <b>processing</b> your order</span>
+  </h1>
+  <p slot="paragraph">
+    <ns-icon type="loading" size="5"></ns-icon>
+  </p>
+  <p slot="paragraph">We are processing your payment and confirming your engineer appointment.</p>
+  <p slot="paragraph"> This may take up to <b>2 minutes</b>.</p>
+  <p slot="paragraph"><b>Please do not close your browser.</b></p>
+</ns-landmark>
+```
+
 ## Content guidance
 
 Use the `ns-landmark` - `lakeside` variant to display clear messaging.
@@ -39,26 +60,6 @@ You should not use:
 | Communicate the message in a clear and concise way as possible | Encourage the user to abandon if it would result in failure |
 | Provide a transparent expectation of their wait time |  |
 
-## Visual example
-
-![Stopgap - visual example](https://user-images.githubusercontent.com/45626534/83498763-39dbdc00-a4b4-11ea-92aa-0df3118a730a.gif)
-
-## Code example
-
-```markup
-<ns-landmark type="lakeside">
-  <h1 slot="heading">
-    <span class="h5">Nearly there.</span>
-    <span class="h1 enlighten">We're <b>processing</b> your order</span>
-  </h1>
-  <p slot="paragraph">
-    <ns-icon type="loading" size="5"></ns-icon>
-  </p>
-  <p slot="paragraph">We are processing your payment and confirming your engineer appointment.</p>
-  <p slot="paragraph"> This may take up to <b>2 minutes</b>.</p>
-  <p slot="paragraph"><b>Please do not close your browser.</b></p>
-</ns-landmark>
-```
 
 ## Feedback
 

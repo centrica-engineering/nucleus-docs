@@ -14,31 +14,9 @@ The Roadblock page type is there to present key information to a user when they 
 
 The page should describe to the user what has happened and tell them how to fix it if possible.
 
-## Content guidance
-
-Use the `ns-landmark` - `lakeside` variant to display clear messaging.
-
-The copy must be in plain English, and if possible help the user out of the situation by providing an actionable.
-
-You should not use:
-
-- Technical jargon like ‘form post error’, ‘unspecified error’ and ‘error 0x0000000643’
-- Humourous, informal language like ‘oops’
-- Negative language
-
-If supporting information is needed, consider using `ns-lockup` or `ns-editorial`. This should not detract from the original purpose of the page.
-
-## Best practice
-
-| 💚 Do's | 💔 Don'ts |
-| :---  | :---  |
-| Communicate the message in a clear and concise way as possible | Use the subheading |
-| Suggest a next step the customer could take e.g. direct them to webchat or a phone number | Use as errors that are specific to ui elements (such as form fields) or parts of a page ([See `ns-highlighter`](https://docs.britishgas.design/components/ns-highlighter) ) |
-|  | Use for global messaging ([See `ns-skyline`](https://docs.britishgas.design/components/ns-skyline) ) |
-
 ## Visual example
 
-<img width="1160" alt="Screen Shot 2020-06-02 at 09 54 47" src="https://user-images.githubusercontent.com/45626534/83500827-31d16b80-a4b7-11ea-9e53-315c9108950a.png">
+![Example of the Roadblock message](https://user-images.githubusercontent.com/45626534/83500827-31d16b80-a4b7-11ea-9e53-315c9108950a.png)
 
 [View the `<ns-landmark type=lakeside>` on storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--lakeside)
 
@@ -57,6 +35,28 @@ If supporting information is needed, consider using `ns-lockup` or `ns-editorial
 </ns-landmark>
 ```
 [View the `<ns-landmark type=lakeside>` on storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--lakeside)
+
+## Content guidance
+
+Use the `ns-landmark` - `lakeside` variant to display clear messaging.
+
+The copy must be in plain English, and if possible help the user out of the situation by providing an actionable option.
+
+You should not use:
+
+- Technical jargon like ‘form post error’, ‘unspecified error’ and ‘error 0x0000000643’
+- Humourous, informal language like ‘oops’
+- Negative language
+
+If supporting information is needed, consider using `ns-lockup` or `ns-editorial`. This should not detract from the original purpose of the page.
+
+## Best practice
+
+| 💚 Do's | 💔 Don'ts |
+| :---  | :---  |
+| Communicate the message in a clear and concise way as possible | Use the subheading |
+| Suggest a next step the customer could take e.g. direct them to webchat or a phone number | Use as errors that are specific to ui elements (such as form fields) or parts of a page ([See `ns-highlighter`](https://docs.britishgas.design/components/ns-highlighter) ) |
+|  | Use for global messaging ([See `ns-skyline`](https://docs.britishgas.design/components/ns-skyline) ) |
 
 ## Feedback
 

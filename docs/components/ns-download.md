@@ -16,14 +16,17 @@ Currently only allows '.pdf' and '.xls' file types, other types can be added but
 | :---  | :---  |
 | Use for all downloads | Use the instructions in the body e.g. 'download here'|
 | Include file size | Don't describe the file as a file |
-| Describe what the file is |  |
+| Describe what the file is | Embed in text |
 | Place in a list element with class `download-list` when you have more than 1 download link in row|  |
+| Place on its own line |
 
 ### Considerations of best practice
 
 Include file size - this is particularly nice for customers that are on reduced data allowences (i.e. mobile), and also offers an indication on how long a file might take to download.
 
 Text Content - the text provided between the ns-download tags is used to create the filename for the downloaded file. This helps users identify the file that has been downloaded.
+
+Placing it on its own line - The download component incorporates an icon to help users recognise that the browser download action will happen when clicked. If we were to include this component in a paragraph the icon would interrupt the flow of the text, making it less readable. There is also the risk that users could miss the icon and the subsequent download action would be an unexpected behaviour. Further confusion could occur if there is more than one link in a piece of text. Placing the download link on its own line clearly indicates what the link is and the actions that will occur when it is interacted with.
 
 The download-list class can only be used on `<ul>` and `<ol>` html tags. Each ns-download must be a direct child of a `<li>`.
 
