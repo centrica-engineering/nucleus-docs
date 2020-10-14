@@ -47,7 +47,18 @@ Using a metaphor of popular sports games and the physical dimensions of the area
 
 ### Headings
 
-Using the hierarchy of chess pieces
+Our headings use standard `<HTML>` markup:
+
+```markup
+h1
+h2
+h3
+h4
+h5
+h6
+```
+
+We experimented with using the hierarchy of chess pieces:
 
 ```markup
 ♔ king
@@ -60,7 +71,7 @@ Using the hierarchy of chess pieces
 
 ### Paragraphs
 
-Our paragraph styles lack a nice naming convention.
+Our paragraph styles use a standard naming convention.
 
 ```markup
 p-large
