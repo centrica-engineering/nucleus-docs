@@ -161,7 +161,31 @@ The `placeholder` is for providing the customer with an example of what you expe
 
 ### Validation
 
-To assist that valid values are added and to show an error message when they're not
+Validation is there to assist the customer in providing valid information. If information is missing, or the information they have provided does not align with the field type, then an error message is displayed so enable the customer to identify the mistake, and help them to correct it.
+
+The following is a list of validation types that `<ns-inputter>` supports. These can be used individually or in a combination:
+
+
+|  **Validation type**  | **Usage** |
+| :--- | :--- |
+| `isrequired` | value must be completed |
+| `isNumber` | value must be a number | 
+| `isInteger`| value must be a whole number with no decimal point | 
+| `isPostcode(includeEIR)` | value must be a valid UK or Ireland postcode |
+| `isFirstName` | value must be the customers first name |
+| `isLastName` | value must be the customers last name |
+| `isFullName` | value must be the customers full name | 
+| `isTitle` | value must be a valid title prefix | 
+| `isEmail` | value must be in a valid email format |
+| `isPhoneNumber(includeIreland)` | value must be in a valid UK or Ireland telephone format |  
+| `isMobileNumber` | value must be in a valid mobile phone format | 
+| `isPassword` | value must be a password | 
+| `isDate` | value must be a date |
+| `minDate(date)` | value must be a date no earlier than the date set in brackets |
+| `maxDate(date)` | value must be a date no later than the date set in brackets | 
+| `isDateOfBirth` | value must be the customers date of birth |
+| `minLength(x)` | value must be no shorter in length than the number set in brackets | 
+| `maxLength(x)` | value must be no longer in length than the number set in brackets |
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
