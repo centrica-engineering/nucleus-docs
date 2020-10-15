@@ -22,6 +22,7 @@
   * [ns-accordion](components/ns-accordion.md)
   * [ns-card](components/ns-card.md)
   * [ns-caveat](components/ns-caveat.md)
+  * [ns-column](components/ns-column.md)
   * [ns-cta](components/ns-cta.md)
   * [ns-datepicker](components/ns-datepicker.md)
   * [ns-download](components/ns-download.md)
