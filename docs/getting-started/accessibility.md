@@ -12,7 +12,7 @@ Accessibility is a key foundation of Nucleus.
 
 In addition to [accessibility principles](https://docs.britishgas.design/getting-started/principles#accessibility-principles) and starting points to accommodate [different types of barriers](#types-of-barriers), we've made sure our [components](https://docs.britishgas.design/components) integrate [WCAG 2.1](https://www.w3.org/TR/WCAG21) Level AA practices.
 
-The following guidance has been provided by our accessibility partner DAC.
+The following guidance has been provided by our accessibility partner [Digital Accessibility Centre (DAC)](https://digitalaccessibilitycentre.org/).
 
 ### Colour
 
