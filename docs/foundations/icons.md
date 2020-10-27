@@ -53,7 +53,7 @@ We can make use of brand logos and marks when we discuss products and companies.
 
 ## Creating new icons
 
-If you are looking to create a new icon then please check there is not something similar already in use. If there is no suitable icon then you should let us know and we can look at creating it for the design system.
+If you are looking to create a new icon then please check there is not something similar already in use. If there is no suitable icon then you should let us know and we can look at creating it for the design system. All new icons and illustrations need to be approved by the brand team.
 
 ### Icon creation guidelines
 
