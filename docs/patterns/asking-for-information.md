@@ -28,7 +28,7 @@ You can [read more information about how to use `<ns-fieldset>` here](https://do
 
 ## Grouping your questions
 
-As expressed in the journey patterns documentation we advise that you approach each functional journey in the same way - breaking down the journey into smaller sections, asking the customer a single question or group of questions at a time. The idea is to reduce the cognitive load and help a customer complete what they need to do as efficiently as possible.
+As expressed in the [journey patterns documentation](https://docs.britishgas.design/patterns/journeys) we advise that you approach each functional journey in the same way - breaking down the journey into smaller sections, asking the customer a single question or group of questions at a time. The idea is to reduce the cognitive load and help a customer complete what they need to do as efficiently as possible.
 
 ### Group by theme
 
