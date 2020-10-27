@@ -42,12 +42,23 @@ Using a metaphor of popular sports games and the physical dimensions of the area
 🏀 basketball-court
 🏑 hockey-pitch
 🏉 rugby-pitch
-👕 polo-field
+🏇 polo-field
 ```
 
-## Headings
+### Headings
 
-Using the hierarchy of chess pieces
+Our headings use standard `<HTML>` markup:
+
+```markup
+h1
+h2
+h3
+h4
+h5
+h6
+```
+
+We experimented with using the hierarchy of chess pieces:
 
 ```markup
 ♔ king
@@ -58,9 +69,9 @@ Using the hierarchy of chess pieces
 ♙ pawn
 ```
 
-## Paragraphs
+### Paragraphs
 
-Our paragraph styles lack a nice naming convention.
+Our paragraph styles use a standard naming convention.
 
 ```markup
 p-large
@@ -324,12 +335,15 @@ Additional page types will include those that are part of a journey. Some maybe 
 
 ### Lists
 
-We use three different types of lists
+We use 6 different types of lists
 
 ```markup
 ul-bullet
 ul-ticked
+ul-crossed
 ol-numbered
+dl-row
+dl-stacked
 ```
 
 ### Gradients

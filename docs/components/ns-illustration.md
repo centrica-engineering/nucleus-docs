@@ -57,6 +57,12 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 * This is for decorative purporses only (does not work in IE11).
 
+## Creating new illustrations
+
+If you are looking to create a new illustration then please check there is not something similar already in use. If there is no suitable illustration then you should let us know and we can look at creating it for the design system.
+
+Read our [illustration foundation page](https://docs.britishgas.design/foundations/illustration#creating-new-illustrations) for more information on creating illustrations.
+
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-illustration]).
