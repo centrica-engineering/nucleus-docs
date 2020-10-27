@@ -53,7 +53,7 @@ Radio buttons are automatically grouped together in a `<fieldset>`, the `heading
 
 ### Checkboxes
 
-Checkboxes are for when customers can select multiple options from a list, or choose to toggle a single option on or off. If you need them to select a single option from a list then you should use radio buttons. If there are many items to choose from then you should consider a select instead. 
+Checkboxes are for when customers can select multiple options from a list, or choose to toggle a single option on or off. If you need them to select a single option from a list then you should use radio buttons.
 
 Checkboxes are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Which British Gas services would you like to choose?".
 
@@ -172,9 +172,9 @@ The following is a list of validation types that `<ns-inputter>` supports. These
 | `isNumber` | value must be a number | 
 | `isInteger`| value must be a whole number with no decimal point | 
 | `isPostcode(includeEIR)` | value must be a valid UK or Ireland postcode |
-| `isFirstName` | value must be the customers first name |
-| `isLastName` | value must be the customers last name |
-| `isFullName` | value must be the customers full name | 
+| `isFirstName` | value must only contain letters, apostrophes, or hyphens. There is a character limit of 24 |
+| `isLastName` | value must only contain letters, apostrophes, or hyphens. There is a character limit of 32 |
+| `isFullName` | value must only contain letters, apostrophes, or hyphens. There is a character limit of 60 | 
 | `isTitle` | value must be a valid title prefix | 
 | `isEmail` | value must be in a valid email format |
 | `isPhoneNumber(includeIreland)` | value must be in a valid UK or Ireland telephone format |  
