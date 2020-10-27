@@ -22,7 +22,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | B | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | C | Content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | D | CTA text | Keep the text ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
-| E | Image path | This is the image that will be used inside `ns-landmark`. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. **Note:** that the image shouldn't hold any meaning and only used as a decoration, this is why it doesn't have an `alt=""` attribute to avoid adding non necessary content for users using assistive technology. |
+| E | Image path | This is the image that will be used inside `ns-landmark`. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. **Note:** The image shouldn't hold any meaning and be only used as a decoration. This is why it doesn't have an `alt=""` attribute to avoid adding unnecessary content for users using assistive technology. |
 
 ### Hillside Landmark
 
@@ -61,7 +61,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | Use it at the top of the page. | Use it in the middle or end of a page. |
 | Communicate the primary purpose in a clear and concise way. | Always add a cta (It'll drive traffic away). |
 | Content must be relevant to the page. | Use it to hold random content - `ns-editorial` may be better use for this. |
-|  | Don't hold any meaning in the image, use decoration/lifestyle photography only. |
+| Use decoration/lifestyle photography only. | Don't hold any meaning in the image. |
 
 ### Best practice for `summit`
 
