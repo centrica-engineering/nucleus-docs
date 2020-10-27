@@ -42,7 +42,7 @@ Using a metaphor of popular sports games and the physical dimensions of the area
 🏀 basketball-court
 🏑 hockey-pitch
 🏉 rugby-pitch
-👕 polo-field
+🏇 polo-field
 ```
 
 ### Headings
