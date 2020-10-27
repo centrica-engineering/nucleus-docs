@@ -44,7 +44,7 @@ As this stage testing plays a key part in discovery. Testing potential solutions
 
 Design and engineering team up together to do the bulk of the discovery, feeding back to the team. This will produce a firmly defined scope. 
 
-Our [vanilla first approach](https://docs.britishgas.design/getting-started/vanilla-first) will help understand where the starting point of the solution is. Which, in turn will help define the outcome of the work.
+Our [vanilla first approach](https://docs.britishgas.design/community/vanilla-first) will help understand where the starting point of the solution is. Which, in turn will help define the outcome of the work.
 
 ### Delivering the development spec and discovery
 
