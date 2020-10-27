@@ -20,7 +20,7 @@ Nucleus illustrations
 
 ## Creating new illustrations
 
-If you are looking to create a new illustration then please check there is not something similar already in use. If there is no suitable illustration then you should let us know and we can look at creating it for the design system.
+If you are looking to create a new illustration then please check there is not something similar already in use. If there is no suitable illustration then you should let us know and we can look at creating it for the design system. All new icons and illustrations need to be approved by the brand team.
 
 ### Illustration creation guidelines
 
