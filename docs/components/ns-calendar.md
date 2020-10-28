@@ -15,7 +15,7 @@ The component allows user to:
 - Navigate from month to month
 - Navigate from day to day using arrow keys
 - Select a date
-- Disable particular days
+- Disable and enable particular days
 - Restrict selectable dates to a date range
 
 
@@ -53,8 +53,8 @@ Also see ns-inputter [specification](https://docs.britishgas.design/components/n
 
 | Attribute      | Type      | Default   | Options | Description |
 |----------------|-----------|-----------|---------|-----------|
-| `month` | `number`  | 1  |         | Month number (Jan=1, Feb=2 etc)
-| `year` | `number`  | 1  |         | Year (eg. 2020)
+| `month` | `number`  | This month |         | Month number (Jan=1, Feb=2 etc)
+| `year` | `number`  | This year |         | Year (eg. 2020)
 | `minDate` | `string`  |  |         | Minimum date allowed on calendar in iso format: eg. `'2020-07-29'`
 | `maxDate` | `string`  |  |         | Maximum date allowed on calendar in iso format: eg. `'2020-10-04'`
 | `selectOnFocus` | `boolean` | `false` | `true`,`false` | When set to true, the calendar will automatically select any date in focus
