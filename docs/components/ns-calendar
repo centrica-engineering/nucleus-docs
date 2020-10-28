@@ -1,1 +1,33 @@
+---
+description: Molecule | Calendar component.
+---
 
+# ns-calendar
+
+## Introduction
+
+> Ns-calendar allows the user to select a date from a monthly calendar view.
+
+Ns-calendar is an internal component that is designed to be used inside any component that requires the user to view and choose a date in a calendar style view.
+
+## Usage
+
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-calendar)
+
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-calendar”%}
+
+## Specification
+
+| Attribute      | Type      | Default   | Options | Description |
+|----------------|-----------|-----------|---------|-----------|
+| `year` | `year`  |   | Todays date | The year that the calendar will initially display
+| `month` | `number`  |   |  Todays date | The month that the calendar will initially display
+| `minDate` | `string`  |  null |  | The minimum selectable date in ISO 8601 format (eg. yyyy-mm-dd)
+| `maxDate` | `string`  |  null | | The maximum selectable date in ISO 8601 format (eg. yyyy-mm-dd)
+| `disabledDates` | `array`  |  null |  | An array of dates that should be disabled/un-selectable.
+| `enabledDates` | `array`  |  null |  | An array of dates that should be enabled.  This will override disabledDates and only enable the specified dates.
+| `selectOnFocus` | `boolean` | false | true, false | When using keyboard navigation on dates; if `selectOnFocus` is set to true, then the current date in focus will automatically be selected.
+
+| Event      | Description |
+|----------|------------|
+| `change` | Dispatched when a date is selected
