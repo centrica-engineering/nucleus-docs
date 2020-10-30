@@ -6,18 +6,31 @@ description: Molecule | Calendar component.
 
 ## Introduction
 
-> Displays a single month in an interactive calendar table
+> Ns-calendar allows the user to select a date from a monthly calendar view.
 
-ns-calendar should be used inside components that are required to display dates in a calendar layout.
+Ns-calendar is an internal component that is designed to be used inside any component that requires the user to view and choose a date in a calendar style view.
 
-The component allows user to:
-- View dates in a month as a calendar layout
-- Navigate from month to month
-- Navigate from day to day using arrow keys
-- Select a date
-- Disable and enable particular days
-- Restrict selectable dates to a date range
+## Usage
 
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-calendar)
+
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-calendar”%}
+
+## Specification
+
+| Attribute      | Type      | Default   | Options | Description |
+|----------------|-----------|-----------|---------|-----------|
+| `year` | `year`  |   | Todays date | The year that the calendar will initially display
+| `month` | `number`  |   |  Todays date | The month that the calendar will initially display
+| `minDate` | `string`  |  null |  | The minimum selectable date in ISO 8601 format (eg. yyyy-mm-dd)
+| `maxDate` | `string`  |  null | | The maximum selectable date in ISO 8601 format (eg. yyyy-mm-dd)
+| `disabledDates` | `array`  |  null |  | An array of dates that should be disabled/un-selectable.
+| `enabledDates` | `array`  |  null |  | An array of dates that should be enabled.  This will override disabledDates and only enable the specified dates.
+| `selectOnFocus` | `boolean` | false | true, false | When using keyboard navigation on dates; if `selectOnFocus` is set to true, then the current date in focus will automatically be selected.
+
+| Event      | Description |
+|----------|------------|
+| `change` | Dispatched when a date is selected
 
 ## Best practice
 
@@ -38,31 +51,13 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 <ns-calendar year="2020" month="6"></ns-calendar>
 ```
 
-
 ## Component Relationship
 
 |  **Relationship**  |  |
 | :--- | :--- |
 | **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes - `ns-date-picker (coming soon)` |
+| **Does it live inside other components?** | ✅ Yes - Can be used inside components |
 | **What layout classes can be used?**  | None |
-
-## Specification
-
-Also see ns-inputter [specification](https://docs.britishgas.design/components/ns-inputter#specification)
-
-| Attribute      | Type      | Default   | Options | Description |
-|----------------|-----------|-----------|---------|-----------|
-| `month` | `number`  | This month |         | Month number (Jan=1, Feb=2 etc)
-| `year` | `number`  | This year |         | Year (eg. 2020)
-| `minDate` | `string`  |  |         | Minimum date allowed on calendar in iso format: eg. `'2020-07-29'`
-| `maxDate` | `string`  |  |         | Maximum date allowed on calendar in iso format: eg. `'2020-10-04'`
-| `selectOnFocus` | `boolean` | `false` | `true`,`false` | When set to true, the calendar will automatically select any date in focus
-| `disabledDates` | `array` | `[]` | | An array of dates that shuld not be selectable.  eg. `['2020-07-19', '2020-07-20', '2020-07-21']`
-
-| Event	| Description |
-|-------|-------------|
-| `change` |	Will be dispatched when a date is selected by the user |
 
 ## Feedback
 
