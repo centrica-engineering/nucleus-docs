@@ -14,6 +14,7 @@
   * [Colours](foundations/colours.md)
   * [Modular scale](foundations/modular-scale.md)
   * [Viewports](foundations/viewports.md)
+  * [Structure](foundations/structure.md)
   * [Photography](foundations/photography.md)
   * [Icons](foundations/icons.md)
   * [Illustrations](foundations/illustrations.md)
