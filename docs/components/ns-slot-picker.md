@@ -23,14 +23,6 @@ It can display time slots for a single day or multiple days.
 |----------|------------|
 | `change` | Dispatched when a specific slot is selected
 
-## Usage
-
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-slot-picker)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-slot-picker" caption="" %}
-
-ns-slot-picker’s main property/attribute is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
-
 #### SlotData
 
 The slotdata array should consist of objects containing a date property and a slots property.
@@ -53,6 +45,14 @@ const slots = [{
 const slotData = [{ date: '2020-01-28', slots: slots }, { date: '2020-01-29', slots: slots }];
 
 ```
+
+## Usage
+
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-slot-picker)
+
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-slot-picker" caption="" %}
+
+ns-slot-picker’s main property/attribute is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
 
 ```html
 <ns-form>
