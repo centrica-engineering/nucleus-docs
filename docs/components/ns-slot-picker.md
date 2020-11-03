@@ -21,9 +21,9 @@ Ns-slot-picker is used any time you want a customer to select a time slot. This 
 |----------|------------|
 | `change` | Dispatched when a specific slot is selected
 
-#### SlotData
+#### Slot Data
 
-The slotdata array should consist of objects containing a date property and a slots property.
+The slotData array should consist of objects containing a date property and a slots property.
 
 date: String - eg. 2020-01-28 (28th January 2020)
 slots: Array of objects with a name and value property 
