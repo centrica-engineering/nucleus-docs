@@ -8,9 +8,7 @@ description: Molecule | Slot picker component.
 
 > Ns-slot-picker is used to allow the user to select a time slot from one or more dates and time slots.
 
-Ns-slot-picker component is used any time you want a user to select a time slot.  This would typically be used for booking an appointment.
-It can display time slots for a single day or multiple days.
-
+Ns-slot-picker is used any time you want a customer to select a time slot. This would typically be used for booking an appointment.
 
 ## Specification
 
@@ -64,7 +62,7 @@ ns-slot-picker’s main property/attribute is `slotData`.  This would typically 
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use this when the user needs to select a specific appointment slot from a known selection of dates | Use this when there are many (More than 7??? Ask team) dates to choose from, use ns-appointment-picker |
+| Use this when the customer needs to select a specific appointment slot from a known selection of dates | Use this when there are many (more than 7) dates to choose from, use ns-appointment-picker |
 
 ## Component relationship
 
@@ -74,5 +72,11 @@ ns-slot-picker’s main property/attribute is `slotData`.  This would typically 
 | **Does it live inside other components?** | ✅ Yes -  `ns-form` |
 | **What layout classes can be used?**  | ❌ None |
 
+## Feedback
+
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-calendar]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-slot-picker]).
+
+💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
 
 
