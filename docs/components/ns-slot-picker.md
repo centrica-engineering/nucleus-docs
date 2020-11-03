@@ -8,7 +8,33 @@ description: Molecule | Slot picker component.
 
 > Ns-slot-picker is used to allow the user to select a time slot from one or more dates and time slots.
 
-Ns-slot-picker is used any time you want a customer to select a time slot. This would typically be used for booking an appointment.  It can display time slots for a single day or multiple days.
+Ns-slot-picker is used any time you want a customer to select a time slot. This would typically be used for booking an appointment. It can display time slots for a single day or multiple days. It can be used on it's own or upfront before displaying ns-appointment-picker. It is also used in [ns-appointment-picker](https://docs.britishgas.design/components/ns-appointment-picker).
+
+## Best practice
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Use this when the customer needs to select a specific appointment slot from a known selection of dates | Use this when there are many (more than 5) dates to choose from, use ns-appointment-picker |
+| Use this to present a number of suitable slots upfront to a customer |  |
+| Use this to help a customer find the soonest available appointment time when there is poor appointment availability |  |
+
+## Usage
+
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-slot-picker)
+
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-slot-picker" caption="" %}
+
+ns-slot-picker’s main property/attribute is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
+
+```html
+<ns-form>
+  <ns-slot-picker></ns-slot-picker>
+</ns-form>
+```
+
+## Usage example 
+
+<img width="642" alt="Screen Shot 2020-11-03 at 6 25 47 PM" src="https://user-images.githubusercontent.com/3082819/98025907-3b625500-1e02-11eb-8297-9be9525629ff.png">
 
 ## Specification
 
@@ -43,26 +69,6 @@ const slots = [{
 const slotData = [{ date: '2020-01-28', slots: slots }, { date: '2020-01-29', slots: slots }];
 
 ```
-
-## Usage
-
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-slot-picker)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-slot-picker" caption="" %}
-
-ns-slot-picker’s main property/attribute is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
-
-```html
-<ns-form>
-  <ns-slot-picker></ns-slot-picker>
-</ns-form>
-```
-
-## Best practises
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Use this when the customer needs to select a specific appointment slot from a known selection of dates | Use this when there are many (more than 7) dates to choose from, use ns-appointment-picker |
 
 ## Component relationship
 
