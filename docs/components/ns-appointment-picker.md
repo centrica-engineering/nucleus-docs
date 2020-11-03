@@ -1,5 +1,5 @@
 ---
-description: Molecule | Appointment picker component.
+description: Organism | Appointment picker component.
 ---
 
 # ns-appointment-picker
@@ -8,7 +8,7 @@ description: Molecule | Appointment picker component.
 
 > Ns-appointment-picker is used to select a date and time slot for an appointment.
 
-This component is used to select a date and time slot for an appointment.  The component is comprised of a ns-calendar to pick the date and a ns-slot-picker to show the available time slots.
+Ns-appointment-picker is used to select a date and time slot for an appointment. The component is comprised of an ns-calendar to pick the date, and an ns-slot-picker to show the available time slots.
 
 
 ## Specification
@@ -21,9 +21,9 @@ This component is used to select a date and time slot for an appointment.  The c
 |----------|------------|
 | `change` | Dispatched when a specific slot is selected
 
-### SlotData
+### Slot Data
 
-The slotdata array should consist of objects containing a date property and a slots property.
+The slotData array should consist of objects containing a date property and a slots property.
 
 date: String - eg. 2020-01-28 (28th January 2020)
 slots: Array of objects with a name and value property 
@@ -62,7 +62,7 @@ ns-appointment-picker’s main property/attribute is `slotData`.  This would typ
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use this when the user needs to select a date and a specific appointment slot | Use to select an appointment slot on a single date, use ns-slot-picker |
+| Use this when the customer needs to select a date and a specific appointment slot | Use to select an appointment slot on a single date, use ns-slot-picker instead |
 
 ## Component relationship
 
@@ -72,5 +72,11 @@ ns-appointment-picker’s main property/attribute is `slotData`.  This would typ
 | **Does it live inside other components?** | ✅ Yes -  `ns-form` |
 | **What layout classes can be used?**  | ❌ None |
 
+## Feedback
+
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-calendar]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-appointment-picker]).
+
+💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
 
 
