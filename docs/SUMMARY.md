@@ -21,6 +21,7 @@
 * [Components](components/README.md)
   * [ns-accordion](components/ns-accordion.md)
   * [ns-appointment-picker](components/ns-appointment-picker.md)
+  * [ns-calendar](components/ns-calendar.md)
   * [ns-card](components/ns-card.md)
   * [ns-caveat](components/ns-caveat.md)
   * [ns-column](components/ns-column.md)
