@@ -8,7 +8,7 @@ description: Molecule | Slot picker component.
 
 > Ns-slot-picker is used to allow the user to select a time slot from one or more dates and time slots.
 
-Ns-slot-picker is used any time you want a customer to select a time slot. This would typically be used for booking an appointment.
+Ns-slot-picker is used any time you want a customer to select a time slot. This would typically be used for booking an appointment.  It can display time slots for a single day or multiple days.
 
 ## Specification
 
