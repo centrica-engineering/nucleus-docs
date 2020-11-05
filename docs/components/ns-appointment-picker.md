@@ -11,6 +11,40 @@ description: Organism | Appointment picker component.
 Ns-appointment-picker is used to select a date and time slot for an appointment. The component is comprised of an ns-calendar to pick the date, and an ns-slot-picker to show the available time slots.
 
 
+## Best practice
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Use this when the customer needs to select a date and a time slot for an appointment | Use to select an appointment slot on a single date. Use ns-slot-picker instead |
+| Use ns-slot-picker to surface the best suitable slots for a customer before presenting the full appointment selector, where appropriate. | Don't force customers to use the appointment picker first if there is very poor appointment availability. Present the next available appointments in a slot picker first. |
+| Use ns-highlighter alongside ns-appointment selector to surface any important notifications regarding a customer booking.| |
+| Use multiple appointment pickers in ns-tabs so users can easily access different types of bookings.| |
+
+
+## Usage
+
+To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-appointment-picker)
+
+{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-appointment-picker" caption="" %}
+
+ns-appointment-picker’s main property/attribute is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
+
+```html
+<ns-form>
+  <ns-appointment-picker></ns-appointment-picker>
+</ns-form>
+```
+
+## Usage Example
+
+![ns-appointment-selector](https://user-images.githubusercontent.com/3082819/98018571-9c852b00-1df8-11eb-9b61-ed5bf6fc2253.jpg)
+
+| Key | Description | 
+| :--- | :--- | :--- |
+| A | ns-calendar - Calendar component|
+| B | ns-slot-picker - Slot picker component |
+
+
 ## Specification
 
 | Attribute      | Type      | Default   | Options | Description |
@@ -44,25 +78,6 @@ const slotData = [{ date: '2020-01-28', slots: slots }, { date: '2020-01-29', sl
 
 ```
 
-## Usage
-
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-appointment-picker)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-appointment-picker" caption="" %}
-
-ns-appointment-picker’s main property/attribute is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
-
-```html
-<ns-form>
-  <ns-appointment-picker></ns-appointment-picker>
-</ns-form>
-```
-
-## Best practises
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Use this when the customer needs to select a date and a specific appointment slot | Use to select an appointment slot on a single date, use ns-slot-picker instead |
 
 ## Component relationship
 
