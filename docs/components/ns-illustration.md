@@ -12,7 +12,7 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 
 ## Best practice
 
-| 💚 Do's | 💔 Dont's |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use them to convey depth | Make the illustrations small |
 |  | Use on their own as the primary visual element |
@@ -43,7 +43,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `type`| `string`  | `gas` | `appliance`, `boiler`, `boilerRepair`, `bulb`, `clock`, `dualFuel`, `electricVehicle`, `engineer`, `gas`, `help`, `home`, `oven`, `protect`, `tap`, `savings` [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance) | Picks the illustration that is wanted to be shown. |
+| `type`| `string`  | `gas` | `appliance`, `boiler`, `boilerRepair`, `bulb`, `centralHeating`, `clock`, `dualFuel`, `electrics`, `electricVehicle`, `engineer`, `gas`, `help`, `home`, `oven`, `pipeAndDrain`, `protect`, `tap`, `savings` [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustration--appliance) | Picks the illustration that is to be shown. |
 | `size` | `number` | `''` | `''`, `1`, `2`, `3`, `4`, `5` | Changes the size of the illustration, with 1 being the smallest. |
 | `inactive` | `string` | `false` | `true`, `false` | Will grey out the illustration. |
 
@@ -55,13 +55,13 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ### Inactive
 
-* This is for decorative purporses only (does not work in IE11).
+* This is for decorative purposes only (does not work in IE11).
 
 ## Creating new illustrations
 
 If you are looking to create a new illustration then please check there is not something similar already in use. If there is no suitable illustration then you should let us know and we can look at creating it for the design system.
 
-Read our [illustration foundation page](https://docs.britishgas.design/foundations/illustration#creating-new-illustrations) for more information on creating illustrations.
+Read our [illustration foundation page](https://docs.britishgas.design/foundations/illustrations#creating-new-illustrations) for more information on creating illustrations.
 
 ## Feedback
 
@@ -72,7 +72,5 @@ Read our [illustration foundation page](https://docs.britishgas.design/foundatio
 
 ## Related links
 
-* Creating illustrations [guide](https://docs.britishgas.design/how-to/creating-illustrations).
 * Exporting illustrations SVG in Sketch [https://github.com/ConnectedHomes/nucleus/issues/670](https://github.com/ConnectedHomes/nucleus/issues/670).
-* Creating an engaging experience through illustrations and the difference between icons and illustrations in [Brand Guidlines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/illustrations/creating-an-engaging-experience-through-illustration).
-* If you wish to have us consider adding a new illustrations to the library please consult Brand Visual Identity managers.
+* Creating an engaging experience through illustrations and the difference between icons and illustrations in [Brand Guidelines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/illustrations/creating-an-engaging-experience-through-illustration).
