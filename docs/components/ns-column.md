@@ -34,7 +34,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-column" caption="" %}
 
 ```markup
-    <ns-column basketballcourt="" hockeypitch="" rugbypitch="" polofield=""></ns-column>
+    <ns-column basketballcourt="" hockeypitch="" footballpitch="" rugbypitch="" polofield=""></ns-column>
 ```
 
 ## Component relationship
@@ -52,6 +52,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | `basketballcourt` | `number` | `1` |  `1,2` | The number of columns to show at the Basketball Court viewport |
 | `hockeypitch` | `number` | `inherit` |  `1,2,3` | The number of columns to show at the Hockey Pitch viewport |
 | `rugbypitch` | `number` | `inherit` |  `1,2,3,4` | The number of columns to show at the Rugby Pitch viewport |
+| `footballpitch` | `number` | `inherit` |  `1,2,3,4` | The number of columns to show at the Football Pitch viewport |
 | `polofield` | `number` | `inherit` |  `1,2,3,4` | The number of columns to show at the Polo Field viewport |
 
 ## Specification notes

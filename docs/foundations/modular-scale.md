@@ -22,15 +22,16 @@ Taking this approach and applying it to our Structure, Typography, Spacing and e
 
 We have six [viewports](https://docs.britishgas.design/foundation/viewports), the smallest width being 320px. This is our initial value that all the other viewports are based from.
 
-**320px is 1em**
+We use the formula _320 * 1.5<sup>x</sup>_  to calculate the sizes
 
 Then we scale from here in increments of 1.5x as follows:
 
-**320** x 1.5 = **480**  
-**480** x 1.5 = **720**  
-**720** x 1.5 = **1080**  
-**1080** x 1.5 = **1620**  
-**1620** x 1.5 = **2430**
+_320 * 1.5<sup>1</sup>_  = **480**  
+_320 * 1.5<sup>2</sup>_  = **720**  
+_320 * 1.5<sup>3</sup>_ = **1080**  
+_320 * 1.5<sup>3.4</sup>_ = **1270**  
+_320 * 1.5<sup>4</sup>_  = **1620**  
+_320 * 1.5<sup>5</sup>_  = **2430**
 
 Read more about our [Viewports](https://docs.britishgas.design/foundation/viewports) and see our table of [Nucleus viewport sizes](https://docs.britishgas.design/foundation/viewports).
 
@@ -45,7 +46,7 @@ For Typography, we have three multipliers to generate our scales.
 These are applied to our Viewport sizes in the following way:
 
 ⚪️ Polo & 🏉 Rugby uses `Major Third`.  
-🏑 Hockey & 🏀 Basketball uses `Minor Third`.  
+🏑 Hockey, ⚽ Football & 🏀 Basketball uses `Minor Third`.  
 🎾 Tennis & 🔵 Squash uses `Major Second`.
 
 Read more about our [Typography](https://docs.britishgas.design/foundation/typography) and how Modular Scale applies.

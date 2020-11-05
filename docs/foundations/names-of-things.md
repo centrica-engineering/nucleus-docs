@@ -41,6 +41,7 @@ Using a metaphor of popular sports games and the physical dimensions of the area
 🎾 tennis-court
 🏀 basketball-court
 🏑 hockey-pitch
+⚽ football-pitch
 🏉 rugby-pitch
 🏇 polo-field
 ```
