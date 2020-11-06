@@ -78,11 +78,11 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 
 * Add this attribute when there is no navigational links (when there is nothing in the anonymous slot).
 
-### Ember slot
+### Dynamic link slot
 
 * This is a dynamic slot.
 * This must follow a flat DOM structure of just an anchor tag.
-* The suffix of the slot corresponds to the the `data-ns-ember` attribute value on the link you want to take over.
+* The suffix of the slot corresponds to the the `data-link` attribute value on the link you want to take over.
 * The link should be given text content and should correlate to what the link text content was previously.
 
 ### Primary structure
@@ -103,31 +103,31 @@ Each section:
 ```json
 [
     {
-      heading: 'Energy',
-      href: '/energy.html',
-      subheadings: [
+      "heading": "Energy",
+      "href": "/energy.html",
+      "subheadings": [
         {
-          heading: 'Gas & electricity',
-          links: [
+          "heading": "Gas & electricity",
+          "links": [
             {
-              text: 'Gas & electricity services',
-              href: '/energy.html'
+              "text": "Gas & electricity services",
+              "href": "/energy.html"
             },
             {
-              text: 'Our gas & electricity tariffs',
-              href: '/energy/gas-and-electricity.html'
+              "text": "Our gas & electricity tariffs",
+              "href": "/energy/gas-and-electricity.html"
             },
             {
-              text: 'Get a quote',
-              href: '/GetAQuote/'
+              "text": "Get a quote",
+              "href": "/GetAQuote/"
             },
             {
-              text: 'Connections for new builds',
-              href: '/energy/gas-and-electricity/new-connections.html'
+              "text": "Connections for new builds",
+              "href": "/energy/gas-and-electricity/new-connections.html"
             },
             {
-              text: 'Warm Home Discount',
-              href: '/energy/energy-saving/warm-home-discount.html'
+              "text": "Warm Home Discount",
+              "href": "/energy/energy-saving/warm-home-discount.html"
             }
           ]
         },
@@ -142,8 +142,8 @@ Each section:
 ```json
 [
   {
-    text: 'Help & Support',
-    href: '/help-and-support'
+    "text": "Help & Support",
+    "href": "/help-and-support"
   }
 ]
 ```
