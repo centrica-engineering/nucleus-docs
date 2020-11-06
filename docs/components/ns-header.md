@@ -59,7 +59,7 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 
 | Slots | Type |
 | :--- | :--- |
-| `ember-link-*` | `a tag` |
+| `link-*` | `a tag` |
 
 ## Specification notes
 
