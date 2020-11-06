@@ -51,16 +51,15 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
+| `primary`    | `array` |  |  | Primary navigation heading, subheadings and links |
+| `secondary`    | `array` |  |  | Secondary navigation links and buttons |
 | `logo`    | `string` | `https://www.britishgas.co.uk/nucleus/images/logo.svg` |  |URL to point to logo|
 | `alt`    | `string` | `British Gas` |  |Alternative text for logo|
-| `business`    | `string` |  |  |Optional link to business section|
-| `help`    | `string` |  |  |Option link to help section|
-| `account`    | `string` |  |  |Optional link to online account section|
 | `hide-links` | `boolean` | `false` | `true`,`false` |Hide navigation and related navigational elements|
 
 | Slots | Type |
 | :--- | :--- |
-| `anonymous` | `ul tag` |
+| `ember-link-*` | `a tag` |
 
 ## Specification notes
 
@@ -79,46 +78,74 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/inde
 
 * Add this attribute when there is no navigational links (when there is nothing in the anonymous slot).
 
-### Anonymous slot
+### Ember slot
 
-* This needs to follow the correct structure
+* This is a dynamic slot.
+* This must follow a flat DOM structure of just an anchor tag.
+* The suffix of the slot corresponds to the the `data-ns-ember` attribute value on the link you want to take over.
+* The link should be given text content and should correlate to what the link text content was previously.
 
-#### Anonymous structure
+### Primary structure
 
-The anonymous slot is an unordered list. Each list is a section and each list inside a section is a sub section. The list inside the sub section is a list of the links related to the sub section.
+This is an array of each navigation section. Each navigation section is an object.
 
-```html
-<ul>
-  <li> <-- First navigation section
-    <h2><a href="/energy.html">Energy</a></h2> <-- navigation section heading (has a link)
-    <ul>
-      <li> <-- First sub section
-        <h3>Gas & electricity</h3> <-- Sub section heading (no link)
-        <ul> <-- list of links related to sub heading
-          <li><a href="/energy.html">Gas & electricity services</a></li>
-          <li><a href="/energy/gas-and-electricity.html">Our gas & electricity tariffs</a></li>
-          <li><a href="/GetAQuote/">Get a quote</a></li>
-          <li><a href="/energy/gas-and-electricity/new-connections.html">Connections for new builds</a></li>
-          <li><a href="/energy/energy-saving/warm-home-discount.html">Warm Home Discount</a></li>
-        </ul>
-      </li>
-      <li>
-        <h3>Existing energy customers</h3>
-        <ul>
-          <li><a href="/energy/manage-your-energy.html">Manage your energy</a></li>
-          <li><a href="/discover/home-move/">Moving home</a></li>
-        </ul>
-      </li>
-      <li>
-        <h3>Save energy</h3>
-        <ul>
-          <li><a href="/energy/energy-saving/energy-saving-tips.html">Energy saving tips</a></li>
-          <li><a href="/energy/guides.html">Energy guides & advice</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
+Each section:
+
+* `heading`
+* `href`
+* `subheading`
+  * `heading`
+  * `links`
+    * `text`
+    * `href`
+    * `data-link`
+
+```json
+[
+    {
+      heading: 'Energy',
+      href: '/energy.html',
+      subheadings: [
+        {
+          heading: 'Gas & electricity',
+          links: [
+            {
+              text: 'Gas & electricity services',
+              href: '/energy.html'
+            },
+            {
+              text: 'Our gas & electricity tariffs',
+              href: '/energy/gas-and-electricity.html'
+            },
+            {
+              text: 'Get a quote',
+              href: '/GetAQuote/'
+            },
+            {
+              text: 'Connections for new builds',
+              href: '/energy/gas-and-electricity/new-connections.html'
+            },
+            {
+              text: 'Warm Home Discount',
+              href: '/energy/energy-saving/warm-home-discount.html'
+            }
+          ]
+        },
+        ...
+      ]
+    },
+    ...
+```
+
+### Secondary navigation structure
+
+```json
+[
+  {
+    text: 'Help & Support',
+    href: '/help-and-support'
+  }
+]
 ```
 
 ## Feedback
