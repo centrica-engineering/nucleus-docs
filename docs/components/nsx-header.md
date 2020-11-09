@@ -66,27 +66,27 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus-experienc
 [
   [
       {
-        "heading": 'Gas & electricity',
+        "heading": "Gas & electricity",
         "links": [
           {
-            text: 'Gas & electricity services',
-            href: '/energy.html'
+            "text": "Gas & electricity services",
+            "href": "/energy.html"
           },
           {
-            text: 'Our gas & electricity tariffs',
-            href: '/energy/gas-and-electricity.html'
+            "text": "Our gas & electricity tariffs",
+            "href": "/energy/gas-and-electricity.html"
           },
           {
-            text: 'Get a quote',
-            href: '/GetAQuote/'
+            "text": "Get a quote",
+            "href": "/GetAQuote/"
           },
           {
-            text: 'Connections for new builds',
-            href: '/energy/gas-and-electricity/new-connections.html'
+            "text": "Connections for new builds",
+            "href": "/energy/gas-and-electricity/new-connections.html"
           },
           {
-            text: 'Warm Home Discount',
-            href: '/energy/energy-saving/warm-home-discount.html'
+            "text": "Warm Home Discount",
+            "href": "/energy/energy-saving/warm-home-discount.html"
           }
         ]
       },
