@@ -37,7 +37,7 @@ ns-appointment-picker’s main property/attribute is `slotData`.  This would typ
 
 ## Usage Example
 
-![ns-appointment-selector](https://user-images.githubusercontent.com/3082819/98018571-9c852b00-1df8-11eb-9b61-ed5bf6fc2253.jpg)
+![ns-appointment-picker](https://user-images.githubusercontent.com/28779/98399574-824a8780-205a-11eb-8476-9bee9528e2c2.png)
 
 | Key | Description | 
 | :--- | :--- | :--- |
