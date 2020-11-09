@@ -6,18 +6,18 @@ description: Organism | Appointment picker component.
 
 ## Introduction
 
-> Ns-appointment-picker is used to select a date and time slot for an appointment.
+> `ns-appointment-picker` is used to select a date and time slot for an appointment.
 
-Ns-appointment-picker is used to select a date and time slot for an appointment. The component is comprised of an ns-calendar to pick the date, and an ns-slot-picker to show the available time slots.
+`ns-appointment-picker` is used to select a date and time slot for an appointment. The component is comprised of an `ns-calendar` to pick the date, and an `ns-slot-picker` to show the available time slots.
 
 
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use this when the customer needs to select a date and a time slot for an appointment | Use to select an appointment slot on a single date. Use ns-slot-picker instead |
-| Use ns-slot-picker to surface the best suitable slots for a customer before presenting the full appointment selector, where appropriate. | Don't force customers to use the appointment picker first if there is very poor appointment availability. Present the next available appointments in a slot picker first. |
-| Use ns-highlighter alongside ns-appointment selector to surface any important notifications regarding a customer booking.| |
+| Use this when the customer needs to select a date and a time slot for an appointment | Use to select an appointment slot on a single date. Use `ns-slot-picker` instead |
+| Use `ns-slot-picker` to surface the best suitable slots for a customer before presenting the full appointment picker, where appropriate. | Don't force customers to use the appointment picker first if there is very poor appointment availability. Present the next available appointments in a slot picker first. |
+| Use `ns-highlighter` alongside `ns-appointment-picker` to surface any important notifications regarding a customer booking.| |
 | Use multiple appointment pickers in ns-tabs so users can easily access different types of bookings.| |
 
 
@@ -27,7 +27,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-appointment-picker" caption="" %}
 
-ns-appointment-picker’s main property/attribute is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
+The main property/attribute of `ns-appointment-picker` is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
 
 ```html
 <ns-form>
@@ -35,24 +35,24 @@ ns-appointment-picker’s main property/attribute is `slotData`.  This would typ
 </ns-form>
 ```
 
-## Usage Example
+## Usage example
 
 ![ns-appointment-picker](https://user-images.githubusercontent.com/28779/98399574-824a8780-205a-11eb-8476-9bee9528e2c2.png)
 
 | Key | Description | 
-| :--- | :--- | :--- |
-| A | ns-calendar - Calendar component|
-| B | ns-slot-picker - Slot picker component |
+| :--- | :--- |
+| A | `ns-calendar` - Calendar component|
+| B | `ns-slot-picker` - Slot picker component |
 
 
 ## Specification
 
-| Attribute      | Type      | Default   | Options | Description |
-|----------------|-----------|-----------|---------|-----------|
-| `slotdata` | `array`  |   |           | Array of objects representing dates.
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `slotdata` | `array` | | | Array of objects representing dates.
 
-| Event      | Description |
-|----------|------------|
+| Event | Description |
+| :--- | :--- |
 | `change` | Dispatched when a specific slot is selected
 
 ### Slot Data
@@ -62,7 +62,7 @@ The slotData array should consist of objects containing a date property and a sl
 date: String - eg. 2020-01-28 (28th January 2020)
 slots: Array of objects with a name and value property 
 
-```
+```js
 const slots = [{
   name: '9am to 12pm',
   value: '0900-1200'
@@ -93,5 +93,3 @@ const slotData = [{ date: '2020-01-28', slots: slots }, { date: '2020-01-29', sl
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-appointment-picker]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
-
