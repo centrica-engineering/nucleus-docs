@@ -12,7 +12,7 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 
 ## Best practice
 
-| 💚 Do's | 💔 Dont's |
+| 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use icons within the component | Create your own icons |
 | Use this when building new Nucleus components | Add them as content |
@@ -49,7 +49,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | Attribute    | Type                | Default   | Options   | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `size`    | `number`   | `''` | `''`, `1`, `2`, `3`, `4`, `5` | Changes the size of the icon, with 1 being the smallest. |
-| `type` | `string`            | `arrow` |`appliance`, `appliance-outline`, `appliance-solid`, `arrow`, `arrow-left`, `arrow-right`, `bill`, `bill-outline`, `bill-solid`, `boiler` , `boiler-outline`, `boiler-solid`, `chevron`, `chevron-down`, `chevron-left`, `chevron-right`, `chevron-up`, `cross`, `download`, `electricity`, `electricity-outline`, `electricity-solid`, `gas`, `gas-outline`, `gas-solid`, `hive`, `home`, `home-outline`,`home-solid`, `loading,meter`, `meter-outline`, `meter-solid`, `minus`, `plus`, `protect`, `protect-outline`, `protect-solid`, `rewards`, `rewards-outline`, `rewards-solid`, `settings`, `tick`, `warning ` See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance) | Picks the icon that is wanted to be shown. |
+| `type` | `string`            | `arrow` |`appliance`, `appliance-outline`, `appliance-solid`, `arrow`, `arrow-left`, `arrow-right`, `bill`, `bill-outline`, `bill-solid`, `boiler` , `boiler-outline`, `boiler-solid`, `calendar`, `calendar-outline`, `calendar-solid`, `clock`, `clock-outline`, `clock-solid`, `chevron`, `chevron-down`, `chevron-left`, `chevron-right`, `chevron-up`, `cross`, `download`, `electricity`, `electricity-outline`, `electricity-solid`, `gas`, `gas-outline`, `gas-solid`, `hive`, `home`, `home-outline`,`home-solid`, `loading,meter`, `meter-outline`, `meter-solid`, `minus`, `plus`, `protect`, `protect-outline`, `protect-solid`, `rewards`, `rewards-outline`, `rewards-solid`, `tag`, `tag-outline`, `tag-solid`, `settings`, `tick`, `warning ` See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance) | Picks the icon that is wanted to be shown. |
 
 ## Specification notes
 
@@ -60,7 +60,6 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 ### Size
 
 * If you pass an empty size the icon will fill the parent element
-
 
 ## Creating new icons
 
@@ -78,6 +77,4 @@ Read our [icon foundation page](https://docs.britishgas.design/foundations/icons
 ## Related links
 
 * [ns-cta](https://docs.britishgas.design/components/ns-cta).
-* [How to create icons guide](https://docs.britishgas.design/how-to/creating-icons).
-* Guiding Customers with our icons and the difference between icons and illustrations in Brand Guidelines.
-* If you wish to have us consider adding a new icon to the library please consult Brand Visual Identity managers.
+* Creating an engaging experience through illustrations and the difference between icons and illustrations in [Brand Guidelines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/illustrations/creating-an-engaging-experience-through-illustration).
