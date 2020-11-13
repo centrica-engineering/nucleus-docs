@@ -8,7 +8,7 @@ The word structure in this context is used as the term to encapsulate how a page
 
 There are four pieces of the design system that work together to make our structure.
 
-1. Panel. `<ns-panel>` is always a child of the `<main>` element or it's encapsulated within a component that is a child of the `<main>` element.
+**1 Panel** - `<ns-panel>` is always a child of the `<main>` element or it's encapsulated within a component that is a child of the `<main>` element.
 
 ```html
 <main>
@@ -20,7 +20,7 @@ There are four pieces of the design system that work together to make our struct
 </main>
 ```
 
-2. Layout. This is the area within `<ns-panel>` that either adopts the natural behaviour defined by itself, or having a class applied to either a `<div>` or `<ns-column>`.
+**2 Layout** - This is the area within `<ns-panel>` that either adopts the natural behaviour defined by itself, or having a class applied to either a `<div>` or `<ns-column>`.
 
 ```html
 <ns-panel>
@@ -29,7 +29,7 @@ There are four pieces of the design system that work together to make our struct
 </ns-panel>
 ```
 
-3. Columns. To introduce a column structure use either a class `<div class="triple">` or include attributes on the `<ns-column>` component.
+**3 Columns** - To introduce a column structure use either a class `<div class="triple">` or include attributes on the `<ns-column>` component.
 
 ```html
 <ns-panel>
@@ -38,7 +38,7 @@ There are four pieces of the design system that work together to make our struct
 </ns-panel>
 ```
 
-4. Component. Within our components we include responsive columns and layout decisions.
+**4 Component** - Within our components we include responsive columns and layout decisions.
 
 ```html
 <ns-card type="section"> ... </ns-card>
