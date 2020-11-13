@@ -42,6 +42,7 @@
   * [ns-landmark](components/ns-landmark.md)
   * [ns-lockup](components/ns-lockup.md)
   * [ns-panel](components/ns-panel.md)
+  * [ns-pill](components/ns-pill.md)
   * [ns-price](components/ns-price.md)
   * [ns-product-card](components/ns-product-card.md)
   * [ns-selector](components/ns-selector.md)
