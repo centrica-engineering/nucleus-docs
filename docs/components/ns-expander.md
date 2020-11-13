@@ -26,6 +26,8 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 | Use instead of modal | Use to hide important information (such as caveats) |
 | Use headings, paragraphs, lists for content | Use as a solution to excessive copy on a page |
 | Make sure heading relates to content | Nest expanders within expanders |
+| Use a coloured expander to draw attention to a promotion in an expander on a product card | Use multiple coloured expanders on one page |
+|  | Use a coloured expander to draw attention to a warning message. Use ns-highlighter or ns-skyline instead. |
 
 ## Usage
 
@@ -56,7 +58,8 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | :--- | :--- | :--- | :--- | :--- |
 | `type` | `string` | `standard` | `skyline`, `standard` | Variants for the expander. |
 | `open` | `string` | `false` | `true`, `false` | If true will open the expander to show the content. |
-| `icon` | `string` |  | `info`, `warning`. See [`ns-icon` component](https://britishgas.design/components/ns-icon) | Only used for skyline type |
+| `icon` | `string` |  | `info`, `warning`. See [`ns-icon` component](https://britishgas.design/components/ns-icon) | Only use for a `type` of `skyline` |
+| `colour` | `string` |  | `yellow` | Sets the colour for the heading - Only use for a `type` of `standard` |
 
 | Slots | Type |
 | :--- | :--- |
