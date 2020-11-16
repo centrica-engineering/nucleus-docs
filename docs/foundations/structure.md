@@ -62,52 +62,7 @@ There are five pieces of the design system that work together to make our struct
 
 In it's basic form, the markup for the most performant and accessible page starts with the following:
 
-```html
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <title>Nucleus Design System</title>
-    <meta name="description" content="Nucleus is the design system for British Gas built by British Gas.">
-
-    <meta name="theme-color" content="#005EB8">
-    <link rel="dns-prefetch" href="https://www.britishgas.co.uk">
-    <link rel="preload" href="https://www.britishgas.co.uk/nucleus/fonts/BGFlameWeb-Light.woff2" as="font" crossorigin>
-    <link rel="preload" href="https://www.britishgas.co.uk/nucleus/fonts/BGFlameWeb-Regular.woff2" as="font" crossorigin>
-    <link rel="preload" href="https://www.britishgas.co.uk/nucleus/fonts/BGFlameWeb-Bold.woff2" as="font" crossorigin>
-
-    <link rel="icon" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/favicon.ico">
-    <link rel="icon" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/favicon-128x128.png" sizes="128x128">
-    <link rel="icon" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/favicon-152x152.png" sizes="152x152">
-    <link rel="icon" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/favicon-167x167.png" sizes="167x167">
-    <link rel="icon" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/favicon-180x180.png" sizes="180x180">
-    <link rel="icon" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/favicon-192x192.png" sizes="192x192">
-    <link rel="icon" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/favicon-196x196.png" sizes="196x196">
-    <link rel="icon" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/favicon-512x512.png" sizes="512x512">
-
-    <link rel="apple-touch-icon" sizes="60x60" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/apple-touch-icon-180x180.png">
-
-    <link rel="mask-icon" href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/design/favicons/favicon-black-16x16.svg" color="#005EB8">
-    <link rel="manifest" href="/manifest.webmanifest">
-  </head>
-  <body class="ndsn">
-    <nsx-header></nsx-header>
-    <main id="content">
-      <!-- Here is where the contents of the document goes. -->
-    </main>
-    <nsx-footer id="footer"></nsx-footer>
-    <script src="https://www.britishgas.co.uk/nucleus/nucleus.min.js"></script>
-  </body>
-</html>
-```
+Here is the [Nucleus HTML Structure](https://github.com/britishgas-engineering/nucleus-prototype/blob/master/src/structure.html) in Github.
 
 ### Let's take this one piece at a time.
 
