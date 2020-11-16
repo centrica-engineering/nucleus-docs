@@ -8,7 +8,7 @@ The word 'structure' in this context is used as the term to encapsulate how a do
 
 There are five pieces of the design system that work together to make our structure.
 
-**1 HTML** - The fundamental building blocks of the Web. In order to get the most from Nucleus it is important that the structure of the HyperText Markup Language is correct.
+**1. HTML** - The fundamental building blocks of the Web. In order to get the most from Nucleus it is important that the structure of the HyperText Markup Language is correct.
 
 ```html
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ There are five pieces of the design system that work together to make our struct
 </html>
 ```
 
-**2 Panel** - `<ns-panel>` is always a child of the `<main>` element or it's encapsulated within a component that is a child of the `<main>` element.
+**2. Panel** - `<ns-panel>` is always a child of the `<main>` element or it's encapsulated within a component that is a child of the `<main>` element.
 
 ```html
 <main>
@@ -34,7 +34,7 @@ There are five pieces of the design system that work together to make our struct
 </main>
 ```
 
-**3 Layout** - This is the area within `<ns-panel>` that either adopts the natural behaviour defined by itself, or having a class applied to either a `<div>` or `<ns-column>`.
+**3. Layout** - This is the area within `<ns-panel>` that either adopts the natural behaviour defined by itself, or having a class applied to either a `<div>` or `<ns-column>`.
 
 ```html
 <ns-panel>
@@ -43,7 +43,7 @@ There are five pieces of the design system that work together to make our struct
 </ns-panel>
 ```
 
-**4 Columns** - To introduce a column structure use either a class `<div class="triple">` or include attributes on the `<ns-column>` component.
+**4. Columns** - To introduce a column structure use either a class `<div class="triple">` or include attributes on the `<ns-column>` component.
 
 ```html
 <ns-panel>
@@ -52,7 +52,7 @@ There are five pieces of the design system that work together to make our struct
 </ns-panel>
 ```
 
-**5 Component** - Within our components we include responsive columns and layout decisions.
+**5. Component** - Within our components we include responsive columns and layout decisions.
 
 ```html
 <ns-card type="section"> ... </ns-card>
