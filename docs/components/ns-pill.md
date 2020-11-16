@@ -19,8 +19,8 @@ Pills can help to create a subtle sense of urgency or to draw a customer’s att
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-A | Icon | Use an icon to support your description. |
-B | Content | Content should be very concise and catchy, ideally between 1 and 4 words. Your content should not run over one line on a `squash-court` viewport. |
+| A | Icon | Use an icon to support your description. |
+| B | Content | Content should be very concise and catchy, ideally between 1 and 4 words. Your content should not run over one line on a `squash-court` viewport. |
 
 **Tip:** Short and snappy content that can be quickly absorbed at a glance has been shown to perform better than longer promotional content.  
 
