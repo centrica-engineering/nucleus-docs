@@ -65,10 +65,15 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | **Relationship**|  |
 | :---  | :--- |
 | **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ❌ No <sup>*</sup> |
+| **Does it live inside other components?** | ✅ Yes -  `ns-card`, `ns-selector` |
 | **What layout classes can be used?** | None |
 
-<sup>*</sup> Work is in progress to add to other components
+More details for using ns-pill in other components can be found here:
+
+* [ns-card](https://docs.britishgas.design/components/ns-card#using-with-ns-pill)
+* [ns-selector](https://docs.britishgas.design/components/ns-selector#usage)
+
+> Note: Work is in progress to add the ns-pill to other components
 
 ## Specification
 
@@ -87,3 +92,8 @@ When an icon is supplied the pill will use the media object pattern.
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-pill]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+
+## Related links
+
+* [ns-card](https://docs.britishgas.design/components/ns-card)
+* [ns-selector](https://docs.britishgas.design/components/ns-selector)

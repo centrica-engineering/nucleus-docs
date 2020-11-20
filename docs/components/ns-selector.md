@@ -72,6 +72,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
     <input type="radio" id="item-1" name="question" value="crucifix">
     <label for="item-1">Raclette crucifix messenger bag</label>
     <div slot="description">
+      <ns-pill colour="yellow" icon="tag">50% off</ns-pill>
       <ul class="ul-bullet">
         <li>Leggings synth normcore wayfarers</li>
         <li>Mlkshk trust fund helvetica banjo drinking</li>
@@ -84,6 +85,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
     <input type="radio" id="item-2" name="question" value="hammock">
     <label for="item-2">Pug enamel pin post</label>
     <div slot="description">
+      <ns-pill colour="yellow" icon="tag">50% off</ns-pill>
       <ul class="ul-bullet">
         <li>Wolf plaid crucifix hammock</li>
         <li>Kale chips live-edge</li>
@@ -124,3 +126,8 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-form]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+
+## Related links
+
+* [ns-inputter](https://docs.britishgas.design/components/ns-inputter)
+* [ns-pill](https://docs.britishgas.design/components/ns-pill)

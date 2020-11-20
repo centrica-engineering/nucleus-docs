@@ -76,6 +76,35 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 </ns-card>
 ```
 
+### Using with ns-pill
+
+To add a `ns-pill` to the card it needs to be placed inside the `heading` slot. This allows screen readers to announce the pill when they are navigating by headings on a page.
+
+```markup
+<ns-card>
+  <h3 slot="heading">
+    <ns-pill>Special Offer</ns-pill>
+    Get energy with us
+  </h3>
+  ...
+</ns-card>
+```
+
+If using with a a type of `support` there is also the option to place the pill over the image using the `pillOverImage` attribute. Note the `ns-pill` will still need to be in the `heading` slot.
+
+```markup
+<ns-card type="support" image="path/to/image" pillOverImage>
+  <h3 slot="heading">
+    <ns-pill>Special Offer</ns-pill>
+    Get energy with us
+  </h3>
+  ...
+</ns-card>
+```
+
+More details on how to use the ns-pill can be found on the [ns-pill documentation](https://docs.britishgas.design/components/ns-pill)
+
+
 
 ## Component relationship
 
@@ -93,6 +122,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | `decoration` | `string` |           |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance) and See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--error) | Illustration that is shown in the section type card and Icon used in ns-highlighter |
 | `image`      | `string` |           |           | Adds an image above the card content for the support |
 | `type`       | `string` | "section" | "section", "support", "flat" | Defines the role of the card and changing the style |
+| `pillOverImage` | `boolean` |       |           | Used to put the pill in the top left of the image when using `type="support"` and an image | 
 
 | Slots        | Type                |
 | :--- | :--- |
@@ -127,5 +157,6 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Related links
 
+* [ns-pill](https://docs.britishgas.design/components/ns-pill)
 * [ns-card section panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--section-cards).
 * [ns-card support panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--support-image-cards).
