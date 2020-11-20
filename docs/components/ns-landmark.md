@@ -21,7 +21,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | A | Sub heading | Sub headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. Include a full stop at the end of the sub-heading.  |
 | B | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | C | Content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | CTA text | Keep the text ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
+| D | CTA text | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
 | E | Image path | This is the image that will be used inside `ns-landmark`. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. **Note:** The image shouldn't hold any meaning and be only used as a decoration. This is why it doesn't have an `alt=""` attribute to avoid adding unnecessary content for users using assistive technology. |
 
 ### Hillside Landmark
@@ -37,6 +37,22 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | C | Content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | D | Decoration | Apply a colourful gradient decoration to the landmark. [The specification table](#specification) has a list of options. |
 
+
+### Valley Landmark
+
+![Landmark - Valley](https://user-images.githubusercontent.com/28779/97898639-084f9100-1d30-11eb-8f77-1b66d2a7f202.png)
+
+> NOTE: The purpose of the valley landmark is to present an overview of a product or service as a user moves down the funnel of their purchase journey. A CTA may be used, but is not recommended in scenarios where the objective is to encourage further on-page browsing.
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Sub heading | Sub headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. Include a full stop at the end of the sub-heading.  |
+| B | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| C | Content | Valley can accommodate multiple paragraph slots. However, be mindful of keeping it concise. To introduce a product or service we recommend 1 shot paragraph and three or four bullet point in a ticked list to showcase your key product benefits. It can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| D | CTA text | A CTA is optional and not recommended in scenarios where you want to encourage your user to explore content further down the page. If you need to include a CTA keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+| E | Image path | This is the image that will be used inside `ns-landmark`.  It should have an aspect ratio of 4:3, the dimensions should be 720x540px, the file type should be jpg, and the file size should be no more than 100kb. To see which image you can use - please see the Image Guidance section below. Don't use imagery with white backgrounds. Please make sure you work with a designer when selecting any imagery for the ns-landmark. **Note:** The image shouldn't hold any meaning and be only used as a decoration. This is why it doesn't have an `alt=""` attribute to avoid adding unnecessary content for users using assistive technology. |
+
+
 ### Lakeside Landmark
 
 ![Landmark - Lakeside](https://user-images.githubusercontent.com/45626534/72897290-88fd4d80-3d19-11ea-9db6-857280dcb172.png)
@@ -46,13 +62,15 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | A | Sub heading | Sub headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. Include a full stop at the end of the sub-heading.  |
 | B | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | C | Content | Lakeside can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a minimum of 1 and a maximum of 3. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | CTA text | Keep the text ‘short, relevant, and actionable’ It should not exceed more than 24 characters. |
+| D | CTA text | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+
 
 ### Image guidance
 
 | Component | Variant | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-landmark`| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg | [ns-landmark_summit_1440x810px](https://user-images.githubusercontent.com/50207859/67642478-12140c80-f904-11e9-849d-5ffe39818c5b.jpg) |
+| `ns-landmark`| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg | [ns-landmark-summit-1440x810px](https://user-images.githubusercontent.com/50207859/67642478-12140c80-f904-11e9-849d-5ffe39818c5b.jpg) |
+| `ns-landmark`| `valley` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-landmark-valley-720x540px](https://user-images.githubusercontent.com/50207859/67642153-d461b480-f900-11e9-9520-11204c64a11b.jpg) |
 
 ## Best practice
 
@@ -96,6 +114,17 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | Get to the point, in this scenario the Sub heading and CTA have been omitted. |  |
 | ![do-get-to-the-point](https://user-images.githubusercontent.com/28779/70374643-88853080-18ec-11ea-8c03-94ef23815720.png) |  |
 
+### Best practice for `valley`
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Use checked list to highlight your key product benefits | Add a CTA if the purpose of the page is for users to consume the content. |
+| ![use-a-checked-list](https://user-images.githubusercontent.com/28779/98671714-90dfba00-234c-11eb-9ce9-47af82d6f875.png) | ![dont-add-a-cta](https://user-images.githubusercontent.com/28779/98671301-f3848600-234b-11eb-9891-dd36b587f25e.png) |
+| Use a complementary image to add context to your product or service | Use long, verbose content. Keep the user interested with a snappy overview and draw them down the page |
+| ![complementary-image](https://user-images.githubusercontent.com/28779/98671213-d0f26d00-234b-11eb-901c-4df125c29ffc.png) | ![use-short-content](https://user-images.githubusercontent.com/28779/98671969-f5027e00-234c-11eb-84c7-a8254dc6f758.png) |
+|  | Forget to use an image |
+|  | ![use-an-image](https://user-images.githubusercontent.com/28779/98671842-cab0c080-234c-11eb-9943-0d46e5cd0704.png) |
+
 
 ### Considerations of best practice
 
@@ -107,6 +136,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
   * If the page purpose is to be informative / educational then we recommend using `hillside`.
   * If the page purpose is promotional we recommend using `summit`.
   * If the page purpose is a 400 or 500 error page, use `lakeside`.
+  * If the page purpose is to showcase features and products, use `valley`.
 * If you are designing a series of informative / educational pages that all follow a similar theme, it would be considered best practice to use the same coloured decoration within the `hillside`.
 
 ## Usage
@@ -116,6 +146,8 @@ To see examples of the Summit Landmark visit [Storybook](https://britishgas.co.u
 To see examples of the Hillside Landmark visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--hillside).
 
 To see examples of the Lakeside Landmark visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--lakeside).
+
+To see examples of the Valley Landmark visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--valley).
 
 {% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-landmark" caption="" %}
 
@@ -160,6 +192,26 @@ To see examples of the Lakeside Landmark visit [Storybook](https://britishgas.co
   </a>
 </ns-landmark>
 ```
+### Valley
+
+```markup
+<ns-landmark type="valley" image="/my-images/my-image.png">
+  <h1 slot="heading">
+    <span class="h5">Home Care.</span>
+    <span class="h1 enlighten"><b>Boilers and heating cover</b> for your home</span>
+  </h1>
+  <p slot="paragraph">Keep it covered with HomeCare and we'll there when you need us.</p>
+  <div slot="paragraph">
+    <ul class="ul-ticked">
+      <li>Unlimited call outs</li>
+      <li>A 24/7 customer helpline</li>
+      <li>Parts and labour cost included</li>
+      <li>14 day cooling off period if you cancel</li>
+      <li>Annual boiler service included</li>
+    </ul>
+  </div>
+</ns-landmark>
+```
 
 ## Component relationship
 
@@ -173,8 +225,8 @@ To see examples of the Lakeside Landmark visit [Storybook](https://britishgas.co
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `type` | `string` | `summit` | `summit`, `hillside`, `lakeside` | The variant of the landmark. |
-| `image` | `string` |  |  | Background image used summit variant. |
+| `type` | `string` | `summit` | `summit`, `hillside`, `lakeside`, `valley` | The variant of the landmark. |
+| `image` | `string` |  |  | Background image used for summit variant or image used for valley variant |
 | `gradient` | `string` | `invert-ramp-cyan` | `invert-ramp-cyan`, `invert-ramp-grey-light`, `invert-ramp-green-light`, `invert-ramp-yellow`, `invert-ramp-blue` | Background gradient and colour used for hillside variant. |
 
 | Slots | Type |
@@ -199,12 +251,12 @@ To see examples of the Lakeside Landmark visit [Storybook](https://britishgas.co
 
 * Include an optional link to `#caveat` by placing `<a href="#caveat">1</a>` at the end
 
-### Image
+### Summit Variant - Image
 
 * 16x9
 * 1440 x 810px
 
-## Image template
+## Summit Variant - Image template
 
 This provides the safe-area to the position of the focal point of the image.
 
