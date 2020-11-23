@@ -4,6 +4,126 @@ description: Here are our release notes - enjoy!
 
 # Release notes
 
+
+## Version 1.23.0
+
+**Take a pill 💊**
+
+Release date - 2020/11/18
+
+**New components 👏**
+
+* `ns-landmark` has a new variant! The `Valley` landmark features a flat card the usual content (heading/sub-heading/paragraph/call to action) with an illustration image. It a half-way house between a landmark and a lockup.
+
+* `ns-pill` placement on the `ns-card`: you can now use the pill on cards to highlight a promotion or discount!
+
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
+## Version 1.22.0
+
+**Take a pill 💊**
+
+Release date - 2020/11/12
+
+**New components 👏**
+
+* `ns-pill` is a merchandising component that will enable teams to add a commercial message that will grab a user's attention (example: discounts or free stuff campaigns).
+* A variant of the `ns-expander` that has a yellow accent background, to visually grab a users attention to it (to add cmapaign details on a `ns-product-card` for example).
+
+**Bug fixes 🐛**
+
+* We made the validation on `ns-datepicker` optional
+* We fixed a background overlapping and border radius bug for `ns-appopintment-picker`
+
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
+## Version 1.21.0
+
+**Little things**
+
+Release date - 2020/11/10
+
+
+**Improvement 🏷 & 🕐**
+
+* We added `tag`, `clock` to `ns-icon`, specifically for future use on an upcoming merchandising component.
+* We made the labels and headings of the `nsx-address-selector` more generic so they also work on anonymous journeys without confusing customers (eg : Change your postcode to Change postcode).
+
+**Bug fixes 🐛**
+
+* `ns-datepicker`: there was a bug when dynamically changing the label was causing an issue with the value. This is now a thing of the past!
+* `ns-table` was displaying "Scroll for more information" on tables with 6 or more rows, independently of the height of the viewport.
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+## Version 1.1200
+
+**View(s)ports 📺**
+
+Release date - 2020/11/05
+
+**New components ⚽️**
+
+* We worked hard to display 4 columns on our `ns-column` layout component on narrower viewports. This resulted in the need to introduce a new viewport that covers some of the range that was originally covered by the `hockey-pitch` viewport. We called it: `football-pitch` ! 
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
+## Version 1.19.0
+
+**You've got an appointment! 🕙**
+
+Release date - 2020/11/03
+
+**New components 📆**
+
+* `ns-slot-picker` + `ns-calendar` = `ns-appointment-selector` ! The math is complete and we are very excited to release our appointment picker. Fully responsive and as accessible as we could make it. It has been a lot of work on a calendar and slot picker that would work great together and we can't wait for our customers to use it!
+
+
+**Improvement 🅰/🅱**
+
+* We added `electrics`, `centralHeating` and `pipeAndDrain` to `ns-illustration`.
+
+**Bug fixes 🐛**
+
+* We introduced a temporary fix for a chromium bug that Google is currently fixing. This bug impacts how the image of the `ns-landmark` is positioned. We'll monitor the release of Google's fix and roll back to the normal implementation.
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
 ## Version 1.18.0
 
 **Columns and slots 🎰**
