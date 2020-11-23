@@ -62,58 +62,7 @@ There are five pieces of the design system that work together to make our struct
 
 In it's basic form, the markup for the most performant and accessible page starts with the following:
 
-Here is the [Nucleus HTML Structure](https://github.com/britishgas-engineering/nucleus-prototype/blob/master/src/structure.html) in Github.
-
-### Let's take this one piece at a time.
-
-The `DOCTYPE` is found at the top of all documents and it ensures that the browser follows the relevant specifications.
-```html
-<!DOCTYPE html>
-```
-
-The `html` element is the root element of an HTML document. We include `lang="en"` to identify the document as containing the english language. And `dir="ltr"` informs the browser to display the content written from left to right.
-```html
-<html lang="en" dir="ltr">
-  ...
-</html>
-```
-
-The `head` element contains all the metadata, document links like scripts and style sheets, also pieces of information like the `title`.
-```html
-<head>
-  ...
-</head>
-```
-
-Specifying the character encoding used. UTF-8 is the most common encoding standard.
-```html
-<meta charset="utf-8">
-```
-
-We use `content="width=device-width, initial-scale=1"` This allows the user to adjust the zoom level of the document to suit their needs and is vital to retain the high standard of accessibility we aspire to.
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
-```
-
-Some devices attempt to detect telephone numbers and will manipulate them into clickable links to invoke a telephone call. This can cause problems when reference numbers and other numerical information is included in the document.
-```html
-<meta name="format-detection" content="telephone=no">
-```
-
-Here is the `title` element and it contains one of the most important pieces of content on the document.
-```html
-<title>
-  ...
-</title>
-```
-
-The `description` meta tag is used to describe the document to searchers when listed in a search engine results page. Keep the `content` between 50 and 160 characters and treat it as a short paragraph.
-```html
-<meta name="description" content="Nucleus is the design system for British Gas built by British Gas.">
-```
-
-
-
+Here is the [Nucleus HTML Structure](https://github.com/ConnectedHomes/nucleus/issues/1055#issue-555478278) in Github.
 
 ## 2. Panel
 
