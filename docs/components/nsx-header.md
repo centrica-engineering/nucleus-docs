@@ -22,7 +22,7 @@ The subheadings and links for the navigation can be passed in for each section t
 
 ### Considerations of best practice
 
-* Remember to have a `footer` id for the footer (nsx-footer adds one automatically) for the skip links.
+* If not using nsx-footer; remember to add an id of `footer` to your footer (nsx-footer adds one automatically). This is required for the skip links.
 * Remember to have a `content` id for the main content of the page (normally the `main` element) for the skip links.
 
 ## Usage
