@@ -45,7 +45,7 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus-experienc
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `sections`    | `array` | |  | subheadings and links for each nav section |
+| `sections`    | `array` | |  | Subheadings and links for each nav section |
 | `hideA11yBtn`    | `boolean` | `false` |  | Ability to turn off Reciteme |
 
 | Slots | Type |
