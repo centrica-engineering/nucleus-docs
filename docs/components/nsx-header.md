@@ -16,7 +16,7 @@ The subheadings and links for the navigation can be passed in for each section t
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use on the British Gas website. | Use of partnership or micro sites. |
+| Use on the British Gas website. | Use for partnership or micro sites. |
 | Keep the header outside the `main` element | Only have heading links |
 | Keep the header at the top | |
 
