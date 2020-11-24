@@ -56,7 +56,7 @@ To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus-experienc
 
 ### Dynamic link slot
 
-* This needs to follow the correct structure
+* This needs to follow the correct structure.
 * This is a dynamic slot.
 * This must follow a flat DOM structure of just an anchor tag.
 
