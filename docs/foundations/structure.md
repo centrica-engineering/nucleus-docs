@@ -4,11 +4,25 @@ description: The glue that holds our components together.
 
 # Structure
 
-The word structure in this context is used as the term to encapsulate how a page and pieces of a page are put together.
+The word 'structure' in this context is used as the term to encapsulate how a document and pieces of a document are put together.
 
-There are four pieces of the design system that work together to make our structure.
+There are five pieces of the design system that work together to make our structure.
 
-1. Panel. `<ns-panel>` is always a child of the `<main>` element or it's encapsulated within a component that is a child of the `<main>` element.
+**1. HTML** - The fundamental building blocks of the Web. In order to get the most from Nucleus it is important that the structure of the HyperText Markup Language is correct.
+
+```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    ...
+  </head>
+  <body class="ndsn">
+    ...
+  </body>
+</html>
+```
+
+**2. Panel** - `<ns-panel>` is always a child of the `<main>` element or it's encapsulated within a component that is a child of the `<main>` element.
 
 ```html
 <main>
@@ -20,7 +34,7 @@ There are four pieces of the design system that work together to make our struct
 </main>
 ```
 
-2. Layout. This is the area within `<ns-panel>` that either adopts the natural behaviour defined by itself, or having a class applied to either a `<div>` or `<ns-column>`.
+**3. Layout** - This is the area within `<ns-panel>` that either adopts the natural behaviour defined by itself, or having a class applied to either a `<div>` or `<ns-column>`.
 
 ```html
 <ns-panel>
@@ -29,7 +43,7 @@ There are four pieces of the design system that work together to make our struct
 </ns-panel>
 ```
 
-3. Columns. To introduce a column structure use either a class `<div class="triple">` or include attributes on the `<ns-column>` component.
+**4. Columns** - To introduce a column structure use either a class `<div class="triple">` or include attributes on the `<ns-column>` component.
 
 ```html
 <ns-panel>
@@ -38,17 +52,23 @@ There are four pieces of the design system that work together to make our struct
 </ns-panel>
 ```
 
-4. Component. Within our components we include responsive columns and layout decisions.
+**5. Component** - Within our components we include responsive columns and layout decisions.
 
 ```html
 <ns-card type="section"> ... </ns-card>
 ```
 
-## 1. Panel
+## 1. HTML
 
-This piece of our structure provides a container for a single topic or task. Think of `<ns-panel>` as a part of a page which may contain multiple sections.
+In it's basic form, the markup for the most performant and accessible page starts with the following:
 
-## 2. Layout
+Here is the [Nucleus HTML Structure](https://github.com/ConnectedHomes/nucleus/issues/1055#issue-555478278) in Github.
+
+## 2. Panel
+
+This piece of our structure provides a container for a single topic or task. Think of `<ns-panel>` as a part of a document which may contain multiple sections.
+
+## 3. Layout
 
 Here I refer to the layout of our components into three widths, Wide, Norm and Slim.
 
@@ -58,7 +78,7 @@ One way this is achieved is by occasionally breaking out of the Norm, which help
 
 ![wide-norm-slim](https://user-images.githubusercontent.com/28779/96426858-b9fda680-11f5-11eb-88f0-4e2039ca5376.png)
 
-## 3. Columns
+## 4. Columns
 
 When we discuss columns, we often refer to the `triple` layout and the `ns-column` component. Some of our components have column behaviour baked into them.
 
@@ -86,7 +106,7 @@ The lockjaw and locknut variants of `ns-lockup` contain a two column layout at `
 
 The landmark, notably the summit variant changes in many ways. Starting at 100% in `squash-court` and `tennis-court` then adopting a 66%/33% in `basketball-court`, then a 50%/50% in `hockey-pitch` and above.
 
-## 4. Component
+## 5. Component
 
 Each of our components can adopt a relevant layout at any of our viewports in order to take advantage of the best responsive solution.
 
