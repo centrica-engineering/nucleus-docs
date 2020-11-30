@@ -55,6 +55,7 @@
   * [ns-video](components/ns-video.md)
   * [nsx-address-selector](components/nsx-address-selector.md)
   * [nsx-footer](components/nsx-footer.md)
+  * [nsx-header](components/nsx-header.md)
   * [nsx-marketing-consent](components/nsx-marketing-consent.md)
 * [Patterns](patterns/README.md)
   * [Journeys](patterns/journeys.md)
