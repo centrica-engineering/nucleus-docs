@@ -65,13 +65,14 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 | **Relationship**|  |
 | :---  | :--- |
 | **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes -  `ns-card`, `ns-selector` |
+| **Does it live inside other components?** | ✅ Yes -  `ns-card`, `ns-selector`, `ns-landmark type="valley"` |
 | **What layout classes can be used?** | None |
 
 More details for using ns-pill in other components can be found here:
 
 * [ns-card](https://docs.britishgas.design/components/ns-card#using-with-ns-pill)
 * [ns-selector](https://docs.britishgas.design/components/ns-selector#usage)
+* [ns-landmark](https://docs.britishgas.design/components/ns-landmark)
 
 > Note: Work is in progress to add the ns-pill to other components
 
@@ -97,3 +98,4 @@ When an icon is supplied the pill will use the media object pattern.
 
 * [ns-card](https://docs.britishgas.design/components/ns-card)
 * [ns-selector](https://docs.britishgas.design/components/ns-selector)
+* [ns-landmark](https://docs.britishgas.design/components/ns-landmark)

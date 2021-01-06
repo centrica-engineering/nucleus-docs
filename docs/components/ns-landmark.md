@@ -200,6 +200,7 @@ To see examples of the Valley Landmark visit [Storybook](https://britishgas.co.u
     <span class="h5">Home Care.</span>
     <span class="h1 enlighten"><b>Boilers and heating cover</b> for your home</span>
   </h1>
+  <ns-pill slot="pill">Special Offer</ns-pill>
   <p slot="paragraph">Keep it covered with HomeCare and we'll there when you need us.</p>
   <div slot="paragraph">
     <ul class="ul-ticked">
@@ -228,19 +229,21 @@ To see examples of the Valley Landmark visit [Storybook](https://britishgas.co.u
 | `type` | `string` | `summit` | `summit`, `hillside`, `lakeside`, `valley` | The variant of the landmark. |
 | `image` | `string` |  |  | Background image used for summit variant or image used for valley variant |
 | `gradient` | `string` | `invert-ramp-cyan` | `invert-ramp-cyan`, `invert-ramp-grey-light`, `invert-ramp-green-light`, `invert-ramp-yellow`, `invert-ramp-blue` | Background gradient and colour used for hillside variant. |
+| `pillOverImage` | `boolean` |  |  | Used to put the pill in the bottom left of the image when using `type="valley"` and an image|
+
 
 | Slots | Type |
 | :--- | :--- |
 | `heading` | `<h1>` |
 | `paragraph` | `<p>` `<div>` |
 | `cta` | `ns-cta` `<a>`  |
+| `pill` | `ns-pill` |
 
 ## Specification notes
 
 ### Heading
 
 * This needs to be a `h1` heading
-* The Sub heading is part of the heading to allow screen readers to read the heading properly.
 * The Sub heading is part of the heading to allow screen readers to read the heading properly.
 * Sub heading is a `<span>` tag with a `h5` class.
 * Main heading is a `<span>` tag with a `h1` class.
@@ -293,3 +296,7 @@ Find it under 'Guides' in the Nucleus Sketch Library.
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-landmark]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+
+## Related links
+
+* [ns-pill](https://docs.britishgas.design/components/ns-pill)
