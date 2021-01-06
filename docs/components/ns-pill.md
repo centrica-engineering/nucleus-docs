@@ -15,7 +15,7 @@ Pills can help to create a subtle sense of urgency or to draw a customer’s att
 
 ## Content guidance
 
-![Pill](https://user-images.githubusercontent.com/3082819/98268816-e3079080-1f84-11eb-899c-000e8035cc8f.jpg)
+![Pill](https://user-images.githubusercontent.com/3082819/99961064-aeb61180-2d85-11eb-9444-033a869bfab6.jpg)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
