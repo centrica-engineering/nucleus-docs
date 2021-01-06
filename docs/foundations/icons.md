@@ -10,6 +10,8 @@ Icons are used within our design system to represent an object or action visuall
 
 They are functional, rather than decorative and should be used sparingly, only within the parameters they were created for.
 
+A list of all the icons that are available in Nucleus can be found on [storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--appliance)
+
 ## How we use icons
 
 We use icons in number of different ways to convey meaning:
@@ -94,3 +96,7 @@ Icons are created using illustrator with a 32px x 32px art-board. This allows sc
    * All colour information e.g. `fill="#000000"`.
    * `<style>` and any `classes`.
    * Nested and empty `<g>` (groups).
+   
+## Related links
+
+* [ns-icon](https://docs.britishgas.design/components/ns-icon)
