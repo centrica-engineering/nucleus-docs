@@ -1,3 +1,9 @@
+---
+description: Molecule | Card component.
+---
+
+# ns-card
+
 ## Introduction
 
 > Cards can be used to contain content in a consistent and structured way.

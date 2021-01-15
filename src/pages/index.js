@@ -1,0 +1,144 @@
+import React from 'react';
+import clsx from 'clsx';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import styles from './styles.module.css';
+
+const features = [
+  {
+    title: 'Easy to Use',
+    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    description: (
+      <>
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
+      </>
+    ),
+  },
+  {
+    title: 'Focus on What Matters',
+    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    description: (
+      <>
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
+      </>
+    ),
+  },
+  {
+    title: 'Powered by React',
+    imageUrl: 'img/undraw_docusaurus_react.svg',
+    description: (
+      <>
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
+      </>
+    ),
+  },
+];
+
+function Feature({imageUrl, title, description}) {
+  const imgUrl = useBaseUrl(imageUrl);
+  return (
+    <div className={clsx('col col--4', styles.feature)}>
+      {imgUrl && (
+        <div className="text--center">
+          <img className={styles.featureImage} src={imgUrl} alt={title} />
+        </div>
+      )}
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+  );
+}
+
+function Home() {
+  const context = useDocusaurusContext();
+  const {siteConfig = {}} = context;
+  return (
+    <Layout
+      title={`Hello from ${siteConfig.title}`}
+      description="Description will go into a meta tag in <head />">
+
+      <main class="ndsn">
+        <ns-landmark type="hillside" gradient="invert-ramp-cyan">
+          <h1 slot="heading">
+            <span class="h5">Nucleus team.</span>
+            <span class="h1 enlighten">
+              Welcome to the <b>British Gas<br class="landmark-br"></br> Design System</b>
+            </span>
+          </h1>
+          <p slot="paragraph">Here to solve and build a more cohesive and coherent web experience for the British Gas&nbsp;brand.</p>
+        </ns-landmark>
+
+        <ns-panel>
+          <div class="splish">
+            <h2>Deep dive into Nucleus</h2>
+          </div>
+          <div class="splish triple">
+            <ns-card type="section" decoration="bulb">
+              <h3 slot="heading" role="heading" aria-level="3">Our components</h3>
+              <p slot="paragraph">View and see how our components work in&nbsp;Storybook.</p>
+              <ns-cta type="direct" slot="cta" href="https://library.britishgas.design">View Storybook</ns-cta>
+            </ns-card>
+            <ns-card type="section" decoration="help">
+              <h3 slot="heading" role="heading" aria-level="3">Documentation</h3>
+              <p slot="paragraph">Understand what we do and how our components&nbsp;work.</p>
+              <ns-cta type="direct" slot="cta" href="/docs/components/ns-accordion">View our docs</ns-cta>
+            </ns-card>
+            <ns-card type="section" decoration="protect">
+              <h3 slot="heading" role="heading" aria-level="3">The vision</h3>
+              <p slot="paragraph">Find out what we're trying to do and the principles we set against&nbsp;ourselves.</p>
+              <ns-cta type="direct" slot="cta" href="https://docs.britishgas.design/getting-started/principles">Learn our principles</ns-cta>
+            </ns-card>
+          </div>
+        </ns-panel>
+
+
+        <ns-panel decoration="circle-yellow-left">
+          <ns-lockup>
+            <h2 slot="heading">
+              <span class="h5">Becoming Nucleus.</span>
+              <span class="h2 enlighten">
+                Join in the <b>conversation and movement</b> of our design system
+              </span>
+            </h2>
+            <p slot="paragraph">Want to know how to start using Nucleus or not sure if we have what you are looking&nbsp;for?</p>
+            <p slot="paragraph">Understand our process and how we bring your ideas&nbsp;to&nbsp;life.</p>
+            <ns-cta type="direct" slot="cta" href="https://docs.britishgas.design/community/contribute-to-nucleus">Our community</ns-cta>
+            <ns-image slot="image" src="https://user-images.githubusercontent.com/7101754/74745120-4583f980-525b-11ea-8278-525d4989aecc.jpeg"></ns-image>
+          </ns-lockup>
+        </ns-panel>
+
+        <ns-panel>
+          <div class="splash">
+            <h2>Building a better Nucleus</h2>
+          </div>
+          <div class="splash triple">
+            <ns-card type="support">
+              <h3 slot="heading" role="heading" aria-level="3">Something missing?</h3>
+              <p slot="paragraph">Feel free to raise a request for change or contribute to other&nbsp;requests.</p>
+              <ns-cta type="text" slot="cta" href="https://github.com/ConnectedHomes/nucleus/projects/6">Our backlog</ns-cta>
+            </ns-card>
+            <ns-card type="support">
+              <h3 slot="heading" role="heading" aria-level="3">See how we work</h3>
+              <p slot="paragraph">Come to our events and ask about how things&nbsp;work.</p>
+              <ns-cta type="text" slot="cta" href="https://docs.britishgas.design/community/events">Nucleus events</ns-cta>
+            </ns-card>
+            <ns-card type="support">
+              <h3 slot="heading" role="heading" aria-level="3">View our helpful tutorials</h3>
+              <p slot="paragraph">Want to know how to do something? Then we have the tutorials for&nbsp;you.</p>
+              <ns-cta type="text" slot="cta" href="https://docs.britishgas.design/getting-started/working-with-nucleus">Working with Nucleus</ns-cta>
+            </ns-card>
+          </div>
+        </ns-panel>
+
+      </main>
+      
+    </Layout>
+  );
+}
+
+export default Home;

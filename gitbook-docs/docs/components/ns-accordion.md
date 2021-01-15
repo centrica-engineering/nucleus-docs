@@ -1,13 +1,8 @@
-<ns-accordion>
-  <h3 slot="heading">Frequently asked questions</h3>
-  <ns-expander open="false">
-    <h4 slot="heading">Can I manage my account online?</h4>
-    <p>
-      Yes, with an online account you can arrange a service visit, find out whatʼs happening with your appointment, submit a meter reading and book an engineer.
-      Weʼve even got a free smartphone app.
-    </p>
-  </ns-expander>
-</ns-accordion>
+---
+description: Organism | Accordion component.
+---
+
+# ns-accordion
 
 ## Introduction
 
