@@ -48,7 +48,8 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              html: '#product-nucleus on slack'
+              label: 'Slack',
+              to: 'https://centricadigital.slack.com/messages/CCQDEPKBJ'
             },
             {
               label: 'Change request (RFC)',
