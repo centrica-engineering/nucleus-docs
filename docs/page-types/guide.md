@@ -1,5 +1,5 @@
 ---
-title: Guide page
+title: Guide
 description: Page type | Guide page
 ---
 

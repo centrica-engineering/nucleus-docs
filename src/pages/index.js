@@ -59,7 +59,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title="Welcome to Nucleus"
       description="Description will go into a meta tag in <head />">
 
       <main class="ndsn">
@@ -79,19 +79,19 @@ function Home() {
           </div>
           <div class="splish triple">
             <ns-card type="section" decoration="bulb">
-              <h3 slot="heading" role="heading" aria-level="3">Our components</h3>
-              <p slot="paragraph">View and see how our components work in&nbsp;Storybook.</p>
-              <ns-cta type="direct" slot="cta" href="https://library.britishgas.design">View Storybook</ns-cta>
+              <h3 slot="heading" role="heading" aria-level="3">Getting started</h3>
+              <p slot="paragraph">How to work with the Nucleus Design&nbsp;System</p>
+              <ns-cta type="direct" slot="cta" href="/docs/getting-started/working-with-nucleus">Get started</ns-cta>
             </ns-card>
-            <ns-card type="section" decoration="help">
-              <h3 slot="heading" role="heading" aria-level="3">Documentation</h3>
-              <p slot="paragraph">Understand what we do and how our components&nbsp;work.</p>
-              <ns-cta type="direct" slot="cta" href="/docs/components/ns-accordion">View our docs</ns-cta>
+            <ns-card type="section" decoration="engineer">
+              <h3 slot="heading" role="heading" aria-level="3">Our components</h3>
+              <p slot="paragraph">See how our components work and guidelines on how to use&nbsp;them</p>
+              <ns-cta type="direct" slot="cta" href="/docs/components/ns-accordion">View components</ns-cta>
             </ns-card>
             <ns-card type="section" decoration="protect">
               <h3 slot="heading" role="heading" aria-level="3">The vision</h3>
-              <p slot="paragraph">Find out what we're trying to do and the principles we set against&nbsp;ourselves.</p>
-              <ns-cta type="direct" slot="cta" href="https://docs.britishgas.design/getting-started/principles">Learn our principles</ns-cta>
+              <p slot="paragraph">Find out what we're trying to do and the principles we set against&nbsp;ourselves</p>
+              <ns-cta type="direct" slot="cta" href="/docs/getting-started/principles">Learn our principles</ns-cta>
             </ns-card>
           </div>
         </ns-panel>
@@ -106,8 +106,8 @@ function Home() {
               </span>
             </h2>
             <p slot="paragraph">Want to know how to start using Nucleus or not sure if we have what you are looking&nbsp;for?</p>
-            <p slot="paragraph">Understand our process and how we bring your ideas&nbsp;to&nbsp;life.</p>
-            <ns-cta type="direct" slot="cta" href="https://docs.britishgas.design/community/contribute-to-nucleus">Our community</ns-cta>
+            <p slot="paragraph">Understand our process and how we bring your ideas&nbsp;to&nbsp;life</p>
+            <ns-cta type="direct" slot="cta" href="/docs/community/contribute-to-nucleus">Our community</ns-cta>
             <ns-image slot="image" src="https://user-images.githubusercontent.com/7101754/74745120-4583f980-525b-11ea-8278-525d4989aecc.jpeg"></ns-image>
           </ns-lockup>
         </ns-panel>
@@ -119,18 +119,18 @@ function Home() {
           <div class="splash triple">
             <ns-card type="support">
               <h3 slot="heading" role="heading" aria-level="3">Something missing?</h3>
-              <p slot="paragraph">Feel free to raise a request for change or contribute to other&nbsp;requests.</p>
+              <p slot="paragraph">Feel free to raise a request for change or contribute to other&nbsp;requests</p>
               <ns-cta type="text" slot="cta" href="https://github.com/ConnectedHomes/nucleus/projects/6">Our backlog</ns-cta>
             </ns-card>
             <ns-card type="support">
               <h3 slot="heading" role="heading" aria-level="3">See how we work</h3>
               <p slot="paragraph">Come to our events and ask about how things&nbsp;work.</p>
-              <ns-cta type="text" slot="cta" href="https://docs.britishgas.design/community/events">Nucleus events</ns-cta>
+              <ns-cta type="text" slot="cta" href="/docs/community/events">Nucleus events</ns-cta>
             </ns-card>
             <ns-card type="support">
               <h3 slot="heading" role="heading" aria-level="3">View our helpful tutorials</h3>
-              <p slot="paragraph">Want to know how to do something? Then we have the tutorials for&nbsp;you.</p>
-              <ns-cta type="text" slot="cta" href="https://docs.britishgas.design/getting-started/working-with-nucleus">Working with Nucleus</ns-cta>
+              <p slot="paragraph">Want to know how to do something? Then we have the tutorials for&nbsp;you</p>
+              <ns-cta type="text" slot="cta" href="/docs/getting-started/working-with-nucleus">Working with Nucleus</ns-cta>
             </ns-card>
           </div>
         </ns-panel>

@@ -1,12 +1,12 @@
 module.exports = {
   title: 'Nucleus Design System',
   tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://britishgas.design',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'British Gas', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
@@ -16,13 +16,6 @@ module.exports = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://www.britishgas.co.uk/nucleus/demo/index.html',
           label: 'Storybook',
@@ -39,50 +32,49 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'GitHub',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Nucleus',
+              to: 'https://github.com/ConnectedHomes/nucleus',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
+              label: 'Nucleus Docs',
+              to: 'https://github.com/ConnectedHomes/nucleus-docs',
+            }
           ],
         },
         {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              html: '#product-nucleus on slack'
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Change request (RFC)',
+              to: 'https://github.com/ConnectedHomes/nucleus/projects/6',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Report a bug',
+              href: 'https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=%5Bbug%5D%20%5Bns-COMPONENT%5D',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Storybook',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Nucleus',
+              to: 'https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-cards--all-of-the-cards',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Nucleus experiences',
+              href: 'https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--anonymous',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} British Gas, Inc. Built with Docusaurus.`,
     },
   },
   themes: ['@docusaurus/theme-live-codeblock'],
@@ -94,13 +86,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/ConnectedHomes/nucleus-docs/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

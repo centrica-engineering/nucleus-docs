@@ -1,5 +1,5 @@
 ---
-title: Home page
+title: Home
 description: Page type | Home page
 ---
 
