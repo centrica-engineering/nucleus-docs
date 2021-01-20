@@ -2,8 +2,6 @@
 description: Molecule | Panel component.
 ---
 
-# ns-panel
-
 ## Introduction
 
 `ns-panel` is an empty container that holds each section of a page. Each `ns-panel` provides an area to place a layout and add an optional decoration.

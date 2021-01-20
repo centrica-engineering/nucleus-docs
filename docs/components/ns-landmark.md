@@ -2,8 +2,6 @@
 description: Organism | Landmark component.
 ---
 
-# ns-landmark
-
 ## Introduction
 
 > Landmarks are used to introduce the page, informing users of their current location and its primary purpose.

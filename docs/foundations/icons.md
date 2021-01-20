@@ -1,8 +1,7 @@
 ---
+title: Icons
 description: Nucleus icon suite.
 ---
-
-# Icons
 
 ## Why we use icons
 

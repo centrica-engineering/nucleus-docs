@@ -1,8 +1,7 @@
 ---
+title: Contribute to documentation
 description: One of the ways in which you can help improve our documentation.
 ---
-
-# Contribute to documentation
 
 ## Introduction
 

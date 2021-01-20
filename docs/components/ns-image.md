@@ -2,8 +2,6 @@
 description: Atom | Image component.
 ---
 
-# ns-image
-
 ## Introduction
 
 > An image allows British Gas to share visual content.

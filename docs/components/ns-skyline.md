@@ -2,8 +2,6 @@
 description: Organism | Skyline component.
 ---
 
-# ns-skyline
-
 ## Introduction
 
 > Notifying visitors of current, ongoing or upcoming events that they may be relevant to them.

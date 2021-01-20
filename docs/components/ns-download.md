@@ -2,8 +2,6 @@
 description: Atom | Download component.
 ---
 
-# ns-download
-
 ## Introduction
 
 > Highlights an item that can be downloaded.

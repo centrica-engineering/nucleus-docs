@@ -2,8 +2,6 @@
 description: Atom | Price component.
 ---
 
-# ns-price
-
 ## Introduction
 
 > Standardises the way prices are displayed.

@@ -2,8 +2,6 @@
 description: Organism | Highlighter component.
 ---
 
-# ns-highlighter
-
 ## Introduction
 
 > Highlighters can be used to communicate information or error, warning and success messages.

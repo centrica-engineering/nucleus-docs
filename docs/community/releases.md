@@ -1,9 +1,7 @@
 ---
+title: Release notes
 description: Here are our release notes - enjoy!
 ---
-
-# Release notes
-
 
 ## Version 1.23.0
 

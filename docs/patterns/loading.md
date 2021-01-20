@@ -1,8 +1,9 @@
 ---
+title: Loading
 description: Loading patterns.
 ---
 
-# Introduction
+## Introduction
 
 Loading states can provide reassurance that a task is being processed, this can help reduce the frustration when a task might take longer than a user might expect. We have a number of methods that handle loading events. These depend on the task a user is interacting with.
 

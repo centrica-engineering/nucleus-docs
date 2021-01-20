@@ -1,8 +1,7 @@
 ---
+title: Product page
 description: Page type | Product page
 ---
-
-# Product page
 
 ## Introduction
 

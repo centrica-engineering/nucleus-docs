@@ -1,8 +1,7 @@
 ---
+title: Colours
 description: Nucleus guidelines for use of colour.
 ---
-
-# Colours
 
 ## Why we use colour?
 

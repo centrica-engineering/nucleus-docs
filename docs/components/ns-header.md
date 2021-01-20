@@ -2,8 +2,6 @@
 description: Organism | Header component.
 ---
 
-# ns-header
-
 ## Introduction
 
 > Primary navigation for the website

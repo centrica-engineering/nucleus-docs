@@ -1,4 +1,5 @@
 ---
+title: Vanilla first
 description: Vanilla first thinking
 ---
 

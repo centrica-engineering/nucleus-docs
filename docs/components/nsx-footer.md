@@ -2,8 +2,6 @@
 description: Experience | Footer component.
 ---
 
-# nsx-footer
-
 ## Introduction
 
 The footer holds legally required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps.

@@ -2,8 +2,6 @@
 description: Atom | Icon component.
 ---
 
-# ns-icon
-
 ## Introduction
 
 > Icons are visual symbols used to represent functions, products and services.

@@ -2,8 +2,6 @@
 description: Molecule | Form component.
 ---
 
-# ns-fieldset
-
 ## Introduction
 
 > The ns-fieldset component is used to group related ns-inputters.

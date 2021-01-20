@@ -2,8 +2,6 @@
 description: Atom | Tab component.
 ---
 
-# ns-tab
-
 ## Introduction
 
 > The singular tab that dictates what the area is about.

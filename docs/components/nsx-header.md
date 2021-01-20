@@ -2,8 +2,6 @@
 description: Experience | Header component.
 ---
 
-# nsx-header
-
 ## Introduction
 
 > Primary navigation for the British Gas website

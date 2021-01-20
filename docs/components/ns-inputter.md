@@ -2,8 +2,6 @@
 description: Molecule | Inputter component.
 ---
 
-# ns-inputter
-
 ## Introduction
 
 The ns-inputter is a multi-purpose wrapper component that helps with the display of the following form control types:

@@ -2,8 +2,6 @@
 description: Molecule | CTA component.
 ---
 
-# ns-cta
-
 ## Introduction
 
 > A call-to-action allows users to take action once they are ready for it.

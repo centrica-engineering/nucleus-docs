@@ -1,4 +1,5 @@
 ---
+title: Events
 description: List of Nucleus events including Nucleus Sessions.
 ---
 

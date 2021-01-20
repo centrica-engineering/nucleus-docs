@@ -2,8 +2,6 @@
 description: Organism | Appointment picker component.
 ---
 
-# ns-appointment-picker
-
 ## Introduction
 
 > `ns-appointment-picker` is used to select a date and time slot for an appointment.

@@ -2,8 +2,6 @@
 description: Atom | Illustration component.
 ---
 
-# ns-illustration
-
 ## Introduction
 
 > Illustrations are visual symbols used to bring the warmth of British Gas brand and personality to the website.

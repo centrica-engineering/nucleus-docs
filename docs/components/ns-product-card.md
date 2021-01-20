@@ -2,8 +2,6 @@
 description: Organism | Product card component.
 ---
 
-# ns-product-card
-
 ## Introduction
 
 > The product card enables users to browse, compare and choose a product.

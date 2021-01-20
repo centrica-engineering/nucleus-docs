@@ -1,8 +1,7 @@
 ---
+title: Accessibility
 description: Ensuring that no one is left out.
 ---
-
-# Accessibility
 
 Nucleus cares deeply about inclusivity. To help everyone, we aim to understand the impact each and every decision we make.
 

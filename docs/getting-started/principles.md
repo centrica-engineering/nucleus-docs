@@ -1,9 +1,7 @@
 ---
+title: Principles
 description: Nucleus principles.
 ---
-
-# Principles
-
 
 ## Introduction
 

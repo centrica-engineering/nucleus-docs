@@ -1,8 +1,9 @@
 ---
+title: Asking for information
 description: Asking for information documentation.
 ---
 
-# Introduction
+## Introduction
 
 Asking for information plays a key part in our customers’ experience with British Gas. All functional journeys include elements of data capture and asking a customer to make a choice. Grouping questions, information, and choices together in logical and relatable sections can make our experiences as intuitive as possible.
 

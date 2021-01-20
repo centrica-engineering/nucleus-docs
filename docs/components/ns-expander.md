@@ -2,8 +2,6 @@
 description: Molecule | Expander component.
 ---
 
-# ns-expander
-
 ## Introduction
 
 > Expanders are used to show or hide content.

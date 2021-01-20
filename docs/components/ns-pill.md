@@ -2,8 +2,6 @@
 description: Atom | Pill component.
 ---
 
-# ns-pill
-
 ## Introduction
 
 > A pill is a small coloured highlight which can be used to draw a customer's attention to a piece of information.

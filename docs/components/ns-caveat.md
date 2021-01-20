@@ -2,8 +2,6 @@
 description: Molecule | Caveat component.
 ---
 
-# ns-caveat
-
 ## Introduction
 
 > Caveats provide additional information and legal details to content.

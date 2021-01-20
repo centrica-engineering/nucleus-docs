@@ -1,8 +1,7 @@
 ---
+title: Our process
 description: Understanding our processes
 ---
-
-# Our process
 
 ![How the Nucleus team works](https://user-images.githubusercontent.com/45626534/95470033-37185880-0978-11eb-83cb-79bea6fe1e9a.png)
 

@@ -1,8 +1,7 @@
 ---
+title: Confirmation
 description: Page type | Confirmation
 ---
-
-# Confirmation
 
 ## Introduction
 

@@ -2,8 +2,6 @@
 description: Molecule | Form component.
 ---
 
-# ns-form
-
 ## Introduction
 
 > The form component is used to contain ns-inputters and manage their validations.

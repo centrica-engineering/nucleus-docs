@@ -1,8 +1,7 @@
 ---
+title: Names of things
 description: How and why we name all the things
 ---
-
-# Names of things
 
 ## Introduction
 

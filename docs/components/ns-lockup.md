@@ -2,8 +2,6 @@
 description: Organism | Lockup component.
 ---
 
-# ns-lockup
-
 ## Introduction
 
 > Lockups are a promotional component that signpost to a product or service, highlighting key messages.

@@ -1,8 +1,7 @@
 ---
+title: Home page
 description: Page type | Home page
 ---
-
-# Home page
 
 ## Introduction
 

@@ -2,8 +2,6 @@
 description: Molecule | Selector component.
 ---
 
-# ns-selector
-
 ## Introduction
 
 Selectors are used to group an image or illustration with a label into a card. They showcase a product, service or option, which users can select. They can function as single, or multiple selection for the user.

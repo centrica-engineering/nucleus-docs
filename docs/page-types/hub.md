@@ -1,8 +1,7 @@
 ---
+title: Hub page
 description: Page type | Hub page
 ---
-
-# Hub page
 
 ## Introduction
 

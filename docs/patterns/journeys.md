@@ -1,8 +1,9 @@
 ---
+title: Journeys
 description: Journey patterns documentation.
 ---
 
-# Introduction
+## Introduction
 
 Creating engaging and inclusive journeys is one of the highest priorities for any product team.
 

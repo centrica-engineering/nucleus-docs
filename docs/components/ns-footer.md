@@ -2,8 +2,6 @@
 description: Organism | Footer component.
 ---
 
-# ns-footer
-
 ## Introduction
 
 > Required links and information that need to be repeated on every page.

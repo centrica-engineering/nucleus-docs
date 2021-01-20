@@ -1,8 +1,7 @@
 ---
+title: Typography
 description: British Gas typeface - BG Flame
 ---
-
-# Typography
 
 ## Typeface
 

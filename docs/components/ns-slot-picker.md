@@ -2,8 +2,6 @@
 description: Molecule | Slot picker component.
 ---
 
-# ns-slot-picker
-
 ## Introduction
 
 > Ns-slot-picker is used to allow the user to select a time slot from one or more dates and time slots.

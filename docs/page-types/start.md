@@ -1,8 +1,7 @@
 ---
+title: Start
 description: Page type | Start
 ---
-
-# Start
 
 ## Introduction
 

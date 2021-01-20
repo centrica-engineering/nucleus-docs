@@ -1,8 +1,7 @@
 ---
+title: Photography
 description: Nucleus guidelines for use of photography.
 ---
-
-# Photography
 
 ## Aspect ratios
 

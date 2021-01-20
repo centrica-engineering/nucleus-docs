@@ -2,8 +2,6 @@
 description: Atom | Table component.
 ---
 
-# ns-table
-
 ## Introduction
 
 > `ns-table` displays information in a grid-like format of rows and columns. It organizes information in a way that’s easy to scan, so that users can look for patterns and insights.

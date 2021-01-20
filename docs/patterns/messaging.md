@@ -1,8 +1,9 @@
 ---
+title: Messaging
 description: Messaging patterns.
 ---
 
-# Introduction
+## Introduction
 
 We have a number of methods available to display messages and information to the customer. 
 

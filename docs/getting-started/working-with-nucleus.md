@@ -1,8 +1,7 @@
 ---
+title: Working with Nucleus
 description: How to work with the Nucleus Design System
 ---
-
-# Working with Nucleus
 
 ## Where to start
 

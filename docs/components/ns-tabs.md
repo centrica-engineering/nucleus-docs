@@ -2,8 +2,6 @@
 description: Organism | Tabs component.
 ---
 
-# ns-tabs
-
 ## Introduction
 
 > Tabs provide organisation of content separated within the same context.

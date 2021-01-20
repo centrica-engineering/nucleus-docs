@@ -2,8 +2,6 @@
 description: Organism | Accordion component.
 ---
 
-# ns-accordion
-
 ## Introduction
 
 > Accordion enables users to expand and collapse multiple sections of content.

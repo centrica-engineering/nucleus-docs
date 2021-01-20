@@ -2,8 +2,6 @@
 description: Atom | Video component.
 ---
 
-# ns-video
-
 ## Introduction
 
 > A video allows British Gas to share more visual and engaging content.

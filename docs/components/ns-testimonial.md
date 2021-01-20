@@ -2,8 +2,6 @@
 description: Atom | Testimonial component.
 ---
 
-# ns-testimonial
-
 ## Introduction
 
 A new component to display all the lovely things that people say about us. The testimonial should be used as an enticement to buy British Gas products and services. It works by providing the customer with confidence.

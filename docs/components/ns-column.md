@@ -2,8 +2,6 @@
 description: Atom | Column component.
 ---
 
-# ns-column
-
 ## Introduction
 
 > Brings flexibility and control to responsive layouts.

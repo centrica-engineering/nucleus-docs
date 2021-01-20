@@ -2,8 +2,6 @@
 description: Molecule | Date picker component.
 ---
 
-# ns-datepicker
-
 ## Introduction
 
 > Use to help the user enter a date in a form.
