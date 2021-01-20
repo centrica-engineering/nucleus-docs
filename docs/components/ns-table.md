@@ -2,6 +2,8 @@
 description: Atom | Table component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > `ns-table` displays information in a grid-like format of rows and columns. It organizes information in a way that’s easy to scan, so that users can look for patterns and insights.
@@ -42,20 +44,7 @@ The table component consumes basic HTML table markup, which makes it accessible 
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-table).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-table" caption="" %}
-
-```html
-<ns-table>
-  <table>
-    <caption> ... </caption>
-    <thead> ... </thead>
-    <tbody> ... </tbody>
-    <tfoot> ... </tfoot>
-  </table>
-</ns-table>
-```
+<Storybook story="ns-table--data-table"></Storybook>
 
 ## Component relationship
 

@@ -2,6 +2,8 @@
 description: Molecule | Form component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > The form component is used to contain ns-inputters and manage their validations.
@@ -22,18 +24,7 @@ The `ns-form` component is a wrapper for `ns-inputters`. It's main purpose is to
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-form--form)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-form" caption="" %}
-
-```markup
-<ns-form>
-  <ns-inputter validation='["isRequired"]'>
-    ...
-  </ns-inputter>
-  <ns-cta>Submit</ns-cta>
-</ns-form>
-```
+<Storybook story="form-ns-form--multi-input-form"></Storybook>
 
 ## Component relationship
 

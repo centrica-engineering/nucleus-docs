@@ -2,6 +2,8 @@
 description: Molecule | Slot picker component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > Ns-slot-picker is used to allow the user to select a time slot from one or more dates and time slots.
@@ -18,17 +20,7 @@ Ns-slot-picker is used any time you want a customer to select a time slot. This 
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-slot-picker)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-slot-picker" caption="" %}
-
-ns-slot-picker’s main property/attribute is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
-
-```html
-<ns-form>
-  <ns-slot-picker></ns-slot-picker>
-</ns-form>
-```
+<Storybook story="ns-slot-picker--standard"></Storybook>
 
 ## Usage example 
 

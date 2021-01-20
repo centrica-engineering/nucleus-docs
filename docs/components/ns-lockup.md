@@ -2,6 +2,8 @@
 description: Organism | Lockup component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > Lockups are a promotional component that signpost to a product or service, highlighting key messages.
@@ -47,23 +49,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--lockup-decoration-panel).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-lockup" caption="" %}
-
-```markup
-<ns-lockup type="lockbox">
-  <h2 slot="heading">
-    <span class="h5">Our Home Services.</span>
-    <span class="h1 enlighten"><b>Your home should just work,</b> we get that</span>
-  </h2>
-  <p slot="paragraph">We bring you the latest offers on boilers, repairs and more. And we're always here when you need us.</p>
-  <a slot="cta" href="#!">
-    <ns-cta type="direct">View HomeCare</ns-cta>
-  </a>
-  <ns-image slot="image" ratio="4x3" src="/aem6/content/dam/britishgas/images/ns/image4_3.png"></ns-image>
-</ns-lockup>
-```
+<Storybook story="ns-lockup--lockbox"></Storybook>
 
 ## Component relationship
 

@@ -2,6 +2,8 @@
 description: Organism | Tabs component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > Tabs provide organisation of content separated within the same context.
@@ -38,29 +40,7 @@ Related content can be separated into clearly labelled sections.
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-tabs--tabs).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-tabs" caption="" %}
-
-```markup
-<ns-tabs>
-  <ns-tab slot="tab">Electricity</ns-tab>
-  <ns-panel slot="panel">
-
-    ...
-
-  </ns-panel>
-  <ns-tab slot="tab">Home Services</ns-tab>
-  <ns-panel slot="panel">
-
-    ...
-
-  </ns-panel>
-
-  ...
-
-</ns-tabs>
-```
+<Storybook story="ns-tabs--tabs"></Storybook>
 
 ## Component relationship
 

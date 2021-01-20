@@ -2,6 +2,8 @@
 description: Atom | Pill component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > A pill is a small coloured highlight which can be used to draw a customer's attention to a piece of information.
@@ -50,13 +52,7 @@ A `red` or `green-light` pill can be used to drawing attention to important cust
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-pill--standard)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-pill" caption="" %}
-
-```markup
-    <ns-pill colour="yellow" icon="rewards" ></ns-pill>
-```
+<Storybook story="ns-pill--standard"></Storybook>
 
 ## Component relationship
 

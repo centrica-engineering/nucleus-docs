@@ -2,6 +2,8 @@
 description: Molecule | Date picker component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > Use to help the user enter a date in a form.
@@ -33,16 +35,7 @@ Some browsers do not support `type='date'` (e.g. Safari on Desktop). The compone
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-datepicker)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-datepicker" caption="" %}
-
-```html
-<ns-form>
-  <ns-datepicker label="Date" value="2020-12-31"></ns-datepicker>
-</ns-form>
-```
-
+<Storybook story="form-ns-datepicker--standard"></Storybook>
 
 ## Component Relationship
 

@@ -2,6 +2,8 @@
 description: Organism | Accordion component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > Accordion enables users to expand and collapse multiple sections of content.
@@ -33,22 +35,7 @@ If more than eight are used we should stop to reassess why and perhaps breakdown
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-accordion--singular)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-accordion" caption="" %}
-
-```markup
-<ns-accordion>
-  <h3 slot="heading">Frequently asked questions</h3>
-  <ns-expander open="false">
-    <h4 slot="heading">Can I manage my account online?</h4>
-    <p>
-      Yes, with an online account you can arrange a service visit, find out whatʼs happening with your appointment, submit a meter reading and book an engineer.
-      Weʼve even got a free smartphone app.
-    </p>
-  </ns-expander>
-</ns-accordion>
-```
+<Storybook story="ns-accordion--singular"></Storybook>
 
 ## Component relationship
 

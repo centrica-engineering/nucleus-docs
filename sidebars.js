@@ -20,6 +20,9 @@ dirsToIncludeInSideBar.forEach(dir => {
   docsSidebar[prettyFileName(dir)] = dirFiles;
 });
 
+// All of the above is because docusaurus can't auto generate the sidebar from a directory
+// See: https://github.com/facebook/docusaurus/issues/3464
+
 module.exports = {
   someSidebar: {
     Docs: [

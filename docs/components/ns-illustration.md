@@ -2,6 +2,8 @@
 description: Atom | Illustration component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > Illustrations are visual symbols used to bring the warmth of British Gas brand and personality to the website.
@@ -21,13 +23,7 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--gas).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-illustration" caption="" %}
-
-```markup
-<ns-illustration type="gas"></ns-illustration>
-```
+<Storybook story="ns-illustration--appliance"></Storybook>
 
 ## Component relationship
 

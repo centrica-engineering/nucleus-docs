@@ -2,6 +2,8 @@
 description: Atom | Tab component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > The singular tab that dictates what the area is about.
@@ -26,13 +28,7 @@ Please see [ns-tabs](https://docs.britishgas.design/components/ns-tabs) for full
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-tab--tab).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-tab" caption="" %}
-
-```markup
-<ns-tab>Electricity</ns-tab>
-```
+<Storybook story="ns-tab--tab"></Storybook>
 
 ## Component relationship
 

@@ -2,6 +2,8 @@
 description: Molecule | Form component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > The ns-fieldset component is used to group related ns-inputters.
@@ -25,22 +27,7 @@ https://www.w3.org/WAI/WCAG21/Techniques/html/H71
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-fieldset--standard)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-fieldset" caption="" %}
-
-```markup
-<ns-form>
-  <ns-fieldset legend="legend text">
-    <ns-inputter>
-      ...
-    </ns-inputter>
-    <ns-inputter>
-      ...
-    </ns-inputter>
-  </ns-fieldset>
-</ns-form>
-```
+<Storybook story="form-ns-fieldset--standard"></Storybook>
 
 ## Component relationship
 

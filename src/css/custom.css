@@ -35,7 +35,12 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-iframe {
+.storybook-embed {
+  margin: 0 0 var(--ifm-paragraph-margin-bottom);
+}
+
+.storybook-embed iframe {
+  display: block;
   width: 100%;
   min-height: 544px;
   height: auto;

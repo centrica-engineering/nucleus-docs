@@ -2,6 +2,8 @@
 description: Organism | Footer component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > Required links and information that need to be repeated on every page.
@@ -24,13 +26,7 @@ It also holds information about the company.
 
 ## Usage
 
-To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-footer--component).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-footer" %}
-
-```markup
-<ns-footer></ns-footer>
-```
+<Storybook story="ns-footer--standard"></Storybook>
 
 ## Component relationship
 

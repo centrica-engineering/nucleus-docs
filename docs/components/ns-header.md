@@ -2,6 +2,8 @@
 description: Organism | Header component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > Primary navigation for the website
@@ -29,13 +31,7 @@ The default choice of header across the main British Gas UK home site should be 
 
 ## Usage
 
-To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-header--component).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-header" %}
-
-```markup
-<ns-header></ns-header>
-```
+<Storybook story="ns-header--standard"></Storybook>
 
 ## Component relationship
 

@@ -2,6 +2,8 @@
 description: Molecule | Selector component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 Selectors are used to group an image or illustration with a label into a card. They showcase a product, service or option, which users can select. They can function as single, or multiple selection for the user.
@@ -57,44 +59,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ## Usage
 
-Ns-selector can be single selection (radio) or multiple selection (checkbox) it should be placed within a ns-inputter.
-
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-inputter--selectorradio)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-selector" caption="" %}
-
-```html
-<ns-inputter class="triple" validation="['isRequired']" heading="Listicle street art shaman">
-
-  <ns-selector decoration="gas">
-    <input type="radio" id="item-1" name="question" value="crucifix">
-    <label for="item-1">Raclette crucifix messenger bag</label>
-    <div slot="description">
-      <ns-pill colour="yellow" icon="tag">50% off</ns-pill>
-      <ul class="ul-bullet">
-        <li>Leggings synth normcore wayfarers</li>
-        <li>Mlkshk trust fund helvetica banjo drinking</li>
-        <li>Gochujang semiotics bicycle</li>
-      </ul>
-    </div>
-  </ns-selector>
-
-  <ns-selector decoration="electricity">
-    <input type="radio" id="item-2" name="question" value="hammock">
-    <label for="item-2">Pug enamel pin post</label>
-    <div slot="description">
-      <ns-pill colour="yellow" icon="tag">50% off</ns-pill>
-      <ul class="ul-bullet">
-        <li>Wolf plaid crucifix hammock</li>
-        <li>Kale chips live-edge</li>
-        <li>Subway tile squid godard occupy shabby chic blog</li>
-      </ul>
-    </div>
-  </ns-selector>
-
-</ns-inputter>
-```
-
+<Storybook story="form-ns-selector--radio-with-image"></Storybook>
 
 ## Component relationship
 

@@ -2,6 +2,8 @@
 description: Molecule | Inputter component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 The ns-inputter is a multi-purpose wrapper component that helps with the display of the following form control types:
@@ -228,16 +230,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-inputter--text).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter" caption="" %}
-
-```markup
-<ns-inputter validation="['isRequired']" helper="So we can send you love letters" name="first-name">
-  <label slot="label">First name</label>
-  <input type="text">
-</ns-inputter>
-```
+<Storybook story="form-ns-inputter--text-input"></Storybook>
 
 ## Component relationship
 

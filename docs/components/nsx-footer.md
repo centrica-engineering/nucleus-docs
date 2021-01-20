@@ -2,6 +2,8 @@
 description: Experience | Footer component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 The footer holds legally required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps.
@@ -20,12 +22,7 @@ If a link needs to be updated for the website footer, it needs to be done in thi
 
 ## Usage
 
-To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-footer--standard).
-
-
-```markup
-<nsx-footer></nsx-footer>
-```
+<Storybook story="nsx-footer--standard"></Storybook>
 
 ## Component relationship
 

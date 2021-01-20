@@ -2,6 +2,8 @@
 description: Molecule | CTA component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > A call-to-action allows users to take action once they are ready for it.
@@ -56,15 +58,7 @@ You can see the live example of the loading state on [storybook](https://www.bri
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-cta--direct-link).
-
-`ns-cta` should always live inside another component.
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-cta" caption="" %}
-
-```markup
-<ns-cta>Learn more about Hive</ns-cta>
-```
+<Storybook story="ns-cta--direct-link"></Storybook>
 
 ## Component relationship
 

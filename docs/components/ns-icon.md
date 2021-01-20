@@ -2,6 +2,8 @@
 description: Atom | Icon component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > Icons are visual symbols used to represent functions, products and services.
@@ -26,13 +28,7 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--gas).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-icon" caption="" %}
-
-```markup
-<ns-icon type="gas"></ns-icon>
-```
+<Storybook story="ns-icon--appliance"></Storybook>
 
 ## Component relationship
 

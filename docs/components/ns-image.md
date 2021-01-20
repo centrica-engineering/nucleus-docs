@@ -2,6 +2,8 @@
 description: Atom | Image component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > An image allows British Gas to share visual content.
@@ -39,13 +41,7 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-images--lazy-loading-img).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-image" caption="" %}
-
-```markup
-<ns-image ratio="16x9" src="https://www.britishgas.co.uk/aem6/content/dam/britishgas/images/jumbotron/home-services/20-Home-Services-wilbur.jpg"></ns-image>
-```
+<Storybook story="ns-image--ratio-4-x-3"></Storybook>
 
 ## Component relationship
 

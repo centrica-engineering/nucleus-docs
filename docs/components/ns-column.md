@@ -2,6 +2,8 @@
 description: Atom | Column component.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+
 ## Introduction
 
 > Brings flexibility and control to responsive layouts.
@@ -27,13 +29,7 @@ Some components (e.g. `ns-cta`) have a minimum width, care should be taken so th
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-column--standard)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-column" caption="" %}
-
-```markup
-    <ns-column basketballcourt="" hockeypitch="" footballpitch="" rugbypitch="" polofield=""></ns-column>
-```
+<Storybook story="ns-column--standard"></Storybook>
 
 ## Component relationship
 
