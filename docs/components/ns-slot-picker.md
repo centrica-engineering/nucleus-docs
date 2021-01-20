@@ -34,7 +34,7 @@ ns-slot-picker’s main property/attribute is `slotData`.  This would typically 
 
 ## Usage example 
 
-<img width="642" alt="Screen Shot 2020-11-03 at 6 25 47 PM" src="https://user-images.githubusercontent.com/3082819/98025907-3b625500-1e02-11eb-8297-9be9525629ff.png">
+![Slot picker](https://user-images.githubusercontent.com/3082819/98025907-3b625500-1e02-11eb-8297-9be9525629ff.png)
 
 ## Specification
 

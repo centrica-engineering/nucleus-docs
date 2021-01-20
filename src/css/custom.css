@@ -45,5 +45,5 @@ iframe {
   overflow: auto;
   position: relative;
   border-radius: var(--ifm-global-radius);
-  /* z-index:999; */
+  z-index: calc(var(--ifm-z-index-fixed) - 1);
 }

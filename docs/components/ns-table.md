@@ -40,7 +40,7 @@ The table component consumes basic HTML table markup, which makes it accessible 
 * Think about the experience on a smaller screen size.
 * The `ns-table` component adds all the necessary Aria tags to the table to make it accessible for screen readers.
 * Keyboard controls are automatically added to the table to make it perform as a data grid.  You can select cells and use the arrow keys to navigate.
-* If your table has table headers <th> in the first column, the component will make these “sticky” so that the table data can be scrolled horizontally whilst the first column headers stay in place.
+* If your table has table headers `<th>` in the first column, the component will make these “sticky” so that the table data can be scrolled horizontally whilst the first column headers stay in place.
 
 ## Usage
 

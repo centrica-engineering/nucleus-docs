@@ -87,7 +87,7 @@ Selects should be used to select an item from a list of many choices. Selects ca
 
 Textareas are used for capturing a longer answer. Always consider whether or not you need to ask a customer a free form question before doing so.
 
-You can [see an example of <ns-inputter> textarea here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--textarea).
+You can [see an example of `<ns-inputter>` textarea here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--textarea).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
