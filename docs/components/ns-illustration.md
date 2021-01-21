@@ -37,7 +37,7 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `type`| `string`  | `gas` | `appliance`, `boiler`, `boilerRepair`, `bulb`, `centralHeating`, `clock`, `dualFuel`, `electrics`, `electricVehicle`, `engineer`, `gas`, `help`, `home`, `oven`, `pipeAndDrain`, `protect`, `tap`, `savings` [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustration--appliance) | Picks the illustration that is to be shown. |
+| `type`| `string`  | `gas` | `appliance`, `boiler`, `boilerRepair`, `bulb`, `centralHeating`, `clock`, `dualFuel`, `electrics`, `electricVehicle`, `engineer`, `gas`, `help`, `home`, `oven`, `pipeAndDrain`, `protect`, `tap`, `savings`, `yellowShield` See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustration--appliance) | Picks the illustration that is to be shown. |
 | `size` | `number` | `''` | `''`, `1`, `2`, `3`, `4`, `5` | Changes the size of the illustration, with 1 being the smallest. |
 | `inactive` | `string` | `false` | `true`, `false` | Will grey out the illustration. |
 
