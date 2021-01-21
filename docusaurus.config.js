@@ -83,6 +83,19 @@ module.exports = {
     },
   },
   themes: ['@docusaurus/theme-live-codeblock'],
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            from: '/docs/',
+            to: '/docs/getting-started/introduction',
+          },
+        ]
+      }
+    ]
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
