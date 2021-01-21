@@ -40,7 +40,7 @@ module.exports = {
             },
             {
               label: 'Nucleus Docs',
-              to: 'https://github.com/ConnectedHomes/nucleus-docs',
+              to: 'https://github.com/centrica-engineering/nucleus-docs',
             }
           ],
         },
@@ -87,7 +87,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/ConnectedHomes/nucleus-docs/edit/master/',
+            'https://github.com/centrica-engineering/nucleus-docs/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

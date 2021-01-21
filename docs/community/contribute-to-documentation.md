@@ -11,7 +11,7 @@ Our documentation is rather important. The more help we have the better it will 
 
 If you find something that you'd like to improve, change, adapt or remove; click the 'Edit on GitHub' link.
 
-This will take you to the same page within our GitHub documentation repository [https://github.com/ConnectedHomes/nucleus-docs](https://github.com/ConnectedHomes/nucleus-docs).
+This will take you to the same page within our GitHub documentation repository [https://github.com/centrica-engineering/nucleus-docs](https://github.com/centrica-engineering/nucleus-docs).
 
 Find the pencil icon and edit this file.
 
