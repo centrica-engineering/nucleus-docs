@@ -2,7 +2,7 @@
 description: Atom | Table component.
 ---
 
-# ns-table
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -40,24 +40,11 @@ The table component consumes basic HTML table markup, which makes it accessible 
 * Think about the experience on a smaller screen size.
 * The `ns-table` component adds all the necessary Aria tags to the table to make it accessible for screen readers.
 * Keyboard controls are automatically added to the table to make it perform as a data grid.  You can select cells and use the arrow keys to navigate.
-* If your table has table headers <th> in the first column, the component will make these “sticky” so that the table data can be scrolled horizontally whilst the first column headers stay in place.
+* If your table has table headers `<th>` in the first column, the component will make these “sticky” so that the table data can be scrolled horizontally whilst the first column headers stay in place.
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-table).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-table" caption="" %}
-
-```html
-<ns-table>
-  <table>
-    <caption> ... </caption>
-    <thead> ... </thead>
-    <tbody> ... </tbody>
-    <tfoot> ... </tfoot>
-  </table>
-</ns-table>
-```
+<Storybook story="ns-table--data-table"></Storybook>
 
 ## Component relationship
 

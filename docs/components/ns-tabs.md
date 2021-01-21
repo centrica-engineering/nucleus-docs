@@ -2,7 +2,7 @@
 description: Organism | Tabs component.
 ---
 
-# ns-tabs
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -16,7 +16,7 @@ Related content can be separated into clearly labelled sections.
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Icon | This is the icon inside the tab. This should relate to the label text. The [specification table](https://docs.britishgas.design/components/ns-tabs#specification-for-individual-tab) has a list of options. |
+| A | Icon | This is the icon inside the tab. This should relate to the label text. The [specification table](#specification-for-individual-tab) has a list of options. |
 | B | Heading | Use 1 or 2 words to inform the user of information found within each panel below. |
 | C | Selected Tab | This is the visual state of a selected tab. Used to show the user which content is visible below. |
 | D | Panel | This is the area in which the content for each `ns-tab` will be displayed. |
@@ -40,29 +40,7 @@ Related content can be separated into clearly labelled sections.
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-tabs--tabs).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-tabs" caption="" %}
-
-```markup
-<ns-tabs>
-  <ns-tab slot="tab">Electricity</ns-tab>
-  <ns-panel slot="panel">
-
-    ...
-
-  </ns-panel>
-  <ns-tab slot="tab">Home Services</ns-tab>
-  <ns-panel slot="panel">
-
-    ...
-
-  </ns-panel>
-
-  ...
-
-</ns-tabs>
-```
+<Storybook story="ns-tabs--tabs"></Storybook>
 
 ## Component relationship
 

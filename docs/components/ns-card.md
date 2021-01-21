@@ -2,7 +2,7 @@
 description: Molecule | Card component.
 ---
 
-# ns-card
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -21,7 +21,7 @@ Cards are used to apply a container around a related grouping of information; th
 | A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | B | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | C | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
-| D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](https://docs.britishgas.design/components/ns-card#specification) has a list of options. |
+| D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](#specification) has a list of options. |
 
 ### Support Image Card
 
@@ -62,19 +62,7 @@ Cards are used to apply a container around a related grouping of information; th
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-card--section).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-card" caption="" %}
-
-```markup
-<ns-card type="section" decoration="bulb">
-  <h3 slot="heading">Get energy with us</h3>
-  <p slot="paragraph">We've got a tariff to suit every home and family.</p>
-  <a slot="cta" href="#!">
-    <ns-cta type="direct">Get a quote</ns-cta>
-  </a>
-</ns-card>
-```
+<Storybook story="ns-card--section"></Storybook>
 
 ### Using with ns-pill
 
@@ -102,7 +90,7 @@ If using with a a type of `support` there is also the option to place the pill o
 </ns-card>
 ```
 
-More details on how to use the ns-pill can be found on the [ns-pill documentation](https://docs.britishgas.design/components/ns-pill)
+More details on how to use the ns-pill can be found on the [ns-pill documentation](components/ns-pill.md)
 
 
 
@@ -146,7 +134,7 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 
 ### CTA
 
-* This should be an anchor with the [ns-cta](https://docs.britishgas.design/components/ns-cta) or just the [ns-cta](https://docs.britishgas.design/components/ns-cta)
+* This should be an anchor with the [ns-cta](components/ns-cta.md) or just the [ns-cta](components/ns-cta.md)
 
 ## Feedback
 
@@ -157,6 +145,6 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 
 ## Related links
 
-* [ns-pill](https://docs.britishgas.design/components/ns-pill)
+* [ns-pill](components/ns-pill.d)
 * [ns-card section panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--section-cards).
 * [ns-card support panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--support-image-cards).

@@ -2,7 +2,7 @@
 description: Organism | Appointment picker component.
 ---
 
-# ns-appointment-picker
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -23,9 +23,7 @@ description: Organism | Appointment picker component.
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-appointment-picker)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-appointment-picker" caption="" %}
+<Storybook story="ns-appointment-picker--standard"></Storybook>
 
 The main property/attribute of `ns-appointment-picker` is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
 

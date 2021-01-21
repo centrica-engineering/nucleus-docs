@@ -1,8 +1,7 @@
 ---
+title: Modular scale
 description: Introduction to modular scale and how it is implemented in Nucleus.
 ---
-
-# Modular scale
 
 > The implementation of modular scale simplifies and beautifies our designs.
 
@@ -20,7 +19,7 @@ Taking this approach and applying it to our Structure, Typography, Spacing and e
 
 **1.5**
 
-We have six [viewports](https://docs.britishgas.design/foundation/viewports), the smallest width being 320px. This is our initial value that all the other viewports are based from.
+We have six [viewports](foundations/viewports.md), the smallest width being 320px. This is our initial value that all the other viewports are based from.
 
 We use the formula _320 * 1.5<sup>x</sup>_  to calculate the sizes
 
@@ -33,7 +32,7 @@ _320 * 1.5<sup>3.4</sup>_ = **1270**
 _320 * 1.5<sup>4</sup>_  = **1620**  
 _320 * 1.5<sup>5</sup>_  = **2430**
 
-Read more about our [Viewports](https://docs.britishgas.design/foundation/viewports) and see our table of [Nucleus viewport sizes](https://docs.britishgas.design/foundation/viewports).
+Read more about our [Viewports](foundations/viewports.md) and see our table of [Nucleus viewport sizes](foundations/viewports.md).
 
 ### Typography
 
@@ -49,5 +48,5 @@ These are applied to our Viewport sizes in the following way:
 🏑 Hockey, ⚽ Football & 🏀 Basketball uses `Minor Third`.  
 🎾 Tennis & 🔵 Squash uses `Major Second`.
 
-Read more about our [Typography](https://docs.britishgas.design/foundation/typography) and how Modular Scale applies.
+Read more about our [Typography](foundations/typography.md) and how Modular Scale applies.
 

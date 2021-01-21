@@ -1,8 +1,7 @@
 ---
+title: Structure
 description: The glue that holds our components together.
 ---
-
-# Structure
 
 The word 'structure' in this context is used as the term to encapsulate how a document and pieces of a document are put together.
 

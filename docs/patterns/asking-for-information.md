@@ -1,8 +1,9 @@
 ---
+title: Asking for information
 description: Asking for information documentation.
 ---
 
-# Introduction
+## Introduction
 
 Asking for information plays a key part in our customers’ experience with British Gas. All functional journeys include elements of data capture and asking a customer to make a choice. Grouping questions, information, and choices together in logical and relatable sections can make our experiences as intuitive as possible.
 
@@ -16,7 +17,7 @@ The `lakeside` variant of the `ns-landmark`, is ideal for introducing and framin
 
 The `ns-form` component is a wrapper used to contain all your form controls. It’s primary purpose within the design system is to manage the validations of your form controls. Semantically it sits at the top of the hierarchy.
 
-You can [read more information about how to use `<ns-form>` here](https://docs.britishgas.design/components/ns-form)
+You can [read more information about how to use `<ns-form>` here](components/ns-form.md)
 
 ## `ns-fieldset`
 
@@ -24,11 +25,11 @@ The `ns-fieldset` component is an element that sits directly in an `ns-form`. We
 
 It is unnecessary to use the `fieldset` and `legend` when presenting the customer with a single input field relating to one piece of information.
 
-You can [read more information about how to use `<ns-fieldset>` here](https://docs.britishgas.design/components/ns-fieldset)
+You can [read more information about how to use `<ns-fieldset>` here](components/ns-fieldset.md)
 
 ## Grouping your questions
 
-As expressed in the [journey patterns documentation](https://docs.britishgas.design/patterns/journeys) we advise that you approach each functional journey in the same way - breaking down the journey into smaller sections, asking the customer a single question or group of questions at a time. The idea is to reduce the cognitive load and help a customer complete what they need to do as efficiently as possible.
+As expressed in the [journey patterns documentation](patterns/journeys.md) we advise that you approach each functional journey in the same way - breaking down the journey into smaller sections, asking the customer a single question or group of questions at a time. The idea is to reduce the cognitive load and help a customer complete what they need to do as efficiently as possible.
 
 ### Group by theme
 
@@ -62,7 +63,7 @@ Along with these, you can use a combination of validation, mask, and separator t
 
 ![Mask - used for meter readings](https://user-images.githubusercontent.com/45626534/95720262-eac76400-0c68-11eb-9378-0009e25087cc.jpg)
 
-**Further research:** We are currently developing pattern documention for the use of these patterns, by doing this we look to ensure that there is a consistent approach to asking customers for this information across customer journeys.
+**Further research:** We are currently developing pattern documentation for the use of these patterns, by doing this we look to ensure that there is a consistent approach to asking customers for this information across customer journeys.
 
 ## Radio buttons and checkboxes
 
@@ -73,7 +74,7 @@ Radio buttons and checkboxes are automatically grouped together in a `<fieldset>
 ![Checkboxes](https://user-images.githubusercontent.com/45626534/95720257-e9963700-0c68-11eb-8980-26d511829195.jpg)
 ![Radio buttons](https://user-images.githubusercontent.com/45626534/95720264-eac76400-0c68-11eb-9619-4453cb5171d1.jpg)
 
-You can [read more information about how to use `<ns-inputter>` here](https://docs.britishgas.design/components/ns-inputter)
+You can [read more information about how to use `<ns-inputter>` here](components/ns-inputter.md)
 See [`<ns-inputter>` on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--text-input)
 
 ## Feedback

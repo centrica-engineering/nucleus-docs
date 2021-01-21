@@ -1,4 +1,5 @@
 ---
+title: Events
 description: List of Nucleus events including Nucleus Sessions.
 ---
 
@@ -123,7 +124,7 @@ Highlights of our experience:
 
 [RFC Project Board](https://github.com/ConnectedHomes/nucleus/projects/6) [†]
 
-[Nucleus release 1.1.4](https://docs.britishgas.design/community/releases#version-1-1-4)
+[Nucleus release 1.1.4](community/releases.md#version-1140)
 
 ## 2019-07-30 / Drop in session
 
@@ -297,7 +298,7 @@ Highlights of our experience:
 
 ## 2018-12-13 / Community and Contributing workshop
 
-* Understanding what community and contributing to Nucleus [means](https://docs.britishgas.design/getting-started/best-practices) to UX designers.
+* Understanding what community and contributing to Nucleus [means](getting-started/introduction.md) to UX designers.
 * Co-creating first drafts of contribution processes.
 
 [†] This can only be accessed from approved Github accounts, please make sure you are logged in to access.

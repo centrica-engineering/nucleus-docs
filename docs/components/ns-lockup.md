@@ -2,7 +2,7 @@
 description: Organism | Lockup component.
 ---
 
-# ns-lockup
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -21,7 +21,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 | C | Content | `ns-lockup` can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a maximum of 2 short paragraphs, each with no more than 3 lines each. Can contain bold copy `<b>`, inline links `<a>`,  lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | D | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
 | E | Image | There is a choice of two image sizes depending on your choice of Lockup - the first has an aspect ratio of 4:3, the dimensions should be 720x540px, the second has an aspect ratio of 1:1, the dimensions should be 720x720px. Both versions should be jpg file types, and the file size should be no more than 100kb. To see which image you can use - please see the <b>Image Guidence</b> section below. Don't use imagery with white backgrounds. Please make sure you work with a designer when selecting any imagery for the `ns-lockup`. |
-| F | Decoration | Use this optional illustration to support and highlight the content. The illustration should relate to the product or service you are talking about. Only available on the Lockjaw and Locknut variants. The [specification table](https://docs.britishgas.design/components/ns-lockup#specification) has a list of options. |
+| F | Decoration | Use this optional illustration to support and highlight the content. The illustration should relate to the product or service you are talking about. Only available on the Lockjaw and Locknut variants. The [specification table](#specification) has a list of options. |
 
 ### Image guidance
 
@@ -49,23 +49,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--lockup-decoration-panel).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-lockup" caption="" %}
-
-```markup
-<ns-lockup type="lockbox">
-  <h2 slot="heading">
-    <span class="h5">Our Home Services.</span>
-    <span class="h1 enlighten"><b>Your home should just work,</b> we get that</span>
-  </h2>
-  <p slot="paragraph">We bring you the latest offers on boilers, repairs and more. And we're always here when you need us.</p>
-  <a slot="cta" href="#!">
-    <ns-cta type="direct">View HomeCare</ns-cta>
-  </a>
-  <ns-image slot="image" ratio="4x3" src="/aem6/content/dam/britishgas/images/ns/image4_3.png"></ns-image>
-</ns-lockup>
-```
+<Storybook story="ns-lockup--lockbox"></Storybook>
 
 ## Component relationship
 

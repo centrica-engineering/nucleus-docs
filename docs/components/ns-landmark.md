@@ -2,7 +2,7 @@
 description: Organism | Landmark component.
 ---
 
-# ns-landmark
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -141,78 +141,21 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ## Usage
 
-To see examples of the Summit Landmark visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--summit).
-
-To see examples of the Hillside Landmark visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--hillside).
-
-To see examples of the Lakeside Landmark visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--lakeside).
-
-To see examples of the Valley Landmark visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--valley).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-landmark" caption="" %}
-
 ### Summit
 
-```markup
-<ns-landmark type="summit" image="/my-images/my-image.png">
-  <h1 slot="heading">
-    <span class="h5">Our product and services.</span>
-    <span class="h1 enlighten">When things break down, <b>we've got you covered</b></span>
-  </h1>
-  <p slot="paragraph">Protect your boiler, heating, drains and more. And call on our friendly engineers whenever you need them. </p>
-  <a slot="cta" href="#!">
-    <ns-cta type="direct">View our products</ns-cta>
-  </a>
-</ns-landmark>
-```
+<Storybook story="ns-landmark--summit"></Storybook>
 
 ### Hillside
 
-```markup
-<ns-landmark type="hillside">
-  <h1 slot="heading">
-    <span class="h5">Boiler replacement.</span>
-    <span class="h1 enlighten">What's the <b> right boiler for me? </b></span>
-  </h1>
-  <p slot="paragraph"> With so many types of boiler, <b>finding the right one</b> for you can feel like a daunting task. Here's the difference between the three main boiler types </p>
-</ns-landmark>
-```
+<Storybook story="ns-landmark--hillside"></Storybook>
 
 ### Lakeside
 
-```markup
-<ns-landmark type="lakeside">
-  <h1 slot="heading">
-    <span class="h1">Sorry, we’re having technical problems at the moment</span>
-  </h1>
-  <p slot="paragraph">We’re unable to process your request right now. Please try again later.</p>
-  <p slot="paragraph">Alternatively you can get in touch directly. <a href="#caveat">1</a></p>
-  <a slot="cta" href="#!">
-    <ns-cta type="direct">Contact customer services</ns-cta>
-  </a>
-</ns-landmark>
-```
+<Storybook story="ns-landmark--lakeside"></Storybook>
+
 ### Valley
 
-```markup
-<ns-landmark type="valley" image="/my-images/my-image.png">
-  <h1 slot="heading">
-    <span class="h5">Home Care.</span>
-    <span class="h1 enlighten"><b>Boilers and heating cover</b> for your home</span>
-  </h1>
-  <ns-pill slot="pill">Special Offer</ns-pill>
-  <p slot="paragraph">Keep it covered with HomeCare and we'll there when you need us.</p>
-  <div slot="paragraph">
-    <ul class="ul-ticked">
-      <li>Unlimited call outs</li>
-      <li>A 24/7 customer helpline</li>
-      <li>Parts and labour cost included</li>
-      <li>14 day cooling off period if you cancel</li>
-      <li>Annual boiler service included</li>
-    </ul>
-  </div>
-</ns-landmark>
-```
+<Storybook story="ns-landmark--valley"></Storybook>
 
 ## Component relationship
 
@@ -299,4 +242,4 @@ Find it under 'Guides' in the Nucleus Sketch Library.
 
 ## Related links
 
-* [ns-pill](https://docs.britishgas.design/components/ns-pill)
+* [ns-pill](components/ns-pill.md)

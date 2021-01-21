@@ -2,13 +2,13 @@
 description: Molecule | Panel component.
 ---
 
-# ns-panel
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
 `ns-panel` is an empty container that holds each section of a page. Each `ns-panel` provides an area to place a layout and add an optional decoration.
 
-Adding a decoration to an `ns-panel` using a gradient background provides visual separation from the other sections of the page and introduces brand [colour](https://docs.britishgas.design/foundation/colours) and style. Using the circle decoration provides subtle emphasis to an `ns-panel`.
+Adding a decoration to an `ns-panel` using a gradient background provides visual separation from the other sections of the page and introduces brand [colour](foundations/colours.md) and style. Using the circle decoration provides subtle emphasis to an `ns-panel`.
 
 ## Best practice
 
@@ -26,15 +26,7 @@ Adding a decoration to an `ns-panel` using a gradient background provides visual
 
 ## Usage
 
-To see examples visit [Storybook](https://library.britishgas.design).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-panel" caption="" %}
-
-```markup
-<ns-panel>
-  ...
-</ns-panel>
-```
+<Storybook story="ns-panel--splash"></Storybook>
 
 ## Component relationship
 
@@ -61,7 +53,7 @@ To see examples visit [Storybook](https://library.britishgas.design).
 
 ### Decoration
 
-* Check the [gradient](https://docs.britishgas.design/foundations/colours#gradients) palette.
+* Check the [gradient](foundations/colours.md#our-gradients) palette.
 
 ### Anonymous
 

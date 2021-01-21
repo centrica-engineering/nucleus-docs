@@ -1,8 +1,7 @@
 ---
+title: Stopgap
 description: Page type | Stopgap
 ---
-
-# Stopgap
 
 ## Introduction
 

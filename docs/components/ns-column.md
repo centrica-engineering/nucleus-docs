@@ -2,7 +2,7 @@
 description: Atom | Column component.
 ---
 
-# ns-column
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -29,13 +29,7 @@ Some components (e.g. `ns-cta`) have a minimum width, care should be taken so th
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-column--standard)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-column" caption="" %}
-
-```markup
-    <ns-column basketballcourt="" hockeypitch="" footballpitch="" rugbypitch="" polofield=""></ns-column>
-```
+<Storybook story="ns-column--standard"></Storybook>
 
 ## Component relationship
 
@@ -94,4 +88,4 @@ Each value is applied at that viewpoint and each larger viewport unless the larg
 
 ## Related links
 
-* [Viewports](https://docs.britishgas.design/foundations/viewports)
+* [Viewports](foundations/viewports.md)

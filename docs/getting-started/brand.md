@@ -1,8 +1,7 @@
 ---
+title: Brand
 description: The British Gas branding, guidance and visual identity.
 ---
-
-# Brand
 
 The [Brand site](https://centrica.frontify.com/d/nfz7xmW4vrF9) shares the British Gas brand story, with supporting guidance and assets.
 

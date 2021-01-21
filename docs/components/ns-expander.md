@@ -2,7 +2,7 @@
 description: Molecule | Expander component.
 ---
 
-# ns-expander
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -31,18 +31,7 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-expander--expander)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-expander" caption="" %}
-
-```markup
-<ns-expander>
-  <h3 slot="heading">Can I manage my account online?</h3>
-  <p>Yes, with an online account you can arrange a service visit,
-  find out whatʼs happening with your appointment, submit a meter reading and book an engineer.
-  Weʼve even got a free smartphone app.</p>
-</ns-expander>
-```
+<Storybook story="ns-expander--expander"></Storybook>
 
 ## Component relationship
 
@@ -89,5 +78,5 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Related links
 
-* [ns-accordion](https://docs.britishgas.design/components/ns-accordion)
-* [ns-skyline](https://docs.britishgas.design/components/ns-skyline)
+* [ns-accordion](components/ns-accordion.md)
+* [ns-skyline](components/ns-skyline.md)

@@ -1,8 +1,7 @@
 ---
+title: Colours
 description: Nucleus guidelines for use of colour.
 ---
-
-# Colours
 
 ## Why we use colour?
 
@@ -32,7 +31,7 @@ Find our [gradient colour palette](https://britishgas.co.uk/nucleus/demo/index.h
 
 Always be mindful of how colour contrast many impact accessibility when dealing with type online and use our range of tools to ensure that your colour combinations are fully WCAG AA compliant.
 
-Please refer to our [accessiblity section](https://docs.britishgas.design/accessibility) for more detail on colour and accessibility. 
+Please refer to our [accessiblity section](getting-started/accessibility.md) for more detail on colour and accessibility. 
 
 ## Best practice
 

@@ -1,8 +1,9 @@
 ---
+title: Messaging
 description: Messaging patterns.
 ---
 
-# Introduction
+## Introduction
 
 We have a number of methods available to display messages and information to the customer. 
 
@@ -23,7 +24,7 @@ This component is positioned directly beneath the global navigation and above an
 - **Warning** - to warn users of potential upcoming or current issues.
   - For example: Weather warning.
 
-You can [read more information about the `<ns-skyline>` here](https://docs.britishgas.design/components/ns-skyline).
+You can [read more information about the `<ns-skyline>` here](components/ns-skyline.md).
 
 ## Warning & error handling
 
@@ -41,8 +42,8 @@ An example of specific validation is: First name and last name, also telephone a
 
 These validation rules ensure that the expected data is provided, and will display an inline validation message when incorrect.
 
-- You can [read more information about the different `<ns-inputter>` validation options](https://docs.britishgas.design/components/ns-inputter#specification).
-- You can [see examples of `<ns-inputter>` here](https://docs.britishgas.design/components/ns-inputter).
+- You can [read more information about the different `<ns-inputter>` validation options](components/ns-inputter.md#specification).
+- You can [see examples of `<ns-inputter>` here](components/ns-inputter.md).
 
 ### Using `<ns-highlighter>`
 
@@ -56,7 +57,7 @@ The `<ns-highlighter>` has two variants for displaying warning and error message
 
 These messages are to be communicated during a customers engagement with a journey, ensure that they relate to the action they are trying to complete. These should not be used for global messages.
 
-- You can [read more information about the `<ns-highlighter>` here](https://docs.britishgas.design/components/ns-highlighter).
+- You can [read more information about the `<ns-highlighter>` here](components/ns-highlighter.md).
 - You can [see the error variant of `<ns-highlighter>` here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-highlighter--error).
 - You can [see the warning variant of `<ns-highlighter>` here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-highlighter--warning).
 
@@ -71,7 +72,7 @@ This can be related to a problem with a service that their task requires - these
 
 The page should describe to the user what has happened and tell them how to fix it if possible.
 
-You can [read more information about the Roadblock page type here](https://docs.britishgas.design/page-types/roadblock).
+You can [read more information about the Roadblock page type here](page-types/roadblock.md).
 
 ## Valuable information & success messages
 
@@ -86,7 +87,7 @@ Along with handling warning and error messages, the `<ns-highlighter>` has two o
 
 These messages are to be communicated during a customers engagement with a journey, and they should relate to the action a customer is trying to complete. These should not be used for global messages.
 
-- You can [read more information about the `<ns-highlighter>` here](https://docs.britishgas.design/components/ns-highlighter).
+- You can [read more information about the `<ns-highlighter>` here](components/ns-highlighter.md).
 - You can [see the information variant of `<ns-highlighter>` here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-highlighter--information).
 - You can [see the success variant of `<ns-highlighter>` here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-highlighter--success).
 
@@ -94,7 +95,7 @@ These messages are to be communicated during a customers engagement with a journ
 
 To inform the customer that their journey or task has been completed we have created the Confirmation page type.
 
-You can [read more information about the Confirmation page type here](https://docs.britishgas.design/page-types/confirmation).
+You can [read more information about the Confirmation page type here](page-types/confirmation.md).
 
 
 ## Feedback
