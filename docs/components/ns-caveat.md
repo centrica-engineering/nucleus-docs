@@ -29,7 +29,8 @@ Caveats link to content in the page, providing more information about legality a
 | Try to make the caveats positive | Use the caveat to hide information |
 | Be transparent, if the legal details are short, add it to the content | Add images, iconography, etc. |
 | Always have the legal caveats at the bottom of the page, before the footer | Try to change the font size of the caveats |
-| Use an ordered list for the caveats |  |
+| Use an ordered list for the caveats that are linked in the page |  |
+| Use a `<p>` tag for the caveats that realte to the page or journey in general |  |
 | Only use text in the caveats |  |
 | Embolden text that is important |  |
 | Prepend the link with `&nbsp;` so that it doesn't become widowed |  |
@@ -60,7 +61,7 @@ Caveats link to content in the page, providing more information about legality a
 | Slots     | Type          |
 | :--- | :--- |
 | `heading` | `h tag`       |
-| Anonymous | `ol list tag` |
+| Anonymous | `ol list tag` , `p tag` |
 
 ## Feedback
 
