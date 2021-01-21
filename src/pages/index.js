@@ -81,7 +81,7 @@ function Home() {
             <ns-card type="section" decoration="bulb">
               <h3 slot="heading" role="heading" aria-level="3">Getting started</h3>
               <p slot="paragraph">How to work with the Nucleus Design&nbsp;System</p>
-              <ns-cta type="direct" slot="cta" href="/docs/getting-started/working-with-nucleus">Get started</ns-cta>
+              <ns-cta type="direct" slot="cta" href="/docs/getting-started/introduction">Get started</ns-cta>
             </ns-card>
             <ns-card type="section" decoration="engineer">
               <h3 slot="heading" role="heading" aria-level="3">Our components</h3>
