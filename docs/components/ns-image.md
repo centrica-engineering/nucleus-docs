@@ -2,7 +2,7 @@
 description: Atom | Image component.
 ---
 
-# ns-image
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -14,21 +14,21 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 | Component | Variant | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [`ns-card`](https://docs.britishgas.design/components/ns-card)| `support` | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-card-support-640x360px](https://user-images.githubusercontent.com/50207859/67642149-d3c91e00-f900-11e9-983c-9b812217b801.jpg) |
-| [`ns-editorial`](https://docs.britishgas.design/components/ns-editorial)| n/a | 4:3 | 480x360px | &lt; 50kb | jpeg | [ns-editorial-480x360px](https://user-images.githubusercontent.com/50207859/67642150-d461b480-f900-11e9-9803-5ff4df7ad9a7.jpg) |
-| [`ns-landmark`](https://docs.britishgas.design/components/ns-landmark)| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg | [ns-landmark-summit-1440x810px](https://user-images.githubusercontent.com/50207859/67642478-12140c80-f904-11e9-849d-5ffe39818c5b.jpg) |
-| [`ns-landmark`](https://docs.britishgas.design/components/ns-landmark)| `valley` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-landmark-valley-720x540px](https://user-images.githubusercontent.com/50207859/67642153-d461b480-f900-11e9-9520-11204c64a11b.jpg) |
-| [`ns-lockup`](https://docs.britishgas.design/components/ns-lockup)| `lockbox` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-lockup-lockbox-720x540px](https://user-images.githubusercontent.com/50207859/67642153-d461b480-f900-11e9-9520-11204c64a11b.jpg) |
-| [`ns-lockup`](https://docs.britishgas.design/components/ns-lockup)| `lockbox` | 1:1 | 720x720px | &lt; 100kb | jpeg | [ns-lockup-lockbox-720x720px](https://user-images.githubusercontent.com/50207859/67642154-d461b480-f900-11e9-9581-212ede25f362.jpg) |
-| [`ns-lockup`](https://docs.britishgas.design/components/ns-lockup)| `lockjaw` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-lockup-lockjaw-720x540px](https://user-images.githubusercontent.com/50207859/67642155-d4fa4b00-f900-11e9-9ba6-a31f61ddb0ef.jpg) |
-| [`ns-lockup`](https://docs.britishgas.design/components/ns-lockup)| `locknut` | 1:1 | 720x720px | &lt; 100kb | jpeg | [ns-lockup-locknut-720x720px](https://user-images.githubusercontent.com/50207859/67642156-d4fa4b00-f900-11e9-8400-548625a1648f.jpg) |
-| [`ns-selector`](https://docs.britishgas.design/components/ns-selector)| n/a | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-selector-640x360px](https://user-images.githubusercontent.com/50207859/68392177-1ee4fb80-0161-11ea-8826-14326d2c976a.jpg) |
+| [`ns-card`](components/ns-card.md)| `support` | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-card-support-640x360px](https://user-images.githubusercontent.com/50207859/67642149-d3c91e00-f900-11e9-983c-9b812217b801.jpg) |
+| [`ns-editorial`](components/ns-editorial.md)| n/a | 4:3 | 480x360px | &lt; 50kb | jpeg | [ns-editorial-480x360px](https://user-images.githubusercontent.com/50207859/67642150-d461b480-f900-11e9-9803-5ff4df7ad9a7.jpg) |
+| [`ns-landmark`](components/ns-landmark.md)| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg | [ns-landmark-summit-1440x810px](https://user-images.githubusercontent.com/50207859/67642478-12140c80-f904-11e9-849d-5ffe39818c5b.jpg) |
+| [`ns-landmark`](components/ns-landmark.md)| `valley` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-landmark-valley-720x540px](https://user-images.githubusercontent.com/50207859/67642153-d461b480-f900-11e9-9520-11204c64a11b.jpg) |
+| [`ns-lockup`](components/ns-lockup.md)| `lockbox` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-lockup-lockbox-720x540px](https://user-images.githubusercontent.com/50207859/67642153-d461b480-f900-11e9-9520-11204c64a11b.jpg) |
+| [`ns-lockup`](components/ns-lockup.md)| `lockbox` | 1:1 | 720x720px | &lt; 100kb | jpeg | [ns-lockup-lockbox-720x720px](https://user-images.githubusercontent.com/50207859/67642154-d461b480-f900-11e9-9581-212ede25f362.jpg) |
+| [`ns-lockup`](components/ns-lockup.md)| `lockjaw` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-lockup-lockjaw-720x540px](https://user-images.githubusercontent.com/50207859/67642155-d4fa4b00-f900-11e9-9ba6-a31f61ddb0ef.jpg) |
+| [`ns-lockup`](components/ns-lockup.md)| `locknut` | 1:1 | 720x720px | &lt; 100kb | jpeg | [ns-lockup-locknut-720x720px](https://user-images.githubusercontent.com/50207859/67642156-d4fa4b00-f900-11e9-8400-548625a1648f.jpg) |
+| [`ns-selector`](components/ns-selector.md)| n/a | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-selector-640x360px](https://user-images.githubusercontent.com/50207859/68392177-1ee4fb80-0161-11ea-8826-14326d2c976a.jpg) |
 
 ## Best practice
 
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
-| Resize your image [see optimise your image](https://docs.britishgas.design/how-to/optimise-images) | Use images as the primary content |
+| Resize your image [see optimise your image](/foundations/photography.md#optimise-your-images) | Use images as the primary content |
 | Use the correct image format png/jpg | Put text inside the image |
 | Use brand approved images | Use a white background in images |
 | Think about the image responsive behaviour |  |
@@ -41,13 +41,7 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-images--lazy-loading-img).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-image" caption="" %}
-
-```markup
-<ns-image ratio="16x9" src="https://www.britishgas.co.uk/aem6/content/dam/britishgas/images/jumbotron/home-services/20-Home-Services-wilbur.jpg"></ns-image>
-```
+<Storybook story="ns-image--ratio-4-x-3"></Storybook>
 
 ## Component relationship
 
@@ -92,6 +86,6 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Related links
 
-* How to optimise images [guide](https://docs.britishgas.design/how-to/optimise-images).
+* How to optimise images [guide](/foundations/photography.md#optimise-your-images).
 * Brand image [library](https://centrica.frontify.com/d/pDUbkrcf54Nh/our-assets).
-* [ns-card](https://docs.britishgas.design/components/ns-card)
+* [ns-card](components/ns-card.md)

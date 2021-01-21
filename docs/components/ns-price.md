@@ -2,7 +2,7 @@
 description: Atom | Price component.
 ---
 
-# ns-price
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -34,13 +34,7 @@ Prices of less than £1 include zero pounds. eg. `pence="1"` becomes "£0.01"
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-price--standard)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-price" caption="" %}
-
-```markup
-<ns-price pence"123456"></ns-price>
-```
+<Storybook story="ns-price--standard"></Storybook>
 
 ## Component relationship
 

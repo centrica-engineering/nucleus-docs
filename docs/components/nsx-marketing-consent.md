@@ -2,8 +2,6 @@
 description: Experience | Marketing consent.
 ---
 
-# Marketing consent
-
 ## Introduction
 
 > Marketing consent is the capture of a customer's contact preferences for marketing purposes.

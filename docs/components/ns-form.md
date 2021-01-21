@@ -2,7 +2,7 @@
 description: Molecule | Form component.
 ---
 
-# ns-form
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -24,18 +24,7 @@ The `ns-form` component is a wrapper for `ns-inputters`. It's main purpose is to
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-form--form)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-form" caption="" %}
-
-```markup
-<ns-form>
-  <ns-inputter validation='["isRequired"]'>
-    ...
-  </ns-inputter>
-  <ns-cta>Submit</ns-cta>
-</ns-form>
-```
+<Storybook story="form-ns-form--multi-input-form"></Storybook>
 
 ## Component relationship
 
@@ -190,5 +179,5 @@ A **valid validate return response** looks like:
 
 ## Related links
 
-* [ns-inputter](https://docs.britishgas.design/components/ns-inputter)
-* [ns-fieldset](https://docs.britishgas.design/components/ns-fieldset)
+* [ns-inputter](components/ns-inputter.md)
+* [ns-fieldset](components/ns-fieldset.md)

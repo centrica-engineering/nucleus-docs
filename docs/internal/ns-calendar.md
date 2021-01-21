@@ -2,8 +2,6 @@
 description: Molecule | Calendar component.
 ---
 
-# ns-calendar
-
 ## Introduction
 
 > Ns-calendar allows the user to select a date from a monthly calendar view.

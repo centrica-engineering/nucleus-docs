@@ -1,8 +1,7 @@
 ---
+title: Guide
 description: Page type | Guide page
 ---
-
-# Guide page
 
 ## Introduction
 

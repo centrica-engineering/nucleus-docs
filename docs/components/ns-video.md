@@ -2,7 +2,7 @@
 description: Atom | Video component.
 ---
 
-# ns-video
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -25,13 +25,7 @@ British Gas creates many videos to engage customers. This component allows havin
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-video--youtube).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-video" caption="" %}
-
-```markup
-<ns-video id="dQw4w9WgXcQ" ratio="16x9" title="Rick Astley, Never going to give you up music video"></ns-video>
-```
+<Storybook story="ns-video--youtube"></Storybook>
 
 ## Component relationship
 

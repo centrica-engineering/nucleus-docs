@@ -1,8 +1,7 @@
 ---
+title: Illustrations
 description: Nucleus illustration suite.
 ---
-
-# Illustrations
 
 ## Why we use illustrations
 

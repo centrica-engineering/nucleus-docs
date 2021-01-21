@@ -2,7 +2,7 @@
 description: Molecule | Caveat component.
 ---
 
-# ns-caveat
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -41,24 +41,7 @@ Caveats link to content in the page, providing more information about legality a
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-caveat--caveat)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-caveat" caption="" %}
-
-```markup
-<p>Some text with a caveat&nbsp;<a href="#caveat">1</a></p>
-
-<ns-caveat>
-  <h2 slot="heading">Legal information</h2>
-  <div slot="caveat">
-    <ol>
-      <li>
-        ...
-      </li>
-    </ol>
-  </div>
-</ns-caveat>
-```
+<Storybook story="ns-caveat--caveat"></Storybook>
 
 ## Component relationship
 

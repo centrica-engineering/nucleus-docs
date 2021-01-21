@@ -1,8 +1,7 @@
 ---
+title: Icons
 description: Nucleus icon suite.
 ---
-
-# Icons
 
 ## Why we use icons
 
@@ -99,4 +98,4 @@ Icons are created using illustrator with a 32px x 32px art-board. This allows sc
    
 ## Related links
 
-* [ns-icon](https://docs.britishgas.design/components/ns-icon)
+* [ns-icon](https://components/ns-icon.md)

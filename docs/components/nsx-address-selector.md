@@ -2,8 +2,6 @@
 description: Experience | Address Selector.
 ---
 
-# Address Selector
-
 ## Introduction
 
 The address selector is a multi-functional experience pattern that can be used for any one of, or a combination of, the following tasks: 

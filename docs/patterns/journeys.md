@@ -1,8 +1,9 @@
 ---
+title: Journeys
 description: Journey patterns documentation.
 ---
 
-# Introduction
+## Introduction
 
 Creating engaging and inclusive journeys is one of the highest priorities for any product team.
 
@@ -16,7 +17,7 @@ There is no one size fits all. Here, we introduce Journey patterns, an approach 
 
 Here we focus on how to approach functional customer journey design, principles, and reusable design solutions.
 
-These are made up of [page types](https://docs.britishgas.design/page-types), [experience patterns](https://docs.britishgas.design/patterns/experiences) and [components](https://docs.britishgas.design/components).
+These are made up of page types, experience patterns and components.
 
 Using these tools helps designers and engineers focus on solving complex user problems.
 
@@ -71,9 +72,9 @@ Grouping related form elements is a purposeful way of helping the customer to co
 
 Use a single page to group questions or tasks together, such as asking the customer for personal details or to provide their address. 
 
-Provide context and a description for groups of form controls by using the fieldset and legend atributes. Using these will help customers understand the objective of the task, and will naturally interact with the form better.
+Provide context and a description for groups of form controls by using the fieldset and legend attributes. Using these will help customers understand the objective of the task, and will naturally interact with the form better.
 
-- You can [read more information about the Fieldset component here](https://docs.britishgas.design/components/ns-fieldset).
+- You can [read more information about the Fieldset component here](components/ns-fieldset.md).
 
 ### Playing back information
 
@@ -84,7 +85,7 @@ Further research is required for when to playback information to users:
 - After each individual question or section
 - Grouped summary at the end of a journey
 
-There are curretly two distinct methods for playing back and summarising a customer’s answers.
+There are currently two distinct methods for playing back and summarising a customer’s answers.
 
 One using flat cards, the other a description list. Both can be used to play back a representative structure of the sections a customer has completed. 
 
@@ -102,7 +103,7 @@ The description list is a typographic style that uses the description list, or `
 
 This element is used for presenting pairs of information - a label and a piece of data.
 
-It is ideal for summarising a series of customer responses. In addition to the label and data, a link can be used to allow navigation back to the relecant section.
+It is ideal for summarising a series of customer responses. In addition to the label and data, a link can be used to allow navigation back to the relevant section.
 
 ## Supporting pages for journeys
 
@@ -112,10 +113,10 @@ These help to provide a consistent experience for the customer, and also to make
 
 They include:
 
-- [Start - for introducing a journey](https://docs.britishgas.design/page-types/start)
-- [Confirmation - for closing a journey](https://docs.britishgas.design/page-types/confirmation)
-- [Stopgap - to help during long processing times](https://docs.britishgas.design/page-types/stopgap)
-- [Roadblock - to help when a journey is unavailable](https://docs.britishgas.design/page-types/roadblock)
+- [Start - for introducing a journey](page-types/start.md)
+- [Confirmation - for closing a journey](page-types/confirmation.md)
+- [Stopgap - to help during long processing times](page-types/stopgap.md)
+- [Roadblock - to help when a journey is unavailable](page-types/roadblock.md)
 
 ## Best practice
 

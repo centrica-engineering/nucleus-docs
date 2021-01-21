@@ -2,7 +2,7 @@
 description: Atom | Icon component.
 ---
 
-# ns-icon
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -28,13 +28,7 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--gas).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-icon" caption="" %}
-
-```markup
-<ns-icon type="gas"></ns-icon>
-```
+<Storybook story="ns-icon--appliance"></Storybook>
 
 ## Component relationship
 
@@ -65,7 +59,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 If you are looking to create a new icon then please check there is not something similar already in use. If there is no suitable icon then you should let us know and we can look at creating it for the design system.
 
-Read our [icon foundation page](https://docs.britishgas.design/foundations/icons#creating-new-icons) for more information on creating icons.
+Read our [icon foundation page](foundations/icons.md#creating-new-icons) for more information on creating icons.
 
 ## Feedback
 
@@ -76,5 +70,5 @@ Read our [icon foundation page](https://docs.britishgas.design/foundations/icons
 
 ## Related links
 
-* [ns-cta](https://docs.britishgas.design/components/ns-cta).
+* [ns-cta](components/ns-cta.md).
 * Creating an engaging experience through illustrations and the difference between icons and illustrations in [Brand Guidelines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/illustrations/creating-an-engaging-experience-through-illustration).

@@ -2,7 +2,7 @@
 description: Organism |  Editorial component.
 ---
 
-# ns-editorial
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -56,27 +56,7 @@ description: Organism |  Editorial component.
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-editorial--editorial)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-editorial" caption="" %}
-
-```markup
-<ns-editorial image="/my-images/my-image.png">
-  <h2 slot="heading">Typewriter seitan chartreuse musta</h2>
-  <p>Polaroid actually neutra readymade. Glossier hot chicken literally vegan, hoodie artisan sustainable forage lyft gentrify bespoke vinyl.</p>
-  <p>Edison bulb church-key flannel fingerstache live-edge fixie fashion axe slow-carb stumptown locavore ethical knausgaard activated charcoal mixtape pork belly.</p>
-  <h3>Wayfarers taxidermy shabby chic heirloom</h3>
-  <p>Woke sartorial truffaut bespoke pinterest fingerstache hexagon lyft green juice bushwick sustainable you probably haven't heard of them irony.</p>
-  <p>Cardigan single-origin coffee jean shorts, blue bottle poke subway tile farm-to-table.</p>
-  <h3>Helvetica fingerstache</h3>
-  <ul class="ul-bullet">
-    <li>Edison bulb</li>
-    <li>Ethical knausgaard</li>
-    <li>Activated</li>
-    <li>Charcoal mixtape</li>
-  </ul>
-</ns-editorial>
-```
+<Storybook story="ns-editorial--editorial"></Storybook>
 
 ## Component relationship
 

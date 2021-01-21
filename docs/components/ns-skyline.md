@@ -2,7 +2,7 @@
 description: Organism | Skyline component.
 ---
 
-# ns-skyline
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -44,18 +44,7 @@ Positioned directly beneath the global navigation and above any content, `ns-sky
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-skyline--singular).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-skyline" caption="" %}
-
-```markup
-<ns-skyline>
-  <ns-expander icon="warning">
-    <h2 slot="heading">We are experiencing issues</h2>
-    <p>This is what we're doing to fix it and what you can do to <a href="#">help us</a></p>
-  </ns-expander>
-</ns-skyline>
-```
+<Storybook story="ns-skyline--singular"></Storybook>
 
 ## Component relationship
 

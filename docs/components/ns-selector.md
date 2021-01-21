@@ -2,7 +2,7 @@
 description: Molecule | Selector component.
 ---
 
-# ns-selector
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -19,7 +19,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 | A | Label | The label should describe the selection being made using the most concise content possible. The recommended length is 21 characters maximum. |
 | B | Heading | The heading can provide an expanded description of the item being selected. The recommended length is between 3 and 21 characters. This heading should use a light font weight to allow the emphasis on the label. |
 | C | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](https://docs.britishgas.design/components/ns-card#specification) has a list of options. |
+| D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](components/ns-card.md#specification) has a list of options. |
 
 ### Selector - Image
 
@@ -59,44 +59,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ## Usage
 
-Ns-selector can be single selection (radio) or multiple selection (checkbox) it should be placed within a ns-inputter.
-
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-inputter--selectorradio)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-selector" caption="" %}
-
-```html
-<ns-inputter class="triple" validation="['isRequired']" heading="Listicle street art shaman">
-
-  <ns-selector decoration="gas">
-    <input type="radio" id="item-1" name="question" value="crucifix">
-    <label for="item-1">Raclette crucifix messenger bag</label>
-    <div slot="description">
-      <ns-pill colour="yellow" icon="tag">50% off</ns-pill>
-      <ul class="ul-bullet">
-        <li>Leggings synth normcore wayfarers</li>
-        <li>Mlkshk trust fund helvetica banjo drinking</li>
-        <li>Gochujang semiotics bicycle</li>
-      </ul>
-    </div>
-  </ns-selector>
-
-  <ns-selector decoration="electricity">
-    <input type="radio" id="item-2" name="question" value="hammock">
-    <label for="item-2">Pug enamel pin post</label>
-    <div slot="description">
-      <ns-pill colour="yellow" icon="tag">50% off</ns-pill>
-      <ul class="ul-bullet">
-        <li>Wolf plaid crucifix hammock</li>
-        <li>Kale chips live-edge</li>
-        <li>Subway tile squid godard occupy shabby chic blog</li>
-      </ul>
-    </div>
-  </ns-selector>
-
-</ns-inputter>
-```
-
+<Storybook story="form-ns-selector--radio-with-image"></Storybook>
 
 ## Component relationship
 
@@ -129,5 +92,5 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Related links
 
-* [ns-inputter](https://docs.britishgas.design/components/ns-inputter)
-* [ns-pill](https://docs.britishgas.design/components/ns-pill)
+* [ns-inputter](components/ns-inputter.md)
+* [ns-pill](components/ns-pill.md)

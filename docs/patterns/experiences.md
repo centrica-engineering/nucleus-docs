@@ -1,8 +1,7 @@
 ---
+title: Experiences
 description: Experience patterns.
 ---
-
-# Introduction
 
 ## What is the difference between a component and an experience pattern?
 

@@ -1,8 +1,7 @@
 ---
+title: Names of things
 description: How and why we name all the things
 ---
-
-# Names of things
 
 ## Introduction
 
@@ -416,10 +415,3 @@ We could name our releases. Take a look at how Ionic name theirs.
 [https://ionicframework.com/docs/release-notes](https://ionicframework.com/docs/release-notes)
 
 Refer to Apple's MacOS, Andriod and others for examples...
-
-## Feedback
-
-* Do you have insights or concerns to share? You can raise an issue via [Github](https://github.com/ConnectedHomes/nucleus-docs/issues/new?assignees=&labels=Bug&title=[names-of-things]). [†]
-
-[†] This can only be accessed from approved Github accounts, please make sure you are logged in to access.
-

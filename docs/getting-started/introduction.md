@@ -1,8 +1,7 @@
 ---
+title: Introduction
 description: Getting involved with Nucleus.
 ---
-
-# Introduction
 
 > To get you up and running with Nucleus.
 

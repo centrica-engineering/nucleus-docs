@@ -2,7 +2,7 @@
 description: Molecule | CTA component.
 ---
 
-# ns-cta
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -22,11 +22,11 @@ We allow users to perform certain actions through the use of our call to actions
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | Text | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
-| B | Icon | This is the icon inside the CTA. The [specification table](https://docs.britishgas.design/components/ns-cta#specification) has a list of options. |
+| B | Icon | This is the icon inside the CTA. The [specification table](#specification) has a list of options. |
 
 ## Loading state
 
-The `ns-cta` is capable of handling a loading interaction using the `loading` and `loadingMessage` attributes, these can be found in the [specification table](https://docs.britishgas.design/components/ns-cta#specification) below.
+The `ns-cta` is capable of handling a loading interaction using the `loading` and `loadingMessage` attributes, these can be found in the [specification table](#specification) below.
 
 This loading state can be used to provide the user with visual feedback that their action is being handled. It also provides a user with reassurance when that action takes a number of seconds to be completed. 
 
@@ -47,7 +47,7 @@ You can see the live example of the loading state on [storybook](https://www.bri
 | Use 'direct' for the primary action on the page | Use more than 24 characters |
 |  | Have multiple lines or sentences within a CTA |
 |  | Repeat CTA copy within the same page |
-|  | Use for downloads. Use the [`ns-download` component](https://britishgas.design/components/ns-icon) instead |
+|  | Use for downloads. Use the [`ns-download` component](components/ns-download.md) instead |
 
 ### Considerations of best practice
 
@@ -58,15 +58,7 @@ You can see the live example of the loading state on [storybook](https://www.bri
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-cta--direct-link).
-
-`ns-cta` should always live inside another component.
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-cta" caption="" %}
-
-```markup
-<ns-cta>Learn more about Hive</ns-cta>
-```
+<Storybook story="ns-cta--direct-link"></Storybook>
 
 ## Component relationship
 

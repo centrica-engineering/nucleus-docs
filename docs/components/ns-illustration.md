@@ -2,7 +2,7 @@
 description: Atom | Illustration component.
 ---
 
-# ns-illustration
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -23,13 +23,7 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--gas).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-illustration" caption="" %}
-
-```markup
-<ns-illustration type="gas"></ns-illustration>
-```
+<Storybook story="ns-illustration--appliance"></Storybook>
 
 ## Component relationship
 
@@ -61,7 +55,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 If you are looking to create a new illustration then please check there is not something similar already in use. If there is no suitable illustration then you should let us know and we can look at creating it for the design system.
 
-Read our [illustration foundation page](https://docs.britishgas.design/foundations/illustrations#creating-new-illustrations) for more information on creating illustrations.
+Read our [illustration foundation page](foundations/illustrations.md#creating-new-illustrations) for more information on creating illustrations.
 
 ## Feedback
 

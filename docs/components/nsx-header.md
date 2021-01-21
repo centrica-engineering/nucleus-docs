@@ -2,7 +2,7 @@
 description: Experience | Header component.
 ---
 
-# nsx-header
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -27,11 +27,7 @@ The subheadings and links for the navigation can be passed in for each section t
 
 ## Usage
 
-To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-header--standard).
-
-```markup
-<nsx-header sections=[SectionArray]></nsx-header>
-```
+<Storybook story="nsx-header--standard"></Storybook>
 
 ## Component relationship
 

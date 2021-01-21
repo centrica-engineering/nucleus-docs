@@ -2,7 +2,7 @@
 description: Molecule | Inputter component.
 ---
 
-# ns-inputter
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -87,7 +87,7 @@ Selects should be used to select an item from a list of many choices. Selects ca
 
 Textareas are used for capturing a longer answer. Always consider whether or not you need to ask a customer a free form question before doing so.
 
-You can [see an example of <ns-inputter> textarea here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--textarea).
+You can [see an example of `<ns-inputter>` textarea here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--textarea).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -96,7 +96,7 @@ You can [see an example of <ns-inputter> textarea here](https://www.britishgas.c
 
 ### Date input
 
-[Use the `ns-datepicker` compontent instead](https://docs.britishgas.design/components/ns-datepicker)
+[Use the `ns-datepicker` compontent instead](components/ns-datepicker.md)
 
 
 ## Functionality
@@ -230,16 +230,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-inputter--text).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-inputter" caption="" %}
-
-```markup
-<ns-inputter validation="['isRequired']" helper="So we can send you love letters" name="first-name">
-  <label slot="label">First name</label>
-  <input type="text">
-</ns-inputter>
-```
+<Storybook story="form-ns-inputter--text-input"></Storybook>
 
 ## Component relationship
 
@@ -339,7 +330,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 
 ## Related links
 
-* [ns-form](https://docs.britishgas.design/components/ns-form)
-* [ns-fieldset](https://docs.britishgas.design/components/ns-fieldset)
-* [ns-datepicker](https://docs.britishgas.design/components/ns-datepicker)
-* [ns-cta](https://docs.britishgas.design/components/ns-cta)
+* [ns-form](components/ns-form.md)
+* [ns-fieldset](components/ns-fieldset.md)
+* [ns-datepicker](components/ns-datepicker.md)
+* [ns-cta](components/ns-cta.md)

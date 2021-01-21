@@ -2,7 +2,7 @@
 description: Atom | Tab component.
 ---
 
-# ns-tab
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -12,7 +12,7 @@ The tab is the button that can be clicked to change the content in the `ns-tabs`
 
 ## Content guidance
 
-Please see [ns-tabs](https://docs.britishgas.design/components/ns-tabs) for full content guidance.
+Please see [ns-tabs](components/ns-tabs.md) for full content guidance.
 
 ## Best practice
 
@@ -28,13 +28,7 @@ Please see [ns-tabs](https://docs.britishgas.design/components/ns-tabs) for full
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-tab--tab).
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-tab" caption="" %}
-
-```markup
-<ns-tab>Electricity</ns-tab>
-```
+<Storybook story="ns-tab--tab"></Storybook>
 
 ## Component relationship
 

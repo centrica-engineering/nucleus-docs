@@ -2,7 +2,7 @@
 description: Organism | Accordion component.
 ---
 
-# ns-accordion
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -17,7 +17,7 @@ We use accordions to break down content into meaningful sections, helping to red
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total.  |
-| B | Content | Use between 1 and 8 ns-expanders. Each expander consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content. See [ns-expander](https://docs.britishgas.design/components/ns-expander) for further content guidance. |
+| B | Content | Use between 1 and 8 ns-expanders. Each expander consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content. See [ns-expander](components/ns-expander.md) for further content guidance. |
 
 ## Best practice
 
@@ -35,22 +35,7 @@ If more than eight are used we should stop to reassess why and perhaps breakdown
 
 ## Usage
 
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-accordion--singular)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-accordion" caption="" %}
-
-```markup
-<ns-accordion>
-  <h3 slot="heading">Frequently asked questions</h3>
-  <ns-expander open="false">
-    <h4 slot="heading">Can I manage my account online?</h4>
-    <p>
-      Yes, with an online account you can arrange a service visit, find out whatʼs happening with your appointment, submit a meter reading and book an engineer.
-      Weʼve even got a free smartphone app.
-    </p>
-  </ns-expander>
-</ns-accordion>
-```
+<Storybook story="ns-accordion--singular"></Storybook>
 
 ## Component relationship
 
@@ -77,7 +62,7 @@ To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.ht
 ### Anonymous
 
 * Place ns-expanders into this slot.
-* Check the [ns-expander documentation](https://docs.britishgas.design/components/ns-expander) for more information.
+* Check the [ns-expander documentation](components/ns-expander.md) for more information.
 
 ## Feedback
 

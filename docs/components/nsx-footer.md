@@ -2,7 +2,7 @@
 description: Experience | Footer component.
 ---
 
-# nsx-footer
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -22,12 +22,7 @@ If a link needs to be updated for the website footer, it needs to be done in thi
 
 ## Usage
 
-To see examples visit [Storybook](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-footer--standard).
-
-
-```markup
-<nsx-footer></nsx-footer>
-```
+<Storybook story="nsx-footer--standard"></Storybook>
 
 ## Component relationship
 

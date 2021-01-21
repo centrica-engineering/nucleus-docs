@@ -1,8 +1,7 @@
 ---
+title: Contribute to Nucleus
 description: Welcoming each and everyone to the Nucleus Design System.
 ---
-
-# Contribute to Nucleus
 
 > Our design system is a living organism, one that reflects and evolves with our collective learning.
 
@@ -22,7 +21,7 @@ Whether it's using the resources and documentation provided by Nucleus or contri
 
 Everyone. Whether you are a designer, a software engineer, a tester, a solutions architect, a product owner, or a director: everyone is invited to advance Nucleus.
 
-To get started, visit [Working with Nucleus](https://docs.britishgas.design/getting-started/working-with-nucleus).
+To get started, visit [Working with Nucleus](getting-started/working-with-nucleus.md).
 
 ### Insights on existing Nucleus assets
 
@@ -41,7 +40,7 @@ We're working hard to grow Nucleus without sacrificing quality.
 2. Feel free to explore the styles and assets provided to suggest new components.
 3. Please make sure to submit your experiments and learning. It helps us to track potential variations and roll out stable additions to all teams via Nucleus.
 
-To understand how the Nucleus team works, visit [Our Process](https://docs.britishgas.design/getting-started/our-process).
+To understand how the Nucleus team works, visit [Our Process](getting-started/our-process.md).
 
 ### Feedback on anything related to Nucleus
 

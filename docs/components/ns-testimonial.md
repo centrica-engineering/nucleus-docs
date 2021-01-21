@@ -2,7 +2,7 @@
 description: Atom | Testimonial component.
 ---
 
-# ns-testimonial
+import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -22,16 +22,7 @@ A new component to display all the lovely things that people say about us. The t
 
 ## Usage
 
-```markup
-<ns-testimonial citeUrl="https://url-where-the-quote-comes-from" author="Dave" medium="twitter">
-  <p slot="quote">Quote text <b>emphasised text</b></p>
-</ns-testimonial>
-```
-
-To see examples visit [Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-testimonial--standard)
-
-{% embed url="https://codesandbox.io/s/github/britishgas-engineering/nucleus-examples/tree/master/demos/ns-testimonial" caption="" %}
-
+<Storybook story="ns-testimonial--standard"></Storybook>
 
 ## Component relationship
 

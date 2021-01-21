@@ -1,8 +1,7 @@
 ---
+title: Contribute to documentation
 description: One of the ways in which you can help improve our documentation.
 ---
-
-# Contribute to documentation
 
 ## Introduction
 
@@ -12,7 +11,7 @@ Our documentation is rather important. The more help we have the better it will 
 
 If you find something that you'd like to improve, change, adapt or remove; click the 'Edit on GitHub' link.
 
-This will take you to the same page within our GitHub documentation repository [https://github.com/ConnectedHomes/nucleus-docs](https://github.com/ConnectedHomes/nucleus-docs).
+This will take you to the same page within our GitHub documentation repository [https://github.com/centrica-engineering/nucleus-docs](https://github.com/centrica-engineering/nucleus-docs).
 
 Find the pencil icon and edit this file.
 
@@ -36,7 +35,7 @@ Your pull request will be listed in our repository for review.
 
 One of our team will review your pull request.
 
-Once approved, the changes will be merged into our documentation and make their way to the page on [https://docs.britishgas.design](https://docs.britishgas.design) where it all began.
+Once approved, the changes will be merged into our documentation and make their way to the page on [https://britishgas.design](https://britishgas.design) where it all began.
 
 ## Thank you
 
