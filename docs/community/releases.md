@@ -266,7 +266,7 @@ Release date - 2020/07/20
 
 **What’s new around here 🎴**
 
-* You can now use the `ns-product-card` to enable users to browse, compare and choose a product. You can find out how to use it [on our documentation](https://docs.britishgas.design/components/ns-product-card)
+* You can now use the `ns-product-card` to enable users to browse, compare and choose a product. You can find out how to use it [on our documentation](components/ns-product-card.md)
 
 **Improvements 🔨**
 
@@ -556,11 +556,11 @@ Release date - 2019-12-11
 
 **Documentation 🐧**
 
-* Details of how to use masks and separators with `ns-inputter` - https://docs.britishgas.design/components/ns-inputter#masks-and-separators
+* Details of how to use masks and separators with [ns-inputter](components/ns-inputter.md)
 * Supporting the new additions to our component library.
-  * Take a look at our documentation for `ns-skyline` - https://docs.britishgas.design/components/ns-skyline
-  * Check out the best practice for `lakeside` Landmark - https://docs.britishgas.design/components/ns-landmark#best-practice-for-lakeside
-* Include a summary of our Squad achievements on December 4th - https://docs.britishgas.design/community/events
+  * Take a look at our documentation for [ns-skyline](components/ns-skyline.md)
+  * Check out the best practice for [lakeside](components/ns-landmark.md) Landmark
+* Include a summary of our Squad achievements on [December 4th](community/events.md)
 
 **Bug fixes 🐜**
 
@@ -597,13 +597,13 @@ Release date - 2019-11-11
 
 **Documentation 🍂**
 
-* Supporting documentation for `ns-selector` - https://docs.britishgas.design/components/ns-selector
-* Also, the initial documentation for `ns-table` - https://docs.britishgas.design/components/ns-table
+* Supporting documentation for [ns-selector](components/ns-selector.md)
+* Also, the initial documentation for [ns-table](components/ns-table.md)
 * Introducing **Image guidance** and supporting image templates to our components which use an image.
-  * `ns-editorial` - https://docs.britishgas.design/components/ns-editorial#image-guidance
-  * `ns-landmark` - https://docs.britishgas.design/components/ns-landmark#image-guidance
-  * `ns-lockup` - https://docs.britishgas.design/components/ns-lockup#image-guidance
-  * `ns-card` - https://docs.britishgas.design/components/ns-card#image-guidance
+  * [ns-editorial](components/ns-editorial.md#image-guidance)
+  * [ns-landmark](components/ns-landmark.md#image-guidance)
+  * [ns-lockup](components/ns-lockup.md#image-guidance)
+  * [ns-card](components/ns-card.md#image-guidance)
 * We have introduced [Stale](https://github.com/apps/stale) to add a 'stale' label to RFCs that have had no activity in the previous 14 days.
 
 **Bug fixes 🎒**
@@ -647,8 +647,8 @@ Release date - 2019-09-20
 
 **Documentation**
 
-* Component `ns-editorial` - [https://docs.britishgas.design/components/ns-editorial](https://docs.britishgas.design/components/ns-editorial).
-* Textarea - [https://docs.britishgas.design/components/ns-inputter#textarea](https://docs.britishgas.design/components/ns-inputter#textarea).
+* Component [ns-editorial](components/ns-editorial.md)
+* Textarea - [ns-inputter](components/ns-inputter.md#textarea)
 
 **Bug fixes 🙊**
 
@@ -812,14 +812,14 @@ Release date - 2019-04-15
 * Added more screen sizes to each Component.
 
 **Documentation**
-* Becoming Nucleus - https://docs.britishgas.design/community/becoming-nucleus
-* Best practices - https://docs.britishgas.design/getting-started/best-practices
-* Events - https://docs.britishgas.design/community/events
-* Modular scale - https://docs.britishgas.design/foundation/modular-scale
-* Typography sizes - https://docs.britishgas.design/foundation/typography
-* Optimise your images - https://docs.britishgas.design/foundation/photography
-* Our documentation - https://docs.britishgas.design
-* Accordion - https://docs.britishgas.design/components/ns-accordion
+* Becoming Nucleus
+* Best practices
+* [Events](community/events.md)
+* [Modular scale](foundations/modular-scale.md)
+* [Typography sizes](foundations/typography.md)
+* [Optimise your images](foundations/photography.md)
+* Our documentation - [https://britishgas.design](https://britishgas.design)
+* [Accordion](components/ns-accordion.md)
 
 **Bugfixes 🐞**
 

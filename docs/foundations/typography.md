@@ -72,7 +72,7 @@ A double stranded scale for each set of typographic sizes using two bases.
 | -1 |  | `.p-caption` |
 
 
-To learn more visit our foundation page on [Modular scale](https://docs.britishgas.design/foundations/modular-scale)
+To learn more visit our foundation page on [Modular scale](foundations/modular-scale.md)
 
 ## Lists
 
@@ -84,7 +84,7 @@ We have a number of different types of lists:
 
 Some components are specifically designed to include these lists. To find out which, visit the Content guidance section of the component and you'll find the types of content that can be included.
 
-Take a look at this example of the `ns-editorial` which can display these lists [ns-editorial content guidance](https://docs.britishgas.design/components/ns-editorial#content-guidance).
+Take a look at this example of the `ns-editorial` which can display these lists [ns-editorial content guidance](components/ns-editorial.md#content-guidance).
 
 ### Unordered list
 

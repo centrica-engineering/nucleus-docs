@@ -8,7 +8,7 @@ import { Storybook } from '../../includes/storybook.js'
 
 > Ns-slot-picker is used to allow the user to select a time slot from one or more dates and time slots.
 
-Ns-slot-picker is used any time you want a customer to select a time slot. This would typically be used for booking an appointment. It can display time slots for a single day or multiple days. It can be used on it's own or upfront before displaying ns-appointment-picker. It is also used in [ns-appointment-picker](https://docs.britishgas.design/components/ns-appointment-picker).
+Ns-slot-picker is used any time you want a customer to select a time slot. This would typically be used for booking an appointment. It can display time slots for a single day or multiple days. It can be used on it's own or upfront before displaying ns-appointment-picker. It is also used in [ns-appointment-picker](components/ns-appointment-picker.md).
 
 ## Best practice
 

@@ -78,5 +78,5 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 
 ## Related links
 
-* [ns-accordion](https://docs.britishgas.design/components/ns-accordion)
-* [ns-skyline](https://docs.britishgas.design/components/ns-skyline)
+* [ns-accordion](components/ns-accordion.md)
+* [ns-skyline](components/ns-skyline.md)

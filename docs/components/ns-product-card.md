@@ -104,7 +104,7 @@ For example
 
 ### image
 
-* Check the [ns-image documentation](https://docs.britishgas.design/components/ns-image) for more information.
+* Check the [ns-image documentation](components/ns-image.md) for more information.
 
 ### name and price-heading
 
@@ -113,7 +113,7 @@ For example
 ### Price
 
 * Use multiple `<p>` containing `<ns-price>`
-* Check the [ns-price documentation](https://docs.britishgas.design/components/ns-price) for more information.
+* Check the [ns-price documentation](components/ns-price.md) for more information.
 
 ### Description
 
@@ -122,12 +122,12 @@ For example
 ### Expander
 
 * Multiple expanders may be used
-* Check the [ns-expander documentation](https://docs.britishgas.design/components/ns-expander) for more information.
+* Check the [ns-expander documentation](components/ns-expander.md) for more information.
 
 ### cta
 
 * Should always have a href
-* Check the [ns-cta documentation](https://docs.britishgas.design/components/ns-image) for more information.
+* Check the [ns-cta documentation](components/ns-image.md) for more information.
 
 ## Feedback
 

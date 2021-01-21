@@ -59,7 +59,7 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 
 If you are looking to create a new icon then please check there is not something similar already in use. If there is no suitable icon then you should let us know and we can look at creating it for the design system.
 
-Read our [icon foundation page](https://docs.britishgas.design/foundations/icons#creating-new-icons) for more information on creating icons.
+Read our [icon foundation page](foundations/icons.md#creating-new-icons) for more information on creating icons.
 
 ## Feedback
 
@@ -70,5 +70,5 @@ Read our [icon foundation page](https://docs.britishgas.design/foundations/icons
 
 ## Related links
 
-* [ns-cta](https://docs.britishgas.design/components/ns-cta).
+* [ns-cta](components/ns-cta.md).
 * Creating an engaging experience through illustrations and the difference between icons and illustrations in [Brand Guidelines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/illustrations/creating-an-engaging-experience-through-illustration).

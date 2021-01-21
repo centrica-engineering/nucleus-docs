@@ -41,7 +41,7 @@ It's natural to look at what other design systems have done, and this is great. 
 
 ### Design
 
-Think of the minimum viable solution to solve the problem. Distil it a bit further and use that as a starting point. Refer to the Nucleus principles to inform your thinking. https://docs.britishgas.design/principles
+Think of the minimum viable solution to solve the problem. Distil it a bit further and use that as a starting point. Refer to the [Nucleus principles](getting-started/principles.md) to inform your thinking.
 
 It's important to decipher the requests from our colleagues. Consider the input from every source and perform our own research.
 

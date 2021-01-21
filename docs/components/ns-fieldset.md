@@ -56,5 +56,5 @@ https://www.w3.org/WAI/WCAG21/Techniques/html/H71
 
 ## Related links
 
-* [ns-form](https://docs.britishgas.design/components/ns-form)
-* [ns-inputter](https://docs.britishgas.design/components/ns-inputter)
+* [ns-form](components/ns-form.md)
+* [ns-inputter](components/ns-inputter.md)

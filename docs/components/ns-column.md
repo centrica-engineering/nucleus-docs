@@ -88,4 +88,4 @@ Each value is applied at that viewpoint and each larger viewport unless the larg
 
 ## Related links
 
-* [Viewports](https://docs.britishgas.design/foundations/viewports)
+* [Viewports](foundations/viewports.md)

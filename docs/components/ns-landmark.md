@@ -242,4 +242,4 @@ Find it under 'Guides' in the Nucleus Sketch Library.
 
 ## Related links
 
-* [ns-pill](https://docs.britishgas.design/components/ns-pill)
+* [ns-pill](components/ns-pill.md)

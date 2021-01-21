@@ -64,9 +64,9 @@ A `red` or `green-light` pill can be used to drawing attention to important cust
 
 More details for using ns-pill in other components can be found here:
 
-* [ns-card](https://docs.britishgas.design/components/ns-card#using-with-ns-pill)
-* [ns-selector](https://docs.britishgas.design/components/ns-selector#usage)
-* [ns-landmark](https://docs.britishgas.design/components/ns-landmark)
+* [ns-card](components/ns-card.md#using-with-ns-pill)
+* [ns-selector](components/ns-selector.md#usage)
+* [ns-landmark](components/ns-landmark.md)
 
 > Note: Work is in progress to add the ns-pill to other components
 
@@ -90,6 +90,6 @@ When an icon is supplied the pill will use the media object pattern.
 
 ## Related links
 
-* [ns-card](https://docs.britishgas.design/components/ns-card)
-* [ns-selector](https://docs.britishgas.design/components/ns-selector)
-* [ns-landmark](https://docs.britishgas.design/components/ns-landmark)
+* [ns-card](components/ns-card.md)
+* [ns-selector](components/ns-selector.md)
+* [ns-landmark](components/ns-landmark.md)

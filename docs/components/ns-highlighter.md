@@ -17,7 +17,7 @@ A component that communicates the message that a service is not available to the
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Icon | This is the icon inside the Highlighter. This is dictated by the `type` of Highlighter. The [specification table](https://docs.britishgas.design/components/ns-highlighter#specification) has a list of options. |
+| A | Icon | This is the icon inside the Highlighter. This is dictated by the `type` of Highlighter. The [specification table](#specification) has a list of options. |
 | B | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
 | C | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | D | Accent | This is to support the context of the messaging. This colour matches that of the icon. |

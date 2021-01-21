@@ -12,7 +12,7 @@ The tab is the button that can be clicked to change the content in the `ns-tabs`
 
 ## Content guidance
 
-Please see [ns-tabs](https://docs.britishgas.design/components/ns-tabs) for full content guidance.
+Please see [ns-tabs](components/ns-tabs.md) for full content guidance.
 
 ## Best practice
 

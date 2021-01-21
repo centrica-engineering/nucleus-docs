@@ -43,7 +43,7 @@ As this stage testing plays a key part in discovery. Testing potential solutions
 
 Design and engineering team up together to do the bulk of the discovery, feeding back to the team. This will produce a firmly defined scope. 
 
-Our [vanilla first approach](https://docs.britishgas.design/community/vanilla-first) will help understand where the starting point of the solution is. Which, in turn will help define the outcome of the work.
+Our [vanilla first approach](community/vanilla-first.md) will help understand where the starting point of the solution is. Which, in turn will help define the outcome of the work.
 
 ### Delivering the development spec and discovery
 
@@ -79,4 +79,4 @@ And we shouldn't forget to take the time to congratulate ourselves for strengthe
 
 ## Contributing to Nucleus
 
-If you would like to contribute to the design system, either with a change, or if you're looking for something new, then please read [Contribute to Nucleus](https://docs.britishgas.design/community/contribute-to-nucleus).
+If you would like to contribute to the design system, either with a change, or if you're looking for something new, then please read [Contribute to Nucleus](community/contribute-to-nucleus.md).

@@ -13,7 +13,7 @@ This page type should be used to clarify and set up a task for a user at the beg
 
 This page sets expectations and provides any contextual information that a user may need to complete their journey successfully. 
 
-For more information on how to bookend your journeys [see the Confirmation page type](https://docs.britishgas.design/page-types/confirmation).
+For more information on how to bookend your journeys [see the Confirmation page type](page-types/confirmation.md).
 
 ## Content guidance
 

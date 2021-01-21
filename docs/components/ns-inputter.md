@@ -96,7 +96,7 @@ You can [see an example of `<ns-inputter>` textarea here](https://www.britishgas
 
 ### Date input
 
-[Use the `ns-datepicker` compontent instead](https://docs.britishgas.design/components/ns-datepicker)
+[Use the `ns-datepicker` compontent instead](components/ns-datepicker.md)
 
 
 ## Functionality
@@ -330,7 +330,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ## Related links
 
-* [ns-form](https://docs.britishgas.design/components/ns-form)
-* [ns-fieldset](https://docs.britishgas.design/components/ns-fieldset)
-* [ns-datepicker](https://docs.britishgas.design/components/ns-datepicker)
-* [ns-cta](https://docs.britishgas.design/components/ns-cta)
+* [ns-form](components/ns-form.md)
+* [ns-fieldset](components/ns-fieldset.md)
+* [ns-datepicker](components/ns-datepicker.md)
+* [ns-cta](components/ns-cta.md)

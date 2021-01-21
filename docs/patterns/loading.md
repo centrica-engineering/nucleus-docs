@@ -15,7 +15,7 @@ Below we highlight two main formats of loading - **interim** and **interstitial*
 
 The `<ns-cta>` is capable of handling an interim loading experience. When used as the primary action to complete a task or progress to the next step of an experience, the `<ns-cta>` can display a loading icon and message that supports the task the user is looking to complete.
 
-You can [read more information about the loading state of `<ns-cta>` here](https://docs.britishgas.design/components/ns-cta#loading-state).
+You can [read more information about the loading state of `<ns-cta>` here](components/ns-cta.md#loading-state).
 
 ## Interstitial loading
 
@@ -29,13 +29,13 @@ Unlike the `<ns-cta>`, which can help provide context for short term pauses, whe
 
 We handle these transitions using the Stopgap page type. This consists of using an `<ns-landmark type="lakeside">` and an `<ns-icon type="loading">`. It is recommended that we play back what their expected time to completion is. This should help reduce users feeling anxious and impatient.
 
-You can [read more information about the Stopgap here](https://docs.britishgas.design/page-types/stopgap).
+You can [read more information about the Stopgap here](page-types/stopgap.md).
 
 ### Arriving from an external site
 
 In the same vein as the end of journey processing, transferring from an external site may require a prolonged amount of time for processing information. In order to reassure the user that their transfer is being handled, we would also recommend using the Stopgap page type. This allows us to explain to the user what is happening, and help reduce anxiety and impatience.
 
-You can [read more information about the Stopgap here](https://docs.britishgas.design/page-types/stopgap).
+You can [read more information about the Stopgap here](page-types/stopgap.md).
 
 ## Feedback
 

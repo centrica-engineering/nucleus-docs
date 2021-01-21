@@ -11,7 +11,7 @@ The confirmation page type is used to show a customer that their journey or task
 
 The purpose of the confirmation page is to show a customer that their action has been completed. It is important to differentiate this from their previous steps so they know there is a clear change.
 
-For more information on how to bookend your journeys [see the Start page type](https://docs.britishgas.design/page-types/start).
+For more information on how to bookend your journeys [see the Start page type](page-types/start.md).
 
 ## Visual Example
 

@@ -24,7 +24,7 @@ Accessibility ensures that all persons can access and benefit from a website, sy
 
 The four accessibility principles (POUR) are derived straight from [WCAG 2.1](https://www.w3.org/TR/WCAG21/). For each principle, WCAG provides in-depth documentation and guidance. Below, we've restated the principles as well as provided bit of background into Level AA conformance.
 
-Our [Accessibility foundations](https://docs.britishgas.design/getting-started/accessibility) describe in further detail how these principles have been applied.
+Our [Accessibility foundations](getting-started/accessibility.md) describe in further detail how these principles have been applied.
 
 ### Perceivable
 
