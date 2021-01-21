@@ -9,6 +9,10 @@ module.exports = {
   organizationName: 'British Gas', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true
+    },
     navbar: {
       title: 'Nucleus Design System',
       logo: {
@@ -75,7 +79,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} British Gas, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} British Gas. Built with Docusaurus.`,
     },
   },
   themes: ['@docusaurus/theme-live-codeblock'],
