@@ -91,7 +91,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/centrica-engineering/nucleus-docs/edit/master/',
+            'https://github.com/centrica-engineering/nucleus-docs/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
