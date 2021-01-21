@@ -85,7 +85,7 @@ module.exports = {
       {
         redirects: [
           {
-            from: ['/docs/', '/docs'],
+            from: '/docs/',
             to: '/docs/getting-started/introduction',
           },
         ]
