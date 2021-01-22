@@ -80,6 +80,7 @@ The `label` is what will be displayed in the address list UI.
 | :--- | :--- | :--- |
 | "postcode-selected"   | dispatched when the user selects a postcode to search with. | "postcode" - the value of the postcode entered by the user |
 | "address-selected" | dispatched when the user selects an address from the list of addresses. | "address" - the selected address object |
+| "manual-address-click" | dispatched when the user clicks the "Enter Manual Address" button. | |
 
 ## Feedback
 
