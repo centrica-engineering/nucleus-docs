@@ -31,6 +31,7 @@ module.exports = {
     'Foundations': [
       'foundations/names-of-things',
       'foundations/typography',
+      'foundations/lists',
       'foundations/colours',
       'foundations/modular-scale',
       'foundations/viewports',
