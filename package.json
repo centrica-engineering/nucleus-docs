@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "getTokens": "node scripts/get-tokens.js",
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "start": "npm run getTokens && docusaurus start",
+    "build": "npm run getTokens && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
@@ -17,6 +18,7 @@
     "@docusaurus/preset-classic": "2.0.0-alpha.70",
     "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.70",
     "@mdx-js/react": "^1.6.21",
+    "axios": "^0.21.1",
     "clsx": "^1.1.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
