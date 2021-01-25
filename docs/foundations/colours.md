@@ -3,6 +3,8 @@ title: Colours
 description: Nucleus guidelines for use of colour.
 ---
 
+import { Colours } from '../../includes/colours.js'
+
 ## Why we use colour?
 
 Colour plays an important role in defining our visual identity. You can use our full suite of colours to create a real sense of brand recognition.
@@ -11,13 +13,25 @@ Colour plays an important role in defining our visual identity. You can use our 
 
 At our core, we’re a blue and white brand. Our blues and white should always take center stage to create a crisp, clean and functional digital experience. The full range of our brand colour palette should also be used to bring warmth and richness to our products. These additional colours can be introduced in many ways, primarily through our illustrations and gradients in our decorations and backgrounds.
 
-Please use our [brand colour palette](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-colours--brand-pallette) in storybook across all digital products.
+Please use our brand colour palette across all digital products.
+
+### Primary 
+
+<Colours colourGroup="primary"></Colours>
+
+### Secondary 
+
+<Colours colourGroup="secondary"></Colours>
+
+### Greys 
+
+<Colours colourGroup="greyscale"></Colours>
 
 ## Our system colours
 
 Our system colours are used to support and enhance communication to users throughout their journeys. Please be aware that system colours are always associated with a meaning and be careful not to create confusion by using these colours, or similar brand colours, inappropriately. Never use system colours as the only means of providing information or requesting an action.
 
-Find our [system colour palette](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-colours--system-pallette) in storybook.
+<Colours colourGroup="system"></Colours>
 
 ## Our gradients
 
