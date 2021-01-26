@@ -15,7 +15,7 @@ The page should describe to the user what has happened and tell them how to fix 
 
 ## Visual example
 
-![Example of the Roadblock message](https://user-images.githubusercontent.com/7914977/105868694-5baf4380-5fee-11eb-8fe6-97134f1cf8fc.png)
+![Example of the Roadblock message](https://user-images.githubusercontent.com/7914977/105870458-33c0df80-5ff0-11eb-94bc-6a2eabd067a3.png)
 
 [View the `<ns-landmark type=lakeside>` on storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--lakeside)
 
@@ -27,7 +27,7 @@ The page should describe to the user what has happened and tell them how to fix 
     <span class="h5">Something went wrong.</span>
     <span class="h1">We couldn't bake your cake</span>
   </h1>
-  <p slot="paragraph">Our chef baker couldn'd find the ingredients to bake your cake. This is may be because our Cupboard Manager didn't do the groceries yesterday.</p>
+  <p slot="paragraph">Our chef baker couldn'd find the ingredients to bake your cake. This may be because our Cupboard Manager didn't do the grocery shopping yesterday.</p>
   <p slot="paragraph">We recommend you order a new cake and we'll throw cherry a on top, on us.</p>
   <a slot="cta" href="#!">
     <ns-cta type="direct">Order a new cake</ns-cta>
