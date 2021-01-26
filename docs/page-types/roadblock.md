@@ -15,7 +15,7 @@ The page should describe to the user what has happened and tell them how to fix 
 
 ## Visual example
 
-![Example of the Roadblock message](https://user-images.githubusercontent.com/7914977/105865790-2bb27100-5feb-11eb-8a4b-293970a64514.png)
+![Example of the Roadblock message](https://user-images.githubusercontent.com/7914977/105868694-5baf4380-5fee-11eb-8fe6-97134f1cf8fc.png)
 
 [View the `<ns-landmark type=lakeside>` on storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-landmark--lakeside)
 
@@ -24,12 +24,13 @@ The page should describe to the user what has happened and tell them how to fix 
 ```markup
 <ns-landmark type="lakeside">
   <h1 slot="heading">
-    <span class="h1">We're sad to see you go</span>
+    <span class="h5">Something went wrong.</span>
+    <span class="h1">We couldn't bake your cake</span>
   </h1>
-  <p slot="paragraph">Thanks for being with us <b>we hope you'll join us</b> again. We are working on making Rewards even better.</p>
-  <p slot="paragraph">If you'd like to join us again, click on Rewards in your Account Overview.</p>
+  <p slot="paragraph">Our chef baker couldn'd find the ingredients to bake your cake. This is may be because our Cupboard Manager didn't do the groceries yesterday.</p>
+  <p slot="paragraph">We recommend you order a new cake and we'll throw cherry a on top, on us.</p>
   <a slot="cta" href="#!">
-    <ns-cta type="direct">Your account</ns-cta>
+    <ns-cta type="direct">Order a new cake</ns-cta>
   </a>
 </ns-landmark>
 ```
