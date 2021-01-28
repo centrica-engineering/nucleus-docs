@@ -19,9 +19,11 @@ Note: This is used for arranging components and content **not** multiple columns
 | Pick the number of columns to complement the content | Have complicated column structures, try to simplify your content first |
 | Test the full responsive range of your page's and not just the defined viewports | Use in components that are too small to support multiple components |
 | Wrap in a `splish` or `splash` when used with `ns-panel` | Use to put components in columns that are designed to be standalone or stack (e.g multiple ns-highlighers or ns-accordions) |
-| Try to stick to one column as much as possible | Use to create newpaper style columns and layouts |
+| Try to stick to one column as much as possible | Use to create newspaper style columns and layouts |
 | Try to avoid having widowed items | |
 | Use multiple columns when the user needs to compare items | |
+| Use the ratio options to add side panels | | 
+| When using ratios put the primary page content in the largest column | |
 
 ### Considerations of best practice
 
@@ -43,11 +45,11 @@ Some components (e.g. `ns-cta`) have a minimum width, care should be taken so th
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
-| `basketballcourt` | `number` | `1` |  `1,2` | The number of columns to show at the Basketball Court viewport |
-| `hockeypitch` | `number` | `inherit` |  `1,2,3` | The number of columns to show at the Hockey Pitch viewport |
-| `rugbypitch` | `number` | `inherit` |  `1,2,3,4` | The number of columns to show at the Rugby Pitch viewport |
-| `footballpitch` | `number` | `inherit` |  `1,2,3,4` | The number of columns to show at the Football Pitch viewport |
-| `polofield` | `number` | `inherit` |  `1,2,3,4` | The number of columns to show at the Polo Field viewport |
+| `basketballcourt` | `number` | `1` |  `1, 2` | The number of columns to show at the Basketball Court viewport |
+| `hockeypitch` | `number` | `inherit` |  `1, 2, 3, 1:2, 2:1` | The number of columns to show at the Hockey Pitch viewport |
+| `rugbypitch` | `number` | `inherit` |  `1, 2, 3, 4, 1:2, 2:1, 1:3, 3:1` | The number of columns to show at the Rugby Pitch viewport |
+| `footballpitch` | `number` | `inherit` |  `1, 2, 3, 4, 1:2, 2:1, 1:3, 3:1` | The number of columns to show at the Football Pitch viewport |
+| `polofield` | `number` | `inherit` |  `1, 2, 3, 4, 1:2, 2:1, 1:3, 3:1` | The number of columns to show at the Polo Field viewport |
 
 ## Specification notes
 
@@ -77,6 +79,12 @@ Each value is applied at that viewpoint and each larger viewport unless the larg
 
 ```markup
     <ns-column basketballcourt="2" rugbypitch="4" polofield="3" class="splash"></ns-column>
+```
+
+#### Going from 1 columns to 2:1 columns and then 3:1 columns
+
+```markup
+    <ns-column hockeypitch="2:1" polofield="3:1"></ns-column>
 ```
 
 ## Feedback
