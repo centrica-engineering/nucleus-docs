@@ -21,14 +21,12 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | A | Sub heading | Sub headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. Include a full stop at the end of the sub-heading.  |
 | B | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | C | Content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | CTA text | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+| D | Action | See action guidance below |
 | E | Image path | This is the image that will be used inside `ns-landmark`. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. **Note:** The image shouldn't hold any meaning and be only used as a decoration. This is why it doesn't have an `alt=""` attribute to avoid adding unnecessary content for users using assistive technology. |
 
 ### Hillside Landmark
 
 ![Landmark - Hillside](https://user-images.githubusercontent.com/45626534/72897289-88fd4d80-3d19-11ea-8647-f83eeac414b3.png)
-
-> NOTE: There is no CTA in the hillside landmark as the objective is to consume the content within the page.
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -36,6 +34,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | B | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | C | Content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | D | Decoration | Apply a colourful gradient decoration to the landmark. [The specification table](#specification) has a list of options. |
+| E | Action | See action guidance below |
 
 
 ### Valley Landmark
@@ -49,7 +48,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | A | Sub heading | Sub headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. Include a full stop at the end of the sub-heading.  |
 | B | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | C | Content | Valley can accommodate multiple paragraph slots. However, be mindful of keeping it concise. To introduce a product or service we recommend 1 shot paragraph and three or four bullet point in a ticked list to showcase your key product benefits. It can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | CTA text | A CTA is optional and not recommended in scenarios where you want to encourage your user to explore content further down the page. If you need to include a CTA keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+| D | Action | See action guidance below |
 | E | Image path | This is the image that will be used inside `ns-landmark`.  It should have an aspect ratio of 4:3, the dimensions should be 720x540px, the file type should be jpg, and the file size should be no more than 100kb. To see which image you can use - please see the Image Guidance section below. Don't use imagery with white backgrounds. Please make sure you work with a designer when selecting any imagery for the ns-landmark. **Note:** The image shouldn't hold any meaning and be only used as a decoration. This is why it doesn't have an `alt=""` attribute to avoid adding unnecessary content for users using assistive technology. |
 
 
@@ -62,7 +61,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | A | Sub heading | Sub headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. Include a full stop at the end of the sub-heading.  |
 | B | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | C | Content | Lakeside can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a minimum of 1 and a maximum of 3. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | CTA text | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+| D | Action | See action guidance below |
 
 
 ### Image guidance
@@ -71,6 +70,20 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | `ns-landmark`| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg | [ns-landmark-summit-1440x810px](https://user-images.githubusercontent.com/50207859/67642478-12140c80-f904-11e9-849d-5ffe39818c5b.jpg) |
 | `ns-landmark`| `valley` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-landmark-valley-720x540px](https://user-images.githubusercontent.com/50207859/67642153-d461b480-f900-11e9-9520-11204c64a11b.jpg) |
+
+
+### Action guidance
+
+#### CTA
+
+* A CTA is optional and not recommended in scenarios where you want to encourage your user to explore content further down the page.
+* If you need to include a CTA keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters.
+
+#### Form
+
+* A form is optional and recommended in scenarios where you need some information from the user to start a journey or dynamically change the content on the rest of the page.
+* Don't use `ns-selector`, `ns-datepicker`, `nsx-address-selector`, or `nsx-marketing-consent` as these require more space than is available in the landmark.
+* Keep forms short in `hillside` to avoid distorting and stretching the gradient.
 
 ## Best practice
 
@@ -98,10 +111,8 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | :--- | :--- |
 | Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Use the 'invert-bridge' decoration. |
 | ![do-use-same-colour-for-themed-pages](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg) | ![dont-use-arc-decoration](https://user-images.githubusercontent.com/50207859/61697584-73d64080-ad2f-11e9-89a2-c2bbc18f7db7.jpg) |
-| Keep the content concise. | Add a CTA. The aim is to encourage the user to discover more on the page. |
-| ![do-keep-content-concise](https://user-images.githubusercontent.com/50207859/61779546-c7f92780-adf8-11e9-973c-541c7d46d46d.jpg) | ![dont-use-direct-cta](https://user-images.githubusercontent.com/50207859/61779195-2540a900-adf8-11e9-8c5c-1dced44d53f6.jpg) |
-|  | Use only the light font weight. If there's one weight, use bold. |
-|  | ![dont-use-only-light-font](https://user-images.githubusercontent.com/28779/70074651-0696be00-15f3-11ea-8f4b-a7d2f90ea87c.png) |
+| Keep the content concise. | Use only the light font weight. If there's one weight, use bold. |
+| ![do-keep-content-concise](https://user-images.githubusercontent.com/50207859/61779546-c7f92780-adf8-11e9-973c-541c7d46d46d.jpg) | ![dont-use-only-light-font](https://user-images.githubusercontent.com/28779/70074651-0696be00-15f3-11ea-8f4b-a7d2f90ea87c.png) |
 
 ### Best practice for `lakeside`
 
@@ -109,7 +120,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | :--- | :--- |
 | Use more than one paragraph. | Use more than three paragraphs. |
 | ![do-use-more-than-one-paragraph](https://user-images.githubusercontent.com/28779/70374602-3512e280-18ec-11ea-9222-0a67806898bc.png) | ![dont-use-more-than-three-paragraphs](https://user-images.githubusercontent.com/28779/70374611-465bef00-18ec-11ea-8ac6-0aa2cecab292.png) |
-| Display 400 and 500 error pages. | Even think about building a page with it. |
+| Display 400 and 500 error pages. | Use to build a page. |
 | ![display-400-and-500-error-pages](https://user-images.githubusercontent.com/28779/70374582-f9781880-18eb-11ea-9fde-b45f70e5c28b.png) | ![dont-even-this-about-building-a-page-with-it](https://user-images.githubusercontent.com/28779/70374723-d3ec0e80-18ed-11ea-8d71-9328de25089a.png) |
 | Get to the point, in this scenario the Sub heading and CTA have been omitted. |  |
 | ![do-get-to-the-point](https://user-images.githubusercontent.com/28779/70374643-88853080-18ec-11ea-8c03-94ef23815720.png) |  |

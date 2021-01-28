@@ -46,7 +46,7 @@ Cards are used to apply a container around a related grouping of information; th
 | :--- | :--- |
 | Always use them in the triple layout | Use the text CTA in the section card |
 | Use to direct customers to the actions | Mix card types in a row |
-| Embolden text in the paragrah that is important | Have two or more cta's for a card |
+| Embolden text in the paragraph that is important | Have two or more cta's for a card |
 | Make your CTA copy unique, stating the action | Repeat the CTA copy in each card |
 | Use section cards to navigate users to primary actions | Use inline links in the paragraph |
 | Consider using decoration in the panel to add emphasis on the cards | Use the section card without a decoration |
@@ -56,13 +56,27 @@ Cards are used to apply a container around a related grouping of information; th
 * Consider your CTA type and try to keep them consistent between rows across the cards, unless there is a need.
 * There can be less than three cards in a row, but it should always use the triple layout. Always consider a lockup for this, before using the cards.
 * Headings work best with one to four words.
-* Please check the imagery guidlines when adding an image to the card.
+* Please check the imagery guidelines when adding an image to the card.
 * Be careful when using decoration in the panel with the section cards as the blue on blue with the CTA's will make them not accessible.
 * There should always be a heading to the group of cards inside the panel.
 
 ## Usage
 
+### Section
+
 <Storybook story="ns-card--section"></Storybook>
+
+### Using with action
+
+```markup
+<ns-card type="support" decoration="bulb">
+  <h3 slot="heading">Get energy with us</h3>
+  <p slot="paragraph">We've got a tariff to suit every home and family.</p>
+  <div slot="action">
+    <!-- action content ns-cta/ns-form -->
+  </div>
+</ns-card>
+```
 
 ### Using with ns-pill
 
@@ -112,11 +126,22 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 | `type`       | `string` | "section" | "section", "support", "flat" | Defines the role of the card and changing the style |
 | `pillOverImage` | `boolean` |       |           | Used to put the pill in the top left of the image when using `type="support"` and an image | 
 
+### Support and Flat
+
+| Slots        | Type                | Description |
+| :--- | :--- |
+| `heading`    | `h tag` |  |
+| `paragraph`  | `p tag` |  |
+| `action`     | `ns-cta`, `ns-form` |  |
+| `cta`        | `ns-cta` | Deprecated |
+
+### Section
+
 | Slots        | Type                |
 | :--- | :--- |
 | `heading`    | `h tag` |
 | `paragraph`  | `p tag` |
-| `cta`        | `ns-cta` |
+| `cta`     | `ns-cta` |
 
 ## Specification notes
 
@@ -132,9 +157,16 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 
 * This should be a heading level 3
 
+
+### Action
+
+* Action is used to hold interactive content e.g. buttons, forms, etc
+* On `support` and `flat` types the action slot is not shown if the deprecated cta slot is used
+
 ### CTA
 
-* This should be an anchor with the [ns-cta](components/ns-cta.md) or just the [ns-cta](components/ns-cta.md)
+* Only for `section` types
+* This should be an anchor with the [ns-cta](https://docs.britishgas.design/components/ns-cta) or just the [ns-cta](https://docs.britishgas.design/components/ns-cta)
 
 ## Feedback
 
