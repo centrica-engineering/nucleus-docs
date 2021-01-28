@@ -11,6 +11,13 @@ import { Storybook } from '../../includes/storybook.js'
 This component wraps our ns-inputter component. Guidelines defined on the ns-inputter should also be followed when using this component.
 [ns-inputter documentation](components/ns-inputter.md)
 
+### Datepicker Types
+
+ns-datepicker supports 2 types `default` and `mask`.
+When type is set to `default` the date-picker will display a calendar UI for selecting the date.  On mobile/touch devices this will use the browsers native calendar.  On desktop/non-touch devices it will use the Nucleus calendar component.
+
+<img src="https://user-images.githubusercontent.com/4298413/104186377-388d6d00-540e-11eb-8365-1e59eab2c738.png" height="300">
+
 ## Best practice
 
 Also see ns-inputter [best practices](ns-inputter.md#considerations-of-best-practices)
