@@ -31,7 +31,7 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 
 ## Usage
 
-<Storybook story="ns-expander--expander"></Storybook>
+<Storybook story="components-ns-expander--expander"></Storybook>
 
 ## Component relationship
 

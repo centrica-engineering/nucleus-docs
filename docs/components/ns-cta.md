@@ -58,7 +58,7 @@ You can see the live example of the loading state on [storybook](https://www.bri
 
 ## Usage
 
-<Storybook story="ns-cta--direct-link"></Storybook>
+<Storybook story="components-ns-cta--direct-link"></Storybook>
 
 ## Component relationship
 

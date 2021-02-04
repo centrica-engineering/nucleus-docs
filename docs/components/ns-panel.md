@@ -26,7 +26,7 @@ Adding a decoration to an `ns-panel` using a gradient background provides visual
 
 ## Usage
 
-<Storybook story="ns-panel--splash"></Storybook>
+<Storybook story="components-ns-panel--splash"></Storybook>
 
 ## Component relationship
 

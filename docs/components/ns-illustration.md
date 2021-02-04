@@ -23,7 +23,7 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 
 ## Usage
 
-<Storybook story="ns-illustration--appliance"></Storybook>
+<Storybook story="components-ns-illustration--appliance"></Storybook>
 
 ## Component relationship
 

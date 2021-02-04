@@ -28,7 +28,7 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 
 ## Usage
 
-<Storybook story="ns-icon--appliance"></Storybook>
+<Storybook story="components-ns-icon--appliance"></Storybook>
 
 ## Component relationship
 

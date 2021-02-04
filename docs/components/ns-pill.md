@@ -52,7 +52,7 @@ A `red` or `green-light` pill can be used to drawing attention to important cust
 
 ## Usage
 
-<Storybook story="ns-pill--standard"></Storybook>
+<Storybook story="components-ns-pill--standard"></Storybook>
 
 ## Component relationship
 

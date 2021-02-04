@@ -31,7 +31,7 @@ Some components (e.g. `ns-cta`) have a minimum width, care should be taken so th
 
 ## Usage
 
-<Storybook story="ns-column--standard"></Storybook>
+<Storybook story="components-ns-column--standard"></Storybook>
 
 ## Component relationship
 

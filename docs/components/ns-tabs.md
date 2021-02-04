@@ -40,7 +40,7 @@ Related content can be separated into clearly labelled sections.
 
 ## Usage
 
-<Storybook story="ns-tabs--tabs"></Storybook>
+<Storybook story="components-ns-tabs--tabs"></Storybook>
 
 ## Component relationship
 

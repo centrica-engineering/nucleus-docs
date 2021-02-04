@@ -42,7 +42,7 @@ Some browsers do not support `type='date'` (e.g. Safari on Desktop). The compone
 
 ## Usage
 
-<Storybook story="form-ns-datepicker--standard"></Storybook>
+<Storybook story="form-components-ns-datepicker--standard"></Storybook>
 
 ## Component Relationship
 

@@ -230,7 +230,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ## Usage
 
-<Storybook story="form-ns-inputter--text-input"></Storybook>
+<Storybook story="form-components-ns-inputter--text-input"></Storybook>
 
 ## Component relationship
 

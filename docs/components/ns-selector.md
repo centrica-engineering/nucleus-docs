@@ -59,7 +59,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ## Usage
 
-<Storybook story="form-ns-selector--radio-with-image"></Storybook>
+<Storybook story="form-components-ns-selector--radio-with-image"></Storybook>
 
 ## Component relationship
 

@@ -28,7 +28,7 @@ Please see [ns-tabs](components/ns-tabs.md) for full content guidance.
 
 ## Usage
 
-<Storybook story="ns-tab--tab"></Storybook>
+<Storybook story="components-ns-tab--tab"></Storybook>
 
 ## Component relationship
 

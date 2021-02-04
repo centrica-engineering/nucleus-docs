@@ -72,7 +72,7 @@ For example
 
 ## Usage
 
-<Storybook story="ns-product-card--single"></Storybook>
+<Storybook story="components-ns-product-card--single"></Storybook>
 
 ## Component relationship
 
