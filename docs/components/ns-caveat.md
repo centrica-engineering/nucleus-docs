@@ -30,7 +30,7 @@ Caveats link to content in the page, providing more information about legality a
 | Be transparent, if the legal details are short, add it to the content | Add images, iconography, etc. |
 | Always have the legal caveats at the bottom of the page, before the footer | Try to change the font size of the caveats |
 | Use an ordered list for the caveats that are linked in the page |  |
-| Use a `<p>` tag for the caveats that realte to the page or journey in general |  |
+| Use a `<p>` tag for the caveats that relate to the page or journey in general |  |
 | Only use text in the caveats |  |
 | Embolden text that is important |  |
 | Prepend the link with `&nbsp;` so that it doesn't become widowed |  |
