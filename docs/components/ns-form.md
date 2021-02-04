@@ -24,7 +24,7 @@ The `ns-form` component is a wrapper for `ns-inputters`. It's main purpose is to
 
 ## Usage
 
-<Storybook story="form-ns-form--multi-input-form"></Storybook>
+<Storybook story="form-components-ns-form--multi-input-form"></Storybook>
 
 ## Component relationship
 

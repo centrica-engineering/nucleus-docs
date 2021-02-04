@@ -154,19 +154,19 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Summit
 
-<Storybook story="ns-landmark--summit"></Storybook>
+<Storybook story="components-ns-landmark--summit"></Storybook>
 
 ### Hillside
 
-<Storybook story="ns-landmark--hillside"></Storybook>
+<Storybook story="components-ns-landmark--hillside"></Storybook>
 
 ### Lakeside
 
-<Storybook story="ns-landmark--lakeside"></Storybook>
+<Storybook story="components-ns-landmark--lakeside"></Storybook>
 
 ### Valley
 
-<Storybook story="ns-landmark--valley"></Storybook>
+<Storybook story="components-ns-landmark--valley"></Storybook>
 
 ## Component relationship
 

@@ -25,7 +25,7 @@ British Gas creates many videos to engage customers. This component allows havin
 
 ## Usage
 
-<Storybook story="ns-video--youtube"></Storybook>
+<Storybook story="components-ns-video--youtube"></Storybook>
 
 ## Component relationship
 

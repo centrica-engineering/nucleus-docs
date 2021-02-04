@@ -64,7 +64,7 @@ The message must be in plain English, and help the user out of the situation by 
 
 ## Usage
 
-<Storybook story="ns-highlighter--error"></Storybook>
+<Storybook story="components-ns-highlighter--error"></Storybook>
 
 ## Component relationship
 

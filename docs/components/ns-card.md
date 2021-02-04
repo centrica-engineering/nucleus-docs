@@ -64,7 +64,7 @@ Cards are used to apply a container around a related grouping of information; th
 
 ### Section
 
-<Storybook story="ns-card--section"></Storybook>
+<Storybook story="components-ns-card--section"></Storybook>
 
 ### Using with action
 

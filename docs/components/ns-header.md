@@ -31,7 +31,7 @@ The default choice of header across the main British Gas UK home site should be 
 
 ## Usage
 
-<Storybook story="ns-header--standard"></Storybook>
+<Storybook story="components-ns-header--standard"></Storybook>
 
 ## Component relationship
 

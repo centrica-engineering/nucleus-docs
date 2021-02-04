@@ -44,7 +44,7 @@ The table component consumes basic HTML table markup, which makes it accessible 
 
 ## Usage
 
-<Storybook story="ns-table--data-table"></Storybook>
+<Storybook story="components-ns-table--data-table"></Storybook>
 
 ## Component relationship
 

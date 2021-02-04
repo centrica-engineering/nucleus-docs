@@ -56,7 +56,7 @@ import { Storybook } from '../../includes/storybook.js'
 
 ## Usage
 
-<Storybook story="ns-editorial--editorial"></Storybook>
+<Storybook story="components-ns-editorial--editorial"></Storybook>
 
 ## Component relationship
 

@@ -35,7 +35,7 @@ If more than eight are used we should stop to reassess why and perhaps breakdown
 
 ## Usage
 
-<Storybook story="ns-accordion--singular"></Storybook>
+<Storybook story="components-ns-accordion--singular"></Storybook>
 
 ## Component relationship
 

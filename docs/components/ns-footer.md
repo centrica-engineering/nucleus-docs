@@ -26,7 +26,7 @@ It also holds information about the company.
 
 ## Usage
 
-<Storybook story="ns-footer--standard"></Storybook>
+<Storybook story="components-ns-footer--standard"></Storybook>
 
 ## Component relationship
 

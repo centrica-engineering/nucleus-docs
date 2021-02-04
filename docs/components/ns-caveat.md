@@ -41,7 +41,7 @@ Caveats link to content in the page, providing more information about legality a
 
 ## Usage
 
-<Storybook story="ns-caveat--caveat"></Storybook>
+<Storybook story="components-ns-caveat--caveat"></Storybook>
 
 ## Component relationship
 

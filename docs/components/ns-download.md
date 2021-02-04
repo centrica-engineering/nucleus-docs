@@ -40,11 +40,11 @@ The one exception to this rule is in forms as there are often challenges around 
 
 ### Standalone
 
-<Storybook story="ns-download--standard"></Storybook>
+<Storybook story="components-ns-download--standard"></Storybook>
 
 ### List
 
-<Storybook story="ns-download--list"></Storybook>
+<Storybook story="components-ns-download--list"></Storybook>
 
 ## Component relationship
 

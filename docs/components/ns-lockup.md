@@ -49,7 +49,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 ## Usage
 
-<Storybook story="ns-lockup--lockbox"></Storybook>
+<Storybook story="components-ns-lockup--lockbox"></Storybook>
 
 ## Component relationship
 

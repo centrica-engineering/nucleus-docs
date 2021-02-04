@@ -20,7 +20,7 @@ Ns-slot-picker is used any time you want a customer to select a time slot. This 
 
 ## Usage
 
-<Storybook story="ns-slot-picker--standard"></Storybook>
+<Storybook story="components-ns-slot-picker--standard"></Storybook>
 
 ## Usage example 
 

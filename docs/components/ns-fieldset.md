@@ -27,7 +27,7 @@ https://www.w3.org/WAI/WCAG21/Techniques/html/H71
 
 ## Usage
 
-<Storybook story="form-ns-fieldset--standard"></Storybook>
+<Storybook story="form-components-ns-fieldset--standard"></Storybook>
 
 ## Component relationship
 

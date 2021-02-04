@@ -44,7 +44,7 @@ Positioned directly beneath the global navigation and above any content, `ns-sky
 
 ## Usage
 
-<Storybook story="ns-skyline--singular"></Storybook>
+<Storybook story="components-ns-skyline--singular"></Storybook>
 
 ## Component relationship
 

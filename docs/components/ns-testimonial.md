@@ -22,7 +22,7 @@ A new component to display all the lovely things that people say about us. The t
 
 ## Usage
 
-<Storybook story="ns-testimonial--standard"></Storybook>
+<Storybook story="components-ns-testimonial--standard"></Storybook>
 
 ## Component relationship
 
