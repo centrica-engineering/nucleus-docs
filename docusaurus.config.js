@@ -9,6 +9,10 @@ module.exports = {
   organizationName: 'British Gas', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
+    algolia: {
+      apiKey: process.env.ALGOLIA_KEY,
+      indexName: 'nucleus',
+    },
     colorMode: {
       defaultMode: 'light',
       disableSwitch: true
