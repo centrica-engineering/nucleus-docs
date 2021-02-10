@@ -8,6 +8,7 @@ description: Here are our release notes - enjoy!
 ## Version 1.26.0
 
 **A whole lotta love .. and new shiny things!! 🥳**
+
 This is the first release after 2 months of code freeze. A lot of new things to discover!
 Happy New Year! (these wishes were waiting to be released too)
 
@@ -26,7 +27,7 @@ Release date - 2021/02/04
 * We added analytics to Storybook to understand its usage.
 
 
-**Improvement ✱**
+**Improvements ✱**
 
 * `ns-panel`: we made some small layout changes.
 * `ns-caveat`: you can now add a `<p>` to a caveat, without the need of a number. This allows you to have a generic footnote on a page.
