@@ -23,7 +23,7 @@ Release date - 2021/02/04
 * `ns-illustration`: we have added a `yellow-shield` to illustrate COVID-aware messages.
 * `ns-icon`: we added the `search` option, a magnifier lens.
 * Multi-brand capability: we have released the foundation of what will enable us to open Nucleus to more than one brand. 
-* We upgraded storybook to version 6.
+* We upgraded Storybook to version 6.
 * We added analytics to Storybook to understand its usage.
 
 
@@ -57,7 +57,7 @@ Release date - 2020/12/03
 
 **New feature 💈**
 
-* You can now use pills with the `ns-inputter` `checkbox` and `radio button` to highlight something specioal about those options.
+* You can now use pills with the `ns-inputter` `checkbox` and `radio button` to highlight something special about those options.
 
 
 **Improvement 📖**
@@ -99,7 +99,7 @@ Release date - 2020/11/24
 
 
 * ns-inputter - we made all validations optional if `isRequired` is not used.
-* ns-landmark - Google have now released a fix that addresses the `ns-landmark` display issue. It is available for their latest Chromium version(87). We have been looking at adoption rates of our customers so a majority have the latest version. This release  removes the temporary fix.
+* ns-landmark - Google have now released a fix that addresses the `ns-landmark` display issue. It is available for their latest Chromium version(87). We have been looking at adoption rates of our customers so a majority have the latest version. This release removes the temporary fix.
 
 **Feedback 💌**
 
