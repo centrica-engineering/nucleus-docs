@@ -1,7 +1,114 @@
 ---
 title: Release notes
 description: Here are our release notes - enjoy!
+
 ---
+
+
+## Version 1.26.0
+
+**A whole lotta love .. and new shiny things!! 🥳**
+This is the first release after 2 months of code freeze. A lot of new things to discover!
+Happy New Year! (these wishes were waiting to be released too)
+
+Release date - 2021/02/04
+
+**New features ✍️**
+
+* `ns-content` & `ns-article`: these 2 components are the core of the new editorial content rendition. They will enable you to display long form content, enriched with images and video, as well as the usual typographic styles.
+* `ns-datepicker`: we have added the calendar to our datepicker. It is now opening our `ns-calendar` except on touch devices where we open the native calendar.
+* `ns-inputter`: we have added a search variant.
+* `ns-column`: you can now have ratio layouts using columns.
+* `ns-illustration`: we have added a `yellow-shield` to illustrate COVID-aware messages.
+* `ns-icon`: we added the `search` option, a magnifier lens.
+* Multi-brand capability: we have released the foundation of what will enable us to open Nucleus to more than one brand. 
+* We upgraded storybook to version 6.
+* We added analytics to Storybook to understand its usage.
+
+
+**Improvement ✱**
+
+* `ns-panel`: we made some small layout changes.
+* `ns-caveat`: you can now add a `<p>` to a caveat, without the need of a number. This allows you to have a generic footnote on a page.
+* We converted the es6 tokens to cti format. 
+
+
+**Bug fixes 🐛**
+
+* `dl-row`: we made the border visible for mobile.
+* `ns-landmark` We fixed a double tab issue in the `ns-cta` insite the landmark. This will improve tab navigation.
+* We fixed some PaDL issues.
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
+## Version 1.25.0
+
+**Did you take that pill? **
+
+Release date - 2020/12/03
+
+**New feature 💈**
+
+* You can now use pills with the `ns-inputter` `checkbox` and `radio button` to highlight something specioal about those options.
+
+
+**Improvement 📖**
+
+* Documentation: we removed the pills and make the default style of component names without the pill in Storybook.
+
+**Bug fixes 🐛**
+
+
+* Paragraph spacing of custom slots are fixed which fixes `nsx-marketing-consent`.
+* `ns-inputter`: editing values in separator will not move the cursor to the end anymore.
+* Fixed the console error in the Valley variant of the `ns-landmark`.
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
+## Version 1.24.0
+
+**It's all in your head(er)**
+
+Release date - 2020/11/24
+
+**New feature 💈**
+
+* You can add `ns-pill` to a `Valley` variant of `ns-landmark`to highlight a promotion, or special theme.
+* You can also add `ns-pill` to the `ns-selector` to highlight a promotion or theme to help customers make an informed choice.
+
+
+**Improvement 📖**
+
+* We have made a few changes to `ns-header` to manipulate header links using attributes and also included the Accessibility tools link to trigger and open the [ReciteMe toolbar](https://reciteme.com/).
+
+**Bug fixes 🐛**
+
+
+* ns-inputter - we made all validations optional if `isRequired` is not used.
+* ns-landmark - Google have now released a fix that addresses the `ns-landmark` display issue. It is available for their latest Chromium version(87). We have been looking at adoption rates of our customers so a majority have the latest version. This release  removes the temporary fix.
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
+
 
 ## Version 1.23.0
 
@@ -132,7 +239,7 @@ Release date - 2020/10/06
 
 * First, we released `ns-column`, to open up support for more column options, and we'll start with a 4-columns layout! Stay tuned for more options.
 * Very excited to release this one: `ns-slot-picker` it's the last piece of something big to come... a complete appointment selector.
-`ns-slot-picker` + `ns-calendar` = `ns-appointment-selector` !
+  `ns-slot-picker` + `ns-calendar` = `ns-appointment-selector` !
 
 
 **Improvement 🅰/🅱**
@@ -240,10 +347,12 @@ Release date - 2020/08/10
 * `ns-calendar` is now released. It will enable users to pick a day, and can display current date, selected date, unavailable dates. And it is fully accessible. 
 
 **Improvements 🔨**
+
 * We removed `tablist` from accordion to improve keyboard navigation and make the `ns-accordion` more accessible so it comes up on screen readers correctly.
 * We made small changes to the manual address capture for the `nsx-address-selector`
 
 **Bug fixes 🐛**
+
 * We fixed an issue where `nsx-address-selector` was scrolling sideways on validation error
 * We fixed an issue where `ns-panel` did not support more than two rows on IE11
 * `ns-form` spacing issue between selectors in IE11 is now fixed
@@ -804,14 +913,17 @@ Release date - 2019-04-15
 **What’s new around here 🌶**
 
 **Integration with Ember Commons**
+
 * A feature flag exists in Ember Commons to enable Nucleus.
 
 **Sketch Nucleus Pattern Library**
+
 * Added all available icons.
 * Added Accordions.
 * Added more screen sizes to each Component.
 
 **Documentation**
+
 * Becoming Nucleus
 * Best practices
 * [Events](community/events.md)
