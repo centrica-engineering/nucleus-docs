@@ -22,7 +22,7 @@ Utilising design tokens in your product allows Nucleus to accurately share desig
 
 The tokens are stored in JSON format and then passed through a tool that converts them in to language specific variables that can be used in a variety of technologies. We've chosen Style Dictionary to help us manage design tokens.
 
-![Design token creation diagram](https://user-images.githubusercontent.com/10724413/107632955-272ebf00-6c5f-11eb-9eb2-9d0f0f6517e4.png)
+![Design token creation diagram](https://user-images.githubusercontent.com/10724413/107638686-d2437680-6c67-11eb-9630-b82add6ee716.png)
 
 ### Component specifications
 
