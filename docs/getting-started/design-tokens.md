@@ -16,7 +16,7 @@ Design details are not limited to design foundations such as colours and fonts, 
 
 Without design tokens each technology has to maintain it's own set of variables and keep pace with the latest brand identity guidelines. Design debt often creeps in and variations in the brand occur.
 
-Utilising design tokens in your product allows Nucleus to accurately share design decisions with you through a common set of technology specific variables. Futhermore, consistent naming conventions allows nucleus to send you the latest brand changes and reduce the effort needed to implement brand updates. For example if the brand want's to change the font used for all headings we can update the tokens centrally and you would only need to pull the latest version.
+Utilising design tokens in your product allows Nucleus to accurately share design decisions with you through a common set of technology specific variables. Futhermore, consistent naming conventions allows nucleus to send you the latest brand changes and reduce the effort needed to implement brand updates. For example if the brand wants to change the font used for all headings we can update the tokens centrally and you would only need to pull the latest version.
 
 ## How they work
 
@@ -78,7 +78,7 @@ Object.assign(component.style, styles);
 
 ### Multibranding
 
-As the consuming products are not worried about the token values and are only concerned about the component specification, we can switch the specification values using another brands visual identity.
+As the consuming products are not worried about the token values and are only concerned about the component specification, we can switch the specification values using another brands' visual identity.
 
 #### Brand colour pallette
 
