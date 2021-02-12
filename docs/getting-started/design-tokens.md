@@ -8,7 +8,7 @@ description: Small and mighty
 
 Design tokens are a technology agnostic way to create and share reusable variables. They open up a number of possibilities for Nucleus including supporting technologies beyond the web, enabling multiple brand identities and creating a shared design language across the business.
 
-## Why use design tokens in your product
+## Why use design tokens in your product?
 
 Every brand has design details that are core to the brand’s identity. These details need to persist across multiple channels and technologies to ensure the brand is easily recognisable and create a consistent brand experience.
 
@@ -16,17 +16,17 @@ Design details are not limited to design foundations such as colours and fonts, 
 
 Without design tokens each technology has to maintain it's own set of variables and keep pace with the latest brand identity guidelines. Design debt often creeps in and variations in the brand occur.
 
-Utilising design tokens in your product allows Nucleus to accurately share design decisions with you through a common set of technology specific variables. Futhermore, consistent naming conventions allows nucleus to send you the latest brand changes and reduce the effort needed to implement brand updates. For example if the brand wants to change the font used for all headings we can update the tokens centrally and you would only need to pull the latest version.
+Utilising design tokens in your product allows Nucleus to accurately share design decisions with you through a common set of technology specific variables. Furthermore, consistent naming conventions allows Nucleus to send you the latest brand changes and reduce the effort needed to implement brand updates. For example if the brand team wants to change the font used for all headings we can update the tokens centrally and you would only need to pull the latest version.
 
 ## How they work
 
-The tokens are stored in JSON format and then passed through a tool that converts them in to language specific variables that can be used in a variety of technologies. We've chosen Style Dictionary to help us manage design tokens.
+The tokens are stored in JSON format and then passed through a tool that converts them into language specific variables that can be used in a variety of technologies. We've chosen [Style Dictionary](https://amzn.github.io/style-dictionary/) to help us manage design tokens.
 
 ![Design token creation diagram](https://user-images.githubusercontent.com/10724413/107638686-d2437680-6c67-11eb-9630-b82add6ee716.png)
 
 ### Component specifications
 
-To provide a clear guide on how to create a component we have created a named subset of tokens for each component. This means that consumers of the tokens will only need to ensure that are using them in the right place not specific the values of the tokens. Taking this approach leverages one of the more powerful aspects of design tokens as it allows us to update components centrally and enables multibranding functionality.
+To provide a clear guide on how to create a component we have created a named subset of tokens for each component. This means that when developers consume tokens they will not need to be concerned with the values of the tokens, they will only need to ensure that they are using tokens in the right place. Taking this approach leverages one of the more powerful aspects of design tokens as it allows us to update components centrally and enables multibranding functionality.
 
 In the following example we can alter specification without needing to edit the css or javascript files:
 
@@ -113,7 +113,8 @@ Brand tokens can be shared between specification attributes - in this example `c
 
 ## Supported technologies
 
-The current technologies we supply design tokens for support are:
+We supply design tokens for the following technologies:
+
 
 * JSON
 * Javascript (es6 and modules)
