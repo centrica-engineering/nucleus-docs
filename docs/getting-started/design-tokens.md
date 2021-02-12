@@ -124,7 +124,7 @@ Other technologies can be added if required.
 
 ## Naming conventions
 
-* Namespaced with "ns" to differentiate from other variables within consuming applications
+* Tokens start with the category they belong too. e.g. the footer component releated tokens all start with 'footer'
 * Tokens named after the attribute to style not their purpose
 
 ## How to consume
