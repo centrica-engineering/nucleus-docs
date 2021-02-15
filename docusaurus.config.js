@@ -1,3 +1,16 @@
+const algoliaScript = () => {
+  if (process.env.NODE_ENV === 'production') {
+    return {
+      algolia: {
+        apiKey: process.env.ALGOLIA_KEY,
+        indexName: 'nucleus',
+      }
+    }
+  }
+
+  return {};
+};
+
 module.exports = {
   title: 'Nucleus Design System',
   tagline: 'The tagline of my site',
@@ -9,10 +22,7 @@ module.exports = {
   organizationName: 'British Gas', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
-    algolia: {
-      apiKey: process.env.ALGOLIA_KEY,
-      indexName: 'nucleus',
-    },
+    ...algoliaScript(),
     colorMode: {
       defaultMode: 'light',
       disableSwitch: true
