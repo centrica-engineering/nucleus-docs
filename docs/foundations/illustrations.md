@@ -45,15 +45,15 @@ Illustrations use a set of three different gradients:
 
 #### Gradient - Blue
 
-![Gradient usage - Blue](https://user-images.githubusercontent.com/43471890/62051024-624ad800-b20a-11e9-846e-7bb4902e5e82.jpg)
+![Gradient usage - Blue](https://user-images.githubusercontent.com/78355810/107789459-87019480-6d49-11eb-9bd7-0d6f7e653f6e.jpg)
 
 #### Gradient - Green
 
-![Gradient usage - Green](https://user-images.githubusercontent.com/43471890/62051025-624ad800-b20a-11e9-99f3-4044fd8d3e8f.jpg)
+![Gradient usage - Green](https://user-images.githubusercontent.com/78355810/107789536-9ed91880-6d49-11eb-8356-2858c5a628e0.jpg)
 
 #### Gradient - Yellow
 
-![Gradient usage - Yellow](https://user-images.githubusercontent.com/43471890/62051026-624ad800-b20a-11e9-9ee4-b3d9ca9da6bd.jpg)
+![Gradient usage - Yellow](https://user-images.githubusercontent.com/78355810/107789591-b44e4280-6d49-11eb-8dbf-6384e438be9e.jpg)
 
 #### Highlights
 
