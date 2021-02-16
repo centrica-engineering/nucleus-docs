@@ -5,7 +5,11 @@ description: Introduction to modular scale and how it is implemented in Nucleus.
 
 > The implementation of modular scale simplifies and beautifies our designs.
 
-{% embed url="https://soapbox.wistia.com/videos/v2LAAl5UnT" caption="" %}
+<figure style={{ padding:'56.25% 0 0 0', position:'relative' }}>
+  <div style={{ height:'100%',left:'0',position:'absolute',top:'0',width:'100%' }}>
+    <iframe src="https://fast.wistia.net/embed/iframe/y0qt3chnlj?seo=false&videoFoam=true" title="Nucleus Design System - Modular Scale Video" allow="autoplay; fullscreen" allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed" name="wistia_embed" allowFullScreen width="100%" height="100%"></iframe>
+  </div>
+</figure>
 
 Scales are everywhere. Most notably in nature where the presence of the golden ratio can be found from the microscopic DNA's double helix to vast spiral galaxies.
 
@@ -44,9 +48,9 @@ For Typography, we have three multipliers to generate our scales.
 
 These are applied to our Viewport sizes in the following way:
 
-⚪️ Polo & 🏉 Rugby uses `Major Third`.  
-🏑 Hockey, ⚽ Football & 🏀 Basketball uses `Minor Third`.  
-🎾 Tennis & 🔵 Squash uses `Major Second`.
+🔵 Squash & 🎾 Tennis uses `Major Second`.
+🏀 Basketball, 🏑 Hockey & ⚽ Football & uses `Minor Third`.  
+🏉 Rugby & ⚪️ Polo uses `Major Third`.  
 
 Read more about our [Typography](foundations/typography.md) and how Modular Scale applies.
 

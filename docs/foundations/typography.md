@@ -40,36 +40,33 @@ It is possible to style each heading. A suitable style may be applied on each of
 
 > A universal typographic system which is consistent and efficient to use for both developers and designers.
 
-We've implemented the following modular scale to inform our typographic hierarchy.
+We've implemented our typographic scale using the modular scale formula: _base * ratio<sup>x</sup>_.
 
-A double stranded scale for each set of typographic sizes using two bases.
 
-### Bases
+### Base
 
-1em (16px)  
-1.375em (22px)
+We use a 1em (16px) base
 
 ### Ratios
 
 | Scale | Ratio | Viewport |
 | :--- | :--- | :--- |
-| Major second | 1.125 | Small |
-| Minor third | 1.2 | Medium |
-| Major third | 1.25 | Large |
+| Major second | 1.125 | Squash Court |
+| Minor third | 1.2 | Basketball Court |
+| Major third | 1.25 | Rugby Pitch |
 
 ### Sizes
 
-| Modular scale | Heading | Paragraph |
+| x | Heading | Paragraph |
 | :--- | :--- | :--- |
-| 12 | `<h1>` `.h1` |  |
-| 9 | `<h2>` `.h2` |  |
-| 6 | `<h3>` `.h3` | `.p-large` |
-| 5 | `<h4>` `.h4` |  |
-| 4 |  | `.p-feature` |
-| 3 | `<h5>` `.h5` |  |
-| 2 | `<h6>` `.h6` | `.p-normal` |
+| 6 | `<h1>` `.h1` |  |
+| 4.5 | `<h2>` `.h2` |  |
+| 3 | `<h3>` `.h3` | `.p-large` |
+| 2.5 | `<h4>` `.h4` |  |
+| 2 |  | `.p-feature` |
+| 1.5 | `<h5>` `.h5` |  |
+| 1 | `<h6>` `.h6` | `.p-normal` |
 | 0 |  | `.p-small` |
 | -1 |  | `.p-caption` |
-
 
 To learn more visit our foundation page on [Modular scale](foundations/modular-scale.md)
