@@ -26,7 +26,8 @@ module.exports = {
       'getting-started/accessibility',
       'getting-started/working-with-nucleus',
       'getting-started/our-process',
-      'getting-started/brand'
+      'getting-started/brand',
+      'getting-started/design-tokens'
     ],
     'Foundations': [
       'foundations/names-of-things',
