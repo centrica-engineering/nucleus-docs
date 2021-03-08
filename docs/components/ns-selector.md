@@ -22,7 +22,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 | D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](components/ns-card.md#specification) has a list of options. |
 | E | Keyline (not pictured) | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
 
-### Selector - Image new
+### Selector - Image
 
 ![Selector - Image](https://user-images.githubusercontent.com/78355810/110344821-cc9e3e00-8025-11eb-8a95-e19ee9fcc161.png)
 
