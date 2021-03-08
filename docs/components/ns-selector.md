@@ -10,7 +10,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ## Content guidance
 
-### Selector - Illustration
+### Selector - Illustrations
 
 ![Selector - Illustration](https://user-images.githubusercontent.com/78355810/110344692-a7113480-8025-11eb-9ac9-1b45bea14f21.png)
 
