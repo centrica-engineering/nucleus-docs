@@ -20,6 +20,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 | B | Heading | The heading can provide an expanded description of the item being selected. The recommended length is between 3 and 21 characters. This heading should use a light font weight to allow the emphasis on the label. |
 | C | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](components/ns-card.md#specification) has a list of options. |
+| E | Keyline (not pictured) | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
 
 ### Selector - Image
 
@@ -30,6 +31,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 | A | Label | The label should describe the selection being made using the most concise content possible. The recommended length is 21 characters maximum. |
 | B | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | C | Image | This is the image that will be used above the ns-card. It should have an aspect ratio of 16:9, the dimensions should be 640x360px, the file type should be jpg, and the file size should be no more than 50kb. |
+| D | Keyline (not pictured) | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
 
 ### Image guidance
 
@@ -77,6 +79,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 | `decoration` | `string` |  |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)| Illustration that is show in the section type card |
 | `image`      | `string` |  |  | Optional image |
 | `value` | `any`     |  |  | Value of selection |
+| `keyline` | `string` | none | `blue`, `yellow`, `green-light`, `cyan`, `red` | Add a graident accross the top of the selector |
 
 | Slots | Type |
 | :--- | :--- |
