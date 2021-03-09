@@ -79,7 +79,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 | `decoration` | `string` |  |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)| Illustration that is show in the section type card |
 | `image`      | `string` |  |  | Optional image |
 | `value` | `any`     |  |  | Value of selection |
-| `keyline` | `string` | none | `blue`, `yellow`, `green-light`, `cyan`, `red` | Add a graident accross the top of the selector |
+| `keyline` | `string` | none | `blue`, `yellow`, `green-light`, `cyan`, `red` | Add a gradient across the top of the selector |
 
 | Slots | Type |
 | :--- | :--- |
