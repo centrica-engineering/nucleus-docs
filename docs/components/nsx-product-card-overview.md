@@ -9,7 +9,7 @@ The product card overview is an experience pattern that can be used for product 
 ## Content guidance
 
 ### With Excess
-When `excess` property of the overview component is set with array of price options, the excess prices are displayed as radio options in the overview component. When user selects an radio option, `excess-change` event is dispatched from the overview component. The consuming wrapper component has to listen for the event and set the updated ns-price-card prices back in `data` attribute of the component.
+When `excess` property of the overview component is set with array of price options, the excess prices are displayed as radio options in the overview component. When user selects an radio option, `excess-change` event is dispatched from the overview component. The consuming wrapper component has to listen for the event and set the updated ns-product-card prices back in `data` attribute of the component.
 
 #### Usage
 
@@ -17,7 +17,7 @@ When `excess` property of the overview component is set with array of price opti
 <nsx-product-card-overview excess="[60,0]" data='[{"monthly": 1200,"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
 ```
 
-![Experience pattern - Product Card Comparison](https://user-images.githubusercontent.com/78729952/110317836-943a3800-8004-11eb-85e8-437f8d4edb16.png)
+![Experience pattern - Product Card Comparison with Excess](https://user-images.githubusercontent.com/78729952/110317836-943a3800-8004-11eb-85e8-437f8d4edb16.png)
 
 ### Without Excess
 
@@ -25,6 +25,7 @@ When `excess` property of the overview component is set with array of price opti
 ```markup
 <nsx-product-card-overview data='[{"monthly": 1200,"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
 ```
+![Experience pattern - Product Card Comparison](https://user-images.githubusercontent.com/78729952/110448202-e177e180-80b8-11eb-8a02-6c40db07a9ba.png)
 
 ## Specification
 
