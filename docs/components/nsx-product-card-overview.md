@@ -7,7 +7,7 @@ description: Experience | Product Card Comparison.
 The product card overview is an experience pattern that can be used to compare HomeCare products against each other and see the difference in price when choosing to have an excess or not - without having to reload the entire page.
 
 ## Content guidance
-Wrap the overview component in `ns-panel` and use its `decoration` attribute for decoration. It is possible to use any [decoration](ns-panel#specification) for ns-panel. However we recommanded to use **only** `invert-concave-grey-light` decoration for better accessibility of the contents inside the overview component.
+Wrap the overview component in `ns-panel` and use its `decoration` attribute for decoration. It is possible to use any [decoration](ns-panel#specification) for ns-panel. However we recommend to use **only** `invert-concave-grey-light` decoration for better accessibility of the contents inside the overview component.
 
 ```markup
 <ns-panel decoration="invert-concave-grey-light">
