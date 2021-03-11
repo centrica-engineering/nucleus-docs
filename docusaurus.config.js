@@ -1,9 +1,13 @@
-const algoliaScript = () => {
+const prodScripts = () => {
   if (process.env.NODE_ENV === 'production') {
     return {
       algolia: {
         apiKey: process.env.ALGOLIA_KEY,
         indexName: 'nucleus',
+      },
+      googleAnalytics: {
+        trackingID: 'UA-72906223-20',
+        anonymizeIP: true,
       }
     }
   }
@@ -22,7 +26,7 @@ module.exports = {
   organizationName: 'British Gas', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
-    ...algoliaScript(),
+    ...prodScripts(),
     colorMode: {
       defaultMode: 'light',
       disableSwitch: true
