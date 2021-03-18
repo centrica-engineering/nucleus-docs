@@ -3,8 +3,6 @@ title: Vanilla first
 description: Vanilla first thinking
 ---
 
-# Be vanilla first
-
 > It's a mindset, an undercurrent supporting our process.
 
 ## What is vanilla first?

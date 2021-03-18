@@ -4,8 +4,6 @@ description: Molecule | Content component.
 
 import { Storybook } from '../../includes/storybook.js'
 
-# ns-content
-
 ## Introduction
 
 > ns-content is used to display typography and media.

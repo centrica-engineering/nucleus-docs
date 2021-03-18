@@ -4,8 +4,6 @@ description: Organism | Article component.
 
 import { Storybook } from '../../includes/storybook.js'
 
-# ns-article
-
 ## Introduction
 
 > `ns-article` is used to display long-form content
