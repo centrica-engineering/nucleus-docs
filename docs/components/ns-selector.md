@@ -12,7 +12,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ### Selector - Illustration
 
-![Selector - Illustration](https://user-images.githubusercontent.com/28779/84039057-98172c00-a998-11ea-83de-93034e1aea93.png)
+![Selector - Illustration](https://user-images.githubusercontent.com/78355810/110344692-a7113480-8025-11eb-9ac9-1b45bea14f21.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -20,16 +20,18 @@ Selectors are used to group an image or illustration with a label into a card. T
 | B | Heading | The heading can provide an expanded description of the item being selected. The recommended length is between 3 and 21 characters. This heading should use a light font weight to allow the emphasis on the label. |
 | C | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](components/ns-card.md#specification) has a list of options. |
+| E | Keyline | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
 
 ### Selector - Image
 
-![Selector - Image](https://user-images.githubusercontent.com/28779/84029133-d0fbd480-a989-11ea-97fd-a1fb92bd5362.png)
+![Selector - Image](https://user-images.githubusercontent.com/78355810/110449272-f30db900-80b9-11eb-83ad-13fef7f6e2bb.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | Label | The label should describe the selection being made using the most concise content possible. The recommended length is 21 characters maximum. |
 | B | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | C | Image | This is the image that will be used above the ns-card. It should have an aspect ratio of 16:9, the dimensions should be 640x360px, the file type should be jpg, and the file size should be no more than 50kb. |
+| D | Keyline | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
 
 ### Image guidance
 
@@ -77,6 +79,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 | `decoration` | `string` |  |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)| Illustration that is show in the section type card |
 | `image`      | `string` |  |  | Optional image |
 | `value` | `any`     |  |  | Value of selection |
+| `keyline` | `string` | none | `blue`, `yellow`, `green-light`, `cyan`, `red` | Add a gradient across the top of the selector |
 
 | Slots | Type |
 | :--- | :--- |
