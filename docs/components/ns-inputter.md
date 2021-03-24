@@ -237,7 +237,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 |  **Relationship**  |  |
 | :--- | :--- |
 | **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-form`, `ns-fieldset` and `ns-datepicker` |
+| **Does it live inside other components?** |  ✅ Yes -  `ns-form`, `ns-fieldset`, `ns-datepicker` and `ns-password` |
 | **What layout classes can be used?**  | None |
 
 ## Specification
@@ -333,4 +333,5 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 * [ns-form](components/ns-form.md)
 * [ns-fieldset](components/ns-fieldset.md)
 * [ns-datepicker](components/ns-datepicker.md)
+* [ns-password](components/ns-password.md)
 * [ns-cta](components/ns-cta.md)
