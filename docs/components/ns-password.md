@@ -25,25 +25,17 @@ This component wraps our ns-inputter component. Guidelines defined on the ns-inp
 
 ## Specification
 
+Also see ns-inputter [specification](components/ns-inputter.md#specification)
+
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `value`   | `string` | `''` |  | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an initial value |
-| `helper` | `string` |  |  | Adds a message between the label and the input. Used to convey a message to help the user to fill in the input |
-| `name` | `string` |  |  | The name of this field as it will display in the form data. |
+| `helper` | `string` |  |  | See [ns-inputter](components/ns-inputter.md#specification). |
+| `name` | `string` | `password` |  | See [ns-inputter](components/ns-inputter.md#specification). |
 
 | Slots | Type |
 | :--- | :--- |
 | `tip-details` | `p tag` |
-
-## Specification notes
-
-### Helper
-
-* A way to help the user understand why or why not enter information
-
-### Tip-details slot
-
-* This requires helper property which is initially hidden and can be revealed by the user when they click on the helper text.
 
 ## Feedback
 
