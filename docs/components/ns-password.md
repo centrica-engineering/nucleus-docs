@@ -6,36 +6,10 @@ import { Storybook } from '../../includes/storybook.js'
 
 ## Introduction
 
-The ns-password component displays a simple input which allows the users to toggle between hiding and showing the password they are entering.
-This should only be used within a form.
+> Use to help the user enter a password in a form.
 
-## Functionality
-
-The ns-password component provides the following attributes and functionality:
-
-### Helper text
-
-The `helper` attribute allows you to add a message between the label and the input to help the user to fill in the input.
-
-When used with radio buttons or checkboxes, this will appear between the `<legend>` and the options.
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Keep it to one line | Use for error messaging |
-| Use it to explain why we need information | Put examples of inputs inside |
-| Use it when the reason for asking maybe unclear |  |
-| Use as a prompt |  |
-
-### Tip Detail
-
-If you need to provide more detailed context to the options available, you can use the tip detail in conjuntion with the `helper`.
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Use to provide additional context to helper text | Repeat helper text |
-| Use basic formatting for copy | Add imagery |
-| Use as an explanation | Exceed two paragraphs. Link off if necessary |
-| Use as a prompt |  |
+This component wraps our ns-inputter component. Guidelines defined on the ns-inputter should also be followed when using this component.
+[ns-inputter documentation](components/ns-inputter.md)
 
 ## Usage
 
@@ -61,10 +35,6 @@ If you need to provide more detailed context to the options available, you can u
 | :--- | :--- |
 | `tip-details` | `p tag` |
 
-| Event | Description |
-| :--- | :--- |
-| `change` | Will be dispatched when input changes |
-
 ## Specification notes
 
 ### Helper
@@ -84,5 +54,5 @@ If you need to provide more detailed context to the options available, you can u
 
 ## Related links
 
-* [ns-form](components/ns-form.md)
-* [ns-cta](components/ns-cta.md)
+* [ns-inputter](components/ns-inputter.md)
+* [ns-form](components/ns-fieldset.md)
