@@ -8,13 +8,14 @@ import { Storybook } from '../../includes/storybook.js'
 
 The ns-inputter is a multi-purpose wrapper component that helps with the display of the following form control types:
 
-- text (including tel, email, password, and number)
+- text (including tel, email, and number)
 - radio buttons
 - checkboxes
 - select (drop-downs)
 - textareas
 
 These types of inputs are used to help customers enter and select information. Inputs can only be used within a form. 
+If you would like to use a password input then please see the [ns-password](components/ns-password.md) component.
 
 ## Most common input types
 
@@ -28,7 +29,7 @@ The text input is ideal for entering text that takes up a single line, such as a
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Only use our specified text type. (eg. Text, Password, etc) | Use more than one text input within an inputter |
+| Only use our specified text type. (eg. Text, Email etc) | Use more than one text input within an inputter |
 | Use autocomplete attribute | Put anything inside the text input |
 | Base width of input on expected length of input |  |
 | Make your labels easy to read and understand |  |
