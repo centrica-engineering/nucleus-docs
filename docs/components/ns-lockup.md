@@ -66,7 +66,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 | `type` | `string` | `lockbox` | `lockjaw`, `lockbox`, `locknut` | Different style variants. |
 | `reversed` | `boolean` | `false` |`true`, `false`| Switches the order of the text and image. Default is text to the left. |
 | `ratio` | `string` | `4x3` | `4:3`, `16:9`, `1:1` | Ratio for the image. |
-| `decoration` | `string` |  | See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustration--appliance) | Adds illustration between the text and image. |
+| `decoration` | `string` |  | See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustration--standard) | Adds illustration between the text and image. |
 
 | Slots | Type |
 | :--- | :--- |
