@@ -36,11 +36,11 @@ import { Storybook } from '../../includes/storybook.js'
 
 ## Usage
 
-<Storybook story="ns-article--standard"></Storybook>
+<Storybook story="components-ns-article--standard"></Storybook>
 
 ### Article split into sections
 
-<Storybook story="ns-article--sections"></Storybook>
+<Storybook story="components-ns-article--sections"></Storybook>
 
 ## Component relationship
 
