@@ -12,12 +12,12 @@ Last release, we set the groundwork to start lifting the brand layer off of our 
 
 Release date - 2021/04/08
 
-**New features 🔘**
+**New features ᐧ ᐧ ᐧ ᐧ**
 
 * `ns-password`: a brand new password component is now available, and it's called `ns-password`! This is the first of two releases and allows to capture an existing password. Stay tuned for the password creation side of things! (the documentation for the component will be released with the part)
 
 
-**Improvements 🏵**
+**Improvements 🖋**
 * `ns-content` can now be consumed by *any* (most) component(s)
 
 **Multibrand enablement and design tokens 🪙**
