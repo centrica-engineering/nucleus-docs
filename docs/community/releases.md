@@ -41,8 +41,8 @@ Release date - 2021/04/08
 
 **Bug fixes 🐛**
 
-* `ns-lockup` - Over-ride font size fix
-* `ns-datepicker` - the calendar clashed with it's surroundings in some scenarios. This is now fixed (first solution is content is pushed to allow calendar to open, a second more refined improvement is coming)
+* `ns-lockup` - override font size fix
+* `ns-datepicker` - the calendar clashed with its surroundings in some scenarios. This is now fixed (first solution is content is pushed to allow calendar to open, a second more refined improvement is coming)
 * `ns-article` - table alignment issue fixed
 
 **Feedback 💌**
