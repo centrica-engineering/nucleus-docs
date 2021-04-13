@@ -4,9 +4,106 @@ description: Here are our release notes - enjoy!
 
 ---
 
+## Version 1.28.0
+
+**Tokens, tokens, tolkens 🪙🪙🪙 (oh, and passw ᐧ ᐧ ᐧ ᐧ!)**
+
+Last release, we set the groundwork to start lifting the brand layer off of our components, and store those styles in tokens. Well, in this release, things are definitely in motion. We also have released the first half of a brand new password component.
+
+Release date - 2021/04/08
+
+**New features ᐧ ᐧ ᐧ ᐧ**
+
+* `ns-password`: a brand new password component is now available, and it's called `ns-password`! This is the first of two releases and allows the capture an existing password. Stay tuned for the password creation side of things! (The documentation will be released with that part of the component)
+
+
+**Improvements 🖋**
+* `ns-content` can now be consumed by *any* (most) component(s)
+
+**Multibrand enablement and design tokens 🪙**
+
+* `ns-testimonial` - Added typography tokens
+* `ns-appointment-picker` - Added typography tokens
+* `ns-calendar` - Added typography tokens
+* `ns-fieldset` - Added typography tokens
+* `ns-highlighter` - Added typography tokens
+* `ns-lockup` - Added typography tokens
+* `ns-landmark` - Added typography tokens
+* `ns-expander` - Added typography tokens
+* `ns-skyline` - Added typography tokens
+* `ns-card` - Added typography tokens
+* `ns-download` - Added typography tokens
+* `ns-footer` - Added typography tokens
+* `ns-editorial` - Added typography tokens
+* `ns-accordion` - Added typography tokens
+
+
+
+**Bug fixes 🐛**
+
+* `ns-lockup` - override font size fix
+* `ns-datepicker` - the calendar clashed with its surroundings in some scenarios. This is now fixed (first solution is content is pushed to allow calendar to open, a second more refined improvement is coming)
+* `ns-article` - table alignment issue fixed
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
+
+## Version 1.27.0
+
+**Getting ready for Spring! 🌷**
+
+Spring is around the corner, but we already started our Spring cleaning! We are currently working towards the removal of the brand layer from the components, to allow non British Gas brands to use our design system! 
+We also added a feature to the Selector, improved and fixed a few things!
+
+Release date - 2021/03/16
+
+**New features 🔘**
+
+* `ns-selector` can now be decorated with a keyline to colour-code or highlight elements!
+
+
+**Improvements 🏵**
+* Decorations can now be used with Nucleus Experiences (`nsx-`).
+* `ns-header` released some small visual improvements
+* Sharable foundations through `nucleus-util` repo
+* `ns-inputter` - You can now match a text type inputter and the password type inputter using the *autocomplete* attribute
+
+
+**Multibrand enablement and design tokens 🪙**
+
+* Colour: we enabled the foundation alteration via tokens.
+* Javascript: we enabled the foundation alteration via tokens
+* Typography: we enabled the foundation alteration via tokens.
+* Typography: we applied design tokens to `h` tags, `h` classes and `p` classes
+* `ns-caveat` - typography styles moved to design tokens.
+
+
+**Bug fixes 🐛**
+
+* `ns-pill` - caveat colour fixed in EDGE 18
+* `ns-form` had an offset width on the call to action. This is now fixed.
+* `Storybook` had an issue in the grey and green decorations for `ns-panel`. This is now fixed.
+* We updated catch section to address localhost CORS failure.
+* `ns-illustration` - There was an error message displaying for an undefined illustration (no illustration name specified). This is now fixed.
+* `ns-card` - *aria-label* in card nav type was causing an accessibility issue. This is now fixed.
+* `ns-editorial` - Heading misalignment with paragraph in IE11. This is now fixed.
+* `ns-header` - The clickable target area for the logo was wider than expected. This is now fixed.
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
 
 ## Version 1.26.0
-
 **A whole lotta love .. and new shiny things!! 🥳**
 
 This is the first release after 2 months of code freeze. A lot of new things to discover!
