@@ -14,7 +14,7 @@ Release date - 2021/04/08
 
 **New features ᐧ ᐧ ᐧ ᐧ**
 
-* `ns-password`: a brand new password component is now available, and it's called `ns-password`! This is the first of two releases and allows to capture an existing password. Stay tuned for the password creation side of things! (the documentation for the component will be released with the part)
+* `ns-password`: a brand new password component is now available, and it's called `ns-password`! This is the first of two releases and allows the capture an existing password. Stay tuned for the password creation side of things! (The documentation will be released with that part of the component)
 
 
 **Improvements 🖋**
