@@ -22,7 +22,7 @@ Release date - 2021/04/08
 
 **Multibrand enablement and design tokens 🪙**
 
-* `ns-testimonial` - typography tokens added
+* `ns-testimonial` - Added typography tokens
 * `ns-appointment-picker` - Added typography tokens
 * `ns-calendar` - Added typography tokens
 * `ns-fieldset` - Added typography tokens
@@ -69,7 +69,7 @@ Release date - 2021/03/16
 
 
 **Improvements 🏵**
-* Decorations can no be used with Nucleus Experiences (`nsx-`).
+* Decorations can now be used with Nucleus Experiences (`nsx-`).
 * `ns-header` released some small visual improvements
 * Sharable foundations through `nucleus-util` repo
 * `ns-inputter` - You can now match a text type inputter and the password type inputter using the *autocomplete* attribute
