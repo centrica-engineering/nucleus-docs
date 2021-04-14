@@ -281,7 +281,7 @@ https://github.com/ConnectedHomes/nucleus/projects/6
 
 Any questions? Let us know 🙌🏼
 
-## Version 1.20
+## Version 1.20.0
 
 **View(s)ports 📺**
 
