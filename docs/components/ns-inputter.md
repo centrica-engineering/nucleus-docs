@@ -226,7 +226,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 * Use standard examples for placeholder copy.
 * If you are asking for first and last name within a text input, spell check should be disabled.
 * Refer to the text input auto complete definitions.
-* Always try and have a default selected radio button unless... .
+* Always try and have a default selected radio button unless...
 
 ## Usage
 
