@@ -16,12 +16,12 @@ Wrap the overview component in `ns-panel` and use its `decoration` attribute for
 ```
 
 ### With Excess
-When `excess` property of the overview component is set with an array of price options, the excess prices are displayed as radio options in the overview component. When a user selects a radio option, an `excess-change` event is dispatched from the overview component. The consuming wrapper component has to listen for the event and sets the updated ns-product-card prices back in the `data` attribute of the component.
+When `excess` property of the overview component is set with an array of price options, the excess prices are displayed as radio options in the overview component. When a user selects a radio option, an `excess-change` event is dispatched from the overview component. The consuming wrapper component has to listen for the event and sets the updated ns-product-card prices back in the `pricing` attribute of the component.
 
 #### Usage
 
 ```markup
-<nsx-product-card-overview excess="[60,0]" data='[{"monthly": 1200,"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
+<nsx-product-card-overview excess="[60,0]" pricing='[{"monthly": 1200,"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
 ```
 
 ![Experience pattern - Product Card Overview with Excess](https://user-images.githubusercontent.com/78729952/110317836-943a3800-8004-11eb-85e8-437f8d4edb16.png)
@@ -30,7 +30,7 @@ When `excess` property of the overview component is set with an array of price o
 
 #### Usage
 ```markup
-<nsx-product-card-overview data='[{"monthly": 1200,"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
+<nsx-product-card-overview pricing='[{"monthly": 1200,"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
 ```
 ![Experience pattern - Product Card Overview](https://user-images.githubusercontent.com/78729952/110448202-e177e180-80b8-11eb-8a02-6c40db07a9ba.png)
 
@@ -38,7 +38,7 @@ When `excess` property of the overview component is set with an array of price o
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :------ |
-| `data` | `array` | `[]` | `required` | The list of price values to be updated in the product card price slots |
+| `pricing` | `array` | `[]` | `required` | The list of price values to be updated in the product card price slots |
 | `excess` | `array` | `[]` | `optional` | The list of excess prices that will be displayed as radio options to the user for excess selection|
 | `priceheading` | `string` | `Estimated Price` | `optional` | The product card price heading prefix used to display in product card price heading slot along with excess value if any|
 
@@ -59,7 +59,7 @@ When `excess` property of the overview component is set with an array of price o
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Always use `data` attribute to set price in product cards. | Use `price` slot in each product card  |
+| Always use `pricing` attribute to set price in product cards. | Use `price` slot in each product card  |
 | Always use `priceheading` attribute to set price heading in product cards. | Use `price-heading` slot in each product card |
 | Always use `ns-content` for `content` slot to add subheading and description of the overview component. |  |
 
