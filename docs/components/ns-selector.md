@@ -100,3 +100,4 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 * [ns-inputter](components/ns-inputter.md)
 * [ns-pill](components/ns-pill.md)
+* [ns-expander](components/ns-expander.md)
