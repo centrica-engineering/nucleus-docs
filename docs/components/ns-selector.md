@@ -19,9 +19,9 @@ Selectors are used to group an image or illustration with a label into a card. T
 | A | Label | The label should describe the selection being made using the most concise content possible. The recommended length is 21 characters maximum. |
 | B | Heading | The heading can provide an expanded description of the item being selected. The recommended length is between 3 and 21 characters. This heading should use a light font weight to allow the emphasis on the label. |
 | C | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](components/ns-card.md#specification) has a list of options. |
+| D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](../components/ns-card.md#specification) has a list of options. |
 | E | Keyline | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
-| G | Expanders | An optional addition of an [ns-expander](components/ns-expander) component within the selector allows for more detail to be discoverable. It consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content.
+| G | Expanders | An optional addition of an [ns-expander](../components/ns-expander) component within the selector allows for more detail to be discoverable. It consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content.
 
 ### Selector - Image
 
@@ -98,6 +98,6 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ## Related links
 
-* [ns-inputter](components/ns-inputter.md)
-* [ns-pill](components/ns-pill.md)
-* [ns-expander](components/ns-expander.md)
+* [ns-inputter](../components/ns-inputter.md)
+* [ns-pill](../components/ns-pill.md)
+* [ns-expander](../components/ns-expander.md)
