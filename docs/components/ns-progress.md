@@ -10,7 +10,14 @@ import { Storybook } from '../../includes/storybook.js'
 
 A progress component consists of a step count (eg. Step 1 of 3), an optional 'Info' heading statement, a stepped horizontal bar and track indicating the progress made and the step a user is on, and an optional 'Next' comment to predict the next step. It also has a 'Completed' status.
 
-There are 3 types, Standard, Dynamic and Automated. Dynamic allows the progress to be advanced or retarded by user input such as previous and next buttons. Automated is intended for use such as checking details, generating quotes, etc and will proceed to the next step by itself until completed.
+The progress component can be manipulated in the DOM without the need to reload the component. This dynamic behaviour enhances the user experience and facillitates the follwing experiences:
+
+* Updating after user input
+* Using in combination with other components such as previous and next cta's
+* Skipping steps
+* Going back to previous steps
+* Automatically procceeding to the next step by itself until completed
+* Create "rest" steps that automatically proceed after checking details, generating quotes, etc
 
 ## Content guidance
 
@@ -34,59 +41,41 @@ There are 3 types, Standard, Dynamic and Automated. Dynamic allows the progress 
 | Use to indicate progress of journey | Use to show anything else such as loading |
 | Info and Next parts should show a statement describing the step | Use questions on Info and Next - keep it informative |
 | Keep Info and Next statements concise or omit if unnecessary or duplicating content | Omit one step but not the rest for Info - instead use an 'all or nothing approach'  |
-| Keep steps to a minimum for perceived simplicity | Nest as sub-process | 
-| Use up to 20 steps but ideally not more than 10 | Use less than 2 steps | 
+| Keep steps to a minimum for perceived simplicity | Nest as sub-process |
+| Use up to 20 steps but ideally not more than 10 | Use less than 2 steps |
+| Use JavaScript to dynamically update the component rather than re-add on each page | Use more than 1 on a page |
+| Use the completed state on the confirmation page | Use the last step as the confirmation page |
 
+## Browser support
+
+Internet Explorer 11 and Microsoft Edge 18 and lower do not show the progress bar.
 
 ## Usage
 
-<Storybook story="components-ns-progress--progress"></Storybook>
+<Storybook story="components-ns-progress--standard"></Storybook>
 
 ## Component relationship
 
 |  **Relationship**  |  |
 | :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-landmark` |
+| **Does it live in a progress?** | ✅  Yes |
+| **Does it live inside other components?** |  ✅  Yes -  `ns-landmark type="hillside` |
 | **What layout classes can be used?**  | None |
 
-## <<< ROB HAS COMPLETED TO THIS POINT >>>
 ## Specification
 
-| Attribute | Type | Default   | Options   | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `type` | `string` | `standard` | `skyline`, `standard` | Variants for the expander. |
-| `open` | `string` | `false` | `true`, `false` | If true will open the expander to show the content. |
-| `icon` | `string` |  | `info`, `warning`. See [`ns-icon` component](https://britishgas.design/components/ns-icon) | Only use for a `type` of `skyline` |
-| `colour` | `string` |  | `yellow` | Sets the colour for the heading - Only use for a `type` of `standard` |
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- |-------------|
+| `steps` | `number` |  |  | The maximum number of steps to show |
+| `current` | `number` | `1`|  | The step to show as active |
+| `info` | `string` |  |  | Information about the current step |
+| `next` | `string` |  |  | Information about the next step |
+| `complete` | `boolean` |  | `false` | Use to show the completed state |
 
-| Slots | Type |
-| :--- | :--- |
-| `heading` | `h tag`      |
-| anonymous | html content |
-
-## Specification notes
-
-### Heading
-
-* This is the heading to the anonymous content.
-
-### Open
-
-* Defines if the expander is in an open or closed state.
-
-### Anonymous
-
-* Place the content of what you want to be expanded (or hidden) in this slot.
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-expander]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-expander]).
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-progress]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-progress]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
-## Related links
-
-* [ns-accordion](components/ns-accordion.md)
-* [ns-skyline](components/ns-skyline.md)
