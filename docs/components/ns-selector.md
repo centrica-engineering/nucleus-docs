@@ -25,7 +25,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ### Selector - Image
 
-![Selector - Image](https://user-images.githubusercontent.com/78355810/110449272-f30db900-80b9-11eb-83ad-13fef7f6e2bb.png)
+![Selector - Image](https://user-images.githubusercontent.com/78355810/115587322-76c7e180-a2c5-11eb-9e44-d9ae09de9ad4.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -33,6 +33,8 @@ Selectors are used to group an image or illustration with a label into a card. T
 | B | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | C | Image | This is the image that will be used above the ns-card. It should have an aspect ratio of 16:9, the dimensions should be 640x360px, the file type should be jpg, and the file size should be no more than 50kb. |
 | D | Keyline | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
+| E | Expanders | An optional addition of an [ns-expander](../components/ns-expander) component within the selector allows for more detail to be discoverable. It consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content.
+
 
 ### Image guidance
 
