@@ -11,7 +11,7 @@ description: Here are our release notes - enjoy!
 In the previous release, we introduced a new `ns-password` component that covered entering an existing password. This release brings you the second half, that is actually maybe bigger than the first half: it's all about creating a new password, and making that experience easier! Oh, and we also added expanders to `ns-selector` and continued with our design token work.
 Meanwhile, NASA flew a helicopter on Mars. No big deal!
 
-Release date - 2021/04/20
+Release date - 2021/04/19
 
 **New features ᐧ ᐧ ᐧ ᐧ**
 * `ns-password` now also allows to create a new password. It features a show/hide interaction, inline validation with criteria being validated visually  to help users match the minimum requirements as they go and know what they're missing, as well as positive reinforcement in the messaging. Give it a go [in the component library](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-components-ns-password--confirm-password)!
