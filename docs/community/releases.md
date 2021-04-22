@@ -4,6 +4,35 @@ description: Here are our release notes - enjoy!
 
 ---
 
+## Version 1.29.0
+
+**✔ 8 characters long, with letters and numbers**
+
+In the previous release, we introduced a new `ns-password` component that covered entering an existing password. This release brings you the second half, that is actually maybe bigger than the first half: it's all about creating a new password, and making that experience easier! Oh, and we also added expanders to `ns-selector` and continued with our design token work.
+Meanwhile, NASA flew a helicopter on Mars. No big deal!
+
+Release date - 2021/04/19
+
+**New features ᐧ ᐧ ᐧ ᐧ**
+* `ns-password` now also allows to create a new password. It features a show/hide interaction, inline validation with criteria being validated visually  to help users match the minimum requirements as they go and know what they're missing, as well as positive reinforcement in the messaging. Give it a go [in the component library](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-components-ns-password--confirm-password)!
+
+**Improvements 🖋**
+* `ns-selector` - you can now ad expanders to `ns-selector`
+
+
+**Multibrand enablement and design tokens 🪙**
+
+* `ns-pill` - Added typography tokens
+* `ns-header` - Added typography tokens
+* `ns-product-card` - Added typography tokens
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
 ## Version 1.28.0
 
 **Tokens, tokens, tolkens 🪙🪙🪙 (oh, and passw ᐧ ᐧ ᐧ ᐧ!)**
