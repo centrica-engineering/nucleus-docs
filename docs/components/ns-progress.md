@@ -3,6 +3,7 @@ description: Molecule | Progress component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/storybook.js'
 
 ## Introduction
 
@@ -72,6 +73,7 @@ Internet Explorer 11 and Microsoft Edge 18 and lower do not show the progress ba
 | `next` | `string` |  |  | Information about the next step |
 | `complete` | `boolean` |  | `false` | Use to show the completed state |
 
+<Tokens component="progress"></Tokens>
 
 ## Feedback
 
