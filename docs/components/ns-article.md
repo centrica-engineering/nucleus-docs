@@ -3,6 +3,7 @@ description: Organism | Article component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -59,6 +60,8 @@ import { Storybook } from '../../includes/storybook.js'
 ### Anonymous
 
 * First children can only be `<ns-content>` or `<section>`
+
+<Tokens component="article"></Tokens>
 
 ## Feedback
 

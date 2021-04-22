@@ -3,6 +3,7 @@ description: Organism | Accordion component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -63,6 +64,8 @@ If more than eight are used we should stop to reassess why and perhaps breakdown
 
 * Place ns-expanders into this slot.
 * Check the [ns-expander documentation](components/ns-expander.md) for more information.
+
+<Tokens component="accordion"></Tokens>
 
 ## Feedback
 

@@ -3,6 +3,7 @@ description: Molecule | Inputter component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -320,7 +321,9 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
   * isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode.  This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function.  eg. `isPostcode(true)`
 
-   * isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number.  This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function.  eg. `isPhoneNumber(true)`
+  * isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number.  This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function.  eg. `isPhoneNumber(true)`
+
+<Tokens component="inputter"></Tokens>
 
 ## Feedback
 

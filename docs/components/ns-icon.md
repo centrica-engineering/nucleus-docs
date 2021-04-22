@@ -3,6 +3,7 @@ description: Atom | Icon component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -60,6 +61,8 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 If you are looking to create a new icon then please check there is not something similar already in use. If there is no suitable icon then you should let us know and we can look at creating it for the design system.
 
 Read our [icon foundation page](foundations/icons.md#creating-new-icons) for more information on creating icons.
+
+<Tokens component="icon"></Tokens>
 
 ## Feedback
 

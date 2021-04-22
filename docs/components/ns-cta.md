@@ -3,6 +3,7 @@ description: Molecule | CTA component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -93,6 +94,8 @@ You can see the live example of the loading state on [storybook](https://www.bri
 
 * Can be used instead of having a wrapper anchor
 * This shouldn't be used if `onClick` event is added.
+
+<Tokens component="cta"></Tokens>
 
 ## Feedback
 

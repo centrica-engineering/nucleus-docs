@@ -3,6 +3,7 @@ description: Organism | Highlighter component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -96,6 +97,7 @@ The message must be in plain English, and help the user out of the situation by 
 
 * This should be a heading level 2
 
+<Tokens component="highlighter"></Tokens>
 
 ## Feedback
 

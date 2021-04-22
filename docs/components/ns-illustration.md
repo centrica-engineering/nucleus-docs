@@ -3,6 +3,7 @@ description: Atom | Illustration component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -56,6 +57,8 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 If you are looking to create a new illustration then please check there is not something similar already in use. If there is no suitable illustration then you should let us know and we can look at creating it for the design system.
 
 Read our [illustration foundation page](foundations/illustrations.md#creating-new-illustrations) for more information on creating illustrations.
+
+<Tokens component="illustration"></Tokens>
 
 ## Feedback
 

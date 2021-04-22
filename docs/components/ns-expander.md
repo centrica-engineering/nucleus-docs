@@ -3,6 +3,7 @@ description: Molecule | Expander component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -68,6 +69,8 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 ### Anonymous
 
 * Place the content of what you want to be expanded (or hidden) in this slot.
+
+<Tokens component="expander"></Tokens>
 
 ## Feedback
 

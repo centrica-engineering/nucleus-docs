@@ -3,6 +3,7 @@ description: Atom | Download component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -64,6 +65,8 @@ The one exception to this rule is in forms as there are often challenges around 
 | Slots | Type |
 | :--- | :--- |
 | Anonymous | textNode |
+
+<Tokens component="download"></Tokens>
 
 ## Feedback
 

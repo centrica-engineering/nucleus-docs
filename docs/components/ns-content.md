@@ -3,6 +3,7 @@ description: Molecule | Content component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -35,6 +36,8 @@ ns-content relies on clean HTML in order to display correctly. Avoid using addit
 | Slots | Type |
 | :--- | :--- |
 | anonymous | html content |
+
+<Tokens component="content"></Tokens>
 
 ## Feedback
 

@@ -3,6 +3,7 @@ description: Organism | Footer component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -52,6 +53,8 @@ It also holds information about the company.
 ### Section slot
 
 * Should use the `ns-card` with type `nav`.
+
+<Tokens component="footer"></Tokens>
 
 ## Feedback
 

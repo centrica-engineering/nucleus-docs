@@ -3,6 +3,7 @@ description: Organism | Header component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -141,6 +142,8 @@ Each section:
   }
 ]
 ```
+
+<Tokens component="header"></Tokens>
 
 ## Feedback
 

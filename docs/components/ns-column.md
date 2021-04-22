@@ -3,6 +3,7 @@ description: Atom | Column component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -60,32 +61,34 @@ Each value is applied at that viewpoint and each larger viewport unless the larg
 #### Setting 2 columns for every viewport larger than basketball court
 
 ```markup
-    <ns-column basketballcourt="2" class="splash"></ns-column>
+<ns-column basketballcourt="2" class="splash"></ns-column>
 ```
 
 #### Going from 1 column to 3 columns at a larger viewport
 
 ```markup
-    <ns-column hockeypitch="3" class="splish"></ns-column>
+<ns-column hockeypitch="3" class="splish"></ns-column>
 ```
 
 #### Going from 1 to 2 columns and then 4 columns
 
 ```markup
-    <ns-column hockeypitch="2" rugbypitch="4" class="splash"></ns-column>
+<ns-column hockeypitch="2" rugbypitch="4" class="splash"></ns-column>
 ```
 
 #### Going from 2 columns, to 4 columns, and back down to 3 columns
 
 ```markup
-    <ns-column basketballcourt="2" rugbypitch="4" polofield="3" class="splash"></ns-column>
+<ns-column basketballcourt="2" rugbypitch="4" polofield="3" class="splash"></ns-column>
 ```
 
 #### Going from 1 columns to 2:1 columns and then 3:1 columns
 
 ```markup
-    <ns-column hockeypitch="2:1" polofield="3:1"></ns-column>
+<ns-column hockeypitch="2:1" polofield="3:1"></ns-column>
 ```
+
+<Tokens component="column"></Tokens>
 
 ## Feedback
 

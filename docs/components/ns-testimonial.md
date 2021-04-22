@@ -3,6 +3,7 @@ description: Atom | Testimonial component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -41,8 +42,7 @@ A new component to display all the lovely things that people say about us. The t
 | medium | `string` |  |  | The name of the platform that the author used to leave their message eg twitter.|
 | quote | `string` |  |  | What the author wrote or said. |
 
-## Specification notes
-
+<Tokens component="testimonial"></Tokens>
 
 ## Feedback
 

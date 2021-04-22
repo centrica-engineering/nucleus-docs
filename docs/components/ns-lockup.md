@@ -3,6 +3,7 @@ description: Organism | Lockup component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -86,6 +87,8 @@ We use lockups to engage customers, in particular to promote a key product or se
 * Main heading is a `<span>` tag with a `h1` class.
 * `enlighten` class in the main heading `<span>` to make the heading light.
   * Use `<b>` tag to embolden specific text.
+
+<Tokens component="lockup"></Tokens>
 
 ## Feedback
 

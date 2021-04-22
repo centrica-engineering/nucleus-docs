@@ -3,6 +3,7 @@ description: Atom | Price component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -61,6 +62,8 @@ Price is passed in as an attribute to prevent the unformatted price being crawle
 ### negative
 
 There are a number of characters (i.e. hyphen, em dash, en dash) that can be confused with the minus symbol. Setting the negative attribute to true allows the component to output output the correct symbol. This ensures that screen readers will read the value as a minus price.
+
+<Tokens component="price"></Tokens>
 
 ## Feedback
 

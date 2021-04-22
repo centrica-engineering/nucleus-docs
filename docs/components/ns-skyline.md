@@ -3,6 +3,7 @@ description: Organism | Skyline component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -59,6 +60,8 @@ Positioned directly beneath the global navigation and above any content, `ns-sky
 | Slots | Type |
 | :--- | :--- |
 | Anonymous | `ns-expander tag` |
+
+<Tokens component="skyline"></Tokens>
 
 ## Feedback
 
