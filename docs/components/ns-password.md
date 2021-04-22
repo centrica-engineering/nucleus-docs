@@ -3,6 +3,7 @@ description: Molecule | Password component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -36,6 +37,8 @@ Also see ns-inputter [specification](components/ns-inputter.md#specification)
 | Slots | Type |
 | :--- | :--- |
 | `tip-details` | `p tag` |
+
+<Tokens component="password"></Tokens>
 
 ## Feedback
 
