@@ -3,6 +3,7 @@ description: Organism | Product card component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -128,6 +129,8 @@ For example
 
 * Should always have a href
 * Check the [ns-cta documentation](components/ns-image.md) for more information.
+
+<Tokens component="product-card"></Tokens>
 
 ## Feedback
 

@@ -3,6 +3,7 @@ description: Atom | Pill component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -80,6 +81,8 @@ More details for using ns-pill in other components can be found here:
 ## Specification notes
 
 When an icon is supplied the pill will use the media object pattern.
+
+<Tokens component="pill"></Tokens>
 
 ## Feedback
 

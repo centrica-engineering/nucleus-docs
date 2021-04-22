@@ -3,6 +3,7 @@ description: Molecule | Card component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -167,6 +168,8 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 
 * Only for `section` types
 * This should be an anchor with the [ns-cta](https://docs.britishgas.design/components/ns-cta) or just the [ns-cta](https://docs.britishgas.design/components/ns-cta)
+
+<Tokens component="card"></Tokens>
 
 ## Feedback
 

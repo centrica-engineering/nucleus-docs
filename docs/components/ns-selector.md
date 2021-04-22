@@ -3,6 +3,7 @@ description: Molecule | Selector component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -85,6 +86,8 @@ Selectors are used to group an image or illustration with a label into a card. T
 | :--- | :--- |
 | `description` | `div` |
 | `anonymous` | `input` `label` |
+
+<Tokens component="selector"></Tokens>
 
 ## Feedback
 

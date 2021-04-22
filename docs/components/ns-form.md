@@ -3,6 +3,7 @@ description: Molecule | Form component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -169,6 +170,8 @@ A **valid validate return response** looks like:
   }
 }
 ```
+
+<Tokens component="form"></Tokens>
 
 ## Feedback
 

@@ -3,6 +3,7 @@ description: Organism | Appointment picker component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -84,6 +85,8 @@ const slotData = [{ date: '2020-01-28', slots: slots }, { date: '2020-01-29', sl
 | **Does it live in a panel?** | ❌ No  |
 | **Does it live inside other components?** | ✅ Yes -  `ns-form` |
 | **What layout classes can be used?**  | ❌ None |
+
+<Tokens component="appointment-picker"></Tokens>
 
 ## Feedback
 

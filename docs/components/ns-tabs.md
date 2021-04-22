@@ -3,6 +3,7 @@ description: Organism | Tabs component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -91,6 +92,8 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 ### Panel
 
 * Multiple panel slots should be added to add multiple panels. There should be the same amount of panel slots as tab slots.
+
+<Tokens component="tabs"></Tokens>
 
 ## Feedback
 

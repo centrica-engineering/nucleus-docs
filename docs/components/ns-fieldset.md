@@ -1,8 +1,9 @@
 ---
-description: Molecule | Form component.
+description: Molecule | Fieldset component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -46,6 +47,8 @@ https://www.w3.org/WAI/WCAG21/Techniques/html/H71
 | Slots | Type |
 | :--- | :--- |
 | Anonymous | ns-inputters |
+
+<Tokens component="fieldset"></Tokens>
 
 ## Feedback
 

@@ -3,6 +3,7 @@ description: Atom | Tab component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -52,6 +53,8 @@ Please see [ns-tabs](components/ns-tabs.md) for full content guidance.
 | Slots | Type |
 | :--- | :--- |
 | `anonymous` | `textNode` |
+
+<Tokens component="tab"></Tokens>
 
 ## Feedback
 

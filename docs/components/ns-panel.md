@@ -3,6 +3,7 @@ description: Molecule | Panel component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
 
@@ -64,6 +65,8 @@ Adding a decoration to an `ns-panel` using a gradient background provides visual
   * `splash` - this should be used almost always.
   * `splish ` - used for `<ns-card type="section">`.
   * `splosh`.
+
+<Tokens component="panel"></Tokens>
 
 ## Feedback
 
