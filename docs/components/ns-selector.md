@@ -13,19 +13,20 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ### Selector - Illustration
 
-![Selector - Illustration](https://user-images.githubusercontent.com/78355810/110344692-a7113480-8025-11eb-9ac9-1b45bea14f21.png)
+![Selector - Illustration](https://user-images.githubusercontent.com/78355810/115743858-f4552580-a389-11eb-88a9-55bf38d45716.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | Label | The label should describe the selection being made using the most concise content possible. The recommended length is 21 characters maximum. |
 | B | Heading | The heading can provide an expanded description of the item being selected. The recommended length is between 3 and 21 characters. This heading should use a light font weight to allow the emphasis on the label. |
 | C | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](components/ns-card.md#specification) has a list of options. |
+| D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](../components/ns-card.md#specification) has a list of options. |
 | E | Keyline | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
+| G | Expanders | An optional addition of an [ns-expander](../components/ns-expander) component within the selector allows for more detail to be discoverable. It consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content.
 
 ### Selector - Image
 
-![Selector - Image](https://user-images.githubusercontent.com/78355810/110449272-f30db900-80b9-11eb-83ad-13fef7f6e2bb.png)
+![Selector - Image](https://user-images.githubusercontent.com/78355810/115587322-76c7e180-a2c5-11eb-9e44-d9ae09de9ad4.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -33,6 +34,8 @@ Selectors are used to group an image or illustration with a label into a card. T
 | B | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | C | Image | This is the image that will be used above the ns-card. It should have an aspect ratio of 16:9, the dimensions should be 640x360px, the file type should be jpg, and the file size should be no more than 50kb. |
 | D | Keyline | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
+| E | Expanders | An optional addition of an [ns-expander](../components/ns-expander) component within the selector allows for more detail to be discoverable. It consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content.
+
 
 ### Image guidance
 
@@ -50,7 +53,8 @@ Selectors are used to group an image or illustration with a label into a card. T
 | Use inline text links into supporting content if necessary | Use without an image or an illustration |
 | Bolden key messages eg. price within heading to highlight | Use imagery within ns-selector with copy embedded inside |
 | Use a radio button or checkbox |  Use an image and an illustration together |
-|  |Add a decoration behind the selectors |
+| Use expanders if you need to include more details |Add a decoration behind the selectors |
+| | Use more than 5 expanders on a selector
 
 ### Considerations of best practices
 
@@ -59,6 +63,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 * If you are using the ns-selector with an illustration, it's important to make sure you are using a Nucleus illustration. [View illustrations in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)
 * Make sure the supporting copy is clear and concise.
 * Make sure the labels explain exactly what the user is selecting. If all content is removed other than the label, then the user would still understand what they are selecting.
+* If using the optional Expander, keep the content concise – you can use lists in the content to help. Be mindful that once a heading is expanded it forces the bottom of that selector down and that of any other instances in the row. 
 
 ## Usage
 
@@ -98,5 +103,6 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ## Related links
 
-* [ns-inputter](components/ns-inputter.md)
-* [ns-pill](components/ns-pill.md)
+* [ns-inputter](../components/ns-inputter.md)
+* [ns-pill](../components/ns-pill.md)
+* [ns-expander](../components/ns-expander.md)
