@@ -33,8 +33,9 @@ Pills can help to create a subtle sense of urgency or to draw a customer’s att
 | Use pills very sparingly, ideally one or two per journey maximum. Less is more. | Create a shouty experience by using pills in multiple places.   |
 | Use a `yellow` pill to draw attention to an offer or promotional message. | Create distraction or put undue pressure on customers to purchase unwanted or irrelevant products by overusing urgency elements. |
 | Use `red` and `green-light` pills for dashboard notifications.  | Don’t use pills near a text CTA. Pills should not detract attention from your users’ next action. |
-| Keep your copy short and simple for maximum impact. |  |
+| Keep your copy short and simple for maximum impact. | Use in the middle of a sentence |
 | Use pills in a component with a direct CTA |  |
+
 
 
 ### Considerations of best practice
