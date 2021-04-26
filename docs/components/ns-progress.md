@@ -44,8 +44,9 @@ The progress component can be manipulated in the DOM without the need to reload 
 | Keep Info and Next statements concise or omit if unnecessary or duplicating content | Omit one step but not the rest for Info - instead use an 'all or nothing approach'  |
 | Keep steps to a minimum for perceived simplicity | Nest as sub-process |
 | Use up to 20 steps but ideally not more than 10 | Use less than 2 steps |
-| Use JavaScript to dynamically update the component rather than re-add on each page | Use more than 1 on a page |
-| Use the completed state on the confirmation page | Use the last step as the confirmation page |
+| Use decimal places to reduce the number of overall steps | Use more than 1 on a page |
+| Use JavaScript to dynamically update the component rather than re-add on each page | Use the last step as the confirmation page |
+| Use the completed state on the confirmation page |  |
 
 ## Browser support
 
@@ -68,7 +69,7 @@ Internet Explorer 11 and Microsoft Edge 18 and lower do not show the progress ba
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
 | `steps` | `number` |  |  | The maximum number of steps to show |
-| `current` | `number` | `1`|  | The step to show as active |
+| `current` | `number` | `1`|  | The step to show as active (can also accept a decimal value) |
 | `info` | `string` |  |  | Information about the current step |
 | `next` | `string` |  |  | Information about the next step |
 | `complete` | `boolean` |  | `false` | Use to show the completed state |
