@@ -44,7 +44,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/connectedHomes/nucleus/',
           label: 'GitHub',
           position: 'right',
         },

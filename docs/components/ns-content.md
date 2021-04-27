@@ -21,7 +21,7 @@ ns-content relies on clean HTML in order to display correctly. Avoid using addit
 
 ## Usage
 
-<Storybook story="ns-content--standard"></Storybook>
+<Storybook story="components-ns-content--standard"></Storybook>
 
 ## Component relationship
 
