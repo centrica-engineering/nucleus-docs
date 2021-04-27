@@ -41,7 +41,7 @@ The one exception to this rule is in forms as there are often challenges around 
 
 ### Standalone
 
-<Storybook story="components-ns-download--standard"></Storybook>
+<Storybook story="components-ns-download--standalone"></Storybook>
 
 ### List
 
