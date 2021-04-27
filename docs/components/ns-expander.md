@@ -18,7 +18,7 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | Heading | This is the heading to the anonymous content. When the heading is clicked the component opens to reveal the content.   |
-| B | Content | Expander can accommodate multiple paragraph slots, these should be concise, using sub-headings to split large paragraphs. Can contain bold copy `<b>`, inline links `<a>`, and lists `<ul>` `<ol>`. |
+| B | Content | Expander can accommodate multiple paragraph slots, these should be concise, using sub-headings to split large paragraphs. Can contain bold copy `<b>`, inline links `<a>`, and lists `<ul>` `<ol>`. We recommend to use `ns-content` as a container for the html content.|
 
 ## Best practice
 
@@ -54,7 +54,7 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 | Slots | Type |
 | :--- | :--- |
 | `heading` | `h tag`      |
-| anonymous | html content |
+| anonymous | `ns-content` or html content  |
 
 ## Specification notes
 
