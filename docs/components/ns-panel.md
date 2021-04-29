@@ -17,25 +17,24 @@ Adding a decoration to an `ns-panel` using a gradient background provides visual
 | :--- | :--- |
 | Use decoration to visually separate content | Add decoration to an `ns-panel` where the previous `ns-panel` has a decoration |
 | Use appropriate colour for the purpose of page in decorations | Nest a panel in a panel |
-| Include more than one layout in a `ns-panel` |  |
+| Include more than one layout option in a `ns-panel` |  |
 
 ### Considerations of best practice
 
 * Treat each `ns-panel` as a section of the page.
 * Include no more than two `ns-lockups` in one `ns-panel` with a decoration.
-* Layout is either a class of [`.splish` \| `.splash`] or an `ns-lockup`.
+* Layout options are either a `div`, `ns-article`, `ns-content`, `ns-column` or `ns-lockup`.
 
 ## Usage
 
 <Storybook story="components-ns-panel--standard"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-caveat` `ns-landmark` |
-| **What layout classes can be used?**  | None |
+The ns-panel component can be used in the following elements/components:
+
+* first child of `<main>`
+* [ns-tabs](components/ns-tabs.md)
 
 ## Specification
 
@@ -46,7 +45,7 @@ Adding a decoration to an `ns-panel` using a gradient background provides visual
 
 | Slots | Type |
 | :--- | :--- |
-| `anonymous` | `div`, `ns-lockup` |
+| `anonymous` | `div`, `ns-article`, `ns-content`, `ns-column` or `ns-lockup`. |
 
 ## Specification notes
 
@@ -58,13 +57,7 @@ Adding a decoration to an `ns-panel` using a gradient background provides visual
 
 ### Anonymous
 
-* The first child is the layout child, which should always be a `div` except when adding a lockup component.
-
-* The layout classes are:
-
-  * `splash` - this should be used almost always.
-  * `splish ` - used for `<ns-card type="section">`.
-  * `splosh`.
+* The ns-panel can only have the following children `div`, `ns-article`, `ns-content`, `ns-column` or `ns-lockup`.
 
 <Tokens component="panel"></Tokens>
 

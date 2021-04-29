@@ -4,6 +4,7 @@ description: Organism | Highlighter component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -67,13 +68,9 @@ The message must be in plain English, and help the user out of the situation by 
 
 <Storybook story="components-ns-highlighter--error"></Storybook>
 
-## Component relationship
+## Component placement
 
-| **Relationship** |  |
-| :---  | :--- |
-| **Does it live in a panel?** | ✅ Yes|
-| **Does it live inside other components?** | ❌ No  |
-| **What layout classes can be used?** | `splash` |
+<ComponentPlacement component="ns-highlighter" parentComponents="ns-form,ns-panel"></ComponentPlacement>
 
 ## Specification
 
@@ -105,7 +102,3 @@ The message must be in plain English, and help the user out of the situation by 
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-highlighter])
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
-## Related links
-
-* [Related links]

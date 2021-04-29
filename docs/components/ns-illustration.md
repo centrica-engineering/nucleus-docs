@@ -26,13 +26,9 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 
 <Storybook story="components-ns-illustration--standard"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-lockup` `ns-card` |
-| **What layout classes can be used?**  | None |
+The ns-illustration component can be used in a number of components to help create bespoke UIs.
 
 ## Specification
 

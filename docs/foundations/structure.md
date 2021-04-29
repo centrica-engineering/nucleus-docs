@@ -37,7 +37,7 @@ There are five pieces of the design system that work together to make our struct
 
 ```html
 <ns-panel>
-  <div class="splash"> ... </div>
+  <div> ... </div>
   <ns-column> ... </ns-column>
 </ns-panel>
 ```
@@ -46,7 +46,7 @@ There are five pieces of the design system that work together to make our struct
 
 ```html
 <ns-panel>
-  <div class="splash triple"> ... </div>
+  <div class="triple"> ... </div>
   <ns-column hockeypitch="3"> ... </ns-column>
 </ns-panel>
 ```
@@ -149,14 +149,6 @@ The image within `ns-selector` adapts to different positions and sizes.
 - `<ns-footer>`
 - `<ns-header>`
 - `<ns-skyline>`
-
-#### These components also contain a layout class
-
-- `<ns-caveat>` - `splish`
-- `<ns-footer>` - `splash`
-- `<ns-header>` - `splash`
-- `<ns-skyline>` - `splash`
-- `<ns-editorial>` - `splosh`
 
 ## Functional vs promotional
 

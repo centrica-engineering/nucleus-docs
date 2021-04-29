@@ -4,6 +4,7 @@ description: Molecule | Caveat component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -45,13 +46,9 @@ Caveats link to content in the page, providing more information about legality a
 
 <Storybook story="components-ns-caveat--caveat"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ❌ No |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-caveat"></ComponentPlacement>
 
 ## Specification
 

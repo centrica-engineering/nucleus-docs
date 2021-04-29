@@ -37,13 +37,9 @@ Prices of less than £1 include zero pounds. eg. `pence="1"` becomes "£0.01"
 
 <Storybook story="components-ns-price--standard"></Storybook>
 
-## Component relationship
+## Component placement
 
-| **Relationship**|  |
-| :---  | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes |
-| **What layout classes can be used?** | None |
+ns-price can be used in any html text element.
 
 ## Specification
 

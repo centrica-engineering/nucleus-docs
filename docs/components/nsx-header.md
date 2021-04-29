@@ -3,6 +3,7 @@ description: Experience | Header component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -29,13 +30,9 @@ The subheadings and links for the navigation can be passed in for each section t
 
 <Storybook story="nsx-header--standard"></Storybook>
 
-## Component relationship
+## Component placement
 
-| **Relationship**|  |
-| :---  | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ❌ No |
-| **What layout classes can be used?** | None |
+<ComponentPlacement component="nsx-header"></ComponentPlacement>
 
 ## Specification
 

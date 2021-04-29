@@ -2,6 +2,8 @@
 description: Experience | Product Card Comparison.
 ---
 
+import { ComponentPlacement } from '../../includes/component-placement.js'
+
 ## Introduction
 
 The product card overview is an experience pattern that can be used to compare HomeCare products against each other and see the difference in price when choosing to have an excess or not - without having to reload the entire page.
@@ -63,13 +65,9 @@ When `excess` property of the overview component is set with an array of price o
 | Always use `priceheading` attribute to set price heading in product cards. | Use `price-heading` slot in each product card |
 | Always use `ns-content` for `content` slot to add subheading and description of the overview component. |  |
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** |  ✅ Yes  |
-| **Does it live inside other components?** | ❌  No |
-| **What decoration can be used?**  | `invert-concave-grey-light` |
+<ComponentPlacement component="nsx-product-card-overview" parentComponents="ns-panel"></ComponentPlacement>
 
 ## Feedback
 

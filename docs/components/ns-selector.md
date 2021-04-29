@@ -4,6 +4,7 @@ description: Molecule | Selector component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -70,13 +71,21 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 <Storybook story="form-components-ns-selector--radio-with-image"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes - `ns-inputter` |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-selector" parentComponents="ns-inputter,ns-column"></ComponentPlacement>
+
+When used in ns-column, ns-column must be a child of ns-inputter:
+
+```html
+<ns-inputter>
+  <ns-column hockeypitch="3">
+    <ns-selector>...</ns-selector>
+    <ns-selector>...</ns-selector>
+    <ns-selector>...</ns-selector>
+  </ns-column>
+</ns-inputter>
+```
 
 ## Specification
 
