@@ -2,7 +2,7 @@ import React from 'react';
 
 export const ComponentPlacement = ({...props}) => {
   const component = props.component;
-  const parents = props.parents !== undefined ? props.parents.split(',') : [];
+  const parents = props.parentComponents !== undefined ? props.parentComponents.split(',') : [];
   const componentLinks = parents.map((parent) =>
     <li><a href={`/docs/components/${parent}`}>{parent}</a></li>
   );
