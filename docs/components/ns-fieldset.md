@@ -4,6 +4,7 @@ description: Molecule | Fieldset component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -30,13 +31,9 @@ https://www.w3.org/WAI/WCAG21/Techniques/html/H71
 
 <Storybook story="form-components-ns-fieldset--standard"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No  |
-| **Does it live inside other components?** | ✅ Yes -  `ns-form` |
-| **What layout classes can be used?**  | ❌ No |
+<ComponentPlacement component="ns-fieldset" parentComponents="ns-form"></ComponentPlacement>
 
 ## Specification
 

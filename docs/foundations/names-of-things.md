@@ -310,16 +310,7 @@ Structure is built with CSS Grid and utilises fraction `fr` units.
 
 ### Layout
 
-Our `layout`'s are contained within a `panel`, we can include more than one layout in a panel.
-
-```markup
-splish
-splash
-```
-
-The `splish` layout is exclusively to contain three 'section cards'
-
-For the Rewards section on the Homepage we included a class of `malcolm` to hide the confetti at narrow viewports. This approach is unique and has proven to be problematic.
+Our `layout`'s are contained within a `panel`, we can include more than one component or div element in a panel. See [ns-panel](../components/ns-panel) documentation for more information
 
 ### Page types
 

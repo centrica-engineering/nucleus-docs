@@ -4,6 +4,8 @@ description: Organism | Article component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
+
 
 ## Introduction
 
@@ -41,13 +43,9 @@ import { Tokens } from '../../includes/tokens.js'
 
 <Storybook story="components-ns-article--sections"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ✅ Yes |
-| **Does it live inside other components?** |  ❌ No |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-article" parentComponents="ns-panel"></ComponentPlacement>
 
 ## Specification
 

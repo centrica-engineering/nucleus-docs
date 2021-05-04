@@ -4,6 +4,7 @@ description: Atom | Video component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -28,13 +29,9 @@ British Gas creates many videos to engage customers. This component allows havin
 
 <Storybook story="components-ns-video--youtube"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes - `ns-lockup` |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-video" parentComponents="ns-lockup,ns-content"></ComponentPlacement>
 
 ## Specification
 

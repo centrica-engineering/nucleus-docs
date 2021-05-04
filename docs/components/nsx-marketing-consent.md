@@ -2,6 +2,9 @@
 description: Experience | Marketing consent.
 ---
 
+import { Storybook } from '../../includes/storybook.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
+
 ## Introduction
 
 > Marketing consent is the capture of a customer's contact preferences for marketing purposes.
@@ -31,9 +34,11 @@ This component is legally required when capturing contact preferences that will 
 
 ## Usage
 
-```markup
-<nsx-marketing-consent></nsx-marketing-consent>
-```
+<Storybook story="nsx-marketing-consent--standard"></Storybook>
+
+## Component placement
+
+<ComponentPlacement component="nsx-marketing-consent" parentComponents="ns-form"></ComponentPlacement>
 
 ## Specification
 

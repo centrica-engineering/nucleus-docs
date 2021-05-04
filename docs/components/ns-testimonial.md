@@ -4,6 +4,7 @@ description: Atom | Testimonial component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -25,13 +26,9 @@ A new component to display all the lovely things that people say about us. The t
 
 <Storybook story="components-ns-testimonial--standard"></Storybook>
 
-## Component relationship
+## Component placement
 
-| **Relationship**|  |
-| :---  | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes |
-| **What layout classes can be used?** | None |
+<ComponentPlacement component="ns-testimonial" parentComponents="ns-column"></ComponentPlacement>
 
 ## Specification
 

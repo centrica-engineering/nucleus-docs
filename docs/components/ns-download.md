@@ -4,6 +4,7 @@ description: Atom | Download component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -47,13 +48,9 @@ The one exception to this rule is in forms as there are often challenges around 
 
 <Storybook story="components-ns-download--list"></Storybook>
 
-## Component relationship
+## Component placement
 
-| **Relationship**|  |
-| :---  | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes |
-| **What layout classes can be used?** | None |
+<ComponentPlacement component="ns-download" parentComponents="ns-card,ns-form,ns-content,ns-table"></ComponentPlacement>
 
 ## Specification
 

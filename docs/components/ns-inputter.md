@@ -4,6 +4,7 @@ description: Molecule | Inputter component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -234,13 +235,9 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 <Storybook story="form-components-ns-inputter--text-input"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-form`, `ns-fieldset`, `ns-datepicker` and `ns-password` |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-inputter" parentComponents="ns-form,ns-fieldset"></ComponentPlacement>
 
 ## Specification
 

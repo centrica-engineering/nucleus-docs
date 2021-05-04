@@ -4,6 +4,7 @@ description: Molecule | Card component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -109,13 +110,9 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 
 
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ✅ Yes |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-caveat` `ns-landmark` `ns-tabs` |
-| **What layout classes can be used?**  | `splash` `splash triple`  `splish` `splish triple` |
+<ComponentPlacement component="ns-card" parentComponents="ns-panel,ns-caveat,ns-tabs"></ComponentPlacement>
 
 ## Specification
 
