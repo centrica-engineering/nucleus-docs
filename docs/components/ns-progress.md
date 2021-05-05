@@ -4,6 +4,7 @@ description: Molecule | Progress component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -56,13 +57,9 @@ Internet Explorer 11 and Microsoft Edge 18 and lower do not show the progress ba
 
 <Storybook story="components-ns-progress--standard"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a progress?** | ✅  Yes |
-| **Does it live inside other components?** |  ✅  Yes -  `ns-landmark type="hillside` |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-progress" parentComponents="ns-panel,ns-landmark"></ComponentPlacement>
 
 ## Specification
 
