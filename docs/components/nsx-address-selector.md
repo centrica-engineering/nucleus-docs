@@ -2,6 +2,8 @@
 description: Experience | Address Selector.
 ---
 
+import { ComponentPlacement } from '../../includes/component-placement.js'
+
 ## Introduction
 
 The address selector is a multi-functional experience pattern that can be used for any one of, or a combination of, the following tasks: 
@@ -56,6 +58,10 @@ When displaying this form the `manualformenabled` property to set to `true`. You
 
 You can [see the manual entry state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--manual-addresses).
 
+
+## Component placement
+
+<ComponentPlacement component="nsx-address-selector" parentComponents="ns-form"></ComponentPlacement>
 
 ## Specification
 

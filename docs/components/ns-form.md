@@ -4,6 +4,7 @@ description: Molecule | Form component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -27,13 +28,9 @@ The `ns-form` component is a wrapper for `ns-inputters`. It's main purpose is to
 
 <Storybook story="form-components-ns-form--multi-input-form"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ✅ Yes |
-| **Does it live inside other components?** | ❌ No |
-| **What layout classes can be used?**  | `splash` `splosh` |
+<ComponentPlacement component="ns-form" parentComponents="ns-panel,ns-card"></ComponentPlacement>
 
 ## Specification
 

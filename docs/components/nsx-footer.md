@@ -3,6 +3,7 @@ description: Experience | Footer component.
 ---
 
 import { Storybook } from '../../includes/storybook.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -24,13 +25,9 @@ If a link needs to be updated for the website footer, it needs to be done in thi
 
 <Storybook story="nsx-footer--standard"></Storybook>
 
-## Component relationship
+## Component placement
 
-| **Relationship**|  |
-| :---  | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ❌ No |
-| **What layout classes can be used?** | None |
+<ComponentPlacement component="nsx-footer"></ComponentPlacement>
 
 ## Feedback
 

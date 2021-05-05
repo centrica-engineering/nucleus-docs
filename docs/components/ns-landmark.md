@@ -4,6 +4,7 @@ description: Organism | Landmark component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -169,13 +170,9 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 <Storybook story="components-ns-landmark--valley"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ❌ No |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-landmark"></ComponentPlacement>
 
 ## Specification
 

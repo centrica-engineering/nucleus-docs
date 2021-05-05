@@ -4,6 +4,7 @@ description: Molecule | Selector component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -22,6 +23,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 | C | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](../components/ns-card.md#specification) has a list of options. |
 | E | Keyline | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
+| F | Pill | You can use a pill to promote an option that has something special like a discount, a promotion or a because it's eco-friendly. Use the pill the `h3` and the list. Try not to add a pill to each option as it may lose its attention grabbing power. |
 | G | Expanders | An optional addition of an [ns-expander](../components/ns-expander) component within the selector allows for more detail to be discoverable. It consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content.
 
 ### Selector - Image
@@ -69,13 +71,21 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 <Storybook story="form-components-ns-selector--radio-with-image"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes - `ns-inputter` |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-selector" parentComponents="ns-inputter,ns-column"></ComponentPlacement>
+
+When used in ns-column, ns-column must be a child of ns-inputter:
+
+```html
+<ns-inputter>
+  <ns-column hockeypitch="3">
+    <ns-selector>...</ns-selector>
+    <ns-selector>...</ns-selector>
+    <ns-selector>...</ns-selector>
+  </ns-column>
+</ns-inputter>
+```
 
 ## Specification
 

@@ -4,6 +4,7 @@ description: Molecule | Content component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -21,15 +22,11 @@ ns-content relies on clean HTML in order to display correctly. Avoid using addit
 
 ## Usage
 
-<Storybook story="ns-content--standard"></Storybook>
+<Storybook story="components-ns-content--standard"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes - ns-article |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-content" parentComponents="ns-panel,ns-article,ns-expander,ns-card,ns-form"></ComponentPlacement>
 
 ## Specification
 

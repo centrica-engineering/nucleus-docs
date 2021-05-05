@@ -4,6 +4,7 @@ description: Molecule | Expander component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -18,7 +19,7 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | Heading | This is the heading to the anonymous content. When the heading is clicked the component opens to reveal the content.   |
-| B | Content | Expander can accommodate multiple paragraph slots, these should be concise, using sub-headings to split large paragraphs. Can contain bold copy `<b>`, inline links `<a>`, and lists `<ul>` `<ol>`. |
+| B | Content | Expander can accommodate multiple paragraph slots, these should be concise, using sub-headings to split large paragraphs. Can contain bold copy `<b>`, inline links `<a>`, and lists `<ul>` `<ol>`. We recommend to use `ns-content` as a container for the html content.|
 
 ## Best practice
 
@@ -34,13 +35,9 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 
 <Storybook story="components-ns-expander--expander"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-accordion` `ns-skyline` |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-expander" parentComponents="ns-accordion,ns-skyline,ns-card,ns-content,ns-product-card,ns-selector"></ComponentPlacement>
 
 ## Specification
 
@@ -54,7 +51,7 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 | Slots | Type |
 | :--- | :--- |
 | `heading` | `h tag`      |
-| anonymous | html content |
+| anonymous | `ns-content` or html content  |
 
 ## Specification notes
 

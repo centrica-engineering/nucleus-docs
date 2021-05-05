@@ -31,13 +31,9 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 
 <Storybook story="components-ns-icon--standard"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-cta` `ns-expander` `ns-inputter` `ns-tab` `ns-expander` |
-| **What layout classes can be used?**  | None |
+The ns-icon component can be used in a number of components to help create bespoke UIs
 
 ## Specification
 

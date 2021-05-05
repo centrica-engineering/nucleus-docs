@@ -4,6 +4,7 @@ description: Organism | Lockup component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -52,13 +53,9 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 <Storybook story="components-ns-lockup--lockbox"></Storybook>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ✅ Yes |
-| **Does it live inside other components?** | ❌ No |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-lockup" parentComponents="ns-panel"></ComponentPlacement>
 
 ## Specification
 

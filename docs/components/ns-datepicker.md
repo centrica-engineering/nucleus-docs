@@ -4,6 +4,7 @@ description: Molecule | Date picker component.
 
 import { Storybook } from '../../includes/storybook.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -45,13 +46,9 @@ Some browsers do not support `type='date'` (e.g. Safari on Desktop). The compone
 
 <Storybook story="form-components-ns-datepicker--standard"></Storybook>
 
-## Component Relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes - `ns-form` |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-datepicker" parentComponents="ns-form,ns-fieldset"></ComponentPlacement>
 
 ## Specification
 
