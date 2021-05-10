@@ -14,11 +14,11 @@ This is what Alan Turing said about making progress and knowing what is left to 
 Release date - 2021/05/06
 
 **New features 🏁**
-* `ns-progress` gives enables you to show progress throughout a task. Wether it's short and easy or long and complex, you can set an expectation bny showing how many steps there are, where a user stands, and what's left and coming next. The component is very flexible and easy to setup, all the way to its completed state! [Learn more about it here](https://nucleus.design/docs/components/ns-progress) or [give it a go in Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/components-ns-progress--standard).
+* `ns-progress` enables you to show progress throughout a task. Wether it's short and easy or long and complex, you can set an expectation bny showing how many steps there are, where a user stands, and what's left and coming next. The component is very flexible and easy to setup, all the way to its completed state! [Learn more about it here](https://nucleus.design/docs/components/ns-progress) or [give it a go in Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/components-ns-progress--standard).
 
 **Improvements 🗓**
 * `ns-datepicker` - We improved the focus on the inputter when inline validation triggers an error for a missing date and focuses back on the datepicker
-* `ns-datepicker` - We moved the dialog outside of shadowroot, for improved displaying in context of other components.
+* `ns-datepicker` - We moved the dialog outside of shadowroot, for display improvement in context of other components.
 
 **Multibrand enablement and design tokens 🪙**
 
