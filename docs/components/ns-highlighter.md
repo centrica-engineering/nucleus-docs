@@ -10,7 +10,14 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 > Highlighters can be used to communicate information or error, warning and success messages.
 
-A component that communicates the message that a service is not available to them or that there are technical issues on specific pages only. These messages are different to global messages as they only apply to some pages not site wide e.g. a message that says the top up service is not available would only apply to pages that customers will look at in order to top up.
+A component that communicates the message that a service is not available to them or that there are technical issues on specific pages only. These messages are different to global messages as they only apply to some pages not site wide.
+
+e.g. a message that says the top up service is not available would only apply to pages that customers will look at in order to top up.
+
+## Accessibility 
+In order to make this component accessible, it is read first when the page is loaded (before any other content) by assistive technology such as screen readers. This is to convey the important information contained in the highlighter to those users who need it. Multiple highlighters on a page will be read in sequence. 
+
+We recommend you use highlighters for their role, not for their looks. 
 
 ## Content guidance
 
