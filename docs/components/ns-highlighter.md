@@ -15,7 +15,13 @@ A component that communicates the message that a service is not available to the
 e.g. a message that says the top up service is not available would only apply to pages that customers will look at in order to top up.
 
 ## Accessibility 
-In order to make this component accessible, it is read first when the page is loaded (before any other content) by assistive technology such as screen readers. This is to convey the important information contained in the highlighter to those users who need it. Multiple highlighters on a page will be read in sequence. 
+
+
+The information contained in the highlighter should always be the most important information on the page. To ensure that screen reader users are informed about the importance of these messages the content is read aloud as soon as the highlighter is used. This could be when the page loads or when it is dynamically added to a page.
+
+If there are multiple highlighters on a page are read:
+* from top to bottom on page load
+* in the order they have been add to the page when dynamically added
 
 We recommend you use highlighters for their role, not for their looks. 
 
