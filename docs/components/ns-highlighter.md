@@ -19,7 +19,7 @@ e.g. a message that says the top up service is not available would only apply to
 
 The information contained in the highlighter should always be the most important information on the page. To ensure that screen reader users are informed about the importance of these messages the content is read aloud as soon as the highlighter is used. This could be when the page loads or when it is dynamically added to a page.
 
-If there are multiple highlighters on a page are read:
+If there are multiple highlighters on a page they are read:
 * from top to bottom on page load
 * in the order they have been add to the page when dynamically added
 
