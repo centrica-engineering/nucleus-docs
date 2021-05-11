@@ -52,38 +52,57 @@ Some components (e.g. `ns-cta`) have a minimum width, care should be taken so th
 
 ## Specification notes
 
+### How do viewports inherit values?
 Each value is applied at that viewpoint and each larger viewport unless the larger viewport has a column value applied.
 
-### Examples
+#### Examples
 
-#### Setting 2 columns for every viewport larger than basketball court
+##### Setting 2 columns for every viewport larger than basketball court
 
 ```markup
 <ns-column basketballcourt="2"></ns-column>
 ```
 
-#### Going from 1 column to 3 columns at a larger viewport
+##### Going from 1 column to 3 columns at a larger viewport
 
 ```markup
 <ns-column hockeypitch="3"></ns-column>
 ```
 
-#### Going from 1 to 2 columns and then 4 columns
+##### Going from 1 to 2 columns and then 4 columns
 
 ```markup
 <ns-column hockeypitch="2" rugbypitch="4"></ns-column>
 ```
 
-#### Going from 2 columns, to 4 columns, and back down to 3 columns
 
+##### Going from 2 columns, to 4 columns, and back down to 3 columns
 ```markup
 <ns-column basketballcourt="2" rugbypitch="4" polofield="3"></ns-column>
 ```
 
-#### Going from 1 columns to 2:1 columns and then 3:1 columns
+##### Going from 1 columns to 2:1 columns and then 3:1 columns
 
 ```markup
 <ns-column hockeypitch="2:1" polofield="3:1"></ns-column>
+```
+
+### How do the 2:1, 3:1 columns work?
+If you want to have width ratios that make for a different width for your columns, you can set the value to 1:2, 2:1, 1:3, and 3:1. The first value will apply to the width of all odd child elements, and the second to all child even elements. 
+
+#### Example
+If we take the example of a 2:1 column, it essentially means that all odd child elements have a width of 2 and all even child elements have a width of 1.
+
+This is how your markup would look like:
+```
+<ns-column hockeypitch="2:1">
+  <div>
+     this will have width of 2
+  </div>
+  <div>
+     this will have width of 1
+  </div>
+</ns-column>
 ```
 
 <Tokens component="column"></Tokens>
