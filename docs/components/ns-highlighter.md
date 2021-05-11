@@ -21,7 +21,7 @@ The information contained in the highlighter should always be the most important
 
 If there are multiple highlighters on a page they are read:
 * from top to bottom on page load
-* in the order they have been add to the page when dynamically added
+* in the order they have been added to the page when dynamically added
 
 We recommend you use highlighters for their role, not for their looks. 
 
