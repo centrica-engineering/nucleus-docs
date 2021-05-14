@@ -56,7 +56,18 @@ Both `ns-image` and `ns-video` need to be wrapped in a `<figure>` element
 
 ### Specification notes
 
+### Anonymous children
+
 To display correctly, `ns-content` relies on clean HTML in the anonymous slot. Using additional components or html elements not listed in the specification will break the styling and will be susceptible to breaking when the component is updated in future releases.
+
+### Spacing options
+
+| Spacing value | Space between elements | 
+| :--- | :--- |
+| compact | 0.25em|
+| cozy | 0.5em|
+| normal | 1em|
+| compact | 1.5em|
 
 <Tokens component="content"></Tokens>
 
