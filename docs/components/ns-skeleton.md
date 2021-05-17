@@ -15,7 +15,7 @@ This component is hidden to screen readers. It will add a message, visible only 
 within the parent element stating "Loading". When the skeleton component is removed from the DOM it
 will find the loading message and delete it.
 
-The animation is looping for 6 seconds and then stops to not overwhelm users with cognitive disabilities. 
+To prevent users with cognitive disabilities from being overwhelmed; the shimmer animation loops for 6 seconds then stops.
 
 
 ## Best practice
