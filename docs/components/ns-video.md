@@ -58,4 +58,4 @@ British Gas creates many videos to engage customers. This component allows havin
 
 ## Related links
 
-* [https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--lockup-video-panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--lockup-video-panel).
+* [https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-panels--lockup-video-panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-panels--lockup-video-panel).

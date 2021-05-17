@@ -73,4 +73,4 @@ Caveats link to content in the page, providing more information about legality a
 ## Related links
 
 * [ns-caveat component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-caveat--caveat).
-* [Homepage example in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-homepage--2019-01).
+* [Homepage example in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-homepage--2019-01).

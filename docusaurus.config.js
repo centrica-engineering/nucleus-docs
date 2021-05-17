@@ -88,11 +88,11 @@ module.exports = {
           items: [
             {
               label: 'Nucleus',
-              to: 'https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-cards--all-of-the-cards',
+              to: 'https://www.britishgas.co.uk/nucleus/demo/index.html',
             },
             {
               label: 'Nucleus experiences',
-              href: 'https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--anonymous',
+              href: 'https://www.britishgas.co.uk/nucleus-experiences/demo/index.html',
             },
           ],
         },

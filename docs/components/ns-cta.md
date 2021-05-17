@@ -103,4 +103,4 @@ You can see the live example of the loading state on [storybook](https://www.bri
 
 ## Related links
 
-* [CTA examples in the homepage](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-homepage--2019-01).
+* [CTA examples in the homepage](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-homepage--2019-01).
