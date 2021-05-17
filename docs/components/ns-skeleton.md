@@ -15,7 +15,7 @@ This component is hidden to screen readers. It will add a message, visible only 
 within the parent element stating "Loading". When the skeleton component is removed from the DOM it
 will find the loading message and delete it.
 
-Unless the `prefers-reduced-motion` setting has been activated by the user, the animation is looping for 6 seconds and then stops to not overwhelm users with cognitive disabilities. 
+The animation is looping for 6 seconds and then stops to not overwhelm users with cognitive disabilities. 
 
 
 ## Best practice
