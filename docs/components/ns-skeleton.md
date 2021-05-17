@@ -15,6 +15,9 @@ This component is hidden to screen readers. It will add a message, visible only 
 within the parent element stating "Loading". When the skeleton component is removed from the DOM it
 will find the loading message and delete it.
 
+Unless the `prefers-reduced-motion` setting has been activated by the user, the animation is looping for 6 seconds and then stops to not overwhelm users with cognitive disabilities. 
+
+
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
@@ -29,6 +32,7 @@ will find the loading message and delete it.
 - It should not have any siblings that are not itself, i.e. it is the only child of it's parent element.
 - The use of a skeleton should be considered as a last resort for page loading.
 - Partial content cannot be used as it will conflict with the messaging that this is loading.
+- If loading times are longer than a few seconds, consider using a [Stopgap](page-types/stopgap.md) instead.
 
 ## Usage
 
