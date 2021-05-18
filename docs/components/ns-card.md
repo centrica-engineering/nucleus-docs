@@ -178,5 +178,5 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 ## Related links
 
 * [ns-pill](components/ns-pill.md)
-* [ns-card section panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--section-cards).
-* [ns-card support panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--support-image-cards).
+* [ns-card section panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-panels--section-cards).
+* [ns-card support panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-panels--support-image-cards).
