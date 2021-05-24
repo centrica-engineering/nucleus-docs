@@ -46,13 +46,21 @@
   height: auto;
   border: 12px solid #4d4d4d;
   resize: both;
-  background: #4d4d4d;
+  background: #ffffff;
   overflow: auto;
   position: relative;
   border-radius: var(--ifm-global-radius);
   z-index: calc(var(--ifm-z-index-fixed) - 1);
 }
 
+.storybook-embed.page iframe {
+  width: auto;
+  border-top-width: 64px;
+  border-bottom-width: 64px;
+  min-width: 399px;
+  min-height: 795px;
+  border-radius: 50px;
+}
 
 .colour-pallete {
   display: grid;
