@@ -3,38 +3,22 @@ title: Stopgap
 description: Page type | Stopgap
 ---
 
+import { StorybookPage } from '../../includes/storybook-page.js'
+
 ## Introduction
 
 The Stopgap is a page type used to provide customers with an interstitial loading or processing page.
 
 ## Purpose
 
-The purpose of the Stopgap is to inform the customer that there is a temporary pause in their experience, whilst we action or process the information they have provided. It should be clear that this is the expected behaviour of the journey they are using.
+* The purpose of the Stopgap is to inform the customer that there is a temporary pause in their experience, whilst we action or process the information they have provided. It should be clear that this is the expected behaviour of the journey they are using.
+* This page type should provide a clear message to reassure the customer.
+* If possible, we should set their expectations by providing them with a realistic time frame of how long they are likely to have to wait. 
+* If closing or refreshing their browser window will result in failure, we must convey this message clearly.
 
-This page type should provide a clear message to reassure the customer. If possible, we should set their expectations by providing them with a realistic time frame of how long they are likely to have to wait. 
+## Example
 
-If closing or refreshing their browser window will result in failure, we must convey this message clearly.
-
-## Visual example
-
-![Stopgap - visual example](https://user-images.githubusercontent.com/45626534/83498763-39dbdc00-a4b4-11ea-92aa-0df3118a730a.gif)
-
-## Code example
-
-```markup
-<ns-landmark type="lakeside">
-  <h1 slot="heading">
-    <span class="h5">Nearly there.</span>
-    <span class="h1 enlighten">We're <b>processing</b> your order</span>
-  </h1>
-  <p slot="paragraph">
-    <ns-icon type="loading" size="5"></ns-icon>
-  </p>
-  <p slot="paragraph">We are processing your payment and confirming your engineer appointment.</p>
-  <p slot="paragraph"> This may take up to <b>2 minutes</b>.</p>
-  <p slot="paragraph"><b>Please do not close your browser.</b></p>
-</ns-landmark>
-```
+<StorybookPage story="examples-page-types--stopgap"></StorybookPage>
 
 ## Content guidance
 
@@ -46,9 +30,9 @@ The copy must be in plain English, and help the user understand what is happenin
 
 You should not use:
 
-- Generic messaging such as ‘Loading’ or ‘Processing’
-- An unrealistic or dishonest time frame length  
-- Include additional content that could encourage them to abandon this page and potentially result in failure
+* Generic messaging such as ‘Loading’ or ‘Processing’
+* An unrealistic or dishonest time frame length  
+* Include additional content that could encourage them to abandon this page and potentially result in failure
 
 ## Best practice
 
@@ -59,6 +43,11 @@ You should not use:
 | Communicate the message in a clear and concise way as possible | Encourage the user to abandon if it would result in failure |
 | Provide a transparent expectation of their wait time |  |
 
+## Principles to follow
+
+| Creative | Tone of voice | Keywords |
+| :--- | :--- | :--- |
+| Modern and dynamic  | Be active, Be natural | Promotional, Informative |
 
 ## Feedback
 
