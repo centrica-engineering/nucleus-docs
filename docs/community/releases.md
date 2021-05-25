@@ -4,6 +4,50 @@ description: Here are our release notes - enjoy!
 
 ---
 
+## Version 1.31.0
+
+**Skeletons 🦴**
+
+Skeletons are here! If you have content that is a tad slow to load, but still fast enough not to block the rendering of a page, these are for you! In a movie smart skeletons could be scary, but here they're a helpful hand!
+
+Release date - 2021/05/20
+
+**New features 🏁**
+* `ns-skeleton` is a component that can be placed into other components if we expect content to take a short time to load. It reacts to its parent and knows exactly how to behave and replaces the content with animated shimmering bars. We recommend that ns-skeleton be used for content that takes up to 5 seconds to load. The element is used as a placeholder to be replaced with your content once it has loaded.
+[Learn more about it here](https://nucleus.design/docs/components/ns-skeleton).
+
+**Improvements 🤹‍♂️**
+* `ns-card` - there was a `ns-pill` issue when used inline in cards, where it rendered a space at a specific viewport (hockey-pitch). This is now fixed.
+* `ns-header` - link being treated as a button is fixed.
+* `nsx-header` - ReciteMe was duplicating components when loading their magnifier. We have patched this.
+* We have made a few changes to allow ReciteMe to work properly.
+
+
+**Multibrand enablement and design tokens ☘️**
+
+* Stress testing design tokens - Bord Gáis `ns-lockup` (type="lockbox")
+* Stress testing design tokens  - Bord Gáis `ns-landmark` (type="summit")
+* Stress testing design tokens - Bord Gais `ns-cta`
+* `ns-inputter` - Added typography tokens
+* `ns-slot-picker` - Added typography tokens
+* `ns-cta` - Added typography tokens
+* `ns-content` - Added typography tokens
+
+
+
+**Bug fixes 🐛**
+
+* `ns-password` - `ns-form` did not recognize `ns-password` when submitting the form hitting the enter key. This is now fixed.
+* `ns-lockup` and `ns-landmark` - paragraph fonts in Safari were slightly inconsistent. They are fixed.
+* `ns-card` - the card background wasn't rendering at a specific viewport (basketball). This is now fixed.
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
 ## Version 1.30.0
 
 **Progress 👣**
