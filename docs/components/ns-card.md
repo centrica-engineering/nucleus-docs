@@ -2,7 +2,7 @@
 description: Molecule | Card component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -66,7 +66,7 @@ Cards are used to apply a container around a related grouping of information; th
 
 ### Section
 
-<Storybook story="components-ns-card--section"></Storybook>
+<StorybookStory story="components-ns-card--section"></StorybookStory>
 
 ### Using with action
 

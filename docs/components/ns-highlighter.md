@@ -2,7 +2,7 @@
 description: Organism | Highlighter component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -79,7 +79,7 @@ The message must be in plain English, and help the user out of the situation by 
 
 ## Usage
 
-<Storybook story="components-ns-highlighter--error"></Storybook>
+<StorybookStory story="components-ns-highlighter--error"></StorybookStory>
 
 ## Component placement
 

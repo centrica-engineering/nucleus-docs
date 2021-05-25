@@ -2,7 +2,7 @@
 description: Molecule | Inputter component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -233,7 +233,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ## Usage
 
-<Storybook story="form-components-ns-inputter--text-input"></Storybook>
+<StorybookStory story="form-components-ns-inputter--text-input"></StorybookStory>
 
 ## Component placement
 

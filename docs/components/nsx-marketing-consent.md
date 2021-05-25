@@ -2,7 +2,7 @@
 description: Experience | Marketing consent.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
@@ -34,7 +34,7 @@ This component is legally required when capturing contact preferences that will 
 
 ## Usage
 
-<Storybook story="nsx-marketing-consent--standard"></Storybook>
+<StorybookStory story="nsx-marketing-consent--standard"></StorybookStory>
 
 ## Component placement
 

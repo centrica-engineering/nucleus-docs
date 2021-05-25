@@ -2,7 +2,7 @@
 description: Molecule | Date picker component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -44,7 +44,7 @@ Some browsers do not support `type='date'` (e.g. Safari on Desktop). The compone
 
 ## Usage
 
-<Storybook story="form-components-ns-datepicker--standard"></Storybook>
+<StorybookStory story="form-components-ns-datepicker--standard"></StorybookStory>
 
 ## Component placement
 

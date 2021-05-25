@@ -2,7 +2,7 @@
 description: Experience | Footer component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
@@ -23,7 +23,7 @@ If a link needs to be updated for the website footer, it needs to be done in thi
 
 ## Usage
 
-<Storybook story="nsx-footer--standard"></Storybook>
+<StorybookStory story="nsx-footer--standard"></StorybookStory>
 
 ## Component placement
 

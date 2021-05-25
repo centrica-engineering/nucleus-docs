@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Storybook = ({...props}) => {
+export const StorybookStory = ({...props}) => {
   
   if (props.story.includes('--')) {
     let storyUrl = props.story.includes('nsx') ? `https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/${props.story}` : `https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/${props.story}`;

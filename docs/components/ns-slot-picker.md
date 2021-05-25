@@ -2,7 +2,7 @@
 description: Molecule | Slot picker component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -22,7 +22,7 @@ Ns-slot-picker is used any time you want a customer to select a time slot. This 
 
 ## Usage
 
-<Storybook story="components-ns-slot-picker--standard"></Storybook>
+<StorybookStory story="components-ns-slot-picker--standard"></StorybookStory>
 
 ## Usage example 
 

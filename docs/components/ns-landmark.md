@@ -2,7 +2,7 @@
 description: Organism | Landmark component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -156,19 +156,19 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Summit
 
-<Storybook story="components-ns-landmark--summit"></Storybook>
+<StorybookStory story="components-ns-landmark--summit"></StorybookStory>
 
 ### Hillside
 
-<Storybook story="components-ns-landmark--hillside"></Storybook>
+<StorybookStory story="components-ns-landmark--hillside"></StorybookStory>
 
 ### Lakeside
 
-<Storybook story="components-ns-landmark--lakeside"></Storybook>
+<StorybookStory story="components-ns-landmark--lakeside"></StorybookStory>
 
 ### Valley
 
-<Storybook story="components-ns-landmark--valley"></Storybook>
+<StorybookStory story="components-ns-landmark--valley"></StorybookStory>
 
 ## Component placement
 

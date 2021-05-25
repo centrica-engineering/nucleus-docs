@@ -2,7 +2,7 @@
 description: Organism | Accordion component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -37,7 +37,7 @@ If more than eight are used we should stop to reassess why and perhaps breakdown
 
 ## Usage
 
-<Storybook story="components-ns-accordion--singular"></Storybook>
+<StorybookStory story="components-ns-accordion--singular"></StorybookStory>
 
 ## Component placement
 

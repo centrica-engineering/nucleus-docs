@@ -2,7 +2,7 @@
 description: Atom | Video component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -27,7 +27,7 @@ British Gas creates many videos to engage customers. This component allows havin
 
 ## Usage
 
-<Storybook story="components-ns-video--youtube"></Storybook>
+<StorybookStory story="components-ns-video--youtube"></StorybookStory>
 
 ## Component placement
 

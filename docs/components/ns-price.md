@@ -2,7 +2,7 @@
 description: Atom | Price component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
@@ -35,7 +35,7 @@ Prices of less than £1 include zero pounds. eg. `pence="1"` becomes "£0.01"
 
 ## Usage
 
-<Storybook story="components-ns-price--standard"></Storybook>
+<StorybookStory story="components-ns-price--standard"></StorybookStory>
 
 ## Component placement
 

@@ -2,7 +2,7 @@
 description: Molecule | Selector component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -69,7 +69,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ## Usage
 
-<Storybook story="form-components-ns-selector--radio-with-image"></Storybook>
+<StorybookStory story="form-components-ns-selector--radio-with-image"></StorybookStory>
 
 ## Component placement
 

@@ -2,7 +2,7 @@
 description: Atom | Image component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -43,7 +43,7 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 ## Usage
 
-<Storybook story="components-ns-image--ratio-4-x-3"></Storybook>
+<StorybookStory story="components-ns-image--ratio-4-x-3"></StorybookStory>
 
 ## Component placement
 

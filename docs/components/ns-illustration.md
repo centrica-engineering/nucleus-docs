@@ -2,7 +2,7 @@
 description: Atom | Illustration component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
@@ -24,7 +24,7 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 
 ## Usage
 
-<Storybook story="components-ns-illustration--standard"></Storybook>
+<StorybookStory story="components-ns-illustration--standard"></StorybookStory>
 
 ## Component placement
 

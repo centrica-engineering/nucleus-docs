@@ -2,7 +2,7 @@
 description: Atom | Pill component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -55,7 +55,7 @@ A `red` or `green-light` pill can be used to drawing attention to important cust
 
 ## Usage
 
-<Storybook story="components-ns-pill--standard"></Storybook>
+<StorybookStory story="components-ns-pill--standard"></StorybookStory>
 
 ## Component placement
 

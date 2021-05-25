@@ -2,7 +2,7 @@
 description: Atom | Column component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -32,7 +32,7 @@ Some components (e.g. `ns-cta`) have a minimum width, care should be taken so th
 
 ## Usage
 
-<Storybook story="components-ns-column--standard"></Storybook>
+<StorybookStory story="components-ns-column--standard"></StorybookStory>
 
 ## Component placement
 
