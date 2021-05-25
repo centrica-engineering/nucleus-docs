@@ -18,7 +18,7 @@ Guide pages unsurprisingly, give guidance to the reader. This guidance is often 
 
 ## Example
 
-<StorybookPage story="examples-page-types--confirmation"></StorybookPage>
+<StorybookPage story="examples-page-types--guide"></StorybookPage>
 
 ## Content guidance
 
