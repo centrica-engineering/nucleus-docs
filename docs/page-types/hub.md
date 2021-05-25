@@ -22,10 +22,6 @@ Hub pages are designed to link other pages (often product pages) and navigate us
 
 <StorybookPage story="examples-page-types--hub"></StorybookPage>
 
-## Content guidance
-
-[TODO]
-
 ## Principles to follow
 
 | Creative | Tone of voice | Keywords |

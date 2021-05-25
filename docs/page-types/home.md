@@ -22,10 +22,6 @@ Think of this page as the shop window. It is the primary display point of the br
 
 <StorybookPage story="examples-page-types--home"></StorybookPage>
 
-## Content guidance
-
-[TODO]
-
 ## Principles to follow
 
 | Creative | Tone of voice | Keywords |

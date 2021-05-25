@@ -22,10 +22,6 @@ Product pages introduce more granular detail than hub pages. They often display 
 
 <StorybookPage story="examples-page-types--product"></StorybookPage>
 
-## Content guidance
-
-[TODO]
-
 ## Principles to follow
 
 | Creative | Tone of voice | Keywords |

@@ -20,10 +20,6 @@ Guide pages unsurprisingly, give guidance to the reader. This guidance is often 
 
 <StorybookPage story="examples-page-types--guide"></StorybookPage>
 
-## Content guidance
-
-[TODO]
-
 ## Principles to follow
 
 | Creative | Tone of voice | Keywords |
