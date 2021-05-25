@@ -8,12 +8,12 @@ description: Here are our release notes - enjoy!
 
 **Skeletons 🦴**
 
-Skeletons are here! If you have content that is a tad slow to come, but still fast enough not to block a page's rendering, these are for you! Smart skeletons could be scary in a movie, here they're a helpful hand! 
+Skeletons are here! If you have content that is a tad slow to load, but still fast enough not to block the rendering of a page, these are for you! In a movie smart skeletons could be scary, but here they're a helpful hand!
 
 Release date - 2021/05/20
 
 **New features 🏁**
-* `ns-skeleton` is a component that can be placed in a container if we expect content to take some time to load. It will react to its parent and know exactly how to behave and peplace the main features expected with a simple, shimmering bar. We recommend this for up to 5 seconds of load times. The element is used as a placeholder in an app and replaced with the loaded content once loaded by your app.
+* `ns-skeleton` is a component that can be placed into other components if we expect content to take a short time to load. It reacts to its parent and knows exactly how to behave and replaces the content with animated shimmering bars. We recommend that ns-skeleton be used for content that takes up to 5 seconds to load. The element is used as a placeholder to be replaced with your content once it has loaded.
 [Learn more about it here](https://nucleus.design/docs/components/ns-skeleton).
 
 **Improvements 🤹‍♂️**
