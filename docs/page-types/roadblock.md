@@ -27,7 +27,7 @@ The copy must be in plain English, and if possible help the user out of the situ
 
 You should not use:
 
-* Technical jargon like ‘form post error’, ‘unspecified error’ and ‘error 0x0000000643’
+* Technical jargon like ‘form post error’, ‘unspecified error’ or ‘Severity code 3’
 * Humorous, informal language like ‘oops’
 * Negative language
 
