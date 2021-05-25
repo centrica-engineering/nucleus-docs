@@ -2,7 +2,7 @@
 description: Organism |  Editorial component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -58,7 +58,7 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Usage
 
-<Storybook story="components-ns-editorial--editorial"></Storybook>
+<StorybookStory story="components-ns-editorial--editorial"></StorybookStory>
 
 ## Component placement
 

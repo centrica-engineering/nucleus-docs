@@ -2,7 +2,7 @@
 description: Atom | Table component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -46,7 +46,7 @@ The table component consumes basic HTML table markup, which makes it accessible 
 
 ## Usage
 
-<Storybook story="components-ns-table--data-table"></Storybook>
+<StorybookStory story="components-ns-table--data-table"></StorybookStory>
 
 ## Component placement
 

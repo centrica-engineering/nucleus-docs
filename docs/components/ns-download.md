@@ -2,7 +2,7 @@
 description: Atom | Download component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -42,11 +42,11 @@ The one exception to this rule is in forms as there are often challenges around 
 
 ### Standalone
 
-<Storybook story="components-ns-download--standalone"></Storybook>
+<StorybookStory story="components-ns-download--standalone"></StorybookStory>
 
 ### List
 
-<Storybook story="components-ns-download--list"></Storybook>
+<StorybookStory story="components-ns-download--list"></StorybookStory>
 
 ## Component placement
 

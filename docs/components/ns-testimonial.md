@@ -2,7 +2,7 @@
 description: Atom | Testimonial component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -24,7 +24,7 @@ A new component to display all the lovely things that people say about us. The t
 
 ## Usage
 
-<Storybook story="components-ns-testimonial--standard"></Storybook>
+<StorybookStory story="components-ns-testimonial--standard"></StorybookStory>
 
 ## Component placement
 

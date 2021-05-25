@@ -2,7 +2,7 @@
 description: Atom | Icon component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
@@ -29,7 +29,7 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 
 ## Usage
 
-<Storybook story="components-ns-icon--standard"></Storybook>
+<StorybookStory story="components-ns-icon--standard"></StorybookStory>
 
 ## Component placement
 

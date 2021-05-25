@@ -2,7 +2,7 @@
 description: Organism | Header component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -33,7 +33,7 @@ The default choice of header across the main British Gas UK home site should be 
 
 ## Usage
 
-<Storybook story="components-ns-header--standard"></Storybook>
+<StorybookStory story="components-ns-header--standard"></StorybookStory>
 
 ## Component placement
 

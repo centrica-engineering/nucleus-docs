@@ -3,25 +3,26 @@ title: Confirmation
 description: Page type | Confirmation
 ---
 
+import { StorybookPage } from '../../includes/storybook-page.js'
+
 ## Introduction
 
 The confirmation page type is used to show a customer that their journey or task has been completed.
 
 ## Purpose
 
-The purpose of the confirmation page is to show a customer that their action has been completed. It is important to differentiate this from their previous steps so they know there is a clear change.
+* The purpose of the confirmation page is to show a customer that their action has been completed. It is important to differentiate this from their previous steps so they know there is a clear change.
+* For more information on how to bookend your journeys [see the Start page type](page-types/start.md).
 
-For more information on how to bookend your journeys [see the Start page type](page-types/start.md).
+## Example
 
-## Visual Example
-
-![Confirmation page example](https://user-images.githubusercontent.com/45626534/87127391-c0d75d80-c285-11ea-9299-d9318c6d9fde.png)
+<StorybookPage story="examples-page-types--confirmation"></StorybookPage>
 
 ## Content guidance
 
-The page should always begin with a clear completion message. Any key information the customer needs to remember or save for a later date should be presented back to them at the top of the page. 
+The page should always begin with a clear completion message.
 
-### This page should include
+Any key information the customer needs to remember or save for a later date should be presented at the top of the Confirmation page. 
 
 * any reference numbers
 * an appointment date and/or time
@@ -37,6 +38,12 @@ Supplementary content relating to their completed journey can be displayed furth
 ### Supporting email comms
 
 In addition to this page, a confirmation email containing this information should be sent to the customer as well. This is especially important if the customer cannot bookmark or revisit this page once they navigated away from it.
+
+## Principles to follow
+
+| Creative | Tone of voice | Keywords |
+| :--- | :--- | :--- |
+| Clean and fresh  | Be helpful | Functional, Informative |
 
 ## Feedback
 

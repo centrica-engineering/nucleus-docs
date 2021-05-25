@@ -2,7 +2,7 @@
 description: Organism | Footer component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -28,7 +28,7 @@ It also holds information about the company.
 
 ## Usage
 
-<Storybook story="components-ns-footer--standard"></Storybook>
+<StorybookStory story="components-ns-footer--standard"></StorybookStory>
 
 ## Component placement
 

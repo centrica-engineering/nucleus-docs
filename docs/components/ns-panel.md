@@ -2,7 +2,7 @@
 description: Molecule | Panel component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
@@ -27,7 +27,7 @@ Adding a decoration to an `ns-panel` using a gradient background provides visual
 
 ## Usage
 
-<Storybook story="components-ns-panel--standard"></Storybook>
+<StorybookStory story="components-ns-panel--standard"></StorybookStory>
 
 ## Component placement
 

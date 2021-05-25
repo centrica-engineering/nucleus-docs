@@ -2,7 +2,7 @@
 description: Organism | Lockup component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -51,7 +51,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 ## Usage
 
-<Storybook story="components-ns-lockup--lockbox"></Storybook>
+<StorybookStory story="components-ns-lockup--lockbox"></StorybookStory>
 
 ## Component placement
 

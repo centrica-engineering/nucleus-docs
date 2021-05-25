@@ -2,7 +2,7 @@
 description: Molecule | Progress component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -55,7 +55,7 @@ Internet Explorer 11 and Microsoft Edge 18 and lower do not show the progress ba
 
 ## Usage
 
-<Storybook story="components-ns-progress--standard"></Storybook>
+<StorybookStory story="components-ns-progress--standard"></StorybookStory>
 
 ## Component placement
 

@@ -2,7 +2,7 @@
 description: Molecule | CTA component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -60,7 +60,7 @@ You can see the live example of the loading state on [storybook](https://www.bri
 
 ## Usage
 
-<Storybook story="components-ns-cta--direct-link"></Storybook>
+<StorybookStory story="components-ns-cta--direct-link"></StorybookStory>
 
 ## Component placement
 

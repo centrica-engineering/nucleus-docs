@@ -2,7 +2,7 @@
 description: Organism | Article component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -37,11 +37,11 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Usage
 
-<Storybook story="components-ns-article--standard"></Storybook>
+<StorybookStory story="components-ns-article--standard"></StorybookStory>
 
 ### Article split into sections
 
-<Storybook story="components-ns-article--sections"></Storybook>
+<StorybookStory story="components-ns-article--sections"></StorybookStory>
 
 ## Component placement
 

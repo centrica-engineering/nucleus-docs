@@ -2,7 +2,7 @@
 description: Experience | Header component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
@@ -28,7 +28,7 @@ The subheadings and links for the navigation can be passed in for each section t
 
 ## Usage
 
-<Storybook story="nsx-header--standard"></Storybook>
+<StorybookStory story="nsx-header--standard"></StorybookStory>
 
 ## Component placement
 

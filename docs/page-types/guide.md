@@ -3,32 +3,28 @@ title: Guide
 description: Page type | Guide page
 ---
 
+import { StorybookPage } from '../../includes/storybook-page.js'
+
 ## Introduction
 
 Guide pages unsurprisingly, give guidance to the reader. This guidance is often on a wide range of topics related in some way to the products and services the organisation offers. Guide pages are also an essential SEO tool, designed to drive traffic to the site by proving the organisation to be an expert on a range of (well considered and relevant) topics.
 
 ## Purpose
 
-- Some guide pages are intended to provide specific detail relating to the products and services the organisation offers. Others answer important customer questions relating to our product and services.
-- To give customers the confidence they need to make a purchase.
-- To educate customers on a particular topic.
-- This might take the form of instructions on how to do something, breaking down a complex topic or deeper reading to help make a decision.
+* Some guide pages are intended to provide specific detail relating to the products and services the organisation offers. Others answer important customer questions relating to our product and services.
+* To give customers the confidence they need to make a purchase.
+* To educate customers on a particular topic.
+* This might take the form of instructions on how to do something, breaking down a complex topic or deeper reading to help make a decision.
 
 ## Example
 
-https://www.britishgas.co.uk/energy/thinking-of-going-electric.html
+<StorybookPage story="examples-page-types--guide"></StorybookPage>
 
 ## Principles to follow
 
-Clean and fresh
-
-## Tone of voice
-
-Be helpful
-
-## Keywords
-
-Functional / Informative
+| Creative | Tone of voice | Keywords |
+| :--- | :--- | :--- |
+| Clean and fresh  | Be helpful | Functional, Informative |
 
 ## Feedback
 

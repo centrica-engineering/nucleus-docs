@@ -2,7 +2,7 @@
 description: Organism | Appointment picker component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -26,7 +26,7 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Usage
 
-<Storybook story="components-ns-appointment-picker--standard"></Storybook>
+<StorybookStory story="components-ns-appointment-picker--standard"></StorybookStory>
 
 The main property/attribute of `ns-appointment-picker` is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
 

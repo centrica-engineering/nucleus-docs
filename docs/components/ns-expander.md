@@ -2,7 +2,7 @@
 description: Molecule | Expander component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -33,7 +33,7 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 
 ## Usage
 
-<Storybook story="components-ns-expander--expander"></Storybook>
+<StorybookStory story="components-ns-expander--expander"></StorybookStory>
 
 ## Component placement
 

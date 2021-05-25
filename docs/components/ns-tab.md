@@ -2,7 +2,7 @@
 description: Atom | Tab component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
@@ -30,7 +30,7 @@ Please see [ns-tabs](components/ns-tabs.md) for full content guidance.
 
 ## Usage
 
-<Storybook story="components-ns-tab--tab"></Storybook>
+<StorybookStory story="components-ns-tab--tab"></StorybookStory>
 
 ## Component placement
 
