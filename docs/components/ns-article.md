@@ -57,7 +57,8 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ### Anonymous
 
-* First children can only be `<ns-content>` or `<section>`
+* First children can only be a single `<ns-content>` or multiple `<section>` elements
+* Each `<section>` can only contain a single `<ns-content>`
 
 <Tokens component="article"></Tokens>
 
