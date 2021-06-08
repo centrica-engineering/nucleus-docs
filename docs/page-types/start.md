@@ -15,6 +15,12 @@ This page type should be used to clarify and set up a task for a user at the beg
 * This page sets expectations and provides any contextual information that a user may need to complete their journey successfully. 
 * For more information on how to bookend your journeys [see the Confirmation page type](page-types/confirmation.md).
 
+## Principles to follow
+
+| Creative | Tone of voice | Keywords |
+| :--- | :--- | :--- |
+| Modern and dynamic  | Be active, Be natural | Promotional, Informative |
+
 ## Example
 
 <StorybookPage story="examples-page-types--start"></StorybookPage>
@@ -36,12 +42,6 @@ The outline below provides an overview of the content that is likely to be requi
 ![Example: Optional signposting to a secondary journey (F)](https://user-images.githubusercontent.com/3082819/82550723-e930be80-9b56-11ea-8294-e4d1bdb5c09d.png)
 
 This supplementary content may be displayed further down the page as needed, with hierarchical importance reducing with scroll depth. Decorative background elements should be adapted to create balance with the surrounding page elements.
-
-## Principles to follow
-
-| Creative | Tone of voice | Keywords |
-| :--- | :--- | :--- |
-| Modern and dynamic  | Be active, Be natural | Promotional, Informative |
 
 ## Feedback
 
