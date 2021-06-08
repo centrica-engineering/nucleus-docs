@@ -3,6 +3,8 @@ title: Home
 description: Page type | Home page
 ---
 
+import { StorybookPage } from '../../includes/storybook-page.js'
+
 ## Introduction
 
 Think of this page as the shop window. It is the primary display point of the brand. It needs to capture attention, and peak interest. It is also the starting point for many users to navigate into specific product journeys, or learn before they purchase. The homepage has to work hard and wear many hats without being an overwhelming barrage of information.
@@ -26,6 +28,41 @@ Think of this page as the shop window. It is the primary display point of the br
 
 <StorybookPage story="examples-page-types--home"></StorybookPage>
 
+## Content guidance
+
+The home page should always begin with an [ns-landmark](https://nucleus.design/docs/components/ns-landmark) (summit) containing the most compelling and important message emphasising the key points in bold text, accompanied with a relevant 'hero' image. 
+
+The rest of the page can be considered based on your particular requirements, however, this example of structure is a good starting point...
+
+### Panel 1 
+
+This [ns-panel](https://nucleus.design/docs/components/ns-panel) consists of a heading, an introductory paragraph and Section Card style [ns-card](https://nucleus.design/docs/components/ns-card) with CTAs for the most common reasons a user would be visiting the website. The heading and paragraph should be used to introduce the user to the business (we shouldn't assume everyone knows this already). 
+
+It also serves as a visual separator from the landmark above and the lock-up below that would fight for attention if adjacent.
+
+### Panel 2
+
+This contains a [ns-lockup](https://nucleus.design/docs/components/ns-lockup) describing some information such as latest news or a promotion combined with an image and [ns-cta](https://nucleus.design/docs/components/ns-cta).
+
+### Panel 3
+
+3 more [ns-card](https://nucleus.design/docs/components/ns-card) with text CTAs, combined with a heading offer links to other services that may also be of interest but are less important than those in Panel 1.
+
+## Panel 4
+
+[ns-lockup](https://nucleus.design/docs/components/ns-lockup) with decoration. Used to grab attention to another product or service lower down the order.
+
+## Panel 5
+
+[ns-lockup](https://nucleus.design/docs/components/ns-lockup) but without decoration, so secondary to the panel above.
+
+## Panel 6
+
+A last mop-up of any user that has scrolled this far. Ask what else might they be looking for that's not already been mentioned above? 3 more [ns-card](https://nucleus.design/docs/components/ns-card) with text CTAs but with a decoration that is sympathetic to the end of the page caveat or footer section.
+
+## Panel 7
+
+[ns-caveat](https://nucleus.design/docs/components/ns-caveat) Caveats provide additional information and legal details to content.
 
 ## Feedback
 
