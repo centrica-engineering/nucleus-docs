@@ -55,6 +55,8 @@ It also serves as a visual separator from the landmark above and the lock-up bel
 
 ### Panel 2
 
+![Image of Panel 2](https://user-images.githubusercontent.com/78355810/121559775-ce094900-ca0e-11eb-9d15-d370761a9202.png)
+
 This contains a [ns-lockup](https://nucleus.design/docs/components/ns-lockup) describing some information such as latest news or a promotion combined with an image and [ns-cta](https://nucleus.design/docs/components/ns-cta).
 
 ### Panel 3
