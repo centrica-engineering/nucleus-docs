@@ -73,6 +73,8 @@ This contains a [ns-lockup](https://nucleus.design/docs/components/ns-lockup) de
 
 ### Panel 5
 
+![Image of Panel 5](https://user-images.githubusercontent.com/78355810/121562212-23465a00-ca11-11eb-8a39-10e0885ab05d.png)
+
 [ns-lockup](https://nucleus.design/docs/components/ns-lockup) but without decoration, so secondary to the panel above.
 
 ### Panel 6
