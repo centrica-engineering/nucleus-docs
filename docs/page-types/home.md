@@ -79,6 +79,8 @@ This contains a [ns-lockup](https://nucleus.design/docs/components/ns-lockup) de
 
 ### Panel 6
 
+![Image of Panel 6](https://user-images.githubusercontent.com/78355810/121562898-d1520400-ca11-11eb-93e8-46dedc5bf79f.png)
+
 A last mop-up of any user that has scrolled this far. Ask what else might they be looking for that's not already been mentioned above? 3 more [ns-card](https://nucleus.design/docs/components/ns-card) with text CTAs but with a decoration that is sympathetic to the end of the page caveat or footer section.
 
 ### Panel 7
