@@ -89,6 +89,9 @@ A last mop-up of any user that has scrolled this far. Ask what else might they b
 
 [ns-caveat](https://nucleus.design/docs/components/ns-caveat) Caveats provide additional information and legal details to content.
 
+
+![Image of Panel 8](https://user-images.githubusercontent.com/78355810/121565028-fa739400-ca13-11eb-8a68-90ff869c3cb4.png)
+
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-home]).
