@@ -34,6 +34,13 @@ The home page should always begin with an [ns-landmark](https://nucleus.design/d
 
 The rest of the page can be considered based on your particular requirements, however, this example of structure is a good starting point...
 
+### Navigation header
+
+The home page should always start with [ns-header](https://nucleus.design/docs/components/ns-header) which provides the primary navigation for the website, whilst also being our main brand presence with the logo.
+
+### Skyline notification
+Positioned directly beneath the global navigation and above any content, [ns-skyline](https://nucleus.design/docs/components/ns-skyline) displays high level messages to the user. The purpose of ns-skyline is to notify the user of important site-wide or non-page specific events that may affect their experience of using the British Gas website.
+
 ### Panel 1 
 
 This [ns-panel](https://nucleus.design/docs/components/ns-panel) consists of a heading, an introductory paragraph and Section Card style [ns-card](https://nucleus.design/docs/components/ns-card) with CTAs for the most common reasons a user would be visiting the website. The heading and paragraph should be used to introduce the user to the business (we shouldn't assume everyone knows this already). 
