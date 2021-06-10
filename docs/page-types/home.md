@@ -36,12 +36,12 @@ The rest of the page can be considered based on your particular requirements, ho
 
 ### Navigation header
 
-![Image of header](https://user-images.githubusercontent.com/78355810/121548232-c3e24d00-ca04-11eb-925c-15415e6c029d.png)
+![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png)
 
 The home page should always start with [ns-header](https://nucleus.design/docs/components/ns-header) which provides the primary navigation for the website, whilst also being our main brand presence with the logo.
 
 ### Skyline notification
-![Image of skyline](https://user-images.githubusercontent.com/78355810/121548074-a0b79d80-ca04-11eb-9a95-f09072190a28.png)
+![Image of skyline](https://user-images.githubusercontent.com/78355810/121555785-348c6800-ca0b-11eb-922d-c2c3b4937acd.png)
 
 Positioned directly beneath the global navigation and above any content, [ns-skyline](https://nucleus.design/docs/components/ns-skyline) displays high level messages to the user. The purpose of ns-skyline is to notify the user of important site-wide or non-page specific events that may affect their experience of using the British Gas website.
 
