@@ -67,6 +67,8 @@ This contains a [ns-lockup](https://nucleus.design/docs/components/ns-lockup) de
 
 ### Panel 4
 
+![Image of Panel 4](https://user-images.githubusercontent.com/78355810/121561606-91d6e800-ca10-11eb-967c-824decbea4a8.png)
+
 [ns-lockup](https://nucleus.design/docs/components/ns-lockup) with decoration. Used to grab attention to another product or service lower down the order.
 
 ### Panel 5
