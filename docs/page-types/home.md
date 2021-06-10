@@ -85,6 +85,8 @@ A last mop-up of any user that has scrolled this far. Ask what else might they b
 
 ### Panel 7
 
+![Image of Panel 7](https://user-images.githubusercontent.com/78355810/121563848-b8961e00-ca12-11eb-936e-b46c5de2394d.png)
+
 [ns-caveat](https://nucleus.design/docs/components/ns-caveat) Caveats provide additional information and legal details to content.
 
 ## Feedback
