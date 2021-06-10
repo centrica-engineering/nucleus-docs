@@ -47,7 +47,7 @@ Positioned directly beneath the global navigation and above any content, [ns-sky
 
 ### Panel 1 
 
-![Image of Panel 1](https://user-images.githubusercontent.com/78355810/121547714-4ae2f580-ca04-11eb-8ba6-0c1a4d1187cd.png)
+![Image of Panel 1](https://user-images.githubusercontent.com/78355810/121550415-a0b89d00-ca06-11eb-9ba6-c8f04d69f047.png)
 
 This [ns-panel](https://nucleus.design/docs/components/ns-panel) consists of a heading, an introductory paragraph and Section Card style [ns-card](https://nucleus.design/docs/components/ns-card) with CTAs for the most common reasons a user would be visiting the website. The heading and paragraph should be used to introduce the user to the business (we shouldn't assume everyone knows this already). 
 
