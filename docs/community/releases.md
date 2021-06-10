@@ -4,6 +4,90 @@ description: Here are our release notes - enjoy!
 
 ---
 
+## Version 1.31.0
+
+**Skeletons 🦴**
+
+Skeletons are here! If you have content that is a tad slow to load, but still fast enough not to block the rendering of a page, these are for you! In a movie smart skeletons could be scary, but here they're a helpful hand!
+
+Release date - 2021/05/20
+
+**New features 🏁**
+* `ns-skeleton` is a component that can be placed into other components if we expect content to take a short time to load. It reacts to its parent and knows exactly how to behave and replaces the content with animated shimmering bars. We recommend that ns-skeleton be used for content that takes up to 5 seconds to load. The element is used as a placeholder to be replaced with your content once it has loaded.
+[Learn more about it here](https://nucleus.design/docs/components/ns-skeleton).
+
+**Improvements 🤹‍♂️**
+* `ns-card` - there was a `ns-pill` issue when used inline in cards, where it rendered a space at a specific viewport (hockey-pitch). This is now fixed.
+* `ns-header` - link being treated as a button is fixed.
+* `nsx-header` - ReciteMe was duplicating components when loading their magnifier. We have patched this.
+* We have made a few changes to allow ReciteMe to work properly.
+
+
+**Multibrand enablement and design tokens ☘️**
+
+* Stress testing design tokens - Bord Gáis `ns-lockup` (type="lockbox")
+* Stress testing design tokens  - Bord Gáis `ns-landmark` (type="summit")
+* Stress testing design tokens - Bord Gais `ns-cta`
+* `ns-inputter` - Added typography tokens
+* `ns-slot-picker` - Added typography tokens
+* `ns-cta` - Added typography tokens
+* `ns-content` - Added typography tokens
+
+
+
+**Bug fixes 🐛**
+
+* `ns-password` - `ns-form` did not recognize `ns-password` when submitting the form hitting the enter key. This is now fixed.
+* `ns-lockup` and `ns-landmark` - paragraph fonts in Safari were slightly inconsistent. They are fixed.
+* `ns-card` - the card background wasn't rendering at a specific viewport (basketball). This is now fixed.
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+## Version 1.30.0
+
+**Progress 👣**
+
+*"We can only see a short distance ahead, but we can see plenty there that needs to be done."*
+This is what Alan Turing said about making progress and knowing what is left to achieve. We thought it was a great way to introduce our brand new `ns-progress` component. Showing progress and setting expectations is a great incentive to complete a complex task. This is what we want to enable with this release. That, and bug fixes, improvements and further work on design tokens!
+
+Release date - 2021/05/06
+
+**New features 🏁**
+* `ns-progress` enables you to show progress throughout a task. Wether it's short and easy or long and complex, you can set an expectation bny showing how many steps there are, where a user stands, and what's left and coming next. The component is very flexible and easy to setup, all the way to its completed state! [Learn more about it here](https://nucleus.design/docs/components/ns-progress) or [give it a go in Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/components-ns-progress--standard).
+
+**Improvements 🗓**
+* `ns-datepicker` - We improved the focus on the inputter when inline validation triggers an error for a missing date and focuses back on the datepicker
+* `ns-datepicker` - We moved the dialog outside of shadowroot, for display improvement in context of other components.
+
+**Multibrand enablement and design tokens 🪙**
+
+* `ns-selector` - Added typography tokens
+* `ns-tabs` - Added typography tokens
+* `ns-table` - Added typography tokens
+* Stress testing our design tokens: Added Bord Gáis colour foundations
+
+
+
+**Bug fixes 🐛**
+
+* We separated *fetch* and *polyfill fetch* to fix avoid tests and builds failing in Dev environments
+* `ns-table` - a bug where the download icon flowed over the fixed column of the table is now fixed
+* 'ns-lockup' - a bug where the lockup which was not locking to the sides in smaller viewport is now fixed
+
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
 ## Version 1.29.0
 
 **✔ 8 characters long, with letters and numbers**
@@ -73,6 +157,7 @@ Release date - 2021/04/08
 * `ns-lockup` - override font size fix
 * `ns-datepicker` - the calendar clashed with its surroundings in some scenarios. This is now fixed (first solution is content is pushed to allow calendar to open, a second more refined improvement is coming)
 * `ns-article` - table alignment issue fixed
+
 
 **Feedback 💌**
 

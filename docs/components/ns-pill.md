@@ -2,8 +2,9 @@
 description: Atom | Pill component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -54,21 +55,11 @@ A `red` or `green-light` pill can be used to drawing attention to important cust
 
 ## Usage
 
-<Storybook story="components-ns-pill--standard"></Storybook>
+<StorybookStory story="components-ns-pill--standard"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-| **Relationship**|  |
-| :---  | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes -  `ns-card`, `ns-selector`, `ns-landmark type="valley"` |
-| **What layout classes can be used?** | None |
-
-More details for using ns-pill in other components can be found here:
-
-* [ns-card](components/ns-card.md#using-with-ns-pill)
-* [ns-selector](components/ns-selector.md#usage)
-* [ns-landmark](components/ns-landmark.md)
+<ComponentPlacement component="ns-pill" parentComponents="ns-card,ns-selector,ns-landmark"></ComponentPlacement>
 
 > Note: Work is in progress to add the ns-pill to other components
 

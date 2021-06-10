@@ -2,14 +2,28 @@
 description: Organism | Highlighter component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
 > Highlighters can be used to communicate information or error, warning and success messages.
 
-A component that communicates the message that a service is not available to them or that there are technical issues on specific pages only. These messages are different to global messages as they only apply to some pages not site wide e.g. a message that says the top up service is not available would only apply to pages that customers will look at in order to top up.
+A component that communicates the message that a service is not available to them or that there are technical issues on specific pages only. These messages are different to global messages as they only apply to some pages not site wide.
+
+e.g. a message that says the top up service is not available would only apply to pages that customers will look at in order to top up.
+
+## Accessibility 
+
+
+The information contained in the highlighter should always be the most important information on the page. To ensure that screen reader users are informed about the importance of these messages the content is read aloud as soon as the highlighter is used. This could be when the page loads or when it is dynamically added to a page.
+
+If there are multiple highlighters on a page they are read:
+* from top to bottom on page load
+* in the order they have been added to the page when dynamically added
+
+We recommend you use highlighters for their role, not for their looks. 
 
 ## Content guidance
 
@@ -65,15 +79,11 @@ The message must be in plain English, and help the user out of the situation by 
 
 ## Usage
 
-<Storybook story="components-ns-highlighter--error"></Storybook>
+<StorybookStory story="components-ns-highlighter--error"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-| **Relationship** |  |
-| :---  | :--- |
-| **Does it live in a panel?** | ✅ Yes|
-| **Does it live inside other components?** | ❌ No  |
-| **What layout classes can be used?** | `splash` |
+<ComponentPlacement component="ns-highlighter" parentComponents="ns-form,ns-panel"></ComponentPlacement>
 
 ## Specification
 
@@ -105,7 +115,3 @@ The message must be in plain English, and help the user out of the situation by 
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-highlighter])
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
-
-## Related links
-
-* [Related links]

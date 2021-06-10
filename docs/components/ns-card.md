@@ -2,8 +2,9 @@
 description: Molecule | Card component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -65,7 +66,7 @@ Cards are used to apply a container around a related grouping of information; th
 
 ### Section
 
-<Storybook story="components-ns-card--section"></Storybook>
+<StorybookStory story="components-ns-card--section"></StorybookStory>
 
 ### Using with action
 
@@ -109,13 +110,9 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 
 
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ✅ Yes |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-caveat` `ns-landmark` `ns-tabs` |
-| **What layout classes can be used?**  | `splash` `splash triple`  `splish` `splish triple` |
+<ComponentPlacement component="ns-card" parentComponents="ns-panel,ns-caveat,ns-tabs"></ComponentPlacement>
 
 ## Specification
 
@@ -181,5 +178,5 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 ## Related links
 
 * [ns-pill](components/ns-pill.md)
-* [ns-card section panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--section-cards).
-* [ns-card support panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--support-image-cards).
+* [ns-card section panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-panels--section-cards).
+* [ns-card support panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-panels--support-image-cards).

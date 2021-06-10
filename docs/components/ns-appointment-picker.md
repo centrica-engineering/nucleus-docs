@@ -2,8 +2,10 @@
 description: Organism | Appointment picker component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
+
 
 ## Introduction
 
@@ -24,15 +26,9 @@ import { Tokens } from '../../includes/tokens.js'
 
 ## Usage
 
-<Storybook story="components-ns-appointment-picker--standard"></Storybook>
+<StorybookStory story="components-ns-appointment-picker--standard"></StorybookStory>
 
 The main property/attribute of `ns-appointment-picker` is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
-
-```html
-<ns-form>
-  <ns-appointment-picker></ns-appointment-picker>
-</ns-form>
-```
 
 ## Usage example
 
@@ -77,14 +73,9 @@ const slotData = [{ date: '2020-01-28', slots: slots }, { date: '2020-01-29', sl
 
 ```
 
+## Component placement
 
-## Component relationship
-
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No  |
-| **Does it live inside other components?** | ✅ Yes -  `ns-form` |
-| **What layout classes can be used?**  | ❌ None |
+<ComponentPlacement component="ns-appointment-picker" parentComponents="ns-form,ns-fieldset"></ComponentPlacement>
 
 <Tokens component="appointment-picker"></Tokens>
 

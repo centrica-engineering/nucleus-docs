@@ -2,8 +2,10 @@
 description: Organism | Article component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
+
 
 ## Introduction
 
@@ -35,19 +37,15 @@ import { Tokens } from '../../includes/tokens.js'
 
 ## Usage
 
-<Storybook story="components-ns-article--standard"></Storybook>
+<StorybookStory story="components-ns-article--standard"></StorybookStory>
 
 ### Article split into sections
 
-<Storybook story="components-ns-article--sections"></Storybook>
+<StorybookStory story="components-ns-article--sections"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ✅ Yes |
-| **Does it live inside other components?** |  ❌ No |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-article" parentComponents="ns-panel"></ComponentPlacement>
 
 ## Specification
 
@@ -59,7 +57,8 @@ import { Tokens } from '../../includes/tokens.js'
 
 ### Anonymous
 
-* First children can only be `<ns-content>` or `<section>`
+* First children can only be a single `<ns-content>` or multiple `<section>` elements
+* Each `<section>` can only contain a single `<ns-content>`
 
 <Tokens component="article"></Tokens>
 

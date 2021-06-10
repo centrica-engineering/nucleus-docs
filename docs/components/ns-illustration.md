@@ -2,7 +2,7 @@
 description: Atom | Illustration component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
@@ -24,15 +24,11 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 
 ## Usage
 
-<Storybook story="components-ns-illustration--standard"></Storybook>
+<StorybookStory story="components-ns-illustration--standard"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-lockup` `ns-card` |
-| **What layout classes can be used?**  | None |
+The ns-illustration component can be used in a number of components to help create bespoke UIs.
 
 ## Specification
 

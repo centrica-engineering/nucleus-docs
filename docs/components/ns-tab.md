@@ -2,8 +2,9 @@
 description: Atom | Tab component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -29,15 +30,11 @@ Please see [ns-tabs](components/ns-tabs.md) for full content guidance.
 
 ## Usage
 
-<Storybook story="components-ns-tab--tab"></Storybook>
+<StorybookStory story="components-ns-tab--tab"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes - `ns-tabs` |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-tab" parentComponents="ns-tabs"></ComponentPlacement>
 
 ## Specification
 

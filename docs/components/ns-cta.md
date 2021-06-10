@@ -2,8 +2,9 @@
 description: Molecule | CTA component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -59,15 +60,11 @@ You can see the live example of the loading state on [storybook](https://www.bri
 
 ## Usage
 
-<Storybook story="components-ns-cta--direct-link"></Storybook>
+<StorybookStory story="components-ns-cta--direct-link"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-| **Relationship** |  |
-| :--- | :--- |
-| **Does it live in a panel?**              | ❌ No |
-| **Does it live inside other components?** | ✅ Yes - `ns-lockup`, `ns-landmark`, `ns-card` |
-| **What layout classes can be used?**      | None |
+<ComponentPlacement component="ns-cta" parentComponents="ns-lockup,ns-landmark,ns-card,ns-form,ns-fieldset,ns-content"></ComponentPlacement>
 
 
 ## Specification
@@ -106,4 +103,4 @@ You can see the live example of the loading state on [storybook](https://www.bri
 
 ## Related links
 
-* [CTA examples in the homepage](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-homepage--2019-01).
+* [CTA examples in the homepage](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-homepage--2019-01).

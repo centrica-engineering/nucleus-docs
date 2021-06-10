@@ -2,8 +2,9 @@
 description: Molecule | Caveat component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -43,15 +44,11 @@ Caveats link to content in the page, providing more information about legality a
 
 ## Usage
 
-<Storybook story="components-ns-caveat--caveat"></Storybook>
+<StorybookStory story="components-ns-caveat--caveat"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ❌ No |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-caveat"></ComponentPlacement>
 
 ## Specification
 
@@ -76,4 +73,4 @@ Caveats link to content in the page, providing more information about legality a
 ## Related links
 
 * [ns-caveat component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-caveat--caveat).
-* [Homepage example in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-homepage--2019-01).
+* [Homepage example in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-homepage--2019-01).

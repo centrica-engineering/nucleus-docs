@@ -3,30 +3,30 @@ title: Product
 description: Page type | Product page
 ---
 
+import { StorybookPage } from '../../includes/storybook-page.js'
+
 ## Introduction
 
 Product pages introduce more granular detail than hub pages. They often display pricing, product terms and promotion details. Primary actions on the page drive customers into the sales journey, and conversion rate should be measured into these journeys to deduce how to optimise page performance.
 
 ## Purpose
 
-- Immediately convey the value of the featured product (or service).
-- Explain the key features of the the product or service, this could be visually or verbally.
-- Make customers believe this is the product or service they need.
-- Convince the customer of the product offering to drive them into the top of the sales funnel.
-- Carry all relevant legal or regulatory information (this could be a link to or caveat etc) required for the product & service offerings on the page.
-- Direct users to more information if they’re not at the sales part of their buying journey.
+* Immediately convey the value of the featured product (or service).
+* Explain the key features of the the product or service, this could be visually or verbally.
+* Make customers believe this is the product or service they need.
+* Convince the customer of the product offering to drive them into the top of the sales funnel.
+* Carry all relevant legal or regulatory information (this could be a link to or caveat etc) required for the product & service offerings on the page.
+* Direct users to more information if they’re not at the sales part of their buying journey.
+
+## Example
+
+<StorybookPage story="examples-page-types--product"></StorybookPage>
 
 ## Principles to follow
 
-Modern & dynamic
-
-## Tone of voice
-
-Be active Be natural
-
-## Keywords
-
-Promotional / Informative
+| Creative | Tone of voice | Keywords |
+| :--- | :--- | :--- |
+| Modern and dynamic  | Be active, Be natural | Promotional, Informative |
 
 ## Feedback
 

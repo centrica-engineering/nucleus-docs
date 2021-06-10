@@ -2,8 +2,9 @@
 description: Molecule | Expander component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -32,15 +33,11 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 
 ## Usage
 
-<Storybook story="components-ns-expander--expander"></Storybook>
+<StorybookStory story="components-ns-expander--expander"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-accordion` `ns-skyline` |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-expander" parentComponents="ns-accordion,ns-skyline,ns-card,ns-content,ns-product-card,ns-selector"></ComponentPlacement>
 
 ## Specification
 

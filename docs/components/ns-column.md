@@ -2,8 +2,9 @@
 description: Atom | Column component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -19,9 +20,8 @@ Note: This is used for arranging components and content **not** multiple columns
 | :---  | :---  |
 | Pick the number of columns to complement the content | Have complicated column structures, try to simplify your content first |
 | Test the full responsive range of your page's and not just the defined viewports | Use in components that are too small to support multiple components |
-| Wrap in a `splish` or `splash` when used with `ns-panel` | Use to put components in columns that are designed to be standalone or stack (e.g multiple ns-highlighers or ns-accordions) |
-| Try to stick to one column as much as possible | Use to create newspaper style columns and layouts |
-| Try to avoid having widowed items | |
+| Try to stick to one column as much as possible  | Use to put components in columns that are designed to be standalone or stack (e.g multiple ns-highlighers or ns-accordions) |
+| Try to avoid having widowed items | Use to create newspaper style columns and layouts |
 | Use multiple columns when the user needs to compare items | |
 | Use the ratio options to add side panels | | 
 | When using ratios put the primary page content in the largest column | |
@@ -32,15 +32,13 @@ Some components (e.g. `ns-cta`) have a minimum width, care should be taken so th
 
 ## Usage
 
-<Storybook story="components-ns-column--standard"></Storybook>
+<StorybookStory story="components-ns-column--standard"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-| **Relationship**|  |
-| :---  | :--- |
-| **Does it live in a panel?** | ✅ Yes  |
-| **Does it live inside other components?** | ✅ Yes |
-| **What layout classes can be used?** | `splish`, `splash`, `splosh` |
+<ComponentPlacement component="ns-column" parentComponents="ns-panel,ns-tabs,ns-expander,ns-inputter"></ComponentPlacement>
+
+> Note: only used in ns-inputter to control the layout of ns-selector
 
 ## Specification
 
@@ -54,38 +52,57 @@ Some components (e.g. `ns-cta`) have a minimum width, care should be taken so th
 
 ## Specification notes
 
+### How do viewports inherit values?
 Each value is applied at that viewpoint and each larger viewport unless the larger viewport has a column value applied.
 
-### Examples
+#### Examples
 
-#### Setting 2 columns for every viewport larger than basketball court
-
-```markup
-<ns-column basketballcourt="2" class="splash"></ns-column>
-```
-
-#### Going from 1 column to 3 columns at a larger viewport
+##### Setting 2 columns for every viewport larger than basketball court
 
 ```markup
-<ns-column hockeypitch="3" class="splish"></ns-column>
+<ns-column basketballcourt="2"></ns-column>
 ```
 
-#### Going from 1 to 2 columns and then 4 columns
+##### Going from 1 column to 3 columns at a larger viewport
 
 ```markup
-<ns-column hockeypitch="2" rugbypitch="4" class="splash"></ns-column>
+<ns-column hockeypitch="3"></ns-column>
 ```
 
-#### Going from 2 columns, to 4 columns, and back down to 3 columns
+##### Going from 1 to 2 columns and then 4 columns
 
 ```markup
-<ns-column basketballcourt="2" rugbypitch="4" polofield="3" class="splash"></ns-column>
+<ns-column hockeypitch="2" rugbypitch="4"></ns-column>
 ```
 
-#### Going from 1 columns to 2:1 columns and then 3:1 columns
+
+##### Going from 2 columns, to 4 columns, and back down to 3 columns
+```markup
+<ns-column basketballcourt="2" rugbypitch="4" polofield="3"></ns-column>
+```
+
+##### Going from 1 columns to 2:1 columns and then 3:1 columns
 
 ```markup
 <ns-column hockeypitch="2:1" polofield="3:1"></ns-column>
+```
+
+### How do the 2:1, 3:1 columns work?
+If you want to have width ratios that make for a different width for your columns, you can set the value to 1:2, 2:1, 1:3, and 3:1. The first value will apply to the width of all odd child elements, and the second to all child even elements. 
+
+#### Example
+If we take the example of a 2:1 column, it essentially means that all odd child elements have a width of 2 and all even child elements have a width of 1.
+
+This is how your markup would look like:
+```
+<ns-column hockeypitch="2:1">
+  <div>
+     this will have width of 2
+  </div>
+  <div>
+     this will have width of 1
+  </div>
+</ns-column>
 ```
 
 <Tokens component="column"></Tokens>

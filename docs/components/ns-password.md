@@ -2,8 +2,9 @@
 description: Molecule | Password component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -14,15 +15,11 @@ This component wraps our ns-inputter component. Guidelines defined on the ns-inp
 
 ## Usage
 
-<Storybook story="form-components-ns-password--standard"></Storybook>
+<StorybookStory story="form-components-ns-password--standard"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-form`|
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-password" parentComponents="ns-form,ns-fieldset"></ComponentPlacement>
 
 ## Specification
 

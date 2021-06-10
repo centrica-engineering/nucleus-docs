@@ -2,8 +2,9 @@
 description: Organism | Tabs component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -41,15 +42,9 @@ Related content can be separated into clearly labelled sections.
 
 ## Usage
 
-<Storybook story="components-ns-tabs--tabs"></Storybook>
+<StorybookStory story="components-ns-tabs--tabs"></StorybookStory>
 
-## Component relationship
-
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ❌ No |
-| **What layout classes can be used?**  | None |
+## Component placement
 
 A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a number of `ns-tab` and `ns-panel` pairs exist. Each of these pairs provide a tab to select and a panel to place a layout and related content.
 

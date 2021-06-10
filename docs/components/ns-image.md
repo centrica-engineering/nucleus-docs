@@ -2,8 +2,9 @@
 description: Atom | Image component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -42,15 +43,11 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 ## Usage
 
-<Storybook story="components-ns-image--ratio-4-x-3"></Storybook>
+<StorybookStory story="components-ns-image--ratio-4-x-3"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes - `ns-card` `ns-landmark` `ns-lockup` |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-image" parentComponents="ns-content,ns-product-card,ns-lockup"></ComponentPlacement>
 
 ## Specification
 

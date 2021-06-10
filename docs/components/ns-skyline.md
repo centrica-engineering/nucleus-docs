@@ -2,8 +2,9 @@
 description: Organism | Skyline component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -45,15 +46,12 @@ Positioned directly beneath the global navigation and above any content, `ns-sky
 
 ## Usage
 
-<Storybook story="components-ns-skyline--singular"></Storybook>
+<StorybookStory story="components-ns-skyline--singular"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ❌ No |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-skyline"></ComponentPlacement>
+
 
 ## Specification
 

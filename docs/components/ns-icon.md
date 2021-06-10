@@ -2,7 +2,7 @@
 description: Atom | Icon component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 
 ## Introduction
@@ -29,15 +29,11 @@ Icons provide clarity to users reducing the cognitive load. Icons always supplem
 
 ## Usage
 
-<Storybook story="components-ns-icon--standard"></Storybook>
+<StorybookStory story="components-ns-icon--standard"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** |  ✅ Yes -  `ns-cta` `ns-expander` `ns-inputter` `ns-tab` `ns-expander` |
-| **What layout classes can be used?**  | None |
+The ns-icon component can be used in a number of components to help create bespoke UIs
 
 ## Specification
 

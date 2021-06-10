@@ -48,19 +48,19 @@ This contains a [ns-lockup](https://nucleus.design/docs/components/ns-lockup) de
 
 3 more [ns-card](https://nucleus.design/docs/components/ns-card) with text CTAs, combined with a heading offer links to other services that may also be of interest but are less important than those in Panel 1.
 
-## Panel 4
+### Panel 4
 
 [ns-lockup](https://nucleus.design/docs/components/ns-lockup) with decoration. Used to grab attention to another product or service lower down the order.
 
-## Panel 5
+### Panel 5
 
 [ns-lockup](https://nucleus.design/docs/components/ns-lockup) but without decoration, so secondary to the panel above.
 
-## Panel 6
+### Panel 6
 
 A last mop-up of any user that has scrolled this far. Ask what else might they be looking for that's not already been mentioned above? 3 more [ns-card](https://nucleus.design/docs/components/ns-card) with text CTAs but with a decoration that is sympathetic to the end of the page caveat or footer section.
 
-## Panel 7
+### Panel 7
 
 [ns-caveat](https://nucleus.design/docs/components/ns-caveat) Caveats provide additional information and legal details to content.
 

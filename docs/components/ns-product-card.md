@@ -2,8 +2,9 @@
 description: Organism | Product card component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -73,15 +74,11 @@ For example
 
 ## Usage
 
-<Storybook story="components-ns-product-card--single"></Storybook>
+<StorybookStory story="components-ns-product-card--single"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-| **Relationship**|  |
-| :---  | :--- |
-| **Does it live in a panel?** | ✅ Yes |
-| **Does it live inside other components?** | ✅ Yes |
-| **What layout classes can be used?** | `splash` `triple` |
+<ComponentPlacement component="ns-product-card" parentComponents="ns-column"></ComponentPlacement>
 
 ## Specification
 

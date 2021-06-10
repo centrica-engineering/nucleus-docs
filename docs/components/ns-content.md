@@ -2,8 +2,9 @@
 description: Molecule | Content component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -17,25 +18,56 @@ We do not currently have content guidance as this will change depending on the c
 
 ## Best practice
 
-ns-content relies on clean HTML in order to display correctly. Avoid using additional `<div>` tags to wrap content as this will break the styling.
+| 💚 Do's | 💔 Dont's |
+| :--- | :--- |
+| Use clean html | Use additional `<div>` tags to wrap content as this will break the styling |
+| Set the spacing attribute to compliment the content it contains | Use expanders outside of ns-accordion |
 
 ## Usage
 
-<Storybook story="components-ns-content--standard"></Storybook>
+<StorybookStory story="components-ns-content--standard"></StorybookStory>
 
-## Component relationship
+### Using ns-image and ns-video
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes - ns-article |
-| **What layout classes can be used?**  | None |
+Both `ns-image` and `ns-video` need to be wrapped in a `<figure>` element
+
+```html
+<ns-content>
+  <figure>
+    <ns-image src="image/url.png" ratio="16:9" alt="Description about the image"></ns-image>
+    <figcaption>Further information about the image e.g. source</figcaption>
+  </figure>
+</ns-content>
+```
+
+## Component placement
+
+<ComponentPlacement component="ns-content" parentComponents="ns-article,ns-column,ns-expander,ns-form,ns-panel"></ComponentPlacement>
 
 ## Specification
 
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- |-------------|
+| `spacing` | `string` | 'normal' | 'compact','cosy','normal','loose' | The space between the elements |
+
 | Slots | Type |
 | :--- | :--- |
-| anonymous | html content |
+| anonymous | `h1 - h6`, `p`, `ul`, `ol`, `ns-cta`, `ns-table`, `ns-accordion`, `ns-figure` |
+
+### Specification notes
+
+#### Anonymous children
+
+To display correctly, `ns-content` relies on clean HTML in the anonymous slot. Using additional components or html elements not listed in the specification will break the styling and will be susceptible to breaking when the component is updated in future releases.
+
+#### Spacing options
+
+| Spacing value | Space between elements | 
+| :--- | :--- |
+| compact | 0.25em|
+| cozy | 0.5em|
+| normal | 1em|
+| compact | 1.5em|
 
 <Tokens component="content"></Tokens>
 

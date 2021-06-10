@@ -2,8 +2,9 @@
 description: Atom | Video component.
 ---
 
-import { Storybook } from '../../includes/storybook.js'
+import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
@@ -26,15 +27,11 @@ British Gas creates many videos to engage customers. This component allows havin
 
 ## Usage
 
-<Storybook story="components-ns-video--youtube"></Storybook>
+<StorybookStory story="components-ns-video--youtube"></StorybookStory>
 
-## Component relationship
+## Component placement
 
-|  **Relationship**  |  |
-| :--- | :--- |
-| **Does it live in a panel?** | ❌ No |
-| **Does it live inside other components?** | ✅ Yes - `ns-lockup` |
-| **What layout classes can be used?**  | None |
+<ComponentPlacement component="ns-video" parentComponents="ns-lockup,ns-content"></ComponentPlacement>
 
 ## Specification
 
@@ -61,4 +58,4 @@ British Gas creates many videos to engage customers. This component allows havin
 
 ## Related links
 
-* [https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--lockup-video-panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/playground-panels--lockup-video-panel).
+* [https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-panels--lockup-video-panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-panels--lockup-video-panel).
