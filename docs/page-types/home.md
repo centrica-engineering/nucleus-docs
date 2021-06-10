@@ -96,6 +96,8 @@ A last mop-up of any user that has scrolled this far. Ask what else might they b
 
 ![Image of Caveat](https://user-images.githubusercontent.com/78355810/121566776-bed9c980-ca15-11eb-8032-8df59ac5c372.png)
 
+![Image of Footer](https://user-images.githubusercontent.com/78355810/121567323-57704980-ca16-11eb-9951-598055b9808c.png)
+
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-home]).
