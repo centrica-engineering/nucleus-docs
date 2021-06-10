@@ -61,6 +61,8 @@ This contains a [ns-lockup](https://nucleus.design/docs/components/ns-lockup) de
 
 ### Panel 3
 
+![Image of Panel 3](https://user-images.githubusercontent.com/78355810/121560789-c0a08e80-ca0f-11eb-9708-658a94aa90a0.png)
+
 3 more [ns-card](https://nucleus.design/docs/components/ns-card) with text CTAs, combined with a heading offer links to other services that may also be of interest but are less important than those in Panel 1.
 
 ### Panel 4
