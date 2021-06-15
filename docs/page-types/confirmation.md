@@ -46,6 +46,14 @@ Supplementary content relating to their completed journey can be displayed furth
 
 In addition to this page, a confirmation email containing this information should be sent to the customer as well. This is especially important if the customer cannot bookmark or revisit this page once they navigated away from it.
 
+This example of structure is a good starting point...
+
+| Page&nbsp;composition | Description and code |
+| :--- | :--- |
+| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  This page should always start with [nsx-header](https://nucleus.design/docs/components/nsx-header) which provides the primary navigation for the website, whilst also being our main brand presence with the logo.<br/><br/>`nsx-header` |
+| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  This page should always start with [nsx-header](https://nucleus.design/docs/components/nsx-header) which provides the primary navigation for the website, whilst also being our main brand presence with the logo.<br/><br/>`nsx-header` |
+| ![Image of Footer](https://user-images.githubusercontent.com/78355810/121567323-57704980-ca16-11eb-9951-598055b9808c.png) | Finally, there is [nsx-footer](https://nucleus.design/docs/components/nsx-footer) which holds legally required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps.<br/><br/>`nsx-footer` |
+
 
 
 ## Feedback
