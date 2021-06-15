@@ -39,11 +39,11 @@ This example of structure is a good starting point...
 
 | Page&nbsp;composition | Description and code |
 | :--- | :--- |
-| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  The home page should always start with [nsx-header](https://nucleus.design/docs/components/nsx-header) which provides the primary navigation for the website, whilst also being our main brand presence with the logo.<br/><br/>
-| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  Next is a ns-landmark (hillside) that clarifies the task at hand for the user. This should have a warm and welcoming tone.<br/><br/>
-| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  Below that is a an insructional heading with a short bulleted list to outline any information that the user needs to know to complete the journey. It includes a prominent direct call to action.<br/><br/>
-| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  Next is a section with cards that links to relevant help and support content. It may also include signposting to a secondary journey or action for frequently misdirected users.<br/><br/>
-| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  Finally we have the footer.<br/><br/>
+| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  The home page should always start with [nsx-header](https://nucleus.design/docs/components/nsx-header) which provides the primary navigation for the website, whilst also being our main brand presence with the logo.<br/><br/>`nsx-header` |
+| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  Next is a ns-landmark (hillside) that clarifies the task at hand for the user. This should have a warm and welcoming tone.<br/><br/>`ns-landmark`|
+| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  Below that is a an insructional heading with a short bulleted list to outline any information that the user needs to know to complete the journey. It includes a prominent direct call to action.<br/><br/>`ns-content`|
+| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  Next is a section with cards that links to relevant help and support content. It may also include signposting to a secondary journey or action for frequently misdirected users.<br/><br/>`ns-card`
+| ![Image of Footer](https://user-images.githubusercontent.com/78355810/121567323-57704980-ca16-11eb-9951-598055b9808c.png) | Finally, there is [nsx-footer](https://nucleus.design/docs/components/nsx-footer) which holds legally required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps.<br/><br/>`nsx-footer` |
 
 
 ### This page may also include
