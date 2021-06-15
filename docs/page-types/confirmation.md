@@ -12,7 +12,14 @@ The confirmation page type is used to show a customer that their journey or task
 ## Purpose
 
 * The purpose of the confirmation page is to show a customer that their action has been completed. It is important to differentiate this from their previous steps so they know there is a clear change.
+* By displaying the timeline, it also gives the user a status overview of the whole process (which itself, may not be fully completed yet) and sets their expectations for the next steps.
 * For more information on how to bookend your journeys [see the Start page type](page-types/start.md).
+
+## Principles to follow
+
+| Creative | Tone of voice | Keywords |
+| :--- | :--- | :--- |
+| Clean and fresh  | Be helpful | Functional, Informative |
 
 ## Example
 
@@ -39,11 +46,7 @@ Supplementary content relating to their completed journey can be displayed furth
 
 In addition to this page, a confirmation email containing this information should be sent to the customer as well. This is especially important if the customer cannot bookmark or revisit this page once they navigated away from it.
 
-## Principles to follow
 
-| Creative | Tone of voice | Keywords |
-| :--- | :--- | :--- |
-| Clean and fresh  | Be helpful | Functional, Informative |
 
 ## Feedback
 
