@@ -5,9 +5,10 @@ description: Formatting and best practice principles.
 
 'Telephone numbers' in this context means all landline telephone, mobile or SMS numbers.
 
-There are several formats that should be used along with accessibilty considerations.
+There are several display formats that describe how numbers should be shown and these should be used along with accessibilty considerations. 
 
-## Formats 
+
+## Displaying telephone numbers 
 
 ### Freephone and special numbers 
 
@@ -19,9 +20,6 @@ To aid memorability, the patterns we use for freephone, non-geographical or emer
 | 0333&nbsp;XXX&nbsp;XXXX | Non-geographic |
 | 105 | Electrical emergency |
 | 0800&nbsp;111&nbsp;999 | Gas emergency |
-
-
-
 
 
 ### UK area codes and local numbers 
@@ -60,27 +58,17 @@ SMS (Short Message System) numbers are typically 5 digits long with no spaces.
 >54321
 
 
+[Ref: area-codes.org.uk](http://www.area-codes.org.uk/formatting.php)
 
 
+## Do not display numbers as links 
 
-
-[Source: UK telephone formatting](http://www.area-codes.org.uk/formatting.php)
-
-
-
-## Accessibility
-
-TBC here with aria-label info... 
-
+Don't display phone numbers as links on devices that cannot make calls. Don't use links like this...
 
 ```html
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    ...
-  </head>
-  <body class="ndsn">
-    ...
-  </body>
-</html>
+<a href="tel:+442079476330">020 7947 6330</a>
 ```
+
+This can confuse users viewing on a device that doesn't support telephone calls. It is unnecessary - most modern mobile browsers automatically detect telephone numbers and display them as links anyway.
+
+[Ref: gov.uk](https://design-system.service.gov.uk/patterns/telephone-numbers/)
