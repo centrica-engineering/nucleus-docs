@@ -15,12 +15,12 @@ To aid memorability, the patterns we use for freephone, non-geographical or emer
 
 | Format | Usage
 | :--- | :--- 
-| 0800&nbsp;XXX&nbsp;XXX<br>0800&nbsp;XXX&nbsp;XXXX | Freephone |
+| 0800&nbsp;XXX&nbsp;XXX / 0800&nbsp;XXX&nbsp;XXXX | Freephone |
 | 0333&nbsp;XXX&nbsp;XXXX | Non-geographic |
 | 105 | Electrical emergency |
 | 0800&nbsp;111&nbsp;999 | Gas emergency |
 
-<br>
+
 
 
 
@@ -31,10 +31,10 @@ The length of area codes and local numbers varies across the UK, which means the
 | Format | Usage
 | :--- | :--- 
 | 02X&nbsp;XXXX&nbsp;XXXX | Cardiff, Coventry, London, Portsmouth, Southampton and all of Northern Ireland |
-| 01X1&nbsp;XXX&nbsp;XXXX<br>011X&nbsp;XXX&nbsp;XXXX | Most other major cities |
-| 01XXX&nbsp;XXXXXX<br>01XXX&nbsp;XXXXX | Smaller cities, provincial towns and rural areas |
+| 01X1&nbsp;XXX&nbsp;XXXX / 011X&nbsp;XXX&nbsp;XXXX | Most other major cities |
+| 01XXX&nbsp;XXXXXX / 01XXX&nbsp;XXXXX | Smaller cities, provincial towns and rural areas |
 
-<br>
+
 Separate the area code from the local number with a space.
 
 Split longer local numbers with a space for readability.
