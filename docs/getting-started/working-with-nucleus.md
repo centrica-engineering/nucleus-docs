@@ -57,7 +57,7 @@ We prioritise the following list of browsers and devices identified as the most 
 | Android | Android OS 10 (Samsung Galaxy S20) | Chrome | 89 |
 | Android | Android OS 11 (Samsung Galaxy S21) | Samsung Browser | 11.1 |
 
-**Note :** IE11 and Edge 18 have been deprecated from this list as the usage levels for these browsers are very minimal (around 0.5% as of June 2021).
+**Note :** IE11 and Edge 18 browsers are no longer supported as their usage levels are below 0.5% (as of June 2021).
 
 ## For product owners and business analysts
 
