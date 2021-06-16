@@ -31,10 +31,10 @@ The page should always begin with a clear completion message.
 
 Any key information the customer needs to remember or save for a later date should be presented at the top of the Confirmation page. 
 
-* any reference numbers
-* an appointment date and/or time
-* a start or end date, or duration of a product or service
-* an address or contact information
+* Any reference numbers.
+* An appointment date and/or time.
+* A start or end date, or duration of a product or service.
+* An address or contact information.
 
 This page should positively affirm to the customer that they have successfully completed their current task, and set their expectations for any further steps required. You can use supporting content to playback their purchase and inform them of what will happen next. If the customer is required to complete any additional follow up tasks then they should be highlighted as close to the top of the page as possible.
 
@@ -46,7 +46,7 @@ Supplementary content relating to their completed journey can be displayed furth
 
 In addition to this page, a confirmation email containing this information should be sent to the customer as well. This is especially important if the customer cannot bookmark or revisit this page once they navigated away from it.
 
-This example of structure is a good starting point...
+This example of structure is a good starting point.
 
 | Page&nbsp;composition | Description and code |
 | :--- | :--- |
@@ -55,8 +55,6 @@ This example of structure is a good starting point...
 | ![Image of Timeline](https://user-images.githubusercontent.com/78355810/122087289-74cd5b00-cdfc-11eb-9171-18647c95b75f.png) |  Below the message is [ns-timeline](#) showing a status overview of the whole process whilst setting expectations for the next steps. <br/><br/>`ns-timeline`|
 | ![Image of supplementary cards](https://user-images.githubusercontent.com/78355810/122088757-f83b7c00-cdfd-11eb-82cc-7bf553156b1a.png) |  Following that there is supplementary content that consists of more [ns-cards](https://nucleus.design/docs/components/ns-card) with direct [ns-ctas](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/components-ns-cta--direct-button), but with a decoration that is sympathetic to the surrounding aesthetics. <br/><br/>`ns-timeline`|
 | ![Image of Footer](https://user-images.githubusercontent.com/78355810/121567323-57704980-ca16-11eb-9951-598055b9808c.png) | Finally, there is [nsx-footer](https://nucleus.design/docs/components/nsx-footer) which holds legally required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps.<br/><br/>`nsx-footer` |
-
-
 
 ## Feedback
 
