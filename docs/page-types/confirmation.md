@@ -12,6 +12,7 @@ The confirmation page type is used to show a customer that their journey or task
 ## Purpose
 
 * The purpose of the confirmation page is to show a customer that their action has been completed. It is important to differentiate this from their previous steps so they know there is a clear change.
+* By displaying the timeline, it also gives the user a status overview of the whole process (which itself, may not be fully completed yet) and sets their expectations for the next steps.
 * For more information on how to bookend your journeys [see the Start page type](page-types/start.md).
 
 ## Principles to follow
@@ -44,6 +45,16 @@ Supplementary content relating to their completed journey can be displayed furth
 ### Supporting email comms
 
 In addition to this page, a confirmation email containing this information should be sent to the customer as well. This is especially important if the customer cannot bookmark or revisit this page once they navigated away from it.
+
+This example of structure is a good starting point.
+
+| Page&nbsp;composition | Description and code |
+| :--- | :--- |
+| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  This page should always start with [nsx-header](https://nucleus.design/docs/components/nsx-header) which provides the primary navigation for the website, whilst also being our main brand presence with the logo.<br/><br/>`nsx-header` |
+| ![Image of landmark-hillside](https://user-images.githubusercontent.com/78355810/122067713-b6093f00-cdeb-11eb-8ee8-8b07c8c71bdf.png) |  Next is a [ns-landmark](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/components-ns-landmark--hillside) (hillside) showing a clear completion message. Any key information the customer needs to remember or save for a later, such as an appointment date and time, should be presented here. <br/><br/>`ns-landmark`|
+| ![Image of Timeline](https://user-images.githubusercontent.com/78355810/122087289-74cd5b00-cdfc-11eb-9171-18647c95b75f.png) |  Below the message is [ns-timeline](#) showing a status overview of the whole process whilst setting expectations for the next steps. <br/><br/>`ns-timeline`|
+| ![Image of supplementary cards](https://user-images.githubusercontent.com/78355810/122088757-f83b7c00-cdfd-11eb-82cc-7bf553156b1a.png) |  Following that there is supplementary content that consists of more [ns-cards](https://nucleus.design/docs/components/ns-card) with direct [ns-ctas](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/components-ns-cta--direct-button), but with a decoration that is sympathetic to the surrounding aesthetics. <br/><br/>`ns-timeline`|
+| ![Image of Footer](https://user-images.githubusercontent.com/78355810/121567323-57704980-ca16-11eb-9951-598055b9808c.png) | Finally, there is [nsx-footer](https://nucleus.design/docs/components/nsx-footer) which holds legally required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps.<br/><br/>`nsx-footer` |
 
 ## Feedback
 
