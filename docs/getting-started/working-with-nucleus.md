@@ -46,8 +46,8 @@ We prioritise the following list of browsers and devices identified as the most 
 | Computer | Windows 10 | Chrome | 90 |
 | Computer | Windows 10 | Firefox | 83 |
 | Computer | Windows 10 | Edge | 85 |
-| Computer | MacOS Catalania | Safari | 13.1 |
-| Computer | MacOS Catalania | Chrome | 88 |
+| Computer | MacOS Catalina | Safari | 13.1 |
+| Computer | MacOS Catalina | Chrome | 88 |
 | iPhone | iOS 14 (iPhone 12) | Safari |13 |
 | iPhone | iOS 13 (iPhone XS) | Safari | 13 |
 | iPhone | iOS 14 (iPhone 12) | Chrome | 86 |
@@ -57,7 +57,7 @@ We prioritise the following list of browsers and devices identified as the most 
 | Android | Android OS 10 (Samsung Galaxy S20) | Chrome | 89 |
 | Android | Android OS 11 (Samsung Galaxy S21) | Samsung Browser | 11.1 |
 
-**Note :** IE11 and EDGE 18 has been deprecated from the list as the usage of these browsers are very minimal and we stopped supporting IE11 eventually.
+**Note :** IE11 and Edge 18 have been deprecated from this list as the usage levels for these browsers are very minimal (around 0.5% as of June 2021).
 
 ## For product owners and business analysts
 
