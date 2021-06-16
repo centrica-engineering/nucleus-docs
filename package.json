@@ -13,10 +13,10 @@
     "clear": "docusaurus clear"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.70",
-    "@docusaurus/plugin-client-redirects": "^2.0.0-alpha.70",
-    "@docusaurus/preset-classic": "2.0.0-alpha.70",
-    "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.70",
+    "@docusaurus/core": "^2.0.0-beta.ff31de0ff",
+    "@docusaurus/plugin-client-redirects": "^2.0.0-beta.ff31de0ff",
+    "@docusaurus/preset-classic": "^2.0.0-beta.ff31de0ff",
+    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.ff31de0ff",
     "@mdx-js/react": "^1.6.21",
     "axios": "^0.21.1",
     "clsx": "^1.1.1",
