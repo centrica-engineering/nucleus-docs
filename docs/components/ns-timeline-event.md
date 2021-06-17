@@ -10,7 +10,7 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 > The Timeline Event component represents a sequence of events that happen within a process, and shows the status.
 
-It gives an overview of the whole process and progress of a customer journey. Its main purpose is to create situational awareness for the user and define expectations.
+It gives an overview of the whole process and progress of a customer journey. Its main purpose is to create situational awareness for the user and manage expectations.
 
 * Provides the customer with visibility on the status of a process or system in their journey
 
@@ -24,8 +24,8 @@ It gives an overview of the whole process and progress of a customer journey. It
 | :--- | :--- | :--- |
 | Clean and fresh  | Be helpful | Functional, Informative |
 
-## Example
-(...ani gif here?)
+## Example (sped up)
+![example-ani-480](https://user-images.githubusercontent.com/78355810/122419834-20a0b300-cf83-11eb-927f-86ba856fe103.gif)
 
 ## Content guidance
 
@@ -79,13 +79,11 @@ On events that have been successfully completed, there is the option to display 
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Always add heading text |  |
-| |  |
+| Use a maximum of 10 steps | Add too much detailed content |
+| Consider if the title duplicates page title | Use illustrations or icons in additional content |
+| Provide helpful messaging | Use overly long event names |
+| Use Summary to set expectations | Use timestamp if it causes confusion with a date elsewhere on the page|
 
-
-### Considerations of best practice
-
-* Only use inside `ns-timeline` as a slot of `event`.
 
 ## Component placement
 
