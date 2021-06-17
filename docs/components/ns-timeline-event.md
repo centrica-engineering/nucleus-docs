@@ -62,14 +62,14 @@ For use when an order should be shown.
 
 Some icons are special and automatically reserved for use only with a particular status, such as Complete tick, Action required arrow, Warning triangle, and Error diamond. These show on all the variants of 'overview decoration'. 
 
-### Heading, Summary and Event count
+### Heading, summary and step count
 
-There is provision for a Heading to describe what process the timeline is showing. This can be left blank if it has already been made clear in an ns-landmark above it to avoid duplication.
+There is provision for a heading to describe what process the timeline is showing. This can be left blank if it has already been made clear in an ns-landmark above it to avoid duplication.
 
-You can also add a Summary to manage expectations
+You can also add a summary to manage expectations
 >eg. 2 days until your appointment
 
-In addition to this, you can also display information on the number of events using Step count. You can have up to 10 steps in a process and show how many have been completed so far. 
+In addition to this, you can also display information on the number of events using step count. You can have up to 10 steps in a process and show how many have been completed so far. 
 >eg. 1 of 6 steps completed
 
 ### Showing additional information
