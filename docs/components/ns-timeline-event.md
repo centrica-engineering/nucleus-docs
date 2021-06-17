@@ -64,7 +64,9 @@ In addition to this, you can also display information on the number of events us
 
 ### Showing additional information
 
-This...
+On events that are in progress, it is possible to add further information relevant to this step to aid customer understanding, or if an action is required, provide a link to another area such as a form to complete. Warnings and Error status should have helpful messaging added this way, and with links if useful.
+
+On events that have been successfully completed, there is the option to display a time-stamp alongside the status.
 
 
 ## Best practice
