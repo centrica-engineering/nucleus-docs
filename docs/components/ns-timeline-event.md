@@ -8,7 +8,7 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
-> The Timeline Event component represents a sequence of events that happen within a process and shows the status.
+> The Timeline Event component represents a sequence of events that happen within a process, and shows the status.
 
 It gives an overview of the whole process and progress of a customer journey. Its main purpose is to create situational awareness for the user and define expectations.
 
@@ -16,40 +16,40 @@ It gives an overview of the whole process and progress of a customer journey. It
 
 * Gives a top-level overview of the process
 
-* It's clear to understand and manages expectations by showing the current situation to the user
-
-
+* It's clear to understand and mangages expectations by showing the current situation to the user
 
 ## Content guidance
 
-The decoration for the event is dependent on the status of the event.
+The status of the event is controlled by the decoration used.
 
 ### Pending Event `status="pending"`
 
-For communicating that the event is waiting for previous event(s) to be completed.
+Communicates that the event has yet to commence.
 
 ### In progress Event `status="inprogress"`
 
-For communicating that the event is currently making progress.
+Indicates that progress is currently being made on this step.
 
 ### Action Required Event `status="actionrequired"`
 
-For communicating that the event expects customer to carry out an action to make progress.
+This is used when a customer needs to take action in order to proceed with the process.
 
 ### Warning Event `status="warning"`
 
-For communicating problems of less severity like foreseeable delay, failure, outage, etc..
+Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes.
 
 ### Error Event `status="error"`
 
-For communicating failure with urgence.
+This is a failure indication. Something couldn't be resolved and so has halted the whole process. It should be accompanied by a helpful message.
 
 ### Completed Event `status="completed"`
 
-For communicating that the event has been successful.
+The event has been successfully completed.
 
 ### Cancelled Event `status="cancelled"`
-For communicating that the progress of the event has been halted due to error in other event(s) in the timeline sequence.
+
+If an error event has occurred, all subsequent events 
+have been been cancelled. The process will not be completed.
 
 ## Best practice
 
