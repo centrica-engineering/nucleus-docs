@@ -36,13 +36,22 @@ Each event has a status. The status of the event is controlled by the decoration
 | ![warning](https://user-images.githubusercontent.com/78355810/122377627-25527080-cf5d-11eb-9b59-c3711568e30b.png) | Warning </br>`status="warning"` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
 | ![error](https://user-images.githubusercontent.com/78355810/122377917-68144880-cf5d-11eb-8f92-8bafc8778a6f.png) | Error </br>`status="error"` | This is a failure indication. Something couldn't be resolved and so has halted the whole process. It should be accompanied by a helpful message. |
 
-### Icons
+### Icons & numerals
 
-Icons are used to...
+There are 3 styles of timeline to choose from in the 'overview decorations' - default, icon, or number.
 
-### Numerals
+#### Default 
+Uses a circle and implies nothing other than it is an event.
 
-Numerals can also be used when...
+#### Icons 
+Thes can be selected from a list to help convey meaning for each event and make it easier to identify a step. If selected, all events will need an icon chosen from the list.
+
+#### Numbers 
+For use when an order should be shown.
+
+
+Some icons are special and automatically reserved for use only with a particular status, such as Complete tick, Action required arrow, Warning triangle, and Error diamond. These show on all the variants of 'overview decoration'. 
+
 
 ## Best practice
 
