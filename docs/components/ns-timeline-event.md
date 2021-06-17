@@ -18,6 +18,12 @@ It gives an overview of the whole process and progress of a customer journey. It
 
 * It's clear to understand and mangages expectations by showing the current situation to the user
 
+## Principles to follow
+
+| Creative | Tone of voice | Keywords |
+| :--- | :--- | :--- |
+| Clean and fresh  | Be helpful | Functional, Informative |
+
 ## Example
 (...ani gif here?)
 
