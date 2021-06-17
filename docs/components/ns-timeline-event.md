@@ -30,7 +30,6 @@ It gives an overview of the whole process and progress of a customer journey. It
 ![example-video](https://user-images.githubusercontent.com/78355810/122432228-0d92e080-cf8d-11eb-9162-fc0fdd1a8d9b.mov)
 
 
-
 ## Content guidance
 
 ### Status
@@ -79,7 +78,7 @@ On events that are in progress, it is possible to add further information releva
 On events that have been successfully completed, there is the option to display a time-stamp alongside the status.
 
 
-## Best practice
+## Best practice for Timeline
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -88,17 +87,25 @@ On events that have been successfully completed, there is the option to display 
 | Provide helpful messaging | Use overly long event names |
 | Use Summary to set expectations | Use timestamp if it causes confusion with a date elsewhere on the page|
 
+## Best practice for Individual Timeline Event
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Use any one of default, icon or number decoration for all events in the timeline sequence |  Mix two different decoration types in events |
+| Use `ns-card` to provide additional information for `inprogress`, `actionrequired`, `warning` and `error` events |  |
+| Always pick `ns-icon` type from the specification provided in below section | Use any icon type with names ending `Solid` or `Outline` |
 
 ## Component placement
 
 <ComponentPlacement component="ns-timeline-event" parentComponents="ns-timeline"></ComponentPlacement>
 
-## Specification for Timeline Event
+<ComponentPlacement component="ns-timeline" parentComponents="ns-panel"></ComponentPlacement>
+
+## Specification for Individual Timeline Event
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `status` | `string` | `pending`| `pending`, `inprogress`, `actionrequired`, `warning`, `error`, `completed`, `cancelled` | |
-| `icon`| `string` | | Please see the [documentation for ns-icon](https://britishgas.design/components/ns-icon)  | Optional icon to add to the event decoration |
+| `icon`| `string` | | `appliance`, `bill`, `boiler`, `calendar`, `clock`, `download`, `electricity`, `energy`, `gas`, `home`, `meter`, `protect`, `rewards`, `search`, `tag`. Please see the [documentation for ns-icon](../components/ns-icon)  | Optional icon to add to the event decoration |
 | `index` | `number` | |  | Optional numbered index to add to the event decoration |
 | `updatedAt` | `date` | |  | Optional ISO date only used along with `completed` status to record the event completed date & time. |
 
@@ -106,3 +113,24 @@ On events that have been successfully completed, there is the option to display 
 | :--- | :--- |
 | `heading` | `<h3>` |
 | `anonymous` | `<ns-card>` |
+
+## Specification for Timeline
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `showstepcount` | `boolean` | `false` | `true`, `false` | Set true to show completed vs total event progress count below the timeline heading |
+
+| Slots | Type |
+| :--- | :--- |
+| `heading` | `<h2>` |
+| `summary` | `<p>` |
+| `event` | `<ns-timeline-event>` |
+
+## Feedback
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-form]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-form]).
+
+💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+
+## Related links
+* [ns-card](../components/ns-card)
+* [ns-icon](../components/ns-icon)
