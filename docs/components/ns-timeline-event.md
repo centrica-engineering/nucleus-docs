@@ -27,6 +27,10 @@ It gives an overview of the whole process and progress of a customer journey. It
 ## Example (sped up)
 ![example-ani-480](https://user-images.githubusercontent.com/78355810/122419834-20a0b300-cf83-11eb-927f-86ba856fe103.gif)
 
+![example-video](https://user-images.githubusercontent.com/78355810/122432228-0d92e080-cf8d-11eb-9162-fc0fdd1a8d9b.mov)
+
+
+
 ## Content guidance
 
 ### Status
