@@ -35,12 +35,12 @@ Each event has a status. The status of the event is controlled by the decoration
 
 | Style | Status | Description |
 | :--- | :--- | :--- |
-| ![pending](https://user-images.githubusercontent.com/78355810/122376864-7150e580-cf5c-11eb-8501-fae0f7f8aa4b.png)| Pending </br> `status="pending"` |Communicates that the event has yet to commence. |
-| ![in progress](https://user-images.githubusercontent.com/78355810/122377002-96ddef00-cf5c-11eb-8b9a-a837a28e51b8.png) | In progress</br> `status="inprogress"` | Indicates that progress is currently being made on this step. |
-| ![success](https://user-images.githubusercontent.com/78355810/122378216-add11100-cf5d-11eb-998b-f00f6f5deff8.png) | Completed </br>`status="completed"` | The event has been successfully completed. |
-| ![action required](https://user-images.githubusercontent.com/78355810/122377269-d73d6d00-cf5c-11eb-8183-07a35bf559d9.png) | Action required </br>`status="actionrequired"` | This is used when a customer needs to take action in order to proceed with the process. |
-| ![warning](https://user-images.githubusercontent.com/78355810/122377627-25527080-cf5d-11eb-9b59-c3711568e30b.png) | Warning </br>`status="warning"` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
-| ![error](https://user-images.githubusercontent.com/78355810/122377917-68144880-cf5d-11eb-8f92-8bafc8778a6f.png) | Error </br>`status="error"` | This is a failure indication. Something couldn't be resolved and so has halted the whole process. It should be accompanied by a helpful message. |
+| ![pending](https://user-images.githubusercontent.com/78355810/122376864-7150e580-cf5c-11eb-8501-fae0f7f8aa4b.png)| Pending `status="pending"` |Communicates that the event has yet to commence. |
+| ![in progress](https://user-images.githubusercontent.com/78355810/122377002-96ddef00-cf5c-11eb-8b9a-a837a28e51b8.png) | In progress `status="inprogress"` | Indicates that progress is currently being made on this step. |
+| ![success](https://user-images.githubusercontent.com/78355810/122378216-add11100-cf5d-11eb-998b-f00f6f5deff8.png) | Completed `status="completed"` | The event has been successfully completed. |
+| ![action required](https://user-images.githubusercontent.com/78355810/122377269-d73d6d00-cf5c-11eb-8183-07a35bf559d9.png) | Action required `status="actionrequired"` | This is used when a customer needs to take action in order to proceed with the process. |
+| ![warning](https://user-images.githubusercontent.com/78355810/122377627-25527080-cf5d-11eb-9b59-c3711568e30b.png) | Warning `status="warning"` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
+| ![error](https://user-images.githubusercontent.com/78355810/122377917-68144880-cf5d-11eb-8f92-8bafc8778a6f.png) | Error `status="error"` | This is a failure indication. Something couldn't be resolved and so has halted the whole process. It should be accompanied by a helpful message. |
 
 ### Icons & numerals
 
