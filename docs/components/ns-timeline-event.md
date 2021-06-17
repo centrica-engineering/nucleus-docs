@@ -8,7 +8,17 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
-> Timeline event component represents a single step in a sequence of timeline steps.
+> The Timeline Event component represents a sequence of events that happen within a process and shows the status.
+
+It gives an overview of the whole process and progress of a customer journey. Its main purpose is to create situational awareness for the user and define expectations.
+
+* Provides the customer with visibility on the status of a process or system in their journey
+
+* Gives a top-level overview of the process
+
+* It's clear to understand and manages expectations by showing the current situation to the user
+
+
 
 ## Content guidance
 
