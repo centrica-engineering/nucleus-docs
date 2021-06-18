@@ -27,7 +27,7 @@ It gives an overview of the whole process and progress of a customer journey. It
 ## Example (sped up)
 ![example-ani-480](https://user-images.githubusercontent.com/78355810/122419834-20a0b300-cf83-11eb-927f-86ba856fe103.gif)
 
-
+Temporary video testing here - IGNORE - will be removed/replaced...
 <video controls src="https://user-images.githubusercontent.com/78355810/122530664-a15cbf00-d016-11eb-9875-ffbe2cf6a50a.mp4" type="video/mp4"></video>
 
 <figure class="video_container">
@@ -35,6 +35,10 @@ It gives an overview of the whole process and progress of a customer journey. It
     <source src="https://user-images.githubusercontent.com/78355810/122530664-a15cbf00-d016-11eb-9875-ffbe2cf6a50a.mp4" type="video/mp4">
   </video>
 </figure>
+
+
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY) 
+
 
 ## Content guidance
 
