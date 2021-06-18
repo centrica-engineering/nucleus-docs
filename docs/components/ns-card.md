@@ -164,7 +164,7 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 ### CTA
 
 * Only for `section` types
-* This should be an anchor with the [ns-cta](https://docs.britishgas.design/components/ns-cta) or just the [ns-cta](https://docs.britishgas.design/components/ns-cta)
+* This should be an anchor with the [ns-cta](../components/ns-cta) or just the [ns-cta](../components/ns-cta)
 
 <Tokens component="card"></Tokens>
 

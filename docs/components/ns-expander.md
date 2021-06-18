@@ -45,7 +45,7 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 | :--- | :--- | :--- | :--- | :--- |
 | `type` | `string` | `standard` | `skyline`, `standard` | Variants for the expander. |
 | `open` | `string` | `false` | `true`, `false` | If true will open the expander to show the content. |
-| `icon` | `string` |  | `info`, `warning`. See [`ns-icon` component](https://britishgas.design/components/ns-icon) | Only use for a `type` of `skyline` |
+| `icon` | `string` |  | `info`, `warning`. See [`ns-icon` component](../components/ns-icon) | Only use for a `type` of `skyline` |
 | `colour` | `string` |  | `yellow` | Sets the colour for the heading - Only use for a `type` of `standard` |
 
 | Slots | Type |
