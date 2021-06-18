@@ -30,11 +30,17 @@ It gives an overview of the whole process and progress of a customer journey. It
 Temporary video testing here - IGNORE - will be removed/replaced...
 
 <figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width="100%" height="100%">
     <source src="https://user-images.githubusercontent.com/78355810/122585665-a4c26b80-d053-11eb-88c6-53982d949a44.mp4" type="video/mp4" />
   </video>
 </figure>
 
+
+<!--figure style={{ padding:'56.25% 0 0 0', position:'relative' }}>
+  <div style={{ height:'100%',left:'0',position:'absolute',top:'0',width:'100%' }}>
+    <iframe src="https://fast.wistia.net/embed/iframe/y0qt3chnlj?seo=false&videoFoam=true" title="Nucleus Design System - Modular Scale Video" allow="autoplay; fullscreen" allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed" name="wistia_embed" allowFullScreen width="100%" height="100%"></iframe>
+  </div>
+</figure-->
 
  end of test
 
