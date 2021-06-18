@@ -30,8 +30,8 @@ It gives an overview of the whole process and progress of a customer journey. It
 Temporary video testing here - IGNORE - will be removed/replaced...
 
 <figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width="50%" height="50%">
-    <source src="https://user-images.githubusercontent.com/78355810/122585665-a4c26b80-d053-11eb-88c6-53982d949a44.mp4" type="video/mp4" />
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width="75%" height="75%">
+    <source src="https://user-images.githubusercontent.com/78355810/122590922-1c939480-d05a-11eb-858b-ed6f6479815f.mp4" type="video/mp4" />
   </video>
 </figure>
 
