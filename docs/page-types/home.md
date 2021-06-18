@@ -29,15 +29,11 @@ Think of this page as the shop window. It is the primary display point of the br
 
 ## Content guidance
 
-The home page should always begin with an [ns-landmark](https://nucleus.design/docs/components/ns-landmark) (summit) containing the most compelling and important message emphasising the key points in bold text, accompanied with a relevant 'hero' image. 
 
-## A good starting point
-
-The rest of the page can be considered based on your particular requirements.
 
 | Page&nbsp;composition | Description and code |
 | :--- | :--- |
-| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  The home page should always start with [nsx-header](https://nucleus.design/docs/components/nsx-header) which provides the primary navigation for the website, whilst also being our main brand presence with the logo.<br/><br/>`nsx-header` |
+| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) |  This page should always start with [nsx-header](https://nucleus.design/docs/components/nsx-header) which provides the primary navigation for the website, whilst also being our main brand presence with the logo.<br/><br/>`nsx-header` |
 | ![Image of skyline](https://user-images.githubusercontent.com/78355810/121555785-348c6800-ca0b-11eb-922d-c2c3b4937acd.png) | Positioned directly beneath the global navigation and above any content, [ns-skyline](https://nucleus.design/docs/components/ns-skyline) displays high level messages to the user. The purpose of ns-skyline is to notify the user of important site-wide, or non-page specific events, that may affect their experience of using the website.<br/> <br/> `ns-skyline` |
 | ![Image of Panel 1](https://user-images.githubusercontent.com/78355810/121552839-af07b880-ca08-11eb-9f48-63171fa005db.png) | This [ns-landmark](https://nucleus.design/docs/components/ns-landmark) consists of a heading, an introductory paragraph and a CTA. Landmarks are used to introduce the page, informing users of their current location and its primary purpose. They contain the most compelling and important message, emphasising the key points in bold text, accompanied with a relevant 'hero' image. <br/><br/>`ns-landmark[type=summit]` |
 | ![Image of Panel 2](https://user-images.githubusercontent.com/78355810/121559775-ce094900-ca0e-11eb-9d15-d370761a9202.png) | Next, this [ns-panel](https://nucleus.design/docs/components/ns-panel) consists of a heading, an introductory paragraph and 3 [ns-card](https://nucleus.design/docs/components/ns-card) components (section type), with CTAs for the most common reasons a user would be visiting the website.<br/><br/> The heading and paragraph should be used to introduce the user to the business (it shouldn't be assumed that everyone knows this already). <br/><br/>It also serves as a visual separator from the landmark above and the lock-up below that would fight for attention if adjacent.<br/><br/>`ns-panel>div>h2+p+ns-card[type=support]*3` |
