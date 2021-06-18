@@ -35,6 +35,15 @@ Temporary video testing here - IGNORE - will be removed/replaced...
     <source src="https://user-images.githubusercontent.com/78355810/122530664-a15cbf00-d016-11eb-9875-ffbe2cf6a50a.mp4" type="video/mp4" />
   </video>
 </figure>
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
+    <source src="https://user-images.githubusercontent.com/78355810/122583284-f9181c00-d050-11eb-83aa-595969c619d0.mp4" type="video/mp4" />
+  </video>
+</figure>
+
+
+https://user-images.githubusercontent.com/78355810/122583284-f9181c00-d050-11eb-83aa-595969c619d0.mp4
  end of test
 
 
