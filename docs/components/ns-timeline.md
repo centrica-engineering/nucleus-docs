@@ -1,5 +1,5 @@
 ---
-description: Atom | Timeline Event component.
+description: Atom | Timeline component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
@@ -8,7 +8,7 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
-> The Timeline Event component represents a sequence of events that happen within a process, and shows the status.
+> The Timeline component represents a sequence of events that happen within a process, and shows the status.
 
 It gives an overview of the whole process and progress of a customer journey. Its main purpose is to create situational awareness for the user and manage expectations.
 
@@ -43,7 +43,7 @@ Each event has a status. The status of the event is controlled by the decoration
 | ![success](https://user-images.githubusercontent.com/78355810/122378216-add11100-cf5d-11eb-998b-f00f6f5deff8.png) | Completed `status="completed"` | The event has been successfully completed. |
 | ![action required](https://user-images.githubusercontent.com/78355810/122377269-d73d6d00-cf5c-11eb-8183-07a35bf559d9.png) | Action required `status="actionrequired"` | This is used when a customer needs to take action in order to proceed with the process. |
 | ![warning](https://user-images.githubusercontent.com/78355810/122377627-25527080-cf5d-11eb-9b59-c3711568e30b.png) | Warning `status="warning"` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
-| ![error](https://user-images.githubusercontent.com/78355810/122377917-68144880-cf5d-11eb-8f92-8bafc8778a6f.png) | Error `status="error"` | This is a failure indication. Something couldn't be resolved and so has halted the whole process. It should be accompanied by a helpful message. |
+| ![error](https://user-images.githubusercontent.com/78355810/122377917-68144880-cf5d-11eb-8f92-8bafc8778a6f.png) | Error `status="error"` | This is a failure indication. Something couldn't be resolved and so has halted the whole process marking other `inprogress`\ `pending` event(s) `cancelled`. It should be accompanied by a helpful message. |
 
 ### Icons & numerals
 
@@ -77,7 +77,6 @@ On events that are in progress, it is possible to add further information releva
 
 On events that have been successfully completed, there is the option to display a time-stamp alongside the status.
 
-
 ## Best practice for Timeline
 
 | 💚 Do's | 💔 Don'ts |
@@ -88,17 +87,34 @@ On events that have been successfully completed, there is the option to display 
 | Use summary to set expectations | Use timestamp if it causes confusion with a date elsewhere on the page|
 
 ## Best practice for Individual Timeline Event
+
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use any one of default, icon or number decoration for all events in the timeline sequence |  Mix two different decoration types in events |
 | Use `ns-card` to provide additional information for `inprogress`, `actionrequired`, `warning` and `error` events |  |
 | Always pick `ns-icon` type from the specification provided in below section | Use any icon type with names ending `Solid` or `Outline` |
 
+## Usage
+
+<StorybookStory story="components-ns-timeline--timeline"></StorybookStory>
+
 ## Component placement
+
+<ComponentPlacement component="ns-timeline" parentComponents="ns-panel"></ComponentPlacement>
 
 <ComponentPlacement component="ns-timeline-event" parentComponents="ns-timeline"></ComponentPlacement>
 
-<ComponentPlacement component="ns-timeline" parentComponents="ns-panel"></ComponentPlacement>
+## Specification for Timeline
+
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `showstepcount` | `boolean` | `false` | `true`, `false` | Set true to show completed vs total event progress count below the timeline heading |
+
+| Slots | Type |
+| :--- | :--- |
+| `heading` | `<h2>` |
+| `summary` | `<p>` |
+| `event` | `<ns-timeline-event>` |
 
 ## Specification for Individual Timeline Event
 
@@ -113,17 +129,6 @@ On events that have been successfully completed, there is the option to display 
 | :--- | :--- |
 | `heading` | `<h3>` |
 | `anonymous` | `<ns-card>` |
-
-## Specification for Timeline
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `showstepcount` | `boolean` | `false` | `true`, `false` | Set true to show completed vs total event progress count below the timeline heading |
-
-| Slots | Type |
-| :--- | :--- |
-| `heading` | `<h2>` |
-| `summary` | `<p>` |
-| `event` | `<ns-timeline-event>` |
 
 ## Feedback
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-form]).
