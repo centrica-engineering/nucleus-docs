@@ -30,20 +30,14 @@ It gives an overview of the whole process and progress of a customer journey. It
 Temporary video testing here - IGNORE - will be removed/replaced...
 <video controls src="https://user-images.githubusercontent.com/78355810/122530664-a15cbf00-d016-11eb-9875-ffbe2cf6a50a.mp4" type="video/mp4"></video>
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-    <source src="https://user-images.githubusercontent.com/78355810/122530664-a15cbf00-d016-11eb-9875-ffbe2cf6a50a.mp4" type="video/mp4" />
-  </video>
-</figure>
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-    <source src="https://user-images.githubusercontent.com/78355810/122583284-f9181c00-d050-11eb-83aa-595969c619d0.mp4" type="video/mp4" />
+    <source src="https://user-images.githubusercontent.com/78355810/122585665-a4c26b80-d053-11eb-88c6-53982d949a44.mp4" type="video/mp4" />
   </video>
 </figure>
 
 
-https://user-images.githubusercontent.com/78355810/122583284-f9181c00-d050-11eb-83aa-595969c619d0.mp4
  end of test
 
 
