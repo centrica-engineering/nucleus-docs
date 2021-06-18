@@ -37,8 +37,6 @@ Temporary video testing here - IGNORE - will be removed/replaced...
 </figure>
 
 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY) 
-
 
 ## Content guidance
 
