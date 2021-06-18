@@ -28,8 +28,6 @@ It gives an overview of the whole process and progress of a customer journey. It
 ![example-ani-480](https://user-images.githubusercontent.com/78355810/122419834-20a0b300-cf83-11eb-927f-86ba856fe103.gif)
 
 Temporary video testing here - IGNORE - will be removed/replaced...
-<video controls src="https://user-images.githubusercontent.com/78355810/122585665-a4c26b80-d053-11eb-88c6-53982d949a44.mp4" type="video/mp4"></video>
-
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
