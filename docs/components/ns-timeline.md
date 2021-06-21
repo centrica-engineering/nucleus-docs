@@ -24,33 +24,18 @@ It gives an overview of the whole process and progress of a customer journey. It
 | :--- | :--- | :--- |
 | Clean and fresh  | Be helpful | Functional, Informative |
 
-## Example (sped up)
-![example-ani-480](https://user-images.githubusercontent.com/78355810/122419834-20a0b300-cf83-11eb-927f-86ba856fe103.gif)
+## Example
 
-Temporary video testing here - IGNORE - will be removed/replaced...
+(Sequence shortened.)
+<!--![example-ani-480](https://user-images.githubusercontent.com/78355810/122419834-20a0b300-cf83-11eb-927f-86ba856fe103.gif)-->
 
 <figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="https://user-images.githubusercontent.com/78355810/122747387-ea18b000-d282-11eb-9b4f-d80950466700.png" width="100%" height="100%">
-    <source src="https://user-images.githubusercontent.com/78355810/122746686-2ac3f980-d282-11eb-83a3-88a43c81398c.mp4" type="video/mp4" />
+  <video controls="true" allowfullscreen="true" poster="https://user-images.githubusercontent.com/78355810/122775270-db8dc100-d2a1-11eb-933e-6296cc4e086c.png" width="359" height="100%">
+    <source src="https://user-images.githubusercontent.com/78355810/122782014-4215dd80-d2a8-11eb-8a5d-78fb4ba0e793.mp4" type="video/mp4" />
   </video>
 </figure>
 
 
-
-<!--figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width="75%" height="75%">
-    <source src="https://user-images.githubusercontent.com/78355810/122590922-1c939480-d05a-11eb-858b-ed6f6479815f.mp4" type="video/mp4" />
-  </video>
-</figure-->
-
-
-<!--figure style={{ padding:'56.25% 0 0 0', position:'relative' }}>
-  <div style={{ height:'100%',left:'0',position:'absolute',top:'0',width:'100%' }}>
-    <iframe src="https://fast.wistia.net/embed/iframe/y0qt3chnlj?seo=false&videoFoam=true" title="Nucleus Design System - Modular Scale Video" allow="autoplay; fullscreen" allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed" name="wistia_embed" allowFullScreen width="100%" height="100%"></iframe>
-  </div>
-</figure-->
-
- end of test
 
 
 ## Content guidance
