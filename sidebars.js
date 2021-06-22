@@ -48,6 +48,7 @@ module.exports = {
       'patterns/experiences',
       'patterns/loading',
       'patterns/messaging',
+      'patterns/telephone-numbers'
     ],
     'Page types': aToZ('page-types'),
     'Community': [
@@ -55,7 +56,7 @@ module.exports = {
       'community/vanilla-first',
       'community/contribute-to-documentation',
       'community/events',
-      'community/releases',
+      'community/releases'
     ],
   }
 };
