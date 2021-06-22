@@ -5,10 +5,10 @@ description: Formatting and best practice principles.
 
 'Telephone numbers' in this context means all landline telephone, mobile or SMS numbers.
 
-There are several display formats that describe how numbers should be shown and these should be used along with accessibilty considerations. 
+There are several display formats that describe how numbers should be shown and these should be used along with accessibility considerations. 
 
 
-## Displaying telephone numbers 
+## Visual format guidelines
 
 ### Freephone and special numbers 
 
@@ -58,7 +58,7 @@ SMS (Short Message System) numbers are typically 5 digits long with no spaces.
 >54321
 
 
-[Ref: area-codes.org.uk](http://www.area-codes.org.uk/formatting.php)
+Ref: [area-codes.org.uk](http://www.area-codes.org.uk/formatting.php)
 
 
 ## Do not display numbers as links 
