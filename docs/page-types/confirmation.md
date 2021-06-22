@@ -41,14 +41,14 @@ Any key information the customer needs to remember or save for a later date shou
 * The duration of a product or service.
 * An address or contact information.
 
-This page should inform the customer that they have successfully completed their current task, and set their expectations for any further steps required. 
+This page will inform the customer that they have successfully completed their current task, and set their expectations for any further steps required. 
 
 You can use supporting content to play back their purchase and inform them of what will happen next. If the customer is required to complete any additional follow up tasks, then those should be positioned as close to the top of the page as possible.
 
 | Page&nbsp;composition | Description and code |
 | :--- | :--- |
-| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) | This page should always start with [nsx-header](/components/nsx-header.md) which provides the primary navigation for the website, whilst also being our main brand presence. |
-| ![Image of landmark-hillside](https://user-images.githubusercontent.com/78355810/122067713-b6093f00-cdeb-11eb-8ee8-8b07c8c71bdf.png) | Next is an [ns-landmark](/components/ns-landmark.md) showing a clear completion message. Any key information the customer needs to remember or save for a later, such as appointment details should be presented here. |
+| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) | This page will always start with [nsx-header](/components/nsx-header.md) providing the primary navigation for the website, whilst also being our main brand presence. |
+| ![Image of landmark-hillside](https://user-images.githubusercontent.com/78355810/122067713-b6093f00-cdeb-11eb-8ee8-8b07c8c71bdf.png) | Next is [ns-landmark](/components/ns-landmark.md) showing a clear completion message. Any key information the customer needs to remember or save for a later, such as appointment details should be presented here. |
 | ![Image of Timeline](https://user-images.githubusercontent.com/78355810/122087289-74cd5b00-cdfc-11eb-9171-18647c95b75f.png) | Below the message can be [ns-timeline](/components/ns-timeline.md) that shows a status overview of the whole process whilst setting expectations for the further steps. |
 | ![Image of supplementary cards](https://user-images.githubusercontent.com/78355810/122088757-f83b7c00-cdfd-11eb-82cc-7bf553156b1a.png) | Following that, there can be supplementary content that consists of more [ns-card](/components/ns-card.md) components, consider introducing a decoration that is sympathetic to the surrounding aesthetics. |
 | ![Image of Footer](https://user-images.githubusercontent.com/78355810/121567323-57704980-ca16-11eb-9951-598055b9808c.png) | Finally, there is [nsx-footer](/components/nsx-footer.md) which holds all required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps. |
