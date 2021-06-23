@@ -12,19 +12,11 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 It gives an overview of the whole process and progress of a customer journey. Its main purpose is to create situational awareness for the user and manage expectations.
 
-* Provides the customer with visibility on the status of a process or system in their journey
+* Provides the customer with visibility on the status of a process or system in their journey.
+* Gives a top-level overview of the process.
+* It's clear to understand and manages expectations by showing the current situation to the user.
 
-* Gives a top-level overview of the process
-
-* It's clear to understand and manages expectations by showing the current situation to the user
-
-## Principles to follow
-
-| Creative | Tone of voice | Keywords |
-| :--- | :--- | :--- |
-| Clean and fresh  | Be helpful | Functional, Informative |
-
-## Example
+## Content guidance
 
 (Sequence shortened.)
 <!--![example-ani-480](https://user-images.githubusercontent.com/78355810/122419834-20a0b300-cf83-11eb-927f-86ba856fe103.gif)-->
@@ -35,23 +27,18 @@ It gives an overview of the whole process and progress of a customer journey. It
   </video>
 </figure>
 
-
-
-
-## Content guidance
-
 ### Status
 
 Each event has a status. The status of the event is controlled by the decoration used.
 
 | Style | Status | Description |
 | :--- | :--- | :--- |
-| ![pending](https://user-images.githubusercontent.com/78355810/122376864-7150e580-cf5c-11eb-8501-fae0f7f8aa4b.png)| Pending `status="pending"` |Communicates that the event has yet to commence. |
-| ![in progress](https://user-images.githubusercontent.com/78355810/122773523-5655dc80-d2a0-11eb-889e-fadbca455c36.png) | In progress `status="inprogress"` | Indicates that progress is currently being made on this step. |
-| ![success](https://user-images.githubusercontent.com/78355810/122773619-68377f80-d2a0-11eb-8d1a-7a79da14cd3d.png) | Completed `status="completed"` | The event has been successfully completed. |
-| ![action required](https://user-images.githubusercontent.com/78355810/122377269-d73d6d00-cf5c-11eb-8183-07a35bf559d9.png) | Action required `status="actionrequired"` | This is used when a customer needs to take action in order to proceed with the process. |
-| ![warning](https://user-images.githubusercontent.com/78355810/122377627-25527080-cf5d-11eb-9b59-c3711568e30b.png) | Warning `status="warning"` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
-| ![error](https://user-images.githubusercontent.com/78355810/122377917-68144880-cf5d-11eb-8f92-8bafc8778a6f.png) | Error `status="error"` | This is a failure indication. Something couldn't be resolved and so has halted the whole process marking other `inprogress`\ `pending` event(s) `cancelled`. It should be accompanied by a helpful message. |
+| ![pending](https://user-images.githubusercontent.com/78355810/122376864-7150e580-cf5c-11eb-8501-fae0f7f8aa4b.png)| `pending` |Communicates that the event has yet to commence. |
+| ![in progress](https://user-images.githubusercontent.com/78355810/122773523-5655dc80-d2a0-11eb-889e-fadbca455c36.png) | `inprogress` | Indicates that progress is currently being made on this step. |
+| ![success](https://user-images.githubusercontent.com/78355810/122773619-68377f80-d2a0-11eb-8d1a-7a79da14cd3d.png) | `completed` | The event has been successfully completed. |
+| ![action required](https://user-images.githubusercontent.com/78355810/122377269-d73d6d00-cf5c-11eb-8183-07a35bf559d9.png) | `actionrequired` | This is used when a customer needs to take action in order to proceed with the process. |
+| ![warning](https://user-images.githubusercontent.com/78355810/122377627-25527080-cf5d-11eb-9b59-c3711568e30b.png) | `warning` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
+| ![error](https://user-images.githubusercontent.com/78355810/122377917-68144880-cf5d-11eb-8f92-8bafc8778a6f.png) | `error` | This is a failure indication. Something couldn't be resolved and so has halted the whole process marking other `inprogress`\ `pending` event(s) `cancelled`. It should be accompanied by a helpful message. |
 
 ### Icons & numerals
 
@@ -99,8 +86,8 @@ On events that have been successfully completed, there is the option to display 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use any one of default, icon or number decoration for all events in the timeline sequence |  Mix two different decoration types in events |
-| Use `ns-card` to provide additional information for `inprogress`, `actionrequired`, `warning` and `error` events |  |
-| Always pick `ns-icon` type from the specification provided in below section | Use any icon type with names ending `Solid` or `Outline` |
+| Use `ns-card` to provide additional information for `inprogress`, `actionrequired`, `warning` and `error` events | Use any icon type with names ending `Solid` or `Outline` |
+| Always pick `ns-icon` type from the specification provided in below section |  |
 
 ## Usage
 
