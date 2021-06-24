@@ -40,7 +40,7 @@ Please see [ns-tabs](components/ns-tabs.md) for full content guidance.
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon`    | `string` |  | Please see the [documentation for ns-icon](https://britishgas.design/components/ns-icon) | Optional icon to add to the tab. |
+| `icon`    | `string` |  | Please see the [documentation for ns-icon](../components/ns-icon) | Optional icon to add to the tab. |
 | `selected` | `boolean` | `false` |`true`, `false`| Pre-selected tab |
 
 | Event | Description |
