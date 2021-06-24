@@ -19,7 +19,6 @@ It gives an overview of the whole process and progress of a customer journey. It
 ## Content guidance
 
 (Sequence shortened.)
-<!--![example-ani-480](https://user-images.githubusercontent.com/78355810/122419834-20a0b300-cf83-11eb-927f-86ba856fe103.gif)-->
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="https://user-images.githubusercontent.com/78355810/122775270-db8dc100-d2a1-11eb-933e-6296cc4e086c.png" width="359" height="100%">
