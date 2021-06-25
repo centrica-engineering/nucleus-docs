@@ -22,7 +22,7 @@ It gives an overview of the whole process and progress of a customer journey. It
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="https://user-images.githubusercontent.com/78355810/122775270-db8dc100-d2a1-11eb-933e-6296cc4e086c.png" width="359" height="100%">
-    <source src="https://user-images.githubusercontent.com/78355810/122782014-4215dd80-d2a8-11eb-8a5d-78fb4ba0e793.mp4" type="video/mp4" />
+    <source src="https://user-images.githubusercontent.com/78355810/123393414-fc059600-d595-11eb-87d5-7e38954254af.mp4" type="video/mp4" />
   </video>
 </figure>
 
