@@ -17,7 +17,7 @@ To aid memorability, the patterns we use for freephone, non-geographical or emer
 | Format | Usage
 | :--- | :--- 
 | 0800&nbsp;XXX&nbsp;XXX / 0800&nbsp;XXX&nbsp;XXXX | Freephone |
-| 0333&nbsp;XXX&nbsp;XXXX | Non-geographic |
+| 0333&nbsp;XXX&nbsp;XXX / 0333&nbsp;XXX&nbsp;XXXX | Non-geographic |
 | 105 | Electrical emergency |
 | 0800&nbsp;111&nbsp;999 | Gas emergency |
 
@@ -32,13 +32,16 @@ The length of area codes and local numbers varies across the UK, which means the
 | 01X1&nbsp;XXX&nbsp;XXXX / 011X&nbsp;XXX&nbsp;XXXX | Most other major cities |
 | 01XXX&nbsp;XXXXXX / 01XXX&nbsp;XXXXX | Smaller cities, provincial towns and rural areas |
 
+#### Best practice
 
-Separate the area code from the local number with a space.
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Separate the area code from the local number with a space | Push area code and digits together |
+| Split longer local numbers with a space for readability | Format major city numbers like smaller town formats and vice versa |
 
-Split longer local numbers with a space for readability.
 
 
-## From overseas
+### From overseas
 
 If a UK number is to be dialled from overseas, we should format it using the +44 prefix and remove the leading 0 from the rest of the number:
 
