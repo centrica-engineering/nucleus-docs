@@ -71,7 +71,7 @@ Ref: [gov.uk](https://design-system.service.gov.uk/patterns/telephone-numbers/)
 
 ### Supportive text
 
-Using precursory text with the number can help the user identify what it is and what to do with it. For example: 
+Using precursory text with the number can help the user understand the intention. For example: 
 
 >"Call us on 0800..." etc.
 
