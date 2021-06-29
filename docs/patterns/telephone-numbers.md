@@ -32,14 +32,6 @@ The length of area codes and local numbers varies across the UK, which means the
 | 01X1&nbsp;XXX&nbsp;XXXX / 011X&nbsp;XXX&nbsp;XXXX | Most other major cities |
 | 01XXX&nbsp;XXXXXX / 01XXX&nbsp;XXXXX | Smaller cities, provincial towns and rural areas |
 
-#### Best practice
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Separate the area code from the local number with a space | Push area code and digits together |
-| Split longer local numbers with a space for readability | Format major city numbers like smaller town formats and vice versa |
-
-
 
 ### From overseas
 
@@ -64,7 +56,7 @@ SMS (Short Message System) numbers are typically 5 digits long with no spaces.
 Ref: [area-codes.org.uk](http://www.area-codes.org.uk/formatting.php)
 
 
-## Do not display numbers as links 
+### Displaying numbers as links 
 
 Don't display phone numbers as links on devices that cannot make calls. Don't use links like this...
 
@@ -74,4 +66,14 @@ Don't display phone numbers as links on devices that cannot make calls. Don't us
 
 This can confuse users viewing on a device that doesn't support telephone calls. It is unnecessary - most modern mobile browsers automatically detect telephone numbers and display them as links anyway.
 
-[Ref: gov.uk](https://design-system.service.gov.uk/patterns/telephone-numbers/)
+Ref: [gov.uk](https://design-system.service.gov.uk/patterns/telephone-numbers/)
+
+
+### Best practice
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Separate the area code from the local number with a space | Push the area code and digits together |
+| Split longer local numbers with a space for readability | Format major city numbers like smaller town formats and vice versa |
+| Loose the preceding 0 when applying the calling from overseas format (+44 etc) | Show (0) in the calling from overseas format |
+| Use a space after 5th digit on a mobile number for readability | Display phone numbers as links on devices that cannot make calls |
