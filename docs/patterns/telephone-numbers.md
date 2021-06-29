@@ -21,6 +21,8 @@ To aid memorability, the patterns we use for freephone, non-geographical or emer
 | 105 | Electrical emergency |
 | 0800&nbsp;111&nbsp;999 | Gas emergency |
 
+In some cases, if you have a number such as 0800 112 233, it could be more memorable to display it as 0800 11 22 33.
+
 
 ### UK area codes and local numbers 
 
