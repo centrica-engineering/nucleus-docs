@@ -69,6 +69,18 @@ This can confuse users viewing on a device that doesn't support telephone calls.
 Ref: [gov.uk](https://design-system.service.gov.uk/patterns/telephone-numbers/)
 
 
+### Supportive text
+
+Using precursory text with the number can help the user identify what it is and what to do with it. For example: 
+
+>"Call us on 0800..." etc.
+
+Using a time frame is also a good idea to help set expectations: 
+
+>"Call us on 0330... 9.00am – 5.00pm, Monday to Friday."
+
+In the context of requesting a number from a customer (such as in a form), it can be helpful to explain to them why you might contact them and when. 
+
 ### Best practice
 
 | 💚 Do's | 💔 Don'ts |
@@ -77,3 +89,4 @@ Ref: [gov.uk](https://design-system.service.gov.uk/patterns/telephone-numbers/)
 | Split longer local numbers with a space for readability | Format major city numbers like smaller town formats and vice versa |
 | Loose the preceding 0 when applying the calling from overseas format (+44 etc) | Show (0) in the calling from overseas format |
 | Use a space after 5th digit on a mobile number for readability | Display phone numbers as links on devices that cannot make calls |
+| Use supportive text and perhaps time frames around the number | Collect numbers without explaining why they are needed |
