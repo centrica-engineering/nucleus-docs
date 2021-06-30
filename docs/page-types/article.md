@@ -35,8 +35,8 @@ Write content to grab attention, create interest, sell the benefits and make the
 | Page&nbsp;composition | Description and code |
 | :--- | :--- |
 | ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) | This page will always start with [nsx-header](/components/nsx-header.md) providing the primary navigation for the website, whilst also being our main brand presence. |
-| ![Image of H1 and 16:9 image](https://user-images.githubusercontent.com/78355810/123983883-1f787880-d9bc-11eb-8f6a-ad877d1bf1c3.png) | Use a compelling but concise headline that would make someone want to click it, if it were to be seen as a link elsewhere. Immediately below the h1 is a relative [ns-image](/components/ns-image.md) with a 16:9 ratio and a caption to grab attention and sell the story. The image should convey the headline and the caption should describe the image. |
-| ![Image of Blog content](https://user-images.githubusercontent.com/78355810/123984000-34550c00-d9bc-11eb-9b28-c740b56a75b9.png) | Following that there is the main body of content, which can be made up from h2-h6 and paragraph text, links, lists, further images and captions and CTAs. It can also be broken in to sections (like chapters) visually indicated by a set of 3 dots.  |
+| ![Image of H1 and 16:9 image](https://user-images.githubusercontent.com/78355810/123983883-1f787880-d9bc-11eb-8f6a-ad877d1bf1c3.png) | Use a compelling but concise headline that would make someone want to click it, if it were to be seen as a link elsewhere. Immediately below the h1 is a relative [ns-image](/components/ns-image.md) with a 16:9 ratio and a caption to grab attention and sell the story. The image should convey the headline and the caption should describe the image. See [ns-article](components/ns-article.md) for more information. |
+| ![Image of Blog content](https://user-images.githubusercontent.com/78355810/123984000-34550c00-d9bc-11eb-9b28-c740b56a75b9.png) | Following that there is the main body of content, which can be made up from h2-h6 and paragraph text, links, lists, further images and captions and CTAs. It can also be broken in to sections (like chapters) visually indicated by a set of 3 dots. See [ns-article](components/ns-article.md) for more information. |
 | ![Image of Footer](https://user-images.githubusercontent.com/78355810/121567323-57704980-ca16-11eb-9951-598055b9808c.png) | Finally, there is [nsx-footer](/components/nsx-footer.md) which holds all required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps. |
 
 ## Feedback
@@ -45,3 +45,7 @@ Write content to grab attention, create interest, sell the benefits and make the
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-article]).
 
 💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+
+## Related links
+
+* [ns-article](components/ns-article.md)
