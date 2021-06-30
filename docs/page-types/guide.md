@@ -16,15 +16,25 @@ Guide pages unsurprisingly, give guidance to the reader. This guidance is often 
 * To educate customers on a particular topic.
 * This might take the form of instructions on how to do something, breaking down a complex topic or deeper reading to help make a decision.
 
-## Example
-
-<StorybookPage story="examples-page-types--guide"></StorybookPage>
-
 ## Principles to follow
 
 | Creative | Tone of voice | Keywords |
 | :--- | :--- | :--- |
 | Clean and fresh  | Be helpful | Functional, Informative |
+
+## Example
+
+<StorybookPage story="examples-page-types--guide"></StorybookPage>
+
+## Content guidance
+
+| Page&nbsp;composition | Description and code |
+| :--- | :--- |
+| ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) | This page will always start with [nsx-header](/components/nsx-header.md) providing the primary navigation for the website, whilst also being our main brand presence. |
+| ![Image of landmark-hillside](https://user-images.githubusercontent.com/78355810/122067713-b6093f00-cdeb-11eb-8ee8-8b07c8c71bdf.png) | Next is [ns-landmark](/components/ns-landmark.md) (hillside) showing a clear, concise and descriptive headline, paired with a line of text that elaborates on the title. |
+|  | Following that there is the main body of content, which can be made up from h2-h6 and paragraph text, lists, tables, accordions and CTAs. It is contained within [ns-content](/components/ns-content.md) and has 2 columns in larger viewports. The column to the right can contain a support type [ns-card](/components/ns-card.md) useful for summarised information or relative links |
+|  | Then there is an section with radio buttons that is common to help and support pages, asking if the page was useful. The feedback helps us improve our support pages.  |
+| ![Image of Footer](https://user-images.githubusercontent.com/78355810/121567323-57704980-ca16-11eb-9951-598055b9808c.png) | Finally, there is [nsx-footer](/components/nsx-footer.md) which holds all required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps. |
 
 ## Feedback
 
