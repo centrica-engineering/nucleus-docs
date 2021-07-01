@@ -7,20 +7,20 @@ import { StorybookPage } from '../../includes/storybook-page.js'
 
 ## Introduction
 
-Editorial
+Editorial pages are more informative than promotional in nature. In some cases, it is necessary to explain something in more detail without the user needing to take an immediate action.
 
 ## Purpose
 
-* HERE.
-* HERE.
-* HERE.
-* HERE.
+* To reassure the user with well organised details.
+* Anticipate frequently asked questions and provide the answers.
+* Help the user find everything they need to make informed decisions.
+* Provide access to other subsequent and related information.
 
 ## Principles to follow
 
 | Creative | Tone of voice | Keywords |
 | :--- | :--- | :--- |
-| HERE | HERE | HERE |
+| Modern and dynamic | Be helpful | Detailed, Informative |
 
 ## Example
 
@@ -28,7 +28,7 @@ Editorial
 
 ## Content guidance
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorem nobis expedita ratione assumenda quibusdam odio, sapiente recusandae in consequuntur eveniet vitae sint accusantium quidem beatae asperiores ullam velit debitis?
+Editorial pages can contain lock-ups, images, links, lists and CTAs for a rich experience. Consider the hierarchy of information you want to show and group it under relative headings. Use images that help tell the story or help explain something complex.
 
 | Page&nbsp;composition | Description and code |
 | :--- | :--- |
