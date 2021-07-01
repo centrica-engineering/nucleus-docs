@@ -32,7 +32,7 @@ They allow long form content with images and sections, with very little effort r
 
 Write content to grab attention, create interest, sell the benefits and make the person reading it desire something. Then provide a call to action for them. Use images, bullet points or numbered lists to help convey information and enrich the experience.
 
-| Page&nbsp;composition | Description and code |
+| Page&nbsp;composition | Description |
 | :--- | :--- |
 | ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) | This page will always start with [nsx-header](/components/nsx-header.md) providing the primary navigation for the website, whilst also being our main brand presence. |
 | ![Image of H1 and 16:9 image](https://user-images.githubusercontent.com/78355810/123983883-1f787880-d9bc-11eb-8f6a-ad877d1bf1c3.png) | Use a compelling but concise headline that would make someone want to click it, if it were to be seen as a link elsewhere. Immediately below the h1 is a relative [ns-image](/components/ns-image.md) with a 16:9 ratio and a caption to grab attention and sell the story. The image should convey the headline and the caption should describe the image. See [ns-article](components/ns-article.md) for more information. |

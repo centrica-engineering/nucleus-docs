@@ -30,7 +30,7 @@ Editorial pages are more informative than promotional in nature. In some cases, 
 
 Editorial pages can contain lock-ups, images, links, lists and CTAs for a rich experience. Consider the hierarchy of information you want to show and group it under relative headings. Use images that help tell the story or help explain a complex concept.
 
-| Page&nbsp;composition | Description and code |
+| Page&nbsp;composition | Description |
 | :--- | :--- |
 | ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) | This page will always start with [nsx-header](/components/nsx-header.md) providing the primary navigation for the website, whilst also being our main brand presence. |
 | ![Image of landmark-hillside](https://user-images.githubusercontent.com/78355810/124106145-d972f180-da5b-11eb-8acf-c72850d9c665.png) | Next is [ns-landmark](/components/ns-landmark.md) (hillside) showing a clear, concise and descriptive headline, paired with a line of text that elaborates on the title. |

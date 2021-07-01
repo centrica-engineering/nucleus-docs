@@ -33,7 +33,7 @@ Images should only be used on a guide page if they are demonstrating a relative 
 
 Keep content clear and to the point. Use bullet points or numbered lists to help convey instructions. Use descriptive h2 or h3 etc. to break content into relevant sections, allowing the user to identify the content by just reading those alone. And use the 2nd column and card to show things like contact details, a summary, or relative links.
 
-| Page&nbsp;composition | Description and code |
+| Page&nbsp;composition | Description |
 | :--- | :--- |
 | ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) | This page will always start with [nsx-header](/components/nsx-header.md) providing the primary navigation for the website, whilst also being our main brand presence. |
 | ![Image of landmark-hillside](https://user-images.githubusercontent.com/78355810/122067713-b6093f00-cdeb-11eb-8ee8-8b07c8c71bdf.png) | Next is [ns-landmark](/components/ns-landmark.md) (hillside) showing a clear, concise and descriptive headline, paired with a line of text that elaborates on the title. |
