@@ -7,7 +7,7 @@ import { StorybookPage } from '../../includes/storybook-page.js'
 
 ## Introduction
 
-Article pages are used to inform the user about something. They can take the form of a blog or news item and have been specifically designed to make it easy for the reader to absorb the information. The article page utilises a short distance for the reader's eyes to pan horizontally. Articles are typically read from start to finish.
+Article pages are used to inform the user about something. They can take the form of a <b>blog</b> or <b>news item</b> and have been specifically designed to make it easy for the reader to absorb the information. The article page utilises a short distance for the reader's eyes to pan horizontally. Articles are typically read from start to finish.
 
 They allow long form content with images and sections, with very little effort required by the author to achieve the layout of the content, meaning it is an ideal format for regular updates and breaking news where speed of release is important. The article page  can be effective for marketing and can also be a useful as an SEO (Search Engine Optimisation) tool – helping to drive traffic to the site.
 
