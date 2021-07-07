@@ -4,6 +4,87 @@ description: Here are our release notes - enjoy!
 
 ---
 
+
+
+## Version 1.33.0
+
+**Timeline ↦ ↦ ↦**
+
+We are super excited to release this new component. The ns-timeline allows you to detail the steps in a journey, show the status of each of them with supporting information. It's highly configurable and works perfectly for confirmation pages, status updates, and similar steps in a customer journey. Communicate progress clearly and easily!
+
+We have also continued the work on unlocking Nucleus for multiple brands and conducted a stress test with the Bord Gáis brand and it's looking promising! 
+
+Get in touch if you want to know more.
+
+
+
+Release date - 2021/06/24
+
+**New features ⏱**
+
+* `ns-timeline` is a component that shows the steps in a user journey and their status.
+
+**Improvements 🤹‍♂️**
+
+* `ns-cta` and `ns-card` - improved shadows: we have changed our method to render shadows, making them a little bit more visible and modern.
+
+
+**Multibrand enablement and design tokens ☘️**
+
+
+* Fixed accessibility issue that we are having with JAWs screen reader
+* Improved landmark to help with page performance
+* Used tokens to apply Bord Gáis branding to the tabs
+* Made SVG URL configurable through tokens
+* Tokens adjusted for Bord Gáis form elements
+* Changes made to use tokens to change the background colour of the page
+
+
+
+
+**Bug fixes 🐛**
+
+* `ns-card` - Long direct CTA content clashed with section type cards. This is now fixed.
+
+
+
+## Version 1.32.0
+
+**Spacing and tokens ↔**
+
+In this release, further work on design tokens, to allow more brands to consume Nucleus. We have also added a way to have different spacing on `ns-content` depending on the kind of content you are putting in it, as well as starting to work on our shadows to make them more modern and visible on high contrast settings.
+
+Release date - 2021/06/03
+
+**New features 🖋**
+* `ns-content` - You now have a space attribute for the component that allows you to choose: make it compact, cozy, normal, or loose
+
+**Improvements 🤹‍♂️**
+
+* `ns-price` - Different currencies now allowed for ns-price
+* `ns-card` - Improved shadow visibility by adding a light border to the card. This will make it more visible on screens with a high contrast setting.
+* `ns-image` - Improved the lazy loading of thumbnails
+* `ns-skeleton` - Testimonial content width is increased to 100% to fit the component
+* We have added page examples on the page type documentation under the *Examples* section for each of them
+* Added an IE stylesheet for link styles
+
+
+**Multibrand enablement and design tokens ☘️**
+
+* `ns-calendar` - Added typography tokens
+* `ns-datepicker` - Added typography tokens 
+*  Bord Gáis header
+
+
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
 ## Version 1.31.0
 
 **Skeletons 🦴**
@@ -48,6 +129,8 @@ All our Requests For Change can be found in our Requests project board in Github
 https://github.com/ConnectedHomes/nucleus/projects/6
 
 Any questions? Let us know 🙌🏼
+
+
 ## Version 1.30.0
 
 **Progress 👣**
