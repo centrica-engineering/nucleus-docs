@@ -45,7 +45,7 @@ This page will inform the customer that they have successfully completed their c
 
 You can use supporting content to play back their purchase and inform them of what will happen next. If the customer is required to complete any additional follow up tasks, then those should be positioned as close to the top of the page as possible.
 
-| Page&nbsp;composition | Description and code |
+| Page&nbsp;composition | Description |
 | :--- | :--- |
 | ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) | This page will always start with [nsx-header](/components/nsx-header.md) providing the primary navigation for the website, whilst also being our main brand presence. |
 | ![Image of landmark-hillside](https://user-images.githubusercontent.com/78355810/122067713-b6093f00-cdeb-11eb-8ee8-8b07c8c71bdf.png) | Next is [ns-landmark](/components/ns-landmark.md) showing a clear completion message. Any key information the customer needs to remember or save for a later, such as appointment details should be presented here. |

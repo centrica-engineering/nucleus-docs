@@ -29,7 +29,7 @@ Think of this page as the shop window. It is the primary display point of the br
 
 ## Content guidance
 
-| Page&nbsp;composition | Description and code |
+| Page&nbsp;composition | Description |
 | :--- | :--- |
 | ![Image of header](https://user-images.githubusercontent.com/78355810/121555708-250d1f00-ca0b-11eb-86b9-df4a65ccfb60.png) | This page will always start with [nsx-header](/components/nsx-header.md) providing the primary navigation for the website, whilst also being our main brand presence with the logo. |
 | ![Image of skyline](https://user-images.githubusercontent.com/78355810/121555785-348c6800-ca0b-11eb-922d-c2c3b4937acd.png) | Positioned directly beneath the global navigation and above any content, [ns-skyline](/components/ns-skyline.md) displays high level messages to the user. The purpose of ns-skyline is to notify the user of important site-wide, or non-page specific events, that may affect their experience of using the website.|
