@@ -63,7 +63,7 @@ Release date - 2021/06/03
 
 * `ns-price` - Different currencies now allowed for ns-price
 * `ns-card` - Improved shadow visibility by adding a light border to the card. This will make it more visible on screens with a high contrast setting.
-* ns-image - Improved the lazy loading of thumbnails
+* `ns-image` - Improved the lazy loading of thumbnails
 * `ns-skeleton` - Testimonial content width is increased to 100% to fit the component
 * We have added page examples on the page type documentation under the *Examples* section for each of them
 * Added an IE stylesheet for link styles
