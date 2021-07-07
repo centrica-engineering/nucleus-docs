@@ -39,30 +39,25 @@ There are many ways to access www.britishgas.co.uk and we strive to ensure it's 
 
 We prioritise the following list of browsers and devices identified as the most popular used by our customers.
 
-**Last updated - 2020-04-27**
+**Last updated - 2021-06-16**
 
 | Device | Operating System | Browser | Version |
 | :--- | :--- | :--- | :--- |
-| Computer | Windows 10 | Chrome | 83 |
-| Computer | Windows 10 | Edge | 83 |
-| Computer | Windows 10 | Internet Explorer | 11 |
-| Computer | Windows 10 | Firefox | 77 |
-| Computer | Windows 10 | Edge | 18 |
-| Computer | MacOS Catalania | Safari | 13.1 |
-| Computer | MacOS Catalania | Chrome | 83 |
-| iPhone | iOS 12 (iPhone 7) | Safari |13 |
+| Computer | Windows 10 | Chrome | 90 |
+| Computer | Windows 10 | Firefox | 83 |
+| Computer | Windows 10 | Edge | 85 |
+| Computer | MacOS Catalina | Safari | 13.1 |
+| Computer | MacOS Catalina | Chrome | 88 |
+| iPhone | iOS 14 (iPhone 12) | Safari |13 |
 | iPhone | iOS 13 (iPhone XS) | Safari | 13 |
-| iPhone | iOS 12 (iPhone XR) | Safari | 13 |
-| iPhone | iOS 13 (iPhone 11) | Safari | 13 |
-| iPhone | iOS 12 (iPhone 7) | Chrome | 80 |
-| iPhone | iOS 13 (iPhone XS) | Chrome | 80 |
-| iPhone | iOS 12 (iPhone XR) | Chrome | 80 |
-| iPhone | iOS 13 (iPhone 11) | Chrome | 80 |
-| Android | Android OS 8 (Samsung Galaxy S9) | Chrome | 83 |
-| Android | Android OS 7 (Samsung Galaxy S8) | Chrome | 83 |
-| Android | Android OS 10 (Samsung Galaxy S20) | Samsung Browser | 11.1 |
-| iPad | iPad OS 13 (iPad 7th) | Safari | 13 |
-| iPad | iPad OS 13 (iPad 7th) | Chrome | 80 |
+| iPhone | iOS 14 (iPhone 12) | Chrome | 86 |
+| iPhone | iOS 13 (iPhone XS) | Chrome | 86 |
+| iPad | iPad OS 14 (iPad Pro 12.9 2020) | Safari | 13 |
+| iPad | iPad OS 14 (iPad Pro 12.9 2020) | Chrome | 86 |
+| Android | Android OS 10 (Samsung Galaxy S20) | Chrome | 89 |
+| Android | Android OS 11 (Samsung Galaxy S21) | Samsung Browser | 11.1 |
+
+**Note :** IE11 and Edge 18 browsers are no longer supported as their usage levels are below 0.5% (as of June 2021).
 
 ## For product owners and business analysts
 

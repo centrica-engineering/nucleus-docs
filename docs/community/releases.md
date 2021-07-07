@@ -121,13 +121,14 @@ Any questions? Let us know 🙌🏼
 
 **Tokens, tokens, tolkens 🪙🪙🪙 (oh, and passw ᐧ ᐧ ᐧ ᐧ!)**
 
-Last release, we set the groundwork to start lifting the brand layer off of our components, and store those styles in tokens. Well, in this release, things are definitely in motion. We also have released the first half of a brand new password component.
+Last release, we set the groundwork to start lifting the brand layer off of our components, and store those styles in tokens. Well, in this release, things are definitely in motion. We also have released the first half of a brand new password component, as well as a overview experience for the product cards. Read all about it below!
 
 Release date - 2021/04/08
 
 **New features ᐧ ᐧ ᐧ ᐧ**
 
 * `ns-password`: a brand new password component is now available, and it's called `ns-password`! This is the first of two releases and allows the capture an existing password. Stay tuned for the password creation side of things! (The documentation will be released with that part of the component)
+* `nsx-product-card-overview`: this Nucleus Experience is an interaction that allows users to get an overview of a series of products, change a parameter (choosing an excess amount for example) and see the impact on the product without having to reload the page. 
 
 
 **Improvements 🖋**
@@ -394,7 +395,7 @@ https://github.com/ConnectedHomes/nucleus/projects/6
 
 Any questions? Let us know 🙌🏼
 
-## Version 1.1200
+## Version 1.20.0
 
 **View(s)ports 📺**
 

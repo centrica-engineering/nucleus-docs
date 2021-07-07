@@ -68,7 +68,7 @@ A `red` or `green-light` pill can be used to drawing attention to important cust
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
 | `colour` | `string` | `slate` |  `slate`, `yellow`, `red`, `green-light` | The colour of the pill |
-| `icon` | `string` |  |  See [`ns-icon` component icon types](https://britishgas.design/components/ns-icon) | The icon to show inside the pill |
+| `icon` | `string` |  |  See [`ns-icon` component icon types](../components/ns-icon) | The icon to show inside the pill |
 
 ## Specification notes
 

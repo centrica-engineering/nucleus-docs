@@ -52,7 +52,7 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `icon`    | `string` |  | Please see the [documentation for ns-icon](https://britishgas.design/components/ns-icon) | Optional icon to add to the tab. |
+| `icon`    | `string` |  | Please see the [documentation for ns-icon](../components/ns-icon) | Optional icon to add to the tab. |
 | `selected` | `boolean` | `false` |`true`, `false`| Pre-selected tab |
 
 | Event | Description |

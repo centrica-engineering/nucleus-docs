@@ -73,7 +73,7 @@ You can see the live example of the loading state on [storybook](https://www.bri
 | :--- | :--- | :--- | :--- | :--- |
 | `type`    | `string` | `direct` | `direct`, `text` | Different variants of the CTA. |
 | `href` | `string` |           || Linking to another location. |
-| `icon`  | `string` | `arrow-right` | `arrow-left`, `arrow-right` See [`ns-icon` component](https://britishgas.design/components/ns-icon) | The icon inside the CTA |
+| `icon`  | `string` | `arrow-right` | `arrow-left`, `arrow-right` See [`ns-icon` component](../components/ns-icon) | The icon inside the CTA |
 | `loading` | `string` | `false` | `true`, `false` | Change the state of the CTA for loading. |
 | `loadingMessage` | `string` | `Loading...` |  | Overwrites the CTA anonymous slot for the loading state. |
 
