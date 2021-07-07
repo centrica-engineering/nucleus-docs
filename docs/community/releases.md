@@ -45,7 +45,7 @@ Release date - 2021/06/24
 **Bug fixes 🐛**
 
 * `ns-card` - Long direct CTA content clashed with section type cards. This is now fixed.
-͍
+
 
 
 ## Version 1.32.0
