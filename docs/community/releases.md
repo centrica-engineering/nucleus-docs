@@ -10,11 +10,11 @@ description: Here are our release notes - enjoy!
 
 **Timeline ↦ ↦ ↦**
 
-We are super excited to release this new component.
-The `ns-timeline` allows you to detail the steps in a journey, show the status of each of them with supporting information. It's highly configurable, and works perfectly for confirmation pages, status updates and similar steps in a customer journey. Communicate progress in a clear and easy way!
+We are super excited to release this new component. The ns-timeline allows you to detail the steps in a journey, show the status of each of them with supporting information. It's highly configurable and works perfectly for confirmation pages, status updates, and similar steps in a customer journey. Communicate progress clearly and easily!
 
-We have also continued the work on unlocking Nucleus for multiple brands, and conducted a stress test with the Bord Gáis brand and it's looking promising! Get in touch if you want to know more.
+We have also continued the work on unlocking Nucleus for multiple brands and conducted a stress test with the Bord Gáis brand and it's looking promising! 
 
+Get in touch if you want to know more.
 
 
 
@@ -35,7 +35,7 @@ Release date - 2021/06/24
 * Fixed accessibility issue that we are having with JAWs screen reader
 * Improved landmark to help with page performance
 * Used tokens to apply Bord Gáis branding to the tabs
-* Made svg url configurable through tokens
+* Made SVG URL configurable through tokens
 * Tokens adjusted for Bord Gáis form elements
 * Changes made to use tokens to change the background colour of the page
 
@@ -57,7 +57,7 @@ In this release, further work on design tokens, to allow more brands to consume 
 Release date - 2021/06/03
 
 **New features 🖋**
-* `ns-content` - You now have a space attribute for the component that allows you to choose: make it compact, cozy, normal or loose.
+* `ns-content` - You now have a space attribute for the component that allows you to choose: make it compact, cozy, normal, or loose
 
 **Improvements 🤹‍♂️**
 
