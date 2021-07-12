@@ -8,7 +8,7 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
-> ns-live enables dynamic updating of content.
+> Through the use of a loading icon, a helpful message and subtle animation; `ns-live` draws attention to areas of the page that are dynamically updating.
 
 ## Accessibility
 
@@ -18,16 +18,17 @@ This component adds the `aria-live` attribute to itself. Screen readers will ann
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Message | Keep this under 10 words and describe to the user what is happening e.g. Updating your quote |
+| A | Icon | This is the loading icon inside `ns-live` |
+| B | Message | Keep this under 10 words and describe to the user what is happening e.g. Updating your quote |
 
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :---  | :---  |
 | Use to wrap small pieces of dynamic content | Wrap large parts of the UI  |
-| Wrap inline elements (`<p>, <h1-6>`)| Place inside inline elements (`<p>, <h1-6>`) |
+| Wrap html elements | Place inside text elements (`<p>, <h1-6>`) |
 | Use as a slot | Use for media |
-| Keep the contents of ns-live simple |  |
+| Keep the contents of `ns-live` simple |  |
 | Leave the old content in place whilst busy |  |
 | Remove the busy attribute and update content at the same time |  |
 
@@ -37,9 +38,9 @@ This component adds the `aria-live` attribute to itself. Screen readers will ann
 
 For the best user experience follow these guidelines to avoid excessive page movement when content is updating. This is particularly important when the content being updated is larger than the busy message
 
-* **Keep the busy message short or the same size as the content that is being updated** - this prevents ns-live pushing down the page when the busy state is applied
-* **Leave the old content in place whilst busy** -  this makes sure that ns-live still occupies the same space on the page and prevents any resizing
-* **Update the content and remove the busy state at the same time** - this will apply a subtle fade in animation to the body of ns-live which helps the transition to the new size of the content
+* **Keep the busy message short or the same size as the content that is being updated** - this prevents `ns-live` pushing down the page when the busy state is applied
+* **Leave the old content in place whilst busy** -  this makes sure that `ns-live` still occupies the same space on the page and prevents any resizing
+* **Update the content and remove the busy state at the same time** - this will apply a subtle fade in animation to the body of `ns-live` which helps the transition to the new size of the content
 
 ## Usage
 
@@ -47,7 +48,7 @@ For the best user experience follow these guidelines to avoid excessive page mov
 
 ## Component placement
 
-The ns-live component can be used to wrap any html elements but be aware that it will effect the flow if used in components that rely on clean markup for layouts (e.g. in ns-form or ns-content);
+The `ns-live` component can be used to wrap any html elements but be aware that it will effect the flow if used in components that rely on clean markup for layouts (e.g. in ns-form or ns-content);
 
 ## Specification
 
