@@ -16,6 +16,8 @@ This component adds the `aria-live` attribute to itself. Screen readers will ann
 
 ## Content guidance
 
+![Image of ns-ive component in busy state](https://user-images.githubusercontent.com/78355810/125434081-e6c0667b-ba05-4083-a80e-bd57e32178c6.png)
+
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | Icon | This is the loading icon inside `ns-live` |
