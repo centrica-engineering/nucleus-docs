@@ -8,10 +8,39 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
-> Use to help the user enter a password in a form.
+> A standardised Password component that supports users when entering an existing password.
 
-This component wraps our ns-inputter component. Guidelines defined on the ns-inputter should also be followed when using this component.
+The ns-password component has been developed to include a set of features that help a user not only enter a password but can accommodate their need to create one too.
+
+This component wraps our ns-inputter component. Guidelines defined on the ns-inputter should also be considered when using this component.
 [ns-inputter documentation](components/ns-inputter.md)
+
+## Variants and purpose
+
+There are 2 variants of the ns-password component. Each should be used for their specific purpose. Both accommodate password manager applications, display at an appropriate width for the amount of characters required, can have optional helper text, and use mono-spaced alignment for legibility.
+
+### Standard
+
+[Labelled IMAGE HERE]
+
+Use this variant when a user needs to enter a password they have already have created to allow them access to secure information. It comprises a label, an input field with masking as default, a show/hide toggle and validation.
+
+### Confirm Password
+
+[Labelled IMAGE HERE]
+
+This variant is more complex the Standard one. It allows a user to correctly format a new password and validate it against certain criteria. It comprises the same label, input field and show/hide toggle as the standard version but includes a more proactive and helpful in-line validation technique as well as a Confirm Password field to verify the user is entering what they intended.
+
+The show/hide toggles are dependent on each other allowing easy comparing.
+
+In-line validation changes as you type  - this helps provide useful feedback to the user on their formatting.
+
+## Validation
+[Table here showing the states and meanings/scenarios]
+
+## Content guidance
+
+[See other component pages and layout in consistent manner]
 
 ## Usage
 
