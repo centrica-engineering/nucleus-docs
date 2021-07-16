@@ -56,7 +56,7 @@ The `ns-live` component can be used to wrap any html elements but be aware that 
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
-| `busy` | `boolean` | `false` | | Set true to show the loading icon and busy message |
+| `busy` | `boolean` | `false` | | Add to component to show the loading icon and busy message |
 | `busymessage` | `string` | `Updating` | | The message to show when the area of the page is updating |
 
 | Slots | Type |
