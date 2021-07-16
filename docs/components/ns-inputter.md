@@ -171,7 +171,7 @@ The following is a list of validation types that `<ns-inputter>` supports. These
 
 |  **Validation type**  | **Usage** |
 | :--- | :--- |
-| `isrequired` | value must be completed |
+| `isRequired` | value must be completed |
 | `isNumber` | value must be a number | 
 | `isInteger`| value must be a whole number with no decimal point | 
 | `isPostcode(includeEIR)` | value must be a valid UK or Ireland postcode |
