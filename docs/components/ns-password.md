@@ -12,35 +12,54 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 The ns-password component has been developed to include a set of features that help a user not only enter a password but can accommodate their need to create one too.
 
-This component wraps our ns-inputter component. Guidelines defined on the ns-inputter should also be considered when using this component.
-[ns-inputter documentation](components/ns-inputter.md)
+This component wraps our ns-inputter component. Guidelines defined on the ns-inputter should also be considered when using this component. See [ns-inputter](components/ns-inputter.md) documentation.
 
-## Variants and purpose
+## Content guidance
+
+### Variants and purpose
 
 There are 2 variants of the ns-password component. Each should be used for their specific purpose. Both accommodate password manager applications, display at an appropriate width for the amount of characters required, can have optional helper text, and use mono-spaced alignment for legibility.
 
-### Standard
+#### Standard
 
 [Labelled IMAGE HERE]
 
 Use this variant when a user needs to enter a password they have already have created to allow them access to secure information. It comprises a label, an input field with masking as default, a show/hide toggle and validation.
 
-### Confirm Password
+#### Confirm Password
 
 [Labelled IMAGE HERE]
 
 This variant is more complex the Standard one. It allows a user to correctly format a new password and validate it against certain criteria. It comprises the same label, input field and show/hide toggle as the standard version but includes a more proactive and helpful in-line validation technique as well as a Confirm Password field to verify the user is entering what they intended.
 
-The show/hide toggles are dependent on each other allowing easy comparing.
+The show/hide toggles are dependent on each other to make comparison easy.
 
-In-line validation changes as you type  - this helps provide useful feedback to the user on their formatting.
+| Key | Field type | Guidelines
+| :--- | :--- | :--- |
+| A | Password field | This where a user can enter their desired password. |
 
-## Validation
-[Table here showing the states and meanings/scenarios]
 
-## Content guidance
+### Validation
+The Confirm Password variant has in-line validation that checks the input as the user types. This helps provide useful instant feedback to them on their formatting. The requirements can be flexible, but currently set as British Gas format by default. The requirements are also accompanied by helpful messaging that changes with the status. 
 
-[See other component pages and layout in consistent manner]
+| Icon | Description |
+| :--- | :--- |
+| A | Information icon. This informs the user as to what is required before any input has been made. |
+| B | Warning triangle. This requirement has not yet been made. Text will also turn red.F |
+| C | Success tick. This particular requirement has been met. |
+
+Once all requirements have been met the input field's border also thickens changes to green to emphasise this. 
+
+The Standard variant just uses a single validation requirement that appears if the user tries to proceed without entering a password.
+
+## Best practice
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Do... |
+| Don't... |
+
+
 
 ## Usage
 
