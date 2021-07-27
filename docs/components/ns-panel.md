@@ -27,7 +27,7 @@ Adding a decoration to an `ns-panel` using a gradient background provides visual
 
 ## Usage
 
-<StorybookStory story="components-ns-panel--standard"></StorybookStory>
+<StorybookStory story="components-ns-panel--content"></StorybookStory>
 
 ## Component placement
 
