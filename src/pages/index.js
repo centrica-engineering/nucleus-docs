@@ -74,26 +74,26 @@ function Home() {
         </ns-landmark>
 
         <ns-panel>
-          <div class="splish">
+          <ns-content>
             <h2>Deep dive into Nucleus</h2>
-          </div>
-          <div class="splish triple">
-            <ns-card type="section" decoration="bulb">
+          </ns-content>
+          <ns-column hockeypitch="3" role="list">
+            <ns-card role="listitem" type="section" decoration="bulb">
               <h3 slot="heading" role="heading" aria-level="3">Getting started</h3>
               <p slot="paragraph">How to work with the Nucleus Design&nbsp;System</p>
               <ns-cta type="direct" slot="cta" href="/docs/getting-started/introduction">Get started</ns-cta>
             </ns-card>
-            <ns-card type="section" decoration="engineer">
+            <ns-card role="listitem" type="section" decoration="engineer">
               <h3 slot="heading" role="heading" aria-level="3">Our components</h3>
               <p slot="paragraph">See how our components work and guidelines on how to use&nbsp;them</p>
               <ns-cta type="direct" slot="cta" href="/docs/components/ns-accordion">View components</ns-cta>
             </ns-card>
-            <ns-card type="section" decoration="protect">
+            <ns-card role="listitem" type="section" decoration="protect">
               <h3 slot="heading" role="heading" aria-level="3">The vision</h3>
               <p slot="paragraph">Find out what we're trying to do and the principles we set against&nbsp;ourselves</p>
               <ns-cta type="direct" slot="cta" href="/docs/getting-started/principles">Learn our principles</ns-cta>
             </ns-card>
-          </div>
+          </ns-column>
         </ns-panel>
 
 
@@ -113,26 +113,26 @@ function Home() {
         </ns-panel>
 
         <ns-panel>
-          <div class="splash">
+          <ns-content>
             <h2>Building a better Nucleus</h2>
-          </div>
-          <div class="splash triple">
-            <ns-card type="support">
+          </ns-content>
+          <ns-column hockeypitch="3" role="list">
+            <ns-card role="listitem" type="support">
               <h3 slot="heading" role="heading" aria-level="3">Something missing?</h3>
               <p slot="paragraph">Feel free to raise a request for change or contribute to other&nbsp;requests</p>
               <ns-cta type="text" slot="cta" href="https://github.com/ConnectedHomes/nucleus/projects/6">Our backlog</ns-cta>
             </ns-card>
-            <ns-card type="support">
+            <ns-card role="listitem" type="support">
               <h3 slot="heading" role="heading" aria-level="3">See how we work</h3>
               <p slot="paragraph">Come to our events and ask about how things&nbsp;work.</p>
               <ns-cta type="text" slot="cta" href="/docs/community/events">Nucleus events</ns-cta>
             </ns-card>
-            <ns-card type="support">
+            <ns-card role="listitem" type="support">
               <h3 slot="heading" role="heading" aria-level="3">View our helpful tutorials</h3>
               <p slot="paragraph">Want to know how to do something? Then we have the tutorials for&nbsp;you</p>
               <ns-cta type="text" slot="cta" href="/docs/getting-started/working-with-nucleus">Working with Nucleus</ns-cta>
             </ns-card>
-          </div>
+          </ns-column>
         </ns-panel>
 
       </main>
