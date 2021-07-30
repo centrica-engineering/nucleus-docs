@@ -4,7 +4,7 @@ description: Here are our release notes - enjoy!
 
 ---
 
-## Version 2.1
+## Version 2.1.0
 
 **Loading...**
 
