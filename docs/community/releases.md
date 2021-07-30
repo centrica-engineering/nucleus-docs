@@ -4,6 +4,70 @@ description: Here are our release notes - enjoy!
 
 ---
 
+## Version 2.1
+
+**Loading...**
+
+It can sometimes take some time to give an updated piece of information because we need to get it from the backend. And we want to tell our users that we are busy retrieving the latest information for them. Well, we have that covered now! We also refreshed the editorial component, removed an old layout, and fixed a few bugs.
+
+Release date - 2021/07/14
+
+**New features 🔄**
+* `ns-live` - This is a new component you can use when updating a piece of information on the back of an action (for example: changing the excess amount will update the quoted price). If your app needs to wait for a response from the micro-service, you can show a loading state while users wait for the outcome of their action.
+
+
+**Improvements 🤹‍♂️**
+
+* `ns-editorial` - We have improved the typography styles of the editorial component. Those were pretty old now and dated from the early times of Nucleus. The editorial is now more in line with other components. 
+* `ns-illustration` - The WhatsApp logo is now available in the illustration options.
+* `ns-panel` - We removed the `splosh` layout
+
+
+**Bug fixes 🪲**
+
+* `ns-datepicker` - There was a small issue with the focus state of `select a date`. This is now fixed.
+* `ns-inputter` - Setting value attribute in inputter did not show the selected border of the `ns-selectors` contained in `ns-inputter`. This is now fixed.
+* `ns-table` - Table scrolling is fixed in smaller viewport (when you don't use div element inside `ns-panel`)
+
+
+
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
+## Version 2.0.0 🎉
+
+**Goodbye dear Internet Explorer 👋**
+
+You can see it in the version number. Something big enough to jump from 1.x to 2.0!
+We have stopped supporting Internet Explorer 11 (and Edge 18). 
+For the last few months, we have been encouraging the last remaining users of the British Gas website (less than 1% of all visits) to upgrade their browser to something more modern. And we have been monitoring analytics closely to decide stopping support for IE11.  
+
+This means we are now able to save the time we used to spend to make sure components were compatible, and re-focus that time towards a better use. This also enables new possibilities, and more modern solutions to the problems we solve.
+
+
+Release date - 2021/07/06
+
+**Bug fixes 🐞** 
+
+* `ns-landmark` - When the image in a summit landmark didn't load quickly, it collapsed the landmark for a brief moment, pulling more content above the fold and potentially increasing first content paint time. That had an impact on our page performance scores. This is now fixed.
+* `ns-password` - Toggle issue using ENTER key in show/hide password fixed
+
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
 
 
 ## Version 1.33.0
