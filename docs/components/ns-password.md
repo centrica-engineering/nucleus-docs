@@ -92,13 +92,12 @@ Also see ns-inputter [specification](components/ns-inputter.md#specification)
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `value`   | `string` | `''` |  | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an initial value |
+| `type` |  `string`  | `default` | [`default`, `confirm`] | The type of the password component. Use `default` type for login journey and `confirm` type for registration journey. |
+| `value`   | `string` | `''` |  | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an initial value. |
 | `helper` | `string` |  |  | See [ns-inputter](components/ns-inputter.md#specification). |
+| `tip` | `string` |  |  | See [ns-inputter](components/ns-inputter.md#specification). |
 | `name` | `string` | `password` |  | See [ns-inputter](components/ns-inputter.md#specification). |
-
-| Slots | Type |
-| :--- | :--- |
-| `tip-details` | `p tag` |
+| `passwordValidation` | `array` | `['hasNumbers', 'hasLetters', 'isBetween(8, 20)']` | |  Assists a user when adding a valid password and shows an error message when they're not. See [ns-inputter](components/ns-inputter.md#validation)
 
 <Tokens component="password"></Tokens>
 
