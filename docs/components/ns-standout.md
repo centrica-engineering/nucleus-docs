@@ -39,9 +39,11 @@ The component is not announced to screen readers to help differentiate it from [
 | :--- | :--- |
 | Keep concise and to the point |  Fill with many paragraphs |
 | Limit use to 1 or 2 per page |  Overuse it everywhere - it dilutes the impact |
-| Use it to make information stand out |  Use it in place of ns-highlighter – that has a different purpose |
+| Use it to make information stand out |  Use it in place of ns-highlighter or ns-card – they have a different purpose |
 | Select a colour border decoration that works with your design | Add images or illustrations | 
 | Use a relevant, single text link if it is necessary | Use the prominent button type ns-cta component (you should consider using a card instead for that purpose) |
+| Use without an h1-h6 | Nest another ns-standout component within it |
+| Use without a link | Use in a form where helper text is more appropriate |
 
 Think about the information you are bringing to the user's attention. Is it relevant? Is it important? What do they need to know? Then summarise it in a concisely written format.
 
