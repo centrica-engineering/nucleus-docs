@@ -10,81 +10,44 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 > The ns-standout component's purpose is to draw attention to important information that the user will need to know. 
 
-Use it to make information stand out from a page without announcing itself to a screen reader like the ns-highlighter component. 
+Use the ns-standout component to make information stand out from a page and to visually differentiate a concise block of text from the content that surrounds it, for example:
 
-Use it to visually differentiate a concise block of text from the content that surrounds it, for example:
-
-• Quotes
-• Examples
-• Additional information about the page
-• Emergency information
+* Quotes
+* Call-outs
+* Examples
+* Additional information about the page
+* Emergency information
 
 ## Accessibility 
 
-+++
-The information contained in the highlighter should always be the most important information on the page. To ensure that screen reader users are informed about the importance of these messages the content is read aloud as soon as the highlighter is used. This could be when the page loads or when it is dynamically added to a page.
-
-If there are multiple highlighters on a page they are read:
-* from top to bottom on page load
-* in the order they have been added to the page when dynamically added
-
-We recommend you use highlighters for their role, not for their looks. 
+The component is not announced to screen readers to help differentiate it from [ns-highlighter](../components/ns-highlighter) messages. You can choose from different coloured borders, but the text and background retain the standard colours, therefore, meeting suitable contrast ratios. 
 
 ## Content guidance
 
-![Highlighter - Error](https://user-images.githubusercontent.com/45626534/76082861-32d02b00-5fa4-11ea-9a5a-3efc9f2f89e8.png)
+![Standout diagram](https://user-images.githubusercontent.com/45626534/76082861-32d02b00-5fa4-11ea-9a5a-3efc9f2f89e8.png)
 
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Icon | This is the icon inside the Highlighter. This is dictated by the `type` of Highlighter. The [specification table](#specification) has a list of options. |
-| B | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
-| C | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | Accent | This is to support the context of the messaging. This colour matches that of the icon. |
-
-The content for highlighters is dependent on the type that is used:
-
-### Error Messages `type="error"`
-
-![Highlighter - Error](https://user-images.githubusercontent.com/28779/75970263-fc24e280-5ec7-11ea-9e31-90df5e7344ba.png)
-
-For communicating failure with urgence. A task cannot be completed without the user remedying something.
-
-### Informational Messages `type="info"`
-
-![Highlighter - Informational](https://user-images.githubusercontent.com/28779/75970267-fcbd7900-5ec7-11ea-91fb-15374a536a42.png)
-
-For communicating a useful piece of information that the user might find helpful to carry out their action.
-
-### Success Messages `type="success"`
-
-![Highlighter - Success](https://user-images.githubusercontent.com/28779/75970268-fd560f80-5ec7-11ea-8ad3-081592da15f1.png)
-
-For communicating that an action has been successful.
-
-### Warning Messages `type="warning"`
-
-![Highlighter - Warning](https://user-images.githubusercontent.com/28779/75970265-fcbd7900-5ec7-11ea-98a2-a43127c9af28.png)
-
-For communicating a piece of information with less severity. These include foreseeable problematic events, failures, outages and how to avoid errors.
+| A | Border | These are of a uniform thickness. You can choose between green-light, blue, cyan, yellow or red 'decoration' which use the [gradient colour palette](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-gradients--gradient-pallette). |
+| B | Content | You can style this area with text styles using HTML, such as headings, paragraphs, lists, and text links as required. |
 
 
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Keep the messages concise |  Use for generic message that is not in context to the page it is displayed in |
-| Use an icon to alert the user what type of message it is |  Use it for Roadblock error messaging |
+| Keep concise and to the point |  Fill with many paragraphs |
+| Limit use to 1 or 2 per page |  Overuse it everywhere - it dilutes the impact |
+| Use it to make information stand out |  Use it in place of ns-highlighter – that has a different purpose |
+| Select a colour border decoration that works with your design | Add images or illustrations | 
+| Use a relevant, single text link if it is necessary | Use the prominent button type ns-cta component (you should consider using a card instead for that purpose) |
 
-### Considerations of best practice
-
-* Be clear and concise
-
-The message must be in plain English, and help the user out of the situation by providing an actionable link if possible.
+Think about the information you are bringing to the user's attention. Is it relevant? Is it important? What do they need to know? Then summarise it in a concisely written format.
 
 ## Usage
 
-<StorybookStory story="components-ns-highlighter--error"></StorybookStory>
+<StorybookStory story="components-ns-standout--subtle"></StorybookStory>
 
 ## Component placement
 
@@ -94,29 +57,20 @@ The message must be in plain English, and help the user out of the situation by 
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `decoration` | `string` |           |See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--standard)| Icon that is shown in the type of highlighter |
-| `type`       | `string` | "error" | "error", "success", "warning", "info" | Defines the role of the highlighter and changes the styles |
-
-| Slots | Type |
-| :--- | :--- |
-| `heading` | `h tag` |
-| Anonymous | `p tag` |
+| `decoration` | `string`  | "cyan" | "green-light", "blue", "cyan", "yellow", "red" | Gradient colours on border |
+| `content` | `html` | Placeholder text | `h1 - h6`, `p`, `ul`, `ol`, `a` | Defines the text content, its style and formatting |
 
 ## Specification notes
 
-### Type
-
-* Required for all four types of highlighter
-
 ### Heading
 
-* This should be a heading level 2
+* This should be a heading level 2 and is optional
 
-<Tokens component="highlighter"></Tokens>
+<Tokens component="standout"></Tokens>
 
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-highlighter]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-highlighter])
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+💩 🎉 🦄 You can also contact us on MS Teams on the `Nucleus Design Systems / Engineering support` channel!
