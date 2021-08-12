@@ -24,7 +24,7 @@ The component is not announced to screen readers to help differentiate it from [
 
 ## Content guidance
 
-![Standout diagram](https://user-images.githubusercontent.com/45626534/76082861-32d02b00-5fa4-11ea-9a5a-3efc9f2f89e8.png)
+![Standout diagram](https://user-images.githubusercontent.com/78355810/129220221-b1d10a06-da02-4b6c-a9b1-f062868fe86a.png)
 
 
 | Key | Field type | Guidelines |
