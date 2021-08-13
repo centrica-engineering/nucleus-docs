@@ -54,6 +54,7 @@ Think about the information you are bringing to the user's attention. Is it rele
 ## Component placement
 
 <ComponentPlacement component="ns-standout" parentComponents="ns-panel,ns-column,ns-content,ns-editorial,ns-article"></ComponentPlacement>
+It must always be used within an ns-content component to retain relative font scaling.
 
 ## Specification
 
