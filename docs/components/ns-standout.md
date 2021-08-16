@@ -53,7 +53,7 @@ The component is not announced to screen readers to help differentiate it from [
 
 ## Component placement
 
-<ComponentPlacement component="ns-standout" parentComponents="ns-panel,ns-column,ns-content,ns-editorial,ns-article"></ComponentPlacement>
+<ComponentPlacement component="ns-standout" parentComponents="ns-content,ns-column,ns-editorial,ns-article"></ComponentPlacement>
 
 ## Specification
 
