@@ -12,7 +12,7 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 Use the ns-standout component to make information stand out from a page and to visually differentiate a concise block of text from the content that surrounds it, for example:
 
-* Quotes
+* Quotes (as in prices)
 * Call-outs
 * Examples
 * Additional information about the page
@@ -44,8 +44,8 @@ The component is not announced to screen readers to help differentiate it from [
 | Use a relevant, single text link if it is necessary | Use the prominent button type ns-cta component (you should consider using a card instead for that purpose) |
 | Use without an h1-h6 | Nest another ns-standout component within it |
 | Use without a link | Use in a form where helper text is more appropriate |
+| Ensure the information is relevant and important enough to stand out from the rest of the content | Use for warning or error messages |
 
-Think about the information you are bringing to the user's attention. Is it relevant? Is it important? What do they need to know? Then summarise it in a concisely written format.
 
 ## Usage
 
