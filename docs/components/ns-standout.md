@@ -54,20 +54,22 @@ Think about the information you are bringing to the user's attention. Is it rele
 ## Component placement
 
 <ComponentPlacement component="ns-standout" parentComponents="ns-panel,ns-column,ns-content,ns-editorial,ns-article"></ComponentPlacement>
-It must always be used within an ns-content component to retain relative font scaling.
 
 ## Specification
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `decoration` | `string`  | "cyan" | "green-light", "blue", "cyan", "yellow", "red" | Gradient colours on border |
-| `content` | `html` | Placeholder text | `h1 - h6`, `p`, `ul`, `ol`, `a` | Defines the text content, its style and formatting |
+
+| Slots | Type |
+| :--- | :--- |
+| anonymous | `ns-content`, `ns-column`, `ns-image` |
 
 ## Specification notes
 
-### Heading
+### Anonymous
 
-* This should be a heading level 2 and is optional
+* Can only accept a single ns-content 
 
 <Tokens component="standout"></Tokens>
 
