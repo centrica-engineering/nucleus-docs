@@ -59,7 +59,7 @@ The component is not announced to screen readers to help differentiate it from [
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `decoration` | `string`  | "cyan" | "green-light", "blue", "cyan", "yellow", "red" | Gradient colours on border |
+| `decoration` | `string`  | `cyan` | `green-light`, `blue`, `cyan`, `yellow`, `red` | Gradient colours on border |
 
 | Slots | Type |
 | :--- | :--- |
