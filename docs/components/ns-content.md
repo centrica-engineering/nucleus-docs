@@ -52,7 +52,7 @@ Both `ns-image` and `ns-video` need to be wrapped in a `<figure>` element
 
 | Slots | Type |
 | :--- | :--- |
-| anonymous | `h1 - h6`, `p`, `ul`, `ol`, `figure`, `ns-cta`, `ns-table`, `ns-accordion` |
+| anonymous | `h1 - h6`, `p`, `ul`, `ol`, `figure`, `ns-accordion`, `ns-cta`, `ns-table`, `ns-standout` |
 
 ### Specification notes
 
