@@ -133,8 +133,7 @@ module.exports = {
   scripts: [
     {
       src:
-        'https://www.britishgas.co.uk/nucleus/nucleus.min.js',
-      async: true,
+        'https://www.britishgas.co.uk/nucleus/nucleus.min.js'
     },
   ],
 };
