@@ -100,7 +100,6 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} British Gas. Built with Docusaurus.`,
     },
   },
-  themes: ['@docusaurus/theme-live-codeblock'],
   plugins: [
     [
       '@docusaurus/plugin-client-redirects',
@@ -133,7 +132,8 @@ module.exports = {
   scripts: [
     {
       src:
-        'https://www.britishgas.co.uk/nucleus/nucleus.min.js'
+        'https://www.britishgas.co.uk/nucleus/nucleus.min.js',
+      async: true
     },
   ],
 };
