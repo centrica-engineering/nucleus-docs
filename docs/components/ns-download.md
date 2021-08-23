@@ -21,10 +21,13 @@ Currently only allows '.pdf' and '.xls' file types, other types can be added but
 | Describe what the file is | Embed in text |
 | Place in a list element with class `download-list` when you have more than 1 download link in row|  |
 | Place on its own line |
+| Use the `fileType` attribute if the `href` doesn't contain the file extension |
 
 ### Considerations of best practice
 
 Include file size - this is particularly nice for customers that are on reduced data allowences (i.e. mobile), and also offers an indication on how long a file might take to download.
+
+The `fileType` attibute - showing a filetype helps users understand if thier device can open the file and sets the expetation of how their device will behave once the file has been downloaded (for example some browsers will display a pdf without opening another program). The component uses the file extension in the `href` attribute to obtain the file type and display the correct information. However, if your endpoint does not contain a file extension in the url then the file type attibute can be used to show file type information instead. The file extension in the url takes prioity over the `fileType` attribute
 
 Text Content - the text provided between the ns-download tags is used to create the filename for the downloaded file. This helps users identify the file that has been downloaded.
 
@@ -58,6 +61,7 @@ The one exception to this rule is in forms as there are often challenges around 
 | :--- | :--- | :--- | :--- |-------------|
 | `href` | `string` | | '.pdf','.xls' | The url for the file to be downloaded (including file extension) |
 | `fileSize` | `string` | | Units 'B','kB', 'MB', 'GB' | The size of the file to be downloaded (including unit).|
+| `fileType` | `string` | | '.pdf','.xls' | Optional - Used to show filetype if not included in href |
 
 | Slots | Type |
 | :--- | :--- |
