@@ -45,7 +45,7 @@ The ns-panel component can be used in the following elements/components:
 
 | Slots | Type |
 | :--- | :--- |
-| `anonymous` | `div`, `ns-article`, `ns-content`, `ns-column`, `ns-lockup`, `ns-standout` |
+| `anonymous` | `div`, `ns-article`, `ns-content`, `ns-column`, `ns-lockup` |
 
 ## Specification notes
 

@@ -40,8 +40,8 @@ The component is not announced to screen readers to help differentiate it from [
 | Keep concise and to the point |  Fill with many paragraphs |
 | Limit use to 1 or 2 per page |  Overuse it everywhere - it dilutes the impact |
 | Use it to make information stand out |  Use it in place of ns-highlighter or ns-card – they have a different purpose |
-| Select a colour border decoration that works with your design | Add images or illustrations | 
-| Use a relevant, single text link if it is necessary | Use the prominent button type ns-cta component (you should consider using a card instead for that purpose) |
+| Select a colour border decoration that works with your design | Add icons, images or illustrations | 
+| Use a relevant, single text link if it is necessary | Use the direct ns-cta (you should consider using ns-card instead for that purpose) |
 | Use without an h2-h6 | Nest another ns-standout component within it |
 | Use without a link | Use in a form where helper text is more appropriate |
 | Ensure the information is relevant and important enough to stand out from the rest of the content | Use for warning or error messages |
@@ -53,7 +53,7 @@ The component is not announced to screen readers to help differentiate it from [
 
 ## Component placement
 
-<ComponentPlacement component="ns-standout" parentComponents="ns-column,ns-content,ns-editorial,ns-form,ns-panel"></ComponentPlacement>
+<ComponentPlacement component="ns-standout" parentComponents="ns-column,ns-content,ns-editorial,ns-form"></ComponentPlacement>
 
 ## Specification
 
@@ -63,7 +63,7 @@ The component is not announced to screen readers to help differentiate it from [
 
 | Slots | Type |
 | :--- | :--- |
-| anonymous | `ns-content`, `ns-column`, `ns-image` |
+| anonymous | `ns-content`, `ns-column` |
 
 ## Specification notes
 
