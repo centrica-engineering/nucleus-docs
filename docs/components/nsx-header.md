@@ -43,7 +43,7 @@ The subheadings and links for the navigation can be passed in for each section t
 
 | Event | Description |
 | :--- | :--- |
-| `header-click` | Sends an event when a link is clicked. `{ text: 'New Boiler', href: 'https://britishgas.co.uk/new-boilers.html' }` |
+| `header-click` | Sends an event when a link is clicked. `{ text: 'Link text', href: 'Link href' }` |
 
 | Slots | Type |
 | :--- | :--- |
