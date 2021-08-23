@@ -29,8 +29,8 @@ The component is not announced to screen readers to help differentiate it from [
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Border | These are of a uniform thickness. You can choose between green-light, blue, cyan, yellow or red 'decoration' which use the [gradient colour palette](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-gradients--gradient-pallette). |
-| B | Content | You can style this area with text styles using HTML, such as headings, paragraphs, lists, and text links as required. |
+| A | Decoration | You can choose between green-light, blue, cyan, yellow or red 'decoration' which use the [gradient colour palette](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-gradients--gradient-pallette). |
+| B | Content | You can populate the content using HTML, such as headings, paragraphs, lists, and text links as required. |
 
 
 ## Best practice
