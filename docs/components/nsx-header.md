@@ -41,6 +41,10 @@ The subheadings and links for the navigation can be passed in for each section t
 | `sections`    | `array` | |  | Subheadings and links for each nav section |
 | `hideA11yBtn`    | `boolean` | `false` |  | Ability to turn off Reciteme |
 
+| Event | Description |
+| :--- | :--- |
+| `header-click` | Sends an event when a link is clicked. `{ text: 'Link text', href: 'Link href' }` |
+
 | Slots | Type |
 | :--- | :--- |
 | `link-*` | `a tag` |

@@ -50,6 +50,10 @@ The default choice of header across the main British Gas UK home site should be 
 | `alt`    | `string` | `British Gas` |  |Alternative text for logo|
 | `hide-links` | `boolean` | `false` | `true`,`false` |Hide navigation and related navigational elements|
 
+| Event | Description |
+| :--- | :--- |
+| `header-click` | Sends an event when a link is clicked. `{ text: 'Link text', href: 'Link href' }` |
+
 | Slots | Type |
 | :--- | :--- |
 | `link-*` | `a tag` |
