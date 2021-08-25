@@ -27,7 +27,7 @@ Currently only allows '.pdf' and '.xls' file types, other types can be added but
 
 Include file size - this is particularly nice for customers that are on reduced data allowences (i.e. mobile), and also offers an indication on how long a file might take to download.
 
-The `fileType` attibute - showing a filetype helps users understand if thier device can open the file and sets the expetation of how their device will behave once the file has been downloaded (for example some browsers will display a pdf without opening another program). The component uses the file extension in the `href` attribute to obtain the file type and display the correct information. However, if your endpoint does not contain a file extension in the url then the file type attibute can be used to show file type information instead. The file extension in the url takes prioity over the `fileType` attribute
+The `fileType` attibute - showing a filetype helps users understand if thier device can open the file and sets the expectation of how their device will behave once the file has been downloaded (for example some browsers will display a pdf without opening another program). The component uses the file extension in the `href` attribute to obtain the file type and display the correct information. However, if your endpoint does not contain a file extension in the url then the file type attibute can be used to show file type information instead. The file extension in the url takes prioity over the `fileType` attribute and if neither are supplied the component will not render.
 
 Text Content - the text provided between the ns-download tags is used to create the filename for the downloaded file. This helps users identify the file that has been downloaded.
 
