@@ -33,7 +33,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | Label | The label should describe the selection being made using the most concise content possible. The recommended length is 21 characters maximum. |
-| B | Paragraph  | The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| B | Paragraph  | An optional paragraph can be added for more description. The recommended length is 1 concise paragraph or 5 short bullet points, not exceeding 125 characters in total. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | C | Image | This is the image that will be used above the ns-card. It should have an aspect ratio of 16:9, the dimensions should be 640x360px, the file type should be jpg, and the file size should be no more than 50kb. |
 | D | Keyline | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
 | E | Expanders | An optional addition of an [ns-expander](../components/ns-expander) component within the selector allows for more detail to be discoverable. It consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content.
@@ -56,13 +56,14 @@ Selectors are used to group an image or illustration with a label into a card. T
 | Bolden key messages eg. price within heading to highlight | Use imagery within ns-selector with copy embedded inside |
 | Use a radio button or checkbox |  Use an image and an illustration together |
 | Use expanders if you need to include more details |Add a decoration behind the selectors |
-| | Use more than 5 expanders on a selector
+| Use paragraph for description when using illustration| Use more than 5 expanders on a selector
 
 ### Considerations of best practices
 
 * When deciding to use the ns-selector, it’s important to consider whether a radio or checkbox button itself would be more appropriate.
 * In a many cases, a simple radio button or checkbox is all the user needs to make the choice. Only use the ns selector when adding more supporting information makes the decision for the user easier.
-* If you are using the ns-selector with an illustration, it's important to make sure you are using a Nucleus illustration. [View illustrations in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)
+* If you are using the ns-selector with an illustration, it's important to make sure you are using a Nucleus illustration. [View illustrations in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance).
+* Make sure the paragraph section is added for more description when illustration is used.
 * Make sure the supporting copy is clear and concise.
 * Make sure the labels explain exactly what the user is selecting. If all content is removed other than the label, then the user would still understand what they are selecting.
 * If using the optional Expander, keep the content concise – you can use lists in the content to help. Be mindful that once a heading is expanded it forces the bottom of that selector down and that of any other instances in the row. 
@@ -97,9 +98,9 @@ When used in ns-column, ns-column must be a child of ns-inputter:
 | `value` | `any`     |  |  | Value of selection |
 | `keyline` | `string` | none | `blue`, `yellow`, `green-light`, `cyan`, `red` | Add a gradient across the top of the selector |
 
-| Slots | Type |
-| :--- | :--- |
-| `description` | `div` |
+| Slots | Type | Description |
+| :--- | :--- | :--- |
+| `description` | `div` | Mandatory when using with `decoration` attribute and optional when using with `image` attribute |
 | `anonymous` | `input` `label` |
 
 <Tokens component="selector"></Tokens>
