@@ -6,7 +6,7 @@ description: Here are our release notes - enjoy!
 
 ## Version 2.2.0
 
-**{Jedi hand gesture} This is the highlighter you are looking for...**
+**{Jedi hand gesture 👋} This is the highlighter you are looking for...**
 
 It's no secret, we have been misusing `ns-highlighter` almost from its inception. And you know what? This was on us. We didn't choose the right name. And because we highlighted (pun intended) those misuses so often, we felt an obligation to correct our mistake. 
 
@@ -37,10 +37,6 @@ Release date - 2021/08/18
 
 
 
-
-**Bug fixes 🪲**
-
-* 
 
 **Feedback 💌**
 
