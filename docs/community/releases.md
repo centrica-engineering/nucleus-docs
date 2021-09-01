@@ -4,6 +4,51 @@ description: Here are our release notes - enjoy!
 
 ---
 
+## Version 2.2.0
+
+**{Jedi hand gesture} This is the highlighter you are looking for...**
+
+It's no secret, we have been misusing `ns-highlighter` almost from its inception. And you know what? This was on us. We didn't choose the right name. And because we highlighted (pun intended) those misuses so often, we felt an obligation to correct our mistake. 
+
+Introducing `ns-standout`!
+As it says on the tin: this component is here to make a piece of information on your page. A phone number, opening hours, a note, a contest, important-to-read mentions, a big fact, you name it. If it needs to stand out, it's a job for `ns-standout`.
+
+First release comes with a "subtle" version, and we are working on a stronger version, but need to tweak our gradients to make it accessible. Watch this space!
+
+In the meantime, [learn everything about `ns-standout` in the documentation!](https://nucleus.design/docs/components/ns-standout)
+
+
+Release date - 2021/08/18
+
+**New features 🔄**
+* `ns-standout` - A component to make a piece of content stand out on a page.
+
+
+**Improvements 🤹‍♂️**
+
+* GitHub action has been added to create GitHub packages for reducing release risk
+* `ns-inputter` - There was an invalid state on inputs before interaction on screen readers. This is now fixed
+* `ns-live` - We changed the function name so it's not the same as the property to avoid confusion
+* We removed the Storybook shortcuts as they were conflicting when typing something in the text fields of the knobs as you configure a component
+* `ns-password` - `isRequired` validation added for confirm password
+* `ns-video` - We added a façade to improve the performance of the page and only load the video if user shows intent to play it
+* `ns-live` - We added reflect for the `busy` property
+* `ns-header` - We update the `<button>` tag instead of `<div>` for better accessibility
+
+
+
+
+**Bug fixes 🪲**
+
+* 
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
 ## Version 2.1.0
 
 **Loading...**
