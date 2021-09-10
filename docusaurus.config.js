@@ -22,7 +22,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: '/favicon/favicon.ico',
   organizationName: 'British Gas', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
@@ -32,10 +32,9 @@ module.exports = {
       disableSwitch: true
     },
     navbar: {
-      title: 'Nucleus Design System',
       logo: {
-        alt: 'British Gas Flame Mark',
-        src: 'img/logo.svg',
+        alt: 'Nucleus',
+        src: '/img/logo.svg',
       },
       items: [
         {
