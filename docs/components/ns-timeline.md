@@ -90,7 +90,7 @@ On events that have been successfully completed, there is the option to display 
 
 ## Usage
 
-<StorybookStory story="components-ns-timeline--timeline"></StorybookStory>
+<StorybookStory story="components-ns-timeline--time-line"></StorybookStory>
 
 ## Component placement
 
