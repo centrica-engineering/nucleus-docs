@@ -34,6 +34,7 @@ module.exports = {
       'foundations/typography',
       'foundations/lists',
       'foundations/colours',
+      'foundations/spacers',
       'foundations/modular-scale',
       'foundations/viewports',
       'foundations/structure',
