@@ -52,7 +52,7 @@ The default choice of header across the main British Gas UK home site should be 
 
 | Event | Description |
 | :--- | :--- |
-| `header-click` | Sends an event when a link is clicked. `{ text: 'Link text', href: 'Link href' }` |
+| `header-click` | Sends an event when a link is clicked. `{ text: 'Link text', href: 'Link href', header: 'Header', subheader: 'Sub Header' }` |
 
 | Slots | Type |
 | :--- | :--- |
