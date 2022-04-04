@@ -42,6 +42,9 @@ Radio buttons are for when customers need to select only one option from a list.
 
 Radio buttons are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Are you a British Gas customer?".
 
+#### Note on the size of the heading for radio buttons
+Radio buttons come with a heading that can visually look odd in a form with other types of `ns-inputter`. This heading's size will match other `ns-inputter` labels' size if all elements are grouped in an `ns-fieldset`. This will help keep a logical visual hierarchy when using radio buttons.
+
 ![Radio buttons](https://user-images.githubusercontent.com/45626534/95720264-eac76400-0c68-11eb-9619-4453cb5171d1.jpg)
 
 [See `<ns-inputter>` radio buttons on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--radio).
