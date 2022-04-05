@@ -43,7 +43,10 @@ Radio buttons are for when customers need to select only one option from a list.
 Radio buttons are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Are you a British Gas customer?".
 
 #### Note on the size of the heading for radio buttons
-Radio buttons come with a heading that can visually look odd in a form with other types of `ns-inputter`. This heading's size will match other `ns-inputter` labels' size if all elements are grouped in an `ns-fieldset`. This will help keep a logical visual hierarchy when using radio buttons.
+
+Radio buttons come with a heading that inherits size 4, which is larger than the default label size and can visually look odd when grouped with other `ns-inputters`.
+
+To match this heading's size with other `ns-inputter` labels', group all associated elements in an `ns-fieldset`. This will help keep a logical visual hierarchy when using radio buttons grouped with other inputs.
 
 ![Radio buttons](https://user-images.githubusercontent.com/45626534/95720264-eac76400-0c68-11eb-9619-4453cb5171d1.jpg)
 
