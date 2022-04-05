@@ -36,7 +36,7 @@ https://www.w3.org/WAI/WCAG21/Techniques/html/H71
 <ComponentPlacement component="ns-fieldset" parentComponents="ns-form"></ComponentPlacement>
 
 ### Note
-When adding a radio type `ns-inputter` inside an `ns-fieldset`, its heading size will match the size of all labels from other `ns-inputter`. This helps keep a logical visual hierarchy in a form.
+When adding radio buttons and checkboxes to `ns-inputter` inside an `ns-fieldset`, its heading size will match the size of all labels from other `ns-inputter`. This helps keep a logical visual hierarchy in a form.
 
 ## Specification
 
