@@ -2,14 +2,14 @@ import React from 'react';
 import { colour } from '../tokens/ns-tokens'
 
 
-const generatePallette = (colours) => {
+const generatePalette = (colours) => {
   const entries = Object.entries(colours);
 
-  let palletteHtml = '';
+  let paletteHtml = '';
 
   for (const [key, data] of entries) {
 
-    palletteHtml += `
+    paletteHtml += `
     <div class="colour">
       <dt>
         <div style="background-color:${data.value}" class="swatch"></div>
@@ -20,11 +20,11 @@ const generatePallette = (colours) => {
     `
   }
 
-  return `<dl class="colour-pallete">${palletteHtml}</dl>`;
+  return `<dl class="colour-palette">${paletteHtml}</dl>`;
 }
 
 export const Colours = ({...props}) => {
-  const colourHtml = generatePallette(colour[props.colourGroup]);
+  const colourHtml = generatePalette(colour[props.colourGroup]);
 
   return (
     <div dangerouslySetInnerHTML={{ __html: colourHtml }} />
