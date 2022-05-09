@@ -47,6 +47,12 @@ The offset refers to the space to the left and right of the Column taking up 5% 
 
 ### Our Sketch library
 
-Getting the library  
+Our latest Sketch library uses just the two most commonly used viewports. A set of components have been designed for each, labelled as 'Narrow' and 'Wide' – these equate to 'Squash court' and 'Hockey pitch' sizes. They align with our coded components (as found in Storybook) and as they appear in those viewports.
+
+It means there is a version for mobile and a version for laptop-sized viewports. Limiting the number of viewports in the Sketch library has vastly reduced file size, maintenance effort and the chances of using an incorrectly sized variant of a component for your chosen viewport.
+
+Ultimately, we recommend using our prototyping tool when designing journeys because it uses fully responsive coded components and is better for user testing. The Sketch library is a supplementary tool for trying out new ideas.
+
+Instructions on how to obtain the library –  
 [Sketch Library - GitHub Wiki](https://github.com/ConnectedHomes/centrica-ux/wiki)
 
