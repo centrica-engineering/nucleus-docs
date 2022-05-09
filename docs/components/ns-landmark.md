@@ -231,9 +231,6 @@ Using Sketch to overlay the Landmark focus template to check alignment.
 
 ![Screenshot 2019-06-20 at 12 30 08](https://user-images.githubusercontent.com/43471890/59846281-54767d00-9357-11e9-805a-96487c8ecc7f.png)
 
-Find it under 'Guides' in the Nucleus Sketch Library.
-
-![Landmark focal area guide - insert menu](https://user-images.githubusercontent.com/43471890/59842158-d82b6c00-934d-11e9-861a-e7ee6c6f358c.jpg)
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
