@@ -98,6 +98,8 @@ Also see ns-inputter [specification](components/ns-inputter.md#specification)
 | `tip` | `string` |  |  | See [ns-inputter](components/ns-inputter.md#specification). |
 | `name` | `string` | `password` |  | See [ns-inputter](components/ns-inputter.md#specification). |
 | `passwordValidation` | `array` | `['hasNumbers', 'hasLetters', 'isBetween(8, 20)']` | |  Assists a user when adding a valid password and shows an error message when they're not. See [ns-inputter](components/ns-inputter.md#validation)
+| `label` |  `string`  | `Password` |  | The value of the label for password field. |
+| `confirmLabel` |  `string`  | `Confirm Password` |  | The value of the label for confirm password field. This attribute is used along with `confirm` type. |
 
 <Tokens component="password"></Tokens>
 
