@@ -34,7 +34,7 @@ Release date - 2022/xx/xx
 * `ns-cta` - We improved the spacing for the direct call to action
 * We deleted unused margin and padding declarations from spacing.less
 * `ns-calendar` - We increased the outline offset in the calendar dates to make the selected date visibly different to other states (making it more accessible for high contrast mode)
-* ns-inputter - you can now use the `pattern` and `title` attributes for a `ns-inputter` for validation (and override an error message with the value of the `title` attribute)
+* `ns-inputter` - you can now use the `pattern` and `title` attributes for a `ns-inputter` for validation (and override an error message with the value of the `title` attribute)
 * `<ol>` tag will support `start` and `reversed` attributes now
 * We made some changes to allow our components to be used natively in React
 * `ns-inputter` - `isPhoneNumber` validation will accept 10 digits as well going forward
@@ -52,7 +52,8 @@ Release date - 2022/xx/xx
 * `ns-password` - you can now customise the copy for the labels
 
 **Spacing technique ⇥ ⇤**
-This work is about improving our approach to spacing, and make it better suited for design tokens and multiple brands.
+
+***This work is about improving our approach to spacing, and make it better suited for design tokens and multiple brands.***
 
 * `ns-tab` - Spacing technique has been improved
 * `ns-pill` - Spacing technique has been improved
@@ -60,7 +61,7 @@ This work is about improving our approach to spacing, and make it better suited 
 * `ns-column` - Spacing technique has been improved
 * `ns-testimonial` - Spacing technique has been improved
 * `ns-fieldset` - Spacing technique has been improved
-* `ns-calendar - Spacing technique has been improved
+* `ns-calendar` - Spacing technique has been improved
 * `ns-panel` - Spacing technique has been improved
 * `ns-download` - Spacing technique has been improved
 * `ns-card` - Spacing technique has been improved
