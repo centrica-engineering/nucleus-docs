@@ -56,3 +56,8 @@ Ultimately, we recommend using our prototyping tool when designing journeys beca
 Instructions on how to obtain the library –  
 [Sketch Library - GitHub Wiki](https://github.com/ConnectedHomes/centrica-ux/wiki)
 
+
+### Our Figma library
+
+Our current Figma library is based on our Sketch library. Note that there are a few differences that make use of Figma's Autolayout functionality etc. This may evolve and change over the next release to further take advantage of things such as Component Variants properties etc. that will make the process of altering states and the like much slicker.
+Unlike the Sketch library, the Figma library is published through Figma instead of it being released on GitHub. It is currently in an early release phase, and not published on the British Gas Figma organisation. If you want access to it, please do get in touch on our [Teams channel](https://teams.microsoft.com/l/channel/19%3ac806c8b36aec4218ae469b1d0ff6a4c3%40thread.tacv2/General?groupId=1f9c2411-216b-42a8-9bb0-c51f28ff5071&tenantId=a603898f-7de2-45ba-b67d-d35fb519b2cf) should you want to use it so we can help you get set up.

@@ -14,6 +14,7 @@ description: How to work with the Nucleus Design System
 Depending on which stage of your design or discovery work you’re at, the Nucleus team has a growing body of reusable assets, tools, methods and knowledge that can help you create feasible design mock-ups and prototypes. We can help you visualise your ideas and would encourage you to:
 
 * Familiarise yourself with this documentation and [Storybook](https://library.britishgas.design/).
+* [Request access via our Teams channel](https://teams.microsoft.com/l/channel/19%3ac806c8b36aec4218ae469b1d0ff6a4c3%40thread.tacv2/General?groupId=1f9c2411-216b-42a8-9bb0-c51f28ff5071&tenantId=a603898f-7de2-45ba-b67d-d35fb519b2cf) to the published Figma Library if this is your preferred design tool.
 * Download the [Sketch library](https://github.com/ConnectedHomes/centrica-ux/releases).
 * Take a look at the [Nucleus Playground](https://playground.nucleus.design).
 * Or if you are familiar with GitHub, you can install the Prototyping Tool on your local machine, check out the [Nucleus Prototyping Tool repository](https://github.com/britishgas-engineering/nucleus-prototype)!
