@@ -15,6 +15,7 @@ Depending on which stage of your design or discovery work you’re at, the Nucle
 
 * Familiarise yourself with this documentation and [Storybook](https://library.britishgas.design/).
 * Download the [Sketch library](https://github.com/ConnectedHomes/centrica-ux/releases).
+* [Request access via our Teams channel](https://teams.microsoft.com/l/channel/19%3ac806c8b36aec4218ae469b1d0ff6a4c3%40thread.tacv2/General?groupId=1f9c2411-216b-42a8-9bb0-c51f28ff5071&tenantId=a603898f-7de2-45ba-b67d-d35fb519b2cf) to the published Figma Library if this is your preferred design tool.
 * Take a look at the [Nucleus Playground](https://playground.nucleus.design).
 * Or if you are familiar with GitHub, you can install the Prototyping Tool on your local machine, check out the [Nucleus Prototyping Tool repository](https://github.com/britishgas-engineering/nucleus-prototype)!
 * Work with the Nucleus team on exploring the feasibility of your concepts and ideas.
