@@ -31,7 +31,15 @@ Whether you are a designer, a software engineer, a tester, a solutions architect
 Everyone plays a part in creating a coherent, consistent and engaging customer experience.
 We worked with product teams to set up a contribution flow that makes sure a contribution ticks all the boxes to get added to the system.
 
-Here is a visualisation of what to expect along the ride.
+### Is your idea a candidate for a contribution into the system?
+
+The simple answer is that if your idea is: 
+- [x] re-usable by another team/journey than yours
+- [x] a solution to a new problem or an extension on an existing solution
+
+... chances are your idea would be a great contribution!
+
+The chart below will help you what to do: 
 
 ```mermaid
 flowchart TB
@@ -46,6 +54,12 @@ flowchart TB
     G -->|No| J>Build your solution using the Nucleus foundation and elements]
     H -->|yes| I(((Create your proposal)))
 ```
+
+### First step: creating a proposal
+
+
+
+
 
 
 
