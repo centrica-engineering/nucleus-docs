@@ -5,23 +5,49 @@ description: Welcoming each and everyone to the Nucleus Design System.
 
 > Our design system is a living organism, one that reflects and evolves with our collective learning.
 
+
+
 ## Contributing
 
-The Nucleus team is responsible for driving the growth and adoption of the design system. We have a roadmap and priorities to meet, one of these priorities is to be there to support you in adopting Nucleus.
+The Nucleus team is looking after the system, making sure all of its parts work in a symbiotic way. Contributions can be made at every level, by anyone who has an idea on how to take it further. Whether it is a component, a pattern, a change to the documentation, the prototyping tool, every part of the system is open to contributions.
+
+### What is a contribution?
+
+- A contribution adds value to the system.
+- A contribution can be something new or an improvement on an existing part of the system.
+- A contribution is re-usable.
+- A contribution is inclusive and accessible.
+- A contribution is documented.
+
+### Who can contribute?
+
+Everyone.
+
+Whether you are a designer, a software engineer, a tester, a solutions architect, a product owner, or a director: everyone is invited to advance Nucleus.
+
 
 ## What to expect?
 
 Everyone plays a part in creating a coherent, consistent and engaging customer experience.
+We worked with product teams to set up a contribution flow that makes sure a contribution ticks all the boxes to get added to the system.
 
-To help do this, we want to ensure we provide everyone with helpful and relevant resources. If you would like to contribute to Nucleus please reach out to one of our team.
+Here is a visualisation of what to expect along the ride.
 
-Whether it's using the resources and documentation provided by Nucleus or contributing to them, it's your turn now.
+```mermaid
+flowchart TB
+    A[You need a component or feature] --> B([Does the component or feature exist in Nucleus?])
+    B -->|Yes| C([Does it meet your needs?])
+    B -->|No| G([Is your proposal re-usable across user journeys?])
+    C -->|Yes| D{{Great! Use the existing component!}}
+    B -->|Yes| E([Can the component be extended to meet your needs?])
+    E -->|Yes| G
+    E -->|No| F([Propose an improvement to an existing component]) -->
+    G --> H{{Congratulations, your proposal seems to be a great candidate!}}
+    G -->|No| J>Build your solution using the Nucleus foundation and elements]
+    H -->|yes| I(((Create your proposal)))
+```
 
-### Who can contribute?
 
-Everyone. Whether you are a designer, a software engineer, a tester, a solutions architect, a product owner, or a director: everyone is invited to advance Nucleus.
-
-To get started, visit [Working with Nucleus](getting-started/working-with-nucleus.md).
 
 ### Insights on existing Nucleus assets
 
