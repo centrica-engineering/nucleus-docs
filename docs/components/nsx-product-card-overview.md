@@ -23,7 +23,7 @@ When `excess` property of the overview component is set with an array of price o
 #### Usage
 
 ```markup
-<nsx-product-card-overview excess="[60,0]" pricing='[{"monthly": 1200,"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
+<nsx-product-card-overview excess="[60,0]" pricing='[{"monthly": {"now": 1200},"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
 ```
 
 ![Experience pattern - Product Card Overview with Excess](https://user-images.githubusercontent.com/78729952/110317836-943a3800-8004-11eb-85e8-437f8d4edb16.png)
@@ -32,15 +32,25 @@ When `excess` property of the overview component is set with an array of price o
 
 #### Usage
 ```markup
-<nsx-product-card-overview pricing='[{"monthly": 1200,"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
+<nsx-product-card-overview pricing='[{"monthly": {"now": 1200},"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
 ```
 ![Experience pattern - Product Card Overview](https://user-images.githubusercontent.com/78729952/110448202-e177e180-80b8-11eb-8a02-6c40db07a9ba.png)
+
+### Was / Now Pricing
+To display the price offer of a product in the overview component, `was / now` option in `monthly` pricing can be used to display the original and current price. The `was` price is displayed with `Was` prefix and a strikethrough in the price. The `now` price is displayed with `Now` prefix, when accompanied with `was` price. The `was` price is optional whereas `now` price is mandatory. `was / now` option can be used with / without Excess pricing.
+
+#### Usage
+```markup
+<nsx-product-card-overview pricing='[{"monthly": {"was": 1200,"now": 1000},"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
+```
+
+![Experience pattern - Product Card Overview](https://user-images.githubusercontent.com/78729952/173387001-3eb8c9a0-ba43-45c2-aa41-465158c86efd.png)
 
 ## Specification
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :------ |
-| `pricing` | `array` | `[]` | `required` | The list of price values to be updated in the product card price slots |
+| `pricing` | `array` | `[]` | `required` | The list of price values to be updated in the product card price slots. Each product card price has `monthly`, `annually` and `excess` values. `monthly` price holds  `was` and `now` price. `was` price represents the original price and `now` price represents the current price of the product. |
 | `excess` | `array` | `[]` | `optional` | The list of excess prices that will be displayed as radio options to the user for excess selection|
 | `priceheading` | `string` | `Estimated Price` | `optional` | The product card price heading prefix used to display in product card price heading slot along with excess value if any|
 
