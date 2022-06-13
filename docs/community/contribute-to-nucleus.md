@@ -14,7 +14,7 @@ The Nucleus team is looking after the system, making sure all of its parts work 
 ### What is a contribution?
 
 - A contribution adds value to the system.
-- A contribution can be something new or an improvement on an existing part of the system.
+- A contribution can be something new, an improvement on an existing part of the system, or a bug fix.
 - A contribution is re-usable.
 - A contribution is inclusive and accessible.
 - A contribution is documented.
@@ -58,16 +58,54 @@ flowchart TB
 ### First step: creating a proposal
 
 
+If what you have in mind is not currently offered by Nucleus, it's re-usable by multiple teams or user journeys, it's solving a problem that can't be solved currently, then you have proposal material! 
+
+Before raising your proposal, it's worth checking [on the proposal board](https://github.com/ConnectedHomes/nucleus/projects/6) that there isn't already someone trying to get a similar idea contributed.
+
+If nothing similar has been raised, then go ahead and [create your proposal](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request).
+
+Make sure you give as many details as possible and answer the questions on the ticket template, these will help us understand what you're proposing and make sure it checks all the boxes to go forward.
+
+### Collaborate
+
+As your proposal is for something that has reusability potential, it's time to involve those teams that may have an interest in it. Reach out to your colleagues see if they may have requirements that will help them use your contribution once it's available. 
+
+Bring your proposal to the Drop-in Clinique, it's a great way to get feedback and interest from others! 
+
+Remember that **you are the main sponsor of your proposal**, but we're there to support you if you need us.
+
+### Contribute
+
+You're ready to start working on your contribution!
+
+- Add any user research into the proposal ticket by commenting on it: user analytics, usability testing, A/B testing, etc...
+- Share your final designs with the wider design team, and the Nucleus team for feedback;
+- Start building your contribution with your product engineer;
+- Start putting a documentation for your contribution (adding to an existing doc, or creating a new one, we can help with that);
+- Once it's ready to be reviewed by the Nucleus team, share the pull request with us so we can see if it's built following Nucleus coding standards for components. 
+
+A contribution is usually made of: 
+- [x] a design for a component/variant/feature that can be added to the design libraries (Sketch/Figma)
+- [x] a built component/variant/feature that can be added to our component library
+- [x] unit test for the component
+- [x] automated testing scenarios
+
+The best way is that you and your team own as much of the above as possible, but we can support on any of them if you need us.
+
+Once everything looks good to go, your contribution can be part of the next release and will be available to everyone using Nucleus! 
+
+Well done!
 
 
 
 
+▼▼▼ older content of the contribution page ▼▼▼
 
 ### Insights on existing Nucleus assets
 
 For any feedback related to our Nucleus components and related documentation, we're using Github. This helps us provide a transparent track of all contributions and potential issues.
 
-1. You can view our [requests status](https://github.com/ConnectedHomes/nucleus/projects/6).
+1. You can view our [proposals status](https://github.com/ConnectedHomes/nucleus/projects/6).
 2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-COMPONENT]), add a new [change request (RFC)](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request), as well as react or comment on existing feedback.
 3. We've prepared a template to structure incoming feedback, gather relevant insights, and help us respond accordingly.
 4. If and once an issue is picked up, we'll ask to meet you to swap ideas and listen to your insights or make use of weekly design critique sessions.
