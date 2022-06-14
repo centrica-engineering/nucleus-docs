@@ -5,6 +5,9 @@ description: Welcoming each and everyone to the Nucleus Design System.
 
 > Our design system is a living organism, one that reflects and evolves with our collective learning.
 
+Now that we have a mature system that is utilised across the entire British Gas website, we need to make sure that any changes to the system add value to our customers and also to all the teams that use Nucleus.
+
+Because of this we may ask for you to to show a more detailed use case, analytics or testing that proves it will add value. This is to make sure that the whole community has a clear understanding of why a change has been made.
 
 
 ## Contributing
