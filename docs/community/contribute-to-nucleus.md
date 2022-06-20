@@ -87,7 +87,7 @@ You're ready to start working on your contribution!
 - Start building documentation for your contribution (adding to an existing doc or creating a new one –  we can help with that).
 - Once it's ready to be reviewed by the Nucleus team, share the pull request with us so we can see if it's built following Nucleus coding standards for components. 
 
-A contribution is usually made of: 
+A contribution usually comprises: 
 - [x] a design for a component/variant/feature that can be added to the design libraries (Sketch/Figma)
 - [x] a built component/variant/feature that can be added to our component library
 - [x] unit test for the component
