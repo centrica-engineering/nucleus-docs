@@ -40,7 +40,7 @@ The simple answer is that if your idea is:
 - [x] re-usable by another team/journey than yours
 - [x] a solution to a new problem or an extension of an existing solution
 
-... chances are your idea would be a great contribution!
+...the chances are your idea would be a great contribution!
 
 The chart below will help you what to do: 
 
