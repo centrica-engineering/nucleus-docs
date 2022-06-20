@@ -67,7 +67,7 @@ Before raising your proposal, it's worth checking [on the proposal board](https:
 
 If nothing similar has been raised, then go ahead and [create your proposal](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request).
 
-Make sure you give as many details as possible and answer the questions on the ticket template, these will help us understand what you're proposing and make sure it checks all the boxes to go forward.
+Make sure you give as many details as possible and answer the questions on the ticket template. These will help us understand what you're proposing and make sure it checks all the boxes to go forward.
 
 ### Collaborate
 
