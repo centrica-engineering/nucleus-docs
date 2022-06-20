@@ -63,7 +63,7 @@ flowchart TB
 
 If what you have in mind is not currently offered by Nucleus, it's re-usable by multiple teams or user journeys, it's solving a problem that can't be solved currently, then you have proposal material! 
 
-Before raising your proposal, it's worth checking [on the proposal board](https://github.com/ConnectedHomes/nucleus/projects/6) that there isn't already someone trying to get a similar idea contributed.
+Before raising your proposal, it's worth checking [on the proposal board](https://github.com/ConnectedHomes/nucleus/projects/6) that there isn't someone already trying to contribute a similar idea.
 
 If nothing similar has been raised, then go ahead and [create your proposal](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request).
 
