@@ -89,7 +89,7 @@ You're ready to start working on your contribution!
 
 A contribution usually comprises: 
 - [x] a design for a component/variant/feature that can be added to the design libraries (Sketch/Figma)
-- [x] a built component/variant/feature that can be added to our component library
+- [x] A built component/variant/feature that can be added to our component library.
 - [x] unit test for the component
 - [x] automated testing scenarios
 
