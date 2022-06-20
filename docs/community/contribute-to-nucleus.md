@@ -93,7 +93,7 @@ A contribution usually comprises:
 - [x] Unit test for the component.
 - [x] Automated testing scenarios.
 
-The best way is that you and your team own as much of the above as possible, but we can support on any of them if you need us.
+The best way is that you and your team own as much of the above as possible, but we can support you on anything if you need us to.
 
 Once everything looks good to go, your contribution can be part of the next release and will be available to everyone using Nucleus! 
 
