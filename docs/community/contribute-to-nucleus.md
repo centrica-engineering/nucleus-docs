@@ -81,7 +81,7 @@ Remember that **you are the main sponsor of your proposal**, but we're there to 
 
 You're ready to start working on your contribution!
 
-- Add any user research into the proposal ticket by commenting on it: user analytics, usability testing, A/B testing, etc...
+- Add any user research into the proposal ticket by commenting on it: user analytics, usability testing, A/B testing, etc.
 - Share your final designs with the wider design team, and the Nucleus team for feedback;
 - Start building your contribution with your product engineer;
 - Start putting a documentation for your contribution (adding to an existing doc, or creating a new one, we can help with that);
