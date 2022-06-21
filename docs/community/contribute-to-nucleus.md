@@ -68,11 +68,10 @@ Before raising your proposal, it's worth checking [on the proposal board](https:
 If nothing similar has been raised, then go ahead and [create your proposal](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request).
 
 Make sure you give as many details as possible and answer the questions on the ticket template. These will help us understand what you're proposing and make sure it checks all the boxes to go forward.
-<<<<<<< Updated upstream
-=======
+
 
 If you need help answering some of the questions, reach out to the team on our channels. We'll be more than happy to help!
->>>>>>> Stashed changes
+
 
 ### Collaborate
 
@@ -92,32 +91,16 @@ You're ready to start working on your contribution!
 - Start building documentation for your contribution (adding to an existing doc or creating a new one –  we can help with that).
 - Once it's ready to be reviewed by the Nucleus team, share the pull request with us so we can see if it's built following Nucleus coding standards for components. 
 
-<<<<<<< Updated upstream
+
 A contribution usually comprises: 
 - [x] A design for a component/variant/feature that can be added to the design libraries (Sketch/Figma).
 - [x] A built component/variant/feature that can be added to our component library.
 - [x] Unit test for the component.
 - [x] Automated testing scenarios.
 
-=======
-<<<<<<< HEAD
-A contribution outcome is usually made of: 
-- [x] a design for a component/variant/feature that can be added to the design libraries (Sketch/Figma)
-- [x] a built component/variant/feature that can be added to our component library
-- [x] unit test for the component
-- [x] automated testing scenarios
 
-=======
-A contribution usually comprises: 
-- [x] A design for a component/variant/feature that can be added to the design libraries (Sketch/Figma).
-- [x] A built component/variant/feature that can be added to our component library.
-- [x] Unit test for the component.
-- [x] Automated testing scenarios.
-
->>>>>>> Stashed changes
 The best way is that you and your team own as much of the above as possible, but we can support you on anything if you need us to.
 
->>>>>>> e2945cccb452dda351829a1c1b1d09ab9fbc3061
 Once everything looks good to go, your contribution can be part of the next release and will be available to everyone using Nucleus! 
 
 And that's how a contribution is done!
