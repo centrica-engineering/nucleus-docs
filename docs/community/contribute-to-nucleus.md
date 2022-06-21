@@ -68,6 +68,11 @@ Before raising your proposal, it's worth checking [on the proposal board](https:
 If nothing similar has been raised, then go ahead and [create your proposal](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request).
 
 Make sure you give as many details as possible and answer the questions on the ticket template. These will help us understand what you're proposing and make sure it checks all the boxes to go forward.
+<<<<<<< Updated upstream
+=======
+
+If you need help answering some of the questions, reach out to the team on our channels. We'll be more than happy to help!
+>>>>>>> Stashed changes
 
 ### Collaborate
 
@@ -87,31 +92,57 @@ You're ready to start working on your contribution!
 - Start building documentation for your contribution (adding to an existing doc or creating a new one –  we can help with that).
 - Once it's ready to be reviewed by the Nucleus team, share the pull request with us so we can see if it's built following Nucleus coding standards for components. 
 
+<<<<<<< Updated upstream
 A contribution usually comprises: 
 - [x] A design for a component/variant/feature that can be added to the design libraries (Sketch/Figma).
 - [x] A built component/variant/feature that can be added to our component library.
 - [x] Unit test for the component.
 - [x] Automated testing scenarios.
 
+=======
+<<<<<<< HEAD
+A contribution outcome is usually made of: 
+- [x] a design for a component/variant/feature that can be added to the design libraries (Sketch/Figma)
+- [x] a built component/variant/feature that can be added to our component library
+- [x] unit test for the component
+- [x] automated testing scenarios
+
+=======
+A contribution usually comprises: 
+- [x] A design for a component/variant/feature that can be added to the design libraries (Sketch/Figma).
+- [x] A built component/variant/feature that can be added to our component library.
+- [x] Unit test for the component.
+- [x] Automated testing scenarios.
+
+>>>>>>> Stashed changes
 The best way is that you and your team own as much of the above as possible, but we can support you on anything if you need us to.
 
+>>>>>>> e2945cccb452dda351829a1c1b1d09ab9fbc3061
 Once everything looks good to go, your contribution can be part of the next release and will be available to everyone using Nucleus! 
 
-Well done!
+And that's how a contribution is done!
 
 
+### How to make the best contributions
+
+Here are a few tips and tricks on how to make things as fast as possible: 
+
+- The best and quickest way is for you and your team to own as much of the work as possible: this way you do not depend on the availability of any other team to pick up the work. But do not worry, we can support you along the way if you need us.
+- Check that there isn't a proposal for the piece of work you have in mind already. You can find all the proposals [on the kanban board](https://github.com/ConnectedHomes/nucleus/projects/6) and see their status.
+- Share your design ideas as early and as often as possible with the community. You can do that on our Teams channels, or in the drop-in clinique sessions. This will help refining your design to make sure it works for the wider community.
+- If you are designing an improvement to a component, make sure you are using the existing version first if it can do the job. That will give you a control version and benchmark to test your design and see if it adds value by improving the experience/key metrics.
+- The proposer is the driver: if you propose a change or an addition to the system, you are the one who will be championing it.
+- We are customer centred, and every contribution should add customer value and improve their experience. Try to apply the customer lense on everything you contribute.
 
 
-▼▼▼ older content of the contribution page ▼▼▼
-
-### Insights on existing Nucleus assets
+### Insights on existing Nucleus work
 
 For any feedback related to our Nucleus components and related documentation, we're using Github. This helps us provide a transparent track of all contributions and potential issues.
 
 1. You can view our [proposals status](https://github.com/ConnectedHomes/nucleus/projects/6).
 2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-COMPONENT]), add a new [change request (RFC)](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request), as well as react or comment on existing feedback.
-3. We've prepared a template to structure incoming feedback, gather relevant insights, and help us respond accordingly.
-4. If and once an issue is picked up, we'll ask to meet you to swap ideas and listen to your insights or make use of weekly design critique sessions.
+
+
 
 ### Suggestions for new Nucleus assets
 
@@ -125,7 +156,7 @@ To understand how the Nucleus team works, visit [Our Process](getting-started/ou
 
 ### Feedback on anything related to Nucleus
 
-Reach us on Slack, via `#product-nucleus`. If there's anything on your mind.
+Reach us on [our Teams channels](https://teams.microsoft.com/l/team/19%3ac806c8b36aec4218ae469b1d0ff6a4c3%40thread.tacv2/conversations?groupId=1f9c2411-216b-42a8-9bb0-c51f28ff5071&tenantId=a603898f-7de2-45ba-b67d-d35fb519b2cf), if there's anything on your mind.
 
 ### Events and updates
 
