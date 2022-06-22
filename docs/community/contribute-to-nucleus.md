@@ -44,8 +44,8 @@ The simple answer is that if your idea is:
 
 The chart below will help you what to do: 
 
-<img width="1222" alt="image" src="https://user-images.githubusercontent.com/7914977/174999247-aa2e7367-f0c8-43bb-8945-226e5cfe9561.png">
 
+![Proposal flowchart](https://user-images.githubusercontent.com/7914977/174999247-aa2e7367-f0c8-43bb-8945-226e5cfe9561.png "Proposal flowchart")
 
 ### First step: creating a proposal
 
@@ -134,6 +134,6 @@ Reach us on [our Teams channels](https://teams.microsoft.com/l/team/19%3ac806c8b
 
 We know we don't have all the right answers, that's why we want to work with you in person, as well as connect you to other teams dealing with similar issues.
 
--  We help to host and facilitate sessions and workshops focused on our current tasks as we go along. If you'd like us to help organise or be involved in something you're doing, do let us know.
--  Just like other product teams, we're participating in weekly and monthly cross-team ceremonies.
+* We help to host and facilitate sessions and workshops focused on our current tasks as we go along. If you'd like us to help organise or be involved in something you're doing, do let us know.
+* Just like other product teams, we're participating in weekly and monthly cross-team ceremonies.
 
