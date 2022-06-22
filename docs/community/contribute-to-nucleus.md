@@ -44,19 +44,8 @@ The simple answer is that if your idea is:
 
 The chart below will help you what to do: 
 
-```mermaid
-flowchart TB
-    A[You need a component or feature] --> B([Does the component or feature exist in Nucleus?])
-    B -->|Yes| C([Does it meet your needs?])
-    B -->|No| G([Is your proposal re-usable across user journeys?])
-    C -->|Yes| D{{Great! Use the existing component!}}
-    B -->|Yes| E([Can the component be extended to meet your needs?])
-    E -->|Yes| G
-    E -->|No| F([Propose an improvement to an existing component]) -->
-    G --> H{{Congratulations, your proposal seems to be a great candidate!}}
-    G -->|No| J>Build your solution using the Nucleus foundation and elements]
-    H -->|yes| I(((Create your proposal)))
-```
+<img width="1222" alt="image" src="https://user-images.githubusercontent.com/7914977/174999247-aa2e7367-f0c8-43bb-8945-226e5cfe9561.png">
+
 
 ### First step: creating a proposal
 
