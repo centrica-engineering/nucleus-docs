@@ -18,7 +18,7 @@ The Nucleus team is looking after the system, making sure all of its parts work 
 
 - A contribution adds value to the system.
 - A contribution can be something new, an improvement on an existing part of the system, or a bug fix.
-- A contribution is re-usable.
+- A contribution is reusable.
 - A contribution is inclusive and accessible.
 - A contribution is documented.
 
@@ -26,23 +26,23 @@ The Nucleus team is looking after the system, making sure all of its parts work 
 
 Everyone.
 
-Whether you are a designer, a software engineer, a tester, a solutions architect, a product owner, or a director: everyone is invited to advance Nucleus.
+Whether you are a designer, a software engineer, a tester, a solutions architect, a product owner or a director – everyone is invited to advance Nucleus.
 
 
 ## What to expect?
 
 Everyone plays a part in creating a coherent, consistent and engaging customer experience.
-We worked with product teams to set up a contribution flow that makes sure a contribution ticks all the boxes to get added to the system.
+We worked with product teams to set up a contribution flow to ensure a contribution ticks all the boxes and gets added to the system.
 
 ### Is your idea a candidate for a contribution into the system?
 
-The simple answer is that if your idea is: 
-- [x] re-usable by another team/journey than yours
+The simple answer is that if your idea is...
+- [x] reusable by a team/journey other than yours
 - [x] a solution to a new problem or an extension of an existing solution
 
 ...the chances are your idea would be a great contribution!
 
-The chart below will help you what to do: 
+The chart below will help you decide what to do: 
 
 
 ![Proposal flowchart](https://user-images.githubusercontent.com/7914977/174999247-aa2e7367-f0c8-43bb-8945-226e5cfe9561.png "Proposal flowchart")
@@ -50,7 +50,7 @@ The chart below will help you what to do:
 ### First step: creating a proposal
 
 
-If what you have in mind is not currently offered by Nucleus, it's re-usable by multiple teams or user journeys, it's solving a problem that can't be solved currently, then you have proposal material! 
+If what you have in mind is not currently offered by Nucleus, it's reusable by multiple teams or user journeys, it's solving a problem that can't be solved currently, then you have proposal material! 
 
 Before raising your proposal, it's worth checking [on the proposal board](https://github.com/ConnectedHomes/nucleus/projects/6) that there isn't someone already trying to contribute a similar idea.
 
@@ -74,7 +74,7 @@ Remember that **you are the main sponsor of your proposal**, but we're there to 
 
 You're ready to start working on your contribution!
 
-- Add any user research into the proposal ticket by commenting on it: user analytics, usability testing, A/B testing, etc.
+- Add any user research into the proposal ticket by commenting on it with user analytics, usability testing, A/B testing, etc.
 - Share your final designs with the wider design team, and the Nucleus team for feedback.
 - Start building your contribution with your product engineer.
 - Start building documentation for your contribution (adding to an existing doc or creating a new one –  we can help with that).
@@ -99,17 +99,17 @@ And that's how a contribution is done!
 
 Here are a few tips and tricks on how to make things as fast as possible: 
 
-- The best and quickest way is for you and your team to own as much of the work as possible: this way you do not depend on the availability of any other team to pick up the work. But do not worry, we can support you along the way if you need us.
+- The best and quickest way is for you and your team to own as much of the work as possible. This way you do not depend on the availability of any other team to pick up the work. But do not worry, we can support you along the way if you need us.
 - Check that there isn't a proposal for the piece of work you have in mind already. You can find all the proposals [on the kanban board](https://github.com/ConnectedHomes/nucleus/projects/6) and see their status.
-- Share your design ideas as early and as often as possible with the community. You can do that on our Teams channels, or in the drop-in clinique sessions. This will help refining your design to make sure it works for the wider community.
-- If you are designing an improvement to a component, make sure you are using the existing version first if it can do the job. That will give you a control version and benchmark to test your design and see if it adds value by improving the experience/key metrics.
-- The proposer is the driver: if you propose a change or an addition to the system, you are the one who will be championing it.
-- We are customer centred, and every contribution should add customer value and improve their experience. Try to apply the customer lense on everything you contribute.
+- Share your design ideas as early and as often as possible with the community. You can do that on our Teams channels, or in the Drop-in Clinique sessions. This will help refine your design to make sure it works for the wider community.
+- If you are designing an improvement to a component, make sure you are using the existing version first if it can do the job. That will give you a control version and benchmark to test your design against and see if it adds value by improving the experience/key metrics.
+- The proposer is the driver. If you propose a change or an addition to the system, you are the one who will be championing it.
+- We are customer centred, and every contribution should add customer value and improve their experience. Try to apply the 'customer lens' to everything you contribute.
 
 
 ### Insights on existing Nucleus work
 
-For any feedback related to our Nucleus components and related documentation, we're using Github. This helps us provide a transparent track of all contributions and potential issues.
+For any feedback related to our Nucleus components and related documentation, we're using Github. It helps us provide a transparent track of all contributions and potential issues.
 
 1. You can view our [proposals status](https://github.com/ConnectedHomes/nucleus/projects/6).
 2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-COMPONENT]), add a new [change request (RFC)](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request), as well as react or comment on existing feedback.
