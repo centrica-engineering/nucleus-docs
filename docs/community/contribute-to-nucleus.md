@@ -5,52 +5,64 @@ description: Welcoming each and everyone to the Nucleus Design System.
 
 > Our design system is a living organism, one that reflects and evolves with our collective learning.
 
-Now that we have a mature system that is utilised across the entire British Gas website, we need to make sure that any changes to the system add value to our customers and also to all the teams that use Nucleus.
+Nucleus is a mature design system and has been utilised across the entire British Gas website.
 
-Because of this we may ask for you to to show a more detailed use case, analytics or testing that proves it will add value. This is to make sure that the whole community has a clear understanding of why a change has been made.
-
+Any changes to Nucleus are expected to add value for British Gas customers and to all the teams that use Nucleus.
 
 ## Contributing
 
-The Nucleus team is looking after the system, making sure all of its parts work in a symbiotic way. Contributions can be made at every level, by anyone who has an idea on how to take it further. Whether it is a component, a pattern, a change to the documentation, the prototyping tool, every part of the system is open to contributions.
+In order to maintain our high standards we rely on details. These details will often be focussed on evidence. This evidence could come from analytics or observations during user testing, anything that identifies a problem and with the outcome of adding value.
+
+We ask for this evidence to ensure that the whole community has a clear understanding of why a change has been made.
+
+## Responsibilities
+
+The Nucleus team are guardians of Nucleus, making sure all of its parts work symbiotically.
+
+Contributions can be made at all levels. Anyone who has found a problem that could be solved.
 
 ### What is a contribution?
 
-- A contribution adds value to the system.
-- A contribution can be something new, an improvement on an existing part of the system, or a bug fix.
-- A contribution is reusable.
-- A contribution is inclusive and accessible.
-- A contribution is documented.
+It starts with identifying a problem. Whether it's a problem with an existing component or pattern, or an improvement to the documentation. Maybe a pain-point with the prototyping tool. Every part of Nucleus is open to contributions.
+
+A contribution:
+
+- adds value
+- can be something new, an improvement or a bug fix
+- is reusable
+- is inclusive and accessible
+- is documented
 
 ### Who can contribute?
 
 Everyone.
 
-Whether you are a designer, a software engineer, a tester, a solutions architect, a product owner or a director – everyone is invited to advance Nucleus.
-
+Whether you are a Designer, a Software Engineer, a Tester, a Solutions Architect, a Product Owner or a Director. Everyone is invited to contribute to Nucleus.
 
 ## What to expect?
 
-Everyone plays a part in creating a coherent, consistent and engaging customer experience.
-We worked with product teams to set up a contribution flow to ensure a contribution ticks all the boxes and gets added to the system.
+We all play our part in producing a coherent, consistent and engaging customer experience.
 
-### Is your idea a candidate for a contribution into the system?
+Over time, the community has established a contribution flow to ensure any contribution meets the standards of Nucleus.
 
-The simple answer is that if your idea is...
+### Have you identified a problem?
+
+If you have, please share the problem with the community. Asking if anyone else is aware of the same or similar problem.
+
+You'll be surprised how many problems exist that are constantly overlooked and ignored, so any problem, no matter how big or small has the potential to add value.
+
 - [x] reusable by a team/journey other than yours
 - [x] a solution to a new problem or an extension of an existing solution
 
 ...the chances are your idea would be a great contribution!
 
-The chart below will help you decide what to do: 
-
+The chart below will help you decide what to do:
 
 ![Proposal flowchart](https://user-images.githubusercontent.com/7914977/174999247-aa2e7367-f0c8-43bb-8945-226e5cfe9561.png "Proposal flowchart")
 
 ### First step: creating a proposal
 
-
-If what you have in mind is not currently offered by Nucleus, it's reusable by multiple teams or user journeys, it's solving a problem that can't be solved currently, then you have proposal material! 
+If what you have in mind is not currently offered by Nucleus, it's reusable by multiple teams or user journeys, it's solving a problem that can't be solved currently, then you have proposal material!
 
 Before raising your proposal, it's worth checking [on the proposal board](https://github.com/ConnectedHomes/nucleus/projects/6) that there isn't someone already trying to contribute a similar idea.
 
@@ -58,15 +70,13 @@ If nothing similar has been raised, then go ahead and [create your proposal](htt
 
 Make sure you give as many details as possible and answer the questions on the ticket template. These will help us understand what you're proposing and make sure it checks all the boxes to go forward.
 
-
 If you need help answering some of the questions, reach out to the team on our channels. We'll be more than happy to help!
-
 
 ### Collaborate
 
-As your proposal is for something that has reusability potential, it's time to involve those teams that may have an interest in it. Reach out to your colleagues see if they may have requirements that will help them use your contribution once it's available. 
+As your proposal is for something that has reusability potential, it's time to involve those teams that may have an interest in it. Reach out to your colleagues see if they may have requirements that will help them use your contribution once it's available.
 
-Bring your proposal to the Drop-in Clinique, it's a great way to get feedback and interest from others! 
+Bring your proposal to the Drop-in Clinique, it's a great way to get feedback and interest from others!
 
 Remember that **you are the main sponsor of your proposal**, but we're there to support you if you need us.
 
@@ -77,35 +87,32 @@ You're ready to start working on your contribution!
 - Add any user research into the proposal ticket by commenting on it with user analytics, usability testing, A/B testing, etc.
 - Share your final designs with the wider design team, and the Nucleus team for feedback.
 - Start building your contribution with your product engineer.
-- Start building documentation for your contribution (adding to an existing doc or creating a new one –  we can help with that).
-- Once it's ready to be reviewed by the Nucleus team, share the pull request with us so we can see if it's built following Nucleus coding standards for components. 
+- Start building documentation for your contribution (adding to an existing doc or creating a new one – we can help with that).
+- Once it's ready to be reviewed by the Nucleus team, share the pull request with us so we can see if it's built following Nucleus coding standards for components.
 
+A contribution usually comprises:
 
-A contribution usually comprises: 
 - [x] A design for a component/variant/feature that can be added to the design libraries (Sketch/Figma).
 - [x] A built component/variant/feature that can be added to our component library.
 - [x] Unit test for the component.
 - [x] Automated testing scenarios.
 
-
 The best way is that you and your team own as much of the above as possible, but we can support you on anything if you need us to.
 
-Once everything looks good to go, your contribution can be part of the next release and will be available to everyone using Nucleus! 
+Once everything looks good to go, your contribution can be part of the next release and will be available to everyone using Nucleus!
 
 And that's how a contribution is done!
 
-
 ### How to make the best contributions
 
-Here are a few tips and tricks on how to make things as fast as possible: 
+Here are a few tips and tricks on how to make things as fast as possible:
 
 - The best and quickest way is for you and your team to own as much of the work as possible. This way you do not depend on the availability of any other team to pick up the work. But do not worry, we can support you along the way if you need us.
 - Check that there isn't a proposal for the piece of work you have in mind already. You can find all the proposals [on the kanban board](https://github.com/ConnectedHomes/nucleus/projects/6) and see their status.
 - Share your design ideas as early and as often as possible with the community. You can do that on our Teams channels, or in the Drop-in Clinique sessions. This will help refine your design to make sure it works for the wider community.
 - If you are designing an improvement to a component, make sure you are using the existing version first if it can do the job. That will give you a control version and benchmark to test your design against and see if it adds value by improving the experience/key metrics.
-- The proposer is the driver. If you propose a change or an addition to the system, you are the one who will be championing it.
+- The proposer is the driver. If you propose a change or an addition to Nucleus, you are the one who will be championing it.
 - We are customer centred, and every contribution should add customer value and improve their experience. Try to apply the 'customer lens' to everything you contribute.
-
 
 ### Insights on existing Nucleus work
 
@@ -113,8 +120,6 @@ For any feedback related to our Nucleus components and related documentation, we
 
 1. You can view our [proposals status](https://github.com/ConnectedHomes/nucleus/projects/6).
 2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-COMPONENT]), add a new [change request (RFC)](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request), as well as react or comment on existing feedback.
-
-
 
 ### Suggestions for new Nucleus assets
 
@@ -134,6 +139,5 @@ Reach us on [our Teams channels](https://teams.microsoft.com/l/team/19%3ac806c8b
 
 We know we don't have all the right answers, that's why we want to work with you in person, as well as connect you to other teams dealing with similar issues.
 
-* We help to host and facilitate sessions and workshops focused on our current tasks as we go along. If you'd like us to help organise or be involved in something you're doing, do let us know.
-* Just like other product teams, we're participating in weekly and monthly cross-team ceremonies.
-
+- We help to host and facilitate sessions and workshops focused on our current tasks as we go along. If you'd like us to help organise or be involved in something you're doing, do let us know.
+- Just like other product teams, we're participating in weekly and monthly cross-team ceremonies.
