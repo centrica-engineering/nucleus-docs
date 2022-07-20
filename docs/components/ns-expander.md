@@ -53,6 +53,10 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 | `heading` | `h tag`      |
 | anonymous | `ns-content` or html content  |
 
+| Event | Description |
+| :--- | :--- |
+| `expander-toggle` | Will be dispatched when expander is clicked to show/hide. |
+
 ## Specification notes
 
 ### Heading
