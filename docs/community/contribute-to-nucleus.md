@@ -66,7 +66,7 @@ If what you have in mind is not currently offered by Nucleus, it's reusable by m
 
 Before raising your proposal, it's worth checking [on the proposal board](https://github.com/ConnectedHomes/nucleus/projects/6) that there isn't someone already trying to contribute a similar idea.
 
-If nothing similar has been raised, then go ahead and [create your proposal](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request).
+If nothing similar has been raised, then go ahead and [create your proposal](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--proposal.md&title=[RFC]+Title+of+the+proposal).
 
 Make sure you give as many details as possible and answer the questions on the ticket template. These will help us understand what you're proposing and make sure it checks all the boxes to go forward.
 
@@ -119,7 +119,7 @@ Here are a few tips and tricks on how to make things as fast as possible:
 For any feedback related to our Nucleus components and related documentation, we're using Github. It helps us provide a transparent track of all contributions and potential issues.
 
 1. You can view our [proposals status](https://github.com/ConnectedHomes/nucleus/projects/6).
-2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-COMPONENT]), add a new [change request (RFC)](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request), as well as react or comment on existing feedback.
+2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-COMPONENT]), add a new [Proposal (RFC) request for comments](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--proposal.md&title=[RFC]+Title+of+the+proposal), as well as react or comment on existing feedback.
 
 ### Suggestions for new Nucleus assets
 

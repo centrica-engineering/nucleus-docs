@@ -13,29 +13,27 @@ By following this process we will find requirements and issues earlier, allowing
 
 ![Process timeline for changes to Nucleus](https://user-images.githubusercontent.com/7101754/78082493-0f35b000-73ab-11ea-81ed-97970477736d.jpg)
 
+## Proposal [RFC] (request for comments)
 
-## Request for change (RFC)
-
-This is where the gaps in the design system are identified. We encourage everyone to comment and contribute to an RFC, with enough community involvement a pattern will hopefully appear, we can then identify and articule the problem the team is interested in solving. 
+This is where the gaps in the design system are identified. We encourage everyone to comment and contribute to a proposal, with enough community involvement a pattern will hopefully appear, we can then identify and articulate the problem the team is interested in solving.
 
 If there is large community interest in the proposed change, or the change has complexities, workshops are an ideal way to bring stakeholders together. They can help identify priorities, provide the opportunity to deep dive into related problems, and share any relevant experience, research and business logic. 
 
-### Creating an RFC
+### Creating a proposal
 
-Any one of our stakeholders can create an RFC in our Github repository as an [RFC issue](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC%2C+draft&template=b--request-a-change.md&title=%5BRFC%5D+Title+of+the+request).
+Any one of our stakeholders can [create a proposal](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC%2C+draft&template=b--proposal.md&title=%5BRFC%5D+Title+of+the+request) in our Github repository.
 
-An RFC should be raised after all other possibilities have been explored using what is currently available in the design system.
-
+A proposal should be raised after all other possibilities have been explored using what is currently available in the design system.
 
 ## Discovery
 
-Once the problem has been identified, we begin research into a solution. We loosely outline the scope we will tackle. If the requested change is prioritised, then  it will be picked up by the team. We base our story tickets on deliverables, if multiple things are needed then multiple story tickets are to be created.
+Once the problem has been identified, we begin research into a solution. We loosely outline the scope we will tackle. If the proposal is prioritised, then it will be picked up by the team. We base our story tickets on deliverables, if multiple things are needed then multiple story tickets are to be created.
 
-### Testing
+### User testing
 
 As this stage testing plays a key part in discovery. Testing potential solutions can be done in a variety of ways:
 
-- A/B or multi-variant tests 
+- A/B or multi-variant tests
 - Remote or lab based usability testing
 - Guerrilla testing
 
@@ -47,7 +45,7 @@ Our [vanilla first approach](community/vanilla-first.md) will help understand wh
 
 ### Delivering the development spec and discovery
 
-The conclusion of the discovery is added to the story ticket and an initial development specification for the change is outlined. This update to the story ticket is to be announced in the RFC by the team to keep the open conversation going with the community.
+The conclusion of the discovery is added to the story ticket and an initial development specification for the change is outlined. This update to the story ticket is to be announced in the Proposal by the team to keep the open conversation going with the community.
 
 ## Design
 

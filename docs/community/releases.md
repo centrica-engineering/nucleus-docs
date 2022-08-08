@@ -1053,7 +1053,7 @@ Release date - 2019-12-11
 
 * The masked `ns-inputter`.
   * Don't be fooled by it's apparent simplicity, this is a **BIG** introduction to Nucleus.
-  * The outcome of everyone's hard work on the [Meter read RFC](https://github.com/ConnectedHomes/nucleus/issues/839).
+  * The outcome of everyone's hard work on the [Meter read proposal](https://github.com/ConnectedHomes/nucleus/issues/839).
   * With the power to assist data entry such as sort codes and reference numbers.
 * The Lakeside variant of our Landmark.
   * Used for conveying blocking messages e.g. 404 & 500, what we call Roadblock messages.
@@ -1097,7 +1097,7 @@ Release date - 2019-11-11
 
 **What’s new around here? 🐣**
 
-* We've simplified our [Request for change](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request) GitHub ticket template.
+* We've simplified our [Request for change](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--proposal.md&title=[RFC]+Title+of+the+proposal) GitHub ticket template.
 * We have included `ns-selector` in this release.
   * Enhanced radio button or checkbox group.
   * Include either an illustration or an image and additional content to support decision.
