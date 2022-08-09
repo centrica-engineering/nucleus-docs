@@ -21,7 +21,7 @@ Everyone. Whether you are a designer, a software engineer, a tester, a solutions
 For any feedback related to our Nucleus components and related documentation, we're using Github. This helps us provide a transparent track of all contributions and potential issues, as well as tie these into our own [backlog](https://github.com/ConnectedHomes/nucleus/milestone/18) reviews.
 
 1. You can view our [backlog](https://github.com/ConnectedHomes/nucleus/issues).
-2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-COMPONENT]), add a new [Proposal (RFC) request for comments](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--proposal.md&title=[RFC]+Title+of+the+proposal), as well as react or comment on existing feedback.
+2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-COMPONENT]), add a new [Proposal (RFC) request for comments](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--proposal.md&title=[RFC]+Title+of+the+Proposal), as well as react or comment on existing feedback.
 3. We've prepared a template to structure incoming feedback, gather relevant insights, and help us respond accordingly.
 4. If and once an issue is picked up, we'll ask to meet you to swap ideas and listen to your insights or make use of weekly design critique sessions.
 

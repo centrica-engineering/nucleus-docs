@@ -15,19 +15,19 @@ By following this process we will find requirements and issues earlier, allowing
 
 ## Proposal [RFC] (request for comments)
 
-This is where the gaps in the design system are identified. We encourage everyone to comment and contribute to a proposal, with enough community involvement a pattern will hopefully appear, we can then identify and articulate the problem the team is interested in solving.
+This is where the gaps in the design system are identified. We encourage everyone to comment and contribute to a Proposal, with enough community involvement a pattern will hopefully appear, we can then identify and articulate the problem the team is interested in solving.
 
 If there is large community interest in the proposed change, or the change has complexities, workshops are an ideal way to bring stakeholders together. They can help identify priorities, provide the opportunity to deep dive into related problems, and share any relevant experience, research and business logic. 
 
-### Creating a proposal
+### Creating a Proposal
 
-Any one of our stakeholders can [create a proposal](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC%2C+draft&template=b--proposal.md&title=%5BRFC%5D+Title+of+the+request) in our Github repository.
+Any one of our stakeholders can [create a Proposal](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC%2C+draft&template=b--proposal.md&title=%5BRFC%5D+Title+of+the+request) in our Github repository.
 
-A proposal should be raised after all other possibilities have been explored using what is currently available in the design system.
+A Proposal should be raised after all other possibilities have been explored using what is currently available in the design system.
 
 ## Discovery
 
-Once the problem has been identified, we begin research into a solution. We loosely outline the scope we will tackle. If the proposal is prioritised, then it will be picked up by the team. We base our story tickets on deliverables, if multiple things are needed then multiple story tickets are to be created.
+Once the problem has been identified, we begin research into a solution. We loosely outline the scope we will tackle. If the Proposal is prioritised, then it will be picked up by the team. We base our story tickets on deliverables, if multiple things are needed then multiple story tickets are to be created.
 
 ### User testing
 

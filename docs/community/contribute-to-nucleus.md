@@ -60,13 +60,13 @@ The chart below will help you decide what to do:
 
 ![Proposal flowchart](https://user-images.githubusercontent.com/7914977/174999247-aa2e7367-f0c8-43bb-8945-226e5cfe9561.png "Proposal flowchart")
 
-### First step: creating a proposal
+### First step: creating a Proposal
 
-If what you have in mind is not currently offered by Nucleus, it's reusable by multiple teams or user journeys, it's solving a problem that can't be solved currently, then you have proposal material!
+If what you have in mind is not currently offered by Nucleus, it's reusable by multiple teams or user journeys, it's solving a problem that can't be solved currently, then you have Proposal material!
 
-Before raising your proposal, it's worth checking [on the proposal board](https://github.com/ConnectedHomes/nucleus/projects/6) that there isn't someone already trying to contribute a similar idea.
+Before raising your Proposal, it's worth checking [on the Proposal board](https://github.com/ConnectedHomes/nucleus/projects/6) that there isn't someone already trying to contribute a similar idea.
 
-If nothing similar has been raised, then go ahead and [create your proposal](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--proposal.md&title=[RFC]+Title+of+the+proposal).
+If nothing similar has been raised, then go ahead and [create your Proposal](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--proposal.md&title=[RFC]+Title+of+the+Proposal).
 
 Make sure you give as many details as possible and answer the questions on the ticket template. These will help us understand what you're proposing and make sure it checks all the boxes to go forward.
 
@@ -74,17 +74,17 @@ If you need help answering some of the questions, reach out to the team on our c
 
 ### Collaborate
 
-As your proposal is for something that has reusability potential, it's time to involve those teams that may have an interest in it. Reach out to your colleagues see if they may have requirements that will help them use your contribution once it's available.
+As your Proposal is for something that has reusability potential, it's time to involve those teams that may have an interest in it. Reach out to your colleagues see if they may have requirements that will help them use your contribution once it's available.
 
-Bring your proposal to the Drop-in Clinique, it's a great way to get feedback and interest from others!
+Bring your Proposal to the Drop-in Clinique, it's a great way to get feedback and interest from others!
 
-Remember that **you are the main sponsor of your proposal**, but we're there to support you if you need us.
+Remember that **you are the main sponsor of your Proposal**, but we're there to support you if you need us.
 
 ### Contribute
 
 You're ready to start working on your contribution!
 
-- Add any user research into the proposal ticket by commenting on it with user analytics, usability testing, A/B testing, etc.
+- Add any user research into the Proposal ticket by commenting on it with user analytics, usability testing, A/B testing, etc.
 - Share your final designs with the wider design team, and the Nucleus team for feedback.
 - Start building your contribution with your product engineer.
 - Start building documentation for your contribution (adding to an existing doc or creating a new one – we can help with that).
@@ -108,7 +108,7 @@ And that's how a contribution is done!
 Here are a few tips and tricks on how to make things as fast as possible:
 
 - The best and quickest way is for you and your team to own as much of the work as possible. This way you do not depend on the availability of any other team to pick up the work. But do not worry, we can support you along the way if you need us.
-- Check that there isn't a proposal for the piece of work you have in mind already. You can find all the proposals [on the kanban board](https://github.com/ConnectedHomes/nucleus/projects/6) and see their status.
+- Check that there isn't a Proposal for the piece of work you have in mind already. You can find all the Proposals [on the kanban board](https://github.com/ConnectedHomes/nucleus/projects/6) and see their status.
 - Share your design ideas as early and as often as possible with the community. You can do that on our Teams channels, or in the Drop-in Clinique sessions. This will help refine your design to make sure it works for the wider community.
 - If you are designing an improvement to a component, make sure you are using the existing version first if it can do the job. That will give you a control version and benchmark to test your design against and see if it adds value by improving the experience/key metrics.
 - The proposer is the driver. If you propose a change or an addition to Nucleus, you are the one who will be championing it.
@@ -118,8 +118,8 @@ Here are a few tips and tricks on how to make things as fast as possible:
 
 For any feedback related to our Nucleus components and related documentation, we're using Github. It helps us provide a transparent track of all contributions and potential issues.
 
-1. You can view our [proposals status](https://github.com/ConnectedHomes/nucleus/projects/6).
-2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-COMPONENT]), add a new [Proposal (RFC) request for comments](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--proposal.md&title=[RFC]+Title+of+the+proposal), as well as react or comment on existing feedback.
+1. You can view our [Proposals status](https://github.com/ConnectedHomes/nucleus/projects/6).
+2. You can create [bug reports](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-COMPONENT]), add a new [Proposal (RFC) request for comments](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--proposal.md&title=[RFC]+Title+of+the+Proposal), as well as react or comment on existing feedback.
 
 ### Suggestions for new Nucleus assets
 

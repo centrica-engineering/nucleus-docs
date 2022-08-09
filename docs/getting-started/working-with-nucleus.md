@@ -63,7 +63,7 @@ We prioritise the following list of browsers and devices identified as the most 
 
 ## For product owners and business analysts
 
-While you might not need in-depth knowledge of our shared UI styles and components, understanding their principles and requirements will help when you're reviewing current proposals and discussing work ahead. We hope that you push your product teams to explore feasibility of existing assets before resolving to build custom, once-off components. After all, we believe the former will lead to better results for our business in the long run.
+While you might not need in-depth knowledge of our shared UI styles and components, understanding their principles and requirements will help when you're reviewing current Proposals and discussing work ahead. We hope that you push your product teams to explore feasibility of existing assets before resolving to build custom, once-off components. After all, we believe the former will lead to better results for our business in the long run.
 
 We're working towards an evidence driven and purposeful use of UI components. If you think an asset of ours is performing particularly well or poorly in a certain context, please let us know. It will help us curate and improve our shared assets and documentation.
 
