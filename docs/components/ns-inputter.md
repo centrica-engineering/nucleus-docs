@@ -94,7 +94,7 @@ This is aimed at a small cluster of contextual questions with a few short answer
 
 When you are trying to get a simple set of answers from the customer where the answers are short, and the number of potential answers is below 4-5.
 
-Use the contextual helper text to explain a more complicated question or to offer help or context. If the question and answer is really obvious then you may not need a contextual helper.
+Use the contextual [helper text](https://nucleus.design/docs/components/ns-inputter#helper-text) to explain a more complicated question or to offer help or context. If the question and answer is really obvious then you may not need a contextual helper.
 
 ![Radio button and checkbox inline variant](https://user-images.githubusercontent.com/28779/186430932-1813f9a7-911d-4e17-8d38-0c84a245c857.png)
 
