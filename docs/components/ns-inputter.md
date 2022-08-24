@@ -4,7 +4,7 @@ description: Molecule | Inputter component.
 
 import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
-import { ComponentPlacement } from '../../includes/component-placement.js'![image](https://user-images.githubusercontent.com/5929591/186429419-0a53e226-41ba-4e86-9f51-988570800a8b.jpeg)
+import { ComponentPlacement } from '../../includes/component-placement.js'
 
 
 ## Introduction
