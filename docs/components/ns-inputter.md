@@ -86,7 +86,7 @@ To match this heading's size with other `ns-inputter` labels', group all associa
 | Allow user to opt in as opposed to opt out |  |
 | Consider splitting question out for when more than 5 checkboxes are required |  |
 
-### Inine Variant of Radio buttons and Checkboxes
+### Inline variant of Radio buttons and Checkboxes
 
 This is aimed at a small cluster of contextual questions with a few short answers. It works well especially for mobile as there is a larger hit area for the customer as well as there being a manageable cognitive load. The decoration allows the customer to focus on the answers.
 
