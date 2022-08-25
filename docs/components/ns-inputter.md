@@ -221,14 +221,12 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 [See `<ns-inputter>` separator on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--separator).
 
-
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Only use an input type | Use a textarea, checkbox or radio button |
 | Only use a character for a separator | Use a "placeholder" attribute on the input |
 |  | Put more than one separator together, e.g. `00--00` |
 |  | Start or end with a separator |
-
 
 ## Autocomplete and input sizing
 
