@@ -98,7 +98,7 @@ Use the contextual [helper text](https://nucleus.design/docs/components/ns-input
 
 ![Radio button and checkbox inline variant](https://user-images.githubusercontent.com/28779/186430932-1813f9a7-911d-4e17-8d38-0c84a245c857.png)
 
-[TO DO: See `<ns-inputter>` radio inline/checkbox inline on Storybook](xxxxxx).
+TODO: add link to -> [See `<ns-inputter>` radio inline/checkbox inline on Storybook]
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -132,7 +132,7 @@ You can [see an example of `<ns-inputter>` textarea here](https://www.britishgas
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Always include a label | Add placeholder content |
-| Consider askign more specific questions | Use this for addresses |
+| Consider asking more specific questions | Use this for addresses |
 
 ### Date input
 
