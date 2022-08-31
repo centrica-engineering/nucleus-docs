@@ -77,7 +77,6 @@ To match this heading's size with other `ns-inputter` labels', group all associa
 
 [See `<ns-inputter>` checkboxes on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--checkbox).
 
-
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Keep you heading/legend short | Use as lists |
@@ -98,7 +97,7 @@ Use the contextual [helper text](https://nucleus.design/docs/components/ns-input
 
 ![Radio button and checkbox inline variant](https://user-images.githubusercontent.com/28779/186430932-1813f9a7-911d-4e17-8d38-0c84a245c857.png)
 
-TODO: add link to -> [See `<ns-inputter>` radio inline/checkbox inline on Storybook]
+[See `<ns-inputter>` radio inline/checkbox inline on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-components-ns-inputter--checkbox-inline).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
