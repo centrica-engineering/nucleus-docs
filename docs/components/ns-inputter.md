@@ -6,6 +6,7 @@ import { StorybookStory } from '../../includes/storybook-story.js'
 import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 
+
 ## Introduction
 
 The ns-inputter is a multi-purpose wrapper component that helps with the display of the following form control types:
@@ -85,6 +86,30 @@ To match this heading's size with other `ns-inputter` labels', group all associa
 | Allow user to opt in as opposed to opt out |  |
 | Consider splitting question out for when more than 5 checkboxes are required |  |
 
+### Inline variant of Radio buttons and Checkboxes
+
+This is aimed at a small cluster of contextual questions with a few short answers. It works well especially for mobile as there is a larger hit area for the customer as well as there being a manageable cognitive load. The decoration allows the customer to focus on the answers.
+
+#### When to use it
+
+When you are trying to get a simple set of answers from the customer where the answers are short, and the number of potential answers is below 4-5.
+
+Use the contextual [helper text](https://nucleus.design/docs/components/ns-inputter#helper-text) to explain a more complicated question or to offer help or context. If the question and answer is really obvious then you may not need a contextual helper.
+
+![Radio button and checkbox inline variant](https://user-images.githubusercontent.com/28779/186430932-1813f9a7-911d-4e17-8d38-0c84a245c857.png)
+
+TODO: add link to -> [See `<ns-inputter>` radio inline/checkbox inline on Storybook]
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Keep the set of questions below 5 | Ask too many questions on a page |
+| Make your labels concise and clear | Ask overly long questions |
+| Keep the answers short and to the point | Ask long hard to understand questions |
+| Keep the number of answers below 5 | Have to many answers |
+| Consider keeping the question set contextual  | Mix the types of information you are asking in one section |
+| Consider using multiple pages to break up the question sets | Cram too many questions in a section |
+| Consider the conventional Radio Button or Select menus to questions with more than 5 answers |  |
+
 ### Select
 
 Selects should be used to select an item from a list of many choices. Selects can be problematic for screen reader users if there is a long list of options. Consider distilling your questions so that there are fewer options, this might allow you to use radio buttons instead.
@@ -107,7 +132,7 @@ You can [see an example of `<ns-inputter>` textarea here](https://www.britishgas
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Always include a label | Add placeholder content |
-| Consider askign more specific questions | Use this for addresses |
+| Consider asking more specific questions | Use this for addresses |
 
 ### Date input
 
@@ -221,14 +246,12 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 [See `<ns-inputter>` separator on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--separator).
 
-
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Only use an input type | Use a textarea, checkbox or radio button |
 | Only use a character for a separator | Use a "placeholder" attribute on the input |
 |  | Put more than one separator together, e.g. `00--00` |
 |  | Start or end with a separator |
-
 
 ## Autocomplete and input sizing
 
