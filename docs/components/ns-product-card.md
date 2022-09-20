@@ -84,7 +84,7 @@ For example
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
-| `keyline` | `string` | none | `blue`, `yellow`, `green-light`, `cyan`, `red` | Add a gradient across the top of the card |
+| `keyline` | `string` | none | `slate`, `cyan`, `yellow`, `red`, `green-light`, `red-dark`, `orange`, `green`, `green-dark`, `blue`, `blue-dark` | Add a colour across the top of the card |
 
 
 | Slots | Type |
