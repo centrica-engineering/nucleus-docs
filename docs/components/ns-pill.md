@@ -61,13 +61,11 @@ A `red` or `green-light` pill can be used to drawing attention to important cust
 
 <ComponentPlacement component="ns-pill" parentComponents="ns-card,ns-selector,ns-landmark"></ComponentPlacement>
 
-> Note: Work is in progress to add the ns-pill to other components
-
 ## Specification
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
-| `colour` | `string` | `slate` |  `slate`, `yellow`, `red`, `green-light` | The colour of the pill |
+| `colour` | `string` | `slate` | `slate`, `yellow`, `red`, `green-light`, `red-dark`, `green-dark`, `blue`, `blue-dark` | The colour of the pill |
 | `icon` | `string` |  |  See [`ns-icon` component icon types](../components/ns-icon) | The icon to show inside the pill |
 
 ## Specification notes

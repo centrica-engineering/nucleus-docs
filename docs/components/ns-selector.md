@@ -96,7 +96,7 @@ When used in ns-column, ns-column must be a child of ns-inputter:
 | `decoration` | `string` |  |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)| Illustration that is show in the section type card |
 | `image`      | `string` |  |  | Optional image |
 | `value` | `any`     |  |  | Value of selection |
-| `keyline` | `string` | none | `blue`, `yellow`, `green-light`, `cyan`, `red` | Add a gradient across the top of the selector |
+| `keyline` | `string` | none | `slate`, `cyan`, `yellow`, `red`, `green-light`, `red-dark`, `orange`, `green`, `green-dark`, `blue`, `blue-dark` | Add a colour across the top of the selector |
 
 | Slots | Type | Description |
 | :--- | :--- | :--- |
