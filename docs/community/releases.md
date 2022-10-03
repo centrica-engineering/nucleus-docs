@@ -4,6 +4,36 @@ description: Here are our release notes - enjoy!
 
 ---
 
+## Version 2.4.0
+
+**It's all in the head... 🤖**
+
+This release is fairly short and is mainly focused on the update of the header navigation's primary items: it now reflects the new information architecture.
+
+Release date - 2022/09/13
+
+**New features 🔄**
+
+* We updated the `ns-header` primary level items, as well as changing the breakpoint at which the mobile navigation kicks in (Hockey pitch - 1079px and narrower) 
+
+
+
+**Bug fixes 🪲**
+
+
+* `ns-inputter` - we fixed a visual bug when inline inputters are nested in a layout using `ns-column`
+
+
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
 ## Version 2.3.0
 
 **Space, the final frontier... 🪐**
@@ -12,6 +42,8 @@ This release is all about space.
 The final design token piece of work, and probably some of the most complex work we've done on Nucleus, is the spacer work. We have audited the spacing options we have introduced and used over the course of the last three years. 
 
 We have been working hard to update the spacing technique to something that complements today's state of Nucleus but also allows for the *tokenisation* of spacing and allows for scaling to other brands than British Gas.
+
+This release also sees an inline version of the radio and checkbox `ns-inputter` options for short, multiple options to answer a question in a form.
 
 Release date - 2022/08/31
 
