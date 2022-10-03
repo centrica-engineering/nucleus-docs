@@ -13,11 +13,11 @@ The final design token piece of work, and probably some of the most complex work
 
 We have been working hard to update the spacing technique to something that complements today's state of Nucleus but also allows for the *tokenisation* of spacing and allows for scaling to other brands than British Gas.
 
-Release date - 2022/xx/xx
+Release date - 2022/08/31
 
 **New features 🔄**
 
-
+* `ns-inputter` - We added an inline styling option for radio and checkbox inputters
 
 **Improvements 💡**
 
@@ -50,6 +50,8 @@ Release date - 2022/xx/xx
 * `ns-header` - Added `no-root-link` attribute to change logo navigation to have no link on partnership pages
 * `ns-landmark` - Removed the vertical spacing at the bottom of the card within the valley
 * `ns-password` - you can now customise the copy for the labels
+* `ns-product-card` - We updated the styling for was/now strikethrough on prices
+* `ns-video` - We added a "statechange" event for tracking video playbacks
 
 **Spacing technique ⇥ ⇤**
 
