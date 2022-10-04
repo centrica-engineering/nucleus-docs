@@ -52,6 +52,7 @@ module.exports = {
     ],
     'Page types': aToZ('page-types'),
     'Community': [
+      'community/working-agreement',
       'community/contribute-to-nucleus',
       'community/vanilla-first',
       'community/contribute-to-documentation',
