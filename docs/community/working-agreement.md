@@ -3,7 +3,7 @@ title: Working agreement
 description: How we approach work between the Nucleus team and the community
 ---
 
-> A set of working principles agreed between the teams using the deisng system and the core Nucleus team.
+> A set of working principles agreed between the teams using the Design System and the core Nucleus team.
 
 
 
