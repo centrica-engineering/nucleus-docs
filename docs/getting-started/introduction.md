@@ -15,7 +15,7 @@ Nucleus is an inclusive, community driven design system. It brings together our 
 
 ## Our purpose 🧩
 
-To enable teams across British Gas to deliver consistent, accessible experiences that delight our customers.
+Empowering teams to collaboratively build reusable, coherent and accessible experiences that delight customers by using our aligned principles and processes.
 
 ## What is a design system?
 
