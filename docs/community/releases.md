@@ -4,6 +4,159 @@ description: Here are our release notes - enjoy!
 
 ---
 
+## Version 2.4.0
+
+**It's all in the head... 🤖**
+
+This release is fairly short and is mainly focused on the update of the header navigation's primary items: it now reflects the new information architecture.
+
+Release date - 2022/09/13
+
+**New features 🔄**
+
+* We updated the `ns-header` primary level items, as well as changing the breakpoint at which the mobile navigation kicks in (Hockey pitch - 1079px and narrower) 
+
+
+
+**Bug fixes 🪲**
+
+
+* `ns-inputter` - we fixed a visual bug when inline inputters are nested in a layout using `ns-column`
+
+
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
+## Version 2.3.0
+
+**Space, the final frontier... 🪐**
+
+This release is all about space. 
+The final design token piece of work, and probably some of the most complex work we've done on Nucleus, is the spacer work. We have audited the spacing options we have introduced and used over the course of the last three years. 
+
+We have been working hard to update the spacing technique to something that complements today's state of Nucleus but also allows for the *tokenisation* of spacing and allows for scaling to other brands than British Gas.
+
+This release also sees an inline version of the radio and checkbox `ns-inputter` options for short, multiple options to answer a question in a form.
+
+Release date - 2022/08/31
+
+**New features 🔄**
+
+* `ns-inputter` - We added an inline styling option for radio and checkbox inputters
+
+**Improvements 💡**
+
+* `ns-header` - We added click events for anchor links in the header
+* `ns-highlighter` - Size of the highlighter inside dl is fixed
+* `ns-header` - Moved the log in link up in the mobile viewports
+* `ns-download` - Included filetype attribute to the component to use the href without filetype
+* `ns-selector` - We made the description slot optional for a selector with an image
+* `ns-video` - We added a lazy loading attribute to the placeholder image (the *façade image*)
+* `ns-table` - We improved the font size when there is a longer piece of text in the cell.
+* We added the MarkPro font as an option for selected locations (H1 in landmark/lockup)
+* `ns-form` - We have improved the validation approach for `ns-password` and a few variants of `ns-inputter`
+* `ns-expander` - A custom event for the click on `ns-expander` has been added
+* `ns-cta` - We improved the spacing for the direct call to action
+* We deleted unused margin and padding declarations from spacing.less
+* `ns-calendar` - We increased the outline offset in the calendar dates to make the selected date visibly different to other states (making it more accessible for high contrast mode)
+* `ns-inputter` - you can now use the `pattern` and `title` attributes for a `ns-inputter` for validation (and override an error message with the value of the `title` attribute)
+* `<ol>` tag will support `start` and `reversed` attributes now
+* We made some changes to allow our components to be used natively in React
+* `ns-inputter` - `isPhoneNumber` validation will accept 10 digits as well going forward
+* Created a React component wrapper, they now work in React without an external dependency
+* We added download to `index.js`
+* Updated to PaDL 2 (2.0.1-alpha.8)
+* `nsx-address-selector` - Fixed the space between the `Find address` call to action and the `Enter manual address` call to action
+* `nsx-footer` - Added SafeSpaces plugin to the footer
+* `nsx-header` - Updated ReciteMe endpoint
+* `nsx-footer` - Added  link to the Priority Service Register page
+* `nsx-footer` - Removed `British Gas Evolve` link from footer
+* We updated the media object to use spacer names as gutters rather than numbers
+* `ns-header` - Added `no-root-link` attribute to change logo navigation to have no link on partnership pages
+* `ns-landmark` - Removed the vertical spacing at the bottom of the card within the valley
+* `ns-password` - you can now customise the copy for the labels
+* `ns-product-card` - We updated the styling for was/now strikethrough on prices
+* `ns-video` - We added a "statechange" event for tracking video playbacks
+
+**Spacing technique ⇥ ⇤**
+
+***This work is about improving our approach to spacing, and make it better suited for design tokens and multiple brands.***
+
+* `ns-tab` - Spacing technique has been improved
+* `ns-pill` - Spacing technique has been improved
+* `ns-expander` - Spacing technique has been improved
+* `ns-column` - Spacing technique has been improved
+* `ns-testimonial` - Spacing technique has been improved
+* `ns-fieldset` - Spacing technique has been improved
+* `ns-calendar` - Spacing technique has been improved
+* `ns-panel` - Spacing technique has been improved
+* `ns-download` - Spacing technique has been improved
+* `ns-card` - Spacing technique has been improved
+* `ns-datepicker` - Spacing technique has been improved
+* `ns-inputter` - Spacing technique has been improved
+* `ns-table` - Spacing technique has been improved
+* `ns-highlighter` - Spacing technique has been improved
+* `ns-skeleton` - Spacing technique has been improved
+* `ns-landmark` - Spacing technique has been improved
+* `ns-appointment-picker` - Spacing technique has been improved
+* `ns-form` - Spacing technique has been improved
+* `ns-caveat` - Spacing technique has been improved
+* `ns-product-card` - Spacing technique has been improved
+* `ns-content` - Spacing technique has been improved
+* `ns-selector` - Spacing technique has been improved
+* `ns-lockup` - Spacing technique has been improved
+* `ns-editorial` - Spacing technique has been improved
+* `ns-password` - Spacing technique has been improved
+* `ns-standout` - Spacing technique has been improved
+* `ns-live` - Spacing technique has been improved
+* `ns-timeline` - Spacing technique has been improved
+* `ns-tabs` - Spacing technique has been improved
+* `ns-header` - Spacing technique has been improved
+* `ns-footer` - Spacing technique has been improved
+* `ns-progress` - Spacing technique has been improved
+* Headings, Paragraphs, and lists - Spacing technique has been improved
+
+
+
+
+**Bug fixes 🪲**
+
+
+* `ns-password` - There was an issue when editing a password by changing characters in the middle of the string. No more!
+* `ns-product-card` - There was an issue with an invalid keyline. No more!
+* `ns-panel` - Horizontal scroll issue when using `circle-right` decoration in Safari is fixed
+* `ns-inputter` - Fixed a Chrome crash in Android when entering a value
+* `ns-inputter` - White space at the start/end of `ns-inputter` will be trimmed to avoid dirty data to be validated/submitted
+* `ns-progress` - dynamic values were not accepted in the `current` attribute, it is now fixed
+* `ol-numbered` - We fixed a numbering issue when `<ol>` is used in the page and has nested `<ol>` items inside `<dl>`
+* Nucleus loading issue hotfix
+* `ns-inputter` - Separator cursor issue has been fixed
+* `nsx-address-selector` - Triggering the manual address form using the ENTER key is now allowed
+* `ns-live` - Fixed the busy state in live component
+* `ns-header` - in-app viewport size fixed
+* `ns-image` - Image overflow in card has been fixed (safari)
+* `ns-header` - Passed the header and subheader information to the event for click
+* Fetch svg fix
+
+
+
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
 ## Version 2.2.0
 
 **{Jedi hand gesture 👋} This is the highlighter you are looking for...**
@@ -34,6 +187,10 @@ Release date - 2021/08/18
 * `ns-video` - We added a façade to improve the performance of the page and only load the video if user shows intent to play it
 * `ns-live` - We added reflect for the `busy` property
 * `ns-header` - We update the `<button>` tag instead of `<div>` for better accessibility
+* We made Google Chrome use `styleSheet` instead of `adoptedStyleSheets` to avoid the issue in `next.js` routing
+* `nsx-header` - Updated `Smart home` to `Smart home & EV`
+* `nsx-footer` - Added link `Responsible disclosure`
+
 
 
 
@@ -99,6 +256,7 @@ Release date - 2021/07/06
 
 * `ns-landmark` - When the image in a summit landmark didn't load quickly, it collapsed the landmark for a brief moment, pulling more content above the fold and potentially increasing first content paint time. That had an impact on our page performance scores. This is now fixed.
 * `ns-password` - Toggle issue using ENTER key in show/hide password fixed
+* `nsx-footer` - Added `British Gas Evolve` link
 
 
 
@@ -132,7 +290,8 @@ Release date - 2021/06/24
 **Improvements 🤹‍♂️**
 
 * `ns-cta` and `ns-card` - improved shadows: we have changed our method to render shadows, making them a little bit more visible and modern.
-
+* `nsx-header` - Disabled magnifier lens in recite me toolbar.
+* Nucleus experiences will no longer load `style.min.js` in Google Chrome when it's not needed
 
 **Multibrand enablement and design tokens ☘️**
 
@@ -172,6 +331,8 @@ Release date - 2021/06/03
 * `ns-skeleton` - Testimonial content width is increased to 100% to fit the component
 * We have added page examples on the page type documentation under the *Examples* section for each of them
 * Added an IE stylesheet for link styles
+
+
 
 
 **Multibrand enablement and design tokens ☘️**
