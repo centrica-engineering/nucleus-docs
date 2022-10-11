@@ -25,11 +25,11 @@ We understand the outcome of the changes we make, so we can repeat successes and
 ### Everything we do is visible and available to all
 We aim at making everything understandable, and open to the community.
 
-### Everything we make is accessible
-Everything we create is usable by all our customers /// REVIEW BEFORE COMMIT
+### Everything we make is inclusive
+Everything we create is usable by anyone and leaves no one behind.
 
-### Every component has a clear purpose
-We design components for the purpose they fulfil not for how they look.
+### Every experience we create solves a problem
+Everything we do is linked to a user need, a problem that has been identified and verified.
 
-### We organise fun events regularly
+### We have fun together!
 When possible, we meet for fun events such as hackathons, meetups, conferences or just a night out to get to know each other better.
