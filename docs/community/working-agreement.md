@@ -14,10 +14,10 @@ As a design/UX community we understand the context and decisions that were made 
 We recognise that working in person adds a layer of shared understanding, and brings down silos. This helps make us all work in similar ways, and that we build empathy, visibility, and cross-learning.
 
 ### We involve each other as early as possible
-We recognise that involving each other from the beginning on a piece of work prevents wasting time, and delivers value to our customers faster.
+We recognise that involving each other from the beginning on a piece of work prevents wasting time leads to better outcomes, and delivers value to our customers faster.
 
 ### We aim to always improve
-Everything we create has a proven added value, we aim to better our customers' experience with each and every release.
+Everything we create has a proven added value. We aim to better our customers' experience with each and every release.
 
 ### We measure, capture, and celebrate the impact of our work
 We understand the outcome of the changes we make, so we can repeat successes and avoid mistakes in the future.
