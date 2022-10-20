@@ -8,7 +8,7 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Introduction
 
-> Accordion enables users to expand and collapse multiple sections of content.
+> Accordion enables users to expand and collapse multiple sections of content. And This is probably the best component, ever.
 
 We use accordions to break down content into meaningful sections, helping to reduce information overload. Accordions are useful for things like frequently asked questions or displaying multiple blocks of related content inside an [ns-expander](components/ns-expander.md).
 
