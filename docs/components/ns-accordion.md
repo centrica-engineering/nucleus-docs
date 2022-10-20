@@ -10,7 +10,7 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 > Accordion enables users to expand and collapse multiple sections of content.
 
-We use accordions to break down content into meaningful sections, helping to reduce information overload. Accordions are useful for things like frequently asked questions or displaying multiple blocks of related content such as tariffs.
+We use accordions to break down content into meaningful sections, helping to reduce information overload. Accordions are useful for things like frequently asked questions or displaying multiple blocks of related content inside an [ns-expander](components/ns-expander.md).
 
 ## Content guidance
 
@@ -19,7 +19,7 @@ We use accordions to break down content into meaningful sections, helping to red
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total.  |
-| B | Content | Use between 1 and 8 ns-expanders. Each expander consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content. See [ns-expander](components/ns-expander.md) for further content guidance. |
+| B | Content | Use between 1 and 8 [ns-expander](components/ns-expander.md) components. All expanders need to be related to the accordion's heading.|
 
 ## Best practice
 
@@ -27,13 +27,15 @@ We use accordions to break down content into meaningful sections, helping to red
 | :---  | :---  |
 | Use for FAQs | Use a background with an accordion as the expanded state is white |
 | Use to split up related content | Use more than 8 expanders |
-| Make sure section headings relate to content | Use for critical information (such as caveats) |
-|  | Use as a solution to excessive copy on a page |
+| Make sure the heading relates to content | Use for critical or to hide information (such as caveats) |
+| Use as a supporting component to the rest of the page's content | Use as a solution to excessive copy on a page |
+|  | Use as the only component on a page |
 
 ### Considerations of best practises
 
-Accordions should be used for FAQs or splitting related content into sections.  They should not be used for showing critical information such as caveats. We highly recommend that there are no more than eight content headings in a multiple accordion.
-If more than eight are used we should stop to reassess why and perhaps breakdown the content even more.
+If you need more than 8 [ns-expander](components/ns-expander.md) components, you can use more than one accordion on the page.
+
+If there isn't a inherent logical order to the expanders, use alphabetical order for ease of scanning.
 
 ## Usage
 
@@ -41,7 +43,7 @@ If more than eight are used we should stop to reassess why and perhaps breakdown
 
 ## Component placement
 
-<ComponentPlacement component="ns-accordion" parentComponents="ns-panel,ns-content"></ComponentPlacement>
+<ComponentPlacement component="ns-accordion" parentComponents="ns-panel,ns-content,ns-editorial"></ComponentPlacement>
 
 ## Specification
 
@@ -55,7 +57,7 @@ If more than eight are used we should stop to reassess why and perhaps breakdown
 ### Heading
 
 * The heading is for the entire accordion.
-* Heading level should be h2 or h3 depending on if it is part of another heading.
+* Heading level should be h2 or h3 depending on its place in the semantics of the page.
 
 ### Anonymous
 
