@@ -3,6 +3,8 @@ title: Experiences
 description: Experience patterns.
 ---
 
+import { PageFooter } from '../../includes/page-footer.js'
+
 ## What is the difference between a component and an experience pattern?
 
 | Components | Experience patterns |
@@ -37,3 +39,5 @@ The best question to ask is:
 > Are you creating something new that is not seen in Nucleus?
 
 If so, then it will have to start off at creating those components.
+
+<PageFooter></PageFooter>
