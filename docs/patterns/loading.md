@@ -3,6 +3,8 @@ title: Loading
 description: Loading patterns.
 ---
 
+import { PageFooter } from '../../includes/page-footer.js'
+
 ## Introduction
 
 Loading states can provide reassurance that a task is being processed, this can help reduce the frustration when a task might take longer than a user might expect. We have a number of methods that handle loading events. These depend on the task a user is interacting with.
@@ -42,4 +44,4 @@ You can [read more information about the Stopgap here](page-types/stopgap.md).
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[patterns-loading]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[patterns-loading]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>

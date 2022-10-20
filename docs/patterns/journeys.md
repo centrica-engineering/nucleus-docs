@@ -3,6 +3,8 @@ title: Journeys
 description: Journey patterns documentation.
 ---
 
+import { PageFooter } from '../../includes/page-footer.js'
+
 ## Introduction
 
 Creating engaging and inclusive journeys is one of the highest priorities for any product team.
@@ -160,4 +162,4 @@ If you would like to help research and define a journey pattern, please engage w
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[patterns-journeys]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[patterns-journeys]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>
