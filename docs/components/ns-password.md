@@ -74,7 +74,7 @@ The Standard variant just uses a single validation requirement that appears if t
 | :--- | :--- |
 | Use the correct variant for its intended purpose | Try to make up another version by using parts - it will lead to an inconsistent experience |
 | Ensure the requirements reflect what's needed | Use requirements that differ from company policy |
-| Add Helper text or tips if necessary | Change the labels |
+| Add Helper text or tips if necessary |  |
 
 
 
