@@ -11,26 +11,36 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 > Expanders are used to show or hide content.
 
-An expander consists of a heading and a anonymous content slot.  When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content.
+An expander consists of a heading and an anonymous content slot.  When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content. 
+
+Expanders can be used in [a variety of contexts](#component-placement): in an accordion, in a product  card, and more. 
 
 ## Content guidance
+In the following examples, the expander is used in an accordion and in a selector.
+![Expander - Being used in an accordion](https://user-images.githubusercontent.com/45626534/75039379-7315b080-54b0-11ea-9816-8b679a290a19.png)
 
-![Expander - Being used in an Accordion](https://user-images.githubusercontent.com/45626534/75039379-7315b080-54b0-11ea-9816-8b679a290a19.png)
+![Expander - Being used in a selector](https://user-images.githubusercontent.com/28779/198272767-b2d1b886-3449-48f8-819a-b64e7ff60c54.png)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Heading | This is the heading to the anonymous content. When the heading is clicked the component opens to reveal the content.   |
-| B | Content | Expander can accommodate multiple paragraph slots, these should be concise, using sub-headings to split large paragraphs. Can contain bold copy `<b>`, inline links `<a>`, and lists `<ul>` `<ol>`. We recommend to use `ns-content` as a container for the html content.|
+| A | Heading | The heading is there to introduce the content placed in the expander's anonymous slot. When the heading is clicked the component opens to reveal the content.   |
+| B | Content | The expander can accommodate multiple paragraphs. These should be concise, using sub-headings to split large paragraphs. It can contain bold copy `<b>`, inline links `<a>`, and lists `<ul>` `<ol>`. We recommend to use `ns-content` as a container for the html content.|
 
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use instead of modal | Use to hide important information (such as caveats) |
+| Use instead of modal | Use to hide important information |
 | Use headings, paragraphs, lists for content | Use as a solution to excessive copy on a page |
-| Make sure heading relates to content | Nest expanders within expanders |
-| Use a coloured expander to draw attention to a promotion in an expander on a product card | Use multiple coloured expanders on one page |
-|  | Use a coloured expander to draw attention to a warning message. Use ns-highlighter or ns-skyline instead. |
+| Make sure the heading in the heading slot relates to content | Nest expanders within expanders |
+| Use a coloured expander to draw attention to a promotion in an expander on a product card | Use multiple coloured expanders on one page|
+|  | Use a coloured expander to draw attention to a warning message. Use [ns-highlighter](components/ns-highlighter.md) or [ns-skyline](components/ns-skyline.md) instead. |
+
+### Considerations of best practice
+
+- If you are using the expander in a series of [product cards](components/ns-product-card.md) and you have a promotion, you can use multiple expanders on the same page to provide additional information on that promotion.
+- You can put any media inside the expanders, but be wary of the size of said media and how it will render.
+- When using multiple expanders without an accordion, consider adding a heading to introduce them. If you don't, the nearest higher-level heading preceding the expanders will be the one setting the theme. 
 
 ## Usage
 
@@ -38,7 +48,10 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 
 ## Component placement
 
+We recommend expanders to be primarily used in `ns-accordion` and `ns-skyline`.
+
 <ComponentPlacement component="ns-expander" parentComponents="ns-accordion,ns-skyline,ns-card,ns-content,ns-product-card,ns-selector"></ComponentPlacement>
+
 
 ## Specification
 
@@ -57,20 +70,6 @@ An expander consists of a heading and a anonymous content slot.  When the headin
 | Event | Description |
 | :--- | :--- |
 | `expander-toggle` | Will be dispatched when expander is clicked to show/hide. |
-
-## Specification notes
-
-### Heading
-
-* This is the heading to the anonymous content.
-
-### Open
-
-* Defines if the expander is in an open or closed state.
-
-### Anonymous
-
-* Place the content of what you want to be expanded (or hidden) in this slot.
 
 <Tokens component="expander"></Tokens>
 
