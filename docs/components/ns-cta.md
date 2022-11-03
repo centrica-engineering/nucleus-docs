@@ -72,9 +72,9 @@ The `ns-cta` is capable of handling a loading interaction using the `loading` an
 
 This loading state is used to provide the user with feedback that their action is being handled. It also reassures the user that action may take a number of seconds to be completed.
 
-We recommend only to use this loading state for a maximum of 5 seconds. If it's known that the action is likely to take longer than 5 seconds, present the user with a [Roadblock page type](page-types/roadblock).
+We recommend only to use this loading state for a maximum of 5 seconds. If it's known that the action is likely to take longer than 5 seconds, present the user with a [Roadblock page type](../page-types/roadblock).
 
-If the action fails, don't leave the CTA in its Loading state. Present the user with clear feedback with [the highlighter component](components/ns-highlighter).
+If the action fails, don't leave the CTA in its Loading state. Present the user with clear feedback with [the highlighter component](../components/ns-highlighter).
 
 Your loading message should be contextual to the action of the text of the CTA. E.g. "Get a quote" becomes "Getting your quote...". 
 
@@ -100,7 +100,7 @@ The only time we present a disabled state is during the Loading state. This ensu
 | Use `direct` type for the most important action on the page | Use more than 24 characters |
 | Use `text` type to support the direct action | Have CTAs within a paragraph |
 | Use instead of a native button | Repeat the CTA copy within the same page |
-|  | Use for downloads. Use the [`ns-download` component](components/ns-download) instead |
+|  | Use for downloads. Use the [`ns-download` component](../components/ns-download) instead |
 
 ### Considerations of best practice
 
