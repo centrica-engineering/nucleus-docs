@@ -13,7 +13,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 Users can perform certain actions through the use of `ns-cta`. An example of these actions could be to submit a form through an event (i.e. click event) or navigate with a hyperlink.
 
-There is no disctinciton between a hyperlink or an action through the design of `ns-cta`. Use the text content to convey the intent of the CTA to the user.
+There is no distinciton between a hyperlink or an action through the design of `ns-cta`. Use the text content to convey the intent of the CTA to the user.
 
 ## Content guidance
 
@@ -27,7 +27,7 @@ There is no disctinciton between a hyperlink or an action through the design of 
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Text | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+| A | Text | Keep the text 'short, relevant, and actionable'. It should not exceed more than 24 characters. |
 | B | Icon | This is a decoration. It is intended to imply direction such as moving forwards and backwards in a journey. The [specification table](#specification) has a list of options. |
 
 ### Differences between `direct` and `text` types
@@ -36,7 +36,7 @@ The two types of `ns-cta` are there to offer hierarchical structure to the page.
 
 The `direct` type has a more emphasised affordance, therefore it can be used as the main action for that page. As it's the main action, it should be used sparingly.
 
-The `text` type supports the `direct` type and helps build hierachy. It can be used for actions that are not the main reason for the page and can accommodate longer text content.
+The `text` type supports the `direct` type and helps build hierarchy. It can be used for actions that are not the main reason for the page and can accommodate longer text content.
 
 For example, on the Energy Hub Page the main purpose is for customers to get a quote. This action would be a `direct` CTA supplementary information such as Seeing all tariffs, Energy guides or Learning about smart meters would be the `text` type. We recommend when grouping actions through a set of cards they all use the same CTA type.
 
@@ -56,7 +56,7 @@ If there is a group of more than three actions it would be preferable to make al
 
 ### Button vs link
 
-There is no visual distinction between a button and a link when using `ns-cta`. It's recommended not use a native `<button>` element, but to use the CTA with the required events.
+There is no visual distinction between a button and a link when using `ns-cta`. It's recommended not to use a native `<button>` element, but to use the CTA with the required events.
 
 The distinction for a user on either a navigation or an event is not based on the appearance but on the text content. It needs to be clear based on the text content that the user is either going to the next step in a journey / page, or that they are doing an action, such as submitting a form.
 
@@ -70,9 +70,9 @@ The `ns-cta` is a standalone component that can serve an action whether it is a 
 
 The `ns-cta` is capable of handling a loading interaction using the `loading` and `loadingMessage` attributes, these can be found in the [specification table](#specification) below.
 
-This loading state is used to provide the user with feedback that their action is being handled. It also provides the user with reassurance that action may take a number of seconds to be completed.
+This loading state is used to provide the user with feedback that their action is being handled. It also reassures the user that action may take a number of seconds to be completed.
 
-We recommend to only use this loading state for a maximum of 5 seconds. If it's known that the action is likely to take longer than 5 seconds, present the user with a [Roadblock page type](page-types/roadblock).
+We recommend only to use this loading state for a maximum of 5 seconds. If it's known that the action is likely to take longer than 5 seconds, present the user with a [Roadblock page type](page-types/roadblock).
 
 If the action fails, don't leave the CTA in its Loading state. Present the user with clear feedback with [the highlighter component](components/ns-highlighter).
 
@@ -80,7 +80,7 @@ Your loading message should be contextual to the action of the text of the CTA. 
 
 ![CTA - Loading state](https://user-images.githubusercontent.com/45626534/81697144-bc94ec80-945c-11ea-854a-39e0ecb86aa4.gif)
 
-You can see the live example of the loading state on [storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-cta--direct-button-loading).
+You can see the live example of the loading state on [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-cta--direct-button-loading).
 
 ### Disabled
 
@@ -99,7 +99,7 @@ The only time we present a disabled state is during the Loading state. This ensu
 | Relate the action to the content it sits beside | Change the icon for the sake of it |
 | Use `direct` type for the most important action on the page | Use more than 24 characters |
 | Use `text` type to support the direct action | Have CTAs within a paragraph |
-| Use instead of a native button | Repeat CTA copy within the same page |
+| Use instead of a native button | Repeat the CTA copy within the same page |
 |  | Use for downloads. Use the [`ns-download` component](components/ns-download) instead |
 
 ### Considerations of best practice
@@ -107,9 +107,9 @@ The only time we present a disabled state is during the Loading state. This ensu
 * It should always be clear to the user what the CTA's action is through its text.
 * To be aware of the distinct roles of the CTA's types `direct` and `text` and that they don't always act as a `primary` and `secondary` button.
 * Try not to have multiple CTA's next to each other.
-* Don't make the main purpose of the page to have a group of CTA's.
-* Don't overload the page with the same type of CTA or too many CTA's.
-* Loading message should be the action of the text of the CTA. E.g. "Get a quote" becomes "Getting your quote...".
+* Don't make the main purpose of the page to have a group of CTAs.
+* Don't overload the page with the same type of CTA or too many CTAs.
+* The `loading` message should be the action of the text of the CTA. E.g. "Get a quote" becomes "Getting your quote...".
 
 ## Usage
 
