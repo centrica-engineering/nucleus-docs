@@ -4,10 +4,6 @@ const prodScripts = () => {
       algolia: {
         apiKey: process.env.ALGOLIA_KEY,
         indexName: 'nucleus',
-      },
-      googleAnalytics: {
-        trackingID: 'UA-72906223-20',
-        anonymizeIP: true,
       }
     }
   }
