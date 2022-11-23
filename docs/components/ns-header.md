@@ -47,9 +47,11 @@ The default choice of header across the main British Gas UK home site should be 
 | :--- | :--- | :--- | :--- | :--- |
 | `primary`    | `array` |  |  | Primary navigation heading, subheadings and links |
 | `secondary`    | `array` |  |  | Secondary navigation links and buttons |
-| `logo`    | `string` | `https://www.britishgas.co.uk/nucleus/images/logo.svg` |  |URL to point to logo|
-| `alt`    | `string` | `British Gas` |  |Alternative text for logo|
-| `hide-links` | `boolean` | `false` | `true`,`false` |Hide navigation and related navigational elements|
+| `logo`    | `string` | `https://www.britishgas.co.uk/nucleus/images/logo.svg` |  |URL to point to logo |
+| `alt`    | `string` | `British Gas` |  | Alternative text for logo |
+| `hide-links` | `boolean` | `false` | `true`,`false` | Hide navigation and related navigational elements |
+| `no-root-link` | `boolean` | `false` | `true`,`false` | Remove the link from the logo |
+| `skip-subdomain` | `string` |  |  | Remove subdomain from root URL |
 
 | Event | Description |
 | :--- | :--- |
