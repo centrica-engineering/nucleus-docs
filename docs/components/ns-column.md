@@ -47,8 +47,8 @@ Some components (e.g. `ns-cta`) have a minimum width, care should be taken so th
 | :--- | :--- | :--- | :--- |-------------|
 | `basketballcourt` | `number` | `1` |  `1, 2` | The number of columns to show at the Basketball Court viewport |
 | `hockeypitch` | `number` | `inherit` |  `1, 2, 3, 1:2, 2:1` | The number of columns to show at the Hockey Pitch viewport |
-| `rugbypitch` | `number` | `inherit` |  `1, 2, 3, 4, 1:2, 2:1, 1:3, 3:1` | The number of columns to show at the Rugby Pitch viewport |
 | `footballpitch` | `number` | `inherit` |  `1, 2, 3, 4, 1:2, 2:1, 1:3, 3:1` | The number of columns to show at the Football Pitch viewport |
+| `rugbypitch` | `number` | `inherit` |  `1, 2, 3, 4, 1:2, 2:1, 1:3, 3:1` | The number of columns to show at the Rugby Pitch viewport |
 | `polofield` | `number` | `inherit` |  `1, 2, 3, 4, 1:2, 2:1, 1:3, 3:1` | The number of columns to show at the Polo Field viewport |
 
 ## Specification notes
