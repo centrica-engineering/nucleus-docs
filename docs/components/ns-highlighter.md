@@ -90,7 +90,6 @@ The message must be in plain English, and help the user out of the situation by 
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `decoration` | `string` |           |See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--standard)| Icon that is shown in the type of highlighter |
 | `type`       | `string` | "error" | "error", "success", "warning", "info" | Defines the role of the highlighter and changes the styles |
 
 | Slots | Type |
