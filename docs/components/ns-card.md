@@ -15,6 +15,18 @@ Cards are used to apply a container around a related grouping of information; th
 
 ## Content guidance
 
+
+### Flat Card
+
+![Card - Flat](https://user-images.githubusercontent.com/7914977/204526966-a6c42c21-209e-4b2b-a358-777732ae7c81.png)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| B | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| C | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+
+
 ### Section Card
 
 ![Card - Section](https://user-images.githubusercontent.com/45626534/74165461-0c290980-4c1d-11ea-89df-19f2784178e1.png)
