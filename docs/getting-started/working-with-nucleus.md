@@ -45,19 +45,20 @@ We prioritise the following list of browsers and devices identified as the most 
 
 | Device | Operating System | Browser | Version |
 | :--- | :--- | :--- | :--- |
-| Computer | Windows 10 | Chrome | 90 |
-| Computer | Windows 10 | Firefox | 83 |
-| Computer | Windows 10 | Edge | 85 |
-| Computer | MacOS Catalina | Safari | 13.1 |
-| Computer | MacOS Catalina | Chrome | 88 |
-| iPhone | iOS 14 (iPhone 12) | Safari |13 |
-| iPhone | iOS 13 (iPhone XS) | Safari | 13 |
-| iPhone | iOS 14 (iPhone 12) | Chrome | 86 |
-| iPhone | iOS 13 (iPhone XS) | Chrome | 86 |
+| Computer | Windows 11 | Chrome | 108 |
+| Computer | Windows 11 | Firefox | 108 |
+| Computer | Windows 11 | Edge | 108 |
+| Computer | MacOS Ventura | Safari | 16 |
+| Computer | MacOS Ventura | Chrome | 108 |
+| Computer | MacOS Ventura | Firefox | 108 |
+| iPhone | iOS 16 (iPhone 14) | Safari |16 |
+| iPhone | iOS 15 (iPhone 13) | Safari | 15 |
+| iPhone | iOS 16 (iPhone 14 Pro) | Chrome | 92 |
+| iPhone | iOS 15 (iPhone 13 Pro) | Chrome | 92 |
 | iPad | iPad OS 14 (iPad Pro 12.9 2020) | Safari | 13 |
 | iPad | iPad OS 14 (iPad Pro 12.9 2020) | Chrome | 86 |
-| Android | Android OS 10 (Samsung Galaxy S20) | Chrome | 89 |
-| Android | Android OS 11 (Samsung Galaxy S21) | Samsung Browser | 11.1 |
+| Android | Android OS 12 (Samsung Galaxy S22) | Chrome | 105 |
+| Android | Android OS 11 (Samsung Galaxy S21) | Samsung Browser | 17 |
 
 **Note :** IE11 and Edge 18 browsers are no longer supported as their usage levels are below 0.5% (as of June 2021).
 
