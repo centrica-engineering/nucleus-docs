@@ -57,7 +57,7 @@ There are 3 styles of timeline to choose from in the 'overview decorations' - de
 Uses a circle and implies nothing other than it is an event.
 
 ##### Icons 
-Thes can be selected from a list to help convey meaning for each event and make it easier to identify a step. If selected, all events will need an icon chosen from the list.
+These can be selected from a list to help convey meaning for each event and make it easier to identify a step. If selected, all events will need an icon chosen from the list.
 
 ##### Numbers 
 For use when an order should be shown.
@@ -82,23 +82,6 @@ On events that are in progress, it is possible to add further information releva
 
 On events that have been successfully completed, there is the option to display a time-stamp alongside the status.
 
-#### Best practice for Timeline Standard
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Use a maximum of 10 steps | Add too much detailed content |
-| Consider if the title duplicates page title | Use illustrations or icons in additional content |
-| Provide helpful messaging | Use overly long event names |
-| Use summary to set expectations | Use timestamp if it causes confusion with a date elsewhere on the page|
-
-#### Best practice for Individual Timeline Standard Event
-
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Use any one of default, icon or number decoration for all events in the timeline sequence |  Mix two different decoration types in events |
-| Use `ns-card` to provide additional information for `inprogress`, `actionrequired`, `warning` and `error` events | Use any icon type with names ending `Solid` or `Outline` |
-| Always pick `ns-icon` type from the specification provided in below section |  |
-
 #### Usage
 
 <StorybookStory story="components-ns-timeline--time-line"></StorybookStory>
@@ -109,35 +92,7 @@ On events that have been successfully completed, there is the option to display 
 
 <ComponentPlacement component="ns-timeline-event" parentComponents="ns-timeline"></ComponentPlacement>
 
-#### Specification for Timeline Standard
-
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `showstepcount` | `boolean` | `false` | `true`, `false` | Set true to show completed vs total event progress count below the timeline heading |
-
-| Slots | Type |
-| :--- | :--- |
-| `heading` | `<h2>` |
-| `summary` | `<p>` |
-| `event` | `<ns-timeline-event>` |
-
-## Specification for Individual Timeline Standard Event
-
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `status` | `string` | `pending`| `pending`, `inprogress`, `actionrequired`, `warning`, `error`, `completed`, `cancelled` | |
-| `icon`| `string` | | `appliance`, `bill`, `boiler`, `calendar`, `clock`, `download`, `electricity`, `energy`, `gas`, `home`, `meter`, `protect`, `rewards`, `search`, `tag`. Please see the [documentation for ns-icon](../components/ns-icon)  | Optional icon to add to the event decoration |
-| `index` | `number` | |  | Optional numbered index to add to the event decoration |
-| `updatedAt` | `date` | |  | Optional ISO date only used along with `completed` status to record the event completed date & time. |
-
-| Slots | Type |
-| :--- | :--- |
-| `heading` | `<h3>` |
-| `anonymous` | `<ns-card>` |
-
 ### Step
-
------ will there be a video just like the standard.? -----
 
 The step variant is a simpler version of the timeline component that excludes summary and status.
 
@@ -159,34 +114,37 @@ There is provision for a heading to describe what process the timeline is showin
 
 In the step variant, additional information can always be added to an event if more explanation is needed. 
 
-#### Best practice for Timeline Step
+#### Usage
+
+Coming soon...
+
+#### Component placement
+
+Coming soon...
+
+## Best practice for Timeline
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use a maximum of 10 steps | Add too much detailed content |
 | Consider if the title duplicates page title | Use illustrations or icons in additional content |
 | Provide helpful messaging | Use overly long event names |
+| Use summary to set expectations for the `standard` variant | Use timestamp if it causes confusion with a date elsewhere on the page for the `standard` variant |
 
-#### Best practice for Individual Timeline Step Event
+## Best practice for Individual Timeline Event 
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use any one of number or fallback decoration for all events in the timeline sequence |  Mix two different decoration types in events |
-| Use `ns-card` to provide additional information | Add status to an event |
+| Use text or `ns-card` within `additional content` to provide additional information | Add status to an event for the `step` variant |
+| Use either default, icon or number decoration for all events in the timeline sequence for the `standard` variant |  Mix two different decoration types in events |
+| Use either number or fallback decoration for all events in the timeline sequence for the `Step` variant | Use any icon type with names ending `solid` or `outline` |
 
-#### Usage
-
-Add usage
-
-#### Component placement
-
-Add placement
-
-#### Specification for Timeline Step
+## Specification for Timeline
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `type` | `string` | `standard` | `standard`, `step` | Set to standard to use the more dynamic version of the timeline |
+| `showstepcount` | `boolean` | `false` | `true`, `false` | Set true to show completed vs total event progress count below the timeline heading |
 
 | Slots | Type |
 | :--- | :--- |
@@ -194,9 +152,19 @@ Add placement
 | `summary` | `<p>` |
 | `event` | `<ns-timeline-event>` |
 
-#### Specification for Individual Timeline Step Event
+## Specification for Individual Timeline Event
 
--- add specs for individual step events
+| Attribute | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `status` | `string` | `pending`| `pending`, `inprogress`, `actionrequired`, `warning`, `error`, `completed`, `cancelled` | |
+| `icon`| `string` | | `appliance`, `bill`, `boiler`, `calendar`, `clock`, `download`, `electricity`, `energy`, `gas`, `home`, `meter`, `protect`, `rewards`, `search`, `tag`. Please see the [documentation for ns-icon](../components/ns-icon)  | Optional icon to add to the event decoration |
+| `index` | `number` | |  | Optional numbered index to add to the event decoration |
+| `updatedAt` | `date` | |  | Optional ISO date only used along with `completed` status to record the event completed date & time. |
+
+| Slots | Type |
+| :--- | :--- |
+| `heading` | `<h3>` |
+| `anonymous` | `<ns-card>` |
 
 ## Feedback
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-form]).
