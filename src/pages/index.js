@@ -30,7 +30,7 @@ function Home() {
       description="Description will go into a meta tag in <head />">
 
       <main class="ndsn">
-        <ns-landmark type="hillside" gradient="invert-ramp-cyan">
+        <ns-landmark type="hillside" gradient="cyan">
           <h1 slot="heading">
             <span class="h5">Nucleus team.</span>
             <span class="h1">
@@ -64,12 +64,12 @@ function Home() {
         </ns-panel>
 
 
-        <ns-panel decoration="circle-yellow-left">
+        <ns-panel decoration="yellow">
           <ns-lockup>
             <h2 slot="heading">
               <span class="h5">Becoming Nucleus.</span>
-              <span class="h2 enlighten">
-                Join in the <b>conversation and movement</b> of our design system
+              <span class="h2">
+                Join in the conversation and movement of our design system
               </span>
             </h2>
             <p slot="paragraph">Want to know how to start using Nucleus or not sure if we have what you are looking&nbsp;for?</p>
