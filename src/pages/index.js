@@ -33,8 +33,8 @@ function Home() {
         <ns-landmark type="hillside" gradient="invert-ramp-cyan">
           <h1 slot="heading">
             <span class="h5">Nucleus team.</span>
-            <span class="h1 enlighten">
-              Welcome to the <b>British Gas<br class="landmark-br"></br> Design System</b>
+            <span class="h1">
+              Welcome to the British Gas Design System
             </span>
           </h1>
           <p slot="paragraph">Here to solve and build a more cohesive and coherent web experience for the British Gas&nbsp;brand.</p>
