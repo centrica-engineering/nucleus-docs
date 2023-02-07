@@ -40,7 +40,7 @@ Our system colours are used to support and enhance communication to users throug
 
 ## Accessibility
 
-Always be mindful of how colour contrast many impact accessibility when dealing with type online and use our range of tools to ensure that your colour combinations are fully WCAG AA compliant (we follow [version 2.1 of the guidelines](https://www.w3.org/TR/WCAG21/) and will be checking for any required updates when 2.2 is published)
+Always be mindful of how colour contrast many impact accessibility when dealing with type online and use our range of tools to ensure that your colour combinations are fully WCAG AA compliant (we follow [version 2.1 of the guidelines](https://www.w3.org/TR/WCAG21/#use-of-color) and will be checking for any required updates when 2.2 is published)
 
 Please refer to our [accessiblity section](getting-started/accessibility.md) for more detail on colour and accessibility. 
 
