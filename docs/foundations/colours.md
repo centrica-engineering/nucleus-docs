@@ -11,11 +11,11 @@ Colour plays an important role in defining our visual identity. You can use our 
 
 ## Our brand colours 
 
-At our core, we’re a blue and white brand. Our blues and white should always take center stage to create a crisp, clean and functional digital experience. 
-
 We use our colours to add energy and warmth to our visual identity. They also play a key role in creating strong brand recognition for our customers.
 
-Secondary and tertiary colours can be introduced in many ways, primarily through our illustrations and colour accents in our decorations and backgrounds.
+At our core, we’re a blue and white brand. Our blues and white should always take center stage to create a crisp, clean and functional digital experience. 
+
+Secondary colours can be introduced in many ways, primarily through our illustrations and colour accents in our decorations and backgrounds.
 
 Please use our brand colour palette across all digital products.
 
