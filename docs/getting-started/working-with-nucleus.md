@@ -41,16 +41,16 @@ There are many ways to access www.britishgas.co.uk and we strive to ensure it's 
 
 We prioritise the following list of browsers and devices identified as the most popular used by our customers.
 
-**Last updated - 2021-06-16**
+**Last updated - 2022-02-14**
 
 | Device | Operating System | Browser | Version |
 | :--- | :--- | :--- | :--- |
-| Computer | Windows 11 | Chrome | 108 |
-| Computer | Windows 11 | Firefox | 108 |
-| Computer | Windows 11 | Edge | 108 |
+| Computer | Windows 11 | Chrome | 110 |
+| Computer | Windows 11 | Firefox | 109 |
+| Computer | Windows 11 | Edge | 109 |
 | Computer | MacOS Ventura | Safari | 16 |
-| Computer | MacOS Ventura | Chrome | 108 |
-| Computer | MacOS Ventura | Firefox | 108 |
+| Computer | MacOS Ventura | Chrome | 110 |
+| Computer | MacOS Ventura | Firefox | 109 |
 | iPhone | iOS 16 (iPhone 14) | Safari |16 |
 | iPhone | iOS 15 (iPhone 13) | Safari | 15 |
 | iPhone | iOS 16 (iPhone 14 Pro) | Chrome | 92 |
