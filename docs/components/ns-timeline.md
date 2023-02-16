@@ -20,6 +20,9 @@ It gives an overview of the whole process and progress of a customer journey. It
 
 There are two variants of the timeline component.
 
+- standard version: to show steps of a process that has started, allowing to show the status of each step
+- step version: to set the expectation of a process that hasn't started or doesn't have a specific status
+
 ### Usage
 
 <StorybookStory story="components-ns-timeline--time-line"></StorybookStory>
@@ -113,7 +116,7 @@ There is provision for a heading to describe what process the timeline is showin
 
 In the step variant, additional information can always be added to an event if more explanation is needed. 
 
-## Best practice
+## Best practice for the Timeline Component
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -122,7 +125,7 @@ In the step variant, additional information can always be added to an event if m
 | Provide helpful messaging | Use overly long event names |
 | Use summary to set expectations for the `standard` variant | Use timestamp if it causes confusion with a date elsewhere on the page for the `standard` variant |
 
-## Best practice for Individual Timeline Event 
+## Best practice for the Individual Timeline Events
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -130,7 +133,7 @@ In the step variant, additional information can always be added to an event if m
 | Use either default, icon or number decoration for all events in the timeline sequence for the `standard` variant |  Mix two different decoration types in events |
 | Use either number or fallback decoration for all events in the timeline sequence for the `Step` variant | Use any icon type with names ending `solid` or `outline` |
 
-## Specification for Timeline
+## Specification for the Timeline Component
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
@@ -143,7 +146,7 @@ In the step variant, additional information can always be added to an event if m
 | `summary` | `<p>` |
 | `event` | `<ns-timeline-event>` |
 
-## Specification for Individual Timeline Event
+## Specification for the Individual Timeline Events
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
