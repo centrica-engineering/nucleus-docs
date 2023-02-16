@@ -20,7 +20,21 @@ It gives an overview of the whole process and progress of a customer journey. It
 
 There are two variants of the timeline component.
 
+### Usage
+
+<StorybookStory story="components-ns-timeline--time-line"></StorybookStory>
+
+### Component placement
+
+<ComponentPlacement component="ns-timeline" parentComponents="ns-panel"></ComponentPlacement>
+
+<ComponentPlacement component="ns-timeline-event" parentComponents="ns-timeline"></ComponentPlacement>
+
 ### Standard
+
+* Provides the customer with visibility on the status of a process or system in their journey.
+* Gives a top-level overview of the process.
+* It's clear to understand and manages expectations by showing the current situation to the user.
 
 (Sequence shortened.)
 
@@ -29,11 +43,6 @@ There are two variants of the timeline component.
     <source src="https://user-images.githubusercontent.com/78355810/123393414-fc059600-d595-11eb-87d5-7e38954254af.mp4" type="video/mp4" />
   </video>
 </figure>
-
-
-* Provides the customer with visibility on the status of a process or system in their journey.
-* Gives a top-level overview of the process.
-* It's clear to understand and manages expectations by showing the current situation to the user.
 
 #### Status
 
@@ -82,16 +91,6 @@ On events that are in progress, it is possible to add further information releva
 
 On events that have been successfully completed, there is the option to display a time-stamp alongside the status.
 
-#### Usage
-
-<StorybookStory story="components-ns-timeline--time-line"></StorybookStory>
-
-#### Component placement
-
-<ComponentPlacement component="ns-timeline" parentComponents="ns-panel"></ComponentPlacement>
-
-<ComponentPlacement component="ns-timeline-event" parentComponents="ns-timeline"></ComponentPlacement>
-
 ### Step
 
 The step variant is a simpler version of the timeline component that excludes summary and status.
@@ -114,15 +113,7 @@ There is provision for a heading to describe what process the timeline is showin
 
 In the step variant, additional information can always be added to an event if more explanation is needed. 
 
-#### Usage
-
-Coming soon...
-
-#### Component placement
-
-Coming soon...
-
-## Best practice for Timeline
+## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
