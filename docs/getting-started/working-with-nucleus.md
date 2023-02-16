@@ -41,7 +41,7 @@ There are many ways to access www.britishgas.co.uk and we strive to ensure it's 
 
 We prioritise the following list of browsers and devices identified as the most popular used by our customers.
 
-**Last updated - 2022-02-14**
+**Last updated - 2023-02-14**
 
 | Device | Operating System | Browser | Version |
 | :--- | :--- | :--- | :--- |
