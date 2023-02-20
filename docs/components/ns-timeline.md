@@ -16,7 +16,7 @@ It gives an overview of the whole process and progress of a customer journey. It
 
 ## Content guidance
 
-### Variants and Purpose
+### Variants and purpose
 
 There are two variants of the timeline component.
 
@@ -116,7 +116,7 @@ There is provision for a heading to describe what process the timeline is showin
 
 In the step variant, additional information can always be added to an event if more explanation is needed. 
 
-## Best practice for the Timeline Component
+## Best practice for the timeline component
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -125,7 +125,7 @@ In the step variant, additional information can always be added to an event if m
 | Provide helpful messaging | Use overly long event names |
 | Use summary to set expectations for the `standard` variant | Use timestamp if it causes confusion with a date elsewhere on the page for the `standard` variant |
 
-## Best practice for the Individual Timeline Events
+## Best practice for the individual timeline events
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -133,7 +133,7 @@ In the step variant, additional information can always be added to an event if m
 | Use either default, icon or number decoration for all events in the timeline sequence for the `standard` variant |  Mix two different decoration types in events |
 | Use either number or fallback decoration for all events in the timeline sequence for the `Step` variant | Use any icon type with names ending `solid` or `outline` |
 
-## Specification for the Timeline Component
+## Specification for the timeline component
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
@@ -146,7 +146,7 @@ In the step variant, additional information can always be added to an event if m
 | `summary` | `<p>` |
 | `event` | `<ns-timeline-event>` |
 
-## Specification for the Individual Timeline Events
+## Specification for the individual timeline events
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
