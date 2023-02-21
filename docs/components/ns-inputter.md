@@ -29,7 +29,7 @@ The text input is ideal for entering text that takes up a single line, such as a
 
 ![Text input](https://user-images.githubusercontent.com/45626534/95720272-ec912780-0c68-11eb-815c-c0e57f311374.jpg)
 
-[See `<ns-inputter>` text input on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--text-input).
+[See `<ns-inputter>` text input on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-components-ns-inputter--text-input).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
