@@ -5,16 +5,16 @@ description: British Gas typeface - BG Flame
 
 ## Typeface
 
-The BG Flame font is a typeface unique to British Gas. Is has a clear, legible and elegant style.
+The Centrica Stabil Grotesk font is a typeface unique to British Gas. It has a clear, legible and elegant style.
 
 We fallback to `sans-serif` to allow the operating system to provide the substitute.
 
 
 ## Weights
 
-There are three weights of BG Flame; bold, regular and light.
+There are two weights of Centrica Stabil Grotesk; Medium or Book.
 
-Each of these weights are to be used to ensure variety through our content and messaging, in turn enabling us to create visual clarity, pace and hierarchy.
+Both of these weights are to be used to ensure variety through our content and messaging, in turn enabling us to create visual clarity, pace and hierarchy.
 
 This helps us to highlight different details and make sure legibility and readability is prominent in all our communications.
 
