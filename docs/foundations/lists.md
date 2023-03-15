@@ -160,7 +160,7 @@ The following components have been designed to use lists:
 |  |  |
 | :--- | :--- |
 | [ns-card](components/ns-card.md) | [ns-accordion](components/ns-accordion.md) |
-| ![image](https://user-images.githubusercontent.com/28779/104291089-071aad00-54b3-11eb-9abc-45322d44e8db.png) ![image](https://user-images.githubusercontent.com/28779/104291148-14d03280-54b3-11eb-8957-dcd57669ff5e.png) | ![image](https://user-images.githubusercontent.com/28779/104291248-34675b00-54b3-11eb-8168-b64c184b44c3.png) |
+| ![image](https://user-images.githubusercontent.com/78355810/225370157-e3df4e83-dde2-41ab-be50-78990d6c5e70.png) ![image](https://user-images.githubusercontent.com/78355810/225371334-d0c729e9-9073-4d3a-b704-d8fc6f1d44a3.png) | ![image](https://user-images.githubusercontent.com/78355810/225386389-ad5cdeec-a276-43af-9a30-400d50dcd940.png) |
 | [ns-lockup](components/ns-lockup.md) | [ns-landmark](components/ns-landmark.md) |
 | ![image](https://user-images.githubusercontent.com/28779/104291321-4e08a280-54b3-11eb-89cd-3b297a7680f9.png) | ![image](https://user-images.githubusercontent.com/28779/104291289-40ebb380-54b3-11eb-9f92-5818958b9126.png) |
 | [ns-product-card](components/ns-product-card.md) | [ns-selector](components/ns-selector.md) |
