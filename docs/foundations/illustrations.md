@@ -7,8 +7,8 @@ description: Nucleus illustration suite.
 
 We use illustrations to bring warmth of our brand personality to the website. We use bold, geometric shapes to make our complicated world feel friendly and accessible.
 
-![Illustrations](https://user-images.githubusercontent.com/43471890/62045274-e8602200-b1fc-11e9-94ec-948ec0ae2a77.png)  
-Nucleus illustrations
+![Illustrations](https://user-images.githubusercontent.com/78355810/226600912-6b55dd2d-b688-4e38-bc0b-5aab3b48b47a.jpg)  
+Nucleus British Gas illustrations.
 
 ## How we use illustrations
 
@@ -27,13 +27,13 @@ If you are looking to create a new illustration then please check there is not s
 - Use the illustration grid to ensure consistency with current icons.
 - We make sure illustration works across different sizes.
 - Design clean and simple forms using our shapes.
-- Use flat shapes over 3d forms, depth can be added through the use of gradients.
-- Use consistent gradients and colours. Do not use multiply when using opacity.
+- Use flat shapes over 3d forms.
+- Use consistent flat colours. Do not use multiply blend modes or opacities.
 - Rounded corners should make icon feel friendly, not childish.
 
 ### Illustration grid
 
-We use a grid for icon creation to give consistency across our illustrations. Here are examples of the grid and basic shapes to show it's usage:
+We use a grid for icon creation to give consistency across our illustrations. Here are examples of the grid and basic shapes to show its usage:
 
 | Grid | Grid - Vertical | Grid - Horizontal | Grid - Circle |
 | :--- | :--- | :--- | :--- |
@@ -41,25 +41,24 @@ We use a grid for icon creation to give consistency across our illustrations. He
 
 ### Colour
 
-Illustrations use a set of three different gradients:
+Each illustration uses predominantly a 2-colour pair from the below array:
 
-#### Gradient - Blue
+#### Cyan and Blue
 
-![Gradient usage - Blue](https://user-images.githubusercontent.com/78355810/107789459-87019480-6d49-11eb-9bd7-0d6f7e653f6e.jpg)
+![Blue](https://user-images.githubusercontent.com/78355810/226624598-284b55f0-1ab8-4d75-b7a8-5fe714355dc9.png)
 
-#### Gradient - Green
+#### Lime and Forest
 
-![Gradient usage - Green](https://user-images.githubusercontent.com/78355810/107789536-9ed91880-6d49-11eb-8356-2858c5a628e0.jpg)
+![Green](https://user-images.githubusercontent.com/78355810/226624595-50b33365-5709-4ef7-b7ab-6da3e83135dd.png)
 
-#### Gradient - Yellow
+#### Yellow and Red
 
-![Gradient usage - Yellow](https://user-images.githubusercontent.com/78355810/107789591-b44e4280-6d49-11eb-8dbf-6384e438be9e.jpg)
+![Yellow](https://user-images.githubusercontent.com/78355810/226624592-69ba0b57-ec89-4694-a116-43e3b4e4ce33.png)
 
 #### Highlights
 
-Our illustrations use `@white` (#FFFFFF) to pull out details within the object.
+Our illustrations use `white` (#FFFFFF) to pull out details within the object.
 
-#### Depth
+#### Placement and contrast
 
-Illustrations use `@slate` (#333f48) over half of the object in order to add depth.
-
+We should be mindful of the colour background on which these illustrations will be situated. For example, if choosing a decoration for a containing component such as ns-panel. Use on `white` or `grey-light` to ensure a good contrast.
