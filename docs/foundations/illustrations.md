@@ -57,7 +57,7 @@ Each illustration uses predominantly a 2-colour pair from the below array:
 
 #### Highlights
 
-Our illustrations use `white` (#FFFFFF) to pull out details within the object.
+Our illustrations use `white` (#FFFFFF) to highlight details within the object.
 
 #### Placement and contrast
 
