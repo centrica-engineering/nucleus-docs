@@ -62,4 +62,4 @@ Our illustrations use `white` (#FFFFFF) to highlight details within the object.
 
 #### Placement and contrast
 
-We should be mindful of the colour background on which these illustrations will be situated. For example, if choosing a decoration for a containing component such as ns-panel. Use on white or grey-light to ensure a good contrast.
+We should be mindful of the colour background on which these illustrations will be situated. For example, if choosing a decoration for a containing component such as ns-panel we should ensure a good contrast.
