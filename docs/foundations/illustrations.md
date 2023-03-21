@@ -23,13 +23,13 @@ If you are looking to create a new illustration then please check there is not s
 
 ### Illustration creation guidelines
 
-- We make sure that a similar illustration is not already in use.
-- Use the illustration grid to ensure consistency with current icons.
-- We make sure illustration works across different sizes.
-- Design clean and simple forms using our shapes.
-- Use flat shapes over 3d forms.
-- Use consistent flat colours. Do not use multiply blend modes or opacities.
-- Rounded corners should make icon feel friendly, not childish.
+* We make sure that a similar illustration is not already in use.
+* Use the illustration grid to ensure consistency with current icons.
+* We make sure illustration works across different sizes.
+* Design clean and simple forms using our shapes.
+* Use flat shapes over 3d forms.
+* Use consistent flat colours. Do not use multiply blend modes or opacities.
+* Rounded corners should make icon feel friendly, not childish.
 
 ### Illustration grid
 
