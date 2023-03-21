@@ -45,19 +45,12 @@ Our Column width is determined by setting the left and right Offset to be 5%.
 
 The offset refers to the space to the left and right of the Column taking up 5% of the width of the viewport each side. At 320px the Offset is 16px.
 
-### Our Sketch library
+### Figma library
 
-Our latest Sketch library uses just the two most commonly used viewports (based on our analytics). A set of components have been designed for each, labelled as 'Narrow' and 'Wide' – these equate to 'Squash court' and 'Hockey pitch' sizes. They align with our coded components (as found in Storybook) and as they appear in those viewports.
+Our Figma UI Kit library uses just the two most commonly used viewports (based on our analytics). A set of components have been designed for each, labelled as 'Narrow' and 'Wide' – these equate to 'Squash court' and 'Hockey pitch' sizes, typically a small mobile and a small laptop size. The Figma components align with our coded components (the single source of truth, as found in Storybook) and are correct for how they appear or and responsively transformed at those viewport sizes. The Figma components have been constructed to emulate the same options and behaviour as closely as possible whilst being able to accommodate varied content.
 
-It means there is a version for mobile and a version for laptop-sized viewports. Limiting the number of viewports in the Sketch library has vastly reduced file size, maintenance effort and the chances of using an incorrectly sized variant of a component for your chosen viewport.
+The Nucleus British Gas Figma UI Kit library is published and consumed online through Figma and updates are released in the same way. If you need access to it you will need to request to be added to the Figma British Gas organisation workgroup. Get in touch on our [Teams channel](https://teams.microsoft.com/l/channel/19%3ac806c8b36aec4218ae469b1d0ff6a4c3%40thread.tacv2/General?groupId=1f9c2411-216b-42a8-9bb0-c51f28ff5071&tenantId=a603898f-7de2-45ba-b67d-d35fb519b2cf)
 
-Ultimately, we recommend using our prototyping tool when designing journeys because it uses fully responsive coded components and is better for user testing. The Sketch library is a supplementary tool for trying out new ideas.
+### Sketch library (deprecated)
 
-Instructions on how to obtain the library –  
-[Sketch Library - GitHub Wiki](https://github.com/ConnectedHomes/centrica-ux/wiki)
-
-
-### Our Figma library
-
-Our current Figma library is based on our Sketch library. Note that there are a few differences that make use of Figma's Autolayout functionality etc. This may evolve and change over the next release to further take advantage of things such as Component Variants properties etc. that will make the process of altering states and the like much slicker.
-Unlike the Sketch library, the Figma library is published through Figma instead of it being released on GitHub. It is currently in an early release phase, and not published on the British Gas Figma organisation. If you want access to it, please do get in touch on our [Teams channel](https://teams.microsoft.com/l/channel/19%3ac806c8b36aec4218ae469b1d0ff6a4c3%40thread.tacv2/General?groupId=1f9c2411-216b-42a8-9bb0-c51f28ff5071&tenantId=a603898f-7de2-45ba-b67d-d35fb519b2cf) should you want to use it so we can help you get set up.
+Our Sketch library is no longer maintained or updated and can be considered deprecated. The Figma library is currently the only supported version.
