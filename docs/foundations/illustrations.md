@@ -7,7 +7,8 @@ description: Nucleus illustration suite.
 
 We use illustrations to bring warmth of our brand personality to the website. We use bold, geometric shapes to make our complicated world feel friendly and accessible.
 
-![Illustrations](https://user-images.githubusercontent.com/78355810/226641874-13367218-92d6-4f7c-86b7-615d488abaea.jpg)  
+![Illustrations](images/illustrations/whyweuse-illustrations.webp)
+
 Nucleus British Gas illustrations.
 
 ## How we use illustrations
@@ -37,7 +38,8 @@ We use a grid for icon creation to give consistency across our illustrations. He
 
 | Grid | Grid - Vertical | Grid - Horizontal | Grid - Circle |
 | :--- | :--- | :--- | :--- |
-| ![Grid for creating illustrations](https://user-images.githubusercontent.com/43471890/62045505-66bcc400-b1fd-11e9-949e-572e2dc40bf8.jpg) | ![Grid with vertical highlight for creating illustrations](https://user-images.githubusercontent.com/43471890/62050044-6b3aaa00-b208-11e9-8adb-3df5d4c240dd.jpg) | ![Grid with horizontal highlight for creating illustrations](https://user-images.githubusercontent.com/43471890/62050140-a5a44700-b208-11e9-8bf8-555ec87242a8.jpg) | ![Grid with circle highlight for creating illustrations](https://user-images.githubusercontent.com/43471890/62050739-c91bc180-b209-11e9-8561-134bd845fb4b.jpg) |
+| ![Grid for creating illustrations](images/illustrations/illustrationgrid-base.webp) | ![Grid with vertical highlight for creating illustrations](images/illustrations/illustrationgrid-vertical.webp) | ![Grid with horizontal highlight for creating illustrations](images/illustrations/illustrationgrid-horizontal.webp) | ![Grid with circle highlight for creating illustrations](images/illustrations/illustrationgrid-circle.webp) |
+
 
 ### Colour
 
@@ -45,15 +47,15 @@ Each illustration uses predominantly a 2-colour pair from the below array:
 
 #### Cyan and Blue
 
-![Cyan and Blue](https://user-images.githubusercontent.com/78355810/226643180-5e82bf8b-e411-43c4-adaf-b3306912bcbe.png)
+![Cyan and Blue](images/illustrations/colours-cyan-and-blue.webp)
 
 #### Lime and Forest
 
-![Lime and Forest](https://user-images.githubusercontent.com/78355810/226643179-a9da7558-654b-406b-b595-726bf78da22e.png)
+![Lime and Forest](images/illustrations/colours-lime-and-forest.webp)
 
 #### Yellow and Red
 
-![Yellow and Red](https://user-images.githubusercontent.com/78355810/226643177-ad3c15d1-3e46-4491-88d0-d4ac890419a6.png)
+![Yellow and Red](images/illustrations/colours-yellow-and-red.webp)
 
 #### Highlights
 
