@@ -31,7 +31,6 @@ If you are looking to create a new illustration then please check there is not s
 * Use consistent flat colours. Do not use multiply blend modes or opacities.
 * Rounded corners should make icon feel friendly, not childish.
 
-
 ### Illustration grid
 
 We use a grid for icon creation to give consistency across our illustrations. Here are examples of the grid and basic shapes to show it's usage:
