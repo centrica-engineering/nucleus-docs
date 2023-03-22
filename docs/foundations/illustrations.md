@@ -40,7 +40,6 @@ We use a grid for icon creation to give consistency across our illustrations. He
 | :--- | :--- | :--- | :--- |
 | ![Grid for creating illustrations](images/illustrations/illustrationgrid-base.webp) | ![Grid with vertical highlight for creating illustrations](images/illustrations/illustrationgrid-vertical.webp) | ![Grid with horizontal highlight for creating illustrations](images/illustrations/illustrationgrid-horizontal.webp) | ![Grid with circle highlight for creating illustrations](images/illustrations/illustrationgrid-circle.webp) |
 
-
 ### Colour
 
 Each illustration uses predominantly a 2-colour pair from the below array:
