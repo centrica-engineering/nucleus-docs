@@ -160,16 +160,16 @@ The following components have been designed to use lists:
 |  |  |
 | :--- | :--- |
 | [ns-card](components/ns-card.md) | [ns-accordion](components/ns-accordion.md) |
-| ![image](https://user-images.githubusercontent.com/78355810/225370157-e3df4e83-dde2-41ab-be50-78990d6c5e70.png) ![image](https://user-images.githubusercontent.com/78355810/225371334-d0c729e9-9073-4d3a-b704-d8fc6f1d44a3.png) | ![image](https://user-images.githubusercontent.com/78355810/225386389-ad5cdeec-a276-43af-9a30-400d50dcd940.png) |
+| ![image](images/lists/usage-ns-card.webp) ![image](images/lists/usage-ns-card2.webp) | ![image](images/lists/usage-ns-accordion.webp) |
 | [ns-lockup](components/ns-lockup.md) | [ns-landmark](components/ns-landmark.md) |
-| ![image](https://user-images.githubusercontent.com/78355810/225638350-4a44ab8f-3aeb-45ee-86e0-ab616c1f1ee8.jpg) | ![image](https://user-images.githubusercontent.com/78355810/225667509-0db7af74-bc8e-4e1c-8fe1-8630aa578ce8.jpg) |
+| ![image](images/lists/usage-ns-lockup.webp) | ![image](images/lists/usage-ns-landmark.webp) |
 | [ns-product-card](components/ns-product-card.md) | [ns-selector](components/ns-selector.md) |
-| ![image](https://user-images.githubusercontent.com/78355810/225697980-83df1d0d-be45-4465-a142-5e20b2135754.jpg) | ![image](https://user-images.githubusercontent.com/78355810/225895066-2b8e3684-95c9-48c7-a128-76452b570ae7.jpg) ![image](https://user-images.githubusercontent.com/78355810/225897253-8ea2e0e6-dd7c-4213-a1a7-24220f39b474.jpg) |
+| ![image](images/lists/usage-ns-product-card.webp) | ![image](images/lists/usage-ns-selector.webp) ![image](images/lists/usage-ns-selector2.webp) |
 | [ns-editorial](components/ns-editorial.md) |  |
-| ![image](https://user-images.githubusercontent.com/78355810/225899190-0abd77aa-1840-4f94-83bc-c0c8c5d5bf0d.jpg) |  |
+| ![image](images/lists/usage-ns-editorial.webp) |  |
 
 A popular use of the `dl-row` list is to playback data captured during a journey.
 
-Here an example:
+Here is an example:
 
-![image](https://user-images.githubusercontent.com/78355810/225903353-9cc10010-4f4c-442e-872c-778f0b78bc50.jpg)
+![image](images/lists/usage-dl-row-playback.webp)
