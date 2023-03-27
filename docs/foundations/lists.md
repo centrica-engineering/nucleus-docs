@@ -160,16 +160,16 @@ The following components have been designed to use lists:
 |  |  |
 | :--- | :--- |
 | [ns-card](components/ns-card.md) | [ns-accordion](components/ns-accordion.md) |
-| ![image](https://user-images.githubusercontent.com/28779/104291089-071aad00-54b3-11eb-9abc-45322d44e8db.png) ![image](https://user-images.githubusercontent.com/28779/104291148-14d03280-54b3-11eb-8957-dcd57669ff5e.png) | ![image](https://user-images.githubusercontent.com/28779/104291248-34675b00-54b3-11eb-8168-b64c184b44c3.png) |
+| ![image](images/lists/usage-ns-card.webp) ![image](images/lists/usage-ns-card2.webp) | ![image](images/lists/usage-ns-accordion.webp) |
 | [ns-lockup](components/ns-lockup.md) | [ns-landmark](components/ns-landmark.md) |
-| ![image](https://user-images.githubusercontent.com/28779/104291321-4e08a280-54b3-11eb-89cd-3b297a7680f9.png) | ![image](https://user-images.githubusercontent.com/28779/104291289-40ebb380-54b3-11eb-9f92-5818958b9126.png) |
+| ![image](images/lists/usage-ns-lockup.webp) | ![image](images/lists/usage-ns-landmark.webp) |
 | [ns-product-card](components/ns-product-card.md) | [ns-selector](components/ns-selector.md) |
-| ![image](https://user-images.githubusercontent.com/28779/104291382-5c56be80-54b3-11eb-9c9b-72ae82aadbe2.png) | ![image](https://user-images.githubusercontent.com/28779/104291412-67115380-54b3-11eb-9ec7-9de039835152.png) ![image](https://user-images.githubusercontent.com/28779/104291434-6ed0f800-54b3-11eb-8360-81bdc0fbc71f.png) |
+| ![image](images/lists/usage-ns-product-card.webp) | ![image](images/lists/usage-ns-selector.webp) ![image](images/lists/usage-ns-selector2.webp) |
 | [ns-editorial](components/ns-editorial.md) |  |
-| ![image](https://user-images.githubusercontent.com/28779/104291207-27e30280-54b3-11eb-8dd0-40e40b1a6409.png) |  |
+| ![image](images/lists/usage-ns-editorial.webp) |  |
 
 A popular use of the `dl-row` list is to playback data captured during a journey.
 
-Here an example:
+Here is an example:
 
-![image](https://user-images.githubusercontent.com/28779/104168630-3d462700-53f6-11eb-8410-1f425020b117.png)
+![image](images/lists/usage-dl-row-playback.webp)
