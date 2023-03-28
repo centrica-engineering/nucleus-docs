@@ -16,7 +16,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Content Guidance
 
-![Article - Content Guidance](https://user-images.githubusercontent.com/45626534/101144532-5ea23f00-3610-11eb-9fd0-8361505fa80a.png)
+![Article - Content Guidance](images/ns-article/content-guidance-ns-article.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
