@@ -19,11 +19,11 @@ There is no distinciton between a hyperlink or an action through the design of `
 
 ### CTA Direct
 
-![CTA - Direct](https://user-images.githubusercontent.com/45626534/74147664-9d878400-4bfb-11ea-9c30-1ede80931c69.png)
+![CTA - Direct](images/ns-cta/cta-direct-ns-cta.webp)
 
 ### CTA Text
 
-![CTA - Text](https://user-images.githubusercontent.com/45626534/74147667-9eb8b100-4bfb-11ea-9425-b7dbf2908a5d.png)
+![CTA - Text](images/ns-cta/cta-text-ns-cta.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
