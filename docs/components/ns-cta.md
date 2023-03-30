@@ -78,7 +78,7 @@ If the action fails, don't leave the CTA in its Loading state. Present the user 
 
 Your loading message should be contextual to the action of the text of the CTA. E.g. "Get a quote" becomes "Getting your quote...". 
 
-![CTA - Loading state](https://user-images.githubusercontent.com/45626534/81697144-bc94ec80-945c-11ea-854a-39e0ecb86aa4.gif)
+![CTA - Loading state](images/ns-cta/states-loading-ns-cta.gif)
 
 You can see the live example of the loading state on [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-cta--direct-button-loading).
 
