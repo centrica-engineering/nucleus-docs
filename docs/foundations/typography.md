@@ -12,7 +12,7 @@ We fallback to `sans-serif` to allow the operating system to provide the substit
 
 ## Weights
 
-There are two weights of Centrica Stabil Grotesk; Medium or Book.
+There are two weights of _British Gas_; Medium or Body.
 
 Both of these weights are to be used to ensure variety through our content and messaging, in turn enabling us to create visual clarity, pace and hierarchy.
 
