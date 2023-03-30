@@ -5,7 +5,7 @@ description: British Gas typeface - BG Flame
 
 ## Typeface
 
-The Centrica Stabil Grotesk font is a typeface unique to British Gas. It has a clear, legible and elegant style.
+The _British Gas_ font is a typeface unique to British Gas. It has a clear, legible and elegant style.
 
 We fallback to `sans-serif` to allow the operating system to provide the substitute.
 
