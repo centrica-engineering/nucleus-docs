@@ -18,7 +18,7 @@ Cards are used to apply a container around a related grouping of information; th
 
 ### Flat Card
 
-![Card - Flat](https://user-images.githubusercontent.com/7914977/204526966-a6c42c21-209e-4b2b-a358-777732ae7c81.png)
+![Card - Flat](images/ns-card/content-guidance-flat-card.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -29,7 +29,7 @@ Cards are used to apply a container around a related grouping of information; th
 
 ### Section Card
 
-![Card - Section](https://user-images.githubusercontent.com/45626534/74165461-0c290980-4c1d-11ea-89df-19f2784178e1.png)
+![Card - Section](images/ns-card/content-guidance-section-card.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -40,7 +40,7 @@ Cards are used to apply a container around a related grouping of information; th
 
 ### Support Image Card
 
-![Card - Support Image](https://user-images.githubusercontent.com/45626534/74165868-a12c0280-4c1d-11ea-900e-9800a0097c48.png)
+![Card - Support Image](images/ns-card/content-guidance-suppport-image-card.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
