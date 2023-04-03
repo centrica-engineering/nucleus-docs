@@ -8,7 +8,9 @@ const aToZ = (dir) => {
   let dirPath = path.join(docsPath, dir);
 
   fs.readdirSync(dirPath).forEach(file => {
-    dirFiles.push(`${dir}/${path.parse(file).name}`);
+    if (!file.includes('images')) {
+      dirFiles.push(`${dir}/${path.parse(file).name}`);
+    }
   });
 
   return dirFiles

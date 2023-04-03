@@ -15,7 +15,7 @@ We use accordions to break down content into meaningful sections, helping to red
 
 ## Content guidance
 
-![Accordion](https://user-images.githubusercontent.com/45626534/74158689-6a9cba80-4c12-11ea-8917-7bfabfd8582d.png)
+![Accordion](images/ns-accordion/contentguidance-ns-accordion.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
