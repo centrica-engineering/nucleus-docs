@@ -69,13 +69,11 @@ This piece of our structure provides a container for a single topic or task. Thi
 
 ## 3. Layout
 
-Here I refer to the layout of our components into three widths, Wide, Norm and Slim.
+The general layout of our components fit within a content area in between what is generally 5% of the total viewport width left and 5% right, up until 1,600 px wide when the main content area stays fixed at that size, the left and right margins expanding equally to fill the remaining space.
 
-The adding of a class to render different types of layout allows us to implement a modern and dynamic aspect of our creative principles.
+It allows our layouts to respond to different devices dynamically and be optimal for comfortable scanning.
 
-One way this is achieved is by occasionally breaking out of the Norm, which helps to draw attention and to provide some relief from the uniformity of the majority of the content. The Slim layout pulls the content narrower than the Norm to imply a similar effect.
-
-![wide-norm-slim](https://user-images.githubusercontent.com/28779/96426858-b9fda680-11f5-11eb-88f0-4e2039ca5376.png)
+![5 percent margins up to a 1600 pixel maximum content width](images/structure/layout.webp)
 
 ## 4. Columns
 
