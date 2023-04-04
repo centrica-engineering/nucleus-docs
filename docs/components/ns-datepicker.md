@@ -19,7 +19,7 @@ This component wraps our ns-inputter component. Guidelines defined on the ns-inp
 ns-datepicker supports 2 types `default` and `mask`.
 When type is set to `default` the date-picker will display a calendar UI for selecting the date.  On mobile/touch devices this will use the browsers native calendar.  On desktop/non-touch devices it will use the Nucleus calendar component.
 
-<img src="https://user-images.githubusercontent.com/4298413/104186377-388d6d00-540e-11eb-8365-1e59eab2c738.png" height="300" />
+![ns-datepicker type](images/ns-datepicker/datepicker-types-default-open.webp)
 
 ## Best practice
 
@@ -33,7 +33,7 @@ Also see ns-inputter [best practices](ns-inputter.md#considerations-of-best-prac
 
 ### Considerations of best practices
 
-When the browser supports the `<input type="date">` the format of the input will change depending on the settings of thier device. For example users in UK will get the dd/mm/yyyy date format where as users in United States of America will get the m/d/yy date format. Regardless of the input format dates are always returned following the ISO 8601 date format
+When the browser supports the `<input type="date">` the format of the input will change depending on the settings of their device. For example users in UK will get the dd/mm/yyyy date format where as users in United States of America will get the m/d/yy date format. Regardless of the input format dates are always returned following the ISO 8601 date format
 
 ### ISO 8601 date format
 
@@ -79,7 +79,6 @@ Also see ns-inputter [specification](components/ns-inputter.md#specification)
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-form]).
 
 <PageFooter></PageFooter>
-
 
 ## Related links
 
