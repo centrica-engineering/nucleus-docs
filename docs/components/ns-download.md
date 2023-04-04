@@ -15,14 +15,14 @@ import { PageFooter } from '../../includes/page-footer.js'
 It can be used on its own or as a list of downloads for multiple files.
 
 ## Content Guidance
-![ns-download](https://user-images.githubusercontent.com/7914977/201078425-37a4133f-b064-40a1-9261-e4d67346992f.png)
+
+![ns-download](images/ns-download/content-guidance-ns-download.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | File description | Provide a description of what the file is and or contains. |
 | B | File type | The component will pick the file type from the file (if it isn't a format supported by the component, you need to provide a file type attribute). |
 | C | File size | Accurate file size in whichever unit that makes the most sense: B, kB, MB, GB. |
-
 
 ## Best practice
 
@@ -34,7 +34,6 @@ It can be used on its own or as a list of downloads for multiple files.
 | Place in a list element with class `download-list` when you have more than 1 download link in row| Mix them amongst text types of `ns-cta`. |
 | Use it as a block element | |
 | Consider limiting the amount of downloads in a list to a manageable amount to ease choice | |
-
 
 ### Considerations of best practice
 
@@ -81,12 +80,11 @@ The one exception to this rule is in forms as there are often challenges around 
 
 - File type - if the file's `href` attribute contains one of the following file extensions: `.pdf`, `.xls`, then the fileType attribute will have no effect.
 
-
 <Tokens component="download"></Tokens>
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-download]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-download]).
+- Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-download]).
+- See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-download]).
 
 <PageFooter></PageFooter>
