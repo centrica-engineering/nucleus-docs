@@ -13,7 +13,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Content guidance
 
-![Editorial](images/ns-editorial/ns-editorial.webp)
+![Editorial](images/ns-editorial/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -25,7 +25,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 | Component | Variant | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-editorial`| n/a | 4:3 | 480x360px | &lt; 50kb | jpeg | [ns-editorial-480x360px](images/ns-editorial/ns-editorial-480x360px.jpg) |
+| `ns-editorial`| n/a | 4:3 | 480x360px | &lt; 50kb | jpeg | [placeholder-480x360px](images/ns-editorial/placeholder-480x360px.jpg) |
 
 ## Best practice
 
@@ -41,15 +41,15 @@ import { PageFooter } from '../../includes/page-footer.js'
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
 | Add lists | Start without a heading |
-| ![image](images/ns-editorial/ns-editorial-dos-lists.webp) | ![image](images/ns-editorial/ns-editorial-donts-noheading.webp) |
+| ![image](images/ns-editorial/dos-lists.webp) | ![image](images/ns-editorial/donts-noheading.webp) |
 | Break up long paragraphs with sub-headings | Have a long piece of content without any breaks |
-| ![image](images/ns-editorial/ns-editorial-longparagraphwithsubheadings.webp) | ![image](images/ns-editorial/ns-editorial-longparagraphwithoutsubheadings.webp) |
+| ![image](images/ns-editorial/dos-longparagraphwithsubheadings.webp) | ![image](images/ns-editorial/donts-longparagraphwithoutsubheadings.webp) |
 | Add contextual text links into copy | Add a CTA |
-| ![image](images/ns-editorial/ns-editorial-usecontextuallinks.webp) | ![image](images/ns-editorial/ns-editorial-dontsnocta.webp) |
+| ![image](images/ns-editorial/dos-usecontextuallinks.webp) | ![image](images/ns-editorial/donts-nocta.webp) |
 | Use without an image |  |
-| ![image](images/ns-editorial/ns-editorial-noimage.webp) |  |
+| ![image](images/ns-editorial/dos-noimage.webp) |  |
 | Reverse the editorial |  |
-| ![image](images/ns-editorial/ns-editorial-reverse.webp) |  |
+| ![image](images/ns-editorial/dos-reverse.webp) |  |
 
 ### Considerations of best practice
 
