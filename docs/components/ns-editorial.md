@@ -13,7 +13,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Content guidance
 
-![Editorial](https://user-images.githubusercontent.com/45626534/73436310-2ec84200-4342-11ea-85de-d9394fdf2f67.png)
+![Editorial](images/ns-editorial/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -25,7 +25,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 | Component | Variant | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-editorial`| n/a | 4:3 | 480x360px | &lt; 50kb | jpeg | [ns-editorial-480x360px](https://user-images.githubusercontent.com/50207859/67642150-d461b480-f900-11e9-9803-5ff4df7ad9a7.jpg) |
+| `ns-editorial`| n/a | 4:3 | 480x360px | &lt; 50kb | jpeg | [placeholder-480x360px](images/ns-editorial/placeholder-480x360px.jpg) |
 
 ## Best practice
 
@@ -41,15 +41,15 @@ import { PageFooter } from '../../includes/page-footer.js'
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
 | Add lists | Start without a heading |
-| ![image](https://user-images.githubusercontent.com/28779/65035656-a53f4700-d941-11e9-949d-64dbcf28d35d.png) | ![image](https://user-images.githubusercontent.com/28779/65036035-6bbb0b80-d942-11e9-832b-ef79afced5e5.png) |
-| Break up long paragraphs with sub-headings | Add a CTA |
-| ![image](https://user-images.githubusercontent.com/28779/65035911-331b3200-d942-11e9-9d0f-d95f02acb42b.png) | ![image](https://user-images.githubusercontent.com/28779/65036062-7a092780-d942-11e9-8806-6253a1b236b7.png) |
-| Add contextual text links into copy | Have a long piece of content without any breaks |
-| ![image](https://user-images.githubusercontent.com/28779/65035966-4af2b600-d942-11e9-9dc6-b30d5e94ca01.png) | ![image](https://user-images.githubusercontent.com/28779/65036084-842b2600-d942-11e9-8c1a-198a8769f166.png) |
+| ![image](images/ns-editorial/dos-lists.webp) | ![image](images/ns-editorial/donts-noheading.webp) |
+| Break up long paragraphs with sub-headings | Have a long piece of content without any breaks |
+| ![image](images/ns-editorial/dos-longparagraphwithsubheadings.webp) | ![image](images/ns-editorial/donts-longparagraphwithoutsubheadings.webp) |
+| Add contextual text links into copy | Add a CTA |
+| ![image](images/ns-editorial/dos-usecontextuallinks.webp) | ![image](images/ns-editorial/donts-nocta.webp) |
 | Use without an image |  |
-| ![image](https://user-images.githubusercontent.com/28779/65035985-5514b480-d942-11e9-9b2c-753f3338c7f3.png) |  |
+| ![image](images/ns-editorial/dos-noimage.webp) |  |
 | Reverse the editorial |  |
-| ![image](https://user-images.githubusercontent.com/28779/65036012-61990d00-d942-11e9-9e7a-f51f4ef7c47e.png) |  |
+| ![image](images/ns-editorial/dos-reverse.webp) |  |
 
 ### Considerations of best practice
 
