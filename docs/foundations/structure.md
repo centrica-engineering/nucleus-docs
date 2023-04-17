@@ -69,7 +69,7 @@ This piece of our structure provides a container for a single topic or task. Thi
 
 ## 3. Layout
 
-The general layout of our components fit within a content area in between what is generally 5% of the total viewport width left and 5% right, up until 1,600 px wide when the main content area stays fixed at that size, the left and right margins expanding equally to fill the remaining space.
+The general layout of our components fit within a content area in between margins that are generally and equally 5% of the total viewport width, up to 1,600 px wide. When that happens, the main content area remains fixed at that size, but the left and right margins then expand equally to fill the rest of the horizontal space as the viewport width increases over 1,600 px.
 
 It allows our layouts to respond to different devices dynamically and be optimal for comfortable scanning.
 
@@ -77,31 +77,33 @@ It allows our layouts to respond to different devices dynamically and be optimal
 
 ## 4. Columns
 
-When we discuss columns, we often refer to the `triple` layout and the `ns-column` component. Some of our components have column behaviour baked into them.
+When we discuss columns, we often refer to layout and the `ns-column` component. Some of our components have column behaviour baked into them.
 
-An example of a component that adapts it's appearance responsively within a column layout is the section variant of `ns-card`.
+An example of a component that adapts its appearance responsively within a column layout is the section variant of `ns-card`.
 
 ### `<ns-card>`
 
 In this screenshot we can observe the responsive behaviour of the `section` card.
 
-In `squash-court` and `tennis-court` the cards 'stick' to the edge of the browser. This is another dynamic aspect to layout, which has been used sparingly.
+In `squash-court` a card will fill the horizontal width of the content area between the left and right margins, the `ns-cta` also stretching across full width to aid user interaction as this width would typically be a touch device.
 
-In `basketball-court` the cards shift into a Slim width which aligns with the behaviour of the lockups and produces a comfortable reading experience.
+In `tennis-court` the cards are still filling the one central column but the ns-cta has adapted to be shorter in width.
 
-In `hockey-pitch` the cards switch into a triple layout and sit within the same width as the Norm.
+In `basketball-court` the cards have been defined in the `ns-column` properties to fit across 2 columns to produce a comfortable reading experience.
 
-Finally in `rugby-pitch` and above, the cards break out passed the Norm and enter into the Wide width.
+In `hockey-pitch` the cards have been defined in the `ns-column` properties to adapt to a 3 column layout.
 
-![section-card](https://user-images.githubusercontent.com/28779/95886913-1a649200-0d77-11eb-8c75-c9f9686607cc.png)
+Then in `rugby-pitch` and above, the cards, still defined to fit a 3 column layout, remain at the same width but the margins expand thereon.
+
+![section-card](images/structure/ns-card-viewports.webp)
 
 ### `<ns-lockup>`
 
-The lockjaw and locknut variants of `ns-lockup` contain a two column layout at `hockey-pitch` and above, with a 50%/50% layout. The lockbox variant has a 60%/40% or 40%/60%.
+The `ns-lockup` typically contains a two column layout at `hockey-pitch` and above, with a 50%/50% layout.
 
 ### `<ns-landmark>`
 
-The landmark, notably the summit variant changes in many ways. Starting at 100% in `squash-court` and `tennis-court` then adopting a 66%/33% in `basketball-court`, then a 50%/50% in `hockey-pitch` and above.
+The landmark, notably the summit variant changes in many ways. Starting at 100% in `squash-court` and `tennis-court` then adapting to keep the content high in the view in `basketball-court`, then a 60%/40% layout in `hockey-pitch` and above.
 
 ## 5. Component
 
@@ -120,26 +122,25 @@ The cards that adapt the most are `section` and `support with image`
 
 ### `<ns-editorial>`
 
-An image can be left or right, in `basketball-court` they will display on the right and in `tennis-court` and smaller they are stacked.
+An image can be left or right, from `hockey-pitch` and larger but they will display on the right only and stack at smaller viewports.
 
 ### `<ns-highlighter>`
 
-The highlighter behaves in a similar way to `ns-card section` as the icon swaps from right to left from `squash-court` to `tennis-court` and then reduces it's width to two thirds when in `basketball-court` and reduces width again to half when in `hockey-pitch` and above.
+The highlighter icon swaps from a stacked position in `squash-court` to the left in larger viewports, to optimise the space used.
 
 ### `<ns-landmark>`
 
-Lots of responsive decisions are contained within each `ns-landmark` for example, the `summit` variant there is no `card` at `squash-court` and `tennis-court` and at `basketball-court` the card overlaps the image and sticks to 
-the left. At `hockey-pitch` and above the card floats over the image.
+Lots of responsive decisions are contained within each `ns-landmark` for example, the `summit` variant there is no `card` at `squash-court` and `tennis-court` and at `basketball-court` the card overlaps the image. At `hockey-pitch` and above the card sticks to the left in a 60%/40% layout.
 
 ### `<ns-lockup>`
 
-All three of our lockups behave uniquely responsive.
+The ns-lockup behaves responsively too, adjusting it's overlaps most appropriately for the given viewport.
 
 ### `<ns-selector>`
 
 The image within `ns-selector` adapts to different positions and sizes.
 
-### Here is a list of components that contain `ns-panel`
+### Components that are placed outside of `ns-panel`
 
 - `<ns-landmark>`
 - `<ns-editorial>`
@@ -148,8 +149,4 @@ The image within `ns-selector` adapts to different positions and sizes.
 - `<ns-header>`
 - `<ns-skyline>`
 
-## Functional vs promotional
-
-When building the structure of the **functional** areas of the site we purposefully remain in the Norm width for all components. `<ns-landmark type="lakeside">` conforms to the Norm width and is less dynamic in it's responsive behaviour and suits the needs for the majority of functional experiences. We take a 'mobile first' approach where the majority of the layouts are vertically stacked. The experience principle that stands out here is 'Make life simple'.
-
-The **promotional** areas of the site include a lot of dynamic responsive behaviour which reinforce and promote the strength of the creative principles.
+<!--Removed 'Functional vs Promotional' paragraph due to references to deprecated terms for widths - slim, norm, wide. If such distinction is still required, we can look to add this here.-->
