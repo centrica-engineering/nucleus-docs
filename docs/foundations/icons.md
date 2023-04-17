@@ -28,13 +28,13 @@ If you are using the icon at a very large size to engage and visual impact, cons
 
 Used as a visual aid for some functions, categories or actions. These are not used as a direct element of interaction themselves but can help to signify and support an action. It is recommended that these aren't used in isolation and should be accompanied by copy to add context.
 
-![Nucleus icons](https://user-images.githubusercontent.com/43471890/62045153-90292000-b1fc-11e9-9e03-d0d964088d8e.jpg)
+![Nucleus icons](images/icons/clarifying.webp)
 
 ### Functional
 
 Used to show where an action needs to be taken. This includes components like buttons, controls. For instance a button might include an arrow to give the user an indication of what will happen next or a download icon to show that the user will receive something by pressing it. Functional icons can also be further split into interactive and non-interactive icons.
 
-![Nucleus functional icons](https://user-images.githubusercontent.com/43471890/62045185-a59e4a00-b1fc-11e9-9a22-8ca429fdaadf.jpg)
+![Nucleus functional icons](images/icons/functional.webp)
 
 ### Logos/marks
 
