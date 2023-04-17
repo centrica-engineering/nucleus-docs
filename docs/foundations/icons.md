@@ -40,7 +40,7 @@ Used to show where an action needs to be taken. This includes components like bu
 
 We can make use of brand logos and marks when we discuss products and companies. Examples of these may include: British Gas, Hive or Dyno.
 
-![Nucleus logo icons](https://user-images.githubusercontent.com/43471890/62045227-bcdd3780-b1fc-11e9-9b68-feaf41b9ad67.jpg)
+![Nucleus logo icons](images/icons/logos-marks.webp)
 
 ## Colour
 
