@@ -66,7 +66,7 @@ If you are looking to create a new icon then please check there is not something
 - Rounded corners should make an icon feel friendly, not childish.
 - Icon should be one topic, we don't overlay or intersect an icon with another icon.
 - Text shouldn't be added to an icon as this will break accessibility.
-- Icons are only one colour, but they can be any of our colours.
+- Icons are only one colour.
 
 ### Icon grid
 
@@ -74,7 +74,7 @@ We use a grid for icon creation to give consistency across our icons. You should
 
 | Grid | Grid - Vertical | Grid - Horizontal | Grid - Circle |
 | :--- | :--- | :--- | :--- |
-| ![Grid for creating icons](https://user-images.githubusercontent.com/43471890/62045505-66bcc400-b1fd-11e9-949e-572e2dc40bf8.jpg) | ![Grid with vertical highlight for creating icons](https://user-images.githubusercontent.com/43471890/62050044-6b3aaa00-b208-11e9-8adb-3df5d4c240dd.jpg) | ![Grid with horizontal highlight for creating icons](https://user-images.githubusercontent.com/43471890/62050140-a5a44700-b208-11e9-8bf8-555ec87242a8.jpg) | ![Grid with circle highlight for creating icons](https://user-images.githubusercontent.com/43471890/62050739-c91bc180-b209-11e9-8561-134bd845fb4b.jpg) |
+| ![Grid for creating icons](images/icons/grid-naked.webp) | ![Grid with vertical highlight for creating icons](images/icons/grid-vertical.webp) | ![Grid with horizontal highlight for creating icons](images/icons/grid-horizontal.webp) | ![Grid with circle highlight for creating icons](images/icons/grid-circle.webp) |
 
 ### Sizing
 
