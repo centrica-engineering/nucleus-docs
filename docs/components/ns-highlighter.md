@@ -28,7 +28,7 @@ We recommend you use highlighters for their role, not for their looks.
 
 ## Content guidance
 
-![Highlighter - Error](https://user-images.githubusercontent.com/45626534/76082861-32d02b00-5fa4-11ea-9a5a-3efc9f2f89e8.png)
+![Highlighter - Error](images/ns-highlighter/content-guidance.webp)
 
 
 | Key | Field type | Guidelines |
@@ -42,25 +42,25 @@ The content for highlighters is dependent on the type that is used:
 
 ### Error Messages `type="error"`
 
-![Highlighter - Error](https://user-images.githubusercontent.com/28779/75970263-fc24e280-5ec7-11ea-9e31-90df5e7344ba.png)
+![Highlighter - Error](images/ns-highlighter/error.webp)
 
 For communicating failure with urgence. A task cannot be completed without the user remedying something.
 
 ### Informational Messages `type="info"`
 
-![Highlighter - Informational](https://user-images.githubusercontent.com/28779/75970267-fcbd7900-5ec7-11ea-91fb-15374a536a42.png)
+![Highlighter - Informational](images/ns-highlighter/info.webp)
 
 For communicating a useful piece of information that the user might find helpful to carry out their action.
 
 ### Success Messages `type="success"`
 
-![Highlighter - Success](https://user-images.githubusercontent.com/28779/75970268-fd560f80-5ec7-11ea-8ad3-081592da15f1.png)
+![Highlighter - Success](images/ns-highlighter/success.webp)
 
 For communicating that an action has been successful.
 
 ### Warning Messages `type="warning"`
 
-![Highlighter - Warning](https://user-images.githubusercontent.com/28779/75970265-fcbd7900-5ec7-11ea-98a2-a43127c9af28.png)
+![Highlighter - Warning](images/ns-highlighter/warning.webp)
 
 For communicating a piece of information with less severity. These include foreseeable problematic events, failures, outages and how to avoid errors.
 
