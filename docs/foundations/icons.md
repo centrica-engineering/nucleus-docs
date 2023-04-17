@@ -9,7 +9,7 @@ Icons are used within our design system to represent an object or action visuall
 
 They are functional, rather than decorative and should be used sparingly, only within the parameters they were created for.
 
-A list of all the icons that are available in Nucleus can be found on [storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--standard)
+A list of all the icons that are available in Nucleus can be found on [storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/components-ns-icon--all-icons)
 
 ## How we use icons
 
