@@ -15,7 +15,7 @@ A list of all the icons that are available in Nucleus can be found on [storybook
 
 We use icons in number of different ways to convey meaning:
 
-* Signpost and navigate.
+* Signposting and navigation.
 * Navigational or informational signposts for content.
 * Illustrates content with a simple and clear visual.
 * Used by themselves at large size or smaller within a roundel.
@@ -47,10 +47,8 @@ We can make use of brand logos and marks when we discuss products and companies.
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Start with using BG Cyan or BG Slate | Mix two secondary colours together |
-| Use white icons in coloured roundels | Use BG Slate in coloured roundels |
-| Choose colours to suit the design, as long as it’s not a key part of the information |  |
-| If it is a crucial element then it needs to meet accessibility and colour contrast |  |
-| The colour of our interactive functional icons should be in our interaction colour, the mid blue |  |
+| Use colours that meet WCAG colour contrast ratio requirements on specific coloured backgrounds (mainly achieved automatically by the system) | Use non-conforming contrasts |
+| Colour interactive functional icons in Secondary Blue |  |
 
 ## Creating new icons
 
