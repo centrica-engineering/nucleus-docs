@@ -71,7 +71,7 @@ This piece of our structure provides a container for a single topic or task. Thi
 
 The general layout of our components fit within a content area in between margins that are generally and equally 5% of the total viewport width, up to 1,600 px wide. When that happens, the main content area remains fixed at that size, but the left and right margins then expand equally to fill the rest of the horizontal space as the viewport width increases over 1,600 px.
 
-It allows our layouts to respond to different devices dynamically and be optimal for comfortable scanning.
+It allows our layouts to respond to different devices dynamically and be optimal for comfortable scanning and content consumption.
 
 ![5 percent margins up to a 1600 pixel maximum content width](images/structure/layout.webp)
 
