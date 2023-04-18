@@ -134,7 +134,7 @@ Lots of responsive decisions are contained within each `ns-landmark` for example
 
 ### `<ns-lockup>`
 
-The ns-lockup behaves responsively too, adjusting it's overlaps most appropriately for the given viewport.
+The ns-lockup behaves responsively too, adjusting its overlaps most appropriately for the given viewport.
 
 ### `<ns-selector>`
 
