@@ -112,10 +112,10 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Use the 'invert-bridge' decoration. |
-| ![do-use-same-colour-for-themed-pages](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg) | ![dont-use-arc-decoration](https://user-images.githubusercontent.com/50207859/61697584-73d64080-ad2f-11e9-89a2-c2bbc18f7db7.jpg) |
-| Keep the content concise. | Use only the light font weight. If there's one weight, use bold. |
-| ![do-keep-content-concise](https://user-images.githubusercontent.com/50207859/61779546-c7f92780-adf8-11e9-973c-541c7d46d46d.jpg) | ![dont-use-only-light-font](https://user-images.githubusercontent.com/28779/70074651-0696be00-15f3-11ea-8f4b-a7d2f90ea87c.png) |
+| Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | ? |
+| ![do-use-same-colour-for-themed-pages](images/ns-landmark/best-practice-do1-hillside.webp) | ? |
+| Keep the content concise. |  |
+| ![do-keep-content-concise](images/ns-landmark/best-practice-do2-hillside.webp) |  |
 
 ### Best practice for `lakeside`
 
