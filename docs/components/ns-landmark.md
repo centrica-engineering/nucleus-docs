@@ -17,7 +17,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Summit Landmark
 
-![Landmark - Summit](https://user-images.githubusercontent.com/45626534/72897291-8995e400-3d19-11ea-8ba1-88aa418581c9.png)
+![Landmark - Summit](images/ns-landmark/content_guidance-summit.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -29,7 +29,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Hillside Landmark
 
-![Landmark - Hillside](https://user-images.githubusercontent.com/45626534/72897289-88fd4d80-3d19-11ea-8647-f83eeac414b3.png)
+![Landmark - Hillside](images/ns-landmark/content_guidance-hillside.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -42,7 +42,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Valley Landmark
 
-![Landmark - Valley](https://user-images.githubusercontent.com/28779/97898639-084f9100-1d30-11eb-8f77-1b66d2a7f202.png)
+![Landmark - Valley](images/ns-landmark/content_guidance-valley.webp)
 
 > NOTE: The purpose of the valley landmark is to present an overview of a product or service as a user moves down the funnel of their purchase journey. A CTA may be used, but is not recommended in scenarios where the objective is to encourage further on-page browsing.
 
@@ -57,7 +57,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Lakeside Landmark
 
-![Landmark - Lakeside](https://user-images.githubusercontent.com/45626534/72897290-88fd4d80-3d19-11ea-9db6-857280dcb172.png)
+![Landmark - Lakeside](images/ns-landmark/content_guidance-lakeside.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
