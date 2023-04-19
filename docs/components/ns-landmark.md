@@ -102,11 +102,11 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | 💚 Do | 💔 Don'ts |
 | :--- | :--- |
 | Capture the moment. | Allow the card to cover important content. |
-| ![do-father-child](https://user-images.githubusercontent.com/28779/59792082-5430a000-92cb-11e9-942b-7e457c34859c.jpg) | ![dont-child-lady-eng](https://user-images.githubusercontent.com/28779/59792183-82ae7b00-92cb-11e9-8a6f-b5322a5f6eb4.jpg) |
+| ![do-father-child](images/ns-landmark/best-practice-do1-summit.webp) | ![dont-covered-family](images/ns-landmark/best-practice-dont1-summit.webp) |
 | Set focus of the photo correctly. | Obstruct people's faces with the card. |
-| ![do-warehouse-eng](https://user-images.githubusercontent.com/28779/59792156-74f8f580-92cb-11e9-8b97-cf7d62766804.jpg) | ![dont-ice-cream](https://user-images.githubusercontent.com/28779/59792179-7d513080-92cb-11e9-918e-c8c02c956502.jpg) |
+| ![do-couple-on-sofa](images/ns-landmark/best-practice-do2-summit.webp) | ![dont-obstructed-parents-faces](image/../images/ns-landmark/best-practice-dont2-summit.webp) |
 | Convey activity related to topic. | Use images with a white background. |
-| ![do-couple-mobile](https://user-images.githubusercontent.com/28779/59792122-63afe900-92cb-11e9-9553-638cd20f53f2.jpg) | ![dont-wilbur](https://user-images.githubusercontent.com/28779/59792199-87732f00-92cb-11e9-9c9d-51676e6c2aba.jpg) |
+| ![do-boiler-service](images/ns-landmark/best-practice-do3-summit.webp) | ![dont-boiler-on-white-background](images/ns-landmark/best-practice-dont3-summit.webp) |
 
 ### Best practice for `hillside`
 
