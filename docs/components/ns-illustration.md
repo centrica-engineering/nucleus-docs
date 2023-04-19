@@ -17,11 +17,16 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use them to convey depth | Make the illustrations small |
-|  | Use on their own as the primary visual element |
+| Use them to differentiate or define the content | Use on their own as the primary visual element |
+| Use them to help signpost | Use instead of icons |
+| Check existing usage | Alter the colours or apply visual effects |
+
 
 ### Considerations of best practices
 
-* List of when to use which illustration (need to talk to Will about it).
+When choosing an illustration from the available set in Nucleus, it should be relevant to the content. Each has a descriptive name to help aid selection. (See Usage below).
+
+Avoid unnecessary duplication of an illustration on a page. Be aware of existing usage elsewhere.
 
 ## Usage
 
@@ -29,7 +34,7 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 
 ## Component placement
 
-The ns-illustration component can be used in a number of components to help create bespoke UIs.
+The ns-illustration component can be used in a number of components to help create bespoke user interfaces (UIs).
 
 ## Specification
 
@@ -51,7 +56,7 @@ The ns-illustration component can be used in a number of components to help crea
 
 ## Creating new illustrations
 
-If you are looking to create a new illustration then please check there is not something similar already in use. If there is no suitable illustration then you should let us know and we can look at creating it for the design system.
+If you are looking to create a new illustration, please check if there is not something similar already in use. If there is no suitable option, liaise with the brand team to define a new one and let us know so we can help with the required specification for adding it to the design system.
 
 Read our [illustration foundation page](foundations/illustrations.md#creating-new-illustrations) for more information on creating illustrations.
 
@@ -66,5 +71,4 @@ Read our [illustration foundation page](foundations/illustrations.md#creating-ne
 
 ## Related links
 
-* Exporting illustrations SVG in Sketch [https://github.com/ConnectedHomes/nucleus/issues/670](https://github.com/ConnectedHomes/nucleus/issues/670).
 * Creating an engaging experience through illustrations and the difference between icons and illustrations in [Brand Guidelines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/illustrations/creating-an-engaging-experience-through-illustration).
