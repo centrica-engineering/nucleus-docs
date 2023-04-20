@@ -122,11 +122,11 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | 💚 Do | 💔 Don'ts |
 | :--- | :--- |
 | Use more than one paragraph. | Use more than three paragraphs. |
-| ![do-use-more-than-one-paragraph](https://user-images.githubusercontent.com/28779/70374602-3512e280-18ec-11ea-9222-0a67806898bc.png) | ![dont-use-more-than-three-paragraphs](https://user-images.githubusercontent.com/28779/70374611-465bef00-18ec-11ea-8ac6-0aa2cecab292.png) |
+| ![do-use-more-than-one-paragraph](images/ns-landmark/best-practice-do1-lakeside.webp) | ![dont-use-more-than-three-paragraphs](images/ns-landmark/best-practice-dont1-lakeside.webp) |
 | Display 400 and 500 error pages. | Use to build a page. |
-| ![display-400-and-500-error-pages](https://user-images.githubusercontent.com/28779/70374582-f9781880-18eb-11ea-9fde-b45f70e5c28b.png) | ![dont-even-this-about-building-a-page-with-it](https://user-images.githubusercontent.com/28779/70374723-d3ec0e80-18ed-11ea-8d71-9328de25089a.png) |
+| ![display-400-and-500-error-pages](images/ns-landmark/best-practice-do2-lakeside.webp) | ![dont-even-this-about-building-a-page-with-it](images/ns-landmark/best-practice-dont2-lakeside.webp) |
 | Get to the point, in this scenario the Sub heading and CTA have been omitted. |  |
-| ![do-get-to-the-point](https://user-images.githubusercontent.com/28779/70374643-88853080-18ec-11ea-8c03-94ef23815720.png) |  |
+| ![do-get-to-the-point](images/ns-landmark/best-practice-do3-lakeside.webp) |  |
 
 ### Best practice for `valley`
 
