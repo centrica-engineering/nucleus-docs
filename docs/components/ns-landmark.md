@@ -222,16 +222,9 @@ This provides the safe-area to the position of the focal point of the image.
 
 ### Using Photoshop
 
-Using Photoshop to overlay the Landmark focus template to check alignment.
+Using Photoshop to overlay the Landmark focus template to check alignment. (You could equally use an alternative software.)
 
 ![image](https://user-images.githubusercontent.com/28779/59829941-7c091d80-9336-11e9-829b-9d1ab69d49a3.png)
-
-### Using Sketch
-
-Using Sketch to overlay the Landmark focus template to check alignment.
-
-![Screenshot 2019-06-20 at 12 30 08](https://user-images.githubusercontent.com/43471890/59846281-54767d00-9357-11e9-805a-96487c8ecc7f.png)
-
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
