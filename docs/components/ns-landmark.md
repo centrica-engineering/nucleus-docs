@@ -216,15 +216,15 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 This provides the safe-area to the position of the focal point of the image.
 
-[Download the 1440x810px Landmark testcard image](https://user-images.githubusercontent.com/28779/59753927-0ee58180-927d-11e9-84fa-d72b48aa1fcf.png) and place over your Landmark photos in your image editing software.
+[Download the 1440x810px Landmark testcard image](images/ns-landmark/summit-testcard.png) and place over your Landmark photos in your image editing software.
 
-![landmark-16x9-testcard-1440](https://user-images.githubusercontent.com/28779/59753927-0ee58180-927d-11e9-84fa-d72b48aa1fcf.png)
+![landmark-16x9-testcard-1440](images/ns-landmark/summit-testcard.png)
 
 ### Using Photoshop
 
 Using Photoshop to overlay the Landmark focus template to check alignment. (You could equally use an alternative software.)
 
-![image](https://user-images.githubusercontent.com/28779/59829941-7c091d80-9336-11e9-829b-9d1ab69d49a3.png)
+![image](images/ns-landmark/photoshop-template.webp)
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
