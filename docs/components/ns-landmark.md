@@ -137,7 +137,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | Use a complementary image to add context to your product or service | Use long, verbose content. Keep the user interested with a snappy overview and draw them down the page |
 | ![complementary-image](image/../images/ns-landmark/best-practice-do2-valley.webp) | ![use-short-content](image/../images/ns-landmark/best-practice-dont2-valley.webp) |
 |  | Forget to use an image |
-|  | ![use-an-image](https://user-images.githubusercontent.com/28779/98671842-cab0c080-234c-11eb-9943-0d46e5cd0704.png) |
+|  | ![use-an-image](images/ns-landmark/best-practice-dont3-valley.webp) |
 
 
 ### Considerations of best practice
