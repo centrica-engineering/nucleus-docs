@@ -135,7 +135,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | Use checked list to highlight your key product benefits | Add a CTA if the purpose of the page is for users to consume the content. |
 | ![use-a-checked-list](images/ns-landmark/best-practice-do1-valley.webp) | ![dont-add-a-cta](images/ns-landmark/best-practice-dont1-valley.webp) |
 | Use a complementary image to add context to your product or service | Use long, verbose content. Keep the user interested with a snappy overview and draw them down the page |
-| ![complementary-image](https://user-images.githubusercontent.com/28779/98671213-d0f26d00-234b-11eb-901c-4df125c29ffc.png) | ![use-short-content](https://user-images.githubusercontent.com/28779/98671969-f5027e00-234c-11eb-84c7-a8254dc6f758.png) |
+| ![complementary-image](image/../images/ns-landmark/best-practice-do2-valley.webp) | ![use-short-content](image/../images/ns-landmark/best-practice-dont2-valley.webp) |
 |  | Forget to use an image |
 |  | ![use-an-image](https://user-images.githubusercontent.com/28779/98671842-cab0c080-234c-11eb-9943-0d46e5cd0704.png) |
 
