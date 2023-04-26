@@ -181,7 +181,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | :--- | :--- | :--- | :--- | :--- |
 | `type` | `string` | `summit` | `summit`, `hillside`, `lakeside`, `valley` | The variant of the landmark. |
 | `image` | `string` |  |  | Background image used for summit variant or image used for valley variant |
-| `decroation` | `string` | `cyan` | `cyan`, `lime`, `navy`, `blue`, `forest`, `orange`, `red`, `yellow` | Background gradient and colour used for hillside variant. |
+| `decroation` | `string` | `cyan` | `cyan`, `lime`, `navy`, `blue`, `forest`, `orange`, `red`, `yellow` | Background colour used for hillside variant. |
 | `pillOverImage` | `boolean` |  |  | Used to put the pill in the bottom left of the image when using `type="valley"` and an image |
 | `ratio` | `string` | `4x3` | `4x3`, `16x9` | Aspect ratio of the image used only for valley variant |
 
