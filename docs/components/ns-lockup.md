@@ -15,7 +15,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 ## Content guidance
 
-![Lockup - Lockjaw](https://user-images.githubusercontent.com/45626534/75139486-a6d91c00-56e4-11ea-8e09-3695e2d232c1.png)
+![Lockup - Lockjaw](images/ns-lockup/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
