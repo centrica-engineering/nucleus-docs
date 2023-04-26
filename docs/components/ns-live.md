@@ -17,7 +17,7 @@ This component adds the `aria-live` attribute to itself. Screen readers will ann
 
 ## Content guidance
 
-![Image of ns-ive component in busy state](images/ns-live/%20content-guidance.webp)
+![Image of ns-ive component in busy state](images/ns-live/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
