@@ -200,8 +200,6 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 * The Sub heading is part of the heading to allow screen readers to read the heading properly.
 * Sub heading is a `<span>` tag with a `h5` class.
 * Main heading is a `<span>` tag with a `h1` class.
-* `enlighten` class in the main heading `<span>` to make the heading light.
-  * Use `<b>` tag to embolden specific text.
 
 ### Paragraph
 
