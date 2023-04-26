@@ -42,7 +42,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 | Use the key message in the heading | Include more than one CTA |
 | Keep the heading length to 4-12 words | Exceed more than two paragraphs of 3 lines each |
 | Keep subheading length between 1-5 words | Use images with a white background |
-| Optimise the lockup image (see [Optimise your images](https://nucleus.design/docs/foundations/photography#optimise-your-images)) | |
+| Optimise the lockup image (see [Optimise your images](https://nucleus.design/docs/foundations/photography#optimise-your-images)) | Use images that have any important part obscured by the overlap |
 
 ### Considerations of best practices
 
