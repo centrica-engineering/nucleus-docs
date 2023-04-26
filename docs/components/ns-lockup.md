@@ -28,12 +28,12 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 ### Image guidance
 
-| Component | Variant | Ratio | Dimensions | Size | Type | Placeholder |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-lockup`| `lockbox` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-lockup-lockbox-720x540px](https://user-images.githubusercontent.com/50207859/67642153-d461b480-f900-11e9-9520-11204c64a11b.jpg) |
-| `ns-lockup`| `lockbox` | 1:1 | 720x720px | &lt; 100kb | jpeg | [ns-lockup-lockbox-720x720px](https://user-images.githubusercontent.com/50207859/67642154-d461b480-f900-11e9-9581-212ede25f362.jpg) |
-| `ns-lockup`| `lockjaw` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-lockup-lockjaw-720x540px](https://user-images.githubusercontent.com/50207859/67642155-d4fa4b00-f900-11e9-9ba6-a31f61ddb0ef.jpg) |
-| `ns-lockup`| `locknut` | 1:1 | 720x720px | &lt; 100kb | jpeg | [ns-lockup-locknut-720x720px](https://user-images.githubusercontent.com/50207859/67642156-d4fa4b00-f900-11e9-8400-548625a1648f.jpg) |
+| Preview | Ratio | Dimensions | Size | Type | Placeholder |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| ![ns-lockup-image-16_9](images/ns-lockup/ns-lockup-image-800x540-ratio16_9.jpg) | 16:9 | 800 x 450px | &lt; 100kb | .jpg | [ns-lockup-image-800x540-ratio16_9](images/ns-lockup/ns-lockup-image-800x540-ratio16_9.jpg) |
+| ![ns-lockup-image-4_3](images/ns-lockup/ns-lockup-image-800x600-ratio4_3.jpg) | 4:3 | 800 x 600px | &lt; 100kb | .jpg | [ns-lockup-image-800x600-ratio4_3](images/ns-lockup/ns-lockup-image-800x600-ratio4_3.jpg) |
+| ![ns-lockup-image-1_1](images/ns-lockup/ns-lockup-image-800x800-ratio1_1.jpg) | 1:1 | 800 x 800px | &lt; 100kb | .jpg | [ns-lockup-image-800x800-ratio1_1](images/ns-lockup/ns-lockup-image-800x800-ratio1_1.jpg) |
+
 
 ## Best practice
 
