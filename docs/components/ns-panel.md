@@ -8,9 +8,13 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
-`ns-panel` is an empty container that holds each section of a page. Each `ns-panel` provides an area to place a layout and add an optional decoration.
+> The `ns-panel` component is an empty container for each section on a page. Each `ns-panel` provides an area to place a layout, add an optional decoration and apply the appropriate margins.
 
-Adding a decoration to an `ns-panel` using a gradient background provides visual separation from the other sections of the page and introduces brand [colour](foundations/colours.md) and style. Using the circle decoration provides subtle emphasis to an `ns-panel`.
+[INSERT CG image and table]
+
+Adding decoration to an `ns-panel` utilises a coloured background. It provides visual separation from other sections on the page and introduces brand [colour](foundations/colours.md) and style.
+
+The decoration has configurable top and bottom margins. These are adjusted separately from the content and allow the content to overlap these edges, if required, to achieve a more visually desirable layout.
 
 ## Best practice
 
