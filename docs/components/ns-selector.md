@@ -77,6 +77,8 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 <ComponentPlacement component="ns-selector" parentComponents="ns-inputter,ns-column"></ComponentPlacement>
 
+If you have more than one ns-selector, place them into ns-column.
+
 When used in ns-column, ns-column must be a child of ns-inputter:
 
 ```html
