@@ -30,19 +30,19 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 | Preview | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![ns-lockup-image-16_9](images/ns-lockup/ns-lockup-image-800x540-ratio16_9.jpg) | 16:9 | 800 x 450px | &lt; 100kb | .jpg | [ns-lockup-image-800x540-ratio16_9](images/ns-lockup/ns-lockup-image-800x540-ratio16_9.jpg) |
-| ![ns-lockup-image-4_3](images/ns-lockup/ns-lockup-image-800x600-ratio4_3.jpg) | 4:3 | 800 x 600px | &lt; 100kb | .jpg | [ns-lockup-image-800x600-ratio4_3](images/ns-lockup/ns-lockup-image-800x600-ratio4_3.jpg) |
-| ![ns-lockup-image-1_1](images/ns-lockup/ns-lockup-image-800x800-ratio1_1.jpg) | 1:1 | 800 x 800px | &lt; 100kb | .jpg | [ns-lockup-image-800x800-ratio1_1](images/ns-lockup/ns-lockup-image-800x800-ratio1_1.jpg) |
+| ![ns-lockup-image-16_9](images/ns-lockup/ns-lockup-image-800x540-ratio16_9.jpg) | 16:9 | 800 x 450px | &lt;100kb | .jpg | [ns-lockup-image-800x540-ratio16_9](images/ns-lockup/ns-lockup-image-800x540-ratio16_9.jpg) |
+| ![ns-lockup-image-4_3](images/ns-lockup/ns-lockup-image-800x600-ratio4_3.jpg) | 4:3 | 800 x 600px | &lt;100kb | .jpg | [ns-lockup-image-800x600-ratio4_3](images/ns-lockup/ns-lockup-image-800x600-ratio4_3.jpg) |
+| ![ns-lockup-image-1_1](images/ns-lockup/ns-lockup-image-800x800-ratio1_1.jpg) | 1:1 | 800 x 800px | &lt;100kb | .jpg | [ns-lockup-image-800x800-ratio1_1](images/ns-lockup/ns-lockup-image-800x800-ratio1_1.jpg) |
 
 
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Embolden the key message in the heading | Include more than one CTA |
+| Use the key message in the heading | Include more than one CTA |
 | Keep the heading length to 4-12 words | Exceed more than two paragraphs of 3 lines each |
 | Keep subheading length between 1-5 words | Use images with a white background |
-| Optimise the lockup image (see image optimise LINK) | |
+| Optimise the lockup image (see [Optimise your images](https://nucleus.design/docs/foundations/photography#optimise-your-images)) | |
 
 ### Considerations of best practices
 
@@ -62,10 +62,10 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 | Attribute    | Type                | Default   | Options   | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `type` | `string` | `lockbox` | `lockjaw`, `lockbox`, `locknut` | Different style variants. |
-| `reverse` | `boolean` | `false` |`true`, `false`| Switches the order of the text and image. Default is text to the left. |
+| `type` | `string` | `lockbox` | `lockjaw`, `lockbox`, `locknut` | At present, these three styles share identical visual and functional features; however, there is a possibility that they will diverge in the future. |
+| `reverse` | `boolean` | `false` |`true`, `false`| Switches the order of the text and image. Default (`false`) is text to the left. |
 | `ratio` | `string` | `4x3` | `4:3`, `16:9`, `1:1` | Ratio for the image. |
-| `decoration` | `string` |  | See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustration--standard) | Adds illustration between the text and image. |
+| `decoration` | `string` |  | See [ns-illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustration--standard) | Adds and illustration overlapping the image. |
 
 | Slots | Type |
 | :--- | :--- |
@@ -79,12 +79,17 @@ We use lockups to engage customers, in particular to promote a key product or se
 ### Heading
 
 * Should be a `h2` tag.
-
 * The sub-heading is part of the heading to allow screen readers to read the heading properly.
 * Sub heading is a `<span>` tag with a `h5` class.
 * Main heading is a `<span>` tag with a `h1` class.
-* `enlighten` class in the main heading `<span>` to make the heading light.
-  * Use `<b>` tag to embolden specific text.
+
+### Video
+
+![ns-lockup-with-video-overlap](images/ns-lockup/video.webp)
+
+* Use the `video` variant when using instead of an image as the overlap is in front of the text box so neither the video nor its captions are obscured. The text then wraps around the video edge. (See the `video` example on [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/components-ns-lockup--video))
+* It is not possible to use an illustration decoration with a video.
+* Use the video's YouTube link as the `id` attribute's value.
 
 <Tokens component="lockup"></Tokens>
 
