@@ -8,13 +8,37 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
-> The `ns-panel` component is an empty container for each section on a page. Each `ns-panel` provides an area to place a layout, add an optional decoration and apply the appropriate margins.
+> The `ns-panel` component is an empty container for each section on a page.
 
-[INSERT CG image and table]
+Each `ns-panel` provides an area to place a layout, add an optional decoration and apply the appropriate margins.
+
+## Content guidance
+
+![ns-panel-with-offset-decoration-and-columns](images/ns-panel/content-guidance.webp)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Decoration | This...    |
+| B | Top offset | This...    |
+| C | Bottom offset | This... |
+| D | Columns | This... |
+
+## Decoration
 
 Adding decoration to an `ns-panel` utilises a coloured background. It provides visual separation from other sections on the page and introduces brand [colour](foundations/colours.md) and style.
 
+[IMAGE - decoration yellow]
+
 The decoration has configurable top and bottom margins. These are adjusted separately from the content and allow the content to overlap these edges, if required, to achieve a more visually desirable layout.
+
+By default there is no decoration applied.
+[IMAGE - no dec]
+
+## Columns and content
+
+It is possible to apply a number of columns to a layout within a single `ns-panel` by adding the `ns-column` component within it. (Note the 3 cards in the images above have been added this way. See [ns-column](ns-column.md)).
+
+Another way to configure the layout is to use the `ns-content` component withing `ns-panel`. This allows formatting text and vertical spacing (see [ns-content](ns-content.md))
 
 ## Best practice
 
