@@ -36,9 +36,9 @@ By default there is no decoration applied...
 
 ## Columns and content
 
-It is possible to apply a number of columns to a layout within a single `ns-panel` by adding the `ns-column` component within it. (Note the 3 cards in the images above have been added this way. See [ns-column](ns-column.md)).
+It is possible to apply a number of columns to a layout within a single `ns-panel` by adding the `ns-column` component within it. Note the 3 cards in the examples above have been added this way. (See [ns-column](ns-column.md)).
 
-Another way to configure the layout is to use the `ns-content` component withing `ns-panel`. This allows formatting text and vertical spacing (see [ns-content](ns-content.md))
+Another way to adjust the layout is to use the `ns-content` component within `ns-panel`. This enables formatting of typography and spacing (see [ns-content](ns-content.md))
 
 ## Best practice
 
@@ -69,8 +69,7 @@ The ns-panel component can be used in the following elements/components:
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
-| `decoration` | `string` |  | `circle-yellow-left`, `circle-yellow-right`, `circle-green-left`, `circle-green-right`, `invert-concave-cyan`, `invert-concave-grey-light`, `invert-concave-green-light`, `invert-concave-yellow`, `invert-concave-blue`, `invert-bridge-cyan`, `invert-bridge-grey-light`, `invert-bridge-green-light`, `invert-bridge-yellow`, `invert-bridge-blue` | Decoration for the background, including the colour. |
-| `type` | `string` | `panel` | `panel`, `nav` | The variant of the panel. |
+| `decoration` | `string` | (no decoration) | `cyan`, `lime`, `navy`, `blue`, `forest`, `slate`, `orange`, `red`, `yellow`, `white`, `grey-light` | Decoration for the background, including the colour. |
 
 | Slots | Type |
 | :--- | :--- |
@@ -79,10 +78,6 @@ The ns-panel component can be used in the following elements/components:
 ## Specification notes
 
 * `ns-panel` is **always** a child of the `<main>` element.
-
-### Decoration
-
-* Check the [gradient](foundations/colours.md#our-gradients) palette.
 
 ### Anonymous
 
