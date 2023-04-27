@@ -18,12 +18,13 @@ Pills can help to create a subtle sense of urgency or to draw a customer’s att
 
 ## Content guidance
 
-![Pill](https://user-images.githubusercontent.com/3082819/99961064-aeb61180-2d85-11eb-9444-033a869bfab6.jpg)
+![Pill](images/ns-pill/content-guidance-enlarged.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | Icon | Use an icon to support your description. |
 | B | Content | Content should be very concise and catchy, ideally between 1 and 4 words. Your content should not run over one line on a `squash-court` viewport. |
+| C | Caveat | Use a link to a caveat. (See [ns-caveat](ns-caveat.md)) |
 
 **Tip:** Short and snappy content that can be quickly absorbed at a glance has been shown to perform better than longer promotional content.  
 
