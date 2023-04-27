@@ -25,7 +25,7 @@ There are 2 variants of the ns-password component. Each should be used for its s
 
 Use this variant when a user needs to enter a password they have already created to access secure information. It comprises a label, an input field with masking as default, a show/hide toggle and validation.
 
-![Password-std](https://user-images.githubusercontent.com/78355810/126153157-0bfffd4e-1784-4c01-b833-0e67331b3be5.png)
+![Password-std](images/ns-password/content-guidance-standard.webp)
 
 | Key | Field type | Guidelines
 | :--- | :--- | :--- |
@@ -39,7 +39,7 @@ Use this variant when a user needs to enter a password they have already created
 
 This variant is more complex than the Standard one. It allows a user to correctly format a new password and validate it against certain criteria. It comprises the same label, optional helper and tip text, input field and show/hide toggle as the standard version but includes a more proactive and helpful in-line validation technique as well as a Confirm Password field to verify the user is entering what they intended.
 
-![Password-confirm](https://user-images.githubusercontent.com/78355810/126155401-e201c17c-37f2-4059-8813-7e9ba09d8cda.png)
+![Password-confirm](images/ns-password/content-guidance-confirm.webp)
 
 | Key | Field type | Guidelines
 | :--- | :--- | :--- |
@@ -58,15 +58,15 @@ The Confirm Password variant has in-line validation that checks the input as the
 
 | Icon | Description |
 | :--- | :--- |
-| ![info](https://user-images.githubusercontent.com/78355810/126149341-4c6f21b9-6a36-4e3f-a29d-767f80ef8a50.png) | Information icon. This informs the user as to what is required before any input has been made. |
-| ![Warning](https://user-images.githubusercontent.com/78355810/126148961-8ecedebd-caa5-495b-b7ab-d471755c1c86.png) | Error triangle. This requirement has not yet been made. Text will also turn red. |
-| ![Success](https://user-images.githubusercontent.com/78355810/126149531-27d58a37-ed46-481b-8bf2-f29613f43fb8.png) | Success tick. This particular requirement has been met. |
+| ![info](images/ns-password/validation-info.webp) | Information icon. This informs the user as to what is required before any input has been made. |
+| ![Warning](images/ns-password/validation-warning.webp) | Warning triangle. This requirement has not yet been made. Text will also turn red. |
+| ![Success](images/ns-password/validation-success.webp) | Success tick. This particular requirement has been met. |
 
 Once all requirements have been met the input field's border also thickens changes to green to emphasise this. 
 
 The Standard variant just uses a single validation requirement that appears if the user tries to proceed without entering a password.
 
-![Password-std-validation](https://user-images.githubusercontent.com/78355810/126150535-6bd7c22e-35e2-4f50-9010-3db128d1ddba.png)
+![Password-std-validation](images/ns-password/validation-message.webp)
 
 ## Best practice
 
