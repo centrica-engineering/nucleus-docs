@@ -10,7 +10,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 > The `ns-panel` component is an empty container for each section on a page.
 
-Each `ns-panel` provides an area to place a layout, add an optional decoration and apply the appropriate margins.
+It provides an area to place a layout, add an optional decoration and apply the appropriate margins. There can be more than one `ns-panel` on a page.
 
 ## Content guidance
 
@@ -18,21 +18,21 @@ Each `ns-panel` provides an area to place a layout, add an optional decoration a
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Decoration | This...    |
-| B | Top offset | This...    |
-| C | Bottom offset | This... |
-| D | Columns | This... |
+| A | Decoration | Choose between a no-colour background (default) or one of the available brand colours |
+| B | Top offset | Adjust the vertical space which can affect where the decoration starts at the top |
+| C | Bottom offset | Adjust the vertical space which can affect where the decoration ends at the bottom |
+| D | Columns | You can define a multiple column layout within the `ns-panel` |
 
 ## Decoration
 
 Adding decoration to an `ns-panel` utilises a coloured background. It provides visual separation from other sections on the page and introduces brand [colour](foundations/colours.md) and style.
 
-[IMAGE - decoration yellow]
+![ns-panel-decoration-yellow](images/ns-panel/decoration.webp)
 
 The decoration has configurable top and bottom margins. These are adjusted separately from the content and allow the content to overlap these edges, if required, to achieve a more visually desirable layout.
 
-By default there is no decoration applied.
-[IMAGE - no dec]
+By default there is no decoration applied...
+![ns-panel-no-decoration](images/ns-panel/no-decoration.webp)
 
 ## Columns and content
 
