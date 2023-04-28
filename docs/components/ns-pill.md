@@ -39,6 +39,7 @@ Pills can help to create a subtle sense of urgency or to draw a customer’s att
 | Keep your copy short and simple for maximum impact. | Use in the middle of a sentence |
 | Use `ns-pill` in a component with a direct CTA | Use the `ns-pill` as a link or button. (Caveat link excepted). |
 | Choose colours that are consistent and relevant | Use icons that can make `ns-pill` visually appear like an interactive component, for example an `ns-cta` or drop-down `ns-inputter/select`. |
+|  | Use `ns-pill` as a heading |
 
 ### Considerations of best practice
 
