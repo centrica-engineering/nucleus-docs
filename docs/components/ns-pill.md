@@ -33,13 +33,12 @@ Pills can help to create a subtle sense of urgency or to draw a customer’s att
 | 💚 Do's | 💔 Don'ts |
 | :---  | :---  |
 | Use solid versions of icons | Use as validation messages |
-| Use pills very sparingly, ideally one or two per journey maximum. Less is more. | Create a shouty experience by using pills in multiple places.   |
+| Use `ns-pill` very sparingly, ideally one or two per journey maximum. Less is more. | Create a shouty experience by using `ns-pill` in multiple places. It dilutes the impact.  |
 | Use a `yellow` pill to draw attention to an offer or promotional message. | Create distraction or put undue pressure on customers to purchase unwanted or irrelevant products by overusing urgency elements. |
-| Use `red` and `green-light` pills for dashboard notifications.  | Don’t use pills near a text CTA. Pills should not detract attention from your users’ next action. |
+| Use `red` and `lime` pills for dashboard notifications.  | Don’t use pills near a text CTA. Pills should not detract attention from your users’ next action. |
 | Keep your copy short and simple for maximum impact. | Use in the middle of a sentence |
-| Use pills in a component with a direct CTA |  |
-
-
+| Use `ns-pill` in a component with a direct CTA | Use the `ns-pill` as a link or button. (Caveat link excepted). |
+| Choose colours that are consistent and relevant | Use icons that can make `ns-pill` visually appear like an interactive component, for example an `ns-cta` or drop-down `ns-inputter/select`. |
 
 ### Considerations of best practice
 
@@ -53,7 +52,9 @@ Colour should be used consistently with pills throughout the customer journey.
 
 A `yellow` pill is used to draw attention to an offer of promotional message.  
 
-A `red` or `green-light` pill can be used to drawing attention to important customer information or notification. For example, within a dashboard context, red can be used to indicate an ‘expired’ item and green to indicate a ‘new’ item or ‘success’.
+A `red` or `lime` pill can be used to drawing attention to important customer information or notification. For example, within a dashboard context, `red` can be used to indicate an ‘expired’ item and `lime` to indicate a ‘new’ item or `forest` for ‘success’.
+
+There are a range of colours to choose from (see the specifications below). Try to use those that are consistent with existing usage, and relevant to subject (eg. Orange for Hive products).
 
 ## Usage
 
@@ -67,8 +68,8 @@ A `red` or `green-light` pill can be used to drawing attention to important cust
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
-| `colour` | `string` | `slate` | `slate`, `yellow`, `red`, `green-light`, `red-dark`, `green-dark`, `blue`, `blue-dark` | The colour of the pill |
-| `icon` | `string` |  |  See [`ns-icon` component icon types](../components/ns-icon) | The icon to show inside the pill |
+| `colour` | `string` | `slate` | `cyan`, `lime`, `navy`, `forest`, `slate`, `orange`, `red`, `yellow` | The colour of the pill |
+| `icon` | `string` |  |  See [`ns-icon` component icon types](../components/ns-icon) | The icons to show inside the pill |
 
 ## Specification notes
 
