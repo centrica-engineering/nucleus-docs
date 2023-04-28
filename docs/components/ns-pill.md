@@ -13,8 +13,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 Pills can be used to highlight a small item of key information to a customer. Within the British Gas experience, they should be used to attract attention to a promotional message or a notification. They should only be used to display a small detail of content and are not intended to contain lengthy or complex information.  
 
-Pills can help to create a subtle sense of urgency or to draw a customer’s attention to the value of a product or service. For example, they can be used to highlight the date that a promotional offer expires, or to feature a gift offer. 
-
+Pills can help to create a subtle sense of urgency or to draw a customer’s attention to the value of a product or service. For example, they can be used to highlight the date that a promotional offer expires, or to feature a gift offer.
 
 ## Content guidance
 
@@ -45,7 +44,7 @@ Pills can help to create a subtle sense of urgency or to draw a customer’s att
 
 #### Multiple pills
 
-Multiple pills within a journey will create a distracting and overwhelming experience for users. Please read our guidelines below carefully and use this component sparingly. 
+Multiple pills within a journey will create a distracting and overwhelming experience for users. Please read our guidelines below carefully and use this component sparingly.
 
 #### Colour usage
 
