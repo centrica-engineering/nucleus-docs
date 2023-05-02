@@ -46,7 +46,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ### Considerations of best practice
 
-Give multiple cards the same html parent. To improve scannability between multiple products; the name, price, and description sections will adjust to be the same height. They do this using a common html parent that's used to share css variables.
+Give multiple cards the same html parent. To improve scanning between multiple products; the name, price, and description sections will adjust to be the same height. They do this using a common html parent that's used to share css variables.
 
 For example
 
