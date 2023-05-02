@@ -41,7 +41,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 | Use for products | Use for other content types, use ns-card instead |
 | Use the same sections for all products in a group | Use in a form |
 | Give multiple cards the same html parent | Use different ratio images across a set of multiple cards |
-| Use `role="list"` and `role="listitem"` when used in multiples | |
+| Use `role="list"` and `role="listitem"` when used in multiples | Overuse the keyline - its purpose is to make that card stand out from others |
 
 ### Considerations of best practises
 
@@ -87,8 +87,7 @@ For example
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- |-------------|
-| `keyline` | `string` | none | `slate`, `cyan`, `yellow`, `red`, `green-light`, `red-dark`, `orange`, `green`, `green-dark`, `blue`, `blue-dark` | Add a colour across the top of the card |
-
+| `keyline` | `string` | none | `cyan`, `lime`, `navy`, `blue`, `forest`, `slate`, `orange`, `red`, `yellow` | Add a colour across the top of the card |
 
 | Slots | Type |
 | :--- | :--- |
@@ -103,29 +102,29 @@ For example
 
 ## Specification notes
 
-### image
+### `image`
 
 * Check the [ns-image documentation](components/ns-image.md) for more information.
 
-### name and price-heading
+### `name` and `price-heading`
 
 * priceHeading should be one heading level lower than name
 
-### Price
+### `price`
 
 * Use multiple `<p>` containing `<ns-price>`
 * Check the [ns-price documentation](components/ns-price.md) for more information.
 
-### Description
+### `description`
 
 * Div should only contain `<p>`, `<ul>`, `<ol>`
 
-### Expander
+### `expander`
 
 * Multiple expanders may be used
 * Check the [ns-expander documentation](components/ns-expander.md) for more information.
 
-### cta
+### `cta`
 
 * Should always have a href
 * Check the [ns-cta documentation](components/ns-image.md) for more information.
