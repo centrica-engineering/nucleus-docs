@@ -15,7 +15,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ### Selector - Illustration
 
-![Selector - Illustration](https://user-images.githubusercontent.com/78355810/115743858-f4552580-a389-11eb-88a9-55bf38d45716.png)
+![Selector - Illustration](images/ns-selector/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
