@@ -24,7 +24,7 @@ The progress component can be manipulated in the DOM without the need to reload 
 
 ## Content guidance
 
-![Progress - In progress and completed states](https://user-images.githubusercontent.com/78355810/115561512-90f5c580-a2ad-11eb-8f56-873e0402a338.png)
+![Progress - In progress and completed states](images/ns-progress/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
