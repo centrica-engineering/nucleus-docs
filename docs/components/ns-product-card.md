@@ -13,7 +13,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Content guidance
 
-![Product card_v4](https://user-images.githubusercontent.com/3082819/88666199-aa2f6400-d0d7-11ea-8eb0-51a55d818351.png)
+![Product card](images/ns-product-card/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -25,12 +25,14 @@ import { PageFooter } from '../../includes/page-footer.js'
 | F | Expander | Expanders can be used to provide additional product detail. Each product should have a maximum of 3 expanders. |
 | G | Call to action | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 10 characters. |
 | H | Keyline | An optional colour keyline can be added to distinguish and draw attention to your products. |
-| I | Image | An optional image with an aspect ratio of 16:9 can be added to support your product description. |
+| I | Image | An optional image with an aspect ratio of 16:9 (default), 4:3 or 1:1 can be added to support your product description. |
 ### Image guidance
 
-| Component | Ratio | Dimensions | Size | Type | Placeholder |
+| Preview | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-product-card`| 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-product-card-640x360px](https://user-images.githubusercontent.com/50207859/67642149-d3c91e00-f900-11e9-983c-9b812217b801.jpg) |
+| ![ns-product-card-640x360px](images/ns-product-card/ns-product-card-image-640x360-ratio16_9.jpg) | 16:9 | 640 x 360px | &lt;50kb | jpeg | [ns-product-card-640x360px](images/ns-product-card/ns-product-card-image-640x360-ratio16_9.jpg) |
+| ![ns-product-card-640x480px](images/ns-product-card/ns-product-card-image-640x480-ratio4_3.jpg) | 4:3 | 640 x 480px | &lt;50kb | jpeg | [ns-product-card-640x480px](images/ns-product-card/ns-product-card-image-640x480-ratio4_3.jpg) |
+| ![ns-product-card-640x640px](images/ns-product-card/ns-product-card-image-640x640-ratio1_1.jpg) | 1:1 | 640 x 640px | &lt;50kb | jpeg | [ns-product-card-640x640px](images/ns-product-card/ns-product-card-image-640x640-ratio4_3.jpg) |
 
 ## Best practice
 
@@ -38,12 +40,12 @@ import { PageFooter } from '../../includes/page-footer.js'
 | :---  | :---  |
 | Use for products | Use for other content types, use ns-card instead |
 | Use the same sections for all products in a group | Use in a form |
-| Give multiple cards the same html parent | |
+| Give multiple cards the same html parent | Use different ratio images across a set of multiple cards |
 | Use `role="list"` and `role="listitem"` when used in multiples | |
 
 ### Considerations of best practises
 
-Give multiple cards the same html parent - To improve scannability between multiple products; the name, price, and description sections will adjust to be the same height. They do this using a common html parent that's used to share css variables.
+Give multiple cards the same html parent. To improve scannability between multiple products; the name, price, and description sections will adjust to be the same height. They do this using a common html parent that's used to share css variables.
 
 For example
 
