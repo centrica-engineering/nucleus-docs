@@ -26,6 +26,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 | G | Call to action | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 10 characters. |
 | H | Keyline | An optional colour keyline can be added to distinguish and draw attention to your products. |
 | I | Image | An optional image with an aspect ratio of 16:9 (default), 4:3 or 1:1 can be added to support your product description. |
+
 ### Image guidance
 
 | Preview | Ratio | Dimensions | Size | Type | Placeholder |
@@ -43,7 +44,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 | Give multiple cards the same html parent | Use different ratio images across a set of multiple cards |
 | Use `role="list"` and `role="listitem"` when used in multiples | Overuse the keyline - its purpose is to make that card stand out from others |
 
-### Considerations of best practises
+### Considerations of best practice
 
 Give multiple cards the same html parent. To improve scannability between multiple products; the name, price, and description sections will adjust to be the same height. They do this using a common html parent that's used to share css variables.
 
