@@ -31,9 +31,9 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 | Preview | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![ns-product-card-640x360px](images/ns-product-card/ns-product-card-image-640x360-ratio16_9.jpg) | 16:9 | 640 x 360px | &lt;50kb | jpeg | [ns-product-card-640x360px](images/ns-product-card/ns-product-card-image-640x360-ratio16_9.jpg) |
-| ![ns-product-card-640x480px](images/ns-product-card/ns-product-card-image-640x480-ratio4_3.jpg) | 4:3 | 640 x 480px | &lt;50kb | jpeg | [ns-product-card-640x480px](images/ns-product-card/ns-product-card-image-640x480-ratio4_3.jpg) |
-| ![ns-product-card-640x640px](images/ns-product-card/ns-product-card-image-640x640-ratio1_1.jpg) | 1:1 | 640 x 640px | &lt;50kb | jpeg | [ns-product-card-640x640px](images/ns-product-card/ns-product-card-image-640x640-ratio4_3.jpg) |
+| ![ns-product-card image placeholder for 16:9 ratio](images/ns-product-card/ns-product-card-image-640x360-ratio16_9.jpg) | 16:9 | 640 x 360px | &lt;50kb | jpeg | [Download 16:9](images/ns-product-card/ns-product-card-image-640x360-ratio16_9.jpg) |
+| ![ns-product-card image placeholder for 4:3 ratio](images/ns-product-card/ns-product-card-image-640x480-ratio4_3.jpg) | 4:3 | 640 x 480px | &lt;50kb | jpeg | [Download 4:3](images/ns-product-card/ns-product-card-image-640x480-ratio4_3.jpg) |
+| ![ns-product-card image placeholder for 1:1 ratio](images/ns-product-card/ns-product-card-image-640x640-ratio1_1.jpg) | 1:1 | 640 x 640px | &lt;50kb | jpeg | [Download 1:1](images/ns-product-card/ns-product-card-image-640x640-ratio1_1.jpg) |
 
 ## Best practice
 
