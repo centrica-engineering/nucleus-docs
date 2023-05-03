@@ -103,29 +103,29 @@ For example
 
 ## Specification notes
 
-### `image`
+### Image
 
 * Check the [ns-image documentation](components/ns-image.md) for more information.
 
-### `name` and `price-heading`
+### Name and price-heading
 
 * priceHeading should be one heading level lower than name
 
-### `price`
+### Price
 
 * Use multiple `<p>` containing `<ns-price>`
 * Check the [ns-price documentation](components/ns-price.md) for more information.
 
-### `description`
+### Description
 
 * Div should only contain `<p>`, `<ul>`, `<ol>`
 
-### `expander`
+### Expander
 
 * Multiple expanders may be used
 * Check the [ns-expander documentation](components/ns-expander.md) for more information.
 
-### `cta`
+### CTA
 
 * Should always have a href
 * Check the [ns-cta documentation](components/ns-image.md) for more information.
