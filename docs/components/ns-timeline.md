@@ -19,38 +19,36 @@ It gives an overview of the whole process and progress of a customer journey. It
 
 Shows steps of a process that has started, showing the status of each step.
 
-<!--Standard CG image - labelled-->
+![Labelled example of the Standard variant ns-timeline component](images/ns-timeline/content-guidance-standard.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Heading |  |
-| B | Summary |  |
-| C | Step Count |  |
-| D | Decoration |  |
-| E | Event |  |
-| F | Event Heading |  |
-| G | Event Icon |  |
-| H | Event Status |  |
-| I | Additional Content |  |
-| J | Event Completed Timestamp |  |
+| A | Heading | Describes the process the whole timeline is showing. It can be left blank if, for example, there is a ns-landmark immediately preceding which describes it. |
+| B | Summary | Optional. You can use a short sentence here to help manage expectations. |
+| C | Step Count | Display information on the number of events in a process (up to a maximum of 10) and how many have been completed so far. |
+| D | Decoration | Choose between default dots, icons or numbers. |
+| E | Event | An individual step in the timeline. |
+| F | Event Heading | Concise and clear heading description. Keep as short as possible. |
+| G | Event Icon | The icon decoration for that particular event. This can change depending on status. (See [Status](#status) below.) |
+| H | Event Status | Status is also shown by colour and form of the interconnecting lines and circles in the timeline. Eg. In Progress is 'information blue' and has larger roundels and icons that are solid. Whereas Pending uses a grey outline and is smaller. (See [Status](#status) below.) |
+| I | Additional Content | Add further information relevant to this step to aid customer understanding, or if an action is required. |
+| J | Event Completed Timestamp | Events that have been successfully completed, there is the option to display a time-stamp alongside the status. |
 
 ### Step variant
 
 Sets the expectation of a process that hasn't started or doesn't have any specific status.
 
-<!--Step CG image - labelled-->
+![Labelled example of the Step variant ns-timeline component](images/ns-timeline/content-guidance-step.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Heading |  |
-| B | Step Count |  |
-| C | Decoration |  |
-| D | Event |  |
-| E | Event Heading |  |
-| F | Additional Content |  |
+| A | Heading | Describes the process the whole timeline is showing. It can be left blank if, for example, there is a ns-landmark immediately preceding which describes it. |
+| B | Decoration | Number or Fallback. Number is default, the fallback is a dot if no index is specified. |
+| C | Event | An individual step in the timeline. |
+| D | Event Heading | Concise and clear heading description. Keep as short as possible. |
+| E | Additional Content | Add further information relevant to this step to aid customer understanding. |
 
-
-### Usage
+## Usage
 
 <StorybookStory story="components-ns-timeline--time-line"></StorybookStory>
 
@@ -60,11 +58,6 @@ Sets the expectation of a process that hasn't started or doesn't have any specif
 
 <ComponentPlacement component="ns-timeline-event" parentComponents="ns-timeline"></ComponentPlacement>
 
-### Standard
-
-* Provides the customer with visibility on the status of a process or system in their journey.
-* Gives a top-level overview of the process.
-* It's clear to understand and manages expectations by showing the current situation to the user.
 
 (Sequence shortened.)
 
