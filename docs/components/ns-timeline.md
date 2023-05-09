@@ -13,15 +13,42 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 It gives an overview of the whole process and progress of a customer journey. Its main purpose is to create situational awareness for the user and manage expectations.
 
-
 ## Content guidance
 
-### Variants and purpose
+### Standard variant
 
-There are two variants of the timeline component.
+Shows steps of a process that has started, showing the status of each step.
 
-- standard version: to show steps of a process that has started, allowing to show the status of each step
-- step version: to set the expectation of a process that hasn't started or doesn't have a specific status
+<!--Standard CG image - labelled-->
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Heading |  |
+| B | Summary |  |
+| C | Step Count |  |
+| D | Decoration |  |
+| E | Event |  |
+| F | Event Heading |  |
+| G | Event Icon |  |
+| H | Event Status |  |
+| I | Additional Content |  |
+| J | Event Completed Timestamp |  |
+
+### Step variant
+
+Sets the expectation of a process that hasn't started or doesn't have any specific status.
+
+<!--Step CG image - labelled-->
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Heading |  |
+| B | Step Count |  |
+| C | Decoration |  |
+| D | Event |  |
+| E | Event Heading |  |
+| F | Additional Content |  |
+
 
 ### Usage
 
@@ -41,6 +68,7 @@ There are two variants of the timeline component.
 
 (Sequence shortened.)
 
+<!--Replace with static webp steps in a row-->
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="https://user-images.githubusercontent.com/78355810/123394163-bdbca680-d596-11eb-95d1-10a13968cc8f.png" width="359" height="100%">
     <source src="https://user-images.githubusercontent.com/78355810/123393414-fc059600-d595-11eb-87d5-7e38954254af.mp4" type="video/mp4" />
