@@ -69,19 +69,24 @@ Sets the expectation of a process that hasn't started or doesn't have any specif
 ### Features
 
 Have more than one item simultaneously in progress.
-[image highlighting the 2 blue]
+
+![image highlighting multiple in progress steps](images/ns-timeline/usage-feature-1.webp)
 
 Highlight an action that may be required of the user.
-[image highlighting income and commitmts as action reqd]
+
+![image highlighting an action that is required](images/ns-timeline/usage-feature-2.webp)
 
 Manage expectations by showing warnings that might delay the process.
-[image property valuation]
+
+![image showing a warning state on an event](images/ns-timeline/usage-feature-3.webp)
 
 See the progress being made over a few days.
-[image - 4 complete]
+
+![image showing progression on the timeline](images/ns-timeline/usage-feature-4.webp)
 
 Let the user know if something goes wrong.
-[image error on 2nd to last]
+
+![image showing a error state on an event](images/ns-timeline/usage-feature-5.webp)
 
 #### Status
 
@@ -89,12 +94,12 @@ Each event has a status. The status of the event is controlled by the decoration
 
 | Style | Status | Description |
 | :--- | :--- | :--- |
-| ![pending](https://user-images.githubusercontent.com/78355810/122376864-7150e580-cf5c-11eb-8501-fae0f7f8aa4b.png)| `pending` |Communicates that the event has yet to commence. |
-| ![in progress](https://user-images.githubusercontent.com/78355810/122773523-5655dc80-d2a0-11eb-889e-fadbca455c36.png) | `inprogress` | Indicates that progress is currently being made on this step. |
-| ![success](https://user-images.githubusercontent.com/78355810/122773619-68377f80-d2a0-11eb-8d1a-7a79da14cd3d.png) | `completed` | The event has been successfully completed. |
-| ![action required](https://user-images.githubusercontent.com/78355810/122377269-d73d6d00-cf5c-11eb-8183-07a35bf559d9.png) | `actionrequired` | This is used when a customer needs to take action in order to proceed with the process. |
-| ![warning](https://user-images.githubusercontent.com/78355810/122377627-25527080-cf5d-11eb-9b59-c3711568e30b.png) | `warning` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
-| ![error](https://user-images.githubusercontent.com/78355810/122377917-68144880-cf5d-11eb-8f92-8bafc8778a6f.png) | `error` | This is a failure indication. Something couldn't be resolved and so has halted the whole process marking other `inprogress`\ `pending` event(s) `cancelled`. It should be accompanied by a helpful message. |
+| ![pending](images/ns-timeline/status-pending.webp)| `pending` |Communicates that the event has yet to commence. |
+| ![in progress](images/ns-timeline/status-in-progress.webp) | `inprogress` | Indicates that progress is currently being made on this step. |
+| ![success](images/ns-timeline/status-completed.webp) | `completed` | The event has been successfully completed. |
+| ![action required](images/ns-timeline/status-action-req.webp) | `actionrequired` | This is used when a customer needs to take action in order to proceed with the process. |
+| ![warning](images/ns-timeline/status-warning.webp) | `warning` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
+| ![error](images/ns-timeline/status-error.webp) | `error` | This is a failure indication. Something couldn't be resolved and so has halted the whole process marking other `inprogress`\ `pending` event(s) `cancelled`. It should be accompanied by a helpful message. |
 
 
 #### Icons & numerals
