@@ -95,7 +95,11 @@ Cards are used to apply a container around a related grouping of information; th
 
 ### Using with ns-pill
 
-To add a `ns-pill` to the card it needs to be placed inside the `heading` slot. This allows screen readers to announce the pill when they are navigating by headings on a page.
+To add a `ns-pill` to the card it needs to be placed inside one of the slots. Be careful about using it within the heading slot, as the pill content will be read out as part of the heading for screen readers.
+
+If you have a group of cards, try to make sure that the pill is placed in the same location throughout those cards. This will make improve the readability of the cards.
+
+#### Screen readers with ns-pill
 
 ```markup
 <ns-card>
@@ -107,14 +111,21 @@ To add a `ns-pill` to the card it needs to be placed inside the `heading` slot. 
 </ns-card>
 ```
 
-If using with a a type of `support` there is also the option to place the pill over the image using the `pillOverImage` attribute. Note the `ns-pill` will still need to be in the `heading` slot.
+In the above example the screen reader will read out "Special Offer Get energy with us". Make sure that is what is expected. Remember the pill cannot be used on its own within a heading. Our advice is to rarely put pills in headings as they are normally conveying a message related to the heading, but is not heading content.
+
+#### Pill over image
+
+If using with a a type of `support` there is also the option to place the pill over the image using the `pillOverImage` attribute. Note the `ns-pill` will need to be in the `paragraph` slot as it is no longer related to the heading.
 
 ```markup
 <ns-card type="support" image="path/to/image" pillOverImage>
   <h3 slot="heading">
-    <ns-pill>Special Offer</ns-pill>
     Get energy with us
   </h3>
+  <p slot="paragraph">
+    <ns-pill>Special Offer</ns-pill>
+    ...
+  </p>
   ...
 </ns-card>
 ```
