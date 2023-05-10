@@ -150,7 +150,7 @@ There is provision for a heading to describe what process the timeline is showin
 
 In the step variant, additional information can always be added to an event if more explanation is needed. 
 
-## Best practice for the timeline component
+## Best practice for the component
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -159,7 +159,7 @@ In the step variant, additional information can always be added to an event if m
 | Provide helpful messaging | Use overly long event names |
 | Use summary to set expectations for the `standard` variant | Use timestamp if it causes confusion with a date elsewhere on the page for the `standard` variant |
 
-## Best practice for the individual timeline events
+## Best practice for each event
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -167,7 +167,7 @@ In the step variant, additional information can always be added to an event if m
 | Use either default, icon or number decoration for all events in the timeline sequence for the `standard` variant |  Mix two different decoration types in events |
 | Use either number or fallback decoration for all events in the timeline sequence for the `Step` variant | Use any icon type with names ending `solid` or `outline` |
 
-## Specification for the timeline component
+## Specification for the component
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
@@ -180,7 +180,7 @@ In the step variant, additional information can always be added to an event if m
 | `summary` | `<p>` |
 | `event` | `<ns-timeline-event>` |
 
-## Specification for the individual timeline events
+## Specification for each event
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
@@ -195,11 +195,13 @@ In the step variant, additional information can always be added to an event if m
 | `anonymous` | `<ns-card>` |
 
 ## Feedback
+
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-form]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-form]).
 
 <PageFooter></PageFooter>
 
 ## Related links
+
 * [ns-card](../components/ns-card)
 * [ns-icon](../components/ns-icon)
