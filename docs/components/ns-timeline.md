@@ -11,7 +11,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 > The Timeline component represents a sequence of events that happen within a process.
 
-It gives an overview of the whole process and progress of a customer journey. Its main purpose is to create situational awareness for the user and manage expectations.
+This component gives an overview of the whole process and progress of a customer journey. Its main purpose is to create situational awareness for the user and manage expectations.
 
 ## Content guidance
 
@@ -59,14 +59,29 @@ Sets the expectation of a process that hasn't started or doesn't have any specif
 <ComponentPlacement component="ns-timeline-event" parentComponents="ns-timeline"></ComponentPlacement>
 
 
-(Sequence shortened.)
-
 <!--Replace with static webp steps in a row-->
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="https://user-images.githubusercontent.com/78355810/123394163-bdbca680-d596-11eb-95d1-10a13968cc8f.png" width="359" height="100%">
     <source src="https://user-images.githubusercontent.com/78355810/123393414-fc059600-d595-11eb-87d5-7e38954254af.mp4" type="video/mp4" />
   </video>
 </figure>
+
+### Features
+
+Have more than one item simultaneously in progress.
+[image highlighting the 2 blue]
+
+Highlight an action that may be required of the user.
+[image highlighting income and commitmts as action reqd]
+
+Manage expectations by showing warnings that might delay the process.
+[image property valuation]
+
+See the progress being made over a few days.
+[image - 4 complete]
+
+Let the user know if something goes wrong.
+[image error on 2nd to last]
 
 #### Status
 
