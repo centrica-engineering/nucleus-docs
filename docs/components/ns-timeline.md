@@ -48,7 +48,7 @@ Sets the expectation of a process that hasn't started or doesn't have any specif
 | D | Event Heading | Concise and clear heading description. Keep as short as possible. |
 | E | Additional Content | Add further information relevant to this step to aid customer understanding. |
 
-## Usage
+## Usage - standard variant
 
 <StorybookStory story="components-ns-timeline--time-line"></StorybookStory>
 
@@ -80,7 +80,7 @@ Let the user know if something goes wrong.
 
 ![image showing a error state on an event](images/ns-timeline/usage-feature-5.webp)
 
-#### Status
+### Status
 
 Each event has a status. The status of the event is controlled by the decoration used.
 
@@ -93,24 +93,25 @@ Each event has a status. The status of the event is controlled by the decoration
 | ![warning](images/ns-timeline/status-warning.webp) | `warning` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
 | ![error](images/ns-timeline/status-error.webp) | `error` | This is a failure indication. Something couldn't be resolved and so has halted the whole process marking other `inprogress`\ `pending` event(s) `cancelled`. It should be accompanied by a helpful message. |
 
-
-#### Icons & numerals
+### Icons & numerals
 
 There are 3 styles of timeline to choose from in the 'overview decorations' - default, icon, or number.
 
-##### Default 
+#### Default
+
 Uses a circle and implies nothing other than it is an event.
 
-##### Icons 
+#### Icons
+
 These can be selected from a list to help convey meaning for each event and make it easier to identify a step. If selected, all events will need an icon chosen from the list.
 
-##### Numbers 
+#### Numbers
+
 For use when an order should be shown.
 
-Some icons are special and automatically reserved for use only with a particular status, such as Complete tick, Action required arrow, Warning triangle, and Error diamond. These show on all the variants of 'overview decoration'. 
+Some icons are special and automatically reserved for use only with a particular status, such as Complete tick, Action required arrow, Warning triangle, and Error diamond. These show on all the variants of 'overview decoration'.
 
-
-#### Heading, summary and step count
+### Heading, summary and step count
 
 There is provision for a heading to describe what process the timeline is showing. This can be left blank if it has already been made clear in an ns-landmark above it to avoid duplication.
 
@@ -120,32 +121,32 @@ You can also add a summary to manage expectations
 In addition to this, you can also display information on the number of events using step count. You can have up to 10 steps in a process and show how many have been completed so far. 
 >eg. 1 of 6 steps completed
 
-
-#### Showing additional information
+### Showing additional information
 
 On events that are in progress, it is possible to add further information relevant to this step to aid customer understanding, or if an action is required, provide a link to another area such as a form to complete. Warnings and Error status should have helpful messaging added this way, and with links if useful.
 
 On events that have been successfully completed, there is the option to display a time-stamp alongside the status.
 
-### Step
+## Usage - step variant
 
 The step variant is a simpler version of the timeline component that excludes summary and status.
 
-#### Icons & numerals
+### Icons & numerals
 
 There are 2 styles of timeline to choose from in the 'overview decorations' - number or fallback. The default decoration is to use numbers.
 
-##### Numbers 
+#### Numbers
+
 For use when an order should be shown.
 
-##### Fallback 
+#### Fallback 
 Uses a circle and implies nothing other than it is an event.
 
-#### Heading
+### Heading
 
 There is provision for a heading to describe what process the timeline is showing. This can be left blank if it has already been made clear in an ns-landmark above it to avoid duplication.
 
-#### Showing additional information
+### Showing additional information
 
 In the step variant, additional information can always be added to an event if more explanation is needed. 
 
