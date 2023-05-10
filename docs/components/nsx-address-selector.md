@@ -35,7 +35,9 @@ When the customer enters a postcode, the component will dispatch a `postcode-sel
 
 When you set the `addresses` property of the component it will change state to display the addresses and ask the customer to select one.
 
-![Multiple addresses - Customer selects using radio buttons](https://user-images.githubusercontent.com/4298413/83444208-f432fb00-a442-11ea-97a2-838d8ceb23d4.png)
+![Multiple addresses - Customer selects using radio buttons](images/nsx-address-selector/usage-example-multi-address.webp)
+
+<!--CONTINUE WITH UPDATING IMAGES FROM HERE-->
 
 You can [see the multi address state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--multi-addresses).
 
