@@ -115,7 +115,7 @@ In the above example the screen reader will read out "Special Offer Get energy w
 
 #### Pill over image
 
-If using with a a type of `support` there is also the option to place the pill over the image using the `pillOverImage` attribute. Note the `ns-pill` will need to be in the `paragraph` slot as it is no longer related to the heading.
+If using with a type of `support` with an image. There is also the option to place the pill over the image using the `pillOverImage` attribute. Note the `ns-pill` will need to be in the `paragraph` slot as it is no longer related to the heading.
 
 ```markup
 <ns-card type="support" image="path/to/image" pillOverImage>
