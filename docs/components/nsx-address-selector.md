@@ -25,7 +25,7 @@ The address selector is a multi-functional experience pattern that can be used f
 
 If the address selector hasn’t been provided with any addresses, it will start by asking for the customer to enter their postcode.
 
-![Anonymous - Customer finding their address from a postcode](images/nsx-address-selector/usage-example.webp)
+![Anonymous - Customer finding their address from a postcode](images/nsx-address-selector/usage-example-anonymous.webp)
 
 You can [see the anonymous state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--anonymous).
 
