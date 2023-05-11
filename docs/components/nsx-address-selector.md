@@ -7,7 +7,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
-The address selector is a multi-functional experience pattern that can be used for any one of, or a combination of, the following tasks: 
+The address selector is a multi-functional experience pattern that can be used for any one of, or a combination of, the following tasks:
 
 * searching for a specific address by postcode
 * adding or entering a new address
