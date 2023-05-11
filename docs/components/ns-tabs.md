@@ -15,7 +15,7 @@ Related content can be separated into clearly labelled sections.
 
 ## Content guidance
 
-![Tabs](https://user-images.githubusercontent.com/45626534/74163002-9a9b8c00-4c19-11ea-9a93-b2c841d1c458.png)
+![Labelled example of ns-tabs component](images/ns-tabs/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
