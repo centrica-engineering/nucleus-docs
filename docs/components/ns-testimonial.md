@@ -34,7 +34,7 @@ The testimonial should be used as an enticement to buy British Gas products and 
 
 ### Considerations of best practice
 
-Use within ns-column to display the desired layout of multiple testimonials.
+Use within `ns-column` to display the desired layout of multiple testimonials.
 
 ![Example showing multiple testimonials layout using ns-column](images/ns-testimonial/best-practice.webp)
 
