@@ -81,7 +81,7 @@ The ns-panel component can be used in the following elements/components:
 
 ### Anonymous
 
-* The ns-panel can only have the following children `div`, `ns-article`, `ns-content`, `ns-column` or `ns-lockup`.
+* The `ns-panel` can only have the following children `div`, `ns-article`, `ns-content`, `ns-column` or `ns-lockup`, and `ns-form`.
 
 <Tokens component="panel"></Tokens>
 
