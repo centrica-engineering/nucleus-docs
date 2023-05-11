@@ -9,7 +9,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
-> The ns-table component displays information in a grid-like format of rows and columns. It organises information in a way that’s easy to scan, so that users can look for patterns and insights.
+> The `ns-table` component displays information in a grid-like format of rows and columns. It organises information in a way that’s easy to scan, so that users can look for patterns and insights.
 
 The table component consumes basic HTML table markup, which makes it accessible and responsive as well as styling it.
 
