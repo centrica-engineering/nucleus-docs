@@ -65,7 +65,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 * Make sure the paragraph section is added for more description when illustration is used.
 * Make sure the supporting copy is clear and concise.
 * Make sure the labels explain exactly what the user is selecting. If all content is removed other than the label, then the user would still understand what they are selecting.
-* If using the optional Expander, keep the content concise – you can use lists in the content to help. Be mindful that once a heading is expanded it forces the bottom of that selector down and that of any other instances in the row.
+* If using the optional `ns-expander`, keep the content concise – you can use lists in the content to help. Be mindful that once a heading is expanded it forces the bottom of that selector down and that of any other instances in the row.
 
 ## Usage
 
