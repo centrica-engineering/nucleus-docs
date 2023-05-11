@@ -11,19 +11,44 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 > The Timeline component represents a sequence of events that happen within a process.
 
-It gives an overview of the whole process and progress of a customer journey. Its main purpose is to create situational awareness for the user and manage expectations.
-
+This component gives an overview of the whole process and progress of a customer journey. Its main purpose is to create situational awareness for the user and manage expectations.
 
 ## Content guidance
 
-### Variants and purpose
+### Standard variant
 
-There are two variants of the timeline component.
+Shows steps of a process that has started, showing the status of each step.
 
-- standard version: to show steps of a process that has started, allowing to show the status of each step
-- step version: to set the expectation of a process that hasn't started or doesn't have a specific status
+![Labelled example of the Standard variant ns-timeline component](images/ns-timeline/content-guidance-standard.webp)
 
-### Usage
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Heading | Describes the process the whole timeline is showing. It can be left blank if, for example, there is a ns-landmark immediately preceding which describes it. |
+| B | Summary | Optional. You can use a short sentence here to help manage expectations. |
+| C | Step Count | Display information on the number of events in a process (up to a maximum of 10) and how many have been completed so far. |
+| D | Decoration | Choose between default dots, icons or numbers. |
+| E | Event | An individual step in the timeline. |
+| F | Event Heading | Concise and clear heading description. Keep as short as possible. |
+| G | Event Icon | The icon decoration for that particular event. This can change depending on status. (See [Status](#status) below.) |
+| H | Event Status | Status is also shown by colour and form of the interconnecting lines and circles in the timeline. Eg. In Progress is 'information blue' and has larger roundels and icons that are solid. Whereas Pending uses a grey outline and is smaller. (See [Status](#status) below.) |
+| I | Additional Content | Add further information relevant to this step to aid customer understanding, or if an action is required. |
+| J | Event Completed Timestamp | Events that have been successfully completed, there is the option to display a time-stamp alongside the status. |
+
+### Step variant
+
+Sets the expectation of a process that hasn't started or doesn't have any specific status.
+
+![Labelled example of the Step variant ns-timeline component](images/ns-timeline/content-guidance-step.webp)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Heading | Describes the process the whole timeline is showing. It can be left blank if, for example, there is a ns-landmark immediately preceding which describes it. |
+| B | Decoration | Number or Fallback. Number is default, the fallback is a dot if no index is specified. |
+| C | Event | An individual step in the timeline. |
+| D | Event Heading | Concise and clear heading description. Keep as short as possible. |
+| E | Additional Content | Add further information relevant to this step to aid customer understanding. |
+
+## Usage - standard variant
 
 <StorybookStory story="components-ns-timeline--time-line"></StorybookStory>
 
@@ -33,51 +58,60 @@ There are two variants of the timeline component.
 
 <ComponentPlacement component="ns-timeline-event" parentComponents="ns-timeline"></ComponentPlacement>
 
-### Standard
+### Features
 
-* Provides the customer with visibility on the status of a process or system in their journey.
-* Gives a top-level overview of the process.
-* It's clear to understand and manages expectations by showing the current situation to the user.
+Have more than one item simultaneously in progress.
 
-(Sequence shortened.)
+![image highlighting multiple in progress steps](images/ns-timeline/usage-feature-1.webp)
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="https://user-images.githubusercontent.com/78355810/123394163-bdbca680-d596-11eb-95d1-10a13968cc8f.png" width="359" height="100%">
-    <source src="https://user-images.githubusercontent.com/78355810/123393414-fc059600-d595-11eb-87d5-7e38954254af.mp4" type="video/mp4" />
-  </video>
-</figure>
+Highlight an action that may be required of the user.
 
-#### Status
+![image highlighting an action that is required](images/ns-timeline/usage-feature-2.webp)
+
+Manage expectations by showing warnings that might delay the process.
+
+![image showing a warning state on an event](images/ns-timeline/usage-feature-3.webp)
+
+See the progress being made over a few days.
+
+![image showing progression on the timeline](images/ns-timeline/usage-feature-4.webp)
+
+Let the user know if something goes wrong.
+
+![image showing a error state on an event](images/ns-timeline/usage-feature-5.webp)
+
+### Status
 
 Each event has a status. The status of the event is controlled by the decoration used.
 
 | Style | Status | Description |
 | :--- | :--- | :--- |
-| ![pending](https://user-images.githubusercontent.com/78355810/122376864-7150e580-cf5c-11eb-8501-fae0f7f8aa4b.png)| `pending` |Communicates that the event has yet to commence. |
-| ![in progress](https://user-images.githubusercontent.com/78355810/122773523-5655dc80-d2a0-11eb-889e-fadbca455c36.png) | `inprogress` | Indicates that progress is currently being made on this step. |
-| ![success](https://user-images.githubusercontent.com/78355810/122773619-68377f80-d2a0-11eb-8d1a-7a79da14cd3d.png) | `completed` | The event has been successfully completed. |
-| ![action required](https://user-images.githubusercontent.com/78355810/122377269-d73d6d00-cf5c-11eb-8183-07a35bf559d9.png) | `actionrequired` | This is used when a customer needs to take action in order to proceed with the process. |
-| ![warning](https://user-images.githubusercontent.com/78355810/122377627-25527080-cf5d-11eb-9b59-c3711568e30b.png) | `warning` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
-| ![error](https://user-images.githubusercontent.com/78355810/122377917-68144880-cf5d-11eb-8f92-8bafc8778a6f.png) | `error` | This is a failure indication. Something couldn't be resolved and so has halted the whole process marking other `inprogress`\ `pending` event(s) `cancelled`. It should be accompanied by a helpful message. |
+| ![pending](images/ns-timeline/status-pending.webp)| `pending` |Communicates that the event has yet to commence. |
+| ![in progress](images/ns-timeline/status-in-progress.webp) | `inprogress` | Indicates that progress is currently being made on this step. |
+| ![success](images/ns-timeline/status-completed.webp) | `completed` | The event has been successfully completed. |
+| ![action required](images/ns-timeline/status-action-req.webp) | `actionrequired` | This is used when a customer needs to take action in order to proceed with the process. |
+| ![warning](images/ns-timeline/status-warning.webp) | `warning` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
+| ![error](images/ns-timeline/status-error.webp) | `error` | This is a failure indication. Something couldn't be resolved and so has halted the whole process marking other `inprogress`\ `pending` event(s) `cancelled`. It should be accompanied by a helpful message. |
 
-
-#### Icons & numerals
+### Icons & numerals
 
 There are 3 styles of timeline to choose from in the 'overview decorations' - default, icon, or number.
 
-##### Default 
+#### Default
+
 Uses a circle and implies nothing other than it is an event.
 
-##### Icons 
+#### Icons
+
 These can be selected from a list to help convey meaning for each event and make it easier to identify a step. If selected, all events will need an icon chosen from the list.
 
-##### Numbers 
+#### Numbers
+
 For use when an order should be shown.
 
-Some icons are special and automatically reserved for use only with a particular status, such as Complete tick, Action required arrow, Warning triangle, and Error diamond. These show on all the variants of 'overview decoration'. 
+Some icons are special and automatically reserved for use only with a particular status, such as Complete tick, Action required arrow, Warning triangle, and Error diamond. These show on all the variants of 'overview decoration'.
 
-
-#### Heading, summary and step count
+### Heading, summary and step count
 
 There is provision for a heading to describe what process the timeline is showing. This can be left blank if it has already been made clear in an ns-landmark above it to avoid duplication.
 
@@ -87,36 +121,36 @@ You can also add a summary to manage expectations
 In addition to this, you can also display information on the number of events using step count. You can have up to 10 steps in a process and show how many have been completed so far. 
 >eg. 1 of 6 steps completed
 
-
-#### Showing additional information
+### Showing additional information
 
 On events that are in progress, it is possible to add further information relevant to this step to aid customer understanding, or if an action is required, provide a link to another area such as a form to complete. Warnings and Error status should have helpful messaging added this way, and with links if useful.
 
 On events that have been successfully completed, there is the option to display a time-stamp alongside the status.
 
-### Step
+## Usage - step variant
 
 The step variant is a simpler version of the timeline component that excludes summary and status.
 
-#### Icons & numerals
+### Icons & numerals
 
 There are 2 styles of timeline to choose from in the 'overview decorations' - number or fallback. The default decoration is to use numbers.
 
-##### Numbers 
+#### Numbers
+
 For use when an order should be shown.
 
-##### Fallback 
+#### Fallback 
 Uses a circle and implies nothing other than it is an event.
 
-#### Heading
+### Heading
 
 There is provision for a heading to describe what process the timeline is showing. This can be left blank if it has already been made clear in an ns-landmark above it to avoid duplication.
 
-#### Showing additional information
+### Showing additional information
 
 In the step variant, additional information can always be added to an event if more explanation is needed. 
 
-## Best practice for the timeline component
+## Best practice for the component
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -125,7 +159,7 @@ In the step variant, additional information can always be added to an event if m
 | Provide helpful messaging | Use overly long event names |
 | Use summary to set expectations for the `standard` variant | Use timestamp if it causes confusion with a date elsewhere on the page for the `standard` variant |
 
-## Best practice for the individual timeline events
+## Best practice for each event
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -133,7 +167,7 @@ In the step variant, additional information can always be added to an event if m
 | Use either default, icon or number decoration for all events in the timeline sequence for the `standard` variant |  Mix two different decoration types in events |
 | Use either number or fallback decoration for all events in the timeline sequence for the `Step` variant | Use any icon type with names ending `solid` or `outline` |
 
-## Specification for the timeline component
+## Specification for the component
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
@@ -146,7 +180,7 @@ In the step variant, additional information can always be added to an event if m
 | `summary` | `<p>` |
 | `event` | `<ns-timeline-event>` |
 
-## Specification for the individual timeline events
+## Specification for each event
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
@@ -161,11 +195,13 @@ In the step variant, additional information can always be added to an event if m
 | `anonymous` | `<ns-card>` |
 
 ## Feedback
+
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-form]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-form]).
 
 <PageFooter></PageFooter>
 
 ## Related links
+
 * [ns-card](../components/ns-card)
 * [ns-icon](../components/ns-icon)
