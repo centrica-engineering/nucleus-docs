@@ -49,13 +49,13 @@ If there are 6 or more addresses then the component will display the addresses i
 
 You can [see the many address state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--many-addresses).
 
-![Postcode and selected address summary](https://user-images.githubusercontent.com/4298413/83441678-d6fc2d80-a43e-11ea-932e-d0ef537e9ed1.png)
+![Postcode and selected address summary](images/nsx-address-selector/usage-example-many-address-2.webp)
 
 ### Manual address
 
 If the customer chooses to make changes to their address, they can use the **"Amend your address"** CTA, this will then display the manual entry address form. 
 
-When displaying this form the `manualformenabled` property to set to `true`. You can manually enable this property if required. 
+When displaying this form the `manualformenabled` property to set to `true`. You can manually enable this property if required.
 
 ![Manual entry address form](https://user-images.githubusercontent.com/4298413/83441689-d95e8780-a43e-11ea-8320-7ad5e77b4333.png)
 
