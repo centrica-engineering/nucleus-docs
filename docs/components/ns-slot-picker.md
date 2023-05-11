@@ -11,7 +11,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 > The `ns-slot-picker` allows you to select a suitable time slot from a single date or multiple dates and times.
 
-If you require your customers to select a time slot, the ns-slot-picker component is ideal. A typical use would be for booking appointments. You can display time slots for a single day or multiple days. Use it either by itself or in conjunction with [ns-appointment-picker](components/ns-appointment-picker.md).
+If you require your customers to select a time slot, the `ns-slot-picker` component is ideal. A typical use would be for booking appointments. You can display time slots for a single day or multiple days. Use it either by itself or in conjunction with [ns-appointment-picker](components/ns-appointment-picker.md).
 
 ## Best practice
 
