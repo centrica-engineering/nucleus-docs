@@ -57,10 +57,9 @@ If the customer chooses to make changes to their address, they can use the **"Am
 
 When displaying this form the `manualformenabled` property to set to `true`. You can manually enable this property if required.
 
-![Manual entry address form](https://user-images.githubusercontent.com/4298413/83441689-d95e8780-a43e-11ea-8320-7ad5e77b4333.png)
+![Manual entry address form](images/nsx-address-selector/usage-example-manual-address.webp)
 
 You can [see the manual entry state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--manual-addresses).
-
 
 ## Component placement
 
