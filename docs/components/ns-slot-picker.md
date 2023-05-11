@@ -25,7 +25,7 @@ If you require your customers to select a time slot, the `ns-slot-picker` compon
 
 <StorybookStory story="components-ns-slot-picker--standard"></StorybookStory>
 
-Here's an example of how you can use the ns-slot-picker component in combination with headings and calls-to-action (CTAs):
+Here's an example of how you can use the `ns-slot-picker` component in combination with headings and calls-to-action (CTAs):
 
 ![An example of how you can use the ns-slot-picker component in combination with headings and calls-to-action (CTAs)](images/ns-slot-picker/usage-example.webp)
 
