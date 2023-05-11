@@ -9,25 +9,25 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
-> Ns-slot-picker is used to allow the user to select a time slot from one or more dates and time slots.
+> The `ns-slot-picker` allows you to select a suitable time slot from a single date or multiple dates and times.
 
-Ns-slot-picker is used any time you want a customer to select a time slot. This would typically be used for booking an appointment. It can display time slots for a single day or multiple days. It can be used on it's own or upfront before displaying ns-appointment-picker. It is also used in [ns-appointment-picker](components/ns-appointment-picker.md).
+If you require your customers to select a time slot, the `ns-slot-picker` component is ideal. A typical use would be for booking appointments. You can display time slots for a single day or multiple days. Use it either by itself or in conjunction with [ns-appointment-picker](components/ns-appointment-picker.md).
 
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use this when the customer needs to select a specific appointment slot from a known selection of dates | Use this when there are many (more than 5) dates to choose from, use ns-appointment-picker |
-| Use this to present a number of suitable slots upfront to a customer |  |
-| Use this to help a customer find the soonest available appointment time when there is poor appointment availability |  |
+| Use when the customer needs to select a specific appointment slot from a known selection of dates | Use this when there are many (more than 5) dates to choose from, use [ns-appointment-picker](components/ns-appointment-picker.md) |
+| Use to present a number of suitable slots in advance to a customer |  |
+| Use to help a customer find the soonest appointment time when there is poor availability |  |
 
 ## Usage
 
 <StorybookStory story="components-ns-slot-picker--standard"></StorybookStory>
 
-## Usage example 
+Here's an example of how you can use the `ns-slot-picker` component in combination with headings and calls-to-action (CTAs):
 
-![Slot picker](https://user-images.githubusercontent.com/3082819/98025907-3b625500-1e02-11eb-8297-9be9525629ff.png)
+![An example of how you can use the ns-slot-picker component in combination with headings and calls-to-action (CTAs)](images/ns-slot-picker/usage-example.webp)
 
 ## Specification
 
@@ -40,14 +40,15 @@ Ns-slot-picker is used any time you want a customer to select a time slot. This 
 |----------|------------|
 | `change` | Dispatched when a specific slot is selected
 
-#### Slot Data
+### Slot Data
 
 The slotData array should consist of objects containing a date property and a slots property.
 
 date: String - eg. 2020-01-28 (28th January 2020)
 slots: Array of objects with a name and value property 
 
-```
+```javascript
+
 const slots = [{
   name: '9am to 12pm',
   value: '0900-1200'
