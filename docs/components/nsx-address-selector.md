@@ -37,8 +37,6 @@ When you set the `addresses` property of the component it will change state to d
 
 ![Multiple addresses - Customer selects using radio buttons](images/nsx-address-selector/usage-example-multi-address.webp)
 
-<!--CONTINUE WITH UPDATING IMAGES FROM HERE-->
-
 You can [see the multi address state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--multi-addresses).
 
 ### Many addresses
