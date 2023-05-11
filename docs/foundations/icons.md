@@ -67,6 +67,7 @@ If you are looking to create a new icon then please check there is not something
 - Icon should be one topic, we don't overlay or intersect an icon with another icon.
 - Text shouldn't be added to an icon as this will break accessibility.
 - Icons are only one colour.
+- Minimise the number of anchor points as much as possible; every anchor point will add to the file weight as we export icons in SVG format, not bitmaps.
 
 ### Icon grid
 
