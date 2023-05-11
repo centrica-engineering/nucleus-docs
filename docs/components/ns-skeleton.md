@@ -8,7 +8,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
-The ns-skeleton component is a placeholder to show that content is loading.
+The `ns-skeleton` component is a placeholder to show that content is loading.
 
 ![Example showing a paragraph type ns-skeleton](images/ns-skeleton/intro-paragraph-example.webp)
 
