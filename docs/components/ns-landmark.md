@@ -17,7 +17,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Summit Landmark
 
-![Landmark - Summit](https://user-images.githubusercontent.com/45626534/72897291-8995e400-3d19-11ea-8ba1-88aa418581c9.png)
+![Landmark - Summit](images/ns-landmark/content_guidance-summit.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -29,7 +29,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Hillside Landmark
 
-![Landmark - Hillside](https://user-images.githubusercontent.com/45626534/72897289-88fd4d80-3d19-11ea-8647-f83eeac414b3.png)
+![Landmark - Hillside](images/ns-landmark/content_guidance-hillside.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -42,7 +42,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Valley Landmark
 
-![Landmark - Valley](https://user-images.githubusercontent.com/28779/97898639-084f9100-1d30-11eb-8f77-1b66d2a7f202.png)
+![Landmark - Valley](images/ns-landmark/content_guidance-valley.webp)
 
 > NOTE: The purpose of the valley landmark is to present an overview of a product or service as a user moves down the funnel of their purchase journey. A CTA may be used, but is not recommended in scenarios where the objective is to encourage further on-page browsing.
 
@@ -57,7 +57,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Lakeside Landmark
 
-![Landmark - Lakeside](https://user-images.githubusercontent.com/45626534/72897290-88fd4d80-3d19-11ea-9db6-857280dcb172.png)
+![Landmark - Lakeside](images/ns-landmark/content_guidance-lakeside.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -102,42 +102,42 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | 💚 Do | 💔 Don'ts |
 | :--- | :--- |
 | Capture the moment. | Allow the card to cover important content. |
-| ![do-father-child](https://user-images.githubusercontent.com/28779/59792082-5430a000-92cb-11e9-942b-7e457c34859c.jpg) | ![dont-child-lady-eng](https://user-images.githubusercontent.com/28779/59792183-82ae7b00-92cb-11e9-8a6f-b5322a5f6eb4.jpg) |
+| ![do-father-child](images/ns-landmark/best-practice-do1-summit.webp) | ![dont-covered-family](images/ns-landmark/best-practice-dont1-summit.webp) |
 | Set focus of the photo correctly. | Obstruct people's faces with the card. |
-| ![do-warehouse-eng](https://user-images.githubusercontent.com/28779/59792156-74f8f580-92cb-11e9-8b97-cf7d62766804.jpg) | ![dont-ice-cream](https://user-images.githubusercontent.com/28779/59792179-7d513080-92cb-11e9-918e-c8c02c956502.jpg) |
+| ![do-couple-on-sofa](images/ns-landmark/best-practice-do2-summit.webp) | ![dont-obstructed-parents-faces](image/../images/ns-landmark/best-practice-dont2-summit.webp) |
 | Convey activity related to topic. | Use images with a white background. |
-| ![do-couple-mobile](https://user-images.githubusercontent.com/28779/59792122-63afe900-92cb-11e9-9553-638cd20f53f2.jpg) | ![dont-wilbur](https://user-images.githubusercontent.com/28779/59792199-87732f00-92cb-11e9-9c9d-51676e6c2aba.jpg) |
+| ![do-boiler-service](images/ns-landmark/best-practice-do3-summit.webp) | ![dont-boiler-on-white-background](images/ns-landmark/best-practice-dont3-summit.webp) |
 
 ### Best practice for `hillside`
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Use the 'invert-bridge' decoration. |
-| ![do-use-same-colour-for-themed-pages](https://user-images.githubusercontent.com/50207859/61695880-345a2500-ad2c-11e9-886a-e510781e2fc2.jpg) | ![dont-use-arc-decoration](https://user-images.githubusercontent.com/50207859/61697584-73d64080-ad2f-11e9-89a2-c2bbc18f7db7.jpg) |
-| Keep the content concise. | Use only the light font weight. If there's one weight, use bold. |
-| ![do-keep-content-concise](https://user-images.githubusercontent.com/50207859/61779546-c7f92780-adf8-11e9-973c-541c7d46d46d.jpg) | ![dont-use-only-light-font](https://user-images.githubusercontent.com/28779/70074651-0696be00-15f3-11ea-8f4b-a7d2f90ea87c.png) |
+| Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Use the red decoration for something that is not a promotional promotional or an error-themed page. |
+| ![do-use-same-colour-for-themed-pages](images/ns-landmark/best-practice-do1-hillside.webp) | Add too much content in the landmark. |
+| Keep the content concise. |  |
+| ![do-keep-content-concise](images/ns-landmark/best-practice-do2-hillside.webp) |  |
 
 ### Best practice for `lakeside`
 
 | 💚 Do | 💔 Don'ts |
 | :--- | :--- |
 | Use more than one paragraph. | Use more than three paragraphs. |
-| ![do-use-more-than-one-paragraph](https://user-images.githubusercontent.com/28779/70374602-3512e280-18ec-11ea-9222-0a67806898bc.png) | ![dont-use-more-than-three-paragraphs](https://user-images.githubusercontent.com/28779/70374611-465bef00-18ec-11ea-8ac6-0aa2cecab292.png) |
+| ![do-use-more-than-one-paragraph](images/ns-landmark/best-practice-do1-lakeside.webp) | ![dont-use-more-than-three-paragraphs](images/ns-landmark/best-practice-dont1-lakeside.webp) |
 | Display 400 and 500 error pages. | Use to build a page. |
-| ![display-400-and-500-error-pages](https://user-images.githubusercontent.com/28779/70374582-f9781880-18eb-11ea-9fde-b45f70e5c28b.png) | ![dont-even-this-about-building-a-page-with-it](https://user-images.githubusercontent.com/28779/70374723-d3ec0e80-18ed-11ea-8d71-9328de25089a.png) |
+| ![display-400-and-500-error-pages](images/ns-landmark/best-practice-do2-lakeside.webp) | ![dont-even-this-about-building-a-page-with-it](images/ns-landmark/best-practice-dont2-lakeside.webp) |
 | Get to the point, in this scenario the Sub heading and CTA have been omitted. |  |
-| ![do-get-to-the-point](https://user-images.githubusercontent.com/28779/70374643-88853080-18ec-11ea-8c03-94ef23815720.png) |  |
+| ![do-get-to-the-point](images/ns-landmark/best-practice-do3-lakeside.webp) |  |
 
 ### Best practice for `valley`
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use checked list to highlight your key product benefits | Add a CTA if the purpose of the page is for users to consume the content. |
-| ![use-a-checked-list](https://user-images.githubusercontent.com/28779/98671714-90dfba00-234c-11eb-9ce9-47af82d6f875.png) | ![dont-add-a-cta](https://user-images.githubusercontent.com/28779/98671301-f3848600-234b-11eb-9891-dd36b587f25e.png) |
+| ![use-a-checked-list](images/ns-landmark/best-practice-do1-valley.webp) | ![dont-add-a-cta](images/ns-landmark/best-practice-dont1-valley.webp) |
 | Use a complementary image to add context to your product or service | Use long, verbose content. Keep the user interested with a snappy overview and draw them down the page |
-| ![complementary-image](https://user-images.githubusercontent.com/28779/98671213-d0f26d00-234b-11eb-901c-4df125c29ffc.png) | ![use-short-content](https://user-images.githubusercontent.com/28779/98671969-f5027e00-234c-11eb-84c7-a8254dc6f758.png) |
+| ![complementary-image](image/../images/ns-landmark/best-practice-do2-valley.webp) | ![use-short-content](image/../images/ns-landmark/best-practice-dont2-valley.webp) |
 |  | Forget to use an image |
-|  | ![use-an-image](https://user-images.githubusercontent.com/28779/98671842-cab0c080-234c-11eb-9943-0d46e5cd0704.png) |
+|  | ![use-an-image](images/ns-landmark/best-practice-dont3-valley.webp) |
 
 
 ### Considerations of best practice
@@ -181,7 +181,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | :--- | :--- | :--- | :--- | :--- |
 | `type` | `string` | `summit` | `summit`, `hillside`, `lakeside`, `valley` | The variant of the landmark. |
 | `image` | `string` |  |  | Background image used for summit variant or image used for valley variant |
-| `gradient` | `string` | `invert-ramp-cyan` | `invert-ramp-cyan`, `invert-ramp-grey-light`, `invert-ramp-green-light`, `invert-ramp-yellow`, `invert-ramp-blue` | Background gradient and colour used for hillside variant. |
+| `decoration` | `string` | `cyan` | `cyan`, `lime`, `navy`, `blue`, `forest`, `orange`, `red`, `yellow` | Background colour used for hillside variant. |
 | `pillOverImage` | `boolean` |  |  | Used to put the pill in the bottom left of the image when using `type="valley"` and an image |
 | `ratio` | `string` | `4x3` | `4x3`, `16x9` | Aspect ratio of the image used only for valley variant |
 
@@ -200,8 +200,6 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 * The Sub heading is part of the heading to allow screen readers to read the heading properly.
 * Sub heading is a `<span>` tag with a `h5` class.
 * Main heading is a `<span>` tag with a `h1` class.
-* `enlighten` class in the main heading `<span>` to make the heading light.
-  * Use `<b>` tag to embolden specific text.
 
 ### Paragraph
 
@@ -216,29 +214,22 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 This provides the safe-area to the position of the focal point of the image.
 
-[Download the 1440x810px Landmark testcard image](https://user-images.githubusercontent.com/28779/59753927-0ee58180-927d-11e9-84fa-d72b48aa1fcf.png) and place over your Landmark photos in your image editing software.
+[Download the 1440x810px Landmark testcard image](images/ns-landmark/summit-testcard.png) and place over your Landmark photos in your image editing software.
 
-![landmark-16x9-testcard-1440](https://user-images.githubusercontent.com/28779/59753927-0ee58180-927d-11e9-84fa-d72b48aa1fcf.png)
+![landmark-16x9-testcard-1440](images/ns-landmark/summit-testcard.png)
 
 ### Using Photoshop
 
-Using Photoshop to overlay the Landmark focus template to check alignment.
+Using Photoshop to overlay the Landmark focus template to check alignment. (You could equally use an alternative software.)
 
-![image](https://user-images.githubusercontent.com/28779/59829941-7c091d80-9336-11e9-829b-9d1ab69d49a3.png)
-
-### Using Sketch
-
-Using Sketch to overlay the Landmark focus template to check alignment.
-
-![Screenshot 2019-06-20 at 12 30 08](https://user-images.githubusercontent.com/43471890/59846281-54767d00-9357-11e9-805a-96487c8ecc7f.png)
-
+![image](images/ns-landmark/photoshop-template.webp)
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Here, the focus of the photo is located within the safe-area | The subject fills the entire photo, and the lady on the left will be obscured |
-| ![landmark-16x9-testcard-1440-01](https://user-images.githubusercontent.com/28779/59754143-6be13780-927d-11e9-8175-75b6a46cf2d4.jpg) | ![landmark-16x9-testcard-1440-00](https://user-images.githubusercontent.com/28779/59792749-cb1a6880-92cc-11e9-8f19-9d4caab0d169.jpg) |
+| ![landmark-16x9-testcard-1440-01](images/ns-landmark/best-practice-do1-photo.webp) | ![landmark-16x9-testcard-1440-00](images/ns-landmark/best-practice-dont1-photo.webp) |
 | Capture the story within. This photo is about the lady and her phone | Unfortunately, this photo is completely unsuitable for a Landmark |
-| ![landmark-16x9-testcard-1440-02](https://user-images.githubusercontent.com/28779/59754184-83b8bb80-927d-11e9-9e81-2a64704e1a92.jpg) | ![landmark-16x9-testcard-1440-04](https://user-images.githubusercontent.com/28779/59754330-c7abc080-927d-11e9-8960-4726cf73f651.jpg) |
+| ![landmark-16x9-testcard-1440-02](images/ns-landmark/best-practice-do2-photo.webp) | ![landmark-16x9-testcard-1440-04](images/ns-landmark/best-practice-dont2-photo.webp) |
 
 <Tokens component="landmark"></Tokens>
 
