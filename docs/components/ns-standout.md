@@ -9,7 +9,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
-> The ns-standout component's purpose is to draw attention to important information that the user will need to know.
+> The `ns-standout` component's purpose is to draw attention to important information that the user will need to know.
 
 Use the ns-standout component to make information stand out from a page and to visually differentiate a concise block of text from the content that surrounds it, for example:
 
