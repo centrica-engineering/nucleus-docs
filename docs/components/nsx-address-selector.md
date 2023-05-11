@@ -45,7 +45,7 @@ You can [see the multi address state of `<nsx-address-selector>` here](https://w
 
 If there are 6 or more addresses then the component will display the addresses in a select drop-down.
 
-![Many addresses - Customer selects using select drop-down](https://user-images.githubusercontent.com/4298413/83441686-d82d5a80-a43e-11ea-8ae0-b72421cc1ad0.png)
+![Many addresses - Customer selects using select drop-down](images/nsx-address-selector/usage-example-many-address.webp)
 
 You can [see the many address state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--many-addresses).
 
