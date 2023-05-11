@@ -8,16 +8,17 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
-A placeholder to show that content is loading.
+The `ns-skeleton` component is a placeholder to show that content is loading.
+
+![Example showing a paragraph type ns-skeleton](images/ns-skeleton/intro-paragraph-example.webp)
+
+The example above shows the visual representation for a paragraph. There are also options for text, headings, and subheadings.
 
 ## Accessibility
 
-This component is hidden to screen readers. It will add a message, visible only to screen readers,
-within the parent element stating "Loading". When the skeleton component is removed from the DOM it
-will find the loading message and delete it.
+This component is hidden to screen readers. It will add a message, visible only to screen readers, within the parent element stating "Loading". When the skeleton component is removed from the DOM it will find the loading message and delete it.
 
 To prevent users with cognitive disabilities from being overwhelmed; the shimmer animation loops for 6 seconds then stops.
-
 
 ## Best practice
 
@@ -54,8 +55,6 @@ To prevent users with cognitive disabilities from being overwhelmed; the shimmer
 ### Type
 
 Type can be manually picked, however it will automatically decide the best `type` based on the `slot` it is in.
-
-
 
 ## Feedback
 
