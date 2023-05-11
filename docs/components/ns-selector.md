@@ -15,7 +15,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ### Selector - Illustration
 
-![Selector - Illustration](https://user-images.githubusercontent.com/78355810/115743858-f4552580-a389-11eb-88a9-55bf38d45716.png)
+![Selector - Illustration](images/ns-selector/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -29,7 +29,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ### Selector - Image
 
-![Selector - Image](https://user-images.githubusercontent.com/78355810/115587322-76c7e180-a2c5-11eb-9e44-d9ae09de9ad4.png)
+![Selector - Image](images/ns-selector/selector-image.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -39,12 +39,11 @@ Selectors are used to group an image or illustration with a label into a card. T
 | D | Keyline | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
 | E | Expanders | An optional addition of an [ns-expander](../components/ns-expander) component within the selector allows for more detail to be discoverable. It consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content.
 
-
 ### Image guidance
 
 | Component | Variant | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-selector`| n/a | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-selector-640x360px](https://user-images.githubusercontent.com/50207859/68392177-1ee4fb80-0161-11ea-8826-14326d2c976a.jpg) |
+| `ns-selector`| n/a | 16:9 | 640 x 360px | &lt;50kb | jpeg | [ns-selector-640x360px](https://user-images.githubusercontent.com/50207859/68392177-1ee4fb80-0161-11ea-8826-14326d2c976a.jpg) |
 
 ## Best practice
 
@@ -53,8 +52,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 | Use if you need to support the label with an image | Mix radio and checkboxes |
 | Use if you need to support the label with an illustration | Use if the image or illustration make the selection harder to understand |
 | Use a heading within the content when providing supporting copy | Add too much content, they should not be miniature web pages |
-| Use inline text links into supporting content if necessary | Use without an image or an illustration |
-| Bolden key messages eg. price within heading to highlight | Use imagery within ns-selector with copy embedded inside |
+| Use inline text links into supporting content if necessary | Use imagery within `ns-selector` with copy embedded inside |
 | Use a radio button or checkbox |  Use an image and an illustration together |
 | Use expanders if you need to include more details |Add a decoration behind the selectors |
 | Use paragraph for description when using illustration| Use more than 5 expanders on a selector
@@ -67,7 +65,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 * Make sure the paragraph section is added for more description when illustration is used.
 * Make sure the supporting copy is clear and concise.
 * Make sure the labels explain exactly what the user is selecting. If all content is removed other than the label, then the user would still understand what they are selecting.
-* If using the optional Expander, keep the content concise – you can use lists in the content to help. Be mindful that once a heading is expanded it forces the bottom of that selector down and that of any other instances in the row. 
+* If using the optional `ns-expander`, keep the content concise – you can use lists in the content to help. Be mindful that once a heading is expanded it forces the bottom of that selector down and that of any other instances in the row.
 
 ## Usage
 
@@ -99,7 +97,7 @@ When used in ns-column, ns-column must be a child of ns-inputter:
 | `decoration` | `string` |  |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)| Illustration that is show in the section type card |
 | `image`      | `string` |  |  | Optional image |
 | `value` | `any`     |  |  | Value of selection |
-| `keyline` | `string` | none | `slate`, `cyan`, `yellow`, `red`, `green-light`, `red-dark`, `orange`, `green`, `green-dark`, `blue`, `blue-dark` | Add a colour across the top of the selector |
+| `keyline` | `string` | none |`cyan`, `lime`, `navy`, `blue`, `forest`, `slate`, `orange`, `red`, `yellow` | Add a colour across the top of the selector |
 
 | Slots | Type | Description |
 | :--- | :--- | :--- |
