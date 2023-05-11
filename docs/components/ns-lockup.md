@@ -80,7 +80,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 * Should be a `h2` tag.
 * The sub-heading is part of the heading to allow screen readers to read the heading properly.
-* Sub heading is a `<span>` tag with a `h5` class.
+* Sub-heading is a `<span>` tag with a `h5` class.
 * Main heading is a `<span>` tag with a `h1` class.
 
 ### Video
