@@ -47,7 +47,7 @@ We can make use of brand logos and marks when we discuss products and companies.
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Start with using BG Cyan or BG Slate | Mix two secondary colours together |
-| Use colours that meet WCAG colour contrast ratio requirements on specific coloured backgrounds (mainly achieved automatically by the system) | Use non-conforming contrasts |
+| Use colours that meet WCAG AA colour contrast ratio requirements on specific coloured backgrounds (mainly achieved automatically by the system) | Use non-conforming contrasts |
 | Colour interactive functional icons in Secondary Blue - see [Colours](https://foundations/colours.md)|  |
 
 ## Creating new icons
