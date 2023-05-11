@@ -21,7 +21,7 @@ Use the `ns-standout` component to make information stand out from a page and to
 
 ## Accessibility
 
-The component is not announced to screen readers to help differentiate it from [ns-highlighter](../components/ns-highlighter) messages. You can choose from different coloured borders, but the text and background retain the standard colours, therefore, meeting suitable contrast ratios.
+The component is not announced to screen readers upfront, to help differentiate it from [ns-highlighter](../components/ns-highlighter) messages. It will be read in the order it comes in the document. You can choose from different coloured borders, but the text and background retain the standard colours, therefore, meeting suitable contrast ratios.
 
 ## Content guidance
 
