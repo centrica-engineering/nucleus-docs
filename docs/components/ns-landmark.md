@@ -112,7 +112,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Use the red decoration for something that is not a promotional promotional or an error themed page |
+| Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Use the red decoration for something that is not a promotional promotional or an error-themed page. |
 | ![do-use-same-colour-for-themed-pages](images/ns-landmark/best-practice-do1-hillside.webp) | Add too much content in the landmark. |
 | Keep the content concise. |  |
 | ![do-keep-content-concise](images/ns-landmark/best-practice-do2-hillside.webp) |  |
