@@ -52,7 +52,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 | Use if you need to support the label with an image | Mix radio and checkboxes |
 | Use if you need to support the label with an illustration | Use if the image or illustration make the selection harder to understand |
 | Use a heading within the content when providing supporting copy | Add too much content, they should not be miniature web pages |
-| Use inline text links into supporting content if necessary | Use imagery within ns-selector with copy embedded inside |
+| Use inline text links into supporting content if necessary | Use imagery within `ns-selector` with copy embedded inside |
 | Use a radio button or checkbox |  Use an image and an illustration together |
 | Use expanders if you need to include more details |Add a decoration behind the selectors |
 | Use paragraph for description when using illustration| Use more than 5 expanders on a selector
