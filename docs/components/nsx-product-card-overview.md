@@ -53,6 +53,28 @@ To display the price offer of a product in the overview component, `was / now` o
 
 ![Experience pattern - Product Card Overview - Was / Now Pricing](images/nsx-product-card-overview/content-guidance-was-now-price.webp)
 
+### With Monthly Now Primary/Secondary
+
+To allow a display of a special offer which requires the `now` price to have two different values you can supply it with the following shape:
+
+```javascript
+now: {
+  'primary-prefix': null,
+  'primary-price': 500,
+  'primary-extra': 'for the first 3 months',
+  'secondary-price': 1000,
+  'secondary-prefix': 'Then'
+}
+```
+
+#### Usage
+
+```markup
+<nsx-product-card-overview pricing='[{"monthly": {"was": null, "now": {"primary-price": 500, "primary-extra": "for the first 3 months", "secondary-price": 1000, "secondary-prefix": "Then"} }, "excess": 60}]' priceheading="Estimated Price"></nsx-product-card-overview>
+```
+
+![Experience pattern - Product Card Overview - With Monthly Now Primary/Secondary](images/nsx-product-card-overview/content-guidance-monthly-now-primary-secondary.webp)
+
 ## Specification
 
 | Attribute | Type | Default | Options | Description |
