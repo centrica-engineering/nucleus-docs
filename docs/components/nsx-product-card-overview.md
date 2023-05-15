@@ -47,11 +47,32 @@ To display the price offer of a product in the overview component, `was / now` o
 
 ![Experience pattern - Product Card Overview](https://user-images.githubusercontent.com/78729952/173387001-3eb8c9a0-ba43-45c2-aa41-465158c86efd.png)
 
+### With Monthly Now Primary/Secondary
+
+To allow a display of a special offer which requires the `now` price to have two different values you can supply it with the following shape:
+
+```
+now: {
+  'primary-prefix': null,
+  'primary-price': 500,
+  'primary-extra': 'for the first 3 months',
+  'secondary-price': 1000,
+  'secondary-prefix': 'Then'
+}
+  ```
+
+#### Usage
+```markup
+<nsx-product-card-overview pricing='[{"monthly": {"was": null, "now": {"primary-price": 500, "primary-extra": "for the first 3 months", "secondary-price": 1000, "secondary-prefix": "Then"} }, "excess": 60}]' priceheading="Estimated Price"></nsx-product-card-overview>
+```
+![Experience pattern - Product Card Overview](https://user-images.githubusercontent.com/78729952/110448202-e177e180-80b8-11eb-8a02-6c40db07a9ba.png)
+
+
 ## Specification
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :------ |
-| `pricing` | `array` | `[]` | `required` | The list of price values to be updated in the product card price slots. Each product card price has `monthly`, `annually` and `excess` values. `monthly` price holds  `was` and `now` price. `was` price represents the original price and `now` price represents the current price of the product. |
+| `pricing` | `array` | `[]` | `required` | The list of price values to be updated in the product card price slots. Each product card price has `monthly`, `annually` and `excess` values. `monthly` price holds  `was` and `now` price. `was` price represents the original price and `now` price represents the current price of the product.<br />The `now` value can also be an object to support primary and secondary values. See the 'With Monthly Now Primary/Secondary' example above for more details |
 | `excess` | `array` | `[]` | `optional` | The list of excess prices that will be displayed as radio options to the user for excess selection|
 | `priceheading` | `string` | `Estimated Price` | `optional` | The product card price heading prefix used to display in product card price heading slot along with excess value if any|
 
