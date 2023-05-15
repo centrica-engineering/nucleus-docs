@@ -10,6 +10,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 The product card overview is an experience pattern that can be used to compare HomeCare products against each other and see the difference in price when choosing to have an excess or not - without having to reload the entire page.
 
 ## Content guidance
+
 Wrap the overview component in `ns-panel` and use its `decoration` attribute for decoration. It is possible to use any [decoration](ns-panel#specification) for ns-panel. However we recommend to use **only** `invert-concave-grey-light` decoration for better accessibility of the contents inside the overview component.
 
 ```markup
@@ -19,6 +20,7 @@ Wrap the overview component in `ns-panel` and use its `decoration` attribute for
 ```
 
 ### With Excess
+
 When `excess` property of the overview component is set with an array of price options, the excess prices are displayed as radio options in the overview component. When a user selects a radio option, an `excess-change` event is dispatched from the overview component. The consuming wrapper component has to listen for the event and sets the updated ns-product-card prices back in the `pricing` attribute of the component.
 
 #### Usage
@@ -27,25 +29,29 @@ When `excess` property of the overview component is set with an array of price o
 <nsx-product-card-overview excess="[60,0]" pricing='[{"monthly": {"now": 1200},"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
 ```
 
-![Experience pattern - Product Card Overview with Excess](https://user-images.githubusercontent.com/78729952/110317836-943a3800-8004-11eb-85e8-437f8d4edb16.png)
+![Experience pattern - Product Card Overview with Excess](images/nsx-product-card-overview/content-guidance-excess.webp)
 
 ### Without Excess
 
 #### Usage
+
 ```markup
 <nsx-product-card-overview pricing='[{"monthly": {"now": 1200},"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
 ```
-![Experience pattern - Product Card Overview](https://user-images.githubusercontent.com/78729952/110448202-e177e180-80b8-11eb-8a02-6c40db07a9ba.png)
+
+![Experience pattern - Product Card Overview - Without Excess](images/nsx-product-card-overview/content-guidance-without-excess.webp)
 
 ### Was / Now Pricing
+
 To display the price offer of a product in the overview component, `was / now` option in `monthly` pricing can be used to display the original and current price. The `was` price is displayed with `Was` prefix and a strikethrough in the price. The `now` price is displayed with `Now` prefix, when accompanied with `was` price. The `was` price is optional whereas `now` price is mandatory. `was / now` option can be used with / without Excess pricing.
 
 #### Usage
+
 ```markup
 <nsx-product-card-overview pricing='[{"monthly": {"was": 1200,"now": 1000},"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
 ```
 
-![Experience pattern - Product Card Overview](https://user-images.githubusercontent.com/78729952/173387001-3eb8c9a0-ba43-45c2-aa41-465158c86efd.png)
+![Experience pattern - Product Card Overview - Was / Now Pricing](images/nsx-product-card-overview/content-guidance-was-now-price.webp)
 
 ## Specification
 
