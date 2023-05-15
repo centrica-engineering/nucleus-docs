@@ -21,15 +21,15 @@ e.g. a message that says the top up service is not available would only apply to
 The information contained in the highlighter should always be the most important information on the page. To ensure that screen reader users are informed about the importance of these messages the content is read aloud as soon as the highlighter is used. This could be when the page loads or when it is dynamically added to a page.
 
 If there are multiple highlighters on a page they are read:
+
 * from top to bottom on page load
 * in the order they have been added to the page when dynamically added
 
-We recommend you use highlighters for their role, not for their looks. 
+We recommend you use highlighters for their role, not for their looks.
 
 ## Content guidance
 
-![Highlighter - Error](https://user-images.githubusercontent.com/45626534/76082861-32d02b00-5fa4-11ea-9a5a-3efc9f2f89e8.png)
-
+![Highlighter - Error](images/ns-highlighter/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -40,30 +40,29 @@ We recommend you use highlighters for their role, not for their looks.
 
 The content for highlighters is dependent on the type that is used:
 
-### Error Messages `type="error"`
+### Error messages
 
-![Highlighter - Error](https://user-images.githubusercontent.com/28779/75970263-fc24e280-5ec7-11ea-9e31-90df5e7344ba.png)
+![Highlighter - Error](images/ns-highlighter/error.webp)
 
 For communicating failure with urgence. A task cannot be completed without the user remedying something.
 
-### Informational Messages `type="info"`
+### Informational messages
 
-![Highlighter - Informational](https://user-images.githubusercontent.com/28779/75970267-fcbd7900-5ec7-11ea-91fb-15374a536a42.png)
+![Highlighter - Informational](images/ns-highlighter/info.webp)
 
 For communicating a useful piece of information that the user might find helpful to carry out their action.
 
-### Success Messages `type="success"`
+### Success messages
 
-![Highlighter - Success](https://user-images.githubusercontent.com/28779/75970268-fd560f80-5ec7-11ea-8ad3-081592da15f1.png)
+![Highlighter - Success](images/ns-highlighter/success.webp)
 
 For communicating that an action has been successful.
 
-### Warning Messages `type="warning"`
+### Warning messages
 
-![Highlighter - Warning](https://user-images.githubusercontent.com/28779/75970265-fcbd7900-5ec7-11ea-98a2-a43127c9af28.png)
+![Highlighter - Warning](images/ns-highlighter/warning.webp)
 
-For communicating a piece of information with less severity. These include foreseeable problematic events, failures, outages and how to avoid errors.
-
+Use for communicating a piece of information with less severity. These include foreseeable problematic events, failures, outages and how to avoid errors.
 
 ## Best practice
 
@@ -90,7 +89,7 @@ The message must be in plain English, and help the user out of the situation by 
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `type`       | `string` | "error" | "error", "success", "warning", "info" | Defines the role of the highlighter and changes the styles |
+| `type` | `string` | `error` | `error`, `success`, `warning`, `info` | Defines the role of the highlighter and changes the styles |
 
 | Slots | Type |
 | :--- | :--- |
