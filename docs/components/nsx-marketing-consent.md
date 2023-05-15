@@ -16,11 +16,11 @@ This component is only used to capture and submit customer preferences, not view
 
 ## Content guidance
 
-![Experience pattern - Marketing consent](https://user-images.githubusercontent.com/28779/77073146-b6e3d300-69e6-11ea-99a1-fc5a131fcef6.png)
+![Experience pattern - Marketing consent](images/nsx-marketing-consent/content-guidance.webp)
 
 It is possible to change the heading and the first paragraph to suit specific context. However, we recommend using the default content as these have been signed off by the legal team.
 
-If there is an official update to the default content, please inform Nucleus so that the the component can be updated.
+If there is an official update to the default content, please inform the Nucleus team so that the the component can be updated.
 
 ## Best practice
 
