@@ -27,9 +27,9 @@ Using these tools helps designers and engineers focus on solving complex user pr
 
 When building a new experience for our customers, we advise that you employ a step-by-step journey pattern.
 
-By understanding the customers mental model and breaking the journey into logical steps will help them to complete their tasks easily. 
+By understanding the customers mental model and breaking the journey into logical steps will help them to complete their tasks easily.
 
-![Step-by-step](https://user-images.githubusercontent.com/45626534/84635485-2fc1d080-aeeb-11ea-970b-df59140d234a.png)
+![Step-by-step](images/journeys/step-by-step.webp)
 
 ### Guiding principles
 
@@ -91,7 +91,7 @@ There are currently two distinct methods for playing back and summarising a cust
 
 One using flat cards, the other a description list. Both can be used to play back a representative structure of the sections a customer has completed. 
 
-![Description list used for personal information summary](https://user-images.githubusercontent.com/45626534/86791461-75446a00-c061-11ea-8bcd-4898823cadf9.png)
+![Description list used for personal information summary](images/journeys/playback.webp)
 
 #### ns-card
 
