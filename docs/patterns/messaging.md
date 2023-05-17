@@ -15,7 +15,7 @@ Whether displaying a global message, a task specific message, a success, or erro
 
 ### Using `<ns-skyline>`
 
-![ns-skyline](https://user-images.githubusercontent.com/28779/87171041-16cdf480-c2ca-11ea-92ab-09fa0d995648.png)
+![ns-skyline](images/messaging/global.webp)
 
 To notify customers of important global or site-wide events, we have `<ns-skyline>`.
 
@@ -32,7 +32,7 @@ You can [read more information about the `<ns-skyline>` here](components/ns-skyl
 
 ### Inline validation
 
-![Validation message on radio buttons](https://user-images.githubusercontent.com/28779/87279940-7a823880-c4e9-11ea-92bf-0f9f923715bb.png)
+![Validation message on radio buttons](images/messaging/error-inline-validation.webp)
 
 The `<ns-inputter>` encapsulates the validation for each element on a form.
 
@@ -49,7 +49,7 @@ These validation rules ensure that the expected data is provided, and will displ
 
 ### Using `<ns-highlighter>`
 
-![Warning message displayed in journey](https://user-images.githubusercontent.com/28779/87281719-693a2b80-c4eb-11ea-87a1-0a226f9b0399.png)
+![Warning message displayed in journey](images/messaging/warning-highlighter.webp)
 
 The `<ns-highlighter>` has two variants for displaying warning and error messages:
 
@@ -66,7 +66,7 @@ These messages are to be communicated during a customers engagement with a journ
 
 ### Using the Roadblock page type
 
-![Roadblock message](https://user-images.githubusercontent.com/28779/87285140-106c9200-c4ef-11ea-9cdf-10f82f76ff42.png)
+![Roadblock message](images/messaging/roadblock.webp)
 
 The Roadblock page type presents key information when a user reaches an unexpected end to the task they were trying to complete.
 
@@ -80,7 +80,7 @@ You can [read more information about the Roadblock page type here](page-types/ro
 
 ### Using `<ns-highlighter>`
 
-![Messaging example for submitting a meter reading](https://user-images.githubusercontent.com/28779/87281975-aef6f400-c4eb-11ea-9368-34a0f2dbf412.png)
+![Messaging example for submitting a meter reading](images/messaging/success-highlighter.webp)
 
 Along with handling warning and error messages, the `<ns-highlighter>` has two other variants that can be used for messaging:
 
