@@ -43,9 +43,9 @@ Radio buttons and checkboxes should be grouped in their own respective fieldsets
 
 ## Text inputs
 
-The `ns-inputter` component is a multi-purpose wrapper component for displaying form controls such as text inputs, radio buttons, and checkboxes. The component has a number of features that allow for things such as validation, masking, and formatting. 
+The `ns-inputter` component is a multi-purpose wrapper component for displaying form controls such as text inputs, radio buttons, and checkboxes. The component has a number of features that allow for things such as validation, masking, and formatting.
 
-![Text input](https://user-images.githubusercontent.com/45626534/95720272-ec912780-0c68-11eb-815c-c0e57f311374.jpg)
+![Text input](images/asking-for-info/text-input.webp)
 
 ### Common types of information
 
@@ -63,7 +63,7 @@ Along with these, you can use a combination of validation, mask, and separator t
 - Sort codes
 - Reference numbers
 
-![Mask - used for meter readings](https://user-images.githubusercontent.com/45626534/95720262-eac76400-0c68-11eb-9378-0009e25087cc.jpg)
+![Mask - used for meter readings](images/asking-for-info/complex.webp)
 
 **Further research:** We are currently developing pattern documentation for the use of these patterns, by doing this we look to ensure that there is a consistent approach to asking customers for this information across customer journeys.
 
@@ -73,15 +73,15 @@ These are extremely common form control elements used to ask customers to make c
 
 Radio buttons and checkboxes are automatically grouped together in a `<fieldset>`. For accessibility, the `heading` attribute found on the `ns-inputter` must be used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Are you a British Gas customer?" or "Which British Gas services would you like to choose?".
 
-![Checkboxes](https://user-images.githubusercontent.com/45626534/95720257-e9963700-0c68-11eb-8980-26d511829195.jpg)
-![Radio buttons](https://user-images.githubusercontent.com/45626534/95720264-eac76400-0c68-11eb-9619-4453cb5171d1.jpg)
+![Checkboxes](images/asking-for-info/checkboxes.webp)
+![Radio buttons](images/asking-for-info/radio-buttons.webp)
 
 You can [read more information about how to use `<ns-inputter>` here](components/ns-inputter.md)
 See [`<ns-inputter>` on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--text-input)
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[patterns-asking-for-information]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[patterns-asking-for-information]).
+- Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[patterns-asking-for-information]).
+- See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[patterns-asking-for-information]).
 
 <PageFooter></PageFooter>
