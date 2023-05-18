@@ -17,7 +17,7 @@ The ns-inputter is a multi-purpose wrapper component that helps with the display
 - Select (drop-downs)
 - Textareas
 
-These types of inputs are used to help customers enter and select information. Inputs can only be used within a form.
+These types of inputs are used to help customers enter and select information.
 
 If you would like to use a password input then please see the [ns-password](components/ns-password.md) component.
 
