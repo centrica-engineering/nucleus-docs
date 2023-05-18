@@ -87,7 +87,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 ![ns-lockup-with-video-overlap](images/ns-lockup/video.webp)
 
-* Use the `video` variant when using instead of an image as the overlap is in front of the text box so neither the video nor its captions are obscured. The text then wraps around the video edge. (See the `video` example on [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/components-ns-lockup--video))
+* Use the `video` variant when using a video instead of an image as the overlap is in front of the text box so neither the video nor its captions are obscured. The text then wraps around the video edge. (See the `video` example on [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/components-ns-lockup--video))
 * It is not possible to use an illustration decoration with a video.
 * Use the video's YouTube link as the `id` attribute's value.
 
