@@ -17,9 +17,9 @@ Expanders can be used in [a variety of contexts](#component-placement): in an ac
 
 ## Content guidance
 In the following examples, the expander is used in an accordion and in a selector.
-![Expander - Being used in an accordion](https://user-images.githubusercontent.com/45626534/75039379-7315b080-54b0-11ea-9816-8b679a290a19.png)
+![Expander - Being used in an accordion](images/ns-expander/content-guidance-accordion.webp)
 
-![Expander - Being used in a selector](https://user-images.githubusercontent.com/28779/198272767-b2d1b886-3449-48f8-819a-b64e7ff60c54.png)
+![Expander - Being used in a selector](images/ns-expander/content-guidance-product-card.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
