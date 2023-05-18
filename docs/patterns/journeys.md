@@ -27,9 +27,9 @@ Using these tools helps designers and engineers focus on solving complex user pr
 
 When building a new experience for our customers, we advise that you employ a step-by-step journey pattern.
 
-By understanding the customers mental model and breaking the journey into logical steps will help them to complete their tasks easily. 
+By understanding the customers mental model and breaking the journey into logical steps will help them to complete their tasks easily.
 
-![Step-by-step](https://user-images.githubusercontent.com/45626534/84635485-2fc1d080-aeeb-11ea-970b-df59140d234a.png)
+![Step-by-step](images/journeys/step-by-step.webp)
 
 ### Guiding principles
 
@@ -60,11 +60,11 @@ Key benefits include:
 
 Helping customers to focus and understand the task by displaying one thing on each page of your journey.
 
-Such as: 
+Such as:
 
 - a question or group of questions
 - a choice they need to make
-- or a piece of information 
+- or a piece of information
 
 Displaying too many questions on a single page can cause validation problems, especially when using a mobile device. Reducing this content can help customers identify and fix any problems they encounter.
 
@@ -72,7 +72,7 @@ Displaying too many questions on a single page can cause validation problems, es
 
 Grouping related form elements is a purposeful way of helping the customer to complete their journey.
 
-Use a single page to group questions or tasks together, such as asking the customer for personal details or to provide their address. 
+Use a single page to group questions or tasks together, such as asking the customer for personal details or to provide their address.
 
 Provide context and a description for groups of form controls by using the fieldset and legend attributes. Using these will help customers understand the objective of the task, and will naturally interact with the form better.
 
@@ -82,16 +82,16 @@ Provide context and a description for groups of form controls by using the field
 
 Providing the customer with a summary of their answers can help reduce errors and confusion, and provide reassurance of what they have completed.
 
-Further research is required for when to playback information to users: 
+Further research is required for when to playback information to users:
 
 - After each individual question or section
 - Grouped summary at the end of a journey
 
 There are currently two distinct methods for playing back and summarising a customer’s answers.
 
-One using flat cards, the other a description list. Both can be used to play back a representative structure of the sections a customer has completed. 
+One using flat cards, the other a description list. Both can be used to play back a representative structure of the sections a customer has completed.
 
-![Description list used for personal information summary](https://user-images.githubusercontent.com/45626534/86791461-75446a00-c061-11ea-8bcd-4898823cadf9.png)
+![Description list used for personal information summary](images/journeys/playback.webp)
 
 #### ns-card
 
