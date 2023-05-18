@@ -120,6 +120,8 @@ text
 
 ### Icons
 
+ This list shows the clear, descriptive names we use for all our icons. Notice how some describe variants such as `chevron-right`, `chevron-left` or `gas-outline` etc. separated by a hyphen:
+
 ```markup
 appliance
 appliance-outline
@@ -166,15 +168,53 @@ warning
 
 ### Illustrations
 
+ This list shows the clear, descriptive names we use for all our illustrations. Notice how some describe variants such as `applianceCover`, `applianceRepair` or `electricVehicle` etc. using a capital initial letter for the second word:
+
 ```markup
 appliance
+applianceCover
+applianceRepair
+battery
 boiler
+boilerCover
+boilerRepair
 bulb
+calendar
+centralHeating
+chat
 clock
+compass
+cosmo
+document
+dualFuel
+electrics
+electricChargingStation
+electricVehicle
+engineer
+error
+fix
+fixedSA
 gas
+greenLeaf
+help
 home
+homeInsurance
+laptop
+lowCarbon
+multiplePeople
 oven
+phone
+pipeAndDrain
 protect
+radiator
+savings
+settings
+sms
+tap
+trackEngineer
+van
+whatsApp
+yellowShield
 ```
 
 ### Colours
