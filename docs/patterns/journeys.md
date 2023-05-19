@@ -107,6 +107,10 @@ This element is used for presenting pairs of information - a label and a piece o
 
 It is ideal for summarising a series of customer responses. In addition to the label and data, a link can be used to allow navigation back to the relevant section.
 
+## Navigational items
+
+Functional journey pages should come with a header that includes navigational items to ensure we keep a coherent experience across the website. It has also been proven that it helps customers that may have entered the wrong journey to easily recover and select the correct one.
+
 ## Supporting pages for journeys
 
 We have a growing number of page types that have been researched and developed across multiple teams.
