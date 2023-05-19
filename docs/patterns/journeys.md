@@ -107,6 +107,10 @@ This element is used for presenting pairs of information - a label and a piece o
 
 It is ideal for summarising a series of customer responses. In addition to the label and data, a link can be used to allow navigation back to the relevant section.
 
+## Navigational items
+
+To ensure coherence with the functional journeys of services, it's recommended to maintain navigational elements in journeys. This enables customers who may have entered the wrong journey to easily find and select the correct one.
+
 ## Supporting pages for journeys
 
 We have a growing number of page types that have been researched and developed across multiple teams.
