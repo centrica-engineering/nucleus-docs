@@ -7,27 +7,27 @@ import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
-
 ## Introduction
 
 The ns-inputter is a multi-purpose wrapper component that helps with the display of the following form control types:
 
-- text (including tel, email, and number)
-- radio buttons
-- checkboxes
-- select (drop-downs)
-- textareas
+- Text (including tel, email, and number)
+- Radio buttons
+- Checkboxes
+- Select (drop-downs)
+- Textareas
 
-These types of inputs are used to help customers enter and select information. Inputs can only be used within a form. 
+These types of inputs are used to help customers enter and select information.
+
 If you would like to use a password input then please see the [ns-password](components/ns-password.md) component.
 
 ## Most common input types
 
-### Text Input
+### Text input
 
 The text input is ideal for entering text that takes up a single line, such as asking a customer their name or email address. If you require a longer answer from a customer then you should use the textarea input type.
 
-![Text input](https://user-images.githubusercontent.com/45626534/95720272-ec912780-0c68-11eb-815c-c0e57f311374.jpg)
+![Text input](images/ns-inputter/text.webp)
 
 [See `<ns-inputter>` text input on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-components-ns-inputter--text-input).
 
@@ -40,7 +40,7 @@ The text input is ideal for entering text that takes up a single line, such as a
 
 ### Radio Buttons
 
-Radio buttons are for when customers need to select only one option from a list. If you need them to select multiple options then you should use checkboxes. If there are many items to choose from then you should consider a select instead. 
+Radio buttons are for when customers need to select only one option from a list. If you need them to select multiple options then you should use checkboxes. If there are many items to choose from then you should consider a select instead.
 
 Radio buttons are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Are you a British Gas customer?".
 
@@ -50,7 +50,7 @@ Radio buttons come with a heading that inherits size 4, which is larger than the
 
 To match this heading's size with other `ns-inputter` labels', group all associated elements in an `ns-fieldset`. This will help keep a logical visual hierarchy when using radio buttons grouped with other inputs.
 
-![Radio buttons](https://user-images.githubusercontent.com/45626534/95720264-eac76400-0c68-11eb-9619-4453cb5171d1.jpg)
+![Radio buttons](images/ns-inputter/radio-buttons.webp)
 
 [See `<ns-inputter>` radio buttons on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--radio).
 
@@ -74,7 +74,7 @@ Checkboxes come with a heading that inherits size 4, which is larger than the de
 
 To match this heading's size with other `ns-inputter` labels', group all associated elements in an `ns-fieldset`. This will help keep a logical visual hierarchy when using checkboxes grouped with other inputs.
 
-![Checkboxes](https://user-images.githubusercontent.com/45626534/95720257-e9963700-0c68-11eb-8980-26d511829195.jpg)
+![Checkboxes](images/ns-inputter/checkboxes.webp)
 
 [See `<ns-inputter>` checkboxes on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--checkbox).
 
@@ -96,7 +96,7 @@ When you are trying to get a simple set of answers from the customer where the a
 
 Use the contextual [helper text](https://nucleus.design/docs/components/ns-inputter#helper-text) to explain a more complicated question or to offer help or context. If the question and answer is really obvious then you may not need a contextual helper.
 
-![Radio button and checkbox inline variant](https://user-images.githubusercontent.com/28779/186430932-1813f9a7-911d-4e17-8d38-0c84a245c857.png)
+![Radio button and checkbox inline variant](images/ns-inputter/inline-checkboxes.webp)
 
 [See `<ns-inputter>` radio inline/checkbox inline on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-components-ns-inputter--checkbox-inline).
 
@@ -114,7 +114,7 @@ Use the contextual [helper text](https://nucleus.design/docs/components/ns-input
 
 Selects should be used to select an item from a list of many choices. Selects can be problematic for screen reader users if there is a long list of options. Consider distilling your questions so that there are fewer options, this might allow you to use radio buttons instead.
 
-![Select](https://user-images.githubusercontent.com/45626534/95720267-ebf89100-0c68-11eb-8a8a-21c2f7e470a2.jpg)
+![Select](images/ns-inputter/select.webp)
 
 [See `<ns-inputter>` select on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--select).
 
@@ -127,6 +127,8 @@ Selects should be used to select an item from a list of many choices. Selects ca
 
 Textareas are used for capturing a longer answer. Always consider whether or not you need to ask a customer a free form question before doing so.
 
+![Textarea](images/ns-inputter/textarea.webp)
+
 You can [see an example of `<ns-inputter>` textarea here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--textarea).
 
 | 💚 Do's | 💔 Don'ts |
@@ -136,8 +138,7 @@ You can [see an example of `<ns-inputter>` textarea here](https://www.britishgas
 
 ### Date input
 
-[Use the `ns-datepicker` compontent instead](components/ns-datepicker.md)
-
+Use the [`ns-datepicker` component](components/ns-datepicker.md) instead.
 
 ## Functionality
 
@@ -234,15 +235,15 @@ The following is a list of validation types that `<ns-inputter>` supports. These
 
 ### Masks and separators
 
-The `mask` is similar to a placeholder, this can be used to show what can be entered. However it stays when values are entered. 
+The `mask` is similar to a placeholder, this can be used to show what can be entered. However it stays when values are entered.
 
 The `separator` is used with the mask to manipulate the inputted value if it needs to be formatted in a certain way, like as a sort code or reference number.
 
-![Separator - used for sort code](https://user-images.githubusercontent.com/45626534/95720270-ec912780-0c68-11eb-944e-71e3d3184e2a.jpg)
+![Separator - used for sort code](images/ns-inputter/separator.webp)
 
 [See `<ns-inputter>` mask on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--mask).
 
-![Mask - used for meter readings](https://user-images.githubusercontent.com/45626534/95720262-eac76400-0c68-11eb-9378-0009e25087cc.jpg)
+![Mask - used for meter readings](images/ns-inputter/mask.webp)
 
 [See `<ns-inputter>` separator on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--separator).
 
@@ -255,16 +256,16 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ## Autocomplete and input sizing
 
-* Use native autocompletes on inputs ([Autocomplete attribute documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete))
-* Inputs will resize when using the autocomplete attribute for `honorific-prefix`, `given-name`, `family-name` and `postal-code`.
+- Use native autocompletes on inputs ([Autocomplete attribute documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete))
+- Inputs will resize when using the autocomplete attribute for `honorific-prefix`, `given-name`, `family-name` and `postal-code`.
 
 ## Considerations of best practices
 
-* Use defined conventions for common fields.
-* Use standard examples for placeholder copy.
-* If you are asking for first and last name within a text input, spell check should be disabled.
-* Refer to the text input auto complete definitions.
-* Always try and have a default selected radio button unless... .
+- Use defined conventions for common fields.
+- Use standard examples for placeholder copy.
+- If you are asking for first and last name within a text input, spell check should be disabled.
+- Refer to the text input auto complete definitions.
+- Always try and have a default selected radio button unless... .
 
 ## Usage
 
@@ -303,71 +304,71 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ### Helper
 
-* A way to help the user understand why or why not enter information
+- A way to help the user understand why or why not enter information
 
 ### LabelID
 
-* Used if the label is outside of `ns-inputter`, such as a heading for the page. Always try to use a label or the heading first. Only use this if the element you are referring to and the label are the same.
+- Used if the label is outside of `ns-inputter`, such as a heading for the page. Always try to use a label or the heading first. Only use this if the element you are referring to and the label are the same.
 
 ### Mask
 
-* This will create a max length on the input to the length of the mask.
+- This will create a max length on the input to the length of the mask.
 
 ### Separator
 
-* Requires a mask. Can only be one character.
+- Requires a mask. Can only be one character.
 
 ### Ignore Separator
 
-* Setting the ignoreseparator property to true will force length validations (such as minLength and maxLength) to not include the separator when calculating the length. eg. With '-' as the separator: '12-34-56' would have a length of 8, if ignoreseparator is true it would count it as 6 characters
+- Setting the ignoreseparator property to true will force length validations (such as minLength and maxLength) to not include the separator when calculating the length. eg. With '-' as the separator: '12-34-56' would have a length of 8, if ignoreseparator is true it would count it as 6 characters
 
 ### Anonymous slot
 
-* For single type inputs (text, email, etc), there's no need to add id/for unless you need to on the `<label>` and `<input>`
-* Make sure to add id/for if it is a checkbox, select or radio input type.
-* Be careful when adding additional elements outside of input and label * these scenarios haven't been tested and may need a request for change raised.
+- For single type inputs (text, email, etc), there's no need to add id/for unless you need to on the `<label>` and `<input>`
+- Make sure to add id/for if it is a checkbox, select or radio input type.
+- Be careful when adding additional elements outside of input and label * these scenarios haven't been tested and may need a request for change raised.
 
 ### Label slot
 
-* To be used for single input types (text, email, etc).
+- To be used for single input types (text, email, etc).
 
 ### Tip-details slot
 
-* This requires helper property which is initially hidden and can be revealed by the user when they click on the helper text.
+- This requires helper property which is initially hidden and can be revealed by the user when they click on the helper text.
 
 ### Validation
 
-* It is possible to have multiple validations. For example: ["isRequired", "isNumber", "isInteger"]
+- It is possible to have multiple validations. For example: ["isRequired", "isNumber", "isInteger"]
 
-* Some of the validation options can be configured by passing in values within the parentheses:
+- Some of the validation options can be configured by passing in values within the parentheses:
 
-  * minLength(x) - Shows error if the input value is less than x chars.
+  - minLength(x) - Shows error if the input value is less than x chars.
 
-  * maxLength(x) - Shows error if the input value is greater than x chars.
+  - maxLength(x) - Shows error if the input value is greater than x chars.
 
-  * isDate() - Shows error if the input value is not a valid date, the expected format is dd/mm/yyyy
+  - isDate() - Shows error if the input value is not a valid date, the expected format is dd/mm/yyyy
 
-  * minDate(date) - Shows an error if the input value date is less than provided date.  eg. `minDate('20/12/2020')`
+  - minDate(date) - Shows an error if the input value date is less than provided date.  eg. `minDate('20/12/2020')`
 
-  * maxDate(date) - Shows an error if the input vale date is greater than the provided date.  eg. `maxDate('31/12/2022')`
+  - maxDate(date) - Shows an error if the input vale date is greater than the provided date.  eg. `maxDate('31/12/2022')`
 
-  * isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode.  This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function.  eg. `isPostcode(true)`
+  - isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode.  This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function.  eg. `isPostcode(true)`
 
-  * isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number.  This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function.  eg. `isPhoneNumber(true)`
+  - isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number.  This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function.  eg. `isPhoneNumber(true)`
 
 <Tokens component="inputter"></Tokens>
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-inputter]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-inputter]).
+- Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-inputter]).
+- See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-inputter]).
 
 <PageFooter></PageFooter>
 
 ## Related links
 
-* [ns-form](components/ns-form.md)
-* [ns-fieldset](components/ns-fieldset.md)
-* [ns-datepicker](components/ns-datepicker.md)
-* [ns-password](components/ns-password.md)
-* [ns-cta](components/ns-cta.md)
+- [ns-form](components/ns-form.md)
+- [ns-fieldset](components/ns-fieldset.md)
+- [ns-datepicker](components/ns-datepicker.md)
+- [ns-password](components/ns-password.md)
+- [ns-cta](components/ns-cta.md)
