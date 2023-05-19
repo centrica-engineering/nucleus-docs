@@ -109,7 +109,7 @@ It is ideal for summarising a series of customer responses. In addition to the l
 
 ## Navigational items
 
-To ensure coherence with the functional journeys of services, it's recommended to maintain navigational elements in journeys. This enables customers who may have entered the wrong journey to easily find and select the correct one.
+Functional journey pages should come with a header that includes navigational items to ensure we keep a coherent experience across the website. It has also been proven that it helps customs that may have entered the wrong journey to easily recover and select the correct one.
 
 ## Supporting pages for journeys
 
