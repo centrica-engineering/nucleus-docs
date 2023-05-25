@@ -39,7 +39,6 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | D | Decoration | Apply a colour decoration to the landmark. [The specification table](#specification) has a list of options. |
 | E | Action | See action guidance below |
 
-
 ### Valley Landmark
 
 ![Landmark - Valley](images/ns-landmark/content_guidance-valley.webp)
@@ -54,7 +53,6 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | D | Action | See action guidance below |
 | E | Image path | This is the image that will be used inside `ns-landmark`.  It should have an aspect ratio of 4:3 or 16:9, the file type should be jpg, and the file size should be no more than 100kb. To see which image you can use - please see the Image Guidance section below. Don't use imagery with white backgrounds. Please make sure you work with a designer when selecting any imagery for the ns-landmark. **Note:** The image shouldn't hold any meaning and be only used as a decoration. This is why it doesn't have an `alt=""` attribute to avoid adding unnecessary content for users using assistive technology. |
 | F | Decoration | Apply a colour to the offset. [The specification table](#specification) has a list of options. |
-
 
 ### Lakeside Landmark
 
