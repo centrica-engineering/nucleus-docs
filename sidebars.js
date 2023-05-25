@@ -32,7 +32,6 @@ module.exports = {
       'getting-started/design-tokens'
     ],
     'Foundations': [
-      'foundations/names-of-things',
       'foundations/typography',
       'foundations/lists',
       'foundations/colours',
