@@ -36,9 +36,8 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | A | Sub heading | Sub headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. Include a full stop at the end of the sub-heading. **Note:** For guide pages (non-product pages produced with strong SEO focus) a Sub heading is not required. |
 | B | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | C | Content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | Decoration | Apply a colourful gradient decoration to the landmark. [The specification table](#specification) has a list of options. |
+| D | Decoration | Apply a colour decoration to the landmark. [The specification table](#specification) has a list of options. |
 | E | Action | See action guidance below |
-
 
 ### Valley Landmark
 
@@ -53,7 +52,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | C | Content | Valley can accommodate multiple paragraph slots. However, be mindful of keeping it concise. To introduce a product or service we recommend 1 shot paragraph and three or four bullet point in a ticked list to showcase your key product benefits. It can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | D | Action | See action guidance below |
 | E | Image path | This is the image that will be used inside `ns-landmark`.  It should have an aspect ratio of 4:3 or 16:9, the file type should be jpg, and the file size should be no more than 100kb. To see which image you can use - please see the Image Guidance section below. Don't use imagery with white backgrounds. Please make sure you work with a designer when selecting any imagery for the ns-landmark. **Note:** The image shouldn't hold any meaning and be only used as a decoration. This is why it doesn't have an `alt=""` attribute to avoid adding unnecessary content for users using assistive technology. |
-
+| F | Decoration | Apply a colour to the offset. [The specification table](#specification) has a list of options. |
 
 ### Lakeside Landmark
 
@@ -181,7 +180,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | :--- | :--- | :--- | :--- | :--- |
 | `type` | `string` | `summit` | `summit`, `hillside`, `lakeside`, `valley` | The variant of the landmark. |
 | `image` | `string` |  |  | Background image used for summit variant or image used for valley variant |
-| `decoration` | `string` | `cyan` | `cyan`, `lime`, `navy`, `blue`, `forest`, `orange`, `red`, `yellow` | Background colour used for hillside variant. |
+| `decoration` | `string` | `cyan` | `cyan`, `lime`, `navy`, `blue`, `forest`, `orange`, `red`, `yellow` | Background and offset colour used for the Hillside and Valley variant. |
 | `pillOverImage` | `boolean` |  |  | Used to put the pill in the bottom left of the image when using `type="valley"` and an image |
 | `ratio` | `string` | `4x3` | `4x3`, `16x9` | Aspect ratio of the image used only for valley variant |
 
