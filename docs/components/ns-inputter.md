@@ -59,8 +59,9 @@ To match this heading's size with other `ns-inputter` labels', group all associa
 | Keep you heading/legend short | Use just one |
 | Make your labels easy to read and understand | Pre-select an option |
 | Use a label with each radio button | Place radio button side by side |
-| Associate every radio button with it's label using ID & for attributes |  |
-| Consider using a select for more than 5 |  |
+| Associate every radio button with it's label using ID & for attributes | Put links in the label |
+| Consider using a select for more than 5 | |
+
 
 ### Checkboxes
 
@@ -83,7 +84,7 @@ To match this heading's size with other `ns-inputter` labels', group all associa
 | Keep you heading/legend short | Use as lists |
 | Make your labels easy to read and understand | Use as a radio button |
 | Use only one label with each checkbox | Pre-select any option(s) |
-| Allow user to opt in as opposed to opt out |  |
+| Allow user to opt in as opposed to opt out | Put links in the label |
 | Consider splitting question out for when more than 5 checkboxes are required |  |
 
 ### Inline variant of Radio buttons and Checkboxes
@@ -166,6 +167,8 @@ Every input requires a label. Your labels should be easy to read and understand.
 | Use `<label>` element | Add classes to labels |
 | Use sentence case | Use as links |
 | Only use text | Rely on placeholders |
+|  | Put links in the label |
+
 
 ### Helper text
 
