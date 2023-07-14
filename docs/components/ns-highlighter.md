@@ -106,8 +106,6 @@ The message must be in plain English, and help the user out of the situation by 
 
 * This should be a heading level 2
 
-<Tokens component="highlighter"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-highlighter]).

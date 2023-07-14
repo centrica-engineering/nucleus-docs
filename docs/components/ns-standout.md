@@ -71,8 +71,6 @@ The component is not announced to screen readers upfront, to help differentiate 
 
 * Can only accept a single ns-content
 
-<Tokens component="standout"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-highlighter]).

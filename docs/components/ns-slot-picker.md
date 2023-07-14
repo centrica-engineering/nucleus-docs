@@ -68,8 +68,6 @@ const slotData = [{ date: '2020-01-28', slots: slots }, { date: '2020-01-29', sl
 
 <ComponentPlacement component="ns-slot-picker" parentComponents="ns-form,ns-fieldset"></ComponentPlacement>
 
-<Tokens component="slot-picker"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-slot-picker]).

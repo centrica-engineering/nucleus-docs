@@ -104,8 +104,6 @@ When used in ns-column, ns-column must be a child of ns-inputter:
 | `description` | `div` | Mandatory when using with `decoration` attribute and optional when using with `image` attribute |
 | `anonymous` | `input` `label` |
 
-<Tokens component="selector"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-form]).

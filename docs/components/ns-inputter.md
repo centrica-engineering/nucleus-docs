@@ -359,8 +359,6 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
   - isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number.  This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function.  eg. `isPhoneNumber(true)`
 
-<Tokens component="inputter"></Tokens>
-
 ## Feedback
 
 - Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-inputter]).

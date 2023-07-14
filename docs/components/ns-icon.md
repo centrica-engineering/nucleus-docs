@@ -59,8 +59,6 @@ If you are looking to create a new icon then please check there is not something
 
 Read our [icon foundation page](foundations/icons.md#creating-new-icons) for more information on creating icons.
 
-<Tokens component="icon"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-icon]).

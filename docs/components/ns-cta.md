@@ -145,8 +145,6 @@ The only time we present a disabled state is during the Loading state. This ensu
 * Can be used instead of having a wrapping `<a>` element.
 * This shouldn't be used if a `click` event is added.
 
-<Tokens component="cta"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%2[ns-cta]).

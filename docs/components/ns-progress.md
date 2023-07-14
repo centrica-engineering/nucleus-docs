@@ -72,8 +72,6 @@ Internet Explorer 11 and Microsoft Edge 18 and lower do not show the progress ba
 | `next` | `string` |  |  | Information about the next step |
 | `complete` | `boolean` |  | `false` | Use to show the completed state |
 
-<Tokens component="progress"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-progress]).

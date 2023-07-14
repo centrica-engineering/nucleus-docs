@@ -89,8 +89,6 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 
 * Multiple panel slots should be added to add multiple panels. There should be the same amount of panel slots as tab slots.
 
-<Tokens component="tabs"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-tabs]).

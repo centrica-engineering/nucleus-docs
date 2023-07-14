@@ -130,8 +130,6 @@ For example
 * Should always have a href
 * Check the [ns-cta documentation](components/ns-image.md) for more information.
 
-<Tokens component="product-card"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-product-card]).

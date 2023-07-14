@@ -71,8 +71,6 @@ We recommend expanders to be primarily used in `ns-accordion` and `ns-skyline`.
 | :--- | :--- |
 | `expander-toggle` | Will be dispatched when expander is clicked to show/hide. |
 
-<Tokens component="expander"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-expander]).

@@ -60,8 +60,6 @@ Price is passed in as an attribute to prevent the unformatted price being crawle
 
 There are a number of characters (i.e. hyphen, em dash, en dash) that can be confused with the minus symbol. Setting the negative attribute to true allows the component to output output the correct symbol. This ensures that screen readers will read the value as a minus price.
 
-<Tokens component="price"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-price]).

@@ -102,8 +102,6 @@ Also see ns-inputter [specification](components/ns-inputter.md#specification)
 | `label` |  `string`  | `Password` |  | The value of the label for password field. |
 | `confirmLabel` |  `string`  | `Confirm Password` |  | The value of the label for confirm password field. This attribute is used along with `confirm` type. |
 
-<Tokens component="password"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-password]).

@@ -70,8 +70,6 @@ To display correctly, `ns-content` relies on clean HTML in the anonymous slot. U
 | normal | 1em|
 | compact | 1.5em|
 
-<Tokens component="content"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-content]).

@@ -60,8 +60,6 @@ Caveats link to content in the page, providing more information about legality a
 | `heading` | `h tag`       |
 | Anonymous | `ol list tag` , `p tag` |
 
-<Tokens component="caveat"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-caveat]).

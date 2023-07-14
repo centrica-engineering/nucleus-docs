@@ -60,8 +60,6 @@ If you are looking to create a new illustration, please check if there is not so
 
 Read our [illustration foundation page](foundations/illustrations.md#creating-new-illustrations) for more information on creating illustrations.
 
-<Tokens component="illustration"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-illustration]).

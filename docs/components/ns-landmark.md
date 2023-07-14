@@ -230,8 +230,6 @@ Using Photoshop to overlay the Landmark focus template to check alignment. (You 
 | Capture the story within. This photo is about the lady and her phone | Unfortunately, this photo is completely unsuitable for a Landmark |
 | ![landmark-16x9-testcard-1440-02](images/ns-landmark/best-practice-do2-photo.webp) | ![landmark-16x9-testcard-1440-04](images/ns-landmark/best-practice-dont2-photo.webp) |
 
-<Tokens component="landmark"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-landmark]).

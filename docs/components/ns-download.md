@@ -80,8 +80,6 @@ The one exception to this rule is in forms as there are often challenges around 
 
 - File type - if the file's `href` attribute contains one of the following file extensions: `.pdf`, `.xls`, then the fileType attribute will have no effect.
 
-<Tokens component="download"></Tokens>
-
 ## Feedback
 
 - Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-download]).

@@ -75,8 +75,6 @@ There are a range of colours to choose from (see the specifications below). Try 
 
 When an icon is supplied the pill will use the media object pattern.
 
-<Tokens component="pill"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-pill]).

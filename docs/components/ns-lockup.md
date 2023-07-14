@@ -91,8 +91,6 @@ We use lockups to engage customers, in particular to promote a key product or se
 * It is not possible to use an illustration decoration with a video.
 * Use the video's YouTube link as the `id` attribute's value.
 
-<Tokens component="lockup"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-lockup]).

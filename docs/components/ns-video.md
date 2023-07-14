@@ -48,8 +48,6 @@ British Gas creates many videos to engage customers. This component allows havin
 
 * This is required for accessibility. The title should be unique. If there are multiple videos on the page, they should all have different titles (even if they are the same video).
 
-<Tokens component="video"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-video]).

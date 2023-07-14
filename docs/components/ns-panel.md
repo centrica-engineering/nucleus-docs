@@ -83,8 +83,6 @@ The ns-panel component can be used in the following elements/components:
 
 * The `ns-panel` can only have the following children `div`, `ns-article`, `ns-content`, `ns-column` or `ns-lockup`, and `ns-form`.
 
-<Tokens component="panel"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-panel]).

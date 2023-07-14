@@ -190,8 +190,6 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 * Only for `section` types
 * This should be an anchor with the [ns-cta](../components/ns-cta) or just the [ns-cta](../components/ns-cta)
 
-<Tokens component="card"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-card]).

@@ -65,8 +65,6 @@ If there isn't a inherent logical order to the expanders, use alphabetical order
 * Place ns-expanders into this slot.
 * Check the [ns-expander documentation](components/ns-expander.md) for more information.
 
-<Tokens component="accordion"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-accordion]).

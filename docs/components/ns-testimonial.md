@@ -55,8 +55,6 @@ Use within `ns-column` to display the desired layout of multiple testimonials.
 | medium | `string` |  |  | The name of the platform that the author used to leave their message eg. twitter.|
 | quote | `string` |  |  | What the author wrote or said. |
 
-<Tokens component="testimonial"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-testimonial]).

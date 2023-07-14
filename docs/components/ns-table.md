@@ -117,8 +117,6 @@ If your table has row headers in the left-most column then place these headers i
 </table>
 ```
 
-<Tokens component="table"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-table]).

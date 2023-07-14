@@ -70,8 +70,6 @@ The `ns-live` component can be used to wrap any html elements but be aware that 
 
 * Place the html being updated into this slot.
 
-<Tokens component="live"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-live]).
