@@ -3,7 +3,6 @@ description: Molecule | Panel component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
