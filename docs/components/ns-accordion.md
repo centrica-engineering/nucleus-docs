@@ -3,7 +3,6 @@ description: Organism | Accordion component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -64,8 +63,6 @@ If there isn't a inherent logical order to the expanders, use alphabetical order
 
 * Place ns-expanders into this slot.
 * Check the [ns-expander documentation](components/ns-expander.md) for more information.
-
-<Tokens component="accordion"></Tokens>
 
 ## Feedback
 

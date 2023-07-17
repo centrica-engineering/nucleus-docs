@@ -3,7 +3,6 @@ description: Organism | Product card component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -129,8 +128,6 @@ For example
 
 * Should always have a href
 * Check the [ns-cta documentation](components/ns-image.md) for more information.
-
-<Tokens component="product-card"></Tokens>
 
 ## Feedback
 

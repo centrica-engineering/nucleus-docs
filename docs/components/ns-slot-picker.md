@@ -3,7 +3,6 @@ description: Molecule | Slot picker component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -67,8 +66,6 @@ const slotData = [{ date: '2020-01-28', slots: slots }, { date: '2020-01-29', sl
 ## Component placement
 
 <ComponentPlacement component="ns-slot-picker" parentComponents="ns-form,ns-fieldset"></ComponentPlacement>
-
-<Tokens component="slot-picker"></Tokens>
 
 ## Feedback
 

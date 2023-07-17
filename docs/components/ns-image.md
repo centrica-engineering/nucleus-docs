@@ -3,7 +3,6 @@ description: Atom | Image component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -75,8 +74,6 @@ British Gas has a variety of images to enhance content on the website and helps 
 ### Background
 
 - This is only for decorative images
-
-<Tokens component="image"></Tokens>
 
 ## Feedback
 

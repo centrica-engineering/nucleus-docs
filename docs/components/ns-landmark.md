@@ -3,7 +3,6 @@ description: Organism | Landmark component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -229,8 +228,6 @@ Using Photoshop to overlay the Landmark focus template to check alignment. (You 
 | ![landmark-16x9-testcard-1440-01](images/ns-landmark/best-practice-do1-photo.webp) | ![landmark-16x9-testcard-1440-00](images/ns-landmark/best-practice-dont1-photo.webp) |
 | Capture the story within. This photo is about the lady and her phone | Unfortunately, this photo is completely unsuitable for a Landmark |
 | ![landmark-16x9-testcard-1440-02](images/ns-landmark/best-practice-do2-photo.webp) | ![landmark-16x9-testcard-1440-04](images/ns-landmark/best-practice-dont2-photo.webp) |
-
-<Tokens component="landmark"></Tokens>
 
 ## Feedback
 

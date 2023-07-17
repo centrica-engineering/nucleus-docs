@@ -3,7 +3,6 @@ description: Atom | Video component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -47,8 +46,6 @@ British Gas creates many videos to engage customers. This component allows havin
 ### Title
 
 * This is required for accessibility. The title should be unique. If there are multiple videos on the page, they should all have different titles (even if they are the same video).
-
-<Tokens component="video"></Tokens>
 
 ## Feedback
 

@@ -3,7 +3,6 @@ description: Organism | Live component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -69,8 +68,6 @@ The `ns-live` component can be used to wrap any html elements but be aware that 
 ### Anonymous
 
 * Place the html being updated into this slot.
-
-<Tokens component="live"></Tokens>
 
 ## Feedback
 

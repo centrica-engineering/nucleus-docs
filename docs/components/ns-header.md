@@ -3,7 +3,6 @@ description: Organism | Header component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -147,8 +146,6 @@ Each section:
   }
 ]
 ```
-
-<Tokens component="header"></Tokens>
 
 ## Feedback
 

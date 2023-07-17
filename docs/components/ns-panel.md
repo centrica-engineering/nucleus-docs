@@ -3,7 +3,6 @@ description: Molecule | Panel component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
@@ -82,8 +81,6 @@ The ns-panel component can be used in the following elements/components:
 ### Anonymous
 
 * The `ns-panel` can only have the following children `div`, `ns-article`, `ns-content`, `ns-column` or `ns-lockup`, and `ns-form`.
-
-<Tokens component="panel"></Tokens>
 
 ## Feedback
 

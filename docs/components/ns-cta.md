@@ -3,7 +3,6 @@ description: Molecule | CTA component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -144,8 +143,6 @@ The only time we present a disabled state is during the Loading state. This ensu
 
 * Can be used instead of having a wrapping `<a>` element.
 * This shouldn't be used if a `click` event is added.
-
-<Tokens component="cta"></Tokens>
 
 ## Feedback
 

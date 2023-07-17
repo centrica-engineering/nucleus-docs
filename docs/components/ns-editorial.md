@@ -3,7 +3,6 @@ description: Organism |  Editorial component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -82,8 +81,6 @@ import { PageFooter } from '../../includes/page-footer.js'
 ### Heading
 
 *  This should be a heading level 2.
-
-<Tokens component="editorial"></Tokens>
 
 ## Feedback
 

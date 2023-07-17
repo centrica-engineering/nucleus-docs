@@ -3,7 +3,6 @@ description: Molecule | Content component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -69,8 +68,6 @@ To display correctly, `ns-content` relies on clean HTML in the anonymous slot. U
 | cozy | 0.5em|
 | normal | 1em|
 | compact | 1.5em|
-
-<Tokens component="content"></Tokens>
 
 ## Feedback
 

@@ -3,7 +3,6 @@ description: Atom | Download component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -79,8 +78,6 @@ The one exception to this rule is in forms as there are often challenges around 
 ### Specification notes
 
 - File type - if the file's `href` attribute contains one of the following file extensions: `.pdf`, `.xls`, then the fileType attribute will have no effect.
-
-<Tokens component="download"></Tokens>
 
 ## Feedback
 

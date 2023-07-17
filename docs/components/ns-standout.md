@@ -3,7 +3,6 @@ description: Organism | Standout component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -70,8 +69,6 @@ The component is not announced to screen readers upfront, to help differentiate 
 ### Anonymous
 
 * Can only accept a single ns-content
-
-<Tokens component="standout"></Tokens>
 
 ## Feedback
 

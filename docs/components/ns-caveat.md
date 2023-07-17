@@ -3,7 +3,6 @@ description: Molecule | Caveat component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -59,8 +58,6 @@ Caveats link to content in the page, providing more information about legality a
 | :--- | :--- |
 | `heading` | `h tag`       |
 | Anonymous | `ol list tag` , `p tag` |
-
-<Tokens component="caveat"></Tokens>
 
 ## Feedback
 

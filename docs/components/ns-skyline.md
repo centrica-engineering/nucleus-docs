@@ -3,7 +3,6 @@ description: Organism | Skyline component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -59,8 +58,6 @@ They are either:
 | Slots | Type |
 | :--- | :--- |
 | Anonymous | `ns-expander tag` |
-
-<Tokens component="skyline"></Tokens>
 
 ## Feedback
 
