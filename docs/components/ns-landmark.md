@@ -97,7 +97,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | Capture the moment. | Allow the card to cover important content. |
 | ![do-father-child](images/ns-landmark/best-practice-do1-summit.webp) | ![dont-covered-family](images/ns-landmark/best-practice-dont1-summit.webp) |
 | Set focus of the photo correctly. | Obstruct people's faces with the card. |
-| ![do-couple-on-sofa](images/ns-landmark/best-practice-do2-summit.webp) | ![dont-obstructed-parents-faces](image/../images/ns-landmark/best-practice-dont2-summit.webp) |
+| ![do-couple-on-sofa](images/ns-landmark/best-practice-do2-summit.webp) | ![dont-obstructed-face](images/ns-landmark/best-practice-dont2-summit.webp) |
 | Convey activity related to topic. | Use images with a white background. |
 | ![do-boiler-service](images/ns-landmark/best-practice-do3-summit.webp) | ![dont-boiler-on-white-background](images/ns-landmark/best-practice-dont3-summit.webp) |
 
