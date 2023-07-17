@@ -57,11 +57,9 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Sub heading | Sub headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. Include a full stop at the end of the sub-heading.  |
-| B | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
-| C | Content | Lakeside can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a minimum of 1 and a maximum of 3. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | Action | See action guidance below |
-
+| A | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| B | Content | Lakeside can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a minimum of 1 and a maximum of 3. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| C | Action | See action guidance below |
 
 ### Image guidance
 
