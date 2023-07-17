@@ -68,7 +68,6 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | `ns-landmark`| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg | [ns-landmark-summit-1440x810px](https://user-images.githubusercontent.com/50207859/67642478-12140c80-f904-11e9-849d-5ffe39818c5b.jpg) |
 | `ns-landmark`| `valley` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-landmark-valley-720x540px](https://user-images.githubusercontent.com/50207859/67642153-d461b480-f900-11e9-9520-11204c64a11b.jpg) |
 
-
 ### Action guidance
 
 #### CTA
@@ -84,7 +83,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ## Best practice
 
-| 💚 Do's | 💔 Don'ts |
+| 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Use it at the top of the page. | Use it in the middle or end of a page. |
 | Communicate the primary purpose in a clear and concise way. | Always add a cta (It'll drive traffic away). |
@@ -93,7 +92,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Best practice for `summit`
 
-| 💚 Do | 💔 Don'ts |
+| 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Capture the moment. | Allow the card to cover important content. |
 | ![do-father-child](images/ns-landmark/best-practice-do1-summit.webp) | ![dont-covered-family](images/ns-landmark/best-practice-dont1-summit.webp) |
@@ -104,7 +103,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Best practice for `hillside`
 
-| 💚 Do's | 💔 Don'ts |
+| 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Use the red decoration for something that is not a promotional promotional or an error-themed page. |
 | ![do-use-same-colour-for-themed-pages](images/ns-landmark/best-practice-do1-hillside.webp) | Add too much content in the landmark. |
@@ -113,7 +112,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Best practice for `lakeside`
 
-| 💚 Do | 💔 Don'ts |
+| 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Use more than one paragraph. | Use more than three paragraphs. |
 | ![do-use-more-than-one-paragraph](images/ns-landmark/best-practice-do1-lakeside.webp) | ![dont-use-more-than-three-paragraphs](images/ns-landmark/best-practice-dont1-lakeside.webp) |
@@ -124,7 +123,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Best practice for `valley`
 
-| 💚 Do's | 💔 Don'ts |
+| 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Use checked list to highlight your key product benefits | Add a CTA if the purpose of the page is for users to consume the content. |
 | ![use-a-checked-list](images/ns-landmark/best-practice-do1-valley.webp) | ![dont-add-a-cta](images/ns-landmark/best-practice-dont1-valley.webp) |
@@ -218,7 +217,7 @@ Using Photoshop to overlay the Landmark focus template to check alignment. (You 
 
 ![image](images/ns-landmark/photoshop-template.webp)
 
-| 💚 Do's | 💔 Don'ts |
+| 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Here, the focus of the photo is located within the safe-area | The subject fills the entire photo, and the lady on the left will be obscured |
 | ![landmark-16x9-testcard-1440-01](images/ns-landmark/best-practice-do1-photo.webp) | ![landmark-16x9-testcard-1440-00](images/ns-landmark/best-practice-dont1-photo.webp) |
