@@ -176,7 +176,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | `image` | `string` |  |  | Background image used for summit variant or image used for valley variant |
 | `decoration` | `string` | `cyan` | `cyan`, `lime`, `navy`, `blue`, `forest`, `orange`, `red`, `yellow` | Background and offset colour used for the Hillside and Valley variant. |
 | `pillOverImage` | `boolean` |  |  | Used to put the pill in the bottom left of the image when using `type="valley"` and an image |
-| `ratio` | `string` | `4x3` | `4x3`, `16x9` | Aspect ratio of the image used only for valley variant |
+| `ratio` | `string` | `16x9` | `4x3`, `16x9` | Aspect ratio of the image used only for valley variant |
 
 | Slots | Type |
 | :--- | :--- |
@@ -190,8 +190,6 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 ### Heading
 
 * This needs to be a `h1` heading
-* The Sub heading is part of the heading to allow screen readers to read the heading properly.
-* Sub heading is a `<span>` tag with a `h5` class.
 * Main heading is a `<span>` tag with a `h1` class.
 
 ### Paragraph
