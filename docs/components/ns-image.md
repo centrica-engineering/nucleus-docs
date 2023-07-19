@@ -16,15 +16,15 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 | Component | Variant | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [`ns-card`](components/ns-card.md)| `support` | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-card-support-640x360px](images/ns-image/ns-card-support-640x360px.jpg) |
-| [`ns-editorial`](components/ns-editorial.md)| n/a | 4:3 | 480x360px | &lt; 50kb | jpeg | [ns-editorial-480x360px](images/ns-image/ns-editorial-480x360px.jpg) |
-| [`ns-landmark`](components/ns-landmark.md)| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg | [ns-landmark-summit-1440x810px](images/ns-image/ns-landmark-summit-1440x810px.jpg) |
-| [`ns-landmark`](components/ns-landmark.md)| `valley` | 16:9 | 800x450px | &lt; 100kb | jpeg | [ns-landmark-valley-800x450px](images/ns-image/ns-landmark-valley-800x450px.jpg) |
-| [`ns-landmark`](components/ns-landmark.md)| `valley` | 4:3 | 800x600px | &lt; 100kb | jpeg | [ns-landmark-valley-800x600px](images/ns-image/ns-landmark-valley-800x600px.jpg) |
-| [`ns-lockup`](components/ns-lockup.md)| n/a | 16:9 | 800x450px | &lt; 100kb | jpeg | [ns-lockup-800x450px](images/ns-image/ns-lockup-800x450px.jpg) |
-| [`ns-lockup`](components/ns-lockup.md)| n/a | 4:3 | 800x600px | &lt; 100kb | jpeg | [ns-lockup-800x600px](images/ns-image/ns-lockup-800x600px.jpg) |
-| [`ns-lockup`](components/ns-lockup.md)| n/a | 1:1 | 800x800px | &lt; 100kb | jpeg | [ns-lockup-800x800px](images/ns-image/ns-lockup-800x800px.jpg) |
-| [`ns-selector`](components/ns-selector.md)| n/a | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-selector-640x360px](images/ns-image/ns-selector-640x360px.jpg) |
+| [`ns-card`](components/ns-card.md)| `support` | 16:9 | 640x360px | &lt;50kb | .jpg | [ns-card-support-640x360px](images/ns-image/ns-card-support-640x360px.jpg) |
+| [`ns-editorial`](components/ns-editorial.md)| n/a | 4:3 | 480x360px | &lt;50kb | .jpg | [ns-editorial-480x360px](images/ns-image/ns-editorial-480x360px.jpg) |
+| [`ns-landmark`](components/ns-landmark.md)| `summit` | 16:9 | 1440x810px | &lt;200kb | .jpg | [ns-landmark-summit-1440x810px](images/ns-image/ns-landmark-summit-1440x810px.jpg) |
+| [`ns-landmark`](components/ns-landmark.md)| `valley` | 16:9 | 800x450px | &lt;100kb | .jpg | [ns-landmark-valley-800x450px](images/ns-image/ns-landmark-valley-800x450px.jpg) |
+| [`ns-landmark`](components/ns-landmark.md)| `valley` | 4:3 | 800x600px | &lt;100kb | .jpg | [ns-landmark-valley-800x600px](images/ns-image/ns-landmark-valley-800x600px.jpg) |
+| [`ns-lockup`](components/ns-lockup.md)| n/a | 16:9 | 800x450px | &lt;100kb | .jpg | [ns-lockup-800x450px](images/ns-image/ns-lockup-800x450px.jpg) |
+| [`ns-lockup`](components/ns-lockup.md)| n/a | 4:3 | 800x600px | &lt;100kb | .jpg | [ns-lockup-800x600px](images/ns-image/ns-lockup-800x600px.jpg) |
+| [`ns-lockup`](components/ns-lockup.md)| n/a | 1:1 | 800x800px | &lt;100kb | .jpg | [ns-lockup-800x800px](images/ns-image/ns-lockup-800x800px.jpg) |
+| [`ns-selector`](components/ns-selector.md)| n/a | 16:9 | 640x360px | &lt;50kb | .jpg | [ns-selector-640x360px](images/ns-image/ns-selector-640x360px.jpg) |
 
 ## Best practice
 
