@@ -1,0 +1,163 @@
+{
+
+  
+     "primary-cyan": "#0093F5",
+  
+     "primary-lime": "#7FCC00",
+  
+     "primary-navy": "#002F87",
+  
+
+  
+     "secondary-blue": "#004ECC",
+  
+     "secondary-forest": "#00A33E",
+  
+     "secondary-slate": "#111518",
+  
+     "secondary-orange": "#FF7A00",
+  
+     "secondary-red": "#D50032",
+  
+     "secondary-yellow": "#FFC72C",
+  
+
+  
+     "greyscale-white": "#FFFFFF",
+  
+     "greyscale-light": "#F3F5F7",
+  
+     "greyscale-medium": "#C3CED5",
+  
+     "greyscale-dark": "#435460",
+  
+
+  
+     "system-information": "#1192E8",
+  
+     "system-success": "#1BA158",
+  
+     "system-warning": "#E3660E",
+  
+     "system-danger": "#E60F41",
+  
+     "system-neutral": "#767676",
+  
+     "system-focus": "#FFC72C",
+  
+
+  
+     "cyan-100": "#EBF7FF",
+  
+     "cyan-300": "#99D6FF",
+  
+     "cyan-500": "#47B6FF",
+  
+     "cyan-600": "#0093F5",
+  
+     "cyan-700": "#0062A3",
+  
+     "cyan-800": "#003152",
+  
+     "cyan-900": "#001929",
+  
+
+  
+     "navy-100": "#EBF3FF",
+  
+     "navy-300": "#99C0FF",
+  
+     "navy-500": "#1F74FF",
+  
+     "navy-600": "#004ECC",
+  
+     "navy-700": "#002F87",
+  
+     "navy-800": "#001F52",
+  
+     "navy-900": "#001029",
+  
+
+  
+     "lime-100": "#F7FFEB",
+  
+     "lime-300": "#C9FF70",
+  
+     "lime-500": "#AAFF1F",
+  
+     "lime-600": "#7FCC00",
+  
+     "lime-700": "#4C7A00",
+  
+     "lime-800": "#335200",
+  
+     "lime-900": "#192900",
+  
+
+  
+     "slate-100": "#F3F5F7",
+  
+     "slate-200": "#C3CED5",
+  
+     "slate-300": "#91A5B3",
+  
+     "slate-400": "#7B92A3",
+  
+     "slate-500": "#435460",
+  
+     "slate-600": "#2A353D",
+  
+     "slate-700": "#212A30",
+  
+     "slate-800": "#111518",
+  
+
+  
+     "orange-100": "#FFF5EB",
+  
+     "orange-300": "#FFCA99",
+  
+     "orange-500": "#FF9F47",
+  
+     "orange-600": "#FF7A00",
+  
+     "orange-700": "#A34E00",
+  
+     "orange-800": "#522700",
+  
+     "orange-900": "#291400",
+  
+
+  
+     "forest-100": "#EBFFF3",
+  
+     "forest-300": "#70FFA6",
+  
+     "forest-500": "#00F55D",
+  
+     "forest-600": "#00A33E",
+  
+     "forest-700": "#007A2F",
+  
+     "forest-800": "#00521F",
+  
+     "forest-900": "#002910",
+  
+
+  
+     "red-100": "#FFEBF0",
+  
+     "red-300": "#FF99B1",
+  
+     "red-500": "#E60F41",
+  
+     "red-600": "#D50032",
+  
+     "red-700": "#A30026",
+  
+     "red-800": "#520013",
+  
+     "red-900": "#29000A"
+  
+
+}
