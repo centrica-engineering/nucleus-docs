@@ -18,12 +18,11 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Sub-heading | Sub-headings are used to indicate the primary section or to reinforce a brand message. Short and simple words tend to work better and it is recommended to keep the length between 1 and 5 words. Include a full stop at the end of the sub-heading. |
-| B | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging.  |
-| C | Content | `ns-lockup` can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a maximum of 2 short paragraphs, each with no more than 3 lines each. Can contain bold copy `<b>`, inline links `<a>`,  lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
-| E | Image | There is a choice between 3 image sizes - the first has an aspect ratio of 16:9, the dimensions should be 800 x 450px, the second has an aspect ratio of 4:3, the dimensions should be 800 x 600px, and the third has an aspect ratio of 1:1, the dimensions should be 800 x 800px. Both versions should be jpg file types, and the file size should be no more than 100kb. To see which image you can use - please see the [Image guidance section](#image-guidance) below. Don't use imagery with white backgrounds. Please make sure you work with a designer when selecting any imagery for the `ns-lockup`. |
-| F | Decoration | Use this optional illustration to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](#specification) has a list of options. |
+| A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| B | Content | `ns-lockup` can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a maximum of 2 short paragraphs, each with no more than 3 lines each. Can contain bold copy `<b>`, inline links `<a>`,  lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| C | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+| D | Image | There is a choice between 3 image sizes - the first has an aspect ratio of 16:9, the dimensions should be 800 x 450px, the second has an aspect ratio of 4:3, the dimensions should be 800 x 600px, and the third has an aspect ratio of 1:1, the dimensions should be 800 x 800px. Both versions should be jpg file types, and the file size should be no more than 100kb. To see which image you can use - please see the [Image guidance section](#image-guidance) below. Don't use imagery with white backgrounds. Please make sure you work with a designer when selecting any imagery for the `ns-lockup`. |
+| E | Decoration | Use this optional illustration to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](#specification) has a list of options. |
 
 ### Image guidance
 
@@ -40,8 +39,8 @@ We use lockups to engage customers, in particular to promote a key product or se
 | :--- | :--- |
 | Use the key message in the heading | Include more than one CTA |
 | Keep the heading length to 4-12 words | Exceed more than two paragraphs of 3 lines each |
-| Keep sub-heading length between 1-5 words | Use images with a white background |
-| Optimise the lockup image (see [Optimise your images](https://nucleus.design/docs/foundations/photography#optimise-your-images)) | Use images that have any important part obscured by the overlap |
+| Consider the focal point of the image at across different viewports | Use images that have any important part obscured by the overlap |
+| Optimise the lockup image (see [Optimise your images](https://nucleus.design/docs/foundations/photography#optimise-your-images)) | Use images with a white background |
 
 ### Considerations of best practices
 
@@ -78,9 +77,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 ### Heading
 
 * Should be a `h2` tag.
-* The sub-heading is part of the heading to allow screen readers to read the heading properly.
-* Sub-heading is a `<span>` tag with a `h5` class.
-* Main heading is a `<span>` tag with a `h1` class.
+* Heading uses an `h1` class.
 
 ### Video
 
