@@ -5,7 +5,7 @@ description: Here are our release notes - enjoy!
 ---
 
 
-## Version 2.8.0
+## Version 2.9.0
 
 **Navigation updates mainly 🧭**
 
@@ -20,9 +20,8 @@ Release date - 10/05/2023
 * `nsx-header` - Updated some links in the navigation header
 * `nsx-footer` - Changed the Play Store/App Store icon links to point to the new mobile app content page 
 
-**Bug Fixes 🪲** 
 
-* 
+
 ## Version 2.8.0
 
 **One file to bring them all 💍**
@@ -65,7 +64,7 @@ Release date - 14/02/2023
 **Bug Fixes 🪲** 
 
 * `ns-header` - we fixed a horizontal scroll issue in Safari
-* `ns-landmark` - we fixed the alignment with panel
+* `ns-landmark` - we fixed the alignment with the panel
 * `ns-image` - we fixed the corners to be rounded in Safari
 * `ns-header` - the focus state for links has been fixed 
 * `ns-card` - fixed the image border radius
@@ -75,7 +74,7 @@ Release date - 14/02/2023
 
 **Fresh it's so fresh! 🥶**
 
-This release sees all the refreshed components going live, delivering the brand refresh to all our customers. We say goodby to the 2018 brand identity and hello to the new one!
+This release sees all the refreshed components going live, delivering the brand refresh to all our customers. We say goodbye to the 2018 brand identity and hello to the new one!
 
 You can now see all the updated components reflecting the new brand identity.
 Good work to all involved!
@@ -90,17 +89,17 @@ Release date - 02/02/2023
 **Improvements 💡**
 
 * We refreshed the entire system to reflect the updated brand visual identity. (We won't list all individual changes as there would be too many)
-* `ns-landmark` - we have reviewed the alignment of the lakeside type to be more conherent with the rest of the website's content alignment
+* `ns-landmark` - we have reviewed the alignment of the lakeside type to be more coherent with the rest of the website's content alignment
 * We added the new font files for the brand refresh
 
 **Bug Fixes 🪲** 
 
 * `ns-appointment-picker` - after this fix, the default value will be selected as expected
 * `ns-appointment-picker` - the change event wasn't triggered when selecting a date, it is now fired as expected
-* `ns-inputter` - used bind to correctly set 'this' on formatInput to fix unit tests when used in the react wrapper
-* `ns-header` - fixed the `classlist` issue
+* `ns-inputter` - used bind to correctly set 'this' on 'formatInput' to fix unit tests when used in the react wrapper
+* `ns-header` - fixed the 'classlist' issue
 * `ns-appointment-picker` -  we removed a console.log
-* `ns-lockup` - the attribute `reversed` has been changed to `reverse` in the storybook knob to reflect the actual attribute name
+* `ns-lockup` - the attribute 'reversed' has been changed to 'reverse' in the storybook knob to reflect the actual attribute name
 
 ## Version 2.5.0
 
@@ -120,17 +119,17 @@ Release date - 23/11/2022
 * `ns-pill` and `keyline` - added new colours
 * `ns-header` - we moved the overview/level1 link to the top of the panel, and added 4 columns for the sub-navigation panel links
 * `ns-header` - Level 2 subheadings are now clickable
-* `ns-landmark` - we added the 16x9 ratio for the valley type, to help getting content higher up, specially on mobile devices.
+* `ns-landmark` - we added the 16x9 ratio for the valley type, to help getting content higher up, especially on mobile devices.
 * `nsx-header` - Updated the Boiler overview link
-* `nsx-header` - Point the 'Repairs overview' link to new repairs hub page
+* `nsx-header` - Point the 'Repairs overview' link to the new repairs hub page
 
 **Bug Fixes 🪲** 
 
-* `ns-header` - thre was a focus issue on the logo. No more
+* `ns-header` - there was a focus issue on the logo. No more
 * `ns-card` - there was an issue with the `pilloverimage` option where the pill wasn't moving over the image. This is now fixed
 * `ns-header` - we fixed the click event
-* `ns-header` - the panel is closed when a linked is clicked
-* Fixed a scroll issue in Safari
+* `ns-header` - the panel is closed when a link is clicked
+* Fixed a scrolling issue in Safari
 * `nsx-address-selector` - fixed an accessibility issue: now pressing the ENTER key on change postcode will work
 
 
@@ -151,7 +150,7 @@ Release date - 13/09/2022
 
 **Bug Fixes 🪲** 
 
-* `ns-inputter` - there was a spacing issue when using the inlin inputter, no more. 
+* `ns-inputter` - there was a spacing issue when using the inline inputter, no more. 
 
 
 ## Version 2.3.0
@@ -173,7 +172,7 @@ Release date - 2022/08/31
 
 * `ns-header` - We added click events for anchor links in the header
 * `ns-highlighter` - Size of the highlighter inside dl is fixed
-* `ns-header` - Moved the log in link up in the mobile viewports
+* `ns-header` - Moved the login link up in the mobile viewports
 * `ns-download` - Included filetype attribute to the component to use the href without filetype
 * `ns-selector` - We made the description slot optional for a selector with an image
 * `ns-video` - We added a lazy loading attribute to the placeholder image (the *façade image*)
@@ -184,7 +183,7 @@ Release date - 2022/08/31
 * `ns-cta` - We improved the spacing for the direct call to action
 * We deleted unused margin and padding declarations from spacing.less
 * `ns-calendar` - We increased the outline offset in the calendar dates to make the selected date visibly different to other states (making it more accessible for high contrast mode)
-* `ns-inputter` - you can now use the `pattern` and `title` attributes for a `ns-inputter` for validation (and override an error message with the value of the `title` attribute)
+* `ns-inputter` - you can now use the `pattern` and `title` attributes for an `ns-inputter` for validation (and override an error message with the value of the `title` attribute)
 * `<ol>` tag will support `start` and `reversed` attributes now
 * We made some changes to allow our components to be used natively in React
 * `ns-inputter` - `isPhoneNumber` validation will accept 10 digits as well going forward
@@ -257,7 +256,7 @@ Release date - 2022/08/31
 * Nucleus loading issue hotfix
 * `ns-inputter` - Separator cursor issue has been fixed
 * `nsx-address-selector` - Triggering the manual address form using the ENTER key is now allowed
-* `ns-live` - Fixed the busy state in live component
+* `ns-live` - Fixed the busy state in `ns-live`` component
 * `ns-header` - in-app viewport size fixed
 * `ns-image` - Image overflow in card has been fixed (safari)
 * `ns-header` - Passed the header and subheader information to the event for click
