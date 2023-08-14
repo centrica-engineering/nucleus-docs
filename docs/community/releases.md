@@ -16,9 +16,9 @@ Release date - 10/05/2023
 
 **Improvements 💡**
 
-* `nsx-product-card-overview` - You can now set the default excess using the new 'initial-excess' attribute.
-* `nsx-header` - Updated some links in the navigation header
-* `nsx-footer` - Changed the Play Store/App Store icon links to point to the new mobile app content page 
+* `nsx-product-card-overview` - you can now set the default excess using the new 'initial-excess' attribute
+* `nsx-header` - we updated some links in the navigation header
+* `nsx-footer` - we changed the Play Store/App Store icon links to point to the new mobile app content page 
 
 
 
@@ -34,8 +34,8 @@ Release date - 12/04/2023
 **Improvements 💡**
 
 * We moved all `nsx-` components to the main file, to simplify their consumption
-* `nsx-footer` - Updated 'Complaints performance' to 'Complaints' in footer links
-* `nsx-footer` - Removed 'Performance standards' link
+* `nsx-footer` - we updated 'Complaints performance' to 'Complaints' in footer links
+* `nsx-footer` - we removed 'Performance standards' link
 
 **Bug Fixes 🪲** 
 
@@ -59,7 +59,7 @@ Release date - 14/02/2023
 
 * `ns-product-card` - we changed the size of the pricing
 * We improved the downloading and caching of SVGs in Firefox
-* `nsx-product-card-overview` - Reduced font size for the month suffix in the pricing area 
+* `nsx-product-card-overview` - we reduced the font size for the month suffix in the pricing area 
 
 **Bug Fixes 🪲** 
 
@@ -118,7 +118,7 @@ Release date - 23/11/2022
 
 * `ns-pill` and `keyline` - added new colours
 * `ns-header` - we moved the overview/level1 link to the top of the panel, and added 4 columns for the sub-navigation panel links
-* `ns-header` - Level 2 subheadings are now clickable
+* `ns-header` - level 2 subheadings can now be clickable
 * `ns-landmark` - we added the 16x9 ratio for the valley type, to help getting content higher up, especially on mobile devices.
 * `nsx-header` - Updated the Boiler overview link
 * `nsx-header` - Point the 'Repairs overview' link to the new repairs hub page
@@ -144,13 +144,13 @@ Release date - 13/09/2022
 **Improvements 💡**
 
 * `ns-header` - mobile version of the header will be displayed for basketball court
-* `nsx-footer` - Added 'Energy' and 'Website terms and conditions' separately in the footer.
-* `nsx-header` - Updated header primary and secondary links
+* `nsx-footer` - we added 'Energy' and 'Website terms and conditions' separately in the footer
+* `nsx-header` - we updated the header's primary and secondary links
 
 
 **Bug Fixes 🪲** 
 
-* `ns-inputter` - there was a spacing issue when using the inline inputter, no more. 
+* `ns-inputter` - there was a spacing issue when using the inline inputter, no more
 
 
 ## Version 2.3.0
@@ -170,19 +170,19 @@ Release date - 2022/08/31
 
 **Improvements 💡**
 
-* `ns-header` - We added click events for anchor links in the header
-* `ns-highlighter` - Size of the highlighter inside dl is fixed
-* `ns-header` - Moved the login link up in the mobile viewports
-* `ns-download` - Included filetype attribute to the component to use the href without filetype
-* `ns-selector` - We made the description slot optional for a selector with an image
-* `ns-video` - We added a lazy loading attribute to the placeholder image (the *façade image*)
-* `ns-table` - We improved the font size when there is a longer piece of text in the cell
+* `ns-header` - we added click events for anchor links in the header
+* `ns-highlighter` - size of the highlighter inside dl is fixed
+* `ns-header` - we moved the login link up in the mobile viewports
+* `ns-download` - we included filetype attribute to the component to use the href without filetype
+* `ns-selector` - we made the description slot optional for a selector with an image
+* `ns-video` - we added a lazy loading attribute to the placeholder image (the *façade image*)
+* `ns-table` - we improved the font size when there is a longer piece of text in the cell
 * We added the MarkPro font as an option for selected locations (H1 in landmark/lockup)
 * `ns-form` - We have improved the validation approach for `ns-password` and a few variants of `ns-inputter`
-* `ns-expander` - A custom event for the click on `ns-expander` has been added
-* `ns-cta` - We improved the spacing for the direct call to action
+* `ns-expander` - a custom event for the click on `ns-expander` has been added
+* `ns-cta` - we improved the spacing for the direct call to action
 * We deleted unused margin and padding declarations from spacing.less
-* `ns-calendar` - We increased the outline offset in the calendar dates to make the selected date visibly different to other states (making it more accessible for high contrast mode)
+* `ns-calendar` - we increased the outline offset in the calendar dates to make the selected date visibly different to other states (making it more accessible for high contrast mode)
 * `ns-inputter` - you can now use the `pattern` and `title` attributes for an `ns-inputter` for validation (and override an error message with the value of the `title` attribute)
 * `<ol>` tag will support `start` and `reversed` attributes now
 * We made some changes to allow our components to be used natively in React
@@ -190,55 +190,55 @@ Release date - 2022/08/31
 * Created a React component wrapper, they now work in React without an external dependency
 * We added download to `index.js`
 * Updated to PaDL 2 (2.0.1-alpha.8)
-* `nsx-address-selector` - Fixed the space between the `Find address` call to action and the `Enter manual address` call to action
-* `nsx-footer` - Added SafeSpaces plugin to the footer
-* `nsx-header` - Updated ReciteMe endpoint
-* `nsx-footer` - Added  link to the Priority Service Register page
-* `nsx-footer` - Removed `British Gas Evolve` link from footer
+* `nsx-address-selector` - fixed the space between the `Find address` call to action and the `Enter manual address` call to action
+* `nsx-footer` - added SafeSpaces plugin to the footer
+* `nsx-header` - updated ReciteMe endpoint
+* `nsx-footer` - added  link to the Priority Service Register page
+* `nsx-footer` - removed `British Gas Evolve` link from footer
 * We updated the media object to use spacer names as gutters rather than numbers
-* `ns-header` - Added `no-root-link` attribute to change logo navigation to have no link on partnership pages
-* `ns-landmark` - Removed the vertical spacing at the bottom of the card within the valley
+* `ns-header` - added `no-root-link` attribute to change logo navigation to have no link on partnership pages
+* `ns-landmark` - removed the vertical spacing at the bottom of the card within the valley
 * `ns-password` - you can now customise the copy for the labels
-* `ns-product-card` - We updated the styling for was/now strikethrough on prices
-* `ns-video` - We added a "statechange" event for tracking video playbacks
+* `ns-product-card` - we updated the styling for was/now strikethrough on prices
+* `ns-video` - we added a "statechange" event for tracking video playbacks
 
 **Spacing technique ⇥ ⇤**
 
 ***This work is about improving our approach to spacing, and make it better suited for design tokens and multiple brands.***
 
-* `ns-tab` - Spacing technique has been improved
-* `ns-pill` - Spacing technique has been improved
-* `ns-expander` - Spacing technique has been improved
-* `ns-column` - Spacing technique has been improved
-* `ns-testimonial` - Spacing technique has been improved
-* `ns-fieldset` - Spacing technique has been improved
-* `ns-calendar` - Spacing technique has been improved
-* `ns-panel` - Spacing technique has been improved
-* `ns-download` - Spacing technique has been improved
-* `ns-card` - Spacing technique has been improved
-* `ns-datepicker` - Spacing technique has been improved
-* `ns-inputter` - Spacing technique has been improved
-* `ns-table` - Spacing technique has been improved
-* `ns-highlighter` - Spacing technique has been improved
-* `ns-skeleton` - Spacing technique has been improved
-* `ns-landmark` - Spacing technique has been improved
-* `ns-appointment-picker` - Spacing technique has been improved
-* `ns-form` - Spacing technique has been improved
-* `ns-caveat` - Spacing technique has been improved
-* `ns-product-card` - Spacing technique has been improved
-* `ns-content` - Spacing technique has been improved
-* `ns-selector` - Spacing technique has been improved
-* `ns-lockup` - Spacing technique has been improved
-* `ns-editorial` - Spacing technique has been improved
-* `ns-password` - Spacing technique has been improved
-* `ns-standout` - Spacing technique has been improved
-* `ns-live` - Spacing technique has been improved
-* `ns-timeline` - Spacing technique has been improved
-* `ns-tabs` - Spacing technique has been improved
-* `ns-header` - Spacing technique has been improved
-* `ns-footer` - Spacing technique has been improved
-* `ns-progress` - Spacing technique has been improved
-* Headings, Paragraphs, and lists - Spacing technique has been improved
+* `ns-tab` - spacing technique has been improved
+* `ns-pill` - spacing technique has been improved
+* `ns-expander` - spacing technique has been improved
+* `ns-column` - spacing technique has been improved
+* `ns-testimonial` - spacing technique has been improved
+* `ns-fieldset` - spacing technique has been improved
+* `ns-calendar` - spacing technique has been improved
+* `ns-panel` - spacing technique has been improved
+* `ns-download` - spacing technique has been improved
+* `ns-card` - spacing technique has been improved
+* `ns-datepicker` - spacing technique has been improved
+* `ns-inputter` - spacing technique has been improved
+* `ns-table` - spacing technique has been improved
+* `ns-highlighter` - spacing technique has been improved
+* `ns-skeleton` - spacing technique has been improved
+* `ns-landmark` - spacing technique has been improved
+* `ns-appointment-picker` - spacing technique has been improved
+* `ns-form` - spacing technique has been improved
+* `ns-caveat` - spacing technique has been improved
+* `ns-product-card` - spacing technique has been improved
+* `ns-content` - spacing technique has been improved
+* `ns-selector` - spacing technique has been improved
+* `ns-lockup` - spacing technique has been improved
+* `ns-editorial` - spacing technique has been improved
+* `ns-password` - spacing technique has been improved
+* `ns-standout` - spacing technique has been improved
+* `ns-live` - spacing technique has been improved
+* `ns-timeline` - spacing technique has been improved
+* `ns-tabs` - spacing technique has been improved
+* `ns-header` - spacing technique has been improved
+* `ns-footer` - spacing technique has been improved
+* `ns-progress` - spacing technique has been improved
+* Headings, paragraphs, and lists - spacing technique has been improved
 
 
 
@@ -246,20 +246,20 @@ Release date - 2022/08/31
 **Bug fixes 🪲**
 
 
-* `ns-password` - There was an issue when editing a password by changing characters in the middle of the string. No more!
-* `ns-product-card` - There was an issue with an invalid keyline. No more!
-* `ns-panel` - Horizontal scroll issue when using `circle-right` decoration in Safari is fixed
-* `ns-inputter` - Fixed a Chrome crash in Android when entering a value
-* `ns-inputter` - White space at the start/end of `ns-inputter` will be trimmed to avoid dirty data to be validated/submitted
+* `ns-password` - there was an issue when editing a password by changing characters in the middle of the string. No more!
+* `ns-product-card` - there was an issue with an invalid keyline. No more!
+* `ns-panel` - horizontal scroll issue when using `circle-right` decoration in Safari is fixed
+* `ns-inputter` - fixed a Chrome crash in Android when entering a value
+* `ns-inputter` - white space at the start/end of `ns-inputter` will be trimmed to avoid dirty data to be validated/submitted
 * `ns-progress` - dynamic values were not accepted in the `current` attribute, it is now fixed
-* `ol-numbered` - We fixed a numbering issue when `<ol>` is used in the page and has nested `<ol>` items inside `<dl>`
+* `ol-numbered` - we fixed a numbering issue when `<ol>` is used in the page and has nested `<ol>` items inside `<dl>`
 * Nucleus loading issue hotfix
-* `ns-inputter` - Separator cursor issue has been fixed
+* `ns-inputter` - separator cursor issue has been fixed
 * `nsx-address-selector` - Triggering the manual address form using the ENTER key is now allowed
-* `ns-live` - Fixed the busy state in `ns-live`` component
+* `ns-live` - fixed the busy state in `ns-live`` component
 * `ns-header` - in-app viewport size fixed
-* `ns-image` - Image overflow in card has been fixed (safari)
-* `ns-header` - Passed the header and subheader information to the event for click
+* `ns-image` - image overflow in card has been fixed (safari)
+* `ns-header` - passed the header and subheader information to the event for click
 * Fetch svg fix
 
 
