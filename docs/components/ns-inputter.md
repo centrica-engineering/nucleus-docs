@@ -179,12 +179,12 @@ When used with radio buttons or checkboxes, this will appear between the `<legen
 | :--- | :--- |
 | Keep it to one line | Use for error messaging |
 | Use it to explain why we need information | Put examples of inputs inside |
-| Use it when the reason for asking maybe unclear |  |
+| Use it when the reason for asking may be unclear | Pass HTML markup (use the tip-details instead |
 | Use as a prompt |  |
 
 ### Tip Detail
 
-If you need to provide more detailed context to the options available, you can use the tip detail in conjuntion with the `helper`.
+If you need to provide more detailed context to the options available, you can use the tip detail in conjunction with the `helper`.
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -226,18 +226,18 @@ The following is a list of validation types that `<ns-inputter>` supports. These
 | `isDate` | value must be a date |
 | `minDate(date)` | value must be a date no earlier than the date set in brackets |
 | `maxDate(date)` | value must be a date no later than the date set in brackets | 
-| `isDateOfBirth` | value must be the customers date of birth |
+| `isDateOfBirth` | value must be the customer's date of birth |
 | `minLength(x)` | value must be no shorter in length than the number set in brackets | 
 | `maxLength(x)` | value must be no longer in length than the number set in brackets |
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use only when required | Use real data |
-| Only use to validate the format of the input | Don't used for... |
+| Only use to validate the format of the input |  |
 
 ### Masks and separators
 
-The `mask` is similar to a placeholder, this can be used to show what can be entered. However it stays when values are entered.
+The `mask` is similar to a placeholder, this can be used to show what can be entered. However, it stays when values are entered.
 
 The `separator` is used with the mask to manipulate the inputted value if it needs to be formatted in a certain way, like as a sort code or reference number.
 
@@ -266,8 +266,8 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 - Use defined conventions for common fields.
 - Use standard examples for placeholder copy.
 - If you are asking for first and last name within a text input, spell check should be disabled.
-- Refer to the text input auto complete definitions.
-- Always try and have a default selected radio button unless... .
+- Refer to the text input auto-complete definitions.
+- Always try and have a default selected radio button unless you require intent in the selection.
 
 ## Usage
 
@@ -350,9 +350,9 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
   - isDate() - Shows error if the input value is not a valid date, the expected format is dd/mm/yyyy
 
-  - minDate(date) - Shows an error if the input value date is less than provided date.  eg. `minDate('20/12/2020')`
+  - minDate(date) - Shows an error if the input value date is less than the provided date.  eg. `minDate('20/12/2020')`
 
-  - maxDate(date) - Shows an error if the input vale date is greater than the provided date.  eg. `maxDate('31/12/2022')`
+  - maxDate(date) - Shows an error if the input value date is greater than the provided date.  eg. `maxDate('31/12/2022')`
 
   - isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode.  This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function.  eg. `isPostcode(true)`
 
