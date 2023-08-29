@@ -179,7 +179,7 @@ When used with radio buttons or checkboxes, this will appear between the `<legen
 | :--- | :--- |
 | Keep it to one line | Use for error messaging |
 | Use it to explain why we need information | Put examples of inputs inside |
-| Use it when the reason for asking may be unclear | Pass HTML markup (use the tip-details instead |
+| Use it when the reason for asking may be unclear | Pass HTML markup (use the tip-details instead) |
 | Use as a prompt |  |
 
 ### Tip Detail
