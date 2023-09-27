@@ -38,7 +38,7 @@ British Gas creates many videos to engage customers. This component allows havin
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `id`  | `string` |  |  | Can be found in the YouTube video URL under `v`parameter |
-| `ratio` | `string` | `16x9` | `16x9`, `4x3`, `1x1` | Ratio of the video player |
+| `ratio` | `string` | `16 / 9` | `16 / 9`, `4 / 3`, `1 / 1` | Ratio of the video player |
 | `title` | `string` | `YouTube video` |  | The YouTube iframe title |
 
 ## Specification notes
