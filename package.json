@@ -2,37 +2,17 @@
   "name": "nucleus-docs",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "getTokens": "node scripts/get-tokens.js",
-    "docusaurus": "docusaurus",
-    "start": "npm run getTokens && docusaurus start",
-    "build": "npm run getTokens && docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "serve": "docusaurus serve",
-    "clear": "docusaurus clear"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.6",
-    "@docusaurus/plugin-client-redirects": "^2.0.0-beta.6",
-    "@docusaurus/preset-classic": "^2.0.0-beta.6",
-    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.6",
-    "@mdx-js/react": "^1.6.21",
-    "axios": "^0.21.1",
-    "clsx": "^1.1.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@astrojs/starlight": "^0.10.2",
+    "astro": "^3.0.6",
+    "sharp": "^0.32.5"
   }
 }
