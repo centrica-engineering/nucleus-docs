@@ -8,20 +8,20 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
-> The form component is used to contain ns-inputters and manage their validations.
+> The form component is used to collect customer input and provide personal experience to customer based on their needs.
 
-The `ns-form` component is a wrapper for `ns-inputters`. It's main purpose is to manage the validations of these `ns-inputters`.
+The `ns-form` component mimics the native form element features. It's main purpose is to collect customer input and validate the input before sending them to processing.
 
 ## Best practises
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use `ns-inputter` for your form fields | Write your own validations |
-| Use `ns-cta` to submit your form | Rely on front end validation alone. |
+| Use `ns-inputter`, `ns-password`, `ns-datepicker`, `ns-appointment-picker`, `nsx-address-selector`, `nsx-marketing-consent` for your form fields | Write your own validations |
+| Use `ns-cta` submit type to submit your form | Rely on front end validation alone. |
 
 ### Considerations of best practises
 
-* Alyways use the `ns-inputter` component inside `ns-form`, input and other form elements shouldn't be on their own.
+* Alyways use nucleus components inside `ns-form`, input and other native form elements shouldn't be on their own.
 * Speak with the Nucleus team for advice on experience patterns.
 
 ## Usage
@@ -73,7 +73,7 @@ onsubmit example:
   <ns-inputter validation='["isRequired"]'>
     ...
   </ns-inputter>
-  <ns-cta>Submit</ns-cta>
+  <ns-cta type="submit">Submit</ns-cta>
 </ns-form>
 
 <script>
@@ -178,4 +178,9 @@ A **valid validate return response** looks like:
 ## Related links
 
 * [ns-inputter](components/ns-inputter.md)
+* [ns-password](components/ns-password.md)
+* [ns-datepicker](components/ns-datepicker.md)
+* [ns-appointment-picker](components/ns-appointment-picker.md)
+* [nsx-address-selector](components/nsx-address-selector.md)
+* [nsx-marketing-consent](components/nsx-marketing-consent.md)
 * [ns-fieldset](components/ns-fieldset.md)
