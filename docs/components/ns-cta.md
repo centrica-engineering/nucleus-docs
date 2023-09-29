@@ -131,8 +131,8 @@ The only time we present a disabled state is during the Loading state. This ensu
 
 | Attribute | Property | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `type` | `type` |`string` | `direct`      | `direct`, `text`  | Different variants of the CTA. |
-| `href` | `href` | `string` |               |                   | Navigating using a hyperlink. |
+| `type` | `type` |`string` | `direct` | `direct`, `text`, `submit`, `reset` | Different variants of the CTA. |
+| `href` | `href` | `string` |  |  | Navigating using a hyperlink. |
 | `icon` | `icon` | `string` | `arrow-right` | `arrow-left`, `arrow-right` See [`ns-icon` component](../components/ns-icon) | The icon inside the CTA. |
 | `loading` | `loading` | `string` | `false` | `true`, `false` | Change the state of the CTA to loading. |
 | `loading-message` | `loadingMessage` | `string` | `Loading...` |  | Overwrites the CTA anonymous slot for the loading state. |
