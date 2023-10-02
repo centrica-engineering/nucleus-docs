@@ -10,7 +10,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ### Selector - Illustration
 
-![Selector - Illustration](/images/ns-selector/content-guidance.webp)
+![Selector - Illustration](../../../assets/ns-selector/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -24,7 +24,7 @@ Selectors are used to group an image or illustration with a label into a card. T
 
 ### Selector - Image
 
-![Selector - Image](/images/ns-selector/selector-image.webp)
+![Selector - Image](../../../assets/ns-selector/selector-image.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |

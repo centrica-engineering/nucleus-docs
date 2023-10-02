@@ -29,7 +29,7 @@ When `excess` property of the overview component is set with an array of price o
 <nsx-product-card-overview excess="[60,0]" pricing='[{"monthly": {"now": 1200},"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
 ```
 
-![Experience pattern - Product Card Overview with Excess](/images/nsx-product-card-overview/content-guidance-excess.webp)
+![Experience pattern - Product Card Overview with Excess](../../../assets/nsx-product-card-overview/content-guidance-excess.webp)
 
 ### Without Excess
 
@@ -39,7 +39,7 @@ When `excess` property of the overview component is set with an array of price o
 <nsx-product-card-overview pricing='[{"monthly": {"now": 1200},"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
 ```
 
-![Experience pattern - Product Card Overview - Without Excess](/images/nsx-product-card-overview/content-guidance-without-excess.webp)
+![Experience pattern - Product Card Overview - Without Excess](../../../assets/nsx-product-card-overview/content-guidance-without-excess.webp)
 
 ### Was / Now Pricing
 
@@ -51,7 +51,7 @@ To display the price offer of a product in the overview component, `was / now` o
 <nsx-product-card-overview pricing='[{"monthly": {"was": 1200,"now": 1000},"annually": 14400,"excess": 90}]' priceheading="Estimated Price"></nsx-product-card-overview>
 ```
 
-![Experience pattern - Product Card Overview - Was / Now Pricing](/images/nsx-product-card-overview/content-guidance-was-now-price.webp)
+![Experience pattern - Product Card Overview - Was / Now Pricing](../../../assets/nsx-product-card-overview/content-guidance-was-now-price.webp)
 
 ### With Monthly Now Primary/Secondary
 
@@ -73,7 +73,7 @@ now: {
 <nsx-product-card-overview pricing='[{"monthly": {"was": null, "now": {"primary-price": 500, "primary-extra": "for the first 3 months", "secondary-price": 1000, "secondary-prefix": "Then"} }, "excess": 60}]' priceheading="Estimated Price"></nsx-product-card-overview>
 ```
 
-![Experience pattern - Product Card Overview - With Monthly Now Primary/Secondary](/images/nsx-product-card-overview/content-guidance-monthly-now-primary-secondary.webp)
+![Experience pattern - Product Card Overview - With Monthly Now Primary/Secondary](../../../assets/nsx-product-card-overview/content-guidance-monthly-now-primary-secondary.webp)
 
 ## Specification
 

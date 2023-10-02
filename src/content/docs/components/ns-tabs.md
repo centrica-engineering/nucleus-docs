@@ -10,7 +10,7 @@ Related content can be separated into clearly labelled sections.
 
 ## Content guidance
 
-![Labelled example of ns-tabs component](/images/ns-tabs/content-guidance.webp)
+![Labelled example of ns-tabs component](../../../assets/ns-tabs/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |

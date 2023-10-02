@@ -10,7 +10,7 @@ The table component consumes basic HTML table markup, which makes it accessible 
 
 ## Content guidance
 
-![Example showing a labelled table using the ns-table component](/images/ns-table/content-guidance.webp)
+![Example showing a labelled table using the ns-table component](../../../assets/ns-table/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |

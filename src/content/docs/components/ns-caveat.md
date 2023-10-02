@@ -10,7 +10,7 @@ Caveats link to content in the page, providing more information about legality a
 
 ## Content guidance
 
-![Caveat and Link](/images/ns-caveat/content-guidance-ns-caveat.webp)
+![Caveat and Link](../../../assets/ns-caveat/content-guidance-ns-caveat.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |

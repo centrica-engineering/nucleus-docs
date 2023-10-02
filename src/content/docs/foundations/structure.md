@@ -73,7 +73,7 @@ The general layout of our components fits within a content area in between margi
 
 It allows our layouts to respond to different devices dynamically and be optimal for comfortable scanning and content consumption.
 
-![5 percent margins up to a 1600 pixel maximum content width](/images/structure/layout.webp)
+![5 percent margins up to a 1600 pixel maximum content width](../../../assets/structure/layout.webp)
 
 ## 4. Columns
 
@@ -95,7 +95,7 @@ In `hockey-pitch` the cards have been defined in the `ns-column` properties to a
 
 Then in `rugby-pitch` and above, the cards, still defined to fit a 3 column layout, remain at the same width but the margins expand thereon.
 
-![section-card](/images/structure/ns-card-viewports.webp)
+![section-card](../../../assets/structure/ns-card-viewports.webp)
 
 ### `<ns-lockup>`
 

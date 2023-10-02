@@ -8,7 +8,7 @@ title: ns-editorial
 
 ## Content guidance
 
-![Editorial](/images/ns-editorial/content-guidance.webp)
+![Editorial](../../../assets/ns-editorial/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -20,7 +20,7 @@ title: ns-editorial
 
 | Component | Variant | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-editorial`| n/a | 4:3 | 480x360px | &lt; 50kb | jpeg | [placeholder-480x360px](/images/ns-editorial/placeholder-480x360px.jpg) |
+| `ns-editorial`| n/a | 4:3 | 480x360px | &lt; 50kb | jpeg | [placeholder-480x360px](../../../assets/ns-editorial/placeholder-480x360px.jpg) |
 
 ## Best practice
 
@@ -36,15 +36,15 @@ title: ns-editorial
 | 💚 Do's | 💔 Dont's |
 | :--- | :--- |
 | Add lists | Start without a heading |
-| ![image](/images/ns-editorial/dos-lists.webp) | ![image](/images/ns-editorial/donts-noheading.webp) |
+| ![image](../../../assets/ns-editorial/dos-lists.webp) | ![image](../../../assets/ns-editorial/donts-noheading.webp) |
 | Break up long paragraphs with sub-headings | Have a long piece of content without any breaks |
-| ![image](/images/ns-editorial/dos-longparagraphwithsubheadings.webp) | ![image](/images/ns-editorial/donts-longparagraphwithoutsubheadings.webp) |
+| ![image](../../../assets/ns-editorial/dos-longparagraphwithsubheadings.webp) | ![image](../../../assets/ns-editorial/donts-longparagraphwithoutsubheadings.webp) |
 | Add contextual text links into copy | Add a CTA |
-| ![image](/images/ns-editorial/dos-usecontextuallinks.webp) | ![image](/images/ns-editorial/donts-nocta.webp) |
+| ![image](../../../assets/ns-editorial/dos-usecontextuallinks.webp) | ![image](../../../assets/ns-editorial/donts-nocta.webp) |
 | Use without an image |  |
-| ![image](/images/ns-editorial/dos-noimage.webp) |  |
+| ![image](../../../assets/ns-editorial/dos-noimage.webp) |  |
 | Reverse the editorial |  |
-| ![image](/images/ns-editorial/dos-reverse.webp) |  |
+| ![image](../../../assets/ns-editorial/dos-reverse.webp) |  |
 
 ### Considerations of best practice
 

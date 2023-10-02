@@ -45,7 +45,7 @@ Radio buttons and checkboxes should be grouped in their own respective fieldsets
 
 The `ns-inputter` component is a multi-purpose wrapper component for displaying form controls such as text inputs, radio buttons, and checkboxes. The component has a number of features that allow for things such as validation, masking, and formatting.
 
-![Text input](/images/asking-for-info/text-input.webp)
+![Text input](../../../assets/asking-for-info/text-input.webp)
 
 ### Common types of information
 
@@ -63,7 +63,7 @@ Along with these, you can use a combination of validation, mask, and separator t
 - Sort codes
 - Reference numbers
 
-![Mask - used for meter readings](/images/asking-for-info/complex.webp)
+![Mask - used for meter readings](../../../assets/asking-for-info/complex.webp)
 
 **Further research:** We are currently developing pattern documentation for the use of these patterns, by doing this we look to ensure that there is a consistent approach to asking customers for this information across customer journeys.
 
@@ -73,8 +73,8 @@ These are extremely common form control elements used to ask customers to make c
 
 Radio buttons and checkboxes are automatically grouped together in a `<fieldset>`. For accessibility, the `heading` attribute found on the `ns-inputter` must be used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Are you a British Gas customer?" or "Which British Gas services would you like to choose?".
 
-![Checkboxes](/images/asking-for-info/checkboxes.webp)
-![Radio buttons](/images/asking-for-info/radio-buttons.webp)
+![Checkboxes](../../../assets/asking-for-info/checkboxes.webp)
+![Radio buttons](../../../assets/asking-for-info/radio-buttons.webp)
 
 You can [read more information about how to use `<ns-inputter>` here](components/ns-inputter)
 See [`<ns-inputter>` on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--text-input)

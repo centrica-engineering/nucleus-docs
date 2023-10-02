@@ -28,19 +28,19 @@ If you are using the icon at a very large size to engage and visual impact, cons
 
 Used as a visual aid for some functions, categories or actions. These are not used as a direct element of interaction themselves but can help to signify and support an action. It is recommended that these aren't used in isolation and should be accompanied by copy to add context.
 
-![Nucleus icons](/images/icons/clarifying.webp)
+![Nucleus icons](../../../assets/icons/clarifying.webp)
 
 ### Functional
 
 Used to show where an action needs to be taken. This includes components like buttons, controls. For instance a button might include an arrow to give the user an indication of what will happen next or a download icon to show that the user will receive something by pressing it. Functional icons can also be further split into interactive and non-interactive icons.
 
-![Nucleus functional icons](/images/icons/functional.webp)
+![Nucleus functional icons](../../../assets/icons/functional.webp)
 
 ### Logos/marks
 
 We can make use of brand logos and marks when we discuss products and companies. Examples of these may include: British Gas, Hive or Dyno.
 
-![Nucleus logo icons](/images/icons/logos-marks.webp)
+![Nucleus logo icons](../../../assets/icons/logos-marks.webp)
 
 ## Colour
 
@@ -84,7 +84,7 @@ We use a grid for icon creation to give consistency across our icons. You should
 
 | Grid | Grid - Vertical | Grid - Horizontal | Grid - Circle |
 | :--- | :--- | :--- | :--- |
-| ![Grid for creating icons](/images/icons/grid-naked.webp) | ![Grid with vertical highlight for creating icons](/images/icons/grid-vertical.webp) | ![Grid with horizontal highlight for creating icons](/images/icons/grid-horizontal.webp) | ![Grid with circle highlight for creating icons](/images/icons/grid-circle.webp) |
+| ![Grid for creating icons](../../../assets/icons/grid-naked.webp) | ![Grid with vertical highlight for creating icons](../../../assets/icons/grid-vertical.webp) | ![Grid with horizontal highlight for creating icons](../../../assets/icons/grid-horizontal.webp) | ![Grid with circle highlight for creating icons](../../../assets/icons/grid-circle.webp) |
 
 ### Sizing
 

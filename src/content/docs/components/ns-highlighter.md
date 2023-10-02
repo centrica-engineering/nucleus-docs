@@ -24,7 +24,7 @@ We recommend you use highlighters for their role, not for their looks.
 
 ## Content guidance
 
-![Highlighter - Error](/images/ns-highlighter/content-guidance.webp)
+![Highlighter - Error](../../../assets/ns-highlighter/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -37,25 +37,25 @@ The content for highlighters is dependent on the type that is used:
 
 ### Error messages
 
-![Highlighter - Error](/images/ns-highlighter/error.webp)
+![Highlighter - Error](../../../assets/ns-highlighter/error.webp)
 
 For communicating failure with urgence. A task cannot be completed without the user remedying something.
 
 ### Informational messages
 
-![Highlighter - Informational](/images/ns-highlighter/info.webp)
+![Highlighter - Informational](../../../assets/ns-highlighter/info.webp)
 
 For communicating a useful piece of information that the user might find helpful to carry out their action.
 
 ### Success messages
 
-![Highlighter - Success](/images/ns-highlighter/success.webp)
+![Highlighter - Success](../../../assets/ns-highlighter/success.webp)
 
 For communicating that an action has been successful.
 
 ### Warning messages
 
-![Highlighter - Warning](/images/ns-highlighter/warning.webp)
+![Highlighter - Warning](../../../assets/ns-highlighter/warning.webp)
 
 Use for communicating a piece of information with less severity. These include foreseeable problematic events, failures, outages and how to avoid errors.
 

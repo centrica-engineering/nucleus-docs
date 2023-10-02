@@ -19,7 +19,7 @@ The progress component can be manipulated in the DOM without the need to reload 
 
 ## Content guidance
 
-![Progress - In progress and completed states](/images/ns-progress/content-guidance.webp)
+![Progress - In progress and completed states](../../../assets/ns-progress/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |

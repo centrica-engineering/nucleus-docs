@@ -11,7 +11,7 @@ It can be used on its own or as a list of downloads for multiple files.
 
 ## Content Guidance
 
-![ns-download](/images/ns-download/content-guidance-ns-download.webp)
+![ns-download](../../../assets/ns-download/content-guidance-ns-download.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |

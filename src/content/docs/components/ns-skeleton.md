@@ -6,7 +6,7 @@ title: ns-skeleton
 
 The `ns-skeleton` component is a placeholder to show that content is loading.
 
-![Example showing a paragraph type ns-skeleton](/images/ns-skeleton/intro-paragraph-example.webp)
+![Example showing a paragraph type ns-skeleton](../../../assets/ns-skeleton/intro-paragraph-example.webp)
 
 The example above shows the visual representation for a paragraph. There are also options for text, headings, and subheadings.
 

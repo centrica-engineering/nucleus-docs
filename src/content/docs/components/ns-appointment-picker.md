@@ -27,7 +27,7 @@ The main property/attribute of `ns-appointment-picker` is `slotData`.  This woul
 
 ## Usage example
 
-![ns-appointment-picker](/images/ns-appointment-picker/usage-example-ns-appointment-picker.webp)
+![ns-appointment-picker](../../../assets/ns-appointment-picker/usage-example-ns-appointment-picker.webp)
 
 | Key | Description | 
 | :--- | :--- |

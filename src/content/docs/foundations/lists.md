@@ -160,16 +160,16 @@ The following components have been designed to use lists:
 |  |  |
 | :--- | :--- |
 | [ns-card](components/ns-card) | [ns-accordion](components/ns-accordion) |
-| ![image](/images/lists/usage-ns-card.webp) ![image](/images/lists/usage-ns-card2.webp) | ![image](/images/lists/usage-ns-accordion.webp) |
+| ![image](../../../assets/lists/usage-ns-card.webp) ![image](../../../assets/lists/usage-ns-card2.webp) | ![image](../../../assets/lists/usage-ns-accordion.webp) |
 | [ns-lockup](components/ns-lockup) | [ns-landmark](components/ns-landmark) |
-| ![image](/images/lists/usage-ns-lockup.webp) | ![image](/images/lists/usage-ns-landmark.webp) |
+| ![image](../../../assets/lists/usage-ns-lockup.webp) | ![image](../../../assets/lists/usage-ns-landmark.webp) |
 | [ns-product-card](components/ns-product-card) | [ns-selector](components/ns-selector) |
-| ![image](/images/lists/usage-ns-product-card.webp) | ![image](/images/lists/usage-ns-selector.webp) ![image](/images/lists/usage-ns-selector2.webp) |
+| ![image](../../../assets/lists/usage-ns-product-card.webp) | ![image](../../../assets/lists/usage-ns-selector.webp) ![image](../../../assets/lists/usage-ns-selector2.webp) |
 | [ns-editorial](components/ns-editorial) |  |
-| ![image](/images/lists/usage-ns-editorial.webp) |  |
+| ![image](../../../assets/lists/usage-ns-editorial.webp) |  |
 
 A popular use of the `dl-row` list is to playback data captured during a journey.
 
 Here is an example:
 
-![image](/images/lists/usage-dl-row-playback.webp)
+![image](../../../assets/lists/usage-dl-row-playback.webp)

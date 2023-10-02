@@ -22,7 +22,7 @@ If you would like to use a password input then please see the [ns-password](/com
 
 The text input is ideal for entering text that takes up a single line, such as asking a customer their name or email address. If you require a longer answer from a customer then you should use the textarea input type.
 
-![Text input](/images/ns-inputter/text.webp)
+![Text input](../../../assets/ns-inputter/text.webp)
 
 [See `<ns-inputter>` text input on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-components-ns-inputter--text-input).
 
@@ -45,7 +45,7 @@ Radio buttons come with a heading that inherits size 4, which is larger than the
 
 To match this heading's size with other `ns-inputter` labels', group all associated elements in an `ns-fieldset`. This will help keep a logical visual hierarchy when using radio buttons grouped with other inputs.
 
-![Radio buttons](/images/ns-inputter/radio-buttons.webp)
+![Radio buttons](../../../assets/ns-inputter/radio-buttons.webp)
 
 [See `<ns-inputter>` radio buttons on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--radio).
 
@@ -70,7 +70,7 @@ Checkboxes come with a heading that inherits size 4, which is larger than the de
 
 To match this heading's size with other `ns-inputter` labels', group all associated elements in an `ns-fieldset`. This will help keep a logical visual hierarchy when using checkboxes grouped with other inputs.
 
-![Checkboxes](/images/ns-inputter/checkboxes.webp)
+![Checkboxes](../../../assets/ns-inputter/checkboxes.webp)
 
 [See `<ns-inputter>` checkboxes on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--checkbox).
 
@@ -92,7 +92,7 @@ When you are trying to get a simple set of answers from the customer where the a
 
 Use the contextual [helper text](https://nucleus.design/docs/components/ns-inputter#helper-text) to explain a more complicated question or to offer help or context. If the question and answer is really obvious then you may not need a contextual helper.
 
-![Radio button and checkbox inline variant](/images/ns-inputter/inline-checkboxes.webp)
+![Radio button and checkbox inline variant](../../../assets/ns-inputter/inline-checkboxes.webp)
 
 [See `<ns-inputter>` radio inline/checkbox inline on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-components-ns-inputter--checkbox-inline).
 
@@ -110,7 +110,7 @@ Use the contextual [helper text](https://nucleus.design/docs/components/ns-input
 
 Selects should be used to select an item from a list of many choices. Selects can be problematic for screen reader users if there is a long list of options. Consider distilling your questions so that there are fewer options, this might allow you to use radio buttons instead.
 
-![Select](/images/ns-inputter/select.webp)
+![Select](../../../assets/ns-inputter/select.webp)
 
 [See `<ns-inputter>` select on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--select).
 
@@ -123,7 +123,7 @@ Selects should be used to select an item from a list of many choices. Selects ca
 
 Textareas are used for capturing a longer answer. Always consider whether or not you need to ask a customer a free form question before doing so.
 
-![Textarea](/images/ns-inputter/textarea.webp)
+![Textarea](../../../assets/ns-inputter/textarea.webp)
 
 You can [see an example of `<ns-inputter>` textarea here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--textarea).
 
@@ -237,11 +237,11 @@ The `mask` is similar to a placeholder, this can be used to show what can be ent
 
 The `separator` is used with the mask to manipulate the inputted value if it needs to be formatted in a certain way, like as a sort code or reference number.
 
-![Separator - used for sort code](/images/ns-inputter/separator.webp)
+![Separator - used for sort code](../../../assets/ns-inputter/separator.webp)
 
 [See `<ns-inputter>` mask on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--mask).
 
-![Mask - used for meter readings](/images/ns-inputter/mask.webp)
+![Mask - used for meter readings](../../../assets/ns-inputter/mask.webp)
 
 [See `<ns-inputter>` separator on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--separator).
 

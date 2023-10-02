@@ -14,7 +14,7 @@ This component gives an overview of the whole process and progress of a customer
 
 Shows steps of a process that has started, showing the status of each step.
 
-![Labelled example of the Standard variant ns-timeline component](/images/ns-timeline/content-guidance-standard.webp)
+![Labelled example of the Standard variant ns-timeline component](../../../assets/ns-timeline/content-guidance-standard.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -33,7 +33,7 @@ Shows steps of a process that has started, showing the status of each step.
 
 Sets the expectation of a process that hasn't started or doesn't have any specific status.
 
-![Labelled example of the Step variant ns-timeline component](/images/ns-timeline/content-guidance-step.webp)
+![Labelled example of the Step variant ns-timeline component](../../../assets/ns-timeline/content-guidance-step.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -57,23 +57,23 @@ Sets the expectation of a process that hasn't started or doesn't have any specif
 
 Have more than one item simultaneously in progress.
 
-![image highlighting multiple in progress steps](/images/ns-timeline/usage-feature-1.webp)
+![image highlighting multiple in progress steps](../../../assets/ns-timeline/usage-feature-1.webp)
 
 Highlight an action that may be required of the user.
 
-![image highlighting an action that is required](/images/ns-timeline/usage-feature-2.webp)
+![image highlighting an action that is required](../../../assets/ns-timeline/usage-feature-2.webp)
 
 Manage expectations by showing warnings that might delay the process.
 
-![image showing a warning state on an event](/images/ns-timeline/usage-feature-3.webp)
+![image showing a warning state on an event](../../../assets/ns-timeline/usage-feature-3.webp)
 
 See the progress being made over a few days.
 
-![image showing progression on the timeline](/images/ns-timeline/usage-feature-4.webp)
+![image showing progression on the timeline](../../../assets/ns-timeline/usage-feature-4.webp)
 
 Let the user know if something goes wrong.
 
-![image showing a error state on an event](/images/ns-timeline/usage-feature-5.webp)
+![image showing a error state on an event](../../../assets/ns-timeline/usage-feature-5.webp)
 
 ### Status
 
@@ -81,12 +81,12 @@ Each event has a status. The status of the event is controlled by the decoration
 
 | Style | Status | Description |
 | :--- | :--- | :--- |
-| ![pending](/images/ns-timeline/status-pending.webp)| `pending` |Communicates that the event has yet to commence. |
-| ![in progress](/images/ns-timeline/status-in-progress.webp) | `inprogress` | Indicates that progress is currently being made on this step. |
-| ![success](/images/ns-timeline/status-completed.webp) | `completed` | The event has been successfully completed. |
-| ![action required](/images/ns-timeline/status-action-req.webp) | `actionrequired` | This is used when a customer needs to take action in order to proceed with the process. |
-| ![warning](/images/ns-timeline/status-warning.webp) | `warning` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
-| ![error](/images/ns-timeline/status-error.webp) | `error` | This is a failure indication. Something couldn't be resolved and so has halted the whole process marking other `inprogress`\ `pending` event(s) `cancelled`. It should be accompanied by a helpful message. |
+| ![pending](../../../assets/ns-timeline/status-pending.webp)| `pending` |Communicates that the event has yet to commence. |
+| ![in progress](../../../assets/ns-timeline/status-in-progress.webp) | `inprogress` | Indicates that progress is currently being made on this step. |
+| ![success](../../../assets/ns-timeline/status-completed.webp) | `completed` | The event has been successfully completed. |
+| ![action required](../../../assets/ns-timeline/status-action-req.webp) | `actionrequired` | This is used when a customer needs to take action in order to proceed with the process. |
+| ![warning](../../../assets/ns-timeline/status-warning.webp) | `warning` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
+| ![error](../../../assets/ns-timeline/status-error.webp) | `error` | This is a failure indication. Something couldn't be resolved and so has halted the whole process marking other `inprogress`\ `pending` event(s) `cancelled`. It should be accompanied by a helpful message. |
 
 ### Icons & numerals
 

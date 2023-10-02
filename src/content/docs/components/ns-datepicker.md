@@ -14,7 +14,7 @@ This component wraps our ns-inputter component. Guidelines defined on the ns-inp
 ns-datepicker supports 2 types `default` and `mask`.
 When type is set to `default` the date-picker will display a calendar UI for selecting the date.  On mobile/touch devices this will use the browsers native calendar.  On desktop/non-touch devices it will use the Nucleus calendar component.
 
-![ns-datepicker type](/images/ns-datepicker/datepicker-types-default-open.webp)
+![ns-datepicker type](../../../assets/ns-datepicker/datepicker-types-default-open.webp)
 
 ## Best practice
 

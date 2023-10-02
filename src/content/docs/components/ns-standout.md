@@ -20,7 +20,7 @@ The component is not announced to screen readers upfront, to help differentiate 
 
 ## Content guidance
 
-![Standout diagram](/images/ns-standout/content-guidance.webp)
+![Standout diagram](../../../assets/ns-standout/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |

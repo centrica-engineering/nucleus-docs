@@ -12,7 +12,7 @@ This component is only used to capture and submit customer preferences, not view
 
 ## Content guidance
 
-![Experience pattern - Marketing consent](/images/nsx-marketing-consent/content-guidance.webp)
+![Experience pattern - Marketing consent](../../../assets/nsx-marketing-consent/content-guidance.webp)
 
 It is possible to change the heading and the first paragraph to suit specific context. However, we recommend using the default content as these have been signed off by the legal team.
 

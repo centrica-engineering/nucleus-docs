@@ -12,9 +12,9 @@ Expanders can be used in [a variety of contexts](#component-placement): in an ac
 
 ## Content guidance
 In the following examples, the expander is used in an accordion and in a selector.
-![Expander - Being used in an accordion](/images/ns-expander/content-guidance-accordion.webp)
+![Expander - Being used in an accordion](../../../assets/ns-expander/content-guidance-accordion.webp)
 
-![Expander - Being used in a selector](/images/ns-expander/content-guidance-product-card.webp)
+![Expander - Being used in a selector](../../../assets/ns-expander/content-guidance-product-card.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |

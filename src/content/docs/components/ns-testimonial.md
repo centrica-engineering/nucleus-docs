@@ -10,7 +10,7 @@ The testimonial should be used as an enticement to buy British Gas products and 
 
 ## Content guidance
 
-![Labelled diagram of the ns-testimonial component](/images/ns-testimonial/content-guidance.webp)
+![Labelled diagram of the ns-testimonial component](../../../assets/ns-testimonial/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -31,7 +31,7 @@ The testimonial should be used as an enticement to buy British Gas products and 
 
 Use within `ns-column` to display the desired layout of multiple testimonials.
 
-![Example showing multiple testimonials layout using ns-column](/images/ns-testimonial/best-practice.webp)
+![Example showing multiple testimonials layout using ns-column](../../../assets/ns-testimonial/best-practice.webp)
 
 ## Usage
 

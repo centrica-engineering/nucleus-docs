@@ -15,7 +15,7 @@ They are either:
 
 ## Content guidance
 
-![ns-skyline example showing a closed warning type and an expanded informational type](/images/ns-skyline/content-guidance.webp)
+![ns-skyline example showing a closed warning type and an expanded informational type](../../../assets/ns-skyline/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |

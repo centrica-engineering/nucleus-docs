@@ -12,7 +12,7 @@ Pills can help to create a subtle sense of urgency or to draw a customer’s att
 
 ## Content guidance
 
-![Pill](/images/ns-pill/content-guidance.webp)
+![Pill](../../../assets/ns-pill/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |

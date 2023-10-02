@@ -8,7 +8,7 @@ title: ns-product-card
 
 ## Content guidance
 
-![Product card](/images/ns-product-card/content-guidance.webp)
+![Product card](../../../assets/ns-product-card/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -26,9 +26,9 @@ title: ns-product-card
 
 | Preview | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![ns-product-card image placeholder for 16:9 ratio](/images/ns-product-card/ns-product-card-image-640x360-ratio16_9.jpg) | 16:9 | 640 x 360px | &lt;50kb | jpeg | [Download 16:9](/images/ns-product-card/ns-product-card-image-640x360-ratio16_9.jpg) |
-| ![ns-product-card image placeholder for 4:3 ratio](/images/ns-product-card/ns-product-card-image-640x480-ratio4_3.jpg) | 4:3 | 640 x 480px | &lt;50kb | jpeg | [Download 4:3](/images/ns-product-card/ns-product-card-image-640x480-ratio4_3.jpg) |
-| ![ns-product-card image placeholder for 1:1 ratio](/images/ns-product-card/ns-product-card-image-640x640-ratio1_1.jpg) | 1:1 | 640 x 640px | &lt;50kb | jpeg | [Download 1:1](/images/ns-product-card/ns-product-card-image-640x640-ratio1_1.jpg) |
+| ![ns-product-card image placeholder for 16:9 ratio](../../../assets/ns-product-card/ns-product-card-image-640x360-ratio16_9.jpg) | 16:9 | 640 x 360px | &lt;50kb | jpeg | [Download 16:9](../../../assets/ns-product-card/ns-product-card-image-640x360-ratio16_9.jpg) |
+| ![ns-product-card image placeholder for 4:3 ratio](../../../assets/ns-product-card/ns-product-card-image-640x480-ratio4_3.jpg) | 4:3 | 640 x 480px | &lt;50kb | jpeg | [Download 4:3](../../../assets/ns-product-card/ns-product-card-image-640x480-ratio4_3.jpg) |
+| ![ns-product-card image placeholder for 1:1 ratio](../../../assets/ns-product-card/ns-product-card-image-640x640-ratio1_1.jpg) | 1:1 | 640 x 640px | &lt;50kb | jpeg | [Download 1:1](../../../assets/ns-product-card/ns-product-card-image-640x640-ratio1_1.jpg) |
 
 ## Best practice
 

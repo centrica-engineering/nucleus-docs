@@ -10,7 +10,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 ## Content guidance
 
-![Lockup - Lockjaw](/images/ns-lockup/content-guidance.webp)
+![Lockup - Lockjaw](../../../assets/ns-lockup/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -24,9 +24,9 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 | Preview | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![ns-lockup-image-16_9](/images/ns-lockup/ns-lockup-image-800x540-ratio16_9.jpg) | 16:9 | 800 x 450px | &lt;100kb | .jpg | [ns-lockup-image-800x540-ratio16_9](/images/ns-lockup/ns-lockup-image-800x540-ratio16_9.jpg) |
-| ![ns-lockup-image-4_3](/images/ns-lockup/ns-lockup-image-800x600-ratio4_3.jpg) | 4:3 | 800 x 600px | &lt;100kb | .jpg | [ns-lockup-image-800x600-ratio4_3](/images/ns-lockup/ns-lockup-image-800x600-ratio4_3.jpg) |
-| ![ns-lockup-image-1_1](/images/ns-lockup/ns-lockup-image-800x800-ratio1_1.jpg) | 1:1 | 800 x 800px | &lt;100kb | .jpg | [ns-lockup-image-800x800-ratio1_1](/images/ns-lockup/ns-lockup-image-800x800-ratio1_1.jpg) |
+| ![ns-lockup-image-16_9](../../../assets/ns-lockup/ns-lockup-image-800x540-ratio16_9.jpg) | 16:9 | 800 x 450px | &lt;100kb | .jpg | [ns-lockup-image-800x540-ratio16_9](../../../assets/ns-lockup/ns-lockup-image-800x540-ratio16_9.jpg) |
+| ![ns-lockup-image-4_3](../../../assets/ns-lockup/ns-lockup-image-800x600-ratio4_3.jpg) | 4:3 | 800 x 600px | &lt;100kb | .jpg | [ns-lockup-image-800x600-ratio4_3](../../../assets/ns-lockup/ns-lockup-image-800x600-ratio4_3.jpg) |
+| ![ns-lockup-image-1_1](../../../assets/ns-lockup/ns-lockup-image-800x800-ratio1_1.jpg) | 1:1 | 800 x 800px | &lt;100kb | .jpg | [ns-lockup-image-800x800-ratio1_1](../../../assets/ns-lockup/ns-lockup-image-800x800-ratio1_1.jpg) |
 
 
 ## Best practice
@@ -77,7 +77,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 ### Video
 
-![ns-lockup-with-video-overlap](/images/ns-lockup/video.webp)
+![ns-lockup-with-video-overlap](../../../assets/ns-lockup/video.webp)
 
 * Use the `video` variant when using a video instead of an image as the overlap is in front of the text box so neither the video nor its captions are obscured. The text then wraps around the video edge. (See the `video` example on [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/components-ns-lockup--video))
 * It is not possible to use an illustration decoration with a video.

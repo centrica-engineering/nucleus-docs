@@ -10,7 +10,7 @@ title: ns-article
 
 ## Content Guidance
 
-![Article - Content Guidance](/images/ns-article/content-guidance-ns-article.webp)
+![Article - Content Guidance](../../../assets/ns-article/content-guidance-ns-article.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |

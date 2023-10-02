@@ -13,7 +13,7 @@ It provides an area to place a layout, add an optional decoration and apply the 
 
 ## Content guidance
 
-![ns-panel-with-offset-decoration-and-columns](/images/ns-panel/content-guidance.webp)
+![ns-panel-with-offset-decoration-and-columns](../../../assets/ns-panel/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -26,12 +26,12 @@ It provides an area to place a layout, add an optional decoration and apply the 
 
 Adding decoration to an `ns-panel` utilises a coloured background. It provides visual separation from other sections on the page and introduces brand [colour](foundations/colours) and style.
 
-![ns-panel-decoration-yellow](/images/ns-panel/decoration.webp)
+![ns-panel-decoration-yellow](../../../assets/ns-panel/decoration.webp)
 
 The decoration has configurable top and bottom margins. These are adjusted separately from the content and allow the content to overlap these edges, if required, to achieve a more visually desirable layout.
 
 By default there is no decoration applied...
-![ns-panel-no-decoration](/images/ns-panel/no-decoration.webp)
+![ns-panel-no-decoration](../../../assets/ns-panel/no-decoration.webp)
 
 ## Columns and content
 

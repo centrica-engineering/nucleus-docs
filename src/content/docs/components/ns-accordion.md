@@ -10,7 +10,7 @@ We use accordions to break down content into meaningful sections, helping to red
 
 ## Content guidance
 
-![Accordion](/images/ns-accordion/contentguidance-ns-accordion.webp)
+![Accordion](../../../assets/ns-accordion/contentguidance-ns-accordion.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |

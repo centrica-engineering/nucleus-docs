@@ -25,7 +25,7 @@ The address selector is a multi-functional experience pattern that can be used f
 
 If the address selector hasn’t been provided with any addresses, it will start by asking for the customer to enter their postcode.
 
-![Anonymous - Customer finding their address from a postcode](/images/nsx-address-selector/usage-example-anonymous.webp)
+![Anonymous - Customer finding their address from a postcode](../../../assets/nsx-address-selector/usage-example-anonymous.webp)
 
 You can [see the anonymous state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--anonymous).
 
@@ -35,7 +35,7 @@ When the customer enters a postcode, the component will dispatch a `postcode-sel
 
 When you set the `addresses` property of the component it will change state to display the addresses and ask the customer to select one.
 
-![Multiple addresses - Customer selects using radio buttons](/images/nsx-address-selector/usage-example-multi-address.webp)
+![Multiple addresses - Customer selects using radio buttons](../../../assets/nsx-address-selector/usage-example-multi-address.webp)
 
 You can [see the multi address state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--multi-addresses).
 
@@ -43,11 +43,11 @@ You can [see the multi address state of `<nsx-address-selector>` here](https://w
 
 If there are 6 or more addresses then the component will display the addresses in a select drop-down.
 
-![Many addresses - Customer selects using select drop-down](/images/nsx-address-selector/usage-example-many-address.webp)
+![Many addresses - Customer selects using select drop-down](../../../assets/nsx-address-selector/usage-example-many-address.webp)
 
 You can [see the many address state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--many-addresses).
 
-![Postcode and selected address summary](/images/nsx-address-selector/usage-example-many-address-2.webp)
+![Postcode and selected address summary](../../../assets/nsx-address-selector/usage-example-many-address-2.webp)
 
 ### Manual address
 
@@ -55,7 +55,7 @@ If the customer chooses to make changes to their address, they can use the **"Am
 
 When displaying this form the `manualformenabled` property to set to `true`. You can manually enable this property if required.
 
-![Manual entry address form](/images/nsx-address-selector/usage-example-manual-address.webp)
+![Manual entry address form](../../../assets/nsx-address-selector/usage-example-manual-address.webp)
 
 You can [see the manual entry state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--manual-addresses).
 

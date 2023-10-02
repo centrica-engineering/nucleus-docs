@@ -7,7 +7,7 @@ description: Nucleus illustration suite.
 
 We use illustrations to bring warmth of our brand personality to the website. We use bold, geometric shapes to make our complicated world feel friendly and accessible.
 
-![Illustrations](/images/illustrations/whyweuse-illustrations.webp)
+![Illustrations](../../../assets/illustrations/whyweuse-illustrations.webp)
 
 Nucleus British Gas illustrations.
 
@@ -38,7 +38,7 @@ We use a grid for icon creation to give consistency across our illustrations. He
 
 | Grid | Grid - Vertical | Grid - Horizontal | Grid - Circle |
 | :--- | :--- | :--- | :--- |
-| ![Grid for creating illustrations](/images/illustrations/illustrationgrid-base.webp) | ![Grid with vertical highlight for creating illustrations](/images/illustrations/illustrationgrid-vertical.webp) | ![Grid with horizontal highlight for creating illustrations](/images/illustrations/illustrationgrid-horizontal.webp) | ![Grid with circle highlight for creating illustrations](/images/illustrations/illustrationgrid-circle.webp) |
+| ![Grid for creating illustrations](../../../assets/illustrations/illustrationgrid-base.webp) | ![Grid with vertical highlight for creating illustrations](../../../assets/illustrations/illustrationgrid-vertical.webp) | ![Grid with horizontal highlight for creating illustrations](../../../assets/illustrations/illustrationgrid-horizontal.webp) | ![Grid with circle highlight for creating illustrations](../../../assets/illustrations/illustrationgrid-circle.webp) |
 
 ### Colour
 
@@ -46,15 +46,15 @@ Each illustration uses predominantly a 2-colour pair from the below array:
 
 #### Cyan and Blue
 
-![Cyan and Blue](/images/illustrations/colours-cyan-and-blue.webp)
+![Cyan and Blue](../../../assets/illustrations/colours-cyan-and-blue.webp)
 
 #### Lime and Forest
 
-![Lime and Forest](/images/illustrations/colours-lime-and-forest.webp)
+![Lime and Forest](../../../assets/illustrations/colours-lime-and-forest.webp)
 
 #### Yellow and Red
 
-![Yellow and Red](/images/illustrations/colours-yellow-and-red.webp)
+![Yellow and Red](../../../assets/illustrations/colours-yellow-and-red.webp)
 
 #### Highlights
 

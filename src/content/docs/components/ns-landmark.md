@@ -12,7 +12,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Summit Landmark
 
-![Landmark - Summit](/images/ns-landmark/content_guidance-summit.webp)
+![Landmark - Summit](../../../assets/ns-landmark/content_guidance-summit.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -23,7 +23,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Hillside Landmark
 
-![Landmark - Hillside](/images/ns-landmark/content_guidance-hillside.webp)
+![Landmark - Hillside](../../../assets/ns-landmark/content_guidance-hillside.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -34,7 +34,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Valley Landmark
 
-![Landmark - Valley](/images/ns-landmark/content_guidance-valley.webp)
+![Landmark - Valley](../../../assets/ns-landmark/content_guidance-valley.webp)
 
 :::note
 The purpose of the valley landmark is to present an overview of a product or service as a user moves down the funnel of their purchase journey. A CTA may be used, but is not recommended in scenarios where the objective is to encourage further on-page browsing.
@@ -50,7 +50,7 @@ The purpose of the valley landmark is to present an overview of a product or ser
 
 ### Lakeside Landmark
 
-![Landmark - Lakeside](/images/ns-landmark/content_guidance-lakeside.webp)
+![Landmark - Lakeside](../../../assets/ns-landmark/content_guidance-lakeside.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -92,42 +92,42 @@ The purpose of the valley landmark is to present an overview of a product or ser
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Capture the moment. | Allow the card to cover important content. |
-| ![do-father-child](/images/ns-landmark/best-practice-do1-summit.webp) | ![dont-covered-family](/images/ns-landmark/best-practice-dont1-summit.webp) |
+| ![do-father-child](../../../assets/ns-landmark/best-practice-do1-summit.webp) | ![dont-covered-family](../../../assets/ns-landmark/best-practice-dont1-summit.webp) |
 | Set focus of the photo correctly. | Obstruct people's faces with the card. |
-| ![do-couple-on-sofa](/images/ns-landmark/best-practice-do2-summit.webp) | ![dont-obstructed-face](/images/ns-landmark/best-practice-dont2-summit.webp) |
+| ![do-couple-on-sofa](../../../assets/ns-landmark/best-practice-do2-summit.webp) | ![dont-obstructed-face](../../../assets/ns-landmark/best-practice-dont2-summit.webp) |
 | Convey activity related to topic. | Use images with a white background. |
-| ![do-boiler-service](/images/ns-landmark/best-practice-do3-summit.webp) | ![dont-boiler-on-white-background](/images/ns-landmark/best-practice-dont3-summit.webp) |
+| ![do-boiler-service](../../../assets/ns-landmark/best-practice-do3-summit.webp) | ![dont-boiler-on-white-background](../../../assets/ns-landmark/best-practice-dont3-summit.webp) |
 
 ### Best practice for `hillside`
 
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Use the red decoration for something that is not a promotional promotional or an error-themed page. |
-| ![do-use-same-colour-for-themed-pages](/images/ns-landmark/best-practice-do1-hillside.webp) | Add too much content in the landmark. |
+| ![do-use-same-colour-for-themed-pages](../../../assets/ns-landmark/best-practice-do1-hillside.webp) | Add too much content in the landmark. |
 | Keep the content concise. |  |
-| ![do-keep-content-concise](/images/ns-landmark/best-practice-do2-hillside.webp) |  |
+| ![do-keep-content-concise](../../../assets/ns-landmark/best-practice-do2-hillside.webp) |  |
 
 ### Best practice for `lakeside`
 
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Use more than one paragraph. | Use more than three paragraphs. |
-| ![do-use-more-than-one-paragraph](/images/ns-landmark/best-practice-do1-lakeside.webp) | ![dont-use-more-than-three-paragraphs](/images/ns-landmark/best-practice-dont1-lakeside.webp) |
+| ![do-use-more-than-one-paragraph](../../../assets/ns-landmark/best-practice-do1-lakeside.webp) | ![dont-use-more-than-three-paragraphs](../../../assets/ns-landmark/best-practice-dont1-lakeside.webp) |
 | Display 400 and 500 error pages. | Use to build a page. |
-| ![display-400-and-500-error-pages](/images/ns-landmark/best-practice-do2-lakeside.webp) | ![dont-even-this-about-building-a-page-with-it](/images/ns-landmark/best-practice-dont2-lakeside.webp) |
+| ![display-400-and-500-error-pages](../../../assets/ns-landmark/best-practice-do2-lakeside.webp) | ![dont-even-this-about-building-a-page-with-it](../../../assets/ns-landmark/best-practice-dont2-lakeside.webp) |
 | Get to the point, in this scenario the Sub heading and CTA have been omitted. |  |
-| ![do-get-to-the-point](/images/ns-landmark/best-practice-do3-lakeside.webp) |  |
+| ![do-get-to-the-point](../../../assets/ns-landmark/best-practice-do3-lakeside.webp) |  |
 
 ### Best practice for `valley`
 
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Use checked list to highlight your key product benefits | Add a CTA if the purpose of the page is for users to consume the content. |
-| ![use-a-checked-list](/images/ns-landmark/best-practice-do1-valley.webp) | ![dont-add-a-cta](/images/ns-landmark/best-practice-dont1-valley.webp) |
+| ![use-a-checked-list](../../../assets/ns-landmark/best-practice-do1-valley.webp) | ![dont-add-a-cta](../../../assets/ns-landmark/best-practice-dont1-valley.webp) |
 | Use a complementary image to add context to your product or service | Use long, verbose content. Keep the user interested with a snappy overview and draw them down the page |
-| ![complementary-image](/images/ns-landmark/best-practice-do2-valley.webp) | ![use-short-content](/images/ns-landmark/best-practice-dont2-valley.webp) |
+| ![complementary-image](../../../assets/ns-landmark/best-practice-do2-valley.webp) | ![use-short-content](../../../assets/ns-landmark/best-practice-dont2-valley.webp) |
 | Use colour, pill and ratio options for alternative aesthetics | Forget to use an image |
-| ![use-colour-and-ratio-options](/images/ns-landmark/best-practice-do3-valley.webp) | ![use-an-image](/images/ns-landmark/best-practice-dont3-valley.webp) |
+| ![use-colour-and-ratio-options](../../../assets/ns-landmark/best-practice-do3-valley.webp) | ![use-an-image](../../../assets/ns-landmark/best-practice-dont3-valley.webp) |
 
 
 ### Considerations of best practice
@@ -202,22 +202,22 @@ The purpose of the valley landmark is to present an overview of a product or ser
 
 This provides the safe-area to the position of the focal point of the image.
 
-[Download the 1440x810px Landmark testcard image](/images/ns-landmark/summit-testcard.png) and place over your Landmark photos in your image editing software.
+[Download the 1440x810px Landmark testcard image](../../../assets/ns-landmark/summit-testcard.png) and place over your Landmark photos in your image editing software.
 
-![landmark-16x9-testcard-1440](/images/ns-landmark/summit-testcard.png)
+![landmark-16x9-testcard-1440](../../../assets/ns-landmark/summit-testcard.png)
 
 ### Using Photoshop
 
 Using Photoshop to overlay the Landmark focus template to check alignment. (You could equally use an alternative software)
 
-![image](/images/ns-landmark/photoshop-template.webp)
+![image](../../../assets/ns-landmark/photoshop-template.webp)
 
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Here, the focus of the photo is located within the safe-area | The subject fills the entire photo, and the lady on the left will be obscured |
-| ![landmark-16x9-testcard-1440-01](/images/ns-landmark/best-practice-do1-photo.webp) | ![landmark-16x9-testcard-1440-00](/images/ns-landmark/best-practice-dont1-photo.webp) |
+| ![landmark-16x9-testcard-1440-01](../../../assets/ns-landmark/best-practice-do1-photo.webp) | ![landmark-16x9-testcard-1440-00](../../../assets/ns-landmark/best-practice-dont1-photo.webp) |
 | Capture the story within. This photo is about the lady and her phone | Unfortunately, this photo is completely unsuitable for a Landmark |
-| ![landmark-16x9-testcard-1440-02](/images/ns-landmark/best-practice-do2-photo.webp) | ![landmark-16x9-testcard-1440-04](/images/ns-landmark/best-practice-dont2-photo.webp) |
+| ![landmark-16x9-testcard-1440-02](../../../assets/ns-landmark/best-practice-do2-photo.webp) | ![landmark-16x9-testcard-1440-04](../../../assets/ns-landmark/best-practice-dont2-photo.webp) |
 
 ## Feedback
 

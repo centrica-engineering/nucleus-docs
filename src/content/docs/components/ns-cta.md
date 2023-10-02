@@ -14,11 +14,11 @@ There is no distinciton between a hyperlink or an action through the design of `
 
 ### CTA Direct
 
-![CTA - Direct](/images/ns-cta/cta-direct-ns-cta.webp)
+![CTA - Direct](../../../assets/ns-cta/cta-direct-ns-cta.webp)
 
 ### CTA Text
 
-![CTA - Text](/images/ns-cta/cta-text-ns-cta.webp)
+![CTA - Text](../../../assets/ns-cta/cta-text-ns-cta.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -73,7 +73,7 @@ If the action fails, don't leave the CTA in its Loading state. Present the user 
 
 Your loading message should be contextual to the action of the text of the CTA. E.g. "Get a quote" becomes "Getting your quote...". 
 
-![CTA - Loading state](/images/ns-cta/states-loading-ns-cta.gif)
+![CTA - Loading state](../../../assets/ns-cta/states-loading-ns-cta.gif)
 
 You can see the live example of the loading state on [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-cta--direct-button-loading).
 
