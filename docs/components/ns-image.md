@@ -51,13 +51,15 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `src` | `string`|  |  | URL to the image. |
-| `alt` | `string`|  |  | Give a text alternative for screen readers. |
-| `ratio` | `string` | `16x9` | `16x9`, `4x3`, `1x1` | Ratio of the image. |
-| `background` | `boolean` | `false` | `true`, `false` | To make it CSS background image instead of an inline image tag. |
-| `backgroundSize` | `string` | `cover` | `cover`, `contain` | To change the CSS size for a background image. |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `src` | `src` | `string`|  |  | URL to the image. |
+| `alt` | `alt` | `string`|  |  | Give a text alternative for screen readers. |
+| `ratio` | `ratio` | `string` | `16 / 9` | `16 / 9`, `4 / 3`, `1 / 1` | Ratio of the image. |
+| `background` | `background` | `boolean` | `false` | `true`, `false` | To make it CSS background image instead of an inline image tag. |
+| `background-size` | `backgroundsize` | `string` | `cover` | `cover`, `contain` | To change the CSS size for a background image. |
+| `placeholder` | `placeholder` | `string` |  |  | The thumbnail placeholder image. (src) can be used to bring in the src property. |
+| `loading` | `loading` | `string` | `lazy` | `eager`, `lazy` | The loading mode of the image. |
 
 ## Specification notes
 
