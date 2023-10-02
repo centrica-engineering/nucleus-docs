@@ -168,10 +168,10 @@ In the step variant, additional information can always be added to an event if m
 
 ## Specification for the component
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `type` | `string` | `standard` | `standard`, `step` | Set to standard to use the more dynamic version of the timeline |
-| `showstepcount` | `boolean` | `false` | `true`, `false` | Set true to show completed vs total event progress count below the timeline heading |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type` | `type` |`string` | `standard` | `standard`, `step` | Set to standard to use the more dynamic version of the timeline |
+| `show-step-count` | `showStepCount` |`boolean` | `false` | `true`, `false` | Set true to show completed vs total event progress count below the timeline heading |
 
 | Slots | Type |
 | :--- | :--- |
@@ -181,12 +181,12 @@ In the step variant, additional information can always be added to an event if m
 
 ## Specification for each event
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `status` | `string` | `pending`| `pending`, `inprogress`, `actionrequired`, `warning`, `error`, `completed`, `cancelled` | |
-| `icon`| `string` | | `appliance`, `bill`, `boiler`, `calendar`, `clock`, `download`, `electricity`, `energy`, `gas`, `home`, `meter`, `protect`, `rewards`, `search`, `tag`. Please see the [documentation for ns-icon](../components/ns-icon)  | Optional icon to add to the event decoration |
-| `index` | `number` | |  | Optional numbered index to add to the event decoration |
-| `updatedAt` | `date` | |  | Optional ISO date only used along with `completed` status to record the event completed date & time. |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `status` | `status` | `string` | `pending`| `pending`, `inprogress`, `actionrequired`, `warning`, `error`, `completed`, `cancelled` | |
+| `icon`| `icon`| `string` | | `appliance`, `bill`, `boiler`, `calendar`, `clock`, `download`, `electricity`, `energy`, `gas`, `home`, `location`, `meter`, `payment`, `protect`, `rewards`, `search`, `spanner`, `tag`. Please see the [documentation for ns-icon](../components/ns-icon)  | Optional icon to add to the event decoration |
+| `index` | `index` | `number` | |  | Optional numbered index to add to the event decoration |
+| `updated-at` | `updatedAt` | `date` | |  | Optional ISO date only used along with `completed` status to record the event completed date & time. |
 
 | Slots | Type |
 | :--- | :--- |
