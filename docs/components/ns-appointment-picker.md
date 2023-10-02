@@ -11,16 +11,16 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 > `ns-appointment-picker` is used to select a date and time slot for an appointment.
 
-`ns-appointment-picker` is used to select a date and time slot for an appointment. The component is comprised of an `ns-calendar` to pick the date, and an `ns-slot-picker` to show the available time slots.
+`ns-appointment-picker` is used to select a date and time slot for an appointment. The component is comprised of an `ns-calendar` to pick the date, and an `ns-inputter` to show the available time slots for the selected date.
 
 
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use this when the customer needs to select a date and a time slot for an appointment | Use to select an appointment slot on a single date. Use `ns-slot-picker` instead |
-| Use `ns-slot-picker` to surface the best suitable slots for a customer before presenting the full appointment picker, where appropriate. | Don't force customers to use the appointment picker first if there is very poor appointment availability. Present the next available appointments in a slot picker first. |
-| Use `ns-highlighter` alongside `ns-appointment-picker` to surface any important notifications regarding a customer booking.| |
+| Use this when the customer needs to select a date and a time slot for an appointment | Use to select an appointment slot on a single date. Use `ns-inputter` radio options instead |
+| Use `ns-inputter` to surface the best suitable slots for a customer before presenting the full appointment picker, where appropriate. | Don't force customers to use the appointment picker first if there is very poor appointment availability. Present the next available appointments in an `ns-inputter` radio first. |
+| Use `ns-alert` alongside `ns-appointment-picker` to surface any important notifications regarding a customer booking.| |
 | Use multiple appointment pickers in ns-tabs so users can easily access different types of bookings.| |
 
 
@@ -28,7 +28,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 <StorybookStory story="components-ns-appointment-picker--standard"></StorybookStory>
 
-The main property/attribute of `ns-appointment-picker` is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
+The main property of `ns-appointment-picker` is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
 
 ## Usage example
 
@@ -37,14 +37,15 @@ The main property/attribute of `ns-appointment-picker` is `slotData`.  This woul
 | Key | Description | 
 | :--- | :--- |
 | A | `ns-calendar` - Calendar component|
-| B | `ns-slot-picker` - Slot picker component |
+| B | `ns-inputter` - Inputter component |
 
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `slotdata` | `array` | | | Array of objects representing dates.
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `slot-data` | `slotData` | `array` | | | Array of objects representing dates.
+| `value` | `value` | `string` | | | Value of the selected appointment.
 
 | Event | Description |
 | :--- | :--- |
@@ -52,7 +53,7 @@ The main property/attribute of `ns-appointment-picker` is `slotData`.  This woul
 
 ### Slot Data
 
-The slotData array should consist of objects containing a date property and a slots property.
+The `slotData` array property should consist of objects containing a `date` property and a `slots` property.
 
 date: String - eg. 2020-01-28 (28th January 2020)
 slots: Array of objects with a name and value property 
