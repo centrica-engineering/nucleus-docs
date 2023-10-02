@@ -4,6 +4,7 @@ description: Atom | Illustration component.
 
 import { StorybookStory } from '../../includes/storybook-story.js'
 import { PageFooter } from '../../includes/page-footer.js'
+import { Illustrations } from '../../includes/icons-illustrations.js'
 
 ## Introduction
 
@@ -37,9 +38,10 @@ The ns-illustration component can be used in a number of components to help crea
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `type`| `string`  | `gas` | `appliance`, `boiler`, `boilerRepair`, `bulb`, `centralHeating`, `clock`, `dualFuel`, `electrics`, `electricVehicle`, `engineer`, `gas`, `help`, `home`, `oven`, `pipeAndDrain`, `protect`, `tap`, `savings`, `yellowShield` See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustration--standard) | Picks the illustration that is to be shown. |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type` | `type` | `string` | `standard` | `standard` | Type of illustration. |
+| `name` | `name` | `string` | `gas` | <Illustrations></Illustrations> See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustration--standard) | Picks the illustration that is to be shown. |
 | `size` | `number` | `''` | `''`, `1`, `2`, `3`, `4`, `5` | Changes the size of the illustration, with 1 being the smallest. |
 | `inactive` | `string` | `false` | `true`, `false` | Will grey out the illustration. |
 
