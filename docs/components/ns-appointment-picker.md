@@ -11,7 +11,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 > `ns-appointment-picker` is used to select a date and time slot for an appointment.
 
-`ns-appointment-picker` is used to select a date and time slot for an appointment. The component is comprised of a `ns-calendar` to pick the date, and a `ns-inputter` to show the available time slots for the selected date.
+`ns-appointment-picker` is used to select a date and time slot for an appointment. The component is comprised of an `ns-calendar` to pick the date, and an `ns-inputter` to show the available time slots for the selected date.
 
 
 ## Best practice
