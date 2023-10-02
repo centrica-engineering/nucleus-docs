@@ -19,7 +19,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Use this when the customer needs to select a date and a time slot for an appointment | Use to select an appointment slot on a single date. Use `ns-inputter` radio options instead |
-| Use `ns-inputter` to surface the best suitable slots for a customer before presenting the full appointment picker, where appropriate. | Don't force customers to use the appointment picker first if there is very poor appointment availability. Present the next available appointments in a `ns-inputter` radio first. |
+| Use `ns-inputter` to surface the best suitable slots for a customer before presenting the full appointment picker, where appropriate. | Don't force customers to use the appointment picker first if there is very poor appointment availability. Present the next available appointments in an `ns-inputter` radio first. |
 | Use `ns-alert` alongside `ns-appointment-picker` to surface any important notifications regarding a customer booking.| |
 | Use multiple appointment pickers in ns-tabs so users can easily access different types of bookings.| |
 
