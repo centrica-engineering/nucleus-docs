@@ -31,7 +31,7 @@ There is no distinciton between a hyperlink or an action through the design of `
 
 ### Differences between `direct` and `text` types
 
-The `direct` amd `text` types of `ns-cta` are there to offer hierarchical structure to the page.
+The `direct` and `text` types of `ns-cta` are there to offer hierarchical structure to the page.
 
 The `direct` type has a more emphasised affordance, therefore it can be used as the main action for that page. As it's the main action, it should be used sparingly.
 
