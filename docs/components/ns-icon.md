@@ -4,7 +4,6 @@ description: Atom | Icon component.
 
 import { StorybookStory } from '../../includes/storybook-story.js'
 import { PageFooter } from '../../includes/page-footer.js'
-import { Icons } from '../../includes/icons-illustrations.js'
 
 ## Introduction
 
@@ -41,7 +40,7 @@ The ns-icon component can be used in a number of components to help create bespo
 | Attribute    | Property | Type  | Default   | Options   | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `type` | `type` | `string` | `standard` | `standard` | Type of the icon. |
-| `name` | `name` | `string` | `arrow` | <Icons></Icons> See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--standard) | Picks the icon that is to be shown. |
+| `name` | `name` | `string` | `arrow` | `appliance`, `appliance-outline`, `appliance-solid`, `arrow`, `arrow-left`, `arrow-right`, `bill`, `bill-outline`, `bill-solid`, `boiler`, `boiler-outline`, `boiler-solid`, `calendar`, `calendar-outline`, `calendar-solid`, `chevron`, `chevron-down`, `chevron-left`, `chevron-right`, `chevron-up`, `clock`, `clock-outline`, `clock-solid`, `cross`, `download`, `electricity`, `electricity-outline`, `electricity-solid`, `energy`, `energy-outline`, `energy-solid`, `error`, `error-outline`, `error-solid`, `gas`, `gas-outline`, `gas-solid`, `hide`, `hive`, `home`, `home-outline`, `home-solid`, `info`, `info-outline`, `info-solid`, `loading`, `location`, `location-outline`, `location-solid`, `menu`, `meter`, `meter-outline`, `meter-solid`, `minus`, `payment`, `payment-outline`, `payment-solid`, `plus`, `protect`, `protect-outline`, `protect-solid`, `rewards`, `rewards-outline`, `rewards-solid`, `search`, `settings`, `show`, `spanner`, `spanner-outline`, `spanner-solid`, `success`, `success-outline`, `success-solid`, `tag`, `tag-outline`, `tag-solid`, `tick`, `user`, `user-outline`, `user-solid`, `warning`, `warning-outline`, `warning-solid` See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--standard) | Picks the icon that is to be shown. |
 | `size` | `size` | `number` | `''` | `''`, `1`, `2`, `3`, `4`, `5` | Changes the size of the icon, with 1 being the smallest. |
 
 

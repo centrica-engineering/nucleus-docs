@@ -20,7 +20,6 @@
     "@mdx-js/react": "^1.6.21",
     "axios": "^0.21.1",
     "clsx": "^1.1.1",
-    "nucleus-util": "github:ConnectedHomes/nucleus-util#semver:^1.0.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
