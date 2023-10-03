@@ -67,7 +67,7 @@ If there are multiple alerts on a page they are read:
 * from top to bottom on page load
 * in the order they have been added to the page when dynamically added
 
-We recommend you use ns-alert for their role, not for their looks.
+We recommend you use `ns-alert` for their role, not for their looks.
 
 ### Considerations of best practice
 
