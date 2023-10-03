@@ -6,6 +6,9 @@ import { StorybookStory } from '../../includes/storybook-story.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
+## Deprecated
+> This component is deprecated and please refer to [ns-alert](../components/ns-alert) component.
+
 ## Introduction
 
 > Highlighters can be used to communicate information or error, warning and success messages.
