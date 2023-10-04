@@ -54,11 +54,11 @@ These are all supporting actions and our recommendation is to use the `text` typ
 If there is a group of more than three actions it would be preferable to make all these CTAs the `text` type. Or to find the main action in this group and place it in an alternative, more suitable component such as `ns-lockup` or `ns-standout` to establish hierarchy.
 
 ### When to use `submit` and `reset` types
-The `submit` and `reset` types of `ns-cta` are there to facilitate the form component to do submit and reset actions respectively.
+The `submit` and `reset` types of `ns-cta` are there to facilitate  `ns-form` to do submit and reset actions respectively.
 
-The `submit` type provides native-like submit action. It can be used in the page with form to do submit action. Upon submission which automatically validates the form elements and reports warning / submits the form.
+The `submit` type is to be used in a page with `ns-form` to perform a native-like submit action. Upon submission it automatically validates the elements in `ns-form` and reports any warnings or will submit `ns-form`.
 
-The `reset` type provides native-like reset action. When wrapped in form component, `reset` type triggers reset action on all form element components enclosed within the form and reset them back to their default / initial value. 
+The `reset` type is to be used in a page with `ns-form` to perform a native-like reset action. It will reset the elements back to their default or initial value.
 
 ### Button vs link
 
@@ -134,7 +134,7 @@ The only time we present a disabled state is during the Loading state. This ensu
 | `type` | `type` |`string` | `direct` | `direct`, `text`, `submit`, `reset` | Different variants of the CTA. |
 | `href` | `href` | `string` |  |  | Navigating using a hyperlink. |
 | `icon` | `icon` | `string` | `arrow-right` | `arrow-left`, `arrow-right` See [`ns-icon` component](../components/ns-icon) | The icon inside the CTA. |
-| `loading` | `loading` | `string` | `false` | `true`, `false` | Change the state of the CTA to loading. |
+| `loading` | `loading` | `boolean` | `false` | `true`, `false` | Change the state of the CTA to loading. |
 | `loading-message` | `loadingMessage` | `string` | `Loading...` |  | Overwrites the CTA anonymous slot for the loading state. |
 
 | Slots | Type |
