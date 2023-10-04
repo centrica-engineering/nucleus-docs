@@ -14,7 +14,7 @@ Alert can be a highlighted message, toast or notification specific to the user o
 
 ## Highlighter Type
 
-The `highlighter` type of `ns-alert` can be used to communicate information or error, warning and success messages.
+The `highlighter` variant of `ns-alert` can be used to communicate information or error, warning and success messages.
 
 It communicates the message that a service is not available to them or that there are technical issues on specific pages only. These messages are different to global messages as they only apply to some pages not site wide.
 
