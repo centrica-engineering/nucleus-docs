@@ -3,7 +3,6 @@ description: Molecule | Card component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -189,8 +188,6 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 
 * Only for `section` types
 * This should be an anchor with the [ns-cta](../components/ns-cta) or just the [ns-cta](../components/ns-cta)
-
-<Tokens component="card"></Tokens>
 
 ## Feedback
 

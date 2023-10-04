@@ -3,7 +3,6 @@ description: Atom | Testimonial component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -54,8 +53,6 @@ Use within `ns-column` to display the desired layout of multiple testimonials.
 | author | `string` |  |  | The name or handle of the author that provided the quote. |
 | medium | `string` |  |  | The name of the platform that the author used to leave their message eg. twitter.|
 | quote | `string` |  |  | What the author wrote or said. |
-
-<Tokens component="testimonial"></Tokens>
 
 ## Feedback
 

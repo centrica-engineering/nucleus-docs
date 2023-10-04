@@ -3,7 +3,6 @@ description: Atom | Column component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -105,8 +104,6 @@ This is how your markup would look like:
   </div>
 </ns-column>
 ```
-
-<Tokens component="column"></Tokens>
 
 ## Feedback
 

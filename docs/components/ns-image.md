@@ -3,7 +3,6 @@ description: Atom | Image component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -17,15 +16,15 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 | Component | Variant | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [`ns-card`](components/ns-card.md)| `support` | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-card-support-640x360px](https://user-images.githubusercontent.com/50207859/67642149-d3c91e00-f900-11e9-983c-9b812217b801.jpg) |
-| [`ns-editorial`](components/ns-editorial.md)| n/a | 4:3 | 480x360px | &lt; 50kb | jpeg | [ns-editorial-480x360px](https://user-images.githubusercontent.com/50207859/67642150-d461b480-f900-11e9-9803-5ff4df7ad9a7.jpg) |
-| [`ns-landmark`](components/ns-landmark.md)| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg | [ns-landmark-summit-1440x810px](https://user-images.githubusercontent.com/50207859/67642478-12140c80-f904-11e9-849d-5ffe39818c5b.jpg) |
-| [`ns-landmark`](components/ns-landmark.md)| `valley` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-landmark-valley-720x540px](https://user-images.githubusercontent.com/50207859/67642153-d461b480-f900-11e9-9520-11204c64a11b.jpg) |
-| [`ns-lockup`](components/ns-lockup.md)| `lockbox` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-lockup-lockbox-720x540px](https://user-images.githubusercontent.com/50207859/67642153-d461b480-f900-11e9-9520-11204c64a11b.jpg) |
-| [`ns-lockup`](components/ns-lockup.md)| `lockbox` | 1:1 | 720x720px | &lt; 100kb | jpeg | [ns-lockup-lockbox-720x720px](https://user-images.githubusercontent.com/50207859/67642154-d461b480-f900-11e9-9581-212ede25f362.jpg) |
-| [`ns-lockup`](components/ns-lockup.md)| `lockjaw` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-lockup-lockjaw-720x540px](https://user-images.githubusercontent.com/50207859/67642155-d4fa4b00-f900-11e9-9ba6-a31f61ddb0ef.jpg) |
-| [`ns-lockup`](components/ns-lockup.md)| `locknut` | 1:1 | 720x720px | &lt; 100kb | jpeg | [ns-lockup-locknut-720x720px](https://user-images.githubusercontent.com/50207859/67642156-d4fa4b00-f900-11e9-8400-548625a1648f.jpg) |
-| [`ns-selector`](components/ns-selector.md)| n/a | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-selector-640x360px](https://user-images.githubusercontent.com/50207859/68392177-1ee4fb80-0161-11ea-8826-14326d2c976a.jpg) |
+| [`ns-card`](components/ns-card.md)| `support` | 16:9 | 640x360px | &lt;50kb | .jpg | [ns-card-support-640x360px](images/ns-image/ns-card-support-640x360px.jpg) |
+| [`ns-editorial`](components/ns-editorial.md)| n/a | 4:3 | 480x360px | &lt;50kb | .jpg | [ns-editorial-480x360px](images/ns-image/ns-editorial-480x360px.jpg) |
+| [`ns-landmark`](components/ns-landmark.md)| `summit` | 16:9 | 1440x810px | &lt;200kb | .jpg | [ns-landmark-summit-1440x810px](images/ns-image/ns-landmark-summit-1440x810px.jpg) |
+| [`ns-landmark`](components/ns-landmark.md)| `valley` | 16:9 | 800x450px | &lt;100kb | .jpg | [ns-landmark-valley-800x450px](images/ns-image/ns-landmark-valley-800x450px.jpg) |
+| [`ns-landmark`](components/ns-landmark.md)| `valley` | 4:3 | 800x600px | &lt;100kb | .jpg | [ns-landmark-valley-800x600px](images/ns-image/ns-landmark-valley-800x600px.jpg) |
+| [`ns-lockup`](components/ns-lockup.md)| n/a | 16:9 | 800x450px | &lt;100kb | .jpg | [ns-lockup-800x450px](images/ns-image/ns-lockup-800x450px.jpg) |
+| [`ns-lockup`](components/ns-lockup.md)| n/a | 4:3 | 800x600px | &lt;100kb | .jpg | [ns-lockup-800x600px](images/ns-image/ns-lockup-800x600px.jpg) |
+| [`ns-lockup`](components/ns-lockup.md)| n/a | 1:1 | 800x800px | &lt;100kb | .jpg | [ns-lockup-800x800px](images/ns-image/ns-lockup-800x800px.jpg) |
+| [`ns-selector`](components/ns-selector.md)| n/a | 16:9 | 640x360px | &lt;50kb | .jpg | [ns-selector-640x360px](images/ns-image/ns-selector-640x360px.jpg) |
 
 ## Best practice
 
@@ -75,8 +74,6 @@ British Gas has a variety of images to enhance content on the website and helps 
 ### Background
 
 - This is only for decorative images
-
-<Tokens component="image"></Tokens>
 
 ## Feedback
 

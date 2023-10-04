@@ -3,7 +3,6 @@ description: Molecule | Fieldset component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -48,8 +47,6 @@ When adding radio buttons and checkboxes to `ns-inputter` inside an `ns-fieldset
 | Slots | Type |
 | :--- | :--- |
 | Anonymous | ns-inputters |
-
-<Tokens component="fieldset"></Tokens>
 
 ## Feedback
 

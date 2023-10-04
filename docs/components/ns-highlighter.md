@@ -3,7 +3,6 @@ description: Organism | Highlighter component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -105,8 +104,6 @@ The message must be in plain English, and help the user out of the situation by 
 ### Heading
 
 * This should be a heading level 2
-
-<Tokens component="highlighter"></Tokens>
 
 ## Feedback
 

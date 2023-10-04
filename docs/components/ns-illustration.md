@@ -3,7 +3,6 @@ description: Atom | Illustration component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
@@ -59,8 +58,6 @@ The ns-illustration component can be used in a number of components to help crea
 If you are looking to create a new illustration, please check if there is not something similar already in use. If there is no suitable option, liaise with the brand team to define a new one and let us know so we can help with the required specification for adding it to the design system.
 
 Read our [illustration foundation page](foundations/illustrations.md#creating-new-illustrations) for more information on creating illustrations.
-
-<Tokens component="illustration"></Tokens>
 
 ## Feedback
 

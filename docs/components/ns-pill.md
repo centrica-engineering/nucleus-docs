@@ -3,7 +3,6 @@ description: Atom | Pill component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -74,8 +73,6 @@ There are a range of colours to choose from (see the specifications below). Try 
 ## Specification notes
 
 When an icon is supplied the pill will use the media object pattern.
-
-<Tokens component="pill"></Tokens>
 
 ## Feedback
 

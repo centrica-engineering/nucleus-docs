@@ -3,7 +3,6 @@ description: Molecule | Selector component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -103,8 +102,6 @@ When used in ns-column, ns-column must be a child of ns-inputter:
 | :--- | :--- | :--- |
 | `description` | `div` | Mandatory when using with `decoration` attribute and optional when using with `image` attribute |
 | `anonymous` | `input` `label` |
-
-<Tokens component="selector"></Tokens>
 
 ## Feedback
 

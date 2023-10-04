@@ -68,6 +68,15 @@ If you are looking to create a new icon then please check there is not something
 - Text shouldn't be added to an icon as this will break accessibility.
 - Icons are only one colour.
 - Minimise the number of anchor points as much as possible; every anchor point will add to the file weight as we export icons in SVG format, not bitmaps.
+- Adhere to the icon naming convention.
+
+### Icon naming convention
+
+When creating icons we use a naming convention that ensures consistency and understanding.
+
+Use a descriptive name for the content within the icon. For example, if you have created a pencil icon to edit a page, call it `pencil` and not `edit`.
+
+Describe the icon itself, not how it may be used.
 
 ### Icon grid
 

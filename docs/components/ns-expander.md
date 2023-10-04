@@ -3,7 +3,6 @@ description: Molecule | Expander component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -70,8 +69,6 @@ We recommend expanders to be primarily used in `ns-accordion` and `ns-skyline`.
 | Event | Description |
 | :--- | :--- |
 | `expander-toggle` | Will be dispatched when expander is clicked to show/hide. |
-
-<Tokens component="expander"></Tokens>
 
 ## Feedback
 

@@ -3,7 +3,6 @@ description: Molecule | Date picker component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -70,8 +69,6 @@ Also see ns-inputter [specification](components/ns-inputter.md#specification)
 | Slots | Type |
 | :--- | :--- |
 | `tip-details` | `div` |
-
-<Tokens component="datepicker"></Tokens>
 
 ## Feedback
 

@@ -3,7 +3,6 @@ description: Atom | Table component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -116,8 +115,6 @@ If your table has row headers in the left-most column then place these headers i
   </tbody>
 </table>
 ```
-
-<Tokens component="table"></Tokens>
 
 ## Feedback
 

@@ -3,7 +3,6 @@ description: Atom | Icon component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
@@ -58,8 +57,6 @@ The ns-icon component can be used in a number of components to help create bespo
 If you are looking to create a new icon then please check there is not something similar already in use. If there is no suitable icon then you should let us know and we can look at creating it for the design system.
 
 Read our [icon foundation page](foundations/icons.md#creating-new-icons) for more information on creating icons.
-
-<Tokens component="icon"></Tokens>
 
 ## Feedback
 

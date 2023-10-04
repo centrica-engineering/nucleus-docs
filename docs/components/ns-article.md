@@ -3,7 +3,6 @@ description: Organism | Article component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -60,8 +59,6 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 * First children can only be a single `<ns-content>` or multiple `<section>` elements
 * Each `<section>` can only contain a single `<ns-content>`
-
-<Tokens component="article"></Tokens>
 
 ## Feedback
 

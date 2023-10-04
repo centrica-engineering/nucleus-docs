@@ -3,7 +3,6 @@ description: Molecule | Inputter component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
@@ -59,8 +58,9 @@ To match this heading's size with other `ns-inputter` labels', group all associa
 | Keep you heading/legend short | Use just one |
 | Make your labels easy to read and understand | Pre-select an option |
 | Use a label with each radio button | Place radio button side by side |
-| Associate every radio button with it's label using ID & for attributes |  |
-| Consider using a select for more than 5 |  |
+| Associate every radio button with it's label using ID & for attributes | Put links in the label |
+| Consider using a select for more than 5 | |
+
 
 ### Checkboxes
 
@@ -83,7 +83,7 @@ To match this heading's size with other `ns-inputter` labels', group all associa
 | Keep you heading/legend short | Use as lists |
 | Make your labels easy to read and understand | Use as a radio button |
 | Use only one label with each checkbox | Pre-select any option(s) |
-| Allow user to opt in as opposed to opt out |  |
+| Allow user to opt in as opposed to opt out | Put links in the label |
 | Consider splitting question out for when more than 5 checkboxes are required |  |
 
 ### Inline variant of Radio buttons and Checkboxes
@@ -166,6 +166,8 @@ Every input requires a label. Your labels should be easy to read and understand.
 | Use `<label>` element | Add classes to labels |
 | Use sentence case | Use as links |
 | Only use text | Rely on placeholders |
+|  | Put links in the label |
+
 
 ### Helper text
 
@@ -355,8 +357,6 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
   - isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode.  This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function.  eg. `isPostcode(true)`
 
   - isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number.  This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function.  eg. `isPhoneNumber(true)`
-
-<Tokens component="inputter"></Tokens>
 
 ## Feedback
 
