@@ -79,6 +79,8 @@ The message must be in plain English, and help the user out of the situation by 
 
 ## Best practice
 
+### Highlighter variant
+
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Keep the messages concise |  Use for generic message that is not in context to the page it is displayed in |
