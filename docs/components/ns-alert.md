@@ -23,6 +23,8 @@ e.g. a message that says the top up service is not available would only apply to
 
 ### Content guidance
 
+#### Highlighter variant
+
 ![Alert - Highlighter - Error state](images/ns-highlighter/content-guidance.webp)
 
 | Key | Field type | Guidelines |
