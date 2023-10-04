@@ -34,7 +34,7 @@ e.g. a message that says the top up service is not available would only apply to
 | C | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | D | Accent | This is to support the context of the messaging. This colour matches that of the icon. |
 
-The content for `highlighter` type is dependent on the state that is used:
+The content for the  `highlighter` variant is dependent on the state that is used:
 
 ### Error messages
 
