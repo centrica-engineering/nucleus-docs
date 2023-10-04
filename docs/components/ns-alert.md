@@ -12,7 +12,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 Alert can be a highlighted message, toast or notification specific to the user or to the page the user is navigated.
 
-## Highlighter Type
+## Highlighter variant
 
 The `highlighter` variant of `ns-alert` can be used to communicate information or error, warning and success messages.
 
