@@ -19,7 +19,7 @@ The address selector is a multi-functional experience pattern that can be used f
 ### Markup
 
 ```markup
-<nsx-address-selector postcode="AA12 3BB" addresses="arrayOfAddresses" allowmanualaddress></nsx-address-selector>
+<nsx-address-selector postcode="AA12 3BB" addresses="arrayOfAddresses" allow-manual-address></nsx-address-selector>
 ```
 ### Anonymous customer
 

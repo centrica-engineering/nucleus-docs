@@ -46,9 +46,9 @@ To prevent users with cognitive disabilities from being overwhelmed; the shimmer
 
 ## Specification
 
-| Attribute    | Type | Default   | Options   | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `type` | `string` | `text` | `text`, `paragraph`, `heading`, `subheading` | Visual element it is representing |
+| Attribute | Property |  Type | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type` | `type` | `string` | `text` | `text`, `paragraph`, `heading`, `subheading` | Visual element it is representing |
 
 ## Specification notes
 

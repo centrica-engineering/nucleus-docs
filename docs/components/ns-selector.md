@@ -90,13 +90,11 @@ When used in ns-column, ns-column must be a child of ns-inputter:
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `checked` | `string` |  |  | Check the value. |
-| `decoration` | `string` |  |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)| Illustration that is show in the section type card |
-| `image`      | `string` |  |  | Optional image |
-| `value` | `any`     |  |  | Value of selection |
-| `keyline` | `string` | none |`cyan`, `lime`, `navy`, `blue`, `forest`, `slate`, `orange`, `red`, `yellow` | Add a colour across the top of the selector |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `decoration` | `decoration` | `string` |  |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)| Illustration that is show in the section type card |
+| `image`      | `image`      | `string` |  |  | Optional image |
+| `keyline`    | `keyline`    | `string` | none |`cyan`, `lime`, `navy`, `blue`, `forest`, `slate`, `orange`, `red`, `yellow` | Add a colour across the top of the selector |
 
 | Slots | Type | Description |
 | :--- | :--- | :--- |

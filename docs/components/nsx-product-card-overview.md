@@ -11,10 +11,10 @@ The product card overview is an experience pattern that can be used to compare H
 
 ## Content guidance
 
-Wrap the overview component in `ns-panel` and use its `decoration` attribute for decoration. It is possible to use any [decoration](ns-panel#specification) for ns-panel. However we recommend to use **only** `invert-concave-grey-light` decoration for better accessibility of the contents inside the overview component.
+Wrap the overview component in `ns-panel` and use its `decoration` attribute for decoration. It is possible to use any [decoration](ns-panel#specification) for ns-panel. However we recommend to use **only** `grey-light` decoration for better accessibility of the contents inside the overview component.
 
 ```markup
-<ns-panel decoration="invert-concave-grey-light">
+<ns-panel decoration="grey-light">
     <nsx-product-card-overview></nsx-product-card-overview>
 </ns-panel>
 ```
@@ -80,7 +80,7 @@ now: {
 | Attribute | Property | Type | Default | Options | Description |
 | :--- | :--- |:--- | :--- | :--- | :------ |
 | `pricing` | `pricing` | `array` | `[]` | `required` | The list of price values to be updated in the product card price slots. Each product card price has `monthly`, `annually` and `excess` values. `monthly` price holds  `was` and `now` price. `was` price represents the original price and `now` price represents the current price of the product. The `now` value can also be an object to support primary and secondary values. See the 'With Monthly Now Primary/Secondary' example above for more details. |
-| `price-heading` |  `priceHeading` | `string` | `Estimated Price` | `optional` | The product card price heading prefix used to display in product card price heading slot along with excess value if any|
+| `price-heading` |  `priceheading` | `string` | `Estimated Price` | `optional` | The product card price heading prefix used to display in product card price heading slot along with excess value if any|
 | `excess` | `excess` | `array` | `[]` | `optional` | The list of excess prices that will be displayed as radio options to the user for excess selection|
 | `initial-excess` | `initialExcess` | `number` | | `optional` | The excess value that will be selected in the radio options by default. |
 

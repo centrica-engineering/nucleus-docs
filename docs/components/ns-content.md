@@ -46,9 +46,9 @@ Both `ns-image` and `ns-video` need to be wrapped in a `<figure>` element
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `spacing` | `string` | 'normal' | 'compact','cosy','normal','loose' | The space between the elements |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `spacing` | `spacing` | `string` | `normal` | `compact`, `cosy`, `normal`, `loose` | The space between the elements. |
 
 | Slots | Type |
 | :--- | :--- |
