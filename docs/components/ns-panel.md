@@ -55,7 +55,7 @@ Another way to adjust the layout is to use the `ns-content` component within `ns
 
 ## Usage
 
-<StorybookStory story="components-ns-panel--content"></StorybookStory>
+<StorybookStory story="components-ns-panel--standard"></StorybookStory>
 
 ## Component placement
 

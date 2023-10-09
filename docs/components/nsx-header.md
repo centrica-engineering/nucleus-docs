@@ -31,7 +31,7 @@ The subheadings and links for the navigation can be passed in for each section t
 
 ## Usage
 
-<StorybookStory story="nsx-header--standard"></StorybookStory>
+<StorybookStory story="experiences-nsx-header--standard"></StorybookStory>
 
 ## Component placement
 

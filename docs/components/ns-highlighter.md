@@ -78,7 +78,7 @@ The message must be in plain English, and help the user out of the situation by 
 
 ## Usage
 
-<StorybookStory story="components-ns-highlighter--error"></StorybookStory>
+<StorybookStory story="deprecated-ns-highlighter--standard"></StorybookStory>
 
 ## Component placement
 
