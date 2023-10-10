@@ -116,7 +116,7 @@ Selects should be used to select an item from a list of many choices. Selects ca
 
 ![Select](images/ns-inputter/select.webp)
 
-[See `<ns-inputter>` select on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--select).
+[See `<ns-inputter>` select on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-components-ns-inputter--select).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
