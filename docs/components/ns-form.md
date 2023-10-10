@@ -10,7 +10,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 > The form component is used to collect customer input and provide personal experience to customer based on their needs.
 
-The `ns-form` component mimics the native form element features. It's main purpose is to collect customer input and validate the input before sending them to processing.
+The `ns-form` component mimics the native form element features. It's main purpose is to allow customers to provide data and validate the data before sending them to processing.
 
 ## Best practises
 
@@ -21,7 +21,7 @@ The `ns-form` component mimics the native form element features. It's main purpo
 
 ### Considerations of best practises
 
-* Alyways use nucleus components inside `ns-form`, input and other native form elements shouldn't be on their own.
+* Always use nucleus components inside `ns-form`, input and other native form elements shouldn't be on their own.
 * Speak with the Nucleus team for advice on experience patterns.
 
 ## Usage
@@ -55,8 +55,6 @@ The submit event is triggered in one of two ways:
 Exceptions:
 
 * Nested ns-forms will not dispatch the submit event to a parent ns-form
-* The nsx-address selector will dispatch a submit event as it is a self contained experience.
-
 
 #### Handling submit events
 
