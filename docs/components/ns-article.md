@@ -6,12 +6,11 @@ import { StorybookStory } from '../../includes/storybook-story.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
-## Deprecated
-> This component is currently being considered for deprecation.
-
 ## Introduction
 
 > `ns-article` is used to display long-form content
+>
+> **Note:** This component is currently being considered for deprecation.
 
 `ns-article` has been designed to be used to house content for a variety of long-form content such as blogs, editorials and support articles. Each use of the ns-article should be split into easy to consume chapters or sections.
 

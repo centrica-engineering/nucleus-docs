@@ -6,12 +6,11 @@ import { StorybookStory } from '../../includes/storybook-story.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
-## Deprecated
-> This component is currently being considered for deprecation.
-
 ## Introduction
 
 > ns-content is used to display typography and media.
+>
+> **Note:** This component is currently being considered for deprecation.
 
 `ns-content` is used inside other components and has been created to help add consistency to typography styling, and to improve how typography interacts with other components.
 

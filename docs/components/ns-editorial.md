@@ -6,12 +6,11 @@ import { StorybookStory } from '../../includes/storybook-story.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
 
-## Deprecated
-> This component is currently being considered for deprecation.
-
 ## Introduction
 
 > The editorial component is a self-contained or supporting piece of content that is more informative than promotional in nature. In some cases, it is necessary to explain something in more detail without the user needing to take an immediate action.
+>
+> **Note:** This component is currently being considered for deprecation.
 
 ## Content guidance
 
