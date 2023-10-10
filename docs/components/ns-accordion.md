@@ -39,7 +39,7 @@ If there isn't a inherent logical order to the expanders, use alphabetical order
 
 ## Usage
 
-<StorybookStory story="components-ns-accordion--singular"></StorybookStory>
+<StorybookStory story="components-ns-accordion--standard"></StorybookStory>
 
 ## Component placement
 
