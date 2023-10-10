@@ -117,7 +117,7 @@ In the above example the screen reader will read out "Special Offer Get energy w
 If using with a type of `support` with an image. There is also the option to place the pill over the image using the `pillOverImage` attribute. Note the `ns-pill` will need to be in the `paragraph` slot as it is no longer related to the heading.
 
 ```markup
-<ns-card type="support" image="path/to/image" pillOverImage>
+<ns-card type="support" image="path/to/image" pill-over-image>
   <h3 slot="heading">
     Get energy with us
   </h3>
@@ -139,13 +139,13 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `alt`        | `string` |           |           | The alternative text for the image |
-| `decoration` | `string` |           |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--standard) and See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--error) | Illustration that is shown in the section type card and Icon used in ns-highlighter |
-| `image`      | `string` |           |           | Adds an image above the card content for the support |
-| `type`       | `string` | "section" | "section", "support", "flat" | Defines the role of the card and changing the style |
-| `pillOverImage` | `boolean` |       |           | Used to put the pill in the top left of the image when using `type="support"` and an image | 
+| Attribute   | Property | Type | Default | Options | Description |
+| :------ | :--- | :--- | :--- | :--- | :------------- |
+| `alt`        | `alt`        | `string` |           |           | The alternative text for the image |
+| `decoration` | `decoration` | `string` |           | See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--standard) and See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--error) | Illustration that is shown in the section type card and Icon used in ns-highlighter |
+| `image`      | `image`      | `string` |           |           | Adds an image above the card content for the support card |
+| `type`       | `type`       | `string` | `section` | `section`, `support`, `flat` | Defines the role of the card and changing the style |
+| `pill-over-image` | `pillOverImage` | `boolean` |   |   | Used to put the pill in the top left of the image when using `type="support"` and an image | 
 
 ### Support and Flat
 

@@ -54,10 +54,11 @@ The `ns-live` component can be used to wrap any html elements but be aware that 
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `busy` | `boolean` | `false` | | Add to component to show the loading icon and busy message |
-| `busymessage` | `string` | `Updating` | | The message to show when the area of the page is updating |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `busy` | `busy` | `boolean` | `false` | | Add to component to show the loading icon and busy message |
+| `busy-message` | `busyMessage` | `string` | `Updating` | | The message to show when the area of the page is updating |
+| `aria-live` | `_ariaLive` | `string` | `polite` |  | 
 
 | Slots | Type |
 | :--- | :--- |

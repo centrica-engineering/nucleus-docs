@@ -66,9 +66,9 @@ The ns-panel component can be used in the following elements/components:
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `decoration` | `string` | (no decoration) | `cyan`, `lime`, `navy`, `blue`, `forest`, `slate`, `orange`, `red`, `yellow`, `white`, `grey-light` | Decoration for the background, including the colour. |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `decoration` | `decoration` | `string` | (no decoration) | `cyan`, `lime`, `navy`, `blue`, `forest`, `slate`, `orange`, `red`, `yellow`, `white`, `grey-light` | Decoration for the background, including the colour. |
 
 | Slots | Type |
 | :--- | :--- |

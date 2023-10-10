@@ -42,15 +42,15 @@ The default choice of header across the main British Gas UK home site should be 
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `primary`    | `array` |  |  | Primary navigation heading, subheadings and links |
-| `secondary`    | `array` |  |  | Secondary navigation links and buttons |
-| `logo`    | `string` | `https://www.britishgas.co.uk/nucleus/images/logo.svg` |  |URL to point to logo |
-| `alt`    | `string` | `British Gas` |  | Alternative text for logo |
-| `hide-links` | `boolean` | `false` | `true`,`false` | Hide navigation and related navigational elements |
-| `no-root-link` | `boolean` | `false` | `true`,`false` | Remove the link from the logo |
-| `skip-subdomain` | `string` |  |  | Remove subdomain from root URL |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `primary`   | `primary`    | `array` |  |  | Primary navigation heading, subheadings and links |
+| `secondary` | `secondary`    | `array` |  |  | Secondary navigation links and buttons |
+| `logo`      | `logo`    | `string` | `https://www.britishgas.co.uk/nucleus/images/logo.svg` |  |URL to point to logo |
+| `alt`       | `alt`     | `string` | `British Gas` |  | Alternative text for logo |
+| `hide-links`| `hideLinks` | `boolean` | `false` | `true`, `false` | Hide navigation and related navigational elements |
+| `no-root-link` | `noRootLink` | `boolean` | `false` | `true`, `false` | Remove the link from the logo |
+| `skip-subdomain` | `skipSubdomain` | `string` |  |  | Remove subdomain from root URL |
 
 | Event | Description |
 | :--- | :--- |

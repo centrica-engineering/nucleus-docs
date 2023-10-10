@@ -139,7 +139,7 @@ The only time we present a disabled state is during the Loading state. This ensu
 
 | Slots | Type |
 | :--- | :--- |
-| Anonymous | textNode |
+| Anonymous | `textNode` |
 
 ## Specification notes
 

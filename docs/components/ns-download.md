@@ -65,15 +65,15 @@ The one exception to this rule is in forms as there are often challenges around 
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `href` | `string` | | Suffixed by `.pdf`,`.xls` | The url for the file to be downloaded (including file extension) |
-| `fileType` | `string` | | `pdf`, `xls` | If `href` doesn't have an extension, provide file type in this attribute. |
-| `fileSize` | `string` | | Units 'B','kB', 'MB', 'GB' | The size of the file to be downloaded (including unit).|
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `href` | `href` | `string` | | Suffixed by `.pdf`,`.xls` | The url for the file to be downloaded (including file extension) |
+| `fileType` | `fileType` | `string` | | `pdf`, `xls` | If `href` doesn't have an extension, provide file type in this attribute. |
+| `fileSize` | `fileSize` | `string` | | Units 'B','kB', 'MB', 'GB' | The size of the file to be downloaded (including unit).|
 
 | Slots | Type |
 | :--- | :--- |
-| Anonymous | textNode |
+| Anonymous | `textNode` |
 
 ### Specification notes
 

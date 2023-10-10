@@ -56,9 +56,9 @@ The component is not announced to screen readers upfront, to help differentiate 
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `decoration` | `string`  | `cyan` | `cyan`, `lime`, `navy`, `blue`, `forest`, `slate`, `orange`, `red`, `yellow` | Colour of border |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `decoration` | `decoration` | `string`  | `cyan` | `cyan`, `lime`, `navy`, `blue`, `forest`, `slate`, `orange`, `red`, `yellow` | Colour of border |
 
 | Slots | Type |
 | :--- | :--- |

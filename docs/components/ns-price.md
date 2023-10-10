@@ -43,11 +43,11 @@ ns-price can be used in any html text element.
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `pence` | `string` | `0` | | The value in pence that is to be displayed |
-| `showDecimal` | `boolean` | `false` | | Set true to show ".00" when there are whole pound values |
-| `negative` | `boolean` | `false` | | Set true to show a minus symbol at the start of the number |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `pence` | `pence` | `string` | `0` | | The value in pence that is to be displayed |
+| `show-decimal` | `showDecimal` | `boolean` | `false` | | Set true to show ".00" when there are whole pound values |
+| `negative` | `negative` | `boolean` | `false` | | Set true to show a minus symbol at the start of the number |
 
 ## Specification notes
 
