@@ -100,7 +100,7 @@ For example
 
 ### Image
 
-* Check the [ns-image documentation](/components/ns-image) for more information.
+* Check the [ns-image documentation](./ns-image) for more information.
 
 ### Name and price-heading
 
@@ -109,7 +109,7 @@ For example
 ### Price
 
 * Use multiple `<p>` containing `<ns-price>`
-* Check the [ns-price documentation](/components/ns-price) for more information.
+* Check the [ns-price documentation](./ns-price) for more information.
 
 ### Description
 
@@ -118,12 +118,12 @@ For example
 ### Expander
 
 * Multiple expanders may be used
-* Check the [ns-expander documentation](/components/ns-expander) for more information.
+* Check the [ns-expander documentation](./ns-expander) for more information.
 
 ### CTA
 
 * Should always have a href
-* Check the [ns-cta documentation](/components/ns-image) for more information.
+* Check the [ns-cta documentation](./ns-image) for more information.
 
 ## Feedback
 

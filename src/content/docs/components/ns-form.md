@@ -175,5 +175,5 @@ A **valid validate return response** looks like:
 
 ## Related links
 
-* [ns-inputter](/components/ns-inputter)
-* [ns-fieldset](/components/ns-fieldset)
+* [ns-inputter](./ns-inputter)
+* [ns-fieldset](./ns-fieldset)

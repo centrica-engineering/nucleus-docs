@@ -29,11 +29,11 @@ In the following examples, the expander is used in an accordion and in a selecto
 | Use headings, paragraphs, lists for content | Use as a solution to excessive copy on a page |
 | Make sure the heading in the heading slot relates to content | Nest expanders within expanders |
 | Use a coloured expander to draw attention to a promotion in an expander on a product card | Use multiple coloured expanders on one page|
-|  | Use a coloured expander to draw attention to a warning message. Use [ns-highlighter](/components/ns-highlighter) or [ns-skyline](/components/ns-skyline) instead. |
+|  | Use a coloured expander to draw attention to a warning message. Use [ns-highlighter](./ns-highlighter) or [ns-skyline](./ns-skyline) instead. |
 
 ### Considerations of best practice
 
-- If you are using the expander in a series of [product cards](/components/ns-product-card) and you have a promotion, you can use multiple expanders on the same page to provide additional information on that promotion.
+- If you are using the expander in a series of [product cards](./ns-product-card) and you have a promotion, you can use multiple expanders on the same page to provide additional information on that promotion.
 - You can put any media inside the expanders, but be wary of the size of said media and how it will render.
 - When using multiple expanders without an accordion, consider adding a heading to introduce them. If you don't, the nearest higher-level heading preceding the expanders will be the one setting the theme. 
 
@@ -75,5 +75,5 @@ We recommend expanders to be primarily used in `ns-accordion` and `ns-skyline`.
 
 ## Related links
 
-* [ns-accordion](/components/ns-accordion)
-* [ns-skyline](/components/ns-skyline)
+* [ns-accordion](./ns-accordion)
+* [ns-skyline](./ns-skyline)

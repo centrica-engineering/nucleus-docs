@@ -12,15 +12,15 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 | Component | Variant | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [`ns-card`](/components/ns-card)| `support` | 16:9 | 640x360px | &lt;50kb | .jpg | [ns-card-support-640x360px](../../../assets/ns-image/ns-card-support-640x360px.jpg) |
-| [`ns-editorial`](/components/ns-editorial)| n/a | 4:3 | 480x360px | &lt;50kb | .jpg | [ns-editorial-480x360px](../../../assets/ns-image/ns-editorial-480x360px.jpg) |
-| [`ns-landmark`](/components/ns-landmark)| `summit` | 16:9 | 1440x810px | &lt;200kb | .jpg | [ns-landmark-summit-1440x810px](../../../assets/ns-image/ns-landmark-summit-1440x810px.jpg) |
-| [`ns-landmark`](/components/ns-landmark)| `valley` | 16:9 | 800x450px | &lt;100kb | .jpg | [ns-landmark-valley-800x450px](../../../assets/ns-image/ns-landmark-valley-800x450px.jpg) |
-| [`ns-landmark`](/components/ns-landmark)| `valley` | 4:3 | 800x600px | &lt;100kb | .jpg | [ns-landmark-valley-800x600px](../../../assets/ns-image/ns-landmark-valley-800x600px.jpg) |
-| [`ns-lockup`](/components/ns-lockup)| n/a | 16:9 | 800x450px | &lt;100kb | .jpg | [ns-lockup-800x450px](../../../assets/ns-image/ns-lockup-800x450px.jpg) |
-| [`ns-lockup`](/components/ns-lockup)| n/a | 4:3 | 800x600px | &lt;100kb | .jpg | [ns-lockup-800x600px](../../../assets/ns-image/ns-lockup-800x600px.jpg) |
-| [`ns-lockup`](/components/ns-lockup)| n/a | 1:1 | 800x800px | &lt;100kb | .jpg | [ns-lockup-800x800px](../../../assets/ns-image/ns-lockup-800x800px.jpg) |
-| [`ns-selector`](/components/ns-selector)| n/a | 16:9 | 640x360px | &lt;50kb | .jpg | [ns-selector-640x360px](../../../assets/ns-image/ns-selector-640x360px.jpg) |
+| [`ns-card`](./ns-card)| `support` | 16:9 | 640x360px | &lt;50kb | .jpg | [ns-card-support-640x360px](../../../assets/ns-image/ns-card-support-640x360px.jpg) |
+| [`ns-editorial`](./ns-editorial)| n/a | 4:3 | 480x360px | &lt;50kb | .jpg | [ns-editorial-480x360px](../../../assets/ns-image/ns-editorial-480x360px.jpg) |
+| [`ns-landmark`](./ns-landmark)| `summit` | 16:9 | 1440x810px | &lt;200kb | .jpg | [ns-landmark-summit-1440x810px](../../../assets/ns-image/ns-landmark-summit-1440x810px.jpg) |
+| [`ns-landmark`](./ns-landmark)| `valley` | 16:9 | 800x450px | &lt;100kb | .jpg | [ns-landmark-valley-800x450px](../../../assets/ns-image/ns-landmark-valley-800x450px.jpg) |
+| [`ns-landmark`](./ns-landmark)| `valley` | 4:3 | 800x600px | &lt;100kb | .jpg | [ns-landmark-valley-800x600px](../../../assets/ns-image/ns-landmark-valley-800x600px.jpg) |
+| [`ns-lockup`](./ns-lockup)| n/a | 16:9 | 800x450px | &lt;100kb | .jpg | [ns-lockup-800x450px](../../../assets/ns-image/ns-lockup-800x450px.jpg) |
+| [`ns-lockup`](./ns-lockup)| n/a | 4:3 | 800x600px | &lt;100kb | .jpg | [ns-lockup-800x600px](../../../assets/ns-image/ns-lockup-800x600px.jpg) |
+| [`ns-lockup`](./ns-lockup)| n/a | 1:1 | 800x800px | &lt;100kb | .jpg | [ns-lockup-800x800px](../../../assets/ns-image/ns-lockup-800x800px.jpg) |
+| [`ns-selector`](./ns-selector)| n/a | 16:9 | 640x360px | &lt;50kb | .jpg | [ns-selector-640x360px](../../../assets/ns-image/ns-selector-640x360px.jpg) |
 
 ## Best practice
 
@@ -82,4 +82,4 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 * How to optimise images [guide](/foundations/photography#optimise-your-images).
 * Brand image [library](https://centrica.frontify.com/d/pDUbkrcf54Nh/our-assets).
-* [ns-card](/components/ns-card)
+* [ns-card](./ns-card)

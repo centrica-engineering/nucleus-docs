@@ -8,7 +8,7 @@ title: ns-password
 
 The ns-password component has been developed to include a set of features that help a user not only enter a password but can accommodate their need to create one too.
 
-This component wraps our ns-inputter component. Guidelines defined on the ns-inputter should also be considered when using this component. See [ns-inputter](/components/ns-inputter) documentation.
+This component wraps our ns-inputter component. Guidelines defined on the ns-inputter should also be considered when using this component. See [ns-inputter](./ns-inputter) documentation.
 
 ## Content guidance
 
@@ -84,16 +84,16 @@ The Standard variant just uses a single validation requirement that appears if t
 
 ## Specification
 
-Also see ns-inputter [specification](/components/ns-inputter#specification)
+Also see ns-inputter [specification](./ns-inputter#specification)
 
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `type` |  `string`  | `default` | [`default`, `confirm`] | The type of the password component. Use `default` type for login journey and `confirm` type for registration journey. |
 | `value`   | `string` | `''` |  | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an initial value. |
-| `helper` | `string` |  |  | See [ns-inputter](/components/ns-inputter#specification). |
-| `tip` | `string` |  |  | See [ns-inputter](/components/ns-inputter#specification). |
-| `name` | `string` | `password` |  | See [ns-inputter](/components/ns-inputter#specification). |
-| `passwordValidation` | `array` | `['hasNumbers', 'hasLetters', 'isBetween(8, 20)']` | |  Assists a user when adding a valid password and shows an error message when they're not. See [ns-inputter](/components/ns-inputter#validation)
+| `helper` | `string` |  |  | See [ns-inputter](./ns-inputter#specification). |
+| `tip` | `string` |  |  | See [ns-inputter](./ns-inputter#specification). |
+| `name` | `string` | `password` |  | See [ns-inputter](./ns-inputter#specification). |
+| `passwordValidation` | `array` | `['hasNumbers', 'hasLetters', 'isBetween(8, 20)']` | |  Assists a user when adding a valid password and shows an error message when they're not. See [ns-inputter](./ns-inputter#validation)
 | `label` |  `string`  | `Password` |  | The value of the label for password field. |
 | `confirmLabel` |  `string`  | `Confirm Password` |  | The value of the label for confirm password field. This attribute is used along with `confirm` type. |
 
@@ -106,5 +106,5 @@ Also see ns-inputter [specification](/components/ns-inputter#specification)
 
 ## Related links
 
-* [ns-inputter](/components/ns-inputter)
-* [ns-form](/components/ns-fieldset)
+* [ns-inputter](./ns-inputter)
+* [ns-form](./ns-fieldset)

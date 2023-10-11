@@ -228,4 +228,4 @@ Using Photoshop to overlay the Landmark focus template to check alignment. (You 
 
 ## Related links
 
-* [ns-pill](/components/ns-pill)
+* [ns-pill](./ns-pill)

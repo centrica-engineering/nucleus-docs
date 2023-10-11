@@ -6,13 +6,13 @@ title: ns-slot-picker
 
 > The `ns-slot-picker` allows you to select a suitable time slot from a single date or multiple dates and times.
 
-If you require your customers to select a time slot, the `ns-slot-picker` component is ideal. A typical use would be for booking appointments. You can display time slots for a single day or multiple days. Use it either by itself or in conjunction with [ns-appointment-picker](/components/ns-appointment-picker).
+If you require your customers to select a time slot, the `ns-slot-picker` component is ideal. A typical use would be for booking appointments. You can display time slots for a single day or multiple days. Use it either by itself or in conjunction with [ns-appointment-picker](./ns-appointment-picker).
 
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use when the customer needs to select a specific appointment slot from a known selection of dates | Use this when there are many (more than 5) dates to choose from, use [ns-appointment-picker](/components/ns-appointment-picker) |
+| Use when the customer needs to select a specific appointment slot from a known selection of dates | Use this when there are many (more than 5) dates to choose from, use [ns-appointment-picker](./ns-appointment-picker) |
 | Use to present a number of suitable slots in advance to a customer |  |
 | Use to help a customer find the soonest appointment time when there is poor availability |  |
 

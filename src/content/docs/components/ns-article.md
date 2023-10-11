@@ -64,4 +64,4 @@ title: ns-article
 
 ## Related links
 
-* [ns-content](/components/ns-content)
+* [ns-content](./ns-content)

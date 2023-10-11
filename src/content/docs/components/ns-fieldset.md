@@ -53,5 +53,5 @@ Note: When adding radio buttons and checkboxes to `ns-inputter` inside an `ns-fi
 
 ## Related links
 
-* [ns-form](/components/ns-form)
-* [ns-inputter](/components/ns-inputter)
+* [ns-form](./ns-form)
+* [ns-inputter](./ns-inputter)

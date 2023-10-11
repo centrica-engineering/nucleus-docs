@@ -6,7 +6,7 @@ title: ns-accordion
 
 > Accordion enables users to expand and collapse multiple sections of content.
 
-We use accordions to break down content into meaningful sections, helping to reduce information overload. Accordions are useful for things like frequently asked questions or displaying multiple blocks of related content inside an [ns-expander](/components/ns-expander).
+We use accordions to break down content into meaningful sections, helping to reduce information overload. Accordions are useful for things like frequently asked questions or displaying multiple blocks of related content inside an [ns-expander](./ns-expander).
 
 ## Content guidance
 
@@ -15,7 +15,7 @@ We use accordions to break down content into meaningful sections, helping to red
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total.  |
-| B | Content | Use between 1 and 8 [ns-expander](/components/ns-expander) components. All expanders need to be related to the accordion's heading.|
+| B | Content | Use between 1 and 8 [ns-expander](./ns-expander) components. All expanders need to be related to the accordion's heading.|
 
 ## Best practice
 
@@ -29,7 +29,7 @@ We use accordions to break down content into meaningful sections, helping to red
 
 ### Considerations of best practises
 
-If you need more than 8 [ns-expander](/components/ns-expander) components, you can use more than one accordion on the page.
+If you need more than 8 [ns-expander](./ns-expander) components, you can use more than one accordion on the page.
 
 If there isn't a inherent logical order to the expanders, use alphabetical order for ease of scanning.
 
@@ -58,7 +58,7 @@ If there isn't a inherent logical order to the expanders, use alphabetical order
 ### Anonymous
 
 * Place ns-expanders into this slot.
-* Check the [ns-expander documentation](/components/ns-expander) for more information.
+* Check the [ns-expander documentation](./ns-expander) for more information.
 
 ## Feedback
 

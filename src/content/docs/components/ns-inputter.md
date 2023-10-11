@@ -14,7 +14,7 @@ The ns-inputter is a multi-purpose wrapper component that helps with the display
 
 These types of inputs are used to help customers enter and select information.
 
-If you would like to use a password input then please see the [ns-password](/components/ns-password) component.
+If you would like to use a password input then please see the [ns-password](./ns-password) component.
 
 ## Most common input types
 
@@ -134,7 +134,7 @@ You can [see an example of `<ns-inputter>` textarea here](https://www.britishgas
 
 ### Date input
 
-Use the [`ns-datepicker` component](/components/ns-datepicker) instead.
+Use the [`ns-datepicker` component](./ns-datepicker) instead.
 
 ## Functionality
 
@@ -363,8 +363,8 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ## Related links
 
-- [ns-form](/components/ns-form)
-- [ns-fieldset](/components/ns-fieldset)
-- [ns-datepicker](/components/ns-datepicker)
-- [ns-password](/components/ns-password)
-- [ns-cta](/components/ns-cta)
+- [ns-form](./ns-form)
+- [ns-fieldset](./ns-fieldset)
+- [ns-datepicker](./ns-datepicker)
+- [ns-password](./ns-password)
+- [ns-cta](./ns-cta)

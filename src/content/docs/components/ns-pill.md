@@ -79,6 +79,6 @@ When an icon is supplied the pill will use the media object pattern.
 
 ## Related links
 
-* [ns-card](/components/ns-card)
-* [ns-selector](/components/ns-selector)
-* [ns-landmark](/components/ns-landmark)
+* [ns-card](./ns-card)
+* [ns-selector](./ns-selector)
+* [ns-landmark](./ns-landmark)

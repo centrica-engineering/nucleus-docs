@@ -74,4 +74,4 @@ To display correctly, `ns-content` relies on clean HTML in the anonymous slot. U
 
 ## Related links
 
-* [ns-article](/components/ns-article)
+* [ns-article](./ns-article)

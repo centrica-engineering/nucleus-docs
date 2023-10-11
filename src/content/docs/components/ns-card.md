@@ -125,7 +125,7 @@ If using with a type of `support` with an image. There is also the option to pla
 </ns-card>
 ```
 
-More details on how to use the ns-pill can be found on the [ns-pill documentation](/components/ns-pill)
+More details on how to use the ns-pill can be found on the [ns-pill documentation](./ns-pill)
 
 
 
@@ -194,6 +194,6 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 
 ## Related links
 
-* [ns-pill](/components/ns-pill)
+* [ns-pill](./ns-pill)
 * [ns-card section panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-panels--section-cards).
 * [ns-card support panel](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-panels--support-image-cards).

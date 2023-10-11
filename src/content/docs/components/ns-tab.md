@@ -10,7 +10,7 @@ The tab is the button that can be clicked to change the content in the `ns-tabs`
 
 ## Content guidance
 
-Please see [ns-tabs](/components/ns-tabs) for full content guidance.
+Please see [ns-tabs](./ns-tabs) for full content guidance.
 
 ## Best practice
 

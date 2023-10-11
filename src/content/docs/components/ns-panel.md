@@ -62,7 +62,7 @@ Another way to adjust the layout is to use the `ns-content` component within `ns
 The ns-panel component can be used in the following elements/components:
 
 * first child of `<main>`
-* [ns-tabs](/components/ns-tabs)
+* [ns-tabs](./ns-tabs)
 
 ## Specification
 

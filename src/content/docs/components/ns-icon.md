@@ -67,5 +67,5 @@ Read our [icon foundation page](foundations/icons#creating-new-icons) for more i
 
 ## Related links
 
-* [ns-cta](/components/ns-cta).
+* [ns-cta](./ns-cta).
 * Creating an engaging experience through illustrations and the difference between icons and illustrations in [Brand Guidelines](https://centrica.frontify.com/d/6307mViOlfHB/visual-identity#/illustrations/creating-an-engaging-experience-through-illustration).
