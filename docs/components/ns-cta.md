@@ -124,7 +124,7 @@ The only time we present a disabled state is during the Loading state. This ensu
 
 ## Component placement
 
-<ComponentPlacement component="ns-cta" parentComponents="ns-landmark,ns-lockup,ns-card,ns-product-card,ns-form,ns-fieldset,ns-content,ns-highlighter"></ComponentPlacement>
+<ComponentPlacement component="ns-cta" parentComponents="ns-landmark,ns-lockup,ns-card,ns-product-card,ns-form,ns-form-group,ns-content,ns-highlighter"></ComponentPlacement>
 
 
 ## Specification

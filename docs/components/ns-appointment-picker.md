@@ -76,7 +76,7 @@ const slotData = [{ date: '2020-01-28', slots: slots }, { date: '2020-01-29', sl
 
 ## Component placement
 
-<ComponentPlacement component="ns-appointment-picker" parentComponents="ns-form,ns-fieldset"></ComponentPlacement>
+<ComponentPlacement component="ns-appointment-picker" parentComponents="ns-form,ns-form-group"></ComponentPlacement>
 
 ## Feedback
 

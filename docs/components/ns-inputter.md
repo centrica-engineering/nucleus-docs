@@ -41,13 +41,13 @@ The text input is ideal for entering text that takes up a single line, such as a
 
 Radio buttons are for when customers need to select only one option from a list. If you need them to select multiple options then you should use checkboxes. If there are many items to choose from then you should consider a select instead.
 
-Radio buttons are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Are you a British Gas customer?".
+Radio buttons are usually in the form of a question - such as "Are you a British Gas customer?".
 
 #### Note on the size of the heading for radio buttons
 
 Radio buttons come with a heading that inherits size 4, which is larger than the default label size and can visually look odd when grouped with other `ns-inputters`.
 
-To match this heading's size with other `ns-inputter` labels', group all associated elements in an `ns-fieldset`. This will help keep a logical visual hierarchy when using radio buttons grouped with other inputs.
+To match this heading's size with other `ns-inputter` labels', group all associated elements in an `ns-form-group`. This will help keep a logical visual hierarchy when using radio buttons grouped with other inputs.
 
 ![Radio buttons](images/ns-inputter/radio-buttons.webp)
 
@@ -66,13 +66,13 @@ To match this heading's size with other `ns-inputter` labels', group all associa
 
 Checkboxes are for when customers can select multiple options from a list, or choose to toggle a single option on or off. If you need them to select a single option from a list then you should use radio buttons.
 
-Checkboxes are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Which British Gas services would you like to choose?".
+Checkboxes are usually in the form of a question - such as "Which British Gas services would you like to choose?".
 
 #### Note on the size of the heading for checkboxes
 
 Checkboxes come with a heading that inherits size 4, which is larger than the default label size and can visually look odd when grouped with other `ns-inputters`.
 
-To match this heading's size with other `ns-inputter` labels', group all associated elements in an `ns-fieldset`. This will help keep a logical visual hierarchy when using checkboxes grouped with other inputs.
+To match this heading's size with other `ns-inputter` labels', group all associated elements in an `ns-form-group`. This will help keep a logical visual hierarchy when using checkboxes grouped with other inputs.
 
 ![Checkboxes](images/ns-inputter/checkboxes.webp)
 
@@ -275,7 +275,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ## Component placement
 
-<ComponentPlacement component="ns-inputter" parentComponents="ns-form,ns-fieldset"></ComponentPlacement>
+<ComponentPlacement component="ns-inputter" parentComponents="ns-form,ns-form-group"></ComponentPlacement>
 
 ## Specification
 
@@ -368,7 +368,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 ## Related links
 
 - [ns-form](components/ns-form.md)
-- [ns-fieldset](components/ns-fieldset.md)
+- [ns-form-group](components/ns-form-group.md)
 - [ns-datepicker](components/ns-datepicker.md)
 - [ns-password](components/ns-password.md)
 - [ns-cta](components/ns-cta.md)
