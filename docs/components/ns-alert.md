@@ -10,7 +10,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 > Alert can be used to communicate contextual messages to the customers.
 
-Alert can be a highlighted message, toast or notification specific to the user or to the page the user is navigated.
+**Important**  It has an ARIA role of `alert`, which brings the immediate attention of its content to the user. It should be used for its role and not for its look.
 
 ## Highlighter variant
 
@@ -19,7 +19,6 @@ The `highlighter` variant of `ns-alert` can be used to communicate information o
 It communicates the message that a service is not available to them or that there are technical issues on specific pages only. These messages are different to global messages as they only apply to some pages not site wide.
 
 e.g. a message that says the top up service is not available would only apply to pages that customers will look at in order to top up.
-
 
 ### Content guidance
 
@@ -68,8 +67,6 @@ If there are multiple alerts on a page they are read:
 
 * from top to bottom on page load
 * in the order they have been added to the page when dynamically added
-
-We recommend you use `ns-alert` for their role, not for their looks.
 
 ### Considerations of best practice
 
