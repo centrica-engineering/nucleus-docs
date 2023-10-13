@@ -31,7 +31,7 @@ The subheadings and links for the navigation can be passed in for each section t
 
 ## Usage
 
-<StorybookStory story="experiences-nsx-header--standard"></StorybookStory>
+<StorybookStory story="nsx-header--standard"></StorybookStory>
 
 ## Component placement
 
@@ -43,6 +43,9 @@ The subheadings and links for the navigation can be passed in for each section t
 | :--- | :--- | :--- | :--- | :--- |
 | `sections`    | `array` | |  | Subheadings and links for each nav section |
 | `hideA11yBtn`    | `boolean` | `false` |  | Ability to turn off Reciteme |
+| `secondary-banner` | `array` |  |  | Top right section, includes a paragraph and a cta |
+| `menu-banner` | `array` |  |  | Section within the bubble, includes a paragraph and a cta |
+| `quick-links` | `array` |  |  | Subheadings and links to the right of the primary navigation |
 
 | Event | Description |
 | :--- | :--- |
@@ -93,6 +96,129 @@ The subheadings and links for the navigation can be passed in for each section t
       ...
   ],
   ...
+]
+```
+
+
+## Secondary banner structure
+
+The `secondary-banner` is an array that should only contain one object. If multiple are passed, only the first object will be used. The object in the array has the following properties:
+
+
+- `text`: A string representing the paragraph.
+- `link`: An object with the following properties:
+  - `href`: A string representing the link's href.
+  - `text`: A string representing the link's text.
+
+```json
+[{
+  text: 'We have 152 engineers working in Croydon ready to help',
+  link: {
+    href: '/',
+    text: 'Book a repair'
+  }
+}]
+```
+
+## Menu banner structure
+
+The `menu-banner` is an array of menu banner sections. Each menu banner section is represented by an object with the following properties:
+
+- `text`: A string representing the paragraph.
+- `link`: An object with the following properties:
+  - `href`: A string representing the link's href.
+  - `text`: A string representing the link's text.
+  - `type`: A string representing the cta type, defaults to `direct` if not set.
+
+```json
+[{
+  text: 'Sample copy for the menu banner',
+  link: {
+    href: '/',
+    text: 'cta  copy'
+  }
+},
+null, // no menu-banner
+{
+  text: 'paragraph with no cta',
+},
+{
+  link: {
+    href: '/',
+    text: 'No paragraph above the cta'
+  }
+},
+{
+  link: {
+    href: '/',
+    text: 'no paragraph, and text cta',
+    type: 'text'
+  }
+}]
+```
+
+## Quick links structure
+
+`quick-links` is an array that contains two sub-arrays, each of which contains objects representing quick links. The first sub-array contains the object(s) for the default state (unauthenticated), while the second sub-array contains the object(s) for the authenticated state.
+
+- `heading`: A string representing the heading.
+  - `href`: A string representing the heading's href.
+  - `links`: An array of objects representing the quick links, each object has the following properties:
+    - `text`: A string representing the link's text.
+    - `href`: A string representing the link's href.
+    - `data-ns-link`: A dynamic link slot. This must follow a flat DOM structure of just an anchor tag.
+
+
+
+```json
+[
+  [
+    {
+      heading: 'Default quick links',
+      href: '/',
+      links: [
+        {
+          text: 'XXXXX',
+          href: '/'
+        },
+        {
+          text: 'YYYYY',
+          href: '/'
+        }
+      ]
+    }
+  ],
+  [
+    {
+      heading: 'Logged in ccount quick links',
+      href: '/energy/tariffs.html',
+      links: [
+        {
+          text: 'View statements',
+          href: '/'
+        },
+        {
+          text: 'View meter readings',
+          href: '/  '
+        }
+
+      ]
+    },
+    {
+      heading: 'XXXXXX',
+      href: '/',
+      links: [
+        {
+          text: 'Your tariff details',
+          href: '/'
+        },
+        {
+          text: 'Choose a new tariff',
+          href: '/'
+        }
+      ]
+    }
+  ]
 ]
 ```
 
