@@ -126,7 +126,7 @@ An image can be left or right, from `hockey-pitch` and larger but they will disp
 
 ### `<ns-alert>`
 
-The highlighter variant of the `ns-alert`'s icon swaps from a stacked position in `squash-court` to the left in larger viewports, to optimise the space used.
+The icon of `ns-alert` swaps from a stacked position in `squash-court` to the left position in larger viewports, making optimal use of the space. 
 
 ### `<ns-landmark>`
 
