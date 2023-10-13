@@ -43,7 +43,7 @@ British Gas has a variety of images to enhance content on the website and helps 
 
 ## Usage
 
-<StorybookStory story="components-ns-image--ratio-4-x-3"></StorybookStory>
+<StorybookStory story="components-ns-image--standard"></StorybookStory>
 
 ## Component placement
 

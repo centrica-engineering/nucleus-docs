@@ -46,7 +46,7 @@ They are either:
 
 ## Usage
 
-<StorybookStory story="components-ns-skyline--singular"></StorybookStory>
+<StorybookStory story="components-ns-skyline--standard"></StorybookStory>
 
 ## Component placement
 

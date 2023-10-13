@@ -28,7 +28,7 @@ Use the Unordered list element `<ul>` as the parent element and a List item `<li
 
 A Bullet list can be nested up to four levels deep.
 
-To see a more complex example of the Bullet list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-lists--ul-bullet).
+To see a more complex example of the Bullet list visit [Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/foundations-lists--ul-bullet).
 
 ## Decorative lists
 
@@ -64,7 +64,7 @@ Here is an example of how the Ticked list should be used within `ns-expander`.
 </ns-expander>
 ```
 
-To see a more complex example of the Ticked list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-lists--ul-ticked).
+To see a more complex example of the Ticked list visit [Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/foundations-lists--ul-ticked).
 
 ### Crossed list
 
@@ -88,7 +88,7 @@ Here is an example of how the Crossed list should be used within `ns-expander`.
 </ns-expander>
 ```
 
-To see a more complex example of the Crossed list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-lists--ul-crossed).
+To see a more complex example of the Crossed list visit [Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/foundations-lists--ul-crossed).
 
 A Decorative list can be nested up to four levels deep.
 
@@ -111,7 +111,7 @@ The Numbered list will display an incremental number alongside each list item.
 
 A Numbered list can be nested up to four levels deep.
 
-To see a more complex example of the Numbered list visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-lists--ol-numbered).
+To see a more complex example of the Numbered list visit [Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/foundations-lists--ol-numbered).
 
 ## Description list
 
@@ -134,7 +134,7 @@ There are two types of description lists which we have called `dl-row` and `dl-s
 </dl>
 ```
 
-To see a more complex example of the description list row visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-lists--dl-row).
+To see a more complex example of the description list row visit [Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/foundations-lists--dl-row).
 
 ### Description list stack
 
@@ -151,7 +151,7 @@ To see a more complex example of the description list row visit [Storybook](http
 </dl>
 ```
 
-To see a more complex example of the description list stack visit [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/foundations-lists--dl-stack).
+To see a more complex example of the description list stack visit [Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/foundations-lists--dl-stack).
 
 ## Usage
 

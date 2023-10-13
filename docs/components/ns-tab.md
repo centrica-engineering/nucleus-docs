@@ -30,7 +30,7 @@ Please see [ns-tabs](components/ns-tabs.md) for full content guidance.
 
 ## Usage
 
-<StorybookStory story="components-ns-tab--tab"></StorybookStory>
+<StorybookStory story="components-ns-tab--standard"></StorybookStory>
 
 ## Component placement
 

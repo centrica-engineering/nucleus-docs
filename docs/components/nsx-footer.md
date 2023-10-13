@@ -24,7 +24,7 @@ If a link needs to be updated for the website footer, it needs to be done in thi
 
 ## Usage
 
-<StorybookStory story="nsx-footer--standard"></StorybookStory>
+<StorybookStory story="experiences-nsx-footer--standard"></StorybookStory>
 
 ## Component placement
 
