@@ -124,9 +124,9 @@ The cards that adapt the most are `section` and `support with image`
 
 An image can be left or right, from `hockey-pitch` and larger but they will display on the right only and stack at smaller viewports.
 
-### `<ns-highlighter>`
+### `<ns-alert>`
 
-The highlighter icon swaps from a stacked position in `squash-court` to the left in larger viewports, to optimise the space used.
+The alert icon in `highlighter` variant swaps from a stacked position in `squash-court` to the left in larger viewports, to optimise the space used.
 
 ### `<ns-landmark>`
 

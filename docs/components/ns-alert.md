@@ -24,7 +24,7 @@ e.g. a message that says the top up service is not available would only apply to
 
 #### Highlighter variant
 
-![Alert - Highlighter - Error state](images/ns-highlighter/content-guidance.webp)
+![Alert - Highlighter - Error state](images/ns-alert/highlighter/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -37,25 +37,25 @@ The content for the  `highlighter` variant is dependent on the state that is use
 
 ### Error messages
 
-![Highlighter - Error state](images/ns-highlighter/error.webp)
+![Highlighter - Error state](images/ns-alert/highlighter/error.webp)
 
 For communicating failure with urgence. A task cannot be completed without the user remedying something.
 
 ### Informational messages
 
-![Highlighter - Informational state](images/ns-highlighter/info.webp)
+![Highlighter - Informational state](images/ns-alert/highlighter/info.webp)
 
 For communicating a useful piece of information that the user might find helpful to carry out their action.
 
 ### Success messages
 
-![Highlighter - Success state](images/ns-highlighter/success.webp)
+![Highlighter - Success state](images/ns-alert/highlighter/success.webp)
 
 For communicating that an action has been successful.
 
 ### Warning messages
 
-![Highlighter - Warning state](images/ns-highlighter/warning.webp)
+![Highlighter - Warning state](images/ns-alert/highlighter/warning.webp)
 
 Use for communicating a piece of information with less severity. These include foreseeable problematic events, failures, outages and how to avoid errors.
 
@@ -105,7 +105,7 @@ The message must be in plain English, and help the user out of the situation by 
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-highlighter]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-highlighter])
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-alert]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-alert])
 
 <PageFooter></PageFooter>

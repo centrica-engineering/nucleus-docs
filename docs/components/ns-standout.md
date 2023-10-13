@@ -20,7 +20,7 @@ Use the `ns-standout` component to make information stand out from a page and to
 
 ## Accessibility
 
-The component is not announced to screen readers upfront, to help differentiate it from [ns-highlighter](../components/ns-highlighter) messages. It will be read in the order it comes in the document. You can choose from different coloured borders, but the text and background retain the standard colours, therefore, meeting suitable contrast ratios.
+The component is not announced to screen readers upfront, to help differentiate it from [ns-alert](../components/ns-alert) messages. It will be read in the order it comes in the document. You can choose from different coloured borders, but the text and background retain the standard colours, therefore, meeting suitable contrast ratios.
 
 ## Content guidance
 
@@ -38,7 +38,7 @@ The component is not announced to screen readers upfront, to help differentiate 
 | :--- | :--- |
 | Keep concise and to the point |  Fill with many paragraphs |
 | Limit use to 1 or 2 per page |  Overuse it everywhere - it dilutes the impact |
-| Use it to make information stand out |  Use it in place of ns-highlighter or ns-card – they have a different purpose |
+| Use it to make information stand out |  Use it in place of ns-alert or ns-card – they have a different purpose |
 | Select a colour border decoration that works with your design | Add icons, images or illustrations | 
 | Use a relevant, single text link if it is necessary | Use the direct ns-cta (you should consider using ns-card instead for that purpose) |
 | Use without an h2-h6 | Nest another ns-standout component within it |
@@ -72,7 +72,7 @@ The component is not announced to screen readers upfront, to help differentiate 
 
 ## Feedback
 
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-highlighter]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-highlighter])
+* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-standout]).
+* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-standout])
 
 <PageFooter></PageFooter>

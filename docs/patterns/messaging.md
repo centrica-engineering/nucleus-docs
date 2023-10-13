@@ -47,11 +47,11 @@ These validation rules ensure that the expected data is provided, and will displ
 - You can [read more information about the different `<ns-inputter>` validation options](components/ns-inputter.md#specification).
 - You can [see examples of `<ns-inputter>` here](components/ns-inputter.md).
 
-### Using `<ns-highlighter>`
+### Using `<ns-alert>`
 
-![Warning message displayed in journey](images/messaging/warning-highlighter.webp)
+![Warning message displayed in journey](images/messaging/warning-alert.webp)
 
-The `<ns-highlighter>` has two variants for displaying warning and error messages:
+The `<ns-alert>` has two variants for displaying warning and error messages:
 
 - **Error** - when a task cannot be completed without the customer remedying something.
 - **Warning** - for communicating foreseeable problematic events.
@@ -59,9 +59,9 @@ The `<ns-highlighter>` has two variants for displaying warning and error message
 
 These messages are to be communicated during a customers engagement with a journey, ensure that they relate to the action they are trying to complete. These should not be used for global messages.
 
-- You can [read more information about the `<ns-highlighter>` here](components/ns-highlighter.md).
-- You can [see the error variant of `<ns-highlighter>` here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-highlighter--error).
-- You can [see the warning variant of `<ns-highlighter>` here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-highlighter--warning).
+- You can [read more information about the `<ns-alert>` here](components/ns-alert.md).
+- You can [see the error state of highlighter variant of `<ns-alert>` here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-highlighter--error).
+- You can [see the warning state of highlighter variant of `<ns-alert>` here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-highlighter--warning).
 
 
 ### Using the Roadblock page type
@@ -78,20 +78,20 @@ You can [read more information about the Roadblock page type here](page-types/ro
 
 ## Valuable information & success messages
 
-### Using `<ns-highlighter>`
+### Using `<ns-alert>`
 
 ![Messaging example for submitting a meter reading](images/messaging/success-highlighter.webp)
 
-Along with handling warning and error messages, the `<ns-highlighter>` has two other variants that can be used for messaging:
+Along with handling warning and error messages, the `<ns-alert>` `highlighter` variant has two other states that can be used for messaging:
 
 - **Information** - for showing the customer a piece of important information that relates to their task.
 - **Success** - for showing the customer an action they have taken as part of a journey has been a success.
 
 These messages are to be communicated during a customers engagement with a journey, and they should relate to the action a customer is trying to complete. These should not be used for global messages.
 
-- You can [read more information about the `<ns-highlighter>` here](components/ns-highlighter.md).
-- You can [see the information variant of `<ns-highlighter>` here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-highlighter--information).
-- You can [see the success variant of `<ns-highlighter>` here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-highlighter--success).
+- You can [read more information about the `<ns-alert>` here](components/ns-alert.md).
+- You can [see the information state of `highlighter` variant of `<ns-alert>` here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-highlighter--information).
+- You can [see the success state of `highlighter` variant of `<ns-alert>` here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-highlighter--success).
 
 ### Using the Confirmation page type
 
