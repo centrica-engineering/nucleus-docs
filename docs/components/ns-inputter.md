@@ -41,7 +41,7 @@ The text input is ideal for entering text that takes up a single line, such as a
 
 Radio buttons are for when customers need to select only one option from a list. If you need them to select multiple options then you should use checkboxes. If there are many items to choose from then you should consider a select instead.
 
-Radio buttons are usually in the form of a question - such as "Are you a British Gas customer?".
+Radio buttons are usually the answers to a question asked in the `heading` attribute of the `ns-inputter` - such as "Are you a British Gas customer?".
 
 #### Note on the size of the heading for radio buttons
 
@@ -66,7 +66,7 @@ To match this heading's size with other `ns-inputter` labels', group all associa
 
 Checkboxes are for when customers can select multiple options from a list, or choose to toggle a single option on or off. If you need them to select a single option from a list then you should use radio buttons.
 
-Checkboxes are usually in the form of a question - such as "Which British Gas services would you like to choose?".
+Checkboxes are usually the answers to a question asked in the `heading` attribute of the `ns-inputter` - such as "Which British Gas services would you like to choose?".
 
 #### Note on the size of the heading for checkboxes
 

@@ -39,7 +39,7 @@ Grouping questions together thematically can help a customer understand the cont
 
 ### Group by type of control
 
-Radio buttons and checkboxes should be grouped in their own respective form groups. The legend should be used to provide context to the choice(s) a customer is being asked to make. Each form control should use their own label as the answer. 
+Radio buttons and checkboxes should be grouped in their own respective form groups. The `legend` attribute should be used to provide context to the choice(s) a customer is being asked to make. Each form control should use their own label as the answer. 
 
 ## Text inputs
 
@@ -71,7 +71,7 @@ Along with these, you can use a combination of validation, mask, and separator t
 
 These are extremely common form control elements used to ask customers to make choices from a small list of options, or to answer simple yes/no questions, or to toggle a single option on or off. 
 
-Radio buttons and checkboxes are usually in the form of a question - such as "Are you a British Gas customer?" or "Which British Gas services would you like to choose?".
+Radio buttons and checkboxes are usually the answers to a question asked in the `heading` attribute of the `ns-inputter` - such as "Are you a British Gas customer?" or "Which British Gas services would you like to choose?".
 
 ![Checkboxes](images/asking-for-info/checkboxes.webp)
 ![Radio buttons](images/asking-for-info/radio-buttons.webp)
