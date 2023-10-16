@@ -80,7 +80,7 @@ This loading state is used to provide the user with feedback that their action i
 
 We recommend only to use this loading state for a maximum of 5 seconds. If it's known that the action is likely to take longer than 5 seconds, present the user with a [Roadblock page type](../page-types/roadblock).
 
-If the action fails, don't leave the CTA in its Loading state. Present the user with clear feedback with [the highlighter component](../components/ns-highlighter).
+If the action fails, don't leave the CTA in its Loading state. Present the user with clear feedback with [the alert component `highlighter` varient](../components/ns-alert#highlighter-variant).
 
 Your loading message should be contextual to the action of the text of the CTA. E.g. "Get a quote" becomes "Getting your quote...". 
 
@@ -124,7 +124,7 @@ The only time we present a disabled state is during the Loading state. This ensu
 
 ## Component placement
 
-<ComponentPlacement component="ns-cta" parentComponents="ns-landmark,ns-lockup,ns-card,ns-product-card,ns-form,ns-fieldset,ns-content,ns-highlighter"></ComponentPlacement>
+<ComponentPlacement component="ns-cta" parentComponents="ns-landmark,ns-lockup,ns-card,ns-product-card,ns-form,ns-fieldset,ns-content"></ComponentPlacement>
 
 
 ## Specification
