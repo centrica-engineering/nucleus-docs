@@ -50,8 +50,6 @@ This variant is more complex than the Standard one. It allows a user to correctl
 | F | Confirmation | Checks the user has entered the password they intended by matching them. |
 
 
-
-
 ### Validation
 The Confirm Password variant has in-line validation that checks the input as the user types. This helps provide useful instant feedback to them on their formatting. The requirements can be flexible but currently set as British Gas format by default. The requirements are also accompanied by helpful messaging that changes with the status. 
 
@@ -75,9 +73,6 @@ The Standard variant just uses a single validation requirement that appears if t
 | Ensure the requirements reflect what's needed | Use requirements that differ from company policy |
 | Add Helper text or tips if necessary |  |
 
-
-
-
 ## Usage
 
 <StorybookStory story="form-components-ns-password--standard"></StorybookStory>
@@ -93,13 +88,25 @@ Also see ns-inputter [specification](components/ns-inputter.md#specification)
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `type` |  `string`  | `default` | [`default`, `confirm`] | The type of the password component. Use `default` type for login journey and `confirm` type for registration journey. |
+| `name` | `string` | `password` |  | See [ns-inputter](components/ns-inputter.md#specification). |
 | `value`   | `string` | `''` |  | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an initial value. |
 | `helper` | `string` |  |  | See [ns-inputter](components/ns-inputter.md#specification). |
-| `tip` | `string` |  |  | See [ns-inputter](components/ns-inputter.md#specification). |
-| `name` | `string` | `password` |  | See [ns-inputter](components/ns-inputter.md#specification). |
-| `passwordValidation` | `array` | `['hasNumbers', 'hasLetters', 'isBetween(8, 20)']` | |  Assists a user when adding a valid password and shows an error message when they're not. See [ns-inputter](components/ns-inputter.md#validation)
 | `label` |  `string`  | `Password` |  | The value of the label for password field. |
 | `confirmLabel` |  `string`  | `Confirm Password` |  | The value of the label for confirm password field. This attribute is used along with `confirm` type. |
+
+| Slots | Type |
+| :--- | :--- |
+| `tip-details` | `p tag` |
+
+## Specification notes
+
+### Helper
+
+- A way to help the user understand why or why not enter information.
+
+### Tip-details slot
+
+- This requires helper property. This is initially hidden and can be revealed by the user when they click on the helper text.
 
 ## Feedback
 

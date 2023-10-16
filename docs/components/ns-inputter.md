@@ -279,18 +279,18 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `value`   | `string` | `''` |  | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an initial value |
-| `validation` | `array` |  | `isRequired`, `isNumber`,  `isInteger`, `isPostcode(includeEIR)`, `isFirstName`, `isLastName`, `isFullName`, `isTitle`, `isEmail`, `isPhoneNumber(includeIreland)`, `isMobileNumber`, `isPassword`, `isDate`, `minDate(date)`, `maxDate(date)`, `isDateOfBirth`, `minLength(x)`, `maxLength(x)` | A way to assist that valid values are added and to show an error message when they're not. |
-| `ignoreseparator` | `boolean` | `false` | `true`, `false` | Setting this to true will force length validations to not include the separator when calculating the length|
-| `execute` | `boolean` | `false` | `true`, `false` | Will trigger the validation even if the input hasn't been touched. |
-| `helper` | `string` |  |  | Adds a message between the label and the input. Used to convey a message to help the user to fill in the input |
-| `labelID` | `string` |  |  | Used if the label isn't part of the inputter |
-| `heading` | `string` |  |  | Used for checkboxes and radio buttons instead of a label |
-| `mask` | `string` |  |  | Shows what can be entered. Similar to a placeholder, but stays when values are entered. |
-| `separator` | `string` |  |  | Allows the mask to manipulate the inputted value if it needs to be formatted in a certain way. |
-| `name` | `string` |  |  | The name of this field as it will display in the form data. |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `name` | `name` | `string` |  |  | The name of this field as it will display in the form data. |
+| `value`   | `value`   | `string` | `''` |  | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an initial value |
+| `labelID` | `labelID` | `string` |  |  | Used if the label isn't part of the inputter |
+| `heading` | `heading` | `string` |  |  | Used for checkboxes and radio buttons instead of a label |
+| `validation` | `validation` | `array` |  | `isRequired`, `isNumber`,  `isInteger`, `isPostcode(includeEIR)`, `isFirstName`, `isLastName`, `isFullName`, `isTitle`, `isEmail`, `isPhoneNumber(includeIreland)`, `isMobileNumber`, `isPassword`, `isDate`, `minDate(date)`, `maxDate(date)`, `isDateOfBirth`, `minLength(x)`, `maxLength(x)` | A way to assist that valid values are added and to show an error message when they're not. |
+| `helper` | `helper` | `string` |  |  | Adds a message between the label and the input. Used to convey a message to help the user to fill in the input |
+| `isHelperOpen` |  `isHelperOpen` | `boolean` | `false` | `true`, `false` | Setting this to true will force the helper tip details to be open (expanded) on load of the inputter |
+| `mask` | `mask` | `string` |  |  | Shows what can be entered. Similar to a placeholder, but stays when values are entered. |
+| `separator` | `separator` | `string` |  |  | Allows the mask to manipulate the inputted value if it needs to be formatted in a certain way. |
+| `ignore-separator` | `ignoreSeparator` | `boolean` | `false` | `true`, `false` | Setting this to true will force length validations to not include the separator when calculating the length|
 
 | Slots | Type |
 | :--- | :--- |
@@ -301,12 +301,13 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 | Event | Description |
 | :--- | :--- |
 | `change` | Will be dispatched when input changes |
+| `helper-toggle` | Will be dispatched when helper tip details is toggled between open and collapsed state |
 
 ## Specification notes
 
 ### Helper
 
-- A way to help the user understand why or why not enter information
+- A way to help the user understand why or why not enter information.
 
 ### LabelID
 
@@ -336,7 +337,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ### Tip-details slot
 
-- This requires helper property which is initially hidden and can be revealed by the user when they click on the helper text.
+- This requires helper property. This is initially hidden and can be revealed by the user when they click on the helper text.
 
 ### Validation
 

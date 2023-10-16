@@ -33,7 +33,7 @@ In the following examples, the expander is used in an accordion and in a selecto
 | Use headings, paragraphs, lists for content | Use as a solution to excessive copy on a page |
 | Make sure the heading in the heading slot relates to content | Nest expanders within expanders |
 | Use a coloured expander to draw attention to a promotion in an expander on a product card | Use multiple coloured expanders on one page|
-|  | Use a coloured expander to draw attention to a warning message. Use [ns-highlighter](components/ns-highlighter.md) or [ns-skyline](components/ns-skyline.md) instead. |
+|  | Use a coloured expander to draw attention to a warning message. Use [ns-alert](components/ns-alert.md) or [ns-skyline](components/ns-skyline.md) instead. |
 
 ### Considerations of best practice
 
