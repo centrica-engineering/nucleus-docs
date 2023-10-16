@@ -23,7 +23,14 @@ The default choice of header across the main British Gas UK home site should be 
 | Create your own header if you are a micro site or external partner | Make your own header if you are part of the customer facing website. |
 | Follow the correct structure for the navigation links | Add personalisation links into the navigation, as this can have an SEO issue. |
 | Have a header on every page | Load links from an API of external source as this has a performance impact. |
-|  | Add the header inside the `main` element. |
+| Include a CTA within each menu banner section	 | Add the header inside the `main` element. |
+| Include introductory text before CTA within each menu banner section		 |  |
+| Include introductory text before CTA within each menu banner section		 |  |
+| ake sure text in secondary-banner relates to CTA		 |  |
+
+		
+
+
 
 ### Considerations of best practice
 
