@@ -80,7 +80,7 @@ You can [read more information about the Roadblock page type here](page-types/ro
 
 ### Using `<ns-alert>`
 
-![Messaging example for submitting a meter reading](images/messaging/success-highlighter.webp)
+![Messaging example for submitting a meter reading](images/messaging/success-alert.webp)
 
 Along with handling warning and error messages, the `<ns-alert>` `highlighter` variant has two other states that can be used for messaging:
 
