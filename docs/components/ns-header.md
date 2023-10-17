@@ -23,13 +23,15 @@ The default choice of header across the main British Gas UK home site should be 
 | Create your own header if you are a micro site or external partner | Make your own header if you are part of the customer facing website. |
 | Follow the correct structure for the navigation links | Add personalisation links into the navigation, as this can have an SEO issue. |
 | Have a header on every page | Load links from an API of external source as this has a performance impact. |
-|  | Add the header inside the `main` element. |
+| Include a CTA within each menu banner section	 | Add the header inside the `main` element. |
+| Include introductory text before CTA link within each menu banner section	| |
+| Make sure text in secondary-banner relates to CTA	link	 |  |
 
 ### Considerations of best practice
 
 * There needs to be a very good reason to use this component instead of `nsx-header`.
 * If changing the logo - use an SVG. Make sure that the SVG has been compressed.
-* Logo can only have a max height of `62px` i.e. the British Gas logo is 160px x 62px
+* Logo can only have a max height of `62px` i.e. the British Gas logo is 160px x 62px (Need to confirm)
 
 ## Usage
 
@@ -68,6 +70,7 @@ The default choice of header across the main British Gas UK home site should be 
 * Remember to give a new `alt` value.
 * Logo can only have a max height of `62px` i.e. the British Gas logo is 160px x 62px.
 * Hosting of the logo should be within our own systems not pointing to an outside resource.
+* If a partner logo is added into the header, this will mean the flame mark on the mobile menu will be removed
 
 ### Alt
 
