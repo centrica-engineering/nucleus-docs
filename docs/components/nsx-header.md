@@ -10,11 +10,12 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 > Primary navigation for the British Gas website
 
-This experience pattern is a wrapper of the `ns-header`. The header experience pattern internally holds the sections and the secondary navigation.
+This experience pattern is a wrapper of the `ns-header`. The header experience pattern internally holds the `menu-banner` and the `secondary-banner`.
 
 The subheadings and links for the navigation can be passed in for each section to allow them to be quickly updated.
 
-![Image showing nsx-header open with subheadings and links](images/nsx-header/intro.webp)
+<img width="1490" alt="Nav" src="https://github.com/centrica-engineering/nucleus-docs/assets/127982418/6f73712b-406a-4d8f-b2d5-0e7b418e277e">
+
 
 ## Best practice
 
@@ -23,6 +24,9 @@ The subheadings and links for the navigation can be passed in for each section t
 | Use on the British Gas website. | Use for partnership or micro sites. |
 | Keep the header outside the `main` element | Only have heading links |
 | Keep the header at the top | |
+| Include a CTA within each menu banner section	 | Add the header inside the `main` element. |
+| Include introductory text before CTA within each menu banner section |  |
+| Make sure text in secondary-banner relates to CTA	|  |
 
 ### Considerations of best practice
 
