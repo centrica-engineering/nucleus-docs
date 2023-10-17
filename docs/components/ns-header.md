@@ -162,10 +162,10 @@ The `secondary-banner` is an array that should only contain one object. If multi
 
 ```json
 [{
-  text: 'We have 152 engineers working in Croydon ready to help',
-  link: {
-    href: '/',
-    text: 'Book a repair'
+  "text": "We have 152 engineers working in Croydon ready to help",
+  "link": {
+    "href": "/",
+    "text": "Book a repair"
   }
 }]
 ```
@@ -182,27 +182,27 @@ The `menu-banner` is an array of menu banner sections. Each menu banner section 
 
 ```json
 [{
-  text: 'Sample copy for the menu banner',
-  link: {
-    href: '/',
-    text: 'cta  copy'
+  "text": "Sample copy for the menu banner",
+  "link": {
+    "href": "/",
+    "text": "cta  copy"
   }
 },
 null, // no menu-banner
 {
-  text: 'paragraph with no cta',
+  "text": "paragraph with no cta",
 },
 {
-  link: {
-    href: '/',
-    text: 'No paragraph above the cta'
+  "link": {
+    "href": "/",
+    "text": "No paragraph above the cta"
   }
 },
 {
-  link: {
-    href: '/',
-    text: 'no paragraph, and text cta',
-    type: 'text'
+  "link": {
+    "href": "/",
+    "text": "no paragraph, and text cta",
+    "type": "text"
   }
 }]
 ```
@@ -232,44 +232,44 @@ The `quick-links` is an array that contains an object with the following propert
 ```json
 [
  {
-  heading: 'Account',
-  href: '/identity',
-  icon: 'user',
-  type: '',
-  banner: {
-    text: 'Sample copy for the menu banner',
-    link: {
-      href: '/',
-      text: 'cta  copy'
+  "heading": "Account",
+  "href": "/identity",
+  "icon": "user",
+  "type": "",
+  "banner": {
+    "text": "Sample copy for the menu banner",
+    "link": {
+      "href": "/",
+      "text": "cta  copy"
     }
   },
-  subheadings:[
+  "subheadings":[
     {
-      heading: 'Logged in ccount quick links',
-      href: '/energy/tariffs.html',
-      links: [
+      "heading": "Logged in account quick links",
+      "href": "/energy/tariffs.html",
+      "links": [
         {
-          text: 'View statements',
-          href: '/'
+          "text": "View statements",
+          "href": "/"
         },
         {
-          text: 'View meter readings',
-          href: '/  '
+          "text": "View meter readings",
+          "href": "/"
         }
 
       ]
     },
     {
-      heading: 'XXXXXX',
-      href: '/',
-      links: [
+      "heading": "XXXXXX",
+      "href": "/",
+      "links": [
         {
-          text: 'Your tariff details',
-          href: '/'
+          "text": "Your tariff details",
+          "href": "/"
         },
         {
-          text: 'Choose a new tariff',
-          href: '/'
+          "text": "Choose a new tariff",
+          "href": "/"
         }
       ]
     }
