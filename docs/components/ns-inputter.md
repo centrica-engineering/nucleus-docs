@@ -287,7 +287,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 | `heading` | `heading` | `string` |  |  | Used for checkboxes and radio buttons instead of a label |
 | `validation` | `validation` | `array` |  | `isRequired`, `isNumber`,  `isInteger`, `isPostcode(includeEIR)`, `isFirstName`, `isLastName`, `isFullName`, `isTitle`, `isEmail`, `isPhoneNumber(includeIreland)`, `isMobileNumber`, `isPassword`, `isDate`, `minDate(date)`, `maxDate(date)`, `isDateOfBirth`, `minLength(x)`, `maxLength(x)` | A way to assist that valid values are added and to show an error message when they're not. |
 | `helper` | `helper` | `string` |  |  | Adds a message between the label and the input. Used to convey a message to help the user to fill in the input |
-| `isHelperOpen` |  `isHelperOpen` | `boolean` | `false` | `true`, `false` | Setting this to true will force the helper tip details to be open (expanded) on load of the inputter |
+| `open-helper` |  `isHelperOpen` | `boolean` | `false` | `true`, `false` | Setting this to true will force the helper tip details to be open (expanded) on load of the inputter |
 | `mask` | `mask` | `string` |  |  | Shows what can be entered. Similar to a placeholder, but stays when values are entered. |
 | `separator` | `separator` | `string` |  |  | Allows the mask to manipulate the inputted value if it needs to be formatted in a certain way. |
 | `ignore-separator` | `ignoreSeparator` | `boolean` | `false` | `true`, `false` | Setting this to true will force length validations to not include the separator when calculating the length|
