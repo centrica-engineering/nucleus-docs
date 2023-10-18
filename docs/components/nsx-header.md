@@ -14,7 +14,7 @@ This experience pattern is a wrapper of the `ns-header`. The header experience p
 
 The subheadings and links for the navigation can be passed in for each section to allow them to be quickly updated.
 
-<img width="1280" alt="Nav" src="images/nsx-header/intro.webp">
+![Image showing nsx-header open with subheadings and links](images/nsx-header/intro.webp)
 
 
 ## Best practice
