@@ -74,9 +74,9 @@ Grouping related form elements is a purposeful way of helping the customer to co
 
 Use a single page to group questions or tasks together, such as asking the customer for personal details or to provide their address.
 
-Provide context and a description for groups of form controls by using the fieldset and legend attributes. Using these will help customers understand the objective of the task, and will naturally interact with the form better.
+Provide context and a description for groups of form controls by using the `ns-form-group` component and `legend` attributes. Using these will help customers understand the objective of the task, and will naturally interact with the form better.
 
-- You can [read more information about the Fieldset component here](components/ns-fieldset.md).
+- You can [read more information about the Form group component here](components/ns-form-group.md).
 
 ### Playing back information
 

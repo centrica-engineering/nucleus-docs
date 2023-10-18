@@ -48,7 +48,7 @@ Some browsers do not support `type='date'` (e.g. Safari on Desktop). The compone
 
 ## Component placement
 
-<ComponentPlacement component="ns-datepicker" parentComponents="ns-form,ns-fieldset"></ComponentPlacement>
+<ComponentPlacement component="ns-datepicker" parentComponents="ns-form,ns-form-group"></ComponentPlacement>
 
 ## Specification
 

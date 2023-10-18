@@ -21,13 +21,13 @@ The `ns-form` component is a wrapper used to contain all your form controls. Itâ
 
 You can [read more information about how to use `<ns-form>` here](components/ns-form.md)
 
-## `ns-fieldset`
+## `ns-form-group`
 
-The `ns-fieldset` component is an element that sits directly in an `ns-form`. We use the fieldset to help group form controls such as inputs, radios, and checkboxes. Within the `fieldset` there is a `legend` element - this can help describe the form controls and provide context to the customer. 
+The `ns-form-group` component is an element that sits directly in an `ns-form`. We use the `ns-form-group` to help group form controls such as inputs, radios, and checkboxes. Within the `ns-for-group` there is a `legend` attribute - this can help describe the form controls and provide context to the customer. 
 
-It is unnecessary to use the `fieldset` and `legend` when presenting the customer with a single input field relating to one piece of information.
+It is unnecessary to use the `ns-form-group` with `legend` when presenting the customer with a single input field relating to one piece of information.
 
-You can [read more information about how to use `<ns-fieldset>` here](components/ns-fieldset.md)
+You can [read more information about how to use `<ns-form-group>` here](components/ns-form-group.md)
 
 ## Grouping your questions
 
@@ -39,7 +39,7 @@ Grouping questions together thematically can help a customer understand the cont
 
 ### Group by type of control
 
-Radio buttons and checkboxes should be grouped in their own respective fieldsets. The legend should be used to provide context to the choice(s) a customer is being asked to make. Each form control should use their own label as the answer. 
+Radio buttons and checkboxes should be grouped in their own respective form groups. The `legend` attribute should be used to provide context to the choice(s) a customer is being asked to make. Each form control should use their own label as the answer. 
 
 ## Text inputs
 
@@ -71,7 +71,7 @@ Along with these, you can use a combination of validation, mask, and separator t
 
 These are extremely common form control elements used to ask customers to make choices from a small list of options, or to answer simple yes/no questions, or to toggle a single option on or off. 
 
-Radio buttons and checkboxes are automatically grouped together in a `<fieldset>`. For accessibility, the `heading` attribute found on the `ns-inputter` must be used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Are you a British Gas customer?" or "Which British Gas services would you like to choose?".
+Radio buttons and checkboxes are usually the answers to a question asked in the `heading` attribute of the `ns-inputter` - such as "Are you a British Gas customer?" or "Which British Gas services would you like to choose?".
 
 ![Checkboxes](images/asking-for-info/checkboxes.webp)
 ![Radio buttons](images/asking-for-info/radio-buttons.webp)

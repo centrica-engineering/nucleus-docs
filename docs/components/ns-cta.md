@@ -126,7 +126,6 @@ The only time we present a disabled state is during the Loading state. This ensu
 
 <ComponentPlacement component="ns-cta" parentComponents="ns-landmark,ns-lockup,ns-card,ns-product-card,ns-form,ns-fieldset,ns-content"></ComponentPlacement>
 
-
 ## Specification
 
 | Attribute | Property | Type | Default | Options | Description |

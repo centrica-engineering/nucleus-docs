@@ -181,4 +181,4 @@ A **valid validate return response** looks like:
 * [ns-appointment-picker](components/ns-appointment-picker.md)
 * [nsx-address-selector](components/nsx-address-selector.md)
 * [nsx-marketing-consent](components/nsx-marketing-consent.md)
-* [ns-fieldset](components/ns-fieldset.md)
+* [ns-form-group](components/ns-form-group.md)

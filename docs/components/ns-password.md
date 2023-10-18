@@ -79,7 +79,7 @@ The Standard variant just uses a single validation requirement that appears if t
 
 ## Component placement
 
-<ComponentPlacement component="ns-password" parentComponents="ns-form,ns-fieldset"></ComponentPlacement>
+<ComponentPlacement component="ns-password" parentComponents="ns-form,ns-form-group"></ComponentPlacement>
 
 ## Specification
 
@@ -118,4 +118,5 @@ Also see ns-inputter [specification](components/ns-inputter.md#specification)
 ## Related links
 
 * [ns-inputter](components/ns-inputter.md)
-* [ns-form](components/ns-fieldset.md)
+* [ns-form](components/ns-form.md)
+* [ns-form-group](components/ns-form-group.md)
