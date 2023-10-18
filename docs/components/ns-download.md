@@ -53,11 +53,11 @@ The one exception to this rule is in forms as there are often challenges around 
 
 ### Standalone
 
-<StorybookStory story="components-ns-download--standalone"></StorybookStory>
+<StorybookStory story="components-ns-download--standard"></StorybookStory>
 
 ### List
 
-<StorybookStory story="components-ns-download--list"></StorybookStory>
+<StorybookStory story="components-ns-download--list-downloads"></StorybookStory>
 
 ## Component placement
 

@@ -26,7 +26,7 @@ The `ns-form` component mimics the native form element features. It's main purpo
 
 ## Usage
 
-<StorybookStory story="form-components-ns-form--multi-input-form"></StorybookStory>
+<StorybookStory story="form-components-ns-form--standard"></StorybookStory>
 
 ## Component placement
 

@@ -31,7 +31,7 @@ https://www.w3.org/WAI/WCAG21/Techniques/html/H71
 
 ## Usage
 
-<StorybookStory story="form-components-ns-fieldset--standard"></StorybookStory>
+<StorybookStory story="deprecated-ns-fieldset--standard"></StorybookStory>
 
 ## Component placement
 

@@ -77,7 +77,7 @@ For example
 
 ## Usage
 
-<StorybookStory story="components-ns-product-card--single"></StorybookStory>
+<StorybookStory story="components-ns-product-card--standard"></StorybookStory>
 
 ## Component placement
 

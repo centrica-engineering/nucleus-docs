@@ -43,7 +43,7 @@ In the following examples, the expander is used in an accordion and in a selecto
 
 ## Usage
 
-<StorybookStory story="components-ns-expander--expander"></StorybookStory>
+<StorybookStory story="components-ns-expander--standard"></StorybookStory>
 
 ## Component placement
 

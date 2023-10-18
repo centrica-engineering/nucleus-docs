@@ -48,7 +48,7 @@ The component is not announced to screen readers upfront, to help differentiate 
 
 ## Usage
 
-<StorybookStory story="components-ns-standout--subtle"></StorybookStory>
+<StorybookStory story="components-ns-standout--standard"></StorybookStory>
 
 ## Component placement
 

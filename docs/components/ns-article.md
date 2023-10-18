@@ -38,11 +38,11 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Usage
 
-<StorybookStory story="components-ns-article--standard"></StorybookStory>
+<StorybookStory story="deprecated-ns-article--standard"></StorybookStory>
 
 ### Article split into sections
 
-<StorybookStory story="components-ns-article--sections"></StorybookStory>
+<StorybookStory story="deprecated-ns-article--multiple"></StorybookStory>
 
 ## Component placement
 

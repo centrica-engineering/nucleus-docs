@@ -60,7 +60,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Usage
 
-<StorybookStory story="components-ns-editorial--editorial"></StorybookStory>
+<StorybookStory story="deprecated-ns-editorial--standard"></StorybookStory>
 
 ## Component placement
 

@@ -27,7 +27,7 @@ We do not currently have content guidance as this will change depending on the c
 
 ## Usage
 
-<StorybookStory story="components-ns-content--standard"></StorybookStory>
+<StorybookStory story="deprecated-ns-content--standard"></StorybookStory>
 
 ### Using ns-image and ns-video
 

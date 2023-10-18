@@ -27,7 +27,7 @@ If the address selector hasn’t been provided with any addresses, it will start
 
 ![Anonymous - Customer finding their address from a postcode](images/nsx-address-selector/usage-example-anonymous.webp)
 
-You can [see the anonymous state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--anonymous).
+You can [see the anonymous state of `<nsx-address-selector>` here](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/experiences-nsx-address-selector--anonymous-address).
 
 When the customer enters a postcode, the component will dispatch a `postcode-selected` event.  At this point the component shows a `loading` state until it is provided with a list of addresses.
 
@@ -37,7 +37,7 @@ When you set the `addresses` property of the component it will change state to d
 
 ![Multiple addresses - Customer selects using radio buttons](images/nsx-address-selector/usage-example-multi-address.webp)
 
-You can [see the multi address state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--multi-addresses).
+You can [see the multi address state of `<nsx-address-selector>` here](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/experiences-nsx-address-selector--multiple-address).
 
 ### Many addresses
 
@@ -45,7 +45,7 @@ If there are 6 or more addresses then the component will display the addresses i
 
 ![Many addresses - Customer selects using select drop-down](images/nsx-address-selector/usage-example-many-address.webp)
 
-You can [see the many address state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--many-addresses).
+You can [see the many address state of `<nsx-address-selector>` here](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/experiences-nsx-address-selector--many-address).
 
 ![Postcode and selected address summary](images/nsx-address-selector/usage-example-many-address-2.webp)
 
@@ -57,7 +57,7 @@ When displaying this form the `manualformenabled` property to set to `true`. You
 
 ![Manual entry address form](images/nsx-address-selector/usage-example-manual-address.webp)
 
-You can [see the manual entry state of `<nsx-address-selector>` here](https://www.britishgas.co.uk/nucleus-experiences/demo/index.html?path=/story/nsx-address-selector--manual-addresses).
+You can [see the manual entry state of `<nsx-address-selector>` here](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/experiences-nsx-address-selector--manual-address).
 
 ## Component placement
 

@@ -42,7 +42,7 @@ Related content can be separated into clearly labelled sections.
 
 ## Usage
 
-<StorybookStory story="components-ns-tabs--tabs"></StorybookStory>
+<StorybookStory story="components-ns-tabs--standard"></StorybookStory>
 
 ## Component placement
 

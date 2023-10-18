@@ -46,7 +46,7 @@ The table component consumes basic HTML table markup, which makes it accessible 
 
 ## Usage
 
-<StorybookStory story="components-ns-table--data-table"></StorybookStory>
+<StorybookStory story="components-ns-table--standard"></StorybookStory>
 
 ## Component placement
 

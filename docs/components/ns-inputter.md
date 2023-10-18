@@ -28,7 +28,7 @@ The text input is ideal for entering text that takes up a single line, such as a
 
 ![Text input](images/ns-inputter/text.webp)
 
-[See `<ns-inputter>` text input on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-components-ns-inputter--text-input).
+[See `<ns-inputter>` text input on Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/form-components-ns-inputter--text).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -51,7 +51,7 @@ To match this heading's size with other `ns-inputter` labels', group all associa
 
 ![Radio buttons](images/ns-inputter/radio-buttons.webp)
 
-[See `<ns-inputter>` radio buttons on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--radio).
+[See `<ns-inputter>` radio buttons on Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/form-components-ns-inputter--radio).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -76,7 +76,7 @@ To match this heading's size with other `ns-inputter` labels', group all associa
 
 ![Checkboxes](images/ns-inputter/checkboxes.webp)
 
-[See `<ns-inputter>` checkboxes on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--checkbox).
+[See `<ns-inputter>` checkboxes on Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/form-components-ns-inputter--checkbox).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -98,7 +98,7 @@ Use the contextual [helper text](https://nucleus.design/docs/components/ns-input
 
 ![Radio button and checkbox inline variant](images/ns-inputter/inline-checkboxes.webp)
 
-[See `<ns-inputter>` radio inline/checkbox inline on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-components-ns-inputter--checkbox-inline).
+[See `<ns-inputter>` radio inline/checkbox inline on Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/form-components-ns-inputter--checkbox-inline).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -116,7 +116,7 @@ Selects should be used to select an item from a list of many choices. Selects ca
 
 ![Select](images/ns-inputter/select.webp)
 
-[See `<ns-inputter>` select on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--select).
+[See `<ns-inputter>` select on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-components-ns-inputter--select).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -129,7 +129,7 @@ Textareas are used for capturing a longer answer. Always consider whether or not
 
 ![Textarea](images/ns-inputter/textarea.webp)
 
-You can [see an example of `<ns-inputter>` textarea here](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--textarea).
+You can [see an example of `<ns-inputter>` textarea here](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/form-components-ns-inputter--textarea).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -243,11 +243,11 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ![Separator - used for sort code](images/ns-inputter/separator.webp)
 
-[See `<ns-inputter>` mask on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--mask).
+[See `<ns-inputter>` mask on Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/form-components-ns-inputter--mask).
 
 ![Mask - used for meter readings](images/ns-inputter/mask.webp)
 
-[See `<ns-inputter>` separator on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--separator).
+[See `<ns-inputter>` separator on Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/form-components-ns-inputter--separator).
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
@@ -271,7 +271,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ## Usage
 
-<StorybookStory story="form-components-ns-inputter--text-input"></StorybookStory>
+<StorybookStory story="form-components-ns-inputter--text"></StorybookStory>
 
 ## Component placement
 

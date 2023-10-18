@@ -35,7 +35,7 @@ This component is legally required when capturing contact preferences that will 
 
 ## Usage
 
-<StorybookStory story="nsx-marketing-consent--standard"></StorybookStory>
+<StorybookStory story="experiences-nsx-marketing-consent--standard"></StorybookStory>
 
 ## Component placement
 

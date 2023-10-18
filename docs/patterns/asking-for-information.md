@@ -77,7 +77,7 @@ Radio buttons and checkboxes are usually the answers to a question asked in the 
 ![Radio buttons](images/asking-for-info/radio-buttons.webp)
 
 You can [read more information about how to use `<ns-inputter>` here](components/ns-inputter.md)
-See [`<ns-inputter>` on Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/form-ns-inputter--text-input)
+See [`<ns-inputter>` on Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/form-components-ns-inputter--text)
 
 ## Feedback
 

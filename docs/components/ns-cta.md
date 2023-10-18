@@ -86,7 +86,7 @@ Your loading message should be contextual to the action of the text of the CTA. 
 
 ![CTA - Loading state](images/ns-cta/states-loading-ns-cta.gif)
 
-You can see the live example of the loading state on [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-cta--direct-button-loading).
+You can see the live example of the loading state on [Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/components-ns-cta--loading-button).
 
 ### Disabled
 
@@ -120,7 +120,7 @@ The only time we present a disabled state is during the Loading state. This ensu
 
 ## Usage
 
-<StorybookStory story="components-ns-cta--direct-link"></StorybookStory>
+<StorybookStory story="components-ns-cta--standard-link"></StorybookStory>
 
 ## Component placement
 

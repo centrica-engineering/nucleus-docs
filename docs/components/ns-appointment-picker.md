@@ -26,7 +26,7 @@ import { PageFooter } from '../../includes/page-footer.js'
 
 ## Usage
 
-<StorybookStory story="components-ns-appointment-picker--standard"></StorybookStory>
+<StorybookStory story="form-components-ns-appointment-picker--standard"></StorybookStory>
 
 The main property of `ns-appointment-picker` is `slotData`.  This would typically be set by setting the property through code as it is a fairly complex object.
 

@@ -50,7 +50,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 ## Usage
 
-<StorybookStory story="components-ns-lockup--lockbox"></StorybookStory>
+<StorybookStory story="components-ns-lockup--standard"></StorybookStory>
 
 ## Component placement
 
@@ -63,7 +63,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 | `type` | `type` | `string` | `lockbox` | `lockjaw`, `lockbox`, `locknut` | At present, these three styles share identical visual and functional features; however, there is a possibility that they will diverge in the future. |
 | `reverse` | `reverse` | `boolean` | `false` |`true`, `false`| Switches the order of the text and image. Default (`false`) is text to the left. |
 | `ratio` | `ratio` | `string` | `4 / 3` | `4 / 3`, `16 / 9`, `1 / 1` | Ratio for the image. |
-| `decoration` | `decoration` | `string` |  | See [ns-illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustration--standard) | Adds an illustration overlapping the image. |
+| `decoration` | `decoration` | `string` |  | See [ns-illustration component in Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/components-ns-illustration--standard) | Adds an illustration overlapping the image. |
 
 | Slots | Type |
 | :--- | :--- |
@@ -83,7 +83,7 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 ![ns-lockup-with-video-overlap](images/ns-lockup/video.webp)
 
-* Use the `video` variant when using a video instead of an image as the overlap is in front of the text box so neither the video nor its captions are obscured. The text then wraps around the video edge. (See the `video` example on [Storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/components-ns-lockup--video))
+* Use the `video` variant when using a video instead of an image as the overlap is in front of the text box so neither the video nor its captions are obscured. The text then wraps around the video edge. (See the `video` example on [Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/components-ns-lockup--video))
 * It is not possible to use an illustration decoration with a video.
 * Use the video's YouTube link as the `id` attribute's value.
 

@@ -49,7 +49,7 @@ Sets the expectation of a process that hasn't started or doesn't have any specif
 
 ## Usage - standard variant
 
-<StorybookStory story="components-ns-timeline--time-line"></StorybookStory>
+<StorybookStory story="components-ns-timeline--standard"></StorybookStory>
 
 ### Component placement
 
@@ -127,6 +127,10 @@ On events that are in progress, it is possible to add further information releva
 On events that have been successfully completed, there is the option to display a time-stamp alongside the status.
 
 ## Usage - step variant
+
+
+<StorybookStory story="components-ns-timeline--step"></StorybookStory>
+
 
 The step variant is a simpler version of the timeline component that excludes summary and status.
 

@@ -92,7 +92,7 @@ When used in ns-column, ns-column must be a child of ns-inputter:
 
 | Attribute | Property | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `decoration` | `decoration` | `string` |  |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--appliance)| Illustration that is show in the section type card |
+| `decoration` | `decoration` | `string` |  |See [Illustration component in Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/components-ns-illustration--standard)| Illustration that is show in the section type card |
 | `image`      | `image`      | `string` |  |  | Optional image |
 | `keyline`    | `keyline`    | `string` | none |`cyan`, `lime`, `navy`, `blue`, `forest`, `slate`, `orange`, `red`, `yellow` | Add a colour across the top of the selector |
 
