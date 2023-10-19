@@ -19,7 +19,7 @@ The address selector is a multi-functional experience pattern that can be used f
 ### Markup
 
 ```markup
-<nsx-address-selector postcode="AA12 3BB" addresses="arrayOfAddresses" allowmanualaddress></nsx-address-selector>
+<nsx-address-selector postcode="AA12 3BB" addresses="arrayOfAddresses" allow-manual-address></nsx-address-selector>
 ```
 ### Anonymous customer
 
@@ -65,10 +65,12 @@ You can [see the manual entry state of `<nsx-address-selector>` here](https://ma
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `addresses`   | `array` | `[]` |  | The list of addresses that will be displayed to the user |
-| `allowManualAddress` | `boolean` | false | true, false | When set to true the component will allow you to edit an address manually |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `addresses` | `addresses` | `array` | `[]` |  | The list of addresses that will be displayed to the user |
+| `allow-manual-address` | `allowManualAddress` | `boolean` | false | true, false | When set to true the component will allow you to edit an address manually |
+| `manual-form-enabled` | `manualFormEnabled` | `boolean` | false | true, false | When set to true the component will allow to enter the address manually |
+| `selected-address` | `selectedAddress` | `Object` |  | The address that is selected |
 
 ### Addresses
 

@@ -50,9 +50,9 @@ Caveats link to content in the page, providing more information about legality a
 
 ## Specification
 
-| Attribute    | Type | Default   | Options   | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `type`    | `string` | `standard` | `alert`, `standard` | Currently alert is in alpha |
+| Attribute | Property | Type | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type`   | `type`  | `string` | `standard` | `standard` | Currently alert is in alpha |
 
 | Slots     | Type          |
 | :--- | :--- |
@@ -69,4 +69,3 @@ Caveats link to content in the page, providing more information about legality a
 ## Related links
 
 * [ns-caveat component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-caveat--caveat).
-* [Homepage example in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-homepage--2019-01).

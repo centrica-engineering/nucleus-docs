@@ -65,10 +65,10 @@ There are a range of colours to choose from (see the specifications below). Try 
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `colour` | `string` | `slate` | `cyan`, `lime`, `navy`, `forest`, `slate`, `orange`, `red`, `yellow` | The colour of the pill |
-| `icon` | `string` |  |  See [`ns-icon` component icon types](../components/ns-icon) | The icons to show inside the pill |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `colour` | `colour` | `string` | `slate` | `cyan`, `lime`, `navy`, `forest`, `slate`, `orange`, `red`, `yellow` | The colour of the pill |
+| `icon` | `icon` | `string` |  |  See [`ns-icon` component icon types](../components/ns-icon) | The icons to show inside the pill |
 
 ## Specification notes
 

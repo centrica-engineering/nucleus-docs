@@ -9,6 +9,8 @@ import { PageFooter } from '../../includes/page-footer.js'
 ## Introduction
 
 > Highlighters can be used to communicate information or error, warning and success messages.
+>
+> **Note:** This component is deprecated and please refer to [ns-alert](../components/ns-alert) component.
 
 A component that communicates the message that a service is not available to them or that there are technical issues on specific pages only. These messages are different to global messages as they only apply to some pages not site wide.
 

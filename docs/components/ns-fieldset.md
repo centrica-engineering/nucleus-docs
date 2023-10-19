@@ -9,6 +9,8 @@ import { PageFooter } from '../../includes/page-footer.js'
 ## Introduction
 
 > The ns-fieldset component is used to group related ns-inputters.
+>
+> **Note:** This component is deprecated and please refer to [ns-form-group](../components/ns-form-group) component.
 
 Use where you would normally use a vanilla html fieldset element. This element extends the layout for `ns-form`.
 

@@ -39,13 +39,13 @@ The subheadings and links for the navigation can be passed in for each section t
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `sections`    | `array` | |  | Subheadings and links for each nav section |
-| `hideA11yBtn`    | `boolean` | `false` |  | Ability to turn off Reciteme |
-| `secondary-banner` | `array` |  |  | Top right section, includes a paragraph and a cta |
-| `menu-banner` | `array` |  |  | Section within the bubble, includes a paragraph and a cta |
-| `quick-links` | `array` |  |  | Subheadings and links to the right of the primary navigation |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `sections`    | `sections` | `array` | |  | Subheadings and links for each nav section |
+| `hide-a11y-btn` | `hideA11yBtn` | `boolean` | `false` |  | Ability to turn off Reciteme |
+| `secondary-banner` | `secondaryBanner` | `array` |  |  | Top right section, includes a paragraph and a cta |
+| `menu-banner` | `menuBanner`| `array` |  |  | Section within the bubble, includes a paragraph and a cta |
+| `quick-links` | `quickLinks` | `array` |  |  | Subheadings and links to the right of the primary navigation |
 
 | Event | Description |
 | :--- | :--- |

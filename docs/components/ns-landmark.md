@@ -169,13 +169,13 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `type` | `string` | `summit` | `summit`, `hillside`, `lakeside`, `valley` | The variant of the landmark. |
-| `image` | `string` |  |  | Background image used for summit variant or image used for valley variant |
-| `decoration` | `string` | `cyan` | `cyan`, `lime`, `navy`, `blue`, `forest`, `orange`, `red`, `yellow` | Background and offset colour used for the Hillside and Valley variant. |
-| `pillOverImage` | `boolean` |  |  | Used to put the pill in the bottom left of the image when using `type="valley"` and an image |
-| `ratio` | `string` | `16x9` | `4x3`, `16x9` | Aspect ratio of the image used only for valley variant |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type` | `type` | `string` | `summit` | `summit`, `hillside`, `lakeside`, `valley` | The variant of the landmark. |
+| `image` | `image` | `string` |  |  | Background image used for summit variant or image used for valley variant |
+| `decoration` | `decoration` | `string` | `cyan` | `cyan`, `lime`, `navy`, `blue`, `forest`, `orange`, `red`, `yellow` | Background and offset colour used for the Hillside and Valley variant. |
+| `pill-over-image` | `pillOverImage` | `boolean` | `false` |  | Used to put the pill in the bottom left of the image when using `type="valley"` and an image |
+| `ratio` | `ratio` | `string` | `16 / 9` for `summit` type and `4 / 3` for `valley` type | `4 / 3`, `16 / 9` | Aspect ratio of the image used only for valley variant |
 
 | Slots | Type |
 | :--- | :--- |
