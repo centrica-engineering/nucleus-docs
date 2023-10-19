@@ -48,23 +48,23 @@ Some browsers do not support `type='date'` (e.g. Safari on Desktop). The compone
 
 ## Component placement
 
-<ComponentPlacement component="ns-datepicker" parentComponents="ns-form,ns-fieldset"></ComponentPlacement>
+<ComponentPlacement component="ns-datepicker" parentComponents="ns-form,ns-form-group"></ComponentPlacement>
 
 ## Specification
 
 Also see ns-inputter [specification](components/ns-inputter.md#specification)
 
-| Attribute      | Type      | Default   | Options | Description |
-|----------------|-----------|-----------|---------|-----------|
-| `autocomplete` | `string`  | "off"     |         | Value to pass to the input autocomplete attribute.
-| `helper`       | `string`  |           |         | See [ns-inputter](components/ns-inputter.md#specification). |
-| `label`        | `string`  |           |         | The text to place in the label. |
-| `max`          | `string`  |           |         | The maximum date allowed to be entered into the input. Must be in YYYY-MM-DD format. Validation will trigger if date is entered after this value |
-| `min`          | `string`  |           |         | The minimum date allowed to be entered into the input. Must be in YYYY-MM-DD format. Validation will trigger if date is before after this value |
-| `name`         | `string`  | "date"    |         | See [ns-inputter](components/ns-inputter.md#specification). |
-| `type`         | `string`  | "default" | `default`, `mask` | Use to select the input format. Default is the native date input. |
-| `validation`   | `array`   |           |         | See [ns-inputter](components/ns-inputter.md#specification). minDate and Max date are automatically applied if the min and max values are populated. |
-| `value`        | `string`  |           |         | The value the input inside the component. This can be used to add an initial value. |
+| Attribute      | Property |   Type      | Default   | Options | Description |
+| :--------- | :--------- | :---- | :-------- | :--------- |  :---------------------- |
+| `autocomplete` | `autocomplete` | `string`  | `off`     |         | Value to pass to the input autocomplete attribute.
+| `helper`       | `helper`       | `string`  |           |         | See [ns-inputter](components/ns-inputter.md#specification). |
+| `label`        | `label`        | `string`  |           |         | The text to place in the label. |
+| `max`          | `max`          | `string`  |           |         | The maximum date allowed to be entered into the input. Must be in YYYY-MM-DD format. Validation will trigger if date is entered after this value |
+| `min`          | `min`          | `string`  |           |         | The minimum date allowed to be entered into the input. Must be in YYYY-MM-DD format. Validation will trigger if date is before after this value |
+| `name`         | `name`         | `string`  | `date`    |         | See [ns-inputter](components/ns-inputter.md#specification). |
+| `type`         | `type`         | `string`  | `default` | `default`, `mask` | Use to select the input format. Default is the native date input. |
+| `validation`   | `validation`   | `array`   |           |         | See [ns-inputter](components/ns-inputter.md#specification). minDate and Max date are automatically applied if the min and max values are populated. |
+| `value`        | `value`        | `string`  |           |         | The value the input inside the component. This can be used to add an initial value. |
 
 | Slots | Type |
 | :--- | :--- |
@@ -80,4 +80,4 @@ Also see ns-inputter [specification](components/ns-inputter.md#specification)
 ## Related links
 
 * [ns-inputter](components/ns-inputter.md)
-* [ns-form](components/ns-fieldset.md)
+* [ns-form](components/ns-form.md)

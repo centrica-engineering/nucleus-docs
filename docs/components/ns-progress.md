@@ -63,13 +63,13 @@ Internet Explorer 11 and Microsoft Edge 18 and lower do not show the progress ba
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `steps` | `number` |  |  | The maximum number of steps to show |
-| `current` | `number` | `1`|  | The step to show as active (can also accept a decimal value) |
-| `info` | `string` |  |  | Information about the current step |
-| `next` | `string` |  |  | Information about the next step |
-| `complete` | `boolean` |  | `false` | Use to show the completed state |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `steps` | `steps` | `number` |  |  | The maximum number of steps to show |
+| `current` | `current` | `number` | `1`|  | The step to show as active (can also accept a decimal value) |
+| `info` | `info` | `string` |  |  | Information about the current step |
+| `next` | `next` | `string` |  |  | Information about the next step |
+| `complete` | `complete` | `boolean` |  | `false` | Use to show the completed state |
 
 ## Feedback
 

@@ -39,7 +39,7 @@ If supporting information is needed, consider using `ns-lockup` or `ns-editorial
 | 💚 Do's | 💔 Don'ts |
 | :---  | :---  |
 | Communicate the message in a clear and concise way as possible | Use the subheading |
-| Suggest a next step the customer could take e.g. direct them to webchat or a phone number | Use as errors that are specific to ui elements (such as form fields) or parts of a page ([See `ns-highlighter`](components/ns-highlighter.md) ) |
+| Suggest a next step the customer could take e.g. direct them to webchat or a phone number | Use as errors that are specific to ui elements (such as form fields) or parts of a page ([See `ns-alert`](components/ns-alert.md) ) |
 |  | Use for global messaging ([See `ns-skyline`](components/ns-skyline.md) ) |
 
 ## Principles to follow

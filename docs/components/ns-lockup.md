@@ -58,12 +58,12 @@ We use lockups to engage customers, in particular to promote a key product or se
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `type` | `string` | `lockbox` | `lockjaw`, `lockbox`, `locknut` | At present, these three styles share identical visual and functional features; however, there is a possibility that they will diverge in the future. |
-| `reverse` | `boolean` | `false` |`true`, `false`| Switches the order of the text and image. Default (`false`) is text to the left. |
-| `ratio` | `string` | `4x3` | `4:3`, `16:9`, `1:1` | Ratio for the image. |
-| `decoration` | `string` |  | See [ns-illustration component in Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/components-ns-illustration--standard) | Adds an illustration overlapping the image. |
+| Attribute    | Property | Type  | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type` | `type` | `string` | `lockbox` | `lockjaw`, `lockbox`, `locknut` | At present, these three styles share identical visual and functional features; however, there is a possibility that they will diverge in the future. |
+| `reverse` | `reverse` | `boolean` | `false` |`true`, `false`| Switches the order of the text and image. Default (`false`) is text to the left. |
+| `ratio` | `ratio` | `string` | `4 / 3` | `4 / 3`, `16 / 9`, `1 / 1` | Ratio for the image. |
+| `decoration` | `decoration` | `string` |  | See [ns-illustration component in Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/components-ns-illustration--standard) | Adds an illustration overlapping the image. |
 
 | Slots | Type |
 | :--- | :--- |

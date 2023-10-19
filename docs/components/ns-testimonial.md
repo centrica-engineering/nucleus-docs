@@ -47,12 +47,15 @@ Use within `ns-column` to display the desired layout of multiple testimonials.
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| citeUrl | `string` |  |  | This attribute should point to information explaining the context or the reference for the quote. |
-| author | `string` |  |  | The name or handle of the author that provided the quote. |
-| medium | `string` |  |  | The name of the platform that the author used to leave their message eg. twitter.|
-| quote | `string` |  |  | What the author wrote or said. |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `cite-url` | `citeUrl` | `string` |  |  | This attribute should point to information explaining the context or the reference for the quote. |
+| `author` | `author` | `string` |  |  | The name or handle of the author that provided the quote. |
+| `medium` | `medium` | `string` |  |  | The name of the platform that the author used to leave their message eg. twitter.|
+
+| Slots | Type |
+| :--- | :--- |
+| `quote` | `p tag` |
 
 ## Feedback
 

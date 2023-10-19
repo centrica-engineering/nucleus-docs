@@ -41,13 +41,13 @@ The text input is ideal for entering text that takes up a single line, such as a
 
 Radio buttons are for when customers need to select only one option from a list. If you need them to select multiple options then you should use checkboxes. If there are many items to choose from then you should consider a select instead.
 
-Radio buttons are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Are you a British Gas customer?".
+Radio buttons are usually the answers to a question asked in the `heading` attribute of the `ns-inputter` - such as "Are you a British Gas customer?".
 
 #### Note on the size of the heading for radio buttons
 
 Radio buttons come with a heading that inherits size 4, which is larger than the default label size and can visually look odd when grouped with other `ns-inputters`.
 
-To match this heading's size with other `ns-inputter` labels', group all associated elements in an `ns-fieldset`. This will help keep a logical visual hierarchy when using radio buttons grouped with other inputs.
+To match this heading's size with other `ns-inputter` labels', group all associated elements in an `ns-form-group`. This will help keep a logical visual hierarchy when using radio buttons grouped with other inputs.
 
 ![Radio buttons](images/ns-inputter/radio-buttons.webp)
 
@@ -66,13 +66,13 @@ To match this heading's size with other `ns-inputter` labels', group all associa
 
 Checkboxes are for when customers can select multiple options from a list, or choose to toggle a single option on or off. If you need them to select a single option from a list then you should use radio buttons.
 
-Checkboxes are automatically grouped together in a `<fieldset>`, the `heading` attribute mentioned above is used to provide a `<legend>` to describe the options. These are usually in the form of a question - such as "Which British Gas services would you like to choose?".
+Checkboxes are usually the answers to a question asked in the `heading` attribute of the `ns-inputter` - such as "Which British Gas services would you like to choose?".
 
 #### Note on the size of the heading for checkboxes
 
 Checkboxes come with a heading that inherits size 4, which is larger than the default label size and can visually look odd when grouped with other `ns-inputters`.
 
-To match this heading's size with other `ns-inputter` labels', group all associated elements in an `ns-fieldset`. This will help keep a logical visual hierarchy when using checkboxes grouped with other inputs.
+To match this heading's size with other `ns-inputter` labels', group all associated elements in an `ns-form-group`. This will help keep a logical visual hierarchy when using checkboxes grouped with other inputs.
 
 ![Checkboxes](images/ns-inputter/checkboxes.webp)
 
@@ -275,22 +275,22 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ## Component placement
 
-<ComponentPlacement component="ns-inputter" parentComponents="ns-form,ns-fieldset"></ComponentPlacement>
+<ComponentPlacement component="ns-inputter" parentComponents="ns-form,ns-form-group"></ComponentPlacement>
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `value`   | `string` | `''` |  | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an initial value |
-| `validation` | `array` |  | `isRequired`, `isNumber`,  `isInteger`, `isPostcode(includeEIR)`, `isFirstName`, `isLastName`, `isFullName`, `isTitle`, `isEmail`, `isPhoneNumber(includeIreland)`, `isMobileNumber`, `isPassword`, `isDate`, `minDate(date)`, `maxDate(date)`, `isDateOfBirth`, `minLength(x)`, `maxLength(x)` | A way to assist that valid values are added and to show an error message when they're not. |
-| `ignoreseparator` | `boolean` | `false` | `true`, `false` | Setting this to true will force length validations to not include the separator when calculating the length|
-| `execute` | `boolean` | `false` | `true`, `false` | Will trigger the validation even if the input hasn't been touched. |
-| `helper` | `string` |  |  | Adds a message between the label and the input. Used to convey a message to help the user to fill in the input |
-| `labelID` | `string` |  |  | Used if the label isn't part of the inputter |
-| `heading` | `string` |  |  | Used for checkboxes and radio buttons instead of a label |
-| `mask` | `string` |  |  | Shows what can be entered. Similar to a placeholder, but stays when values are entered. |
-| `separator` | `string` |  |  | Allows the mask to manipulate the inputted value if it needs to be formatted in a certain way. |
-| `name` | `string` |  |  | The name of this field as it will display in the form data. |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `name` | `name` | `string` |  |  | The name of this field as it will display in the form data. |
+| `value`   | `value`   | `string` | `''` |  | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an initial value |
+| `labelID` | `labelID` | `string` |  |  | Used if the label isn't part of the inputter |
+| `heading` | `heading` | `string` |  |  | Used for checkboxes and radio buttons instead of a label |
+| `validation` | `validation` | `array` |  | `isRequired`, `isNumber`,  `isInteger`, `isPostcode(includeEIR)`, `isFirstName`, `isLastName`, `isFullName`, `isTitle`, `isEmail`, `isPhoneNumber(includeIreland)`, `isMobileNumber`, `isPassword`, `isDate`, `minDate(date)`, `maxDate(date)`, `isDateOfBirth`, `minLength(x)`, `maxLength(x)` | A way to assist that valid values are added and to show an error message when they're not. |
+| `helper` | `helper` | `string` |  |  | Adds a message between the label and the input. Used to convey a message to help the user to fill in the input |
+| `open-helper` |  `isHelperOpen` | `boolean` | `false` | `true`, `false` | Setting this to true will force the helper tip details to be open (expanded) on load of the inputter |
+| `mask` | `mask` | `string` |  |  | Shows what can be entered. Similar to a placeholder, but stays when values are entered. |
+| `separator` | `separator` | `string` |  |  | Allows the mask to manipulate the inputted value if it needs to be formatted in a certain way. |
+| `ignore-separator` | `ignoreSeparator` | `boolean` | `false` | `true`, `false` | Setting this to true will force length validations to not include the separator when calculating the length|
 
 | Slots | Type |
 | :--- | :--- |
@@ -301,12 +301,13 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 | Event | Description |
 | :--- | :--- |
 | `change` | Will be dispatched when input changes |
+| `helper-toggle` | Will be dispatched when helper tip details is toggled between open and collapsed state |
 
 ## Specification notes
 
 ### Helper
 
-- A way to help the user understand why or why not enter information
+- A way to help the user understand why or why not enter information.
 
 ### LabelID
 
@@ -336,7 +337,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 
 ### Tip-details slot
 
-- This requires helper property which is initially hidden and can be revealed by the user when they click on the helper text.
+- This requires helper property. This is initially hidden and can be revealed by the user when they click on the helper text.
 
 ### Validation
 
@@ -368,7 +369,7 @@ The `separator` is used with the mask to manipulate the inputted value if it nee
 ## Related links
 
 - [ns-form](components/ns-form.md)
-- [ns-fieldset](components/ns-fieldset.md)
+- [ns-form-group](components/ns-form-group.md)
 - [ns-datepicker](components/ns-datepicker.md)
 - [ns-password](components/ns-password.md)
 - [ns-cta](components/ns-cta.md)
