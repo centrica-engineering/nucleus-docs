@@ -41,8 +41,8 @@ The ns-illustration component can be used in a number of components to help crea
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `type` | `type` | `string` | `standard` | `standard` | Type of illustration. |
 | `name` | `name` | `string` | `gas` | `appliance`, `appliance-cover`, `appliance-repair`, `battery`, `boiler`, `boiler-cover`, `boiler-repair`, `bulb`, `calendar`, `central-heating`, `chat`, `clock`, `compass`, `cosmo`, `document`, `dual-fuel`, `electric-charging-station`, `electric-vehicle`, `electrics`, `engineer`, `error`, `fix`, `fixed-sa`, `gas`, `green-leaf`, `help`, `home`, `home-insurance`, `laptop`, `low-carbon`, `multiple-people`, `oven`, `phone`, `pipe-and-drain`, `protect`, `radiator`, `savings`, `settings`, `sms`, `tap`, `track-engineer`, `van`, `whats-app`, `yellow-shield` See [Illustration component in Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/components-ns-illustration--all) | Picks the illustration that is to be shown. |
-| `size` | `number` | `''` | `''`, `1`, `2`, `3`, `4`, `5` | Changes the size of the illustration, with 1 being the smallest. |
-| `inactive` | `string` | `false` | `true`, `false` | Will grey out the illustration. |
+| `size` | `size` | `number` | `''` | `''`, `1`, `2`, `3`, `4`, `5` | Changes the size of the illustration, with 1 being the smallest. |
+| `inactive` | `inactive` | `string` | `false` | `true`, `false` | Will grey out the illustration. |
 
 ## Specification notes
 
