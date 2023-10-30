@@ -42,13 +42,13 @@ To prevent users with cognitive disabilities from being overwhelmed; the shimmer
 
 ## Component placement
 
-<ComponentPlacement component="ns-skeleton" parentComponents="ns-lockup,ns-landmark,ns-card,ns-form,ns-fieldset,ns-content,ns-article,ns-accordion,ns-caveat,ns-tabs,ns-testimonial,ns-skyline,ns-product-card"></ComponentPlacement>
+<ComponentPlacement component="ns-skeleton" parentComponents="ns-lockup,ns-landmark,ns-card,ns-form,ns-form-group,ns-content,ns-article,ns-accordion,ns-caveat,ns-tabs,ns-testimonial,ns-skyline,ns-product-card"></ComponentPlacement>
 
 ## Specification
 
-| Attribute    | Type | Default   | Options   | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `type` | `string` | `text` | `text`, `paragraph`, `heading`, `subheading` | Visual element it is representing |
+| Attribute | Property |  Type | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type` | `type` | `string` | `text` | `text`, `paragraph`, `heading`, `subheading` | Visual element it is representing |
 
 ## Specification notes
 

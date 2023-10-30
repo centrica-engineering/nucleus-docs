@@ -33,7 +33,7 @@ In the following examples, the expander is used in an accordion and in a selecto
 | Use headings, paragraphs, lists for content | Use as a solution to excessive copy on a page |
 | Make sure the heading in the heading slot relates to content | Nest expanders within expanders |
 | Use a coloured expander to draw attention to a promotion in an expander on a product card | Use multiple coloured expanders on one page|
-|  | Use a coloured expander to draw attention to a warning message. Use [ns-highlighter](components/ns-highlighter.md) or [ns-skyline](components/ns-skyline.md) instead. |
+|  | Use a coloured expander to draw attention to a warning message. Use [ns-alert](components/ns-alert.md) or [ns-skyline](components/ns-skyline.md) instead. |
 
 ### Considerations of best practice
 
@@ -54,12 +54,12 @@ We recommend expanders to be primarily used in `ns-accordion` and `ns-skyline`.
 
 ## Specification
 
-| Attribute | Type | Default   | Options   | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `type` | `string` | `standard` | `skyline`, `standard` | Variants for the expander. |
-| `open` | `string` | `false` | `true`, `false` | If true will open the expander to show the content. |
-| `icon` | `string` |  | `info`, `warning`. See [`ns-icon` component](../components/ns-icon) | Only use for a `type` of `skyline` |
-| `colour` | `string` |  | `yellow` | Sets the colour for the heading - Only use for a `type` of `standard` |
+| Attribute | Property | Type | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type` | `type` | `string` | `standard` | `skyline`, `standard` | Variants for the expander. |
+| `open` | `open` | `string` | `false` | `true`, `false` | If true will open the expander to show the content. |
+| `icon` | `icon` | `string` |  | `info`, `warning`. See [`ns-icon` component](../components/ns-icon) | Only use for a `type` of `skyline` |
+| `colour` | `colour` |  `string` |  | `yellow` | Sets the colour for the heading - Only use for a `type` of `standard` |
 
 | Slots | Type |
 | :--- | :--- |

@@ -36,10 +36,10 @@ It also holds information about the company.
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `company`    | `string` | `British Gas` |  | Change the company name in the copyright notice. |
-| `hideLogo`   | `boolean` | `false` | `true` `false` | Show or hide the British Gas logo. |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `company`   | `company`   | `string` | `British Gas` |  | Change the company name in the copyright notice. |
+| `hide-logo` | `hideLogo`  | `boolean` | `false` | `true` `false` | Show or hide the British Gas logo. |
 
 | Slots | Type |
 | :--- | :--- |

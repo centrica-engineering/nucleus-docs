@@ -39,10 +39,10 @@ The subheadings and links for the navigation can be passed in for each section t
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `sections`    | `array` | |  | Subheadings and links for each nav section |
-| `hideA11yBtn`    | `boolean` | `false` |  | Ability to turn off Reciteme |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `sections`    | `sections` | `array` | |  | Subheadings and links for each nav section |
+| `hide-a11y-btn` | `hideA11yBtn` | `boolean` | `false` |  | Ability to turn off Reciteme |
 
 | Event | Description |
 | :--- | :--- |

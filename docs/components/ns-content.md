@@ -9,6 +9,8 @@ import { PageFooter } from '../../includes/page-footer.js'
 ## Introduction
 
 > ns-content is used to display typography and media.
+>
+> **Note:** This component is currently being considered for deprecation.
 
 `ns-content` is used inside other components and has been created to help add consistency to typography styling, and to improve how typography interacts with other components.
 
@@ -46,9 +48,9 @@ Both `ns-image` and `ns-video` need to be wrapped in a `<figure>` element
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `spacing` | `string` | 'normal' | 'compact','cosy','normal','loose' | The space between the elements |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `spacing` | `spacing` | `string` | `normal` | `compact`, `cosy`, `normal`, `loose` | The space between the elements. |
 
 | Slots | Type |
 | :--- | :--- |

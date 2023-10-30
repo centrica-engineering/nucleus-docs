@@ -50,10 +50,10 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 
 ## Specification for Individual Tab
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `icon`    | `string` |  | Please see the [documentation for ns-icon](../components/ns-icon) | Optional icon to add to the tab. |
-| `selected` | `boolean` | `false` |`true`, `false`| Pre-selected tab |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `icon`    | `icon`    | `string` |  | Please see the [documentation for ns-icon](../components/ns-icon) | Optional icon to add to the tab. |
+| `selected` | `selected` | `boolean` | `false` |`true`, `false`| Pre-selected tab |
 
 | Event | Description |
 | :--- | :--- |
@@ -65,9 +65,9 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 
 ## Specification for Tabs
 
-| Attribute | Type | Default   | Options   | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `open` | `number`    | `0` |  | Number relates to the order of the tabs |
+| Attribute | Property | Type | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `open` | `open` | `number`    | `0` |  | Number relates to the order of the tabs |
 
 | Slots | Type |
 | :--- | :--- |

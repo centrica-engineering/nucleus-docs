@@ -31,7 +31,7 @@ There is no distinciton between a hyperlink or an action through the design of `
 
 ### Differences between `direct` and `text` types
 
-The two types of `ns-cta` are there to offer hierarchical structure to the page.
+The `direct` and `text` types of `ns-cta` are there to offer hierarchical structure to the page.
 
 The `direct` type has a more emphasised affordance, therefore it can be used as the main action for that page. As it's the main action, it should be used sparingly.
 
@@ -53,6 +53,13 @@ These are all supporting actions and our recommendation is to use the `text` typ
 
 If there is a group of more than three actions it would be preferable to make all these CTAs the `text` type. Or to find the main action in this group and place it in an alternative, more suitable component such as `ns-lockup` or `ns-standout` to establish hierarchy.
 
+### When to use `submit` and `reset` types
+The `submit` and `reset` types of `ns-cta` are there to facilitate  `ns-form` to do submit and reset actions respectively.
+
+The `submit` type is to be used in a page with `ns-form` to perform a native-like submit action. Upon submission it automatically validates the elements in `ns-form` and reports any warnings or will submit `ns-form`.
+
+The `reset` type is to be used in a page with `ns-form` to perform a native-like reset action. It will reset the elements back to their default or initial value.
+
 ### Button vs link
 
 There is no visual distinction between a button and a link when using `ns-cta`. It's recommended not to use a native `<button>` element, but to use the CTA with the required events.
@@ -67,13 +74,13 @@ The `ns-cta` is a standalone component that can serve an action whether it is a 
 
 ### Loading
 
-The `ns-cta` is capable of handling a loading interaction using the `loading` and `loadingMessage` attributes, these can be found in the [specification table](#specification) below.
+The `ns-cta` is capable of handling a loading interaction using the `loading` and `loading-message` attributes, these can be found in the [specification table](#specification) below.
 
 This loading state is used to provide the user with feedback that their action is being handled. It also reassures the user that action may take a number of seconds to be completed.
 
 We recommend only to use this loading state for a maximum of 5 seconds. If it's known that the action is likely to take longer than 5 seconds, present the user with a [Roadblock page type](../page-types/roadblock).
 
-If the action fails, don't leave the CTA in its Loading state. Present the user with clear feedback with [the highlighter component](../components/ns-highlighter).
+If the action fails, don't leave the CTA in its Loading state. Present the user with clear feedback with [the alert component `highlighter` varient](../components/ns-alert#highlighter-variant).
 
 Your loading message should be contextual to the action of the text of the CTA. E.g. "Get a quote" becomes "Getting your quote...". 
 
@@ -99,7 +106,8 @@ The only time we present a disabled state is during the Loading state. This ensu
 | Use `direct` type for the most important action on the page | Use more than 24 characters |
 | Use `text` type to support the direct action | Have CTAs within a paragraph |
 | Use instead of a native button | Repeat the CTA copy within the same page |
-|  | Use for downloads. Use the [`ns-download` component](../components/ns-download) instead |
+| Use `submit` type in a form for form submission | Use for downloads. Use the [`ns-download` component](../components/ns-download) instead |
+| Use `reset` type in a form for form reset action | |
 
 ### Considerations of best practice
 
@@ -116,22 +124,21 @@ The only time we present a disabled state is during the Loading state. This ensu
 
 ## Component placement
 
-<ComponentPlacement component="ns-cta" parentComponents="ns-landmark,ns-lockup,ns-card,ns-product-card,ns-form,ns-fieldset,ns-content,ns-highlighter"></ComponentPlacement>
-
+<ComponentPlacement component="ns-cta" parentComponents="ns-landmark,ns-lockup,ns-card,ns-product-card,ns-form,ns-fieldset,ns-content"></ComponentPlacement>
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `type`    | `string` | `direct` | `direct`, `text` | Different variants of the CTA. |
-| `href` | `string` |   |   | Navigating using a hyperlink. |
-| `icon`  | `string` | `arrow-right` | `arrow-left`, `arrow-right` See [`ns-icon` component](../components/ns-icon) | The icon inside the CTA. |
-| `loading` | `string` | `false` | `true`, `false` | Change the state of the CTA to loading. |
-| `loadingMessage` | `string` | `Loading...` |  | Overwrites the CTA anonymous slot for the loading state. |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type` | `type` |`string` | `direct` | `direct`, `text`, `submit`, `reset` | Different variants of the CTA. |
+| `href` | `href` | `string` |  |  | Navigating using a hyperlink. |
+| `icon` | `icon` | `string` | `arrow-right` | `arrow-left`, `arrow-right` See [`ns-icon` component](../components/ns-icon) | The icon inside the CTA. |
+| `loading` | `loading` | `boolean` | `false` | `true`, `false` | Change the state of the CTA to loading. |
+| `loading-message` | `loadingMessage` | `string` | `Loading...` |  | Overwrites the CTA anonymous slot for the loading state. |
 
 | Slots | Type |
 | :--- | :--- |
-| Anonymous | textNode |
+| Anonymous | `textNode` |
 
 ## Specification notes
 
