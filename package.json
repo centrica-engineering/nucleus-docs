@@ -1,38 +1,23 @@
 {
   "name": "nucleus-docs",
-  "version": "0.0.0",
+  "type": "module",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "getTokens": "node scripts/get-tokens.js",
-    "docusaurus": "docusaurus",
-    "start": "npm run getTokens && docusaurus start",
-    "build": "npm run getTokens && docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "serve": "docusaurus serve",
-    "clear": "docusaurus clear"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.6",
-    "@docusaurus/plugin-client-redirects": "^2.0.0-beta.6",
-    "@docusaurus/preset-classic": "^2.0.0-beta.6",
-    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.6",
-    "@mdx-js/react": "^1.6.21",
-    "axios": "^0.21.1",
-    "clsx": "^1.1.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@astrojs/lit": "^3.0.2",
+    "@astrojs/starlight": "^0.11.0",
+    "@connectedhomes/nucleus": "^3.1.0",
+    "@webcomponents/template-shadowroot": "^0.2.1",
+    "astro": "^3.2.3",
+    "js-beautify": "^1.14.9",
+    "lit": "^2.8.0",
+    "sharp": "^0.32.5"
   }
 }

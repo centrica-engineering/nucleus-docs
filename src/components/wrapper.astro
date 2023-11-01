@@ -1,0 +1,79 @@
+---
+const { name } = Astro.props;
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import cem from '@connectedhomes/nucleus/custom-elements.json';
+
+const compDetails = cem.tags.find((tag) => tag.name === name);
+
+---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.9/beautify-html.js"></script>
+<p>{compDetails?.description}</p>
+
+<Tabs>
+	<TabItem label="About">
+    <slot name="about"></slot>
+
+    <h2>Specification</h2>
+
+    <h3>Attributes</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Type</th>
+          <th>Default</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {Object.entries(compDetails?.attributes).map(([attr, value]) => {
+          return (
+            <tr>
+              <td>{value.name}</td>
+              <td>{value.type}</td>
+              <td>{value.default}</td>
+              <td></td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+
+    <h3>Properties</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Type</th>
+          <th>Default</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {Object.entries(compDetails?.properties).map(([prop, value]) => {
+          return (
+            <tr>
+              <td>{value.name}</td>
+              <td>{value.type}</td>
+              <td>{value.default}</td>
+              <td></td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+
+
+  </TabItem>
+	<TabItem label="Examples">
+    <slot name="examples"></slot>
+  </TabItem>
+  <TabItem label="Content">
+    <slot name="content"></slot>
+  </TabItem>
+	<TabItem label="Usage">
+    <slot name="usage"></slot>
+  </TabItem>
+</Tabs>

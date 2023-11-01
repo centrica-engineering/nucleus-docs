@@ -1,0 +1,29 @@
+---
+title: Accordion
+description: this is a description
+label: component
+---
+
+import Wrapper from '../../../components/wrapper.astro';
+import { ExampleView } from '../../../components/ce/example-view.js';
+
+<Wrapper name="ns-accordion">
+  <section slot="about">
+    <ExampleView client:visible>
+      <ns-accordion>
+        <h2 slot="heading">This is a test</h2>
+        <ns-expander>
+          <h2 slot="heading">This is also a test</h2>
+          <p>hello</p>
+        </ns-expander>
+      </ns-accordion>
+    </ExampleView>
+
+  </section>
+
+  <section slot="usage">
+    ## Component placement
+
+    This is used here.
+  </section>
+</Wrapper>
