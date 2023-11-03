@@ -7,7 +7,6 @@ export class ExampleView extends LitElement {
   static get properties() {
     return {
       title: { type: String },
-      fullscreen: { type: Boolean, reflect: true },
       __code: { type: String, state: true },
       __minHeight: { type: Number, state: true },
       __isDragging: { type: Boolean, state: true }
@@ -78,18 +77,6 @@ export class ExampleView extends LitElement {
         top: 30px;
         bottom: 30px;
       }
-
-      :host([fullscreen]) {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: 0;
-        z-index: 99999999999;
-        background: #fff;
-        isolation: isolate;
-      }
     `;
   }
 
@@ -97,7 +84,6 @@ export class ExampleView extends LitElement {
     super();
 
     this.title = 'Example';
-    this.fullscreen = false;
 
     this.__code = '';
     this.__minHeight = 200;
@@ -167,10 +153,6 @@ export class ExampleView extends LitElement {
     this.__isDragging = true;
   }
 
-  enableFullscreen() {
-    this.fullscreen = true;
-  }
-
   render() {
     const styles = {
       '--min-height': `${this.__minHeight}px`
@@ -192,7 +174,6 @@ export class ExampleView extends LitElement {
       <button class="slider" @mousedown=${this.slideDown} @mousemove=${this.sliderMove} @mouseup=${this.sliderUp} @mouseleave=${this.sliderUp}>===</button>
       <div class="code-actions">
         <button @click=${this.copySnippet}>Copy</button>
-        <button @click=${this.enableFullscreen}>Fullscreen</button>
       </div>
       <div class="code">
         <pre><code ${ref(this.addCode)}></code></pre>
