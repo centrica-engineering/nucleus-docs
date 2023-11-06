@@ -22,7 +22,7 @@ Our aspect ratios always scale proportionally. If it is a full-width image the h
 
 When selecting photography think about the subject matter and the customer benefit you want to convey. This is made stronger when paired with copy that links the story together.
 
-Our library can be accessed [here](https://centrica.frontify.com/d/pDUbkrcf54Nh/our-assets). Please refer to our brand guidelines for more further details on photography selection and art direction.
+Our library can be accessed [here](https://centrica.frontify.com/document/431). Please refer to our brand guidelines for more further details on photography selection and art direction.
 
 ## Storing imagery
 
