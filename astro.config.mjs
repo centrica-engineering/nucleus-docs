@@ -59,7 +59,8 @@ export default defineConfig({
   integrations: [starlight({
     title: 'Nucleus',
     logo: {
-      src: './public/logo.svg',
+      light: './public/logo.svg',
+      dark: './public/logo-dark.svg',
       replacesTitle: true
     },
     editLink: {
