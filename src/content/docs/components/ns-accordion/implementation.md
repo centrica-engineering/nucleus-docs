@@ -4,7 +4,7 @@ title: Accordion implementation
 
 ## Best practices
 
-### Do's and don'ts
+### Dos and don'ts
 
 ## Accessibility
 
