@@ -5,38 +5,24 @@ label: component
 example: hi there
 ---
 
+`<ns-accordion>` (would be nicer larger like Shoelace DS?)
+
+## Purpose
+**Accordion enables users to expand and collapse multiple sections of content.** 
+
+(**Question:** can the above be automated separately from that in the example from wrapper below?)
+We use accordions to break down content into meaningful sections, helping to reduce information overload. Accordions are useful for things like frequently asked questions or displaying multiple blocks of related content inside an [ns-expander](components/ns-expander.md).
+
+## Example
+
 import Wrapper from '../../../../components/wrapper.astro';
 
-<Wrapper name="ns-accordion" >
-
-    ## Type Purposes
-
-    ### Image location options
-     What would be the right structure?
-
-    #### Github:
-    This is an exmaple of an image hosted on GitHub:
-     `https://raw.githubusercontent.com/withastro/docs/main/public/default-og-image.png`
-
-    ![An illustration of planets and stars featuring the word “astro”](https://raw.githubusercontent.com/withastro/docs/main/public/default-og-image.png)
-
-    #### In the assets folder:
-    This seems a long way away and needs untidy and prone to typos 4 x ../ on the link.
-    `../../../../assets/images/ns-accordion/contentguidance-ns-accordion.webp`
-    ![Assets located image](../../../../assets/images/ns-accordion/contentguidance-ns-accordion.webp)
-
-    #### Closer together in components/images/ns-accordion folder: 
-     This location is similar to the existing docs.
-    `../images/ns-accordion/contentguidance-ns-accordion.webp`
-     ![components/images/ns-accordion located image](../images/ns-accordion/contentguidance-ns-accordion.webp)
-
-    #### In the same folder components/ns-accordion/images:
-    Third possible way could be to include even closer in the components/ns-accordion folder alongside the .md files. I was concerned this might then appear in the right hand side links for 'On this page' but it doesn't. So this would be my preferred option I think as it's right next to the doc md files using this image. 
-    `./images/contentguidance-ns-accordion.webp`
-    ![components/ns-accordion/images located image](./images/contentguidance-ns-accordion.webp)
-
-    @Drew - I know you mentioned that it needed to work in GitHub too. Do you have an example path? I put the one in first, above but not sure if that's what you meant? It would make sense to me if the images are stored in docs alongside the mds.
-
-    ## Related links
-
+<Wrapper name="ns-accordion">
 </Wrapper>
+
+### Related links
+
+- [ns-expander](components/ns-expander.md)
+- [ns-icon](components/ns-icon.md)
+- [ns-product-card](components/ns-product-card)
+- [Figma UI kit version] Figma UI kit version - internal only link? (BG Figma workspace is not public)

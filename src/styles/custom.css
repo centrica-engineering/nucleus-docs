@@ -1,0 +1,10 @@
+/* Add styles here */
+
+/* Testing adjustment */
+
+:root {
+	/*--sl-content-width: 50rem; */
+	/* Text size */
+	--sl-text-5xl: 4rem; /* 42px */
+	
+}

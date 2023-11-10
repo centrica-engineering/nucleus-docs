@@ -1,7 +1,7 @@
 ---
-title: Accordion placement
+title: Accordion
 ---
+## Placement
+### Where to use
 
-## Where to use
-
-## Things to consider
+### Things to consider
