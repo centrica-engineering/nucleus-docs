@@ -26,7 +26,7 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
             <td>{value.name}</td>
             <td>{value.type}</td>
             <td>{value.default}</td>
-            <td />
+            <td>{value.description}</td>
           </tr>
         );
       })
@@ -48,12 +48,15 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
   <tbody>
     {
       Object.entries(compDetails?.properties).map(([prop, value]) => {
+        if (['slottedStyles'].includes(value.name)) {
+          return undefined;
+        }
         return (
           <tr>
             <td>{value.name}</td>
             <td>{value.type}</td>
             <td>{value.default}</td>
-            <td />
+            <td>{value.description}</td>
           </tr>
         );
       })

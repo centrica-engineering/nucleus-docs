@@ -6,7 +6,7 @@ import cem from '@connectedhomes/nucleus/custom-elements.json';
 import lit from "@astrojs/lit";
 
 
-const componetSidebar = {
+const componentSidebar = {
   label: 'Components',
   items: cem.tags.sort((a, b) => a.name.localeCompare(b.name)).map(component => ({
     label: component.name,
@@ -34,6 +34,33 @@ const componetSidebar = {
   }))
 };
 
+// const componentLists = {
+//   label: 'Lists',
+//   items: [
+//     {
+//       label: 'ns-alert',
+//       link: '/lists/ns-alert'
+//     },
+//     {
+//       label: 'ns-content',
+//       link: '/lists/ns-content'
+//     },
+//     {
+//       label: 'ns-card',
+//       link: '/lists/ns-card'
+//     }
+//   ]
+// };
+
+const componentLists = {
+  label: 'Lists',
+  items: cem.tags.sort((a, b) => a.name.localeCompare(b.name)).map(component => ({
+    label: component.name,
+    link: `/lists/${component.name}`
+  })),
+  collapsed: true
+};
+
 const componentOverrides = [
     // {
     //   label: 'ns-accordion',
@@ -47,7 +74,7 @@ const componentOverrides = [
 ];
 
 componentOverrides?.forEach(componentOverride => {
-  const component = componetSidebar.items.find(component => component.label === componentOverride.label);
+  const component = componentSidebar.items.find(component => component.label === componentOverride.label);
 
   if (component) {
     component.items = deepmerge(component.items, componentOverride.items);
@@ -70,13 +97,14 @@ export default defineConfig({
       TableOfContents: './src/components/toc.astro',
     },
     sidebar: [
-    componetSidebar,
+      componentLists,
+    componentSidebar,
       {
         label: 'Guidelines',
         items: [
           {
             label: 'a',
-            link: `/guidelines/a`
+            link: `/guidelines/example`
           }
         ]
       },
@@ -85,7 +113,7 @@ export default defineConfig({
         items: [
           {
             label: 'a',
-            link: `/patterns/a`
+            link: `/patterns/example`
           }
         ]
       },
@@ -103,7 +131,7 @@ export default defineConfig({
         items: [
           {
             label: 'a',
-            link: `/resources/a`
+            link: `/resources/example`
           }
         ]
       }

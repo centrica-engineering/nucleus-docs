@@ -9,11 +9,12 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.9/beautify-html.js"></script>
 
+<p>{compDetails?.description}</p>
 
 <ExampleView client:visible>
-  hello world
+  <slot name="template"/>
 </ExampleView>
 
-<p>{compDetails?.description}</p>
+
 
 <slot />

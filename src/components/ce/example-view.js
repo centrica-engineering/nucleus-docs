@@ -18,9 +18,6 @@ export class ExampleView extends LitElement {
       :host {
         display: block;
         height: 100%;
-        border: 1px solid currentColor;
-        border-radius: 4px;
-        padding: 1em;
       }
 
       h2 {
@@ -29,11 +26,19 @@ export class ExampleView extends LitElement {
         font-size: 1.5em;
       }
 
+      .example {
+        height: 100%;
+        border: 1px solid currentColor;
+        border-radius: 4px;
+        padding: 1em;
+      }
+
       iframe {
         border: none;
         height: 100%;
         width: 100%;
         min-height: var(--min-height);
+        
       }
 
       .preview {
@@ -45,6 +50,7 @@ export class ExampleView extends LitElement {
       .code {
         height: 100%;
         width: 100%;
+        overflow: auto;
       }
 
       .code pre {
@@ -93,7 +99,9 @@ export class ExampleView extends LitElement {
   connectedCallback() {
     super.connectedCallback();
 
-    this.__code = html_beautify(this.innerHTML.toString().trim(),
+    const codeSnippet = this.innerHTML.toString()?.replace('slot="template"', '');
+    // const codeSnippet = this.textContent.toString()?.replace('slot="template"', '');
+    this.__code = html_beautify(codeSnippet.trim(),
       {
         indent_size: 2,
         space_in_empty_paren: true,
@@ -160,6 +168,7 @@ export class ExampleView extends LitElement {
 
     return html`
       <h2>${this.title}</h2>
+      <div class="example">
       <div class="preview" style=${styleMap(styles)}>
       <iframe
         style=${styleMap(styles)}
@@ -177,6 +186,7 @@ export class ExampleView extends LitElement {
       </div>
       <div class="code">
         <pre><code ${ref(this.addCode)}></code></pre>
+      </div>
       </div>
     `;
   }
