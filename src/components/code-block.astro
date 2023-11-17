@@ -1,0 +1,24 @@
+---
+// Example Implementation
+// Usage: import {Code} from 'astro/components';
+import shiki from 'shiki';
+const { code, lang = 'html', theme = 'github-dark' } = Astro.props;
+const highlighter = await shiki.getHighlighter({theme});
+
+const tokens = highlighter.codeToThemedTokens(code, lang);
+let html = shiki.renderToHtml(tokens, {
+  themeName: theme,
+  // elements: {
+  //   pre({ className, style, children }: any) {
+  //     return `<pre tabindex="1" class="${className}" style="${style}">${children}</pre>`
+  //   },
+
+  //   code({ children, className, style }) {
+  //     return `<code class="${className}" style="${style}"><table>${children}</table></code>`
+  //   }
+  // }
+});
+---
+<div id="code">
+{html}
+</div>

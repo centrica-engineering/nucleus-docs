@@ -125,6 +125,10 @@ export class ExampleView extends LitElement {
     `;
   }
 
+  get code() {
+    return this.innerHTML.toString()?.replace('slot="template"', '');
+  }
+
   addCode(el) {
     if (el) {
       el.textContent = this.__code;

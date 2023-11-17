@@ -1,10 +1,14 @@
 import { defineConfig } from 'astro/config';
 import deepmerge from 'deepmerge';
+import path from 'path';
 import starlight from '@astrojs/starlight';
+import { astroExpressiveCode, ExpressiveCodeTheme } from 'astro-expressive-code';
 import cem from '@connectedhomes/nucleus/custom-elements.json';
-
 import lit from "@astrojs/lit";
 
+import mdx from '@astrojs/mdx';
+import AutoImport from 'astro-auto-import';
+import MDXCodeBlocks, { mdxCodeBlockAutoImport } from 'astro-mdx-code-blocks';
 
 const componentSidebar = {
   label: 'Components',
@@ -34,32 +38,6 @@ const componentSidebar = {
   }))
 };
 
-// const componentLists = {
-//   label: 'Lists',
-//   items: [
-//     {
-//       label: 'ns-alert',
-//       link: '/lists/ns-alert'
-//     },
-//     {
-//       label: 'ns-content',
-//       link: '/lists/ns-content'
-//     },
-//     {
-//       label: 'ns-card',
-//       link: '/lists/ns-card'
-//     }
-//   ]
-// };
-
-const componentLists = {
-  label: 'Lists',
-  items: cem.tags.sort((a, b) => a.name.localeCompare(b.name)).map(component => ({
-    label: component.name,
-    link: `/lists/${component.name}`
-  })),
-  collapsed: true
-};
 
 const componentOverrides = [
     // {
@@ -81,9 +59,26 @@ componentOverrides?.forEach(componentOverride => {
   }
 });
 
+const astroExpressiveCodeOptions = {
+  theme: 'github-dark',
+  getBlockLocale: ({ file }) => {
+    // Path format: `src/content/docs/en/getting-started.mdx`
+    // Part indices:  0     1      2   3         4
+    const pathParts = path.relative(file.cwd, file.path).split(/[\\/]/);
+    return pathParts[3];
+  },
+
+};
 // https://astro.build/config
 export default defineConfig({
-  integrations: [starlight({
+  integrations: [
+    AutoImport({
+      imports: [mdxCodeBlockAutoImport('./src/components/code-block.astro')],
+    }),
+    MDXCodeBlocks(),
+    astroExpressiveCode({theme: 'github-dark'}),
+    mdx(),
+    starlight({
     title: 'Nucleus',
     logo: {
       src: './public/logo.svg',
@@ -97,44 +92,45 @@ export default defineConfig({
       TableOfContents: './src/components/toc.astro',
     },
     sidebar: [
-      componentLists,
     componentSidebar,
-      {
-        label: 'Guidelines',
-        items: [
-          {
-            label: 'a',
-            link: `/guidelines/example`
-          }
-        ]
-      },
-      {
-        label: 'Patterns',
-        items: [
-          {
-            label: 'a',
-            link: `/patterns/example`
-          }
-        ]
-      },
-      {
-        label: 'Pages',
-        items: [
-          {
-            label: 'a',
-            link: `/pages/a`
-          }
-        ]
-      },
-      {
-        label: 'Resources',
-        items: [
-          {
-            label: 'a',
-            link: `/resources/example`
-          }
-        ]
-      }
+    {
+      label: 'Guidelines',
+      items: [
+        {
+          label: 'a',
+          link: `/guidelines/example`
+        }
+      ]
+    },
+    {
+      label: 'Patterns',
+      items: [
+        {
+          label: 'a',
+          link: `/patterns/example`
+        }
+      ]
+    },
+    {
+      label: 'Pages',
+      items: [
+        {
+          label: 'a',
+          link: `/pages/a`
+        }
+      ]
+    },
+    {
+      label: 'Resources',
+      items: [
+        {
+          label: 'a',
+          link: `/resources/example`
+        }
+      ]
+    }
   ]
-  }), lit()]
+  }),
+  lit()
+]
 });
