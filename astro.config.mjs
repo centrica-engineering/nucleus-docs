@@ -5,10 +5,6 @@ import { astroExpressiveCode, ExpressiveCodeTheme } from 'astro-expressive-code'
 import cem from '@connectedhomes/nucleus/custom-elements.json';
 import lit from "@astrojs/lit";
 
-import mdx from '@astrojs/mdx';
-import AutoImport from 'astro-auto-import';
-import MDXCodeBlocks, { mdxCodeBlockAutoImport } from 'astro-mdx-code-blocks';
-import cloudflare from "@astrojs/cloudflare";
 const componentSidebar = {
   label: 'Components',
   items: cem.tags.sort((a, b) => a.name.localeCompare(b.name)).map(component => ({
@@ -33,23 +29,7 @@ const componentSidebar = {
     }]
   }))
 };
-const componentOverrides = [
-  // {
-  //   label: 'ns-accordion',
-  //   items: [
-  //     {
-  //       label: 'Testing',
-  //       link: '/components/accordion/testing'
-  //     }
-  //   ]
-  // }
-];
-componentOverrides?.forEach(componentOverride => {
-  const component = componentSidebar.items.find(component => component.label === componentOverride.label);
-  if (component) {
-    component.items = deepmerge(component.items, componentOverride.items);
-  }
-});
+
 const astroExpressiveCodeOptions = {
   theme: 'github-dark',
   getBlockLocale: ({
@@ -90,8 +70,8 @@ export default defineConfig({
     }, {
       label: 'Patterns',
       items: [{
-        label: 'a',
-        link: `/patterns/example`
+        label: 'Overview',
+        link: `/patterns`
       }]
     }, {
       label: 'Pages',
@@ -108,6 +88,4 @@ export default defineConfig({
     }]
   }), lit()],
   outDir: './build'
-  // output: "static",
-  // adapter: cloudflare()
 });
