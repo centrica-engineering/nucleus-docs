@@ -107,6 +107,7 @@ export default defineConfig({
       }]
     }]
   }), lit()],
+  outDir: './build'
   // output: "static",
   // adapter: cloudflare()
 });
