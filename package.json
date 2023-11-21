@@ -11,16 +11,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^7.7.1",
     "@astrojs/lit": "^3.0.2",
-    "@astrojs/mdx": "^1.1.5",
     "@astrojs/starlight": "^0.11.0",
     "@connectedhomes/nucleus": "^3.1.0",
     "@webcomponents/template-shadowroot": "^0.2.1",
     "astro": "^3.2.3",
-    "astro-auto-import": "^0.3.2",
     "astro-expressive-code": "^0.28.2",
-    "astro-mdx-code-blocks": "^0.0.6",
     "js-beautify": "^1.14.9",
     "lit": "^2.8.0",
     "sharp": "^0.32.5"
