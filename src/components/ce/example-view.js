@@ -28,9 +28,7 @@ export class ExampleView extends LitElement {
 
       .example {
         height: 100%;
-        border: 1px solid currentColor;
         border-radius: 4px;
-        padding: 1em;
       }
 
       iframe {
@@ -43,22 +41,8 @@ export class ExampleView extends LitElement {
 
       .preview {
         height: 100%;
-        width: 100%;
         min-height: var(--min-height);
-      }
-
-      .code {
-        height: 100%;
-        width: 100%;
-        overflow: auto;
-      }
-
-      .code pre {
-        margin: 0;
-        height: 100%;
-        width: 100%;
-        padding: 0.5em;
-        color: currentColor;
+        padding: 1em;
       }
 
       .slider {
@@ -100,7 +84,6 @@ export class ExampleView extends LitElement {
     super.connectedCallback();
 
     const codeSnippet = this.innerHTML.toString()?.replace('slot="template"', '');
-    // const codeSnippet = this.textContent.toString()?.replace('slot="template"', '');
     this.__code = html_beautify(codeSnippet.trim(),
       {
         indent_size: 2,
@@ -133,16 +116,6 @@ export class ExampleView extends LitElement {
     if (el) {
       el.textContent = this.__code;
     }
-  }
-
-  copySnippet(e) {
-    const target = e.target;
-    navigator.clipboard.writeText(this.__code);
-    target.textContent = 'Copied!';
-
-    setTimeout(() => {
-      target.textContent = 'Copy';
-    }, 1000);
   }
 
   sliderMove(e) {
@@ -185,12 +158,6 @@ export class ExampleView extends LitElement {
       ></iframe>
       </div>
       <button class="slider" @mousedown=${this.slideDown} @mousemove=${this.sliderMove} @mouseup=${this.sliderUp} @mouseleave=${this.sliderUp}>===</button>
-      <div class="code-actions">
-        <button @click=${this.copySnippet}>Copy</button>
-      </div>
-      <div class="code">
-        <pre><code ${ref(this.addCode)}></code></pre>
-      </div>
       </div>
     `;
   }
