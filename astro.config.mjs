@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config';
 import deepmerge from 'deepmerge';
-import path from 'path';
 import starlight from '@astrojs/starlight';
 import { astroExpressiveCode, ExpressiveCodeTheme } from 'astro-expressive-code';
 import cem from '@connectedhomes/nucleus/custom-elements.json';
@@ -56,10 +55,7 @@ const astroExpressiveCodeOptions = {
   getBlockLocale: ({
     file
   }) => {
-    // Path format: `src/content/docs/en/getting-started.mdx`
-    // Part indices:  0     1      2   3         4
-    const pathParts = path.relative(file.cwd, file.path).split(/[\\/]/);
-    return pathParts[3];
+    return 'en';
   }
 };
 
@@ -111,6 +107,6 @@ export default defineConfig({
       }]
     }]
   }), lit()],
-  output: "server",
-  adapter: cloudflare()
+  // output: "static",
+  // adapter: cloudflare()
 });
