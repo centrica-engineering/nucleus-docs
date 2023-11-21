@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import deepmerge from 'deepmerge';
 import starlight from '@astrojs/starlight';
-import { astroExpressiveCode, ExpressiveCodeTheme } from 'astro-expressive-code';
+import { astroExpressiveCode } from 'astro-expressive-code';
 import cem from '@connectedhomes/nucleus/custom-elements.json';
 import lit from "@astrojs/lit";
 
@@ -42,12 +42,6 @@ const astroExpressiveCodeOptions = {
 // https://astro.build/config
 export default defineConfig({
   integrations: [
-  // AutoImport({
-  //   imports: [mdxCodeBlockAutoImport('./src/components/code-block.astro')],
-  // }),
-  // MDXCodeBlocks(),
-  astroExpressiveCode(astroExpressiveCodeOptions),
-  // mdx(),
   starlight({
     title: 'Nucleus',
     logo: {
@@ -86,6 +80,8 @@ export default defineConfig({
         link: `/resources/example`
       }]
     }]
-  }), lit()],
+  }), 
+  astroExpressiveCode(astroExpressiveCodeOptions),
+  lit()],
   outDir: './build'
 });
