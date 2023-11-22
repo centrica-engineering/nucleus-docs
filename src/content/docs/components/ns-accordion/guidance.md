@@ -2,6 +2,7 @@
 title: Accordion
 ---
 
+
 ## Guidance
 
 It would be a 'nice to have' if we can dynamically generate these with a tool-tip type explanation on selection - maybe something akin to what you are sometimes presented with as a tour on a newly installed software? Fallback/MVP will be to continue to use these existing image diagrams.
@@ -15,7 +16,6 @@ It would be a 'nice to have' if we can dynamically generate these with a tool-ti
 
 ### Code snippets
 You can copy these examples and paste them in to your prototypes in Nucleus Playground where you can configure them.
-
 
 #### Accordion without icons
 (Example preview and snippet goes in here)
