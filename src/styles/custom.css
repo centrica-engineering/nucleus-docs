@@ -1,16 +1,16 @@
 /* Dark mode colors. */
 :root {
-	--sl-color-accent-low: #00273e;
-	--sl-color-accent: #0071a9;
-	--sl-color-accent-high: #a3cff0;
-	--sl-color-white: #ffffff;
-	--sl-color-gray-1: #e4f7be;
-	--sl-color-gray-2: #b6cd87;
-	--sl-color-gray-3: #7a9a00;
-	--sl-color-gray-4: #4c6100;
-	--sl-color-gray-5: #303f00;
-	--sl-color-gray-6: #212c00;
-	--sl-color-black: #141c00;
+	--sl-color-accent-low: #17181C; /* highlighted text */
+	--sl-color-accent: #F39E13;
+	--sl-color-accent-high: #E16E55; /* highlight */
+	--sl-color-white: #ffffff; /* top level text */
+	--sl-color-gray-1: #D0DDE7;
+	--sl-color-gray-2: #B9CCDA; /* SUb menus */
+	--sl-color-gray-3: #8AAAC2; /* Edit and RHS links */
+	--sl-color-gray-4: #3e6480;
+	--sl-color-gray-5: #354268; /* borders and lines */
+	--sl-color-gray-6: #191c23; /* menu base */
+	--sl-color-black: #15171c; /* Base */
 }
 /* Light mode colors. */
 :root[data-theme='light'] {
