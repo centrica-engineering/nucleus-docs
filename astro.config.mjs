@@ -51,7 +51,7 @@ export default defineConfig({
     editLink: {
       baseUrl: 'https://github.com/centrica-engineering/nucleus-docs/edit/main/'
     },
-    customCss: ['./src/styles/global.css'],
+    customCss: ['./src/styles/custom.css'],
     components: {
       TableOfContents: './src/components/toc.astro'
     },
