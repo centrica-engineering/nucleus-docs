@@ -45,7 +45,8 @@ export default defineConfig({
   starlight({
     title: 'Nucleus',
     logo: {
-      src: './public/logo.svg',
+      light: './src/assets/logo-light.svg',
+      dark: './src/assets/logo-dark.svg',
       replacesTitle: true
     },
     editLink: {
