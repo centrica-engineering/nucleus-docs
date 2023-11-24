@@ -5,10 +5,7 @@ import cem from "@connectedhomes/nucleus/custom-elements.json";
 const compDetails = cem.tags.find((tag) => tag.name === name);
 ---
 
-<h2>Specification</h2>
-
-<h3>Attributes</h3>
-
+<h3 id="attributes">Attributes</h3>
 <table>
   <thead>
     <tr>
@@ -26,7 +23,7 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
             <td>{value.name}</td>
             <td>{value.type}</td>
             <td>{value.default}</td>
-            <td />
+            <td>{value.description}</td>
           </tr>
         );
       })
@@ -48,12 +45,60 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
   <tbody>
     {
       Object.entries(compDetails?.properties).map(([prop, value]) => {
+        if (['slottedStyles'].includes(value.name)) {
+          return undefined;
+        }
         return (
           <tr>
             <td>{value.name}</td>
             <td>{value.type}</td>
             <td>{value.default}</td>
-            <td />
+            <td>{value.description}</td>
+          </tr>
+        );
+      })
+    }
+  </tbody>
+</table>
+
+<h3>Slots</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Slot</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      Object.entries(compDetails?.slots).map(([prop, value]) => {
+        return (
+          <tr>
+            <td>{value.name ? value.name : 'N/A'}</td>
+            <td>{value.description}</td>
+          </tr>
+        );
+      })
+    }
+  </tbody>
+</table>
+
+<h3>Events</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      Object.entries(compDetails?.events ?? []).map(([prop, value]) => {
+        return (
+          <tr>
+            <td>{value.name}</td>
+            <td>{value.description}</td>
           </tr>
         );
       })

@@ -1,0 +1,29 @@
+---
+const {
+    lang = 'html',
+    themes= ['github-dark', 'github-light']
+} = Astro.props;
+const slotContent = await Astro.slots.render('template').then((value) => value);
+
+import shiki from 'shiki';
+const highlighter = await shiki.getHighlighter({themes});
+const html = highlighter.codeToHtml(slotContent, lang);
+
+---
+<div class="code-actions">
+  <button id="copyCode">Copy</button>
+</div>
+<div class="code" set:html={html}>
+</div>
+<script>
+  const button = document.getElementById('copyCode');
+  button?.addEventListener('click', (event) => {
+    const target = event.target;
+    navigator.clipboard.writeText(document.getElementsByClassName('code')[0].textContent ?? '');
+    target.textContent = 'Copied!';
+
+    setTimeout(() => {
+      target.textContent = 'Copy';
+    }, 1000);
+  });
+</script>

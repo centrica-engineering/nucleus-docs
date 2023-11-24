@@ -1,13 +1,11 @@
 import { LitElement, html, css } from 'lit';
 import { styleMap } from 'lit/directives/style-map.js';
-import { ref } from 'lit/directives/ref.js';
 
 export class ExampleView extends LitElement {
 
   static get properties() {
     return {
       title: { type: String },
-      __code: { type: String, state: true },
       __minHeight: { type: Number, state: true },
       __isDragging: { type: Boolean, state: true }
     }
@@ -18,9 +16,6 @@ export class ExampleView extends LitElement {
       :host {
         display: block;
         height: 100%;
-        border: 1px solid currentColor;
-        border-radius: 4px;
-        padding: 1em;
       }
 
       h2 {
@@ -29,30 +24,23 @@ export class ExampleView extends LitElement {
         font-size: 1.5em;
       }
 
+      .example {
+        height: 100%;
+        border-radius: 4px;
+      }
+
       iframe {
         border: none;
         height: 100%;
         width: 100%;
         min-height: var(--min-height);
+        
       }
 
       .preview {
         height: 100%;
-        width: 100%;
         min-height: var(--min-height);
-      }
-
-      .code {
-        height: 100%;
-        width: 100%;
-      }
-
-      .code pre {
-        margin: 0;
-        height: 100%;
-        width: 100%;
-        padding: 0.5em;
-        color: currentColor;
+        padding: 1em;
       }
 
       .slider {
@@ -85,23 +73,8 @@ export class ExampleView extends LitElement {
 
     this.title = 'Example';
 
-    this.__code = '';
     this.__minHeight = 200;
     this.__isDragging = false;
-  }
-
-  connectedCallback() {
-    super.connectedCallback();
-
-    this.__code = html_beautify(this.innerHTML.toString().trim(),
-      {
-        indent_size: 2,
-        space_in_empty_paren: true,
-        end_with_newline: true,
-        wrap_line_length: 0,
-        indent_inner_html: true
-      }
-    );
   }
 
   get doc() {
@@ -115,22 +88,6 @@ export class ExampleView extends LitElement {
       ${inner}
       </body>
     `;
-  }
-
-  addCode(el) {
-    if (el) {
-      el.textContent = this.__code;
-    }
-  }
-
-  copySnippet(e) {
-    const target = e.target;
-    navigator.clipboard.writeText(this.__code);
-    target.textContent = 'Copied!';
-
-    setTimeout(() => {
-      target.textContent = 'Copy';
-    }, 1000);
   }
 
   sliderMove(e) {
@@ -160,6 +117,7 @@ export class ExampleView extends LitElement {
 
     return html`
       <h2>${this.title}</h2>
+      <div class="example">
       <div class="preview" style=${styleMap(styles)}>
       <iframe
         style=${styleMap(styles)}
@@ -172,11 +130,6 @@ export class ExampleView extends LitElement {
       ></iframe>
       </div>
       <button class="slider" @mousedown=${this.slideDown} @mousemove=${this.sliderMove} @mouseup=${this.sliderUp} @mouseleave=${this.sliderUp}>===</button>
-      <div class="code-actions">
-        <button @click=${this.copySnippet}>Copy</button>
-      </div>
-      <div class="code">
-        <pre><code ${ref(this.addCode)}></code></pre>
       </div>
     `;
   }
