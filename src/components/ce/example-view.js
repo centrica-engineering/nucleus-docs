@@ -1,13 +1,11 @@
 import { LitElement, html, css } from 'lit';
 import { styleMap } from 'lit/directives/style-map.js';
-import { ref } from 'lit/directives/ref.js';
 
 export class ExampleView extends LitElement {
 
   static get properties() {
     return {
       title: { type: String },
-      __code: { type: String, state: true },
       __minHeight: { type: Number, state: true },
       __isDragging: { type: Boolean, state: true }
     }
@@ -75,24 +73,8 @@ export class ExampleView extends LitElement {
 
     this.title = 'Example';
 
-    this.__code = '';
     this.__minHeight = 200;
     this.__isDragging = false;
-  }
-
-  connectedCallback() {
-    super.connectedCallback();
-
-    const codeSnippet = this.innerHTML.toString()?.replace('slot="template"', '');
-    this.__code = html_beautify(codeSnippet.trim(),
-      {
-        indent_size: 2,
-        space_in_empty_paren: true,
-        end_with_newline: true,
-        wrap_line_length: 0,
-        indent_inner_html: true
-      }
-    );
   }
 
   get doc() {
@@ -106,16 +88,6 @@ export class ExampleView extends LitElement {
       ${inner}
       </body>
     `;
-  }
-
-  get code() {
-    return this.innerHTML.toString()?.replace('slot="template"', '');
-  }
-
-  addCode(el) {
-    if (el) {
-      el.textContent = this.__code;
-    }
   }
 
   sliderMove(e) {
