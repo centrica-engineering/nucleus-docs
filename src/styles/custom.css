@@ -27,3 +27,7 @@
 	--sl-color-gray-7: #F4F6F8; /* top bar base */
 	--sl-color-black: #ffffff; /* Base */
 }
+/* Custom fonts */
+main {
+	font-family: 'Roboto', sans-serif;
+  }
