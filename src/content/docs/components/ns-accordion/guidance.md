@@ -4,6 +4,8 @@ title: Accordion guidance
 
 ## Content
 
+![Labelled diagram of the Accordion component](./images/contentguidance.webp)
+
 ### [type]
 
 ## Usage
