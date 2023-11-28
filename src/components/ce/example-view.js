@@ -40,7 +40,6 @@ export class ExampleView extends LitElement {
       .preview {
         height: 100%;
         min-height: var(--min-height);
-        padding: 1em;
       }
 
       .slider {
@@ -116,7 +115,6 @@ export class ExampleView extends LitElement {
     };
 
     return html`
-      <h2>${this.title}</h2>
       <div class="example">
       <div class="preview" style=${styleMap(styles)}>
       <iframe

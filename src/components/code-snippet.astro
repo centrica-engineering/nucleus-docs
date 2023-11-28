@@ -10,6 +10,14 @@ const highlighter = await shiki.getHighlighter({themes});
 const html = highlighter.codeToHtml(slotContent, lang);
 
 ---
+<style>
+  .code-actions {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    opacity: 0.8;
+  }
+</style>
 <div class="code-actions">
   <button id="copyCode">Copy</button>
 </div>
