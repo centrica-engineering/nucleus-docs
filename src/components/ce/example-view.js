@@ -29,6 +29,7 @@ export class ExampleView extends LitElement {
         height: 100%;
         border-radius: 4px;
         padding: 0.5rem;
+        border: 1px solid var(--sl-color-gray-6);
       }
 
       iframe {
