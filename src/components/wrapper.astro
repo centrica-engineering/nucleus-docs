@@ -7,7 +7,9 @@ import CodeSnippet from './code-snippet.astro';
 const compDetails = cem.tags.find((tag) => tag.name === name);
 ---
 
+<!-- NOTE: @drew - 2023-11-28 - temporary comment out description so I can change the palcement
 <p>{compDetails?.description}</p>
+-->
 
 <ExampleViewer>
   <slot name="template" slot="template"/>
