@@ -6,5 +6,5 @@ title: ns-inputter placement
 
 The ns-inputter component can be used in the following components:
 
-- _(automated)_ ns-component
-- _(automated)_ ns-component
+- [ns-component](#!)
+- [ns-component](#!)

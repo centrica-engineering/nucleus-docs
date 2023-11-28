@@ -24,5 +24,5 @@ _(automated)_ This will be the position for the component example
 
 ## Related links
 
-- _(automated)_ ns-component
-- _(automated)_ ns-component
+- [ns-component](#!)
+- [ns-component](#!)
