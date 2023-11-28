@@ -1,0 +1,20 @@
+---
+const code = Astro.props;
+
+import { ExampleView } from './ce/example-view';
+import CodeSnippet from './code-snippet.astro';
+---
+<style>
+  .example-container {
+    border: 1px solid currentColor;
+  }
+</style>
+<div class="example-container">
+  <ExampleView client:visible>
+    <slot name="template" slot="template"/>
+  </ExampleView>
+  
+  <CodeSnippet>
+    <slot name="template" slot="template"/>
+  </CodeSnippet>
+</div>

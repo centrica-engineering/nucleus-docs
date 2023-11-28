@@ -1,0 +1,16 @@
+---
+title: Alert
+---
+import Wrapper from '../../../../components/wrapper.astro';
+import ExampleViewer from '../../../../components/example-viewer.astro';
+import HighlighterError from './_examples/highlighter/error.html';
+import HighlighterInfo from './_examples/highlighter/info.html';
+
+<Wrapper name="ns-accordion" >
+
+    <HighlighterError slot="template"/>
+
+    <ExampleViewer>
+        <HighlighterInfo slot="template"/>
+    </ExampleViewer>
+</Wrapper>

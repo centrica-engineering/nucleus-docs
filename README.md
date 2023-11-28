@@ -2,8 +2,6 @@
 
 A design system by and for British Gas
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
-
 ## Installation
 
 ```console
@@ -17,8 +15,6 @@ npm start
 ```
 
 This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
-
-Visit [http://localhost:3000/](http://localhost:3000/]) to view
 
 ## Build
 
