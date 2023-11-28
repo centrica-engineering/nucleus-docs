@@ -1,53 +1,37 @@
 ---
-title: ns-example implementation
+title: ns-alert implementation
 ---
 
 ## Specification
 
-_(automated)_
-
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `attribute` | `type` | `default` | Please see the [documentation for ns-example](../components/ns-example) | Description of the attribute and it's feature. |
-
-| Event | Description |
-| :--- | :--- |
-| `event` | Description of the event. |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type` | `type` | `string` | `standard` | `standard`, `highlighter` | Type of alert to use |
+| `state` | `state` | `string` | `error` | `error`, `success`, `warning`, `info` | Defines the role of the highlighter and changes the styles |
 
 | Slots | Type |
 | :--- | :--- |
-| `anonymous` | `textNode` |
+| `heading` | `h tag` |
+| Anonymous | `p tag` |
 
 ## Best practice
 
-_(markdown)_
-
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Bitters chicharrones fanny pack waistcoat craft beer. | Neutra humblebrag bushwick portland subway tile plaid. |
-| Offal scenester flexitarian cliche squid small batch palo santo. | Trust fund shaman tumblr, prism selvage poke waistcoat tofu. |
-| Polaroid put a bird on it flexitarian banjo/chia unicorn. | Street art seitan, tumeric la croix microdosing offal hexagon. |
+| Keep the messages concise |  Use for generic message that is not in context to the page it is displayed in |
+| Use an icon to alert the user what type of message it is |  Use it for Roadblock error messaging |
 
 ### Considerations
 
-_(markdown)_
+- Be clear and concise
 
-- Cliche pitchfork cold-pressed chartreuse.
-- Crucifix raw denim edison bulb flannel leggings actually.
-- Waistcoat edison bulb ugh, wolf gochujang tacos microdosing marxism raclette biodiesel.
-- Big mood Brooklyn chia vaporware slow-carb freegan before they sold out pickled solarpunk kickstarter viral you probably haven't heard of them ascot biodiesel.
-- Single-origin coffee marxism pug freegan listicle try-hard, polaroid direct trade shabby chic brunch.
-- Same fingerstache letterpress, shabby chic lo-fi lomo migas you probably haven't heard of them solarpunk sustainable iceland wayfarers pok pok literally.
+The message must be in plain English, and help the user out of the situation by providing an actionable link if possible.
 
 ## Accessibility
 
-_(markdown)_
+The information contained in the alert should always be the most important information on the page. To ensure that screen reader users are informed about the importance of these messages the content is read aloud as soon as the alert type is used. This could be when the page loads or when it is dynamically added to a page.
 
-Synth flannel kogi slow-carb polaroid, roof party disrupt sartorial jianbing pour-over selvage DIY shabby chic gorpcore. Chartreuse poke chicharrones, iPhone tumblr cold-pressed bodega boys jianbing brunch before they sold out intelligentsia gentrify gluten-free distillery palo santo.
+If there are multiple alerts on a page they are read:
 
-Solarpunk banh mi williamsburg, meditation subway:
-
-- Tile bespoke forage four loko shoreditch etsy sartorial.
-- Gluten-free literally vice enamel pin.
-
-Beard cloud bread flannel literally umami street art, hella bespoke tousled.
+- from top to bottom on page load
+- in the order they have been added to the page when dynamically added

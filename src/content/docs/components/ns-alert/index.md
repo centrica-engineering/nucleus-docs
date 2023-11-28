@@ -1,28 +1,26 @@
 ---
-title: ns-example overview
+title: ns-alert overview
 ---
 
 ## Purpose
 
-_(automated)_ **Here is the ns-example purpose.**
+> **Alert can be used to communicate contextual messages to the customers.**
 
-_(markdown)_ The following paragraphs is further information about ns-example.
-
-_(markdown)_ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+**Important**  It has an ARIA role of `alert`, which brings the immediate attention of its content to the user. It should be used for its role and not for its look.
 
 ## Example
 
-:::note[ns-example]
+:::note[ns-alert]
 _(automated)_ This will be the position for the component example
 
 ```html
-<ns-example>
-  <p>Here will be the code snippet of ns-example</p>
-</ns-example>
+<ns-alert>
+  <p>Here will be the code snippet of ns-alert</p>
+</ns-alert>
 ```
 :::
 
 ## Related links
 
-- _(automated)_ ns-component
-- _(automated)_ ns-component
+- [ns-component](#!)
+- [ns-component](#!)

@@ -1,10 +1,8 @@
 ---
-title: ns-example placement
+title: ns-alert placement
 ---
 
 ## Component placement
 
-The ns-example component can be used in the following components:
-
-- _(automated)_ ns-component
-- _(automated)_ ns-component
+- [ns-component](#!)
+- [ns-component](#!)
