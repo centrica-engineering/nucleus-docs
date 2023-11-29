@@ -4,50 +4,128 @@ title: ns-card implementation
 
 ## Specification
 
-_(automated)_
-
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `attribute` | `type` | `default` | Please see the [documentation for ns-card](../components/ns-card) | Description of the attribute and it's feature. |
+| `alt`        | `string` |           |           | The alternative text for the image |
+| `decoration` | `string` |           |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--standard) and See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--error) | Illustration that is shown in the section type card and Icon used in ns-highlighter |
+| `image`      | `string` |           |           | Adds an image above the card content for the support |
+| `type`       | `string` | "section" | "section", "support", "flat" | Defines the role of the card and changing the style |
+| `pillOverImage` | `boolean` |       |           | Used to put the pill in the top left of the image when using `type="support"` and an image | 
 
-| Event | Description |
-| :--- | :--- |
-| `event` | Description of the event. |
+### Support and Flat
 
-| Slots | Type |
+| Slots        | Type                | Description |
+| :--- | :--- | :--- |
+| `heading`    | `h tag` |  |
+| `paragraph`  | `p tag` |  |
+| `action`     | `ns-cta`, `ns-form` |  |
+| `cta`        | `ns-cta` | Deprecated |
+
+### Section
+
+| Slots        | Type                |
 | :--- | :--- |
-| `anonymous` | `textNode` |
+| `heading`    | `h tag` |
+| `paragraph`  | `p tag` |
+| `cta`     | `ns-cta` |
+
+## Notes
+
+### Decoration
+
+* Required if the type is section
+
+### Image
+
+* Images are always at a ratio of 16:9
+
+### Heading
+
+* This should be a heading level 3
+
+### Action
+
+* Action is used to hold interactive content e.g. buttons, forms, etc
+* On `support` and `flat` types the action slot is not shown if the deprecated cta slot is used
+
+### CTA
+
+* Only for `section` types
+* This should be an anchor with the [ns-cta](../components/ns-cta) or just the [ns-cta](../components/ns-cta)
 
 ## Best practice
 
-_(markdown)_
-
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Bitters chicharrones fanny pack waistcoat craft beer. | Neutra humblebrag bushwick portland subway tile plaid. |
-| Offal scenester flexitarian cliche squid small batch palo santo. | Trust fund shaman tumblr, prism selvage poke waistcoat tofu. |
-| Polaroid put a bird on it flexitarian banjo/chia unicorn. | Street art seitan, tumeric la croix microdosing offal hexagon. |
+| Always use them in the triple layout | Use the text CTA in the section card |
+| Use to direct customers to the actions | Mix card types in a row |
+| Embolden text in the paragraph that is important | Have two or more cta's for a card |
+| Make your CTA copy unique, stating the action | Repeat the CTA copy in each card |
+| Use section cards to navigate users to primary actions | Use inline links in the paragraph |
+| Consider using decoration in the panel to add emphasis on the cards | Use the section card without a decoration |
 
 ### Considerations
 
-_(markdown)_
+* Consider your CTA type and try to keep them consistent between rows across the cards, unless there is a need.
+* There can be less than three cards in a row, but it should always use the triple layout. Always consider a lockup for this, before using the cards.
+* Headings work best with one to four words.
+* Please check the imagery guidelines when adding an image to the card.
+* Be careful when using decoration in the panel with the section cards as the blue on blue with the CTA's will make them not accessible.
+* There should always be a heading to the group of cards inside the panel.
 
-- Cliche pitchfork cold-pressed chartreuse.
-- Crucifix raw denim edison bulb flannel leggings actually.
-- Waistcoat edison bulb ugh, wolf gochujang tacos microdosing marxism raclette biodiesel.
-- Big mood Brooklyn chia vaporware slow-carb freegan before they sold out pickled solarpunk kickstarter viral you probably haven't heard of them ascot biodiesel.
-- Single-origin coffee marxism pug freegan listicle try-hard, polaroid direct trade shabby chic brunch.
-- Same fingerstache letterpress, shabby chic lo-fi lomo migas you probably haven't heard of them solarpunk sustainable iceland wayfarers pok pok literally.
+## Usage
 
-## Accessibility
+### Section
 
-_(markdown)_
+<StorybookStory story="components-ns-card--section"></StorybookStory>
 
-Synth flannel kogi slow-carb polaroid, roof party disrupt sartorial jianbing pour-over selvage DIY shabby chic gorpcore. Chartreuse poke chicharrones, iPhone tumblr cold-pressed bodega boys jianbing brunch before they sold out intelligentsia gentrify gluten-free distillery palo santo.
+### Using with action
 
-Solarpunk banh mi williamsburg, meditation subway:
+```html
+<ns-card type="support" decoration="bulb">
+  <h3 slot="heading">Get energy with us</h3>
+  <p slot="paragraph">We've got a tariff to suit every home and family.</p>
+  <div slot="action">
+    <!-- action content ns-cta/ns-form -->
+  </div>
+</ns-card>
+```
 
-- Tile bespoke forage four loko shoreditch etsy sartorial.
-- Gluten-free literally vice enamel pin.
+### Using with ns-pill
 
-Beard cloud bread flannel literally umami street art, hella bespoke tousled.
+To add a `ns-pill` to the card it needs to be placed inside one of the slots. Be careful about using it within the heading slot, as the pill content will be read out as part of the heading for screen readers.
+
+If you have a group of cards, try to make sure that the pill is placed in the same location throughout those cards. This will make improve the readability of the cards.
+
+#### Screen readers with ns-pill
+
+```html
+<ns-card>
+  <h3 slot="heading">
+    <ns-pill>Special Offer</ns-pill>
+    Get energy with us
+  </h3>
+  ...
+</ns-card>
+```
+
+In the above example the screen reader will read out "Special Offer Get energy with us". Make sure that is what is expected. Remember the pill cannot be used on its own within a heading. Our advice is to rarely put pills in headings as they are normally conveying a message related to the heading, but is not heading content.
+
+#### Pill over image
+
+If using with a type of `support` with an image. There is also the option to place the pill over the image using the `pillOverImage` attribute. Note the `ns-pill` will need to be in the `paragraph` slot as it is no longer related to the heading.
+
+```html
+<ns-card type="support" image="path/to/image" pillOverImage>
+  <h3 slot="heading">
+    Get energy with us
+  </h3>
+  <p slot="paragraph">
+    <ns-pill>Special Offer</ns-pill>
+    ...
+  </p>
+  ...
+</ns-card>
+```
+
+More details on how to use the ns-pill can be found on the [ns-pill documentation](/components/ns-pill)

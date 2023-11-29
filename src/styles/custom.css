@@ -57,3 +57,8 @@ code {
   min-height: 795px;
   border-radius: 50px;
 }
+
+/* NOTE: @drew - 2023-11-29 - temprary to override global styles which resulted in additional space between each line in the code block */
+.expressive-code .ec-line {
+  margin-top: initial;
+}
