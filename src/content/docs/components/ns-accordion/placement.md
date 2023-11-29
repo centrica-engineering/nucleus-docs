@@ -1,7 +1,9 @@
 ---
-title: Accordion placement
+title: ns-accordion placement
 ---
 
-## Where to use
+## Component placement
 
-## Things to consider
+- [ns-panel](#!)
+- [ns-content](#!)
+- [ns-editorial](#!)
