@@ -1,7 +1,5 @@
 import { defineConfig } from 'astro/config';
-import deepmerge from 'deepmerge';
 import starlight from '@astrojs/starlight';
-import { astroExpressiveCode } from 'astro-expressive-code';
 import cem from '@connectedhomes/nucleus/custom-elements.json';
 import lit from "@astrojs/lit";
 
@@ -30,17 +28,18 @@ const componentSidebar = {
   }))
 };
 
-const astroExpressiveCodeOptions = {
-  theme: 'github-dark',
-  getBlockLocale: ({
-    file
-  }) => {
-    return 'en';
-  }
-};
-
-// https://astro.build/config
 export default defineConfig({
+  markdown: {
+    shikiConfig: {
+      theme: 'github-dark',
+      experimentalThemes: {
+        light: 'github-dark',
+        dark: 'github-dark',
+      },
+      langs: [],
+      wrap: true,
+    },
+  },
   integrations: [
   starlight({
     title: 'Nucleus',
@@ -81,7 +80,6 @@ export default defineConfig({
       }]
     }]
   }), 
-  astroExpressiveCode(astroExpressiveCodeOptions),
   lit()],
   outDir: './build'
 });

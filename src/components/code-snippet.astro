@@ -5,16 +5,12 @@ const {
 } = Astro.props;
 const slotContent = await Astro.slots.render('template').then((value) => value);
 
-import shiki from 'shiki';
-const highlighter = await shiki.getHighlighter({themes});
-const html = highlighter.codeToHtml(slotContent, lang);
-
+import { Code } from 'astro:components';
 ---
 <div class="code-actions">
   <button id="copyCode">Copy</button>
 </div>
-<div class="code" set:html={html}>
-</div>
+<Code code={slotContent} lang={lang} wrap/>
 <script>
   const button = document.getElementById('copyCode');
   button?.addEventListener('click', (event) => {
