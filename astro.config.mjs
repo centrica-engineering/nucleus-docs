@@ -26,10 +26,6 @@ const componentSidebar = {
           link: `/components/${component.name}/guidance`,
         },
         {
-          label: "Placement",
-          link: `/components/${component.name}/placement`,
-        },
-        {
           label: "Implementation",
           link: `/components/${component.name}/implementation`,
         },
