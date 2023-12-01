@@ -69,12 +69,8 @@ export default defineConfig({
           label: "Guidelines",
           items: [
             {
-              label: "a",
-              link: `/guidelines/example`,
-            },
-            {
-              label: "b",
-              link: `/guidelines/example`,
+              label: "Colours",
+              link: `/guidelines/colours`,
             },
           ],
         },
@@ -82,8 +78,28 @@ export default defineConfig({
           label: "Patterns",
           items: [
             {
-              label: "Overview",
-              link: `/patterns`,
+              label: "Journeys",
+              link: `/patterns/journeys`,
+            },
+            {
+              label: "Asking for information",
+              link: `/patterns/asking-for-information`,
+            },
+            {
+              label: "Experiences",
+              link: `/patterns/experiences`,
+            },
+            {
+              label: "Loading",
+              link: `/patterns/loading`,
+            },
+            {
+              label: "Messaging",
+              link: `/patterns/messaging`,
+            },
+            {
+              label: "Telephone numbers",
+              link: `/patterns/telephone-numbers`,
             },
           ],
         },
