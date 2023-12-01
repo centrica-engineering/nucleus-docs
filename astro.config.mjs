@@ -17,7 +17,7 @@ const componentSidebar = {
         {
           label: "Overview",
           attrs: {
-            class: `ns-sidebar sidebar-${component.name}`,
+            class: `sidebar-${component.name}`,
           },
           link: `/components/${component.name}`,
         },
@@ -104,58 +104,8 @@ export default defineConfig({
           ],
         },
         {
-          label: "Pages",
-          items: [
-            {
-              label: "Article",
-              link: `/pages/article`,
-            },
-            {
-              label: "Confirmation",
-              link: `/pages/confirmation`,
-            },
-            {
-              label: "Editorial",
-              link: `/pages/editorial`,
-            },
-            {
-              label: "Guide",
-              link: `/pages/guide`,
-            },
-            {
-              label: "Home",
-              link: `/pages/home`,
-            },
-            {
-              label: "Hub",
-              link: `/pages/hub`,
-            },
-            {
-              label: "Product",
-              link: `/pages/product`,
-            },
-            {
-              label: "Roadblock",
-              link: `/pages/roadblock`,
-            },
-            {
-              label: "Start",
-              link: `/pages/start`,
-            },
-            {
-              label: "Stopgap",
-              link: `/pages/stopgap`,
-            },
-          ],
-        },
-        {
-          label: "Resources",
-          items: [
-            {
-              label: "a",
-              link: `/resources/example`,
-            },
-          ],
+          label: "Page types",
+          autogenerate: { directory: 'page-types' },
         },
       ],
     }),

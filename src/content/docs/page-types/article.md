@@ -1,6 +1,10 @@
 ---
 title: Article
 description: Page type | Article page
+sidebar:
+  badge:
+    text: New
+    variant: tip
 ---
 
 ## Introduction
