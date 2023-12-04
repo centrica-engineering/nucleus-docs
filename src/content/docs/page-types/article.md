@@ -1,10 +1,6 @@
 ---
 title: Article
 description: Page type | Article page
-sidebar:
-  badge:
-    text: Updated
-    variant: success
 ---
 
 ## Introduction
