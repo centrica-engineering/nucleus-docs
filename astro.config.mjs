@@ -11,7 +11,6 @@ const componentSidebar = {
     .sort((a, b) => a.name.localeCompare(b.name))
     .map((component) => ({
       label: component.name,
-      badge: "Deprecated",
       collapsed: true,
       items: [
         {
