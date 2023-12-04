@@ -51,6 +51,13 @@ Using Photoshop to overlay the Landmark focus template to check alignment. (You 
 | Capture the story within. This photo is about the lady and her phone | Unfortunately, this photo is completely unsuitable for a Landmark |
 | ![landmark-16x9-testcard-1440-02](./images/best-practice-do2-photo.webp) | ![landmark-16x9-testcard-1440-04](./images/best-practice-dont2-photo.webp) |
 
+## Component placement
+
+The ns-landmark component can be used in the following components:
+
+- [ns-component](#!)
+- [ns-component](#!)
+
 ## Best practice
 
 | 💚 Do | 💔 Don't |

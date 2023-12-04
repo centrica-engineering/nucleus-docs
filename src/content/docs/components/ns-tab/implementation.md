@@ -17,6 +17,13 @@ title: ns-tab implementation
 | :--- | :--- |
 | `anonymous` | `textNode` |
 
+## Component placement
+
+The ns-tab component can be used in the following components:
+
+- [ns-component](#!)
+- [ns-component](#!)
+
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |

@@ -14,6 +14,11 @@ title: ns-alert implementation
 | `heading` | `h tag` |
 | Anonymous | `p tag` |
 
+## Component placement
+
+- [ns-form](#!)
+- [ns-panel](#!)
+
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |

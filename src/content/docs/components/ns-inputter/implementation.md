@@ -83,15 +83,9 @@ title: ns-inputter implementation
 - Refer to the text input auto complete definitions.
 - Always try and have a default selected radio button unless...
 
-## Accessibility
+## Component placement
 
-_(markdown)_
+The ns-inputter component can be used in the following components:
 
-Synth flannel kogi slow-carb polaroid, roof party disrupt sartorial jianbing pour-over selvage DIY shabby chic gorpcore. Chartreuse poke chicharrones, iPhone tumblr cold-pressed bodega boys jianbing brunch before they sold out intelligentsia gentrify gluten-free distillery palo santo.
-
-Solarpunk banh mi williamsburg, meditation subway:
-
-- Tile bespoke forage four loko shoreditch etsy sartorial.
-- Gluten-free literally vice enamel pin.
-
-Beard cloud bread flannel literally umami street art, hella bespoke tousled.
+- [ns-component](#!)
+- [ns-component](#!)

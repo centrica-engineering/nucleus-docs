@@ -53,6 +53,13 @@ title: ns-card implementation
 * Only for `section` types
 * This should be an anchor with the [ns-cta](../components/ns-cta) or just the [ns-cta](../components/ns-cta)
 
+## Component placement
+
+The ns-card component can be used in the following components:
+
+- [ns-column](#!)
+- `<div>`
+
 ## Best practice
 
 | 💚 Do's | 💔 Don'ts |
