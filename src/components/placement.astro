@@ -1,0 +1,16 @@
+---
+const { name } = Astro.props;
+import jsdoc from "@connectedhomes/nucleus/ce-doc.json";
+const placements = jsdoc.find((tag) => tag.name === name)?.placements;
+---
+<div style={placements?.length > 0 ? '' : 'display:none'}>
+  <div style={placements?.length > 1 ? '' : 'display:none'}>
+    <p>The {name} component can be used in the following components:</p>
+    <ul>
+      {placements?.map((placement) => <li>{placement}</li>)}
+    </ul>
+  </div>
+  <div style={placements?.length === 1 ? '' : 'display:none'}>
+    <p>The {name} component can only be used as a child of the {placements.toString()} element</p>
+  </div>
+</div>
