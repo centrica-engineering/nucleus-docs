@@ -57,8 +57,3 @@ You can use supporting content to play back their purchase and inform them of wh
 ### Supporting confirmation email
 
 In addition to this page, a confirmation email containing this information should be sent to the customer. This is especially important if the customer cannot bookmark or revisit this page once they have navigated away from it.
-
-## Feedback
-
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-confirmation]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-confirmation]).

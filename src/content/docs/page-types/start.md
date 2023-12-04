@@ -40,8 +40,3 @@ A dedicated start page may not be needed if users are coming from a page where t
 | ![Image of Bullet list Content plus CTA](https://user-images.githubusercontent.com/78355810/122067871-d5a06780-cdeb-11eb-91d3-f5479778d76d.png) | Below the Landmark is [ns-content](/components/ns-content) including an instructional heading with an unordered list to outline any information that the user needs to know to complete the journey. It also includes a prominent direct [ns-cta](/components/ns-cta). |
 | ![Supplementary cards](https://user-images.githubusercontent.com/78355810/122068165-1304f500-cdec-11eb-9eaf-fe873e98903f.png) | Then there is a section with 3 [ns-card](/components/ns-card) components that link to relevant help and support content. It may also include signposting to a secondary journey, or action for frequently misdirected users. Decorative background elements should be adapted to create balance with the surrounding page elements. |
 | ![Image of Footer](https://user-images.githubusercontent.com/78355810/121567323-57704980-ca16-11eb-9951-598055b9808c.png) | Finally, there is [nsx-footer](/components/nsx-footer) which holds all required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps. |
-
-## Feedback
-
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-start]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-start]).

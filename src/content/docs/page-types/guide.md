@@ -41,8 +41,3 @@ Keep content clear and to the point. Use bullet points or numbered lists to help
 | ![LF Content - 2col](https://user-images.githubusercontent.com/78355810/123948174-12965d80-d999-11eb-9638-5841184801f0.png) | Following that there is the main body of content, which can be made up from h2-h6 and paragraph text, lists, tables, accordions and CTAs. It is contained within [ns-content](/components/ns-content) and has 2 columns in larger viewports. The column to the right can contain a support type [ns-card](/components/ns-card) useful for summarised information or relative links. |
 | ![Supplementary cards](https://user-images.githubusercontent.com/78355810/123975760-80508280-d9b5-11eb-896e-fa0cb1f87de0.png) | Then there is an section which is common to help and support pages and asks if the page was useful (answered with radio buttons). The feedback helps us improve the user experience of these pages.  |
 | ![Image of Footer](https://user-images.githubusercontent.com/78355810/121567323-57704980-ca16-11eb-9951-598055b9808c.png) | Finally, there is [nsx-footer](/components/nsx-footer) which holds all required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps. |
-
-## Feedback
-
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-guide]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-guide]).

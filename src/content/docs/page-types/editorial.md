@@ -42,12 +42,6 @@ Editorial pages can contain lock-ups, images, links, lists and CTAs for a rich e
 | ![Image of lockup](https://user-images.githubusercontent.com/78355810/124105951-a4ff3580-da5b-11eb-83c8-2edd3e5b0348.png) | Following that is another [ns-lockup](/components/ns-lockup) but without decoration, so of less importance than the lockup above. |
 | ![Image of Supplementary PIC cards](https://user-images.githubusercontent.com/78355810/124106004-b8aa9c00-da5b-11eb-8839-890c4db4de2e.png) | Folllowing that, towards the end of the page, we can 'mop-up' any users that have scrolled this far. Ask, 'What else might they be looking for that's not already been mentioned above?' It consists of 3 more [ns-card](/components/ns-card) components with images and text CTAs, and a decoration that is sympathetic to the end of the page caveat or footer section. |
 | ![Image of Footer](https://user-images.githubusercontent.com/78355810/121567323-57704980-ca16-11eb-9951-598055b9808c.png) | Finally, there is [nsx-footer](/components/nsx-footer) which holds all required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps. |
-
-## Feedback
-
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-editorial]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-editorial]).
-
 ## Related links
 
 * [ns-editorial](components/ns-editorial)

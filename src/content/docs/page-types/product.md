@@ -46,9 +46,3 @@ There are different types of products, so you will need to assess your individua
 | ![Image of accordion](https://user-images.githubusercontent.com/78355810/131140408-01727e6c-e724-458c-bf15-0427f53149e0.png) | Use the [ns-accordion](/components/ns-accordion) component to display any FAQs. If a user has scrolled this far they are likely to have unanswered questions. You may also want to consider including live chat support like 'Cosmo' (British Gas). |
 | ![Image of caveat](https://user-images.githubusercontent.com/78355810/131139370-e7d72fef-b3a6-4a49-ad64-c7b7d4b63e70.png) | Following that we should display any caveats or legal information using the [ns-caveat](/components/ns-caveat) component.  |
 | ![Image of Footer](https://user-images.githubusercontent.com/78355810/121567323-57704980-ca16-11eb-9951-598055b9808c.png) | Finally, there is [nsx-footer](/components/nsx-footer) which holds all required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps. |
-
-
-## Feedback
-
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[page-type-product]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[page-type-product]).
