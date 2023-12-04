@@ -4,50 +4,113 @@ title: ns-landmark implementation
 
 ## Specification
 
-_(automated)_
-
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `attribute` | `type` | `default` | Please see the [documentation for ns-landmark](../components/ns-landmark) | Description of the attribute and it's feature. |
-
-| Event | Description |
-| :--- | :--- |
-| `event` | Description of the event. |
+| `type` | `string` | `summit` | `summit`, `hillside`, `lakeside`, `valley` | The variant of the landmark. |
+| `image` | `string` |  |  | Background image used for summit variant or image used for valley variant |
+| `decoration` | `string` | `cyan` | `cyan`, `lime`, `navy`, `blue`, `forest`, `orange`, `red`, `yellow` | Background and offset colour used for the Hillside and Valley variant. |
+| `pillOverImage` | `boolean` |  |  | Used to put the pill in the bottom left of the image when using `type="valley"` and an image |
+| `ratio` | `string` | `16x9` | `4x3`, `16x9` | Aspect ratio of the image used only for valley variant |
 
 | Slots | Type |
 | :--- | :--- |
-| `anonymous` | `textNode` |
+| `heading` | `<h1>` |
+| `paragraph` | `<p>` `<div>` |
+| `cta` | `ns-cta` `<a>`  |
+| `pill` | `ns-pill` |
+
+### Notes
+
+#### Heading
+
+* This needs to be a `h1` heading
+* Main heading is a `<span>` tag with a `h1` class.
+
+#### Paragraph
+
+* Include an optional link to `#caveat` by placing `<a href="#caveat">1</a>` at the end
+
+### Summit - Image template
+
+This provides the safe-area to the position of the focal point of the image.
+
+[Download the 1440x810px Landmark testcard image](./images/summit-testcard.png) and place over your Landmark photos in your image editing software.
+
+![landmark-16x9-testcard-1440](./images/summit-testcard.png)
+
+#### Using Photoshop
+
+Using Photoshop to overlay the Landmark focus template to check alignment. (You could equally use an alternative software)
+
+![image](./images/photoshop-template.webp)
+
+| 💚 Do | 💔 Don't |
+| :--- | :--- |
+| Here, the focus of the photo is located within the safe-area | The subject fills the entire photo, and the lady on the left will be obscured |
+| ![landmark-16x9-testcard-1440-01](./images/best-practice-do1-photo.webp) | ![landmark-16x9-testcard-1440-00](./images/best-practice-dont1-photo.webp) |
+| Capture the story within. This photo is about the lady and her phone | Unfortunately, this photo is completely unsuitable for a Landmark |
+| ![landmark-16x9-testcard-1440-02](./images/best-practice-do2-photo.webp) | ![landmark-16x9-testcard-1440-04](./images/best-practice-dont2-photo.webp) |
 
 ## Best practice
 
-_(markdown)_
-
-| 💚 Do's | 💔 Don'ts |
+| 💚 Do | 💔 Don't |
 | :--- | :--- |
-| Bitters chicharrones fanny pack waistcoat craft beer. | Neutra humblebrag bushwick portland subway tile plaid. |
-| Offal scenester flexitarian cliche squid small batch palo santo. | Trust fund shaman tumblr, prism selvage poke waistcoat tofu. |
-| Polaroid put a bird on it flexitarian banjo/chia unicorn. | Street art seitan, tumeric la croix microdosing offal hexagon. |
+| Use it at the top of the page. | Use it in the middle or end of a page. |
+| Communicate the primary purpose in a clear and concise way. | Always add a cta (It'll drive traffic away). |
+| Content must be relevant to the page. | Use it to hold random content - `ns-editorial` may be better use for this. |
+| Use decoration/lifestyle photography only. | Don't hold any meaning in the image. |
+
+### `summit`
+
+| 💚 Do | 💔 Don't |
+| :--- | :--- |
+| Capture the moment. | Allow the card to cover important content. |
+| ![do-father-child](./images/best-practice-do1-summit.webp) | ![dont-covered-family](./images/best-practice-dont1-summit.webp) |
+| Set focus of the photo correctly. | Obstruct people's faces with the card. |
+| ![do-couple-on-sofa](./images/best-practice-do2-summit.webp) | ![dont-obstructed-face](./images/best-practice-dont2-summit.webp) |
+| Convey activity related to topic. | Use images with a white background. |
+| ![do-boiler-service](./images/best-practice-do3-summit.webp) | ![dont-boiler-on-white-background](./images/best-practice-dont3-summit.webp) |
+
+### `hillside`
+
+| 💚 Do | 💔 Don't |
+| :--- | :--- |
+| Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Use the red decoration for something that is not a promotional promotional or an error-themed page. |
+| ![do-use-same-colour-for-themed-pages](./images/best-practice-do1-hillside.webp) | Add too much content in the landmark. |
+| Keep the content concise. |  |
+| ![do-keep-content-concise](./images/best-practice-do2-hillside.webp) |  |
+
+### `lakeside`
+
+| 💚 Do | 💔 Don't |
+| :--- | :--- |
+| Use more than one paragraph. | Use more than three paragraphs. |
+| ![do-use-more-than-one-paragraph](./images/best-practice-do1-lakeside.webp) | ![dont-use-more-than-three-paragraphs](./images/best-practice-dont1-lakeside.webp) |
+| Display 400 and 500 error pages. | Use to build a page. |
+| ![display-400-and-500-error-pages](./images/best-practice-do2-lakeside.webp) | ![dont-even-this-about-building-a-page-with-it](./images/best-practice-dont2-lakeside.webp) |
+| Get to the point, in this scenario the Sub heading and CTA have been omitted. |  |
+| ![do-get-to-the-point](./images/best-practice-do3-lakeside.webp) |  |
+
+### `valley`
+
+| 💚 Do | 💔 Don't |
+| :--- | :--- |
+| Use checked list to highlight your key product benefits | Add a CTA if the purpose of the page is for users to consume the content. |
+| ![use-a-checked-list](./images/best-practice-do1-valley.webp) | ![dont-add-a-cta](./images/best-practice-dont1-valley.webp) |
+| Use a complementary image to add context to your product or service | Use long, verbose content. Keep the user interested with a snappy overview and draw them down the page |
+| ![complementary-image](./images/best-practice-do2-valley.webp) | ![use-short-content](./images/best-practice-dont2-valley.webp) |
+| Use colour, pill and ratio options for alternative aesthetics | Forget to use an image |
+| ![use-colour-and-ratio-options](./images/best-practice-do3-valley.webp) | ![use-an-image](./images/best-practice-dont3-valley.webp) |
 
 ### Considerations
 
-_(markdown)_
-
-- Cliche pitchfork cold-pressed chartreuse.
-- Crucifix raw denim edison bulb flannel leggings actually.
-- Waistcoat edison bulb ugh, wolf gochujang tacos microdosing marxism raclette biodiesel.
-- Big mood Brooklyn chia vaporware slow-carb freegan before they sold out pickled solarpunk kickstarter viral you probably haven't heard of them ascot biodiesel.
-- Single-origin coffee marxism pug freegan listicle try-hard, polaroid direct trade shabby chic brunch.
-- Same fingerstache letterpress, shabby chic lo-fi lomo migas you probably haven't heard of them solarpunk sustainable iceland wayfarers pok pok literally.
-
-## Accessibility
-
-_(markdown)_
-
-Synth flannel kogi slow-carb polaroid, roof party disrupt sartorial jianbing pour-over selvage DIY shabby chic gorpcore. Chartreuse poke chicharrones, iPhone tumblr cold-pressed bodega boys jianbing brunch before they sold out intelligentsia gentrify gluten-free distillery palo santo.
-
-Solarpunk banh mi williamsburg, meditation subway:
-
-- Tile bespoke forage four loko shoreditch etsy sartorial.
-- Gluten-free literally vice enamel pin.
-
-Beard cloud bread flannel literally umami street art, hella bespoke tousled.
+* Shorter and simpler words tend to work better in the heading.
+* The recommended copy length is between 1 and 5 words for the Sub heading.
+* The message must be in plain English, and help the user out of the situation by providing an actionable link if possible.
+* If the purpose of the page is to understand more about a product or service, then it is considered bad practice to include a CTA within the landmark, as users are likely to drop out. This is because users believe the next step is to click the CTA, rather than reading the page to get a better understanding of how they should proceed.
+* Let the page type define the type of landmark you use.
+  * If the page purpose is to be informative / educational then we recommend using `hillside`.
+  * If the page purpose is promotional we recommend using `summit`.
+  * If the page purpose is a 400 or 500 error page, use `lakeside`.
+  * If the page purpose is to showcase features and products, use `valley`.
+* If you are designing a series of informative / educational pages that all follow a similar theme, it would be considered best practice to use the same coloured decoration within the `hillside`.

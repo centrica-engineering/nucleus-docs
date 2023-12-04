@@ -11,23 +11,18 @@ const componentSidebar = {
     .sort((a, b) => a.name.localeCompare(b.name))
     .map((component) => ({
       label: component.name,
-      badge: "Deprecated",
       collapsed: true,
       items: [
         {
           label: "Overview",
           attrs: {
-            class: `ns-sidebar sidebar-${component.name}`,
+            class: `sidebar-${component.name}`,
           },
           link: `/components/${component.name}`,
         },
         {
           label: "Guidance",
           link: `/components/${component.name}/guidance`,
-        },
-        {
-          label: "Placement",
-          link: `/components/${component.name}/placement`,
         },
         {
           label: "Implementation",
@@ -73,12 +68,8 @@ export default defineConfig({
           label: "Guidelines",
           items: [
             {
-              label: "a",
-              link: `/guidelines/example`,
-            },
-            {
-              label: "b",
-              link: `/guidelines/example`,
+              label: "Colours",
+              link: `/guidelines/colours`,
             },
           ],
         },
@@ -86,64 +77,34 @@ export default defineConfig({
           label: "Patterns",
           items: [
             {
-              label: "Overview",
-              link: `/patterns`,
+              label: "Journeys",
+              link: `/patterns/journeys`,
+            },
+            {
+              label: "Asking for information",
+              link: `/patterns/asking-for-information`,
+            },
+            {
+              label: "Experiences",
+              link: `/patterns/experiences`,
+            },
+            {
+              label: "Loading",
+              link: `/patterns/loading`,
+            },
+            {
+              label: "Messaging",
+              link: `/patterns/messaging`,
+            },
+            {
+              label: "Telephone numbers",
+              link: `/patterns/telephone-numbers`,
             },
           ],
         },
         {
-          label: "Pages",
-          items: [
-            {
-              label: "Article",
-              link: `/pages/article`,
-            },
-            {
-              label: "Confirmation",
-              link: `/pages/confirmation`,
-            },
-            {
-              label: "Editorial",
-              link: `/pages/editorial`,
-            },
-            {
-              label: "Guide",
-              link: `/pages/guide`,
-            },
-            {
-              label: "Home",
-              link: `/pages/home`,
-            },
-            {
-              label: "Hub",
-              link: `/pages/hub`,
-            },
-            {
-              label: "Product",
-              link: `/pages/product`,
-            },
-            {
-              label: "Roadblock",
-              link: `/pages/roadblock`,
-            },
-            {
-              label: "Start",
-              link: `/pages/start`,
-            },
-            {
-              label: "Stopgap",
-              link: `/pages/stopgap`,
-            },
-          ],
-        },
-        {
-          label: "Resources",
-          items: [
-            {
-              label: "a",
-              link: `/resources/example`,
-            },
-          ],
+          label: "Page types",
+          autogenerate: { directory: 'page-types' },
         },
       ],
     }),
