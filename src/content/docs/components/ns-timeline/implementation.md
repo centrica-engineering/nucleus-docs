@@ -20,10 +20,9 @@ _(automated)_
 
 ## Component placement
 
-The ns-timeline component can be used in the following components:
+`<ns-timeline>` can only be used in `<ns-panel>`.
 
-- [ns-component](#!)
-- [ns-component](#!)
+`<ns-timeline-event>` can only be used in `<ns-timeline>`.
 
 ## Best practice
 

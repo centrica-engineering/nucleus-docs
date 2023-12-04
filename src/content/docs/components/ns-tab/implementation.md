@@ -19,10 +19,7 @@ title: ns-tab implementation
 
 ## Component placement
 
-The ns-tab component can be used in the following components:
-
-- [ns-component](#!)
-- [ns-component](#!)
+The ns-tab component can only be used in the `ns-tabs` component.
 
 ## Best practice
 

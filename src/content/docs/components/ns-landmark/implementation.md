@@ -53,10 +53,7 @@ Using Photoshop to overlay the Landmark focus template to check alignment. (You 
 
 ## Component placement
 
-The ns-landmark component can be used in the following components:
-
-- [ns-component](#!)
-- [ns-component](#!)
+The ns-landmark component can only be used as a child of the `<main>` element.
 
 ## Best practice
 
