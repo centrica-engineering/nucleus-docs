@@ -73,3 +73,8 @@ The ns-datepicker wraps the ns-inputter component. Guidelines defined for the ns
 The ns-download component creates the visual and semantics of the action of downloading an asset, as opposed to navigation. It can be used singularly or as a list of downloads for multiple files.
 
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
+
+## ns-editorial
+
+>The editorial component is a self-contained or supporting piece of content that is more informative than promotional in nature. In some cases, it is necessary to explain something in more detail without the user needing to take an immediate action.
+Note: This component is currently being considered for deprecation.
