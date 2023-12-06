@@ -29,6 +29,6 @@ The ns-article component is a container for long-form content such as blogs, edi
 
 ## ns-card
 
-> Card enables users to expand and collapse multiple sections of content.
+> Cards can be used to contain content in a consistent and structured way.
 
-We use accordions to break down content into meaningful sections, helping to reduce information overload. Accordions are useful for things like frequently asked questions or displaying multiple blocks of related content inside an ns-expander.
+Cards are used to apply a container around a related grouping of information; this can be done through imagery, illustrations and typography.
