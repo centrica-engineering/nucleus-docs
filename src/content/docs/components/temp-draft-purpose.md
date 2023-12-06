@@ -88,3 +88,10 @@ An expander consists of a heading and an anonymous content slot. Click on a head
 Use an ns-expander component in an accordion, a product card, or other contexts.
 
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
+
+## ns-fieldset
+
+> The ns-fieldset component is used to group related ns-inputters.
+> Note: This component is deprecated and please refer to ns-form-group component.
+
+Use where you would normally use a vanilla html fieldset element. This element extends the layout for ns-form.
