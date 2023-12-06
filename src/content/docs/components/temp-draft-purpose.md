@@ -67,3 +67,9 @@ There is no distinction between a hyperlink or an action through the design of t
 The ns-datepicker wraps the ns-inputter component. Guidelines defined for the ns-inputter should also be adhered to when using this component. See [ns-inputter documentation](#).
 
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
+
+## ns-download
+
+> Create a downloadable link for an asset.
+
+ns-download creates the visual and semantics of the action of downloading an asset, as opposed to navigation. It can be used on its own or as a list of downloads for multiple files.
