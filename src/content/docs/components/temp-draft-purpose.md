@@ -1,3 +1,7 @@
+---
+title: Temporary Purpose file
+---
+
 # Draft: 'Purpose'
 
 ## ns-accordion
