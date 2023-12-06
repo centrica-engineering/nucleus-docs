@@ -20,6 +20,12 @@ The appointment-picker comprises a calendar component to select a date and a rad
 
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
 
+## ns-article
+
+>ns-article is used to display long-form content
+**Note**: This component is currently being considered for deprecation.
+
+ns-article has been designed to be used to house content for a variety of long-form content such as blogs, editorials and support articles. Each use of the ns-article should be split into easy to consume chapters or sections.
 
 
 ## ns-card
