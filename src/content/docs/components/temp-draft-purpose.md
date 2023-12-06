@@ -64,6 +64,6 @@ There is no distinction between a hyperlink or an action through the design of t
 
 > Use the datepicker to enter a date in a form.
 
-The ns-datepicker wraps the ns-inputter component. Guidelines defined on the ns-inputter should also be adhered to when using this component. See [ns-inputter documentation](#).
+The ns-datepicker wraps the ns-inputter component. Guidelines defined for the ns-inputter should also be adhered to when using this component. See [ns-inputter documentation](#).
 
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
