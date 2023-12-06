@@ -1,36 +1,7 @@
 import { defineConfig } from "astro/config";
-import deepmerge from "deepmerge";
 import starlight from "@astrojs/starlight";
 import { astroExpressiveCode } from "astro-expressive-code";
-import cem from "@connectedhomes/nucleus/custom-elements.json";
 import lit from "@astrojs/lit";
-
-const componentSidebar = {
-  label: "Components",
-  items: cem.tags
-    .sort((a, b) => a.name.localeCompare(b.name))
-    .map((component) => ({
-      label: component.name,
-      collapsed: true,
-      items: [
-        {
-          label: "Overview",
-          attrs: {
-            class: `sidebar-${component.name}`,
-          },
-          link: `/components/${component.name}`,
-        },
-        {
-          label: "Guidance",
-          link: `/components/${component.name}/guidance`,
-        },
-        {
-          label: "Implementation",
-          link: `/components/${component.name}/implementation`,
-        },
-      ],
-    })),
-};
 
 const astroExpressiveCodeOptions = {
   theme: "github-dark",
@@ -43,7 +14,15 @@ const astroExpressiveCodeOptions = {
 export default defineConfig({
   integrations: [
     starlight({
-      title: "Nucleus",
+      head: [
+        {
+          tag: "script",
+          attrs: {
+            src: "https://www.britishgas.co.uk/nucleus/nucleus.min.js",
+          },
+        },
+      ],
+      title: "Nucleus Docs",
       logo: {
         light: "./public/logo-light.svg",
         dark: "./public/logo-dark.svg",
@@ -59,6 +38,11 @@ export default defineConfig({
         "@fontsource/roboto/300.css",
         "@fontsource/roboto/400.css",
       ],
+      pagination: false,
+      lastUpdated: true,
+      social: {
+        github: "https://github.com/centrica-engineering/nucleus-docs",
+      },
       components: {
         TableOfContents: "./src/components/toc.astro",
       },
