@@ -39,10 +39,10 @@ Caveats link to content on the page, providing more information about legality a
 
 ## ns-column
 
-> Brings flexibility and control to responsive layouts.
+> Use columns to bring flexibility and control to responsive layouts.
 
-Allows the user interface to be split into multiple columns by defining the number of columns required at specific viewports.
+Allows the user interface to split into multiple columns by defining the number of columns required at specific viewports.
 
-Note: This is used for arranging components and content not multiple columns like you would see in a newspaper or magazine.
+**Note:** Use for arranging components and content, not for gratuitous numerous columns as perhaps seen in a newspaper or magazine.
 
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
