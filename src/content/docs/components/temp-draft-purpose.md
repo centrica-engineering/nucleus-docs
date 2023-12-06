@@ -16,16 +16,16 @@ We use accordions to break down content into meaningful sections, helping to red
 
 > Use the appointment-picker for selecting date and time slots for an appointment.
 
-The appointment-picker comprises a calendar component to select a date and a radio-button type inputter to show the available time slots for the selected date.
+The appointment-picker comprises a calendar  to select a date and a radio-button type inputter to show the available time slots for the selected date.
 
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
 
 ## ns-article
 
->ns-article is used to display long-form content
-**Note**: This component is currently being considered for deprecation.
+> Use the ns-article component to display long-form content.
+**Note:** This component is currently under review for deprecation.
 
-ns-article has been designed to be used to house content for a variety of long-form content such as blogs, editorials and support articles. Each use of the ns-article should be split into easy to consume chapters or sections.
+The ns-article component is a container for long-form content such as blogs, editorials and support articles.  Use it to split the content into easy-to-consume chapters or sections.
 
 
 ## ns-card
