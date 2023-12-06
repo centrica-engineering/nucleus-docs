@@ -77,14 +77,14 @@ The ns-download component creates the visual and semantics of the action of down
 > The editorial component is self-contained or supporting content that is more informative than promotional.
 **Note:** This component is currently under review for deprecation.
 
-Sometimes, a more detailed explanation of something can be helpful – without requiring the user to take immediate action. That is where the ns-editorial component can help. 
-
-<!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
+Sometimes, a more detailed explanation of something can be helpful – without requiring the user to take immediate action. That is where the ns-editorial component can help.
 
 ## ns-expander
 
-> Expanders are used to show or hide content.
+> Use expanders to show or hide content.
 
-An expander consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content.
+An expander consists of a heading and an anonymous content slot. Click on a heading to reveal the content. Click it again to hide the content.
 
-Expanders can be used in a variety of contexts: in an accordion, in a product card, and more.
+Use an ns-expander component in an accordion, a product card, or other contexts.
+
+<!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
