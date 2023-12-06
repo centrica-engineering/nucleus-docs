@@ -21,7 +21,7 @@ The appointment-picker comprises a calendar  to select a date and a radio-button
 ## ns-article
 
 > Use the ns-article component to display long-form content.
-**Note:** This component is currently under review for deprecation.
+> **Note:** This component is currently under review for deprecation.
 
 The ns-article component is a container for long-form content such as blogs, editorials and support articles.  Use it to split the content into easy-to-consume chapters or sections.
 
@@ -43,12 +43,12 @@ Caveats link to content on the page, providing more information about legality a
 
 Allows the user interface to split into multiple columns by defining the number of columns required at specific viewports.
 
-**Note:** Use for arranging components and content, not for gratuitous numerous columns as perhaps seen in a newspaper or magazine.
+Use for arranging components and content, not for gratuitous numerous columns as perhaps seen in a newspaper or magazine.
 
 ## ns-content
 
 > Use the ns-content component to display typography and media.
-**Note:** This component is currently under review for deprecation.
+> **Note:** This component is currently under review for deprecation.
 
 The ns-content component's placement is inside other components. It helps to add consistency to the styling of typography, improving how it interacts with the other components.
 
@@ -75,7 +75,7 @@ The ns-download component creates the visual and semantics of the action of down
 ## ns-editorial
 
 > The editorial component is self-contained or supporting content that is more informative than promotional.
-**Note:** This component is currently under review for deprecation.
+> **Note:** This component is currently under review for deprecation.
 
 Sometimes, a more detailed explanation of something can be helpful – without requiring the user to take immediate action. That is where the ns-editorial component can help.
 
@@ -90,16 +90,15 @@ Use an ns-expander component in an accordion, a product card, or other contexts.
 ## ns-fieldset
 
 > Use the fieldset to group related ns-inputter components.
-**Note:** This component is deprecated. Please refer to the ns-form-group component.
+> **Note:** This component is deprecated. Please refer to the ns-form-group component.
 
 Use the ns-fieldset component instead of the usual HTML fieldset. The ns-fieldset extends the layout for the ns-form.
-
-<!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
 
 ## ns-footer
 
 > Required links and information that need to be repeated on every page.
-
-> NOTE: This is the UI component for producing a customised footer. If you are looking for the default British Gas footer which contains the links please use nsx-footer.
+> **Note:** This is the UI component for producing a customised footer. If you are looking for the default British Gas footer which contains the links please use nsx-footer.
 
 The last component on the page, this holds links and copyright notices that are legally required. It also holds information about the company.
+
+<!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
