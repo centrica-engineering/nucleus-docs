@@ -95,3 +95,11 @@ Use an ns-expander component in an accordion, a product card, or other contexts.
 Use the ns-fieldset component instead of the usual HTML fieldset. The ns-fieldset extends the layout for the ns-form.
 
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
+
+## ns-footer
+
+> Required links and information that need to be repeated on every page.
+
+> NOTE: This is the UI component for producing a customised footer. If you are looking for the default British Gas footer which contains the links please use nsx-footer.
+
+The last component on the page, this holds links and copyright notices that are legally required. It also holds information about the company.
