@@ -33,8 +33,8 @@ Cards are to be used to apply a container around a related grouping of informati
 
 ## ns-caveat
 
-> Caveats provide additional information and legal details to content.
+> Use caveats to provide additional information and legal details to the content.
 
-Caveats link to content in the page, providing more information about legality and eligibility, by separating it to the bottom of the page.
+Caveats link to content on the page, providing more information about legality and eligibility by separating it to the bottom of the page.
 
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
