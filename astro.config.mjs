@@ -14,14 +14,6 @@ const astroExpressiveCodeOptions = {
 export default defineConfig({
   integrations: [
     starlight({
-      head: [
-        {
-          tag: "script",
-          attrs: {
-            src: "https://www.britishgas.co.uk/nucleus/nucleus.min.js",
-          },
-        },
-      ],
       title: "Nucleus Docs",
       logo: {
         light: "./public/logo-light.svg",
@@ -48,7 +40,7 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: "Auto components",
+          label: "Components",
           autogenerate: { directory: "components", collapsed: true },
         },
         {
