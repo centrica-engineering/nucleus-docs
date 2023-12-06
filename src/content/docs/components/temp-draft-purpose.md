@@ -45,11 +45,11 @@ Allows the user interface to split into multiple columns by defining the number 
 
 **Note:** Use for arranging components and content, not for gratuitous numerous columns as perhaps seen in a newspaper or magazine.
 
-<!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
-
 ## ns-content
 
->ns-content is used to display typography and media.
-**Note:** This component is currently being considered for deprecation.
+> Use the ns-content component to display typography and media.
+**Note:** This component is currently under review for deprecation.
 
-ns-content is used inside other components and has been created to help add consistency to typography styling, and to improve how typography interacts with other components.
+The ns-content component's placement is inside other components. It helps to add consistency to the styling of typography, improving how it interacts with the other components.
+
+<!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
