@@ -61,3 +61,9 @@ Users can perform particular actions through the use of the ns-cta component. An
 There is no distinction between a hyperlink or an action through the design of the ns-cta component. Use its textual content to convey the intent of the CTA to the user.
 
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
+
+## ns-datepicker
+
+> Use to help the user enter a date in a form.
+
+This component wraps our ns-inputter component. Guidelines defined on the ns-inputter should also be followed when using this component. ns-inputter documentation.
