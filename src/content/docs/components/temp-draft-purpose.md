@@ -37,4 +37,12 @@ Cards are to be used to apply a container around a related grouping of informati
 
 Caveats link to content on the page, providing more information about legality and eligibility by separating it to the bottom of the page.
 
+## ns-column
+
+> Brings flexibility and control to responsive layouts.
+
+Allows the user interface to be split into multiple columns by defining the number of columns required at specific viewports.
+
+Note: This is used for arranging components and content not multiple columns like you would see in a newspaper or magazine.
+
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
