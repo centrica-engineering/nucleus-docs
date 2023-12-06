@@ -31,4 +31,10 @@ The ns-article component is a container for long-form content such as blogs, edi
 
 Cards are to be used to apply a container around a related grouping of information. Achieve this through a combination of imagery, illustrations and typography.
 
+## ns-caveat
+
+> Caveats provide additional information and legal details to content.
+
+Caveats link to content in the page, providing more information about legality and eligibility, by separating it to the bottom of the page.
+
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
