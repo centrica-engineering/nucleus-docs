@@ -25,10 +25,10 @@ The appointment-picker comprises a calendar  to select a date and a radio-button
 
 The ns-article component is a container for long-form content such as blogs, editorials and support articles.  Use it to split the content into easy-to-consume chapters or sections.
 
-<!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
-
 ## ns-card
 
-> Cards can be used to contain content in a consistent and structured way.
+> Use cards to contain content in a consistent and structured way.
 
-Cards are used to apply a container around a related grouping of information; this can be done through imagery, illustrations and typography.
+Cards are to be used to apply a container around a related grouping of information. Achieve this through a combination of imagery, illustrations and typography.
+
+<!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
