@@ -1,5 +1,7 @@
 ---
 title: ns-tab guidance
+sidebar:
+  label: Guidance
 ---
 
 ## Standard

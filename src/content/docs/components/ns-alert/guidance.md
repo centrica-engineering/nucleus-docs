@@ -1,5 +1,7 @@
 ---
 title: ns-alert guidance
+sidebar:
+  label: Guidance
 ---
 
 ## Highlighter

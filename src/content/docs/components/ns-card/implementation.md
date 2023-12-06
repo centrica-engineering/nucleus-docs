@@ -1,5 +1,7 @@
 ---
 title: ns-card implementation
+sidebar:
+  label: Implementation
 ---
 
 ## Specification

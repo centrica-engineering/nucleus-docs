@@ -1,5 +1,7 @@
 ---
 title: ns-inputter guidance
+sidebar:
+  label: Guidance
 ---
 
 ### Headings

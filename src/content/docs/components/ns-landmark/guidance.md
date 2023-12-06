@@ -1,5 +1,7 @@
 ---
 title: ns-landmark guidance
+sidebar:
+  label: Guidance
 ---
 
 ## Summit

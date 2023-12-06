@@ -1,5 +1,7 @@
 ---
 title: ns-example implementation
+sidebar:
+  label: Implementation
 ---
 
 ## Specification

@@ -1,5 +1,7 @@
 ---
 title: ns-timeline guidance
+sidebar:
+  label: Guidance
 ---
 
 ## Standard

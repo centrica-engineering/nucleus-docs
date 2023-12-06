@@ -1,5 +1,7 @@
 ---
 title: ns-timeline implementation
+sidebar:
+  label: Implementation
 ---
 
 ## Specification

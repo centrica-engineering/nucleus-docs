@@ -1,5 +1,7 @@
 ---
 title: ns-example guidance
+sidebar:
+  label: Guidance
 ---
 
 ## Standard

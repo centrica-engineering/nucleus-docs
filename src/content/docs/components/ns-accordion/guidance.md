@@ -1,5 +1,7 @@
 ---
 title: ns-accordion guidance
+sidebar:
+  label: Guidance
 ---
 
 ## Standard

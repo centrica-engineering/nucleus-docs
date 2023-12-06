@@ -1,5 +1,7 @@
 ---
 title: ns-landmark implementation
+sidebar:
+  label: Implementation
 ---
 
 ## Specification

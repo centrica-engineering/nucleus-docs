@@ -1,5 +1,7 @@
 ---
 title: ns-tab implementation
+sidebar:
+  label: Implementation
 ---
 
 ## Specification

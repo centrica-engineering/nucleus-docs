@@ -1,5 +1,7 @@
 ---
 title: ns-card guidance
+sidebar:
+  label: Guidance
 ---
 
 ## Section

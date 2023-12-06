@@ -1,5 +1,7 @@
 ---
 title: ns-alert implementation
+sidebar:
+  label: Implementation
 ---
 
 ## Specification

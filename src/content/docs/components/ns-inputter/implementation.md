@@ -1,5 +1,7 @@
 ---
 title: ns-inputter implementation
+sidebar:
+  label: Implementation
 ---
 
 ## Specification

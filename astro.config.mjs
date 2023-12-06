@@ -63,48 +63,21 @@ export default defineConfig({
         TableOfContents: "./src/components/toc.astro",
       },
       sidebar: [
-        componentSidebar,
+        {
+          label: "Auto components",
+          autogenerate: { directory: "components", collapsed: true },
+        },
         {
           label: "Guidelines",
-          items: [
-            {
-              label: "Colours",
-              link: `/guidelines/colours`,
-            },
-          ],
+          autogenerate: { directory: "guidelines" },
         },
         {
           label: "Patterns",
-          items: [
-            {
-              label: "Journeys",
-              link: `/patterns/journeys`,
-            },
-            {
-              label: "Asking for information",
-              link: `/patterns/asking-for-information`,
-            },
-            {
-              label: "Experiences",
-              link: `/patterns/experiences`,
-            },
-            {
-              label: "Loading",
-              link: `/patterns/loading`,
-            },
-            {
-              label: "Messaging",
-              link: `/patterns/messaging`,
-            },
-            {
-              label: "Telephone numbers",
-              link: `/patterns/telephone-numbers`,
-            },
-          ],
+          autogenerate: { directory: "patterns" },
         },
         {
           label: "Page types",
-          autogenerate: { directory: 'page-types' },
+          autogenerate: { directory: "page-types" },
         },
       ],
     }),

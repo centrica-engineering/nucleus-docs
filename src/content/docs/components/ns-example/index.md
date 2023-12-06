@@ -1,5 +1,7 @@
 ---
 title: ns-example overview
+sidebar:
+  label: Overview
 ---
 
 ## Purpose

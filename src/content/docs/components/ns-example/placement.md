@@ -1,5 +1,7 @@
 ---
 title: ns-example placement
+sidebar:
+  label: Placement
 ---
 
 ## Component placement

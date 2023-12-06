@@ -1,5 +1,7 @@
 ---
 title: ns-timeline overview
+sidebar:
+  label: Overview
 ---
 
 ## Purpose
