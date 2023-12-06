@@ -64,7 +64,7 @@ There is no distinction between a hyperlink or an action through the design of t
 
 > Use the datepicker to enter a date in a form.
 
-The ns-datepicker wraps the ns-inputter component. Guidelines defined for the ns-inputter should also be adhered to when using this component. See [ns-inputter documentation](#).
+The ns-datepicker wraps the ns-inputter component. Guidelines defined for the ns-inputter should also be adhered to when using this component. See [ns-inputter](#) documentation.
 
 ## ns-download
 
@@ -96,9 +96,9 @@ Use the ns-fieldset component instead of the usual HTML fieldset. The ns-fieldse
 
 ## ns-footer
 
-> Required links and information that need to be repeated on every page.
-> **Note:** This is the UI component for producing a customised footer. If you are looking for the default British Gas footer which contains the links please use nsx-footer.
+> The footer comprises required links and information that needs repeating on every page.
+> **Note:** This is the UI component for producing a customised footer. If you're looking for the default British Gas footer containing the links, please use the [nsx-footer](#) component.
 
-The last component on the page, this holds links and copyright notices that are legally required. It also holds information about the company.
+The footer is the last component on the page and holds links and copyright notices that are legally required. It also contains information about the company.
 
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
