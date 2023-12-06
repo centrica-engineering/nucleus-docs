@@ -53,3 +53,11 @@ Allows the user interface to split into multiple columns by defining the number 
 The ns-content component's placement is inside other components. It helps to add consistency to the styling of typography, improving how it interacts with the other components.
 
 <!---Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. --->
+
+## ns-cta
+
+>A CTA (call-to-action) allows users to take action once they are ready for it.
+
+Users can perform certain actions through the use of ns-cta. An example of these actions could be to submit a form through an event (i.e. click event) or navigate with a hyperlink.
+
+There is no distinciton between a hyperlink or an action through the design of ns-cta. Use the text content to convey the intent of the CTA to the user.
