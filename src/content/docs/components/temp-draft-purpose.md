@@ -169,3 +169,9 @@ Use these types of inputs to help customers enter and select information:
 If you intend to use a password inputter, please see the ns-password component.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-landmark
+
+> Landmarks are used to introduce the page, informing users of their current location and its primary purpose.
+
+Landmarks are used to set the scene for what the page is for, what offers might be available and give helpful best next actions for users. This is where the main heading for the page will sit and give the overarching context to the rest of the page.
