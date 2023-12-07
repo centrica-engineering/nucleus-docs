@@ -29,17 +29,6 @@ const componentSidebar = {
 };
 
 export default defineConfig({
-  markdown: {
-    shikiConfig: {
-      theme: 'github-dark',
-      experimentalThemes: {
-        light: 'github-dark',
-        dark: 'github-dark',
-      },
-      langs: [],
-      wrap: true,
-    },
-  },
   integrations: [
   starlight({
     title: 'Nucleus',
@@ -53,6 +42,9 @@ export default defineConfig({
     customCss: ['./src/styles/custom.css'],
     components: {
       TableOfContents: './src/components/toc.astro'
+    },
+    expressiveCode: {
+      themes: ['github-dark', 'github-light']
     },
     sidebar: [componentSidebar, {
       label: 'Guidelines',
