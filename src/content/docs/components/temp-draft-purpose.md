@@ -118,3 +118,13 @@ Use the ns-form-group component instead of the usual HTML fieldset. The ns-form-
 The ns-form component mimics the native form element features. Its purpose is to allow customers to provide data and validate it before sending them to processing.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-header
+
+> Primary navigation for the website
+
+The header provides the primary navigation for the website, whilst also being our main brand presence with the logo.
+
+> NOTE: This is the UI component for the header - if you are looking for the header with the navigational content please use nsx-header.
+
+The default choice of header across the main British Gas UK home site should be the nsx-header.
