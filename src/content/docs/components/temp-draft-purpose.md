@@ -105,10 +105,10 @@ Use the ns-fieldset component instead of the usual HTML fieldset. The ns-fieldse
 
 The footer is the last component on the page and holds links and copyright notices that are legally required. It also contains information about the company.
 
-<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
-
 ## ns-form-group
 
-> The form group component is used to group related ns-inputters.
+> Use the form-group to group related ns-inputter components.
 
-Use where you would normally use a vanilla html fieldset element. This element extends the layout for ns-form.
+Use the ns-form-group component instead of the usual HTML fieldset. The ns-form-group extends the layout for [ns-form](#).
+
+<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
