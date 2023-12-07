@@ -136,10 +136,10 @@ The ns-highlighter communicates messages that a service may not be available or 
 
 e.g. A message that says the top-up service may not be available would only apply to pages that customers will look at to top up.
 
-<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
-
 ## ns-icon
 
 > Icons are visual symbols used to represent functions, products and services.
 
-Icons provide clarity to users reducing the cognitive load. Icons always supplement a single line of text and are not treated as a description. They are solid or outline a single colour.
+Icons provide clarity to users and reduce their cognitive load. Icons always supplement a single line of text and are not treated as a description. They are solid or outline a single colour.
+
+<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
