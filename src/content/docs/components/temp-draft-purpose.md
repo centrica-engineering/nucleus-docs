@@ -155,3 +155,17 @@ Illustrations simplify products and services to users in a friendly manner. Illu
 British Gas has a variety of images to enhance content on the website and help sell a story. This component enables image use on the website at the correct ratios while ensuring the page loads quickly (utilising lazy loading).
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-inputter
+
+The ns-inputter is a multi-purpose wrapper component that helps with the display of the following form control types:
+
+- Text (including tel, email, and number)
+- Radio buttons
+- Checkboxes
+- Select (drop-downs)
+- Textareas
+
+These types of inputs are used to help customers enter and select information.
+
+If you would like to use a password input then please see the ns-password component.
