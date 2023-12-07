@@ -181,3 +181,9 @@ Use landmarks to set the scene for what the page is for, what offers might be av
 The ns-live component comprises a loading icon, a helpful message and a subtle animation.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-lockup
+
+> Lockups are a promotional component that signpost to a product or service, highlighting key messages.
+
+We use lockups to engage customers, in particular to promote a key product or service. The more relevant and contextual the content is for intended customers, the better.
