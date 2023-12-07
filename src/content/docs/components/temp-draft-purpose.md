@@ -148,10 +148,10 @@ Icons provide clarity to users and reduce their cognitive load. Icons always sup
 
 Illustrations simplify products and services to users in a friendly manner. Illustrations always accompany the content.
 
-<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
-
 ## ns-image
 
 > An image allows British Gas to share visual content.
 
-British Gas has a variety of images to enhance content on the website and helps sell a story. This component allows having images on the website, while making sure that the page loads quickly (lazy loading) and follows the right ratios.
+British Gas has a variety of images to enhance content on the website and help sell a story. This component enables image use on the website at the correct ratios while ensuring the page loads quickly (utilising lazy loading).
+
+<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
