@@ -174,8 +174,10 @@ If you intend to use a password inputter, please see the ns-password component.
 
 Use landmarks to set the scene for what the page is for, what offers might be available and give helpful actions for users. It contains the main heading for the page and provides overarching context to the rest of the page.
 
-<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
-
 ## ns-live
 
-> Through the use of a loading icon, a helpful message and subtle animation; ns-live draws attention to areas of the page that are dynamically updating.
+> Use the ns-live component to draw attention to areas of the page that are dynamically updating.
+
+The ns-live component comprises a loading icon, a helpful message and a subtle animation.
+
+<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
