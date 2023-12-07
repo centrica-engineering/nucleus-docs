@@ -101,9 +101,14 @@ Use the ns-fieldset component instead of the usual HTML fieldset. The ns-fieldse
 ## ns-footer
 
 > The footer comprises required links and information that needs repeating on every page.
-
 > **Note:** This is the UI component for producing a customised footer. If you're looking for the default British Gas footer containing the links, please use the [nsx-footer](#) component.
 
 The footer is the last component on the page and holds links and copyright notices that are legally required. It also contains information about the company.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-form-group
+
+> The form group component is used to group related ns-inputters.
+
+Use where you would normally use a vanilla html fieldset element. This element extends the layout for ns-form.
