@@ -94,7 +94,7 @@ Use an ns-expander component in an accordion, a product card, or other contexts.
 ## ns-fieldset
 
 > Use the fieldset to group related ns-inputter components.
-> **Note:** This component is deprecated. Please refer to the ns-form-group component.
+> **Note:** This component is deprecated. Please refer to the [ns-form-group](#) component.
 
 Use the ns-fieldset component instead of the usual HTML fieldset. The ns-fieldset extends the layout for the ns-form.
 
@@ -127,14 +127,13 @@ The header provides the primary navigation and conveys brand presence with the l
 
 The nsx-header should be the default choice of header across the main British Gas website.
 
-<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
-
 ## ns-highlighter
 
-> Highlighters can be used to communicate information or error, warning and success messages.
+> Use highlighters to communicate information or error, warning and success messages.
+> **Note:** This component is deprecated. Please refer to the [ns-alert](#) component.
 
-> Note: This component is deprecated and please refer to ns-alert component.
+The ns-highlighter communicates messages that a service may not be available or that there are technical issues on specific pages. These differ from global messages as they only apply to some pages and are not site-wide.
 
-A component that communicates the message that a service is not available to them or that there are technical issues on specific pages only. These messages are different to global messages as they only apply to some pages not site wide.
+e.g. A message that says the top-up service may not be available would only apply to pages that customers will look at to top up.
 
-e.g. a message that says the top up service is not available would only apply to pages that customers will look at in order to top up.
+<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
