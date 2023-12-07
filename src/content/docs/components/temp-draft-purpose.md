@@ -102,11 +102,7 @@ Use the ns-fieldset component instead of the usual HTML fieldset. The ns-fieldse
 
 > The footer comprises required links and information that needs repeating on every page.
 
-<!--Suggestion - use the Starlight Custom aside for 'Purpose' above and the 'Notes' aside for the below and similar?-->
-
-:::note
-This is the UI component for producing a customised footer. If you're looking for the default British Gas footer containing the links, please use the [nsx-footer](#) component.
-:::
+> **Note:** This is the UI component for producing a customised footer. If you're looking for the default British Gas footer containing the links, please use the [nsx-footer](#) component.
 
 The footer is the last component on the page and holds links and copyright notices that are legally required. It also contains information about the company.
 
