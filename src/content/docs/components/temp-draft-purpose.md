@@ -209,3 +209,11 @@ Use pills to highlight a small item of information to a customer. Within the Bri
 Pills can help to create a subtle sense of urgency or to draw a customer’s attention to the value of a product or service. For example, use them to highlight the date a promotional offer expires or to feature a gift offer.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-price
+
+> Standardises the way prices are displayed.
+
+Takes an input in pence and outputs it into the correct price format, prepends a pound symbol and adds an optional minus sign for negative prices.
+
+Only works for pound sterling.
