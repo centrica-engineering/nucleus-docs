@@ -215,3 +215,7 @@ Pills can help to create a subtle sense of urgency or to draw a customer’s att
 The ns-price component takes an input in pence and outputs it in the correct price format, prepends a pound symbol and adds an optional minus sign indicating negative values. It only works for pounds sterling.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-product-card
+
+> The product card enables users to browse, compare and choose a product.
