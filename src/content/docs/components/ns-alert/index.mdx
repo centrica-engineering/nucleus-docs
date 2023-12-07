@@ -5,12 +5,24 @@ import Wrapper from '../../../../components/wrapper.astro';
 import ExampleViewer from '../../../../components/example-viewer.astro';
 import HighlighterError from './_examples/highlighter/error.html';
 import HighlighterInfo from './_examples/highlighter/info.html';
+import HighlighterSuccess from './_examples/highlighter/success.html';
+import HighlighterWarning from './_examples/highlighter/warning.html';
 
-<Wrapper name="ns-accordion" >
-
+<Wrapper name="ns-accordion">
     <HighlighterError slot="template"/>
-
-    <ExampleViewer>
-        <HighlighterInfo slot="template"/>
-    </ExampleViewer>
 </Wrapper>
+
+## State - `info`
+<ExampleViewer>
+    <HighlighterInfo slot="template"/>
+</ExampleViewer>
+
+## State - `success`
+<ExampleViewer>
+    <HighlighterSuccess slot="template"/>
+</ExampleViewer>
+
+## State - `warning`
+<ExampleViewer>
+    <HighlighterWarning slot="template"/>
+</ExampleViewer>
