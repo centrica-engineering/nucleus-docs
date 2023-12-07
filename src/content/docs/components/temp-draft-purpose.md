@@ -111,10 +111,10 @@ The footer is the last component on the page and holds links and copyright notic
 
 Use the ns-form-group component instead of the usual HTML fieldset. The ns-form-group extends the layout for [ns-form](#).
 
-<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
-
 ## ns-form
 
-> The form component is used to collect customer input and provide personal experience to customer based on their needs.
+> Use the form component to collect customer input and provide a personal experience based on their needs.
 
-The ns-form component mimics the native form element features. It's main purpose is to allow customers to provide data and validate the data before sending them to processing.
+The ns-form component mimics the native form element features. Its purpose is to allow customers to provide data and validate it before sending them to processing.
+
+<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
