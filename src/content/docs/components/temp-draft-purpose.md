@@ -219,3 +219,18 @@ The ns-price component takes an input in pence and outputs it in the correct pri
 > The product card enables users to browse, compare and choose a product.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-progress
+
+> A Progress component is used to indicate how far through a journey a user is and how many steps they have left to complete.
+
+A progress component consists of a step count (eg. Step 1 of 3), an optional 'Info' heading statement, a stepped horizontal bar and track indicating the progress made and the step a user is on, and an optional 'Next' comment to predict the next step. It also has a 'Completed' status.
+
+The progress component can be manipulated in the DOM without the need to reload the component. This dynamic behaviour enhances the user experience and facilitates the following experiences:
+
+- Updating after user input
+- Using in combination with other components such as previous and next cta's
+- Skipping steps
+- Going back to previous steps
+- Automatically proceeding to the next step by itself until completed
+- Create "rest" steps that automatically proceed after checking details, generating quotes, etc
