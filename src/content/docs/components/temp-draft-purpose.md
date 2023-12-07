@@ -193,3 +193,11 @@ Use lockups to engage customers and promote products or services. The more relev
 It provides an area to place a layout, add an optional decoration and apply the appropriate margins. There can be more than one ns-panel on a page.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-password
+
+> A standardised Password component that supports users when entering an existing password.
+
+The ns-password component has been developed to include a set of features that help a user not only enter a password but can accommodate their need to create one too.
+
+This component wraps our ns-inputter component. Guidelines defined on the ns-inputter should also be considered when using this component. See ns-inputter documentation.
