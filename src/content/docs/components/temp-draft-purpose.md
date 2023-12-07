@@ -128,3 +128,13 @@ The header provides the primary navigation and conveys brand presence with the l
 The nsx-header should be the default choice of header across the main British Gas website.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-highlighter
+
+> Highlighters can be used to communicate information or error, warning and success messages.
+
+> Note: This component is deprecated and please refer to ns-alert component.
+
+A component that communicates the message that a service is not available to them or that there are technical issues on specific pages only. These messages are different to global messages as they only apply to some pages not site wide.
+
+e.g. a message that says the top up service is not available would only apply to pages that customers will look at in order to top up.
