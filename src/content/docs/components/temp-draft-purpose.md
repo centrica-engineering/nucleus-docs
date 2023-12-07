@@ -142,4 +142,10 @@ e.g. A message that says the top-up service may not be available would only appl
 
 Icons provide clarity to users and reduce their cognitive load. Icons always supplement a single line of text and are not treated as a description. They are solid or outline a single colour.
 
+## ns-illustration
+
+> Illustrations are visual symbols used to bring the warmth of the British Gas brand and personality to the website.
+
+Illustrations simplify products and services to users in a friendly manner. Illustrations always accompany the content.
+
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
