@@ -201,3 +201,11 @@ Use the ns-password component to include a set of features that help users not o
 This component wraps the ns-inputter. Consider the guidelines defined for the ns-inputter when using this component. See [ns-inputter](#) documentation.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-pill
+
+> A pill is a small coloured highlight which can be used to draw a customer's attention to a piece of information.
+
+Pills can be used to highlight a small item of key information to a customer. Within the British Gas experience, they should be used to attract attention to a promotional message or a notification. They should only be used to display a small detail of content and are not intended to contain lengthy or complex information.
+
+Pills can help to create a subtle sense of urgency or to draw a customer’s attention to the value of a product or service. For example, they can be used to highlight the date that a promotional offer expires, or to feature a gift offer.
