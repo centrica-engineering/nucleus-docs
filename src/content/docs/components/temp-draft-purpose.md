@@ -221,9 +221,9 @@ The ns-price component takes an input in pence and outputs it in the correct pri
 ## ns-progress
 
 > Use an ns-progress component to indicate how far a user is through a journey and how many steps they have left to complete.
-  
-<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
 
 ## ns-selector
 
-Selectors are used to group an image or illustration with a label into a card. They showcase a product, service or option, which users can select. They can function as single, or multiple selection for the user.
+> Use the ns-selector component to group an image or illustration with a label into a card. Showcase a product, service or option which users can select. This component can function as a single or multiple selection for the user.
+
+<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
