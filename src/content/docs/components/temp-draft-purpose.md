@@ -186,10 +186,10 @@ The ns-live component comprises a loading icon, a helpful message and a subtle a
 
 Use lockups to engage customers and promote products or services. The more relevant and contextual the content is for the intended customers, the better.
 
-<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
-
 ## ns-panel
 
 > The ns-panel component is an empty container for each section on a page.
 
 It provides an area to place a layout, add an optional decoration and apply the appropriate margins. There can be more than one ns-panel on a page.
+
+<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
