@@ -248,3 +248,15 @@ Show helpful information the user may want to be made aware of, e.g. upcoming pr
   Warn users of potential upcoming or current issues, e.g. a weather warning.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-standout
+
+> The ns-standout component's purpose is to draw attention to important information that the user will need to know.
+
+Use the ns-standout component to make information stand out from a page and to visually differentiate a concise block of text from the content that surrounds it, for example:
+
+Quotes (as in prices)
+Call-outs
+Examples
+Additional information about the page
+Emergency information
