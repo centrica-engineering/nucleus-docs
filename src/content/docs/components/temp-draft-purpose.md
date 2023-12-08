@@ -325,3 +325,11 @@ The subheadings and links for the navigation are parsed into each section of the
 [Image showing nsx-header open with subheadings and links]
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## nsx-marketing-consent
+
+> Marketing consent is the capture of a customer's contact preferences for marketing purposes.
+
+This experience pattern should be used in any journey where customer marketing preferences are captured.
+
+This component is only used to capture and submit customer preferences, not view or change existing preferences.
