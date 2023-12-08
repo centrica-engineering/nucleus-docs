@@ -11,13 +11,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/lit": "^3.0.2",
-    "@astrojs/starlight": "^0.11.0",
+    "@astrojs/lit": "^3.0.3",
+    "@astrojs/starlight": "^0.15.0",
     "@connectedhomes/nucleus": "^3.1.0",
     "@fontsource/roboto": "^5.0.8",
     "@webcomponents/template-shadowroot": "^0.2.1",
-    "astro": "^3.2.3",
-    "astro-expressive-code": "^0.28.2",
+    "astro": "^4.0.0",
+    "hast-util-to-html": "^9.0.0",
     "js-beautify": "^1.14.9",
     "lit": "^2.8.0",
     "sharp": "^0.32.5"

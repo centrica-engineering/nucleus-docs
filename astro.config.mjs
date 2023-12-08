@@ -1,16 +1,33 @@
-import { defineConfig } from "astro/config";
-import starlight from "@astrojs/starlight";
-import { astroExpressiveCode } from "astro-expressive-code";
+import { defineConfig } from 'astro/config';
+import starlight from '@astrojs/starlight';
+import cem from '@connectedhomes/nucleus/custom-elements.json';
 import lit from "@astrojs/lit";
 
-const astroExpressiveCodeOptions = {
-  theme: "github-dark",
-  getBlockLocale: ({ file }) => {
-    return "en";
-  },
+const componentSidebar = {
+  label: 'Components',
+  items: cem.tags.sort((a, b) => a.name.localeCompare(b.name)).map(component => ({
+    label: component.name,
+    badge: 'Deprecated',
+    collapsed: true,
+    items: [{
+      label: 'Overview',
+      attrs: {
+        'class': `ns-sidebar sidebar-${component.name}`
+      },
+      link: `/components/${component.name}`
+    }, {
+      label: 'Guidance',
+      link: `/components/${component.name}/guidance`
+    }, {
+      label: 'Placement',
+      link: `/components/${component.name}/placement`
+    }, {
+      label: 'Implementation',
+      link: `/components/${component.name}/implementation`
+    }]
+  }))
 };
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
@@ -60,5 +77,38 @@ export default defineConfig({
     astroExpressiveCode(astroExpressiveCodeOptions),
     lit(),
   ],
-  outDir: "./build",
+    components: {
+      TableOfContents: './src/components/toc.astro'
+    },
+    expressiveCode: {
+      themes: ['github-dark', 'github-light']
+    },
+    sidebar: [componentSidebar, {
+      label: 'Guidelines',
+      items: [{
+        label: 'a',
+        link: `/guidelines/example`
+      }]
+    }, {
+      label: 'Patterns',
+      items: [{
+        label: 'Overview',
+        link: `/patterns`
+      }]
+    }, {
+      label: 'Pages',
+      items: [{
+        label: 'a',
+        link: `/pages/a`
+      }]
+    }, {
+      label: 'Resources',
+      items: [{
+        label: 'a',
+        link: `/resources/example`
+      }]
+    }]
+  }), 
+  lit()],
+  outDir: './build'
 });
