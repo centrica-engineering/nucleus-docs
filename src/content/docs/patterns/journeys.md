@@ -27,7 +27,7 @@ When building a new experience for our customers, we advise that you employ a st
 
 By understanding the customers mental model and breaking the journey into logical steps will help them to complete their tasks easily.
 
-![Step-by-step](./images/step-by-step.webp)
+![Step-by-step](./images/journeys/step-by-step.webp)
 
 ### Guiding principles
 
@@ -89,7 +89,7 @@ There are currently two distinct methods for playing back and summarising a cust
 
 One using flat cards, the other a description list. Both can be used to play back a representative structure of the sections a customer has completed.
 
-![Description list used for personal information summary](./images/playback.webp)
+![Description list used for personal information summary](./images/journeys/playback.webp)
 
 #### ns-card
 
