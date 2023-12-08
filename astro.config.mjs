@@ -1,7 +1,5 @@
 import { defineConfig } from 'astro/config';
-import deepmerge from 'deepmerge';
 import starlight from '@astrojs/starlight';
-import { astroExpressiveCode } from 'astro-expressive-code';
 import cem from '@connectedhomes/nucleus/custom-elements.json';
 import lit from "@astrojs/lit";
 
@@ -30,16 +28,6 @@ const componentSidebar = {
   }))
 };
 
-const astroExpressiveCodeOptions = {
-  theme: 'github-dark',
-  getBlockLocale: ({
-    file
-  }) => {
-    return 'en';
-  }
-};
-
-// https://astro.build/config
 export default defineConfig({
   integrations: [
   starlight({
@@ -60,6 +48,9 @@ export default defineConfig({
   ],
     components: {
       TableOfContents: './src/components/toc.astro'
+    },
+    expressiveCode: {
+      themes: ['github-dark', 'github-light']
     },
     sidebar: [componentSidebar, {
       label: 'Guidelines',
@@ -87,7 +78,6 @@ export default defineConfig({
       }]
     }]
   }), 
-  astroExpressiveCode(astroExpressiveCodeOptions),
   lit()],
   outDir: './build'
 });
