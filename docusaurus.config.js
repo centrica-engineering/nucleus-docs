@@ -34,7 +34,7 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://www.britishgas.co.uk/nucleus/demo/index.html',
+          href: 'https://library.britishgas.design',
           label: 'Storybook',
           position: 'right',
         },
