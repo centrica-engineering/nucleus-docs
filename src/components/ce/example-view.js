@@ -25,8 +25,11 @@ export class ExampleView extends LitElement {
       }
 
       .example {
+        background: #fff;
         height: 100%;
         border-radius: 4px;
+        padding: 0.5rem;
+        border: 1px solid var(--sl-color-gray-6);
       }
 
       iframe {
@@ -40,7 +43,6 @@ export class ExampleView extends LitElement {
       .preview {
         height: 100%;
         min-height: var(--min-height);
-        padding: 1em;
       }
 
       .slider {
@@ -116,7 +118,6 @@ export class ExampleView extends LitElement {
     };
 
     return html`
-      <h2>${this.title}</h2>
       <div class="example">
       <div class="preview" style=${styleMap(styles)}>
       <iframe

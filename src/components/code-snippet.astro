@@ -1,6 +1,6 @@
 ---
 import { createRenderer } from 'remark-expressive-code';
-import { toHtml } from 'hast-util-to-html'
+import { toHtml } from 'hast-util-to-html';
 
 const { lang = 'html' } = Astro.props;
 const slotContent = await Astro.slots.render('template').then((value) => value);
