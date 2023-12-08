@@ -5,7 +5,11 @@ sidebar:
 ---
 
 import Wrapper from '../../../../components/wrapper.astro';
+import ExampleViewer from '../../../../components/example-viewer.astro';
 import ExampleStandard from './_examples/standard.html';
+import ExampleSection from './_examples/section.html';
+import ExampleSupport from './_examples/support.html';
+import ExampleFlat from './_examples/flat.html';
 
 ## Purpose
 
@@ -18,6 +22,26 @@ Cards are used to apply a container around a related grouping of information; th
 <Wrapper name="ns-card">
   <ExampleStandard slot="template"/>
 </Wrapper>
+
+## Types
+
+### `section`
+
+<ExampleViewer>
+  <ExampleSection slot="template" />
+</ExampleViewer>
+
+### `support`
+
+<ExampleViewer>
+  <ExampleSupport slot="template" />
+</ExampleViewer>
+
+### `flat`
+
+<ExampleViewer>
+  <ExampleFlat slot="template" />
+</ExampleViewer>
 
 ## Related links
 
