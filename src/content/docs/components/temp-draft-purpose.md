@@ -259,10 +259,10 @@ Use the ns-standout component to make information stand out from a page and to v
 - Additional information about the page
 - Emergency information
 
-<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
-
 ## ns-tab
 
-> The singular tab that dictates what the area is about.
+> The ns-tab component is a singular tab that dictates what the area is about.
 
-The tab is the button that can be clicked to change the content in the ns-tabs. It shows the user what content there is with a heading and an optional icon.
+The ns-tab is the button that changes the content in the ns-tabs when clicked. It shows the user relevant content with a heading and an optional icon.
+
+<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
