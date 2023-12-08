@@ -287,6 +287,6 @@ The testimonial should be used as an enticement to buy British Gas products and 
 
 > Use the ns-timeline component to represent a sequence of events happening within a process.
 
-This timeline gives an overview of a process and can show the progression of a customer journey. Its purpose is to create situational awareness for the user and manage expectations.
+The timeline gives an overview of a process and can show the progression of a customer journey. Its purpose is to create situational awareness for the user and manage expectations.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
