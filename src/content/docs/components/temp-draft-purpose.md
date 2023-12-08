@@ -297,7 +297,7 @@ British Gas creates many videos to engage customers. The ns-video component enab
 
 ## nsx-address-selector
 
-> The nsx-address-selector is a multi-functional experience pattern. Use this Nucleus experience (nsx-) for address related tasks.
+> The nsx-address-selector is a multi-functional experience pattern. Use this Nucleus experience (nsx-) for address-related tasks.
 
 Use the address selector for any of the following tasks:
 
@@ -306,12 +306,12 @@ Use the address selector for any of the following tasks:
 - Amending an existing address
 - Selecting an address from a list of existing premises (e.g. multi-premise landlords)
 
-<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
-
 ## nsx-footer
 
-The footer holds legally required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps.
+> The nsx-footer experience pattern is a wrapper of the ns-footer component. Use this Nucleus experience (nsx-) to display the website's legally required links and copyright information.
 
-This experience pattern is a wrapper of the ns-footer. The footer experience pattern is broken into 3 parts. Legal links, SEO links and brand and copyright notice.
+The nsx-footer is also an important SEO tool that includes links to social channels and our mobile apps.
 
-If a link needs to be updated for the website footer, it needs to be done in this experience pattern.
+The footer experience pattern comprises three parts. Legal links, SEO links and a brand and copyright notice. If links need updating for the website footer, use this experience pattern as your basis.
+
+<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
