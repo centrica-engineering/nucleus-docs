@@ -290,3 +290,9 @@ The testimonial should be used as an enticement to buy British Gas products and 
 The timeline gives an overview of a process and can show the progression of a customer journey. Its purpose is to create situational awareness for the user and manage expectations.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-video
+
+> A video allows British Gas to share more visual and engaging content.
+
+British Gas creates many videos to engage customers. This component allows having these videos on the website and gives better context to the customer about what, how or why they should do something.
