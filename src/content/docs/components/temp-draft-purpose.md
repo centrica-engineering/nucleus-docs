@@ -315,3 +315,11 @@ The nsx-footer is also an important SEO tool that includes links to social chann
 The footer experience pattern comprises three parts. Legal links, SEO links and a brand and copyright notice. If links need updating for the website footer, use this experience pattern as your basis.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## nsx-header
+
+> Primary navigation for the British Gas website
+
+This experience pattern is a wrapper of the ns-header. The header experience pattern internally holds the sections and the secondary navigation.
+
+The subheadings and links for the navigation can be passed in for each section to allow them to be quickly updated.
