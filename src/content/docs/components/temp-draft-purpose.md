@@ -272,3 +272,9 @@ The ns-tab is the button that changes the content in the ns-tabs when clicked. I
 The table component consumes basic HTML table markup, which makes it accessible and responsive, as well as styling it.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-tabs
+
+> Tabs provide organisation of content separated within the same context.
+
+Related content can be separated into clearly labelled sections.
