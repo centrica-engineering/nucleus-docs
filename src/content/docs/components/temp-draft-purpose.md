@@ -296,3 +296,12 @@ The timeline gives an overview of a process and can show the progression of a cu
 British Gas creates many videos to engage customers. The ns-video component enables the use of these videos on the website and gives better context to the customer regarding what, how or why they should do something.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## nsx-address-selector
+
+The address selector is a multi-functional experience pattern that can be used for any one of, or a combination of, the following tasks:
+
+- searching for a specific address by postcode
+- adding or entering a new address
+- amending an existing address
+- selecting an address from a list of existing premises (e.g. multi-premise landlords)
