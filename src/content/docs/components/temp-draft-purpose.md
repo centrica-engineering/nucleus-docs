@@ -283,10 +283,10 @@ Use ns-tabs to separate related content into clearly labelled sections. It compr
 
 The testimonial should be used as an enticement to buy British Gas products and services. It works by providing the customer with confidence.
 
-<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
-
 ## ns-timeline
 
-> The Timeline component represents a sequence of events that happen within a process.
+> Use the ns-timeline component to represent a sequence of events happening within a process.
 
-This component gives an overview of the whole process and progress of a customer journey. Its main purpose is to create situational awareness for the user and manage expectations.
+This timeline gives an overview of a process and can show the progression of a customer journey. Its purpose is to create situational awareness for the user and manage expectations.
+
+<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
