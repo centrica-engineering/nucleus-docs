@@ -8,9 +8,10 @@ sidebar:
 
 _(automated)_
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `attribute` | `type` | `default` | Please see the [documentation for ns-example](../components/ns-example) | Description of the attribute and it's feature. |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type` | `type` | `string` | `standard` | `standard` | Type of illustration. |
+| `name` | `name` | `string` | `gas` | `appliance`, `appliance-cover`, `appliance-repair`, `battery`, `boiler`, `boiler-cover`, `boiler-repair`, `bulb`, `calendar`, `central-heating`, `chat`, `clock`, `compass`, `cosmo`, `document`, `dual-fuel`, `electric-charging-station`, `electric-vehicle`, `electrics`, `engineer`, `error`, `fix`, `fixed-sa`, `gas`, `green-leaf`, `help`, `home`, `home-insurance`, `laptop`, `low-carbon`, `multiple-people`, `oven`, `phone`, `pipe-and-drain`, `protect`, `radiator`, `savings`, `settings`, `sms`, `tap`, `track-engineer`, `van`, `whats-app`, `yellow-shield` | Picks the illustration that is to be shown. |
 
 | Event | Description |
 | :--- | :--- |
