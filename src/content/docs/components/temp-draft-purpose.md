@@ -278,3 +278,9 @@ The table component consumes basic HTML table markup, which makes it accessible 
 Use ns-tabs to separate related content into clearly labelled sections. It comprises multiple [ns-tab](#) components.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-testimonial
+
+> The ns-testimonial component is used to display all the lovely things that people say about us.
+
+The testimonial should be used as an enticement to buy British Gas products and services. It works by providing the customer with confidence.
