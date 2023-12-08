@@ -308,3 +308,10 @@ Use the address selector for any of the following tasks:
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
 
+## nsx-footer
+
+The footer holds legally required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps.
+
+This experience pattern is a wrapper of the ns-footer. The footer experience pattern is broken into 3 parts. Legal links, SEO links and brand and copyright notice.
+
+If a link needs to be updated for the website footer, it needs to be done in this experience pattern.
