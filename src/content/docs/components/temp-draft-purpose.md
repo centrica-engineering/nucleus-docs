@@ -331,3 +331,7 @@ The subheadings and links for the navigation are parsed into each section of the
 Use this experience pattern in any journey where there is a need to capture and submit customer marketing preferences. Only use it for this purpose – do not use it for viewing or changing existing preferences.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## nsx-product-card-overview
+
+The product card overview is an experience pattern that can be used to compare HomeCare products against each other and see the difference in price when choosing to have an excess or not - without having to reload the entire page.
