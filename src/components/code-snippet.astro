@@ -1,11 +1,11 @@
 ---
-import { createRenderer } from '@astrojs/starlight/expressive-code';
+import { createRenderer } from 'remark-expressive-code';
 import { toHtml } from 'hast-util-to-html'
 
 const { lang = 'html' } = Astro.props;
 const slotContent = await Astro.slots.render('template').then((value) => value);
 
-const {ec, themeStyles, baseStyles} = await createRenderer({
+const {ec, themeStyles, baseStyles, jsModules} = await createRenderer({
   themes:['github-dark', 'github-light'],
   useDarkModeMediaQuery: true
 });
@@ -21,14 +21,18 @@ let index = htmlContent.indexOf(frameSelector);
 if(index > 0) {
   htmlContent = htmlContent.split(frameSelector).join(`${frameSelector} not-content`);
 }
+//map data-theme to the code block theme
+const themedStyles = themeStyles?.replaceAll('github-', '');
 // Collect styles and add them before the HTML content
-const stylesToPrepend = [];
-stylesToPrepend.push(baseStyles);
-stylesToPrepend.push(themeStyles);
-stylesToPrepend.push(...styles);
-if (stylesToPrepend.length) {
-  htmlContent = `<style>${[...stylesToPrepend].join('')}</style>${htmlContent}`;
-}
+const prefixToLookup = 'class="expressive-code">';
+  const htmlContentParts = htmlContent.split(prefixToLookup);
+  htmlContent = `${htmlContentParts[0]}${prefixToLookup}
+  ${(baseStyles || themedStyles) ? '<style>' : ''}
+  ${baseStyles ?? ''}
+  ${themedStyles ?? ''}
+  ${(baseStyles || themedStyles) ? '</style>' : ''}
+  <script>${jsModules}</script>
+  ${htmlContentParts[1]}`;
 ---
 
 <div set:html={htmlContent} />
