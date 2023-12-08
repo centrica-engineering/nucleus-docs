@@ -11,7 +11,8 @@
   --sl-color-gray-5: #354268; /* borders and lines */
   --sl-color-gray-6: #191c23; /* menu base */
   --sl-color-black: #15171c; /* Base */
-  --sl-content-width: 60rem; /* Content width */
+  --sl-content-width: 54rem; /* Content width */
+  --sl-sidebar-width: 14rem; /* Sidebar width */
 }
 /* Light mode colors. */
 :root[data-theme='light'] {
@@ -25,8 +26,8 @@
   --sl-color-gray-4: #8AAAC2;
   --sl-color-gray-5: #7298f0; /* borders and lines */
   --sl-color-gray-6: #B9CCDA; 
-  --sl-color-gray-7: #F4F6F8; /* top bar base */
-  --sl-color-black: #ffffff; /* Base */
+  --sl-color-gray-7: #ffffff; /* top bar base */
+  --sl-color-black: #F4F6F8; /* Base */
 }
 /* Custom fonts */
 main {
