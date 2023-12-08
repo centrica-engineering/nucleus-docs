@@ -263,7 +263,7 @@ Use the ns-standout component to make information stand out from a page and to v
 
 > The ns-tab component is a singular tab that dictates what the area is about.
 
-The ns-tab is the button that changes the content in the ns-tabs when clicked. It shows the user relevant content with a heading and an optional icon.
+The ns-tab is the button that changes the content in the [ns-tabs](#) when clicked. It shows the user relevant content with a heading and an optional icon.
 
 ## ns-table
 
@@ -271,10 +271,10 @@ The ns-tab is the button that changes the content in the ns-tabs when clicked. I
 
 The table component consumes basic HTML table markup, which makes it accessible and responsive, as well as styling it.
 
-<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
-
 ## ns-tabs
 
-> Tabs provide organisation of content separated within the same context.
+> The ns-tabs component provides the organisation of content separated within the same context.
 
-Related content can be separated into clearly labelled sections.
+Use ns-tabs to separate related content into clearly labelled sections. It comprises multiple [ns-tab](#) components.
+
+<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
