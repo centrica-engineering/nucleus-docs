@@ -266,3 +266,9 @@ Use the ns-standout component to make information stand out from a page and to v
 The ns-tab is the button that changes the content in the ns-tabs when clicked. It shows the user relevant content with a heading and an optional icon.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+## ns-table
+
+> The ns-table component displays information in a grid-like format of rows and columns. It organises information in a way that’s easy to scan, so that users can look for patterns and insights.
+
+The table component consumes basic HTML table markup, which makes it accessible and responsive as well as styling it.
