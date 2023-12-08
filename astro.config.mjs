@@ -33,13 +33,19 @@ export default defineConfig({
   starlight({
     title: 'Nucleus',
     logo: {
-      src: './public/logo.svg',
+      light: './public/logo-light.svg',
+      dark: './public/logo-dark.svg',
       replacesTitle: true
     },
     editLink: {
       baseUrl: 'https://github.com/centrica-engineering/nucleus-docs/edit/main/'
     },
-    customCss: ['./src/styles/custom.css'],
+    customCss: [
+      './src/styles/custom.css',
+      // Fontsource files for to regular and medium font weights.
+      '@fontsource/roboto/300.css',
+      '@fontsource/roboto/400.css',
+  ],
     components: {
       TableOfContents: './src/components/toc.astro'
     },
