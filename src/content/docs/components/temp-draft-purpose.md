@@ -226,12 +226,12 @@ The ns-price component takes an input in pence and outputs it in the correct pri
 
 > Use the ns-selector component to group an image or illustration with a label into a card. Showcase a product, service or option which users can select. This component can function as a single or multiple selection for the user.
 
-<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
-
 ## ns-skeleton
 
-The ns-skeleton component is a placeholder to show that content is loading.
+> The ns-skeleton component is a placeholder to show that content is loading.
 
 [Example showing a paragraph type ns-skeleton]
 
-The example above shows the visual representation for a paragraph. There are also options for text, headings, and subheadings.
+The example above shows the visual representation of a paragraph. There are also options for text, headings, and subheadings.
+
+<!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
