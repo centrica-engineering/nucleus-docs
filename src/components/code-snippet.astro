@@ -1,6 +1,6 @@
 ---
 import { createRenderer } from 'remark-expressive-code';
-import { toHtml } from 'hast-util-to-html'
+import { toHtml } from 'hast-util-to-html';
 
 const { lang = 'html' } = Astro.props;
 const slotContent = await Astro.slots.render('template').then((value) => value);
@@ -12,7 +12,7 @@ const {ec, themeStyles, baseStyles, jsModules} = await createRenderer({
 const { renderedGroupAst, styles } = await ec.render({
   code: slotContent,
   language: lang,
-  meta: '',
+  meta: ''
 });
 
 let htmlContent = toHtml(renderedGroupAst);
@@ -25,8 +25,8 @@ if(index > 0) {
 const themedStyles = themeStyles?.replaceAll('github-', '');
 // Collect styles and add them before the HTML content
 const prefixToLookup = 'class="expressive-code">';
-  const htmlContentParts = htmlContent.split(prefixToLookup);
-  htmlContent = `${htmlContentParts[0]}${prefixToLookup}
+const htmlContentParts = htmlContent.split(prefixToLookup);
+htmlContent = `${htmlContentParts[0]}${prefixToLookup}
   ${(baseStyles || themedStyles) ? '<style>' : ''}
   ${baseStyles ?? ''}
   ${themedStyles ?? ''}
