@@ -1,7 +1,6 @@
 ---
 const { name } = Astro.props;
 import jsdoc from "@connectedhomes/nucleus/ce-doc.json";
-// import jsdoc from './ce/ce-doc.json';
 const placements = jsdoc.find((tag) => tag.name === name)?.placements;
 ---
 <div style={placements?.length > 0 ? '' : 'display:none'}>
