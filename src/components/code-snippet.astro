@@ -1,29 +1,38 @@
 ---
-const {
-    lang = 'html',
-    themes= ['github-dark', 'github-light']
-} = Astro.props;
+import { createRenderer } from 'remark-expressive-code';
+import { toHtml } from 'hast-util-to-html';
+
+const { lang = 'html' } = Astro.props;
 const slotContent = await Astro.slots.render('template').then((value) => value);
 
-import shiki from 'shiki';
-const highlighter = await shiki.getHighlighter({themes});
-const html = highlighter.codeToHtml(slotContent, lang);
+const {ec, themeStyles, baseStyles, jsModules} = await createRenderer({
+  themes:['github-dark', 'github-light'],
+  useDarkModeMediaQuery: true
+});
+const { renderedGroupAst, styles } = await ec.render({
+  code: slotContent,
+  language: lang,
+  meta: ''
+});
 
+let htmlContent = toHtml(renderedGroupAst);
+const frameSelector = 'figure class="frame';
+let index = htmlContent.indexOf(frameSelector);
+if(index > 0) {
+  htmlContent = htmlContent.split(frameSelector).join(`${frameSelector} not-content`);
+}
+//map data-theme to the code block theme
+const themedStyles = themeStyles?.replaceAll('github-', '');
+// Collect styles and add them before the HTML content
+const prefixToLookup = 'class="expressive-code">';
+const htmlContentParts = htmlContent.split(prefixToLookup);
+htmlContent = `${htmlContentParts[0]}${prefixToLookup}
+  ${(baseStyles || themedStyles) ? '<style>' : ''}
+  ${baseStyles ?? ''}
+  ${themedStyles ?? ''}
+  ${(baseStyles || themedStyles) ? '</style>' : ''}
+  <script>${jsModules}</script>
+  ${htmlContentParts[1]}`;
 ---
-<div class="code-actions">
-  <button id="copyCode">Copy</button>
-</div>
-<div class="code" set:html={html}>
-</div>
-<script>
-  const button = document.getElementById('copyCode');
-  button?.addEventListener('click', (event) => {
-    const target = event.target;
-    navigator.clipboard.writeText(document.getElementsByClassName('code')[0].textContent ?? '');
-    target.textContent = 'Copied!';
 
-    setTimeout(() => {
-      target.textContent = 'Copy';
-    }, 1000);
-  });
-</script>
+<div set:html={htmlContent} />
