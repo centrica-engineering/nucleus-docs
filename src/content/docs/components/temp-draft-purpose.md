@@ -98,7 +98,6 @@ Use an `ns-expander` component in an accordion, a product card, or other context
 ## ns-fieldset
 
 > Use the `ns-fieldset` to group related `ns-inputter` components.
-> **Note:** This component is deprecated. Please refer to the [`ns-form`-group](#) component.
 
 Use the `ns-fieldset` component instead of the usual HTML fieldset. The `ns-fieldset` extends the layout for the `ns-form`.
 
@@ -337,3 +336,9 @@ Use this experience pattern in any journey where there is a need to capture and 
 > Use the `nsx-product-card-overview` experience pattern to compare HomeCare products against each other. See the price differences when choosing to apply an excess or not without reloading the entire page.
 
 <!--Above this line have been reworded from the original for a knowledgeable audience, neutral in formality, general domain and with the intent to inform. Checked for correctness and clarity. -->
+
+<!--Below is a standard deprecation notice that cna be applied automatically as an aside-->
+
+:::caution
+This component is deprecated. Please refer to the [`ns-XYZ`](#) component.
+:::
