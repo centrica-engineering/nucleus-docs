@@ -11,112 +11,120 @@ const properties = compDetails?.properties;
 const slots = jsdocDetails?.slots;
 const events = compDetails?.events;
 ---
-<div style={attributes?.length > 0 ? undefined : 'display:none' }>
-  <h3 id="attributes">Attributes</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>Attribute</th>
-        <th>Type</th>
-        <th>Default</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      {
-        attributes?.map((attribute) => {
-          return (
-            <tr>
-              <td><code>{attribute.name}</code></td>
-              <td>{attribute.type}</td>
-              <td>{attribute.default?.replaceAll('"', '')}</td>
-              <td>{attribute.description ?? ''}</td>
-            </tr>
-          );
-        })
-      }
-    </tbody>
-  </table>
-</div>
-<div style={properties?.length > 0 ? undefined : 'display:none' }>
-  <h3>Properties</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>Property</th>
-        <th>Type</th>
-        <th>Default</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      {
-        properties?.map((property) => {
-          if (['slottedStyles'].includes(property.name)) {
-            return undefined;
-          }
-          return (
-            <tr>
-              <td><code>{property.name}</code></td>
-              <td>{property.type}</td>
-              <td>{property.default?.replaceAll('"', '')}</td>
-              <td>{property.description}</td>
-            </tr>
-          );
-        })
-      }
-    </tbody>
-  </table>
-</div>
+{ 
+  attributes?.length > 0 &&  (
+    <h3 id="attributes">Attributes</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Type</th>
+          <th>Default</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          attributes?.map((attribute) => {
+            return (
+              <tr>
+                <td><code>{attribute.name}</code></td>
+                <td>{attribute.type}</td>
+                <td>{attribute.default?.replaceAll('"', '')}</td>
+                <td>{attribute.description ?? ''}</td>
+              </tr>
+            );
+          })
+        }
+      </tbody>
+    </table>
+  )
+}
+  
+{
+  properties?.length > 0 && (
+    <h3 id="properties">Properties</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Type</th>
+          <th>Default</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          properties?.map((property) => {
+            if (['slottedStyles'].includes(property.name)) {
+              return undefined;
+            }
+            return (
+              <tr>
+                <td><code>{property.name}</code></td>
+                <td>{property.type}</td>
+                <td>{property.default?.replaceAll('"', '')}</td>
+                <td>{property.description}</td>
+              </tr>
+            );
+          })
+        }
+      </tbody>
+    </table>
+  )
+}
+{
+  slots?.length > 0 && (
+    <h3>Slots</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Slot</th>
+          <th>Permitted tags</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          slots?.map((slot) => {
+            return (
+              <tr>
+                <td>{slot.name ? <code>{slot.name}</code> : 'anonymous' }</td>
+                <td>
+                  {slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>  </span>)}
+                </td>
+                <td>{slot.description}</td>
+              </tr>
+            );
+          })
+        }
+      </tbody>
+    </table>
+  )
+}
 
-<div style={slots?.length > 0 ? undefined : 'display:none' }>
-  <h3>Slots</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>Slot</th>
-        <th>Permitted tags</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      {
-        slots?.map((slot) => {
-          return (
-            <tr>
-              <td>{slot.name ? <code>{slot.name}</code> : 'anonymous' }</td>
-              <td>
-                {slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>  </span>)}
-              </td>
-              <td>{slot.description}</td>
-            </tr>
-          );
-        })
-      }
-    </tbody>
-  </table>
-</div>
-
-<div style={events?.length > 0 ? undefined : 'display:none' }>
-  <h3>Events</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      {
-        events?.map((event) => {
-          return (
-            <tr>
-              <td><code>{event.name}</code></td>
-              <td>{event.description}</td>
-            </tr>
-          );
-        })
-      }
-    </tbody>
-  </table>
-</div>
+{
+  events?.length > 0 && (
+    <h3>Events</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          events?.map((event) => {
+            return (
+              <tr>
+                <td><code>{event.name}</code></td>
+                <td>{event.description}</td>
+              </tr>
+            );
+          })
+        }
+      </tbody>
+    </table>
+  )
+}
