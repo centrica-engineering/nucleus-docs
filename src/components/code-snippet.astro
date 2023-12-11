@@ -12,7 +12,7 @@ const {ec, themeStyles, baseStyles, jsModules} = await createRenderer({
 const { renderedGroupAst, styles } = await ec.render({
   code: slotContent,
   language: lang,
-  meta: '',
+  meta: ''
 });
 
 let htmlContent = toHtml(renderedGroupAst);
@@ -25,8 +25,8 @@ if(index > 0) {
 const themedStyles = themeStyles?.replaceAll('github-', '');
 // Collect styles and add them before the HTML content
 const prefixToLookup = 'class="expressive-code">';
-  const htmlContentParts = htmlContent.split(prefixToLookup);
-  htmlContent = `${htmlContentParts[0]}${prefixToLookup}
+const htmlContentParts = htmlContent.split(prefixToLookup);
+htmlContent = `${htmlContentParts[0]}${prefixToLookup}
   ${(baseStyles || themedStyles) ? '<style>' : ''}
   ${baseStyles ?? ''}
   ${themedStyles ?? ''}

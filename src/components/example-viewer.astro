@@ -4,11 +4,7 @@ const code = Astro.props;
 import { ExampleView } from './ce/example-view';
 import CodeSnippet from './code-snippet.astro';
 ---
-<style>
- .example-container {
-    position: relative;
- }
-</style>
+
 <div class="example-container">
   <ExampleView client:visible>
     <slot name="template" slot="template"/>

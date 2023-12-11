@@ -7,7 +7,6 @@ import { Icon } from '@astrojs/starlight/components';
 <Default {...Astro.props}><slot /></Default>
 
 <nav aria-labelledby="sidebar-contribute">
-  <br />
   <h2 id="sidebar-contribute">Contribute</h2>
   <ul>
     <li><a href="/edit-this-page/"><Icon name="pencil" />Edit this page</a></li>
@@ -16,6 +15,9 @@ import { Icon } from '@astrojs/starlight/components';
 </nav>
 
 <style>
+  h2 {
+    margin-block-start: 1.5rem;
+  }
   ul {
     padding: 0;
     list-style: none;

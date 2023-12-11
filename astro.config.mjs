@@ -9,7 +9,7 @@ const componentSidebar = {
     .sort((a, b) => a.name.localeCompare(b.name))
     .map((component) => ({
       label: component.name,
-      badge: "Deprecated",
+      badge: component.deprecated ? "Deprecated" : undefined,
       collapsed: true,
       items: [
         {
@@ -66,10 +66,7 @@ export default defineConfig({
         themes: ["github-dark", "github-light"],
       },
       sidebar: [
-        {
-          label: "Components",
-          autogenerate: { directory: "components", collapsed: true },
-        },
+        componentSidebar,
         {
           label: "Guidelines",
           autogenerate: { directory: "guidelines" },

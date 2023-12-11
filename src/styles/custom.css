@@ -14,6 +14,7 @@
   --sl-content-width: 54rem; /* Content width */
   --sl-sidebar-width: 14rem; /* Sidebar width */
 }
+
 /* Light mode colors. */
 :root[data-theme='light'] {
   --sl-color-accent-low: #ffffff; /* highlighted text */
@@ -29,13 +30,10 @@
   --sl-color-gray-7: #ffffff; /* top bar base */
   --sl-color-black: #F4F6F8; /* Base */
 }
+
 /* Custom fonts */
 main {
   font-family: 'Roboto', sans-serif;
-}
-/* NOTE: @drew - 2023-11-28 - temporary fix to stop `code` wrapping */
-code {
-  white-space: nowrap;
 }
 
 /* NOTE: @drew - 2023-11-29 - temporary styles for the Storybook iframe in the Pages section */
@@ -57,9 +55,4 @@ code {
   min-width: 399px;
   min-height: 795px;
   border-radius: 50px;
-}
-
-/* NOTE: @drew - 2023-11-29 - temprary to override global styles which resulted in additional space between each line in the code block */
-.expressive-code .ec-line {
-  margin-top: initial;
 }
