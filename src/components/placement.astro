@@ -10,9 +10,9 @@ const placements = jsdoc.find((tag) => tag.name === name)?.placements;
       {placements?.map((placement) => {
         if (placement.indexOf(' > ') > -1) {
           const placementTree = placement.split(' > ');
-          return <li><code>&lt;{placementTree[1]}&gt;</code> wrapped in <code>&lt;{placementTree[0]}&gt;</code></li>;
+          return <li><strong>&lt;{placementTree[1]}&gt;</strong> wrapped in <strong>&lt;{placementTree[0]}&gt;</strong></li>;
         }
-        return <li><code>&lt;{placement}&gt;</code></li>;
+        return <li><strong>&lt;{placement}&gt;</strong></li>;
       })}
     </ul>
   </div>
