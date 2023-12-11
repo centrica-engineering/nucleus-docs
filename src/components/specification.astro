@@ -27,7 +27,7 @@ const events = compDetails?.events;
         attributes?.map((attribute) => {
           return (
             <tr>
-              <td>{attribute.name}</td>
+              <td><code>{attribute.name}</code></td>
               <td>{attribute.type}</td>
               <td>{attribute.default?.replaceAll('"', '')}</td>
               <td>{attribute.description ?? ''}</td>
@@ -57,7 +57,7 @@ const events = compDetails?.events;
           }
           return (
             <tr>
-              <td>{property.name}</td>
+              <td><code>{property.name}</code></td>
               <td>{property.type}</td>
               <td>{property.default?.replaceAll('"', '')}</td>
               <td>{property.description}</td>
@@ -84,11 +84,9 @@ const events = compDetails?.events;
         slots?.map((slot) => {
           return (
             <tr>
-              <td>{slot.name ? slot.name : <code>anonymous</code> }</td>
+              <td>{slot.name ? <code>{slot.name}</code> : 'anonymous' }</td>
               <td>
-                <ul>
-                  {slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>  </span>)}
-                </ul>
+                {slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>  </span>)}
               </td>
               <td>{slot.description}</td>
             </tr>
@@ -113,7 +111,7 @@ const events = compDetails?.events;
         events?.map((event) => {
           return (
             <tr>
-              <td>{event.name}</td>
+              <td><code>{event.name}</code></td>
               <td>{event.description}</td>
             </tr>
           );
