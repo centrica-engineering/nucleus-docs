@@ -4,32 +4,11 @@ sidebar:
   label: Implementation
 ---
 
+import Specification from '../../../../components/specification.astro';
+
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `alt`        | `string` |           |           | The alternative text for the image |
-| `decoration` | `string` |           |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--standard) and See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--error) | Illustration that is shown in the section type card and Icon used in ns-highlighter |
-| `image`      | `string` |           |           | Adds an image above the card content for the support |
-| `type`       | `string` | "section" | "section", "support", "flat" | Defines the role of the card and changing the style |
-| `pillOverImage` | `boolean` |       |           | Used to put the pill in the top left of the image when using `type="support"` and an image | 
-
-### Support and Flat
-
-| Slots        | Type                | Description |
-| :--- | :--- | :--- |
-| `heading`    | `h tag` |  |
-| `paragraph`  | `p tag` |  |
-| `action`     | `ns-cta`, `ns-form` |  |
-| `cta`        | `ns-cta` | Deprecated |
-
-### Section
-
-| Slots        | Type                |
-| :--- | :--- |
-| `heading`    | `h tag` |
-| `paragraph`  | `p tag` |
-| `cta`     | `ns-cta` |
+<Specification name="ns-card" />
 
 ## Notes
 

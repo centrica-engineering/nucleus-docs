@@ -4,22 +4,11 @@ sidebar:
   label: Implementation
 ---
 
+import Specification from '../../../../components/specification.astro';
+
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `type` | `string` | `summit` | `summit`, `hillside`, `lakeside`, `valley` | The variant of the landmark. |
-| `image` | `string` |  |  | Background image used for summit variant or image used for valley variant |
-| `decoration` | `string` | `cyan` | `cyan`, `lime`, `navy`, `blue`, `forest`, `orange`, `red`, `yellow` | Background and offset colour used for the Hillside and Valley variant. |
-| `pillOverImage` | `boolean` |  |  | Used to put the pill in the bottom left of the image when using `type="valley"` and an image |
-| `ratio` | `string` | `16x9` | `4x3`, `16x9` | Aspect ratio of the image used only for valley variant |
-
-| Slots | Type |
-| :--- | :--- |
-| `heading` | `<h1>` |
-| `paragraph` | `<p>` `<div>` |
-| `cta` | `ns-cta` `<a>`  |
-| `pill` | `ns-pill` |
+<Specification name="ns-landmark" />
 
 ### Notes
 

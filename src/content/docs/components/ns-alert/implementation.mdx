@@ -4,17 +4,11 @@ sidebar:
   label: Implementation
 ---
 
+import Specification from '../../../../components/specification.astro';
+
 ## Specification
 
-| Attribute | Property | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `type` | `type` | `string` | `standard` | `standard`, `highlighter` | Type of alert to use |
-| `state` | `state` | `string` | `error` | `error`, `success`, `warning`, `info` | Defines the role of the highlighter and changes the styles |
-
-| Slots | Type |
-| :--- | :--- |
-| `heading` | `h tag` |
-| Anonymous | `p tag` |
+<Specification name="ns-alert" />
 
 ## Component placement
 
