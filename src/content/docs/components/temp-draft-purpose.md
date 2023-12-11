@@ -25,11 +25,6 @@ The appointment-picker comprises a calendar  to select a date and a radio-button
 ## ns-article
 
 > Use `ns-article` to display long-form content.
-> **Note:** This component is currently under review for deprecation.
-
-:::note[Did you know?]
-Astro helps you build faster websites with [“Islands Architecture”](https://docs.astro.build/en/concepts/islands/).
-:::
 
 The `ns-article` component is a container for long-form content such as blogs, editorials and support articles.  Use it to split the content into easy-to-consume chapters or sections.
 
@@ -56,7 +51,6 @@ Use for arranging components and content, not for gratuitous numerous columns as
 ## ns-content
 
 > Use `ns-content` to display typography and media.
-> **Note:** This component is currently under review for deprecation.
 
 The `ns-content` component's placement is inside other components. It helps to add consistency to the styling of typography, improving how it interacts with the other components.
 
@@ -83,7 +77,6 @@ The `ns-download` component creates the visual and semantics of the action of do
 ## ns-editorial
 
 > Use `ns-editorial` for self-contained or supporting content that is more informative than promotional.
-> **Note:** This component is currently under review for deprecation.
 
 Sometimes, a more detailed explanation of something can be helpful – without requiring the user to take immediate action. That is where the `ns-editorial` component can help.
 
@@ -104,7 +97,10 @@ Use the `ns-fieldset` component instead of the usual HTML fieldset. The `ns-fiel
 ## ns-footer
 
 > Use `ns-footer` for required links and information that needs repeating on every page.
-> **Note:** This is the UI component for producing a customised footer. If you're looking for the default British Gas footer containing the links, please use the [nsx-footer](#) component.
+
+:::note
+This is the UI component for producing a customised footer. If you're looking for the default British Gas footer containing the links, please use the [`nsx-footer`](#) component.
+:::
 
 The footer is the last component on the page and holds links and copyright notices that are legally required. It also contains information about the company.
 
@@ -126,18 +122,17 @@ The `ns-form` component mimics the native form element features. Its purpose is 
 
 The header provides the primary navigation and conveys brand presence with the logo.
 
-> **Note:** This is the UI component for the header - if you are looking for the header that includes the navigational content, please use [nsx-header](#).
+:::note
+This is the UI component for the header - if you are looking for the header that includes the navigational content, please use [nsx-header](#).
+:::
 
 The nsx-header should be the default choice of header across the main British Gas website.
 
 ## ns-highlighter
 
 > Use `ns-highlighter` to communicate information or error, warning and success messages.
-> **Note:** This component is deprecated. Please refer to the [`ns-alert`](#) component.
 
-The `ns-highlighter` communicates messages that a service may not be available or that there are technical issues on specific pages. These differ from global messages as they only apply to some pages and are not site-wide.
-
-e.g. A message that says the top-up service may not be available would only apply to pages that customers will look at to top up.
+The `ns-highlighter` communicates messages that a service may not be available or that there are technical issues on specific pages. These differ from global messages as they only apply to some pages and are not site-wide. e.g. A message that says the top-up service may not be available would only apply to pages that customers will look at to top up.
 
 ## ns-icon
 
