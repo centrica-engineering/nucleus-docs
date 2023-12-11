@@ -1,6 +1,6 @@
 # Welcome to Nucleus
 
-A design system by and for British Gas.
+A design system by and for British Gas
 
 ## Installation
 
