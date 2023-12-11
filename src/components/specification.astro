@@ -11,7 +11,7 @@ const properties = compDetails?.properties;
 const slots = jsdocDetails?.slots;
 const events = compDetails?.events;
 ---
-<div style={attributes?.length > 0 ? '' : 'display:none' }>
+<div style={attributes?.length > 0 ? undefined : 'display:none' }>
   <h3 id="attributes">Attributes</h3>
   <table>
     <thead>
@@ -38,7 +38,7 @@ const events = compDetails?.events;
     </tbody>
   </table>
 </div>
-<div style={properties?.length > 0 ? '' : 'display:none' }>
+<div style={properties?.length > 0 ? undefined : 'display:none' }>
   <h3>Properties</h3>
   <table>
     <thead>
@@ -69,7 +69,7 @@ const events = compDetails?.events;
   </table>
 </div>
 
-<div style={slots?.length > 0 ? '' : 'display:none' }>
+<div style={slots?.length > 0 ? undefined : 'display:none' }>
   <h3>Slots</h3>
   <table>
     <thead>
@@ -85,7 +85,11 @@ const events = compDetails?.events;
           return (
             <tr>
               <td>{slot.name ? slot.name : <code>anonymous</code> }</td>
-              <td>{slot.permittedTagNames?.toString() ?? ''}</td>
+              <td>
+                <ul>
+                  {slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>  </span>)}
+                </ul>
+              </td>
               <td>{slot.description}</td>
             </tr>
           );
@@ -95,7 +99,7 @@ const events = compDetails?.events;
   </table>
 </div>
 
-<div style={events?.length > 0 ? '' : 'display:none' }>
+<div style={events?.length > 0 ? undefined : 'display:none' }>
   <h3>Events</h3>
   <table>
     <thead>
