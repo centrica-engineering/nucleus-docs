@@ -3,19 +3,18 @@ title: ns-landmark implementation
 sidebar:
   label: Implementation
 ---
-
 import Specification from '../../../../components/specification.astro';
 import Placement from '../../../../components/placement.astro';
+export const componentName = "ns-landmark";
 
 ## Specification
 
-<Specification name="ns-landmark" />
+<Specification name={componentName} />
 
 ### Notes
 
 #### Heading
 
-* This needs to be a `h1` heading
 * Main heading is a `<span>` tag with a `h1` class.
 
 #### Paragraph
@@ -45,7 +44,7 @@ Using Photoshop to overlay the Landmark focus template to check alignment. (You 
 
 ## Component placement
 
-<Placement name="ns-landmark" />
+<Placement name={componentName} />
 
 ## Best practice
 
