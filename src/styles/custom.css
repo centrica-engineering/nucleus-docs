@@ -1,14 +1,14 @@
 /* Dark mode colors. */
 :root {
   --sl-color-accent-low: #17181C; /* highlighted text */
-  --sl-color-accent: #F39E13;
+  --sl-color-accent: #8863a3; /* Pill border */
   --sl-color-accent-high: #E16E55; /* highlight */
   --sl-color-white: #ffffff; /* top level text */
-  --sl-color-gray-1: #D0DDE7;
+  --sl-color-gray-1: #D0DDE7; /* dark light toggle */
   --sl-color-gray-2: #8AAAC2; /* SUb menus */
   --sl-color-gray-3: #8AAAC2; /* Edit and RHS links */
   --sl-color-gray-4: #3e6480;
-  --sl-color-gray-5: #354268; /* borders and lines */
+  --sl-color-gray-5: #252f4a; /* borders and lines*/
   --sl-color-gray-6: #191c23; /* menu base */
   --sl-color-black: #15171c; /* Base */
   --sl-content-width: 54rem; /* Content width */
@@ -19,14 +19,14 @@
 :root[data-theme='light'] {
   --sl-color-accent-low: #ffffff; /* highlighted text */
   --sl-color-accent: #B94680; /* highlight */
-  --sl-color-accent-high: #557fe1; /* highlight */
-  --sl-color-white: #0F2067; /* top level text */
+  --sl-color-accent-high: #8863a3; /* pill colour */
+  --sl-color-white: #4d5a8f; /* top level text */
   --sl-color-gray-1: #231919; /* light mode toggle text */
   --sl-color-gray-2: #13517e; /* SUb menus */
   --sl-color-gray-3: #13517e; /* Edit and RHS links */
   --sl-color-gray-4: #8AAAC2;
   --sl-color-gray-5: #7298f0; /* borders and lines */
-  --sl-color-gray-6: #B9CCDA; 
+  --sl-color-gray-6: #c7dceb; /* backtick bgd */
   --sl-color-gray-7: #ffffff; /* top bar base */
   --sl-color-black: #F4F6F8; /* Base */
 }
