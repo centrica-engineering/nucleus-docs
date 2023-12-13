@@ -1,0 +1,49 @@
+---
+title: Roadblock
+description: Page type | Roadblock
+---
+
+## Introduction
+
+The Roadblock is a page type used to inform a user that they have met a dead end and cannot continue with their original journey.
+
+## Purpose
+
+* The Roadblock page type is there to present key information to a user when they reach an unexpected end to the task they were trying to complete.
+* This can be related to a problem with a service that their task requires - these are 400 client side errors or 500 internal server error pages.
+* The page should describe to the user what has happened and tell them how to fix it if possible.
+
+## Example
+
+<div class="storybook-embed page">
+  <p><a href="https://www.britishgas.co.uk/nucleus/demo/iframe.html?id=examples-page-types--roadblock&amp;viewMode=story">View full page example</a></p>
+  <iframe src="https://www.britishgas.co.uk/nucleus/demo/iframe.html?id=examples-page-types--roadblock&amp;viewMode=story&amp;nav=0" title="Nucleus: examples-page-types--roadblock" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+</div>
+
+## Content guidance
+
+Use the `ns-landmark` - `lakeside` variant to display clear messaging.
+
+The copy must be in plain English, and if possible help the user out of the situation by providing an actionable option.
+
+You should not use:
+
+* Technical jargon like ‘form post error’, ‘unspecified error’ or ‘Severity code 3’
+* Humorous, informal language like ‘oops’
+* Negative language
+
+If supporting information is needed, consider using `ns-lockup` or `ns-editorial`. This should not detract from the original purpose of the page.
+
+## Best practice
+
+| 💚 Do's | 💔 Don'ts |
+| :---  | :---  |
+| Communicate the message in a clear and concise way as possible | Use the subheading |
+| Suggest a next step the customer could take e.g. direct them to webchat or a phone number | Use as errors that are specific to ui elements (such as form fields) or parts of a page ([See `ns-highlighter`](components/ns-highlighter) ) |
+|  | Use for global messaging ([See `ns-skyline`](components/ns-skyline) ) |
+
+## Principles to follow
+
+| Creative | Tone of voice | Keywords |
+| :--- | :--- | :--- |
+| Modern and dynamic  | Be active, Be natural | Promotional, Informative |

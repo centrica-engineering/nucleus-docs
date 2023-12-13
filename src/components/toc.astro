@@ -1,37 +1,23 @@
 ---
-import type { Props } from '@astrojs/starlight/props';
-import Default from '@astrojs/starlight/components/TableOfContents.astro';
+import type { Props } from "@astrojs/starlight/props";
+import Default from "@astrojs/starlight/components/TableOfContents.astro";
+import { Icon } from '@astrojs/starlight/components';
 ---
 
 <Default {...Astro.props}><slot /></Default>
 
-<starlight-toc data-min-h={3} data-max-h={2}>
-  <nav aria-labelledby="starlight__on-this-page">
-    <h2 id="starlight__on-this-page">Contribute</h2>
-    <ul>
-      <li>
-        <a href="#!">
-          A contribute link
-        </a>
-      </li>
-    </ul>
-  </nav>
-</starlight-toc>
-
-<starlight-toc data-min-h={3} data-max-h={2}>
-  <nav aria-labelledby="starlight__on-this-page">
-    <h2 id="starlight__on-this-page">Community</h2>
-    <ul>
-      <li>
-        <a href="#!">
-          A community link
-        </a>
-      </li>
-    </ul>
-  </nav>
-</starlight-toc>
+<nav aria-labelledby="sidebar-contribute">
+  <h2 id="sidebar-contribute">Contribute</h2>
+  <ul>
+    <li><a href="/edit-this-page/"><Icon name="pencil" />Edit this page</a></li>
+    <li><a href="/feedback/"><Icon name="pen" />Feedback</a></li>
+  </ul>
+</nav>
 
 <style>
+  h2 {
+    margin-block-start: 1.5rem;
+  }
   ul {
     padding: 0;
     list-style: none;
@@ -43,9 +29,9 @@ import Default from '@astrojs/starlight/components/TableOfContents.astro';
     padding-inline: 0.5rem;
     line-height: 1.25;
   }
-  a[aria-current='true'],
-  a[aria-current='true']:hover,
-  a[aria-current='true']:focus {
+  a[aria-current="true"],
+  a[aria-current="true"]:hover,
+  a[aria-current="true"]:focus {
     font-weight: 600;
     color: var(--sl-color-text-invert);
     background-color: var(--sl-color-text-accent);

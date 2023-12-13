@@ -1,16 +1,61 @@
 ---
-title: Alert
+title: ns-alert overview
+sidebar:
+  label: Overview
+tableOfContents:
+  minHeadingLevel: 2
+  maxHeadingLevel: 4
 ---
+
 import Wrapper from '../../../../components/wrapper.astro';
 import ExampleViewer from '../../../../components/example-viewer.astro';
-import HighlighterError from './_examples/highlighter/error.html';
-import HighlighterInfo from './_examples/highlighter/info.html';
+import ExampleStandard from './_examples/highlighter/standard.html';
+import ExampleHighlighterError from './_examples/highlighter/error.html';
+import ExampleHighlighterInfo from './_examples/highlighter/info.html';
+import ExampleHighlighterSuccess from './_examples/highlighter/success.html';
+import ExampleHighlighterWarning from './_examples/highlighter/warning.html';
 
-<Wrapper name="ns-accordion" >
+## Purpose
 
-    <HighlighterError slot="template"/>
+> **Alert can be used to communicate error, info, success and warning messages in an accessible and visual way.**
 
-    <ExampleViewer>
-        <HighlighterInfo slot="template"/>
-    </ExampleViewer>
+**Important**  It has an ARIA role of `alert`, which brings the immediate attention of its content to the user. It should be used for its role and not for its look.
+
+## Example
+
+<Wrapper name="ns-alert">
+  <ExampleStandard slot="template" />
 </Wrapper>
+
+## Types
+
+### `highlighter`
+
+#### `error`
+
+<ExampleViewer>
+  <ExampleHighlighterError slot="template" />
+</ExampleViewer>
+
+#### `info`
+
+<ExampleViewer>
+  <ExampleHighlighterInfo slot="template" />
+</ExampleViewer>
+
+#### `success`
+
+<ExampleViewer>
+  <ExampleHighlighterSuccess slot="template" />
+</ExampleViewer>
+
+#### `warning`
+
+<ExampleViewer>
+  <ExampleHighlighterWarning slot="template" />
+</ExampleViewer>
+
+## Related links
+
+- [ns-component](#!)
+- [ns-component](#!)

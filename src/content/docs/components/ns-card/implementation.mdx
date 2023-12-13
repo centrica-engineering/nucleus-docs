@@ -1,0 +1,60 @@
+---
+title: ns-card implementation
+sidebar:
+  label: Implementation
+---
+
+import Specification from '../../../../components/specification.astro';
+import Placement from '../../../../components/placement.astro';
+
+## Specification
+
+<Specification name="ns-card" />
+
+## Notes
+
+### Decoration
+
+* Required if the type is section
+
+### Image
+
+* Images are always at a ratio of 16:9
+
+### Heading
+
+* This should be a heading level 3
+
+### Action
+
+* Action is used to hold interactive content e.g. buttons, forms, etc
+* On `support` and `flat` types the action slot is not shown if the deprecated cta slot is used
+
+### CTA
+
+* Only for `section` types
+* This should be an anchor with the [ns-cta](../components/ns-cta) or just the [ns-cta](../components/ns-cta)
+
+## Component placement
+
+<Placement name="ns-landmark" />
+
+## Best practice
+
+| 💚 Do's | 💔 Don'ts |
+| :--- | :--- |
+| Always use them in the triple layout | Use the text CTA in the section card |
+| Use to direct customers to the actions | Mix card types in a row |
+| Embolden text in the paragraph that is important | Have two or more cta's for a card |
+| Make your CTA copy unique, stating the action | Repeat the CTA copy in each card |
+| Use section cards to navigate users to primary actions | Use inline links in the paragraph |
+| Consider using decoration in the panel to add emphasis on the cards | Use the section card without a decoration |
+
+### Considerations
+
+* Consider your CTA type and try to keep them consistent between rows across the cards, unless there is a need.
+* There can be less than three cards in a row, but it should always use the triple layout. Always consider a lockup for this, before using the cards.
+* Headings work best with one to four words.
+* Please check the imagery guidelines when adding an image to the card.
+* Be careful when using decoration in the panel with the section cards as the blue on blue with the CTA's will make them not accessible.
+* There should always be a heading to the group of cards inside the panel.

@@ -1,29 +1,15 @@
 ---
-title: Accordion guidance
+title: ns-accordion guidance
+sidebar:
+  label: Guidance
 ---
 
-## Content
+## Standard
 
 ![Labelled diagram of the Accordion component](./images/contentguidance.webp)
 
-### [type]
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total.  |
+| B | Content | Use between 1 and 8 [ns-expander](/components/ns-expander) components. All expanders need to be related to the accordion's heading.|
 
-## Usage
-
-### [type]
-
-```html
-<ns-accordion>
-<h3 slot="heading">Frequently asked questions</h3>
-<ns-expander>
-<h4 slot="heading">How do I top up my conventional meter?</h4>
-<p>If you're topping up your meter for the first time, 
-you'll need to activate your key or card in your meter first.</p>
-</ns-expander>
-<ns-expander>
-<h4 slot="heading">How do I manually add my gas top-up?</h4>
-<p>If your top-up hasn't appeared automatically, 
-here are the instructions for manually topping up your Smart Pay As You Go Gas Meter.</p>
-</ns-expander>
-</ns-accordion>
-```
