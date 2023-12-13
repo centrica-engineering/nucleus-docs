@@ -14,7 +14,7 @@ Use `ns-accordion` to break down content into meaningful sections, helping to re
 
 > Use to communicate contextual messages to customers.
 
-**Important:** This component has an ARIA role of `alert`, which immediately brings the content to the user's attention. Use it for its role and not for its look.
+This component immediately brings the content to the user's attention. It can take the form of error, informational, success or warning messages. Use it for its role and not for its look.
 
 ## ns-appointment-picker
 
