@@ -1,0 +1,61 @@
+---
+title: ns-alert overview
+sidebar:
+  label: Overview
+tableOfContents:
+  minHeadingLevel: 2
+  maxHeadingLevel: 4
+---
+
+import Wrapper from '../../../../components/wrapper.astro';
+import ExampleViewer from '../../../../components/example-viewer.astro';
+import ExampleStandard from './_examples/highlighter/standard.html';
+import ExampleHighlighterError from './_examples/highlighter/error.html';
+import ExampleHighlighterInfo from './_examples/highlighter/info.html';
+import ExampleHighlighterSuccess from './_examples/highlighter/success.html';
+import ExampleHighlighterWarning from './_examples/highlighter/warning.html';
+
+## Purpose
+
+> **Use to communicate contextual messages to customers.**
+
+This component immediately brings the content to the user's attention. It can take the form of error, informational, success or warning messages. Use it for its role and not for its look.
+
+## Example
+
+<Wrapper name="ns-alert">
+  <ExampleStandard slot="template" />
+</Wrapper>
+
+## Types
+
+### `highlighter`
+
+#### `error`
+
+<ExampleViewer>
+  <ExampleHighlighterError slot="template" />
+</ExampleViewer>
+
+#### `info`
+
+<ExampleViewer>
+  <ExampleHighlighterInfo slot="template" />
+</ExampleViewer>
+
+#### `success`
+
+<ExampleViewer>
+  <ExampleHighlighterSuccess slot="template" />
+</ExampleViewer>
+
+#### `warning`
+
+<ExampleViewer>
+  <ExampleHighlighterWarning slot="template" />
+</ExampleViewer>
+
+## Related links
+
+- [ns-component](#!)
+- [ns-component](#!)
