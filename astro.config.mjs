@@ -61,6 +61,7 @@ export default defineConfig({
       },
       components: {
         TableOfContents: "./src/components/toc.astro",
+        ThemeSelect: './src/components/starlight/ThemeSelect.astro'
       },
       expressiveCode: {
         themes: ["github-dark", "github-light"],
