@@ -1,0 +1,38 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+// import { Tabs, TabItem } from '@astrojs/starlight/components';
+import cem from '@connectedhomes/nucleus/custom-elements.json';
+
+const title = Astro.props.entry.data.title;
+const compDetails = cem.tags.find((tag) => tag.name === title);
+
+const { slug } = Astro.params;
+const isComponentPage = slug?.indexOf('components/ns') > -1;
+---
+
+<Default {...Astro.props} />
+
+{
+  isComponentPage && (
+    <div>
+    <a href=`/components/${title}`>Overview</a>
+    <a href=`/components/${title}/guidance`>Guidance</a>
+    <a href=`/components/${title}/implementation`>Implementation</a>
+    </div>
+  )
+}
+
+<!-- <Tabs>
+  <TabItem label='Overview'>
+    <slot name='overview' />
+  </TabItem>
+  <TabItem label='Guidance'>
+    <slot name='guidance' />
+  </TabItem>
+  <TabItem label='Implementation'>
+    <slot name='implementation' />
+  </TabItem>
+</Tabs> -->
+
+
