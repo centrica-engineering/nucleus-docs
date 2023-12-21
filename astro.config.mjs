@@ -5,33 +5,14 @@ import lit from "@astrojs/lit";
 
 const componentSidebar = {
   label: "Components",
+  collapsed: true,
   items: cem.tags
     .sort((a, b) => a.name.localeCompare(b.name))
     .map((component) => ({
       label: component.name,
       badge: component.deprecated ? "Deprecated" : undefined,
       collapsed: true,
-      items: [
-        {
-          label: "Overview",
-          attrs: {
-            class: `ns-sidebar sidebar-${component.name}`,
-          },
-          link: `/components/${component.name}`,
-        },
-        {
-          label: "Guidance",
-          link: `/components/${component.name}/guidance`,
-        },
-        {
-          label: "Placement",
-          link: `/components/${component.name}/placement`,
-        },
-        {
-          label: "Implementation",
-          link: `/components/${component.name}/implementation`,
-        },
-      ],
+      link: `/components/${component.name}`
     })),
 };
 
@@ -61,7 +42,8 @@ export default defineConfig({
       },
       components: {
         TableOfContents: "./src/components/toc.astro",
-        ThemeSelect: './src/components/starlight/ThemeSelect.astro'
+        ThemeSelect: './src/components/starlight/ThemeSelect.astro',
+        PageTitle: './src/components/starlight/ComponentTitle.astro'
       },
       expressiveCode: {
         themes: ["github-dark", "github-light"],
@@ -70,14 +52,17 @@ export default defineConfig({
         componentSidebar,
         {
           label: "Guidelines",
+          collapsed: true,
           autogenerate: { directory: "guidelines" },
         },
         {
           label: "Patterns",
+          collapsed: true,
           autogenerate: { directory: "patterns" },
         },
         {
           label: "Page types",
+          collapsed: true,
           autogenerate: { directory: "page-types" },
         },
       ],

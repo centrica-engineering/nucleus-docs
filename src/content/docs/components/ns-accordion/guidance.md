@@ -1,5 +1,5 @@
 ---
-title: ns-accordion guidance
+title: ns-accordion
 sidebar:
   label: Guidance
 ---
