@@ -11,7 +11,7 @@ const { slug } = Astro.params;
 const isComponentPage = slug?.indexOf('components/ns') > -1;
 ---
 
-<Default {...Astro.props} />
+<Default {...Astro.props}></Default>
 
 {
   isComponentPage && (
@@ -22,17 +22,3 @@ const isComponentPage = slug?.indexOf('components/ns') > -1;
     </div>
   )
 }
-
-<!-- <Tabs>
-  <TabItem label='Overview'>
-    <slot name='overview' />
-  </TabItem>
-  <TabItem label='Guidance'>
-    <slot name='guidance' />
-  </TabItem>
-  <TabItem label='Implementation'>
-    <slot name='implementation' />
-  </TabItem>
-</Tabs> -->
-
-
