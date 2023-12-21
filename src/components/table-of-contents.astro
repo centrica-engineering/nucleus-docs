@@ -1,0 +1,39 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+import Default from "@astrojs/starlight/components/TableOfContents.astro";
+import { Icon } from '@astrojs/starlight/components';
+---
+
+<Default {...Astro.props}><slot /></Default>
+
+<nav aria-labelledby="sidebar-contribute">
+  <h2 id="sidebar-contribute">Contribute</h2>
+  <ul>
+    <li><a href="/edit-this-page/"><Icon name="pencil" />Suggest changes to this page</a></li>
+    <li><a href="/feedback/"><Icon name="pen" />Feedback</a></li>
+  </ul>
+</nav>
+
+<style>
+  nav {
+    margin-block: 1.5rem;
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    display: block;
+    border-radius: 0.25rem;
+    padding-block: 0.25rem;
+    padding-inline: 0.5rem;
+    line-height: 1.25;
+  }
+  a[aria-current="true"],
+  a[aria-current="true"]:hover,
+  a[aria-current="true"]:focus {
+    font-weight: 600;
+    color: var(--sl-color-text-invert);
+    background-color: var(--sl-color-text-accent);
+  }
+</style>

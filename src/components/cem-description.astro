@@ -1,0 +1,8 @@
+---
+const { name } = Astro.props;
+
+import cem from '@connectedhomes/nucleus/custom-elements.json';
+const compDetails = cem.tags.find((tag) => tag.name === name);
+---
+
+<p>{compDetails?.description}</p>

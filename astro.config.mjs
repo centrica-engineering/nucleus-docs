@@ -1,39 +1,6 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-import cem from "@connectedhomes/nucleus/custom-elements.json";
 import lit from "@astrojs/lit";
-
-const componentSidebar = {
-  label: "Components",
-  items: cem.tags
-    .sort((a, b) => a.name.localeCompare(b.name))
-    .map((component) => ({
-      label: component.name,
-      badge: component.deprecated ? "Deprecated" : undefined,
-      collapsed: true,
-      items: [
-        {
-          label: "Overview",
-          attrs: {
-            class: `ns-sidebar sidebar-${component.name}`,
-          },
-          link: `/components/${component.name}`,
-        },
-        {
-          label: "Guidance",
-          link: `/components/${component.name}/guidance`,
-        },
-        {
-          label: "Placement",
-          link: `/components/${component.name}/placement`,
-        },
-        {
-          label: "Implementation",
-          link: `/components/${component.name}/implementation`,
-        },
-      ],
-    })),
-};
 
 export default defineConfig({
   integrations: [
@@ -54,22 +21,29 @@ export default defineConfig({
         "@fontsource/roboto/300.css",
         "@fontsource/roboto/400.css",
       ],
-      pagination: false,
       lastUpdated: true,
       social: {
         github: "https://github.com/centrica-engineering/nucleus-docs",
       },
       components: {
-        TableOfContents: "./src/components/toc.astro",
+        TableOfContents: "./src/components/table-of-contents.astro",
+        PageTitle: './src/components/PageTitle.astro',
+      },
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 3,
       },
       expressiveCode: {
         themes: ["github-dark", "github-light"],
       },
       sidebar: [
-        componentSidebar,
         {
           label: "Guidelines",
           autogenerate: { directory: "guidelines" },
+        },
+        {
+          label: "Components",
+          autogenerate: { directory: "components" },
         },
         {
           label: "Patterns",
