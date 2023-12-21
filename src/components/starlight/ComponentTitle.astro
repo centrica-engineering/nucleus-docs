@@ -8,17 +8,60 @@ const title = Astro.props.entry.data.title;
 const compDetails = cem.tags.find((tag) => tag.name === title);
 
 const { slug } = Astro.params;
+const slugRoot = `/${slug}`;
 const isComponentPage = slug?.indexOf('components/ns') > -1;
+const overviewLink = `/components/${title}`;
+const guidanceLink = `/components/${title}/guidance`;
+const implementationLink = `/components/${title}/implementation`;
 ---
 
 <Default {...Astro.props}></Default>
 
 {
   isComponentPage && (
-    <div>
-    <a href=`/components/${title}`>Overview</a>
-    <a href=`/components/${title}/guidance`>Guidance</a>
-    <a href=`/components/${title}/implementation`>Implementation</a>
+    <div class="component-tabs">
+      <ul role="tablist">
+        <li role="presentation" class="component-tab">
+        <a role="tab" href={overviewLink} aria-selected={slugRoot === overviewLink} tabindex='0'>Overview</a>
+        </li>
+        <li role="presentation" class="component-tab">
+        <a role="tab" href={guidanceLink} aria-selected={slugRoot === guidanceLink} tabindex='0'>Guidance</a>
+        </li>
+        <li role="presentation" class="component-tab">
+        <a role="tab" href={implementationLink} aria-selected={slugRoot === implementationLink} tabindex='0'>Implementation</a>
+        </li>
+      </ul>
     </div>
   )
 }
+
+<style>
+  .component-tabs {
+    [role='tablist'] {
+      display: flex;
+      list-style: none;
+      padding: 1rem;
+      border: 2px solid grey;
+      background-color: #557fa0;
+      border-radius:35px;
+    }
+
+    .component-tab {
+      margin-bottom: -2px;
+    }
+    .component-tab > [role='tab'] {
+      display: block;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 0 1.25rem;
+      text-decoration: none;
+      color: var(--sl-color-gray-3);
+      outline-offset: var(--sl-outline-offset-inside);
+      color: white;
+      border-radius: 20px;
+      &[aria-selected] {
+        background-color: #B94663;
+      }
+    }
+  }
+</style>
