@@ -11,6 +11,8 @@ import CompDetails from '../../../components/cem-description.astro';
 import ExampleViewer from '../../../components/example-viewer.astro';
 import ExampleStandard from './_examples/accordion/standard.html';
 
+## Overview
+
 <CompDetails name={componentName} />
 
 We use accordions to break down content into meaningful sections, helping to reduce information overload. Accordions are useful for things like frequently asked questions or displaying multiple blocks of related content inside an ns-expander.
@@ -32,20 +34,22 @@ We use accordions to break down content into meaningful sections, helping to red
 
 <Placement name={componentName}/>
 
-### Related links
-
-- [ns-component](#!)
-- [ns-component](#!)
-
 ### Best practice
 
-| 💚 Do's | 💔 Don'ts |
-| :---  | :---  |
-| Use for FAQs | Use a background with an accordion as the expanded state is white |
-| Use to split up related content | Use more than 8 expanders |
-| Make sure the heading relates to content | Use for critical or to hide information (such as caveats) |
-| Use as a supporting component to the rest of the page's content | Use as a solution to excessive copy on a page |
-|  | Use as the only component on a page |
+:::tip[Do's]
+- Use for FAQs
+- Use to split up related content
+- Make sure the heading relates to content
+- Use as a supporting component to the rest of the page’s content
+:::
+
+:::danger[Don'ts]
+- Use a background with an accordion as the expanded state is white
+- Use more than 8 expanders
+- Use for critical or to hide information (such as caveats)
+- Use as a solution to excessive copy on a page
+- Use as the only component on a page
+:::
 
 ### Considerations
 
@@ -54,6 +58,8 @@ If you need more than 8 [ns-expander](/components/ns-expander) components, you c
 If there isn't a inherent logical order to the expanders, use alphabetical order for ease of scanning.
 
 ## Implementation
+
+### Specification
 
 <Specification name={componentName} />
 
@@ -66,3 +72,8 @@ If there isn't a inherent logical order to the expanders, use alphabetical order
 
 - Place ns-expanders into this slot.
 - Check the [ns-expander documentation](/components/ns-expander) for more information.
+
+### Related links
+
+- [ns-component](#!)
+- [ns-component](#!)

@@ -18,6 +18,8 @@ import ExampleHighlighterInfo from './_examples/alert/highlighter/info.html';
 import ExampleHighlighterSuccess from './_examples/alert/highlighter/success.html';
 import ExampleHighlighterWarning from './_examples/alert/highlighter/warning.html';
 
+## Overview
+
 <CompDetails name={componentName} />
 
 :::caution
@@ -77,17 +79,17 @@ Use for communicating a piece of information with less severity. These include f
 
 <Placement name={componentName} />
 
-### Related links
-
-- [ns-component](#!)
-- [ns-component](#!)
-
 ### Best practice
 
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Keep the messages concise |  Use for generic message that is not in context to the page it is displayed in |
-| Use an icon to alert the user what type of message it is |  Use it for Roadblock error messaging |
+:::tip[Do's]
+- Keep the messages concise
+- Use an icon to alert the user what type of message it is
+:::
+
+:::danger[Don'ts]
+- Use for generic message that is not in context to the page it is displayed in
+- Use it for Roadblock error messaging
+:::
 
 ### Considerations
 
@@ -96,6 +98,8 @@ Use for communicating a piece of information with less severity. These include f
 The message must be in plain English, and help the user out of the situation by providing an actionable link if possible.
 
 ## Implementation
+
+### Specification
 
 <Specification name={componentName} />
 
@@ -107,3 +111,8 @@ If there are multiple alerts on a page they are read:
 
 - from top to bottom on page load
 - in the order they have been added to the page when dynamically added
+
+### Related links
+
+- [ns-component](#!)
+- [ns-component](#!)
