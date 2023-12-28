@@ -21,13 +21,14 @@ export default defineConfig({
         "@fontsource/roboto/300.css",
         "@fontsource/roboto/400.css",
       ],
+      pagination: false,
       lastUpdated: true,
       social: {
         github: "https://github.com/centrica-engineering/nucleus-docs",
       },
       components: {
-        TableOfContents: "./src/components/table-of-contents.astro",
         PageTitle: './src/components/PageTitle.astro',
+        TableOfContents: "./src/components/table-of-contents.astro",
       },
       tableOfContents: {
         minHeadingLevel: 2,
