@@ -31,9 +31,17 @@
   --sl-color-black: #F4F6F8; /* Base */
 }
 
+.right-sidebar {
+  padding-top: 0;
+}
+
 /* Custom fonts */
 main {
   font-family: 'Roboto', sans-serif;
+
+  .content-panel + .content-panel {
+    border-top-width: 0;
+  }
 }
 
 /* NOTE: @drew - 2023-11-29 - temporary styles for the Storybook iframe in the Pages section */
