@@ -61,6 +61,8 @@ export default defineConfig({
       },
       components: {
         TableOfContents: "./src/components/toc.astro",
+        PageTitle: "./src/components/starlight/PageTitle.astro",
+        TwoColumnContent: "./src/components/starlight/TwoColumnContent.astro"
       },
       expressiveCode: {
         themes: ["github-dark", "github-light"],
