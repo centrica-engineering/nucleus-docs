@@ -3,20 +3,21 @@ title: Alert
 sidebar:
   badge: new
 tableOfContents:
-  minHeadingLevel: 2
   maxHeadingLevel: 4
 ---
 
 export const componentName = "ns-alert";
+
 import Specification from '../../../components/specification.astro';
 import Placement from '../../../components/placement.astro';
 import CompDetails from '../../../components/cem-description.astro';
 import ExampleViewer from '../../../components/example-viewer.astro';
-import ExampleStandard from './_examples/alert/highlighter/standard.html';
-import ExampleHighlighterError from './_examples/alert/highlighter/error.html';
-import ExampleHighlighterInfo from './_examples/alert/highlighter/info.html';
-import ExampleHighlighterSuccess from './_examples/alert/highlighter/success.html';
-import ExampleHighlighterWarning from './_examples/alert/highlighter/warning.html';
+
+import ExampleStandard from '../_examples/components/alert/highlighter/standard.html';
+import ExampleHighlighterError from '../_examples/components/alert/highlighter/error.html';
+import ExampleHighlighterInfo from '../_examples/components/alert/highlighter/info.html';
+import ExampleHighlighterSuccess from '../_examples/components/alert/highlighter/success.html';
+import ExampleHighlighterWarning from '../_examples/components/alert/highlighter/warning.html';
 
 ## Overview
 
@@ -66,7 +67,7 @@ Use for communicating a piece of information with less severity. These include f
 
 ## Guidance
 
-![](./images/alert/highlighter/content-guidance.webp)
+![](../../../assets/components/alert/highlighter/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |

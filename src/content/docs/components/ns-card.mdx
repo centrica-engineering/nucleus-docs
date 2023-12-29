@@ -5,14 +5,17 @@ sidebar:
 ---
 
 export const componentName = "ns-card";
+
 import Specification from '../../../components/specification.astro';
 import Placement from '../../../components/placement.astro';
 import CompDetails from '../../../components/cem-description.astro';
 import ExampleViewer from '../../../components/example-viewer.astro';
-import ExampleStandard from './_examples/card/standard.html';
-import ExampleSection from './_examples/card/section.html';
-import ExampleSupport from './_examples/card/support.html';
-import ExampleFlat from './_examples/card/flat.html';
+import CodeSnippet from '../../../components/code-snippet.astro';
+
+import ExampleStandard from '../_examples/components/card/standard.html';
+import ExampleSection from '../_examples/components/card/section.html';
+import ExampleSupport from '../_examples/components/card/support.html';
+import ExampleFlat from '../_examples/components/card/flat.html';
 
 ## Overview
 
@@ -24,13 +27,15 @@ Cards are used to apply a container around a related grouping of information; th
   <ExampleStandard slot="template" />
 </ExampleViewer>
 
-### `section`
+### Section
+
+`type="section"`
 
 <ExampleViewer>
   <ExampleSection slot="template" />
 </ExampleViewer>
 
-![Card - Section](./images/card/content-guidance-section-card.webp)
+![Card - Section](../../../assets/components/card/content-guidance-section.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -39,13 +44,15 @@ Cards are used to apply a container around a related grouping of information; th
 | C | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
 | D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](#specification) has a list of options. |
 
-### `support`
+### Support
+
+`type="support"`
 
 <ExampleViewer>
   <ExampleSupport slot="template" />
 </ExampleViewer>
 
-![Card - Support](./images/card/content-guidance-suppport-image-card.webp)
+![Card - Support](../../../assets/components/card/content-guidance-suppport.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -54,13 +61,20 @@ Cards are used to apply a container around a related grouping of information; th
 | C | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
 | D | Image | This is the image that will be used above the ns-card. It should have an aspect ratio of 16:9, the dimensions should be 640x360px, the file type should be jpg, and the file size should be no more than 50kb. Don't use imagery with white backgrounds. |
 
-### `flat`
+### Flat
 
-<ExampleViewer>
+`type="flat"`
+
+<CodeSnippet>
   <ExampleFlat slot="template" />
-</ExampleViewer>
+</CodeSnippet>
 
-![Card - Flat](./images/card/content-guidance-flat-card.webp)
+```html
+<ns-cta slot="cta" href="#!">Get a quote</ns-cta>
+<ns-cta slot="cta" href="#!">Get a quote</ns-cta>
+```
+
+![Card - Flat](../../../assets/components/card/content-guidance-flat.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -76,7 +90,7 @@ Cards are used to apply a container around a related grouping of information; th
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | `ns-card`| `support` | 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-card-support-640x360px](https://user-images.githubusercontent.com/50207859/67642149-d3c91e00-f900-11e9-983c-9b812217b801.jpg) |
 
-### `action`
+### action
 
 ```html
 <ns-card type="support" decoration="bulb">
@@ -88,7 +102,7 @@ Cards are used to apply a container around a related grouping of information; th
 </ns-card>
 ```
 
-### `ns-pill`
+### ns-pill
 
 To add a `ns-pill` to the card it needs to be placed inside one of the slots. Be careful about using it within the heading slot, as the pill content will be read out as part of the heading for screen readers.
 
