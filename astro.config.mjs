@@ -27,12 +27,7 @@ export default defineConfig({
         github: "https://github.com/centrica-engineering/nucleus-docs",
       },
       components: {
-        PageTitle: './src/components/PageTitle.astro',
-        TableOfContents: "./src/components/table-of-contents.astro",
-      },
-      tableOfContents: {
-        minHeadingLevel: 2,
-        maxHeadingLevel: 3,
+        TableOfContents: "./src/components/TableOfContents.astro",
       },
       expressiveCode: {
         themes: ["github-dark", "github-light"],
