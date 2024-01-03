@@ -45,6 +45,10 @@ main {
   .page-title {
     display: none;
   }
+
+  .hero {
+    display: block;
+  }
 }
 
 /* NOTE: @drew - 2024-01-03 - this selector is to target the content page */
@@ -64,6 +68,19 @@ main {
 
 h1 {
   margin-top: 0;
+}
+
+.purpose {
+  padding-inline-start: 1rem;
+  border-inline-start-style: solid;
+  border-inline-start-width: 0.25rem;
+  border-inline-start-color: var(--sl-color-accent);
+}
+
+.purpose p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 /* NOTE: @drew - 2023-11-29 - temporary styles for the Storybook iframe in the Pages section */
