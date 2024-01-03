@@ -38,7 +38,17 @@
 /* Custom fonts */
 main {
   font-family: "Roboto", sans-serif;
+}
 
+/* NOTE: @drew - 2024-01-03 - this selector is to target the homepage */
+:root[data-has-hero] {
+  .page-title {
+    display: none;
+  }
+}
+
+/* NOTE: @drew - 2024-01-03 - this selector is to target the content page */
+:root[data-has-sidebar] {
   .content-panel:nth-child(1) {
     display: none;
   }
