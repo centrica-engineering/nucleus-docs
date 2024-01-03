@@ -1,0 +1,45 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+
+const { slug } = Astro.params;
+const slugRoot = `/${slug}`;
+const isComponentPage = slug?.indexOf('components/ns') > -1;
+const toc = Astro.props.toc;
+console.log(Astro.props.slug);
+const componentName = Astro.props.slug?.replace('components/', '');
+---
+
+<div class="page-title">
+  <Default {...Astro.props}></Default>
+
+  {
+    isComponentPage && (
+      <code>&lt;{componentName}&gt;</code>
+    )
+  }
+  {
+    isComponentPage && toc?.items?.length > 0 && (
+      <div class="page-nav">
+        {
+          toc.items.map((toc) => <a class="page-nav-header" href=`#${toc.slug}`>{toc.text === 'Top' ? 'Overview' : toc.text}</a>)
+        }
+      </div>
+    )
+  }
+</div>
+
+
+<style>
+  .page-title {
+    padding: 1.5rem;
+  }
+
+  .page-nav {
+    padding: 1.5rem var(--sl-content-pad-x);
+  }
+
+  .page-nav-header {
+    padding-right: 1rem;
+  }
+</style>
