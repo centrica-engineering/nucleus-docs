@@ -22,21 +22,25 @@ const componentName = Astro.props.slug?.replace('components/', '');
     isComponentPage && toc?.items?.length > 0 && (
       <div class="page-nav">
         {
-          toc.items.map((toc) => <a class="page-nav-header" href=`#${toc.slug}`>{toc.text === 'Top' ? 'Overview' : toc.text}</a>)
+          toc.items.map((toc) => <a class="page-nav-header" href=`#${toc.slug}`>{toc.text}</a>)
         }
       </div>
     )
   }
 </div>
 
-
 <style>
   .page-title {
-    padding: 1.5rem;
+    padding-block-start: 1rem;
+    padding-inline: 1.5rem;
   }
 
   .page-nav {
-    padding: 1.5rem var(--sl-content-pad-x);
+    padding-block: 1rem;
+  }
+
+  .page-nav [href="#_top"] {
+    display: none;
   }
 
   .page-nav-header {
