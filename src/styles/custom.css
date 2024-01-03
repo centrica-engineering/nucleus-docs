@@ -46,6 +46,10 @@ main {
   .content-panel:nth-child(2) {
     border-top-width: 0;
   }
+
+  .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
+    scroll-margin-top: 157px;
+  }
 }
 
 h1 {
