@@ -26,9 +26,6 @@ export default defineConfig({
       social: {
         github: "https://github.com/centrica-engineering/nucleus-docs",
       },
-      tableOfContents: {
-        maxHeadingLevel: 4,
-      },
       components: {
         TableOfContents: "./src/components/starlight/TableOfContents.astro",
       },
