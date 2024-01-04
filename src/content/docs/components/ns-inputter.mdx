@@ -1,0 +1,231 @@
+---
+title: Inputter
+sidebar:
+  badge: new
+---
+
+export const componentName = "ns-inputter";
+
+import Specification from '../../../components/specification.astro';
+import Placement from '../../../components/placement.astro';
+import CompDetails from '../../../components/cem-description.astro';
+import ExampleViewer from '../../../components/example-viewer.astro';
+import CodeSnippet from '../../../components/code-snippet.astro';
+
+import ExampleStandard from '../_examples/components/ns-inputter/standard.html';
+import ExampleText from '../_examples/components/ns-inputter/text.html';
+import ExampleEmail from '../_examples/components/ns-inputter/email.html';
+import ExampleTel from '../_examples/components/ns-inputter/tel.html';
+import ExampleSearch from '../_examples/components/ns-inputter/search.html';
+import ExampleMask from '../_examples/components/ns-inputter/mask.html';
+import ExampleSeparator from '../_examples/components/ns-inputter/separator.html';
+import ExampleNumber from '../_examples/components/ns-inputter/number.html';
+import ExampleTextarea from '../_examples/components/ns-inputter/textarea.html';
+import ExampleRadio from '../_examples/components/ns-inputter/radio.html';
+import ExampleRadioInline from '../_examples/components/ns-inputter/radio-inline.html';
+import ExampleCheckbox from '../_examples/components/ns-inputter/checkbox.html';
+import ExampleCheckboxInline from '../_examples/components/ns-inputter/checkbox-inline.html';
+import ExampleSelect from '../_examples/components/ns-inputter/select.html';
+
+## Overview
+
+<CompDetails name={componentName} />
+
+:::tip
+If you would like to use a password input then please see the [ns-password](/components/ns-password) component.
+:::
+
+<ExampleViewer>
+  <ExampleStandard slot="template" />
+</ExampleViewer>
+
+### Example
+
+#### Text
+
+`<input type="text">`
+
+<ExampleViewer>
+  <ExampleText slot="template" />
+</ExampleViewer>
+
+#### Email
+
+`<input type="email">`
+
+<ExampleViewer>
+  <ExampleEmail slot="template" />
+</ExampleViewer>
+
+#### Tel
+
+`<input type="tel">`
+
+<ExampleViewer>
+  <ExampleTel slot="template" />
+</ExampleViewer>
+
+#### Search
+
+`<input type="search">`
+
+<ExampleViewer>
+  <ExampleSearch slot="template" />
+</ExampleViewer>
+
+#### Number
+
+`<input type="number">`
+
+<ExampleViewer>
+  <ExampleNumber slot="template" />
+</ExampleViewer>
+
+#### Textarea
+
+`<input type="textarea">`
+
+<ExampleViewer>
+  <ExampleTextarea slot="template" />
+</ExampleViewer>
+
+#### Radio
+
+`<input type="radio">`
+
+<ExampleViewer>
+  <ExampleRadio slot="template" />
+</ExampleViewer>
+
+##### `class="inline"`
+
+<ExampleViewer>
+  <ExampleRadioInline slot="template" />
+</ExampleViewer>
+
+#### Checkbox
+
+`<input type="checkbox">`
+
+<ExampleViewer>
+  <ExampleCheckbox slot="template" />
+</ExampleViewer>
+
+##### `class="inline"`
+
+<ExampleViewer>
+  <ExampleCheckboxInline slot="template" />
+</ExampleViewer>
+
+#### Select
+
+`<input type="select">`
+
+<ExampleViewer>
+  <ExampleSelect slot="template" />
+</ExampleViewer>
+
+#### Mask
+
+`mask=""`
+
+<ExampleViewer>
+  <ExampleMask slot="template" />
+</ExampleViewer>
+
+#### Separator
+
+`mask=""` and `separator=""`
+
+<ExampleViewer>
+  <ExampleSeparator slot="template" />
+</ExampleViewer>
+
+### Autocomplete
+
+Inputs will resize when using the autocomplete attribute for:
+
+- `given-name`
+- `family-name`
+- `postal-code`
+
+Use native autocompletes on inputs ([Autocomplete attribute documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete))
+
+See the [Email example](#email) for reference.
+
+## Guidance
+
+### Considerations
+
+- Use defined conventions for common fields.
+- Use standard examples for placeholder copy.
+- If you are asking for first and last name within a text input, spell check should be disabled.
+- Refer to the text input auto complete definitions.
+- Always try and have a default selected radio button.
+
+## Implementation
+
+### Placement
+
+<Placement name={componentName} />
+
+Placement has not yet been defined in `ns-inputter`.
+
+### Specification
+
+<Specification name={componentName} />
+
+#### `helper`
+
+A way to help the user understand why or why not enter information
+
+#### `labelID`
+
+Used if the label is outside of `ns-inputter`, such as a heading for the page. Always try to use a label or the heading first. Only use this if the element you are referring to and the label are the same.
+
+#### `mask`
+
+This will create a max length on the input to the length of the mask.
+
+#### `separator`
+
+Requires a mask. Can only be one character.
+
+#### `ignore-separator`
+
+Setting the ignoreseparator property to true will force length validations (such as minLength and maxLength) to not include the separator when calculating the length. eg. With '-' as the separator: '12-34-56' would have a length of 8, if ignoreseparator is true it would count it as 6 characters.
+
+#### `slot="label"`
+
+To be used for single input types (text, email, etc).
+
+#### `slot="tip-details"`
+
+This requires helper property which is initially hidden and can be revealed by the user when they click on the helper text.
+
+#### `validation`
+
+It is possible to have multiple validations. For example: ["isRequired", "isNumber", "isInteger"]
+Some of the validation options can be configured by passing in values within the parentheses:
+- minLength(x) - Shows error if the input value is less than x chars.
+- maxLength(x) - Shows error if the input value is greater than x chars.
+- isDate() - Shows error if the input value is not a valid date, the expected format is dd/mm/yyyy
+- minDate(date) - Shows an error if the input value date is less than provided date.  eg. `minDate('20/12/2020')`
+- maxDate(date) - Shows an error if the input vale date is greater than the provided date.  eg. `maxDate('31/12/2022')`
+- isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode.  This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function.  eg. `isPostcode(true)`
+- isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number.  This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function.  eg. `isPhoneNumber(true)`
+
+#### Anonymous slot
+
+For single type inputs (text, email, etc), there's no need to add id/for unless you need to on the `<label>` and `<input>`
+Make sure to add id/for if it is a checkbox, select or radio input type.
+Be careful when adding additional elements outside of input and label * these scenarios haven't been tested and may need a request for change raised.
+
+### Related links
+
+- [ns-form](#!)
+- [ns-form-group](#!)
+- [ns-datepicker](#!)
+- [ns-password](#!)
+- [ns-cta](#!)
+

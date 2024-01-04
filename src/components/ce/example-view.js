@@ -26,22 +26,17 @@ export class ExampleView extends LitElement {
 
       .example {
         background: #fff;
-        height: 100%;
-        border-radius: 4px;
+        border-start-start-radius: 0.5rem;
+        border-start-end-radius: 0.5rem;
         padding: 0.5rem;
         border: 1px solid var(--sl-color-gray-6);
       }
 
       iframe {
         border: none;
-        height: 100%;
-        width: 100%;
-        min-height: var(--min-height);
-        
-      }
-
-      .preview {
-        height: 100%;
+        transform: scale(0.75);
+        transform-origin: 0 0;
+        width: 133%;
         min-height: var(--min-height);
       }
 
@@ -75,7 +70,7 @@ export class ExampleView extends LitElement {
 
     this.title = 'Example';
 
-    this.__minHeight = 200;
+    this.__minHeight = 275;
     this.__isDragging = false;
   }
 
@@ -86,8 +81,15 @@ export class ExampleView extends LitElement {
       <head>
         <script src="https://www.britishgas.co.uk/nucleus/nucleus.min.js" type="text/javascript"></script>
       </head>
-      <body class="ndsn">
-      ${inner}
+      <body>
+        <!-- TODO: @drew - 2024-01-02 - This is a hack to get the snippet into ns-panel. This should be done by looking at 'Component placement' in jsdoc -->
+        <main class="ndsn" id="content">
+          <ns-panel>
+            <div>
+              ${inner}
+            </div>
+          </ns-panel>
+        </main>
       </body>
     `;
   }

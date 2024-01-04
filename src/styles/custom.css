@@ -1,12 +1,12 @@
 /* Dark mode colors. */
 :root {
-  --sl-color-accent-low: #17181C; /* highlighted text */
-  --sl-color-accent: #F39E13;
-  --sl-color-accent-high: #E16E55; /* highlight */
+  --sl-color-accent-low: #17181c; /* highlighted text */
+  --sl-color-accent: #f39e13;
+  --sl-color-accent-high: #e16e55; /* highlight */
   --sl-color-white: #ffffff; /* top level text */
-  --sl-color-gray-1: #D0DDE7;
-  --sl-color-gray-2: #8AAAC2; /* SUb menus */
-  --sl-color-gray-3: #8AAAC2; /* Edit and RHS links */
+  --sl-color-gray-1: #d0dde7;
+  --sl-color-gray-2: #8aaac2; /* SUb menus */
+  --sl-color-gray-3: #8aaac2; /* Edit and RHS links */
   --sl-color-gray-4: #3e6480;
   --sl-color-gray-5: #354268; /* borders and lines */
   --sl-color-gray-6: #191c23; /* menu base */
@@ -16,19 +16,19 @@
 }
 
 /* Light mode colors. */
-:root[data-theme='light'] {
+:root[data-theme="light"] {
   --sl-color-accent-low: #ffffff; /* highlighted text */
-  --sl-color-accent: #B94680; /* highlight */
+  --sl-color-accent: #b94680; /* highlight */
   --sl-color-accent-high: #557fe1; /* highlight */
-  --sl-color-white: #0F2067; /* top level text */
+  --sl-color-white: #0f2067; /* top level text */
   --sl-color-gray-1: #231919; /* light mode toggle text */
   --sl-color-gray-2: #13517e; /* SUb menus */
   --sl-color-gray-3: #13517e; /* Edit and RHS links */
-  --sl-color-gray-4: #8AAAC2;
+  --sl-color-gray-4: #8aaac2;
   --sl-color-gray-5: #7298f0; /* borders and lines */
-  --sl-color-gray-6: #B9CCDA; 
+  --sl-color-gray-6: #b9ccda;
   --sl-color-gray-7: #ffffff; /* top bar base */
-  --sl-color-black: #F4F6F8; /* Base */
+  --sl-color-black: #f4f6f8; /* Base */
 }
 
 .right-sidebar {
@@ -37,11 +37,50 @@
 
 /* Custom fonts */
 main {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
 
-  .content-panel + .content-panel {
+/* NOTE: @drew - 2024-01-03 - this selector is to target the homepage */
+:root[data-has-hero] {
+  .page-title {
+    display: none;
+  }
+
+  .hero {
+    display: block;
+  }
+}
+
+/* NOTE: @drew - 2024-01-03 - this selector is to target the content page */
+:root[data-has-sidebar] {
+  .content-panel:nth-child(1) {
+    display: none;
+  }
+
+  .content-panel:nth-child(2) {
     border-top-width: 0;
   }
+
+  .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
+    scroll-margin-top: 157px;
+  }
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.purpose {
+  padding-inline-start: 1rem;
+  border-inline-start-style: solid;
+  border-inline-start-width: 0.25rem;
+  border-inline-start-color: var(--sl-color-accent);
+}
+
+.purpose p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 /* NOTE: @drew - 2023-11-29 - temporary styles for the Storybook iframe in the Pages section */
