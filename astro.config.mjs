@@ -21,6 +21,7 @@ export default defineConfig({
       },
       customCss: [
         "./src/styles/custom.css",
+        "./src/styles/aside.css",
         // Fontsource files for to regular and medium font weights.
         "@fontsource/roboto/300.css",
         "@fontsource/roboto/400.css",

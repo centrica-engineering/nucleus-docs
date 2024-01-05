@@ -1,0 +1,14 @@
+:root {
+
+  .starlight-aside--dos {
+    --sl-color-asides-text-accent: var(--sl-color-green-high);
+    border-color: var(--sl-color-green);
+    background-color: var(--sl-color-green-low);
+  }
+
+  .starlight-aside--donts {
+    --sl-color-asides-text-accent: var(--sl-color-red-high);
+    border-color: var(--sl-color-red);
+    background-color: var(--sl-color-red-low);
+  }
+}
