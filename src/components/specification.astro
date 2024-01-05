@@ -29,7 +29,7 @@ const events = compDetails?.events;
             return (
               <tr>
                 <td><code>{attribute.name}</code></td>
-                <td>{attribute.type}</td>
+                <td>{attribute.type?.replaceAll('"', ' ')}</td>
                 <td>{attribute.default?.replaceAll('"', '')}</td>
                 <td>{attribute.description ?? ''}</td>
               </tr>
@@ -62,7 +62,7 @@ const events = compDetails?.events;
             return (
               <tr>
                 <td><code>{property.name}</code></td>
-                <td>{property.type}</td>
+                <td>{property.type?.replaceAll('"', ' ')}</td>
                 <td>{property.default?.replaceAll('"', '')}</td>
                 <td>{property.description}</td>
               </tr>
