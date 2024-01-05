@@ -1,37 +1,49 @@
 /* Dark mode colors. */
 :root {
-  --sl-color-accent-low: #17181c; /* highlighted text */
+  --sl-color-accent-low: #17181c;
   --sl-color-accent: #f39e13;
-  --sl-color-accent-high: #e16e55; /* highlight */
-  --sl-color-white: #ffffff; /* top level text */
+  --sl-color-accent-high: #e16e55;
+  --sl-color-white: #ffffff;
   --sl-color-gray-1: #d0dde7;
-  --sl-color-gray-2: #8aaac2; /* SUb menus */
-  --sl-color-gray-3: #8aaac2; /* Edit and RHS links */
+  --sl-color-gray-2: #8aaac2;
+  --sl-color-gray-3: #8aaac2;
   --sl-color-gray-4: #3e6480;
-  --sl-color-gray-5: #354268; /* borders and lines */
-  --sl-color-gray-6: #191c23; /* menu base */
-  --sl-color-black: #15171c; /* Base */
-  --sl-content-width: 54rem; /* Content width */
-  --sl-sidebar-width: 14rem; /* Sidebar width */
+  --sl-color-gray-5: #354268;
+  --sl-color-gray-6: #191c23;
+  --sl-color-black: #15171c;
+  --sl-content-width: 54rem;
+  --sl-sidebar-width: 14rem;
 }
 
 /* Light mode colors. */
 :root[data-theme="light"] {
-  --sl-color-accent-low: #ffffff; /* highlighted text */
-  --sl-color-accent: #b94680; /* highlight */
-  --sl-color-accent-high: #557fe1; /* highlight */
-  --sl-color-white: #0f2067; /* top level text */
-  --sl-color-gray-1: #231919; /* light mode toggle text */
-  --sl-color-gray-2: #13517e; /* SUb menus */
-  --sl-color-gray-3: #13517e; /* Edit and RHS links */
+  --sl-color-bg: #ffffff;
+  --sl-color-accent-low: #ffffff;
+  --sl-color-accent: #b94680;
+  --sl-color-accent-high: #557fe1;
+  --sl-color-white: #0f2067;
+  --sl-color-gray-1: #231919;
+  --sl-color-gray-2: #13517e;
+  --sl-color-gray-3: #13517e;
   --sl-color-gray-4: #8aaac2;
-  --sl-color-gray-5: #7298f0; /* borders and lines */
+  --sl-color-gray-5: #7298f0;
   --sl-color-gray-6: #b9ccda;
-  --sl-color-gray-7: #ffffff; /* top bar base */
-  --sl-color-black: #f4f6f8; /* Base */
+  --sl-color-gray-7: #ffffff;
+  --sl-color-black: #f4f6f8;
+  --sl-color-bg-sidebar: var(--sl-color-black);
+  --sl-color-bg-nav: var(--sl-color-black);
+}
+
+.header {
+  border-block-end-style: none;
+}
+
+.sidebar-pane {
+  border-inline-end-style: none;
 }
 
 .right-sidebar {
+  border-inline-start-style: none;
   padding-top: 0;
 }
 
@@ -62,12 +74,8 @@ main {
   }
 
   .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
-    scroll-margin-top: 157px;
+    scroll-margin-top: 309px;
   }
-}
-
-h1 {
-  margin-top: 0;
 }
 
 .purpose {

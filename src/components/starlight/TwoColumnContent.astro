@@ -3,7 +3,7 @@ import type { Props } from "@astrojs/starlight/props";
 import NucleusPageTitle from "../NucleusPageTitle.astro";
 ---
 
-<div class="section-tabs">
+<div class="masthead">
   <NucleusPageTitle {...Astro.props} />
 </div>
 
@@ -21,11 +21,15 @@ import NucleusPageTitle from "../NucleusPageTitle.astro";
 </div>
 
 <style>
-  .section-tabs {
+  .masthead {
     position: sticky;
-    top: 64px;
+    top: var(--sl-nav-height);
     z-index: 1;
-    background-color: #f4f6f8;
+    background-color: var(--sl-color-bg);
+    padding-inline-start: var(--sl-content-pad-x);
+    padding-inline-end: var(--sl-content-pad-x);
+    padding-block-start: var(--sl-content-pad-x);
+    padding-block-end: var(--sl-content-pad-x);
   }
 
   .main-pane {
@@ -40,6 +44,14 @@ import NucleusPageTitle from "../NucleusPageTitle.astro";
         var(--sl-sidebar-width) +
           (100% - var(--sl-content-width) - var(--sl-sidebar-width)) / 2
       );
+
+      #starlight__on-this-page {
+        display: none;
+      }
+
+      li:has(a[href="#_top"]) {
+        display: none;
+      }
     }
 
     .right-sidebar {

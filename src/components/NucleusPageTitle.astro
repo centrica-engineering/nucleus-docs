@@ -11,39 +11,73 @@ const componentName = Astro.props.slug?.replace('components/', '');
 ---
 
 <div class="page-title">
-  <Default {...Astro.props}></Default>
-
-  {
-    isComponentPage && (
-      <code>&lt;{componentName}&gt;</code>
-    )
-  }
-  {
-    isComponentPage && toc?.items?.length > 0 && (
-      <div class="page-nav">
-        {
-          toc.items.map((toc) => <a class="page-nav-header" href=`#${toc.slug}`>{toc.text}</a>)
-        }
-      </div>
-    )
-  }
+  <div class="title">
+    <Default {...Astro.props}></Default>
+    {
+      isComponentPage && (
+        <code>&lt;{componentName}&gt;</code>
+      )
+    }
+  </div>
+  <div class="decoration">
+    SVG for {componentName}
+  </div>
 </div>
 
+{
+  isComponentPage && toc?.items?.length > 0 && (
+    <div class="page-nav">
+      {
+        toc.items.map((toc) => <a class="page-nav-header" href=`#${toc.slug}`>{toc.text}</a>)
+      }
+    </div>
+  )
+}
+
 <style>
+  .page-title,
+  .page-nav {
+    max-width: calc(((var(--sl-sidebar-width) + (100% - var(--sl-content-width) - var(--sl-sidebar-width)) / 2) + var(--sl-content-width)) + var(--sl-content-pad-x));
+    margin-inline-start: auto;
+  }
   .page-title {
-    padding-block-start: 1rem;
-    padding-inline: 1.5rem;
+    background-color: #32647F;
+    color: white;
+    padding-inline-start: var(--sl-content-pad-x);
+    padding-inline-end: var(--sl-content-pad-x);
+    padding-block-start: calc(var(--sl-content-pad-x) * 2);
+    padding-block-end: calc(var(--sl-content-pad-x) * 2);
+    border-radius: var(--sl-content-pad-x);
+    display: flex;
+
+    h1 {
+      margin-top: 0;
+      color: white;
+    }
+
+    .decoration {
+      margin-inline-start: auto;
+    }
   }
 
   .page-nav {
-    padding-block: 1rem;
-  }
+    background-color: var(--sl-color-black);
+    margin-block-start: var(--sl-content-pad-x);
+    border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
+    
+    [href="#_top"] {
+      display: none;
+    }
 
-  .page-nav [href="#_top"] {
-    display: none;
+    a {
+      text-decoration: none;
+      font-weight: 500;
+    }
   }
 
   .page-nav-header {
-    padding-right: 1rem;
+    display: inline-block;
+    padding-inline: 32px;
+    padding-block: 16px;
   }
 </style>
