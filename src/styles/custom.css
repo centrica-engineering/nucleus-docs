@@ -64,6 +64,18 @@ main {
   .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
     scroll-margin-top: 157px;
   }
+
+  .starlight-aside--dos {
+    --sl-color-asides-text-accent: var(--sl-color-green-high);
+    border-color: var(--sl-color-green);
+    background-color: var(--sl-color-green-low);
+  }
+
+  .starlight-aside--donts {
+    --sl-color-asides-text-accent: var(--sl-color-red-high);
+    border-color: var(--sl-color-red);
+    background-color: var(--sl-color-red-low);
+  }
 }
 
 h1 {

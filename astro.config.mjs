@@ -1,8 +1,12 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import lit from "@astrojs/lit";
+import { nucleusRemarkAsides } from "./src/plugins/nucleus-aside";
 
 export default defineConfig({
+  markdown: {
+    remarkPlugins: [nucleusRemarkAsides()]
+  },
   integrations: [
     starlight({
       title: "Nucleus Docs",
@@ -51,7 +55,7 @@ export default defineConfig({
           label: "Page types",
           autogenerate: { directory: "page-types" },
         },
-      ],
+      ]
     }),
     lit(),
   ],
