@@ -66,6 +66,39 @@ main {
   }
 }
 
+/* NOTE: @drew - 2024-01-05 - 
+  [1] - this is a hack to remove the table heading for the Guidance table that follows the heading of "Key"
+  [2] - this is to override the starlight css that set's `<table>` as `display:block;`
+  [3] - force the table to fill the full width of the content
+  [4] - this is to stop any `<code>` in a table from wrapping. This happens when the content in the table is forcing other columns to be narrow
+  [5] - this is to remove the alternating background color on the table rows
+  [6] - this is to left align the content in the table cells
+*/
+.sl-markdown-content {
+  [id^="key"] + table thead {
+    display: none; /* [1] */
+  }
+
+  table {
+    display: table; /* [2] */
+    width: 100%; /* [3] */
+
+    code {
+      white-space: nowrap; /* [4] */
+    }
+
+    tr:nth-child(2n) {
+      background-color: initial; /* [5] */
+    }
+
+    th,
+    td {
+      text-align: left; /* [6] */
+    }
+  }
+}
+
+/* NOTE: @drew - 2024-01-05 - removing the margin on the h1, which is in the masthead */
 h1 {
   margin-top: 0;
 }
