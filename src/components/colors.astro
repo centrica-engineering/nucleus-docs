@@ -1,66 +1,40 @@
 ---
 import { primaryColors, secondaryColors, greyscaleColors, systemColors } from "./tokens";
+import Color from './color.astro';
+const { colors } = Astro.props;
 ---
-<style>
-  .colors {
-    td {
-      border: 2px solid currentColor;
+
+<div class="ns-colors">
+  <slot />
+  <div class="ns-card-grid">
+    {
+      colors.map(([key, value], i) => 
+        <Color name={key.substring(key.lastIndexOf('_') + 1, key.length)} value={value} />
+      )
     }
+  </div>
+</div>
+
+<style>
+  .ns-card-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .ns-card-grid > :global(*) {
+		margin-top: 0 !important;
+	}
+
+  @media (min-width: 50rem) {
+		.ns-card-grid {
+			grid-template-columns: 1fr 1fr;
+			gap: 1.5rem;
+		}
+  }
+  @media (min-width: 70rem) {
+		.ns-card-grid {
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 2rem;
+		}
   }
 </style>
-<h2>Colors</h2>
-<table class="colors">
-  <h3>Primary</h3>
-{
-  primaryColors().map(([key, value], i) => {
-    return (
-      <tr>
-        <td>{key.replace('COLOR_PRIMARY_', '')}</td>
-        <td>{value}</td>
-      </tr>
-    );
-  })
-}
-</table>
-
-<table class="colors">
-  <h3>Secondary</h3>
-{
-  secondaryColors().map(([key, value], i) => {
-    return (
-      <tr>
-        <td>{key.replace('COLOR_SECONDARY_', '').replace(/[a-z]/, (g) => g.toLowerCase())}</td>
-        <td>{value}</td>
-      </tr>
-    );
-  })
-}
-</table>
-
-<table class="colors">
-  <h3>Greyscale</h3>
-{
-  greyscaleColors().map(([key, value], i) => {
-    return (
-      <tr>
-        <td>{key.replace('COLOR_GREYSCALE_', '').replace(/[a-z]/, (g) => g.toLowerCase())}</td>
-        <td>{value}</td>
-      </tr>
-    );
-  })
-}
-</table>
-
-<table class="colors">
-  <h3>System</h3>
-{
-  systemColors().map(([key, value], i) => {
-    return (
-      <tr>
-        <td>{key.replace('COLOR_SYSTEM_', '').replace(/[a-z]/, (g) => g.toLowerCase())}</td>
-        <td>{value}</td>
-      </tr>
-    );
-  })
-}
-</table>
