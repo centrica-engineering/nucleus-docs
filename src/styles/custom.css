@@ -136,3 +136,27 @@ h1 {
   min-height: 795px;
   border-radius: 50px;
 }
+
+.sidebar-content {
+  ul.top-level {
+    ul, li {
+    margin: 0.25rem 0.5rem;
+    }
+
+    li {
+      border-inline-start-width: 0;
+    }
+
+    .large {
+      font-weight: normal;
+    }
+
+    [aria-current='page'],
+    [aria-current='page']:hover,
+    [aria-current='page']:focus {
+      font-weight: 800;
+    }
+  }
+
+
+}
