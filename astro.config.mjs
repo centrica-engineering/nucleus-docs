@@ -1,6 +1,64 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import lit from "@astrojs/lit";
+import customElements from "./src/components/ce/ce-doc.json";
+import cem from "@connectedhomes/nucleus/custom-elements.json";
+
+
+const isDeprecated = (componentName) =>  cem.tags.find((tag) => tag.name === componentName)?.deprecated;
+
+const componentSidebar = () => {
+  return {
+    label: "Components",
+    collapsed: true,
+    items: [
+      ...customElements.filter((customElement) => !customElement.internal && !customElement.category && !isDeprecated(customElement.name))
+      .map((customElement) => {
+        return {
+          label: customElement['display-name'].replaceAll(' ', ''),
+          link: `/components/${customElement.name}`
+        }
+      }).sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1),
+      {
+        label: "Form",
+        collapsed: true,
+        items: 
+          customElements.filter((customElement) => !customElement.internal && customElement.category === 'Form' && !isDeprecated(customElement.name))
+            .map((customElement) => {
+            return {
+              label: customElement['display-name'].replaceAll(' ', ''),
+              link: `/components/${customElement.name}`
+            }
+          }).sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1),
+      },
+      {
+        label: "Experience",
+        collapsed: true,
+        items: 
+          customElements.filter((customElement) => !customElement.internal && customElement.category === 'Experience' && !isDeprecated(customElement.name))
+            .map((customElement) => {
+            return {
+              label: customElement['display-name'].replaceAll(' ', ''),
+              link: `/components/${customElement.name}`
+            }
+          }).sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1),
+      },
+      {
+        label: "Deprecated",
+        collapsed: true,
+        items: 
+          cem.tags.filter((tag) => tag.deprecated)
+            .map((tag) => {
+              const customElement = customElements.find((customElement) => customElement.name === tag.name);
+            return {
+              label: customElement['display-name'].replaceAll(' ', ''),
+              link: `/components/${customElement.name}`
+            }
+          }).sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1),
+      },
+    ]
+  };
+}
 
 export default defineConfig({
   integrations: [
@@ -35,20 +93,20 @@ export default defineConfig({
         themes: ["github-dark", "github-light"],
       },
       sidebar: [
+        componentSidebar(),
         {
           label: "Guidelines",
+          collapsed: true,
           autogenerate: { directory: "guidelines" },
         },
         {
-          label: "Components",
-          autogenerate: { directory: "components" },
-        },
-        {
           label: "Patterns",
+          collapsed: true,
           autogenerate: { directory: "patterns" },
         },
         {
           label: "Page types",
+          collapsed: true,
           autogenerate: { directory: "page-types" },
         },
       ],
