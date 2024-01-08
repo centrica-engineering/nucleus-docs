@@ -53,8 +53,8 @@ export function nucleusRemarkAside() {
     tip: 'Tip',
     caution: 'Caution',
     danger: 'Danger',
-    dos: 'Do\'s',
-    donts: 'Don\'ts'
+    do: 'Do',
+    dont: 'Don\'t'
   };
 
   const variants = new Set([...Object.keys(Variant)]);
