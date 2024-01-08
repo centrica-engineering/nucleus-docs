@@ -1,13 +1,13 @@
 ---
 import type { Props } from "@astrojs/starlight/props";
 import Default from '@astrojs/starlight/components/PageTitle.astro';
+import { getImage } from "astro:assets";
 
-const { slug } = Astro.params;
-const slugRoot = `/${slug}`;
-const isComponentPage = slug?.indexOf('components/ns') > -1;
 const toc = Astro.props.toc;
-console.log(Astro.props.slug);
+const { slug } = Astro.params;
+const isComponentPage = slug?.indexOf('components/ns') > -1;
 const componentName = Astro.props.slug?.replace('components/', '');
+const mastheadImage = await getImage({src: `/src/assets/masthead/${slug}.svg`, width: 300, height: 300});
 ---
 
 <div class="page-title">
@@ -19,8 +19,9 @@ const componentName = Astro.props.slug?.replace('components/', '');
       )
     }
   </div>
+  <!-- TODO: @drew - 2024-01-08 - conditionaly show .decoration when mastheadImage returns a [200] and not on [404] -->
   <div class="decoration">
-    SVG for {componentName}
+    <img src={mastheadImage.src} alt="">
   </div>
 </div>
 
@@ -35,12 +36,8 @@ const componentName = Astro.props.slug?.replace('components/', '');
 }
 
 <style>
-  .page-title,
-  .page-nav {
-    max-width: calc(((var(--sl-sidebar-width) + (100% - var(--sl-content-width) - var(--sl-sidebar-width)) / 2) + var(--sl-content-width)) + var(--sl-content-pad-x));
-    margin-inline-start: auto;
-  }
   .page-title {
+    position: relative;
     background-color: #32647F;
     color: white;
     padding-inline-start: var(--sl-content-pad-x);
@@ -56,7 +53,11 @@ const componentName = Astro.props.slug?.replace('components/', '');
     }
 
     .decoration {
-      margin-inline-start: auto;
+      position: absolute;
+      top: var(--sl-content-pad-x);
+      right: calc(var(--sl-content-pad-x) * 4);
+      width: 112px;
+      height: 112px;
     }
   }
 
@@ -79,5 +80,14 @@ const componentName = Astro.props.slug?.replace('components/', '');
     display: inline-block;
     padding-inline: 32px;
     padding-block: 16px;
+  }
+
+   @media (min-width: 72rem) {
+    .page-title {
+      .decoration {
+        width: 130px;
+        height: 130px;
+      }
+    }
   }
 </style>
