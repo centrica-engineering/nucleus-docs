@@ -1,0 +1,22 @@
+---
+const {name, value} = Astro.props;
+const backgroundColorStyle = `--ns-colour: ${value};`;
+---
+
+<div class="ns-colour-container">
+  <div class="ns-colour-box" style={backgroundColorStyle}></div>
+  <label>{name}</label>
+</div>
+
+<style>
+  .ns-colour-container {
+    padding: 1rem;
+  }
+  .ns-colour-box {
+    height: 50px;
+    width: 100px;
+    background-color: var(--ns-colour);
+    border: 1px solid  black;
+    border-radius: 5px;
+  }
+</style>

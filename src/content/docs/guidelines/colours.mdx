@@ -3,5 +3,20 @@ title: Colours
 ---
 
 import Colors from '../../../components/colors.astro';
+import { primaryColors, secondaryColors, greyscaleColors, systemColors } from "../../../components/tokens";
 
-<Colors />
+<Colors colors={primaryColors()}>
+  ## Primary
+</Colors>
+
+<Colors colors={secondaryColors()}>
+  ## Secondary
+</Colors>
+
+<Colors colors={greyscaleColors()}>
+  ## Greyscale
+</Colors>
+
+<Colors colors={systemColors()}>
+  ## System
+</Colors>
