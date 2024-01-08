@@ -1,11 +1,11 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import lit from "@astrojs/lit";
-import { nucleusRemarkAsides } from "./src/plugins/nucleus-aside";
+import { nucleusRemarkAside } from "./src/plugins/nucleus-remark-aside";
 
 export default defineConfig({
   markdown: {
-    remarkPlugins: [nucleusRemarkAsides()]
+    remarkPlugins: [nucleusRemarkAside()]
   },
   integrations: [
     starlight({

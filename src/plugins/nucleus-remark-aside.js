@@ -46,7 +46,7 @@ function s(el, attrs = {}, children = []) {
  * </Aside>
  * ```
  */
-export function nucleusRemarkAsides() {
+export function nucleusRemarkAside() {
   console.log('processing aside');
   const Variant = {
     note: 'Note',
