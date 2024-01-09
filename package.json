@@ -13,7 +13,7 @@
   "dependencies": {
     "@astrojs/lit": "^3.0.3",
     "@astrojs/starlight": "^0.15.0",
-    "@connectedhomes/nucleus": "^3.1.14",
+    "@connectedhomes/nucleus": "^3.1.17",
     "@fontsource/roboto": "^5.0.8",
     "@webcomponents/template-shadowroot": "^0.2.1",
     "astro": "^4.0.0",

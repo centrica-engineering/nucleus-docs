@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import lit from "@astrojs/lit";
-import customElements from "./src/components/ce/ce-doc.json";
+import customElements from "@connectedhomes/nucleus/ce-doc.json";
 import cem from "@connectedhomes/nucleus/custom-elements.json";
 
 
