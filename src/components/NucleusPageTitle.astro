@@ -1,13 +1,14 @@
 ---
 import type { Props } from "@astrojs/starlight/props";
 import Default from '@astrojs/starlight/components/PageTitle.astro';
-import { getImage } from "astro:assets";
+import { Image } from "astro:assets";
 
 const toc = Astro.props.toc;
 const { slug } = Astro.params;
-const isComponentPage = slug?.indexOf('components/ns') > -1;
+const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
 const componentName = Astro.props.slug?.replace('components/', '');
-const mastheadImage = await getImage({src: `/src/assets/masthead/${slug}.svg`, width: 300, height: 300});
+const images = import.meta.glob("../assets/masthead/**/*");
+const imageUrl = `../assets/masthead/${slug}.svg`;
 ---
 
 <div class="page-title">
@@ -20,9 +21,13 @@ const mastheadImage = await getImage({src: `/src/assets/masthead/${slug}.svg`, w
     }
   </div>
   <!-- TODO: @drew - 2024-01-08 - conditionaly show .decoration when mastheadImage returns a [200] and not on [404] -->
-  <div class="decoration">
-    <img src={mastheadImage.src} alt="">
-  </div>
+  {
+    isComponentPage && (
+      <div class="decoration">
+        <Image src={images[imageUrl]()} alt="" {...Astro.props} />
+      </div>
+    )
+  }
 </div>
 
 {
