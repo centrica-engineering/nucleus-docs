@@ -46,6 +46,7 @@ const mastheadImage = await getImage({src: `/src/assets/masthead/${slug}.svg`, w
     padding-block-end: calc(var(--sl-content-pad-x) * 2);
     border-radius: var(--sl-content-pad-x);
     display: flex;
+    min-height: 145px;
 
     h1 {
       margin-top: 0;
@@ -84,6 +85,8 @@ const mastheadImage = await getImage({src: `/src/assets/masthead/${slug}.svg`, w
 
    @media (min-width: 72rem) {
     .page-title {
+      min-height: 178px;
+
       .decoration {
         width: 130px;
         height: 130px;
