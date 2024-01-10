@@ -22,7 +22,7 @@ if(index > 0) {
   htmlContent = htmlContent.split(frameSelector).join(`${frameSelector} not-content`);
 }
 //map data-theme to the code block theme
-const themedStyles = themeStyles?.replaceAll('github-', '');
+const themedStyles = themeStyles?.replaceAll('github-dark', 'light').replaceAll('github-light', 'dark');
 // Collect styles and add them before the HTML content
 const prefixToLookup = 'class="expressive-code">';
 const htmlContentParts = htmlContent.split(prefixToLookup);
