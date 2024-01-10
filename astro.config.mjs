@@ -13,48 +13,52 @@ const componentSidebar = () => {
     collapsed: true,
     items: [
       ...customElements.filter((customElement) => !customElement.internal && !customElement.category && !isDeprecated(customElement.name))
+      .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
       .map((customElement) => {
         return {
-          label: customElement['display-name'].replaceAll(' ', ''),
+          label: customElement['display-name'],
           link: `/components/${customElement.name}`
         }
-      }).sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1),
+      }),
       {
         label: "Form",
         collapsed: true,
         items: 
           customElements.filter((customElement) => !customElement.internal && customElement.category === 'Form' && !isDeprecated(customElement.name))
-            .map((customElement) => {
+          .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
+          .map((customElement) => {
             return {
-              label: customElement['display-name'].replaceAll(' ', ''),
+              label: customElement['display-name'],
               link: `/components/${customElement.name}`
             }
-          }).sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1),
+          }),
       },
       {
         label: "Experience",
         collapsed: true,
         items: 
           customElements.filter((customElement) => !customElement.internal && customElement.category === 'Experience' && !isDeprecated(customElement.name))
-            .map((customElement) => {
+          .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
+          .map((customElement) => {
             return {
-              label: customElement['display-name'].replaceAll(' ', ''),
+              label: customElement['display-name'],
               link: `/components/${customElement.name}`
             }
-          }).sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1),
+          }),
       },
       {
         label: "Deprecated",
         collapsed: true,
         items: 
           cem.tags.filter((tag) => tag.deprecated)
-            .map((tag) => {
-              const customElement = customElements.find((customElement) => customElement.name === tag.name);
+          .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
+          .map((tag) => {
+            const customElement = customElements.find((customElement) => customElement.name === tag.name);
             return {
-              label: customElement['display-name'].replaceAll(' ', ''),
+              label: customElement['display-name'],
               link: `/components/${customElement.name}`
             }
-          }).sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1),
+          }),
       },
     ]
   };
