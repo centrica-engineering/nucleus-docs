@@ -106,7 +106,8 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     }
 
     a[aria-current] {
-      background-color: var(--ns-color-base-200);
+      background-color: var(--ns-color-base-300);
+      font-weight: 800;
     }
   }
 
@@ -128,21 +129,8 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     background-color: var(--ns-color-teal);
   }
 
-  .section-tab::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 1.5rem;
-      width: 0.625em;
-      height: 0.625em;
-      border-radius: 50%;
-      border-style: solid;
-      border-width: 0.125em;
-      border-color: var(--ns-color-teal);
-      transform: translateY(-50%);
-    }
 
-   @media (min-width: 72rem) {
+  @media (min-width: 72rem) {
     .page-title {
       min-height: 178px;
 
