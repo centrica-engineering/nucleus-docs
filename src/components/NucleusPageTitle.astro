@@ -1,49 +1,107 @@
 ---
 import type { Props } from "@astrojs/starlight/props";
 import Default from '@astrojs/starlight/components/PageTitle.astro';
+import { Image } from "astro:assets";
 
-const { slug } = Astro.params;
-const slugRoot = `/${slug}`;
-const isComponentPage = slug?.indexOf('components/ns') > -1;
 const toc = Astro.props.toc;
-console.log(Astro.props.slug);
+const { slug } = Astro.params;
+const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
 const componentName = Astro.props.slug?.replace('components/', '');
+const images = import.meta.glob("../assets/masthead/**/*");
+const mastImage = images[`../assets/masthead/${slug}.svg`];
 ---
 
 <div class="page-title">
-  <Default {...Astro.props}></Default>
-
+  <div class="title">
+    <Default {...Astro.props}></Default>
+    {
+      isComponentPage && (
+        <code>&lt;{componentName}&gt;</code>
+      )
+    }
+  </div>
+  <!-- TODO: @drew - 2024-01-08 - conditionaly show .decoration when mastheadImage returns a [200] and not on [404] -->
   {
-    isComponentPage && (
-      <code>&lt;{componentName}&gt;</code>
-    )
-  }
-  {
-    isComponentPage && toc?.items?.length > 0 && (
-      <div class="page-nav">
-        {
-          toc.items.map((toc) => <a class="page-nav-header" href=`#${toc.slug}`>{toc.text}</a>)
-        }
+    mastImage && (
+      <div class="decoration">
+        <Image src={mastImage()} alt="" {...Astro.props} />
       </div>
     )
   }
 </div>
 
+{
+  isComponentPage && toc?.items?.length > 0 && (
+    <div class="page-nav">
+      {
+        toc.items.map((toc) => <a class="page-nav-header" href=`#${toc.slug}`>{toc.text}</a>)
+      }
+    </div>
+  )
+}
+
 <style>
   .page-title {
-    padding-block-start: 1rem;
-    padding-inline: 1.5rem;
+    position: relative;
+    background-color: #32647F;
+    color: white;
+    padding-inline-start: var(--sl-content-pad-x);
+    padding-inline-end: var(--sl-content-pad-x);
+    padding-block-start: calc(var(--sl-content-pad-x) * 2);
+    padding-block-end: calc(var(--sl-content-pad-x) * 2);
+    border-radius: var(--sl-content-pad-x);
+    display: flex;
+    min-height: 145px;
+
+    h1 {
+      margin-top: 0;
+      color: white;
+    }
+
+    .decoration {
+      position: absolute;
+      top: calc(var(--sl-content-pad-x) * 1.5);
+      right: calc(var(--sl-content-pad-x) * 4);
+      width: 90px;
+      height: 90px;
+
+      /* NOTE: @drew - 2024-01-09 - overriding the inline styles for the image */
+      img {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
   }
 
   .page-nav {
-    padding-block: 1rem;
-  }
+    background-color: var(--sl-color-black);
+    margin-block-start: var(--sl-content-pad-x);
+    border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
+    
+    [href="#_top"] {
+      display: none;
+    }
 
-  .page-nav [href="#_top"] {
-    display: none;
+    a {
+      text-decoration: none;
+      font-weight: 500;
+    }
   }
 
   .page-nav-header {
-    padding-right: 1rem;
+    display: inline-block;
+    padding-inline: 32px;
+    padding-block: 16px;
+  }
+
+   @media (min-width: 72rem) {
+    .page-title {
+      min-height: 178px;
+
+      .decoration {
+        width: 130px;
+        height: 130px;
+      }
+    }
   }
 </style>

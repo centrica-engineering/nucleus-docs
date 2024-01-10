@@ -6,16 +6,16 @@ sidebar:
 
 export const componentName = "ns-landmark";
 
-import Specification from '../../../components/specification.astro';
-import Placement from '../../../components/placement.astro';
-import CompDetails from '../../../components/cem-description.astro';
-import ExampleViewer from '../../../components/example-viewer.astro';
+import Specification from '@components/specification.astro';
+import Placement from '@components/placement.astro';
+import CompDetails from '@components/cem-description.astro';
+import ExampleViewer from '@components/example-viewer.astro';
 
-import ExampleStandard from '../_examples/components/ns-landmark/standard.html';
-import ExampleSummit from '../_examples/components/ns-landmark/summit.html';
-import ExampleHillside from '../_examples/components/ns-landmark/hillside.html';
-import ExampleValley from '../_examples/components/ns-landmark/valley.html';
-import ExampleLakeside from '../_examples/components/ns-landmark/lakeside.html';
+import ExampleStandard from '@examples/components/ns-landmark/standard.html';
+import ExampleSummit from '@examples/components/ns-landmark/summit.html';
+import ExampleHillside from '@examples/components/ns-landmark/hillside.html';
+import ExampleValley from '@examples/components/ns-landmark/valley.html';
+import ExampleLakeside from '@examples/components/ns-landmark/lakeside.html';
 
 ## Overview
 
@@ -79,7 +79,9 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Summit
 
-![](../../../assets/components/ns-landmark/content-guidance-summit.webp)
+![](@assets/components/ns-landmark/guidance-summit.webp)
+
+#### Key
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -91,15 +93,14 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Capture the moment. | Allow the card to cover important content. |
-| ![do-father-child](../../../assets/components/ns-landmark/best-practice-do1-summit.webp) | ![dont-covered-family](../../../assets/components/ns-landmark/best-practice-dont1-summit.webp) |
 | Set focus of the photo correctly. | Obstruct people's faces with the card. |
-| ![do-couple-on-sofa](../../../assets/components/ns-landmark/best-practice-do2-summit.webp) | ![dont-obstructed-face](../../../assets/components/ns-landmark/best-practice-dont2-summit.webp) |
 | Convey activity related to topic. | Use images with a white background. |
-| ![do-boiler-service](../../../assets/components/ns-landmark/best-practice-do3-summit.webp) | ![dont-boiler-on-white-background](../../../assets/components/ns-landmark/best-practice-dont3-summit.webp) |
 
 ### Hillside
 
-![](../../../assets/components/ns-landmark/content-guidance-hillside.webp)
+![](@assets/components/ns-landmark/guidance-hillside.webp)
+
+#### Key
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -111,17 +112,17 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Use the red decoration for something that is not a promotional promotional or an error-themed page. |
-| ![do-use-same-colour-for-themed-pages](../../../assets/components/ns-landmark/best-practice-do1-hillside.webp) | Add too much content in the landmark. |
 | Keep the content concise. |  |
-| ![do-keep-content-concise](../../../assets/components/ns-landmark/best-practice-do2-hillside.webp) |  |
 
 ### Valley
 
-![](../../../assets/components/ns-landmark/content-guidance-valley.webp)
+![](@assets/components/ns-landmark/guidance-valley.webp)
 
 :::note
 The purpose of the valley landmark is to present an overview of a product or service as a user moves down the funnel of their purchase journey. A CTA may be used, but is not recommended in scenarios where the objective is to encourage further on-page browsing.
 :::
+
+#### Key
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -134,15 +135,14 @@ The purpose of the valley landmark is to present an overview of a product or ser
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Use checked list to highlight your key product benefits | Add a CTA if the purpose of the page is for users to consume the content. |
-| ![use-a-checked-list](../../../assets/components/ns-landmark/best-practice-do1-valley.webp) | ![dont-add-a-cta](../../../assets/components/ns-landmark/best-practice-dont1-valley.webp) |
 | Use a complementary image to add context to your product or service | Use long, verbose content. Keep the user interested with a snappy overview and draw them down the page |
-| ![complementary-image](../../../assets/components/ns-landmark/best-practice-do2-valley.webp) | ![use-short-content](../../../assets/components/ns-landmark/best-practice-dont2-valley.webp) |
 | Use colour, pill and ratio options for alternative aesthetics | Forget to use an image |
-| ![use-colour-and-ratio-options](../../../assets/components/ns-landmark/best-practice-do3-valley.webp) | ![use-an-image](../../../assets/components/ns-landmark/best-practice-dont3-valley.webp) |
 
 ### Lakeside
 
-![](../../../assets/components/ns-landmark/content-guidance-lakeside.webp)
+![](@assets/components/ns-landmark/guidance-lakeside.webp)
+
+#### Key
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -153,11 +153,8 @@ The purpose of the valley landmark is to present an overview of a product or ser
 | 💚 Do | 💔 Don't |
 | :--- | :--- |
 | Use more than one paragraph. | Use more than three paragraphs. |
-| ![do-use-more-than-one-paragraph](../../../assets/components/ns-landmark/best-practice-do1-lakeside.webp) | ![dont-use-more-than-three-paragraphs](../../../assets/components/ns-landmark/best-practice-dont1-lakeside.webp) |
 | Display 400 and 500 error pages. | Use to build a page. |
-| ![display-400-and-500-error-pages](../../../assets/components/ns-landmark/best-practice-do2-lakeside.webp) | ![dont-even-this-about-building-a-page-with-it](../../../assets/components/ns-landmark/best-practice-dont2-lakeside.webp) |
 | Get to the point, in this scenario the Sub heading and CTA have been omitted. |  |
-| ![do-get-to-the-point](../../../assets/components/ns-landmark/best-practice-do3-lakeside.webp) |  |
 
 ### Considerations
 
