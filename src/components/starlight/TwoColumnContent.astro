@@ -70,12 +70,12 @@ import NucleusPageTitle from "../NucleusPageTitle.astro";
     }
 
     :global([data-has-sidebar][data-has-toc]) .main-pane {
-      --sl-content-margin-inline: auto 0;
+      --sl-content-margin-inline: auto auto;
 
       order: 1;
       width: calc(
         var(--sl-content-width) +
-          (100% - var(--sl-content-width) - var(--sl-sidebar-width)) / 2
+          (100% - var(--sl-sidebar-width)) / 2
       );
     }
   }
