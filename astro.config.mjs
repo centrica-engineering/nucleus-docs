@@ -95,6 +95,7 @@ export default defineConfig({
       components: {
         PageTitle: "./src/components/starlight/PageTitle.astro",
         TableOfContents: "./src/components/starlight/TableOfContents.astro",
+        ThemeSelect: './src/components/starlight/ThemeSelect.astro',
         TwoColumnContent: "./src/components/starlight/TwoColumnContent.astro"
       },
       expressiveCode: {
