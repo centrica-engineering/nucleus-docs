@@ -3,7 +3,7 @@ import starlight from "@astrojs/starlight";
 import lit from "@astrojs/lit";
 import customElements from "@connectedhomes/nucleus/ce-doc.json";
 import cem from "@connectedhomes/nucleus/custom-elements.json";
-
+import { nucleusRemarkAside } from "./src/plugins/nucleus-remark-aside";
 
 const isDeprecated = (componentName) =>  cem.tags.find((tag) => tag.name === componentName)?.deprecated;
 
@@ -65,6 +65,9 @@ const componentSidebar = () => {
 }
 
 export default defineConfig({
+  markdown: {
+    remarkPlugins: [nucleusRemarkAside()]
+  },
   integrations: [
     starlight({
       title: "Nucleus Docs",
@@ -79,6 +82,7 @@ export default defineConfig({
       },
       customCss: [
         "./src/styles/custom.css",
+        "./src/styles/aside.css",
         // Fontsource files for to regular and medium font weights.
         "@fontsource/roboto/300.css",
         "@fontsource/roboto/400.css",
@@ -113,7 +117,7 @@ export default defineConfig({
           collapsed: true,
           autogenerate: { directory: "page-types" },
         },
-      ],
+      ]
     }),
     lit(),
   ],
