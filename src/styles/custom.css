@@ -1,37 +1,78 @@
-/* Dark mode colors. */
 :root {
-  --sl-color-accent-low: #17181c;
-  --sl-color-accent: #f39e13;
-  --sl-color-accent-high: #e16e55;
-  --sl-color-white: #ffffff;
-  --sl-color-gray-1: #d0dde7;
-  --sl-color-gray-2: #8aaac2;
-  --sl-color-gray-3: #8aaac2;
-  --sl-color-gray-4: #3e6480;
-  --sl-color-gray-5: #354268;
-  --sl-color-gray-6: #191c23;
-  --sl-color-black: #15171c;
-  --sl-content-width: 54rem;
-  --sl-sidebar-width: 14rem;
+
+  /* Nucleus colours */
+
+  --ns-hue-teal: 202;
+  --ns-hue-red: 0;
+  --ns-hue-orange: 17;
+  --ns-hue-pink: 327;
+  --ns-hue-magenta: 327;
+  --ns-hue-purple: 273;
+  --ns-hue-indigo: 223;
+  --ns-hue-blue: 226;
+  --ns-hue-green: 151;
+
+  --ns-color-white: hsl(0, 0%, 100%);
+  --ns-color-teal: hsl(var(--ns-hue-teal), 40%, 32%);
+  --ns-color-red: hsl(var(--ns-hue-red), 99%, 35%);
+  --ns-color-orange: hsl(var(--ns-hue-orange), 74%, 59%);
+  --ns-color-pink: hsl(var(--ns-hue-pink), 60%, 54%);
+  --ns-color-magenta: hsl(var(--ns-hue-magenta), 52%, 41%);
+  --ns-color-purple: hsl(var(--ns-hue-purple), 43%, 35%);
+  --ns-color-indigo: hsl(var(--ns-hue-indigo), 43%, 35%);
+  --ns-color-blue: hsl(var(--ns-hue-blue), 57%, 29%);
+  --ns-color-green: hsl(var(--ns-hue-green), 43%, 35%);
+  --ns-color-black: hsl(224, 10%, 10%); /* TODO */
+
+  --ns-hue-base: var(--ns-hue-teal);
+
+  --ns-color-base-100: hsl(var(--ns-hue-base), 22%, 96%);
+  --ns-color-base-200: hsl(var(--ns-hue-base), 21%, 88%);
+  --ns-color-base-300: hsl(var(--ns-hue-base), 19%, 66%);
+  --ns-color-base-400: hsl(var(--ns-hue-base), 19%, 51%);
+  --ns-color-base-500: hsl(var(--ns-hue-base), 33%, 37%);
+  --ns-color-base-600: hsl(var(--ns-hue-base), 40%, 15%); /* TODO */
+  --ns-color-base-700: hsl(var(--ns-hue-base), 38%, 5%); /* TODO */
+
+  /* Map Nucleus colours to Starlight variables */
+
+  /* Hues */
+  --sl-hue-orange: var(--ns-hue-orange);
+  --sl-hue-green: var(--ns-hue-green);
+  --sl-hue-blue: var(--ns-hue-blue);
+  --sl-hue-purple: var(--ns-hue-purple);
+  --sl-hue-red: var(--ns-hue-red);
+
+  /* Dark mode */
+  --sl-color-white: var(--ns-color-white);
+  --sl-color-gray-1: var(--ns-color-base-100);
+  --sl-color-gray-2: var(--ns-color-base-200);
+  --sl-color-gray-3: var(--ns-color-base-300);
+  --sl-color-gray-4: var(--ns-color-base-400);
+  --sl-color-gray-5: var(--ns-color-base-500);
+  --sl-color-gray-6: var(--ns-color-base-600);
+  --sl-color-gray-7: var(--ns-color-base-700);
+  --sl-color-black: var(--ns-color-black);
 }
 
-/* Light mode colors. */
-:root[data-theme="light"] {
-  --sl-color-bg: #ffffff;
+:root[data-theme='light'] {
+  /* Light mode */
+  --sl-color-white: var(--ns-color-black);
+  --sl-color-gray-1: var(--ns-color-base-700);
+  --sl-color-gray-2: var(--ns-color-base-600);
+  --sl-color-gray-3: var(--ns-color-base-500);
+  --sl-color-gray-4: var(--ns-color-base-400);
+  --sl-color-gray-5: var(--ns-color-base-300);
+  --sl-color-gray-6: var(--ns-color-base-200);
+  --sl-color-gray-7: var(--ns-color-base-100);
+  --sl-color-black: var(--ns-color-white);
+
+  --sl-color-bg-sidebar: var(--sl-color-gray-7);
+  --sl-color-bg-nav: var(--sl-color-gray-7);
+
   --sl-color-accent-low: #ffffff;
   --sl-color-accent: #b94680;
   --sl-color-accent-high: #557fe1;
-  --sl-color-white: #0f2067;
-  --sl-color-gray-1: #231919;
-  --sl-color-gray-2: #13517e;
-  --sl-color-gray-3: #13517e;
-  --sl-color-gray-4: #8aaac2;
-  --sl-color-gray-5: #7298f0;
-  --sl-color-gray-6: #b9ccda;
-  --sl-color-gray-7: #ffffff;
-  --sl-color-black: #f4f6f8;
-  --sl-color-bg-sidebar: var(--sl-color-black);
-  --sl-color-bg-nav: var(--sl-color-black);
 }
 
 .header {
