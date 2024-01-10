@@ -67,12 +67,14 @@
   --sl-color-gray-7: var(--ns-color-base-100);
   --sl-color-black: var(--ns-color-white);
 
-  --sl-color-bg-sidebar: var(--sl-color-gray-7);
-  --sl-color-bg-nav: var(--sl-color-gray-7);
+  --sl-color-bg-sidebar: var(--ns-color-base-100);
+  --sl-color-bg-nav: var(--ns-color-base-100);
 
-  --sl-color-accent-low: #ffffff;
-  --sl-color-accent: #b94680;
-  --sl-color-accent-high: #557fe1;
+  --sl-color-accent-low: var(--ns-color-base-200);
+  --sl-color-accent: var(--ns-color-pink);
+  --sl-color-accent-high: var(--ns-color-magenta);
+
+  --sl-color-text: var(--ns-color-indigo); /* TODO */
 }
 
 .header {
