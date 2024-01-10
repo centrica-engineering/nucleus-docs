@@ -68,7 +68,6 @@ export class NucleusSectionTabs extends LitElement {
       if (observer) observer.disconnect();
       observer = new IntersectionObserver(setCurrent, { rootMargin: this.getRootMargin() });
       toObserve.forEach((h) => {
-        console.log(h);
         observer?.observe(h)
       });
     };
@@ -77,10 +76,11 @@ export class NucleusSectionTabs extends LitElement {
 
   getRootMargin() {
 		const navBarHeight = document.querySelector('header')?.getBoundingClientRect().height || 0;
+    const pageTitleHeight = document.querySelector('.masthead')?.getBoundingClientRect().height || 0;
 		// `<summary>` only exists in mobile ToC, so will fall back to 0 in large viewport component.
 		const mobileTocHeight = this.querySelector('summary')?.getBoundingClientRect().height || 0;
 		/** Start intersections at nav height + 2rem padding. */
-		const top = navBarHeight + mobileTocHeight + 32;
+		const top = navBarHeight + pageTitleHeight + mobileTocHeight + 32;
 		/** End intersections 1.5rem later. */
 		const bottom = top + 24;
 		const height = document.documentElement.clientHeight;
@@ -88,7 +88,6 @@ export class NucleusSectionTabs extends LitElement {
 	}
 
   updateCurrent(link) {
-    console.log('current ', link);
 		if (link === this._current) {
       return;
     }
