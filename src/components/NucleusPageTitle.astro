@@ -8,7 +8,7 @@ const { slug } = Astro.params;
 const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
 const componentName = Astro.props.slug?.replace('components/', '');
 const images = import.meta.glob("../assets/masthead/**/*");
-const mastImage = images[`../assets/masthead/${slug}.svg`];
+const mastheadImage = images[`../assets/masthead/${slug}.svg`];
 ---
 
 <div class="page-title">
@@ -20,11 +20,10 @@ const mastImage = images[`../assets/masthead/${slug}.svg`];
       )
     }
   </div>
-  <!-- TODO: @drew - 2024-01-08 - conditionaly show .decoration when mastheadImage returns a [200] and not on [404] -->
   {
-    mastImage && (
+    mastheadImage && (
       <div class="decoration">
-        <Image src={mastImage()} alt="" {...Astro.props} />
+        <Image src={mastheadImage()} alt="" {...Astro.props} />
       </div>
     )
   }
@@ -32,9 +31,9 @@ const mastImage = images[`../assets/masthead/${slug}.svg`];
 
 {
   isComponentPage && toc?.items?.length > 0 && (
-    <div class="page-nav">
+    <div class="section-tabs">
       {
-        toc.items.map((toc) => <a class="page-nav-header" href=`#${toc.slug}`>{toc.text}</a>)
+        toc.items.map((toc) => <a class="section-tab" href=`#${toc.slug}`>{toc.text}</a>)
       }
     </div>
   )
@@ -73,7 +72,7 @@ const mastImage = images[`../assets/masthead/${slug}.svg`];
     }
   }
 
-  .page-nav {
+  .section-tabs {
     background-color: var(--sl-color-black);
     margin-block-start: var(--sl-content-pad-x);
     border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
@@ -86,19 +85,45 @@ const mastImage = images[`../assets/masthead/${slug}.svg`];
       text-decoration: none;
       font-weight: 500;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
-  .page-nav-header {
+  .section-tab {
+    position: relative;
     display: inline-block;
-    padding-inline: 32px;
+    padding-inline-start: 48px;
+    padding-inline-end: 32px;
     padding-block: 16px;
+    border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
   }
+
+  .section-tab:hover {
+    background-color: grey;
+  }
+
+  .section-tab::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 1.5rem;
+      width: 0.625em;
+      height: 0.625em;
+      border-radius: 50%;
+      border-style: solid;
+      border-width: 0.125em;
+      border-color: black;
+      transform: translateY(-50%);
+    }
 
    @media (min-width: 72rem) {
     .page-title {
       min-height: 178px;
 
       .decoration {
+        top: var(--sl-content-pad-x);
         width: 130px;
         height: 130px;
       }
