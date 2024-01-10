@@ -1,0 +1,10 @@
+---
+import type { Props } from '../props';
+---
+<>
+</>
+
+{/* Inlined to avoid FOUC. Uses global scope from `ThemeProvider.astro` */}
+<script is:inline>
+  document.documentElement.dataset.theme = 'light';
+</script>
