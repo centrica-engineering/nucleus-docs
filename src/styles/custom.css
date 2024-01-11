@@ -24,7 +24,7 @@
   --ns-color-blue: hsl(var(--ns-hue-blue), 57%, 29%);
   --ns-color-green: hsl(var(--ns-hue-green), 43%, 35%);
   --ns-color-navy: hsl(var(--ns-hue-navy), 75%, 23%);
-  --ns-color-black: hsl(224, 10%, 10%); /* TODO */
+  --ns-color-black: hsl(var(--ns-hue-teal), 40%, 9%);
 
   --ns-hue-base: var(--ns-hue-teal);
 
@@ -33,8 +33,10 @@
   --ns-color-base-300: hsl(var(--ns-hue-base), 19%, 66%);
   --ns-color-base-400: hsl(var(--ns-hue-base), 19%, 51%);
   --ns-color-base-500: hsl(var(--ns-hue-base), 33%, 37%);
-  --ns-color-base-600: hsl(var(--ns-hue-base), 40%, 15%); /* TODO */
-  --ns-color-base-700: hsl(var(--ns-hue-base), 38%, 5%); /* TODO */
+  --ns-color-base-600: hsl(var(--ns-hue-base), 40%, 32%);
+  --ns-color-base-700: hsl(var(--ns-hue-base), 40%, 23%);
+  --ns-color-base-800: hsl(var(--ns-hue-base), 40%, 16%);
+  --ns-color-base-900: hsl(var(--ns-hue-base), 40%, 9%);
 
   /* Map Nucleus colours to Starlight variables */
 
@@ -52,12 +54,23 @@
   --sl-color-gray-3: var(--ns-color-base-300);
   --sl-color-gray-4: var(--ns-color-base-400);
   --sl-color-gray-5: var(--ns-color-base-500);
-  --sl-color-gray-6: var(--ns-color-base-600);
-  --sl-color-gray-7: var(--ns-color-base-700);
+  --sl-color-gray-6: var(--ns-color-base-800);
+  --sl-color-gray-7: var(--ns-color-base-900);
   --sl-color-black: var(--ns-color-black);
+
+  --sl-color-bg-sidebar: var(--ns-color-base-800);
+  --sl-color-bg-nav: var(--ns-color-base-800);
+
+  --sl-color-accent-low: hsl(var(--ns-hue-orange), 54%, 20%);
+  --sl-color-accent: hsl(var(--ns-hue-orange), 100%, 60%);
+  --sl-color-accent-high: hsl(var(--ns-hue-orange), 100%, 85%);
+  
+  --sl-color-text: var(--ns-hue-pink);
+  --sl-color-heading: var(--ns-hue-pink);
 }
 
 :root[data-theme='light'] {
+
   /* Light mode */
   --sl-color-white: var(--ns-color-black);
   --sl-color-gray-1: var(--ns-color-base-700);
@@ -72,11 +85,12 @@
   --sl-color-bg-sidebar: var(--ns-color-base-100);
   --sl-color-bg-nav: var(--ns-color-base-100);
 
-  --sl-color-accent-low: var(--ns-color-base-200);
-  --sl-color-accent: var(--ns-color-pink);
-  --sl-color-accent-high: var(--ns-color-magenta);
+  --sl-color-accent-low: hsl(var(--ns-hue-orange), 88%, 90%);
+  --sl-color-accent: hsl(var(--ns-hue-orange), 90%, 60%);
+  --sl-color-accent-high: hsl(var(--ns-hue-orange), 80%, 30%);
 
   --sl-color-text: var(--ns-color-navy);
+  --sl-color-heading: var(--ns-color-navy);
 }
 
 .header {
@@ -138,6 +152,10 @@ main {
   [6] - this is to left align the content in the table cells
 */
 .sl-markdown-content {
+  :is(h1, h2, h3, h4, h5, h6):not(:where(.not-content *)) {
+    color: var(--sl-color-heading);
+  }
+
   [id^="key"] + table thead {
     display: none; /* [1] */
   }

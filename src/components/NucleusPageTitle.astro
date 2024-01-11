@@ -87,7 +87,7 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
   }
 
   .section-tabs {
-    background-color: var(--ns-color-base-100);
+    background-color: var(--sl-color-gray-7);
     margin-block-start: var(--sl-content-pad-x);
     border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
     
@@ -96,7 +96,7 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     }
 
     a {
-      color: var(--ns-color-teal);
+      color: var(--sl-color-gray-2);
       text-decoration: none;
       font-weight: 500;
     }
@@ -125,12 +125,12 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
   }
 
   .section-tab[aria-current] {
-    background-color: var(--ns-color-base-200);
+    background-color: var(--sl-color-gray-6);
   }
 
   .section-tab:hover::before,
   .section-tab:focus::before {
-    background-color: var(--ns-color-teal);
+    background-color: var(--sl-color-gray-2);
   }
 
 
