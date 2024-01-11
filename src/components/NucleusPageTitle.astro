@@ -104,11 +104,6 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     a:hover {
       text-decoration: underline;
     }
-
-    a[aria-current] {
-      background-color: var(--ns-color-base-300);
-      font-weight: 800;
-    }
   }
 
   .section-tab {
@@ -120,7 +115,16 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
   }
 
-  .section-tab:hover {
+  .section-tab img {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    width: 1.25em;
+    height: 1.25em;
+  }
+
+  .section-tab[aria-current] {
     background-color: var(--ns-color-base-200);
   }
 
