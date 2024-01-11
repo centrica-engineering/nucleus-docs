@@ -76,13 +76,12 @@ export class ExampleView extends LitElement {
 
   get doc() {
     const inner = this.innerHTML;
-
+    // TODO: @drew - 2024-01-02 - This is a hack to get the snippet into ns-panel. This should be done by looking at 'Component placement' in jsdoc
     return `
       <head>
         <script src="https://www.britishgas.co.uk/nucleus/nucleus.min.js" type="text/javascript"></script>
       </head>
       <body>
-        <!-- TODO: @drew - 2024-01-02 - This is a hack to get the snippet into ns-panel. This should be done by looking at 'Component placement' in jsdoc -->
         <main class="ndsn" id="content">
           <ns-panel>
             <div>
