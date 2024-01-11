@@ -7,8 +7,10 @@ const toc = Astro.props.toc;
 const { slug } = Astro.params;
 const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
 const componentName = Astro.props.slug?.replace('components/', '');
-const images = import.meta.glob("../assets/masthead/**/*");
-const mastImage = images[`../assets/masthead/${slug}.svg`];
+const mastheadImages = import.meta.glob("../assets/masthead/**/*");
+const mastheadImage = mastheadImages[`../assets/masthead/${slug}.svg`];
+
+const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
 ---
 
 <div class="page-title">
@@ -20,11 +22,10 @@ const mastImage = images[`../assets/masthead/${slug}.svg`];
       )
     }
   </div>
-  <!-- TODO: @drew - 2024-01-08 - conditionaly show .decoration when mastheadImage returns a [200] and not on [404] -->
   {
-    mastImage && (
+    mastheadImage && (
       <div class="decoration">
-        <Image src={mastImage()} alt="" {...Astro.props} />
+        <Image src={mastheadImage()} alt="" {...Astro.props} />
       </div>
     )
   }
@@ -32,19 +33,31 @@ const mastImage = images[`../assets/masthead/${slug}.svg`];
 
 {
   isComponentPage && toc?.items?.length > 0 && (
-    <div class="page-nav">
-      {
-        toc.items.map((toc) => <a class="page-nav-header" href=`#${toc.slug}`>{toc.text}</a>)
-      }
-    </div>
+    <section-tabs>
+      <div class="section-tabs">
+        {
+          toc.items.filter((toc) => toc.text !== 'Top').map((toc) => {
+            const sectionTabImage = sectionTabImages[`../assets/sectiontab/${toc.text?.toLowerCase()}.svg`];
+            return (
+              <a class="section-tab" href=`#${toc.slug}`>
+                <Image src={sectionTabImage()} alt="" {...Astro.props} />
+                <span>{toc.text}</span>
+              </a>
+              )
+          })
+        }
+      </div>
+    </section-tabs>
   )
 }
+
+<script src="./NucleusSectionTabs"></script>
 
 <style>
   .page-title {
     position: relative;
-    background-color: #32647F;
-    color: white;
+    background-color: var(--ns-color-teal);
+    color: var(--ns-color-white);
     padding-inline-start: var(--sl-content-pad-x);
     padding-inline-end: var(--sl-content-pad-x);
     padding-block-start: calc(var(--sl-content-pad-x) * 2);
@@ -55,7 +68,7 @@ const mastImage = images[`../assets/masthead/${slug}.svg`];
 
     h1 {
       margin-top: 0;
-      color: white;
+      color: var(--ns-color-white);
     }
 
     .decoration {
@@ -73,8 +86,8 @@ const mastImage = images[`../assets/masthead/${slug}.svg`];
     }
   }
 
-  .page-nav {
-    background-color: var(--sl-color-black);
+  .section-tabs {
+    background-color: var(--ns-color-base-100);
     margin-block-start: var(--sl-content-pad-x);
     border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
     
@@ -83,22 +96,50 @@ const mastImage = images[`../assets/masthead/${slug}.svg`];
     }
 
     a {
+      color: var(--ns-color-teal);
       text-decoration: none;
       font-weight: 500;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
-  .page-nav-header {
+  .section-tab {
+    position: relative;
     display: inline-block;
-    padding-inline: 32px;
+    padding-inline-start: 48px;
+    padding-inline-end: 32px;
     padding-block: 16px;
+    border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
   }
 
-   @media (min-width: 72rem) {
+  .section-tab img {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    width: 1.25em;
+    height: 1.25em;
+  }
+
+  .section-tab[aria-current] {
+    background-color: var(--ns-color-base-200);
+  }
+
+  .section-tab:hover::before,
+  .section-tab:focus::before {
+    background-color: var(--ns-color-teal);
+  }
+
+
+  @media (min-width: 72rem) {
     .page-title {
       min-height: 178px;
 
       .decoration {
+        top: var(--sl-content-pad-x);
         width: 130px;
         height: 130px;
       }

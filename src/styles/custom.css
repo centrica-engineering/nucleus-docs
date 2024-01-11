@@ -11,6 +11,7 @@
   --ns-hue-indigo: 223;
   --ns-hue-blue: 226;
   --ns-hue-green: 151;
+  --ns-hue-navy: 228;
 
   --ns-color-white: hsl(0, 0%, 100%);
   --ns-color-teal: hsl(var(--ns-hue-teal), 40%, 32%);
@@ -22,6 +23,7 @@
   --ns-color-indigo: hsl(var(--ns-hue-indigo), 43%, 35%);
   --ns-color-blue: hsl(var(--ns-hue-blue), 57%, 29%);
   --ns-color-green: hsl(var(--ns-hue-green), 43%, 35%);
+  --ns-color-navy: hsl(var(--ns-hue-navy), 75%, 23%);
   --ns-color-black: hsl(224, 10%, 10%); /* TODO */
 
   --ns-hue-base: var(--ns-hue-teal);
@@ -74,7 +76,7 @@
   --sl-color-accent: var(--ns-color-pink);
   --sl-color-accent-high: var(--ns-color-magenta);
 
-  --sl-color-text: var(--ns-color-indigo); /* TODO */
+  --sl-color-text: var(--ns-color-navy);
 }
 
 .header {
