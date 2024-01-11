@@ -5,7 +5,6 @@ export class ExampleView extends LitElement {
 
   static get properties() {
     return {
-      title: { type: String },
       __minHeight: { type: Number, state: true },
       __isDragging: { type: Boolean, state: true }
     }
@@ -68,8 +67,6 @@ export class ExampleView extends LitElement {
   constructor() {
     super();
 
-    this.title = 'Example';
-
     this.__minHeight = 275;
     this.__isDragging = false;
   }
@@ -81,7 +78,7 @@ export class ExampleView extends LitElement {
         <script src="https://www.britishgas.co.uk/nucleus/nucleus.min.js" type="text/javascript"></script>
       </head>
       <body>
-        <main class="ndsn" id="content">
+        <main class="ndsn">
           <ns-panel>
             <div>
               ${inner}
@@ -136,4 +133,6 @@ export class ExampleView extends LitElement {
   }
 }
 
-customElements.define('example-view', ExampleView);
+// if (!customElements?.get('example-view')) {
+  customElements.define('example-view', ExampleView);
+// }
