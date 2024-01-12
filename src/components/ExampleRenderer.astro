@@ -48,20 +48,26 @@ const htmlSnippet = `
       slider.removeAttribute('selected');
     });
   });
+
+  window.onload = function () {
+    const iframes = document.querySelectorAll('.example-iframe');
+    iframes.forEach((iframe) => {
+        iframe.height = iframe.contentWindow.document.body.scrollHeight + "px !important;";
+    });
+  }
+  
 </script>
 
-<div class=`example example-${randomId}`>
-  <div class=`preview preview-${randomId}` style="min-height: 275px;">
+<div class=`example example-${randomId} not-content`>
+  <div class=`preview preview-${randomId}`>
     <iframe
       srcdoc={htmlSnippet}
       class=`example-iframe iframe-${randomId}`
-      style="min-height: 275px;"
       height="100%"
       allowfullscreen
       sandbox="allow-scripts allow-same-origin"
     ></iframe>
   </div>
-  <button class=`slider slider-${randomId}` id=`${randomId}`>===</button>
 </div>
 
 <style>
