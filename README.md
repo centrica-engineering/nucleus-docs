@@ -1,4 +1,4 @@
-# Welcome to Nucleus
+# Welcome to Nucleus.
 
 A design system by and for British Gas
 
