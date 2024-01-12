@@ -61,15 +61,11 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     padding-inline-end: var(--sl-content-pad-x);
     border-radius: 1.25rem;
     display: flex;
-    align-items: center;
-
-    .title {
-      margin-block: 1rem;
-    }
+    min-height: 116px;
 
     h1 {
-      margin-top: 0;
       color: var(--ns-color-white);
+      line-height: 1.16666;
     }
 
     code {
@@ -77,6 +73,7 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     }
 
     .decoration {
+      margin-block-start: 1rem;
       margin-inline-start: auto;
       width: 64px;
       height: 64px;
@@ -140,8 +137,8 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
   @media (min-width: 50rem) {
     .page-title {
       .decoration {
-        width: 80px;
-        height: 80px;
+        width: 84px;
+        height: 84px;
       }
     }
   }
