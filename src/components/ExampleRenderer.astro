@@ -1,0 +1,106 @@
+---
+const exampleHTML = await Astro.slots.render('template').then((value) => value);
+
+const randomId = Math.round(Math.random() * 100);
+const htmlSnippet = `
+  <head>
+    <script src="https://www.britishgas.co.uk/nucleus/nucleus.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <main class="ndsn">
+      <ns-panel>
+        <div>
+          ${exampleHTML}
+        </div>
+      </ns-panel>
+    </main>
+  </body>
+`;
+---
+
+<script>
+  const sliders = document.querySelectorAll('.slider');
+  sliders?.forEach((slider) => {
+    slider.addEventListener('mousemove', (event) => {
+      event.preventDefault();
+      if (slider.getAttribute('selected') !== 'true') {
+        return;
+      }
+      const iframeContainer = document.querySelector(`.preview-${slider.id}`);
+      const iframe = document.querySelector(`.iframe-${slider.id}`);
+      if (iframeContainer) {
+        const iframeHeight = iframeContainer?.style?.minHeight?.replace('px', '');
+        const initialHeight = parseInt(iframeHeight) || 275;
+        iframeContainer.style.minHeight = `${Math.max(initialHeight + event.movementY, 200)}px`;
+        iframe.style.minHeight = `${Math.max(initialHeight + event.movementY, 200)}px`;
+      }
+    });
+
+    slider.addEventListener('mousedown', (event) => {
+      slider.setAttribute('selected', 'true');
+    });
+
+    slider.addEventListener('mouseup', (event) => {
+      slider.removeAttribute('selected');
+    });
+
+    slider.addEventListener('mouseleave', (event) => {
+      slider.removeAttribute('selected');
+    });
+  });
+</script>
+
+<div class=`example example-${randomId}`>
+  <div class=`preview preview-${randomId}` style="min-height: 275px;">
+    <iframe
+      srcdoc={htmlSnippet}
+      class=`iframe iframe-${randomId}`
+      style="min-height: 275px;"
+      width="100%"
+      height="100%"
+      allowfullscreen
+      sandbox="allow-scripts allow-same-origin"
+    ></iframe>
+  </div>
+  <button class=`slider slider-${randomId}` id=`${randomId}`>===</button>
+</div>
+
+<style>
+  .example {
+    background: #fff;
+    border-start-start-radius: 0.5rem;
+    border-start-end-radius: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--sl-color-gray-6);
+  }
+
+  iframe {
+    border: none;
+    transform: scale(0.75);
+    transform-origin: 0 0;
+    width: 133%;
+  }
+
+  .slider {
+    cursor: ns-resize;
+    width: 100%;
+    text-align: center;
+    background: #eee;
+    user-select: none;
+    color: #666;
+    border: none;
+  }
+
+  .slider:active {
+    background: #ccc;
+  }
+
+  .slider:active::after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+  }
+</style>

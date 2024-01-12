@@ -1,14 +1,11 @@
 ---
-const code = Astro.props;
-
-import { ExampleView } from './ce/example-view';
 import CodeSnippet from './code-snippet.astro';
+import ExampleRenderer from './ExampleRenderer.astro';
 ---
 
-<div class="example-container">
-  <ExampleView client:visible>
-    <slot name="template" slot="template"/>
-  </ExampleView>
+<ExampleRenderer>
+  <slot name="template" slot="template"/>
+</ExampleRenderer>
   
   <CodeSnippet>
     <slot name="template" slot="template"/>
