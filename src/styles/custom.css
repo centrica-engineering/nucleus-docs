@@ -67,6 +67,16 @@
   
   --sl-color-text: var(--ns-hue-pink);
   --sl-color-heading: var(--ns-hue-pink);
+
+  /* Heading size */
+  --sl-text-xl: 1.25rem; /* 20px */
+  --sl-text-2xl: 1.3125rem; /* 21px */
+  --sl-text-3xl: 1.3125rem; /* 21px */
+  --sl-text-4xl: 2rem; /* 32px */
+  --sl-text-5xl: 4rem; /* 64px */
+
+  /* Line height */
+  --sl-line-height: 1.5;
 }
 
 :root[data-theme='light'] {
@@ -111,6 +121,10 @@ main {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-weight: 400;
+}
+
 /* NOTE: @drew - 2024-01-03 - this selector is to target the homepage */
 :root[data-has-hero] {
   .page-title {
@@ -152,7 +166,7 @@ main {
   [6] - this is to left align the content in the table cells
 */
 .sl-markdown-content {
-  :is(h1, h2, h3, h4, h5, h6):not(:where(.not-content *)) {
+  :is(h1, h2, h3, h4, h5, h6) {
     color: var(--sl-color-heading);
   }
 
@@ -180,15 +194,14 @@ main {
 }
 
 .purpose {
-  padding-inline-start: 1rem;
+  padding-inline-start: var(--sl-nav-pad-y);
   border-inline-start-style: solid;
   border-inline-start-width: 0.25rem;
   border-inline-start-color: var(--sl-color-accent);
 }
 
 .purpose p {
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-size: var(--sl-text-xl);
   font-weight: 600;
 }
 
