@@ -24,7 +24,7 @@
   --ns-color-blue: hsl(var(--ns-hue-blue), 57%, 29%);
   --ns-color-green: hsl(var(--ns-hue-green), 43%, 35%);
   --ns-color-navy: hsl(var(--ns-hue-navy), 75%, 23%);
-  --ns-color-black: hsl(224, 10%, 10%); /* TODO */
+  --ns-color-black: hsl(var(--ns-hue-teal), 40%, 9%);
 
   --ns-hue-base: var(--ns-hue-teal);
 
@@ -33,8 +33,10 @@
   --ns-color-base-300: hsl(var(--ns-hue-base), 19%, 66%);
   --ns-color-base-400: hsl(var(--ns-hue-base), 19%, 51%);
   --ns-color-base-500: hsl(var(--ns-hue-base), 33%, 37%);
-  --ns-color-base-600: hsl(var(--ns-hue-base), 40%, 15%); /* TODO */
-  --ns-color-base-700: hsl(var(--ns-hue-base), 38%, 5%); /* TODO */
+  --ns-color-base-600: hsl(var(--ns-hue-base), 40%, 32%);
+  --ns-color-base-700: hsl(var(--ns-hue-base), 40%, 23%);
+  --ns-color-base-800: hsl(var(--ns-hue-base), 40%, 16%);
+  --ns-color-base-900: hsl(var(--ns-hue-base), 40%, 9%);
 
   /* Map Nucleus colours to Starlight variables */
 
@@ -52,12 +54,42 @@
   --sl-color-gray-3: var(--ns-color-base-300);
   --sl-color-gray-4: var(--ns-color-base-400);
   --sl-color-gray-5: var(--ns-color-base-500);
-  --sl-color-gray-6: var(--ns-color-base-600);
-  --sl-color-gray-7: var(--ns-color-base-700);
+  --sl-color-gray-6: var(--ns-color-base-800);
+  --sl-color-gray-7: var(--ns-color-base-900);
   --sl-color-black: var(--ns-color-black);
+
+  --sl-color-bg-sidebar: var(--ns-color-base-800);
+  --sl-color-bg-nav: var(--ns-color-base-800);
+
+  --sl-color-accent-low: hsl(var(--ns-hue-orange), 54%, 20%);
+  --sl-color-accent: hsl(var(--ns-hue-orange), 100%, 60%);
+  --sl-color-accent-high: hsl(var(--ns-hue-orange), 100%, 85%);
+  
+  --sl-color-text: var(--ns-hue-pink);
+  --sl-color-heading: var(--ns-hue-pink);
+
+  /* Text size and line height */
+  --sl-text-xs: 0.875rem; /* 14px */
+  --sl-text-sm: 1rem; /* 16px */
+  --sl-text-base: 1.125rem; /* 18px */
+  --sl-text-lg: 1.1875rem; /* 19px */
+  --sl-text-xl: 1.25rem; /* 20px */
+  --sl-text-2xl: 1.3125rem; /* 21px */
+  --sl-text-3xl: 1.3125rem; /* 21px */
+  --sl-text-4xl: 2rem; /* 32px */
+  --sl-text-5xl: 3rem; /* 48px */
+
+	--sl-text-code: var(--sl-text-xs);
+
+  /* Line height */
+  --sl-line-height: 1.5;
+
+  /* Key layout values */
+	--sl-sidebar-width: 20.625rem;
 }
 
 :root[data-theme='light'] {
+
   /* Light mode */
   --sl-color-white: var(--ns-color-black);
   --sl-color-gray-1: var(--ns-color-base-700);
@@ -72,11 +104,12 @@
   --sl-color-bg-sidebar: var(--ns-color-base-100);
   --sl-color-bg-nav: var(--ns-color-base-100);
 
-  --sl-color-accent-low: var(--ns-color-base-200);
-  --sl-color-accent: var(--ns-color-pink);
-  --sl-color-accent-high: var(--ns-color-magenta);
+  --sl-color-accent-low: hsl(var(--ns-hue-orange), 88%, 90%);
+  --sl-color-accent: hsl(var(--ns-hue-orange), 90%, 60%);
+  --sl-color-accent-high: hsl(var(--ns-hue-orange), 80%, 30%);
 
   --sl-color-text: var(--ns-color-navy);
+  --sl-color-heading: var(--ns-color-navy);
 }
 
 .header {
@@ -92,14 +125,33 @@
   padding-top: 0;
 }
 
+.right-sidebar-panel {
+  li {
+    margin-block: 0.5rem;
+  }
+
+  a {
+    font-size: var(--sl-text-sm);
+  }
+}
+
+body {
+  font-size: var(--sl-text-body);
+}
+
 /* Custom fonts */
 main {
   font-family: "Roboto", sans-serif;
+  margin-inline-start: var(--sl-content-pad-x);
+}
+
+h1 {
+  font-weight: 400;
 }
 
 /* NOTE: @drew - 2024-01-03 - this selector is to target the homepage */
 :root[data-has-hero] {
-  .page-title {
+  .masthead {
     display: none;
   }
 
@@ -119,7 +171,7 @@ main {
   }
 
   .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
-    scroll-margin-top: 309px;
+    scroll-margin-top: 80px;
   }
 }
 
@@ -138,6 +190,10 @@ main {
   [6] - this is to left align the content in the table cells
 */
 .sl-markdown-content {
+  :is(h1, h2, h3, h4, h5, h6) {
+    color: var(--sl-color-heading);
+  }
+
   [id^="key"] + table thead {
     display: none; /* [1] */
   }
@@ -162,15 +218,14 @@ main {
 }
 
 .purpose {
-  padding-inline-start: 1rem;
+  padding-inline-start: var(--sl-nav-pad-y);
   border-inline-start-style: solid;
   border-inline-start-width: 0.25rem;
   border-inline-start-color: var(--sl-color-accent);
 }
 
 .purpose p {
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-size: var(--sl-text-xl);
   font-weight: 600;
 }
 
@@ -198,11 +253,12 @@ main {
 .sidebar-content {
   ul.top-level {
     ul, li {
-      margin: 0.25rem;
+      margin-block: 0.5rem;
     }
 
     a {
-      font-size: 13px;
+      font-size: var(--sl-text-sm);
+      font-weight: 600;
     }
 
     li {
