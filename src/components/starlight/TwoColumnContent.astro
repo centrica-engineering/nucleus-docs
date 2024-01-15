@@ -1,11 +1,9 @@
 ---
 import type { Props } from "@astrojs/starlight/props";
-import NucleusPageTitle from "../NucleusPageTitle.astro";
+import NucleusMasthead from "../NucleusMasthead.astro";
 ---
 
-<div class="masthead">
-  <NucleusPageTitle {...Astro.props} />
-</div>
+<NucleusMasthead {...Astro.props} />
 
 <div class="lg:sl-flex">
   {
@@ -21,17 +19,6 @@ import NucleusPageTitle from "../NucleusPageTitle.astro";
 </div>
 
 <style>
-  .masthead {
-    position: sticky;
-    top: var(--sl-nav-height);
-    z-index: 1;
-    background-color: var(--sl-color-bg);
-    padding-inline-start: var(--sl-content-pad-x);
-    padding-inline-end: var(--sl-content-pad-x);
-    padding-block-start: var(--sl-content-pad-x);
-    padding-block-end: var(--sl-content-pad-x);
-  }
-
   .main-pane {
     isolation: isolate;
   }

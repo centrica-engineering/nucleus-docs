@@ -13,7 +13,7 @@ const mastheadImage = mastheadImages[`../assets/masthead/${slug}.svg`];
 const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
 ---
 
-<div class="page-title">
+<div class="masthead">
   <div class="title">
     <Default {...Astro.props}></Default>
     {
@@ -34,8 +34,9 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
 {
   isComponentPage && toc?.items?.length > 0 && (
     <section-tabs>
-      <div class="section-tabs">
-        {
+      <div class="sticky">
+        <div class="section-tabs">
+          {
           toc.items.filter((toc) => toc.text !== 'Top').map((toc) => {
             const sectionTabImage = sectionTabImages[`../assets/sectiontab/${toc.text?.toLowerCase()}.svg`];
             return (
@@ -47,50 +48,66 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
           })
         }
       </div>
-    </section-tabs>
+    </div>
+  </section-tabs>
   )
 }
 
 <script src="./NucleusSectionTabs"></script>
 
 <style>
-  .page-title {
+  .masthead {
     background-color: var(--ns-color-teal);
-    color: var(--ns-color-white);
+    margin-block-start: var(--sl-content-pad-x);
+    margin-inline-start: var(--sl-content-pad-x);
+    margin-inline-end: var(--sl-content-pad-x);
     padding-inline-start: var(--sl-content-pad-x);
     padding-inline-end: var(--sl-content-pad-x);
     border-radius: 1.25rem;
     display: flex;
-    min-height: 116px;
+    min-height: 96px;
+  }
+
+  .title {
+    color: var(--ns-color-white);
 
     h1 {
-      color: var(--ns-color-white);
+      color: inherit;
       line-height: 1.16666;
     }
 
     code {
       font-size: var(--sl-text-3xl);
     }
+  }
 
-    .decoration {
-      margin-block-start: 1rem;
-      margin-inline-start: auto;
-      width: 64px;
-      height: 64px;
+  .decoration {
+    margin-block-start: 1rem;
+    margin-inline-start: auto;
+    width: 64px;
+    height: 64px;
 
-      /* NOTE: @drew - 2024-01-09 - overriding the inline styles for the image */
-      img {
-        width: 100% !important;
-        height: 100% !important;
-      }
+    /* NOTE: @drew - 2024-01-09 - overriding the inline styles for the image */
+    img {
+      width: 100% !important;
+      height: 100% !important;
     }
+  }
+
+  .sticky {
+    background-color: var(--sl-color-bg);
+    position: sticky;
+    top: var(--sl-nav-height);
+    z-index: 1;
+    padding-block-start: var(--sl-content-pad-x);
   }
 
   .section-tabs {
     background-color: var(--sl-color-gray-7);
-    margin-block-start: var(--sl-content-pad-x);
+    margin-inline-start: var(--sl-content-pad-x);
+    margin-inline-end: var(--sl-content-pad-x);
     border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
-    
+
     [href="#_top"] {
       display: none;
     }
@@ -113,33 +130,40 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     padding-inline-end: 32px;
     padding-block: 16px;
     border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      transform: translateY(-50%);
+      width: 1.25em;
+      height: 1.25em;
+    }
+
+    [aria-current] {
+      background-color: var(--sl-color-gray-6);
+    }
+
+    :hover::before,
+    :focus::before {
+      background-color: var(--sl-color-gray-2);
+    }
   }
 
-  .section-tab img {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-    width: 1.25em;
-    height: 1.25em;
+  @media (width < 72rem) {
+    .section-tabs {
+      display: none;
+    }
   }
-
-  .section-tab[aria-current] {
-    background-color: var(--sl-color-gray-6);
-  }
-
-  .section-tab:hover::before,
-  .section-tab:focus::before {
-    background-color: var(--sl-color-gray-2);
-  }
-
 
   @media (min-width: 50rem) {
-    .page-title {
-      .decoration {
-        width: 84px;
-        height: 84px;
-      }
+    .masthead {
+      min-height: 116px;
+    }
+
+    .decoration {
+      width: 84px;
+      height: 84px;
     }
   }
 </style>

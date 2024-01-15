@@ -122,6 +122,7 @@
 /* Custom fonts */
 main {
   font-family: "Roboto", sans-serif;
+  margin-inline-start: var(--sl-content-pad-x);
 }
 
 h1 {
@@ -150,7 +151,7 @@ h1 {
   }
 
   .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
-    scroll-margin-top: 309px;
+    scroll-margin-top: 80px;
   }
 }
 
