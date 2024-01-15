@@ -131,7 +131,7 @@ h1 {
 
 /* NOTE: @drew - 2024-01-03 - this selector is to target the homepage */
 :root[data-has-hero] {
-  .page-title {
+  .masthead {
     display: none;
   }
 
