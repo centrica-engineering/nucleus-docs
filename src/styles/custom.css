@@ -68,12 +68,18 @@
   --sl-color-text: var(--ns-hue-pink);
   --sl-color-heading: var(--ns-hue-pink);
 
-  /* Heading size */
+  /* Text size and line height */
+  --sl-text-xs: 0.875rem; /* 14px */
+  --sl-text-sm: 1rem; /* 16px */
+  --sl-text-base: 1.125rem; /* 18px */
+  --sl-text-lg: 1.1875rem; /* 19px */
   --sl-text-xl: 1.25rem; /* 20px */
   --sl-text-2xl: 1.3125rem; /* 21px */
   --sl-text-3xl: 1.3125rem; /* 21px */
   --sl-text-4xl: 2rem; /* 32px */
   --sl-text-5xl: 3rem; /* 48px */
+
+	--sl-text-code: var(--sl-text-xs);
 
   /* Line height */
   --sl-line-height: 1.5;
@@ -117,6 +123,20 @@
 .right-sidebar {
   border-inline-start-style: none;
   padding-top: 0;
+}
+
+.right-sidebar-panel {
+  li {
+    margin-block: 0.5rem;
+  }
+
+  a {
+    font-size: var(--sl-text-sm);
+  }
+}
+
+body {
+  font-size: var(--sl-text-body);
 }
 
 /* Custom fonts */
@@ -233,11 +253,12 @@ h1 {
 .sidebar-content {
   ul.top-level {
     ul, li {
-      margin: 0.25rem;
+      margin-block: 0.5rem;
     }
 
     a {
-      font-size: 13px;
+      font-size: var(--sl-text-sm);
+      font-weight: 600;
     }
 
     li {
