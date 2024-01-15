@@ -131,6 +131,10 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     padding-block: 16px;
     font-size: var(--sl-text-sm);
     border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
+    transition-property: background-color;
+    transition-delay: 0ms;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in-out;
 
     img {
       position: absolute;
