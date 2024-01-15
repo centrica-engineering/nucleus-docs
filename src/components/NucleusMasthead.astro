@@ -140,12 +140,12 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
       height: 1.25em;
     }
 
-    [aria-current] {
+    &[aria-current] {
       background-color: var(--sl-color-gray-6);
     }
 
-    :hover::before,
-    :focus::before {
+    &:hover::before,
+    &:focus::before {
       background-color: var(--sl-color-gray-2);
     }
   }
