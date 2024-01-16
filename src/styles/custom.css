@@ -123,10 +123,6 @@
   border-inline-end-style: none;
 }
 
-.right-sidebar {
-  border-inline-start-style: none;
-}
-
 .right-sidebar-panel {
   li {
     margin-block: 0.5rem;
