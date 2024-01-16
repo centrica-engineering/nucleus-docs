@@ -79,13 +79,16 @@
   --sl-text-4xl: 2rem; /* 32px */
   --sl-text-5xl: 3rem; /* 48px */
 
-	--sl-text-code: var(--sl-text-xs);
+  --sl-text-code: var(--sl-text-xs);
 
   /* Line height */
   --sl-line-height: 1.5;
 
   /* Key layout values */
-	--sl-sidebar-width: 20.625rem;
+  --sl-sidebar-width: 20.625rem;
+  --ns-masthead-height: 8.75rem;
+  --ns-section-tabs-height: 5rem;
+
 }
 
 :root[data-theme='light'] {
@@ -118,11 +121,6 @@
 
 .sidebar-pane {
   border-inline-end-style: none;
-}
-
-.right-sidebar {
-  border-inline-start-style: none;
-  padding-top: 0;
 }
 
 .right-sidebar-panel {

@@ -34,20 +34,18 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
 {
   isComponentPage && toc?.items?.length > 0 && (
     <section-tabs>
-      <div class="sticky">
-        <div class="section-tabs">
-          {
-          toc.items.filter((toc) => toc.text !== 'Top').map((toc) => {
-            const sectionTabImage = sectionTabImages[`../assets/sectiontab/${toc.text?.toLowerCase()}.svg`];
-            return (
-              <a class="section-tab" href=`#${toc.slug}`>
-                <Image src={sectionTabImage()} alt="" {...Astro.props} />
-                <span>{toc.text}</span>
-              </a>
-              )
-          })
-        }
-      </div>
+      <div class="section-tabs">
+        {
+        toc.items.filter((toc) => toc.text !== 'Top').map((toc) => {
+          const sectionTabImage = sectionTabImages[`../assets/sectiontab/${toc.text?.toLowerCase()}.svg`];
+          return (
+            <a class="section-tab" href=`#${toc.slug}`>
+              <Image src={sectionTabImage()} alt="" {...Astro.props} />
+              <span>{toc.text}</span>
+            </a>
+            )
+        })
+      }
     </div>
   </section-tabs>
   )
@@ -66,6 +64,19 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     border-radius: 1.25rem;
     display: flex;
     min-height: 96px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(var(--sl-content-pad-x) * -1);
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: var(--sl-content-pad-x);
+      background-color: var(--sl-color-bg);
+    }
   }
 
   .title {
@@ -94,19 +105,27 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     }
   }
 
-  .sticky {
-    background-color: var(--sl-color-bg);
-    position: sticky;
-    top: var(--sl-nav-height);
-    z-index: 1;
-    padding-block-start: var(--sl-content-pad-x);
-  }
-
   .section-tabs {
     background-color: var(--sl-color-gray-7);
     margin-inline-start: var(--sl-content-pad-x);
     margin-inline-end: var(--sl-content-pad-x);
+    margin-block-end: var(--sl-content-pad-x);
     border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
+    position: sticky;
+    top: var(--sl-nav-height);
+    z-index: 1;
+    transform: translateY(var(--sl-content-pad-x));
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(var(--sl-content-pad-x) * -1);
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: var(--sl-content-pad-x);
+      background-color: var(--sl-color-bg);
+    }
 
     [href="#_top"] {
       display: none;
