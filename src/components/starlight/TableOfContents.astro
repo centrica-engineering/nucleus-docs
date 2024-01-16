@@ -1,10 +1,21 @@
 ---
 import type { Props } from "@astrojs/starlight/props";
-import Default from "@astrojs/starlight/components/TableOfContents.astro";
 import { Icon } from '@astrojs/starlight/components';
+import TableOfContentsList from './TableOfContents/TableOfContentsList.astro';
+
+const { labels, toc } = Astro.props;
 ---
 
-<Default {...Astro.props}><slot /></Default>
+{
+	toc && (
+		<nucleus-toc data-min-h={toc.minHeadingLevel} data-max-h={toc.maxHeadingLevel}>
+			<nav aria-labelledby="starlight__on-this-page">
+				<h2 id="starlight__on-this-page">{labels['tableOfContents.onThisPage']}</h2>
+				<TableOfContentsList toc={toc.items} />
+			</nav>
+		</nucleus-toc>
+	)
+}
 
 <nav aria-labelledby="sidebar-contribute">
   <h2 id="sidebar-contribute">Contribute</h2>
@@ -13,6 +24,7 @@ import { Icon } from '@astrojs/starlight/components';
     <li><a href="/feedback/"><Icon name="pen" />Feedback</a></li>
   </ul>
 </nav>
+<script src="../observer/NucleusTOC.js"></script>
 
 <style>
   nav {
