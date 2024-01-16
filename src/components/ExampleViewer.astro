@@ -1,5 +1,5 @@
 ---
-import CodeSnippet from './code-snippet.astro';
+import CodeSnippet from './CodeSnippet.astro';
 import ExampleRenderer from './ExampleRenderer.astro';
 ---
 
@@ -7,7 +7,6 @@ import ExampleRenderer from './ExampleRenderer.astro';
   <slot name="template" slot="template"/>
 </ExampleRenderer>
   
-  <CodeSnippet>
-    <slot name="template" slot="template"/>
-  </CodeSnippet>
-</div>
+<CodeSnippet>
+  <slot name="template" slot="template"/>
+</CodeSnippet>
