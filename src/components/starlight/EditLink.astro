@@ -1,0 +1,26 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+
+const { editUrl, labels, entry, locale, isFallback } = Astro.props;
+
+const githubEditUrl =
+  entry.data.githubURL && (locale === 'en' || isFallback)
+    ? `${entry.data.githubURL}${entry.data.hasREADME ? 'README.md' : ''}`
+    : editUrl;
+---
+
+{
+  editUrl && (
+    <a href={githubEditUrl}>{labels['page.editLink']}</a>
+  )
+}
+
+<style>
+  a {
+    color: var(--sl-color-gray-3);
+  }
+
+  a:hover {
+    color: var(--sl-color-white);
+  }
+</style>
