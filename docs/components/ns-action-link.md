@@ -18,7 +18,7 @@ These are more decorative links and can have illustrations to help convey the ac
 
 The following content guidance applies to both types of the component.
 
-![Action link](images/ns-action-link/content-guidance.webp)
+![Action link](images/ns-action-link/content-guidance-standard.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
