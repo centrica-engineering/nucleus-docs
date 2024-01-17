@@ -16,9 +16,17 @@ These are more decorative links and can have illustrations to help convey the ac
 
 ## Content guidance
 
-### Action link standard
+The following content guidance applies to both types of the component.
 
-### Action link stacked
+![Action link](images/ns-action-link/content-guidance.webp)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Label | Keep the text 'short, relevant, and actionable'. It should not exceed more than 24 characters. |
+| B | Illustration | This is a decoration. It is intended to provide a visual aid to the link. The [specification table](#specification) has a list of options. |
+
+
+
 
 ## Best practice
 
