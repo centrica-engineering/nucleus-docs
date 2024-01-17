@@ -1,5 +1,8 @@
 ---
+import { logos } from 'virtual:starlight/user-images';
+import config from 'virtual:starlight/user-config';
 import type { Props } from "@astrojs/starlight/props";
+import { formatPath } from '@astrojs/starlight/utils/format-path';
 import NucleusContributeLink from "../NucleusContributeLink.astro";
 
 import { EditLink, LastUpdated, Pagination } from 'virtual:starlight/components';
@@ -15,6 +18,36 @@ import { EditLink, LastUpdated, Pagination } from 'virtual:starlight/components'
     </ul>
     <p>Want to get more involved with Nucleus Docs? <a href="#!">Learn how to contribute</a>.</p>
     <LastUpdated {...Astro.props} />
+
+    <div class="logo">
+      {
+        config.logo && logos.dark && (
+          <>
+            <img
+              class:list={{ 'light:sl-hidden': !('src' in config.logo) }}
+              alt={config.logo.alt}
+              src={logos.dark.src}
+              width={logos.dark.width}
+              height={logos.dark.height}
+            />
+            {/* Show light alternate if a user configure both light and dark logos. */}
+            {!('src' in config.logo) && (
+              <img
+                class="dark:sl-hidden"
+                alt={config.logo.alt}
+                src={logos.light?.src}
+                width={logos.light?.width}
+                height={logos.light?.height}
+              />
+            )}
+          </>
+        )
+      }
+      <span class:list={{ 'sr-only': config.logo?.replacesTitle }}>
+        {config.title}
+      </span>
+    </div>
+
   </div>
   <Pagination {...Astro.props} />
 </footer>
@@ -23,18 +56,20 @@ import { EditLink, LastUpdated, Pagination } from 'virtual:starlight/components'
   footer {
     height: 80vh;
   }
+
   .page-footer {
+    position: relative;
     background-color: var(--sl-color-gray-7);
     padding-inline-start: var(--sl-content-pad-x);
     padding-inline-end: var(--sl-content-pad-x);
     padding-block-start: var(--sl-content-pad-x);
-    padding-block-end: var(--sl-content-pad-x);
+    padding-block-end: calc(var(--sl-content-pad-x) * 2);
     border-style: solid;
     border-width: 2px;
     border-color: var(--sl-color-gray-6);
     border-radius: 0.5rem;
 
-    :is(h3, p, ul):not(:last-child) {
+    h3, p, ul {
       margin-block-end: 1rem;
     }
 
@@ -49,6 +84,18 @@ import { EditLink, LastUpdated, Pagination } from 'virtual:starlight/components'
 
     a:hover {
       color: var(--sl-color-white);
+    }
+  }
+
+  .logo {
+    position: absolute;
+    width: 10rem;
+    right: var(--sl-content-pad-x);
+    bottom: calc(var(--sl-content-pad-x) / 2);
+
+    img {
+      display: block;
+      width: 100%;
     }
   }
 </style>
