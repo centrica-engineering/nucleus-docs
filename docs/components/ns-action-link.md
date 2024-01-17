@@ -71,7 +71,7 @@ The following content guidance applies to both types of the component.
 
 The only ability to change the link is via the `href` attribute. This means that the link will by default open in the same tab.
 
-## Label
+### Label
 
 Only strings are allowed inside the label. This means that HTML cannot be used.
 
