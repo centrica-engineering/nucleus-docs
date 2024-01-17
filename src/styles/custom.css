@@ -140,7 +140,6 @@ body {
 /* Custom fonts */
 main {
   font-family: "Roboto", sans-serif;
-  margin-inline-start: var(--sl-content-pad-x);
 }
 
 h1 {
@@ -272,5 +271,11 @@ h1 {
     [aria-current='page']:focus {
       font-weight: 800;
     }
+  }
+}
+
+@media (min-width: 50rem) {
+  main {
+    margin-inline-start: var(--sl-content-pad-x);
   }
 }
