@@ -1,4 +1,5 @@
 ---
+import { Icon } from '@astrojs/starlight/components';
 import type { Props } from "@astrojs/starlight/props";
 
 const { editUrl, labels, entry, locale, isFallback } = Astro.props;
@@ -11,7 +12,10 @@ const githubEditUrl =
 
 {
   editUrl && (
-    <a href={githubEditUrl}>{labels['page.editLink']}</a>
+    <a href={githubEditUrl}>
+      {labels['page.editLink']}
+      <Icon name="external" size="1em" />
+    </a>
   )
 }
 
