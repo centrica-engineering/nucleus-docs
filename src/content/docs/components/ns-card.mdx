@@ -10,12 +10,6 @@ import Specification from '@components/specification.astro';
 import Placement from '@components/placement.astro';
 import CompDetails from '@components/cem-description.astro';
 import ExampleViewer from '@components/ExampleViewer.astro';
-import CodeSnippet from '@components/CodeSnippet.astro';
-
-import ExampleStandard from '@examples/components/ns-card/standard.html';
-import ExampleSection from '@examples/components/ns-card/section.html';
-import ExampleSupport from '@examples/components/ns-card/support.html';
-import ExampleFlat from '@examples/components/ns-card/flat.html';
 
 ## Overview
 
@@ -25,33 +19,24 @@ Cards are used to apply a container around a related grouping of information; th
 
 ### Example
 
-<ExampleViewer>
-  <ExampleStandard slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-card/standard.html" />
 
 #### Section
 
 `type="section"`
 
-<ExampleViewer>
-  <ExampleSection slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-card/section.html" />
 
 #### Support
 
 `type="support"`
 
-<ExampleViewer>
-  <ExampleSupport slot="template" />
-</ExampleViewer>
-
+<ExampleViewer src="ns-card/support.html" />
 #### Flat
 
 `type="flat"`
 
-<ExampleViewer>
-  <ExampleFlat slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-card/flat.html" />
 
 ## Guidance
 

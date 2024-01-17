@@ -10,22 +10,6 @@ import Specification from '@components/specification.astro';
 import Placement from '@components/placement.astro';
 import CompDetails from '@components/cem-description.astro';
 import ExampleViewer from '@components/ExampleViewer.astro';
-import CodeSnippet from '@components/CodeSnippet.astro';
-
-import ExampleStandard from '@examples/components/ns-inputter/standard.html';
-import ExampleText from '@examples/components/ns-inputter/text.html';
-import ExampleEmail from '@examples/components/ns-inputter/email.html';
-import ExampleTel from '@examples/components/ns-inputter/tel.html';
-import ExampleSearch from '@examples/components/ns-inputter/search.html';
-import ExampleMask from '@examples/components/ns-inputter/mask.html';
-import ExampleSeparator from '@examples/components/ns-inputter/separator.html';
-import ExampleNumber from '@examples/components/ns-inputter/number.html';
-import ExampleTextarea from '@examples/components/ns-inputter/textarea.html';
-import ExampleRadio from '@examples/components/ns-inputter/radio.html';
-import ExampleRadioInline from '@examples/components/ns-inputter/radio-inline.html';
-import ExampleCheckbox from '@examples/components/ns-inputter/checkbox.html';
-import ExampleCheckboxInline from '@examples/components/ns-inputter/checkbox-inline.html';
-import ExampleSelect from '@examples/components/ns-inputter/select.html';
 
 ## Overview
 
@@ -35,9 +19,7 @@ import ExampleSelect from '@examples/components/ns-inputter/select.html';
 If you would like to use a password input then please see the [ns-password](/components/ns-password) component.
 :::
 
-<ExampleViewer>
-  <ExampleStandard slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/standard.html" />
 
 ### Most common input types
 
@@ -45,101 +27,75 @@ If you would like to use a password input then please see the [ns-password](/com
 
 `<input type="text">`
 
-<ExampleViewer>
-  <ExampleText slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/text.html" />
 
 #### Email
 
 `<input type="email">`
 
-<ExampleViewer>
-  <ExampleEmail slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/email.html" />
 
 #### Tel
 
 `<input type="tel">`
 
-<ExampleViewer>
-  <ExampleTel slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/tel.html" />
 
 #### Search
 
 `<input type="search">`
 
-<ExampleViewer>
-  <ExampleSearch slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/search.html" />
 
 #### Number
 
 `<input type="number">`
 
-<ExampleViewer>
-  <ExampleNumber slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/number.html" />
 
 #### Textarea
 
 `<input type="textarea">`
 
-<ExampleViewer>
-  <ExampleTextarea slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/textarea.html" />
 
 #### Radio
 
 `<input type="radio">`
 
-<ExampleViewer>
-  <ExampleRadio slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/radio.html" />
 
 ##### `class="inline"`
 
-<ExampleViewer>
-  <ExampleRadioInline slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/radio-inline.html" />
 
 #### Checkbox
 
 `<input type="checkbox">`
 
-<ExampleViewer>
-  <ExampleCheckbox slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/checkbox.html" />
 
 ##### `class="inline"`
 
-<ExampleViewer>
-  <ExampleCheckboxInline slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/checkbox-inline.html" />
 
 #### Select
 
 `<input type="select">`
 
-<ExampleViewer>
-  <ExampleSelect slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/select.html" />
 
 #### Mask
 
 `mask=""`
 
-<ExampleViewer>
-  <ExampleMask slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/mask.html" />
 
 #### Separator
 
 `mask=""` and `separator=""`
 
-<ExampleViewer>
-  <ExampleSeparator slot="template" />
-</ExampleViewer>
+<ExampleViewer src="ns-inputter/separator.html" />
 
 ### Autocomplete
 
