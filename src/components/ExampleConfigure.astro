@@ -1,0 +1,110 @@
+---
+const { componentName } = Astro.props;
+import customElements from '@connectedhomes/nucleus/ce-doc.json';
+import cesm from '@connectedhomes/nucleus/custom-elements.json';
+
+const customElement = customElements.find((customElement) => customElement.name === componentName);
+const cem = cesm.tags.find((tag) => tag.name === componentName);
+---
+
+<div class="configure-component">
+  <form>
+  {
+    cem?.attributes && (
+      <h2>Attributes</h2>
+    )
+  }
+  {
+    cem?.attributes?.map((attribute) => {
+      const defaultValue = attribute.default?.replaceAll('"', '');
+      if (attribute.type === 'string') {
+        return (
+          <div class="config-elements">
+            <label>{attribute.name}</label>
+            <input type="text" name={attribute.name} value={defaultValue}>
+          </div>
+        );
+      } else if (attribute.type?.indexOf("|") > -1) {
+        const options = attribute.type?.replaceAll('"', '').split('|') ?? [];
+        const attributeTitle = (<label>{attribute.name}</label>);
+
+        const optionsHTML = options?.map((option) => {
+          const checked = defaultValue === option ? true : false;
+          return (
+            <span class="radio-element">
+              <input type="radio" name={attribute.name} value={option} {checked}>
+              <label>{option}</label>
+            </span>
+          );
+        });
+        return (
+          <div class="config-elements">
+          {
+            [attributeTitle, optionsHTML]
+          }
+          </div>
+        );      
+      } else if (attribute.type === 'number') {
+        return (
+          <div class="config-elements">
+            <label>{attribute.name}</label>
+            <input type="number" name={attribute.name} value={defaultValue}>
+          </div>
+        );
+      } else if (attribute.type === 'boolean') {
+        return (
+          <div class="config-elements">
+            <label>{attribute.name}</label>
+            {
+              ['true', 'false'].map((option) => {
+                const checked = defaultValue === option ? true : false;
+                return (
+                <span class="radio-element">
+                  <input type="radio" name={attribute.name} value={option} {checked}>
+                  <label>{option}</label>
+                </span>
+                )
+              })
+            }
+          </div>
+        );
+      }
+    })
+  }
+  {
+    cem.slots && (
+      <h2>Slots</h2>
+    )
+  }
+  {
+    cem.slots?.map((slot) => {
+      return (
+        <div class="config-elements">
+          <label>{slot.name? slot.name : 'default' }</label>
+          <textarea name={slot.name}></textarea>
+        </div>
+      );
+    })
+  }
+  </form>
+</div>
+
+<style>
+  .configure-component {
+    display: block;
+    border: 1px solid var(--sl-color-gray-6);
+    padding: 1rem;
+  }
+
+  .config-elements {
+    padding-block: 1rem;
+
+    label {
+      padding-inline-end: 2rem;
+    }
+
+    input {
+      height: 1rem;
+    }
+  }
+</style>

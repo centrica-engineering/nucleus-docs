@@ -1,0 +1,57 @@
+---
+import fs from 'node:fs/promises';
+import ExampleConfigure from '../../../../../components/ExampleConfigure.astro';
+import CodeSnippet from '../../../../../components/CodeSnippet.astro';
+import ExampleRenderer from '../../../../../components/ExampleRenderer.astro';
+import cesm from '@connectedhomes/nucleus/custom-elements.json';
+
+export async function getStaticPaths() {
+  const examples = import.meta.glob("../../../../../content/docs/_examples/components/**/*");
+  return cesm.tags.flatMap((tag) => {
+    const componentName = tag.name;
+    const exampleComponentMatcher = `/content/docs/_examples/components/${componentName}/`;
+    const componentExamples = Object.keys(examples).filter((example) => example.indexOf(exampleComponentMatcher) > -1);
+    return componentExamples?.map((componentExample) => {
+      return {
+        params: {
+          component: tag.name,
+          file: componentExample.split(exampleComponentMatcher)[1]
+        }
+      };
+    });
+  });
+}
+
+const { component, file } = Astro.params;
+const exampleFileMatcher = `/content/docs/_examples/components/${component}/${file}`;
+
+const examples = import.meta.glob("../../../../../content/docs/_examples/components/**/*");
+const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
+
+const url = new URL(htmlFile, import.meta.url);
+const htmlContent = await fs.readFile(url, 'utf-8');
+---
+<h1>Configure Example - {component}</h1>
+
+<div class="config-content" set:html={htmlContent}>
+  
+</div>
+<div class="config-column">
+  <ExampleConfigure componentName={component} />
+
+  <div>
+    <ExampleRenderer>
+      <Fragment slot="template" set:html={htmlContent} />
+    </ExampleRenderer>
+    <CodeSnippet>
+      <Fragment slot="template" set:html={htmlContent} />
+    </CodeSnippet>
+  </div>
+</div>
+
+<style>
+  .config-content {
+    display: none;  
+  }
+</style>
+
