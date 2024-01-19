@@ -24,7 +24,7 @@
   --ns-color-blue: hsl(var(--ns-hue-blue), 57%, 29%);
   --ns-color-green: hsl(var(--ns-hue-green), 43%, 35%);
   --ns-color-navy: hsl(var(--ns-hue-navy), 75%, 23%);
-  --ns-color-black: hsl(var(--ns-hue-teal), 40%, 9%);
+  --ns-color-black: hsl(var(--ns-hue-teal), 40%, 5%);
 
   --ns-hue-base: var(--ns-hue-teal);
 
@@ -58,8 +58,8 @@
   --sl-color-gray-7: var(--ns-color-base-900);
   --sl-color-black: var(--ns-color-black);
 
-  --sl-color-bg-sidebar: var(--ns-color-base-800);
-  --sl-color-bg-nav: var(--ns-color-base-800);
+  --sl-color-bg-sidebar: var(--ns-color-base-900);
+  --sl-color-bg-nav: var(--ns-color-base-900);
 
   --sl-color-accent-low: hsl(var(--ns-hue-orange), 54%, 20%);
   --sl-color-accent: hsl(var(--ns-hue-orange), 100%, 60%);
@@ -119,10 +119,6 @@
   border-block-end-style: none;
 }
 
-.sidebar-pane {
-  border-inline-end-style: none;
-}
-
 .right-sidebar-panel {
   li {
     margin-block: 0.5rem;
@@ -140,7 +136,6 @@ body {
 /* Custom fonts */
 main {
   font-family: "Roboto", sans-serif;
-  margin-inline-start: var(--sl-content-pad-x);
 }
 
 h1 {
@@ -248,29 +243,85 @@ h1 {
   border-radius: 50px;
 }
 
+.sidebar-pane {
+  border-inline-end-style: none;
+}
+
 .sidebar-content {
-  ul.top-level {
-    ul, li {
-      margin-block: 0.5rem;
+  padding-inline-start: 0;
+
+  .top-level {
+    padding-block-end: 50vh;
+  }
+
+  details {
+    ul {
+      margin-block-start: 0.5rem;
+
+      li {
+        border-inline-start-style: none;
+
+        &:has(ul) {
+          margin-block-start: 0.5rem;
+          padding-inline-start: 0;
+        }
+      }
     }
 
     a {
+      position: relative;
       font-size: var(--sl-text-sm);
-      font-weight: 600;
-    }
+      color: var(--sl-color-text);
+      font-weight: 500;
+      padding-inline-start: 0;
+      padding-inline-end: 0;
+      padding-block-start: 0.25rem;
+      padding-block-end: 0.25rem;
 
-    li {
-      border-inline-start-width: 0;
-    }
+      span {
+        display: block;
+        border-radius: 0.25rem;
+        padding-inline-start: 1rem;
+        padding-inline-end: 0.5rem;
+        padding-block-start: 0.5rem;
+        padding-block-end: 0.5rem;
+      }
 
-    .large {
-      font-weight: normal;
-    }
+      &:hover {
+        span {
+          background-color: var(--sl-color-gray-6);
+        }
+      }
 
-    [aria-current='page'],
-    [aria-current='page']:hover,
-    [aria-current='page']:focus {
-      font-weight: 800;
+      &[aria-current="page"] {
+        background-color: transparent;
+
+        span {
+          background-color: var(--sl-color-gray-6);
+        }
+
+        &:hover {
+          color: var(--sl-color-text);
+          font-weight: 500;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0.25rem;
+          bottom: 0.25rem;
+          left: -1rem;
+          width: 0.25rem;
+          background-color: var(--sl-color-accent);
+          border-radius: 0.25rem;
+        }
+      }
     }
+  }
+}
+
+@media (min-width: 50rem) {
+  main {
+    margin-inline-start: var(--sl-content-pad-x);
   }
 }
