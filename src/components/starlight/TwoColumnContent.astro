@@ -41,6 +41,7 @@ import NucleusMasthead from "../NucleusMasthead.astro";
 
     .right-sidebar {
       position: sticky;
+      margin-block-start: calc(var(--ns-section-tabs-height) * -1);
       top: calc(var(--sl-nav-height) + var(--ns-section-tabs-height));
       height: calc(100vh - var(--sl-nav-height) - var(--ns-section-tabs-height));
       width: inherit;
