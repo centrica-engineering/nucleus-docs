@@ -1,0 +1,7 @@
+export default `
+<ns-inputter helper="How can we help you?" validation="[&quot;isRequired&quot;,&quot;isEmail&quot;]">
+  <div slot="tip-details">By providing clarification on why this information is necessary.</div>
+  <label slot="label">Email</label>
+  <input type="email" placeholder="e.g. my@email.com" autocomplete="email">
+</ns-inputter>
+`;

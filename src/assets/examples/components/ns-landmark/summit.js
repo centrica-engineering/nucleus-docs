@@ -1,0 +1,9 @@
+export default `
+<ns-landmark type="summit" image="https://www.britishgas.co.uk/aem6/content/dam/britishgas/images/ns/landmark-16x9-testcard.png">
+  <h1 slot="heading">When things break down, we've got you covered</h1>
+  <div slot="paragraph">
+    <p>Protect your boiler, heating, drains and more. And call on our friendly engineers whenever you need them.</p>
+  </div>
+  <ns-cta slot="cta" href="#!">View our products</ns-cta>
+</ns-landmark>
+`;

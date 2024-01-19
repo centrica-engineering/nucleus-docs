@@ -1,0 +1,9 @@
+export default `
+<ns-landmark type="hillside" decoration="cyan">
+  <h1 slot="heading">What's the right boiler for me?</h1>
+  <div slot="paragraph">
+    <p>With so many types of boiler, <strong>finding the right one</strong> for you can feel like a daunting task. Here's the difference between the three main boiler types.</p>
+  </div>
+  <ns-cta slot="cta" href="#!">View our products</ns-cta>
+</ns-landmark>
+`;
