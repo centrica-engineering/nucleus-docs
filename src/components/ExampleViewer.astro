@@ -1,19 +1,25 @@
 ---
-import fs from 'node:fs/promises';
 import CodeSnippet from './CodeSnippet.astro';
 import ExampleRenderer from './ExampleRenderer.astro';
 
-const { src } = Astro.props;
-const exampleFileMatcher = `/content/docs/_examples/components/${src}`;
+const { slug } = Astro.params;
+const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
 
-const examples = import.meta.glob("../content/docs/_examples/components/**/*");
+const { type } = Astro.props;
+const exampleFileMatcher = `/assets/examples/${slug}/${type}.js`;
+
+const examples = import.meta.glob("../assets/examples/**/*");
 const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
-const url = new URL(htmlFile, import.meta.url);
-const htmlContent = await fs.readFile(url, 'utf-8');
+const htmlContent = await examples[htmlFile]().then((value) => value.default);
 ---
 
 <div>
-  <a href=`/configure/components/${src}` rel="noopener nofollow" target="_blank">Configure</a>
+  {
+    isComponentPage && (
+      <a href=`/configure/${slug}/${type}` rel="noopener nofollow" target="_blank">Configure</a>
+    )
+  }
+
   <ExampleRenderer>
     <Fragment slot="template" set:html={htmlContent} />
   </ExampleRenderer>
