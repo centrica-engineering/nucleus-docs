@@ -85,7 +85,7 @@
   --sl-line-height: 1.5;
 
   /* Key layout values */
-  --sl-sidebar-width: 20.625rem;
+  --sl-sidebar-width: 16rem;
   --ns-masthead-height: 8.75rem;
   --ns-section-tabs-height: 5rem;
 
@@ -120,6 +120,12 @@
 }
 
 .right-sidebar-panel {
+  padding: 0;
+
+  .sl-container {
+    width: inherit;
+  }
+
   li {
     margin-block: 0.5rem;
   }
@@ -189,6 +195,14 @@ h1 {
 
   [id^="key"] + table thead {
     display: none; /* [1] */
+  }
+
+  code {
+    border-radius: 0.2rem;
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.25rem;
+    padding-block-start: 0.125rem;
+    padding-block-end: 0.125rem;
   }
 
   table {

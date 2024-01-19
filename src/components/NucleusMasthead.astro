@@ -130,19 +130,12 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     [href="#_top"] {
       display: none;
     }
-
-    a {
-      color: var(--sl-color-gray-2);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
   }
 
   .section-tab {
+    color: var(--sl-color-gray-2);
+    text-decoration: none;
+    font-weight: 500;
     position: relative;
     display: inline-block;
     padding-inline-start: 48px;
@@ -155,6 +148,10 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     transition-duration: 1000ms;
     transition-timing-function: ease-in-out;
 
+    &:hover {
+      color: var(--sl-color-gray-1);
+    }
+
     img {
       position: absolute;
       top: 50%;
@@ -166,11 +163,6 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
 
     &[aria-current] {
       background-color: var(--sl-color-gray-6);
-    }
-
-    &:hover::before,
-    &:focus::before {
-      background-color: var(--sl-color-gray-2);
     }
   }
 

@@ -26,9 +26,9 @@ import NucleusMasthead from "../NucleusMasthead.astro";
   @media (min-width: 72rem) {
     .right-sidebar-container {
       order: 2;
-      position: relative;
       width: 240px;
       margin-inline-start: auto;
+      margin-inline-end: var(--sl-content-pad-x);
 
       #starlight__on-this-page {
         display: none;
@@ -40,10 +40,10 @@ import NucleusMasthead from "../NucleusMasthead.astro";
     }
 
     .right-sidebar {
-      position: fixed;
-      top: 0;
-      padding-top: calc(var(--sl-nav-height) + var(--ns-masthead-height) + var(--ns-section-tabs-height));
-      height: 100vh;
+      position: sticky;
+      top: calc(var(--sl-nav-height) + var(--ns-section-tabs-height));
+      height: calc(100vh - var(--sl-nav-height) - var(--ns-section-tabs-height));
+      width: inherit;
       overflow-y: auto;
       scrollbar-width: none;
     }
