@@ -1,9 +1,13 @@
 ---
-import ExampleRenderer from '../../../../../components/ExampleRenderer.astro';
 import ExampleConfigure from '../../../../../components/ExampleConfigure.astro';
-import CodeSnippet from '../../../../../components/CodeSnippet.astro';
-
 import cesm from '@connectedhomes/nucleus/custom-elements.json';
+
+const { component, type } = Astro.params;
+const exampleFileMatcher = `/assets/examples/components/${component}/${type}.js`;
+
+const examples = import.meta.glob("../../../../../assets/examples/components/**/*.js");
+const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
+const htmlContent = await examples[htmlFile]().then(value => value.default);
 
 export function getStaticPaths() {
   const examples = import.meta.glob("../../../../../assets/examples/components/**/*.js");
@@ -34,13 +38,6 @@ export function getStaticPaths() {
     }
   });
 }
-
-const { component, type } = Astro.params;
-const exampleFileMatcher = `/assets/examples/components/${component}/${type}.js`;
-
-const examples = import.meta.glob("../../../../../assets/examples/components/**/*.js");
-const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
-const htmlContent = await examples[htmlFile]().then(value => value.default);
 ---
 <main>
   <h1>Configure Example - {component}</h1>
@@ -48,15 +45,6 @@ const htmlContent = await examples[htmlFile]().then(value => value.default);
     <ExampleConfigure componentName={component}>
       <Fragment set:html={htmlContent} />
     </ExampleConfigure>
-
-    <div>
-      <ExampleRenderer>
-        <Fragment slot="template" set:html={htmlContent} />
-      </ExampleRenderer>
-      <CodeSnippet>
-        <Fragment slot="template" set:html={htmlContent} />
-      </CodeSnippet>
-    </div>
   </div>
 </main>
 

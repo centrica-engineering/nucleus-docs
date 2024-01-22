@@ -1,5 +1,9 @@
 ---
 const { componentName } = Astro.props;
+
+import ExampleRenderer from './ExampleRenderer.astro';
+import CodeSnippet from './CodeSnippet.astro';
+
 import customElements from '@connectedhomes/nucleus/ce-doc.json';
 import cesm from '@connectedhomes/nucleus/custom-elements.json';
 
@@ -7,56 +11,81 @@ const customElement = customElements.find((customElement) => customElement.name 
 const cem = cesm.tags.find((tag) => tag.name === componentName);
 ---
 <script>
-  const componentElement = document.querySelector('.config-content')?.firstElementChild;
-  console.log(componentElement?.attributes);
-  if (componentElement) {
-    for (var i = 0, atts = componentElement.attributes, n = atts.length, arr = []; i < n; i++) {
-      console.log(atts[i].nodeName, atts[i].nodeValue);
-      const attrElements = document.querySelectorAll(`input[name=${atts[i].nodeName}]`);
+  function populateConfig() {
+    const componentElement = document.querySelector('.config-content')?.firstElementChild;
+    if (componentElement) {
+      for (var i = 0, atts = componentElement.attributes, n = atts.length, arr = []; i < n; i++) {
+        console.log(atts[i].nodeName, atts[i].nodeValue);
+        const attrElements = document.querySelectorAll(`input[name=${atts[i].nodeName}]`);
 
-      if (attrElements?.length === 1) {
-        attrElements[0].setAttribute('value', atts[i].nodeValue);
-      } else if (attrElements?.length > 1) {
-        Array.from(attrElements).
-        filter((attrElement) => attrElement.value === atts[i].nodeValue).
-        forEach((attrElement) => attrElement.checked = true);
+        if (attrElements?.length === 1) {
+          attrElements[0].setAttribute('value', atts[i].nodeValue);
+        } else if (attrElements?.length > 1) {
+          Array.from(attrElements).
+          filter((attrElement) => attrElement.value === atts[i].nodeValue).
+          forEach((attrElement) => attrElement.checked = true);
+        }
       }
     }
-  }
 
-  const childrens = componentElement?.children;
-  const slotMap = {
-    default: []
-  };
-  Array.from(childrens)?.forEach(element => {
-    const slotName = element.getAttribute('slot');
-    if (slotName) {
-      slotMap[slotName] = [element];
-      const slottedElement = document.querySelector(`[name=${slotName}]`);
-      slottedElement.value = element.outerHTML;
-    } else {
-      slotMap.default.push(element);
+    const childrens = componentElement?.children;
+    const slotMap = {
+      default: []
+    };
+    Array.from(childrens)?.forEach(element => {
+      const slotName = element.getAttribute('slot');
+      if (slotName) {
+        slotMap[slotName] = [element];
+        const slottedElement = document.querySelector(`[name=${slotName}]`);
+        slottedElement.value = element.outerHTML;
+      } else {
+        slotMap.default.push(element);
+      }
+    });
+    const slottedElement = document.querySelector(`[name='default']`);
+    if (slottedElement) {
+      slottedElement.value = slotMap.default.map(element => element.outerHTML).join('');
     }
-  });
-  const slottedElement = document.querySelector(`[name='default']`);
-  if (slottedElement) {
-    slottedElement.value = slotMap.default.map(element => element.outerHTML).join('');
   }
 
   const inputs = document.querySelectorAll('input, textarea');
-  console.log(inputs);
   Array.from(inputs).forEach((input) => {
-    console.log('input listeners');
     input.addEventListener('change', () => {
-      console.log('input changed');
       input.classList.add('changed');
     });
   });
 
-  document.querySelector('form')?.addEventListener('submit', (ev) => {
+  window.addEventListener('load', () => populateConfig());
+
+  document.getElementById('reset-config')?.addEventListener('click', (ev) => {
+    ev.preventDefault();
+    populateConfig();
+  });
+  
+  document.getElementById('play-config')?.addEventListener('click', (ev) => {
     ev.preventDefault();
     const changedElements = document.querySelectorAll('.changed');
-    console.log('changed elements, ', changedElements);
+    const componentElement = document.querySelector('.config-content')?.firstElementChild;
+    const componentCopy = componentElement?.cloneNode(true);
+    const tempContainer = document.createElement("div");
+    tempContainer.appendChild(componentCopy);
+
+    changedElements?.forEach((changedElement) => {
+      const attrName = changedElement.name;
+      const attrValue = changedElement.value;
+      componentCopy.setAttribute(attrName, attrValue);
+    });
+
+    const iframeHTML = `
+        <main class="ndsn">
+          <ns-panel>
+            <div>
+              ${tempContainer.outerHTML}
+            </div>
+          </ns-panel>
+        </main>`;
+    const iframe = document.querySelector('iframe');
+    iframe.contentWindow.document.body.innerHTML = iframeHTML;
 
   });
 </script>
@@ -66,7 +95,8 @@ const cem = cesm.tags.find((tag) => tag.name === componentName);
 
 <div class="configure-component">
   <form>
-    <button type="submit">Run / Play</button>
+    <button id="play-config">Run / Play</button>
+    <button id="reset-config">Reset</button>
   {
     cem?.attributes && (
       <h2>Attributes</h2>
@@ -152,6 +182,15 @@ const cem = cesm.tags.find((tag) => tag.name === componentName);
     })
   }
   </form>
+</div>
+
+<div>
+  <ExampleRenderer>
+    <slot slot="template" />
+  </ExampleRenderer>
+  <CodeSnippet>
+    <slot slot="template" />
+  </CodeSnippet>
 </div>
 
 <style>
