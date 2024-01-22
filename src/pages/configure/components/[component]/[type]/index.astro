@@ -16,7 +16,6 @@ export function getStaticPaths() {
     const componentExamples = getComponentExample(exampleComponentMatcher);
     if(componentExamples) {
       return componentExamples.map((componentExample) => {
-
         const type = componentExample?.split(exampleComponentMatcher)[1].replaceAll('.js', '');
         return {
           params: {
@@ -43,25 +42,29 @@ const examples = import.meta.glob("../../../../../assets/examples/components/**/
 const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
 const htmlContent = await examples[htmlFile]().then(value => value.default);
 ---
-<h1>Configure Example - {component}</h1>
+<main>
+  <h1>Configure Example - {component}</h1>
+  <div class="config-column">
+    <ExampleConfigure componentName={component}>
+      <Fragment set:html={htmlContent} />
+    </ExampleConfigure>
 
-<div class="config-content" set:html={htmlContent}>
-  
-</div>
-<div class="config-column">
-  <ExampleConfigure componentName={component} />
-
-  <div>
-    <ExampleRenderer>
-      <Fragment slot="template" set:html={htmlContent} />
-    </ExampleRenderer>
-    <CodeSnippet>
-      <Fragment slot="template" set:html={htmlContent} />
-    </CodeSnippet>
+    <div>
+      <ExampleRenderer>
+        <Fragment slot="template" set:html={htmlContent} />
+      </ExampleRenderer>
+      <CodeSnippet>
+        <Fragment slot="template" set:html={htmlContent} />
+      </CodeSnippet>
+    </div>
   </div>
-</div>
+</main>
 
 <style>
+  main {
+    font-family: "Roboto", sans-serif;
+  }
+
   .config-content {
     display: none;  
   }

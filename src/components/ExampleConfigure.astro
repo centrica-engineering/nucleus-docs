@@ -6,9 +6,67 @@ import cesm from '@connectedhomes/nucleus/custom-elements.json';
 const customElement = customElements.find((customElement) => customElement.name === componentName);
 const cem = cesm.tags.find((tag) => tag.name === componentName);
 ---
+<script>
+  const componentElement = document.querySelector('.config-content')?.firstElementChild;
+  console.log(componentElement?.attributes);
+  if (componentElement) {
+    for (var i = 0, atts = componentElement.attributes, n = atts.length, arr = []; i < n; i++) {
+      console.log(atts[i].nodeName, atts[i].nodeValue);
+      const attrElements = document.querySelectorAll(`input[name=${atts[i].nodeName}]`);
+
+      if (attrElements?.length === 1) {
+        attrElements[0].setAttribute('value', atts[i].nodeValue);
+      } else if (attrElements?.length > 1) {
+        Array.from(attrElements).
+        filter((attrElement) => attrElement.value === atts[i].nodeValue).
+        forEach((attrElement) => attrElement.checked = true);
+      }
+    }
+  }
+
+  const childrens = componentElement?.children;
+  const slotMap = {
+    default: []
+  };
+  Array.from(childrens)?.forEach(element => {
+    const slotName = element.getAttribute('slot');
+    if (slotName) {
+      slotMap[slotName] = [element];
+      const slottedElement = document.querySelector(`[name=${slotName}]`);
+      slottedElement.value = element.outerHTML;
+    } else {
+      slotMap.default.push(element);
+    }
+  });
+  const slottedElement = document.querySelector(`[name='default']`);
+  if (slottedElement) {
+    slottedElement.value = slotMap.default.map(element => element.outerHTML).join('');
+  }
+
+  const inputs = document.querySelectorAll('input, textarea');
+  console.log(inputs);
+  Array.from(inputs).forEach((input) => {
+    console.log('input listeners');
+    input.addEventListener('change', () => {
+      console.log('input changed');
+      input.classList.add('changed');
+    });
+  });
+
+  document.querySelector('form')?.addEventListener('submit', (ev) => {
+    ev.preventDefault();
+    const changedElements = document.querySelectorAll('.changed');
+    console.log('changed elements, ', changedElements);
+
+  });
+</script>
+<div class="config-content">
+  <slot />
+</div>
 
 <div class="configure-component">
   <form>
+    <button type="submit">Run / Play</button>
   {
     cem?.attributes && (
       <h2>Attributes</h2>
@@ -68,6 +126,13 @@ const cem = cesm.tags.find((tag) => tag.name === componentName);
             }
           </div>
         );
+      } else if (attribute.type === 'Array') {
+        return (
+          <div class="config-elements">
+            <label>{attribute.name}</label>
+            <input type="text" name={attribute.name} />
+          </div>
+        );
       }
     })
   }
@@ -80,8 +145,8 @@ const cem = cesm.tags.find((tag) => tag.name === componentName);
     cem.slots?.map((slot) => {
       return (
         <div class="config-elements">
-          <label>{slot.name? slot.name : 'default' }</label>
-          <textarea name={slot.name}></textarea>
+          <label>{slot.name !== '' ? slot.name : 'default' }</label>
+          <textarea name={slot.name !== '' ? slot.name : 'default'}></textarea>
         </div>
       );
     })
@@ -90,6 +155,10 @@ const cem = cesm.tags.find((tag) => tag.name === componentName);
 </div>
 
 <style>
+  .config-content {
+    display: none;  
+  }
+
   .configure-component {
     display: block;
     border: 1px solid var(--sl-color-gray-6);
@@ -104,7 +173,16 @@ const cem = cesm.tags.find((tag) => tag.name === componentName);
     }
 
     input {
-      height: 1rem;
+      height: 1.5rem;
+    }
+
+     input[type='text'] {
+      width: 30%;
+    }
+
+    textarea {
+      width: 40%;
+      min-height: 5rem;
     }
   }
 </style>
