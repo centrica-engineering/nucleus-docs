@@ -22,20 +22,53 @@ const { toc, isMobile = false, depth = 0 } = Astro.props;
 		padding: 0;
 		list-style: none;
 	}
+
+	li {
+		margin-block: 0 !important;
+	}
+
 	a {
+		position: relative;
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-text);
 		--pad-inline: 0.5rem;
 		display: block;
 		border-radius: 0.25rem;
-		padding-block: 0.25rem;
-		padding-inline: calc(1rem * var(--depth) + var(--pad-inline)) var(--pad-inline);
-		line-height: 1.25;
+		padding-block-start: 0.25rem;
+		padding-block-end: 0.25rem;
+
+		span {
+			display: block;
+			border-radius: 0.25rem;
+			padding-inline-start: calc(1rem * var(--depth) + var(--pad-inline));
+			padding-inline-end: var(--pad-inline);
+			padding-block-start: 0.25rem;
+			padding-block-end: 0.25rem;
+		}
+
+		&:hover {
+			span {
+				color: var(--sl-color-white);
+			}
+		}
 	}
 	a[aria-current='true'],
 	a[aria-current='true']:hover,
 	a[aria-current='true']:focus {
-		font-weight: 600;
-		color: var(--sl-color-text-invert);
-		background-color: var(--sl-color-text-accent);
+		span {
+			background-color: var(--sl-color-gray-6);
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0.25rem;
+			bottom: 0.25rem;
+			left: -1rem;
+			width: 0.25rem;
+			background-color: var(--sl-color-accent);
+			border-radius: 0.25rem;
+		}
 	}
 	.isMobile a {
 		--pad-inline: 1rem;
