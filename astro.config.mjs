@@ -67,7 +67,7 @@ const componentSidebar = () => {
 
 const plugins = () => {
   const starlightPlugins = [];
-  if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'preview') {
+  if (process.env.NODE_ENV === 'production') {
     starlightPlugins.push(
       starlightDocSearch({
         appId: 'algolia',
