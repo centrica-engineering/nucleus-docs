@@ -53,14 +53,13 @@ const htmlSnippet = `
     const examples = document.querySelectorAll('.example');
     examples.forEach((example) => {
       const iframe = example.querySelector('iframe');
+      iframe.height = iframe.contentWindow.document.body.scrollHeight + "px !important;";
       const tabId = example.parentElement?.getAttribute('aria-labelledby');
       if (tabId) {
         const tab = document.getElementById(tabId);
         tab?.addEventListener('click', (event) => {
           iframe.height = iframe.contentWindow.document.body.scrollHeight + "px !important;";
         });
-      } else {
-        iframe.height = iframe.contentWindow.document.body.scrollHeight + "px !important;";
       }
     });
   }
