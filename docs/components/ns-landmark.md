@@ -5,6 +5,7 @@ description: Organism | Landmark component.
 import { StorybookStory } from '../../includes/storybook-story.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
 import { PageFooter } from '../../includes/page-footer.js'
+import { SpecificationList } from '../../includes/specification-list.js'
 
 ## Introduction
 
@@ -169,20 +170,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ## Specification
 
-| Attribute | Property | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `type` | `type` | `string` | `summit` | `summit`, `hillside`, `lakeside`, `valley` | The variant of the landmark. |
-| `image` | `image` | `string` |  |  | Background image used for summit variant or image used for valley variant |
-| `decoration` | `decoration` | `string` | `cyan` | `cyan`, `lime`, `navy`, `blue`, `forest`, `orange`, `red`, `yellow` | Background and offset colour used for the Hillside and Valley variant. |
-| `pill-over-image` | `pillOverImage` | `boolean` | `false` |  | Used to put the pill in the bottom left of the image when using `type="valley"` and an image |
-| `ratio` | `ratio` | `string` | `16 / 9` for `summit` type and `4 / 3` for `valley` type | `4 / 3`, `16 / 9` | Aspect ratio of the image used only for valley variant |
-
-| Slots | Type |
-| :--- | :--- |
-| `heading` | `<h1>` |
-| `paragraph` | `<p>` `<div>` |
-| `cta` | `ns-cta` `<a>`  |
-| `pill` | `ns-pill` |
+<SpecificationList></SpecificationList>
 
 ## Specification notes
 

@@ -86,3 +86,49 @@
 .colour-pallete dd {
   margin: 0;
 }
+
+.spec-list {
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin-block-end: 3em;
+}
+
+.spec-list dl {
+  margin: 0;
+  padding: 0;
+}
+
+.spec-list dl div {
+  display: flex;
+  margin-bottom: 0.5rem;
+  padding-inline-start: 1rem;
+}
+
+.spec-list dl div dt {
+  flex: 0 0 100px;
+  color: darkslategrey;
+}
+
+.spec-list dl div dd {
+  flex: 1;
+  margin-inline-start: 0.5rem;
+}
+
+.spec-list .property-title {
+  font-size: 1.25em;
+  margin-block-start: 2em;
+  margin-block-end: 0.75em;
+  padding-block-end: 0.5em;
+  font-weight: bold;
+  border-block-end-style: solid;
+  border-block-end-width: 1px;
+  border-block-end-color: #ddd;
+}
+
+.spec-list code {
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 14px;
+  padding: 2px 4px;
+}
