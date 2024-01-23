@@ -5,7 +5,7 @@ import NucleusMasthead from "../NucleusMasthead.astro";
 
 <NucleusMasthead {...Astro.props} />
 
-<div class="lg:sl-flex">
+<div class="layout">
   {
     Astro.props.toc && (
       <aside class="right-sidebar-container">
@@ -23,7 +23,25 @@ import NucleusMasthead from "../NucleusMasthead.astro";
     isolation: isolate;
   }
 
+  .layout {
+    display: grid;
+  }
+
+  @media (width >= 50rem) {
+    .main-pane {
+      max-width: calc(100vw - var(--sl-sidebar-width));
+    }
+  }
+
   @media (min-width: 72rem) {
+    .layout {
+      grid-template-columns: 1fr var(--sl-sidebar-width) ;
+    }
+
+    .main-pane {
+      width: calc(100vw - (var(--sl-sidebar-width) * 2));
+    }
+
     .right-sidebar-container {
       order: 2;
       width: var(--sl-sidebar-width);
@@ -49,18 +67,10 @@ import NucleusMasthead from "../NucleusMasthead.astro";
       scrollbar-width: none;
     }
 
-    .main-pane {
-      width: 100%;
-    }
-
     :global([data-has-sidebar][data-has-toc]) .main-pane {
       --sl-content-margin-inline: auto 0;
 
       order: 1;
-      width: calc(
-        var(--sl-content-width) +
-          (100% - var(--sl-content-width) - var(--sl-sidebar-width)) / 2
-      );
     }
   }
 </style>
