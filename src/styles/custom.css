@@ -111,7 +111,7 @@
 
   --sl-color-accent-low: hsl(var(--ns-hue-orange), 88%, 90%);
   --sl-color-accent: hsl(var(--ns-hue-orange), 90%, 60%);
-  --sl-color-accent-high: var(--ns-hue-pink), 60%, 54%);
+  --sl-color-accent-high: hsl(var(--ns-hue-pink), 60%, 54%);
 
   --sl-color-text-accent: var(--sl-color-accent-high);
 
