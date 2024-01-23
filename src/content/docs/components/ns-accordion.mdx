@@ -10,6 +10,7 @@ import Specification from '@components/specification.astro';
 import Placement from '@components/placement.astro';
 import CompDetails from '@components/cem-description.astro';
 import ExampleViewer from '@components/example-viewer.astro';
+import RelatedLinks from '@components/related-links.astro';
 
 import ExampleStandard from '@examples/components/ns-accordion/standard.html';
 
@@ -81,5 +82,7 @@ If there isn't a inherent logical order to the expanders, use alphabetical order
 
 ### Related links
 
+<RelatedLinks name={componentName}>
 - [ns-component](#!)
 - [ns-component](#!)
+</RelatedLinks>

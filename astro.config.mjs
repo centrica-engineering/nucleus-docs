@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import starlightDocSearch from '@astrojs/starlight-docsearch';
 import lit from "@astrojs/lit";
 import customElements from "@connectedhomes/nucleus/ce-doc.json";
 import cem from "@connectedhomes/nucleus/custom-elements.json";
@@ -64,6 +65,21 @@ const componentSidebar = () => {
   };
 }
 
+const plugins = () => {
+  const starlightPlugins = [];
+  if (process.env.NODE_ENV === 'production') {
+    starlightPlugins.push(
+      starlightDocSearch({
+        appId: 'algolia',
+        apiKey: process.env.ALGOLIA_KEY,
+        indexName: 'nucleus',
+      })
+    );
+  }
+  return starlightPlugins;
+
+}
+
 export default defineConfig({
   markdown: {
     remarkPlugins: [nucleusRemarkAside()]
@@ -118,7 +134,10 @@ export default defineConfig({
           collapsed: true,
           autogenerate: { directory: "page-types" },
         },
-      ]
+      ],
+      plugins: [
+        ...plugins()
+      ],
     }),
     lit(),
   ],
