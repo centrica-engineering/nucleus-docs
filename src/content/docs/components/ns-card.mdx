@@ -10,7 +10,9 @@ import Specification from '@components/specification.astro';
 import Placement from '@components/placement.astro';
 import CompDetails from '@components/cem-description.astro';
 import ExampleViewer from '@components/example-viewer.astro';
+import RelatedLinks from '@components/related-links.astro';
 import CodeSnippet from '@components/code-snippet.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 import ExampleStandard from '@examples/components/ns-card/standard.html';
 import ExampleSection from '@examples/components/ns-card/section.html';
@@ -23,35 +25,30 @@ import ExampleFlat from '@examples/components/ns-card/flat.html';
 
 Cards are used to apply a container around a related grouping of information; this can be done through imagery, illustrations and typography.
 
-### Example
+### Examples
 
-<ExampleViewer>
-  <ExampleStandard slot="template" />
-</ExampleViewer>
-
-#### Section
-
-`type="section"`
-
-<ExampleViewer>
-  <ExampleSection slot="template" />
-</ExampleViewer>
-
-#### Support
-
-`type="support"`
-
-<ExampleViewer>
-  <ExampleSupport slot="template" />
-</ExampleViewer>
-
-#### Flat
-
-`type="flat"`
-
-<ExampleViewer>
-  <ExampleFlat slot="template" />
-</ExampleViewer>
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer>
+      <ExampleStandard slot="template" />
+    </ExampleViewer>
+  </TabItem>
+  <TabItem label="Section">
+    <ExampleViewer>
+      <ExampleSection slot="template" />
+    </ExampleViewer>
+  </TabItem>
+  <TabItem label="Support">
+    <ExampleViewer>
+      <ExampleSupport slot="template" />
+    </ExampleViewer>
+  </TabItem>
+  <TabItem label="Flat">
+    <ExampleViewer>
+      <ExampleFlat slot="template" />
+    </ExampleViewer>
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
@@ -189,5 +186,7 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 
 ### Related links
 
+<RelatedLinks name={componentName}>
 - [ns-component](#!)
 - [ns-component](#!)
+</RelatedLinks>
