@@ -47,6 +47,7 @@ We prioritise the following list of browsers and devices identified as the most 
 | Computer | Windows 11 | Firefox | 121 |
 | Computer | Windows 11 | Edge | 120 |
 | Computer | MacOS sonoma | Safari | 17 |
+| Computer | MacOS ventura | Safari | 16 |
 | Computer | MacOS sonoma | Chrome | 120 |
 | Computer | MacOS sonoma | Firefox | 121 |
 | iPhone | iOS 17 (iPhone 15) | Safari |17 |
