@@ -1,20 +1,36 @@
 ---
 import { logos } from 'virtual:starlight/user-images';
 import config from 'virtual:starlight/user-config';
+import { Icon } from '@astrojs/starlight/components';
 import type { Props } from "@astrojs/starlight/props";
 import { formatPath } from '@astrojs/starlight/utils/format-path';
 import NucleusContributeLink from "../NucleusContributeLink.astro";
 
 import { EditLink, LastUpdated, Pagination } from 'virtual:starlight/components';
+
+const { slug } = Astro.params;
+const pageSlug = Astro.props.slug;
+const issueURL = 'https://github.com/centrica-engineering/nucleus-docs/issues/new';
+const viewURL = 'https://github.com/centrica-engineering/nucleus-docs/blob/astro-docs/src/content/docs/';
 ---
 
 <footer>
   <div class="page-footer">
-    <h3>Found a problem with the content on this page?</h3>
+    <h3>Found a problem with the content on this {pageSlug} page?</h3>
     <ul>
       <li><EditLink {...Astro.props} /></li>
-      <li><a href="https://github.com/centrica-engineering/nucleus-docs/issues/new?assignees=&amp;labels=Type: Bug&amp;title=%5Bns-component%5D" target="_blank" rel="noopener noreferrer">Report the content issue</a></li>
-      <li><a href="https://github.com/centrica-engineering/nucleus-docs/blob/main/src/content/docs/components/ns-component.mdx" target="_blank" rel="noopener noreferrer">View the source on Github</a></li>
+      <li>
+        <a href={`${issueURL}?assignees=&amp;labels=Type: Bug&amp;title=%5B${pageSlug}%5D`} target="_blank" rel="noopener noreferrer">
+          Report the content issue
+          <Icon name="external" size="1em" />
+        </a>
+      </li>
+      <li>
+        <a href={`${viewURL}${pageSlug}.mdx`} target="_blank" rel="noopener noreferrer">
+          View this page on Github
+          <Icon name="external" size="1em" />
+        </a>
+      </li>
     </ul>
     <p>Want to get more involved with Nucleus Docs? <a href="#!">Learn how to contribute</a>.</p>
     <LastUpdated {...Astro.props} />
