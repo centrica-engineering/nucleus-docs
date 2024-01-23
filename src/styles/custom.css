@@ -219,21 +219,13 @@ h1 {
 .purpose {
   position: relative;
   padding-inline-start: var(--sl-nav-pad-y);
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -0.25rem;
-    width: 0.25rem;
-    border-radius: 0.25rem;
-    background-color: var(--sl-color-accent);
-  }
+  border-inline-start-style: solid;
+  border-inline-start-width: 0.25rem;
+  border-inline-start-color: var(--sl-color-accent);
 }
 
 .purpose p {
-  font-size: var(--sl-text-h3);
+  font-size: var(--sl-text-h4);
   font-weight: 600;
 }
 
