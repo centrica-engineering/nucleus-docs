@@ -105,27 +105,22 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     }
   }
 
+  section-tabs {
+    display: block;
+    overflow: hidden;
+    position: sticky;
+    top: var(--sl-nav-height);
+    z-index: 1;
+    background-color: var(--sl-color-bg);
+  }
+
   .section-tabs {
     background-color: var(--sl-color-gray-7);
     margin-inline-start: var(--sl-content-pad-x);
     margin-inline-end: var(--sl-content-pad-x);
     margin-block-end: var(--sl-content-pad-x);
     border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
-    position: sticky;
-    top: var(--sl-nav-height);
-    z-index: 1;
     transform: translateY(var(--sl-content-pad-x));
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: calc(var(--sl-content-pad-x) * -1);
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height: var(--sl-content-pad-x);
-      background-color: var(--sl-color-bg);
-    }
 
     [href="#_top"] {
       display: none;
