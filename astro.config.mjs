@@ -23,7 +23,6 @@ const componentSidebar = () => {
       }),
       {
         label: "Form",
-        collapsed: true,
         items: 
           customElements.filter((customElement) => !customElement.internal && customElement.category === 'Form' && !isDeprecated(customElement.name))
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
@@ -36,7 +35,6 @@ const componentSidebar = () => {
       },
       {
         label: "Experience",
-        collapsed: true,
         items: 
           customElements.filter((customElement) => !customElement.internal && customElement.category === 'Experience' && !isDeprecated(customElement.name))
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
@@ -49,7 +47,6 @@ const componentSidebar = () => {
       },
       {
         label: "Deprecated",
-        collapsed: true,
         items: 
           cem.tags.filter((tag) => tag.deprecated)
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
