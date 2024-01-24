@@ -6,7 +6,6 @@ import jsdoc from "@connectedhomes/nucleus/ce-doc.json";
 const compDetails = cem.tags.find((tag) => tag.name === name);
 const jsdocDetails = jsdoc.find((tag) => tag.name === name);
 
-const attributes = compDetails?.attributes;
 const properties = compDetails?.properties;
 const slots = jsdocDetails?.slots;
 const events = compDetails?.events;
@@ -14,7 +13,7 @@ const events = compDetails?.events;
 
 { 
   properties?.length > 0 &&  (
-    <h4 id="properties">Properties</h4>
+    <h4 id="attributes">Attributes</h4>
     <div class="spec-list">
       {
         properties?.map((property) => {
@@ -22,21 +21,27 @@ const events = compDetails?.events;
             return undefined;
           }
           return (
-            <p class="property-title"><code>{property.name}</code></p>
+            <p><code>{property.attribute}</code></p>
             <dl>
               <div>
                 <dt>Attribute</dt>
                 <dd><code>{property.attribute}</code></dd>
               </div>
               <div>
-                <dt>Description</dt>
-                <dd>{property.description ?? ''}</dd>
+                <dt>Property</dt>
+                <dd><code>{property.name}</code></dd>
               </div>
+              {
+                property.description && (
+                <div>
+                  <dt>Description</dt>
+                  <dd>{property.description ?? ''}</dd>
+                </div>
+                )
+              }
               <div>
                 <dt>Type</dt>
-                <dd>
-                  <code>{property.type?.replaceAll('"', ' ')}</code>
-                </dd>
+                <dd><code>{property.type?.replaceAll('|', ', ')}</code></dd>
               </div>
               {
                 property.default && (
@@ -57,30 +62,29 @@ const events = compDetails?.events;
 {
   slots?.length > 0 && (
     <h4 id="slots">Slots</h4>
-    <table>
-      <thead>
-        <tr>
-          <th>Slot</th>
-          <th>Permitted tags</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        {
-          slots?.map((slot) => {
-            return (
-              <tr>
-                <td>{slot.name ? <code>{slot.name}</code> : 'anonymous' }</td>
-                <td>
-                  {slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>  </span>)}
-                </td>
-                <td>{slot.description}</td>
-              </tr>
-            );
-          })
-        }
-      </tbody>
-    </table>
+    <div class="spec-list">
+      {
+        slots?.map((slot) => {
+          return (
+            <dl>
+              <p>{slot.name ? <code>{slot.name}</code> : <span>anonymous</span> }</p>
+              <div>
+                <dt>Slot</dt>
+                <dl>{slot.name ? <code>{slot.name}</code> : 'anonymous' }</dl>
+              </div>
+              <div>
+                <dt>Permitted tags</dt>
+                <dl>{slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>&#32;</span>)}</dl>
+              </div>
+              <div>
+                <dt>Description</dt>
+                <dl>{slot.description}</dl>
+              </div>
+            </dl>
+          );
+        })
+      }
+    </div>
   )
 }
 
