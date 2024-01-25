@@ -11,42 +11,30 @@ const properties = compDetails?.properties;
 const slots = jsdocDetails?.slots;
 const events = compDetails?.events;
 ---
-{ 
-  attributes?.length > 0 &&  (
-    <h4 id="attributes">Attributes</h4>
-    <table>
-      <thead>
-        <tr>
-          <th>Attribute</th>
-          <th>Type</th>
-          <th>Default</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        {
-          attributes?.map((attribute) => {
-            return (
-              <tr>
-                <td><code>{attribute.name}</code></td>
-                <td>{attribute.type?.replaceAll('"', ' ')}</td>
-                <td>{attribute.default?.replaceAll('"', '')}</td>
-                <td>{attribute.description ?? ''}</td>
-              </tr>
-            );
-          })
-        }
-      </tbody>
-    </table>
-  )
+<style>
+.spec {
+  td {
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+
+  th {
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 2px;
+  }
 }
+</style>
   
 {
   properties?.length > 0 && (
-    <h4 id="properties">Properties</h4>
-    <table>
+    <h4 id="attributes">Attributes</h4>
+    <table class="spec">
       <thead>
         <tr>
+          <th>Attribute</th>
           <th>Property</th>
           <th>Type</th>
           <th>Default</th>
@@ -56,14 +44,16 @@ const events = compDetails?.events;
       <tbody>
         {
           properties?.map((property) => {
-            if (['slottedStyles'].includes(property.name)) {
+            if (!property.attribute || ['slottedStyles'].includes(property.name)) {
               return undefined;
             }
+            const defaultValue = property.default?.replaceAll('"', '');
             return (
               <tr>
+                <td><code>{property.attribute}</code></td>
                 <td><code>{property.name}</code></td>
-                <td>{property.type?.replaceAll('"', ' ')}</td>
-                <td>{property.default?.replaceAll('"', '')}</td>
+                <td>{property.type?.split('|')?.map((type) => <span><code>{type.replaceAll('"','')}</code>&#32;</span>)}</td>
+                <td>{ defaultValue ? <code>{defaultValue}</code> : ''}</td>
                 <td>{property.description}</td>
               </tr>
             );
@@ -76,7 +66,7 @@ const events = compDetails?.events;
 {
   slots?.length > 0 && (
     <h4 id="slots">Slots</h4>
-    <table>
+    <table class="spec">
       <thead>
         <tr>
           <th>Slot</th>
@@ -89,9 +79,9 @@ const events = compDetails?.events;
           slots?.map((slot) => {
             return (
               <tr>
-                <td>{slot.name ? <code>{slot.name}</code> : 'anonymous' }</td>
+                <td>{slot.name ? <code>{slot.name}</code> : 'Anonymous slot' }</td>
                 <td>
-                  {slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>  </span>)}
+                  {slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>&#32;</span>)}
                 </td>
                 <td>{slot.description}</td>
               </tr>
@@ -106,7 +96,7 @@ const events = compDetails?.events;
 {
   events?.length > 0 && (
     <h4 id="events">Events</h4>
-    <table>
+    <table class="spec">
       <thead>
         <tr>
           <th>Name</th>
