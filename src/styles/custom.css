@@ -149,6 +149,13 @@ h1 {
 
 /* NOTE: @drew - 2024-01-03 - this selector is to target the content page */
 :root[data-has-sidebar] {
+  .content-panel {
+    padding-inline-start: calc(var(--sl-content-pad-x) * 2);
+    padding-inline-end: var(--sl-content-pad-x);
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+  }
+
   .content-panel:nth-child(1) {
     display: none;
   }
@@ -157,12 +164,22 @@ h1 {
     border-top-width: 0;
   }
 
-  .content-panel .sl-container {
-    margin-inline: auto;
-  }
-
   .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
     scroll-margin-top: 80px;
+  }
+
+  @media(width < 72em) {
+    .content-panel {
+      padding-inline-start: var(--sl-content-pad-x);
+    }
+  }
+
+  @media(width >= 72em) {
+    .content-panel {
+      .sl-container {
+        margin-inline: auto;
+      }
+    }
   }
 }
 
@@ -183,6 +200,10 @@ h1 {
 .sl-markdown-content {
   :is(h1, h2, h3, h4, h5, h6) {
     color: var(--sl-color-heading);
+  }
+
+  h2:is(:not(:first-child)) {
+    margin-block-start: 6rem;
   }
 
   [id^="key"] + table thead {
