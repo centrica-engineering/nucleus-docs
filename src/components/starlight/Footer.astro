@@ -3,8 +3,6 @@ import { logos } from 'virtual:starlight/user-images';
 import config from 'virtual:starlight/user-config';
 import { Icon } from '@astrojs/starlight/components';
 import type { Props } from "@astrojs/starlight/props";
-import { formatPath } from '@astrojs/starlight/utils/format-path';
-import NucleusContributeLink from "../NucleusContributeLink.astro";
 
 import { EditLink, LastUpdated, Pagination } from 'virtual:starlight/components';
 
@@ -16,7 +14,7 @@ const viewURL = 'https://github.com/centrica-engineering/nucleus-docs/blob/astro
 
 <footer>
   <div class="page-footer">
-    <h3>Found a problem with the content on this {pageSlug} page?</h3>
+    <h3>Found a problem with the content on this page?</h3>
     <ul>
       <li><EditLink {...Astro.props} /></li>
       <li>
