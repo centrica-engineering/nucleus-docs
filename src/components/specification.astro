@@ -24,10 +24,6 @@ const events = compDetails?.events;
             <p><code>{property.attribute}</code></p>
             <dl>
               <div>
-                <dt>Attribute</dt>
-                <dd><code>{property.attribute}</code></dd>
-              </div>
-              <div>
                 <dt>Property</dt>
                 <dd><code>{property.name}</code></dd>
               </div>
@@ -41,13 +37,13 @@ const events = compDetails?.events;
               }
               <div>
                 <dt>Type</dt>
-                <dd><code>{property.type?.replaceAll('|', ', ')}</code></dd>
+                <dd>{property.type?.split('|')?.map((type) => <span><code>{type.replaceAll('"','')}</code>&#32;</span>)}</dd>
               </div>
               {
                 property.default && (
                   <div>
                     <dt>Default</dt>
-                    <dd><code>{property.default}</code></dd>
+                    <dd><code>{property.default?.replaceAll('"', '')}</code></dd>
                   </div>
                 )
               }
@@ -67,18 +63,14 @@ const events = compDetails?.events;
         slots?.map((slot) => {
           return (
             <dl>
-              <p>{slot.name ? <code>{slot.name}</code> : <span>anonymous</span> }</p>
-              <div>
-                <dt>Slot</dt>
-                <dl>{slot.name ? <code>{slot.name}</code> : 'anonymous' }</dl>
-              </div>
+              <p>{slot.name ? <code>{slot.name}</code> : <span>Anonymous slot</span> }</p>
               <div>
                 <dt>Permitted tags</dt>
-                <dl>{slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>&#32;</span>)}</dl>
+                <dd>{slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>&#32;</span>)}</dd>
               </div>
               <div>
                 <dt>Description</dt>
-                <dl>{slot.description}</dl>
+                <dd>{slot.description}</dd>
               </div>
             </dl>
           );
@@ -91,25 +83,20 @@ const events = compDetails?.events;
 {
   events?.length > 0 && (
     <h4 id="events">Events</h4>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        {
-          events?.map((event) => {
-            return (
-              <tr>
-                <td><code>{event.name}</code></td>
-                <td>{event.description}</td>
-              </tr>
-            );
-          })
-        }
-      </tbody>
-    </table>
+    <div class="spec-list">
+      {
+        events?.map((event) => {
+          return (
+            <dl>
+              <p><code>{event.name}</code></p>
+              <div>
+                <dt>Description</dt>
+                <dd>{event.description}</dd>
+              </div>
+            </dl>
+          );
+        })
+      }
+    </div>
   )
 }
