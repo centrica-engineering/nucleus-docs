@@ -43,20 +43,23 @@ We prioritise the following list of browsers and devices identified as the most 
 
 | Device | Operating System | Browser | Version |
 | :--- | :--- | :--- | :--- |
-| Computer | Windows 11 | Chrome | 110 |
-| Computer | Windows 11 | Firefox | 109 |
-| Computer | Windows 11 | Edge | 109 |
-| Computer | MacOS Ventura | Safari | 16 |
-| Computer | MacOS Ventura | Chrome | 110 |
-| Computer | MacOS Ventura | Firefox | 109 |
-| iPhone | iOS 16 (iPhone 14) | Safari |16 |
-| iPhone | iOS 15 (iPhone 13) | Safari | 15 |
+| Computer | Windows 11 | Chrome | 120 |
+| Computer | Windows 11 | Firefox | 121 |
+| Computer | Windows 11 | Edge | 120 |
+| Computer | MacOS sonoma | Safari | 17 |
+| Computer | MacOS ventura | Safari | 16 |
+| Computer | MacOS sonoma | Chrome | 120 |
+| Computer | MacOS sonoma | Firefox | 121 |
+| iPhone | iOS 17 (iPhone 15) | Safari |17 |
+| iPhone | iOS 16 (iPhone 14 Pro) | Safari | 16 |
+| iPhone | iOS 17 (iPhone 15) | Chrome | 92 |
 | iPhone | iOS 16 (iPhone 14 Pro) | Chrome | 92 |
-| iPhone | iOS 15 (iPhone 13 Pro) | Chrome | 92 |
-| iPad | iPad OS 14 (iPad Pro 12.9 2020) | Safari | 13 |
-| iPad | iPad OS 14 (iPad Pro 12.9 2020) | Chrome | 86 |
-| Android | Android OS 12 (Samsung Galaxy S22) | Chrome | 105 |
-| Android | Android OS 11 (Samsung Galaxy S21) | Samsung Browser | 17 |
+| iPad | iPad OS 17 (iPad Pro 12.9 2021) | Safari | 17 |
+| iPad | iPad OS 16 (iPad Pro 12.9 2022) | Safari | 16 |
+| iPad | iPad OS 17 (iPad Pro 12.9 2021) | Chrome | 92 |
+| iPad | iPad OS 16 (iPad Pro 12.9 2022) | Chrome | 92 |
+| Android | Android OS 13 (Samsung Galaxy S23) | Chrome | 117 |
+| Android | Android OS 13 (Samsung Galaxy S23) | Samsung Browser | 23 |
 
 **Note :** IE11 and Edge 18 browsers are no longer supported as their usage levels are below 0.5% (as of June 2021).
 
