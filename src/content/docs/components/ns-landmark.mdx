@@ -11,6 +11,7 @@ import Placement from '@components/placement.astro';
 import CompDetails from '@components/cem-description.astro';
 import ExampleViewer from '@components/example-viewer.astro';
 import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 import ExampleStandard from '@examples/components/ns-landmark/standard.html';
 import ExampleSummit from '@examples/components/ns-landmark/summit.html';
@@ -24,43 +25,39 @@ import ExampleLakeside from '@examples/components/ns-landmark/lakeside.html';
 
 Landmarks are used to set the scene for what the page is for, what offers might be available and give helpful best next actions for users. This is where the main heading for the page will sit and give the overarching context to the rest of the page.
 
-### Example
+### Examples
 
-<ExampleViewer>
-  <ExampleStandard slot="template" />
-</ExampleViewer>
-
-#### Summit
-
-`type="summit"`
-
-<ExampleViewer>
-  <ExampleSummit slot="template" />
-</ExampleViewer>
-
-#### Hillside
-
-`type="hillside"`
-
-<ExampleViewer>
-  <ExampleHillside slot="template" />
-</ExampleViewer>
-
-#### Valley
-
-`type="valley"`
-
-<ExampleViewer>
-  <ExampleValley slot="template" />
-</ExampleViewer>
-
-#### Lakeside
-
-`type="lakeside"`
-
-<ExampleViewer>
-  <ExampleLakeside slot="template" />
-</ExampleViewer>
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer>
+      <ExampleStandard slot="template" />
+    </ExampleViewer>
+  </TabItem>
+  <TabItem label="Summit">
+  `type="summit"`
+    <ExampleViewer>
+      <ExampleSummit slot="template" />
+    </ExampleViewer>
+  </TabItem>
+  <TabItem label="Hillside">
+  `type="hillside"`
+    <ExampleViewer>
+      <ExampleHillside slot="template" />
+    </ExampleViewer>
+  </TabItem>
+  <TabItem label="Valley">
+  `type="valley"`
+    <ExampleViewer>
+      <ExampleValley slot="template" />
+    </ExampleViewer>
+  </TabItem>
+  <TabItem label="Lakeside">
+  `type="lakeside"`
+    <ExampleViewer>
+      <ExampleLakeside slot="template" />
+    </ExampleViewer>
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
