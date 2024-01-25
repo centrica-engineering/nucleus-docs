@@ -106,7 +106,6 @@ export default defineConfig({
         github: "https://github.com/centrica-engineering/nucleus-docs",
       },
       components: {
-        EditLink: "./src/components/starlight/EditLink.astro",
         Footer: "./src/components/starlight/Footer.astro",
         PageTitle: "./src/components/starlight/PageTitle.astro",
         TableOfContents: "./src/components/starlight/TableOfContents.astro",
