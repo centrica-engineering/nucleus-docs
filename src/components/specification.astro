@@ -17,9 +17,10 @@ const events = compDetails?.events;
     <div class="spec-list">
       {
         properties?.map((property) => {
-          if (['slottedStyles'].includes(property.name)) {
+          if (!property.attribute || ['slottedStyles'].includes(property.name)) {
             return undefined;
           }
+          const defaultValue = property.default?.replaceAll('"', '');
           return (
             <p><code>{property.attribute}</code></p>
             <dl>
@@ -43,7 +44,7 @@ const events = compDetails?.events;
                 property.default && (
                   <div>
                     <dt>Default</dt>
-                    <dd><code>{property.default?.replaceAll('"', '')}</code></dd>
+                    <dd>{ defaultValue ? <code>{defaultValue}</code> : ''}</dd>
                   </div>
                 )
               }
