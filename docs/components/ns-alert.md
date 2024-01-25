@@ -97,6 +97,7 @@ The message must be in plain English, and help the user out of the situation by 
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `type` | `type` | `string` | `standard` | `standard`, `highlighter` | Type of alert to use |
 | `state` | `state` | `string` | `error` | `error`, `success`, `warning`, `info` | Defines the role of the highlighter and changes the styles |
+| `dismissible` | `dismissible` | `boolean` | `false` | `true`, `false` | Whether the alert can be dismissed |
 
 | Slots | Type |
 | :--- | :--- |
