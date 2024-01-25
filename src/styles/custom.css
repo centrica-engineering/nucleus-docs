@@ -206,6 +206,24 @@ h1 {
     margin-block-start: 6rem;
   }
 
+  .heading-wrapper {
+    :is(h1, h2, h3, h4, h5, h6) {
+      display: inline;
+    }
+
+    svg {
+      display: none;
+      margin-inline-start: 0.5rem;
+    }
+  }
+
+  .heading-wrapper:hover {
+    svg {
+      display: inline;
+
+    }
+  }
+
   [id^="key"] + table thead {
     display: none; /* [1] */
   }
