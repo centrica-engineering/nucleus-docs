@@ -37,10 +37,8 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
       <div class="section-tabs">
         {
         toc.items.filter((toc) => toc.text !== 'Top').map((toc) => {
-          const sectionTabImage = sectionTabImages[`../assets/sectiontab/${toc.text?.toLowerCase()}.svg`];
           return (
-            <a class="section-tab" href=`#${toc.slug}`>
-              <Image src={sectionTabImage()} alt="" {...Astro.props} />
+            <a class=`section-tab ${toc.slug}` href=`#${toc.slug}`>
               <span>{toc.text}</span>
             </a>
             )
@@ -143,17 +141,45 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     transition-duration: 1000ms;
     transition-timing-function: ease-in-out;
 
-    &:hover {
-      color: var(--sl-color-gray-1);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: 24px;
+      height: 24px;
+      background-color: currentColor;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 24px 24px;
     }
 
-    img {
-      position: absolute;
-      top: 50%;
-      left: 16px;
-      transform: translateY(-50%);
-      width: 1.25em;
-      height: 1.25em;
+    &.overview {
+      &::before {
+        mask-image: var(--ns-section-tab-overview);
+      }
+    }
+
+    &.implementation {
+      &::before {
+        mask-image: var(--ns-section-tab-implementation);
+      }
+    }
+
+    &.guidance {
+      &::before {
+        mask-image: var(--ns-section-tab-guidance);
+      }
+    }
+
+    &.accessibility {
+      &::before {
+        mask-image: var(--ns-section-tab-accessibility); 
+      }
+    }
+
+    &:hover {
+      color: var(--sl-color-gray-1);
     }
 
     &[aria-current] {
