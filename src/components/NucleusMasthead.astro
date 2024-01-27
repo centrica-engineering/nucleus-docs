@@ -144,14 +144,15 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     &::before {
       content: "";
       position: absolute;
-      top: 16px;
-      left: 16px;
-      width: 24px;
-      height: 24px;
+      top: 50%;
+      left: 1em;
+      transform: translateY(-50%);
+      width: 1.5em;
+      height: 1.5em;
       background-color: currentColor;
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 24px 24px;
+      background-size: 1.5em 1.5em;
     }
 
     &.overview {
