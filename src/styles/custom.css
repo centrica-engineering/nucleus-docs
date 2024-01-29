@@ -405,6 +405,12 @@ h1 {
     width: inherit;
   }
 
+  h2 {
+    font-weight: 500;
+    color: var(--sl-color-text);
+    font-size: var(--sl-text-lg);
+  }
+
   li {
     margin-block: 0.5rem;
   }
