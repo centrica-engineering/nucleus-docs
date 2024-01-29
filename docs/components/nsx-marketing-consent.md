@@ -4,6 +4,7 @@ description: Experience | Marketing consent.
 
 import { StorybookStory } from '../../includes/storybook-story.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -15,11 +16,11 @@ This component is only used to capture and submit customer preferences, not view
 
 ## Content guidance
 
-![Experience pattern - Marketing consent](https://user-images.githubusercontent.com/28779/77073146-b6e3d300-69e6-11ea-99a1-fc5a131fcef6.png)
+![Experience pattern - Marketing consent](images/nsx-marketing-consent/content-guidance.webp)
 
 It is possible to change the heading and the first paragraph to suit specific context. However, we recommend using the default content as these have been signed off by the legal team.
 
-If there is an official update to the default content, please inform Nucleus so that the the component can be updated.
+If there is an official update to the default content, please inform the Nucleus team so that the the component can be updated.
 
 ## Best practice
 
@@ -34,7 +35,7 @@ This component is legally required when capturing contact preferences that will 
 
 ## Usage
 
-<StorybookStory story="nsx-marketing-consent--standard"></StorybookStory>
+<StorybookStory story="experiences-nsx-marketing-consent--standard"></StorybookStory>
 
 ## Component placement
 
@@ -53,4 +54,4 @@ This component is legally required when capturing contact preferences that will 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[nsx-marketing-consent]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[nsx-marketing-consent]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>

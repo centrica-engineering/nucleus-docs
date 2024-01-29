@@ -4,19 +4,21 @@ description: atom | Skeleton component.
 
 import { StorybookStory } from '../../includes/storybook-story.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
-A placeholder to show that content is loading.
+The `ns-skeleton` component is a placeholder to show that content is loading.
+
+![Example showing a paragraph type ns-skeleton](images/ns-skeleton/intro-paragraph-example.webp)
+
+The example above shows the visual representation for a paragraph. There are also options for text, headings, and subheadings.
 
 ## Accessibility
 
-This component is hidden to screen readers. It will add a message, visible only to screen readers,
-within the parent element stating "Loading". When the skeleton component is removed from the DOM it
-will find the loading message and delete it.
+This component is hidden to screen readers. It will add a message, visible only to screen readers, within the parent element stating "Loading". When the skeleton component is removed from the DOM it will find the loading message and delete it.
 
 To prevent users with cognitive disabilities from being overwhelmed; the shimmer animation loops for 6 seconds then stops.
-
 
 ## Best practice
 
@@ -40,13 +42,13 @@ To prevent users with cognitive disabilities from being overwhelmed; the shimmer
 
 ## Component placement
 
-<ComponentPlacement component="ns-skeleton" parentComponents="ns-lockup,ns-landmark,ns-card,ns-form,ns-fieldset,ns-content,ns-article,ns-accordion,ns-caveat,ns-tabs,ns-testimonial,ns-skyline,ns-product-card"></ComponentPlacement>
+<ComponentPlacement component="ns-skeleton" parentComponents="ns-lockup,ns-landmark,ns-card,ns-form,ns-form-group,ns-content,ns-article,ns-accordion,ns-caveat,ns-tabs,ns-testimonial,ns-skyline,ns-product-card"></ComponentPlacement>
 
 ## Specification
 
-| Attribute    | Type | Default   | Options   | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `type` | `string` | `text` | `text`, `paragraph`, `heading`, `subheading` | Visual element it is representing |
+| Attribute | Property |  Type | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type` | `type` | `string` | `text` | `text`, `paragraph`, `heading`, `subheading` | Visual element it is representing |
 
 ## Specification notes
 
@@ -54,11 +56,9 @@ To prevent users with cognitive disabilities from being overwhelmed; the shimmer
 
 Type can be manually picked, however it will automatically decide the best `type` based on the `slot` it is in.
 
-
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-skeleton]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-skeleton]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>

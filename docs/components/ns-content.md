@@ -3,12 +3,14 @@ description: Molecule | Content component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
 > ns-content is used to display typography and media.
+>
+> **Note:** This component is currently being considered for deprecation.
 
 `ns-content` is used inside other components and has been created to help add consistency to typography styling, and to improve how typography interacts with other components.
 
@@ -25,7 +27,7 @@ We do not currently have content guidance as this will change depending on the c
 
 ## Usage
 
-<StorybookStory story="components-ns-content--standard"></StorybookStory>
+<StorybookStory story="deprecated-ns-content--standard"></StorybookStory>
 
 ### Using ns-image and ns-video
 
@@ -46,9 +48,9 @@ Both `ns-image` and `ns-video` need to be wrapped in a `<figure>` element
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `spacing` | `string` | 'normal' | 'compact','cosy','normal','loose' | The space between the elements |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `spacing` | `spacing` | `string` | `normal` | `compact`, `cosy`, `normal`, `loose` | The space between the elements. |
 
 | Slots | Type |
 | :--- | :--- |
@@ -69,14 +71,12 @@ To display correctly, `ns-content` relies on clean HTML in the anonymous slot. U
 | normal | 1em|
 | compact | 1.5em|
 
-<Tokens component="content"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-content]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-content]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>
 
 ## Related links
 

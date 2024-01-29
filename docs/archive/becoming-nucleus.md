@@ -32,7 +32,7 @@ When running experiments:
 * Gather evidence on your hypotheses
 * Ask for a early input / review session
 * Use our workshop templates to run an ideation / review session within the team
-* Check GitHub for existing, open RFCs on upcoming assets (used for discovery)
+* Check GitHub for existing, open Proposals on upcoming assets (used for discovery)
 * Share your learnings
 
 ## What kind of reviews should we have?

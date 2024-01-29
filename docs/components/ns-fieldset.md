@@ -3,12 +3,14 @@ description: Molecule | Fieldset component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
 > The ns-fieldset component is used to group related ns-inputters.
+>
+> **Note:** This component is deprecated and please refer to [ns-form-group](../components/ns-form-group) component.
 
 Use where you would normally use a vanilla html fieldset element. This element extends the layout for `ns-form`.
 
@@ -29,11 +31,14 @@ https://www.w3.org/WAI/WCAG21/Techniques/html/H71
 
 ## Usage
 
-<StorybookStory story="form-components-ns-fieldset--standard"></StorybookStory>
+<StorybookStory story="deprecated-ns-fieldset--standard"></StorybookStory>
 
 ## Component placement
 
 <ComponentPlacement component="ns-fieldset" parentComponents="ns-form"></ComponentPlacement>
+
+### Note
+When adding radio buttons and checkboxes to `ns-inputter` inside an `ns-fieldset`, its heading size will match the size of all labels from other `ns-inputter`. This helps keep a logical visual hierarchy in a form.
 
 ## Specification
 
@@ -45,14 +50,12 @@ https://www.w3.org/WAI/WCAG21/Techniques/html/H71
 | :--- | :--- |
 | Anonymous | ns-inputters |
 
-<Tokens component="fieldset"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-fieldset]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-fieldset]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>
 
 ## Related links
 

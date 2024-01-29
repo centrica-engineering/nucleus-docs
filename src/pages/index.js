@@ -6,39 +6,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
-const features = [
-  {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-];
-
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
@@ -63,11 +30,11 @@ function Home() {
       description="Description will go into a meta tag in <head />">
 
       <main class="ndsn">
-        <ns-landmark type="hillside" gradient="invert-ramp-cyan">
+        <ns-landmark type="hillside" gradient="cyan">
           <h1 slot="heading">
             <span class="h5">Nucleus team.</span>
-            <span class="h1 enlighten">
-              Welcome to the <b>British Gas<br class="landmark-br"></br> Design System</b>
+            <span class="h1">
+              Welcome to the British Gas Design System
             </span>
           </h1>
           <p slot="paragraph">Here to solve and build a more cohesive and coherent web experience for the British Gas&nbsp;brand.</p>
@@ -97,12 +64,12 @@ function Home() {
         </ns-panel>
 
 
-        <ns-panel decoration="circle-yellow-left">
+        <ns-panel decoration="yellow">
           <ns-lockup>
             <h2 slot="heading">
               <span class="h5">Becoming Nucleus.</span>
-              <span class="h2 enlighten">
-                Join in the <b>conversation and movement</b> of our design system
+              <span class="h2">
+                Join in the conversation and movement of our design system
               </span>
             </h2>
             <p slot="paragraph">Want to know how to start using Nucleus or not sure if we have what you are looking&nbsp;for?</p>

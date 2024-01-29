@@ -161,6 +161,11 @@ The Colour Contrast Analyser (CCA) helps you determine the legibility of text an
 [https://michelf.ca/projects/sim-daltonism/](https://michelf.ca/projects/sim-daltonism/)  
 Sim Daltonism lets you visualise colours as they are perceived with various types of colour blindness. Use the camera on your iOS device, or use the Mac app to filter a region of the screen. Sim Daltonism is open source.
 
+### Stark for Figma
+
+[https://www.getstark.co/figma/](https://www.getstark.co/figma/)
+An easy-to-use plugin that has clear results. Use the contrast ratio checker with an eye dropper for free, or sign up for the full version to unlock other useful features you can use right in the workspace you are already in when designing.
+
 ### Colour Contrast Analyser for Sketch
 
 [https://github.com/getflourish/Sketch-Color-Contrast-Analyser](https://github.com/getflourish/Sketch-Color-Contrast-Analyser)  

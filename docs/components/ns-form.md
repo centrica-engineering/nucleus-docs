@@ -3,30 +3,30 @@ description: Molecule | Form component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
-> The form component is used to contain ns-inputters and manage their validations.
+> The form component is used to collect customer input and provide personal experience to customer based on their needs.
 
-The `ns-form` component is a wrapper for `ns-inputters`. It's main purpose is to manage the validations of these `ns-inputters`.
+The `ns-form` component mimics the native form element features. It's main purpose is to allow customers to provide data and validate the data before sending them to processing.
 
 ## Best practises
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
-| Use `ns-inputter` for your form fields | Write your own validations |
-| Use `ns-cta` to submit your form | Rely on front end validation alone. |
+| Use `ns-inputter`, `ns-password`, `ns-datepicker`, `ns-appointment-picker`, `nsx-address-selector`, `nsx-marketing-consent` for your form fields | Write your own validations |
+| Use `ns-cta` submit type to submit your form | Rely on front end validation alone. |
 
 ### Considerations of best practises
 
-* Alyways use the `ns-inputter` component inside `ns-form`, input and other form elements shouldn't be on their own.
+* Always use nucleus components inside `ns-form`, input and other native form elements shouldn't be on their own.
 * Speak with the Nucleus team for advice on experience patterns.
 
 ## Usage
 
-<StorybookStory story="form-components-ns-form--multi-input-form"></StorybookStory>
+<StorybookStory story="form-components-ns-form--standard"></StorybookStory>
 
 ## Component placement
 
@@ -55,8 +55,6 @@ The submit event is triggered in one of two ways:
 Exceptions:
 
 * Nested ns-forms will not dispatch the submit event to a parent ns-form
-* The nsx-address selector will dispatch a submit event as it is a self contained experience.
-
 
 #### Handling submit events
 
@@ -73,7 +71,7 @@ onsubmit example:
   <ns-inputter validation='["isRequired"]'>
     ...
   </ns-inputter>
-  <ns-cta>Submit</ns-cta>
+  <ns-cta type="submit">Submit</ns-cta>
 </ns-form>
 
 <script>
@@ -168,16 +166,19 @@ A **valid validate return response** looks like:
 }
 ```
 
-<Tokens component="form"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-form]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-form]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>
 
 ## Related links
 
 * [ns-inputter](components/ns-inputter.md)
-* [ns-fieldset](components/ns-fieldset.md)
+* [ns-password](components/ns-password.md)
+* [ns-datepicker](components/ns-datepicker.md)
+* [ns-appointment-picker](components/ns-appointment-picker.md)
+* [nsx-address-selector](components/nsx-address-selector.md)
+* [nsx-marketing-consent](components/nsx-marketing-consent.md)
+* [ns-form-group](components/ns-form-group.md)

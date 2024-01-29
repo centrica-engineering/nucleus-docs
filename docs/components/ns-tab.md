@@ -3,8 +3,8 @@ description: Atom | Tab component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -30,7 +30,7 @@ Please see [ns-tabs](components/ns-tabs.md) for full content guidance.
 
 ## Usage
 
-<StorybookStory story="components-ns-tab--tab"></StorybookStory>
+<StorybookStory story="components-ns-tab--standard"></StorybookStory>
 
 ## Component placement
 
@@ -38,10 +38,10 @@ Please see [ns-tabs](components/ns-tabs.md) for full content guidance.
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `icon`    | `string` |  | Please see the [documentation for ns-icon](../components/ns-icon) | Optional icon to add to the tab. |
-| `selected` | `boolean` | `false` |`true`, `false`| Pre-selected tab |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `icon`     | `icon`    | `string` |  | Please see the [documentation for ns-icon](../components/ns-icon) | Optional icon to add to the tab. |
+| `selected` | `selected` | `boolean` | `false` |`true`, `false`| Pre-selected tab |
 
 | Event | Description |
 | :--- | :--- |
@@ -51,11 +51,9 @@ Please see [ns-tabs](components/ns-tabs.md) for full content guidance.
 | :--- | :--- |
 | `anonymous` | `textNode` |
 
-<Tokens component="tab"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-tab]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-tab]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>

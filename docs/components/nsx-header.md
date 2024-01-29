@@ -4,6 +4,7 @@ description: Experience | Header component.
 
 import { StorybookStory } from '../../includes/storybook-story.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -12,6 +13,8 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 This experience pattern is a wrapper of the `ns-header`. The header experience pattern internally holds the sections and the secondary navigation.
 
 The subheadings and links for the navigation can be passed in for each section to allow them to be quickly updated.
+
+![Image showing nsx-header open with subheadings and links](images/nsx-header/intro.webp)
 
 ## Best practice
 
@@ -28,7 +31,7 @@ The subheadings and links for the navigation can be passed in for each section t
 
 ## Usage
 
-<StorybookStory story="nsx-header--standard"></StorybookStory>
+<StorybookStory story="experiences-nsx-header--standard"></StorybookStory>
 
 ## Component placement
 
@@ -36,14 +39,14 @@ The subheadings and links for the navigation can be passed in for each section t
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `sections`    | `array` | |  | Subheadings and links for each nav section |
-| `hideA11yBtn`    | `boolean` | `false` |  | Ability to turn off Reciteme |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `sections`    | `sections` | `array` | |  | Subheadings and links for each nav section |
+| `hide-a11y-btn` | `hideA11yBtn` | `boolean` | `false` |  | Ability to turn off Reciteme |
 
 | Event | Description |
 | :--- | :--- |
-| `header-click` | Sends an event when a link is clicked. `{ text: 'Link text', href: 'Link href' }` |
+| `header-click` | Sends an event when a link is clicked. `{ text: 'Link text', href: 'Link href', header: 'Header', subheader: 'Sub Header' }` |
 
 | Slots | Type |
 | :--- | :--- |
@@ -98,4 +101,4 @@ The subheadings and links for the navigation can be passed in for each section t
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[nsx-header]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[nsx-header])
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>

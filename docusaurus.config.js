@@ -4,10 +4,6 @@ const prodScripts = () => {
       algolia: {
         apiKey: process.env.ALGOLIA_KEY,
         indexName: 'nucleus',
-      },
-      googleAnalytics: {
-        trackingID: 'UA-72906223-20',
-        anonymizeIP: true,
       }
     }
   }
@@ -38,7 +34,7 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://www.britishgas.co.uk/nucleus/demo/index.html',
+          href: 'https://library.britishgas.design',
           label: 'Storybook',
           position: 'right',
         },
@@ -132,8 +128,7 @@ module.exports = {
   scripts: [
     {
       src:
-        'https://www.britishgas.co.uk/nucleus/nucleus.min.js',
-      async: true,
+        'https://www.britishgas.co.uk/nucleus/nucleus.min.js'
     },
   ],
 };

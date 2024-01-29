@@ -3,13 +3,41 @@ description: Molecule | Panel component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
-`ns-panel` is an empty container that holds each section of a page. Each `ns-panel` provides an area to place a layout and add an optional decoration.
+> The `ns-panel` component is an empty container for each section on a page.
 
-Adding a decoration to an `ns-panel` using a gradient background provides visual separation from the other sections of the page and introduces brand [colour](foundations/colours.md) and style. Using the circle decoration provides subtle emphasis to an `ns-panel`.
+It provides an area to place a layout, add an optional decoration and apply the appropriate margins. There can be more than one `ns-panel` on a page.
+
+## Content guidance
+
+![ns-panel-with-offset-decoration-and-columns](images/ns-panel/content-guidance.webp)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Decoration | Choose between a no-colour background (default) or one of the available brand colours |
+| B | Top offset | Adjust the vertical space which can affect where the decoration starts at the top |
+| C | Bottom offset | Adjust the vertical space which can affect where the decoration ends at the bottom |
+| D | Columns | You can define a multiple column layout within the `ns-panel` |
+
+## Decoration
+
+Adding decoration to an `ns-panel` utilises a coloured background. It provides visual separation from other sections on the page and introduces brand [colour](foundations/colours.md) and style.
+
+![ns-panel-decoration-yellow](images/ns-panel/decoration.webp)
+
+The decoration has configurable top and bottom margins. These are adjusted separately from the content and allow the content to overlap these edges, if required, to achieve a more visually desirable layout.
+
+By default there is no decoration applied...
+![ns-panel-no-decoration](images/ns-panel/no-decoration.webp)
+
+## Columns and content
+
+It is possible to apply a number of columns to a layout within a single `ns-panel` by adding the `ns-column` component within it. Note the 3 cards in the examples above have been added this way. (See [ns-column](ns-column.md)).
+
+Another way to adjust the layout is to use the `ns-content` component within `ns-panel`. This enables formatting of typography and spacing (see [ns-content](ns-content.md))
 
 ## Best practice
 
@@ -27,7 +55,7 @@ Adding a decoration to an `ns-panel` using a gradient background provides visual
 
 ## Usage
 
-<StorybookStory story="components-ns-panel--content"></StorybookStory>
+<StorybookStory story="components-ns-panel--standard"></StorybookStory>
 
 ## Component placement
 
@@ -38,10 +66,9 @@ The ns-panel component can be used in the following elements/components:
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `decoration` | `string` |  | `circle-yellow-left`, `circle-yellow-right`, `circle-green-left`, `circle-green-right`, `invert-concave-cyan`, `invert-concave-grey-light`, `invert-concave-green-light`, `invert-concave-yellow`, `invert-concave-blue`, `invert-bridge-cyan`, `invert-bridge-grey-light`, `invert-bridge-green-light`, `invert-bridge-yellow`, `invert-bridge-blue` | Decoration for the background, including the colour. |
-| `type` | `string` | `panel` | `panel`, `nav` | The variant of the panel. |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `decoration` | `decoration` | `string` | (no decoration) | `cyan`, `lime`, `navy`, `blue`, `forest`, `slate`, `orange`, `red`, `yellow`, `white`, `grey-light` | Decoration for the background, including the colour. |
 
 | Slots | Type |
 | :--- | :--- |
@@ -51,19 +78,13 @@ The ns-panel component can be used in the following elements/components:
 
 * `ns-panel` is **always** a child of the `<main>` element.
 
-### Decoration
-
-* Check the [gradient](foundations/colours.md#our-gradients) palette.
-
 ### Anonymous
 
-* The ns-panel can only have the following children `div`, `ns-article`, `ns-content`, `ns-column` or `ns-lockup`.
-
-<Tokens component="panel"></Tokens>
+* The `ns-panel` can only have the following children `div`, `ns-article`, `ns-content`, `ns-column` or `ns-lockup`, and `ns-form`.
 
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-panel]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-panel]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>

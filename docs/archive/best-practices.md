@@ -15,7 +15,7 @@ Even though we have a core team building the design system, Nucleus is something
 
 ## Reducing waste and cost
 
-Working with primitive design and development decisions is educational and rewarding. But spending most time crafting new assets, or the same assets over and over again, resulting in design and tech maintenance debt creeping in, reduces the time we spend creating new proposals and optimising existing ones for our customers and business.
+Working with primitive design and development decisions is educational and rewarding. But spending most time crafting new assets, or the same assets over and over again, resulting in design and tech maintenance debt creeping in, reduces the time we spend creating new Proposals and optimising existing ones for our customers and business.
 
 * Build custom, once-off components as a last resort.
 * Look for assets that can be shared and re-used.

@@ -3,8 +3,8 @@ description: Organism | Header component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -42,17 +42,19 @@ The default choice of header across the main British Gas UK home site should be 
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `primary`    | `array` |  |  | Primary navigation heading, subheadings and links |
-| `secondary`    | `array` |  |  | Secondary navigation links and buttons |
-| `logo`    | `string` | `https://www.britishgas.co.uk/nucleus/images/logo.svg` |  |URL to point to logo|
-| `alt`    | `string` | `British Gas` |  |Alternative text for logo|
-| `hide-links` | `boolean` | `false` | `true`,`false` |Hide navigation and related navigational elements|
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `primary`   | `primary`    | `array` |  |  | Primary navigation heading, subheadings and links |
+| `secondary` | `secondary`    | `array` |  |  | Secondary navigation links and buttons |
+| `logo`      | `logo`    | `string` | `https://www.britishgas.co.uk/nucleus/images/logo.svg` |  |URL to point to logo |
+| `alt`       | `alt`     | `string` | `British Gas` |  | Alternative text for logo |
+| `hide-links`| `hideLinks` | `boolean` | `false` | `true`, `false` | Hide navigation and related navigational elements |
+| `no-root-link` | `noRootLink` | `boolean` | `false` | `true`, `false` | Remove the link from the logo |
+| `skip-subdomain` | `skipSubdomain` | `string` |  |  | Remove subdomain from root URL |
 
 | Event | Description |
 | :--- | :--- |
-| `header-click` | Sends an event when a link is clicked. `{ text: 'Link text', href: 'Link href' }` |
+| `header-click` | Sends an event when a link is clicked. `{ text: 'Link text', href: 'Link href', header: 'Header', subheader: 'Sub Header' }` |
 
 | Slots | Type |
 | :--- | :--- |
@@ -145,11 +147,9 @@ Each section:
 ]
 ```
 
-<Tokens component="header"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-header]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-header])
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>

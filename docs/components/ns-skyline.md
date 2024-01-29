@@ -3,8 +3,8 @@ description: Organism | Skyline component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -12,14 +12,14 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 Positioned directly beneath the global navigation and above any content, `ns-skyline` displays high level messages to the user.  The purpose of `ns-skyline` is to notify the user of important site-wide or non-page specific events that may affect their experience of using the British Gas website.
 
-<b>They are either:</b>
+They are either:
 
 * Informational - to show useful information that the user may want to be aware of, e.g. upcoming price changes.
 * Warning - to warn users of potential upcoming or current issues e.g. weather warning.
 
 ## Content guidance
 
-![Skyline](https://user-images.githubusercontent.com/45626534/75039520-c556d180-54b0-11ea-9c34-a3bdd6f35751.png)
+![ns-skyline example showing a closed warning type and an expanded informational type](images/ns-skyline/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -46,7 +46,7 @@ Positioned directly beneath the global navigation and above any content, `ns-sky
 
 ## Usage
 
-<StorybookStory story="components-ns-skyline--singular"></StorybookStory>
+<StorybookStory story="components-ns-skyline--standard"></StorybookStory>
 
 ## Component placement
 
@@ -59,11 +59,9 @@ Positioned directly beneath the global navigation and above any content, `ns-sky
 | :--- | :--- |
 | Anonymous | `ns-expander tag` |
 
-<Tokens component="skyline"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-skyline]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-skyline]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>

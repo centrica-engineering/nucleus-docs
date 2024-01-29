@@ -3,8 +3,8 @@ description: Organism | Product card component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -12,7 +12,7 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Content guidance
 
-![Product card_v4](https://user-images.githubusercontent.com/3082819/88666199-aa2f6400-d0d7-11ea-8eb0-51a55d818351.png)
+![Product card](images/ns-product-card/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -24,12 +24,15 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 | F | Expander | Expanders can be used to provide additional product detail. Each product should have a maximum of 3 expanders. |
 | G | Call to action | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 10 characters. |
 | H | Keyline | An optional colour keyline can be added to distinguish and draw attention to your products. |
-| I | Image | An optional image with an aspect ratio of 16:9 can be added to support your product description. |
+| I | Image | An optional image with an aspect ratio of 16:9 (default), 4:3 or 1:1 can be added to support your product description. |
+
 ### Image guidance
 
-| Component | Ratio | Dimensions | Size | Type | Placeholder |
+| Preview | Ratio | Dimensions | Size | Type | Placeholder |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-product-card`| 16:9 | 640x360px | &lt; 50kb | jpeg | [ns-product-card-640x360px](https://user-images.githubusercontent.com/50207859/67642149-d3c91e00-f900-11e9-983c-9b812217b801.jpg) |
+| ![ns-product-card image placeholder for 16:9 ratio](images/ns-product-card/ns-product-card-image-640x360-ratio16_9.jpg) | 16:9 | 640 x 360px | &lt;50kb | jpeg | [Download 16:9](images/ns-product-card/ns-product-card-image-640x360-ratio16_9.jpg) |
+| ![ns-product-card image placeholder for 4:3 ratio](images/ns-product-card/ns-product-card-image-640x480-ratio4_3.jpg) | 4:3 | 640 x 480px | &lt;50kb | jpeg | [Download 4:3](images/ns-product-card/ns-product-card-image-640x480-ratio4_3.jpg) |
+| ![ns-product-card image placeholder for 1:1 ratio](images/ns-product-card/ns-product-card-image-640x640-ratio1_1.jpg) | 1:1 | 640 x 640px | &lt;50kb | jpeg | [Download 1:1](images/ns-product-card/ns-product-card-image-640x640-ratio1_1.jpg) |
 
 ## Best practice
 
@@ -37,12 +40,12 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 | :---  | :---  |
 | Use for products | Use for other content types, use ns-card instead |
 | Use the same sections for all products in a group | Use in a form |
-| Give multiple cards the same html parent | |
-| Use `role="list"` and `role="listitem"` when used in multiples | |
+| Give multiple cards the same html parent | Use different ratio images across a set of multiple cards |
+| Use `role="list"` and `role="listitem"` when used in multiples | Overuse the keyline - its purpose is to make that card stand out from others |
 
-### Considerations of best practises
+### Considerations of best practice
 
-Give multiple cards the same html parent - To improve scannability between multiple products; the name, price, and description sections will adjust to be the same height. They do this using a common html parent that's used to share css variables.
+Give multiple cards the same html parent. To improve scanning between multiple products; the name, price, and description sections will adjust to be the same height. They do this using a common html parent that's used to share css variables.
 
 For example
 
@@ -74,7 +77,7 @@ For example
 
 ## Usage
 
-<StorybookStory story="components-ns-product-card--single"></StorybookStory>
+<StorybookStory story="components-ns-product-card--standard"></StorybookStory>
 
 ## Component placement
 
@@ -82,10 +85,9 @@ For example
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `keyline` | `string` | none | `blue`, `yellow`, `green-light`, `cyan`, `red` | Add a gradient across the top of the card |
-
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `keyline` | `keyline` | `string` | none | `cyan`, `lime`, `navy`, `blue`, `forest`, `slate`, `orange`, `red`, `yellow` | Add a colour across the top of the card |
 
 | Slots | Type |
 | :--- | :--- |
@@ -100,11 +102,11 @@ For example
 
 ## Specification notes
 
-### image
+### Image
 
 * Check the [ns-image documentation](components/ns-image.md) for more information.
 
-### name and price-heading
+### Name and price-heading
 
 * priceHeading should be one heading level lower than name
 
@@ -122,16 +124,14 @@ For example
 * Multiple expanders may be used
 * Check the [ns-expander documentation](components/ns-expander.md) for more information.
 
-### cta
+### CTA
 
 * Should always have a href
 * Check the [ns-cta documentation](components/ns-image.md) for more information.
-
-<Tokens component="product-card"></Tokens>
 
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-product-card]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-product-card]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>

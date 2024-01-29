@@ -3,8 +3,8 @@ description: Molecule | Caveat component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -14,9 +14,7 @@ Caveats link to content in the page, providing more information about legality a
 
 ## Content guidance
 
-![Caveat - Link](https://user-images.githubusercontent.com/45626534/74146740-ad9e6400-4bf9-11ea-8c26-091b21b7aaf4.png)
-
-![Caveat](https://user-images.githubusercontent.com/45626534/74146791-c9096f00-4bf9-11ea-936b-75b2f6dc13de.png)
+![Caveat and Link](images/ns-caveat/content-guidance-ns-caveat.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -52,25 +50,22 @@ Caveats link to content in the page, providing more information about legality a
 
 ## Specification
 
-| Attribute    | Type | Default   | Options   | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `type`    | `string` | `standard` | `alert`, `standard` | Currently alert is in alpha |
+| Attribute | Property | Type | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type`   | `type`  | `string` | `standard` | `standard` | Currently alert is in alpha |
 
 | Slots     | Type          |
 | :--- | :--- |
 | `heading` | `h tag`       |
 | Anonymous | `ol list tag` , `p tag` |
 
-<Tokens component="caveat"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-caveat]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-caveat]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>
 
 ## Related links
 
 * [ns-caveat component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-caveat--caveat).
-* [Homepage example in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/examples-homepage--2019-01).

@@ -7,8 +7,9 @@ description: Nucleus illustration suite.
 
 We use illustrations to bring warmth of our brand personality to the website. We use bold, geometric shapes to make our complicated world feel friendly and accessible.
 
-![Illustrations](https://user-images.githubusercontent.com/43471890/62045274-e8602200-b1fc-11e9-94ec-948ec0ae2a77.png)  
-Nucleus illustrations
+![Illustrations](images/illustrations/whyweuse-illustrations.webp)
+
+Nucleus British Gas illustrations.
 
 ## How we use illustrations
 
@@ -23,13 +24,13 @@ If you are looking to create a new illustration then please check there is not s
 
 ### Illustration creation guidelines
 
-- We make sure that a similar illustration is not already in use.
-- Use the illustration grid to ensure consistency with current icons.
-- We make sure illustration works across different sizes.
-- Design clean and simple forms using our shapes.
-- Use flat shapes over 3d forms, depth can be added through the use of gradients.
-- Use consistent gradients and colours. Do not use multiply when using opacity.
-- Rounded corners should make icon feel friendly, not childish.
+* We make sure that a similar illustration is not already in use.
+* Use the illustration grid to ensure consistency with current icons.
+* We make sure illustration works across different sizes.
+* Design clean and simple forms using our shapes.
+* Use flat shapes over 3d forms.
+* Use consistent flat colours. Do not use multiply blend modes or opacities.
+* Rounded corners should make icon feel friendly, not childish.
 
 ### Illustration grid
 
@@ -37,29 +38,28 @@ We use a grid for icon creation to give consistency across our illustrations. He
 
 | Grid | Grid - Vertical | Grid - Horizontal | Grid - Circle |
 | :--- | :--- | :--- | :--- |
-| ![Grid for creating illustrations](https://user-images.githubusercontent.com/43471890/62045505-66bcc400-b1fd-11e9-949e-572e2dc40bf8.jpg) | ![Grid with vertical highlight for creating illustrations](https://user-images.githubusercontent.com/43471890/62050044-6b3aaa00-b208-11e9-8adb-3df5d4c240dd.jpg) | ![Grid with horizontal highlight for creating illustrations](https://user-images.githubusercontent.com/43471890/62050140-a5a44700-b208-11e9-8bf8-555ec87242a8.jpg) | ![Grid with circle highlight for creating illustrations](https://user-images.githubusercontent.com/43471890/62050739-c91bc180-b209-11e9-8561-134bd845fb4b.jpg) |
+| ![Grid for creating illustrations](images/illustrations/illustrationgrid-base.webp) | ![Grid with vertical highlight for creating illustrations](images/illustrations/illustrationgrid-vertical.webp) | ![Grid with horizontal highlight for creating illustrations](images/illustrations/illustrationgrid-horizontal.webp) | ![Grid with circle highlight for creating illustrations](images/illustrations/illustrationgrid-circle.webp) |
 
 ### Colour
 
-Illustrations use a set of three different gradients:
+Each illustration uses predominantly a 2-colour pair from the below array:
 
-#### Gradient - Blue
+#### Cyan and Blue
 
-![Gradient usage - Blue](https://user-images.githubusercontent.com/78355810/107789459-87019480-6d49-11eb-9bd7-0d6f7e653f6e.jpg)
+![Cyan and Blue](images/illustrations/colours-cyan-and-blue.webp)
 
-#### Gradient - Green
+#### Lime and Forest
 
-![Gradient usage - Green](https://user-images.githubusercontent.com/78355810/107789536-9ed91880-6d49-11eb-8356-2858c5a628e0.jpg)
+![Lime and Forest](images/illustrations/colours-lime-and-forest.webp)
 
-#### Gradient - Yellow
+#### Yellow and Red
 
-![Gradient usage - Yellow](https://user-images.githubusercontent.com/78355810/107789591-b44e4280-6d49-11eb-8dbf-6384e438be9e.jpg)
+![Yellow and Red](images/illustrations/colours-yellow-and-red.webp)
 
 #### Highlights
 
-Our illustrations use `@white` (#FFFFFF) to pull out details within the object.
+Our illustrations use `white` (#FFFFFF) to highlight details within the object.
 
-#### Depth
+#### Placement and contrast
 
-Illustrations use `@slate` (#333f48) over half of the object in order to add depth.
-
+We should be mindful of the colour background on which these illustrations will be situated. For example, if choosing a decoration for a containing component such as ns-panel we should ensure a good contrast.

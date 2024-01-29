@@ -3,18 +3,18 @@ description: Atom | Table component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
-> `ns-table` displays information in a grid-like format of rows and columns. It organizes information in a way that’s easy to scan, so that users can look for patterns and insights.
+> The `ns-table` component displays information in a grid-like format of rows and columns. It organises information in a way that’s easy to scan, so that users can look for patterns and insights.
 
 The table component consumes basic HTML table markup, which makes it accessible and responsive as well as styling it.
 
 ## Content guidance
 
-![Table](https://user-images.githubusercontent.com/45626534/74148366-2fdc5780-4bfd-11ea-9877-225e2ceaf388.png)
+![Example showing a labelled table using the ns-table component](images/ns-table/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -46,7 +46,7 @@ The table component consumes basic HTML table markup, which makes it accessible 
 
 ## Usage
 
-<StorybookStory story="components-ns-table--data-table"></StorybookStory>
+<StorybookStory story="components-ns-table--standard"></StorybookStory>
 
 ## Component placement
 
@@ -116,11 +116,9 @@ If your table has row headers in the left-most column then place these headers i
 </table>
 ```
 
-<Tokens component="table"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-table]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-table]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>

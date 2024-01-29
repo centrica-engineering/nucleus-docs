@@ -3,7 +3,7 @@ description: Atom | Icon component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -37,10 +37,13 @@ The ns-icon component can be used in a number of components to help create bespo
 
 ## Specification
 
-| Attribute    | Type                | Default   | Options   | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `size`    | `number`   | `''` | `''`, `1`, `2`, `3`, `4`, `5` | Changes the size of the icon, with 1 being the smallest. |
-| `type` | `string`            | `arrow` |`appliance`, `appliance-outline`, `appliance-solid`, `arrow`, `arrow-left`, `arrow-right`, `bill`, `bill-outline`, `bill-solid`, `boiler` , `boiler-outline`, `boiler-solid`, `calendar`, `calendar-outline`, `calendar-solid`, `clock`, `clock-outline`, `clock-solid`, `chevron`, `chevron-down`, `chevron-left`, `chevron-right`, `chevron-up`, `cross`, `download`, `electricity`, `electricity-outline`, `electricity-solid`, `gas`, `gas-outline`, `gas-solid`, `hive`, `home`, `home-outline`,`home-solid`, `loading,meter`, `meter-outline`, `meter-solid`, `minus`, `plus`, `protect`, `protect-outline`, `protect-solid`, `rewards`, `rewards-outline`, `rewards-solid`, `tag`, `tag-outline`, `tag-solid`, `search`, `settings`, `tick`, `warning ` See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--standard) | Picks the icon that is wanted to be shown. |
+| Attribute    | Property | Type  | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `type` | `type` | `string` | `standard` | `standard` | Type of the icon. |
+| `name` | `name` | `string` | `arrow` | `appliance`, `appliance-outline`, `appliance-solid`, `arrow`, `arrow-left`, `arrow-right`, `bill`, `bill-outline`, `bill-solid`, `boiler`, `boiler-outline`, `boiler-solid`, `calendar`, `calendar-outline`, `calendar-solid`, `chevron`, `chevron-down`, `chevron-left`, `chevron-right`, `chevron-up`, `clock`, `clock-outline`, `clock-solid`, `cross`, `download`, `electricity`, `electricity-outline`, `electricity-solid`, `energy`, `energy-outline`, `energy-solid`, `error`, `error-outline`, `error-solid`, `gas`, `gas-outline`, `gas-solid`, `hide`, `hive`, `home`, `home-outline`, `home-solid`, `info`, `info-outline`, `info-solid`, `loading`, `location`, `location-outline`, `location-solid`, `menu`, `meter`, `meter-outline`, `meter-solid`, `minus`, `payment`, `payment-outline`, `payment-solid`, `plus`, `protect`, `protect-outline`, `protect-solid`, `rewards`, `rewards-outline`, `rewards-solid`, `search`, `settings`, `show`, `spanner`, `spanner-outline`, `spanner-solid`, `success`, `success-outline`, `success-solid`, `tag`, `tag-outline`, `tag-solid`, `tick`, `user`, `user-outline`, `user-solid`, `warning`, `warning-outline`, `warning-solid` See [Icon component in Storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/components-ns-icon--all) | Picks the icon that is to be shown. |
+| `size` | `size` | `number` | `''` | `''`, `1`, `2`, `3`, `4`, `5` | Changes the size of the icon, with 1 being the smallest. |
+
+
 
 ## Specification notes
 
@@ -58,14 +61,12 @@ If you are looking to create a new icon then please check there is not something
 
 Read our [icon foundation page](foundations/icons.md#creating-new-icons) for more information on creating icons.
 
-<Tokens component="icon"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-icon]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-icon]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>
 
 ## Related links
 

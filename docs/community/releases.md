@@ -4,7 +4,6 @@ description: Here are our release notes - enjoy!
 
 ---
 
-
 ## Version 2.9.0
 
 **Navigation updates mainly 🧭**
@@ -153,6 +152,20 @@ Release date - 13/09/2022
 * `ns-inputter` - there was a spacing issue when using the inline inputter, no more
 
 
+* `ns-inputter` - we fixed a visual bug when inline inputters are nested in a layout using `ns-column`
+
+
+
+
+**Feedback 💌**
+
+All our Requests For Change can be found in our Requests project board in Github.
+https://github.com/ConnectedHomes/nucleus/projects/6
+
+Any questions? Let us know 🙌🏼
+
+
+
 ## Version 2.3.0
 
 **Space, the final frontier... 🪐**
@@ -161,6 +174,8 @@ This release is all about space.
 The final design token piece of work, and probably some of the most complex work we've done on Nucleus, is the spacer work. We have audited the spacing options we have introduced and used over the course of the last three years. 
 
 We have been working hard to update the spacing technique to something that complements today's state of Nucleus but also allows for the *tokenisation* of spacing and allows for scaling to other brands than British Gas.
+
+This release also sees an inline version of the radio and checkbox `ns-inputter` options for short, multiple options to answer a question in a form.
 
 Release date - 2022/08/31
 
@@ -1331,9 +1346,11 @@ Release date - 2019-12-11
 
 * The masked `ns-inputter`.
   * Don't be fooled by it's apparent simplicity, this is a **BIG** introduction to Nucleus.
-  * The outcome of everyone's hard work on the [Meter read RFC](https://github.com/ConnectedHomes/nucleus/issues/839).
-  * With the power to assist data entry such as sort codes and reference numbers
-  * The Lakeside variant of our Landmark.
+
+  * The outcome of everyone's hard work on the [Meter read Proposal](https://github.com/ConnectedHomes/nucleus/issues/839).
+  * With the power to assist data entry such as sort codes and reference numbers.
+* The Lakeside variant of our Landmark.
+
   * Used for conveying blocking messages e.g. 404 & 500, what we call Roadblock messages.
   * Useful as the primary component for confirmation pages
   * Introducing `ns-skyline`, a high level messaging component.
@@ -1375,7 +1392,9 @@ Release date - 2019-11-11
 
 **What’s new around here? 🐣**
 
-* We've simplified our [Request for change](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request) GitHub ticket template
+
+* We've simplified our [Request for change](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--proposal.md&title=[RFC]+Title+of+the+Proposal) GitHub ticket template.
+
 * We have included `ns-selector` in this release.
   * Enhanced radio button or checkbox group.
   * Include either an illustration or an image and additional content to support decision

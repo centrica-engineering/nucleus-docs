@@ -9,13 +9,13 @@ Icons are used within our design system to represent an object or action visuall
 
 They are functional, rather than decorative and should be used sparingly, only within the parameters they were created for.
 
-A list of all the icons that are available in Nucleus can be found on [storybook](https://www.britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--standard)
+A list of all the icons that are available in Nucleus can be found on [storybook](https://main--63ea3fa8c3721b415537bccc.chromatic.com/?path=/story/components-ns-icon--all)
 
 ## How we use icons
 
 We use icons in number of different ways to convey meaning:
 
-* Signpost and navigate.
+* Signposting and navigation.
 * Navigational or informational signposts for content.
 * Illustrates content with a simple and clear visual.
 * Used by themselves at large size or smaller within a roundel.
@@ -28,29 +28,27 @@ If you are using the icon at a very large size to engage and visual impact, cons
 
 Used as a visual aid for some functions, categories or actions. These are not used as a direct element of interaction themselves but can help to signify and support an action. It is recommended that these aren't used in isolation and should be accompanied by copy to add context.
 
-![Nucleus icons](https://user-images.githubusercontent.com/43471890/62045153-90292000-b1fc-11e9-9e03-d0d964088d8e.jpg)
+![Nucleus icons](images/icons/clarifying.webp)
 
 ### Functional
 
 Used to show where an action needs to be taken. This includes components like buttons, controls. For instance a button might include an arrow to give the user an indication of what will happen next or a download icon to show that the user will receive something by pressing it. Functional icons can also be further split into interactive and non-interactive icons.
 
-![Nucleus functional icons](https://user-images.githubusercontent.com/43471890/62045185-a59e4a00-b1fc-11e9-9a22-8ca429fdaadf.jpg)
+![Nucleus functional icons](images/icons/functional.webp)
 
 ### Logos/marks
 
 We can make use of brand logos and marks when we discuss products and companies. Examples of these may include: British Gas, Hive or Dyno.
 
-![Nucleus logo icons](https://user-images.githubusercontent.com/43471890/62045227-bcdd3780-b1fc-11e9-9b68-feaf41b9ad67.jpg)
+![Nucleus logo icons](images/icons/logos-marks.webp)
 
 ## Colour
 
 | 💚 Do's | 💔 Don'ts |
 | :--- | :--- |
 | Start with using BG Cyan or BG Slate | Mix two secondary colours together |
-| Use white icons in coloured roundels | Use BG Slate in coloured roundels |
-| Choose colours to suit the design, as long as it’s not a key part of the information |  |
-| If it is a crucial element then it needs to meet accessibility and colour contrast |  |
-| The colour of our interactive functional icons should be in our interaction colour, the mid blue |  |
+| Use colours that meet WCAG AA colour contrast ratio requirements on specific coloured backgrounds (mainly achieved automatically by the system) | Use non-conforming contrasts |
+| Colour interactive functional icons in Secondary Blue - see [Colours](https://foundations/colours.md)|  |
 
 ## Creating new icons
 
@@ -68,7 +66,17 @@ If you are looking to create a new icon then please check there is not something
 - Rounded corners should make an icon feel friendly, not childish.
 - Icon should be one topic, we don't overlay or intersect an icon with another icon.
 - Text shouldn't be added to an icon as this will break accessibility.
-- Icons are only one colour, but they can be any of our colours.
+- Icons are only one colour.
+- Minimise the number of anchor points as much as possible; every anchor point will add to the file weight as we export icons in SVG format, not bitmaps.
+- Adhere to the icon naming convention.
+
+### Icon naming convention
+
+When creating icons we use a naming convention that ensures consistency and understanding.
+
+Use a descriptive name for the content within the icon. For example, if you have created a pencil icon to edit a page, call it `pencil` and not `edit`.
+
+Describe the icon itself, not how it may be used.
 
 ### Icon grid
 
@@ -76,7 +84,7 @@ We use a grid for icon creation to give consistency across our icons. You should
 
 | Grid | Grid - Vertical | Grid - Horizontal | Grid - Circle |
 | :--- | :--- | :--- | :--- |
-| ![Grid for creating icons](https://user-images.githubusercontent.com/43471890/62045505-66bcc400-b1fd-11e9-949e-572e2dc40bf8.jpg) | ![Grid with vertical highlight for creating icons](https://user-images.githubusercontent.com/43471890/62050044-6b3aaa00-b208-11e9-8adb-3df5d4c240dd.jpg) | ![Grid with horizontal highlight for creating icons](https://user-images.githubusercontent.com/43471890/62050140-a5a44700-b208-11e9-8bf8-555ec87242a8.jpg) | ![Grid with circle highlight for creating icons](https://user-images.githubusercontent.com/43471890/62050739-c91bc180-b209-11e9-8561-134bd845fb4b.jpg) |
+| ![Grid for creating icons](images/icons/grid-naked.webp) | ![Grid with vertical highlight for creating icons](images/icons/grid-vertical.webp) | ![Grid with horizontal highlight for creating icons](images/icons/grid-horizontal.webp) | ![Grid with circle highlight for creating icons](images/icons/grid-circle.webp) |
 
 ### Sizing
 

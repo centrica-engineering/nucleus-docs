@@ -3,19 +3,20 @@ description: Organism | Article component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
-
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
 > `ns-article` is used to display long-form content
+>
+> **Note:** This component is currently being considered for deprecation.
 
 `ns-article` has been designed to be used to house content for a variety of long-form content such as blogs, editorials and support articles. Each use of the ns-article should be split into easy to consume chapters or sections.
 
 ## Content Guidance
 
-![Article - Content Guidance](https://user-images.githubusercontent.com/45626534/101144532-5ea23f00-3610-11eb-9fd0-8361505fa80a.png)
+![Article - Content Guidance](images/ns-article/content-guidance-ns-article.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -37,11 +38,11 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 
 ## Usage
 
-<StorybookStory story="components-ns-article--standard"></StorybookStory>
+<StorybookStory story="deprecated-ns-article--standard"></StorybookStory>
 
 ### Article split into sections
 
-<StorybookStory story="components-ns-article--sections"></StorybookStory>
+<StorybookStory story="deprecated-ns-article--multiple"></StorybookStory>
 
 ## Component placement
 
@@ -60,14 +61,12 @@ import { ComponentPlacement } from '../../includes/component-placement.js'
 * First children can only be a single `<ns-content>` or multiple `<section>` elements
 * Each `<section>` can only contain a single `<ns-content>`
 
-<Tokens component="article"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-article]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-article]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>
 
 ## Related links
 

@@ -3,8 +3,8 @@ description: Atom | Video component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -27,7 +27,7 @@ British Gas creates many videos to engage customers. This component allows havin
 
 ## Usage
 
-<StorybookStory story="components-ns-video--youtube"></StorybookStory>
+<StorybookStory story="components-ns-video--standard"></StorybookStory>
 
 ## Component placement
 
@@ -38,7 +38,7 @@ British Gas creates many videos to engage customers. This component allows havin
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `id`  | `string` |  |  | Can be found in the YouTube video URL under `v`parameter |
-| `ratio` | `string` | `16x9` | `16x9`, `4x3`, `1x1` | Ratio of the video player |
+| `ratio` | `string` | `16 / 9` | `16 / 9`, `4 / 3`, `1 / 1` | Ratio of the video player |
 | `title` | `string` | `YouTube video` |  | The YouTube iframe title |
 
 ## Specification notes
@@ -46,8 +46,6 @@ British Gas creates many videos to engage customers. This component allows havin
 ### Title
 
 * This is required for accessibility. The title should be unique. If there are multiple videos on the page, they should all have different titles (even if they are the same video).
-
-<Tokens component="video"></Tokens>
 
 ## Feedback
 

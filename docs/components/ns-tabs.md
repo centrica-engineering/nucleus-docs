@@ -3,8 +3,8 @@ description: Organism | Tabs component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -14,7 +14,7 @@ Related content can be separated into clearly labelled sections.
 
 ## Content guidance
 
-![Tabs](https://user-images.githubusercontent.com/45626534/74163002-9a9b8c00-4c19-11ea-9a93-b2c841d1c458.png)
+![Labelled example of ns-tabs component](images/ns-tabs/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -42,7 +42,7 @@ Related content can be separated into clearly labelled sections.
 
 ## Usage
 
-<StorybookStory story="components-ns-tabs--tabs"></StorybookStory>
+<StorybookStory story="components-ns-tabs--standard"></StorybookStory>
 
 ## Component placement
 
@@ -50,10 +50,10 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 
 ## Specification for Individual Tab
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `icon`    | `string` |  | Please see the [documentation for ns-icon](../components/ns-icon) | Optional icon to add to the tab. |
-| `selected` | `boolean` | `false` |`true`, `false`| Pre-selected tab |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `icon`    | `icon`    | `string` |  | Please see the [documentation for ns-icon](../components/ns-icon) | Optional icon to add to the tab. |
+| `selected` | `selected` | `boolean` | `false` |`true`, `false`| Pre-selected tab |
 
 | Event | Description |
 | :--- | :--- |
@@ -65,9 +65,9 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 
 ## Specification for Tabs
 
-| Attribute | Type | Default   | Options   | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `open` | `number`    | `0` |  | Number relates to the order of the tabs |
+| Attribute | Property | Type | Default   | Options   | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `open` | `open` | `number`    | `0` |  | Number relates to the order of the tabs |
 
 | Slots | Type |
 | :--- | :--- |
@@ -88,11 +88,9 @@ A close relationship exists between `ns-tab` and `ns-panel`. Within `ns-tabs` a 
 
 * Multiple panel slots should be added to add multiple panels. There should be the same amount of panel slots as tab slots.
 
-<Tokens component="tabs"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-tabs]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-tabs]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>

@@ -3,8 +3,8 @@ description: Molecule | Progress component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -23,7 +23,7 @@ The progress component can be manipulated in the DOM without the need to reload 
 
 ## Content guidance
 
-![Progress - In progress and completed states](https://user-images.githubusercontent.com/78355810/115561512-90f5c580-a2ad-11eb-8f56-873e0402a338.png)
+![Progress - In progress and completed states](images/ns-progress/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -63,19 +63,17 @@ Internet Explorer 11 and Microsoft Edge 18 and lower do not show the progress ba
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `steps` | `number` |  |  | The maximum number of steps to show |
-| `current` | `number` | `1`|  | The step to show as active (can also accept a decimal value) |
-| `info` | `string` |  |  | Information about the current step |
-| `next` | `string` |  |  | Information about the next step |
-| `complete` | `boolean` |  | `false` | Use to show the completed state |
-
-<Tokens component="progress"></Tokens>
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `steps` | `steps` | `number` |  |  | The maximum number of steps to show |
+| `current` | `current` | `number` | `1`|  | The step to show as active (can also accept a decimal value) |
+| `info` | `info` | `string` |  |  | Information about the current step |
+| `next` | `next` | `string` |  |  | Information about the next step |
+| `complete` | `complete` | `boolean` |  | `false` | Use to show the completed state |
 
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-progress]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-progress]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>

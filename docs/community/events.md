@@ -57,7 +57,7 @@ The audience had the opportunity to ask questions via slack after the event. We 
 
 ## 2019-10-15 / A simpler, easy to use RFC template
 
-* Nick introduced the [latest Nucleus RFC](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--request-a-change.md&title=[RFC]+Title+of+the+request) [†] (Request for change) template.
+* Nick introduced the [latest Nucleus RFC](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--proposal.md&title=[RFC]+Title+of+the+Proposal) [†] (Request for change) template.
   * What is the difference between our old RFC template and the new one.
   * Understanding - What is an RFC?
   * Listening to the feedback we've received to date.

@@ -8,7 +8,9 @@ const aToZ = (dir) => {
   let dirPath = path.join(docsPath, dir);
 
   fs.readdirSync(dirPath).forEach(file => {
-    dirFiles.push(`${dir}/${path.parse(file).name}`);
+    if (!file.includes('images')) {
+      dirFiles.push(`${dir}/${path.parse(file).name}`);
+    }
   });
 
   return dirFiles
@@ -30,7 +32,6 @@ module.exports = {
       'getting-started/design-tokens'
     ],
     'Foundations': [
-      'foundations/names-of-things',
       'foundations/typography',
       'foundations/lists',
       'foundations/colours',
@@ -52,6 +53,7 @@ module.exports = {
     ],
     'Page types': aToZ('page-types'),
     'Community': [
+      'community/working-agreement',
       'community/contribute-to-nucleus',
       'community/vanilla-first',
       'community/contribute-to-documentation',

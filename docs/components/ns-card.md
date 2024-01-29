@@ -3,8 +3,8 @@ description: Molecule | Card component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -14,9 +14,21 @@ Cards are used to apply a container around a related grouping of information; th
 
 ## Content guidance
 
+
+### Flat Card
+
+![Card - Flat](images/ns-card/content-guidance-flat-card.webp)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| B | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| C | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+
+
 ### Section Card
 
-![Card - Section](https://user-images.githubusercontent.com/45626534/74165461-0c290980-4c1d-11ea-89df-19f2784178e1.png)
+![Card - Section](images/ns-card/content-guidance-section-card.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -27,7 +39,7 @@ Cards are used to apply a container around a related grouping of information; th
 
 ### Support Image Card
 
-![Card - Support Image](https://user-images.githubusercontent.com/45626534/74165868-a12c0280-4c1d-11ea-900e-9800a0097c48.png)
+![Card - Support Image](images/ns-card/content-guidance-suppport-image-card.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -82,7 +94,11 @@ Cards are used to apply a container around a related grouping of information; th
 
 ### Using with ns-pill
 
-To add a `ns-pill` to the card it needs to be placed inside the `heading` slot. This allows screen readers to announce the pill when they are navigating by headings on a page.
+To add a `ns-pill` to the card it needs to be placed inside one of the slots. Be careful about using it within the heading slot, as the pill content will be read out as part of the heading for screen readers.
+
+If you have a group of cards, try to make sure that the pill is placed in the same location throughout those cards. This will make improve the readability of the cards.
+
+#### Screen readers with ns-pill
 
 ```markup
 <ns-card>
@@ -94,14 +110,21 @@ To add a `ns-pill` to the card it needs to be placed inside the `heading` slot. 
 </ns-card>
 ```
 
-If using with a a type of `support` there is also the option to place the pill over the image using the `pillOverImage` attribute. Note the `ns-pill` will still need to be in the `heading` slot.
+In the above example the screen reader will read out "Special Offer Get energy with us". Make sure that is what is expected. Remember the pill cannot be used on its own within a heading. Our advice is to rarely put pills in headings as they are normally conveying a message related to the heading, but is not heading content.
+
+#### Pill over image
+
+If using with a type of `support` with an image. There is also the option to place the pill over the image using the `pillOverImage` attribute. Note the `ns-pill` will need to be in the `paragraph` slot as it is no longer related to the heading.
 
 ```markup
-<ns-card type="support" image="path/to/image" pillOverImage>
+<ns-card type="support" image="path/to/image" pill-over-image>
   <h3 slot="heading">
-    <ns-pill>Special Offer</ns-pill>
     Get energy with us
   </h3>
+  <p slot="paragraph">
+    <ns-pill>Special Offer</ns-pill>
+    ...
+  </p>
   ...
 </ns-card>
 ```
@@ -116,13 +139,13 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `alt`        | `string` |           |           | The alternative text for the image |
-| `decoration` | `string` |           |See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--standard) and See [Icon component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-icon--error) | Illustration that is shown in the section type card and Icon used in ns-highlighter |
-| `image`      | `string` |           |           | Adds an image above the card content for the support |
-| `type`       | `string` | "section" | "section", "support", "flat" | Defines the role of the card and changing the style |
-| `pillOverImage` | `boolean` |       |           | Used to put the pill in the top left of the image when using `type="support"` and an image | 
+| Attribute   | Property | Type | Default | Options | Description |
+| :------ | :--- | :--- | :--- | :--- | :------------- |
+| `alt`        | `alt`        | `string` |           |           | The alternative text for the image |
+| `decoration` | `decoration` | `string` |           | See [Illustration component in Storybook](https://britishgas.co.uk/nucleus/demo/index.html?path=/story/ns-illustrations--standard) |
+| `image`      | `image`      | `string` |           |           | Adds an image above the card content for the support card |
+| `type`       | `type`       | `string` | `section` | `section`, `support`, `flat` | Defines the role of the card and changing the style |
+| `pill-over-image` | `pillOverImage` | `boolean` |   |   | Used to put the pill in the top left of the image when using `type="support"` and an image | 
 
 ### Support and Flat
 
@@ -166,14 +189,12 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 * Only for `section` types
 * This should be an anchor with the [ns-cta](../components/ns-cta) or just the [ns-cta](../components/ns-cta)
 
-<Tokens component="card"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-card]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-card]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>
 
 ## Related links
 

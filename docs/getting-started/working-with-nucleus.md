@@ -14,8 +14,8 @@ description: How to work with the Nucleus Design System
 Depending on which stage of your design or discovery work you’re at, the Nucleus team has a growing body of reusable assets, tools, methods and knowledge that can help you create feasible design mock-ups and prototypes. We can help you visualise your ideas and would encourage you to:
 
 * Familiarise yourself with this documentation and [Storybook](https://library.britishgas.design/).
-* Download the [Sketch library](https://github.com/ConnectedHomes/centrica-ux/releases).
-* Take a look at our [prototyping tool](https://github.com/britishgas-engineering/nucleus-prototype).
+* For your prototyping needs, take a look at the Nucleus Playground for an easy, visual way to prototype with the components. We have a [Playground support channel on Teams](https://teams.microsoft.com/l/channel/19%3a10af1f515b714d0cb7e30a8e8d0848c7%40thread.tacv2/%25F0%259F%258E%25A1%2520Playground%2520support?groupId=1f9c2411-216b-42a8-9bb0-c51f28ff5071&tenantId=a603898f-7de2-45ba-b67d-d35fb519b2cf) too! You will be able to take those prototypes into testing, in any browser and device, as well as testing them for accessibility using different assistive technology! 
+* British Gas design teams use Figma as their design tool. If you need to put a mockup together the Nucleus Figma UI kit library comprising Components and Foundations, is published and automatically available to anyone who joins the British Gas workspace. If you have any questions, we have [a dedicated Teams channel](https://teams.microsoft.com/l/channel/19%3ac806c8b36aec4218ae469b1d0ff6a4c3%40thread.tacv2/General?groupId=1f9c2411-216b-42a8-9bb0-c51f28ff5071&tenantId=a603898f-7de2-45ba-b67d-d35fb519b2cf).
 * Work with the Nucleus team on exploring the feasibility of your concepts and ideas.
 * Collaborate with your engineers, involve them in your discovery work.
 
@@ -39,29 +39,33 @@ There are many ways to access www.britishgas.co.uk and we strive to ensure it's 
 
 We prioritise the following list of browsers and devices identified as the most popular used by our customers.
 
-**Last updated - 2021-06-16**
+**Last updated - 2023-02-14**
 
 | Device | Operating System | Browser | Version |
 | :--- | :--- | :--- | :--- |
-| Computer | Windows 10 | Chrome | 90 |
-| Computer | Windows 10 | Firefox | 83 |
-| Computer | Windows 10 | Edge | 85 |
-| Computer | MacOS Catalina | Safari | 13.1 |
-| Computer | MacOS Catalina | Chrome | 88 |
-| iPhone | iOS 14 (iPhone 12) | Safari |13 |
-| iPhone | iOS 13 (iPhone XS) | Safari | 13 |
-| iPhone | iOS 14 (iPhone 12) | Chrome | 86 |
-| iPhone | iOS 13 (iPhone XS) | Chrome | 86 |
-| iPad | iPad OS 14 (iPad Pro 12.9 2020) | Safari | 13 |
-| iPad | iPad OS 14 (iPad Pro 12.9 2020) | Chrome | 86 |
-| Android | Android OS 10 (Samsung Galaxy S20) | Chrome | 89 |
-| Android | Android OS 11 (Samsung Galaxy S21) | Samsung Browser | 11.1 |
+| Computer | Windows 11 | Chrome | 120 |
+| Computer | Windows 11 | Firefox | 121 |
+| Computer | Windows 11 | Edge | 120 |
+| Computer | MacOS sonoma | Safari | 17 |
+| Computer | MacOS ventura | Safari | 16 |
+| Computer | MacOS sonoma | Chrome | 120 |
+| Computer | MacOS sonoma | Firefox | 121 |
+| iPhone | iOS 17 (iPhone 15) | Safari |17 |
+| iPhone | iOS 16 (iPhone 14 Pro) | Safari | 16 |
+| iPhone | iOS 17 (iPhone 15) | Chrome | 92 |
+| iPhone | iOS 16 (iPhone 14 Pro) | Chrome | 92 |
+| iPad | iPad OS 17 (iPad Pro 12.9 2021) | Safari | 17 |
+| iPad | iPad OS 16 (iPad Pro 12.9 2022) | Safari | 16 |
+| iPad | iPad OS 17 (iPad Pro 12.9 2021) | Chrome | 92 |
+| iPad | iPad OS 16 (iPad Pro 12.9 2022) | Chrome | 92 |
+| Android | Android OS 13 (Samsung Galaxy S23) | Chrome | 117 |
+| Android | Android OS 13 (Samsung Galaxy S23) | Samsung Browser | 23 |
 
 **Note :** IE11 and Edge 18 browsers are no longer supported as their usage levels are below 0.5% (as of June 2021).
 
 ## For product owners and business analysts
 
-While you might not need in-depth knowledge of our shared UI styles and components, understanding their principles and requirements will help when you're reviewing current proposals and discussing work ahead. We hope that you push your product teams to explore feasibility of existing assets before resolving to build custom, once-off components. After all, we believe the former will lead to better results for our business in the long run.
+While you might not need in-depth knowledge of our shared UI styles and components, understanding their principles and requirements will help when you're reviewing current Proposals and discussing work ahead. We hope that you push your product teams to explore feasibility of existing assets before resolving to build custom, once-off components. After all, we believe the former will lead to better results for our business in the long run.
 
 We're working towards an evidence driven and purposeful use of UI components. If you think an asset of ours is performing particularly well or poorly in a certain context, please let us know. It will help us curate and improve our shared assets and documentation.
 

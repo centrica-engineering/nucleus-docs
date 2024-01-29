@@ -31,7 +31,7 @@ First and foremost, it's vital to engage in continuous open conversation. It's t
 
 ### Research
 
-First identify the problem! This is done though the RFC process, everyone is encouraged to comment and get involved.
+First identify the problem! This is done though the Proposal [RFC] (request for comments) process, everyone is encouraged to comment and get involved.
 
 Once we have the big picture of the problem we can begin finding the common themes. Is there a pattern emerging? We should define the scope in the simplest most generic form explaining this problem.
 

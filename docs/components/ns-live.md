@@ -3,8 +3,8 @@ description: Organism | Live component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -16,7 +16,7 @@ This component adds the `aria-live` attribute to itself. Screen readers will ann
 
 ## Content guidance
 
-![Image of ns-ive component in busy state](https://user-images.githubusercontent.com/78355810/125434081-e6c0667b-ba05-4083-a80e-bd57e32178c6.png)
+![Image of ns-ive component in busy state](images/ns-live/content-guidance.webp)
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
@@ -54,10 +54,11 @@ The `ns-live` component can be used to wrap any html elements but be aware that 
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `busy` | `boolean` | `false` | | Add to component to show the loading icon and busy message |
-| `busymessage` | `string` | `Updating` | | The message to show when the area of the page is updating |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `busy` | `busy` | `boolean` | `false` | | Add to component to show the loading icon and busy message |
+| `busy-message` | `busyMessage` | `string` | `Updating` | | The message to show when the area of the page is updating |
+| `aria-live` | `_ariaLive` | `string` | `polite` |  | 
 
 | Slots | Type |
 | :--- | :--- |
@@ -69,11 +70,9 @@ The `ns-live` component can be used to wrap any html elements but be aware that 
 
 * Place the html being updated into this slot.
 
-<Tokens component="live"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-live]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-live]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>

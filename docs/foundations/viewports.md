@@ -13,7 +13,6 @@ Using a modular scale of 2:3 (1.5) and setting our minimum viewport size to be 3
 
 Taking a device independent approach to deciding on the widths to design to in order to illustrate how a design could adapt at different sizes, we start small and use a modular scale of 1.5 resulting:
 
-
 | Size | Viewport | Column | Offset |
 | :--- | :--- | :--- | :--- |
 | 🔵 Squash court | 320px (_x=0_) | 288px | 16px |
@@ -35,6 +34,7 @@ As much as possible we like to keep the value of _x_ to whole numbers; this make
 However, we discovered that the range of hockey pitch was too broad, this meant there were a variety of layout issues, which included squashed and overflowing content at the narrower end (1080px), and stretched components at the wider end (1619px).
 
 Football pitch was introduced to reduce these layout issues.
+
 ### Column
 
 Our Column width is determined by setting the left and right Offset to be 5%.
@@ -45,8 +45,12 @@ Our Column width is determined by setting the left and right Offset to be 5%.
 
 The offset refers to the space to the left and right of the Column taking up 5% of the width of the viewport each side. At 320px the Offset is 16px.
 
-### Our Sketch library
+### Figma library
 
-Getting the library  
-[Sketch Library - GitHub Wiki](https://github.com/ConnectedHomes/centrica-ux/wiki)
+Our Figma UI Kit library uses just the two most commonly used viewports (based on our analytics). A set of components have been designed for each, labelled as 'Narrow' and 'Wide' – these equate to 'Squash court' and 'Hockey pitch' sizes, typically a small mobile and a small laptop size. The Figma components align with our coded components (the single source of truth, as found in Storybook) and are correct for how they appear or and responsively transformed at those viewport sizes. The Figma components have been constructed to emulate the same options and behaviour as closely as possible whilst being able to accommodate varied content.
 
+The Nucleus British Gas Figma UI Kit library is published and consumed online through Figma and updates are released in the same way. If you need access to it you will need to request to be added to the Figma British Gas organisation workgroup. Get in touch on our [Teams channel](https://teams.microsoft.com/l/channel/19%3ac806c8b36aec4218ae469b1d0ff6a4c3%40thread.tacv2/General?groupId=1f9c2411-216b-42a8-9bb0-c51f28ff5071&tenantId=a603898f-7de2-45ba-b67d-d35fb519b2cf)
+
+### Sketch library (deprecated)
+
+Our Sketch library is no longer maintained or updated and can be considered deprecated. The Figma library is currently the only supported version.

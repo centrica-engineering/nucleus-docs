@@ -3,8 +3,8 @@ description: Molecule | Password component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
 import { ComponentPlacement } from '../../includes/component-placement.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -24,7 +24,7 @@ There are 2 variants of the ns-password component. Each should be used for its s
 
 Use this variant when a user needs to enter a password they have already created to access secure information. It comprises a label, an input field with masking as default, a show/hide toggle and validation.
 
-![Password-std](https://user-images.githubusercontent.com/78355810/126153157-0bfffd4e-1784-4c01-b833-0e67331b3be5.png)
+![Password-std](images/ns-password/content-guidance-standard.webp)
 
 | Key | Field type | Guidelines
 | :--- | :--- | :--- |
@@ -38,7 +38,7 @@ Use this variant when a user needs to enter a password they have already created
 
 This variant is more complex than the Standard one. It allows a user to correctly format a new password and validate it against certain criteria. It comprises the same label, optional helper and tip text, input field and show/hide toggle as the standard version but includes a more proactive and helpful in-line validation technique as well as a Confirm Password field to verify the user is entering what they intended.
 
-![Password-confirm](https://user-images.githubusercontent.com/78355810/126155401-e201c17c-37f2-4059-8813-7e9ba09d8cda.png)
+![Password-confirm](images/ns-password/content-guidance-confirm.webp)
 
 | Key | Field type | Guidelines
 | :--- | :--- | :--- |
@@ -50,22 +50,20 @@ This variant is more complex than the Standard one. It allows a user to correctl
 | F | Confirmation | Checks the user has entered the password they intended by matching them. |
 
 
-
-
 ### Validation
 The Confirm Password variant has in-line validation that checks the input as the user types. This helps provide useful instant feedback to them on their formatting. The requirements can be flexible but currently set as British Gas format by default. The requirements are also accompanied by helpful messaging that changes with the status. 
 
 | Icon | Description |
 | :--- | :--- |
-| ![info](https://user-images.githubusercontent.com/78355810/126149341-4c6f21b9-6a36-4e3f-a29d-767f80ef8a50.png) | Information icon. This informs the user as to what is required before any input has been made. |
-| ![Warning](https://user-images.githubusercontent.com/78355810/126148961-8ecedebd-caa5-495b-b7ab-d471755c1c86.png) | Error triangle. This requirement has not yet been made. Text will also turn red. |
-| ![Success](https://user-images.githubusercontent.com/78355810/126149531-27d58a37-ed46-481b-8bf2-f29613f43fb8.png) | Success tick. This particular requirement has been met. |
+| ![info](images/ns-password/validation-info.webp) | Information icon. This informs the user as to what is required before any input has been made. |
+| ![Warning](images/ns-password/validation-warning.webp) | Warning triangle. This requirement has not yet been made. Text will also turn red. |
+| ![Success](images/ns-password/validation-success.webp) | Success tick. This particular requirement has been met. |
 
 Once all requirements have been met the input field's border also thickens changes to green to emphasise this. 
 
 The Standard variant just uses a single validation requirement that appears if the user tries to proceed without entering a password.
 
-![Password-std-validation](https://user-images.githubusercontent.com/78355810/126150535-6bd7c22e-35e2-4f50-9010-3db128d1ddba.png)
+![Password-std-validation](images/ns-password/validation-message.webp)
 
 ## Best practice
 
@@ -73,10 +71,7 @@ The Standard variant just uses a single validation requirement that appears if t
 | :--- | :--- |
 | Use the correct variant for its intended purpose | Try to make up another version by using parts - it will lead to an inconsistent experience |
 | Ensure the requirements reflect what's needed | Use requirements that differ from company policy |
-| Add Helper text or tips if necessary | Change the labels |
-
-
-
+| Add Helper text or tips if necessary |  |
 
 ## Usage
 
@@ -84,7 +79,7 @@ The Standard variant just uses a single validation requirement that appears if t
 
 ## Component placement
 
-<ComponentPlacement component="ns-password" parentComponents="ns-form,ns-fieldset"></ComponentPlacement>
+<ComponentPlacement component="ns-password" parentComponents="ns-form,ns-form-group"></ComponentPlacement>
 
 ## Specification
 
@@ -93,22 +88,35 @@ Also see ns-inputter [specification](components/ns-inputter.md#specification)
 | Attribute | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `type` |  `string`  | `default` | [`default`, `confirm`] | The type of the password component. Use `default` type for login journey and `confirm` type for registration journey. |
+| `name` | `string` | `password` |  | See [ns-inputter](components/ns-inputter.md#specification). |
 | `value`   | `string` | `''` |  | The value of the input or group of inputs inside `ns-inputter`. This can be used to add an initial value. |
 | `helper` | `string` |  |  | See [ns-inputter](components/ns-inputter.md#specification). |
-| `tip` | `string` |  |  | See [ns-inputter](components/ns-inputter.md#specification). |
-| `name` | `string` | `password` |  | See [ns-inputter](components/ns-inputter.md#specification). |
-| `passwordValidation` | `array` | `['hasNumbers', 'hasLetters', 'isBetween(8, 20)']` | |  Assists a user when adding a valid password and shows an error message when they're not. See [ns-inputter](components/ns-inputter.md#validation)
+| `label` |  `string`  | `Password` |  | The value of the label for password field. |
+| `confirmLabel` |  `string`  | `Confirm Password` |  | The value of the label for confirm password field. This attribute is used along with `confirm` type. |
 
-<Tokens component="password"></Tokens>
+| Slots | Type |
+| :--- | :--- |
+| `tip-details` | `p tag` |
+
+## Specification notes
+
+### Helper
+
+- A way to help the user understand why or why not enter information.
+
+### Tip-details slot
+
+- This requires helper property. This is initially hidden and can be revealed by the user when they click on the helper text.
 
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-password]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-password]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>
 
 ## Related links
 
 * [ns-inputter](components/ns-inputter.md)
-* [ns-form](components/ns-fieldset.md)
+* [ns-form](components/ns-form.md)
+* [ns-form-group](components/ns-form-group.md)

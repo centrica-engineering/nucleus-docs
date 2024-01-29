@@ -3,7 +3,7 @@ description: Atom | Price component.
 ---
 
 import { StorybookStory } from '../../includes/storybook-story.js'
-import { Tokens } from '../../includes/tokens.js'
+import { PageFooter } from '../../includes/page-footer.js'
 
 ## Introduction
 
@@ -43,11 +43,11 @@ ns-price can be used in any html text element.
 
 ## Specification
 
-| Attribute | Type | Default | Options | Description |
-| :--- | :--- | :--- | :--- |-------------|
-| `pence` | `string` | `0` | | The value in pence that is to be displayed |
-| `showDecimal` | `boolean` | `false` | | Set true to show ".00" when there are whole pound values |
-| `negative` | `boolean` | `false` | | Set true to show a minus symbol at the start of the number |
+| Attribute | Property | Type | Default | Options | Description |
+| :--- | :--- | :--- | :--- | :--- |-------------|
+| `pence` | `pence` | `string` | `0` | | The value in pence that is to be displayed |
+| `show-decimal` | `showDecimal` | `boolean` | `false` | | Set true to show ".00" when there are whole pound values |
+| `negative` | `negative` | `boolean` | `false` | | Set true to show a minus symbol at the start of the number |
 
 ## Specification notes
 
@@ -59,11 +59,9 @@ Price is passed in as an attribute to prevent the unformatted price being crawle
 
 There are a number of characters (i.e. hyphen, em dash, en dash) that can be confused with the minus symbol. Setting the negative attribute to true allows the component to output output the correct symbol. This ensures that screen readers will read the value as a minus price.
 
-<Tokens component="price"></Tokens>
-
 ## Feedback
 
 * Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[ns-price]).
 * See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[ns-price]).
 
-💩 🎉 🦄 You can also contact the team on Slack on the `#product-nucleus` channel!
+<PageFooter></PageFooter>
