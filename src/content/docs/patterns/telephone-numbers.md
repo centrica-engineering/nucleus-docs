@@ -108,15 +108,24 @@ There is currently no phone icon available within Nucleus. It is recommended not
 
 ## Best practice
 
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Separate the area code from the local number with a space | Push the area code and digits together |
-| Split longer local numbers with a space for readability | Format major city numbers like smaller town formats and vice versa |
-| Loose the preceding 0 when applying the calling from overseas format (+44 etc) | Show (0) in the calling from overseas format |
-| Use a space after 5th digit on a mobile number for readability | Display phone numbers as links on devices that cannot make calls |
-| Use supportive text and perhaps time frames around the number | Collect numbers without explaining why they are needed |
-| Try to keep a number on one line where possible, without wrapping | Use a phone icon with the number - there is currently no phone icon within Nucleus |
-| Show numbers for customers to call in a different style to those they have provided | Disclose customer phone numbers to the public |
+:::do
+- Separate the area code from the local number with a space.
+- Split longer local numbers with a space for readability.
+- Loose the preceding 0 when applying the calling from overseas format (+44 etc).
+- Use a space after 5th digit on a mobile number for readability.
+- Try to keep a number on one line where possible, without wrapping.
+- Show numbers for customers to call in a different style to those they have provided
+:::
+
+:::dont
+- Push the area code and digits together.
+- Format major city numbers like smaller town formats and vice versa.
+- Show (0) in the calling from overseas format.
+- Display phone numbers as links on devices that cannot make calls.
+- Collect numbers without explaining why they are needed.
+- Use a phone icon with the number - there is currently no phone icon within Nucleus.
+- Disclose customer phone numbers to the public.
+:::
 
 ## Aria-label accessibility
 
