@@ -11,7 +11,7 @@ const exampleFileMatcher = `/assets/examples/${slug}/${type}.js`;
 
 const examples = import.meta.glob("../assets/examples/**/*");
 const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
-const htmlContent = await examples[htmlFile]().then((value) => value.default);
+const htmlContent = await examples[htmlFile]?.().then((value) => value.default);
 ---
 
 <div>
