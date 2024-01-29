@@ -1,6 +1,7 @@
 ---
 import CodeSnippet from './CodeSnippet.astro';
 import ExampleRenderer from './ExampleRenderer.astro';
+import { NucleusComponentRenderer } from './NucleusComponentRenderer';
 
 const { slug } = Astro.params;
 const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
@@ -20,9 +21,7 @@ const htmlContent = await examples[htmlFile]().then((value) => value.default);
     )
   }
 
-  <ExampleRenderer>
-    <Fragment slot="template" set:html={htmlContent} />
-  </ExampleRenderer>
+  <NucleusComponentRenderer src={htmlContent} client:visible />
     
   <CodeSnippet>
     <Fragment slot="template" set:html={htmlContent} />

@@ -1,4 +1,5 @@
 ---
+import '../../../../../styles/custom.css';
 import ExampleConfigure from '../../../../../components/ExampleConfigure.astro';
 import cesm from '@connectedhomes/nucleus/custom-elements.json';
 
@@ -39,10 +40,10 @@ export function getStaticPaths() {
   });
 }
 ---
-<main>
+<main data-theme="light">
   <h1>Configure Example - {component}</h1>
   <div class="config-column">
-    <ExampleConfigure componentName={component}>
+    <ExampleConfigure componentName={component} src={htmlContent}>
       <Fragment set:html={htmlContent} />
     </ExampleConfigure>
   </div>
@@ -51,10 +52,14 @@ export function getStaticPaths() {
 <style>
   main {
     font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background-color: var(--sl-color-gray-7)
   }
 
   .config-content {
     display: none;  
   }
+
+
 </style>
 

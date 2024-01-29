@@ -2,6 +2,8 @@
 const { componentName } = Astro.props;
 
 import ExampleRenderer from './ExampleRenderer.astro';
+import { NucleusComponentRenderer } from './NucleusComponentRenderer';
+import { NucleusCodeSnippet } from './NucleusCodeSnippet';
 import CodeSnippet from './CodeSnippet.astro';
 
 import customElements from '@connectedhomes/nucleus/ce-doc.json';
@@ -9,17 +11,18 @@ import cesm from '@connectedhomes/nucleus/custom-elements.json';
 
 const customElement = customElements.find((customElement) => customElement.name === componentName);
 const cem = cesm.tags.find((tag) => tag.name === componentName);
+const htmlContent = Astro.props.src;
 ---
 <script>
   function populateConfig() {
     const componentElement = document.querySelector('.config-content')?.firstElementChild;
     if (componentElement) {
-      for (var i = 0, atts = componentElement.attributes, n = atts.length, arr = []; i < n; i++) {
+      for (var i = 0, atts = componentElement.attributes, n = atts.length; i < n; i++) {
         console.log(atts[i].nodeName, atts[i].nodeValue);
         const attrElements = document.querySelectorAll(`input[name=${atts[i].nodeName}]`);
 
         if (attrElements?.length === 1) {
-          attrElements[0].setAttribute('value', atts[i].nodeValue);
+          attrElements[0].setAttribute('value', atts[i].nodeValue ?? attrElements[0].defaultValue);
         } else if (attrElements?.length > 1) {
           Array.from(attrElements).
           filter((attrElement) => attrElement.value === atts[i].nodeValue).
@@ -50,8 +53,22 @@ const cem = cesm.tags.find((tag) => tag.name === componentName);
 
   const inputs = document.querySelectorAll('input, textarea');
   Array.from(inputs).forEach((input) => {
-    input.addEventListener('change', () => {
-      input.classList.add('changed');
+    input.addEventListener('change', (event) => {
+      if(input.type === 'radio') {
+        const allOptions = document.querySelectorAll(`input[name="${input.name}"]`);
+        allOptions?.forEach((option) => {
+          if(option.value === event.target.value) {
+            console.log('selected ', option.value);
+            option.classList.add('changed');
+          } else {
+            option.classList.remove('changed');
+          }
+        });
+        
+      } else {
+        input.classList.add('changed');
+      }
+
     });
   });
 
@@ -60,6 +77,8 @@ const cem = cesm.tags.find((tag) => tag.name === componentName);
   document.getElementById('reset-config')?.addEventListener('click', (ev) => {
     ev.preventDefault();
     populateConfig();
+    const componentElement = document.querySelector('.config-content')?.firstElementChild;
+    
   });
   
   document.getElementById('play-config')?.addEventListener('click', (ev) => {
@@ -76,24 +95,21 @@ const cem = cesm.tags.find((tag) => tag.name === componentName);
       componentCopy.setAttribute(attrName, attrValue);
     });
 
-    const iframeHTML = `
-        <main class="ndsn">
-          <ns-panel>
-            <div>
-              ${tempContainer.outerHTML}
-            </div>
-          </ns-panel>
-        </main>`;
-    const iframe = document.querySelector('iframe');
-    iframe.contentWindow.document.body.innerHTML = iframeHTML;
+    const exampleRenderer = document.querySelector('example-view');
+    exampleRenderer.src = tempContainer.outerHTML;
+    exampleRenderer.requestUpdate();
+
+    const codeSnippet = document.querySelector('code-snippet');
+    codeSnippet.src = tempContainer.outerHTML;
 
   });
 </script>
-<div class="config-content">
-  <slot />
-</div>
 
-<div class="configure-component">
+<div class="config-content" set:html={htmlContent}>
+
+</div>
+<div class="config-container">
+<div class="grid-element configure-component">
   <form>
     <button id="play-config">Run / Play</button>
     <button id="reset-config">Reset</button>
@@ -117,7 +133,7 @@ const cem = cesm.tags.find((tag) => tag.name === componentName);
         const attributeTitle = (<label>{attribute.name}</label>);
 
         const optionsHTML = options?.map((option) => {
-          const checked = defaultValue === option ? true : false;
+          const checked = defaultValue === option ? '' : undefined;
           return (
             <span class="radio-element">
               <input type="radio" name={attribute.name} value={option} {checked}>
@@ -184,16 +200,13 @@ const cem = cesm.tags.find((tag) => tag.name === componentName);
   </form>
 </div>
 
-<div>
-  <ExampleRenderer>
-    <slot slot="template" />
-  </ExampleRenderer>
-  <CodeSnippet>
-    <slot slot="template" />
-  </CodeSnippet>
+<div class="grid-element preview-code">
+  <NucleusComponentRenderer src={htmlContent} client:visible/>
+  <NucleusCodeSnippet src={htmlContent} client:visible/>
 </div>
-
+</div>
 <style>
+
   .config-content {
     display: none;  
   }
@@ -205,7 +218,7 @@ const cem = cesm.tags.find((tag) => tag.name === componentName);
   }
 
   .config-elements {
-    padding-block: 1rem;
+    padding-block: 0.5rem;
 
     label {
       padding-inline-end: 2rem;
@@ -217,11 +230,21 @@ const cem = cesm.tags.find((tag) => tag.name === componentName);
 
      input[type='text'] {
       width: 30%;
+      border-radius: 0.5rem;
+      border: 1px solid var(--sl-color-gray-1);
+    }
+
+    input[type='radio'] {
+      width: 1.25rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--sl-color-gray-1);
     }
 
     textarea {
       width: 40%;
       min-height: 5rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--sl-color-gray-1);
     }
   }
 </style>
