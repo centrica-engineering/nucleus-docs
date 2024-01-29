@@ -3,7 +3,7 @@ import { styleMap } from 'lit/directives/style-map.js';
 import { toHtml } from 'hast-util-to-html';
 import {until } from 'lit/directives/until.js';
 import { createRenderer } from 'remark-expressive-code';
-import shiki from 'shiki';
+import { getHighlighter } from 'shiki';
 
 export class NucleusCodeSnippet extends LitElement {
   static get properties() {
@@ -15,7 +15,7 @@ export class NucleusCodeSnippet extends LitElement {
 
   // willUpdate() {
   //   super.willUpdate();
-  //   this._formattedSrc = shiki.getHighlighter({ theme: 'github-dark' }).then(highlighter => {
+  //   this._formattedSrc = getHighlighter({ theme: 'github-dark' }).then(highlighter => {
   //     const htmlContent = highlighter.codeToHtml(this.src, {lang: 'html'});
   //     console.log(htmlContent);
   //     return htmlContent;
@@ -23,7 +23,7 @@ export class NucleusCodeSnippet extends LitElement {
   // }
 
   async _codeSnippet() {
-      const highlighter = await shiki.getHighlighter({ theme: 'github-dark' });
+      const highlighter = await getHighlighter({ theme: 'github-dark' });
       this._formattedSrc = highlighter.codeToHtml(this.src, {lang: 'html'});
       console.log(this._formattedSrc);
     // return (async () => {
