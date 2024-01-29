@@ -41,7 +41,7 @@ export function getStaticPaths() {
 }
 ---
 <main data-theme="light">
-  <h1>Configure Example - {component}</h1>
+  <h1>{component}</h1>
   <div class="config-column">
     <ExampleConfigure componentName={component} src={htmlContent}>
       <Fragment set:html={htmlContent} />
