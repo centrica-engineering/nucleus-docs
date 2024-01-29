@@ -1,51 +1,36 @@
 import { LitElement, html, css } from 'lit';
-import { styleMap } from 'lit/directives/style-map.js';
-import { toHtml } from 'hast-util-to-html';
-import {until } from 'lit/directives/until.js';
-import { createRenderer } from 'remark-expressive-code';
-import { getHighlighter } from 'shiki';
+import { unsafeHTML } from 'lit/directives/unsafe-html.js';
+import { getHighlighter } from 'shikiji';
+import { Task } from '@lit/task';
 
 export class NucleusCodeSnippet extends LitElement {
   static get properties() {
     return {
       src: { type: String },
-      _formattedSrc: { state: true }
+      _formattedSrc: {}
     };
   }
 
-  // willUpdate() {
-  //   super.willUpdate();
-  //   this._formattedSrc = getHighlighter({ theme: 'github-dark' }).then(highlighter => {
-  //     const htmlContent = highlighter.codeToHtml(this.src, {lang: 'html'});
-  //     console.log(htmlContent);
-  //     return htmlContent;
-  //   });
-  // }
-
-  async _codeSnippet() {
-      const highlighter = await getHighlighter({ theme: 'github-dark' });
-      this._formattedSrc = highlighter.codeToHtml(this.src, {lang: 'html'});
-      console.log(this._formattedSrc);
-    // return (async () => {
-    //   const {ec, themeStyles, baseStyles, jsModules} = await createRenderer({
-    //     useDarkModeMediaQuery: true
-    //   });
-    //   const { renderedGroupAst, styles } = await ec?.render({
-    //     code: this.src,
-    //     language: 'html',
-    //     meta: ''
-    //   });
-    //   let htmlContent = toHtml(renderedGroupAst);
-    //   return htmlContent;
-    // })();
-  }
-  connectedCallback() {
-    super.connectedCallback();
-    until(this._codeSnippet(), 'Loading...');
+  constructor() {
+    super();
+    this._formattedSrc = new Task(this, {
+      task: async ([src], {signal} ) => {
+        const highlighter = await getHighlighter({ themes: ['github-dark', 'github-light'] });
+        const htmlContent = highlighter.codeToHtml(src, {theme: 'github-dark'});
+        return html`${unsafeHTML(htmlContent)}`;
+      },
+      args: () => [this.src]
+    });
   }
 
   render() {
-    return html`${this._formattedSrc}`;
+    return this._formattedSrc.render({
+      pending: () => html`<p>Loading...</p>`,
+      complete: (codeSnippet) => {
+        return html`${codeSnippet}`;
+      },
+      error: (e) => html`<p>Error${e}</p>`
+    });
   }
 }
 

@@ -54,8 +54,9 @@ export class NucleusComponentRenderer extends LitElement {
   updated() {
     super.updated();
     const iframe = this.shadowRoot.querySelector('iframe');
-    console.log(iframe.contentWindow.document.body.scrollHeight);
-    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px !important;";
+    if (iframe) {
+      iframe.height = iframe.contentWindow.document.body.scrollHeight + "px !important;";
+    }
   }
 
   render() {
