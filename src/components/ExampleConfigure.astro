@@ -83,7 +83,7 @@ const htmlContent = Astro.props.src;
   
   document.getElementById('play-config')?.addEventListener('click', (ev) => {
     ev.preventDefault();
-    const changedElements = document.querySelectorAll('.changed');
+    const changedElements = document.querySelectorAll('.config-elements .changed');
     const componentElement = document.querySelector('.config-content')?.firstElementChild;
     const componentCopy = componentElement?.cloneNode(true);
     const tempContainer = document.createElement("div");
@@ -95,12 +95,20 @@ const htmlContent = Astro.props.src;
       componentCopy.setAttribute(attrName, attrValue);
     });
 
+    const slottedElements = document.querySelectorAll('.slot-elements textarea');
+    let slottedValue = '';
+    slottedElements?.forEach((slottedElement) => {
+      const attrValue = slottedElement.value;
+      slottedValue += attrValue;
+    });
+    componentCopy.innerHTML = slottedValue;
+
     const exampleRenderer = document.querySelector('example-view');
-    exampleRenderer.src = tempContainer.outerHTML;
+    exampleRenderer.src = tempContainer.innerHTML;
     exampleRenderer.requestUpdate();
 
     const codeSnippet = document.querySelector('code-snippet');
-    codeSnippet.src = tempContainer.outerHTML;
+    codeSnippet.src = tempContainer.innerHTML;
 
   });
 </script>
@@ -190,7 +198,7 @@ const htmlContent = Astro.props.src;
   {
     cem.slots?.map((slot) => {
       return (
-        <div class="config-elements">
+        <div class="slot-elements">
           <label>{slot.name !== '' ? slot.name : 'default' }</label>
           <textarea name={slot.name !== '' ? slot.name : 'default'}></textarea>
         </div>
