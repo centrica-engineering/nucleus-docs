@@ -91,6 +91,11 @@
   --ns-masthead-height: 8.75rem;
   --ns-section-tabs-height: 5rem;
 
+  /* Masthead colours */
+  --ns-color-masthead-components: var(--ns-color-teal);
+  --ns-color-masthead-guidelines: var(--ns-color-orange);
+  --ns-color-masthead-patterns: var(--ns-color-purple);
+  --ns-color-masthead-page-types: var(--ns-color-pink);
 }
 
 :root[data-theme='light'] {

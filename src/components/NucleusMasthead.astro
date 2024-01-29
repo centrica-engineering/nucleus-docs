@@ -11,9 +11,10 @@ const mastheadImages = import.meta.glob("../assets/masthead/**/*");
 const mastheadImage = mastheadImages[`../assets/masthead/${slug}.svg`];
 
 const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
+const mastheadFolder = slug.split('/')[0];
 ---
 
-<div class="masthead">
+<div class=`masthead ${mastheadFolder}`>
   <div class="title">
     <Default {...Astro.props}></Default>
     {
@@ -76,6 +77,22 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
       left: 0;
       height: var(--sl-content-pad-x);
       background-color: var(--sl-color-bg);
+    }
+
+    &.components {
+      background-color: var(--ns-color-masthead-components);
+    }
+
+    &.guidelines {
+      background-color: var(--ns-color-masthead-guidelines);
+    }
+
+    &.patterns {
+      background-color: var(--ns-color-masthead-patterns);
+    }
+
+    &.page-types {
+      background-color: var(--ns-color-masthead-page-types);
     }
   }
 
