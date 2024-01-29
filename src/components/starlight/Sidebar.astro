@@ -1,0 +1,10 @@
+---
+import Default from '@astrojs/starlight/components/Sidebar.astro';
+---
+
+<Default {...Astro.props} />
+
+<script>
+  const currentLink = document.querySelector('a[aria-current="page"]');
+  currentLink?.scrollIntoView({behavior: 'instant', block: 'center'});
+</script>

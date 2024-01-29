@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import starlightDocSearch from '@astrojs/starlight-docsearch';
 import lit from "@astrojs/lit";
 import customElements from "@connectedhomes/nucleus/ce-doc.json";
 import cem from "@connectedhomes/nucleus/custom-elements.json";
@@ -22,7 +23,6 @@ const componentSidebar = () => {
       }),
       {
         label: "Form",
-        collapsed: true,
         items: 
           customElements.filter((customElement) => !customElement.internal && customElement.category === 'Form' && !isDeprecated(customElement.name))
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
@@ -35,7 +35,6 @@ const componentSidebar = () => {
       },
       {
         label: "Experience",
-        collapsed: true,
         items: 
           customElements.filter((customElement) => !customElement.internal && customElement.category === 'Experience' && !isDeprecated(customElement.name))
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
@@ -48,7 +47,6 @@ const componentSidebar = () => {
       },
       {
         label: "Deprecated",
-        collapsed: true,
         items: 
           cem.tags.filter((tag) => tag.deprecated)
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
@@ -62,6 +60,21 @@ const componentSidebar = () => {
       },
     ]
   };
+}
+
+const plugins = () => {
+  const starlightPlugins = [];
+  if (process.env.NODE_ENV === 'production') {
+    starlightPlugins.push(
+      starlightDocSearch({
+        appId: 'algolia',
+        apiKey: process.env.ALGOLIA_KEY,
+        indexName: 'nucleus',
+      })
+    );
+  }
+  return starlightPlugins;
+
 }
 
 export default defineConfig({
@@ -96,7 +109,8 @@ export default defineConfig({
         PageTitle: "./src/components/starlight/PageTitle.astro",
         TableOfContents: "./src/components/starlight/TableOfContents.astro",
         // ThemeSelect: './src/components/starlight/ThemeSelect.astro',
-        TwoColumnContent: "./src/components/starlight/TwoColumnContent.astro"
+        TwoColumnContent: "./src/components/starlight/TwoColumnContent.astro",
+        Sidebar: "./src/components/starlight/Sidebar.astro"
       },
       expressiveCode: {
         themes: ["github-dark", "github-light"],
@@ -118,7 +132,10 @@ export default defineConfig({
           collapsed: true,
           autogenerate: { directory: "page-types" },
         },
-      ]
+      ],
+      plugins: [
+        ...plugins()
+      ],
     }),
     lit(),
   ],
