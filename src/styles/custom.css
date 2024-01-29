@@ -145,6 +145,10 @@ h1 {
   .hero {
     display: block;
   }
+
+  .footer {
+    display: none;
+  }
 }
 
 /* NOTE: @drew - 2024-01-03 - this selector is to target the content page */
