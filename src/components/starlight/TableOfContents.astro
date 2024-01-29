@@ -9,7 +9,7 @@ const { slug } = Astro.params;
 
 const mastheadImages = import.meta.glob("../../assets/masthead/**/*");
 const mastheadImage = mastheadImages[`../../assets/masthead/${slug}.svg`];
-const mastheadFolder = slug.split('/')[0];
+const mastheadFolder = slug?.split('/')[0];
 ---
 
 {
