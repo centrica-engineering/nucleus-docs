@@ -10,6 +10,8 @@ import Specification from '@components/specification.astro';
 import Placement from '@components/placement.astro';
 import CompDetails from '@components/cem-description.astro';
 import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Overview
 
@@ -21,45 +23,38 @@ It has an ARIA role of `alert`, which brings the immediate attention of its cont
 More information in the [Accessibility](#accessibility) section.
 :::
 
-### Example
+### Examples
 
-<ExampleViewer type="standard" />
+<Tabs>
+  <TabItem label="Standard">
+  `type="highlighter"`
+    <ExampleViewer type="standard" />
+  </TabItem>
+  <TabItem label="Error">
+    `state="error"`
 
-#### Highlighter
+    For communicating failure with urgence. A task cannot be completed without the user remedying something.
+    <ExampleViewer type="highlighter-error" />
+  </TabItem>
+  <TabItem label="Info">
+    `state="info"`
 
-`type="highlighter"`
+    For communicating a useful piece of information that the user might find helpful to carry out their action.
+    <ExampleViewer type="highlighter-info" />
+  </TabItem>
+  <TabItem label="Success">
+    `state="success"`
 
-##### Error
+    For communicating that an action has been successful.
+    <ExampleViewer type="highlighter-success" />
+  </TabItem>
+  <TabItem label="Warning">
+    `state="warning"`
 
-`state="error"`
-
-For communicating failure with urgence. A task cannot be completed without the user remedying something.
-
-<ExampleViewer type="highlighter-error" />
-
-##### Info
-
-`state="info"`
-
-For communicating a useful piece of information that the user might find helpful to carry out their action.
-
-<ExampleViewer type="highlighter-info" />
-
-##### Success
-
-`state="success"`
-
-For communicating that an action has been successful.
-
-<ExampleViewer type="highlighter-success" />
-
-##### Warning
-
-`state="warning"`
-
-Use for communicating a piece of information with less severity. These include foreseeable problematic events, failures, outages and how to avoid errors.
-
-<ExampleViewer type="highlighter-warning" />
+    Use for communicating a piece of information with less severity. These include foreseeable problematic events, failures, outages and how to avoid errors.
+    <ExampleViewer type="highlighter-warning" />
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
@@ -104,8 +99,10 @@ The message must be in plain English, and help the user out of the situation by 
 
 ### Related links
 
+<RelatedLinks name={componentName}>
 - [ns-component](#!)
 - [ns-component](#!)
+</RelatedLinks>
 
 ## Accessibility
 

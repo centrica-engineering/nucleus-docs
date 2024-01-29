@@ -1,81 +1,102 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html } from 'lit';
 
-export class NucleusSectionTabs extends LitElement {
+export class NucleusTOC extends LitElement {
 
   static get properties() {
     return {
-      _current: { type: HTMLAnchorElement, state: true }
+      _current: { type: HTMLAnchorElement, state: true },
+      _minH: { type: Number, state: true },
+      _maxH: { type: Number, state: true },
+      _links: { type: Array, state: true }
     };
   }
 
   constructor() {
     super();
 
-    const PAGE_TITLE_ID = '_top';
-    const links = [...this.querySelectorAll('a')];
-
+    this._minH = parseInt(this.dataset.minH || '2', 10);
+    this._maxH = parseInt(this.dataset.maxH || '3', 10);
+    this._links = [...this.querySelectorAll('a')];
+  }
     /** Test if an element is a table-of-contents heading. */
-    const isHeading = (el) => {
+    isHeading(el) {
       if (el instanceof HTMLHeadingElement) {
         // Special case for page title h1
-        if (el.id === PAGE_TITLE_ID) return true;
+        if (el.id === '_top') return true;
         // Check the heading level is within the user-configured limits for the ToC
         const level = el.tagName[1];
         if (level) {
           const int = parseInt(level, 10);
-          if (int == 2) return true;
+					if (int >= this._minH && int <= this._maxH) return true;
         }
       }
       return false;
-    };
+    }
 
     /** Walk up the DOM to find the nearest heading. */
-    const getElementHeading = (el) => {
+    getElementHeading(el) {
       if (!el) return null;
       const origin = el;
       while (el) {
-        if (isHeading(el)) return el;
+        if (this.isHeading(el)) return el;
         // Assign the previous sibling’s last, most deeply nested child to el.
         el = el.previousElementSibling;
         while (el?.lastElementChild) {
           el = el.lastElementChild;
         }
         // Look for headings amongst siblings.
-        const h = getElementHeading(el);
+        const h = this.getElementHeading(el);
         if (h) return h;
       }
       // Walk back up the parent.
-      return getElementHeading(origin.parentElement);
-    };
+      return this.getElementHeading(origin.parentElement);
+    }
 
     /** Handle intersections and set the current link to the heading for the current intersection. */
-    const setCurrent = (entries) => {
+    setCurrent(entries) {
+
       for (const { isIntersecting, target } of entries) {
         if (!isIntersecting) continue;
-        const heading = getElementHeading(target);
+        const heading = this.getElementHeading(target);
         if (!heading) continue;
-        const link = links.find((link) => link.hash === '#' + encodeURIComponent(heading.id));
+        const link = this._links.find((link) => link.hash === '#' + encodeURIComponent(heading.id));
         if (link) {
           this.updateCurrent(link);
           break;
         }
       }
-    };
+    }
 
-    const toObserve = document.querySelectorAll('main [id]');
+  connectedCallback() {
+    const toObserve = document.querySelectorAll('main [id], main [id] ~ *, main .content > *');
     let observer;
     const observe = () => {
       if (observer) observer.disconnect();
-      observer = new IntersectionObserver(setCurrent, { rootMargin: this.getRootMargin() });
+      observer = new IntersectionObserver(this.setCurrent.bind(this), { rootMargin: this.getRootMargin() });
       toObserve.forEach((h) => {
         observer?.observe(h)
       });
     };
-		observe();
+    observe();
+  }
+
+  getHeaderHeight() {
+    const headerRect = document.querySelector('header')?.getBoundingClientRect();
+    let viewPortBottom = window.innerHeight || document.documentElement.clientHeight;
+     // get the width of the window 
+     let viewPortRight = window.innerWidth || document.documentElement.clientWidth;
+
+     let isTopInViewPort = headerRect?.top >= 0,
+         isLeftInViewPort = headerRect?.left >= 0,
+         isBottomInViewPort = headerRect?.bottom <= viewPortBottom,
+         isRightInViewPort = headerRect?.right <= viewPortRight;
+
+    // check if element is completely visible inside the viewport
+    return (isTopInViewPort && isLeftInViewPort && isBottomInViewPort && isRightInViewPort) ? headerRect.height : 0;
   }
 
   getRootMargin() {
-		const navBarHeight = document.querySelector('header')?.getBoundingClientRect().height || 0;
+		const navBarHeight = this.getHeaderHeight() || 0;
     const sectionTabsHeight = document.querySelector('.section-tabs')?.getBoundingClientRect().height || 0;
 		// `<summary>` only exists in mobile ToC, so will fall back to 0 in large viewport component.
 		const mobileTocHeight = this.querySelector('summary')?.getBoundingClientRect().height || 0;
@@ -105,4 +126,4 @@ export class NucleusSectionTabs extends LitElement {
   }
 }
 
-customElements.define('section-tabs', NucleusSectionTabs);
+customElements.define('nucleus-toc', NucleusTOC);

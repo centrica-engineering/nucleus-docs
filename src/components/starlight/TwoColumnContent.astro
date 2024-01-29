@@ -5,7 +5,7 @@ import NucleusMasthead from "../NucleusMasthead.astro";
 
 <NucleusMasthead {...Astro.props} />
 
-<div class="lg:sl-flex">
+<div class="layout">
   {
     Astro.props.toc && (
       <aside class="right-sidebar-container">
@@ -23,14 +23,30 @@ import NucleusMasthead from "../NucleusMasthead.astro";
     isolation: isolate;
   }
 
+  .layout {
+    display: grid;
+  }
+
+  @media (width >= 50rem) {
+    .main-pane {
+      max-width: calc(100vw - var(--sl-sidebar-width));
+    }
+  }
+
   @media (min-width: 72rem) {
+    .layout {
+      grid-template-columns: 1fr var(--sl-sidebar-width) ;
+    }
+
+    .main-pane {
+      width: calc(100vw - (var(--sl-sidebar-width) * 2));
+    }
+
     .right-sidebar-container {
       order: 2;
-      position: relative;
-      width: calc(
-        var(--sl-sidebar-width) +
-          (100% - var(--sl-content-width) - var(--sl-sidebar-width)) / 2
-      );
+      width: var(--sl-sidebar-width);
+      margin-inline-start: auto;
+      margin-inline-end: var(--sl-content-pad-x);
 
       #starlight__on-this-page {
         display: none;
@@ -42,28 +58,19 @@ import NucleusMasthead from "../NucleusMasthead.astro";
     }
 
     .right-sidebar {
-      position: fixed;
-      /* top: 0; */
-      border-inline-start: 1px solid var(--sl-color-gray-6);
-      padding-top: var(--sl-nav-height);
-      width: 100%;
-      height: 100vh;
+      position: sticky;
+      margin-block-start: calc(var(--ns-section-tabs-height) * -1);
+      top: calc(var(--sl-nav-height) + var(--ns-section-tabs-height));
+      height: calc(100vh - var(--sl-nav-height) - var(--ns-section-tabs-height));
+      width: inherit;
       overflow-y: auto;
       scrollbar-width: none;
-    }
-
-    .main-pane {
-      width: 100%;
     }
 
     :global([data-has-sidebar][data-has-toc]) .main-pane {
       --sl-content-margin-inline: auto 0;
 
       order: 1;
-      width: calc(
-        var(--sl-content-width) +
-          (100% - var(--sl-content-width) - var(--sl-sidebar-width)) / 2
-      );
     }
   }
 </style>

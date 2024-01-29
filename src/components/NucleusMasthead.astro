@@ -34,26 +34,24 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
 {
   isComponentPage && toc?.items?.length > 0 && (
     <section-tabs>
-      <div class="sticky">
-        <div class="section-tabs">
-          {
-          toc.items.filter((toc) => toc.text !== 'Top').map((toc) => {
-            const sectionTabImage = sectionTabImages[`../assets/sectiontab/${toc.text?.toLowerCase()}.svg`];
-            return (
-              <a class="section-tab" href=`#${toc.slug}`>
-                <Image src={sectionTabImage()} alt="" {...Astro.props} />
-                <span>{toc.text}</span>
-              </a>
-              )
-          })
-        }
-      </div>
+      <div class="section-tabs">
+        {
+        toc.items.filter((toc) => toc.text !== 'Top').map((toc) => {
+          const sectionTabImage = sectionTabImages[`../assets/sectiontab/${toc.text?.toLowerCase()}.svg`];
+          return (
+            <a class="section-tab" href=`#${toc.slug}`>
+              <Image src={sectionTabImage()} alt="" {...Astro.props} />
+              <span>{toc.text}</span>
+            </a>
+            )
+        })
+      }
     </div>
   </section-tabs>
   )
 }
 
-<script src="./NucleusSectionTabs"></script>
+<script src="./observer/NucleusSectionTabs"></script>
 
 <style>
   .masthead {
@@ -65,7 +63,20 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     padding-inline-end: var(--sl-content-pad-x);
     border-radius: 1.25rem;
     display: flex;
-    min-height: 96px;
+    min-height: 90px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(var(--sl-content-pad-x) * -1);
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: var(--sl-content-pad-x);
+      background-color: var(--sl-color-bg);
+    }
   }
 
   .title {
@@ -77,15 +88,15 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     }
 
     code {
-      font-size: var(--sl-text-3xl);
+      font-size: var(--sl-text-h4);
     }
   }
 
   .decoration {
     margin-block-start: 1rem;
     margin-inline-start: auto;
-    width: 64px;
-    height: 64px;
+    width: 58px;
+    height: 58px;
 
     /* NOTE: @drew - 2024-01-09 - overriding the inline styles for the image */
     img {
@@ -94,47 +105,47 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     }
   }
 
-  .sticky {
-    background-color: var(--sl-color-bg);
+  section-tabs {
+    display: block;
+    overflow: hidden;
     position: sticky;
     top: var(--sl-nav-height);
     z-index: 1;
-    padding-block-start: var(--sl-content-pad-x);
+    background-color: var(--sl-color-bg);
   }
 
   .section-tabs {
     background-color: var(--sl-color-gray-7);
     margin-inline-start: var(--sl-content-pad-x);
     margin-inline-end: var(--sl-content-pad-x);
+    margin-block-end: var(--sl-content-pad-x);
     border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
+    transform: translateY(var(--sl-content-pad-x));
 
     [href="#_top"] {
       display: none;
     }
-
-    a {
-      color: var(--sl-color-gray-2);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
   }
 
   .section-tab {
+    color: var(--sl-color-gray-2);
+    text-decoration: none;
+    font-weight: 500;
     position: relative;
     display: inline-block;
     padding-inline-start: 48px;
     padding-inline-end: 32px;
     padding-block: 16px;
-    font-size: var(--sl-text-sm);
+    font-size: var(--sl-text-base);
     border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
     transition-property: background-color;
     transition-delay: 0ms;
     transition-duration: 1000ms;
     transition-timing-function: ease-in-out;
+
+    &:hover {
+      color: var(--sl-color-gray-1);
+    }
 
     img {
       position: absolute;
@@ -148,11 +159,6 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
     &[aria-current] {
       background-color: var(--sl-color-gray-6);
     }
-
-    &:hover::before,
-    &:focus::before {
-      background-color: var(--sl-color-gray-2);
-    }
   }
 
   @media (width < 72rem) {
@@ -163,12 +169,12 @@ const sectionTabImages = import.meta.glob("../assets/sectiontab/*");
 
   @media (min-width: 50rem) {
     .masthead {
-      min-height: 116px;
+      min-height: 104px;
     }
 
     .decoration {
-      width: 84px;
-      height: 84px;
+      width: 72px;
+      height: 72px;
     }
   }
 </style>
