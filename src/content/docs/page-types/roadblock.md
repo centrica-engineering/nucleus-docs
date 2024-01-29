@@ -36,11 +36,16 @@ If supporting information is needed, consider using `ns-lockup` or `ns-editorial
 
 ## Best practice
 
-| 💚 Do's | 💔 Don'ts |
-| :---  | :---  |
-| Communicate the message in a clear and concise way as possible | Use the subheading |
-| Suggest a next step the customer could take e.g. direct them to webchat or a phone number | Use as errors that are specific to ui elements (such as form fields) or parts of a page ([See `ns-highlighter`](components/ns-highlighter) ) |
-|  | Use for global messaging ([See `ns-skyline`](components/ns-skyline) ) |
+:::do
+- Communicate the message in a clear and concise way as possible.
+- Suggest a next step the customer could take e.g. direct them to webchat or a phone number.
+:::
+
+:::dont
+- Use the subheading.
+- Use as errors that are specific to ui elements (such as form fields) or parts of a page ([See `ns-highlighter`](components/ns-highlighter) ).
+- Use for global messaging ([See `ns-skyline`](components/ns-skyline) ).
+:::
 
 ## Principles to follow
 
