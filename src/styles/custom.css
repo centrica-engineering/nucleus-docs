@@ -130,6 +130,7 @@ body {
 /* Custom fonts */
 main {
   font-family: "Roboto", sans-serif;
+  padding-block-end: 0 !important;
 }
 
 h1 {
@@ -145,6 +146,10 @@ h1 {
   .hero {
     display: block;
   }
+
+  .footer {
+    display: none;
+  }
 }
 
 /* NOTE: @drew - 2024-01-03 - this selector is to target the content page */
@@ -156,6 +161,10 @@ h1 {
     padding-block-end: 1rem;
   }
 
+  .content-panel {
+    padding-block-end: 0;
+  }
+
   .content-panel:nth-child(1) {
     display: none;
   }
@@ -165,7 +174,7 @@ h1 {
   }
 
   .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 70px;
   }
 
   @media(width < 72em) {
