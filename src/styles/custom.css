@@ -280,17 +280,30 @@ h1 {
 
   .top-level {
     padding-block-end: 50vh;
+
+    > li {
+      margin-block-start: 0;
+    }
+  }
+
+  .group-label {
+    .large {
+      font-weight: 500;
+      color: var(--sl-color-gray-3);
+    }
   }
 
   details {
-    ul {
-      margin-block-start: 0.5rem;
+    summary {
+      padding-block-start: 0.75rem;
+      padding-block-end: 0.75rem;
+    }
 
+    ul {
       li {
         border-inline-start-style: none;
 
         &:has(ul) {
-          margin-block-start: 0.5rem;
           padding-inline-start: 0;
         }
       }
