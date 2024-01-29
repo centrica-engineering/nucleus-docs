@@ -14,7 +14,6 @@ import RelatedLinks from '@components/related-links.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 import ExampleStandard from '@examples/components/ns-accordion/standard.html';
-import ExampleEightExpanders from '@examples/components/ns-accordion/eight-expanders.html';
 
 ## Overview
 
@@ -24,18 +23,9 @@ We use accordions to break down content into meaningful sections, helping to red
 
 ### Examples
 
-<Tabs>
-  <TabItem label="Two expanders">
-    <ExampleViewer>
-      <ExampleStandard slot="template" />
-    </ExampleViewer>
-  </TabItem>
-  <TabItem label="Eight expanders">
-    <ExampleViewer>
-      <ExampleEightExpanders slot="template" />
-    </ExampleViewer>
-  </TabItem>
-</Tabs>
+<ExampleViewer>
+  <ExampleStandard slot="template" />
+</ExampleViewer>
 
 ## Guidance
 
