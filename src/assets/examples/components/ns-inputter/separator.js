@@ -1,6 +1,0 @@
-export default `
-<ns-inputter mask="  -  -  " separator="-" validation="[&quot;isRequired&quot;,&quot;minLength(6)&quot;]" ignore-separator>
-  <label slot="label">Separator</label>
-  <input type="text">
-</ns-inputter>
-`;

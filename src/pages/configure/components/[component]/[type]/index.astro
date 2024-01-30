@@ -4,16 +4,16 @@ import ExampleConfigure from '../../../../../components/ExampleConfigure.astro';
 import cesm from '@connectedhomes/nucleus/custom-elements.json';
 
 const { component, type } = Astro.params;
-const exampleFileMatcher = `/assets/examples/components/${component}/${type}.js`;
+const exampleFileMatcher = `/assets/examples/components/${component}/${type}.html`;
 
-const examples = import.meta.glob("../../../../../assets/examples/components/**/*.js");
+const examples = import.meta.glob("../../../../../assets/examples/components/**/*.html", { import: 'default', as: 'raw', eager: true});
 const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
-const htmlContent = await examples[htmlFile]().then(value => value.default);
+const htmlContent = await examples[htmlFile];
 
 export function getStaticPaths() {
-  const examples = import.meta.glob("../../../../../assets/examples/components/**/*.js");
+  const examples = import.meta.glob("../../../../../assets/examples/components/**/*.html");
   const getComponentExample = (fileMatcher) => {
-    return Object.keys(examples).filter((example) => example.indexOf(fileMatcher) > -1);
+    return Object.keys(examples)?.filter((example) => example.indexOf(fileMatcher) > -1);
   } 
   return cesm.tags.flatMap((tag) => {
     const componentName = tag.name;
@@ -21,7 +21,7 @@ export function getStaticPaths() {
     const componentExamples = getComponentExample(exampleComponentMatcher);
     if(componentExamples) {
       return componentExamples.map((componentExample) => {
-        const type = componentExample?.split(exampleComponentMatcher)[1].replaceAll('.js', '');
+        const type = componentExample?.split(exampleComponentMatcher)[1].replaceAll('.html', '');
         return {
           params: {
             component: tag.name,

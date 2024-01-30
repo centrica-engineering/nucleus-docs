@@ -1,6 +1,0 @@
-export default `
-<ns-inputter>
-  <label slot="label">Family Name</label>
-  <input type="text" placeholder="e.g. Smith" autocomplete="family-name">
-</ns-inputter>
-`;

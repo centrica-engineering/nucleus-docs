@@ -1,6 +1,0 @@
-export default `
-<ns-alert>
-  <h2 slot="heading">Unfortunately, we're having technical problems at the moment</h2>
-  <p>Either stay on this page and try again in a few moments, or try again later.</p>
-</ns-alert>
-`;
