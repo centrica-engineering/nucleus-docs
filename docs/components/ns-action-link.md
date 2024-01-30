@@ -63,7 +63,7 @@ The following content guidance applies to both types of the component.
 | `type`    | `type`   | `string` | `standard`      | `standard`, `stacked`,                            | Different variants of the action link. |
 | `href`    | `href`   | `string` |               |                                    | Navigating using a hyperlink.  |
 | `label`   | `label`  | `string` |               |                                    | The text inside the link.      |
-| `illustration`    | `illustration`   | `string` | `` |  See [`ns-illustration` component](../components/ns-illustration) | The illustration inside the link.       |
+| `decoration` | `decoration` | `string` | `` |  See [`ns-illustration` component](../components/ns-illustration) | The illustration inside the link.       |
 
 ### Specification notes
 
