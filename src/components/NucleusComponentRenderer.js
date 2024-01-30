@@ -61,17 +61,15 @@ export class NucleusComponentRenderer extends LitElement {
 
   render() {
     return html`
-      <div class="example">
-        <div class="preview">
-          <iframe
-            class="example-iframe"
-            .srcdoc=${this.doc}
-            width="100%"
-            height="100%"
-            allowfullscreen
-            sandbox="allow-scripts allow-same-origin"
-          ></iframe>
-        </div>
+      <div class="example preview">
+        <iframe
+          class="example-iframe"
+          srcdoc=${this.doc}
+          width="100%"
+          height="100%"
+          allowfullscreen
+          sandbox="allow-scripts allow-same-origin"
+        ></iframe>
       </div>
     `;
   }
