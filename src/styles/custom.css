@@ -245,7 +245,7 @@ h1 {
     }
   }
 
-  [id^="key"] + table thead {
+  :has([id^="key"]) + table thead {
     display: none; /* [1] */
   }
 
