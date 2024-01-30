@@ -26,7 +26,6 @@ export class NucleusCodeSnippet extends LitElement {
           meta: ''
         });
 
-        console.log(themeStyles);
         let htmlContent = toHtml(renderedGroupAst);
         const frameSelector = 'figure class="frame';
         let index = htmlContent.indexOf(frameSelector);
