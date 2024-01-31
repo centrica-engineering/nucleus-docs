@@ -1,10 +1,8 @@
 ---
 const { componentName } = Astro.props;
 
-import ExampleRenderer from './ExampleRenderer.astro';
 import { NucleusComponentRenderer } from './NucleusComponentRenderer';
 import { NucleusCodeSnippet } from './NucleusCodeSnippet';
-import CodeSnippet from './CodeSnippet.astro';
 
 import customElements from '@connectedhomes/nucleus/ce-doc.json';
 import cesm from '@connectedhomes/nucleus/custom-elements.json';
@@ -17,37 +15,57 @@ const htmlContent = Astro.props.src;
   function populateConfig() {
     const componentElement = document.querySelector('.config-content')?.firstElementChild;
     if (componentElement) {
-      for (var i = 0, atts = componentElement.attributes, n = atts.length; i < n; i++) {
-        console.log(atts[i].nodeName, atts[i].nodeValue);
-        const attrElements = document.querySelectorAll(`input[name=${atts[i].nodeName}]`);
+      const atts = componentElement.attributes;
+      const childrens = componentElement.children;
+      const slotMap = {
+        default: []
+      };
 
+      Array.from(atts).forEach((attr) => {
+        const attrElements = document.querySelectorAll(`input[name=${attr.nodeName}]`);
         if (attrElements?.length === 1) {
-          attrElements[0].setAttribute('value', atts[i].nodeValue ?? attrElements[0].defaultValue);
+          attrElements[0].setAttribute('value', attr.nodeValue ?? attrElements[0].defaultValue);
         } else if (attrElements?.length > 1) {
           Array.from(attrElements).
-          filter((attrElement) => attrElement.value === atts[i].nodeValue).
+          filter((attrElement) => attrElement.value === attr.nodeValue).
           forEach((attrElement) => attrElement.checked = true);
         }
-      }
+      });
+
+      Array.from(childrens)?.forEach(element => {
+        const slotName = element.getAttribute('slot');
+        if (slotName) {
+          slotMap[slotName] = [element];
+          const slottedElement = document.querySelector(`[name=${slotName}]`);
+          slottedElement.value = element.outerHTML;
+        } else {
+          slotMap.default.push(element);
+        }
+      });
     }
 
-    const childrens = componentElement?.children;
-    const slotMap = {
-      default: []
-    };
-    Array.from(childrens)?.forEach(element => {
-      const slotName = element.getAttribute('slot');
-      if (slotName) {
-        slotMap[slotName] = [element];
-        const slottedElement = document.querySelector(`[name=${slotName}]`);
-        slottedElement.value = element.outerHTML;
-      } else {
-        slotMap.default.push(element);
-      }
-    });
     const slottedElement = document.querySelector(`[name='default']`);
     if (slottedElement) {
       slottedElement.value = slotMap.default.map(element => element.outerHTML).join('');
+    }
+  }
+
+  function updateComponents(htmlSnippet: string) {
+
+    if (!htmlSnippet) {
+      const componentElement = document.querySelector('.config-content')?.firstElementChild;
+      const componentCopy = componentElement?.cloneNode(true);
+      htmlSnippet = componentCopy.outerHTML;
+    }
+    const exampleRenderer = document.querySelector('example-view');
+    if (exampleRenderer) {
+      exampleRenderer.src = htmlSnippet;
+      exampleRenderer.requestUpdate();
+    }
+
+    const codeSnippet = document.querySelector('code-snippet');
+    if (codeSnippet) {
+      codeSnippet.src = htmlSnippet;
     }
   }
 
@@ -58,17 +76,14 @@ const htmlContent = Astro.props.src;
         const allOptions = document.querySelectorAll(`input[name="${input.name}"]`);
         allOptions?.forEach((option) => {
           if(option.value === event.target.value) {
-            console.log('selected ', option.value);
             option.classList.add('changed');
           } else {
             option.classList.remove('changed');
           }
         });
-        
       } else {
         input.classList.add('changed');
       }
-
     });
   });
 
@@ -76,8 +91,18 @@ const htmlContent = Astro.props.src;
 
   document.getElementById('reset-config')?.addEventListener('click', (ev) => {
     ev.preventDefault();
+    const form = document.querySelector('form');
+    if (form) {
+      form.reset();
+    }
     populateConfig();
+
     const componentElement = document.querySelector('.config-content')?.firstElementChild;
+    const componentCopy = componentElement?.cloneNode(true);
+    const tempContainer = document.createElement("div");
+    tempContainer.appendChild(componentCopy);
+
+    updateComponents(tempContainer.innerHTML);
     
   });
   
@@ -89,27 +114,16 @@ const htmlContent = Astro.props.src;
     const tempContainer = document.createElement("div");
     tempContainer.appendChild(componentCopy);
 
-    changedElements?.forEach((changedElement) => {
-      const attrName = changedElement.name;
-      const attrValue = changedElement.value;
-      componentCopy.setAttribute(attrName, attrValue);
-    });
+    changedElements?.forEach((changedElement) => componentCopy.setAttribute(changedElement.name, changedElement.value));
 
     const slottedElements = document.querySelectorAll('.slot-elements textarea');
-    let slottedValue = '';
+    const slottedValue = [];
     slottedElements?.forEach((slottedElement) => {
       const attrValue = slottedElement.value;
-      slottedValue += attrValue;
+      slottedValue.push(attrValue);
     });
-    componentCopy.innerHTML = slottedValue;
-
-    const exampleRenderer = document.querySelector('example-view');
-    exampleRenderer.src = tempContainer.innerHTML;
-    exampleRenderer.requestUpdate();
-
-    const codeSnippet = document.querySelector('code-snippet');
-    codeSnippet.src = tempContainer.innerHTML;
-
+    componentCopy.innerHTML = slottedValue.join('');
+    updateComponents(tempContainer.innerHTML);
   });
 </script>
 
@@ -250,7 +264,8 @@ const htmlContent = Astro.props.src;
     }
 
     input {
-      height: 1.5rem;
+      height: 2rem;
+      font-size: 16px;
     }
 
      input[type='text'] {
@@ -267,6 +282,7 @@ const htmlContent = Astro.props.src;
 
     textarea {
       font-family: "Roboto", sans-serif !important;
+      font-size: 16px;
       width: 40%;
       border-radius: 0.5rem;
       border: 1px solid var(--sl-color-gray-1);
