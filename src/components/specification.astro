@@ -63,58 +63,49 @@ const events = compDetails?.events;
     </table>
   )
 }
+
 {
   slots?.length > 0 && (
     <h4 id="slots">Slots</h4>
-    <table class="spec">
-      <thead>
-        <tr>
-          <th>Slot</th>
-          <th>Permitted tags</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        {
-          slots?.map((slot) => {
-            return (
-              <tr>
-                <td>{slot.name ? <code>{slot.name}</code> : 'Anonymous slot' }</td>
-                <td>
-                  {slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>&#32;</span>)}
-                </td>
-                <td>{slot.description}</td>
-              </tr>
-            );
-          })
-        }
-      </tbody>
-    </table>
+    <div class="spec-list">
+      {
+        slots?.map((slot) => {
+          return (
+            <dl>
+              <p>{slot.name ? <code>{slot.name}</code> : <span>Anonymous slot</span> }</p>
+              <div>
+                <dt>Permitted tags</dt>
+                <dd>{slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>&#32;</span>)}</dd>
+              </div>
+              <div>
+                <dt>Description</dt>
+                <dd>{slot.description}</dd>
+              </div>
+            </dl>
+          );
+        })
+      }
+    </div>
   )
 }
 
 {
   events?.length > 0 && (
     <h4 id="events">Events</h4>
-    <table class="spec">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        {
-          events?.map((event) => {
-            return (
-              <tr>
-                <td><code>{event.name}</code></td>
-                <td>{event.description}</td>
-              </tr>
-            );
-          })
-        }
-      </tbody>
-    </table>
+    <div class="spec-list">
+      {
+        events?.map((event) => {
+          return (
+            <dl>
+              <p><code>{event.name}</code></p>
+              <div>
+                <dt>Description</dt>
+                <dd>{event.description}</dd>
+              </div>
+            </dl>
+          );
+        })
+      }
+    </div>
   )
 }
