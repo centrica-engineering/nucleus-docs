@@ -27,37 +27,7 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer>
-      <ExampleStandard slot="template" />
-    </ExampleViewer>
-  </TabItem>
-  <TabItem label="Summit">
-  `type="summit"`
-    <ExampleViewer>
-      <ExampleSummit slot="template" />
-    </ExampleViewer>
-  </TabItem>
-  <TabItem label="Hillside">
-  `type="hillside"`
-    <ExampleViewer>
-      <ExampleHillside slot="template" />
-    </ExampleViewer>
-  </TabItem>
-  <TabItem label="Valley">
-  `type="valley"`
-    <ExampleViewer>
-      <ExampleValley slot="template" />
-    </ExampleViewer>
-  </TabItem>
-  <TabItem label="Lakeside">
-  `type="lakeside"`
-    <ExampleViewer>
-      <ExampleLakeside slot="template" />
-    </ExampleViewer>
-  </TabItem>
-</Tabs>
+> Placeholder for the Examples
 
 ## Guidance
 
@@ -197,24 +167,6 @@ The purpose of the valley landmark is to present an overview of a product or ser
 ### Specification
 
 <Specification name={componentName} />
-
-#### Image
-
-| Component | Variant | Ratio | Dimensions | Size | Type | Placeholder |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-landmark`| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg | [ns-landmark-summit-1440x810px](https://user-images.githubusercontent.com/50207859/67642478-12140c80-f904-11e9-849d-5ffe39818c5b.jpg) |
-| `ns-landmark`| `valley` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-landmark-valley-720x540px](https://user-images.githubusercontent.com/50207859/67642153-d461b480-f900-11e9-9520-11204c64a11b.jpg) |
-
-#### `slot="cta"`
-
-- A CTA is optional and not recommended in scenarios where you want to encourage your user to explore content further down the page.
-- If you need to include a CTA keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters.
-
-#### `<ns-form>`
-
-- A form is optional and recommended in scenarios where you need some information from the user to start a journey or dynamically change the content on the rest of the page.
-- Don't use `ns-selector`, `ns-datepicker`, `nsx-address-selector`, or `nsx-marketing-consent` as these require more space than is available in the landmark.
-- Keep forms short in `hillside` to avoid distorting and stretching the gradient.
 
 ### Related links
 
