@@ -20,6 +20,6 @@ const htmlContent = await examples[htmlFile];
     )
   }
 
-  <NucleusComponentRenderer src={htmlContent} client:visible />
+  <NucleusComponentRenderer src={htmlContent} />
   <NucleusCodeSnippet src={htmlContent} client:visible />
 </div>
