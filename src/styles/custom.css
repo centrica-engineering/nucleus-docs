@@ -188,7 +188,13 @@ h1 {
   }
 
   .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
-    scroll-margin-top: 70px;
+    scroll-margin-top: -0.5rem;
+  }
+
+  :has(section-tabs) {
+    .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
+      scroll-margin-top: calc(var(--ns-section-tabs-height) + 1rem);
+    }
   }
 
   @media(width < 72em) {
