@@ -39,6 +39,14 @@
   --ns-color-base-900: hsl(var(--ns-hue-base), 40%, 9%);
 
   /* Map Nucleus colours to Starlight variables */
+
+  /* Hues */
+  --sl-hue-orange: var(--ns-hue-orange);
+  --sl-hue-green: var(--ns-hue-green);
+  --sl-hue-blue: var(--ns-hue-blue);
+  --sl-hue-purple: var(--ns-hue-purple);
+  --sl-hue-red: var(--ns-hue-red);
+
   /* Dark mode */
   --sl-color-white: var(--ns-color-white);
   --sl-color-gray-1: var(--ns-color-base-100);
@@ -63,12 +71,7 @@
   --sl-color-text: var(--sl-color-gray-2);
   --sl-color-heading: var(--sl-color-gray-2);
 
-  /* Hues */
-  --sl-hue-orange: var(--ns-hue-orange);
-  --sl-hue-green: var(--ns-hue-green);
-  --sl-hue-blue: var(--ns-hue-blue);
-  --sl-hue-purple: var(--ns-hue-purple);
-  --sl-hue-red: var(--ns-hue-red);
+  
 
   /* Text size and line height */
   --sl-text-xs: 0.875rem; /* 14px */
