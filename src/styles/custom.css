@@ -39,6 +39,29 @@
   --ns-color-base-900: hsl(var(--ns-hue-base), 40%, 9%);
 
   /* Map Nucleus colours to Starlight variables */
+  /* Dark mode */
+  --sl-color-white: var(--ns-color-white);
+  --sl-color-gray-1: var(--ns-color-base-100);
+  --sl-color-gray-2: var(--ns-color-base-200);
+  --sl-color-gray-3: var(--ns-color-base-300);
+  --sl-color-gray-4: var(--ns-color-base-400);
+  --sl-color-gray-5: var(--ns-color-base-500);
+  --sl-color-gray-6: var(--ns-color-base-800);
+  --sl-color-gray-7: var(--ns-color-base-900);
+  --sl-color-black: var(--ns-color-black);
+
+  --sl-color-bg-sidebar: var(--ns-color-base-900);
+  --sl-color-bg-nav: var(--ns-color-base-900);
+  --sl-color-bg-config: var(--ns-color-base-900);
+
+  --sl-color-accent-low: hsl(var(--ns-hue-orange), 54%, 20%);
+  --sl-color-accent: hsl(var(--ns-hue-orange), 100%, 60%);
+  --sl-color-accent-high: hsl(var(--ns-hue-pink), 100%, 85%);
+  
+  --sl-color-text-accent : var(--sl-color-accent-high);
+  
+  --sl-color-text: var(--sl-color-gray-2);
+  --sl-color-heading: var(--sl-color-gray-2);
 
   /* Hues */
   --sl-hue-orange: var(--ns-hue-orange);
@@ -46,29 +69,6 @@
   --sl-hue-blue: var(--ns-hue-blue);
   --sl-hue-purple: var(--ns-hue-purple);
   --sl-hue-red: var(--ns-hue-red);
-
-  /* Light mode */
-  --sl-color-white: var(--ns-color-black);
-  --sl-color-gray-1: var(--ns-color-base-700);
-  --sl-color-gray-2: var(--ns-color-base-600);
-  --sl-color-gray-3: var(--ns-color-base-500);
-  --sl-color-gray-4: var(--ns-color-base-400);
-  --sl-color-gray-5: var(--ns-color-base-300);
-  --sl-color-gray-6: var(--ns-color-base-200);
-  --sl-color-gray-7: var(--ns-color-base-100);
-  --sl-color-black: var(--ns-color-white);
-
-  --sl-color-bg-sidebar: var(--ns-color-base-100);
-  --sl-color-bg-nav: var(--ns-color-base-100);
-
-  --sl-color-accent-low: hsl(var(--ns-hue-orange), 88%, 90%);
-  --sl-color-accent: hsl(var(--ns-hue-orange), 90%, 60%);
-  --sl-color-accent-high: hsl(var(--ns-hue-pink), 60%, 54%);
-
-  --sl-color-text-accent: var(--sl-color-accent-high);
-
-  --sl-color-text: var(--ns-color-navy);
-  --sl-color-heading: var(--ns-color-navy);
 
   /* Text size and line height */
   --sl-text-xs: 0.875rem; /* 14px */
@@ -105,28 +105,30 @@
   --ns-section-tab-accessibility: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-720q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720ZM360-80v-520q-60-5-122-15t-118-25l20-80q78 21 166 30.5t174 9.5q86 0 174-9.5T820-720l20 80q-56 15-118 25t-122 15v520h-80v-240h-80v240h-80Z"/></svg>');
 }
 
-:root[data-theme='dark'] {
-  /* Dark mode */
-  --sl-color-white: var(--ns-color-white);
-  --sl-color-gray-1: var(--ns-color-base-100);
-  --sl-color-gray-2: var(--ns-color-base-200);
-  --sl-color-gray-3: var(--ns-color-base-300);
+:root[data-theme='light'] {
+  /* Light mode */
+  --sl-color-white: var(--ns-color-black);
+  --sl-color-gray-1: var(--ns-color-base-700);
+  --sl-color-gray-2: var(--ns-color-base-600);
+  --sl-color-gray-3: var(--ns-color-base-500);
   --sl-color-gray-4: var(--ns-color-base-400);
-  --sl-color-gray-5: var(--ns-color-base-500);
-  --sl-color-gray-6: var(--ns-color-base-800);
-  --sl-color-gray-7: var(--ns-color-base-900);
-  --sl-color-black: var(--ns-color-black);
+  --sl-color-gray-5: var(--ns-color-base-300);
+  --sl-color-gray-6: var(--ns-color-base-200);
+  --sl-color-gray-7: var(--ns-color-base-100);
+  --sl-color-black: var(--ns-color-white);
 
-  --sl-color-bg-sidebar: var(--ns-color-base-900);
-  --sl-color-bg-nav: var(--ns-color-base-900);
+  --sl-color-bg-sidebar: var(--ns-color-base-100);
+  --sl-color-bg-nav: var(--ns-color-base-100);
+  --sl-color-bg-config: var(--ns-color-base-100);
 
-  --sl-color-accent-low: hsl(var(--ns-hue-orange), 54%, 20%);
-  --sl-color-accent: hsl(var(--ns-hue-orange), 100%, 60%);
-  --sl-color-accent-high: hsl(var(--ns-hue-pink), 100%, 85%);
-  
-  --sl-color-text: var(--sl-color-gray-2);
-  --sl-color-heading: var(--sl-color-gray-2);
-  --sl-color-text-accent : var(--sl-color-accent-high);
+  --sl-color-accent-low: hsl(var(--ns-hue-orange), 88%, 90%);
+  --sl-color-accent: hsl(var(--ns-hue-orange), 90%, 60%);
+  --sl-color-accent-high: hsl(var(--ns-hue-pink), 60%, 54%);
+
+  --sl-color-text-accent: var(--sl-color-accent-high);
+
+  --sl-color-text: var(--ns-color-navy);
+  --sl-color-heading: var(--ns-color-navy);
 }
 
 .header {

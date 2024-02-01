@@ -40,26 +40,28 @@ export function getStaticPaths() {
   });
 }
 ---
-<main data-theme="light">
-  <h1>{component}</h1>
-  <div class="config-column">
-    <ExampleConfigure componentName={component} src={htmlContent}>
-      <Fragment set:html={htmlContent} />
-    </ExampleConfigure>
-  </div>
-</main>
+<html  data-theme="light">
+  <main>
+    <h1>{component}</h1>
+    <div class="config-column">
+      <ExampleConfigure componentName={component} src={htmlContent}>
+        <Fragment set:html={htmlContent} />
+      </ExampleConfigure>
+    </div>
+  </main>
 
-<style>
-  main {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    background-color: var(--sl-color-gray-7)
-  }
+  <style>
+    main {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      background-color: var(--sl-color-bg-config);
+    }
 
-  .config-content {
-    display: none;  
-  }
+    .config-content {
+      display: none;  
+    }
 
 
-</style>
+  </style>
 
+</html>
