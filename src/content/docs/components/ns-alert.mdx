@@ -9,15 +9,9 @@ export const componentName = "ns-alert";
 import Specification from '@components/specification.astro';
 import Placement from '@components/placement.astro';
 import CompDetails from '@components/cem-description.astro';
-import ExampleViewer from '@components/example-viewer.astro';
+import ExampleViewer from '@components/ExampleViewer.astro';
 import RelatedLinks from '@components/related-links.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
-
-import ExampleStandard from '@examples/components/ns-alert/highlighter/standard.html';
-import ExampleHighlighterError from '@examples/components/ns-alert/highlighter/error.html';
-import ExampleHighlighterInfo from '@examples/components/ns-alert/highlighter/info.html';
-import ExampleHighlighterSuccess from '@examples/components/ns-alert/highlighter/success.html';
-import ExampleHighlighterWarning from '@examples/components/ns-alert/highlighter/warning.html';
 
 ## Overview
 
@@ -34,41 +28,31 @@ More information in the [Accessibility](#accessibility) section.
 <Tabs>
   <TabItem label="Standard">
   `type="highlighter"`
-    <ExampleViewer>
-      <ExampleStandard slot="template" />
-    </ExampleViewer>
+    <ExampleViewer type="standard" />
   </TabItem>
   <TabItem label="Error">
     `state="error"`
 
     For communicating failure with urgence. A task cannot be completed without the user remedying something.
-    <ExampleViewer>
-      <ExampleHighlighterError slot="template" />
-    </ExampleViewer>
+    <ExampleViewer type="highlighter-error" />
   </TabItem>
   <TabItem label="Info">
     `state="info"`
 
     For communicating a useful piece of information that the user might find helpful to carry out their action.
-    <ExampleViewer>
-      <ExampleHighlighterInfo slot="template" />
-    </ExampleViewer>
+    <ExampleViewer type="highlighter-info" />
   </TabItem>
   <TabItem label="Success">
     `state="success"`
 
     For communicating that an action has been successful.
-    <ExampleViewer>
-      <ExampleHighlighterSuccess slot="template" />
-    </ExampleViewer>
+    <ExampleViewer type="highlighter-success" />
   </TabItem>
   <TabItem label="Warning">
     `state="warning"`
 
     Use for communicating a piece of information with less severity. These include foreseeable problematic events, failures, outages and how to avoid errors.
-    <ExampleViewer>
-      <ExampleHighlighterWarning slot="template" />
-    </ExampleViewer>
+    <ExampleViewer type="highlighter-warning" />
   </TabItem>
 </Tabs>
 

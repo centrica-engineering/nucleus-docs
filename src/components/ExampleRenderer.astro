@@ -19,36 +19,6 @@ const htmlSnippet = `
 ---
 
 <script>
-  const sliders = document.querySelectorAll('.slider');
-  sliders?.forEach((slider) => {
-    slider.addEventListener('mousemove', (event) => {
-      event.preventDefault();
-      if (slider.getAttribute('selected') !== 'true') {
-        return;
-      }
-      const iframeContainer = document.querySelector(`.preview-${slider.id}`);
-      const iframe = document.querySelector(`.iframe-${slider.id}`);
-      if (iframeContainer) {
-        const iframeHeight = iframeContainer?.style?.minHeight?.replace('px', '');
-        const initialHeight = parseInt(iframeHeight) || 275;
-        iframeContainer.style.minHeight = `${Math.max(initialHeight + event.movementY, 200)}px`;
-        iframe.style.minHeight = `${Math.max(initialHeight + event.movementY, 200)}px`;
-      }
-    });
-
-    slider.addEventListener('mousedown', (event) => {
-      slider.setAttribute('selected', 'true');
-    });
-
-    slider.addEventListener('mouseup', (event) => {
-      slider.removeAttribute('selected');
-    });
-
-    slider.addEventListener('mouseleave', (event) => {
-      slider.removeAttribute('selected');
-    });
-  });
-
   window.onload = function () {
     const examples = document.querySelectorAll('.example');
     examples.forEach((example) => {
@@ -62,8 +32,7 @@ const htmlSnippet = `
         });
       }
     });
-  }
-  
+  };
 </script>
 
 <div class=`example example-${randomId} not-content`>
@@ -94,28 +63,5 @@ const htmlSnippet = `
     transform-origin: 0 0;
     max-width: initial !important;
     width: 133% !important;
-  }
-
-  .slider {
-    cursor: ns-resize;
-    width: 100%;
-    text-align: center;
-    background: #eee;
-    user-select: none;
-    color: #666;
-    border: none;
-  }
-
-  .slider:active {
-    background: #ccc;
-  }
-
-  .slider:active::after {
-    content: '';
-    position: absolute;
-    left: 30px;
-    right: 30px;
-    top: 30px;
-    bottom: 30px;
   }
 </style>
