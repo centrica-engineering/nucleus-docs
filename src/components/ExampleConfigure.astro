@@ -1,6 +1,7 @@
 ---
 const { componentName } = Astro.props;
 
+import ViewportSelector from './ViewportSelector.astro';
 import { NucleusComponentRenderer } from './NucleusComponentRenderer';
 import { NucleusCodeSnippet } from './NucleusCodeSnippet';
 
@@ -223,6 +224,7 @@ const htmlContent = Astro.props.src;
 </div>
 
 <div class="grid-element preview-code">
+  <ViewportSelector />
   <NucleusComponentRenderer src={htmlContent} client:visible/>
   <NucleusCodeSnippet src={htmlContent} client:visible/>
 </div>
