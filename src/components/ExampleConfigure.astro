@@ -1,0 +1,291 @@
+---
+const { componentName } = Astro.props;
+
+import { NucleusComponentRenderer } from './NucleusComponentRenderer';
+import { NucleusCodeSnippet } from './NucleusCodeSnippet';
+
+import customElements from '@connectedhomes/nucleus/ce-doc.json';
+import cesm from '@connectedhomes/nucleus/custom-elements.json';
+
+const customElement = customElements.find((customElement) => customElement.name === componentName);
+const cem = cesm.tags.find((tag) => tag.name === componentName);
+const htmlContent = Astro.props.src;
+---
+<script>
+  function populateConfig() {
+    const componentElement = document.querySelector('.config-content')?.firstElementChild;
+    if (componentElement) {
+      const atts = componentElement.attributes;
+      const childrens = componentElement.children;
+      const slotMap = {
+        default: []
+      };
+
+      Array.from(atts).forEach((attr) => {
+        const attrElements = document.querySelectorAll(`input[name=${attr.nodeName}]`);
+        if (attrElements?.length === 1) {
+          attrElements[0].setAttribute('value', attr.nodeValue ?? attrElements[0].defaultValue);
+        } else if (attrElements?.length > 1) {
+          Array.from(attrElements).
+          filter((attrElement) => attrElement.value === attr.nodeValue).
+          forEach((attrElement) => attrElement.checked = true);
+        }
+      });
+
+      Array.from(childrens)?.forEach(element => {
+        const slotName = element.getAttribute('slot');
+        if (slotName) {
+          slotMap[slotName] = [element];
+          const slottedElement = document.querySelector(`[name=${slotName}]`);
+          slottedElement.value = element.outerHTML;
+        } else {
+          slotMap.default.push(element);
+        }
+      });
+    }
+
+    const slottedElement = document.querySelector(`[name='default']`);
+    if (slottedElement) {
+      slottedElement.value = slotMap.default.map(element => element.outerHTML).join('');
+    }
+  }
+
+  function updateComponents(htmlSnippet: string) {
+
+    if (!htmlSnippet) {
+      const componentElement = document.querySelector('.config-content')?.firstElementChild;
+      const componentCopy = componentElement?.cloneNode(true);
+      htmlSnippet = componentCopy.outerHTML;
+    }
+    const exampleRenderer = document.querySelector('example-view');
+    if (exampleRenderer) {
+      exampleRenderer.src = htmlSnippet;
+      exampleRenderer.requestUpdate();
+    }
+
+    const codeSnippet = document.querySelector('code-snippet');
+    if (codeSnippet) {
+      codeSnippet.src = htmlSnippet;
+    }
+  }
+
+  const inputs = document.querySelectorAll('input, textarea');
+  Array.from(inputs).forEach((input) => {
+    input.addEventListener('change', (event) => {
+      if(input.type === 'radio') {
+        const allOptions = document.querySelectorAll(`input[name="${input.name}"]`);
+        allOptions?.forEach((option) => {
+          if(option.value === event.target.value) {
+            option.classList.add('changed');
+          } else {
+            option.classList.remove('changed');
+          }
+        });
+      } else {
+        input.classList.add('changed');
+      }
+    });
+  });
+
+  window.addEventListener('load', () => populateConfig());
+
+  document.getElementById('reset-config')?.addEventListener('click', (ev) => {
+    ev.preventDefault();
+    const form = document.querySelector('form');
+    if (form) {
+      form.reset();
+    }
+    populateConfig();
+
+    const componentElement = document.querySelector('.config-content')?.firstElementChild;
+    const componentCopy = componentElement?.cloneNode(true);
+    const tempContainer = document.createElement("div");
+    tempContainer.appendChild(componentCopy);
+
+    updateComponents(tempContainer.innerHTML);
+    
+  });
+  
+  document.getElementById('play-config')?.addEventListener('click', (ev) => {
+    ev.preventDefault();
+    const changedElements = document.querySelectorAll('.config-elements .changed');
+    const componentElement = document.querySelector('.config-content')?.firstElementChild;
+    const componentCopy = componentElement?.cloneNode(true);
+    const tempContainer = document.createElement("div");
+    tempContainer.appendChild(componentCopy);
+
+    changedElements?.forEach((changedElement) => componentCopy.setAttribute(changedElement.name, changedElement.value));
+
+    const slottedElements = document.querySelectorAll('.slot-elements textarea');
+    const slottedValue = [];
+    slottedElements?.forEach((slottedElement) => {
+      const attrValue = slottedElement.value;
+      slottedValue.push(attrValue);
+    });
+    componentCopy.innerHTML = slottedValue.join('');
+    updateComponents(tempContainer.innerHTML);
+  });
+</script>
+
+<div class="config-content" set:html={htmlContent}>
+
+</div>
+<div class="config-container">
+<div class="grid-element configure-component">
+  <form>
+    <button id="play-config">Run</button>
+    <button id="reset-config">Reset</button>
+  {
+    cem?.attributes && (
+      <h2>Attributes</h2>
+    )
+  }
+  {
+    cem?.attributes?.map((attribute) => {
+      const defaultValue = attribute.default?.replaceAll('"', '');
+      if (attribute.type === 'string') {
+        return (
+          <div class="config-elements">
+            <label>{attribute.name}</label>
+            <input type="text" name={attribute.name} value={defaultValue}>
+          </div>
+        );
+      } else if (attribute.type?.indexOf("|") > -1) {
+        const options = attribute.type?.replaceAll('"', '').split('|') ?? [];
+        const attributeTitle = (<label>{attribute.name}</label>);
+
+        const optionsHTML = options?.map((option) => {
+          const checked = defaultValue === option ? '' : undefined;
+          return (
+            <span class="radio-element">
+              <input type="radio" name={attribute.name} value={option} {checked}>
+              <label>{option}</label>
+            </span>
+          );
+        });
+        return (
+          <div class="config-elements">
+          {
+            [attributeTitle, optionsHTML]
+          }
+          </div>
+        );      
+      } else if (attribute.type === 'number') {
+        return (
+          <div class="config-elements">
+            <label>{attribute.name}</label>
+            <input type="number" name={attribute.name} value={defaultValue}>
+          </div>
+        );
+      } else if (attribute.type === 'boolean') {
+        return (
+          <div class="config-elements">
+            <label>{attribute.name}</label>
+            {
+              ['true', 'false'].map((option) => {
+                const checked = defaultValue === option ? true : false;
+                return (
+                <span class="radio-element">
+                  <input type="radio" name={attribute.name} value={option} {checked}>
+                  <label>{option}</label>
+                </span>
+                )
+              })
+            }
+          </div>
+        );
+      } else if (attribute.type === 'Array') {
+        return (
+          <div class="config-elements">
+            <label>{attribute.name}</label>
+            <input type="text" name={attribute.name} />
+          </div>
+        );
+      }
+    })
+  }
+  {
+    cem.slots && (
+      <h2>Slots</h2>
+    )
+  }
+  {
+    cem.slots?.map((slot) => {
+      return (
+        <div class="slot-elements">
+          <label>{slot.name !== '' ? slot.name : 'default' }</label>
+          <textarea name={slot.name !== '' ? slot.name : 'default'}></textarea>
+        </div>
+      );
+    })
+  }
+  </form>
+</div>
+
+<div class="grid-element preview-code">
+  <NucleusComponentRenderer src={htmlContent} client:visible/>
+  <NucleusCodeSnippet src={htmlContent} client:visible/>
+</div>
+</div>
+<style>
+
+  .config-content {
+    display: none;  
+  }
+
+  h2 {
+    color: var(--sl-color-heading);
+  }
+
+  .configure-component {
+    display: block;
+    border: 1px solid var(--sl-color-gray-6);
+    padding: 1rem;
+  }
+
+  button {
+    height: 2rem;
+    font-size: var(--sl-text-l);
+    color: var(--sl-color-text);
+    border: 1px solid var(--sl-color-gray-1); 
+    border-radius: 0.5rem;
+  }
+
+  .config-elements,
+  .slot-elements {
+    padding-block: 0.5rem;
+
+    label, input, textarea, button {
+      color: var(--sl-color-text);
+    }
+
+    label {
+      padding-inline-end: 2rem;
+    }
+
+    input {
+      height: 2rem;
+      font-size: 16px;
+    }
+
+     input[type='text'] {
+      width: 30%;
+      border-radius: 0.5rem;
+      border: 1px solid var(--sl-color-gray-1);
+    }
+
+    input[type='radio'] {
+      width: 1.25rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--sl-color-gray-1);
+    }
+
+    textarea {
+      font-family: "Roboto", sans-serif !important;
+      font-size: 16px;
+      width: 40%;
+      border-radius: 0.5rem;
+      border: 1px solid var(--sl-color-gray-1);
+    }
+  }
+</style>

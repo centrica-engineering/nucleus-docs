@@ -2,6 +2,8 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import starlightDocSearch from '@astrojs/starlight-docsearch';
 import lit from "@astrojs/lit";
+import { rehypeHeadingIds } from '@astrojs/markdown-remark';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import customElements from "@connectedhomes/nucleus/ce-doc.json";
 import cem from "@connectedhomes/nucleus/custom-elements.json";
 import { nucleusRemarkAside } from "./src/plugins/nucleus-remark-aside";
@@ -64,7 +66,7 @@ const componentSidebar = () => {
 
 const plugins = () => {
   const starlightPlugins = [];
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === 'production' && process.env.ALGOLIA_KEY) {
     starlightPlugins.push(
       starlightDocSearch({
         appId: 'algolia',
@@ -74,12 +76,22 @@ const plugins = () => {
     );
   }
   return starlightPlugins;
-
 }
+
+const rehypeAutoLinkConfig = {
+  behavior: 'append'
+};
 
 export default defineConfig({
   markdown: {
-    remarkPlugins: [nucleusRemarkAside()]
+    remarkPlugins: [nucleusRemarkAside()],
+    rehypePlugins: [
+      rehypeHeadingIds,
+      [
+        rehypeAutolinkHeadings,
+        rehypeAutoLinkConfig
+      ],
+    ]
   },
   integrations: [
     starlight({
@@ -91,7 +103,7 @@ export default defineConfig({
       },
       editLink: {
         baseUrl:
-          "https://github.com/centrica-engineering/nucleus-docs/edit/main/",
+          "https://github.com/centrica-engineering/nucleus-docs/edit/astro-docs/",
       },
       customCss: [
         "./src/styles/custom.css",
@@ -106,6 +118,7 @@ export default defineConfig({
         github: "https://github.com/centrica-engineering/nucleus-docs",
       },
       components: {
+        Footer: "./src/components/starlight/Footer.astro",
         PageTitle: "./src/components/starlight/PageTitle.astro",
         TableOfContents: "./src/components/starlight/TableOfContents.astro",
         // ThemeSelect: './src/components/starlight/ThemeSelect.astro',

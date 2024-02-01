@@ -3,9 +3,7 @@ title: Journeys
 description: Journey patterns documentation.
 ---
 
-import ExampleViewer from '@components/example-viewer.astro';
-
-import ExampleStandard from '@examples/patterns/journeys/playback.html';
+import ExampleViewer from '@components/ExampleViewer.astro';
 
 ## Introduction
 
@@ -93,9 +91,7 @@ There are currently two distinct methods for playing back and summarising a cust
 
 One using flat cards, the other a description list. Both can be used to play back a representative structure of the sections a customer has completed.
 
-<ExampleViewer>
-  <ExampleStandard slot="template" />
-</ExampleViewer>
+<ExampleViewer type="playback" />
 
 #### ns-card
 
@@ -130,12 +126,17 @@ They include:
 
 ## Best practice
 
-| 💚 Do's | 💔 Don'ts |
-| :--- | :--- |
-| Create a logically structured step-by-step experience | Place all of your questions on one page |
-| Help the customer to understand the context of the information you are asking | Ask for irrelevant information |
-| Group relevant questions together | |
-| Use existing patterns |  |
+:::do
+- Create a logically structured step-by-step experience.
+- Help the customer to understand the context of the information you are asking.
+- Group relevant questions together.
+- Use existing patterns.
+:::
+
+:::dont
+- Place all of your questions on one page.
+- Ask for irrelevant information.
+:::
 
 ## Checklist
 
