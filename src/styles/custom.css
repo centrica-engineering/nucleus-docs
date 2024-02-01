@@ -71,8 +71,6 @@
   --sl-color-text: var(--sl-color-gray-2);
   --sl-color-heading: var(--sl-color-gray-2);
 
-  
-
   /* Text size and line height */
   --sl-text-xs: 0.875rem; /* 14px */
   --sl-text-sm: 0.9375rem; /* 15px */
