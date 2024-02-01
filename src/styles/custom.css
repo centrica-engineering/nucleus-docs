@@ -224,6 +224,12 @@ h1 {
   :is(h1, h2, h3, h4, h5, h6) {
     color: var(--sl-color-heading);
 
+    &:hover {
+      .icon-link {
+        opacity: 1;
+      }
+    }
+
     .icon-link {
       display: inline-block;
       background-color: currentColor;
@@ -233,6 +239,10 @@ h1 {
       mask-image: var(--ns-icon-link);
       mask-size: cover;
       vertical-align: middle;
+      opacity: 0.25;
+      transition-property: opacity;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
     }
   }
 
