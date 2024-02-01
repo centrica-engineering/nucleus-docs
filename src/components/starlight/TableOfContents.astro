@@ -13,22 +13,24 @@ const mastheadFolder = slug?.split('/')[0];
 ---
 
 {
-  mastheadImage && (
-    <div class=`decoration ${mastheadFolder}`>
+  mastheadImage ? (
+    <div class={`decoration ${mastheadFolder}`}>
       <Image src={mastheadImage()} alt="" {...Astro.props} />
     </div>
+  ) : (
+    <div class={`decoration ${mastheadFolder}`}></div>
   )
 }
 
 {
-	toc && (
-		<nucleus-toc data-min-h={toc.minHeadingLevel} data-max-h={toc.maxHeadingLevel}>
-			<nav aria-labelledby="starlight__on-this-page">
-				<h2 id="starlight__on-this-page">{labels['tableOfContents.onThisPage']}</h2>
-				<TableOfContentsList toc={toc.items} />
-			</nav>
-		</nucleus-toc>
-	)
+  toc && (
+    <nucleus-toc data-min-h={toc.minHeadingLevel} data-max-h={toc.maxHeadingLevel}>
+      <nav aria-labelledby="starlight__on-this-page">
+        <h2 id="starlight__on-this-page">{labels['tableOfContents.onThisPage']}</h2>
+        <TableOfContentsList toc={toc.items} />
+      </nav>
+    </nucleus-toc>
+  )
 }
 
 <nav aria-labelledby="sidebar-contribute">
@@ -43,9 +45,9 @@ const mastheadFolder = slug?.split('/')[0];
 <style>
   .decoration {
     background-color: var(--ns-color-teal);
-    margin-block-start: var(--sl-content-pad-x);
     margin-inline-end: 1px;
     border-radius: 100px;
+    min-height: var(--ns-section-tabs-height);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +69,6 @@ const mastheadFolder = slug?.split('/')[0];
     }
 
     img {
-      margin-block: 0.625rem;
       width: 36px;
       height: 36px;
     }
