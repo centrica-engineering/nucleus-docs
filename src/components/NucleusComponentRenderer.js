@@ -9,7 +9,7 @@ export class NucleusComponentRenderer extends LitElement {
       src: { type: String },
       _minHeight: { type: Number, state: true },
       _zoom: { type: Boolean, state: true },
-      viewport: { type: String }
+      _viewport: { type: String, state: true }
     }
   }
 
@@ -30,6 +30,7 @@ export class NucleusComponentRenderer extends LitElement {
       }
 
       iframe {
+        border: none;
         transform-origin: 0 0;
         max-width: initial !important;
         min-height: var(--iframe-min-height);
@@ -38,6 +39,10 @@ export class NucleusComponentRenderer extends LitElement {
           transform: scale(0.75);
           width: 133% !important;
         }
+
+        &.viewport-mobile {
+          width: 45% !important;
+        }
       }
     `;
   }
@@ -45,8 +50,8 @@ export class NucleusComponentRenderer extends LitElement {
   constructor() {
     super();
 
-    this._minHeight = 400;
-    this.viewport = 'desktop';
+    this._minHeight = 200;
+    this._viewport = 'desktop';
     this._zoom = 'zoom-out';
   }
 
@@ -67,36 +72,30 @@ export class NucleusComponentRenderer extends LitElement {
     `;
   }
 
-
-
   firstUpdated() {
     super.firstUpdated();
     const viewports = this.shadowRoot.querySelectorAll('input[name="viewport"]');
     viewports?.forEach((viewport) => {
       viewport.checked = viewport.value === this._viewport;
-      console.log(viewport.checked);
-      viewport.addEventListener('change', (event) => {
-        this._viewport = Array.from(viewports)?.filter((viewport) => viewport.checked).map((viewport) => viewport.value);
-      });
+      viewport.addEventListener('change', (event) => this._viewport = event.target.value);
     });
 
     const zoomOptions = this.shadowRoot.querySelectorAll('input[name="zoom"]');
-    console.log(Array.from(zoomOptions));
     zoomOptions?.forEach((zoomOption) => {
       zoomOption.checked = zoomOption.value === this._zoom;
-      zoomOption.addEventListener('change', (event) => {
-        this._zoom =  event.target.value;
-      });
+      zoomOption.addEventListener('change', (event) => this._zoom =  event.target.value );
     });
   }
 
   updated() {
     super.updated();
+    this._iframeHeight();
+  }
+
+  _iframeHeight() {
     const iframe = this.shadowRoot.querySelector('.example-iframe');
     if (iframe) {
-      // iframe.height = iframe.contentWindow.document.body.scrollHeight + "px !important;";
       this._minHeight = iframe.contentWindow.document.body.scrollHeight;
-      console.log('minHeight ', this._minHeight);
     }
   }
 
@@ -109,11 +108,17 @@ export class NucleusComponentRenderer extends LitElement {
       'example-iframe': true,
       'zoom-in': this._zoom === 'zoom-in',
       'zoom-out': this._zoom === 'zoom-out',
-      'viewport-mobile': this.viewport === 'mobile',
-      'viewport-desktop': this.viewport === 'desktop',
+      'viewport-mobile': this._viewport === 'mobile',
+      'viewport-desktop': this._viewport === 'desktop',
     };
 
     return html`
+      <div class="viewport">
+        <input type="radio" name="viewport" id="mobile-viewport" value="mobile">
+        <label for="mobile-viewport">Mobile</label>
+        <input type="radio" name="viewport" id="desktop-viewport" value="desktop">
+        <label for="desktop-viewport">Desktop</label>
+      </div>
       <div class="zoom">
         <input type="radio" name="zoom" id="zoom-in" value="zoom-in">
         <label for="zoom-in">Zoom in</label>
@@ -129,6 +134,7 @@ export class NucleusComponentRenderer extends LitElement {
           height="100%"
           allowfullscreen
           sandbox="allow-scripts allow-same-origin"
+          @load=${() => this._iframeHeight()}
         ></iframe>
       </div>
     `;

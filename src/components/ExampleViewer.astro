@@ -1,7 +1,6 @@
 ---
 import { NucleusComponentRenderer } from './NucleusComponentRenderer';
 import { NucleusCodeSnippet } from './NucleusCodeSnippet';
-import ViewportSelector from './ViewportSelector.astro';
 
 const { slug } = Astro.params;
 const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
@@ -21,7 +20,6 @@ const htmlContent = await examples[htmlFile];
     )
   }
 
-  <ViewportSelector />
   <NucleusComponentRenderer src={htmlContent} client:only="lit"/>
   <NucleusCodeSnippet src={htmlContent} client:visible />
 </div>
