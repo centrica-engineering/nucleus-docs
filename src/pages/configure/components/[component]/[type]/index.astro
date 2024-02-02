@@ -4,20 +4,20 @@ import ExampleConfigure from '../../../../../components/ExampleConfigure.astro';
 import cesm from '@connectedhomes/nucleus/custom-elements.json';
 
 const { component, type } = Astro.params;
-const exampleFileMatcher = `/assets/examples/components/${component}/${type}.html`;
+const exampleFileMatcher = `/assets/components/${component}/${type}.html`;
 
-const examples = import.meta.glob("../../../../../assets/examples/components/**/*.html", { import: 'default', as: 'raw', eager: true});
+const examples = import.meta.glob("../../../../../assets/components/**/*.html", { import: 'default', as: 'raw', eager: true});
 const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
 const htmlContent = await examples[htmlFile];
 
 export function getStaticPaths() {
-  const examples = import.meta.glob("../../../../../assets/examples/components/**/*.html");
+  const examples = import.meta.glob("../../../../../assets/components/**/*.html");
   const getComponentExample = (fileMatcher) => {
     return Object.keys(examples)?.filter((example) => example.indexOf(fileMatcher) > -1);
   } 
   return cesm.tags.flatMap((tag) => {
     const componentName = tag.name;
-    const exampleComponentMatcher = `/assets/examples/components/${componentName}/`;
+    const exampleComponentMatcher = `/assets/components/${componentName}/`;
     const componentExamples = getComponentExample(exampleComponentMatcher);
     if(componentExamples) {
       return componentExamples.map((componentExample) => {
