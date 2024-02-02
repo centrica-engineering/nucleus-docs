@@ -1,0 +1,67 @@
+---
+import '../../../../../styles/custom.css';
+import ExampleConfigure from '../../../../../components/ExampleConfigure.astro';
+import cesm from '@connectedhomes/nucleus/custom-elements.json';
+
+const { component, type } = Astro.params;
+const exampleFileMatcher = `/assets/examples/components/${component}/${type}.html`;
+
+const examples = import.meta.glob("../../../../../assets/examples/components/**/*.html", { import: 'default', as: 'raw', eager: true});
+const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
+const htmlContent = await examples[htmlFile];
+
+export function getStaticPaths() {
+  const examples = import.meta.glob("../../../../../assets/examples/components/**/*.html");
+  const getComponentExample = (fileMatcher) => {
+    return Object.keys(examples)?.filter((example) => example.indexOf(fileMatcher) > -1);
+  } 
+  return cesm.tags.flatMap((tag) => {
+    const componentName = tag.name;
+    const exampleComponentMatcher = `/assets/examples/components/${componentName}/`;
+    const componentExamples = getComponentExample(exampleComponentMatcher);
+    if(componentExamples) {
+      return componentExamples.map((componentExample) => {
+        const type = componentExample?.split(exampleComponentMatcher)[1].replaceAll('.html', '');
+        return {
+          params: {
+            component: tag.name,
+            type
+          }
+        };
+      });
+    } else {
+      return {
+        params: {
+          component: tag.name,
+          type: 'standard'
+        }
+      };
+    }
+  });
+}
+---
+<html  data-theme="light">
+  <main>
+    <h1>{component}</h1>
+    <div class="config-column">
+      <ExampleConfigure componentName={component} src={htmlContent}>
+        <Fragment set:html={htmlContent} />
+      </ExampleConfigure>
+    </div>
+  </main>
+
+  <style>
+    main {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      background-color: var(--sl-color-bg-config);
+    }
+
+    .config-content {
+      display: none;  
+    }
+
+
+  </style>
+
+</html>
