@@ -3,7 +3,7 @@
   /* Nucleus colours */
 
   --ns-hue-teal: 202;
-  --ns-hue-red: 0;
+  --ns-hue-red: 348;
   --ns-hue-orange: 17;
   --ns-hue-pink: 327;
   --ns-hue-magenta: 327;
@@ -15,7 +15,7 @@
 
   --ns-color-white: hsl(0, 0%, 100%);
   --ns-color-teal: hsl(var(--ns-hue-teal), 40%, 32%);
-  --ns-color-red: hsl(var(--ns-hue-red), 99%, 35%);
+  --ns-color-red: hsl(var(--ns-hue-red), 99%, 39%);
   --ns-color-orange: hsl(var(--ns-hue-orange), 74%, 59%);
   --ns-color-pink: hsl(var(--ns-hue-pink), 60%, 54%);
   --ns-color-magenta: hsl(var(--ns-hue-magenta), 52%, 41%);
@@ -95,6 +95,9 @@
 
   /* Masthead colours */
   --ns-color-masthead-components: var(--ns-color-teal);
+  --ns-color-masthead-experience: var(--ns-color-blue);
+  --ns-color-masthead-form: var(--ns-color-green);
+  --ns-color-masthead-deprecated: var(--ns-color-red);
   --ns-color-masthead-guidelines: var(--ns-color-orange);
   --ns-color-masthead-patterns: var(--ns-color-purple);
   --ns-color-masthead-page-types: var(--ns-color-pink);
