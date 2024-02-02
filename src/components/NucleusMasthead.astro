@@ -17,6 +17,7 @@ const mastheadFolder = slug?.split('/')[0];
 <div class=`masthead ${mastheadFolder}`>
   <div class="title">
     <Default {...Astro.props}></Default>
+    {!isComponentPage ? <code class="folder">{mastheadFolder}</code> : null}
     {
       isComponentPage && (
         <code>&lt;{componentName}&gt;</code>
@@ -83,14 +84,35 @@ const mastheadFolder = slug?.split('/')[0];
 
     &.guidelines {
       background-color: var(--ns-color-masthead-guidelines);
+      .folder {
+        display: inline-block;
+
+        &:first-letter {
+          text-transform: uppercase;
+        }
+      }
     }
 
     &.patterns {
       background-color: var(--ns-color-masthead-patterns);
+      .folder {
+        display: inline-block;
+
+        &:first-letter {
+          text-transform: uppercase;
+        }
+      }
     }
 
     &.page-types {
       background-color: var(--ns-color-masthead-page-types);
+      .folder {
+        display: inline-block;
+
+        &:first-letter {
+          text-transform: uppercase;
+        }
+      }
     }
   }
 
