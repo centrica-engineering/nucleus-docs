@@ -1,0 +1,57 @@
+---
+import { border } from "./tokens";
+
+const { type } = Astro.props;
+---
+
+<div class="ns-borders not-content">
+  {
+    border && type && border[type] && (
+      <div class={`border-${type}`}>
+      {
+        border[type].map(([key, value], i) => {
+          const style = `--ns-${type}: ${value};`;
+          return (
+            <div class={type}>
+              <div class={`${type}-box`} style={style}></div>
+              <label>{value}</label>
+              <label>{key}</label>
+            </div>
+          )
+        })
+      }
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .ns-borders {
+    .border-radius {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1rem;
+      row-gap: 2rem;;
+
+      .radius-box {
+        height: 2.5rem;
+        width: 2.5rem;
+        border: 1px solid var(--sl-color-gray-5);
+        border-radius: var(--ns-radius);
+      }
+    }
+
+    .border-width {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1rem;
+      row-gap: 2rem;;
+
+      .width-box {
+        height: 2.5rem;
+        width: 2.5rem;
+        border: var(--ns-width) solid var(--sl-color-gray-5);
+      }
+    }
+  }
+</style>

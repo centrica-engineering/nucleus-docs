@@ -1,14 +1,14 @@
 ---
-import { primaryColors, secondaryColors, greyscaleColors, systemColors } from "./tokens";
+import { colors } from "./tokens";
 import Color from './color.astro';
-const { colors } = Astro.props;
+const { type } = Astro.props;
 ---
 
 <div class="ns-colors">
   <slot />
   <div class="ns-card-grid">
     {
-      colors.map(([key, value], i) => 
+      colors[type]?.map(([key, value], i) => 
         <Color name={key.substring(key.lastIndexOf('_') + 1, key.length)} value={value} />
       )
     }
