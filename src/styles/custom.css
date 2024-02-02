@@ -91,7 +91,7 @@
   --sl-sidebar-width: 16rem;
   --sl-content-width: 50rem;
   --ns-masthead-height: 8.75rem;
-  --ns-section-tabs-height: 5rem;
+  --ns-section-tabs-height: 3.5rem;
 
   /* Masthead colours */
   --ns-color-masthead-components: var(--ns-color-teal);
@@ -190,7 +190,13 @@ h1 {
   }
 
   .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
-    scroll-margin-top: 70px;
+    scroll-margin-top: -0.5rem;
+  }
+
+  :has(section-tabs) {
+    .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
+      scroll-margin-top: calc(var(--ns-section-tabs-height) + 1rem);
+    }
   }
 
   @media(width < 72em) {
@@ -211,6 +217,14 @@ h1 {
 .header {
   .social-icons::after {
     border-inline-end-width: 0;
+  }
+}
+
+/* NOTE: @drew - 2024-02-01 - adjust the position of the right-sidebar when the section-tabs are on the page */
+:has(section-tabs) {
+  .right-sidebar {
+    top: calc(var(--sl-nav-height) + var(--ns-section-tabs-height) + var(--sl-content-pad-x) + var(--sl-content-pad-x));
+    margin-block-start: calc(var(--ns-section-tabs-height) * -1 );
   }
 }
 
