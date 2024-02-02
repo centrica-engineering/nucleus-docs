@@ -6,9 +6,9 @@ const { slug } = Astro.params;
 const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
 
 const { type } = Astro.props;
-const exampleFileMatcher = `/assets/examples/${slug}/${type}.html`;
+const exampleFileMatcher = `/assets/${slug}/${type}.html`;
 
-const examples = import.meta.glob("../assets/examples/**/*.html", { import: 'default', as: 'raw', eager: true});
+const examples = import.meta.glob("../assets/**/*.html", { import: 'default', as: 'raw', eager: true});
 const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
 const htmlContent = await examples[htmlFile];
 ---
