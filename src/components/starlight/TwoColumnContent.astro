@@ -27,51 +27,53 @@ import NucleusMasthead from "../NucleusMasthead.astro";
     display: grid;
   }
 
-  @media (width >= 50rem) {
+  :global([data-has-sidebar][data-has-toc]) {
     .main-pane {
-      max-width: calc(100vw - var(--sl-sidebar-width));
-    }
-  }
-
-  @media (min-width: 72rem) {
-    .layout {
-      grid-template-columns: 1fr var(--sl-sidebar-width) ;
-    }
-
-    .main-pane {
-      width: calc(100vw - (var(--sl-sidebar-width) * 2));
-    }
-
-    .right-sidebar-container {
-      order: 2;
-      width: var(--sl-sidebar-width);
-      margin-inline-start: auto;
-      margin-inline-end: var(--sl-content-pad-x);
-
-      #starlight__on-this-page {
-        display: none;
-      }
-
-      li:has(a[href="#_top"]) {
-        display: none;
-      }
-    }
-
-    .right-sidebar {
-      position: sticky;
-      top: calc(var(--sl-nav-height) + var(--sl-content-pad-x));
-      margin-block-start: calc(var(--ns-section-tabs-height) * -1 );
-      height: calc(100vh - var(--sl-nav-height) - var(--ns-section-tabs-height));
-      padding-block-end: 10vh;
-      width: inherit;
-      overflow-y: auto;
-      scrollbar-width: none;
-    }
-
-    :global([data-has-sidebar][data-has-toc]) .main-pane {
       --sl-content-margin-inline: auto 0;
 
       order: 1;
+    }
+
+    @media (width >=50rem) {
+      .main-pane {
+        max-width: calc(100vw - var(--sl-sidebar-width));
+      }
+    }
+
+    @media (min-width: 72rem) {
+      .layout {
+        grid-template-columns: 1fr var(--sl-sidebar-width);
+      }
+
+      .main-pane {
+        width: calc(100vw - (var(--sl-sidebar-width) * 2));
+      }
+
+      .right-sidebar-container {
+        order: 2;
+        width: var(--sl-sidebar-width);
+        margin-inline-start: auto;
+        margin-inline-end: var(--sl-content-pad-x);
+
+        #starlight__on-this-page {
+          display: none;
+        }
+
+        li:has(a[href="#_top"]) {
+          display: none;
+        }
+      }
+
+      .right-sidebar {
+        position: sticky;
+        top: calc(var(--sl-nav-height) + var(--sl-content-pad-x));
+        margin-block-start: calc(var(--ns-section-tabs-height) * -1);
+        height: calc(100vh - var(--sl-nav-height) - var(--ns-section-tabs-height));
+        padding-block-end: 10vh;
+        width: inherit;
+        overflow-y: auto;
+        scrollbar-width: none;
+      }
     }
   }
 </style>
