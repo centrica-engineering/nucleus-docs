@@ -5,9 +5,10 @@ const labelValue = name.substring(name.lastIndexOf('_') + 1, name.length);
 ---
 
 <div class="ns-colour-container">
+  <label>{labelValue}</label>
   <div class="ns-colour-box" style={backgroundColorStyle}></div>
   <label>{value}</label>
-  <label>{name}</label>
+  <label><code>{name}</code></label>
 </div>
 
 <style>
