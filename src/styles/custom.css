@@ -176,7 +176,8 @@ h1 {
     /* NOTE: @drew - 2024-02-05 - this moves the search bar down when the Banner is on the homepage */
     :has(.sl-banner) {
       .header {
-        site-search {
+        site-search,
+        sl-doc-search {
           top: 25.6875rem;
         }
       }
