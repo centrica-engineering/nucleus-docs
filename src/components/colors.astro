@@ -9,7 +9,7 @@ const { type } = Astro.props;
   <div class="ns-card-grid">
     {
       colors[type]?.map(([key, value], i) => 
-        <Color name={key.substring(key.lastIndexOf('_') + 1, key.length)} value={value} />
+        <Color name={key} value={value} />
       )
     }
   </div>

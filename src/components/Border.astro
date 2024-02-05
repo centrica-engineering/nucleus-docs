@@ -11,6 +11,7 @@ const { type } = Astro.props;
       {
         border[type].map(([key, value], i) => {
           const style = `--ns-${type}: ${value};`;
+          const labelValue = key.substring(key.lastIndexOf('_') + 1, key.length);
           return (
             <div class={type}>
               <div class={`${type}-box`} style={style}></div>
