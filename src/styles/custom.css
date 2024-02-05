@@ -155,8 +155,83 @@ h1 {
 
 /* NOTE: @drew - 2024-01-03 - this selector is to target the homepage */
 :root[data-has-hero] {
+  @media (min-width: 50em) {
+    .header {
+      site-search {
+        display: block;
+        position: absolute;
+        left: 50vw;
+        top: 23rem;
+        transform: translateX(-50%);
+        width: 500px;
+
+        button {
+          max-width: initial;
+          border-radius: 100px;
+        }
+      }
+    }
+
+    /* NOTE: @drew - 2024-02-05 - this moves the search bar down when the Banner is on the homepage */
+    :has(.sl-banner) {
+      .header {
+        site-search {
+          top: 25.6875rem;
+        }
+      }
+    }
+  }
+
   .masthead {
     display: none;
+  }
+
+  .hero {
+    margin-block-start: 2rem;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    display: block;
+
+    .copy {
+      margin-block-start: 2rem;
+      margin-inline: auto;
+      align-items: center;
+      height: 6rem;
+      padding-block-start: 6rem;
+      background-image: url('/public/logo-dark.svg');
+      background-size: cover;
+      aspect-ratio: 245 / 44;
+
+      h1 {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+
+      .tagline {
+        position: absolute;
+        margin-block-start: 2rem;
+        font-size: var(--sl-text-h2);
+        font-weight: 700;
+        color: var(--sl-color-gray-3);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+
+  &[data-theme='light'] {
+    .hero {
+      .copy {
+        background-image: url('/public/logo-light.svg');
+      }
+    }
   }
 
   .footer {
