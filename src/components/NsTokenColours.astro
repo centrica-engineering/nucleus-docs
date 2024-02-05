@@ -1,6 +1,6 @@
 ---
 import { colors } from "./tokens";
-import Color from './Color';
+import Colour from '@components/Colour.astro';
 const { type } = Astro.props;
 ---
 
@@ -8,7 +8,7 @@ const { type } = Astro.props;
   <slot />
   <div class={`ns-color-grid color-${type}`}>
     {
-      colors[type]?.map(([key, value], i) => <Color name={key} value={value} />)
+      colors[type]?.map(([key, value], i) => <Colour name={key} value={value} />)
     }
   </div>
 </div>
