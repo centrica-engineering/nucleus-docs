@@ -6,4 +6,19 @@ const secondaryColors = () => tokensLike('COLOR_SECONDARY_');
 const greyscaleColors = () => tokensLike('COLOR_GREYSCALE_');
 const systemColors = () => tokensLike('COLOR_SYSTEM_');
 
-export { primaryColors, secondaryColors, greyscaleColors, systemColors };
+const colors = {
+  primary: primaryColors(),
+  secondary: secondaryColors(),
+  greyscale: greyscaleColors(),
+  system: systemColors()
+};
+
+const borderRadius = () => tokensLike('THEME_BORDER_RADIUS_');
+const borderWidth = () => tokensLike('THEME_BORDER_WIDTH_');
+
+const border = {
+  radius: borderRadius(),
+  width: borderWidth()
+};
+
+export { colors, border };
