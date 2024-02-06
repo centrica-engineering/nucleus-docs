@@ -15,7 +15,7 @@ Takes an input of a standard date and/or time string (YYYY-MM-DDTHH:MM) and outp
 
 | 💚 Do's | 💔 Don'ts |
 | :---  | :---  |
-| Display a date only |  |
+| Display a date only | Hide the month and only show day and year |
 | Display a time only |  |
 
 
@@ -47,6 +47,8 @@ ns-date-time can be used in any html text element.
 ### date
 
 The time specified in the `date` attribute is in  24hrs format. It is displayed with am/pm following the tone of voice guidelines. 
+
+Be careful when passing timezones in the date string due to British Summer Time.
 
 ## Feedback
 
