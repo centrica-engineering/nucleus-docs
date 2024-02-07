@@ -24,18 +24,18 @@ const mastheadClassList = [
   {deprecated: isDeprecated},
   [category]
 ];
-
-
 ---
 
 <div class:list={mastheadClassList}>
   <div class="title">
     <Default {...Astro.props}></Default>
+    {!isComponentPage ? <code class="folder">{mastheadFolder}</code> : null}
     {
       isComponentPage && (
         <code>&lt;{componentName}&gt;</code>
       )
     }
+    {isDeprecated ? <span class="deprecated">Deprecated</span> : null}
   </div>
   {
     mastheadImage && (
@@ -91,20 +91,12 @@ const mastheadClassList = [
       background-color: var(--sl-color-bg);
     }
 
-    &.components {
-      background-color: var(--ns-color-masthead-components);
-    }
+    .folder {
+      display: inline-block;
 
-    &.guidelines {
-      background-color: var(--ns-color-masthead-guidelines);
-    }
-
-    &.patterns {
-      background-color: var(--ns-color-masthead-patterns);
-    }
-
-    &.page-types {
-      background-color: var(--ns-color-masthead-page-types);
+      &:first-letter {
+        text-transform: uppercase;
+      }
     }
   }
 

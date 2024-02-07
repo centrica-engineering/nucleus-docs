@@ -13,11 +13,11 @@ const mastheadImage = mastheadImages[`../../assets/masthead/${slug}.svg`];
 
 {
   mastheadImage ? (
-    <div class="decoration">
+    <div class="mini-masthead">
       <Image src={mastheadImage()} alt="" {...Astro.props} />
     </div>
   ) : (
-    <div class="decoration"></div>
+    <div class="mini-masthead"></div>
   )
 }
 
@@ -42,7 +42,7 @@ const mastheadImage = mastheadImages[`../../assets/masthead/${slug}.svg`];
 <script src="../observer/NucleusTOC.js"></script>
 
 <style>
-  .decoration {
+  .mini-masthead {
     background-color: var(--ns-color-teal);
     margin-inline-end: 1px;
     border-radius: 100px;
@@ -54,6 +54,34 @@ const mastheadImage = mastheadImages[`../../assets/masthead/${slug}.svg`];
     img {
       width: 36px;
       height: 36px;
+    }
+
+    :has(.masthead.components) & {
+      background-color: var(--ns-color-masthead-components);
+    }
+
+    :has(.masthead.experience) & {
+      background-color: var(--ns-color-masthead-experience);
+    }
+
+    :has(.masthead.form) & {
+      background-color: var(--ns-color-masthead-form);
+    }
+
+    :has(.masthead.deprecated) & {
+      background-color: var(--ns-color-masthead-deprecated);
+    }
+
+    :has(.masthead.guidelines) & {
+      background-color: var(--ns-color-masthead-guidelines);
+    }
+
+    :has(.masthead.patterns) & {
+      background-color: var(--ns-color-masthead-patterns);
+    }
+
+    :has(.masthead.page-types) & {
+      background-color: var(--ns-color-masthead-page-types);
     }
   }
 
