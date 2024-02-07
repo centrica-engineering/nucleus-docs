@@ -24,8 +24,6 @@ const mastheadClassList = [
   {deprecated: isDeprecated},
   [category]
 ];
-
-
 ---
 
 <div class:list={mastheadClassList}>
@@ -37,6 +35,7 @@ const mastheadClassList = [
         <code>&lt;{componentName}&gt;</code>
       )
     }
+    {isDeprecated ? <span class="deprecated">Deprecated</span> : null}
   </div>
   {
     mastheadImage && (
@@ -92,40 +91,11 @@ const mastheadClassList = [
       background-color: var(--sl-color-bg);
     }
 
-    &.components {
-      background-color: var(--ns-color-masthead-components);
-    }
+    .folder {
+      display: inline-block;
 
-    &.guidelines {
-      background-color: var(--ns-color-masthead-guidelines);
-      .folder {
-        display: inline-block;
-
-        &:first-letter {
-          text-transform: uppercase;
-        }
-      }
-    }
-
-    &.patterns {
-      background-color: var(--ns-color-masthead-patterns);
-      .folder {
-        display: inline-block;
-
-        &:first-letter {
-          text-transform: uppercase;
-        }
-      }
-    }
-
-    &.page-types {
-      background-color: var(--ns-color-masthead-page-types);
-      .folder {
-        display: inline-block;
-
-        &:first-letter {
-          text-transform: uppercase;
-        }
+      &:first-letter {
+        text-transform: uppercase;
       }
     }
   }
