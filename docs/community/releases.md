@@ -4,21 +4,152 @@ description: Here are our release notes - enjoy!
 
 ---
 
-## Version 2.4.0
+## Version 2.9.0
 
-**It's all in the head... 🤖**
+**Navigation updates mainly 🧭**
 
-This release is fairly short and is mainly focused on the update of the header navigation's primary items: it now reflects the new information architecture.
 
-Release date - 2022/09/13
+
+Release date - 10/05/2023
+
+
+**Improvements 💡**
+
+* `nsx-product-card-overview` - you can now set the default excess using the new 'initial-excess' attribute
+* `nsx-header` - we updated some links in the navigation header
+* `nsx-footer` - we changed the Play Store/App Store icon links to point to the new mobile app content page 
+
+
+
+## Version 2.8.0
+
+**One file to bring them all 💍**
+
+With this release, no more calling two separate files to have components and Nucleus Experiences on your page. It all comes in the same unique file from now on. As a famous meerkat would say: "Simples!"
+
+Release date - 12/04/2023
+
+
+**Improvements 💡**
+
+* We moved all `nsx-` components to the main file, to simplify their consumption
+* `nsx-footer` - we updated 'Complaints performance' to 'Complaints' in footer links
+* `nsx-footer` - we removed 'Performance standards' link
+
+**Bug Fixes 🪲** 
+
+* `ns-card` and `ns-landmark` - fixed issue with 'pilloverimage' option
+* `ns-timeline` - removed status knob from the step variant on storybook
+* Fixed an issue with icons on components using the react wrapper
+
+## Version 2.7.0
+
+**The alternate timeline 🕰️**
+
+A new timeline variant is now available. The 'step' variant is a simplified version of the component, that has no colours, no statuses. It allows for simpler successions of events to be displayed.
+
+Release date - 14/02/2023
 
 **New features 🔄**
 
-* We updated the `ns-header` primary level items, as well as changing the breakpoint at which the mobile navigation kicks in (Hockey pitch - 1079px and narrower) 
+* `ns-timeline` - new 'step' variant available
+
+**Improvements 💡**
+
+* `ns-product-card` - we changed the size of the pricing
+* We improved the downloading and caching of SVGs in Firefox
+* `nsx-product-card-overview` - we reduced the font size for the month suffix in the pricing area 
+
+**Bug Fixes 🪲** 
+
+* `ns-header` - we fixed a horizontal scroll issue in Safari
+* `ns-landmark` - we fixed the alignment with the panel
+* `ns-image` - we fixed the corners to be rounded in Safari
+* `ns-header` - the focus state for links has been fixed 
+* `ns-card` - fixed the image border radius
+* `ns-card` - we fixed the card image background for the `support` type
+
+## Version 2.6.0
+
+**Fresh it's so fresh! 🥶**
+
+This release sees all the refreshed components going live, delivering the brand refresh to all our customers. We say goodbye to the 2018 brand identity and hello to the new one!
+
+You can now see all the updated components reflecting the new brand identity.
+Good work to all involved!
+
+Release date - 02/02/2023
+
+**New features 🔄**
+
+* Brand refresh applied to the entire system (components, docs, Figma library)
+* `nsx-product-card-overview` - we introduced monthly primary and secondary price variations for the product card overview
+
+**Improvements 💡**
+
+* We refreshed the entire system to reflect the updated brand visual identity. (We won't list all individual changes as there would be too many)
+* `ns-landmark` - we have reviewed the alignment of the lakeside type to be more coherent with the rest of the website's content alignment
+* We added the new font files for the brand refresh
+
+**Bug Fixes 🪲** 
+
+* `ns-appointment-picker` - after this fix, the default value will be selected as expected
+* `ns-appointment-picker` - the change event wasn't triggered when selecting a date, it is now fired as expected
+* `ns-inputter` - used bind to correctly set 'this' on 'formatInput' to fix unit tests when used in the react wrapper
+* `ns-header` - fixed the 'classlist' issue
+* `ns-appointment-picker` -  we removed a console.log
+* `ns-lockup` - the attribute 'reversed' has been changed to 'reverse' in the storybook knob to reflect the actual attribute name
+
+## Version 2.5.0
+
+**I am root! 🌳**
+
+You can now skip subdomains on the header logo.
+This will be helpful when different experiences sit on different subdomains and we want to keep the same behaviour: linking to the main domain.
+
+Release date - 23/11/2022
+
+**New features 🔄**
+
+* `ns-header` - added a new attribute 'skip-subdomain' to specify a subdomain to be ignored in the logo link.
+
+**Improvements 💡**
+
+* `ns-pill` and `keyline` - added new colours
+* `ns-header` - we moved the overview/level1 link to the top of the panel, and added 4 columns for the sub-navigation panel links
+* `ns-header` - level 2 subheadings can now be clickable
+* `ns-landmark` - we added the 16x9 ratio for the valley type, to help getting content higher up, especially on mobile devices.
+* `nsx-header` - Updated the Boiler overview link
+* `nsx-header` - Point the 'Repairs overview' link to the new repairs hub page
+
+**Bug Fixes 🪲** 
+
+* `ns-header` - there was a focus issue on the logo. No more
+* `ns-card` - there was an issue with the `pilloverimage` option where the pill wasn't moving over the image. This is now fixed
+* `ns-header` - we fixed the click event
+* `ns-header` - the panel is closed when a link is clicked
+* Fixed a scrolling issue in Safari
+* `nsx-address-selector` - fixed an accessibility issue: now pressing the ENTER key on change postcode will work
 
 
+## Version 2.4.0
 
-**Bug fixes 🪲**
+**It's in your head 👤**
+
+There  have been a fair amount of changes in the primary and secondary levels of the navigation. As a result, we are also changing our mobile navigation to also be applied to the `basketball court` (< 1079px) as there are now more items in the primary level. 
+
+Release date - 13/09/2022
+
+**Improvements 💡**
+
+* `ns-header` - mobile version of the header will be displayed for basketball court
+* `nsx-footer` - we added 'Energy' and 'Website terms and conditions' separately in the footer
+* `nsx-header` - we updated the header's primary and secondary links
+
+
+**Bug Fixes 🪲** 
+
+* `ns-inputter` - there was a spacing issue when using the inline inputter, no more
 
 
 * `ns-inputter` - we fixed a visual bug when inline inputters are nested in a layout using `ns-column`
@@ -32,6 +163,7 @@ All our Requests For Change can be found in our Requests project board in Github
 https://github.com/ConnectedHomes/nucleus/projects/6
 
 Any questions? Let us know 🙌🏼
+
 
 
 ## Version 2.3.0
@@ -53,75 +185,75 @@ Release date - 2022/08/31
 
 **Improvements 💡**
 
-* `ns-header` - We added click events for anchor links in the header
-* `ns-highlighter` - Size of the highlighter inside dl is fixed
-* `ns-header` - Moved the log in link up in the mobile viewports
-* `ns-download` - Included filetype attribute to the component to use the href without filetype
-* `ns-selector` - We made the description slot optional for a selector with an image
-* `ns-video` - We added a lazy loading attribute to the placeholder image (the *façade image*)
-* `ns-table` - We improved the font size when there is a longer piece of text in the cell.
+* `ns-header` - we added click events for anchor links in the header
+* `ns-highlighter` - size of the highlighter inside dl is fixed
+* `ns-header` - we moved the login link up in the mobile viewports
+* `ns-download` - we included filetype attribute to the component to use the href without filetype
+* `ns-selector` - we made the description slot optional for a selector with an image
+* `ns-video` - we added a lazy loading attribute to the placeholder image (the *façade image*)
+* `ns-table` - we improved the font size when there is a longer piece of text in the cell
 * We added the MarkPro font as an option for selected locations (H1 in landmark/lockup)
 * `ns-form` - We have improved the validation approach for `ns-password` and a few variants of `ns-inputter`
-* `ns-expander` - A custom event for the click on `ns-expander` has been added
-* `ns-cta` - We improved the spacing for the direct call to action
+* `ns-expander` - a custom event for the click on `ns-expander` has been added
+* `ns-cta` - we improved the spacing for the direct call to action
 * We deleted unused margin and padding declarations from spacing.less
-* `ns-calendar` - We increased the outline offset in the calendar dates to make the selected date visibly different to other states (making it more accessible for high contrast mode)
-* `ns-inputter` - you can now use the `pattern` and `title` attributes for a `ns-inputter` for validation (and override an error message with the value of the `title` attribute)
+* `ns-calendar` - we increased the outline offset in the calendar dates to make the selected date visibly different to other states (making it more accessible for high contrast mode)
+* `ns-inputter` - you can now use the `pattern` and `title` attributes for an `ns-inputter` for validation (and override an error message with the value of the `title` attribute)
 * `<ol>` tag will support `start` and `reversed` attributes now
 * We made some changes to allow our components to be used natively in React
 * `ns-inputter` - `isPhoneNumber` validation will accept 10 digits as well going forward
 * Created a React component wrapper, they now work in React without an external dependency
 * We added download to `index.js`
 * Updated to PaDL 2 (2.0.1-alpha.8)
-* `nsx-address-selector` - Fixed the space between the `Find address` call to action and the `Enter manual address` call to action
-* `nsx-footer` - Added SafeSpaces plugin to the footer
-* `nsx-header` - Updated ReciteMe endpoint
-* `nsx-footer` - Added  link to the Priority Service Register page
-* `nsx-footer` - Removed `British Gas Evolve` link from footer
+* `nsx-address-selector` - fixed the space between the `Find address` call to action and the `Enter manual address` call to action
+* `nsx-footer` - added SafeSpaces plugin to the footer
+* `nsx-header` - updated ReciteMe endpoint
+* `nsx-footer` - added  link to the Priority Service Register page
+* `nsx-footer` - removed `British Gas Evolve` link from footer
 * We updated the media object to use spacer names as gutters rather than numbers
-* `ns-header` - Added `no-root-link` attribute to change logo navigation to have no link on partnership pages
-* `ns-landmark` - Removed the vertical spacing at the bottom of the card within the valley
+* `ns-header` - added `no-root-link` attribute to change logo navigation to have no link on partnership pages
+* `ns-landmark` - removed the vertical spacing at the bottom of the card within the valley
 * `ns-password` - you can now customise the copy for the labels
-* `ns-product-card` - We updated the styling for was/now strikethrough on prices
-* `ns-video` - We added a "statechange" event for tracking video playbacks
+* `ns-product-card` - we updated the styling for was/now strikethrough on prices
+* `ns-video` - we added a "statechange" event for tracking video playbacks
 
 **Spacing technique ⇥ ⇤**
 
 ***This work is about improving our approach to spacing, and make it better suited for design tokens and multiple brands.***
 
-* `ns-tab` - Spacing technique has been improved
-* `ns-pill` - Spacing technique has been improved
-* `ns-expander` - Spacing technique has been improved
-* `ns-column` - Spacing technique has been improved
-* `ns-testimonial` - Spacing technique has been improved
-* `ns-fieldset` - Spacing technique has been improved
-* `ns-calendar` - Spacing technique has been improved
-* `ns-panel` - Spacing technique has been improved
-* `ns-download` - Spacing technique has been improved
-* `ns-card` - Spacing technique has been improved
-* `ns-datepicker` - Spacing technique has been improved
-* `ns-inputter` - Spacing technique has been improved
-* `ns-table` - Spacing technique has been improved
-* `ns-highlighter` - Spacing technique has been improved
-* `ns-skeleton` - Spacing technique has been improved
-* `ns-landmark` - Spacing technique has been improved
-* `ns-appointment-picker` - Spacing technique has been improved
-* `ns-form` - Spacing technique has been improved
-* `ns-caveat` - Spacing technique has been improved
-* `ns-product-card` - Spacing technique has been improved
-* `ns-content` - Spacing technique has been improved
-* `ns-selector` - Spacing technique has been improved
-* `ns-lockup` - Spacing technique has been improved
-* `ns-editorial` - Spacing technique has been improved
-* `ns-password` - Spacing technique has been improved
-* `ns-standout` - Spacing technique has been improved
-* `ns-live` - Spacing technique has been improved
-* `ns-timeline` - Spacing technique has been improved
-* `ns-tabs` - Spacing technique has been improved
-* `ns-header` - Spacing technique has been improved
-* `ns-footer` - Spacing technique has been improved
-* `ns-progress` - Spacing technique has been improved
-* Headings, Paragraphs, and lists - Spacing technique has been improved
+* `ns-tab` - spacing technique has been improved
+* `ns-pill` - spacing technique has been improved
+* `ns-expander` - spacing technique has been improved
+* `ns-column` - spacing technique has been improved
+* `ns-testimonial` - spacing technique has been improved
+* `ns-fieldset` - spacing technique has been improved
+* `ns-calendar` - spacing technique has been improved
+* `ns-panel` - spacing technique has been improved
+* `ns-download` - spacing technique has been improved
+* `ns-card` - spacing technique has been improved
+* `ns-datepicker` - spacing technique has been improved
+* `ns-inputter` - spacing technique has been improved
+* `ns-table` - spacing technique has been improved
+* `ns-highlighter` - spacing technique has been improved
+* `ns-skeleton` - spacing technique has been improved
+* `ns-landmark` - spacing technique has been improved
+* `ns-appointment-picker` - spacing technique has been improved
+* `ns-form` - spacing technique has been improved
+* `ns-caveat` - spacing technique has been improved
+* `ns-product-card` - spacing technique has been improved
+* `ns-content` - spacing technique has been improved
+* `ns-selector` - spacing technique has been improved
+* `ns-lockup` - spacing technique has been improved
+* `ns-editorial` - spacing technique has been improved
+* `ns-password` - spacing technique has been improved
+* `ns-standout` - spacing technique has been improved
+* `ns-live` - spacing technique has been improved
+* `ns-timeline` - spacing technique has been improved
+* `ns-tabs` - spacing technique has been improved
+* `ns-header` - spacing technique has been improved
+* `ns-footer` - spacing technique has been improved
+* `ns-progress` - spacing technique has been improved
+* Headings, paragraphs, and lists - spacing technique has been improved
 
 
 
@@ -129,20 +261,20 @@ Release date - 2022/08/31
 **Bug fixes 🪲**
 
 
-* `ns-password` - There was an issue when editing a password by changing characters in the middle of the string. No more!
-* `ns-product-card` - There was an issue with an invalid keyline. No more!
-* `ns-panel` - Horizontal scroll issue when using `circle-right` decoration in Safari is fixed
-* `ns-inputter` - Fixed a Chrome crash in Android when entering a value
-* `ns-inputter` - White space at the start/end of `ns-inputter` will be trimmed to avoid dirty data to be validated/submitted
+* `ns-password` - there was an issue when editing a password by changing characters in the middle of the string. No more!
+* `ns-product-card` - there was an issue with an invalid keyline. No more!
+* `ns-panel` - horizontal scroll issue when using `circle-right` decoration in Safari is fixed
+* `ns-inputter` - fixed a Chrome crash in Android when entering a value
+* `ns-inputter` - white space at the start/end of `ns-inputter` will be trimmed to avoid dirty data to be validated/submitted
 * `ns-progress` - dynamic values were not accepted in the `current` attribute, it is now fixed
-* `ol-numbered` - We fixed a numbering issue when `<ol>` is used in the page and has nested `<ol>` items inside `<dl>`
+* `ol-numbered` - we fixed a numbering issue when `<ol>` is used in the page and has nested `<ol>` items inside `<dl>`
 * Nucleus loading issue hotfix
-* `ns-inputter` - Separator cursor issue has been fixed
+* `ns-inputter` - separator cursor issue has been fixed
 * `nsx-address-selector` - Triggering the manual address form using the ENTER key is now allowed
-* `ns-live` - Fixed the busy state in live component
+* `ns-live` - fixed the busy state in `ns-live`` component
 * `ns-header` - in-app viewport size fixed
-* `ns-image` - Image overflow in card has been fixed (safari)
-* `ns-header` - Passed the header and subheader information to the event for click
+* `ns-image` - image overflow in card has been fixed (safari)
+* `ns-header` - passed the header and subheader information to the event for click
 * Fetch svg fix
 
 
@@ -174,7 +306,7 @@ In the meantime, [learn everything about `ns-standout` in the documentation!](ht
 Release date - 2021/08/18
 
 **New features 🔄**
-* `ns-standout` - A component to make a piece of content stand out on a page.
+* `ns-standout` - A component to make a piece of content stand out on a page
 
 
 **Improvements 🤹‍♂️**
@@ -211,20 +343,20 @@ It can sometimes take some time to give an updated piece of information because 
 Release date - 2021/07/14
 
 **New features 🔄**
-* `ns-live` - This is a new component you can use when updating a piece of information on the back of an action (for example: changing the excess amount will update the quoted price). If your app needs to wait for a response from the micro-service, you can show a loading state while users wait for the outcome of their action.
+* `ns-live` - This is a new component you can use when updating a piece of information on the back of an action (for example: changing the excess amount will update the quoted price). If your app needs to wait for a response from the micro-service, you can show a loading state while users wait for the outcome of their action
 
 
 **Improvements 🤹‍♂️**
 
-* `ns-editorial` - We have improved the typography styles of the editorial component. Those were pretty old now and dated from the early times of Nucleus. The editorial is now more in line with other components. 
-* `ns-illustration` - The WhatsApp logo is now available in the illustration options.
+* `ns-editorial` - We have improved the typography styles of the editorial component. Those were pretty old now and dated from the early times of Nucleus. The editorial is now more in line with other components 
+* `ns-illustration` - The WhatsApp logo is now available in the illustration options
 * `ns-panel` - We removed the `splosh` layout
 
 
 **Bug fixes 🪲**
 
-* `ns-datepicker` - There was a small issue with the focus state of `select a date`. This is now fixed.
-* `ns-inputter` - Setting value attribute in inputter did not show the selected border of the `ns-selectors` contained in `ns-inputter`. This is now fixed.
+* `ns-datepicker` - There was a small issue with the focus state of `select a date`. This is now fixed
+* `ns-inputter` - Setting value attribute in inputter did not show the selected border of the `ns-selectors` contained in `ns-inputter`. This is now fixed
 * `ns-table` - Table scrolling is fixed in smaller viewport (when you don't use div element inside `ns-panel`)
 
 
@@ -254,7 +386,7 @@ Release date - 2021/07/06
 
 **Bug fixes 🐞** 
 
-* `ns-landmark` - When the image in a summit landmark didn't load quickly, it collapsed the landmark for a brief moment, pulling more content above the fold and potentially increasing first content paint time. That had an impact on our page performance scores. This is now fixed.
+* `ns-landmark` - When the image in a summit landmark didn't load quickly, it collapsed the landmark for a brief moment, pulling more content above the fold and potentially increasing first content paint time. That had an impact on our page performance scores. This is now fixed
 * `ns-password` - Toggle issue using ENTER key in show/hide password fixed
 * `nsx-footer` - Added `British Gas Evolve` link
 
@@ -289,8 +421,8 @@ Release date - 2021/06/24
 
 **Improvements 🤹‍♂️**
 
-* `ns-cta` and `ns-card` - improved shadows: we have changed our method to render shadows, making them a little bit more visible and modern.
-* `nsx-header` - Disabled magnifier lens in recite me toolbar.
+* `ns-cta` and `ns-card` - improved shadows: we have changed our method to render shadows, making them a little bit more visible and modern
+* `nsx-header` - Disabled magnifier lens in recite me toolbar
 * Nucleus experiences will no longer load `style.min.js` in Google Chrome when it's not needed
 
 **Multibrand enablement and design tokens ☘️**
@@ -326,7 +458,7 @@ Release date - 2021/06/03
 **Improvements 🤹‍♂️**
 
 * `ns-price` - Different currencies now allowed for ns-price
-* `ns-card` - Improved shadow visibility by adding a light border to the card. This will make it more visible on screens with a high contrast setting.
+* `ns-card` - Improved shadow visibility by adding a light border to the card. This will make it more visible on screens with a high contrast setting
 * `ns-image` - Improved the lazy loading of thumbnails
 * `ns-skeleton` - Testimonial content width is increased to 100% to fit the component
 * We have added page examples on the page type documentation under the *Examples* section for each of them
@@ -364,9 +496,9 @@ Release date - 2021/05/20
 [Learn more about it here](https://nucleus.design/docs/components/ns-skeleton).
 
 **Improvements 🤹‍♂️**
-* `ns-card` - there was a `ns-pill` issue when used inline in cards, where it rendered a space at a specific viewport (hockey-pitch). This is now fixed.
-* `ns-header` - link being treated as a button is fixed.
-* `nsx-header` - ReciteMe was duplicating components when loading their magnifier. We have patched this.
+* `ns-card` - there was a `ns-pill` issue when used inline in cards, where it rendered a space at a specific viewport (hockey-pitch). This is now fixed
+* `ns-header` - link being treated as a button is fixed
+* `nsx-header` - ReciteMe was duplicating components when loading their magnifier. We have patched this
 * We have made a few changes to allow ReciteMe to work properly.
 
 
@@ -384,8 +516,8 @@ Release date - 2021/05/20
 
 **Bug fixes 🐛**
 
-* `ns-password` - `ns-form` did not recognize `ns-password` when submitting the form hitting the enter key. This is now fixed.
-* `ns-lockup` and `ns-landmark` - paragraph fonts in Safari were slightly inconsistent. They are fixed.
+* `ns-password` - `ns-form` did not recognize `ns-password` when submitting the form hitting the enter key. This is now fixed
+* `ns-lockup` and `ns-landmark` - paragraph fonts in Safari were slightly inconsistent. They are fixed
 * `ns-card` - the card background wasn't rendering at a specific viewport (basketball). This is now fixed.
 
 
@@ -533,7 +665,7 @@ Release date - 2021/03/16
 
 
 **Improvements 🏵**
-* Decorations can now be used with Nucleus Experiences (`nsx-`).
+* Decorations can now be used with Nucleus Experiences (`nsx-`)
 * `ns-header` released some small visual improvements
 * Sharable foundations through `nucleus-util` repo
 * `ns-inputter` - You can now match a text type inputter and the password type inputter using the *autocomplete* attribute
@@ -541,9 +673,9 @@ Release date - 2021/03/16
 
 **Multibrand enablement and design tokens 🪙**
 
-* Colour: we enabled the foundation alteration via tokens.
+* Colour: we enabled the foundation alteration via tokens
 * Javascript: we enabled the foundation alteration via tokens
-* Typography: we enabled the foundation alteration via tokens.
+* Typography: we enabled the foundation alteration via tokens
 * Typography: we applied design tokens to `h` tags, `h` classes and `p` classes
 * `ns-caveat` - typography styles moved to design tokens.
 
@@ -551,12 +683,12 @@ Release date - 2021/03/16
 **Bug fixes 🐛**
 
 * `ns-pill` - caveat colour fixed in EDGE 18
-* `ns-form` had an offset width on the call to action. This is now fixed.
-* `Storybook` had an issue in the grey and green decorations for `ns-panel`. This is now fixed.
-* We updated catch section to address localhost CORS failure.
-* `ns-illustration` - There was an error message displaying for an undefined illustration (no illustration name specified). This is now fixed.
-* `ns-card` - *aria-label* in card nav type was causing an accessibility issue. This is now fixed.
-* `ns-editorial` - Heading misalignment with paragraph in IE11. This is now fixed.
+* `ns-form` had an offset width on the call to action. This is now fixed
+* `Storybook` had an issue in the grey and green decorations for `ns-panel`. This is now fixed
+* We updated catch section to address localhost CORS failure
+* `ns-illustration` - There was an error message displaying for an undefined illustration (no illustration name specified). This is now fixed
+* `ns-card` - *aria-label* in card nav type was causing an accessibility issue. This is now fixed
+* `ns-editorial` - Heading misalignment with paragraph in IE11. This is now fixed
 * `ns-header` - The clickable target area for the logo was wider than expected. This is now fixed.
 
 
@@ -577,28 +709,28 @@ Release date - 2021/02/04
 
 **New features ✍️**
 
-* `ns-content` & `ns-article`: these 2 components are the core of the new editorial content rendition. They will enable you to display long form content, enriched with images and video, as well as the usual typographic styles.
-* `ns-datepicker`: we have added the calendar to our datepicker. It is now opening our `ns-calendar` except on touch devices where we open the native calendar.
-* `ns-inputter`: we have added a search variant.
-* `ns-column`: you can now have ratio layouts using columns.
-* `ns-illustration`: we have added a `yellow-shield` to illustrate COVID-aware messages.
-* `ns-icon`: we added the `search` option, a magnifier lens.
-* Multi-brand capability: we have released the foundation of what will enable us to open Nucleus to more than one brand. 
-* We upgraded Storybook to version 6.
+* `ns-content` & `ns-article`: these 2 components are the core of the new editorial content rendition. They will enable you to display long form content, enriched with images and video, as well as the usual typographic styles
+* `ns-datepicker`: we have added the calendar to our datepicker. It is now opening our `ns-calendar` except on touch devices where we open the native calendar
+* `ns-inputter`: we have added a search variant
+* `ns-column`: you can now have ratio layouts using columns
+* `ns-illustration`: we have added a `yellow-shield` to illustrate COVID-aware messages
+* `ns-icon`: we added the `search` option, a magnifier lens
+* Multi-brand capability: we have released the foundation of what will enable us to open Nucleus to more than one brand 
+* We upgraded Storybook to version 6
 * We added analytics to Storybook to understand its usage.
 
 
 **Improvements ✱**
 
-* `ns-panel`: we made some small layout changes.
-* `ns-caveat`: you can now add a `<p>` to a caveat, without the need of a number. This allows you to have a generic footnote on a page.
+* `ns-panel`: we made some small layout changes
+* `ns-caveat`: you can now add a `<p>` to a caveat, without the need of a number. This allows you to have a generic footnote on a page
 * We converted the es6 tokens to cti format. 
 
 
 **Bug fixes 🐛**
 
-* `dl-row`: we made the border visible for mobile.
-* `ns-landmark` We fixed a double tab issue in the `ns-cta` insite the landmark. This will improve tab navigation.
+* `dl-row`: we made the border visible for mobile
+* `ns-landmark` We fixed a double tab issue in the `ns-cta` insite the landmark. This will improve tab navigation
 * We fixed some PaDL issues.
 
 
@@ -628,8 +760,8 @@ Release date - 2020/12/03
 **Bug fixes 🐛**
 
 
-* Paragraph spacing of custom slots are fixed which fixes `nsx-marketing-consent`.
-* `ns-inputter`: editing values in separator will not move the cursor to the end anymore.
+* Paragraph spacing of custom slots are fixed which fixes `nsx-marketing-consent`
+* `ns-inputter`: editing values in separator will not move the cursor to the end anymore
 * Fixed the console error in the Valley variant of the `ns-landmark`.
 
 **Feedback 💌**
@@ -648,7 +780,7 @@ Release date - 2020/11/24
 
 **New feature 💈**
 
-* You can add `ns-pill` to a `Valley` variant of `ns-landmark`to highlight a promotion, or special theme.
+* You can add `ns-pill` to a `Valley` variant of `ns-landmark`to highlight a promotion, or special theme
 * You can also add `ns-pill` to the `ns-selector` to highlight a promotion or theme to help customers make an informed choice.
 
 
@@ -659,7 +791,7 @@ Release date - 2020/11/24
 **Bug fixes 🐛**
 
 
-* ns-inputter - we made all validations optional if `isRequired` is not used.
+* ns-inputter - we made all validations optional if `isRequired` is not used
 * ns-landmark - Google have now released a fix that addresses the `ns-landmark` display issue. It is available for their latest Chromium version(87). We have been looking at adoption rates of our customers so a majority have the latest version. This release removes the temporary fix.
 
 **Feedback 💌**
@@ -702,7 +834,7 @@ Release date - 2020/11/12
 
 **New components 👏**
 
-* `ns-pill` is a merchandising component that will enable teams to add a commercial message that will grab a user's attention (example: discounts or free stuff campaigns).
+* `ns-pill` is a merchandising component that will enable teams to add a commercial message that will grab a user's attention (example: discounts or free stuff campaigns)
 * A variant of the `ns-expander` that has a yellow accent background, to visually grab a users attention to it (to add cmapaign details on a `ns-product-card` for example).
 
 **Bug fixes 🐛**
@@ -729,7 +861,7 @@ Release date - 2020/11/10
 
 **Improvement 🏷 & 🕐**
 
-* We added `tag`, `clock` to `ns-icon`, specifically for future use on an upcoming merchandising component.
+* We added `tag`, `clock` to `ns-icon`, specifically for future use on an upcoming merchandising component
 * We made the labels and headings of the `nsx-address-selector` more generic so they also work on anonymous journeys without confusing customers (eg : Change your postcode to Change postcode).
 
 **Bug fixes 🐛**
@@ -799,7 +931,7 @@ Release date - 2020/10/06
 
 **New components 📆**
 
-* First, we released `ns-column`, to open up support for more column options, and we'll start with a 4-columns layout! Stay tuned for more options.
+* First, we released `ns-column`, to open up support for more column options, and we'll start with a 4-columns layout! Stay tuned for more options
 * Very excited to release this one: `ns-slot-picker` it's the last piece of something big to come... a complete appointment selector.
   `ns-slot-picker` + `ns-calendar` = `ns-appointment-selector` !
 
@@ -812,7 +944,7 @@ Release date - 2020/10/06
 **Bug fixes 🐛**
 
 * The _lockjaw_ version of `ns-lockup` had its layout breaking when the image failed to load.... well not anymore!
-* The values passed by the experience pattern `nsx-marketing-consent` were not consistent with the API, they now speak the same language.
+* The values passed by the experience pattern `nsx-marketing-consent` were not consistent with the API, they now speak the same language
 * There was an issue when firing multiple change events for radio buttons and checkboxes in `ns-inputter`... no more.
 
 **Feedback 💌**
@@ -845,10 +977,10 @@ Release date - 2020/09/16
 **Bug fixes 🐛**
 
 * The validation for `ns-inputter` when entering letters in number type inputs wasn't working on IE11. This is now fixed!
-* The header logo wasn't displaying correctly on the `ns-header`, it now looks wonderful.
-* The underline from the direct link type for `ns-cta`  was visible on primary CTAs on Android devices. We fixed this.
+* The header logo wasn't displaying correctly on the `ns-header`, it now looks wonderful
+* The underline from the direct link type for `ns-cta`  was visible on primary CTAs on Android devices. We fixed this
 * We fixed an issue where the scroll wasn't showing for a `ns-table` with a long fixed value
-* We captured and exterminated a rogue margin in the `ns-landmark` if there is no CTA.
+* We captured and exterminated a rogue margin in the `ns-landmark` if there is no CTA
 * We fixed the margin of the paragraph for the lakeside `ns-lanmdmark`
 * When multiple values were passed using the `ns-inputter`, it would mean that nothing was passed. We have fixed this now and made it possible.
 
@@ -876,7 +1008,7 @@ Release date - 2020/08/20
 
 **Improvements 🔨**
 
-* The rendering of `nsx-footer` was so fast that the cookie policy/settings link didn't have time to check for the presence of the OneTrust script to display the right link. We tamed it a little to allow time for the right link to be populated.
+* The rendering of `nsx-footer` was so fast that the cookie policy/settings link didn't have time to check for the presence of the OneTrust script to display the right link. We tamed it a little to allow time for the right link to be populated
 * We have made the radio and checkbox labels for `ns-inputter` more consistent
 
 
@@ -910,7 +1042,7 @@ Release date - 2020/08/10
 
 **Improvements 🔨**
 
-* We removed `tablist` from accordion to improve keyboard navigation and make the `ns-accordion` more accessible so it comes up on screen readers correctly.
+* We removed `tablist` from accordion to improve keyboard navigation and make the `ns-accordion` more accessible so it comes up on screen readers correctly
 * We made small changes to the manual address capture for the `nsx-address-selector`
 
 **Bug fixes 🐛**
@@ -1015,7 +1147,7 @@ Release date - 2020-06-10
 
 **What's new around here? 🛶**
 
-* We've been working hard to create a solution that allows customers to select a date. The first iteration of `ns-datepicker` allows users to manually enter a date, or utilise their native browser calendar. 
+* We've been working hard to create a solution that allows customers to select a date. The first iteration of `ns-datepicker` allows users to manually enter a date, or utilise their native browser calendar 
 * We're developing a bespoke `ns-calendar` capability right now, in future this will form part of the next iteration of `ns-datepicker`
 * We added new links to `nsx-header`
 * We now allow users to enter an address manually using `nsx-address-selector`
@@ -1023,7 +1155,7 @@ Release date - 2020-06-10
 
 **Bug fixes 🐛**
 
-* `ns-landmark type="lakeside"` alignment fix; you should see better left alignment in functional journeys now, where `ns-landmark` is used.
+* `ns-landmark type="lakeside"` alignment fix; you should see better left alignment in functional journeys now, where `ns-landmark` is used
 * `ns-lockup` illustration placement fixed in `type=locknut`; when you use lots of content in the `type=locknut`, the illustration will display in the right place.
 
 **Feedback 💌**
@@ -1048,10 +1180,10 @@ Release date - 2020-06-03
 
 We had a number of bugs to squash, thanks for spotting them! 
 
-* We resolved the `ns-caveat` link size issue, which was making the link tiny or MASSIVE.
-* In the `ns-landmark` the BG-VI css is no longer overriding paragraph style.
-* In the `ns-expander` the BG-VI css is no longer overriding heading style.
-* We've made validation messages on `ns-inputter` more user friendly.
+* We resolved the `ns-caveat` link size issue, which was making the link tiny or MASSIVE
+* In the `ns-landmark` the BG-VI css is no longer overriding paragraph style
+* In the `ns-expander` the BG-VI css is no longer overriding heading style
+* We've made validation messages on `ns-inputter` more user friendly
 * We fixed the overlap in download app images and britishgas logo text in `ns-footer` for IE11.
 
 **Feedback 💌**
@@ -1070,7 +1202,7 @@ Release date - 2020-05-04
 
 **What's new around here? 🛥**
 
-* When `ns-download` is used in `ns-form`, files now open in a new tab (if the browser can display the file type).
+* When `ns-download` is used in `ns-form`, files now open in a new tab (if the browser can display the file type)
 * New designs for `ns-testimonial` that will be A/B tested.
 
 **Feedback 💌**
@@ -1090,8 +1222,8 @@ Release date - 2020-04-23
 **What's new around here? 🛥**
 
 * Multiple download links
-  * First we created a standardised way to download documents. Now we've extended that to handle multiple documents in way that that helps the user find what they're looking for.
-* Our illustration suite has expanded based on your feedback.
+  * First we created a standardised way to download documents. Now we've extended that to handle multiple documents in way that that helps the user find what they're looking for
+  * Our illustration suite has expanded based on your feedback.
   * 6 new illustrations have been added, and can now be used to decorate pages:
   * `boiler-repair`, `dual-fuel`, `electric-vehicle`, `engineer`, `help`, `savings`
 * Version 1 of our `ns-testimonial` component, born out of a successful AB test.
@@ -1101,7 +1233,7 @@ Release date - 2020-04-23
 
 You brought a couple of accessibility defects to our attention recently, and we've work hard to solve what turned out to be tricky problems. You'll now see:
 
-* Better colour contrast of the placeholder text on the `ns-inputter`.
+* Better colour contrast of the placeholder text on the `ns-inputter`
 * Better colour contrast of the mask text on the `ns-inputter`.
 
 **Improvements 🐑**
@@ -1148,8 +1280,8 @@ Release date - 2020-02-26
 **What’s new around here? 🚤**
 
 * Download link component.
-  * A standardised way to download from our site, paying special attention to  the experience of our customers using screenreaders.
-* Irish postcode validation for ns-inputter.
+  * A standardised way to download from our site, paying special attention to  the experience of our customers using screenreaders
+  * Irish postcode validation for ns-inputter.
   * Improving the inputter to ensure customers across all of our markets have the same great experiences.
 
 **Bug fixes 🐜**
@@ -1182,10 +1314,10 @@ Release date - 2020-02-17
 **What’s new around here? 🚤**
 
 * To present messaging in context `ns-highlighter`.
-  * 4 different types, `warning`, `error`, `success` and `info`.
-* Uniformly display prices with `ns-price`.
-  * Formating currency.
-* Introducing a replacement colour for `@warning` and reserving the yellow for `@focus`.
+  * 4 different types, `warning`, `error`, `success` and `info`
+  * Uniformly display prices with `ns-price`.
+  * Formating currency
+  * Introducing a replacement colour for `@warning` and reserving the yellow for `@focus`.
   * Focus colour added that takes the previous warning colour and warning colour now has a more accessible colour.
 
 **Bug fixes 🐜**
@@ -1194,7 +1326,7 @@ Release date - 2020-02-17
 
 **Improvements 🐑**
 
-* Removed old `nds-structure` class in favour of `ndsn` wrapper class.
+* Removed old `nds-structure` class in favour of `ndsn` wrapper class
 * Optional ignore separator for validation for `ns-inputter`.
 
 **Feedback 💌**
@@ -1214,15 +1346,17 @@ Release date - 2019-12-11
 
 * The masked `ns-inputter`.
   * Don't be fooled by it's apparent simplicity, this is a **BIG** introduction to Nucleus.
+
   * The outcome of everyone's hard work on the [Meter read Proposal](https://github.com/ConnectedHomes/nucleus/issues/839).
   * With the power to assist data entry such as sort codes and reference numbers.
 * The Lakeside variant of our Landmark.
+
   * Used for conveying blocking messages e.g. 404 & 500, what we call Roadblock messages.
-  * Useful as the primary component for confirmation pages.
-* Introducing `ns-skyline`, a high level messaging component.
+  * Useful as the primary component for confirmation pages
+  * Introducing `ns-skyline`, a high level messaging component.
   * Notify the user of events that may affect their experience.
-  * Weather warning, price changes etc.
-* Adding 4 new icons to support messaging components.
+  * Weather warning, price changes etc
+  * Adding 4 new icons to support messaging components.
   * `error`, `info`, `success`, `warning`
 
 **Documentation 🐧**
@@ -1239,7 +1373,7 @@ Release date - 2019-12-11
 
 **Improvements 🐑**
 
-* Introduce ES Lint to keep our Javascript in check.
+* Introduce ES Lint to keep our Javascript in check
 * Adding additional icons to support `ns-skyline`.
 
 **Feedback 💌**
@@ -1258,11 +1392,13 @@ Release date - 2019-11-11
 
 **What’s new around here? 🐣**
 
+
 * We've simplified our [Request for change](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--proposal.md&title=[RFC]+Title+of+the+Proposal) GitHub ticket template.
+
 * We have included `ns-selector` in this release.
   * Enhanced radio button or checkbox group.
-  * Include either an illustration or an image and additional content to support decision.
-* Our first release of `ns-table`.
+  * Include either an illustration or an image and additional content to support decision
+  * Our first release of `ns-table`.
   * A 'vanilla first' table with responsive behaviour.
   * A table specifically for displaying data.
 
@@ -1279,15 +1415,15 @@ Release date - 2019-11-11
 
 **Bug fixes 🎒**
 
-* In `ns-accordion` we moved the aria `role="tablist"` from the ShadowDOM into the LightDOM to improve accessibility.
-* Ensuring every page fills at least 100% of the viewport.
-* Setting the correct alignment of `slot="heading"` when `ns-editorial` is reversed when there is no image to push the heading to the right.
+* In `ns-accordion` we moved the aria `role="tablist"` from the ShadowDOM into the LightDOM to improve accessibility
+* Ensuring every page fills at least 100% of the viewport
+* Setting the correct alignment of `slot="heading"` when `ns-editorial` is reversed when there is no image to push the heading to the right
 * Improving the performance of `ns-inputter`.
 
 **Improvements 🐬**
 
-* We have added a compressed mobile version of the Superflame asset for the `summit` `ns-landmark` optimised for small screens. The original asset has been impacting our performance.
-* Removed the Frontify documentation styles.
+* We have added a compressed mobile version of the Superflame asset for the `summit` `ns-landmark` optimised for small screens. The original asset has been impacting our performance
+* Removed the Frontify documentation styles
 * Including the British Gas logo into Nucleus.
 
 **Feedback 👩🏻‍🍳**
@@ -1307,9 +1443,9 @@ Release date - 2019-09-20
 **What’s new around here 👾**
 
 * The long awaited `ns-editorial` has made it into this release.
-  * Introducing a new layout `.splosh` which, at this time is exclusively for `ns-editorial`.
-* We have added the ability to include a `textarea` within `ns-inputter`.
-* Prototype of the Nucleus header and footer.
+  * Introducing a new layout `.splosh` which, at this time is exclusively for `ns-editorial`
+  * We have added the ability to include a `textarea` within `ns-inputter`
+  * Prototype of the Nucleus header and footer.
   * Including `ns-header` and `ns-footer`.
   * Simple `cookie-message` included.
   * Additional `nav` variant of the `ns-card`.
@@ -1323,13 +1459,13 @@ Release date - 2019-09-20
 
 **Bug fixes 🙊**
 
-* Ensuring that the Nucleus container `.ndsn` class fills the width of the browser.
+* Ensuring that the Nucleus container `.ndsn` class fills the width of the browser
 * Resolving an issue where text within the reversed `lockjaw` Lockup was against the edge of the browser.
 
 **Improvements 🌺**
 
-* Creating a `gradient-colour` mixin.
-* Updating the Landmark Storybook stories to better reflect the different types.
+* Creating a `gradient-colour` mixin
+* Updating the Landmark Storybook stories to better reflect the different types
 * Tidying up a few stories within Storybook.
 
 **Feedback 👩🏽‍💻**
@@ -1348,23 +1484,23 @@ Release date - 2019-07-31
 **What’s new around here 🕑**
 
 * A Landmark variant `hillside` which is less promotional than `summit`
-  * It has no image and no call to action.
-* `ns-form` - The container for all `ns-inputter` components which manages the validation.
-* Introducing the `select` variant of `ns-inputter` commonly known as - the dropdown.
+  * It has no image and no call to action
+  * `ns-form` - The container for all `ns-inputter` components which manages the validation
+  * Introducing the `select` variant of `ns-inputter` commonly known as - the dropdown.
 
 **Bugfixes 🦋**
 
-* Addressing an issue where the BG-VI.css anchor styles were overriding Nucleus.
-* Ensuring that `ns-cta` is tabbable when not contained within an `<a>`.
-* Slight change to the implementation of the CSS box model.
+* Addressing an issue where the BG-VI.css anchor styles were overriding Nucleus
+* Ensuring that `ns-cta` is tabbable when not contained within an `<a>`
+* Slight change to the implementation of the CSS box model
 * Adding slot styling to the heading within the `flat` variant of `ns-card`.
 
 **Improvements 🐶**
 
-* Validation improvements to `ns-inputter` suppoting minLength, maxLength and isBetweenLength validations.
-* Validation for radio buttons and `ns-inputter` `select` component.
-* Deprecated "Key" variant from the `ns-cta` component.
-* The default Landmark has been renamed from `hub` to `summit`.
+* Validation improvements to `ns-inputter` suppoting minLength, maxLength and isBetweenLength validations
+* Validation for radio buttons and `ns-inputter` `select` component
+* Deprecated "Key" variant from the `ns-cta` component
+* The default Landmark has been renamed from `hub` to `summit`
 * The `ns-cta` within `ns-lockup` and `ns-landmark` is now optional.
   * Choose 'none' from the 'CTA type' dropdown in the Knobs addon.
 
@@ -1387,16 +1523,16 @@ Release date - 2019-06-24
 
 **Bugfixes 🏏**
 
-* Fixed the inconsistent positioning of the accordion chevron when multiple expanders were used.
-* Addressed the IE11 bug where the incorrect text colour appeared within `ns-cta` and `ns-tab`.
-* Enable the position `right` for the circle decoration.
+* Fixed the inconsistent positioning of the accordion chevron when multiple expanders were used
+* Addressed the IE11 bug where the incorrect text colour appeared within `ns-cta` and `ns-tab`
+* Enable the position `right` for the circle decoration
 * Fix initial value overwrite in `ns-inputter`.
 
 **Improvements 🌻**
 
-* Removed `slot="label"` from `ns-inputter` as we use the anonymous slot.
-* Improve the `ns-tabs` Storybook story.
-* Include the tap illustration.
+* Removed `slot="label"` from `ns-inputter` as we use the anonymous slot
+* Improve the `ns-tabs` Storybook story
+* Include the tap illustration
 * Adding the solid and outline Energy icon.
 
 **Feedback 🦕**
@@ -1420,41 +1556,41 @@ Release date - 2019-06-11
   * Field-level validation.
   * Placeholder.
   * Helper text.
-  * Helper details.
-* `ns-video` - include a YouTube video into a lockup.
-* `ns-tab` - the tab that lives within tabs.
-* `ns-tabs` - include a few tab to make a tabs.
+  * Helper details
+  * `ns-video` - include a YouTube video into a lockup
+  * `ns-tab` - the tab that lives within tabs
+  * `ns-tabs` - include a few tab to make a tabs.
 
 **Sketch Library**
 
 * Release 2.0 - (Out of Pre-release).
-  * Download the latest: https://github.com/ConnectedHomes/centrica-ux/releases.
-* Added Guides to give indication of where components can be placed.
-* Included Templates to quickly mockup a page and placing components in a layout.
+  * Download the latest: https://github.com/ConnectedHomes/centrica-ux/releases
+  * Added Guides to give indication of where components can be placed
+  * Included Templates to quickly mockup a page and placing components in a layout.
 
 **Bugfixes 🐞**
 
-* Replace previous green outline on `ns-cta` with current yellow outline.
-* Ensuring that the class of `blur` is implemented when required.
-* Address the removal of `margin-bottom` on the last element.
-* Improve specificity of typographic styling.
+* Replace previous green outline on `ns-cta` with current yellow outline
+* Ensuring that the class of `blur` is implemented when required
+* Address the removal of `margin-bottom` on the last element
+* Improve specificity of typographic styling
 * Including robust techniques for setting attributes.
 
 **Improvements 🌸**
 
-* Storybook, split Playground and Foundations.
-* Remove unused properties from our components.
-* Setting a white background to `ns-expander` within `ns-accordion`.
-* Including a variable for `@outline` colour.
+* Storybook, split Playground and Foundations
+* Remove unused properties from our components
+* Setting a white background to `ns-expander` within `ns-accordion`
+* Including a variable for `@outline` colour
 * Adding the solid and outline Rewards icon.
 
 **Collaboration 🤗**
 
 A big thank you to everyone involved in contributing to this release!
 
-* OAM - for their collaboration throughout this release.
-* Energy Sales - for working with us to run a joint user testing session using a Nucleus coded prototype.
-* New Boilers - For collaborating with us to make sure their recent journey contained Nucleus components.
+* OAM - for their collaboration throughout this release
+* Energy Sales - for working with us to run a joint user testing session using a Nucleus coded prototype
+* New Boilers - For collaborating with us to make sure their recent journey contained Nucleus components
 * Help & Support - for their patience with the Nucleus CMS page, allowing us time to build the video component.
 
 **Feedback 🐢**
@@ -1480,8 +1616,8 @@ Release date - 2019-04-15
 
 **Sketch Nucleus Pattern Library**
 
-* Added all available icons.
-* Added Accordions.
+* Added all available icons
+* Added Accordions
 * Added more screen sizes to each Component.
 
 **Documentation**
@@ -1497,10 +1633,10 @@ Release date - 2019-04-15
 
 **Bugfixes 🐞**
 
-* Vertical spacing adjustments.
-* Adjusting the style of the heading within our Accordion.
-* Setting all Actions to be 100% width at small screen.
-* Removing the duplicate BG Flame font loading.
+* Vertical spacing adjustments
+* Adjusting the style of the heading within our Accordion
+* Setting all Actions to be 100% width at small screen
+* Removing the duplicate BG Flame font loading
 * Fixed the hierarchy of the screen sizes in Sketch library.
 
 **Feedback 🐳**
