@@ -15,7 +15,8 @@ const mastheadImage = mastheadImages[`../assets/masthead/${slug}.svg`];
 const mastheadFolder = slug?.split('/')[0];
 
 const isDeprecated = customElements.tags.find((customElement) => customElement.name === componentName)?.deprecated;
-const category = isComponentPage && ceDocs.find((customElement) => customElement.name === componentName)?.category;
+let category = isComponentPage && ceDocs.find((customElement) => customElement.name === componentName)?.category;
+category = category ? category.toLowerCase() : false;
 
 const mastheadClassList = [
   'masthead',
