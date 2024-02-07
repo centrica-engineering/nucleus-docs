@@ -190,6 +190,7 @@ h1 {
 
   .hero {
     margin-block-start: 2rem;
+    margin-block-end: 15rem;
     padding-block-start: 0;
     padding-block-end: 0;
     display: block;
@@ -512,4 +513,11 @@ h1 {
   a {
     font-size: var(--sl-text-base);
   }
+}
+
+.signposts {
+  padding-inline-start: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

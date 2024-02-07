@@ -8,3 +8,28 @@ hero:
   title: Nucleus
   tagline: The design system of British Gas
 ---
+
+import Card from '@components/starlight/Card.astro';
+
+<ul role="list" class="signposts">
+  <Card
+    href="/components/ns-accordion"
+    title="Components"
+    body="purpose, code snippets, best practice"
+  />
+  <Card
+    href="/guidelines/tokens/"
+    title="Guidelines"
+    body="typography, colours, global elements"
+  />
+  <Card
+    href="/patterns/asking-for-information/"
+    title="Patterns"
+    body="experience patterns, consistent approaches"
+  />
+  <Card
+    href="/page-types/start/"
+    title="Page types"
+    body="editorial, guide, hub, confirmation"
+  />
+</ul>
