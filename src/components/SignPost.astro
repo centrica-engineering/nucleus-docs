@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string;
+  body: string;
+  href: string;
+}
+const { href, title } = Astro.props;
+---
+<li class="signpost">
+  <a href={href}>
+    <h2>{title}</h2>
+    <p><slot /></p>
+  </a>
+</li>
+<style>
+  .signpost {
+    >a {}
+
+    h2 {}
+
+    p {}
+
+    :is(:hover, :focus-within) {
+      background-position: 0;
+      background-image: var(--accent-gradient);
+    }
+
+    :is(:hover, :focus-within) h2 {
+      color: rgb(var(--accent-light));
+    }
+  }
+</style>

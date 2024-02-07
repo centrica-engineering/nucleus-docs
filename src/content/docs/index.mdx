@@ -1,5 +1,8 @@
 ---
-title: Welcome to the Design System of British Gas
+title: THE DESIGN SYSTEM OF BRITISH GAS
+banner:
+  content: |
+    v3.0 of the Nucleus Docs released 29th February 2024
 template: splash
 hero:
   actions:
@@ -16,3 +19,23 @@ hero:
       icon: pencil
       variant: secondary
 ---
+
+import SignPost from  '@components/SignPost.astro';
+
+<ul>
+<SignPost title="Components" href="/components/ns-accordion">
+  <p>purpose, code snippets, best practice</p>
+</SignPost>
+
+<SignPost title="Guidelines" href="/guidelines/tokens/">
+  <p>typography, colours, global elements</p>
+</SignPost>
+
+<SignPost title="Patterns" href="/patterns/asking-for-information/">
+  <p>experience patterns, consistent approaches</p>
+</SignPost>
+
+<SignPost title="Page types" href="/page-types/start/">
+  <p>editorial, guide, hub, confirmation</p>
+</SignPost>
+</ul>

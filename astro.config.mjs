@@ -119,6 +119,8 @@ export default defineConfig({
       },
       components: {
         Footer: "./src/components/starlight/Footer.astro",
+        Header: "/src/components/starlight/Header.astro",
+        Hero: "/src/components/starlight/Hero.astro",
         PageTitle: "./src/components/starlight/PageTitle.astro",
         TableOfContents: "./src/components/starlight/TableOfContents.astro",
         // ThemeSelect: './src/components/starlight/ThemeSelect.astro',
