@@ -6,77 +6,78 @@ import jsdoc from "@connectedhomes/nucleus/ce-doc.json";
 const compDetails = cem.tags.find((tag) => tag.name === name);
 const jsdocDetails = jsdoc.find((tag) => tag.name === name);
 
-const attributes = compDetails?.attributes;
 const properties = compDetails?.properties;
 const slots = jsdocDetails?.slots;
 const events = compDetails?.events;
 ---
+
+<style>
+  .spec {
+    th {
+      border-block-start-width: 0;
+      border-block-end-width: 2px;
+      border-inline-start-width: 0;
+      border-inline-end-width: 0;
+    }
+
+    td {
+      border-block-start-width: 0;
+      border-block-end-width: 1px;
+      border-inline-start-width: 0;
+      border-inline-end-width: 0;
+    }
+  }
+</style>
+
 { 
-  attributes?.length > 0 &&  (
+  properties?.length > 0 &&  (
     <h4 id="attributes">Attributes</h4>
-    <table>
-      <thead>
-        <tr>
-          <th>Attribute</th>
-          <th>Type</th>
-          <th>Default</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        {
-          attributes?.map((attribute) => {
-            return (
-              <tr>
-                <td><code>{attribute.name}</code></td>
-                <td>{attribute.type?.replaceAll('"', ' ')}</td>
-                <td>{attribute.default?.replaceAll('"', '')}</td>
-                <td>{attribute.description ?? ''}</td>
-              </tr>
-            );
-          })
-        }
-      </tbody>
-    </table>
+    <div class="spec-list">
+      {
+        properties?.map((property) => {
+          if (!property.attribute || ['slottedStyles'].includes(property.name)) {
+            return undefined;
+          }
+          const defaultValue = property.default?.replaceAll('"', '');
+          return (
+            <p><code>{property.attribute}</code></p>
+            <dl>
+              <div>
+                <dt>Property</dt>
+                <dd><code>{property.name}</code></dd>
+              </div>
+              {
+                property.description && (
+                <div>
+                  <dt>Description</dt>
+                  <dd>{property.description ?? ''}</dd>
+                </div>
+                )
+              }
+              <div>
+                <dt>Type</dt>
+                <dd>{property.type?.split('|')?.map((type) => <span><code>{type.replaceAll('"','')}</code>&#32;</span>)}</dd>
+              </div>
+              {
+                property.default && (
+                  <div>
+                    <dt>Default</dt>
+                    <dd>{ defaultValue ? <code>{defaultValue}</code> : ''}</dd>
+                  </div>
+                )
+              }
+            </dl>
+          );
+        })
+      }
+    </div>
   )
 }
-  
-{
-  properties?.length > 0 && (
-    <h4 id="properties">Properties</h4>
-    <table>
-      <thead>
-        <tr>
-          <th>Property</th>
-          <th>Type</th>
-          <th>Default</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        {
-          properties?.map((property) => {
-            if (['slottedStyles'].includes(property.name)) {
-              return undefined;
-            }
-            return (
-              <tr>
-                <td><code>{property.name}</code></td>
-                <td>{property.type?.replaceAll('"', ' ')}</td>
-                <td>{property.default?.replaceAll('"', '')}</td>
-                <td>{property.description}</td>
-              </tr>
-            );
-          })
-        }
-      </tbody>
-    </table>
-  )
-}
+
 {
   slots?.length > 0 && (
     <h4 id="slots">Slots</h4>
-    <table>
+    <table class="spec">
       <thead>
         <tr>
           <th>Slot</th>
@@ -89,9 +90,9 @@ const events = compDetails?.events;
           slots?.map((slot) => {
             return (
               <tr>
-                <td>{slot.name ? <code>{slot.name}</code> : 'anonymous' }</td>
+                <td>{slot.name ? <code>{slot.name}</code> : 'Anonymous slot' }</td>
                 <td>
-                  {slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>  </span>)}
+                  {slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>&#32;</span>)}
                 </td>
                 <td>{slot.description}</td>
               </tr>
@@ -106,7 +107,7 @@ const events = compDetails?.events;
 {
   events?.length > 0 && (
     <h4 id="events">Events</h4>
-    <table>
+    <table class="spec">
       <thead>
         <tr>
           <th>Name</th>
