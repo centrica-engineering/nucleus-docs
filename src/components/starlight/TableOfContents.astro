@@ -9,16 +9,15 @@ const { slug } = Astro.params;
 
 const mastheadImages = import.meta.glob("../../assets/masthead/**/*");
 const mastheadImage = mastheadImages[`../../assets/masthead/${slug}.svg`];
-const mastheadFolder = slug?.split('/')[0];
 ---
 
 {
   mastheadImage ? (
-    <div class={`decoration ${mastheadFolder}`}>
+    <div class="decoration">
       <Image src={mastheadImage()} alt="" {...Astro.props} />
     </div>
   ) : (
-    <div class={`decoration ${mastheadFolder}`}></div>
+    <div class="decoration"></div>
   )
 }
 
@@ -51,22 +50,6 @@ const mastheadFolder = slug?.split('/')[0];
     display: flex;
     align-items: center;
     justify-content: center;
-
-    &.components {
-      background-color: var(--ns-color-masthead-components);
-    }
-
-    &.guidelines {
-      background-color: var(--ns-color-masthead-guidelines);
-    }
-
-    &.patterns {
-      background-color: var(--ns-color-masthead-patterns);
-    }
-
-    &.page-types {
-      background-color: var(--ns-color-masthead-page-types);
-    }
 
     img {
       width: 36px;
