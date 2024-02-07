@@ -1,11 +1,14 @@
 ---
 const {name, value} = Astro.props;
 const backgroundColorStyle = `--ns-colour: ${value};`;
+const labelValue = name.substring(name.lastIndexOf('_') + 1, name.length);
 ---
 
 <div class="ns-colour-container">
+  <label>{labelValue}</label>
   <div class="ns-colour-box" style={backgroundColorStyle}></div>
-  <label>{name}</label>
+  <label>{value}</label>
+  <label><code>{name}</code></label>
 </div>
 
 <style>
@@ -16,7 +19,7 @@ const backgroundColorStyle = `--ns-colour: ${value};`;
     height: 50px;
     width: 100px;
     background-color: var(--ns-colour);
-    border: 1px solid  black;
+    border: 1px solid var(--sl-color-gray-5);
     border-radius: 5px;
   }
 </style>
