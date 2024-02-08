@@ -21,4 +21,32 @@ const border = {
   width: borderWidth()
 };
 
-export { colors, border };
+const typographyFor = (token) => {
+  const tokenPropsArray = tokensLike(`THEME_TYPOGRAPHY_${token}`).map((token) => {
+    return {
+      [token[0]]: token[1]
+    };
+  });
+  const tokenProps = Object.assign({}, ...tokenPropsArray);
+  return {
+    tokenFinder: token,
+    ...tokenProps
+  }
+};
+
+const typography = {
+  h1: typographyFor('X_LARGE_HEADING'),
+  h2: typographyFor('LARGE_HEADING'),
+  h3: typographyFor('MEDIUM_HEADING'),
+  h4: typographyFor('SMALL_HEADING'),
+  h5: typographyFor('X_SMALL_HEADING'),
+  h6: typographyFor('TINY_HEADING'),
+  'p-large': typographyFor('LARGE_PARAGRAPH'),
+  'p-feature': typographyFor('FEATURE_PARAGRAPH'),
+  'p-normal': typographyFor('NORMAL_PARAGRAPH'),
+  'p-small': typographyFor('SMALL_PARAGRAPH'),
+  'p-caption': typographyFor('CAPTION_PARAGRAPH'),
+  action: typographyFor('ACTION_PARAGRAPH'),
+}
+
+export { colors, border, typography };
