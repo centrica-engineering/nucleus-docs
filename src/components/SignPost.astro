@@ -6,12 +6,12 @@ interface Props {
 }
 const { href, title } = Astro.props;
 ---
-<li class="signpost">
+<div class="signpost">
   <a href={href}>
     <h2>{title}</h2>
     <p><slot /></p>
   </a>
-</li>
+</div>
 <style>
   .signpost {
     >a {}
