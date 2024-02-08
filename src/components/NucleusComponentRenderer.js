@@ -7,6 +7,7 @@ export class NucleusComponentRenderer extends LitElement {
   static get properties() {
     return {
       src: { type: String },
+      hideConfig: { type: Boolean, attribute: 'hide-config' },
       _minHeight: { type: Number, state: true },
       _zoom: { type: Boolean, state: true },
       _viewport: { type: String, state: true }
@@ -50,9 +51,14 @@ export class NucleusComponentRenderer extends LitElement {
   constructor() {
     super();
 
+    this.hideConfig = false;
     this._minHeight = 200;
     this._viewport = 'desktop';
     this._zoom = 'zoom-out';
+  }
+
+  willUpdate() {
+    this._zoom = this.hideConfig ? 'zoom-in' : 'zoom-out';
   }
 
   get doc() {
@@ -113,7 +119,8 @@ export class NucleusComponentRenderer extends LitElement {
     };
 
     return html`
-      <div class="viewport">
+    ${!this.hideConfig ? html`
+    <div class="viewport">
         <input type="radio" name="viewport" id="mobile-viewport" value="mobile">
         <label for="mobile-viewport">Mobile</label>
         <input type="radio" name="viewport" id="desktop-viewport" value="desktop">
@@ -125,6 +132,7 @@ export class NucleusComponentRenderer extends LitElement {
         <input type="radio" name="zoom" id="zoom-out" value="zoom-out">
         <label for="zoom-out">Zoom out</label>
       </div>
+      ` : html``}
       <div class="example preview">
         <iframe
           class=${classMap(classes)}

@@ -4,6 +4,7 @@ import { NucleusCodeSnippet } from './NucleusCodeSnippet';
 
 const { slug } = Astro.params;
 const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
+const hideConfig = isComponentPage ? undefined : 'hide-config';
 
 const { type } = Astro.props;
 const exampleFileMatcher = `/assets/${slug}/${type}.html`;
@@ -20,6 +21,6 @@ const htmlContent = await examples[htmlFile];
     )
   }
 
-  <NucleusComponentRenderer src={htmlContent} client:only="lit"/>
+  <NucleusComponentRenderer src={htmlContent} {hideConfig} client:only="lit"/>
   <NucleusCodeSnippet src={htmlContent} client:visible />
 </div>
