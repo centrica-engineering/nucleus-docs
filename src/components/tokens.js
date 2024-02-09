@@ -45,8 +45,7 @@ const typography = {
   'p-feature': typographyFor('FEATURE_PARAGRAPH'),
   'p-normal': typographyFor('NORMAL_PARAGRAPH'),
   'p-small': typographyFor('SMALL_PARAGRAPH'),
-  'p-caption': typographyFor('CAPTION_PARAGRAPH'),
-  action: typographyFor('ACTION_PARAGRAPH'),
+  'p-caption': typographyFor('CAPTION_PARAGRAPH')
 }
 
 export { colors, border, typography };
