@@ -1,0 +1,31 @@
+---
+import { illustrations } from '@connectedhomes/nucleus-util/brands/british-gas';
+---
+
+<div class="illustrations not-content">
+  {
+    illustrations && 
+    illustrations.map((illustration, i) => {
+      return (
+        <div class="illustration">
+          <p>{illustration.name}</p>
+          <div class="svg" set:html={illustration.svg?.replace('<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"', '<svg ')} />
+        </div>
+      );
+    })
+  }
+</div>
+
+<style>
+  .illustrations {
+    display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1rem;
+      row-gap: 2rem;;
+
+    .svg {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+</style>
