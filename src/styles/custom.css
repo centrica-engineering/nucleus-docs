@@ -343,6 +343,41 @@ h1 {
   font-weight: 600;
 }
 
+.spec-list {
+  margin-block-end: 4rem;
+
+  p {
+    padding-block-end: 0.5em;
+    border-block-end-style: solid;
+    border-block-end-width: 1px;
+    border-block-end-color: var(--sl-color-gray-6);
+    font-weight: 600;
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-column-gap: 1rem;
+    margin-block-start: 0.25rem !important;
+    margin-inline-start: 1rem;
+  }
+
+  dl:not(empty) {
+    margin-block-start: 0 !important;
+    margin-block-end: 2.5rem !important;
+  }
+
+  dt {
+    font-weight: 400;
+    color: var(--sl-color-gray-3);
+  }
+
+  dd {
+    margin-block-start: 0 !important;
+    margin-inline-start: 0;
+  }
+}
+
 /* NOTE: @drew - 2023-11-29 - temporary styles for the Storybook iframe in the Pages section */
 .storybook-embed iframe {
   display: block;
