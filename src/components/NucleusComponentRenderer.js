@@ -113,18 +113,6 @@ export class NucleusComponentRenderer extends LitElement {
     };
 
     return html`
-      <div class="viewport">
-        <input type="radio" name="viewport" id="mobile-viewport" value="mobile">
-        <label for="mobile-viewport">Mobile</label>
-        <input type="radio" name="viewport" id="desktop-viewport" value="desktop">
-        <label for="desktop-viewport">Desktop</label>
-      </div>
-      <div class="zoom">
-        <input type="radio" name="zoom" id="zoom-in" value="zoom-in">
-        <label for="zoom-in">Zoom in</label>
-        <input type="radio" name="zoom" id="zoom-out" value="zoom-out">
-        <label for="zoom-out">Zoom out</label>
-      </div>
       <div class="example preview">
         <iframe
           class=${classMap(classes)}
@@ -136,6 +124,18 @@ export class NucleusComponentRenderer extends LitElement {
           sandbox="allow-scripts allow-same-origin"
           @load=${() => this._iframeHeight()}
         ></iframe>
+      </div>
+      <div class="viewport">
+        <input type="radio" name="viewport" id="mobile-viewport" value="mobile">
+        <label for="mobile-viewport">Mobile</label>
+        <input type="radio" name="viewport" id="desktop-viewport" value="desktop">
+        <label for="desktop-viewport">Desktop</label>
+      </div>
+      <div class="zoom">
+        <input type="radio" name="zoom" id="zoom-in" value="zoom-in">
+        <label for="zoom-in">Zoom in</label>
+        <input type="radio" name="zoom" id="zoom-out" value="zoom-out">
+        <label for="zoom-out">Zoom out</label>
       </div>
     `;
   }
