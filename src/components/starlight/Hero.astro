@@ -1,33 +1,12 @@
 ---
 import Default from '@astrojs/starlight/components/Hero.astro';
 import Search from '@astrojs/starlight/components/Search.astro';
-import SignPost from '../SignPost.astro';
 
 import type { Props } from '@astrojs/starlight/props';
 
 const PAGE_TITLE_ID = '_top';
 const { data } = Astro.props.entry;
-const { title = data.title, tagline, image, actions = [] } = data.hero || {};
-
-const imageAttrs = {
-	loading: 'eager' as const,
-	decoding: 'async' as const,
-	width: 400,
-	height: 400,
-	alt: image?.alt || '',
-};
-
-let darkImage, lightImage, rawHtml;
-if (image) {
-	if ('file' in image) {
-		darkImage = image.file;
-	} else if ('dark' in image) {
-		darkImage = image.dark;
-		lightImage = image.light;
-	} else {
-		rawHtml = image.html;
-	}
-}
+const { title = data.title } = data.hero || {};
 
 const isHomePage = Astro.props.slug === '';
 ---
