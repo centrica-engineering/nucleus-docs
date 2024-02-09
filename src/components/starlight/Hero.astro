@@ -1,0 +1,39 @@
+---
+import Default from '@astrojs/starlight/components/Hero.astro';
+import Search from '@astrojs/starlight/components/Search.astro';
+
+import type { Props } from '@astrojs/starlight/props';
+
+const PAGE_TITLE_ID = '_top';
+const { data } = Astro.props.entry;
+const { title = data.title } = data.hero || {};
+
+const isHomePage = Astro.props.slug === '';
+---
+<Fragment>
+  {
+    isHomePage ? (
+      <div class="hero homepage">
+        <div class="copy">
+        </div>
+        <h1 id={PAGE_TITLE_ID} data-page-title set:html={title} />
+        <Search {...Astro.props} />
+      </div>
+    )
+    : (
+      <Default {...Astro.props} />
+    )
+  }
+</Fragment>
+
+<style>
+  .hero {
+    &.homepage {
+      .copy {
+        height: 5.5rem;
+        width: 30rem;
+        background-image: url('/logo-light.svg');
+      }
+    }
+  }
+</style>
