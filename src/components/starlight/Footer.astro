@@ -22,6 +22,7 @@ const githubEditUrl =
 <footer class="footer">
   <div class="page-footer">
     <h3>Found a problem with the content on this page?</h3>
+    <p>Here are some ways you can help:</p>
     <ul>
       <li>
         {
@@ -32,21 +33,24 @@ const githubEditUrl =
             </a>
           )
         }
+        <p>If you spot an issue, you can propose changes directly on GitHub. Your input matters!</p>
       </li>
       <li>
         <a href={`${issueURL}?assignees=&amp;labels=Type: Bug&amp;title=%5B${pageSlug}%5D`} target="_blank" rel="noopener noreferrer">
-          Report the content issue
+          Report a content issue
           <Icon name="external" size="1em" />
         </a>
+        <p>If something doesn't look right, let us know. We appreciate your help in keeping our content accurate and helpful.</p>
       </li>
       <li>
         <a href={`${viewURL}${pageSlug}.mdx`} target="_blank" rel="noopener noreferrer">
           View this page on Github
           <Icon name="external" size="1em" />
         </a>
+        <p>See this and every page in the Nucleus Docs on GitHub.</p>
       </li>
     </ul>
-    <p>Want to get more involved with Nucleus Docs? <a href="#!">Learn how to contribute</a>.</p>
+    <p>Want to get more involved with Nucleus Docs? <br> <a href="#!">Learn how to contribute</a> and be part of our growing community. 🌟</p>
     <LastUpdated {...Astro.props} />
 
     <div class="logo">
