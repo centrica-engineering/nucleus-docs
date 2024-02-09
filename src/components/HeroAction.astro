@@ -1,0 +1,13 @@
+---
+import CallToAction from './CallToAction.astro';
+
+import type { Props } from '@astrojs/starlight/props';
+const { actions } = Astro.props;
+console.log(actions);
+---
+
+<div class="sl-flex actions">
+  {
+    actions?.map(({ text, ...attrs }) => <CallToAction {...attrs} set:html={text} />)
+  }
+</div>

@@ -21,6 +21,7 @@ hero:
 ---
 
 import SignPost from  '@components/SignPost.astro';
+import HeroAction from '@components/HeroAction.astro';
 import { CardGrid } from '@astrojs/starlight/components';
 
 <CardGrid>
@@ -40,3 +41,7 @@ import { CardGrid } from '@astrojs/starlight/components';
     <p>editorial, guide, hub, confirmation</p>
   </SignPost>
 </CardGrid>
+
+<HeroAction actions={frontmatter.hero.actions}/>
+
+
