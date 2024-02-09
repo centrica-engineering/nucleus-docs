@@ -2,6 +2,7 @@
 title: Lists
 ---
 import ExampleViewer from '@components/ExampleViewer.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Overview
 We have 6 styles of lists using the 3 different HTML markup techniques. Unordered lists, ordered lists and description lists.
@@ -18,18 +19,18 @@ Use the Unordered list element `<ul>` as the parent element and a List item `<li
 `class="ul-bullet"`
 
 Bullet list can be nested up to four levels deep.
-<ExampleViewer type="bullet-list" />
+<ExampleViewer type="bullet" />
 
 ### Decorative lists
 Decorative lists display different bullet styles, we have a ticked list and a crossed list.
 
 #### Ticked list
 `class="ul-ticked"`
-<ExampleViewer type="ticked-list" />
+<ExampleViewer type="ticked" />
 
 #### Crossed list
 `class="ul-crossed"`
-<ExampleViewer type="crossed-list" />
+<ExampleViewer type="crossed" />
 
 #### Accessibility considerations
 When using the these Decorative lists to represent services or features that are either available or not available it's important to present this list with a heading identifying this fact.
@@ -48,7 +49,19 @@ Use the Ordered list element `<ol>` as the parent element and a List item `<li>`
 `class="ol-numbered"`
 
 The Numbered list will display an incremental number alongside each list item. A Numbered list can be nested up to four levels deep.
-<ExampleViewer type="numbered-list" />
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer type="numbered" />
+  </TabItem>
+  <TabItem label="Start index">
+    `start="xx"`
+    <ExampleViewer type="numbered-start" />
+  </TabItem>
+  <TabItem label="Reversed">
+    `reverse`
+    <ExampleViewer type="numbered-reverse" />
+  </TabItem>
+</Tabs>
 
 ## Description list
 Displaying data alongside it's accompanying label is accomplished using the Description List element `<dl>` and it's children `<dt>` and `<dd>` wrapped in a `<div>`.
@@ -57,8 +70,22 @@ There are two types of description lists which we have called `dl-row` and `dl-s
 
 ### Description list row
 `class="dl-row"`
-<ExampleViewer type="description-list-row" />
+<Tabs>
+  <TabItem label="Short Content">
+    <ExampleViewer type="dl-row-short" />
+  </TabItem>
+  <TabItem label="Long Content">
+    <ExampleViewer type="dl-row-long" />
+  </TabItem>
+</Tabs>
 
 ### Description list stack
 `class="dl-stack"`
-<ExampleViewer type="description-list-stack" />
+<Tabs>
+  <TabItem label="Short Content">
+    <ExampleViewer type="dl-stack-short" />
+  </TabItem>
+  <TabItem label="Long Content">
+    <ExampleViewer type="dl-stack-long" />
+  </TabItem>
+</Tabs>
