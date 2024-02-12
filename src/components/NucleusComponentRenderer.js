@@ -17,7 +17,6 @@ export class NucleusComponentRenderer extends LitElement {
     return css`
       :host {
         display: block;
-        height: 100%;
       }
 
       .example {

@@ -130,162 +130,178 @@ const htmlContent = Astro.props.src;
 <div class="config-content" set:html={htmlContent}>
 
 </div>
-<div class="config-container">
-<div class="grid-element configure-component">
-  <form>
-    <button id="play-config">Run</button>
-    <button id="reset-config">Reset</button>
-  {
-    cem?.attributes && (
-      <h2>Attributes</h2>
-    )
-  }
-  {
-    cem?.attributes?.map((attribute) => {
-      const defaultValue = attribute.default?.replaceAll('"', '');
-      if (attribute.type === 'string') {
-        return (
-          <div class="config-elements">
-            <label>{attribute.name}</label>
-            <input type="text" name={attribute.name} value={defaultValue}>
-          </div>
-        );
-      } else if (attribute.type?.indexOf("|") > -1) {
-        const options = attribute.type?.replaceAll('"', '').split('|') ?? [];
-        const attributeTitle = (<label>{attribute.name}</label>);
-
-        const optionsHTML = options?.map((option) => {
-          const checked = defaultValue === option ? '' : undefined;
+<div class="configurator">
+  <div class="configure">
+    <form class="form">
+      <div class="action">
+        <button id="play-config">Run</button>
+        <button id="reset-config">Reset</button>
+      </div>
+    {
+      cem?.attributes && (
+        <h2>Attributes</h2>
+      )
+    }
+    {
+      cem?.attributes?.map((attribute) => {
+        const defaultValue = attribute.default?.replaceAll('"', '');
+        if (attribute.type === 'string') {
           return (
-            <span class="radio-element">
-              <input type="radio" name={attribute.name} value={option} {checked}>
-              <label>{option}</label>
-            </span>
+            <div class="config-elements">
+              <label>{attribute.name}</label>
+              <input type="text" name={attribute.name} value={defaultValue}>
+            </div>
           );
-        });
-        return (
-          <div class="config-elements">
-          {
-            [attributeTitle, optionsHTML]
-          }
-          </div>
-        );      
-      } else if (attribute.type === 'number') {
-        return (
-          <div class="config-elements">
-            <label>{attribute.name}</label>
-            <input type="number" name={attribute.name} value={defaultValue}>
-          </div>
-        );
-      } else if (attribute.type === 'boolean') {
-        return (
-          <div class="config-elements">
-            <label>{attribute.name}</label>
-            {
-              ['true', 'false'].map((option) => {
-                const checked = defaultValue === option ? true : false;
-                return (
-                <span class="radio-element">
-                  <input type="radio" name={attribute.name} value={option} {checked}>
-                  <label>{option}</label>
-                </span>
-                )
-              })
-            }
-          </div>
-        );
-      } else if (attribute.type === 'Array') {
-        return (
-          <div class="config-elements">
-            <label>{attribute.name}</label>
-            <input type="text" name={attribute.name} />
-          </div>
-        );
-      }
-    })
-  }
-  {
-    cem.slots && (
-      <h2>Slots</h2>
-    )
-  }
-  {
-    cem.slots?.map((slot) => {
-      return (
-        <div class="slot-elements">
-          <label>{slot.name !== '' ? slot.name : 'default' }</label>
-          <textarea name={slot.name !== '' ? slot.name : 'default'}></textarea>
-        </div>
-      );
-    })
-  }
-  </form>
-</div>
+        } else if (attribute.type?.indexOf("|") > -1) {
+          const options = attribute.type?.replaceAll('"', '').split('|') ?? [];
+          const attributeTitle = (<label>{attribute.name}</label>);
 
-<div class="grid-element preview-code">
-  <NucleusComponentRenderer src={htmlContent} client:visible/>
-  <NucleusCodeSnippet src={htmlContent} client:visible/>
-</div>
+          const optionsHTML = options?.map((option) => {
+            const checked = defaultValue === option ? '' : undefined;
+            return (
+              <div class="radio-element">
+                <label><input type="radio" name={attribute.name} value={option} {checked}> {option}</label>
+              </div>
+            );
+          });
+          return (
+            <div class="config-elements">
+              {attributeTitle}
+              <span class="options">{optionsHTML}</span>
+            </div>
+          );
+        } else if (attribute.type === 'number') {
+          return (
+            <div class="config-elements">
+              <label>{attribute.name}</label>
+              <input type="number" name={attribute.name} value={defaultValue}>
+            </div>
+          );
+        } else if (attribute.type === 'boolean') {
+          return (
+            <div class="config-elements">
+              <label>{attribute.name}</label>
+              <span class="options">
+                {
+                  ['true', 'false'].map((option) => {
+                    const checked = defaultValue === option ? true : false;
+                    return (
+                    <div class="radio-element">
+                      <label><input type="radio" name={attribute.name} value={option} {checked}> {option}</label>
+                    </div>
+                    )
+                  })
+                }
+              </span>
+            </div>
+          );
+        } else if (attribute.type === 'Array') {
+          return (
+            <div class="config-elements">
+              <label>{attribute.name}</label>
+              <input type="text" name={attribute.name} />
+            </div>
+          );
+        }
+      })
+    }
+    {
+      cem.slots && (
+        <h2>Slots</h2>
+      )
+    }
+    {
+      cem.slots?.map((slot) => {
+        return (
+          <div class="slot-elements">
+            <label>{slot.name !== '' ? slot.name : 'Anonymous slot' }</label>
+            <textarea name={slot.name !== '' ? slot.name : 'default'}></textarea>
+          </div>
+        );
+      })
+    }
+    </form>
+  </div>
+
+  <div class="preview">
+    <NucleusComponentRenderer src={htmlContent} client:visible/>
+    <NucleusCodeSnippet src={htmlContent} client:visible/>
+  </div>
 </div>
 <style>
-
   .config-content {
-    display: none;  
+    display: none;
   }
 
-  h2 {
-    color: var(--sl-color-heading);
+  .configurator {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    padding-inline-start: 5%;
+    padding-inline-end: 5%;
+    padding-block-start: 2rem;
+    padding-block-end: 2rem;
   }
 
-  .configure-component {
-    display: block;
-    border: 1px solid var(--sl-color-gray-6);
+  .configure {
+    background-color: var(--sl-color-bg-nav);
+    border-radius: 0.5rem;
     padding: 1rem;
   }
 
-  button {
-    height: 2rem;
-    font-size: var(--sl-text-l);
-    color: var(--sl-color-text);
-    border: 1px solid var(--sl-color-gray-1); 
-    border-radius: 0.5rem;
-  }
+  .form {
+    display: grid;
+    gap: 1rem;
 
-  .config-elements,
-  .slot-elements {
-    padding-block: 0.5rem;
+    [class*="elements"] {
+      display: flex;
+      align-items: start;
 
-    label, input, textarea, button {
-      color: var(--sl-color-text);
+      > label {
+        display: inline-block;
+        min-width: 8rem;
+
+        &::first-letter {
+          text-transform: capitalize;
+        }
+      }
+
+      > input,
+      > textarea {
+        flex: 1 1 auto;
+
+        &:focus-visible {
+          outline-color: var(--sl-color-gray-5);
+        }
+      }
     }
 
-    label {
-      padding-inline-end: 2rem;
-    }
+    .radio-element {
+      display: inline-block;
+      margin-inline-end: 1.5rem;
 
-    input {
-      height: 2rem;
-      font-size: 16px;
-    }
+      &:last-of-type {
+        margin-inline-end: 0;
+      }
 
-     input[type='text'] {
-      width: 30%;
-      border-radius: 0.5rem;
-      border: 1px solid var(--sl-color-gray-1);
-    }
+      label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+      }
 
-    input[type='radio'] {
-      width: 1.25rem;
-      border-radius: 0.5rem;
-      border: 1px solid var(--sl-color-gray-1);
+      input {
+        width: 1rem;
+        height: 1rem;
+      }
     }
 
     textarea {
-      font-family: "Roboto", sans-serif !important;
-      font-size: 16px;
-      width: 40%;
-      border-radius: 0.5rem;
-      border: 1px solid var(--sl-color-gray-1);
+      font-size: 0.85rem;
+      font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;
+      padding-block: 0.36278125rem !important;
+      resize: vertical;
     }
   }
 </style>

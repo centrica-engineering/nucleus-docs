@@ -520,3 +520,74 @@ h1 {
     width: 100%;
   }
 }
+
+.form {
+  /**
+    * [1] Applying a transparent background
+    * [2] Change the font size to inherit from <body>
+    * [3] Setting the font to inherit from <body>
+    * [4] Remove the default margin, padding and border
+    */
+  :is(button, input, optgroup, select, textarea) {
+    background-color: transparent; /* [1] */
+    font-size: inherit; /* [2] */
+    line-height: inherit; /* [2] */
+    font-family: inherit; /* [3] */
+    margin: 0; /* [4] */
+    padding: 0; /* [4] */
+    border: 0; /* [4] */
+  }
+
+  /**
+    * [1] Reset the user agent styles in iOS and Safari
+    * [2] Remove the border radius applied to iOS
+    */
+  :is(button, [type="button"], [type="reset"], [type="submit"]) {
+    -webkit-appearance: button; /* [1] */
+    -webkit-border-radius: 0; /* [2] */
+  }
+
+  /**
+    * Remove the user agent styles from <fieldset>
+    */
+  fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  /**
+    * Reset the default padding for <legend>
+    */
+  legend {
+    padding: 0;
+  }
+
+  & :is(
+  input[type="date"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  select,
+  textarea) {
+    margin: 0; /* NOTE: remove `margin: 2px` Safari user agent */
+    padding-block-start: 0.25rem;
+    padding-block-end: 0.25rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    background-color: var(--sl-color-bg);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--sl-color-gray-6);
+    border-radius: 1rem;
+  }
+
+  label {
+    display: inline-block;
+    padding-block-start: 0.25rem;
+    padding-block-end: 0.25rem;
+  }
+}
