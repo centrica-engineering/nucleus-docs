@@ -189,6 +189,7 @@ main {
     color: var(--sl-color-gray-3) !important;
     text-decoration: none;
     font-weight: 500;
+    cursor: pointer;
     position: relative;
     display: inline-block;
     padding-inline-start: 3rem;
