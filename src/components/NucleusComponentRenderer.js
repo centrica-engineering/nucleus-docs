@@ -23,7 +23,6 @@ export class NucleusComponentRenderer extends LitElement {
         background: #fff;
         border-start-start-radius: 0.5rem;
         border-start-end-radius: 0.5rem;
-        padding: 0.5rem;
         border: 1px solid var(--sl-color-gray-6);
         min-height: var(--iframe-min-height);
       }
@@ -41,6 +40,58 @@ export class NucleusComponentRenderer extends LitElement {
 
         &.viewport-mobile {
           width: 45% !important;
+        }
+      }
+
+      .form {
+        display: flex;
+        background-color: var(--sl-color-bg-nav);
+        padding-inline: 1rem;
+        padding-block: 0.5rem;
+
+        .viewport,
+        .zoom {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+
+          &:last-of-type {
+            margin-inline-start: auto;
+          }
+
+          span {
+            font-weight: 500;
+          }
+        }
+
+        .radio-element {
+          display: inline-block;
+          margin-inline-end: 0.5rem;
+
+          &:last-of-type {
+            margin-inline-end: 0;
+          }
+
+          label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            padding-block-start: 0.25rem;
+            padding-block-end: 0.25rem;
+          }
+
+          input {
+            background-color: transparent;
+            font-size: inherit;
+            line-height: inherit;
+            font-family: inherit;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 1rem;
+            height: 1rem;
+          }
         }
       }
     `;
@@ -123,18 +174,26 @@ export class NucleusComponentRenderer extends LitElement {
           sandbox="allow-scripts allow-same-origin"
           @load=${() => this._iframeHeight()}
         ></iframe>
-      </div>
-      <div class="viewport">
-        <input type="radio" name="viewport" id="mobile-viewport" value="mobile">
-        <label for="mobile-viewport">Mobile</label>
-        <input type="radio" name="viewport" id="desktop-viewport" value="desktop">
-        <label for="desktop-viewport">Desktop</label>
-      </div>
-      <div class="zoom">
-        <input type="radio" name="zoom" id="zoom-in" value="zoom-in">
-        <label for="zoom-in">Zoom in</label>
-        <input type="radio" name="zoom" id="zoom-out" value="zoom-out">
-        <label for="zoom-out">Zoom out</label>
+        <div class="form">
+          <div class="viewport">
+            <span>Viewport</span>
+            <div class="radio-element">
+              <label><input type="radio" name="viewport" value="mobile"> Mobile</label>
+            </div>
+            <div class="radio-element">
+              <label><input type="radio" name="viewport" value="desktop"> Desktop</label>
+            </div>
+          </div>
+          <div class="zoom">
+            <span>Scale</span>
+            <div class="radio-element">
+              <label><input type="radio" name="zoom" value="zoom-in"> 100%</label>
+            </div>
+            <div class="radio-element">
+              <label><input type="radio" name="zoom" value="zoom-out"> 75%</label>
+            </div>
+          </div>
+        </div>
       </div>
     `;
   }

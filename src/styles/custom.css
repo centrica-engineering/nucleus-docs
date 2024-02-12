@@ -522,6 +522,9 @@ h1 {
 }
 
 .form {
+  display: grid;
+  gap: 1rem;
+
   /**
     * [1] Applying a transparent background
     * [2] Change the font size to inherit from <body>
@@ -589,5 +592,57 @@ h1 {
     display: inline-block;
     padding-block-start: 0.25rem;
     padding-block-end: 0.25rem;
+  }
+
+  [class*="elements"] {
+    display: flex;
+    align-items: start;
+
+    > label {
+      display: inline-block;
+      font-weight: 500;
+      min-width: 8rem;
+
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+
+    > input,
+    > textarea {
+      flex: 1 1 auto;
+
+      &:focus-visible {
+        outline-color: var(--sl-color-gray-5);
+      }
+    }
+  }
+
+  .radio-element {
+    display: inline-block;
+    margin-inline-end: 1.5rem;
+
+    &:last-of-type {
+      margin-inline-end: 0;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+    }
+
+    input {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  textarea {
+    font-size: 0.85rem;
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;
+    padding-block: 0.36278125rem !important;
+    resize: vertical;
   }
 }
