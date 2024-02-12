@@ -132,14 +132,15 @@ const htmlContent = Astro.props.src;
 </div>
 <div class="configurator">
   <div class="configure">
+    <h2>Configuration</h2>
     <form class="form">
       <div class="action">
-        <button id="play-config">Run</button>
-        <button id="reset-config">Reset</button>
+        <button class="button primary run" id="play-config">Run</button>
+        <button class="button reset" id="reset-config">Reset</button>
       </div>
     {
       cem?.attributes && (
-        <h2>Attributes</h2>
+        <h3>Attributes</h3>
       )
     }
     {
@@ -207,7 +208,7 @@ const htmlContent = Astro.props.src;
     }
     {
       cem.slots && (
-        <h2>Slots</h2>
+        <h3>Slots</h3>
       )
     }
     {
@@ -224,6 +225,7 @@ const htmlContent = Astro.props.src;
   </div>
 
   <div class="preview">
+    <h2>Preview</h2>
     <NucleusComponentRenderer src={htmlContent} client:visible/>
     <NucleusCodeSnippet src={htmlContent} client:visible/>
   </div>
@@ -244,8 +246,10 @@ const htmlContent = Astro.props.src;
   }
 
   .configure {
-    background-color: var(--sl-color-bg-nav);
-    border-radius: 0.5rem;
-    padding: 1rem;
+    .form {
+      background-color: var(--sl-color-bg-nav);
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
   }
 </style>

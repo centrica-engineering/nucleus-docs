@@ -17,7 +17,7 @@ const htmlContent = await examples[htmlFile];
   {
     isComponentPage && (
       <div class="action">
-        <a class="button" href=`/configure/${slug}/${type}` rel="noopener nofollow" target="_blank">Configure</a>
+        <a class="button secondary configure" href=`/configure/${slug}/${type}` rel="noopener nofollow" target="_blank">Configure</a>
       </div>
     )
   }
@@ -29,43 +29,5 @@ const htmlContent = await examples[htmlFile];
   .action {
     margin-bottom: 20px;
     text-align: right;
-
-    .button {
-      color: var(--sl-color-gray-2);
-      text-decoration: none;
-      font-weight: 500;
-      position: relative;
-      display: inline-block;
-      padding-inline-start: 48px;
-      padding-inline-end: 32px;
-      padding-block: 16px;
-      font-size: var(--sl-text-base);
-      border-radius: 100px; /* NOTE: @drew - 2024-01-05 - random high number to get rounded ends */
-      transition-property: background-color;
-      transition-delay: 0ms;
-      transition-duration: 1000ms;
-      transition-timing-function: ease-in-out;
-      background-color: var(--sl-color-gray-7);
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 1em;
-        transform: translateY(-50%);
-        width: 1.5em;
-        height: 1.5em;
-        background-color: currentColor;
-        mask-image: var(--ns-icon-configure);
-      }
-
-      &:hover {
-        color: var(--sl-color-gray-1);
-      }
-
-      &:focus {
-        background-color: var(--sl-color-gray-6);
-      }
-    }
   }
 </style>
