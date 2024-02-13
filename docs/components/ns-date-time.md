@@ -37,7 +37,7 @@ ns-date-time can be used in any html text element.
 | :--- | :--- | :--- | :--- | :--- |-------------|
 | `date` | `date` | `string` | `YYYY-MM-DDTHH:MM`, `YYYY-MM-DD`, `HH:MM` | | The date and/or time to display |
 | `hide-date` | `hideDate` | `boolean` | `false` | | Whether to hide the date |
-| `hideTime` | `hideTime` | `boolean` | `false` | | Whether to hide the time |
+| `hide-time` | `hideTime` | `boolean` | `false` | | Whether to hide the time |
 | `hideDay` | `hideDay` | `boolean` | `false` | | Whether to hide the day |
 | `hideMonth` | `hideMonth` | `boolean` | `false` | | Whether to hide the month |
 | `hideYear` | `hideYear` | `boolean` | `false` | | Whether to hide the year |
