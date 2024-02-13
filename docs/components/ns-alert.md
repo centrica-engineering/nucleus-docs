@@ -98,10 +98,16 @@ The message must be in plain English, and help the user out of the situation by 
 | `type` | `type` | `string` | `standard` | `standard`, `highlighter` | Type of alert to use |
 | `state` | `state` | `string` | `error` | `error`, `success`, `warning`, `info` | Defines the role of the highlighter and changes the styles |
 
+| Event | Description |
+| :--- | :--- |
+| `close-alert` | Will be dispatched when the alert is dismissed. |
+
 | Slots | Type |
 | :--- | :--- |
 | `heading` | `h tag` |
 | Anonymous | `p tag` |
+
+
 
 ## Feedback
 
