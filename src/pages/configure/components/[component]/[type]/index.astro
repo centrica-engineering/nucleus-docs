@@ -1,4 +1,8 @@
 ---
+import '/node_modules/@astrojs/starlight/style/props.css';
+import '/node_modules/@astrojs/starlight/style/reset.css';
+import '/node_modules/@astrojs/starlight/style/shiki.css';
+import '/node_modules/@astrojs/starlight/style/util.css';
 import '../../../../../styles/custom.css';
 import ExampleConfigure from '../../../../../components/ExampleConfigure.astro';
 import cesm from '@connectedhomes/nucleus/custom-elements.json';
@@ -40,28 +44,36 @@ export function getStaticPaths() {
   });
 }
 ---
-<html  data-theme="light">
-  <main>
-    <h1>{component}</h1>
-    <div class="config-column">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurator</title>
+  </head>
+  <body>
+    <header>
+      <h1>{component}</h1>
+    </header>
+    <main>
       <ExampleConfigure componentName={component} src={htmlContent}>
         <Fragment set:html={htmlContent} />
       </ExampleConfigure>
-    </div>
-  </main>
+    </main>
 
-  <style>
-    main {
-      font-family: "Roboto", sans-serif;
-      font-size: 16px;
-      background-color: var(--sl-color-bg-config);
-    }
+    <style>
+      header {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        height: var(--sl-nav-height);
+        background-color: var(--sl-color-bg-nav);
+      }
 
-    .config-content {
-      display: none;  
-    }
+      .config-content {
+        display: none;
+      }
+    </style>
 
-
-  </style>
-
+  </body>
 </html>
