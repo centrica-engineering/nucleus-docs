@@ -124,7 +124,6 @@
   --ns-color-purple: hsl(var(--ns-hue-purple), 43%, 35%);
   --ns-color-green: hsl(var(--ns-hue-green), 43%, 35%);
   --ns-color-red: hsl(var(--ns-hue-red), 99%, 39%);
-  
 
   /* Light mode */
   --sl-color-white: var(--ns-color-black);

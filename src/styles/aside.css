@@ -4,37 +4,37 @@
 }
 
 .starlight-aside--note {
-  --sl-color-asides-text-accent: var(--ns-color-indigo-high);
+  --sl-color-asides-text-accent: var(--ns-color-indigo);
   border-color: var(--ns-color-indigo);
   background-color: var(--ns-color-indigo-low);
 }
 
 .starlight-aside--tip {
-  --sl-color-asides-text-accent: var(--ns-color-purple-high);
+  --sl-color-asides-text-accent: var(--ns-color-purple);
   border-color: var(--ns-color-purple);
   background-color: var(--ns-color-purple-low);
 }
 
 .starlight-aside--caution {
-  --sl-color-asides-text-accent: var(--ns-color-orange-high);
+  --sl-color-asides-text-accent: var(--ns-color-orange);
   border-color: var(--ns-color-orange);
   background-color: var(--ns-color-orange-low);
 }
 
 .starlight-aside--danger {
-  --sl-color-asides-text-accent: var(--ns-color-red-high);
+  --sl-color-asides-text-accent: var(--ns-color-red);
   border-color: var(--ns-color-red);
   background-color: var(--ns-color-red-low);
 }
 
 .starlight-aside--dont {
-  --sl-color-asides-text-accent: var(--ns-color-red-high);
+  --sl-color-asides-text-accent: var(--ns-color-red);
   border-color: var(--ns-color-red);
   background-color: var(--ns-color-red-low);
 }
 
 .starlight-aside--do {
-  --sl-color-asides-text-accent: var(--ns-color-green-high);
+  --sl-color-asides-text-accent: var(--ns-color-green);
   border-color: var(--ns-color-green);
   background-color: var(--ns-color-green-low);
 }
