@@ -36,11 +36,11 @@ ns-date-time can be used in any html text element.
 | Attribute | Property | Type | Default | Options | Description |
 | :--- | :--- | :--- | :--- | :--- |-------------|
 | `date` | `date` | `string` | | `YYYY-MM-DDTHH:MM`, `YYYY-MM-DD`, `HH:MM` | The date and/or time to display |
-| `hideDate` | `hideDate` | `boolean` | `false` | | Whether to hide the date |
-| `hideTime` | `hideTime` | `boolean` | `false` | | Whether to hide the time |
-| `hideDay` | `hideDay` | `boolean` | `false` | | Whether to hide the day |
-| `hideMonth` | `hideMonth` | `boolean` | `false` | | Whether to hide the month |
-| `hideYear` | `hideYear` | `boolean` | `false` | | Whether to hide the year |
+| `hide-date` | `hideDate` | `boolean` | `false` | | Whether to hide the date |
+| `hide-time` | `hideTime` | `boolean` | `false` | | Whether to hide the time |
+| `hide-day` | `hideDay` | `boolean` | `false` | | Whether to hide the day |
+| `hide-month` | `hideMonth` | `boolean` | `false` | | Whether to hide the month |
+| `hide-year` | `hideYear` | `boolean` | `false` | | Whether to hide the year |
 
 ## Specification notes
 
