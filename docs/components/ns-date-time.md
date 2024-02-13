@@ -39,7 +39,7 @@ ns-date-time can be used in any html text element.
 | `hide-date` | `hideDate` | `boolean` | `false` | | Whether to hide the date |
 | `hide-time` | `hideTime` | `boolean` | `false` | | Whether to hide the time |
 | `hideDay` | `hideDay` | `boolean` | `false` | | Whether to hide the day |
-| `hideMonth` | `hideMonth` | `boolean` | `false` | | Whether to hide the month |
+| `hide-month` | `hideMonth` | `boolean` | `false` | | Whether to hide the month |
 | `hide-year` | `hideYear` | `boolean` | `false` | | Whether to hide the year |
 
 ## Specification notes
