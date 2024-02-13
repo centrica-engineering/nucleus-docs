@@ -15,14 +15,14 @@
 
   --ns-color-white: hsl(0, 0%, 100%);
   --ns-color-teal: hsl(var(--ns-hue-teal), 40%, 32%);
-  --ns-color-red: hsl(var(--ns-hue-red), 99%, 39%);
-  --ns-color-orange: hsl(var(--ns-hue-orange), 74%, 59%);
+  --ns-color-red: hsl(var(--ns-hue-red), 99%, 66%);
+  --ns-color-orange: hsl(var(--ns-hue-orange), 74%, 66%);
   --ns-color-pink: hsl(var(--ns-hue-pink), 60%, 54%);
   --ns-color-magenta: hsl(var(--ns-hue-magenta), 52%, 41%);
-  --ns-color-purple: hsl(var(--ns-hue-purple), 43%, 35%);
-  --ns-color-indigo: hsl(var(--ns-hue-indigo), 43%, 35%);
+  --ns-color-purple: hsl(var(--ns-hue-purple), 43%, 66%);
+  --ns-color-indigo: hsl(var(--ns-hue-indigo), 43%, 66%);
   --ns-color-blue: hsl(var(--ns-hue-blue), 57%, 29%);
-  --ns-color-green: hsl(var(--ns-hue-green), 43%, 35%);
+  --ns-color-green: hsl(var(--ns-hue-green), 43%, 66%);
   --ns-color-navy: hsl(var(--ns-hue-navy), 75%, 23%);
   --ns-color-black: hsl(var(--ns-hue-teal), 40%, 5%);
 
@@ -38,14 +38,19 @@
   --ns-color-base-800: hsl(var(--ns-hue-base), 40%, 16%);
   --ns-color-base-900: hsl(var(--ns-hue-base), 40%, 9%);
 
-  /* Map Nucleus colours to Starlight variables */
+  /* Aside colours */
+  --ns-color-orange-low: hsl(var(--ns-hue-orange), 74%, 16%);
+  --ns-color-orange-high: hsl(var(--ns-hue-orange), 74%, 97%);
+  --ns-color-indigo-low: hsl(var(--ns-hue-indigo), 43%, 16%);
+  --ns-color-indigo-high: hsl(var(--ns-hue-indigo), 43%, 97%);
+  --ns-color-purple-low: hsl(var(--ns-hue-purple), 43%, 16%);
+  --ns-color-purple-high: hsl(var(--ns-hue-purple), 43%, 97%);
+  --ns-color-red-low: hsl(var(--ns-hue-red), 99%, 16%);
+  --ns-color-red-high: hsl(var(--ns-hue-red), 99%, 97%);
+  --ns-color-green-low: hsl(var(--ns-hue-green), 43%, 16%);
+  --ns-color-green-high: hsl(var(--ns-hue-green), 43%, 97%);
 
-  /* Hues */
-  --sl-hue-orange: var(--ns-hue-orange);
-  --sl-hue-green: var(--ns-hue-green);
-  --sl-hue-blue: var(--ns-hue-blue);
-  --sl-hue-purple: var(--ns-hue-purple);
-  --sl-hue-red: var(--ns-hue-red);
+  /* Map Nucleus colours to Starlight variables */
 
   /* Dark mode */
   --sl-color-white: var(--ns-color-white);
@@ -113,6 +118,13 @@
 }
 
 :root[data-theme='light'] {
+
+  --ns-color-indigo: hsl(var(--ns-hue-indigo), 43%, 35%);
+  --ns-color-orange: hsl(var(--ns-hue-orange), 74%, 43%);
+  --ns-color-purple: hsl(var(--ns-hue-purple), 43%, 35%);
+  --ns-color-green: hsl(var(--ns-hue-green), 43%, 35%);
+  --ns-color-red: hsl(var(--ns-hue-red), 99%, 39%);
+
   /* Light mode */
   --sl-color-white: var(--ns-color-black);
   --sl-color-gray-1: var(--ns-color-base-700);
@@ -136,6 +148,18 @@
 
   --sl-color-text: var(--ns-color-navy);
   --sl-color-heading: var(--ns-color-navy);
+
+  /* Aside colours */
+  --ns-color-orange-high: hsl(var(--ns-hue-orange), 74%, 23%);
+  --ns-color-orange-low: hsl(var(--ns-hue-orange), 74%, 97%);
+  --ns-color-indigo-high: hsl(var(--ns-hue-indigo), 43%, 23%);
+  --ns-color-indigo-low: hsl(var(--ns-hue-indigo), 43%, 97%);
+  --ns-color-purple-high: hsl(var(--ns-hue-purple), 43%, 23%);
+  --ns-color-purple-low: hsl(var(--ns-hue-purple), 43%, 97%);
+  --ns-color-red-high: hsl(var(--ns-hue-red), 99%, 23%);
+  --ns-color-red-low: hsl(var(--ns-hue-red), 99%, 97%);
+  --ns-color-green-high: hsl(var(--ns-hue-green), 43%, 23%);
+  --ns-color-green-low: hsl(var(--ns-hue-green), 43%, 97%);
 }
 
 .header {
