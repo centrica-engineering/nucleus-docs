@@ -4,60 +4,60 @@ import { border } from "./tokens";
 const { type } = Astro.props;
 ---
 
-<div class="ns-borders">
-  <slot />
-  {
-    border && type && border[type] && (
-      <div class={`ns-border-grid border-${type}`}>
-      {
-        border[type].map(([key, value], i) => {
-          const style = `--ns-${type}: ${value};`;
-          const labelValue = key.substring(key.lastIndexOf('_') + 1, key.length);
-          return (
-            <div class="ns-border-container">
-              <label>{labelValue}</label>
-              <div class={`${type}-box`} style={style}></div>
-              <label>{value}</label>
-              <label><code>{key}</code></label>
-            </div>
-          )
-        })
-      }
+<slot />
+
+{
+  border && type && border[type] && border[type].map(([key, value], i) => {
+    const style = `--ns-${type}: ${value};`;
+    const labelValue = key.substring(key.lastIndexOf('_') + 1, key.length);
+    return (
+      <div class={`ns-border ${type}`}>
+        <div class="swatch" style={style}></div>
+        <span class="name">{labelValue}</span>
+        <span class="value"><code>{value}</code></span>
+        <span><code>{key}</code></span>
       </div>
-    )
-  }
-</div>
+    );
+  })
+}
 
 <style>
-  .ns-border-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1rem;
-    row-gap: 2rem;
+  .ns-border {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
 
-    .ns-border-container {
-      padding: 1rem !important;
+    .name {
+      font-size: 1.25rem;
+      font-weight: 500;
+      text-transform: lowercase;
+      min-width: 10ch;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    &.radius {
+      .swatch {
+        border-radius: var(--ns-radius);
+        background-color: var(--sl-color-gray-5);
+      }
+    }
+
+    &.width {
+      .swatch {
+        border-style: solid;
+        border-width: var(--ns-width);
+        border-color: var(--sl-color-gray-5);
+      }
     }
   }
 
-  .ns-border-grid > :global(*) {
-    margin-top: 0 !important;
-  }
-
-  .border-radius {
-    .radius-box {
-      height: 2.5rem;
-      width: 2.5rem;
-      border: 1px solid var(--sl-color-gray-5);
-      border-radius: var(--ns-radius);
-    }
-  }
-
-  .border-width {
-    .width-box {
-      height: 2.5rem;
-      width: 2.5rem;
-      border: var(--ns-width) solid var(--sl-color-gray-5);
-    }
+  .swatch {
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 </style>
