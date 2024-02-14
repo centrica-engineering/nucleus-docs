@@ -99,10 +99,16 @@ The message must be in plain English, and help the user out of the situation by 
 | `state` | `state` | `string` | `error` | `error`, `success`, `warning`, `info` | Defines the role of the highlighter and changes the styles |
 | `dismissible` | `dismissible` | `boolean` | | | Whether the alert can be dismissed |
 
+| Event | Description |
+| :--- | :--- |
+| `close-alert` | Will be dispatched when the alert is dismissed. |
+
 | Slots | Type |
 | :--- | :--- |
 | `heading` | `h tag` |
 | Anonymous | `p tag` |
+
+
 
 ## Feedback
 
