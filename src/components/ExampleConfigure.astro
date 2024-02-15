@@ -42,11 +42,11 @@ const htmlContent = Astro.props.src;
           slotMap.default.push(element);
         }
       });
-    }
 
-    const slottedElement = document.querySelector(`[name='default']`);
-    if (slottedElement) {
-      slottedElement.value = slotMap.default.map(element => element.outerHTML).join('');
+      const slottedElement = document.querySelector(`[name='default']`);
+      if (slottedElement) {
+        slottedElement.value = slotMap.default.map(element => element.outerHTML).join('');
+      }
     }
   }
 
