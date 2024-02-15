@@ -1,10 +1,24 @@
 ---
-import type { Props } from '@astrojs/starlight/Props.astro';
+import type { Props } from '@astrojs/starlight/props';
 
-import Default from '@astrojs/starlight/components/PageSidebar.astro';
+import TableOfContents from './TableOfContents.astro';
+import MobileTableOfContents from '@astrojs/starlight/components/MobileTableOfContents.astro';
 ---
 
-<Default {...Astro.props} />
+{
+	Astro.props.toc && (
+		<>
+			<div class="lg:sl-hidden">
+				<MobileTableOfContents {...Astro.props} />
+			</div>
+			<div class="right-sidebar-panel sl-hidden lg:sl-block">
+				<div class="sl-container">
+					<TableOfContents {...Astro.props} />
+				</div>
+			</div>
+		</>
+	)
+}
 
 <style>
   .right-sidebar-panel {
