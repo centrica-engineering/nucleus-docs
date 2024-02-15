@@ -621,31 +621,6 @@ h1 {
   }
 }
 
-.right-sidebar-panel {
-  padding-inline-start: 1rem;
-  padding-inline-end: var(--sl-content-pad-x);
-  padding-block-start: 0;
-  padding-block-end: 0;
-
-  .sl-container {
-    width: inherit;
-  }
-
-  h2 {
-    font-weight: 500;
-    color: var(--sl-color-text);
-    font-size: var(--sl-text-lg);
-  }
-
-  li {
-    margin-block: 0.5rem;
-  }
-
-  a {
-    font-size: var(--sl-text-base);
-  }
-}
-
 .layout:has(.homepage) {
   display: block;
 

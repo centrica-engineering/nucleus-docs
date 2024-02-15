@@ -1,0 +1,51 @@
+---
+import type { Props } from '@astrojs/starlight/Props.astro';
+
+import Default from '@astrojs/starlight/components/PageSidebar.astro';
+---
+
+<Default {...Astro.props} />
+
+<style>
+  .right-sidebar-panel {
+    padding-inline-start: 1rem;
+    padding-inline-end: var(--sl-content-pad-x);
+    padding-block-start: 0;
+    padding-block-end: 0;
+  }
+
+  .sl-container {
+    width: inherit;
+  }
+
+  .right-sidebar-panel :global(h2) {
+    color: var(--sl-color-text);
+    font-size: var(--sl-text-lg);
+    font-weight: 500;
+    line-height: var(--sl-line-height-headings);
+    margin-bottom: 0.5rem;
+  }
+  .right-sidebar-panel :global(li) {
+    margin-block: 0.5rem;
+  }
+
+  .right-sidebar-panel :global(a) {
+    display: block;
+    font-size: var(--sl-text-base);
+    text-decoration: none;
+    color: var(--sl-color-gray-3);
+    overflow-wrap: anywhere;
+  }
+
+  .right-sidebar-panel :global(a:hover) {
+    color: var(--sl-color-white);
+  }
+
+  @media (min-width: 72rem) {
+    .sl-container {
+      max-width: calc(((100vw - var(--sl-sidebar-width) - 2 * var(--sl-content-pad-x) - 2 * var(--sl-sidebar-pad-x)) * 0.25
+            /* MAGIC NUMBER 🥲 */
+          ));
+    }
+  }
+</style>

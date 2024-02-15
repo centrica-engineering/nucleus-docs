@@ -126,7 +126,8 @@ export default defineConfig({
         TableOfContents: "./src/components/starlight/TableOfContents.astro",
         // ThemeSelect: './src/components/starlight/ThemeSelect.astro',
         TwoColumnContent: "./src/components/starlight/TwoColumnContent.astro",
-        Sidebar: "./src/components/starlight/Sidebar.astro"
+        Sidebar: "./src/components/starlight/Sidebar.astro",
+        PageSidebar: "./src/components/starlight/PageSidebar.astro",
       },
       expressiveCode: {
         themes: ["github-dark", "github-light"],
