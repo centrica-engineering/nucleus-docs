@@ -2,6 +2,7 @@ import { LitElement, html, css } from 'lit';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { createRenderer } from 'remark-expressive-code';
 import { toHtml } from 'hast-util-to-html';
+import htmlBeautifier from 'beauty-html';
 import { Task } from '@lit/task';
 
 export class NucleusCodeSnippet extends LitElement {
@@ -46,7 +47,7 @@ export class NucleusCodeSnippet extends LitElement {
           ${htmlContentParts[1]}`;
         return html`${unsafeHTML(htmlContent)}`;
       },
-      args: () => [this.src]
+      args: () => [new htmlBeautifier().beautify(this.src)]
     });
   }
 
