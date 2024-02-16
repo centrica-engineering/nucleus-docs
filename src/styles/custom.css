@@ -452,6 +452,20 @@ h1 {
     display: table; /* [2] */
     width: 100%; /* [3] */
 
+    th {
+      border-block-start-width: 0;
+      border-block-end-width: 2px;
+      border-inline-start-width: 0;
+      border-inline-end-width: 0;
+    }
+
+    td {
+      border-block-start-width: 0;
+      border-block-end-width: 1px;
+      border-inline-start-width: 0;
+      border-inline-end-width: 0;
+    }
+
     code {
       white-space: nowrap; /* [4] */
     }
@@ -463,6 +477,31 @@ h1 {
     th,
     td {
       text-align: left; /* [6] */
+    }
+
+    .marker {
+      position: relative;
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      text-align: center;
+      padding-block-start: 0.25em;
+      color: var(--sl-color-text-invert);
+
+      &:before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        border-width: 2px;
+        border-style: solid;
+        border-color: var(--sl-color-white);
+        background-color: var(--sl-color-accent-high);
+      }
     }
   }
 }
