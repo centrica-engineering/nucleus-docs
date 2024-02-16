@@ -56,7 +56,7 @@ export function getStaticPaths() {
       <h1>{component}</h1>
     </header>
     <main>
-      <a href=`/components/${component}`>Back</a>
+      <a href=`/components/${component}`><code>{component}</code> documentation page</a>
       <ExampleConfigure componentName={component} src={htmlContent}>
         <Fragment set:html={htmlContent} />
       </ExampleConfigure>
