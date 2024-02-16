@@ -10,6 +10,12 @@ import cesm from '@connectedhomes/nucleus/custom-elements.json';
 const customElement = customElements.find((customElement) => customElement.name === componentName);
 const cem = cesm.tags.find((tag) => tag.name === componentName);
 const htmlContent = Astro.props.src;
+
+const attributes = cem?.attributes;
+const typeAttributeIndex = attributes?.findIndex((attribute) => attribute.name === 'type');
+const typeAttribute = attributes?.splice(typeAttributeIndex, 1);
+attributes?.splice(0, 0, typeAttribute[0]);
+
 ---
 <script>
   function populateConfig() {
@@ -114,7 +120,11 @@ const htmlContent = Astro.props.src;
     const tempContainer = document.createElement("div");
     tempContainer.appendChild(componentCopy);
 
-    changedElements?.forEach((changedElement) => componentCopy.setAttribute(changedElement.name, changedElement.value));
+    changedElements?.forEach((changedElement) => {
+      if(changedElement.value) {
+        componentCopy.setAttribute(changedElement.name, changedElement.value);
+      }
+    });
 
     const slottedElements = document.querySelectorAll('.slot-elements textarea');
     const slottedValue = [];
