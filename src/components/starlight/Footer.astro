@@ -19,6 +19,10 @@ const githubEditUrl =
     : editUrl;
 ---
 
+<div class="last-updated">
+  <LastUpdated {...Astro.props} />
+</div>
+
 <footer class="footer">
   <div class="page-footer">
     <h3>Found a problem with the content on this page?</h3>
@@ -51,7 +55,6 @@ const githubEditUrl =
       </li>
     </ul>
     <p>Want to get more involved with Nucleus Docs? <br> <a href="#!">Learn how to contribute</a> and be part of our growing community. 🌟</p>
-    <LastUpdated {...Astro.props} />
 
     <div class="logo">
       {
@@ -95,6 +98,10 @@ const githubEditUrl =
     background-position: center;
     background-size: 300px;
     background-repeat: repeat;
+  }
+
+  .last-updated {
+    text-align: end;
   }
 
   .page-footer {
