@@ -36,11 +36,11 @@ const githubEditUrl =
         <p>If you spot an issue, you can propose changes directly on GitHub. Your input matters!</p>
       </li>
       <li>
-        <a href={`${issueURL}?assignees=&amp;labels=Type: Bug&amp;title=%5B${pageSlug}%5D`} target="_blank" rel="noopener noreferrer">
-          Report a content issue
+        <a href={`${issueURL}?assignees=&template=a--bug-report.md&labels=Type%3A+Bug&title=[${pageSlug}]`} target="_blank" rel="noopener noreferrer">
+          Report an issue
           <Icon name="external" size="1em" />
         </a>
-        <p>If something doesn't look right, let us know. We appreciate your help in keeping our content accurate and helpful.</p>
+        <p>If something doesn't look right, let us know. We appreciate your help in keeping our documentation accurate and helpful.</p>
       </li>
       <li>
         <a href={`${viewURL}${pageSlug}.mdx`} target="_blank" rel="noopener noreferrer">
