@@ -4,35 +4,8 @@ import Colour from '@components/Colour.astro';
 const { type } = Astro.props;
 ---
 
-<div class="ns-colors">
-  <slot />
-  <div class={`ns-color-grid color-${type}`}>
-    {
-      colors[type]?.map(([key, value], i) => <Colour name={key} value={value} />)
-    }
-  </div>
-</div>
+<slot />
 
-<style>
-  .ns-color-grid {
-    display: grid;
-    gap: 1rem;
-  }
-
-  .ns-color-grid > :global(*) {
-    margin-top: 0 !important;
-  }
-
-  @media (min-width: 50rem) {
-    .ns-color-grid {
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-    }
-  }
-  @media (min-width: 70rem) {
-    .ns-color-grid {
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 2rem;
-    }
-  }
-</style>
+{
+  colors[type]?.map(([key, value], i) => <Colour name={key} value={value} />)
+}
