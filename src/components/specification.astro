@@ -55,10 +55,41 @@ const events = compDetails?.events;
                 </div>
                 )
               }
-              <div>
-                <dt>Type</dt>
-                <dd>{property.type?.split('|')?.map((type) => <span><code>{type.replaceAll('"','')}</code>&#32;</span>)}</dd>
-              </div>
+              {
+                property.type?.indexOf('|') > -1 ? (
+                  <div>
+                    <dt>Type</dt>
+                    <dd><span><code>string</code>&#32;</span></dd>
+                  </div>
+                  <div>
+                    <dt>Options</dt>
+                    <dd>{property.type?.split('|')?.map((type) => <span><code>{type.replaceAll('"','')}</code>&#32;</span>)}</dd>
+                  </div>
+                ) : (
+                  <div>
+                    <dt>Type</dt>
+                    <dd>{property.type ? <span><code>{property.type.replaceAll('"','')}</code>&#32;</span> : <> </>} </dd>
+                  </div>
+                )
+              }
+              {
+                (property.name === 'icon' || (name === 'ns-icon' && property.name === 'name') || (property.description?.includes('icon'))) 
+                && (
+                  <div>
+                    <dt>Options</dt>
+                    <dd>Refer <a href="/guidelines/assets/#icons">icons library</a> for the list of avaiable icons.</dd>
+                  </div>
+                )
+              }
+              {
+                (property.name === 'illustration' || (name === 'ns-illustration' && property.name === 'name') || (property.description?.includes('illustration'))) 
+                && (
+                  <div>
+                    <dt>Options</dt>
+                    <dd>Refer <a href="/guidelines/assets/#illustrations">illustrations library</a> for the list of avaiable illustrations.</dd>
+                  </div>
+                )
+              }
               {
                 property.default && (
                   <div>
