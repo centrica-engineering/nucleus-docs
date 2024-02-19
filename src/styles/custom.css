@@ -584,9 +584,6 @@ h1 {
       padding-block-start: 0.5rem;
       padding-block-end: 0.5rem;
 
-      span {
-      }
-
       &:hover {
         color: var(--sl-color-white);
       }
