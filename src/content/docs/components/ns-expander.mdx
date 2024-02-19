@@ -34,6 +34,17 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 :::dont
 :::
 
+### Standard
+
+![Labelled diagram of ns-expander](@assets/components/ns-expander/guidance-accordion.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Heading | The heading is there to introduce the content placed in the expander's anonymous slot. When the heading is clicked the component opens to reveal the content.   |
+| <span class="marker">B</span> | Content | The expander can accommodate multiple paragraphs. These should be concise, using sub-headings to split large paragraphs. It can contain bold copy `<b>`, inline links `<a>`, and lists `<ul>` `<ol>`. We recommend to use `ns-content` as a container for the html content.|
+
 ## Implementation
 
 ### Placement
