@@ -6,9 +6,16 @@ import { rehypeHeadingIds } from '@astrojs/markdown-remark';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import customElements from "@connectedhomes/nucleus/ce-doc.json";
 import cem from "@connectedhomes/nucleus/custom-elements.json";
+import badges from "./src/data/badge.json";
 import { nucleusRemarkAside } from "./src/plugins/nucleus-remark-aside";
 
 const isDeprecated = (componentName) =>  cem.tags.find((tag) => tag.name === componentName)?.deprecated;
+const badge = (componentName) => {
+  const componentBadge = badges.components?.find((component) => component.name === componentName)?.badge;
+  return {
+    badge: componentBadge
+  }
+};
 
 const componentSidebar = () => {
   return {
@@ -20,7 +27,8 @@ const componentSidebar = () => {
       .map((customElement) => {
         return {
           label: customElement['display-name'],
-          link: `/components/${customElement.name}`
+          link: `/components/${customElement.name}`,
+          ...badge(customElement.name)
         }
       }),
       {
@@ -31,7 +39,8 @@ const componentSidebar = () => {
           .map((customElement) => {
             return {
               label: customElement['display-name'],
-              link: `/components/${customElement.name}`
+              link: `/components/${customElement.name}`,
+              ...badge(customElement.name)
             }
           }),
       },
@@ -43,7 +52,8 @@ const componentSidebar = () => {
           .map((customElement) => {
             return {
               label: customElement['display-name'],
-              link: `/components/${customElement.name}`
+              link: `/components/${customElement.name}`,
+              ...badge(customElement.name)
             }
           }),
       },
