@@ -577,34 +577,24 @@ h1 {
     a {
       position: relative;
       font-size: var(--sl-text-base);
-      padding-inline-start: 0;
-      padding-inline-end: 0;
-      padding-block-start: 0.25rem;
-      padding-block-end: 0.25rem;
+      display: block;
+      border-radius: 0.25rem;
+      padding-inline-start: 1rem;
+      padding-inline-end: 0.5rem;
+      padding-block-start: 0.5rem;
+      padding-block-end: 0.5rem;
 
       span {
-        display: block;
-        border-radius: 0.25rem;
-        padding-inline-start: 1rem;
-        padding-inline-end: 0.5rem;
-        padding-block-start: 0.5rem;
-        padding-block-end: 0.5rem;
       }
 
       &:hover {
-        span {
-          color: var(--sl-color-white);
-        }
+        color: var(--sl-color-white);
       }
 
       &[aria-current="page"] {
         font-weight: 400;
-        background-color: transparent;
+        background-color: var(--sl-color-gray-6);
         color: var(--sl-color-text);
-
-        span {
-          background-color: var(--sl-color-gray-6);
-        }
 
         &::before {
           content: "";
