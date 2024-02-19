@@ -2,14 +2,16 @@
 import { icons } from '@connectedhomes/nucleus-util/brands/british-gas';
 ---
 
-<div class="icons not-content">
+<div class="icons">
   {
     icons && 
     icons.map((icon, i) => {
       return (
         <div class="icon">
-          <p>{icon.name}</p>
           <div class="svg" set:html={icon.svg} />
+          <span class="label">
+            <code>{icon.name}</code>
+          </span>
         </div>
       );
     })
@@ -19,13 +21,36 @@ import { icons } from '@connectedhomes/nucleus-util/brands/british-gas';
 <style>
   .icons {
     display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 1rem;
-      row-gap: 2rem;;
+    grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+    gap: 1rem;
+    color: var(--sl-color-white);
+
+    .icon {
+      margin-block-start: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      aspect-ratio: 1 / 1;
+      overflow-wrap: anywhere;
+    }
 
     .svg {
-      height: 4rem;
-      width: 4rem;
+      height: 2rem;
+      width: 2rem;
+
+      svg {
+        fill: currentColor;
+      }
+    }
+
+    .label {
+      text-align: center;
+      line-height: normal;
+
+      code {
+        font-size: var(--sl-text-2xs);
+      }
     }
   }
 </style>
