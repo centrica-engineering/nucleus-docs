@@ -1,4 +1,5 @@
 ---
+import LinkToComponent from "./LinkToComponent.astro";
 const { name } = Astro.props;
 import cem from "@connectedhomes/nucleus/custom-elements.json";
 import jsdoc from "@connectedhomes/nucleus/ce-doc.json";
@@ -92,7 +93,7 @@ const events = compDetails?.events;
               <tr>
                 <td>{slot.name ? <code>{slot.name}</code> : 'Anonymous slot' }</td>
                 <td>
-                  {slot.permittedTagNames?.map((tag) => <span><code>&lt;{tag}&gt;</code>&#32;</span>)}
+                  {slot.permittedTagNames?.map((tag) => <span><LinkToComponent name={tag}/>&#32;</span>)}
                 </td>
                 <td>{slot.description}</td>
               </tr>
