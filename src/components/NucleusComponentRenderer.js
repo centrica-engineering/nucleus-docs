@@ -1,15 +1,18 @@
 import { LitElement, html, css } from 'lit';
 import { styleMap } from 'lit/directives/style-map.js';
 import { classMap } from 'lit/directives/class-map.js';
+import ceDoc from '@connectedhomes/nucleus/ce-doc.json';
 
 export class NucleusComponentRenderer extends LitElement {
 
   static get properties() {
     return {
+      name: { type: String },
       src: { type: String },
       _minHeight: { type: Number, state: true },
       _zoom: { type: Boolean, state: true },
-      _viewport: { type: String, state: true }
+      _viewport: { type: String, state: true },
+      _customElement: { type: Object, state: true }
     }
   }
 
@@ -105,18 +108,27 @@ export class NucleusComponentRenderer extends LitElement {
     this._zoom = 'zoom-out';
   }
 
+  willUpdate() {
+    if (this.name) {
+      this._customElement = ceDoc.find((ce) => ce.name === this.name);
+    }
+  }
+
   get doc() {
+    const wrapper = this._customElement?.placements?.includes('main') ? this.src : `
+      <ns-panel>
+        <div>
+          ${this.src}
+        </div>
+      </ns-panel>
+    `;
     return `
       <head>
         <script src="https://www.britishgas.co.uk/nucleus/nucleus.min.js" type="text/javascript"></script>
       </head>
       <body>
         <main class="ndsn" id="content">
-          <ns-panel>
-            <div>
-              ${this.src}
-            </div>
-          </ns-panel>
+          ${wrapper}
         </main>
       </body>
     `;
