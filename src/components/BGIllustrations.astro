@@ -1,14 +1,14 @@
 ---
-import { illustrations } from '@connectedhomes/nucleus-util/brands/british-gas';
+import { illustrationOptions } from '@scripts/assets';
 ---
 
 <div class="illustrations">
   {
-    illustrations && 
-    illustrations.map((illustration, i) => {
+    illustrationOptions && 
+    illustrationOptions().map((illustration, i) => {
       return (
         <div class="illustration">
-          <div class="svg" set:html={illustration.svg?.replace('<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"', '<svg ')} />
+          <div class="svg" set:html={illustration.svg} />
           <span class="label">
             <code>{illustration.name}</code>
           </span>
