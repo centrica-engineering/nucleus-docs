@@ -4,10 +4,10 @@ import { NucleusCodeSnippet } from './NucleusCodeSnippet';
 
 const { slug } = Astro.params;
 const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
+const componentName = slug?.replace('components/', '');
 
 const { type } = Astro.props;
 const exampleFileMatcher = `/assets/${slug}/${type}.html`;
-
 const examples = import.meta.glob("../assets/**/*.html", { import: 'default', as: 'raw', eager: true});
 const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
 const htmlContent = await examples[htmlFile];
@@ -21,7 +21,7 @@ const htmlContent = await examples[htmlFile];
       </div>
     )
   }
-  <NucleusComponentRenderer src={htmlContent} client:only="lit"/>
+  <NucleusComponentRenderer src={htmlContent} name={componentName} client:only="lit"/>
   <NucleusCodeSnippet src={htmlContent} client:visible />
 </div>
 
