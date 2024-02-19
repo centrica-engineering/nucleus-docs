@@ -38,6 +38,10 @@
   --ns-color-base-800: hsl(var(--ns-hue-base), 40%, 16%);
   --ns-color-base-900: hsl(var(--ns-hue-base), 40%, 9%);
 
+  /* Special colours for the Content guidance 'marker' */
+  --ns-color-pink-marker: hsl(317, 86%, 86%);
+  --ns-color-grey-marker: hsl(290, 3%, 40%);
+
   /* Aside colours */
   --ns-color-orange-low: hsl(var(--ns-hue-orange), 74%, 16%);
   --ns-color-orange-high: hsl(var(--ns-hue-orange), 74%, 97%);
@@ -485,8 +489,9 @@ h1 {
       width: 2em;
       height: 2em;
       text-align: center;
+      font-weight: 700;
       padding-block-start: 0.25em;
-      color: var(--sl-color-text-invert);
+      color: var(--ns-color-base-900);
 
       &:before {
         z-index: -1;
@@ -499,8 +504,8 @@ h1 {
         border-radius: 50%;
         border-width: 2px;
         border-style: solid;
-        border-color: var(--sl-color-white);
-        background-color: var(--sl-color-accent-high);
+        border-color: var(--ns-color-grey-marker);
+        background-color: var(--ns-color-pink-marker);
       }
     }
   }
