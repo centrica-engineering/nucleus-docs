@@ -38,6 +38,10 @@
   --ns-color-base-800: hsl(var(--ns-hue-base), 40%, 16%);
   --ns-color-base-900: hsl(var(--ns-hue-base), 40%, 9%);
 
+  /* Special colours for the Content guidance 'marker' */
+  --ns-color-pink-marker: hsl(317, 86%, 86%);
+  --ns-color-grey-marker: hsl(290, 3%, 40%);
+
   /* Aside colours */
   --ns-color-orange-low: hsl(var(--ns-hue-orange), 74%, 16%);
   --ns-color-orange-high: hsl(var(--ns-hue-orange), 74%, 97%);
@@ -453,6 +457,20 @@ h1 {
     display: table; /* [2] */
     width: 100%; /* [3] */
 
+    th {
+      border-block-start-width: 0;
+      border-block-end-width: 2px;
+      border-inline-start-width: 0;
+      border-inline-end-width: 0;
+    }
+
+    td {
+      border-block-start-width: 0;
+      border-block-end-width: 1px;
+      border-inline-start-width: 0;
+      border-inline-end-width: 0;
+    }
+
     code {
       white-space: nowrap; /* [4] */
     }
@@ -464,6 +482,32 @@ h1 {
     th,
     td {
       text-align: left; /* [6] */
+    }
+
+    .marker {
+      position: relative;
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      text-align: center;
+      font-weight: 700;
+      padding-block-start: 0.25em;
+      color: var(--ns-color-base-900);
+
+      &:before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        border-width: 2px;
+        border-style: solid;
+        border-color: var(--ns-color-grey-marker);
+        background-color: var(--ns-color-pink-marker);
+      }
     }
   }
 }
