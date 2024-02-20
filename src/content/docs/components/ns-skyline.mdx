@@ -38,13 +38,15 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ![Labelled diagram of ns-skyline](@assets/components/ns-skyline/guidance.webp)
 
+The skyline contains the [`<ns-expander>`](./ns-expander). We recommend to use 1 expander, with a maximum of 2.
+
 #### Key
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">A</span> | Icon | This is the icon inside the `ns-skyline`, it can be either an information or warning icon depending on the type of message you wish to display. |
-| <span class="marker">B</span> | Heading | This is the heading to the anonymous content. When the heading is clicked the component opens to reveal the content. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
-| <span class="marker">C</span> | Content | `ns-skyline` can accommodate multiple paragraph slots, these should be concise, using sub-headings to split large paragraphs. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`.|
+| <span class="marker">A</span> | Icon | This is an optional icon. It can be either an information or warning icon depending on the type of message you wish to display. |
+| <span class="marker">B</span> | Heading | The heading to the anonymous content. When the heading is clicked the component opens to reveal the content. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">C</span> | Content | The content can accommodate multiple paragraphs, these should be concise. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`.|
 
 ## Implementation
 
