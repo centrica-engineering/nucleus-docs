@@ -1,8 +1,8 @@
 ---
-title: Footer
+title: Date time
 ---
 
-export const componentName = "nsx-footer";
+export const componentName = "ns-date-time";
 
 import Specification from '@components/specification.astro';
 import Placement from '@components/placement.astro';
@@ -15,10 +15,6 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
-The `nsx-footer` is also an important SEO tool that includes links to social channels and our mobile apps.
-
-The footer experience pattern comprises three parts. Legal links, SEO links and a brand and copyright notice. If links need updating for the website footer, use this experience pattern as your basis.
-
 ### Examples
 
 <ExampleViewer type="standard" />
@@ -26,12 +22,12 @@ The footer experience pattern comprises three parts. Legal links, SEO links and 
 ## Guidance
 
 :::do
-- Keep it at the bottom of the page as the last element.
-- Keep the footer outside the `main` element.
+- Display a date only.
+- Display a time only.
 :::
 
 :::dont
-- Make your own footer if you are part of the customer facing website.
+- Hide the month and only show day and year.
 :::
 
 ## Implementation
