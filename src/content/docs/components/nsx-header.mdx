@@ -2,4 +2,49 @@
 title: Header
 ---
 
-Placeholder for `nsx-header`
+export const componentName = "nsx-header";
+
+import Specification from '@components/specification.astro';
+import Placement from '@components/placement.astro';
+import CompDetails from '@components/cem-description.astro';
+import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Overview
+
+<CompDetails name={componentName} />
+
+The header experience pattern internally holds the sections and the secondary navigation.
+
+The subheadings and links for the navigation are passed into each section of the nsx-header to allow them to be quickly updated.
+
+### Examples
+
+<ExampleViewer type="standard" />
+
+## Guidance
+
+:::do
+:::
+
+:::dont
+:::
+
+## Implementation
+
+### Placement
+
+<Placement name={componentName} />
+
+### Specification
+
+<Specification name={componentName} />
+
+### Related links
+
+<RelatedLinks name={componentName}>
+- [ns-component](#!)
+- [ns-component](#!)
+</RelatedLinks>
+

@@ -2,4 +2,61 @@
 title: Lockup
 ---
 
-Placeholder for `ns-lockup`
+export const componentName = "ns-lockup";
+
+import Specification from '@components/specification.astro';
+import Placement from '@components/placement.astro';
+import CompDetails from '@components/cem-description.astro';
+import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Overview
+
+<CompDetails name={componentName} />
+
+Use `ns-lockup` to engage customers and promote products or services. The more relevant and contextual the content is for the intended customers, the better.
+
+### Examples
+
+<ExampleViewer type="standard" />
+
+## Guidance
+
+:::do
+:::
+
+:::dont
+:::
+
+### Standard
+
+![Labelled diagram of ns-lockup](@assets/components/ns-lockup/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">B</span> | Content | The content can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a maximum of 2 short paragraphs, each with no more than 3 lines each. Can contain bold copy `<b>`, inline links `<a>`,  lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| <span class="marker">C</span> | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+| <span class="marker">D</span> | Image | There is a choice between 3 image sizes - the first has an aspect ratio of 16:9, the dimensions should be 800 x 450px, the second has an aspect ratio of 4:3, the dimensions should be 800 x 600px, and the third has an aspect ratio of 1:1, the dimensions should be 800 x 800px. Both versions should be jpg file types, and the file size should be no more than 100kb. To see which image you can use - please see the [Image guidance section](#image-guidance) below. Don't use imagery with white backgrounds. Please make sure you work with a designer when selecting any imagery for the `ns-lockup`. |
+| <span class="marker">E</span> | Decoration | Use this optional illustration to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification](#specification) has a list of options. |
+
+## Implementation
+
+### Placement
+
+<Placement name={componentName} />
+
+### Specification
+
+<Specification name={componentName} />
+
+### Related links
+
+<RelatedLinks name={componentName}>
+- [ns-component](#!)
+- [ns-component](#!)
+</RelatedLinks>
+

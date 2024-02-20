@@ -1,7 +1,5 @@
 ---
 title: Landmark
-sidebar:
-  badge: new
 ---
 
 export const componentName = "ns-landmark";
@@ -9,57 +7,39 @@ export const componentName = "ns-landmark";
 import Specification from '@components/specification.astro';
 import Placement from '@components/placement.astro';
 import CompDetails from '@components/cem-description.astro';
-import ExampleViewer from '@components/example-viewer.astro';
-
-import ExampleStandard from '@examples/components/ns-landmark/standard.html';
-import ExampleSummit from '@examples/components/ns-landmark/summit.html';
-import ExampleHillside from '@examples/components/ns-landmark/hillside.html';
-import ExampleValley from '@examples/components/ns-landmark/valley.html';
-import ExampleLakeside from '@examples/components/ns-landmark/lakeside.html';
+import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Overview
 
 <CompDetails name={componentName} />
 
-Landmarks are used to set the scene for what the page is for, what offers might be available and give helpful best next actions for users. This is where the main heading for the page will sit and give the overarching context to the rest of the page.
+Use landmarks to set the scene for what the page is for, what offers might be available and give helpful actions for users. It contains the main heading for the page and provides overarching context to the rest of the page.
 
-### Example
+### Examples
 
-<ExampleViewer>
-  <ExampleStandard slot="template" />
-</ExampleViewer>
-
-#### Summit
-
-`type="summit"`
-
-<ExampleViewer>
-  <ExampleSummit slot="template" />
-</ExampleViewer>
-
-#### Hillside
-
-`type="hillside"`
-
-<ExampleViewer>
-  <ExampleHillside slot="template" />
-</ExampleViewer>
-
-#### Valley
-
-`type="valley"`
-
-<ExampleViewer>
-  <ExampleValley slot="template" />
-</ExampleViewer>
-
-#### Lakeside
-
-`type="lakeside"`
-
-<ExampleViewer>
-  <ExampleLakeside slot="template" />
-</ExampleViewer>
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer type="standard" />
+  </TabItem>
+  <TabItem label="Summit">
+  `type="summit"`
+    <ExampleViewer type="summit" />
+  </TabItem>
+  <TabItem label="Hillside">
+  `type="hillside"`
+    <ExampleViewer type="hillside" />
+  </TabItem>
+  <TabItem label="Valley">
+  `type="valley"`
+    <ExampleViewer type="valley" />
+  </TabItem>
+  <TabItem label="Lakeside">
+  `type="lakeside"`
+    <ExampleViewer type="lakeside" />
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
@@ -79,44 +59,54 @@ Landmarks are used to set the scene for what the page is for, what offers might 
 
 ### Summit
 
-![](@assets/components/ns-landmark/guidance-summit.webp)
+![Labelled diagram of ns-landmark summit](@assets/components/ns-landmark/guidance-summit.webp)
 
 #### Key
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
-| B | Content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| C | Action | See action guidance below |
-| D | Image path | This is the image that will be used inside `ns-landmark`. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. **Note:** The image shouldn't hold any meaning and be only used as a decoration. This is why it doesn't have an `alt=""` attribute to avoid adding unnecessary content for users using assistive technology. |
+| <span class="marker">A</span> | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">B</span> | Content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| <span class="marker">C</span> | Action | See action guidance below |
+| <span class="marker">D</span> | Image path | This is the image that will be used inside `ns-landmark`. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. **Note:** The image shouldn't hold any meaning and be only used as a decoration. This is why it doesn't have an `alt=""` attribute to avoid adding unnecessary content for users using assistive technology. |
 
-| 💚 Do | 💔 Don't |
-| :--- | :--- |
-| Capture the moment. | Allow the card to cover important content. |
-| Set focus of the photo correctly. | Obstruct people's faces with the card. |
-| Convey activity related to topic. | Use images with a white background. |
+:::do
+- Capture the moment.
+- Set focus of the photo correctly.
+- Convey activity related to topic.
+:::
+
+:::dont
+- Allow the card to cover important content.
+- Obstruct people's faces with the card.
+- Use images with a white background.
+:::
 
 ### Hillside
 
-![](@assets/components/ns-landmark/guidance-hillside.webp)
+![Labelled diagram of ns-landmark hillside](@assets/components/ns-landmark/guidance-hillside.webp)
 
 #### Key
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
-| B | Content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| C | Action | See action guidance below |
-| D | Decoration | Apply a colour decoration to the landmark. [The specification table](#specification) has a list of options. |
+| <span class="marker">A</span> | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">B</span> | Content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| <span class="marker">C</span> | Action | See action guidance below |
+| <span class="marker">D</span> | Decoration | Apply a colour decoration to the landmark. The [specification](#specification) has a list of options. |
 
-| 💚 Do | 💔 Don't |
-| :--- | :--- |
-| Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers. | Use the red decoration for something that is not a promotional promotional or an error-themed page. |
-| Keep the content concise. |  |
+:::do
+- Use the same colour for a set of pages on the same topic, e.g. Guide pages related to boilers.
+- Keep the content concise.
+:::
+
+:::dont
+- Use the red decoration for something that is not a promotional promotional or an error-themed page.
+:::
 
 ### Valley
 
-![](@assets/components/ns-landmark/guidance-valley.webp)
+![Labelled diagram of ns-landmark valley](@assets/components/ns-landmark/guidance-valley.webp)
 
 :::note
 The purpose of the valley landmark is to present an overview of a product or service as a user moves down the funnel of their purchase journey. A CTA may be used, but is not recommended in scenarios where the objective is to encourage further on-page browsing.
@@ -126,35 +116,46 @@ The purpose of the valley landmark is to present an overview of a product or ser
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
-| B | Content | Valley can accommodate multiple paragraph slots. However, be mindful of keeping it concise. To introduce a product or service we recommend 1 shot paragraph and three or four bullet point in a ticked list to showcase your key product benefits. It can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| C | Action | See action guidance below |
-| D | Image path | This is the image that will be used inside `ns-landmark`.  It should have an aspect ratio of 4:3 or 16:9, the file type should be jpg, and the file size should be no more than 100kb. To see which image you can use - please see the Image Guidance section below. Don't use imagery with white backgrounds. Please make sure you work with a designer when selecting any imagery for the ns-landmark. **Note:** The image shouldn't hold any meaning and be only used as a decoration. This is why it doesn't have an `alt=""` attribute to avoid adding unnecessary content for users using assistive technology. |
-| E | Decoration | Apply a colour to the offset. [The specification table](#specification) has a list of options. |
+| <span class="marker">A</span> | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">B</span> | Content | Valley can accommodate multiple paragraph slots. However, be mindful of keeping it concise. To introduce a product or service we recommend 1 shot paragraph and three or four bullet point in a ticked list to showcase your key product benefits. It can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| <span class="marker">C</span> | Action | See action guidance below |
+| <span class="marker">D</span> | Image path | An aspect ratio of 4:3 or 16:9, the file type should be jpg, and the file size should be no more than 100kb. To see which image you can use - please see the Image Guidance section below. Don't use imagery with white backgrounds. Please make sure you work with a designer when selecting any imagery for the ns-landmark. **Note:** The image shouldn't hold any meaning and be only used as a decoration. This is why it doesn't have an `alt=""` attribute to avoid adding unnecessary content for users using assistive technology. |
+| <span class="marker">E</span> | Decoration | Apply a colour to the offset. The [specification](#specification) has a list of options. |
 
-| 💚 Do | 💔 Don't |
-| :--- | :--- |
-| Use checked list to highlight your key product benefits | Add a CTA if the purpose of the page is for users to consume the content. |
-| Use a complementary image to add context to your product or service | Use long, verbose content. Keep the user interested with a snappy overview and draw them down the page |
-| Use colour, pill and ratio options for alternative aesthetics | Forget to use an image |
+:::do
+- Use checked list to highlight your key product benefits.
+- Use a complementary image to add context to your product or service.
+- Use colour, pill and ratio options for alternative aesthetics.
+:::
+
+:::dont
+- Add a CTA if the purpose of the page is for users to consume the content. 
+- Use long, verbose content. Keep the user interested with a snappy overview and draw them down the page.
+- Forget to use an image.
+:::
 
 ### Lakeside
 
-![](@assets/components/ns-landmark/guidance-lakeside.webp)
+![Labelled diagram of ns-landmark lakeside](@assets/components/ns-landmark/guidance-lakeside.webp)
 
 #### Key
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
-| B | Content | Lakeside can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a minimum of 1 and a maximum of 3. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| C | Action | See action guidance below |
+| <span class="marker">A</span> | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">B</span> | Content | Lakeside can accommodate multiple paragraph slots. However, be mindful of keeping it concise. Our guidance is a minimum of 1 and a maximum of 3. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| <span class="marker">C</span> | Action | See action guidance below |
 
-| 💚 Do | 💔 Don't |
-| :--- | :--- |
-| Use more than one paragraph. | Use more than three paragraphs. |
-| Display 400 and 500 error pages. | Use to build a page. |
-| Get to the point, in this scenario the Sub heading and CTA have been omitted. |  |
+:::do
+- Use more than one paragraph.
+- Display 400 and 500 error pages.
+- Get to the point, in this scenario the Sub heading and CTA have been omitted.
+:::
+
+:::dont
+- Use more than three paragraphs.
+- Use to build a page.
+:::
 
 ### Considerations
 
@@ -199,5 +200,8 @@ The purpose of the valley landmark is to present an overview of a product or ser
 
 ### Related links
 
+<RelatedLinks name={componentName}>
 - [ns-component](#!)
 - [ns-component](#!)
+</RelatedLinks>
+

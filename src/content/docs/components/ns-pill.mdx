@@ -2,4 +2,60 @@
 title: Pill
 ---
 
-Placeholder for `ns-pill`
+export const componentName = "ns-pill";
+
+import Specification from '@components/specification.astro';
+import Placement from '@components/placement.astro';
+import CompDetails from '@components/cem-description.astro';
+import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Overview
+
+<CompDetails name={componentName} />
+The component is a small coloured highlight. Use `ns-pill` to highlight a small item of information to a customer. Within the British Gas experience, they are often used to attract attention to a promotional message or a notification. Only display a small detail of the content. The `ns-pill` component should not contain lengthy or complex information.
+
+Pills can help to create a subtle sense of urgency or to draw a customer’s attention to the value of a product or service. For example, use them to highlight the date a promotional offer expires or to feature a gift offer.
+
+### Examples
+
+<ExampleViewer type="standard" />
+
+## Guidance
+
+:::do
+:::
+
+:::dont
+:::
+
+### Standard
+
+![Labelled diagram of ns-pill](@assets/components/ns-pill/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Icon | Use an icon to support your description. |
+| <span class="marker">B</span> | Content | Content should be very concise and catchy, ideally between 1 and 4 words. Your content should not run over one line on a `squash-court` viewport. |
+| <span class="marker">C</span> | Caveat | Use a link to [`<ns-caveat>`](./ns-caveat). |
+
+## Implementation
+
+### Placement
+
+<Placement name={componentName} />
+
+### Specification
+
+<Specification name={componentName} />
+
+### Related links
+
+<RelatedLinks name={componentName}>
+- [ns-component](#!)
+- [ns-component](#!)
+</RelatedLinks>
+

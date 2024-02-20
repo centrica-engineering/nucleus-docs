@@ -1,0 +1,56 @@
+---
+import { iconOptions } from "@scripts/assets";
+---
+
+<div class="icons">
+  {
+    iconOptions && 
+    iconOptions().map((icon, i) => {
+      return (
+        <div class="icon">
+          <div class="svg" set:html={icon.svg} />
+          <span class="label">
+            <code>{icon.name}</code>
+          </span>
+        </div>
+      );
+    })
+  }
+</div>
+
+<style>
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+    gap: 1rem;
+    color: var(--sl-color-white);
+
+    .icon {
+      margin-block-start: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      aspect-ratio: 1 / 1;
+      overflow-wrap: anywhere;
+    }
+
+    .svg {
+      height: 2rem;
+      width: 2rem;
+
+      svg {
+        fill: currentColor;
+      }
+    }
+
+    .label {
+      text-align: center;
+      line-height: normal;
+
+      code {
+        font-size: var(--sl-text-2xs);
+      }
+    }
+  }
+</style>

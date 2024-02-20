@@ -1,0 +1,33 @@
+---
+import { NucleusComponentRenderer } from './NucleusComponentRenderer';
+import { NucleusCodeSnippet } from './NucleusCodeSnippet';
+
+const { slug } = Astro.params;
+const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
+const componentName = slug?.replace('components/', '');
+
+const { type } = Astro.props;
+const exampleFileMatcher = `/assets/${slug}/${type}.html`;
+const examples = import.meta.glob("../assets/**/*.html", { import: 'default', as: 'raw', eager: true});
+const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
+const htmlContent = await examples[htmlFile];
+---
+
+<div>
+  {
+    isComponentPage && (
+      <div class="action">
+        <a class="button secondary configure" href=`/configure/${slug}/${type}` rel="noopener nofollow" target="_blank">Configure</a>
+      </div>
+    )
+  }
+  <NucleusComponentRenderer src={htmlContent} name={componentName} client:only="lit"/>
+  <NucleusCodeSnippet src={htmlContent} client:visible />
+</div>
+
+<style>
+  .action {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+</style>

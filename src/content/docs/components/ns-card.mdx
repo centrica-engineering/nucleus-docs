@@ -1,7 +1,5 @@
 ---
 title: Card
-sidebar:
-  badge: new
 ---
 
 export const componentName = "ns-card";
@@ -9,49 +7,32 @@ export const componentName = "ns-card";
 import Specification from '@components/specification.astro';
 import Placement from '@components/placement.astro';
 import CompDetails from '@components/cem-description.astro';
-import ExampleViewer from '@components/example-viewer.astro';
-import CodeSnippet from '@components/code-snippet.astro';
-
-import ExampleStandard from '@examples/components/ns-card/standard.html';
-import ExampleSection from '@examples/components/ns-card/section.html';
-import ExampleSupport from '@examples/components/ns-card/support.html';
-import ExampleFlat from '@examples/components/ns-card/flat.html';
+import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Overview
 
 <CompDetails name={componentName} />
 
-Cards are used to apply a container around a related grouping of information; this can be done through imagery, illustrations and typography.
+Cards are to be used to apply a container around a related grouping of information. Achieve this through a combination of imagery, illustrations and typography.
 
-### Example
+### Examples
 
-<ExampleViewer>
-  <ExampleStandard slot="template" />
-</ExampleViewer>
-
-#### Section
-
-`type="section"`
-
-<ExampleViewer>
-  <ExampleSection slot="template" />
-</ExampleViewer>
-
-#### Support
-
-`type="support"`
-
-<ExampleViewer>
-  <ExampleSupport slot="template" />
-</ExampleViewer>
-
-#### Flat
-
-`type="flat"`
-
-<ExampleViewer>
-  <ExampleFlat slot="template" />
-</ExampleViewer>
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer type="standard" />
+  </TabItem>
+  <TabItem label="Section">
+    <ExampleViewer type="section" />
+  </TabItem>
+  <TabItem label="Support">
+    <ExampleViewer type="support" />
+  </TabItem>
+  <TabItem label="Flat">
+    <ExampleViewer type="flat" />
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
@@ -75,41 +56,41 @@ Cards are used to apply a container around a related grouping of information; th
 
 ### Section
 
-![](@assets/components/ns-card/guidance-section.webp)
+![Labelled diagram of ns-card section](@assets/components/ns-card/guidance-section.webp)
 
 #### Key
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
-| B | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| C | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
-| D | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](#specification) has a list of options. |
+| <span class="marker">A</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| <span class="marker">B</span> | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| <span class="marker">C</span> | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+| <span class="marker">D</span> | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. [See our illustrations](../guidelines/assets/#illustrations). |
 
 ### Support
 
-![](@assets/components/ns-card/guidance-suppport.webp)
+![Labelled diagram of ns-card support](@assets/components/ns-card/guidance-support.webp)
 
 #### Key
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
-| B | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| C | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
-| D | Image | This is the image that will be used above the ns-card. It should have an aspect ratio of 16:9, the dimensions should be 640x360px, the file type should be jpg, and the file size should be no more than 50kb. Don't use imagery with white backgrounds. |
+| <span class="marker">A</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| <span class="marker">B</span> | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| <span class="marker">C</span> | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+| <span class="marker">D</span> | Image | This is the image that will be used above the ns-card. It should have an aspect ratio of 16:9, the dimensions should be 640x360px, the file type should be jpg, and the file size should be no more than 50kb. Don't use imagery with white backgrounds. |
 
 ### Flat
 
-![](@assets/components/ns-card/guidance-flat.webp)
+![Labelled diagram of ns-card flat](@assets/components/ns-card/guidance-flat.webp)
 
 #### Key
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
-| B | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| C | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
+| <span class="marker">A</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
+| <span class="marker">B</span> | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| <span class="marker">C</span> | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
 
 ### Considerations
 
@@ -189,5 +170,7 @@ More details on how to use the ns-pill can be found on the [ns-pill documentatio
 
 ### Related links
 
+<RelatedLinks name={componentName}>
 - [ns-component](#!)
 - [ns-component](#!)
+</RelatedLinks>

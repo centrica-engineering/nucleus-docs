@@ -2,4 +2,59 @@
 title: Caveat
 ---
 
-Placeholder for `ns-caveat`
+export const componentName = "ns-caveat";
+
+import Specification from '@components/specification.astro';
+import Placement from '@components/placement.astro';
+import CompDetails from '@components/cem-description.astro';
+import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Overview
+
+<CompDetails name={componentName} />
+
+Caveats link to content on the page, providing more information about legality and eligibility by separating it to the bottom of the page.
+
+### Examples
+
+<ExampleViewer type="standard" />
+
+## Guidance
+
+:::do
+:::
+
+:::dont
+:::
+
+### Standard
+
+![Labelled diagram of ns-caveat](@assets/components/ns-caveat/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Link | The link used to highlight there is further relevant information the user should read. This might provide specific stipulations, conditions, or limitations. Clicking on this will take the user to the content at the bottom of the page. |
+| <span class="marker">B</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">C</span> | Content | A single, short paragraph works best. You can link to additional information if needed, such as terms and conditions. These should always be accompanied with a related description. |
+
+## Implementation
+
+### Placement
+
+<Placement name={componentName} />
+
+### Specification
+
+<Specification name={componentName} />
+
+### Related links
+
+<RelatedLinks name={componentName}>
+- [ns-component](#!)
+- [ns-component](#!)
+</RelatedLinks>
+

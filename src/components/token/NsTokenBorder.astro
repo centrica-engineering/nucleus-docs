@@ -1,0 +1,63 @@
+---
+import { border } from "@scripts/tokens";
+
+const { type } = Astro.props;
+---
+
+<slot />
+
+{
+  border && type && border[type] && border[type].map(([key, value], i) => {
+    const style = `--ns-${type}: ${value};`;
+    const labelValue = key.substring(key.lastIndexOf('_') + 1, key.length);
+    return (
+      <div class={`ns-border ${type}`}>
+        <div class="swatch" style={style}></div>
+        <span class="name">{labelValue}</span>
+        <span class="value"><code>{value}</code></span>
+        <span><code>{key}</code></span>
+      </div>
+    );
+  })
+}
+
+<style>
+  .ns-border {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+
+    .name {
+      font-size: 1.25rem;
+      font-weight: 500;
+      text-transform: lowercase;
+      min-width: 10ch;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    &.radius {
+      .swatch {
+        border-radius: var(--ns-radius);
+        background-color: var(--sl-color-gray-5);
+      }
+    }
+
+    &.width {
+      .swatch {
+        border-style: solid;
+        border-width: var(--ns-width);
+        border-color: var(--sl-color-gray-5);
+      }
+    }
+  }
+
+  .swatch {
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+</style>

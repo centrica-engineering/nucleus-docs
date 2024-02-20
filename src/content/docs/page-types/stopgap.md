@@ -37,12 +37,18 @@ You should not use:
 
 ## Best practice
 
-| 💚 Do's | 💔 Don'ts |
-| :---  | :---  |
-| Use for wait times in excess of 10 seconds | Use as a placeholder when loading in individual components |
-| Use for end of journey processing and purchases | Rely on this page type instead of optimising your journey |
-| Communicate the message in a clear and concise way as possible | Encourage the user to abandon if it would result in failure |
-| Provide a transparent expectation of their wait time |  |
+:::do
+- Use for wait times in excess of 10 seconds.
+- Use for end of journey processing and purchases.
+- Communicate the message in a clear and concise way as possible.
+- Provide a transparent expectation of their wait time.
+:::
+
+:::dont
+- Use as a placeholder when loading in individual components.
+- Rely on this page type instead of optimising your journey.
+- Encourage the user to abandon if it would result in failure.
+:::
 
 ## Principles to follow
 
