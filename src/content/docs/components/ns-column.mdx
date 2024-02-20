@@ -44,6 +44,38 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <Specification name={componentName} />
 
+#### How do viewports inherit values?
+Each value is applied at that viewpoint and each larger viewport unless the larger viewport has a column value applied.
+
+Setting 2 columns for every viewport larger than basketball court#
+<Tabs>
+  <TabItem label="2 columns">
+    ```
+      <ns-column basketball-court="2"></ns-column>
+    ```
+  </TabItem>
+  <TabItem label="1 to 3 columns">
+    ```
+      <ns-column hockey-pitch="3"></ns-column>
+    ```
+  </TabItem>
+  <TabItem label="2 viewports">
+    ```
+      <ns-column hockey-pitch="2" rugby-pitch="4"></ns-column>
+    ```
+  </TabItem>
+  <TabItem label="3 viewports">
+    ```
+      <ns-column basketball-court="2" rugby-pitch="4" polo-field="3"></ns-column>
+    ```
+  </TabItem>
+  <TabItem label="ratios">
+    ```
+      <ns-column hockey-pitch="2:1" polo-field="3:1"></ns-column>
+    ```
+  </TabItem>
+</Tabs>
+
 ### Related links
 
 <RelatedLinks name={componentName}>
