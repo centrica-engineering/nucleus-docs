@@ -17,14 +17,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
@@ -33,6 +26,17 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 :::dont
 :::
+
+### Standard
+
+![Labelled diagram of ns-calendar](@assets/components/ns-calendar/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | `Month`, `YYYY` | The month and year. |
+| <span class="marker">B</span> | `Date` | The date. |
 
 ## Implementation
 

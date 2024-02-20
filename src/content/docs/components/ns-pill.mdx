@@ -14,25 +14,48 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 ## Overview
 
 <CompDetails name={componentName} />
+The component is a small coloured highlight. Use `ns-pill` to highlight a small item of information to a customer. Within the British Gas experience, they are often used to attract attention to a promotional message or a notification. Only display a small detail of the content. The `ns-pill` component should not contain lengthy or complex information.
+
+Pills can help to create a subtle sense of urgency or to draw a customer’s attention to the value of a product or service. For example, use them to highlight the date a promotional offer expires or to feature a gift offer.
 
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Use solid versions of icons.
+- Use `ns-pill` very sparingly, ideally one or two per journey maximum. Less is more.
+- Use a `yellow` pill to draw attention to an offer or promotional message.
+- Use `red` and `lime` pills for dashboard notifications.
+- Keep your copy short and simple for maximum impact.
+- Use `ns-pill` in a component with a direct CTA.
+- Choose colours that are consistent and relevant.
 :::
 
 :::dont
+- Use as validation messages.
+- Create a shouty experience by using `ns-pill` in multiple places. It dilutes the impact.
+- Create distraction or put undue pressure on customers to purchase unwanted or irrelevant products by overusing urgency elements.
+- Don’t use pills near a text CTA. Pills should not detract attention from your users’ next action.
+- Use in the middle of a sentence.
+- Use the `ns-pill` as a link or button. (Caveat link excepted).
+- Use icons that can make `ns-pill` visually appear like an interactive component, for example an `ns-cta` or drop-down `ns-inputter/select`.
+- Use `ns-pill` as a heading.
 :::
+
+### Standard
+
+![Labelled diagram of ns-pill](@assets/components/ns-pill/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Icon | Use an icon to support your description. |
+| <span class="marker">B</span> | Content | Content should be very concise and catchy, ideally between 1 and 4 words. Your content should not run over one line on a `squash-court` viewport. |
+| <span class="marker">C</span> | Caveat | Use a link to [`<ns-caveat>`](./ns-caveat). |
 
 ## Implementation
 

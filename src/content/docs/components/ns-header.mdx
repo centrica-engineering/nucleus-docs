@@ -15,23 +15,31 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+The header provides the primary navigation and conveys brand presence with the logo.
+
+:::note
+This is the UI component for the header - if you are looking for the header that includes the navigational content, please use [nsx-header](#).
+:::
+
+The nsx-header should be the default choice of header across the main British Gas website.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Create your own header if you are a micro site or external partner.
+- Follow the correct structure for the navigation links.
+- Have a header on every page.
 :::
 
 :::dont
+- Make your own header if you are part of the customer facing website.
+- Add personalisation links into the navigation, as this can have an SEO issue.
+- Load links from an API of external source as this has a performance impact.
+- Add the header inside the `<main>` element.
 :::
 
 ## Implementation

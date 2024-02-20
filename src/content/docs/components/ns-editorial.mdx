@@ -15,24 +15,38 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+Sometimes, a more detailed explanation of something can be helpful – without requiring the user to take immediate action. That is where the `ns-editorial` component can help.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Use Sub-headings to split large paragraphs.
+- Use a 4:3 ratio for imagery.
+- Include contextual text links with content.
 :::
 
 :::dont
+- Add images to the editorial content.
+- Include a text or direct CTA.
+- Use imagery with white backgrounds.
+- Use imagery with copy embedded.
 :::
+
+### Standard
+
+![Labelled diagram of ns-editorial](@assets/components/ns-editorial/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">B</span> | Image | This is the image that will be used inside the editorial. It should have an aspect ratio of 4:3, the dimensions should be 480x360px, the file type should be jpg, and the file size should be no more than 50kb. Don't use imagery with white backgrounds. |
+| <span class="marker">C</span> | Content | The content can accommodate sub headings, lists and paragraphs. It should be concise. Divide content into short paragraphs as it's easier to consume and aids effective page scanning. Content can contain bold copy `<b>` `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 
 ## Implementation
 

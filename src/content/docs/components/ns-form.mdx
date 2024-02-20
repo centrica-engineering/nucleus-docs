@@ -15,23 +15,21 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+The `ns-form` component mimics the native form element features. Its purpose is to allow customers to provide data and validate it before sending them to processing.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Use `ns-cta` submit type to submit your form.
 :::
 
 :::dont
+- Write your own validations.
+- Rely on front end validation alone.
 :::
 
 ## Implementation

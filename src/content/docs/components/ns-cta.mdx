@@ -15,24 +15,54 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+Users can perform particular actions through the use of the `ns-cta` component. An example of these actions could be to submit a form through an event (i.e. a click event) or navigate with a hyperlink.
+
+There is no distinction between a hyperlink or an action through the design of the `ns-cta` component. Use its textual content to convey the intent of the CTA to the user.
+
 ### Examples
 
 <Tabs>
-  <TabItem label="Standard">
+  <TabItem label="Direct">
     <ExampleViewer type="standard" />
   </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
+  <TabItem label="Text">
+    <ExampleViewer type="text" />
   </TabItem>
 </Tabs>
 
 ## Guidance
 
 :::do
+- Make it short and actionable.
+- Only use `loading` on an action that will take between 1 and 5 seconds.
+- Relate the action to the content it sits beside.
+- Use `direct` type for the most important action on the page.
+- Use `text` type to support the direct action.
+- Use instead of a native button.
+- Use `submit` type in a form for form submission.
+- Use `reset` type in a form for form reset action.
 :::
 
 :::dont
+- Make it vague.
+- Make it overly wordy.
+- Change the icon for the sake of it.
+- Use more than 24 characters.
+- Have CTAs within a paragraph.
+- Repeat the CTA copy within the same page.
+- Use for downloads. Use [`<ns-download>`](./ns-download) instead.
 :::
+
+### Standard
+
+![Labelled diagram of ns-cta](@assets/components/ns-cta/guidance-direct.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Text | Keep the text 'short, relevant, and actionable'. It should not exceed more than 24 characters. |
+| <span class="marker">B</span> | Icon | This is a decoration. It is intended to imply direction such as moving forwards and backwards in a journey. The [specification](#specification) has a list of options. |
 
 ## Implementation
 

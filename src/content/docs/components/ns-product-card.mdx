@@ -17,22 +17,41 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Use for products.
+- Use the same sections for all products in a group.
+- Give multiple cards the same html parent.
+- Use `role="list"` and `role="listitem"` when used in multiples.
 :::
 
 :::dont
+- Use for other content types, use [`<ns-card>`](./ns-card) instead.
+- Use in a form.
+- Use different ratio images across a set of multiple cards.
+- Overuse the keyline - its purpose is to make that card stand out from others.
 :::
+
+### Standard
+
+![Labelled diagram of ns-product-card](@assets/components/ns-product-card/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Product name | The product name should be brief and memorable, ideally 2 to 3 words (10 to 15 characters). Maximum 25 characters. |
+| <span class="marker">B</span> | Price subtitle | This should be used to give context to your product price. 15 to 23 characters maximum. |
+| <span class="marker">C</span> | Primary price | The is the leading product price. This is optional as a product price may not always be available. |
+| <span class="marker">D</span> | Secondary price | This is the secondary product price. This is also optional.|
+| <span class="marker">E</span> | Product description | The product description can accommodate multiple sub headings, lists and paragraphs. The content should be concise and use bulleted or checked lists to support skim reading. Comparable product features should be repeated in the same list order across all products. Content can contain bold copy `<b>` `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`, and caveats if required `<a href="#caveat">Caveat</a>`. |
+| <span class="marker">F</span> | Expander | Expanders can be used to provide additional product detail. Each product should have a maximum of 3 expanders. |
+| <span class="marker">G</span> | Call to action | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 10 characters. |
+| <span class="marker">H</span> | Keyline | An optional colour keyline can be added to distinguish and draw attention to your products. |
+| <span class="marker">I</span> | Image | An optional image with an aspect ratio of 16:9 (default), 4:3 or 1:1 can be added to support your product description. |
 
 ## Implementation
 

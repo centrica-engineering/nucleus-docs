@@ -15,23 +15,22 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+Use the `ns-fieldset` component instead of the usual HTML fieldset. The `ns-fieldset` extends the layout for the `ns-form`.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Add a legend.
+- Only use inside the ns-form component.
 :::
 
 :::dont
+- Group unrelated ns-inputters.
+- Nest `ns-fieldset`s unnecessarily, as this can lead to confusion.
 :::
 
 ## Implementation

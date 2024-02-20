@@ -21,18 +21,38 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
   <TabItem label="Standard">
     <ExampleViewer type="standard" />
   </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
+  <TabItem label="Stacked">
+    <ExampleViewer type="stacked" />
   </TabItem>
 </Tabs>
 
 ## Guidance
 
 :::do
+- Make it short and actionable.
+- Add illustrations.
+- Relate the action to the content it sits beside.
 :::
 
 :::dont
+- Make it vague.
+- Make it overly wordy.
+- Treat as a button.
+- Use more than 24 characters.
+- Link to outside urls.
+- Use for downloads, use [`<ns-download>`](./ns-download).
 :::
+
+### Standard
+
+![Labelled diagram of ns-action-link](@assets/components/ns-action-link/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Label | Keep the text 'short, relevant, and actionable'. It should not exceed 24 characters. |
+| <span class="marker">B</span> | Illustration | This is a decoration. It is intended to provide a visual aid to the link. [See our illustrations](../guidelines/assets/#illustrations). |
 
 ## Implementation
 

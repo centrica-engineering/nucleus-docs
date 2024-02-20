@@ -15,24 +15,35 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+It provides an area to place a layout, add an optional decoration and apply the appropriate margins. There can be more than one `ns-panel` on a page.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Use the `decoration` to visually separate content.
+- Use appropriate colour for the purpose of the page.
 :::
 
 :::dont
+- Nest `ns-panel` in `ns-panel`.
 :::
+
+### Standard
+
+![Labelled diagram of ns-panel](@assets/components/ns-panel/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Decoration | Choose between a no-colour background (default) or one of the available brand colours. |
+| <span class="marker">B</span> | Top offset | Adjust the vertical space which can affect where the decoration starts at the top. |
+| <span class="marker">C</span> | Bottom offset | Adjust the vertical space which can affect where the decoration ends at the bottom. |
+| <span class="marker">D</span> | Columns | Use [`<ns-column>`](./ns-column) to define a multi column layout. |
 
 ## Implementation
 

@@ -15,23 +15,21 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+The `ns-content` component's placement is inside other components. It helps to add consistency to the styling of typography, improving how it interacts with the other components.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Use clean html.
+- Set the spacing attribute to compliment the content it contains.
 :::
 
 :::dont
+- Use additional `<div>` tags to wrap content as this will break the spacing.
 :::
 
 ## Implementation
