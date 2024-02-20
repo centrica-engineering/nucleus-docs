@@ -2,4 +2,60 @@
 title: Panel
 ---
 
-Placeholder for `ns-panel`
+export const componentName = "ns-panel";
+
+import Specification from '@components/specification.astro';
+import Placement from '@components/placement.astro';
+import CompDetails from '@components/cem-description.astro';
+import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Overview
+
+<CompDetails name={componentName} />
+
+It provides an area to place a layout, add an optional decoration and apply the appropriate margins. There can be more than one `ns-panel` on a page.
+
+### Examples
+
+<ExampleViewer type="standard" />
+
+## Guidance
+
+:::do
+:::
+
+:::dont
+:::
+
+### Standard
+
+![Labelled diagram of ns-panel](@assets/components/ns-panel/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Decoration | Choose between a no-colour background (default) or one of the available brand colours. |
+| <span class="marker">B</span> | Top offset | Adjust the vertical space which can affect where the decoration starts at the top. |
+| <span class="marker">C</span> | Bottom offset | Adjust the vertical space which can affect where the decoration ends at the bottom. |
+| <span class="marker">D</span> | Columns | Use [`<ns-column>`](./ns-column) to define a multi column layout. |
+
+## Implementation
+
+### Placement
+
+<Placement name={componentName} />
+
+### Specification
+
+<Specification name={componentName} />
+
+### Related links
+
+<RelatedLinks name={componentName}>
+- [ns-component](#!)
+- [ns-component](#!)
+</RelatedLinks>
+

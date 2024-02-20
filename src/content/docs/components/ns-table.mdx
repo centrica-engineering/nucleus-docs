@@ -2,4 +2,60 @@
 title: Table
 ---
 
-Placeholder for `ns-table`
+export const componentName = "ns-table";
+
+import Specification from '@components/specification.astro';
+import Placement from '@components/placement.astro';
+import CompDetails from '@components/cem-description.astro';
+import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Overview
+
+<CompDetails name={componentName} />
+
+The table component consumes basic HTML table markup, which makes it accessible and responsive, as well as styling it.
+
+### Examples
+
+<ExampleViewer type="standard" />
+
+## Guidance
+
+:::do
+:::
+
+:::dont
+:::
+
+### Standard
+
+![Labelled diagram of ns-table](@assets/components/ns-table/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Heading | Use to provide context to the table content. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">B</span> | Column Headings | A short description of the data or information found in the column cells below. |
+| <span class="marker">C</span> | Fixable Row Headings | This column can be used for data or information. It can also be set to a fixed column of headings for each row. |
+| <span class="marker">D</span> | Table Cells | This should contain the data or information required for each relevant column and row. |
+
+## Implementation
+
+### Placement
+
+<Placement name={componentName} />
+
+### Specification
+
+<Specification name={componentName} />
+
+### Related links
+
+<RelatedLinks name={componentName}>
+- [ns-component](#!)
+- [ns-component](#!)
+</RelatedLinks>
+

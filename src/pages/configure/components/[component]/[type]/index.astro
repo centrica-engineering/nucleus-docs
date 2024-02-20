@@ -1,0 +1,80 @@
+---
+import '/node_modules/@astrojs/starlight/style/props.css';
+import '/node_modules/@astrojs/starlight/style/reset.css';
+import '/node_modules/@astrojs/starlight/style/shiki.css';
+import '/node_modules/@astrojs/starlight/style/util.css';
+import '../../../../../styles/custom.css';
+import ExampleConfigure from '../../../../../components/ExampleConfigure.astro';
+import cesm from '@connectedhomes/nucleus/custom-elements.json';
+
+const { component, type } = Astro.params;
+const exampleFileMatcher = `/assets/components/${component}/${type}.html`;
+
+const examples = import.meta.glob("../../../../../assets/components/**/*.html", { import: 'default', as: 'raw', eager: true});
+const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
+const htmlContent = await examples[htmlFile];
+
+export function getStaticPaths() {
+  const examples = import.meta.glob("../../../../../assets/components/**/*.html");
+  const getComponentExample = (fileMatcher) => {
+    return Object.keys(examples)?.filter((example) => example.indexOf(fileMatcher) > -1);
+  } 
+  return cesm.tags.flatMap((tag) => {
+    const componentName = tag.name;
+    const exampleComponentMatcher = `/assets/components/${componentName}/`;
+    const componentExamples = getComponentExample(exampleComponentMatcher);
+    if(componentExamples) {
+      return componentExamples.map((componentExample) => {
+        const type = componentExample?.split(exampleComponentMatcher)[1].replaceAll('.html', '');
+        return {
+          params: {
+            component: tag.name,
+            type
+          }
+        };
+      });
+    } else {
+      return {
+        params: {
+          component: tag.name,
+          type: 'standard'
+        }
+      };
+    }
+  });
+}
+---
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurator</title>
+  </head>
+  <body>
+    <header>
+      <h1>{component}</h1>
+    </header>
+    <main>
+      <a href=`/components/${component}`><code>{component}</code> documentation page</a>
+      <ExampleConfigure componentName={component} src={htmlContent}>
+        <Fragment set:html={htmlContent} />
+      </ExampleConfigure>
+    </main>
+
+    <style>
+      header {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        height: var(--sl-nav-height);
+        background-color: var(--sl-color-bg-nav);
+      }
+
+      .config-content {
+        display: none;
+      }
+    </style>
+
+  </body>
+</html>

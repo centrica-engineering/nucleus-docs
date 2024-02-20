@@ -1,0 +1,41 @@
+---
+const {name, value} = Astro.props;
+const backgroundColorStyle = `--ns-colour: ${value};`;
+const labelValue = name.substring(name.lastIndexOf('_') + 1, name.length);
+---
+
+<div class="ns-colour">
+  <div class="swatch" style={backgroundColorStyle}></div>
+  <span class="name">{labelValue}</span>
+  <span class="value"><code>{value}</code></span>
+  <span class="token"><code>{name}</code></span>
+</div>
+
+<style>
+  .ns-colour {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+
+    .name {
+      font-size: 1.25rem;
+      font-weight: 500;
+      text-transform: lowercase;
+      min-width: 10ch;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .swatch {
+    display: inline-block;
+    background-color: var(--ns-colour);
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 2.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+</style>

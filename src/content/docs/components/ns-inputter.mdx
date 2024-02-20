@@ -1,7 +1,5 @@
 ---
 title: Inputter
-sidebar:
-  badge: new
 ---
 
 export const componentName = "ns-inputter";
@@ -9,137 +7,86 @@ export const componentName = "ns-inputter";
 import Specification from '@components/specification.astro';
 import Placement from '@components/placement.astro';
 import CompDetails from '@components/cem-description.astro';
-import ExampleViewer from '@components/example-viewer.astro';
-import CodeSnippet from '@components/code-snippet.astro';
-
-import ExampleStandard from '@examples/components/ns-inputter/standard.html';
-import ExampleText from '@examples/components/ns-inputter/text.html';
-import ExampleEmail from '@examples/components/ns-inputter/email.html';
-import ExampleTel from '@examples/components/ns-inputter/tel.html';
-import ExampleSearch from '@examples/components/ns-inputter/search.html';
-import ExampleMask from '@examples/components/ns-inputter/mask.html';
-import ExampleSeparator from '@examples/components/ns-inputter/separator.html';
-import ExampleNumber from '@examples/components/ns-inputter/number.html';
-import ExampleTextarea from '@examples/components/ns-inputter/textarea.html';
-import ExampleRadio from '@examples/components/ns-inputter/radio.html';
-import ExampleRadioInline from '@examples/components/ns-inputter/radio-inline.html';
-import ExampleCheckbox from '@examples/components/ns-inputter/checkbox.html';
-import ExampleCheckboxInline from '@examples/components/ns-inputter/checkbox-inline.html';
-import ExampleSelect from '@examples/components/ns-inputter/select.html';
+import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Overview
 
 <CompDetails name={componentName} />
 
+Use these types of inputs to help customers enter and select information:
+
+- Text (including tel, email, and number)
+- Radio button
+- Checkbox
+- Select (drop-downs)
+- Textarea
+
+If you intend to use a password inputter, please see the `ns-password` component.
+
 :::tip
 If you would like to use a password input then please see the [ns-password](/components/ns-password) component.
 :::
 
-<ExampleViewer>
-  <ExampleStandard slot="template" />
-</ExampleViewer>
+<ExampleViewer type="standard" />
 
 ### Most common input types
 
-#### Text
+<Tabs>
+  <TabItem label="Text">
+    <ExampleViewer type="text" />
+  </TabItem>
+  <TabItem label="Email">
+    <ExampleViewer type="email" />
+  </TabItem>
+  <TabItem label="Tel">
+    <ExampleViewer type="tel" />
+  </TabItem>
+  <TabItem label="Search">
+    <ExampleViewer type="search" />
+  </TabItem>
+  <TabItem label="Mask">
+    <ExampleViewer type="mask" />
+  </TabItem>
+  <TabItem label="Separator">
+    <ExampleViewer type="separator" />
+  </TabItem>
+  <TabItem label="Number">
+    <ExampleViewer type="number" />
+  </TabItem>
+  <TabItem label="Textarea">
+    <ExampleViewer type="textarea" />
+  </TabItem>
+  <TabItem label="Radio">
+    <ExampleViewer type="radio" />
+  </TabItem>
+  <TabItem label="RadioInline">
+    <ExampleViewer type="radio-inline" />
+  </TabItem>
+  <TabItem label="Checkbox">
+    <ExampleViewer type="checkbox" />
+  </TabItem>
+  <TabItem label="CheckboxInline">
+    <ExampleViewer type="checkbox-inline" />
+  </TabItem>
+  <TabItem label="Select">
+    <ExampleViewer type="select" />
+  </TabItem>
+</Tabs>
 
-`<input type="text">`
+### Special input types
 
-<ExampleViewer>
-  <ExampleText slot="template" />
-</ExampleViewer>
-
-#### Email
-
-`<input type="email">`
-
-<ExampleViewer>
-  <ExampleEmail slot="template" />
-</ExampleViewer>
-
-#### Tel
-
-`<input type="tel">`
-
-<ExampleViewer>
-  <ExampleTel slot="template" />
-</ExampleViewer>
-
-#### Search
-
-`<input type="search">`
-
-<ExampleViewer>
-  <ExampleSearch slot="template" />
-</ExampleViewer>
-
-#### Number
-
-`<input type="number">`
-
-<ExampleViewer>
-  <ExampleNumber slot="template" />
-</ExampleViewer>
-
-#### Textarea
-
-`<input type="textarea">`
-
-<ExampleViewer>
-  <ExampleTextarea slot="template" />
-</ExampleViewer>
-
-#### Radio
-
-`<input type="radio">`
-
-<ExampleViewer>
-  <ExampleRadio slot="template" />
-</ExampleViewer>
-
-##### `class="inline"`
-
-<ExampleViewer>
-  <ExampleRadioInline slot="template" />
-</ExampleViewer>
-
-#### Checkbox
-
-`<input type="checkbox">`
-
-<ExampleViewer>
-  <ExampleCheckbox slot="template" />
-</ExampleViewer>
-
-##### `class="inline"`
-
-<ExampleViewer>
-  <ExampleCheckboxInline slot="template" />
-</ExampleViewer>
-
-#### Select
-
-`<input type="select">`
-
-<ExampleViewer>
-  <ExampleSelect slot="template" />
-</ExampleViewer>
-
-#### Mask
-
-`mask=""`
-
-<ExampleViewer>
-  <ExampleMask slot="template" />
-</ExampleViewer>
-
-#### Separator
-
-`mask=""` and `separator=""`
-
-<ExampleViewer>
-  <ExampleSeparator slot="template" />
-</ExampleViewer>
+<Tabs>
+  <TabItem label="Mask">
+  `mask=""`
+    <ExampleViewer type="mask" />
+  </TabItem>
+  <TabItem label="Separator">
+  `mask=""` and `separator=""`
+    <ExampleViewer type="separator" />
+  </TabItem>
+</Tabs>
 
 ### Autocomplete
 
@@ -193,7 +140,7 @@ Requires a mask. Can only be one character.
 
 #### `ignore-separator`
 
-Setting the ignoreseparator property to true will force length validations (such as minLength and maxLength) to not include the separator when calculating the length. eg. With '-' as the separator: '12-34-56' would have a length of 8, if ignoreseparator is true it would count it as 6 characters.
+Setting the ignoreseparator property to true will force length validations (such as minLength and maxLength) to not include the separator when calculating the length. e.g. With '-' as the separator: '12-34-56' would have a length of 8, if ignoreseparator is true it would count it as 6 characters.
 
 #### `slot="label"`
 
@@ -210,10 +157,10 @@ Some of the validation options can be configured by passing in values within the
 - minLength(x) - Shows error if the input value is less than x chars.
 - maxLength(x) - Shows error if the input value is greater than x chars.
 - isDate() - Shows error if the input value is not a valid date, the expected format is dd/mm/yyyy
-- minDate(date) - Shows an error if the input value date is less than provided date.  eg. `minDate('20/12/2020')`
-- maxDate(date) - Shows an error if the input vale date is greater than the provided date.  eg. `maxDate('31/12/2022')`
-- isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode.  This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function.  eg. `isPostcode(true)`
-- isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number.  This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function.  eg. `isPhoneNumber(true)`
+- minDate(date) - Shows an error if the input value date is less than provided date.  e.g. `minDate('20/12/2020')`
+- maxDate(date) - Shows an error if the input vale date is greater than the provided date.  e.g. `maxDate('31/12/2022')`
+- isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode.  This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function.  e.g. `isPostcode(true)`
+- isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number.  This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function.  e.g. `isPhoneNumber(true)`
 
 #### Anonymous slot
 
@@ -223,9 +170,11 @@ Be careful when adding additional elements outside of input and label * these sc
 
 ### Related links
 
+<RelatedLinks name={componentName}>
 - [ns-form](#!)
 - [ns-form-group](#!)
 - [ns-datepicker](#!)
 - [ns-password](#!)
 - [ns-cta](#!)
+</RelatedLinks>
 

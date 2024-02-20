@@ -2,4 +2,102 @@
 title: Product card overview
 ---
 
-Placeholder for `nsx-product-card-overview`
+export const componentName = "nsx-product-card-overview";
+
+import Specification from '@components/specification.astro';
+import Placement from '@components/placement.astro';
+import CompDetails from '@components/cem-description.astro';
+import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Overview
+
+<CompDetails name={componentName} />
+
+### Examples
+
+<ExampleViewer type="standard" />
+
+## Guidance
+
+:::do
+:::
+
+:::dont
+:::
+
+Wrap the overview component in `ns-panel` and use its `decoration` attribute for decoration. It is possible to use any [decoration](./ns-panel#specification) for ns-panel. However we recommend to use **only** `grey-light` decoration for better accessibility of the contents inside the overview component.
+
+```html
+<ns-panel decoration="grey-light">
+  <nsx-product-card-overview></nsx-product-card-overview>
+</ns-panel>
+```
+### With Excess
+
+When `excess` property of the overview component is set with an array of price options, the excess prices are displayed as radio options in the overview component. When a user selects a radio option, an `excess-change` event is dispatched from the overview component. The consuming wrapper component has to listen for the event and sets the updated ns-product-card prices back in the `pricing` attribute of the component.
+
+```html
+<nsx-product-card-overview excess="[60,0]" pricing='[{"monthly": {"now": 1200},"annually": 14400,"excess": 90}]' price-heading="Estimated Price"></nsx-product-card-overview>
+```
+
+![Experience pattern - Product Card Overview with Excess](@assets/components/nsx-product-card-overview/guidance-excess.webp)
+
+
+### Without Excess
+
+```html
+<nsx-product-card-overview pricing='[{"monthly": {"now": 1200},"annually": 14400,"excess": 90}]' price-heading="Estimated Price"></nsx-product-card-overview>
+```
+
+![Experience pattern - Product Card Overview - Without Excess](@assets/components/nsx-product-card-overview/guidance-without-excess.webp)
+
+### Was / Now Pricing
+
+To display the price offer of a product in the overview component, `was / now` option in `monthly` pricing can be used to display the original and current price. The `was` price is displayed with `Was` prefix and a strikethrough in the price. The `now` price is displayed with `Now` prefix, when accompanied with `was` price. The `was` price is optional whereas `now` price is mandatory. `was / now` option can be used with / without Excess pricing.
+
+```html
+<nsx-product-card-overview pricing='[{"monthly": {"was": 1200,"now": 1000},"annually": 14400,"excess": 90}]' price-heading="Estimated Price"></nsx-product-card-overview>
+```
+
+![Experience pattern - Product Card Overview - Was / Now Pricing](@assets/components/nsx-product-card-overview/guidance-was-now-price.webp)
+
+### With Monthly Now Primary/Secondary
+
+To allow a display of a special offer which requires the `now` price to have two different values you can supply it with the following shape:
+
+```javascript
+now: {
+  'primary-prefix': null,
+  'primary-price': 500,
+  'primary-extra': 'for the first 3 months',
+  'secondary-price': 1000,
+  'secondary-prefix': 'Then'
+}
+```
+
+```html
+<nsx-product-card-overview pricing='[{"monthly": {"was": null, "now": {"primary-price": 500, "primary-extra": "for the first 3 months", "secondary-price": 1000, "secondary-prefix": "Then"} }, "excess": 60}]' price-heading="Estimated Price"></nsx-product-card-overview>
+```
+
+![Experience pattern - Product Card Overview - With Monthly Now Primary/Secondary](@assets/components/nsx-product-card-overview/guidance-monthly-now-primary-secondary.webp)
+
+
+## Implementation
+
+### Placement
+
+<Placement name={componentName} />
+
+### Specification
+
+<Specification name={componentName} />
+
+### Related links
+
+<RelatedLinks name={componentName}>
+- [ns-component](#!)
+- [ns-component](#!)
+</RelatedLinks>
+

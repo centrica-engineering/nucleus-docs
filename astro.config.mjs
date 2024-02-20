@@ -1,11 +1,21 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import starlightDocSearch from '@astrojs/starlight-docsearch';
 import lit from "@astrojs/lit";
+import { rehypeHeadingIds } from '@astrojs/markdown-remark';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import customElements from "@connectedhomes/nucleus/ce-doc.json";
 import cem from "@connectedhomes/nucleus/custom-elements.json";
+import badges from "./src/data/badge.json";
 import { nucleusRemarkAside } from "./src/plugins/nucleus-remark-aside";
 
 const isDeprecated = (componentName) =>  cem.tags.find((tag) => tag.name === componentName)?.deprecated;
+const badge = (componentName) => {
+  const componentBadge = badges.components?.find((component) => component.name === componentName)?.badge;
+  return {
+    badge: componentBadge
+  }
+};
 
 const componentSidebar = () => {
   return {
@@ -17,38 +27,38 @@ const componentSidebar = () => {
       .map((customElement) => {
         return {
           label: customElement['display-name'],
-          link: `/components/${customElement.name}`
+          link: `/components/${customElement.name}`,
+          ...badge(customElement.name)
         }
       }),
       {
         label: "Form",
-        collapsed: true,
         items: 
           customElements.filter((customElement) => !customElement.internal && customElement.category === 'Form' && !isDeprecated(customElement.name))
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
           .map((customElement) => {
             return {
               label: customElement['display-name'],
-              link: `/components/${customElement.name}`
+              link: `/components/${customElement.name}`,
+              ...badge(customElement.name)
             }
           }),
       },
       {
         label: "Experience",
-        collapsed: true,
         items: 
           customElements.filter((customElement) => !customElement.internal && customElement.category === 'Experience' && !isDeprecated(customElement.name))
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
           .map((customElement) => {
             return {
               label: customElement['display-name'],
-              link: `/components/${customElement.name}`
+              link: `/components/${customElement.name}`,
+              ...badge(customElement.name)
             }
           }),
       },
       {
         label: "Deprecated",
-        collapsed: true,
         items: 
           cem.tags.filter((tag) => tag.deprecated)
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
@@ -64,9 +74,34 @@ const componentSidebar = () => {
   };
 }
 
+const plugins = () => {
+  const starlightPlugins = [];
+  if (process.env.NODE_ENV === 'production' && process.env.ALGOLIA_KEY) {
+    starlightPlugins.push(
+      starlightDocSearch({
+        appId: 'algolia',
+        apiKey: process.env.ALGOLIA_KEY,
+        indexName: 'nucleus',
+      })
+    );
+  }
+  return starlightPlugins;
+}
+
+const rehypeAutoLinkConfig = {
+  behavior: 'append'
+};
+
 export default defineConfig({
   markdown: {
-    remarkPlugins: [nucleusRemarkAside()]
+    remarkPlugins: [nucleusRemarkAside()],
+    rehypePlugins: [
+      rehypeHeadingIds,
+      [
+        rehypeAutolinkHeadings,
+        rehypeAutoLinkConfig
+      ],
+    ]
   },
   integrations: [
     starlight({
@@ -78,14 +113,15 @@ export default defineConfig({
       },
       editLink: {
         baseUrl:
-          "https://github.com/centrica-engineering/nucleus-docs/edit/main/",
+          "https://github.com/centrica-engineering/nucleus-docs/edit/astro-docs/",
       },
       customCss: [
         "./src/styles/custom.css",
         "./src/styles/aside.css",
         // Fontsource files for to regular and medium font weights.
-        "@fontsource/roboto/300.css",
         "@fontsource/roboto/400.css",
+        "@fontsource/roboto/500.css",
+        "@fontsource/roboto/700.css",
       ],
       pagination: false,
       lastUpdated: true,
@@ -93,10 +129,14 @@ export default defineConfig({
         github: "https://github.com/centrica-engineering/nucleus-docs",
       },
       components: {
+        Footer: "./src/components/starlight/Footer.astro",
+        Header: "/src/components/starlight/Header.astro",
+        Hero: "/src/components/starlight/Hero.astro",
         PageTitle: "./src/components/starlight/PageTitle.astro",
         TableOfContents: "./src/components/starlight/TableOfContents.astro",
         // ThemeSelect: './src/components/starlight/ThemeSelect.astro',
-        TwoColumnContent: "./src/components/starlight/TwoColumnContent.astro"
+        TwoColumnContent: "./src/components/starlight/TwoColumnContent.astro",
+        Sidebar: "./src/components/starlight/Sidebar.astro"
       },
       expressiveCode: {
         themes: ["github-dark", "github-light"],
@@ -118,7 +158,10 @@ export default defineConfig({
           collapsed: true,
           autogenerate: { directory: "page-types" },
         },
-      ]
+      ],
+      plugins: [
+        ...plugins()
+      ],
     }),
     lit(),
   ],

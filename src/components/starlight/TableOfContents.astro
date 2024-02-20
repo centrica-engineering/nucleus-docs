@@ -2,19 +2,34 @@
 import type { Props } from "@astrojs/starlight/props";
 import { Icon } from '@astrojs/starlight/components';
 import TableOfContentsList from './TableOfContents/TableOfContentsList.astro';
+import { Image } from "astro:assets";
 
 const { labels, toc } = Astro.props;
+const { slug } = Astro.params;
+
+const mastheadImages = import.meta.glob("../../assets/masthead/**/*");
+const mastheadImage = mastheadImages[`../../assets/masthead/${slug}.svg`];
 ---
 
 {
-	toc && (
-		<nucleus-toc data-min-h={toc.minHeadingLevel} data-max-h={toc.maxHeadingLevel}>
-			<nav aria-labelledby="starlight__on-this-page">
-				<h2 id="starlight__on-this-page">{labels['tableOfContents.onThisPage']}</h2>
-				<TableOfContentsList toc={toc.items} />
-			</nav>
-		</nucleus-toc>
-	)
+  mastheadImage ? (
+    <div class="mini-masthead">
+      <Image src={mastheadImage()} alt="" {...Astro.props} />
+    </div>
+  ) : (
+    <div class="mini-masthead"></div>
+  )
+}
+
+{
+  toc && (
+    <nucleus-toc data-min-h={toc.minHeadingLevel} data-max-h={toc.maxHeadingLevel}>
+      <nav aria-labelledby="starlight__on-this-page">
+        <h2 id="starlight__on-this-page">{labels['tableOfContents.onThisPage']}</h2>
+        <TableOfContentsList toc={toc.items} />
+      </nav>
+    </nucleus-toc>
+  )
 }
 
 <nav aria-labelledby="sidebar-contribute">
@@ -27,6 +42,49 @@ const { labels, toc } = Astro.props;
 <script src="../observer/NucleusTOC.js"></script>
 
 <style>
+  .mini-masthead {
+    background-color: var(--ns-color-teal);
+    margin-inline-end: 1px;
+    border-radius: 100px;
+    min-height: var(--ns-section-tabs-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 36px;
+      height: 36px;
+    }
+
+    :has(.masthead.components) & {
+      background-color: var(--ns-color-masthead-components);
+    }
+
+    :has(.masthead.experience) & {
+      background-color: var(--ns-color-masthead-experience);
+    }
+
+    :has(.masthead.form) & {
+      background-color: var(--ns-color-masthead-form);
+    }
+
+    :has(.masthead.deprecated) & {
+      background-color: var(--ns-color-masthead-deprecated);
+    }
+
+    :has(.masthead.guidelines) & {
+      background-color: var(--ns-color-masthead-guidelines);
+    }
+
+    :has(.masthead.patterns) & {
+      background-color: var(--ns-color-masthead-patterns);
+    }
+
+    :has(.masthead.page-types) & {
+      background-color: var(--ns-color-masthead-page-types);
+    }
+  }
+
   nav {
     margin-block: 1.5rem;
   }
@@ -44,7 +102,7 @@ const { labels, toc } = Astro.props;
   a[aria-current="true"],
   a[aria-current="true"]:hover,
   a[aria-current="true"]:focus {
-    font-weight: 600;
+    font-weight: 500;
     color: var(--sl-color-text-invert);
     background-color: var(--sl-color-text-accent);
   }

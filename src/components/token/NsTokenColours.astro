@@ -1,0 +1,11 @@
+---
+import { colors } from "@scripts/tokens";
+import Colour from '@components/Colour.astro';
+const { type } = Astro.props;
+---
+
+<slot />
+
+{
+  colors[type]?.map(([key, value], i) => <Colour name={key} value={value} />)
+}
