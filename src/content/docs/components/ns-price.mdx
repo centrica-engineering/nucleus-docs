@@ -43,13 +43,13 @@ The `ns-price` component takes an input in pence and outputs it in the correct p
 
 <Specification name={componentName} />
 
-### Specification notes
+#### Specification notes
 
-#### pence
+##### pence
 
 Price is passed in as an attribute to prevent the unformatted price being crawled by Google and subsequently displaying the wrong price in search results.
 
-#### negative
+##### negative
 
 There are a number of characters (i.e. hyphen, em dash, en dash) that can be confused with the minus symbol. Setting the negative attribute to true allows the component to output output the correct symbol. This ensures that screen readers will read the value as a minus price.
 
