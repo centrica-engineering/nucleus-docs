@@ -1,11 +1,11 @@
 ---
-import { icons } from '@connectedhomes/nucleus-util/brands/british-gas';
+import { iconOptions } from "@scripts/assets";
 ---
 
 <div class="icons">
   {
-    icons && 
-    icons.map((icon, i) => {
+    iconOptions && 
+    iconOptions().map((icon, i) => {
       return (
         <div class="icon">
           <div class="svg" set:html={icon.svg} />

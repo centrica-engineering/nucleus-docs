@@ -1,0 +1,11 @@
+---
+const { name } = Astro.props;
+---
+
+{
+  name?.startsWith('ns') ? (
+  <a href=`/components/${name}`><code>&lt;{name}&gt;</code></a>
+  ) : (
+  <code>&lt;{name}&gt;</code>
+  )
+}
