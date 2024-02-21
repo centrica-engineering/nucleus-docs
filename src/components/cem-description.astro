@@ -9,3 +9,18 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
   <p>{compDetails?.description}</p>
 </div>
 <slot />
+
+<style>
+  .purpose {
+    position: relative;
+    padding-inline-start: var(--sl-nav-pad-y);
+    border-inline-start-style: solid;
+    border-inline-start-width: 0.25rem;
+    border-inline-start-color: var(--sl-color-accent);
+
+    p {
+      font-size: var(--sl-text-h4);
+      font-weight: 500;
+    }
+  }
+</style>
