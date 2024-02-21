@@ -6,64 +6,50 @@ const { level } = Astro.props;
 const typographyClass = typography[level];
 ---
 
-<div class="ns-typography">
-  <slot />
-    {
-      <div class="typography-class">
-        <h5>Specification</h5>
-        <div class="properties">
-          <div class="typography-grid font-family">
-            <label>Font family</label>
-            <div class="typography-data">
-              <label>{typographyClass[`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_FAMILY`]}</label>
-              <label>{`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_FAMILY`}</label>
-            </div>
-          </div>
-          <div class="typography-grid font-weight">
-            <label>Font weight</label>
-            <div class="typography-data">
-              <label>{typographyClass[`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_WEIGHT`]}</label>
-              <label>{`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_WEIGHT`}</label>
-            </div>
-          </div>
-          <div class="typography-grid font-size">
-            <label>Font size</label>
-            <div class="typography-data">
-              <label>{typographyClass[`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_SIZE_VIEWPORT_DEFAULT`]}</label>
-              <label>{`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_SIZE_VIEWPORT_DEFAULT`}</label>
-            </div>
-          </div>
-          <div class="typography-grid font-size">
-            <label>Font size</label>
-            <div class="typography-data">
-              <label>{typographyClass[`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_SIZE_VIEWPORT_BASKETBALL_COURT`]}</label>
-              <label>{`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_SIZE_VIEWPORT_BASKETBALL_COURT`}</label>
-            </div>
-          </div>
-          <div class="typography-grid font-size">
-            <label>Font size</label>
-            <div class="typography-data">
-              <label>{typographyClass[`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_SIZE_VIEWPORT_RUGBY_PITCH`]}</label>
-              <label>{`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_SIZE_VIEWPORT_RUGBY_PITCH`}</label>
-            </div>
-          </div>
-        </div>
-        <label></label>
-      </div>
-    }
-  </ul>
-</div>
-<style>
+<slot />
 
-.typography-data { 
-  display: inline-block;
-  margin-top: 0 !important;
-}
-
-.typography-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-</style>
+<dl class="spec-list">
+  <p><code>font-family</code></p>
+  <div>
+    <dt>Value</dt>
+    <dd><code>{typographyClass[`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_FAMILY`]}</code></dd>
+  </div>
+  <div>
+    <dt>Token</dt>
+    <dd><code>{`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_FAMILY`}</code></dd>
+  </div>
+  <p><code>font-weight</code></p>
+  <div>
+    <dt>Value</dt>
+    <dd><code>{typographyClass[`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_WEIGHT`]}</code></dd>
+  </div>
+  <div>
+    <dt>Token</dt>
+    <dd><code>{`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_WEIGHT`}</code></dd>
+  </div>
+  <p><code>font-size</code></p>
+  <div>
+    <dt>Value</dt>
+    <dd><code>{typographyClass[`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_SIZE_VIEWPORT_DEFAULT`]}</code> in the <strong>default</strong> viewport</dd>
+  </div>
+  <div>
+    <dt>Token</dt>
+    <dd><code>{`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_SIZE_VIEWPORT_DEFAULT`}</code></dd>
+  </div>
+  <div>
+    <dt>Value</dt>
+    <dd><code>{typographyClass[`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_SIZE_VIEWPORT_BASKETBALL_COURT`]}</code> in the <strong>basketball-court</strong> viewport</dd>
+  </div>
+  <div>
+    <dt>Token</dt>
+    <dd><code>{`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_SIZE_VIEWPORT_BASKETBALL_COURT`}</code></dd>
+  </div>
+  <div>
+    <dt>Value</dt>
+    <dd><code>{typographyClass[`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_SIZE_VIEWPORT_RUGBY_PITCH`]}</code> in the <strong>rugby-pitch</strong> viewport</dd>
+  </div>
+  <div>
+    <dt>Token</dt>
+    <dd><code>{`THEME_TYPOGRAPHY_${typographyClass.tokenFinder}_FONT_SIZE_VIEWPORT_RUGBY_PITCH`}</code></dd>
+  </div>
+</dl>

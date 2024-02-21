@@ -433,6 +433,10 @@ main {
       text-align: left; /* [6] */
     }
 
+    img[alt^="Placeholder"] {
+      max-width: 150px;
+    }
+
     .marker {
       position: relative;
       display: inline-block;
