@@ -4,11 +4,16 @@ import { Icon } from '@astrojs/starlight/components';
 import TableOfContentsList from './TableOfContents/TableOfContentsList.astro';
 import { Image } from "astro:assets";
 
-const { labels, toc } = Astro.props;
+const { editUrl, labels, entry, locale, isFallback, toc } = Astro.props;
 const { slug } = Astro.params;
 
 const mastheadImages = import.meta.glob("../../assets/masthead/**/*");
 const mastheadImage = mastheadImages[`../../assets/masthead/${slug}.svg`];
+
+const githubEditUrl =
+  entry.data.githubURL && (locale === 'en' || isFallback)
+    ? `${entry.data.githubURL}${entry.data.hasREADME ? 'README.md' : ''}`
+    : editUrl;
 ---
 
 {
@@ -35,8 +40,24 @@ const mastheadImage = mastheadImages[`../../assets/masthead/${slug}.svg`];
 <nav aria-labelledby="sidebar-contribute">
   <h2 id="sidebar-contribute">Contribute</h2>
   <ul>
-    <li><a href="/edit-this-page/"><Icon name="pencil" />Suggest changes</a></li>
-    <li><a href="/feedback/"><Icon name="pen" />Feedback</a></li>
+    <li>
+      {
+        editUrl && (
+          <a href={githubEditUrl} target="_blank" rel="noopener noreferrer">
+            <Icon name="pencil" size="1em" />
+            {labels['page.editLink']}
+            <Icon name="external" size="1em" />
+          </a>
+        )
+      }
+    </li>
+    <li>
+      <a href="https://forms.office.com/e/LNS9bNnQpp?origin=lprLink" target="_blank" rel="noopener noreferrer">
+        <Icon name="star" size="1em" />
+        Feedback
+        <Icon name="external" size="1em" />
+      </a>
+    </li>
   </ul>
 </nav>
 <script src="../observer/NucleusTOC.js"></script>
