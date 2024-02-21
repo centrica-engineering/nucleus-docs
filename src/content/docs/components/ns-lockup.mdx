@@ -19,7 +19,14 @@ Use `ns-lockup` to engage customers and promote products or services. The more r
 
 ### Examples
 
-<ExampleViewer type="standard" />
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer type="standard" />
+  </TabItem>
+  <TabItem label="Video">
+    <ExampleViewer type="video" />
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
@@ -59,6 +66,14 @@ Use `ns-lockup` to engage customers and promote products or services. The more r
 ### Specification
 
 <Specification name={componentName} />
+
+### Specification notes
+
+#### Video
+
+- Use the `video` variant when using a video instead of an image as the overlap is in front of the text box so neither the video nor its captions are obscured. The text then wraps around the video edge. (See the `video` example above)
+- It is not possible to use an illustration decoration with a video.
+- Use the video's YouTube link as the `id` attribute's value.
 
 ### Related links
 

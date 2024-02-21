@@ -56,6 +56,35 @@ The appointment-picker comprises a calendar to select a date and a radio-button 
 
 <Specification name={componentName} />
 
+#### `slot-data`
+
+The `slot-data` attribute (`slotData` property) should consist of array of objects containing a `date` and a `slots` property.
+
+date: String - eg. 2020-01-28 (28th January 2020).
+slots: Array of objects with a name and value pair.
+
+```js
+const slots = [
+  {
+    name: "9am to 12pm",
+    value: "0900-1200",
+  },
+  {
+    name: "10am to 2pm",
+    value: "1000-1400",
+  },
+  {
+    name: "12am to 5pm",
+    value: "1200-1700",
+  },
+];
+
+const slotData = [
+  { date: "2020-01-28", slots: slots },
+  { date: "2020-01-29", slots: slots },
+];
+```
+
 ### Related links
 
 <RelatedLinks name={componentName}>

@@ -44,6 +44,27 @@ Use the address selector for any of the following tasks:
 
 <Specification name={componentName} />
 
+#### Specification notes
+
+##### Addresses
+
+Each address in the addresses array should be an object consisting of the following properties: `addressLine1`, `addressLine2`, `postalTown`, `county`, `postcode`, `label`.
+
+The `label` is what will be displayed in the address list UI.
+
+##### Structure
+
+```js
+{
+  addressLine1: '123 Kings Road',
+  addressLine2: 'Little Village',
+  postalTown: 'Townsville',
+  county: 'Surrey',
+  postcode: 'AA12 3BB',
+  label: '123 Kings Road, AA12 3BB'
+}
+```
+
 ### Related links
 
 <RelatedLinks name={componentName}>

@@ -42,6 +42,129 @@ The `ns-form` component mimics the native form element features. Its purpose is 
 
 <Specification name={componentName} />
 
+#### Specification notes
+
+##### Submit
+
+The submit event is triggered in one of two ways:
+
+- Clicking on ns-cta (without href attribute)
+- Pressing enter when focused on an input
+
+Exceptions:
+
+Nested ns-forms will not dispatch the submit event to a parent ns-form
+
+##### Handling submit events
+
+You will need to set up a way to listen for the submit event. This can be done using via `onsubmit` or using an event listener.
+
+The returned event contains `event.detail.submitter` - this is the element that triggered the ns-form submit.
+
+Note: submitting the form does not trigger validation, this will need to be handled separately. See Validated below.
+
+onsubmit example:
+
+```html
+<ns-form onsubmit="submittedForm(event)">
+  <ns-inputter validation='["isRequired"]'>
+    ...
+  </ns-inputter>
+  <ns-cta type="submit">Submit</ns-cta>
+</ns-form>
+
+<script>
+  // do something as a result of the event
+  function submittedForm(event) {
+
+    // validate the form
+    event.target.validate();
+  }
+</script>
+```
+
+##### Validated
+
+This is only required if you need to listen for an event. The `validate` attribute will pass back the same object.
+
+##### Validation data
+
+An **invalid validate return response** looks like:
+
+```json
+{
+  "isValid": false,
+  "fields": [
+    {
+      "name": "email-address",
+      "isValid": false,
+      "value": "",
+      "error": "This field is required",
+      "input": {}
+    },
+    {
+      "name": "password",
+      "isValid": false,
+      "value": "",
+      "error": "This field is required",
+      "input": {}
+    }
+  ],
+  "fieldsByName": {
+    "email-address": {
+      "name": "email-address",
+      "isValid": false,
+      "value": "",
+      "error": "This field is required",
+      "input": {}
+    },
+    "password": {
+      "name": "password",
+      "isValid": false,
+      "value": "",
+      "error": "This field is required",
+      "input": {}
+    }
+  }
+}
+```
+
+A **valid validate return response** looks like:
+
+```json
+{
+  "isValid": true,
+  "fields": [
+    {
+      "name": "email-address",
+      "isValid": true,
+      "value": "hello@example.com",
+      "input": {}
+    },
+    {
+      "name": "password",
+      "isValid": true,
+      "value": "password12",
+      "input": {}
+    }
+  ],
+  "fieldsByName": {
+    "email-address": {
+      "name": "email-address",
+      "isValid": true,
+      "value": "hello@example.com",
+      "input": {}
+    },
+    "password": {
+      "name": "password",
+      "isValid": true,
+      "value": "password12",
+      "input": {}
+    }
+  }
+}
+```
+
 ### Related links
 
 <RelatedLinks name={componentName}>
