@@ -17,22 +17,45 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Use to indicate progress of journey.
+- Info and Next parts should show a statement describing the step.
+- Keep Info and Next statements concise or omit if unnecessary or duplicating content.
+- Keep steps to a minimum for perceived simplicity.
+- Use up to 20 steps but ideally not more than 10.
+- Use decimal places to reduce the number of overall steps.
+- Use JavaScript to dynamically update the component rather than re-add on each page.
+- Use the completed state on the confirmation page.
 :::
 
 :::dont
+- Use to show anything else such as loading.
+- Use questions on Info and Next - keep it informative.
+- Omit one step but not the rest for Info - instead use an 'all or nothing approach'.
+- Nest as sub-process.
+- Use less than 2 steps.
+- Use more than 1 on a page.
+- Use the last step as the confirmation page.
 :::
+
+### Standard
+
+![Labelled diagram of ns-progress](@assets/components/ns-progress/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Step Count | This text informs you of the current step you are on and how many steps there are in total. |
+| <span class="marker">B</span> | Info | This is a heading statement about this particular step. It is optional. |
+| <span class="marker">C</span> | Bar | This represents the current step and those that have been already been completed. They overlay the track. |
+| <span class="marker">D</span> | Track | This represents each step there is in in the process in total. Up to 20 steps are permitted. |
+| <span class="marker">E</span> | Next | A statement of what the following step will be. It is optional. |
+| <span class="marker">F</span> | Completed | The status shown on completion of the journey. |
 
 ## Implementation
 

@@ -15,23 +15,22 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+The `ns-price` component takes an input in pence and outputs it in the correct price format, prepends a pound symbol and adds an optional minus sign indicating negative values. It only works for pounds sterling.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Use for all price values.
 :::
 
 :::dont
+- Use for currencies other than pound sterling.
+- Use `show-decimal` unless it's necessary.
+- Use decimal pence values - e.g. `pence="10.2"`.
 :::
 
 ## Implementation
@@ -44,10 +43,19 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <Specification name={componentName} />
 
+#### Specification notes
+
+##### pence
+
+Price is passed in as an attribute to prevent the unformatted price being crawled by Google and subsequently displaying the wrong price in search results.
+
+##### negative
+
+There are a number of characters (i.e. hyphen, em dash, en dash) that can be confused with the minus symbol. Setting the negative attribute to true allows the component to output output the correct symbol. This ensures that screen readers will read the value as a minus price.
+
 ### Related links
 
 <RelatedLinks name={componentName}>
 - [ns-component](#!)
 - [ns-component](#!)
 </RelatedLinks>
-

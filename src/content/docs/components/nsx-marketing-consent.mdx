@@ -15,24 +15,34 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+Use this experience pattern in any journey where there is a need to capture and submit customer marketing preferences. Only use it for this purpose – do not use it for viewing or changing existing preferences.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Always keep the same options.
+- Use at the end of a journey that captures contact information used for marketing purposes.
+- Always use inside of an `ns-form` component.
+- Use only once per journey.
 :::
 
 :::dont
+- Reorder the options.
+- Use when collecting contact information that will be used solely for a service offering e.g. Booking an engineer.
+- Have any of the options pre-checked.
 :::
+
+### Standard
+
+![Labelled diagram of nsx-marketing-consent](@assets/components/nsx-marketing-consent/guidance.webp)
+
+It is possible to change the heading and the first paragraph to suit specific context. However, we recommend using the default content as these have been signed off by the legal team.
+
+If there is an official update to the default content, please inform the Nucleus team so that the the component can be updated.
 
 ## Implementation
 

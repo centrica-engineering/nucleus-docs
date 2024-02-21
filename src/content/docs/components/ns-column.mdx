@@ -15,23 +15,29 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+Allows the user interface to split into multiple columns by defining the number of columns required at specific viewports.
+
+Use for arranging components and content, not for gratuitous numerous columns as perhaps seen in a newspaper or magazine.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Pick the number of columns to complement the content.
+- Test the full responsive range of your page's and not just the defined viewports.
+- Try to stick to one column as much as possible .
+- Try to avoid having widowed items.
+- Use the ratio options to add side panels.
 :::
 
 :::dont
+- Have complicated column structures, try to simplify your content first.
+- Use in components that are too small to support multiple components.
+- Use to put components in columns that are designed to be standalone.
+- Use to create newspaper style columns and layouts.
 :::
 
 ## Implementation
@@ -43,6 +49,65 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 ### Specification
 
 <Specification name={componentName} />
+
+#### Specification notes
+
+##### How do viewports inherit values?
+
+Each value is applied at that viewpoint and each larger viewport unless the larger viewport has a column value applied.
+
+<Tabs>
+  <TabItem label="2 columns">
+    Setting 2 columns for every viewport larger than basketball court.
+
+    ```html
+    <ns-column basketball-court="2"></ns-column>
+    ```
+  </TabItem>
+  <TabItem label="1 to 3 columns">
+    Going from 1 column to 3 columns at a larger viewport.
+
+    ```
+      <ns-column hockey-pitch="3"></ns-column>
+    ```
+  </TabItem>
+  <TabItem label="2 viewports">
+    Going from 1 to 2 columns and then 4 columns.
+
+    ```
+      <ns-column hockey-pitch="2" rugby-pitch="4"></ns-column>
+    ```
+  </TabItem>
+  <TabItem label="3 viewports">
+    Going from 2 columns, to 4 columns, and back down to 3 columns
+
+    ```
+      <ns-column basketball-court="2" rugby-pitch="4" polo-field="3"></ns-column>
+    ```
+  </TabItem>
+  <TabItem label="ratios">
+    Going from 1 columns to 2:1 columns and then 3:1 columns
+
+    ```
+      <ns-column hockey-pitch="2:1" polo-field="3:1"></ns-column>
+    ```
+  </TabItem>
+</Tabs>
+
+##### How do the 2:1, 3:1 columns work?
+
+Ratios are used in order to have different widths for the columns. The ratios can be `1:2`, `2:1`, `1:3` and `3:1`. The first value will be applied to the width of all odd child elements, and the second to all child even elements.
+
+Considering the example of a `2:1` column, it essentially means that all odd child elements have a width of 2 and all even child elements have a width of 1.
+
+The markup would look like:
+
+```html
+<ns-column hockey-pitch="2:1">
+  <div>This will have width of 2</div>
+  <div>This will have width of 1</div>
+</ns-column>
+```
 
 ### Related links
 

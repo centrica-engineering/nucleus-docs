@@ -15,23 +15,25 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+Icons provide clarity to users and reduce their cognitive load. Icons always supplement a single line of text and are not treated as a description. They are solid or outline a single colour.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Use icons within the component.
+- Use this when building new Nucleus components.
+- Use them in colours.
+- Keep them small.
 :::
 
 :::dont
+- Create your own icons.
+- Add them as content.
+- Use a mix of outline and solid icons.
 :::
 
 ## Implementation
@@ -43,6 +45,16 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 ### Specification
 
 <Specification name={componentName} />
+
+#### Specification notes
+
+##### Type
+
+Functional icons like 'arrow' only have one version while products and services like 'gas' have an outline and solid versions where solid is the default
+
+##### Size
+
+When the size attribute value is empty, the icon will fill the parent element.
 
 ### Related links
 

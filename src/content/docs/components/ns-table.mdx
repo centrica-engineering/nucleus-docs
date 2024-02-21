@@ -15,24 +15,41 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+The table component consumes basic HTML table markup, which makes it accessible and responsive, as well as styling it.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Add a `<caption>` to the `ns-table`.
+- Use for displaying data in tables.
+- Use basic text, numbers.
+- Include at least one column header or row header.
+- Keep column and row headers short and concise.
+- Structure them in a logical and expected way.
 :::
 
 :::dont
+- Use ns-table just for layout.
+- Use for laying out components.
+- Use tables for anything but tabular data.
 :::
+
+### Standard
+
+![Labelled diagram of ns-table](@assets/components/ns-table/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Heading | Use to provide context to the table content. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">B</span> | Column Headings | A short description of the data or information found in the column cells below. |
+| <span class="marker">C</span> | Fixable Row Headings | This column can be used for data or information. It can also be set to a fixed column of headings for each row. |
+| <span class="marker">D</span> | Table Cells | This should contain the data or information required for each relevant column and row. |
 
 ## Implementation
 
@@ -43,6 +60,78 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 ### Specification
 
 <Specification name={componentName} />
+
+#### Specification notes
+
+##### Caption
+
+Always add a `<caption>` tag inside the `<table>`.  The caption should explain what the table is representing.
+
+```html
+<ns-table>
+  <table>
+    <caption>European countries in order of population</caption>
+  </table>
+</ns-table>
+```
+
+##### Column headers
+
+For column headings across the first row place header cells `<th>` within `<thead>`.
+
+```html
+<ns-table>
+  <table>
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>Population</th>
+      </tr>
+    </thead>
+  </table>
+</ns-table>
+```
+
+##### Row headers
+
+For row headers in the left-most column place the headers in `<th>` within the `<tbody>`.
+
+The component will automatically make these headings 'sticky' so that on smaller screens the table can scroll horizontally while the row headers stay in place.
+
+```html
+<ns-table>
+  <table>
+    <thead>
+      <tr>
+        <th>&nbsp;</th>
+        <th>Month 1</th>
+        <th>Month 2</th>
+        ...
+        <th>Month 11</th>
+        <th>Month 12</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Company A<th>
+        <td>100</td>
+        <td>200</td>
+        ...
+        <td>1100</td>
+        <td>1200</td>
+      </tr>
+      <tr>
+        <th>Company B<th>
+        <td>100</td>
+        <td>200</td>
+        ...
+        <td>1100</td>
+        <td>1200</td>
+      </tr>
+    </tbody>
+  </table>
+</ns-table>
+```
 
 ### Related links
 

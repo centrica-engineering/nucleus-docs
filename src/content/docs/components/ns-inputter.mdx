@@ -15,6 +15,16 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+Use these types of inputs to help customers enter and select information:
+
+- Text (including tel, email, and number)
+- Radio button
+- Checkbox
+- Select (drop-downs)
+- Textarea
+
+If you intend to use a password inputter, please see the `ns-password` component.
+
 :::tip
 If you would like to use a password input then please see the [ns-password](/components/ns-password) component.
 :::
@@ -69,11 +79,11 @@ If you would like to use a password input then please see the [ns-password](/com
 
 <Tabs>
   <TabItem label="Mask">
-  `mask=""`
+    `mask=""`
     <ExampleViewer type="mask" />
   </TabItem>
   <TabItem label="Separator">
-  `mask=""` and `separator=""`
+    `mask=""` and `separator=""`
     <ExampleViewer type="separator" />
   </TabItem>
 </Tabs>
@@ -130,7 +140,7 @@ Requires a mask. Can only be one character.
 
 #### `ignore-separator`
 
-Setting the ignoreseparator property to true will force length validations (such as minLength and maxLength) to not include the separator when calculating the length. eg. With '-' as the separator: '12-34-56' would have a length of 8, if ignoreseparator is true it would count it as 6 characters.
+Setting the ignoreseparator property to true will force length validations (such as minLength and maxLength) to not include the separator when calculating the length. e.g. With '-' as the separator: '12-34-56' would have a length of 8, if ignoreseparator is true it would count it as 6 characters.
 
 #### `slot="label"`
 
@@ -142,15 +152,17 @@ This requires helper property which is initially hidden and can be revealed by t
 
 #### `validation`
 
-It is possible to have multiple validations. For example: ["isRequired", "isNumber", "isInteger"]
+It is possible to have multiple validations. For example: `["isRequired", "isNumber", "isInteger"]`.
+
 Some of the validation options can be configured by passing in values within the parentheses:
+
 - minLength(x) - Shows error if the input value is less than x chars.
 - maxLength(x) - Shows error if the input value is greater than x chars.
 - isDate() - Shows error if the input value is not a valid date, the expected format is dd/mm/yyyy
-- minDate(date) - Shows an error if the input value date is less than provided date.  eg. `minDate('20/12/2020')`
-- maxDate(date) - Shows an error if the input vale date is greater than the provided date.  eg. `maxDate('31/12/2022')`
-- isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode.  This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function.  eg. `isPostcode(true)`
-- isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number.  This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function.  eg. `isPhoneNumber(true)`
+- minDate(date) - Shows an error if the input value date is less than provided date. e.g. `minDate('20/12/2020')`
+- maxDate(date) - Shows an error if the input vale date is greater than the provided date. e.g. `maxDate('31/12/2022')`
+- isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode. This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function. e.g. `isPostcode(true)`
+- isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number. This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function. e.g. `isPhoneNumber(true)`
 
 #### Anonymous slot
 

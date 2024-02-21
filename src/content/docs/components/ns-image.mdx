@@ -15,23 +15,25 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+British Gas has a variety of images to enhance content on the website and help sell a story. This component enables image use on the website at the correct ratios while ensuring the page loads quickly (utilising lazy loading).
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Resize your image to the correct dimensions for the component.
+- Use JPEG and WebP image format.
+- Use brand approved images.
+- Think about the image responsive behaviour.
 :::
 
 :::dont
+- Use images as the primary content.
+- Put text inside the image.
+- Use a white background in images.
 :::
 
 ## Implementation
@@ -43,6 +45,22 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 ### Specification
 
 <Specification name={componentName} />
+
+#### Specification notes
+
+##### Src
+
+- The URL should be from the CMS.
+
+##### Alt
+
+- If the image is just for decoration then set the alt to an empty string.
+- If the image is required to understand what is going on, use the alt to add a description of what the image shows.
+- Don't add text about the media type, such as "an image".
+
+##### Background
+
+- This is only for decorative images.
 
 ### Related links
 

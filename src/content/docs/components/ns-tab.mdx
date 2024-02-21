@@ -15,23 +15,22 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+The `ns-tab` is the button that changes the content in the `ns-tabs` when clicked. It shows the user relevant content with a heading and an optional icon.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Always add heading text.
 :::
 
 :::dont
+- Add an icon to one tab and not to the other tabs.
+- Add more than 2 words to the heading.
+- Add different types of icons (solid, outline, functional).
 :::
 
 ## Implementation

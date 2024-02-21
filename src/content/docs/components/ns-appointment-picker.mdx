@@ -15,24 +15,36 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+The appointment-picker comprises a calendar to select a date and a radio-button type inputter to show the available time slots for the selected date.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Use this when the customer needs to select a date and a time slot for an appointment.
+- Use `ns-inputter` to surface the best suitable slots for a customer before presenting the full appointment picker, where appropriate.
+- Use `ns-alert` alongside `ns-appointment-picker` to surface any important notifications regarding a customer booking.
+- Use multiple appointment pickers in ns-tabs so users can easily access different types of bookings.
 :::
 
 :::dont
+- Use to select an appointment slot on a single date. Use `ns-inputter` radio options instead.
+- Force customers to use the appointment picker first if there is very poor appointment availability. Present the next available appointments in an `ns-inputter` radio first.
 :::
+
+### Standard
+
+![Labelled diagram of ns-appointment-picker](@assets/components/ns-appointment-picker/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | `ns-calendar` | The calendar to select the date. |
+| <span class="marker">B</span> | `ns-inputter` | The picker to select the time. |
 
 ## Implementation
 
@@ -43,6 +55,35 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 ### Specification
 
 <Specification name={componentName} />
+
+#### `slot-data`
+
+The `slot-data` attribute (`slotData` property) should consist of array of objects containing a `date` and a `slots` property.
+
+date: String - eg. 2020-01-28 (28th January 2020).
+slots: Array of objects with a name and value pair.
+
+```js
+const slots = [
+  {
+    name: "9am to 12pm",
+    value: "0900-1200",
+  },
+  {
+    name: "10am to 2pm",
+    value: "1000-1400",
+  },
+  {
+    name: "12am to 5pm",
+    value: "1200-1700",
+  },
+];
+
+const slotData = [
+  { date: "2020-01-28", slots: slots },
+  { date: "2020-01-29", slots: slots },
+];
+```
 
 ### Related links
 

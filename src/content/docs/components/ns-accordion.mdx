@@ -16,7 +16,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
-We use accordions to break down content into meaningful sections, helping to reduce information overload. Accordions are useful for things like frequently asked questions or displaying multiple blocks of related content inside an ns-expander.
+Use `ns-accordion` to break down content into meaningful sections, helping to reduce information overload. Accordions can be useful for things like frequently asked questions or displaying multiple blocks of related content inside an `ns-expander`.
 
 ### Examples
 
@@ -25,34 +25,34 @@ We use accordions to break down content into meaningful sections, helping to red
 ## Guidance
 
 :::do
-- Use for FAQs
-- Use to split up related content
-- Make sure the heading relates to content
-- Use as a supporting component to the rest of the page’s content
+- Use for FAQs.
+- Use to split up related content.
+- Make sure the heading relates to content.
+- Use as a supporting component to the rest of the page’s content.
 :::
 
 :::dont
-- Use a background with an accordion as the expanded state is white
-- Use more than 8 expanders
-- Use for critical or to hide information (such as caveats)
-- Use as a solution to excessive copy on a page
-- Use as the only component on a page
+- Use a background with an accordion as the expanded state is white.
+- Use more than 8 expanders.
+- Use for critical or to hide information (such as caveats).
+- Use as a solution to excessive copy on a page.
+- Use as the only component on a page.
 :::
 
 ### Standard
 
-![Labelled diagram of the Accordion component](@assets/components/ns-accordion/guidance.webp)
+![Labelled diagram of ns-accordion](@assets/components/ns-accordion/guidance.webp)
 
 #### Key
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">A</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total.  |
-| <span class="marker">B</span> | Content | Use between 1 and 8 [ns-expander](/components/ns-expander) components. All expanders need to be related to the accordion's heading.|
+| <span class="marker">A</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">B</span> | Content | Use between 1 and 8 [`<ns-expander>`](./ns-expander) components. All expanders need to be related to the accordion's heading. |
 
 ### Considerations
 
-If you need more than 8 [ns-expander](/components/ns-expander) components, you can use more than one accordion on the page.
+If you need more than 8 [ns-expander](./ns-expander) components, you can use more than one accordion on the page.
 
 If there isn't a inherent logical order to the expanders, use alphabetical order for ease of scanning.
 
@@ -65,16 +65,6 @@ If there isn't a inherent logical order to the expanders, use alphabetical order
 ### Specification
 
 <Specification name={componentName} />
-
-#### `slot="heading"`
-
-- The heading is for the entire accordion.
-- Heading level should be h2 or h3 depending on its place in the semantics of the page.
-
-#### Anonymous slot
-
-- Place ns-expanders into this slot.
-- Check the [ns-expander documentation](/components/ns-expander) for more information.
 
 ### Related links
 

@@ -15,7 +15,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
-Cards are used to apply a container around a related grouping of information; this can be done through imagery, illustrations and typography.
+Cards are to be used to apply a container around a related grouping of information. Achieve this through a combination of imagery, illustrations and typography.
 
 ### Examples
 
@@ -37,26 +37,26 @@ Cards are used to apply a container around a related grouping of information; th
 ## Guidance
 
 :::do
-- Always use them in the triple layout
-- Use to direct customers to the actions
-- Embolden text in the paragraph that is important
-- Make your CTA copy unique, stating the action
-- Use section cards to navigate users to primary actions
-- Consider using decoration in the panel to add emphasis on the cards
+- Always use them in the triple layout.
+- Use to direct customers to the actions.
+- Embolden text in the paragraph that is important.
+- Make your CTA copy unique, stating the action.
+- Use section cards to navigate users to primary actions.
+- Consider using decoration in the panel to add emphasis on the cards.
 :::
 
 :::dont
-- Use the text CTA in the section card
-- Mix card types in a row
-- Have two or more cta's for a card
-- Repeat the CTA copy in each card
-- Use inline links in the paragraph
-- Use the section card without a decoration
+- Use the text CTA in the section card.
+- Mix card types in a row.
+- Have two or more cta's for a card.
+- Repeat the CTA copy in each card.
+- Use inline links in the paragraph.
+- Use the section card without a decoration.
 :::
 
 ### Section
 
-![](@assets/components/ns-card/guidance-section.webp)
+![Labelled diagram of ns-card section](@assets/components/ns-card/guidance-section.webp)
 
 #### Key
 
@@ -65,11 +65,11 @@ Cards are used to apply a container around a related grouping of information; th
 | <span class="marker">A</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. Headings contain light and bold font weight to highlight key messaging. |
 | <span class="marker">B</span> | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | <span class="marker">C</span> | CTA | Keep the text ‘short, relevant, and actionable’. It should not exceed more than 24 characters. |
-| <span class="marker">D</span> | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. The [specification table](#specification) has a list of options. |
+| <span class="marker">D</span> | Illustration | Use to support and highlight the content. The illustration should relate to the product or service you are talking about. [See our illustrations](../guidelines/assets/#illustrations). |
 
 ### Support
 
-![](@assets/components/ns-card/guidance-suppport.webp)
+![Labelled diagram of ns-card support](@assets/components/ns-card/guidance-support.webp)
 
 #### Key
 
@@ -82,7 +82,7 @@ Cards are used to apply a container around a related grouping of information; th
 
 ### Flat
 
-![](@assets/components/ns-card/guidance-flat.webp)
+![Labelled diagram of ns-card flat](@assets/components/ns-card/guidance-flat.webp)
 
 #### Key
 
@@ -155,9 +155,7 @@ If using with a type of `support` with an image. There is also the option to pla
 
 ```html
 <ns-card type="support" image="path/to/image" pillOverImage>
-  <h3 slot="heading">
-    Get energy with us
-  </h3>
+  <h3 slot="heading">Get energy with us</h3>
   <p slot="paragraph">
     <ns-pill>Special Offer</ns-pill>
     ...
@@ -166,7 +164,7 @@ If using with a type of `support` with an image. There is also the option to pla
 </ns-card>
 ```
 
-More details on how to use the ns-pill can be found on the [ns-pill documentation](/components/ns-pill)
+More details on how to use the ns-pill can be found on the [`<ns-pill>`](./ns-pill).
 
 ### Related links
 

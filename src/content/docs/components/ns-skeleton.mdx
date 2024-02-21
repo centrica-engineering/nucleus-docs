@@ -15,23 +15,25 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+The `ns-skeleton` can be a visual representation of a paragraph and there are also options for text, headings, and subheadings.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Use to show a block of content is loading.
+- Use within a component slot.
+- Use if content will load under 5 seconds.
+- Use if part of the page is updating or loading.
 :::
 
 :::dont
+- Use for partial content.
+- Use for actionable elements like [`<ns-tabs>`](./ns-tabs) or [`<ns-cta>`](./ns-cta).
+- Use for media.
 :::
 
 ## Implementation
@@ -43,6 +45,12 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 ### Specification
 
 <Specification name={componentName} />
+
+#### Specification notes
+
+##### Type
+
+Type can be manually picked, however it will automatically decide the best `type` based on the `slot` it is in.
 
 ### Related links
 

@@ -36,7 +36,7 @@ const events = compDetails?.events;
     <div class="spec-list">
       {
         properties?.map((property) => {
-          if (!property.attribute || ['slottedStyles'].includes(property.name)) {
+          if (!property.attribute || property.deprecated || ['slottedStyles'].includes(property.name)) {
             return undefined;
           }
           const defaultValue = property.default?.replaceAll('"', '');
@@ -63,7 +63,7 @@ const events = compDetails?.events;
                   </div>
                   <div>
                     <dt>Options</dt>
-                    <dd>{property.type?.split('|')?.map((type) => <span><code>{type.replaceAll('"','')}</code>&#32;</span>)}</dd>
+                    <dd>{property.type?.split('|')?.map((type) => <span><code>{type !== '""' ? type.replaceAll('"','') : "''"}</code>&#32;</span>)}</dd>
                   </div>
                 ) : (
                   <div>
@@ -73,7 +73,7 @@ const events = compDetails?.events;
                 )
               }
               {
-                (property.name === 'icon' || (name === 'ns-icon' && property.name === 'name') || (property.description?.includes('icon'))) 
+                (property.name === 'icon' || (name === 'ns-icon' && property.name === 'name') || (name !== 'ns-icon' && property.description?.includes('icon'))) 
                 && (
                   <div>
                     <dt>Options</dt>

@@ -16,9 +16,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 <CompDetails name={componentName} />
 
 :::caution
-It has an ARIA role of `alert`, which brings the immediate attention of its content to the user. It should be used for its role and not for its look.
-
-More information in the [Accessibility](#accessibility) section.
+This component immediately brings the content to the user's attention. It can take the form of error, information, success or warning messages. Use it for its role and not for its look.
 :::
 
 ### Examples
@@ -57,27 +55,28 @@ More information in the [Accessibility](#accessibility) section.
 ## Guidance
 
 :::do
-- Keep the messages concise
-- Use an icon to alert the user what type of message it is
+- Keep the messages concise.
+- Use an icon to alert the user what type of message it is.
 :::
 
 :::dont
-- Use for generic message that is not in context to the page it is displayed in
-- Use it for Roadblock error messaging
+- Use for generic message that is not in context to the page it is displayed in.
+- Use it for Roadblock error messaging.
+- Include additional headings.
 :::
 
 ### Highlighter
 
-![](@assets/components/ns-alert/guidance-highlighter.webp)
+![Labelled diagram of ns-alert](@assets/components/ns-alert/guidance-highlighter.webp)
 
 #### Key
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| A | Icon | This is the icon inside the `highlighter` type. This is dictated by the `state` of Alert. The [specification table](#specification) has a list of options. |
-| B | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
-| C | Content | A single, short paragraph works best. You are able to use inline text links within the paragraph if necessary. Don't add additional headings within the paragraph and the copy length should not exceed more than two paragraphs of 3 lines each. Can contain bold copy `<b>`, inline links `<a>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
-| D | Accent | This is to support the context of the messaging. This colour matches that of the icon. |
+| <span class="marker">A</span> | Icon | This is the icon for the `highlighter` type. It is dictated by the `state` of ns-alert. The [specification](#specification) has a list of options. |
+| <span class="marker">B</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">C</span> | Content | A single, short paragraph works best. The copy length should not exceed more than two paragraphs of 3 lines each. Include bold copy `<b>`, inline links `<a>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
+| <span class="marker">D</span> | Accent | This is to support the context of the messaging. This colour matches that of the icon. |
 
 ### Considerations
 

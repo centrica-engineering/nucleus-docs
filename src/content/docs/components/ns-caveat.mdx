@@ -15,24 +15,41 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+Caveats link to content on the page, providing more information about legality and eligibility by separating it to the bottom of the page.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Try to make the caveats positive.
+- Be transparent, if the legal details are short, add it to the content.
+- Always have the legal caveats at the bottom of the page, before the footer.
+- Use an ordered list for the caveats that are linked in the page.
+- Use a `<p>` tag for the caveats that relate to the page or journey in general.
+- Only use text in the caveats.
+- Embolden text that is important.
 :::
 
 :::dont
+- Use the caveat to hide information.
+- Add images, iconography, etc.
+- Try to change the font size of the caveats.
 :::
+
+### Standard
+
+![Labelled diagram of ns-caveat](@assets/components/ns-caveat/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Link | The link used to highlight there is further relevant information the user should read. This might provide specific stipulations, conditions, or limitations. Clicking on this will take the user to the content at the bottom of the page. |
+| <span class="marker">B</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">C</span> | Content | A single, short paragraph works best. You can link to additional information if needed, such as terms and conditions. These should always be accompanied with a related description. |
 
 ## Implementation
 

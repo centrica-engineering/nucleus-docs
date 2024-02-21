@@ -15,23 +15,25 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+:::note
+This is the UI component for producing a customised footer. If you're looking for the default British Gas footer containing the links, please use the [`nsx-footer`](#) component.
+:::
+
+The footer is the last component on the page and holds links and copyright notices that are legally required. It also contains information about the company.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Always have the footer at the bottom of the page.
+- Keep the footer outside the `<main>` element.
 :::
 
 :::dont
+- Make your own footer if you are part of the customer facing website.
 :::
 
 ## Implementation
@@ -43,6 +45,12 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 ### Specification
 
 <Specification name={componentName} />
+
+#### Specification notes
+
+##### Section slot
+
+Use `<ns-card type="nav">`.
 
 ### Related links
 

@@ -15,23 +15,25 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+The header experience pattern internally holds the sections and the secondary navigation.
+
+The subheadings and links for the navigation are passed into each section of the nsx-header to allow them to be quickly updated.
+
 ### Examples
 
-<Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Extended">
-    <ExampleViewer type="standard" />
-  </TabItem>
-</Tabs>
+<ExampleViewer type="standard" />
 
 ## Guidance
 
 :::do
+- Use on the British Gas website.
+- Keep the header outside the `main` element.
+- Keep the header at the top.
 :::
 
 :::dont
+- Use for partnership or micro sites.
+- Only have heading links.
 :::
 
 ## Implementation
@@ -43,6 +45,44 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 ### Specification
 
 <Specification name={componentName} />
+
+#### Specification notes
+
+##### Section structure
+
+```json
+[
+  [
+    {
+      "heading": "Gas & electricity",
+      "links": [
+        {
+          "text": "Gas & electricity services",
+          "href": "/energy.html"
+        },
+        {
+          "text": "Our gas & electricity tariffs",
+          "href": "/energy/gas-and-electricity.html"
+        },
+        {
+          "text": "Get a quote",
+          "href": "/GetAQuote/"
+        },
+        {
+          "text": "Connections for new builds",
+          "href": "/energy/gas-and-electricity/new-connections.html"
+        },
+        {
+          "text": "Warm Home Discount",
+          "href": "/energy/energy-saving/warm-home-discount.html"
+        }
+      ]
+    },
+    ...
+  ],
+  ...
+]
+```
 
 ### Related links
 
