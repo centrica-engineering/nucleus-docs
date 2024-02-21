@@ -79,11 +79,11 @@ If you would like to use a password input then please see the [ns-password](/com
 
 <Tabs>
   <TabItem label="Mask">
-  `mask=""`
+    `mask=""`
     <ExampleViewer type="mask" />
   </TabItem>
   <TabItem label="Separator">
-  `mask=""` and `separator=""`
+    `mask=""` and `separator=""`
     <ExampleViewer type="separator" />
   </TabItem>
 </Tabs>
@@ -155,13 +155,14 @@ This requires helper property which is initially hidden and can be revealed by t
 It is possible to have multiple validations. For example: `["isRequired", "isNumber", "isInteger"]`.
 
 Some of the validation options can be configured by passing in values within the parentheses:
+
 - minLength(x) - Shows error if the input value is less than x chars.
 - maxLength(x) - Shows error if the input value is greater than x chars.
 - isDate() - Shows error if the input value is not a valid date, the expected format is dd/mm/yyyy
-- minDate(date) - Shows an error if the input value date is less than provided date.  e.g. `minDate('20/12/2020')`
-- maxDate(date) - Shows an error if the input vale date is greater than the provided date.  e.g. `maxDate('31/12/2022')`
-- isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode.  This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function.  e.g. `isPostcode(true)`
-- isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number.  This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function.  e.g. `isPhoneNumber(true)`
+- minDate(date) - Shows an error if the input value date is less than provided date. e.g. `minDate('20/12/2020')`
+- maxDate(date) - Shows an error if the input vale date is greater than the provided date. e.g. `maxDate('31/12/2022')`
+- isPostcode(includeEircode) - Shows an error if the input value is not a valid UK postcode. This validation will include Eircode (Irish postcodes) when you pass a parameter of `true` to the validation function. e.g. `isPostcode(true)`
+- isPhoneNumber(includeIreland) - Shows an error if the input value is not a valid UK phone number. This validation will include Irish phone numbers when you pass a parameter of `true` to the validation function. e.g. `isPhoneNumber(true)`
 
 #### Anonymous slot
 
