@@ -42,20 +42,20 @@ The `ns-form` component mimics the native form element features. Its purpose is 
 
 <Specification name={componentName} />
 
-### Specification notes
+#### Specification notes
 
-#### Submit
+##### Submit
 
 The submit event is triggered in one of two ways:
 
-* Clicking on ns-cta (without href attribute)
-* Pressing enter when focused on an input
+- Clicking on ns-cta (without href attribute)
+- Pressing enter when focused on an input
 
 Exceptions:
 
-* Nested ns-forms will not dispatch the submit event to a parent ns-form
+Nested ns-forms will not dispatch the submit event to a parent ns-form
 
-#### Handling submit events
+##### Handling submit events
 
 You will need to set up a way to listen for the submit event. This can be done using via `onsubmit` or using an event listener.
 
@@ -65,7 +65,7 @@ Note: submitting the form does not trigger validation, this will need to be hand
 
 onsubmit example:
 
-```markup
+```html
 <ns-form onsubmit="submittedForm(event)">
   <ns-inputter validation='["isRequired"]'>
     ...
@@ -74,8 +74,8 @@ onsubmit example:
 </ns-form>
 
 <script>
+  // do something as a result of the event
   function submittedForm(event) {
-    // do something as a result of the event
 
     // validate the form
     event.target.validate();
@@ -83,15 +83,15 @@ onsubmit example:
 </script>
 ```
 
-#### Validated
+##### Validated
 
-* This is only required if you need to listen for an event. The `validate` attribute will pass back the same object.
+This is only required if you need to listen for an event. The `validate` attribute will pass back the same object.
 
-#### Validation data
+##### Validation data
 
 An **invalid validate return response** looks like:
 
-```javascript
+```json
 {
   "isValid": false,
   "fields": [
@@ -131,7 +131,7 @@ An **invalid validate return response** looks like:
 
 A **valid validate return response** looks like:
 
-```javascript
+```json
 {
   "isValid": true,
   "fields": [

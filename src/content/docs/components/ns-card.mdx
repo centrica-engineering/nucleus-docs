@@ -9,7 +9,6 @@ import Placement from '@components/placement.astro';
 import CompDetails from '@components/cem-description.astro';
 import ExampleViewer from '@components/ExampleViewer.astro';
 import RelatedLinks from '@components/related-links.astro';
-import LinkToComponent from '@components/LinkToComponent.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Overview
@@ -156,9 +155,7 @@ If using with a type of `support` with an image. There is also the option to pla
 
 ```html
 <ns-card type="support" image="path/to/image" pillOverImage>
-  <h3 slot="heading">
-    Get energy with us
-  </h3>
+  <h3 slot="heading">Get energy with us</h3>
   <p slot="paragraph">
     <ns-pill>Special Offer</ns-pill>
     ...
@@ -167,7 +164,7 @@ If using with a type of `support` with an image. There is also the option to pla
 </ns-card>
 ```
 
-More details on how to use the ns-pill can be found on the <LinkToComponent name='ns-pill' />
+More details on how to use the ns-pill can be found on the [`<ns-pill>`](./ns-pill).
 
 ### Related links
 
