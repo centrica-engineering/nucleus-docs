@@ -279,10 +279,6 @@ main {
   }
 }
 
-.header {
-  border-block-end-style: none;
-}
-
 body {
   font-size: var(--sl-text-body);
 }
@@ -293,9 +289,6 @@ main {
   padding-block-end: 0 !important;
 }
 
-h1 {
-  font-weight: 400;
-}
 
 /* NOTE: @drew - 2024-01-03 - this selector is to target the homepage */
 :root[data-has-hero] {
@@ -569,117 +562,11 @@ h1 {
   }
 }
 
-.right-sidebar-panel {
-  padding-inline-start: 1rem;
-  padding-inline-end: var(--sl-content-pad-x);
-  padding-block-start: 0;
-  padding-block-end: 0;
-
-  .sl-container {
-    width: inherit;
-  }
-
-  h2 {
-    font-weight: 500;
-    color: var(--sl-color-text);
-    font-size: var(--sl-text-lg);
-  }
-
-  li {
-    margin-block: 0.5rem;
-  }
-
-  a {
-    font-size: var(--sl-text-base);
-  }
-}
-
 .layout:has(.homepage) {
   display: block;
 
   .main-pane {
     max-width: 100vw;
     width: 100%;
-  }
-}
-
-  .form {
-  display: grid;
-  gap: 1rem;
-
-  & :is(
-  input[type="date"],
-  input[type="email"],
-  input[type="number"],
-  input[type="password"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="text"],
-  select,
-  textarea) {
-    margin: 0; /* NOTE: remove `margin: 2px` Safari user agent */
-    padding-block-start: 0.25rem;
-    padding-block-end: 0.25rem;
-    padding-inline-start: 1rem;
-    padding-inline-end: 1rem;
-    background-color: var(--sl-color-bg);
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--sl-color-gray-6);
-    border-radius: 1rem;
-  }
-
-  label {
-    display: inline-block;
-    padding-block-start: 0.25rem;
-    padding-block-end: 0.25rem;
-  }
-
-  [class*="elements"] {
-    display: flex;
-    align-items: start;
-
-    > label {
-      display: inline-block;
-      font-weight: 500;
-      min-width: 8rem;
-    }
-
-    > input,
-    > textarea {
-      flex: 1 1 auto;
-
-      &:focus-visible {
-        outline-color: var(--sl-color-gray-5);
-      }
-    }
-  }
-
-  .radio-element {
-    display: inline-block;
-    margin-inline-end: 1rem;
-
-    &:last-of-type {
-      margin-inline-end: 0;
-    }
-
-    label {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      cursor: pointer;
-    }
-
-    input {
-      width: 1rem;
-      height: 1rem;
-    }
-  }
-
-  textarea {
-    font-size: 0.85rem;
-    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;
-    padding-block: 0.36278125rem !important;
-    resize: vertical;
   }
 }
