@@ -352,14 +352,6 @@ main {
   }
 }
 
-/* NOTE: @drew - 2024-02-01 - adjust the position of the right-sidebar when the section-tabs are on the page */
-:has(section-tabs) {
-  .right-sidebar {
-    top: calc(var(--sl-nav-height) + var(--ns-section-tabs-height) + var(--sl-content-pad-x) + var(--sl-content-pad-x));
-    margin-block-start: calc(var(--ns-section-tabs-height) * -1 );
-  }
-}
-
 /* NOTE: @drew - 2024-01-05 - 
   [1] - this is a hack to remove the table heading for the Guidance table that follows the heading of "Key"
   [2] - this is to override the starlight css that set's `<table>` as `display:block;`
