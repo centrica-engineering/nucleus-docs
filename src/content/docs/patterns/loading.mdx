@@ -1,0 +1,34 @@
+---
+title: Loading
+description: Loading patterns.
+---
+
+## Introduction
+
+Loading states can provide reassurance that a task is being processed, this can help reduce the frustration when a task might take longer than a user might expect. We have a number of methods that handle loading events. These depend on the task a user is interacting with.
+
+## Interim
+
+The [`<ns-cta>`](../../components/ns-cta) is capable of handling an interim loading experience.
+
+When used as the primary action to complete a task or progress to the next step of an experience, the `<ns-cta>` can display a loading icon and message that supports the task the user is looking to complete.
+
+## Interstitial
+
+The interstitial loading methods are there to be used when a user has attempted to complete a task that requires a wait of longer than 10 seconds, or is arriving from an external site, such as a price comparison website (PCW).
+ 
+### End of journey
+
+For some experiences, there can be a long delay in processing an action. Whether this is to complete a quote, make a payment or book an appointment, in these cases a loading state should provide a user with feedback and reassure them that something is happening. 
+
+Unlike the `<ns-cta>`, which can help provide context for short term pauses, when a user is expected to wait for a longer period of time, we should provide a clearer explanation and visual cue that their submission is being handled. 
+
+We handle these transitions using [the Stopgap page type](../../page-types/stopgap).
+
+This consists of using an `<ns-landmark type="lakeside">` and an `<ns-icon type="loading">`. It is recommended that we play back what their expected time to completion is.
+
+This should help reduce users feeling anxious and impatient.
+
+### From an external site
+
+In the same vein as the end of journey processing, transferring from an external site may require a prolonged amount of time for processing information. In order to reassure the user that their transfer is being handled, we would also recommend using the Stopgap page type. This allows us to explain to the user what is happening, and help reduce anxiety and impatience.
