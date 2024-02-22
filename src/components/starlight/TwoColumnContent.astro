@@ -1,6 +1,14 @@
 ---
 import type { Props } from "@astrojs/starlight/props";
 import NucleusMasthead from "../NucleusMasthead.astro";
+
+const { slug } = Astro.params;
+const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
+
+const classList = [
+  'right-sidebar',
+  {'has-component' : isComponentPage}
+];
 ---
 
 <NucleusMasthead {...Astro.props} />
@@ -9,7 +17,7 @@ import NucleusMasthead from "../NucleusMasthead.astro";
   {
     Astro.props.toc && (
       <aside class="right-sidebar-container">
-        <div class="right-sidebar">
+        <div class:list={classList}>
           <slot name="right-sidebar" />
         </div>
       </aside>
@@ -19,6 +27,12 @@ import NucleusMasthead from "../NucleusMasthead.astro";
 </div>
 
 <style>
+  /* NOTE: @drew - 2024-02-01 - adjust the position of the right-sidebar when the section-tabs are on the page */
+  .right-sidebar.has-component {
+    top: calc(var(--sl-nav-height) + var(--ns-section-tabs-height) + var(--sl-content-pad-x) + var(--sl-content-pad-x));
+    margin-block-start: calc(var(--ns-section-tabs-height) * -1 );
+  }
+
   .main-pane {
     isolation: isolate;
   }

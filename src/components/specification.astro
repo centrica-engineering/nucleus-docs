@@ -33,7 +33,7 @@ const events = compDetails?.events;
 { 
   properties?.length > 0 &&  (
     <h4 id="attributes">Attributes</h4>
-    <div class="spec-list">
+    <div class="description-list">
       {
         properties?.map((property) => {
           if (!property.attribute || property.deprecated || ['slottedStyles'].includes(property.name)) {
@@ -161,3 +161,7 @@ const events = compDetails?.events;
     </table>
   )
 }
+
+<style>
+  
+</style>
