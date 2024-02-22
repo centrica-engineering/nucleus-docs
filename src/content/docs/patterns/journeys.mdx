@@ -1,6 +1,8 @@
 ---
 title: Journeys
 description: Journey patterns documentation.
+tableOfContents:
+  maxHeadingLevel: 2
 ---
 
 import ExampleViewer from '@components/ExampleViewer.astro';
@@ -15,14 +17,6 @@ There is no one size fits all. Here, we introduce Journey patterns, an approach 
 
 **Be consistent** - but this doesn't mean we have to be the same.
 
-## Purpose
-
-Here we focus on how to approach functional customer journey design, principles, and reusable design solutions.
-
-These are made up of page types, experience patterns and components.
-
-Using these tools helps designers and engineers focus on solving complex user problems.
-
 ## Step-by-step
 
 When building a new experience for our customers, we advise that you employ a step-by-step journey pattern.
@@ -31,7 +25,21 @@ By understanding the customers mental model and breaking the journey into logica
 
 ![Step-by-step](@assets/patterns/journeys/step-by-step.webp)
 
-### Guiding principles
+## Guidance
+
+:::do
+- Create a logically structured step-by-step experience.
+- Help the customer to understand the context of the information you are asking.
+- Group relevant questions together.
+- Use existing patterns.
+:::
+
+:::dont
+- Place all of your questions on one page.
+- Ask for irrelevant information.
+:::
+
+### Principles
 
 Here are a set of principles to help the customer succeed using this step-by-step process:
 
@@ -76,8 +84,6 @@ Use a single page to group questions or tasks together, such as asking the custo
 
 Provide context and a description for groups of form controls by using the fieldset and legend attributes. Using these will help customers understand the objective of the task, and will naturally interact with the form better.
 
-- You can [read more information about the Fieldset component here](components/ns-fieldset).
-
 ### Playing back information
 
 Providing the customer with a summary of their answers can help reduce errors and confusion, and provide reassurance of what they have completed.
@@ -107,11 +113,11 @@ This element is used for presenting pairs of information - a label and a piece o
 
 It is ideal for summarising a series of customer responses. In addition to the label and data, a link can be used to allow navigation back to the relevant section.
 
-## Navigational items
+## Navigation
 
 Functional journey pages should come with a header that includes navigational items to ensure we keep a coherent experience across the website. It has also been proven that it helps customers that may have entered the wrong journey to easily recover and select the correct one.
 
-## Supporting pages for journeys
+## Supporting pages
 
 We have a growing number of page types that have been researched and developed across multiple teams.
 
@@ -119,28 +125,14 @@ These help to provide a consistent experience for the customer, and also to make
 
 They include:
 
-- [Start - for introducing a journey](page-types/start)
-- [Confirmation - for closing a journey](page-types/confirmation)
-- [Stopgap - to help during long processing times](page-types/stopgap)
-- [Roadblock - to help when a journey is unavailable](page-types/roadblock)
-
-## Best practice
-
-:::do
-- Create a logically structured step-by-step experience.
-- Help the customer to understand the context of the information you are asking.
-- Group relevant questions together.
-- Use existing patterns.
-:::
-
-:::dont
-- Place all of your questions on one page.
-- Ask for irrelevant information.
-:::
+- [Start - for introducing a journey](../../page-types/start)
+- [Confirmation - for closing a journey](../../page-types/confirmation)
+- [Stopgap - to help during long processing times](../../page-types/stopgap)
+- [Roadblock - to help when a journey is unavailable](../../page-types/roadblock)
 
 ## Checklist
 
-Below is a list of questions that might help you to create an intuitive and successful journey for our customers:
+This list of questions might help you to create an intuitive and successful journey for our customers:
 
 - What is the user's need for your journey?
 - What is the context of a customer using this journey?
@@ -152,7 +144,7 @@ Below is a list of questions that might help you to create an intuitive and succ
 - Is the formatting familiar?
 - Are you setting expectations correctly?
 
-## Further research
+## Research
 
 At the moment, Nucleus is focusing on this step-by-step journey pattern. And supporting any customer experiences using this journey pattern.
 
@@ -163,10 +155,3 @@ These areas include:
 - Motion choreography, transitions, and loading
 - Screen readers and other assistive technology
 - Navigating between sections
-
-If you would like to help research and define a journey pattern, please engage with Nucleus on Slack **#product-nucleus**
-
-## Feedback
-
-* Do you have insights or concerns to share? You can raise an issue via [Github bugs](https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=Bug&template=a--bug-report.md&title=[bug]%20[patterns-journeys]).
-* See all the issues already raised via [Github issues](https://github.com/connectedHomes/nucleus/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ABug+[patterns-journeys]).

@@ -133,6 +133,7 @@ export default defineConfig({
         Header: "/src/components/starlight/Header.astro",
         Hero: "/src/components/starlight/Hero.astro",
         PageTitle: "./src/components/starlight/PageTitle.astro",
+        PageSidebar: "./src/components/starlight/PageSidebar.astro",
         TableOfContents: "./src/components/starlight/TableOfContents.astro",
         // ThemeSelect: './src/components/starlight/ThemeSelect.astro',
         TwoColumnContent: "./src/components/starlight/TwoColumnContent.astro",
