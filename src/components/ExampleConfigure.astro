@@ -6,6 +6,7 @@ import { NucleusCodeSnippet } from './NucleusCodeSnippet';
 
 import customElements from '@connectedhomes/nucleus/ce-doc.json';
 import cesm from '@connectedhomes/nucleus/custom-elements.json';
+import { iconOptions, illustrationOptions } from '@scripts/assets';
 
 const customElement = customElements.find((customElement) => customElement.name === componentName);
 const cem = cesm.tags.find((tag) => tag.name === componentName);
@@ -157,12 +158,42 @@ attributes?.splice(0, 0, typeAttribute[0]);
       cem?.attributes?.map((attribute) => {
         const defaultValue = attribute.default?.replaceAll('"', '');
         if (attribute.type === 'string') {
-          return (
-            <div class="config-elements">
-              <label>{attribute.name}</label>
-              <input type="text" name={attribute.name} value={defaultValue}>
-            </div>
-          );
+          if (attribute.name === 'icon' || (componentName === 'ns-icon' && attribute.name === 'name') || (componentName !== 'ns-icon' && attribute.description?.includes('icon'))) {
+            return (
+              <div class="config-elements">
+                <label>{attribute.name}</label>
+                <select name={attribute.name}>
+                  {
+                    iconOptions()?.map((icon) => {
+                      const selected = icon.name === defaultValue ? 'selected' : undefined;
+                      return (<option value={icon.name} {selected}>{icon.name}</option>);
+                    })
+                  }
+                </select>
+              </div>
+            );
+          } else if (attribute.name === 'illustration' || (componentName === 'ns-illustration' && attribute.name === 'name') || (componentName !== 'ns-illustration' && attribute.description?.includes('illustration'))) {
+            return (
+              <div class="config-elements">
+                <label>{attribute.name}</label>
+                <select name={attribute.name}>
+                  {
+                    illustrationOptions()?.map((illustration) => {
+                      const selected = illustration.name === defaultValue ? 'selected' : undefined;
+                      return (<option value={illustration.name} {selected}>{illustration.name}</option>);
+                    })
+                  }
+                </select>
+              </div>
+            );
+          } else {
+            return (
+              <div class="config-elements">
+                <label>{attribute.name}</label>
+                <input type="text" name={attribute.name} value={defaultValue}>
+              </div>
+            );
+          }
         } else if (attribute.type?.indexOf("|") > -1) {
           const options = attribute.type?.replaceAll('"', '').split('|') ?? [];
           const attributeTitle = (<label>{attribute.name}</label>);
@@ -171,7 +202,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
             const checked = defaultValue === option ? '' : undefined;
             return (
               <div class="radio-element">
-                <label><input type="radio" name={attribute.name} value={option} {checked}> {option}</label>
+                <label><input type="radio" name={attribute.name} value={option ?? " "} {checked}> {option ? option : "empty"}</label>
               </div>
             );
           });
