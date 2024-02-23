@@ -14,30 +14,49 @@ const { href, title } = Astro.props;
 
 <style>
   .signpost {
+    position: relative;
     display: block;
     border-radius: 1rem;
     text-decoration: none;
     color: var(--ns-color-white) !important;
-    padding-block-start: var(--sl-content-pad-x);
-    padding-block-end: var(--sl-content-pad-x);
-    padding-inline-start: var(--sl-content-pad-x);
+    padding-block-start: 1.5rem;
+    padding-block-end: 1.5rem;
+    padding-inline-start: 1.5rem;
     padding-inline-end: 4rem;
 
-    &:hover {
-      background-color: var(--ns-color-white);
-      color: var(--ns-color-black);
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 1.5rem;
+      width: 22px;
+      height: 34px;
+      transform: translateY(-50%);
+      background-color: currentColor;
+      mask-image: var(--ns-icon-chevron);
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+
+      &::after {
+        right: 1rem;
+      }
     }
 
     h2 {
       color: inherit;
+      line-height: 1;
       font-weight: 400;
       font-size: var(--sl-text-5xl);
     }
 
     p {
-      margin-top: 0 !important;
+      margin-top: 0.5rem !important;
       font-family: menlo, monospace;
-      font-size: var(--sl-text-xl);
+      font-size: var(--sl-text-lg);
     }
 
     &:nth-of-type(1) {
