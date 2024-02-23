@@ -1,10 +1,10 @@
 ---
 import type { Props } from '@astrojs/starlight/props';
 
-const isHomePage = Astro.props.slug === '';
+const isRootPage = Astro.props.slug === '' || Astro.props.slug === '404';
 const classList = [
   'content-panel',
-  {'homepage': isHomePage}
+  {'rootpage': isRootPage}
 ];
 ---
 
@@ -13,11 +13,11 @@ const classList = [
 </div>
 
 <style>
-	.content-panel.homepage {
+	.content-panel.rootpage {
 		padding: 1.5rem var(--sl-content-pad-x);
 	}
 
-  .content-panel:not(.homepage) {
+  .content-panel:not(.rootpage) {
     padding-inline-start: calc(var(--sl-content-pad-x) * 2);
     padding-inline-end: var(--sl-content-pad-x);
     padding-block-start: 1rem;
@@ -29,7 +29,7 @@ const classList = [
   }
 
   @media(width < 72em) {
-    .content-panel:not(.homepage) {
+    .content-panel:not(.rootpage) {
       padding-inline-start: var(--sl-content-pad-x);
     }
   }
