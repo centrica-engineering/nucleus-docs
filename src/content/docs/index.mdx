@@ -28,7 +28,7 @@ hero:
       variant: secondary
 ---
 
-import SignPost from  '@components/SignPost.astro';
+import SignPost from '@components/SignPost.astro';
 import HeroAction from '@components/HeroAction.astro';
 import { CardGrid } from '@astrojs/starlight/components';
 
@@ -50,14 +50,14 @@ import { CardGrid } from '@astrojs/starlight/components';
   </SignPost>
 </CardGrid>
 
-<HeroAction actions={frontmatter.hero.actions}/>
+<HeroAction actions={frontmatter.hero.actions} />
 
 <CardGrid>
   <div class="note">
-    <div>
+    <div class="release">
       ### Latest release
 
-      v3.0  |  29 February 2024
+      v3.0 | 29 February 2024
 
       New platform, content reorganisation and updates, automated content, example feature with code snippets.
 
@@ -65,10 +65,55 @@ import { CardGrid } from '@astrojs/starlight/components';
     </div>
   </div>
   <div class="note">
-    <div>
+    <div class="thought">
       ### Thought of the month
 
       Accessibility is like a universal key. It opens doors for everyone.
     </div>
   </div>
 </CardGrid>
+
+## Latest Nucleus blog articles
+
+<div class="blog" role="list">
+  <div class="card" role="listitem">
+    <div class="media">
+      <img src="https://blog.nucleus.design/a11y-colours-in-design-systems/a11ycolours.jpg" alt="Using accessible colours in a design system" />
+    </div>
+    <div class="body">
+      <h3><a href="https://blog.nucleus.design/a11y-colours-in-design-systems/">Using accessible colours in a design system</a></h3>
+      <p>Why it is important and how to make it work.</p>
+      <p>7 July 2023</p>
+    </div>
+  </div>
+  <div class="card" role="listitem">
+    <div class="media">
+      <img src="https://blog.nucleus.design/be-aware-of-css-custom-properties/css-custom-properties.jpg" alt="Exposing the problem with CSS custom properties in a Design System." />
+    </div>
+    <div class="body">
+      <h3><a href="https://blog.nucleus.design/be-aware-of-css-custom-properties/">Be aware of using CSS custom properties</a></h3>
+      <p>Exposing the problem with CSS custom properties in a Design System.</p>
+      <p>1 December 2022</p>
+    </div>
+  </div>
+  <div class="card" role="listitem">
+    <div class="media">
+      <img src="https://blog.nucleus.design/creating-the-nucleus-logo/nucleus-logo-drafting.jpg" alt="Drafting the new Nucleus logo" />
+    </div>
+    <div class="body">
+      <h3><a href="https://blog.nucleus.design/creating-the-nucleus-logo/">Creating the Nucleus logo</a></h3>
+      <p>How we created our logo and why we needed to.</p>
+      <p>29 April 2022</p>
+    </div>
+  </div>
+  <div class="card" role="listitem">
+    <div class="media">
+      <img src="https://blog.nucleus.design/creating-a-new-sketch-library-for-nucleus/box-of-chocolates.jpg" alt="A selection of chocolates used as a metaphor for components." />
+    </div>
+    <div class="body">
+      <h3><a href="https://blog.nucleus.design/creating-a-new-sketch-library-for-nucleus/">Creating a new Sketch library for Nucleus</a></h3>
+      <p>Understanding the requirements of UX designers.</p>
+      <p>4 March 2022</p>
+    </div>
+  </div>
+</div>
