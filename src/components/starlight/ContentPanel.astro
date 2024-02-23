@@ -1,0 +1,51 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+
+const isRootPage = Astro.props.slug === '' || Astro.props.slug === '404';
+const classList = [
+  'content-panel',
+  {'rootpage': isRootPage}
+];
+---
+
+<div class:list={classList}>
+	<div class="sl-container"><slot /></div>
+</div>
+
+<style>
+	.content-panel.rootpage {
+		padding: 1.5rem var(--sl-content-pad-x);
+	}
+
+  .content-panel:not(.rootpage) {
+    padding-inline-start: calc(var(--sl-content-pad-x) * 2);
+    padding-inline-end: var(--sl-content-pad-x);
+    padding-block-start: 1rem;
+    padding-block-end: 0;
+
+    &:nth-child(1) {
+      display: none;
+    }
+  }
+
+  @media(width < 72em) {
+    .content-panel:not(.rootpage) {
+      padding-inline-start: var(--sl-content-pad-x);
+    }
+  }
+
+  @media (min-width: 72rem) {
+    .content-panel .sl-container {
+			margin-inline: auto;
+		}
+	}
+
+	.sl-container {
+		max-width: var(--sl-content-width);
+	}
+
+	.sl-container > :global(* + *) {
+		margin-top: 1.5rem;
+	}
+
+</style>
