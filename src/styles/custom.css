@@ -305,12 +305,35 @@ main {
     display: none;
   }
 
-  .hero {
-    display: block;
-  }
-
   .footer {
     display: none;
+  }
+
+  .note {
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    background-color: var(--sl-color-gray-7);
+
+    div *:not(:first-child) {
+      margin-top: 0.5rem !important;
+    }
+
+    .thought {
+      h3 {
+        font-size: var(--sl-text-h4);
+        text-transform: uppercase;
+        color: var(--sl-color-gray-3);
+      }
+      p {
+        font-size: var(--sl-text-h4);
+        font-weight: 500;
+      }
+    }
   }
 }
 
