@@ -6,27 +6,54 @@ interface Props {
 }
 const { href, title } = Astro.props;
 ---
-<div class="signpost">
-  <a href={href}>
-    <h2>{title}</h2>
-    <p><slot /></p>
-  </a>
-</div>
+
+<a href={href} class="signpost">
+  <h2>{title}</h2>
+  <slot />
+</a>
+
 <style>
   .signpost {
-    >a {}
+    display: block;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: var(--ns-color-white) !important;
+    padding-block-start: var(--sl-content-pad-x);
+    padding-block-end: var(--sl-content-pad-x);
+    padding-inline-start: var(--sl-content-pad-x);
+    padding-inline-end: 4rem;
 
-    h2 {}
-
-    p {}
-
-    :is(:hover, :focus-within) {
-      background-position: 0;
-      background-image: var(--accent-gradient);
+    &:hover {
+      background-color: var(--ns-color-white);
+      color: var(--ns-color-black);
     }
 
-    :is(:hover, :focus-within) h2 {
-      color: rgb(var(--accent-light));
+    h2 {
+      color: inherit;
+      font-weight: 400;
+      font-size: var(--sl-text-5xl);
+    }
+
+    p {
+      margin-top: 0 !important;
+      font-family: menlo, monospace;
+      font-size: var(--sl-text-xl);
+    }
+
+    &:nth-of-type(1) {
+      background-color: var(--ns-color-masthead-components);
+    }
+
+    &:nth-of-type(2) {
+      background-color: var(--ns-color-masthead-guidelines);
+    }
+
+    &:nth-of-type(3) {
+      background-color: var(--ns-color-masthead-patterns);
+    }
+
+    &:nth-of-type(4) {
+      background-color: var(--ns-color-masthead-page-types);
     }
   }
 </style>
