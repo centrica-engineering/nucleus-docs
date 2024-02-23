@@ -150,6 +150,11 @@ const classList = [
       padding-inline-start: 1rem;
     }
 
+
+    [id^="key"] + table thead {
+      display: none; /* NOTE: @drew - 2024-02-23 - A hack to remove the table heading for the Guidance table that follows the heading of "Key" */
+    }
+
     table:not(:where(.not-content *)) {
       overflow: auto;
       border-collapse: collapse;
