@@ -40,18 +40,20 @@ const isHomePage = Astro.props.slug === '';
     }
 
     h1 {
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
       text-transform: uppercase;
-      font-weight: normal;
+      font-size: var(--sl-text-4xl);
+      color: var(--sl-color-gray-3);
       text-align: center;
+      letter-spacing: 0.1em;
     }
 
     site-search {
       display: flex;
 
       button {
-        max-width: 40rem;
+        max-width: 37.5rem;
         margin-inline-start: auto;
         margin-inline-end: auto;
         border-radius: 100px;
