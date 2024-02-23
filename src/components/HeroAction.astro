@@ -5,8 +5,22 @@ import type { Props } from '@astrojs/starlight/props';
 const { actions } = Astro.props;
 ---
 
-<div class="sl-flex actions">
-  {
-    actions?.map(({ text, ...attrs }) => <CallToAction {...attrs} set:html={text} />)
-  }
+<div class="sl-flex">
+  <div class="actions">
+    {
+      actions?.map(({ text, ...attrs }) => <CallToAction {...attrs} set:html={text} />)
+    }
+  </div>
 </div>
+
+<style>
+  .sl-flex {
+    justify-content: center;
+  }
+
+  .actions {
+    display: flex;
+    margin-top: 3rem !important;
+    gap: 1rem;
+  }
+</style>

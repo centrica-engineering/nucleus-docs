@@ -47,6 +47,10 @@ const classList = [
     }
   }
 
+  .sl-markdown-content.homepage {
+    margin-top: 3rem;
+  }
+
   .sl-markdown-content.has-component {
     :is(h1, h2, h3, h4, h5, h6) {
       scroll-margin-top: calc(var(--ns-section-tabs-height) + 1rem);
@@ -112,10 +116,6 @@ const classList = [
 
     a:not(:where(.not-content *)) {
       color: var(--sl-color-text-accent);
-    }
-
-    a:hover:not(:where(.not-content *)) {
-      color: var(--sl-color-white);
     }
 
     code:not(:where(.not-content *)) {
