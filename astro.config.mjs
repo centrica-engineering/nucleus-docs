@@ -154,12 +154,12 @@ export default defineConfig({
           collapsed: true,
           autogenerate: { directory: "guidelines" },
         },
+        componentSidebar(),
         {
           label: "Patterns",
           collapsed: true,
           autogenerate: { directory: "patterns" },
         },
-        componentSidebar(),
         {
           label: "Page types",
           collapsed: true,
