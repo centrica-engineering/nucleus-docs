@@ -367,50 +367,7 @@ main {
     }
   }
 
-  .blog {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    padding-block-start: 2rem;
 
-    @media (width >= 50rem) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .card {
-      margin-block-start: 0;
-      border-radius: 0.5rem;
-      overflow: clip;
-      background-color: var(--sl-color-gray-7);
-      box-shadow: 0 0 0 1px var(--sl-color-gray-6);
-      transition: box-shadow 0.25s ease-in-out;
-
-      .media {
-        aspect-ratio: 16 / 9;
-        overflow: clip;
-      }
-
-      .body {
-        margin-block-start: 0;
-        padding-block-start: 1rem;
-        padding-block-end: 1rem;
-        padding-inline-start: 1rem;
-        padding-inline-end: 1rem;
-
-        h3 {
-          font-size: var(--sl-text-h4);
-          font-weight: 500;
-          color: var(--sl-color-gray-3);
-        }
-
-        p {
-          margin-block-start: 1rem;
-          font-size: var(--sl-text-base);
-          color: var(--sl-color-gray-3);
-        }
-      }
-    }
-  }
 
   .endpage {
     margin-top: 0;

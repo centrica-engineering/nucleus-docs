@@ -1,0 +1,25 @@
+---
+import { blogArticles } from '@scripts/blog';
+import NucleusBlogPostCard from './NucleusBlogPostCard.astro';
+
+const blogs = await blogArticles();
+---
+<div class="blog not-content">
+  <NucleusBlogPostCard  article={blogs[0]}/>
+  <NucleusBlogPostCard  article={blogs[3]}/>
+  <NucleusBlogPostCard  article={blogs[5]}/>
+  <NucleusBlogPostCard  article={blogs[7]}/>
+</div>
+
+<style>
+  .blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-block-start: 2rem;
+
+    @media (width >= 50rem) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>
