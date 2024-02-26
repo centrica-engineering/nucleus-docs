@@ -10,7 +10,7 @@ export class NucleusComponentRenderer extends LitElement {
       name: { type: String },
       src: { type: String },
       _minHeight: { type: Number, state: true },
-      _zoom: { type: Boolean, state: true },
+      zoom: { type: Boolean },
       _viewport: { type: String, state: true },
       _customElement: { type: Object, state: true }
     }
@@ -105,7 +105,7 @@ export class NucleusComponentRenderer extends LitElement {
 
     this._minHeight = 200;
     this._viewport = 'desktop';
-    this._zoom = 'zoom-out';
+    this.zoom = 'zoom-out';
   }
 
   willUpdate() {
@@ -144,20 +144,21 @@ export class NucleusComponentRenderer extends LitElement {
 
     const zoomOptions = this.shadowRoot.querySelectorAll('input[name="zoom"]');
     zoomOptions?.forEach((zoomOption) => {
-      zoomOption.checked = zoomOption.value === this._zoom;
-      zoomOption.addEventListener('change', (event) => this._zoom =  event.target.value );
+      zoomOption.checked = zoomOption.value === this.zoom;
+      zoomOption.addEventListener('change', (event) => this.zoom =  event.target.value );
     });
   }
 
   updated() {
     super.updated();
-    this._iframeHeight();
+    this._onIframeLoad();
   }
 
-  _iframeHeight() {
+  _onIframeLoad() {
     const iframe = this.shadowRoot.querySelector('.example-iframe');
     if (iframe) {
-      this._minHeight = iframe.contentWindow.document.body.scrollHeight;
+      const iframeDoc = iframe.contentWindow.document;
+      this._minHeight = iframeDoc.body.scrollHeight;
     }
   }
 
@@ -168,8 +169,8 @@ export class NucleusComponentRenderer extends LitElement {
 
     const classes = {
       'example-iframe': true,
-      'zoom-in': this._zoom === 'zoom-in',
-      'zoom-out': this._zoom === 'zoom-out',
+      'zoom-in': this.zoom === 'zoom-in',
+      'zoom-out': this.zoom === 'zoom-out',
       'viewport-mobile': this._viewport === 'mobile',
       'viewport-desktop': this._viewport === 'desktop',
     };
@@ -184,7 +185,7 @@ export class NucleusComponentRenderer extends LitElement {
           height="100%"
           allowfullscreen
           sandbox="allow-scripts allow-same-origin"
-          @load=${() => this._iframeHeight()}
+          @load=${() => this._onIframeLoad()}
         ></iframe>
         <div class="form">
           <div class="viewport">
