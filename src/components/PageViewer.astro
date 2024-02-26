@@ -1,0 +1,14 @@
+---
+import { NucleusPageRenderer } from './NucleusPageRenderer';
+
+const { slug } = Astro.params;
+
+const type  = 'page';
+const exampleFileMatcher = `/assets/${slug}/${type}.html`;
+const examples = import.meta.glob("../assets/page-types/**/*.html", { import: 'default', as: 'raw', eager: true});
+const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
+const htmlContent = await examples[htmlFile];
+---
+
+<NucleusPageRenderer src={htmlContent} client:only="lit"/>
+

@@ -1,0 +1,42 @@
+---
+title: Guide
+description: Page type | Guide page
+---
+
+import PageViewer from '@components/PageViewer.astro';
+
+## Introduction
+
+Guide pages unsurprisingly, give guidance to the reader. This guidance is often on a wide range of topics related in some way to the products and services the organisation offers. Guide pages are also an essential SEO tool, designed to drive traffic to the site by proving the organisation to be an expert on a range of (well considered and relevant) topics.
+
+### Purpose
+
+- Some guide pages are intended to provide specific detail relating to the products and services the organisation offers. Others answer important customer questions relating to our product and services.
+- To give the customer the ability to scan through the details and find what the information they need quickly and easily.
+- To give customers the confidence they need to make a purchase.
+- To educate customers on a particular topic.
+- This might take the form of instructions on how to do something, breaking down a complex topic or deeper reading to help make a decision.
+
+## Example
+
+<PageViewer />
+
+## Content guidance
+
+Images should only be used on a guide page if they are demonstrating a relative point. This way the layout can be kept clean and simple to help the customer easily scan to the information they need without distraction. 
+
+Keep content clear and to the point. Use bullet points or numbered lists to help convey instructions. Use descriptive h2 or h3 etc. to break content into relevant sections, allowing the user to identify the content by just reading those alone. And use the 2nd column and card to show things like contact details, a summary, or relative links.
+
+:::tip[Principles]
+- **Creative** - Clean and fresh
+- **Tone of voice** - Be helpful
+- **Keywords** - Functional, Informative
+:::
+
+| Page&nbsp;composition | Description |
+| :--- | :--- |
+| ![Image of header](../../../assets/page-types/guide/header.webp) | This page will always start with [`<nsx-header>`](/components/nsx-header) providing the primary navigation for the website, whilst also being our main brand presence. |
+| ![Image of landmark-hillside](../../../assets/page-types/guide/landmark.webp) | Next is [`<ns-landmark>`](/components/ns-landmark) (hillside) showing a clear, concise and descriptive headline, paired with a line of text that elaborates on the title. |
+| ![LF Content - 2col](../../../assets/page-types/guide/content.webp) | Following that there is the main body of content, which can be made up from h2-h6 and paragraph text, lists, tables, accordions and CTAs. It is contained within [`<ns-content>`](/components/ns-content) and has 2 columns in larger viewports. The column to the right can contain a support type [`<ns-card>`](/components/ns-card) useful for summarised information or relative links. |
+| ![Supplementary cards](../../../assets/page-types/guide/feedback.webp) | Then there is an section which is common to help and support pages and asks if the page was useful (answered with radio buttons). The feedback helps us improve the user experience of these pages.  |
+| ![Image of Footer](../../../assets/page-types/guide/footer.webp) | Finally, there is [`<nsx-footer>`](/components/nsx-footer) which holds all required links and copyright information for the website. It is also an important SEO tool as it includes links to social channels and our mobile apps. |
