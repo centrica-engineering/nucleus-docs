@@ -39,16 +39,21 @@ export class NucleusPageRenderer extends LitElement {
     `;
   }
 
-  updated() {
-    super.updated();
-    this._iframeHeight();
+  _onIframeLoad() {
+    const iframe = this.shadowRoot.querySelector('.page-iframe');
+    if (iframe) {
+      const iframeDoc = iframe.contentWindow.document;
+      const clickables = iframeDoc.body.querySelectorAll('[href^="#"]');
+      console.log(clickables);
+      clickables?.forEach((clickable) => {
+        clickable.addEventListener('click', function(e) {
+          e.preventDefault();
+        });
+      });
+    }
   }
 
   render() {
-    const styles = {
-      '--iframe-min-height': `${this._minHeight}px !important`
-    };
-
     const classes = {
       'page-iframe': true
     };
@@ -57,13 +62,12 @@ export class NucleusPageRenderer extends LitElement {
       <div class="page preview">
         <iframe
           class=${classMap(classes)}
-          style=${styleMap(styles)}
           srcdoc=${this.src}
           width="100%"
           height="100%"
           allowfullscreen
           sandbox="allow-scripts allow-same-origin"
-          @load=${() => this._iframeHeight()}
+          @load=${() => this._onIframeLoad()}
         ></iframe>
       </div>
     `;
