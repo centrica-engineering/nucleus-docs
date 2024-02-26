@@ -129,9 +129,11 @@ export default defineConfig({
         github: "https://github.com/centrica-engineering/nucleus-docs",
       },
       components: {
+        ContentPanel: "./src/components/starlight/ContentPanel.astro",
         Footer: "./src/components/starlight/Footer.astro",
         Header: "/src/components/starlight/Header.astro",
         Hero: "/src/components/starlight/Hero.astro",
+        MarkdownContent: "/src/components/starlight/MarkdownContent.astro",
         PageTitle: "./src/components/starlight/PageTitle.astro",
         PageSidebar: "./src/components/starlight/PageSidebar.astro",
         TableOfContents: "./src/components/starlight/TableOfContents.astro",

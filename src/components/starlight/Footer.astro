@@ -4,7 +4,8 @@ import config from 'virtual:starlight/user-config';
 import { Icon } from '@astrojs/starlight/components';
 import type { Props } from '@astrojs/starlight/props';
 
-import { EditLink, LastUpdated, Pagination } from 'virtual:starlight/components';
+import Pagination from '@astrojs/starlight/components/Pagination.astro';
+import LastUpdated from '@astrojs/starlight/components/LastUpdated.astro';
 
 const { editUrl, labels, entry, locale, isFallback } = Astro.props;
 

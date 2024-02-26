@@ -1,0 +1,223 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+
+const { slug } = Astro.params;
+const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
+const isHomePage = Astro.props.slug === '';
+
+const classList = [
+'sl-markdown-content',
+{'has-component': isComponentPage},
+{'homepage': isHomePage}
+];
+---
+
+<div class:list={classList}>
+  <slot />
+</div>
+
+<style>
+  .sl-markdown-content:not(.homepage) {
+    :is(h1, h2, h3, h4, h5, h6) {
+      color: var(--sl-color-heading);
+      line-height: var(--sl-line-height-headings);
+      scroll-margin-top: -0.5rem;
+      font-weight: 500;
+
+      &:hover {
+        .icon-link {
+          opacity: 1;
+        }
+      }
+
+      .icon-link {
+        display: inline-block;
+        background-color: currentColor;
+        margin-inline-start: 0.25em;
+        width: 1em;
+        height: 1em;
+        mask-image: var(--ns-icon-link);
+        mask-size: cover;
+        vertical-align: middle;
+        opacity: 0.25;
+        transition-property: opacity;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+      }
+    }
+  }
+
+  .sl-markdown-content.homepage {
+    margin-top: 3rem;
+  }
+
+  .sl-markdown-content.has-component {
+    :is(h1, h2, h3, h4, h5, h6) {
+      scroll-margin-top: calc(var(--ns-section-tabs-height) + 1rem);
+    }
+  }
+
+  .sl-markdown-content {
+    :not(a, strong, em, del, span, input, code) + :not(a, strong, em, del, span, input, code, :where(.not-content *)) {
+      margin-top: 1.5rem;
+    }
+
+    /* Headings after non-headings have more spacing. */
+    :not(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6):not(:where(.not-content *)) {
+      margin-top: 2.5rem;
+    }
+
+    li > :last-child:not(li, ul, ol):not(a, strong, em, del, span, input, :where(.not-content *)) {
+      margin-bottom: 1.25rem;
+    }
+
+    li + li:not(:where(.not-content *)),
+    dt + dt:not(:where(.not-content *)),
+    dt + dd:not(:where(.not-content *)),
+    dd + dd:not(:where(.not-content *)) {
+      margin-top: 0.25rem;
+    }
+
+    dt:not(:where(.not-content *)) {
+      font-weight: 700;
+    }
+    dd:not(:where(.not-content *)) {
+      padding-inline-start: 1rem;
+    }
+
+    :is(img, picture, video, canvas, svg, iframe):not(:where(.not-content *)) {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    h2:is(:not(:first-child)) {
+      margin-block-start: 6rem;
+    }
+
+    h1:not(:where(.not-content *)) {
+      font-size: var(--sl-text-h1);
+    }
+    h2:not(:where(.not-content *)) {
+      font-size: var(--sl-text-h2);
+    }
+    h3:not(:where(.not-content *)) {
+      font-size: var(--sl-text-h3);
+    }
+    h4:not(:where(.not-content *)) {
+      font-size: var(--sl-text-h4);
+    }
+    h5:not(:where(.not-content *)) {
+      font-size: var(--sl-text-h5);
+    }
+    h6:not(:where(.not-content *)) {
+      font-size: var(--sl-text-h6);
+    }
+
+    a:not(:where(.not-content *)) {
+      color: var(--sl-color-text-accent);
+    }
+
+    code:not(:where(.not-content *)) {
+      background-color: var(--sl-color-bg-inline-code);
+      margin-block: -0.125rem;
+      padding-inline-start: 0.25rem;
+      padding-inline-end: 0.25rem;
+      padding-block-start: 0.125rem;
+      padding-block-end: 0.125rem;
+      font-size: var(--sl-text-code-sm);
+      border-radius: 0.2rem;
+    }
+
+    :is(h1, h2, h3, h4, h5, h6) code {
+      font-size: inherit;
+    }
+
+    pre:not(:where(.not-content *)) {
+      border: 1px solid var(--sl-color-gray-5);
+      padding: 0.75rem 1rem;
+      font-size: var(--sl-text-code);
+      tab-size: 2;
+    }
+
+    pre code:not(:where(.not-content *)) {
+      all: unset;
+      font-family: var(--__sl-font-mono);
+    }
+
+    blockquote:not(:where(.not-content *)) {
+      border-inline-start: 1px solid var(--sl-color-gray-5);
+      padding-inline-start: 1rem;
+    }
+
+
+    [id^="key"] + table thead {
+      display: none; /* NOTE: @drew - 2024-02-23 - A hack to remove the table heading for the Guidance table that follows the heading of "Key" */
+    }
+
+    table:not(:where(.not-content *)) {
+      overflow: auto;
+      border-collapse: collapse;
+      width: 100%;
+
+      .marker {
+        position: relative;
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+        text-align: center;
+        font-weight: 700;
+        padding-block-start: 0.25em;
+        color: var(--ns-color-base-900);
+
+        &:before {
+          z-index: -1;
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          border-radius: 50%;
+          border-width: 2px;
+          border-style: solid;
+          border-color: var(--ns-color-grey-marker);
+          background-color: var(--ns-color-pink-marker);
+        }
+      }
+
+      th, td {
+        padding: 0.375rem 0.8125rem;
+        text-align: left;
+      }
+
+      th {
+        border-block-start-width: 0;
+        border-block-end-width: 2px;
+        border-inline-start-width: 0;
+        border-inline-end-width: 0;
+      }
+
+      td {
+        border-block-start-width: 0;
+        border-block-end-width: 1px;
+        border-inline-start-width: 0;
+        border-inline-end-width: 0;
+      }
+    }
+
+    /* tr:nth-child(2n):not(:where(.not-content *)) {
+      background-color: var(--sl-color-gray-7, var(--sl-color-gray-6));
+    } */
+
+    :is(th, td):not(:where(.not-content *)) {
+      border: 1px solid var(--sl-color-hairline-light);
+      padding: 0.375rem 0.8125rem;
+    }
+
+    hr:not(:where(.not-content *)) {
+      border: 0;
+      border-bottom: 1px solid var(--sl-color-hairline);
+    }
+  }
+</style>
