@@ -1,47 +1,122 @@
 ---
-title: THE DESIGN SYSTEM OF BRITISH GAS
+title: The British Gas Design System
 banner:
   content: |
+    <strong>ANNOUNCEMENT:</strong>
     v3.0 of the Nucleus Docs released 29th February 2024
+    <a href="https://forms.office.com/e/LNS9bNnQpp?origin=lprLink" target="_blank" rel="noopener noreferrer">Send us feedback <svg aria-hidden="true" class="astro-gbqdos4t astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;" data-astro-source-file="/Users/drew/Projects/nucleus-docs/node_modules/@astrojs/starlight/user-components/Icon.astro" data-astro-source-loc="16:2"><path d="M19.33 10.18a1 1 0 0 1-.77 0 1 1 0 0 1-.62-.93l.01-1.83-8.2 8.2a1 1 0 0 1-1.41-1.42l8.2-8.2H14.7a1 1 0 0 1 0-2h4.25a1 1 0 0 1 1 1v4.25a1 1 0 0 1-.62.93Z"></path><path d="M11 4a1 1 0 1 1 0 2H7a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-4a1 1 0 1 1 2 0v4a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h4Z"></path></svg></a>
 template: splash
+lastUpdated: false
 hero:
+  title: The design system of British Gas
   actions:
-    - text: Components
-      link: /components/ns-accordion/
-      icon: right-arrow
+    - text: Introduction
+      link: /introduction/
+      icon: document
       variant: primary
-    - text: Raise a Proposal
-      link: https://github.com/ConnectedHomes/nucleus/issues/new?assignees=&labels=RFC,+draft&template=b--proposal.md&title=%5BRFC%5D+Title+of+the+Proposal
-      icon: external
+    - text: What links
+      link: /link/
+      icon: rocket
       variant: secondary
-    - text: Nucleus Playground
-      link: https://playground.nucleus.design/
-      icon: pencil
+    - text: Should we add
+      link: /link/
+      icon: random
+      variant: secondary
+    - text: Starlight icons
+      link: https://starlight.astro.build/guides/components/#icon
+      icon: right-arrow
       variant: secondary
 ---
 
-import SignPost from  '@components/SignPost.astro';
+import SignPost from '@components/SignPost.astro';
 import HeroAction from '@components/HeroAction.astro';
 import { CardGrid } from '@astrojs/starlight/components';
 
 <CardGrid>
   <SignPost title="Components" href="/components/ns-accordion">
-    <p>purpose, code snippets, best practice</p>
+    <p>purpose, configure, specification</p>
   </SignPost>
 
-  <SignPost title="Guidelines" href="/guidelines/tokens/">
-    <p>typography, colours, global elements</p>
+  <SignPost title="Guidelines" href="/guidelines/accessibility/">
+    <p>principles, accessibility, tokens, assets</p>
   </SignPost>
 
   <SignPost title="Patterns" href="/patterns/asking-for-information/">
-    <p>experience patterns, consistent approaches</p>
+    <p>customer experience, engaging approaches</p>
   </SignPost>
 
-  <SignPost title="Page types" href="/page-types/start/">
-    <p>editorial, guide, hub, confirmation</p>
+  <SignPost title="Page types" href="/page-types/article/">
+    <p>start, confirmation, guide, hub</p>
   </SignPost>
 </CardGrid>
 
-<HeroAction actions={frontmatter.hero.actions}/>
+<HeroAction actions={frontmatter.hero.actions} />
 
+<CardGrid>
+  <div class="note">
+    <div class="release">
+      ### Latest release
 
+      v3.0 | 29 February 2024
+
+      New platform, content reorganisation and updates, automated content, example feature with code snippets.
+
+      [View all release notes](https://github.com/ConnectedHomes/nucleus/releases)
+    </div>
+  </div>
+  <div class="note">
+    <div class="thought">
+      ### Thought of the month
+
+      Accessibility is like a universal key. It opens doors for everyone.
+    </div>
+  </div>
+</CardGrid>
+
+## Latest Nucleus blog articles
+
+<div class="blog" role="list">
+  <div class="card" role="listitem">
+    <div class="media">
+      <img src="https://blog.nucleus.design/a11y-colours-in-design-systems/a11ycolours.jpg" alt="Using accessible colours in a design system" />
+    </div>
+    <div class="body">
+      <h3><a href="https://blog.nucleus.design/a11y-colours-in-design-systems/">Using accessible colours in a design system</a></h3>
+      <p>Why it is important and how to make it work.</p>
+      <p>7 July 2023</p>
+    </div>
+  </div>
+  <div class="card" role="listitem">
+    <div class="media">
+      <img src="https://blog.nucleus.design/be-aware-of-css-custom-properties/css-custom-properties.jpg" alt="Exposing the problem with CSS custom properties in a Design System." />
+    </div>
+    <div class="body">
+      <h3><a href="https://blog.nucleus.design/be-aware-of-css-custom-properties/">Be aware of using CSS custom properties</a></h3>
+      <p>Exposing the problem with CSS custom properties in a Design System.</p>
+      <p>1 December 2022</p>
+    </div>
+  </div>
+  <div class="card" role="listitem">
+    <div class="media">
+      <img src="https://blog.nucleus.design/creating-the-nucleus-logo/nucleus-logo-drafting.jpg" alt="Drafting the new Nucleus logo" />
+    </div>
+    <div class="body">
+      <h3><a href="https://blog.nucleus.design/creating-the-nucleus-logo/">Creating the Nucleus logo</a></h3>
+      <p>How we created our logo and why we needed to.</p>
+      <p>29 April 2022</p>
+    </div>
+  </div>
+  <div class="card" role="listitem">
+    <div class="media">
+      <img src="https://blog.nucleus.design/creating-a-new-sketch-library-for-nucleus/box-of-chocolates.jpg" alt="A selection of chocolates used as a metaphor for components." />
+    </div>
+    <div class="body">
+      <h3><a href="https://blog.nucleus.design/creating-a-new-sketch-library-for-nucleus/">Creating a new Sketch library for Nucleus</a></h3>
+      <p>Understanding the requirements of UX designers.</p>
+      <p>4 March 2022</p>
+    </div>
+  </div>
+</div>
+
+<footer class="endpage">
+</footer>
