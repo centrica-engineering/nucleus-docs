@@ -424,27 +424,6 @@ main {
   }
 }
 
-/* NOTE: @drew - 2023-11-29 - temporary styles for the Storybook iframe in the Pages section */
-.storybook-embed iframe {
-  display: block;
-  width: auto;
-  min-height: 544px;
-  height: auto;
-  border-style: solid;
-  border-color: #4d4d4d;
-  border-top-width: 64px;
-  border-right-width: 12px;
-  border-bottom-width: 64px;
-  border-left-width: 12px;
-  resize: both;
-  background: #ffffff;
-  overflow: auto;
-  position: relative;
-  min-width: 399px;
-  min-height: 795px;
-  border-radius: 50px;
-}
-
 .sidebar-pane {
   border-inline-end-style: none;
 }
