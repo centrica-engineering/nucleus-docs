@@ -25,6 +25,7 @@
     "htmlfy": "^0.1.0",
     "lit": "^3.1.0",
     "rehype-autolink-headings": "^7.1.0",
+    "rss-parser": "^3.13.0",
     "sharp": "^0.32.5"
   },
   "devDependencies": {

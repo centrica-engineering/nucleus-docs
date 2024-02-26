@@ -22,6 +22,7 @@ hero:
 
 import SignPost from  '@components/SignPost.astro';
 import HeroAction from '@components/HeroAction.astro';
+import NucleusBlogsLayout from '@components/NucleusBlogsLayout.astro';
 import { CardGrid } from '@astrojs/starlight/components';
 
 <CardGrid>
@@ -43,5 +44,7 @@ import { CardGrid } from '@astrojs/starlight/components';
 </CardGrid>
 
 <HeroAction actions={frontmatter.hero.actions}/>
+
+<NucleusBlogsLayout />
 
 

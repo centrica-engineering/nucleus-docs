@@ -1,0 +1,30 @@
+---
+const { blogPost } = Astro.props; 
+
+const imagePrefix = '<ns-image src="';
+const imageStartIndex = blogPost.content.indexOf(imagePrefix);
+const imageEndIndex = blogPost.content.indexOf('"', imageStartIndex + imagePrefix.length);
+const imageName = blogPost.content.substring(imageStartIndex + imagePrefix.length, imageEndIndex);
+const imageURL = `${blogPost.link}/${imageName}`;
+---
+
+<div class="blog-post-card">
+  <div class="blog-post-asset">
+    <img src={imageURL} />
+  </div>
+  <div class="blog-post-heading">
+    <a href={blogPost.link}>
+      <h3>{blogPost.title}</h3>
+    </a>
+  </div>
+  <div class="blog-post-subheading">
+    <p>{blogPost.contentSnippet.substring(0,150)}...</p>
+  </div>
+</div>
+
+<style>
+  .blog-post-asset img{
+    width: inherit;
+  }
+
+</style>
