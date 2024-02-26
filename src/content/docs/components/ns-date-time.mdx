@@ -15,6 +15,8 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+Takes an input of a standard date and/or time string (YYYY-MM-DDTHH:MM) and outputs it into the correct date and/or time format.
+
 ### Examples
 
 <ExampleViewer type="standard" />
@@ -39,6 +41,12 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 ### Specification
 
 <Specification name={componentName} />
+
+#### Specification notes
+##### date
+The time specified in the `date` attribute is in 24hrs format. It is displayed with am/pm following the tone of voice guidelines.
+
+Be careful when passing timezones in the date string due to British Summer Time.
 
 ### Related links
 
