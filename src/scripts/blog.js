@@ -1,9 +1,7 @@
-import Parser from 'rss-parser';
+const blogArticles = async () => {
+  return fetch('https://feature-posts-api.nucleus-blog.pages.dev/articles.json')
+  .then((response) => response.json())
+  .then(response => response.articles);
+};
 
-const blogPosts = async () => {
-  const parser = new Parser();
-  let blogData = (await parser.parseURL('https://blog.nucleus.design/feed.xml')).items;
-  return blogData;
-}
-
-export { blogPosts };
+export { blogArticles };
