@@ -457,14 +457,18 @@ main {
 
     > li {
       margin-block-start: 0;
+
+      &:has(> a){
+        border-inline-start-style: none;
+        margin-inline-start: var(--sl-sidebar-item-padding-inline);
+        padding-inline-start: var(--sl-sidebar-item-padding-inline);
+      }
     }
   }
 
-  .group-label {
-    .large {
-      font-weight: 500;
-      color: var(--sl-color-gray-3);
-    }
+  .large {
+    font-weight: 500;
+    color: var(--sl-color-gray-3);
   }
 
   details {
@@ -482,36 +486,36 @@ main {
         }
       }
     }
+  }
 
-    a {
-      position: relative;
-      font-size: var(--sl-text-base);
-      display: block;
-      border-radius: 0.25rem;
-      padding-inline-start: 1rem;
-      padding-inline-end: 0.5rem;
-      padding-block-start: 0.5rem;
-      padding-block-end: 0.5rem;
+  a {
+    position: relative;
+    font-size: var(--sl-text-base);
+    display: block;
+    border-radius: 0.25rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 0.5rem;
+    padding-block-start: 0.5rem;
+    padding-block-end: 0.5rem;
 
-      &:hover {
-        color: var(--sl-color-white);
-      }
+    &:hover {
+      color: var(--sl-color-white);
+    }
 
-      &[aria-current="page"] {
-        font-weight: 400;
-        background-color: var(--sl-color-gray-6);
-        color: var(--sl-color-text);
+    &[aria-current="page"] {
+      font-weight: 400;
+      background-color: var(--sl-color-gray-6);
+      color: var(--sl-color-text);
 
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0.25rem;
-          bottom: 0.25rem;
-          left: -1rem;
-          width: 0.25rem;
-          background-color: var(--sl-color-accent);
-          border-radius: 0.25rem;
-        }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0.25rem;
+        bottom: 0.25rem;
+        left: -1rem;
+        width: 0.25rem;
+        background-color: var(--sl-color-accent);
+        border-radius: 0.25rem;
       }
     }
   }
