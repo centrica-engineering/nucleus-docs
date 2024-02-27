@@ -137,7 +137,7 @@ export default defineConfig({
         PageTitle: "./src/components/starlight/PageTitle.astro",
         PageSidebar: "./src/components/starlight/PageSidebar.astro",
         TableOfContents: "./src/components/starlight/TableOfContents.astro",
-        // ThemeSelect: './src/components/starlight/ThemeSelect.astro',
+        ThemeSelect: './src/components/starlight/ThemeSelect.astro',
         TwoColumnContent: "./src/components/starlight/TwoColumnContent.astro",
         Sidebar: "./src/components/starlight/Sidebar.astro"
       },
@@ -145,12 +145,16 @@ export default defineConfig({
         themes: ["github-dark", "github-light"],
       },
       sidebar: [
-        componentSidebar(),
+        {
+          label: "Introduction",
+          link: '/introduction'
+        },
         {
           label: "Guidelines",
           collapsed: true,
           autogenerate: { directory: "guidelines" },
         },
+        componentSidebar(),
         {
           label: "Patterns",
           collapsed: true,

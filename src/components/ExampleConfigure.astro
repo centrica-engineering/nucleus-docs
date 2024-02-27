@@ -261,13 +261,14 @@ attributes?.splice(0, 0, typeAttribute[0]);
     })
   }
   </form>
-</div>
+  </div>
 
-<div class="preview">
-  <h2>Preview</h2>
-  <NucleusComponentRenderer src={htmlContent} name={componentName} client:visible/>
-  <NucleusCodeSnippet src={htmlContent} client:visible/>
-</div>
+  <div class="preview">
+    <h2>Preview</h2>
+    <NucleusComponentRenderer src={htmlContent} name={componentName} zoom="zoom-in" client:visible/>
+    <NucleusCodeSnippet src={htmlContent} client:visible/>
+  </div>
+
 
 <style>
   .config-content {
