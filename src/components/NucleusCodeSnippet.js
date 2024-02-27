@@ -3,7 +3,7 @@ import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { createRenderer } from 'remark-expressive-code';
 import { toHtml } from 'hast-util-to-html';
 import { prettify } from 'htmlfy';
-import { Task } from '@lit/task';
+import { Task, TaskStatus } from '@lit/task';
 
 export class NucleusCodeSnippet extends LitElement {
   static get properties() {
@@ -43,12 +43,46 @@ export class NucleusCodeSnippet extends LitElement {
           ${baseStyles ?? ''}
           ${themedStyles ?? ''}
           ${(baseStyles || themedStyles) ? '</style>' : ''}
-          <script>${jsModules}</script>
           ${htmlContentParts[1]}`;
         return html`${unsafeHTML(htmlContent)}`;
       },
       args: () => [prettify(this.src)]
     });
+  }
+
+  updated() {
+    super.updated();
+
+    if (this._formattedSrc.status === TaskStatus.COMPLETE) {
+      const copyBtn = this.shadowRoot.querySelector('.copy button');
+      copyBtn?.addEventListener('click', this._clickHandler.bind(this));
+    }
+  }
+
+  _clickHandler(event) {
+    let btn=event.currentTarget;
+    let code=btn.getAttribute('data-code').replace(/\u007f/g,'\n');
+    navigator.clipboard.writeText(code);
+
+    let tt=document.createElement('div');
+    tt.classList.add('feedback');
+    tt.append(btn.dataset.copied);
+    btn.before(tt);
+
+    tt.offsetWidth;
+    requestAnimationFrame(()=>tt.classList.add('show'));
+    let h=() => !tt || tt.classList.remove('show');
+    let r=() => {
+      if(!(!tt || parseFloat(getComputedStyle(tt).opacity)>0)){
+        tt.remove();
+        tt=null
+      }
+    };
+    setTimeout(h,1500);
+    setTimeout(r,2500);
+    btn.addEventListener('blur',h);
+    tt.addEventListener('transitioncancel',r);
+    tt.addEventListener('transitionend',r);
   }
 
   render() {
