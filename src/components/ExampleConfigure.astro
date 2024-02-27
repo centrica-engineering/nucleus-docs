@@ -133,7 +133,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
     tempContainer.appendChild(componentCopy);
 
     changedElements?.forEach((changedElement) => {
-      if(changedElement.value) {
+      if(changedElement.value !== 'false') {
         componentCopy.setAttribute(changedElement.name, changedElement.value);
       }
     });
