@@ -18,54 +18,54 @@ export class NucleusTOC extends LitElement {
     this._maxH = parseInt(this.dataset.maxH || '3', 10);
     this._links = [...this.querySelectorAll('a')];
   }
-    /** Test if an element is a table-of-contents heading. */
-    isHeading(el) {
-      if (el instanceof HTMLHeadingElement) {
-        // Special case for page title h1
-        if (el.id === '_top') return true;
-        // Check the heading level is within the user-configured limits for the ToC
-        const level = el.tagName[1];
-        if (level) {
-          const int = parseInt(level, 10);
-					if (int >= this._minH && int <= this._maxH) return true;
-        }
-      }
-      return false;
-    }
 
-    /** Walk up the DOM to find the nearest heading. */
-    getElementHeading(el) {
-      if (!el) return null;
-      const origin = el;
-      while (el) {
-        if (this.isHeading(el)) return el;
-        // Assign the previous sibling’s last, most deeply nested child to el.
-        el = el.previousElementSibling;
-        while (el?.lastElementChild) {
-          el = el.lastElementChild;
-        }
-        // Look for headings amongst siblings.
-        const h = this.getElementHeading(el);
-        if (h) return h;
-      }
-      // Walk back up the parent.
-      return this.getElementHeading(origin.parentElement);
-    }
-
-    /** Handle intersections and set the current link to the heading for the current intersection. */
-    setCurrent(entries) {
-
-      for (const { isIntersecting, target } of entries) {
-        if (!isIntersecting) continue;
-        const heading = this.getElementHeading(target);
-        if (!heading) continue;
-        const link = this._links.find((link) => link.hash === '#' + encodeURIComponent(heading.id));
-        if (link) {
-          this.updateCurrent(link);
-          break;
-        }
+  /** Test if an element is a table-of-contents heading. */
+  isHeading(el) {
+    if (el instanceof HTMLHeadingElement) {
+      // Special case for page title h1
+      if (el.id === '_top') return true;
+      // Check the heading level is within the user-configured limits for the ToC
+      const level = el.tagName[1];
+      if (level) {
+        const int = parseInt(level, 10);
+        if (int >= this._minH && int <= this._maxH) return true;
       }
     }
+    return false;
+  }
+
+  /** Walk up the DOM to find the nearest heading. */
+  getElementHeading(el) {
+    if (!el) return null;
+    const origin = el;
+    while (el) {
+      if (this.isHeading(el)) return el;
+      // Assign the previous sibling’s last, most deeply nested child to el.
+      el = el.previousElementSibling;
+      while (el?.lastElementChild) {
+        el = el.lastElementChild;
+      }
+      // Look for headings amongst siblings.
+      const h = this.getElementHeading(el);
+      if (h) return h;
+    }
+    // Walk back up the parent.
+    return this.getElementHeading(origin.parentElement);
+  }
+
+  /** Handle intersections and set the current link to the heading for the current intersection. */
+  setCurrent(entries) {
+    for (const { isIntersecting, target } of entries) {
+      if (!isIntersecting) continue;
+      const heading = this.getElementHeading(target);
+      if (!heading) continue;
+      const link = this._links.find((link) => link.hash === '#' + encodeURIComponent(heading.id));
+      if (link) {
+        this.updateCurrent(link);
+        break;
+      }
+    }
+  }
 
   connectedCallback() {
     const toObserve = document.querySelectorAll('main [id], main [id] ~ *, main .content > *');
@@ -78,6 +78,15 @@ export class NucleusTOC extends LitElement {
       });
     };
     observe();
+
+    if (!this._current) {
+      let link = this._links.find((link) => link.getAttribute('aria-current'));
+      if (link) {
+        this._current = link;
+      } else {
+        this.updateCurrent(this._links[0]);
+      }
+    }
   }
 
   getHeaderHeight() {
