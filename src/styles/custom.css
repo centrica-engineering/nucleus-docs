@@ -394,7 +394,7 @@ main {
 
       .media {
         aspect-ratio: 16 / 9;
-        overflow: clip;
+        overflow: hidden;
       }
 
       .body {
