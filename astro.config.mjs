@@ -152,7 +152,44 @@ export default defineConfig({
         {
           label: "Guidelines",
           collapsed: true,
-          autogenerate: { directory: "guidelines" },
+          items: [
+            {
+              label: "Principles",
+              link: "/guidelines/principles"
+            },
+            {
+              label: "Accessibility",
+              link: "/guidelines/accessibility"
+            },
+            {
+              label: "Typography",
+              link: "/guidelines/typography"
+            },
+            {
+              label: "Lists",
+              link: "/guidelines/lists"
+            },
+            {
+              label: "Assets",
+              link: "/guidelines/assets"
+            },
+            {
+              label: "Tokens",
+              link: "/guidelines/tokens"
+            },
+            {
+              label: "Working with Nucleus",
+              link: "/guidelines/working"
+            },
+            {
+              label: "Our process",
+              link: "/guidelines/process"
+            },
+            {
+              label: "Contributing",
+              link: "/guidelines/contributing"
+            }
+          ]
         },
         componentSidebar(),
         {
