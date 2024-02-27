@@ -102,6 +102,9 @@ attributes?.splice(0, 0, typeAttribute[0]);
     if (form) {
       form.reset();
     }
+    const changedElements = document.querySelectorAll('.config-elements .changed');
+    changedElements?.forEach(element => element.classList?.remove('changed'));
+
     populateConfig();
 
     const componentElement = document.querySelector('.config-content')?.firstElementChild;
