@@ -53,10 +53,17 @@ export function getStaticPaths() {
   </head>
   <body>
     <header>
-      <h1>{component}</h1>
+      <div class="header">
+        <div class="logo"></div>
+        <div class="name">
+          <h1>&lt;{component}&gt;</h1>
+        </div>
+      </div>
     </header>
-    <main>
-      <a href=`/components/${component}`><code>{component}</code> documentation page</a>
+    <main class="configurator">
+      <div class="action">
+        <a class="button secondary back" href=`/components/${component}`>Back to documentation</a>
+      </div>
       <ExampleConfigure componentName={component} src={htmlContent}>
         <Fragment set:html={htmlContent} />
       </ExampleConfigure>
@@ -64,15 +71,57 @@ export function getStaticPaths() {
 
     <style>
       header {
-        display: grid;
-        align-content: center;
-        justify-content: center;
         height: var(--sl-nav-height);
+        border-bottom: 1px solid var(--sl-color-hairline-shade);
+        padding-block-start: var(--sl-nav-pad-y);
+        padding-block-end: var(--sl-nav-pad-y);
+        padding-inline-start: var(--sl-nav-pad-x);
+        padding-inline-end: var(--sl-nav-pad-x);
         background-color: var(--sl-color-bg-nav);
+
+        .header {
+          position: relative;
+          display: grid;
+          height: calc(var(--sl-nav-height) - var(--sl-nav-pad-y) * 2);
+
+          .logo {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background-image: var(--ns-logo-homepage);
+            background-size: cover;
+            aspect-ratio: 245 / 44;
+          }
+
+          .name {
+            grid-column: 3 / -1;
+            text-align: right;
+
+            h1 {
+              font-weight: 400;
+              font-size: var(--sl-text-3xl);
+              font-family: menlo, monospace;
+            }
+          }
+        }
       }
 
       .config-content {
         display: none;
+      }
+
+      .configurator {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+        padding-inline-start: 5%;
+        padding-inline-end: 5%;
+        padding-block-start: 2rem;
+        padding-block-end: 2rem;
+
+        .action {
+          grid-column: 1 / -1;
+        }
       }
     </style>
 

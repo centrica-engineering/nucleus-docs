@@ -138,131 +138,129 @@ attributes?.splice(0, 0, typeAttribute[0]);
   });
 </script>
 
-<div class="config-content" set:html={htmlContent}>
+<div class="config-content" set:html={htmlContent}></div>
 
-</div>
-<div class="configurator">
-  <div class="configure">
-    <h2>Configuration</h2>
-    <form class="form">
-      <div class="action">
-        <button class="button primary run" id="play-config">Run</button>
-        <button class="button reset" id="reset-config">Reset</button>
-      </div>
-    {
-      cem?.attributes && (
-        <h3>Attributes</h3>
-      )
-    }
-    {
-      cem?.attributes?.map((attribute) => {
-        const defaultValue = attribute.default?.replaceAll('"', '');
-        if (attribute.type === 'string') {
-          if (attribute.name === 'icon' || (componentName === 'ns-icon' && attribute.name === 'name') || (componentName !== 'ns-icon' && attribute.description?.includes('icon'))) {
-            return (
-              <div class="config-elements">
-                <label>{attribute.name}</label>
-                <select name={attribute.name}>
-                  {
-                    iconOptions()?.map((icon) => {
-                      const selected = icon.name === defaultValue ? 'selected' : undefined;
-                      return (<option value={icon.name} {selected}>{icon.name}</option>);
-                    })
-                  }
-                </select>
-              </div>
-            );
-          } else if (attribute.name === 'illustration' || (componentName === 'ns-illustration' && attribute.name === 'name') || (componentName !== 'ns-illustration' && attribute.description?.includes('illustration'))) {
-            return (
-              <div class="config-elements">
-                <label>{attribute.name}</label>
-                <select name={attribute.name}>
-                  {
-                    illustrationOptions()?.map((illustration) => {
-                      const selected = illustration.name === defaultValue ? 'selected' : undefined;
-                      return (<option value={illustration.name} {selected}>{illustration.name}</option>);
-                    })
-                  }
-                </select>
-              </div>
-            );
-          } else {
-            return (
-              <div class="config-elements">
-                <label>{attribute.name}</label>
-                <input type="text" name={attribute.name} value={defaultValue}>
-              </div>
-            );
-          }
-        } else if (attribute.type?.indexOf("|") > -1) {
-          const options = attribute.type?.replaceAll('"', '').split('|') ?? [];
-          const attributeTitle = (<label>{attribute.name}</label>);
-
-          const optionsHTML = options?.map((option) => {
-            const checked = defaultValue === option ? '' : undefined;
-            return (
-              <div class="radio-element">
-                <label><input type="radio" name={attribute.name} value={option ?? " "} {checked}> {option ? option : "empty"}</label>
-              </div>
-            );
-          });
-          return (
-            <div class="config-elements">
-              {attributeTitle}
-              <span class="options">{optionsHTML}</span>
-            </div>
-          );
-        } else if (attribute.type === 'number') {
+<div class="configure">
+  <h2>Configuration</h2>
+  <form class="form">
+    <div class="action">
+      <button class="button primary run" id="play-config">Run</button>
+      <button class="button reset" id="reset-config">Reset</button>
+    </div>
+  {
+    cem?.attributes && (
+      <h3>Attributes</h3>
+    )
+  }
+  {
+    cem?.attributes?.map((attribute) => {
+      const defaultValue = attribute.default?.replaceAll('"', '');
+      if (attribute.type === 'string') {
+        if (attribute.name === 'icon' || (componentName === 'ns-icon' && attribute.name === 'name') || (componentName !== 'ns-icon' && attribute.description?.includes('icon'))) {
           return (
             <div class="config-elements">
               <label>{attribute.name}</label>
-              <input type="number" name={attribute.name} value={defaultValue}>
-            </div>
-          );
-        } else if (attribute.type === 'boolean') {
-          return (
-            <div class="config-elements">
-              <label>{attribute.name}</label>
-              <span class="options">
+              <select name={attribute.name}>
                 {
-                  ['true', 'false'].map((option) => {
-                    const checked = defaultValue === option ? true : false;
-                    return (
-                    <div class="radio-element">
-                      <label><input type="radio" name={attribute.name} value={option} {checked}> {option}</label>
-                    </div>
-                    )
+                  iconOptions()?.map((icon) => {
+                    const selected = icon.name === defaultValue ? 'selected' : undefined;
+                    return (<option value={icon.name} {selected}>{icon.name}</option>);
                   })
                 }
-              </span>
+              </select>
             </div>
           );
-        } else if (attribute.type === 'Array') {
+        } else if (attribute.name === 'illustration' || (componentName === 'ns-illustration' && attribute.name === 'name') || (componentName !== 'ns-illustration' && attribute.description?.includes('illustration'))) {
           return (
             <div class="config-elements">
               <label>{attribute.name}</label>
-              <input type="text" name={attribute.name} />
+              <select name={attribute.name}>
+                {
+                  illustrationOptions()?.map((illustration) => {
+                    const selected = illustration.name === defaultValue ? 'selected' : undefined;
+                    return (<option value={illustration.name} {selected}>{illustration.name}</option>);
+                  })
+                }
+              </select>
+            </div>
+          );
+        } else {
+          return (
+            <div class="config-elements">
+              <label>{attribute.name}</label>
+              <input type="text" name={attribute.name} value={defaultValue}>
             </div>
           );
         }
-      })
-    }
-    {
-      cem.slots && (
-        <h3>Slots</h3>
-      )
-    }
-    {
-      cem.slots?.map((slot) => {
+      } else if (attribute.type?.indexOf("|") > -1) {
+        const options = attribute.type?.replaceAll('"', '').split('|') ?? [];
+        const attributeTitle = (<label>{attribute.name}</label>);
+
+        const optionsHTML = options?.map((option) => {
+          const checked = defaultValue === option ? '' : undefined;
+          return (
+            <div class="radio-element">
+              <label><input type="radio" name={attribute.name} value={option ?? " "} {checked}> {option ? option : "empty"}</label>
+            </div>
+          );
+        });
         return (
-          <div class="slot-elements">
-            <label>{slot.name !== '' ? slot.name : 'Anonymous slot' }</label>
-            <textarea name={slot.name !== '' ? slot.name : 'default'}></textarea>
+          <div class="config-elements">
+            {attributeTitle}
+            <span class="options">{optionsHTML}</span>
           </div>
         );
-      })
-    }
-    </form>
+      } else if (attribute.type === 'number') {
+        return (
+          <div class="config-elements">
+            <label>{attribute.name}</label>
+            <input type="number" name={attribute.name} value={defaultValue}>
+          </div>
+        );
+      } else if (attribute.type === 'boolean') {
+        return (
+          <div class="config-elements">
+            <label>{attribute.name}</label>
+            <span class="options">
+              {
+                ['true', 'false'].map((option) => {
+                  const checked = defaultValue === option ? true : false;
+                  return (
+                  <div class="radio-element">
+                    <label><input type="radio" name={attribute.name} value={option} {checked}> {option}</label>
+                  </div>
+                  )
+                })
+              }
+            </span>
+          </div>
+        );
+      } else if (attribute.type === 'Array') {
+        return (
+          <div class="config-elements">
+            <label>{attribute.name}</label>
+            <input type="text" name={attribute.name} />
+          </div>
+        );
+      }
+    })
+  }
+  {
+    cem.slots && (
+      <h3>Slots</h3>
+    )
+  }
+  {
+    cem.slots?.map((slot) => {
+      return (
+        <div class="slot-elements">
+          <label>{slot.name !== '' ? slot.name : 'Anonymous slot' }</label>
+          <textarea name={slot.name !== '' ? slot.name : 'default'}></textarea>
+        </div>
+      );
+    })
+  }
+  </form>
   </div>
 
   <div class="preview">
@@ -270,20 +268,11 @@ attributes?.splice(0, 0, typeAttribute[0]);
     <NucleusComponentRenderer src={htmlContent} name={componentName} zoom="zoom-in" client:visible/>
     <NucleusCodeSnippet src={htmlContent} client:visible/>
   </div>
-</div>
+
+
 <style>
   .config-content {
     display: none;
-  }
-
-  .configurator {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
-    padding-inline-start: 5%;
-    padding-inline-end: 5%;
-    padding-block-start: 2rem;
-    padding-block-end: 2rem;
   }
 
   .configure {
