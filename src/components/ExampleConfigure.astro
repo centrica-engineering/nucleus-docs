@@ -76,7 +76,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
     }
   }
 
-  const inputs = document.querySelectorAll('input, textarea');
+  const inputs = document.querySelectorAll('input, textarea, select');
   Array.from(inputs).forEach((input) => {
     input.addEventListener('change', (event) => {
       if(input.type === 'radio') {
