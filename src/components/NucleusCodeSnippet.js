@@ -3,7 +3,7 @@ import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { createRenderer } from 'remark-expressive-code';
 import { toHtml } from 'hast-util-to-html';
 import { prettify } from 'htmlfy';
-import { Task } from '@lit/task';
+import { Task, TaskStatus } from '@lit/task';
 
 export class NucleusCodeSnippet extends LitElement {
   static get properties() {
@@ -50,11 +50,13 @@ export class NucleusCodeSnippet extends LitElement {
     });
   }
 
-  firstUpdated() {
-    super.firstUpdated();
+  updated() {
+    super.updated();
 
-    const copyBtn = this.shadowRoot.querySelector('.copy button');
-    copyBtn.addEventListener('click', this._clickHandler.bind(this));
+    if (this._formattedSrc.status === TaskStatus.COMPLETE) {
+      const copyBtn = this.shadowRoot.querySelector('.copy button');
+      copyBtn?.addEventListener('click', this._clickHandler.bind(this));
+    }
   }
 
   _clickHandler(event) {
