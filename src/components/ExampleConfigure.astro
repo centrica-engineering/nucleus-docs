@@ -29,9 +29,17 @@ attributes?.splice(0, 0, typeAttribute[0]);
       };
 
       Array.from(atts).forEach((attr) => {
-        const attrElements = document.querySelectorAll(`input[name=${attr.nodeName}]`);
+        const attrElements = document.querySelectorAll(`[name=${attr.nodeName}]`);
+        attrElements[0].setAttribute('value', attr.nodeValue ?? attrElements[0].defaultValue);
         if (attrElements?.length === 1) {
-          attrElements[0].setAttribute('value', attr.nodeValue ?? attrElements[0].defaultValue);
+          console.log(attrElements[0].nodeName);
+          if (attrElements[0].nodeName === 'SELECT') {
+            const current = attrElements[0].querySelector(`option[selected]`);
+            current?.removeAttribute('selected');
+            const option = attrElements[0].querySelector(`option[value='${attr.nodeValue}']`);
+            option?.setAttribute('selected', 'true');
+          }
+
         } else if (attrElements?.length > 1) {
           Array.from(attrElements).
           filter((attrElement) => attrElement.value === attr.nodeValue).
