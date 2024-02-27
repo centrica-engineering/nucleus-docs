@@ -7,6 +7,7 @@ const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
 const componentName = slug?.replace('components/', '');
 
 const { type } = Astro.props;
+const { disableConfigure = false } = Astro.props;
 const exampleFileMatcher = `/assets/${slug}/${type}.html`;
 const examples = import.meta.glob("../assets/**/*.html", { import: 'default', as: 'raw', eager: true});
 const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
@@ -15,7 +16,7 @@ const htmlContent = await examples[htmlFile];
 
 <div>
   {
-    isComponentPage && (
+    isComponentPage && !disableConfigure && (
       <div class="action">
         <a class="button secondary configure" href=`/configure/${slug}/${type}` rel="noopener nofollow" target="_blank">Configure</a>
       </div>
