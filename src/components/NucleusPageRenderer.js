@@ -44,7 +44,6 @@ export class NucleusPageRenderer extends LitElement {
     if (iframe) {
       const iframeDoc = iframe.contentWindow.document;
       const clickables = iframeDoc.body.querySelectorAll('[href^="#"]');
-      console.log(clickables);
       clickables?.forEach((clickable) => {
         clickable.addEventListener('click', function(e) {
           e.preventDefault();

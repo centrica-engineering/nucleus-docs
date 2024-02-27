@@ -161,7 +161,6 @@ export class NucleusComponentRenderer extends LitElement {
       this._minHeight = iframeDoc.body.scrollHeight;
 
       const clickables = iframeDoc.body.querySelectorAll('[href^="#"]');
-      console.log(clickables);
       clickables?.forEach((clickable) => {
         clickable.addEventListener('click', function(e) {
           e.preventDefault();
