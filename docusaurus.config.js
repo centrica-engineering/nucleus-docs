@@ -27,6 +27,14 @@ module.exports = {
       defaultMode: 'light',
       disableSwitch: true
     },
+    announcementBar: {
+      id: 'support_us',
+      content:
+        '<a target="_blank" rel="noopener noreferrer" href="https://beta.nucleus.design/"><strong>Beta Release:</strong> Nucleus Docs v.3.0</a> - packed with live examples, an easy-to-use configurator, and an improved UI. Explore a wealth of information and specifications.',
+      backgroundColor: '#002f87',
+      textColor: '#FFFFFF',
+      isCloseable: false,
+    },
     navbar: {
       logo: {
         alt: 'Nucleus',
