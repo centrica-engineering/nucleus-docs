@@ -13,9 +13,9 @@ const placements = jsdoc.find((tag) => tag.name === name)?.placements;
         {placements?.map((placement) => {
           if (placement.indexOf(' > ') > -1) {
             const placementTree = placement.split(' > ');
-            return <li><LinkToComponent name={placementTree[1]} /> wrapped in <LinkToComponent name={placementTree[0]} /></li>;
+            return <li><LinkToComponent name={placementTree[1].trim()} /> wrapped in <LinkToComponent name={placementTree[0].trim()} /></li>;
           }
-          return <li><LinkToComponent name={placement} /></li>;
+          return <li><LinkToComponent name={placement.trim()} /></li>;
         })}
       </ul>
     ) : (
