@@ -48,20 +48,16 @@ attributes?.splice(0, 0, typeAttribute[0]);
       });
 
       Array.from(childrens)?.forEach(element => {
-        const slotName = element.getAttribute('slot');
-        if (slotName) {
-          slotMap[slotName] = [element];
-          const slottedElement = document.querySelector(`[name=${slotName}]`);
-          slottedElement.value = element.outerHTML;
-        } else {
-          slotMap.default.push(element);
+        const slotName = element.getAttribute('slot') ?? 'default';
+        if (!slotMap[slotName]) {
+          slotMap[slotName] = [];
         }
+        slotMap[slotName].push(element);
       });
 
-      const slottedElement = document.querySelector(`[name='default']`);
-      if (slottedElement) {
-        slottedElement.value = slotMap.default.map(element => element.outerHTML).join('');
-      }
+      const slottedElements = document.querySelectorAll(`.slot-elements textarea`);
+      slottedElements?.forEach((slottedElement) => 
+        slottedElement.value = slotMap[slottedElement.name].map(element => element.outerHTML).join(''));
     }
   }
 
