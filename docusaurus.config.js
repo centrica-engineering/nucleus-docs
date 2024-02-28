@@ -30,7 +30,7 @@ module.exports = {
     announcementBar: {
       id: 'support_us',
       content:
-        'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+        '<a target="_blank" rel="noopener noreferrer" href="https://beta.nucleus.design/"><strong>Beta Release:</strong> Nucleus Docs v.3.0</a> - packed with live examples, an easy-to-use configurator, and an improved UI. Explore a wealth of information and specifications.',
       backgroundColor: '#fafbfc',
       textColor: '#091E42',
       isCloseable: false,
