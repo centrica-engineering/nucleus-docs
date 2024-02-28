@@ -48,16 +48,22 @@ attributes?.splice(0, 0, typeAttribute[0]);
       });
 
       Array.from(childrens)?.forEach(element => {
-        const slotName = element.getAttribute('slot') ?? 'default';
+        let slotName = element.getAttribute('slot') || 'default';
         if (!slotMap[slotName]) {
           slotMap[slotName] = [];
         }
+        console.log(element);
         slotMap[slotName].push(element);
       });
 
+      console.log(slotMap);
       const slottedElements = document.querySelectorAll(`.slot-elements textarea`);
-      slottedElements?.forEach((slottedElement) => 
-        slottedElement.value = slotMap[slottedElement.name].map(element => element.outerHTML).join(''));
+      console.log(slottedElements);
+      slottedElements?.forEach((slottedElement) => {
+        console.log(slottedElement);
+        const slotValue = slotMap[slottedElement.name]?.map(element => element.outerHTML).join('');
+        slottedElement.value = slotValue || '';
+      });
     }
   }
 
@@ -131,6 +137,8 @@ attributes?.splice(0, 0, typeAttribute[0]);
     changedElements?.forEach((changedElement) => {
       if(changedElement.value !== 'false') {
         componentCopy.setAttribute(changedElement.name, changedElement.value);
+      } else {
+        componentCopy.removeAttribute(changedElement.name);
       }
     });
 
