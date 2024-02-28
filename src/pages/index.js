@@ -30,12 +30,6 @@ function Home() {
       description="Description will go into a meta tag in <head />">
 
       <main class="ndsn">
-        <ns-skyline>
-          <ns-expander>
-            <h2 slot="heading"><a target="_blank" rel="noopener noreferrer" href="https://beta.nucleus.design/">Nucleus Docs v3.0</a> - released 29th February 2024</h2>
-            <p><strong>Beta Release:</strong> Nucleus Docs v.3.0 - packed with live examples, an easy-to-use configurator, and an improved UI. Explore a wealth of information and specifications. <a target="_blank" rel="noopener noreferrer" href="https://beta.nucleus.design/">Try it out here.</a></p>
-          </ns-expander>
-        </ns-skyline>
 
         <ns-landmark type="hillside" gradient="cyan">
           <h1 slot="heading">
