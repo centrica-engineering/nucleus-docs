@@ -46,8 +46,13 @@ export class NucleusCodeSnippet extends LitElement {
           ${htmlContentParts[1]}`;
         return html`${unsafeHTML(htmlContent)}`;
       },
-      args: () => [prettify(this.src)]
+      args: () => [this._prettifySrc]
     });
+  }
+
+  get _prettifySrc() {
+    console.log(this.src);
+    return this.src?.replaceAll('><', '>\n<');
   }
 
   updated() {
