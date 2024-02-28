@@ -29,10 +29,9 @@ attributes?.splice(0, 0, typeAttribute[0]);
       };
 
       Array.from(atts).forEach((attr) => {
-        const attrElements = document.querySelectorAll(`[name=${attr.nodeName}]`);
-        attrElements[0].setAttribute('value', attr.nodeValue ?? attrElements[0].defaultValue);
+        const attrElements = document.querySelectorAll(`.config-elements [name=${attr.nodeName}]`);
         if (attrElements?.length === 1) {
-          console.log(attrElements[0].nodeName);
+          attrElements[0].setAttribute('value', attr.nodeValue ?? attrElements[0].defaultValue);
           if (attrElements[0].nodeName === 'SELECT') {
             const current = attrElements[0].querySelector(`option[selected]`);
             current?.removeAttribute('selected');
@@ -52,15 +51,11 @@ attributes?.splice(0, 0, typeAttribute[0]);
         if (!slotMap[slotName]) {
           slotMap[slotName] = [];
         }
-        console.log(element);
         slotMap[slotName].push(element);
       });
 
-      console.log(slotMap);
       const slottedElements = document.querySelectorAll(`.slot-elements textarea`);
-      console.log(slottedElements);
       slottedElements?.forEach((slottedElement) => {
-        console.log(slottedElement);
         const slotValue = slotMap[slottedElement.name]?.map(element => element.outerHTML).join('');
         slottedElement.value = slotValue || '';
       });
