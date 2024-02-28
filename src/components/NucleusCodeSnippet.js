@@ -51,7 +51,6 @@ export class NucleusCodeSnippet extends LitElement {
   }
 
   get _prettifySrc() {
-    console.log(this.src);
     return this.src?.replaceAll('><', '>\n<');
   }
 
