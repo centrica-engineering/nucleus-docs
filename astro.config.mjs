@@ -203,9 +203,9 @@ export default defineConfig({
           autogenerate: { directory: "page-types" },
         },
       ],
-      plugins: [
-        ...plugins()
-      ],
+      // plugins: [
+      //   ...plugins()
+      // ],
     }),
     lit(),
   ],
