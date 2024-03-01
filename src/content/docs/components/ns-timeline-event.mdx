@@ -16,8 +16,33 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 <CompDetails name={componentName} />
 
 ### Examples
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer type="standard" />
+  </TabItem>
+  <TabItem label="Pending">
+    <ExampleViewer type="pending" />
+  </TabItem>
+  <TabItem label="In Progress">
+    <ExampleViewer type="in-progress" />
+  </TabItem>  
+  <TabItem label="Action Required">
+    <ExampleViewer type="action-required" />
+  </TabItem>
+  <TabItem label="Warning">
+    <ExampleViewer type="warning" />
+  </TabItem>
+  <TabItem label="Error">
+    <ExampleViewer type="error" />
+  </TabItem>
+  <TabItem label="Completed">
+    <ExampleViewer type="completed" />
+  </TabItem>
+  <TabItem label="Cancelled">
+    <ExampleViewer type="cancelled" />
+  </TabItem>
+</Tabs>
 
-<ExampleViewer type="standard" />
 
 ## Guidance
 
