@@ -115,10 +115,12 @@ export class NucleusComponentRenderer extends LitElement {
   }
 
   get doc() {
+    const timelineEventWrapper = this.name === 'ns-timeline-event' ? `<ns-timeline-event status="invalid"></ns-timeline-event>` : '';
     const wrapper = this._customElement?.placements?.includes('main') ? this.src : `
       <ns-panel>
         <div>
           ${this.src}
+          ${timelineEventWrapper}
         </div>
       </ns-panel>
     `;
