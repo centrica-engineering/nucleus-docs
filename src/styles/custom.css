@@ -436,24 +436,25 @@ main {
 }
 
 .sidebar-content {
-  padding-inline-start: 0;
-
   .top-level {
     padding-block-end: 50vh;
 
     > li {
       margin-block-start: 0;
 
-      &:has(> a){
-        border-inline-start-style: none;
-        margin-inline-start: var(--sl-sidebar-item-padding-inline);
-        padding-inline-start: var(--sl-sidebar-item-padding-inline);
+      > .large {
+        /* background-color: orange; */
+        padding-inline-start: 0.5rem;
+
+        &[aria-current="page"] {
+          font-weight: 600;
+        }
       }
     }
   }
 
   .large {
-    font-weight: 500;
+    letter-spacing: 0.1em;
     color: var(--sl-color-gray-3);
   }
 
