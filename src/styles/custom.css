@@ -443,7 +443,6 @@ main {
       margin-block-start: 0;
 
       > .large {
-        /* background-color: orange; */
         padding-inline-start: 0.5rem;
 
         &[aria-current="page"] {
