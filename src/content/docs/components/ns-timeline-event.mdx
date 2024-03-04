@@ -15,6 +15,10 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+:::caution
+This component can only be used within `ns-timeline`. Refer `ns-timeline` [slots specification table](/components/ns-timeline#specification) for usage.
+:::
+
 ### Examples
 <Tabs>
   <TabItem label="Standard">
@@ -63,7 +67,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 Each event has a status. The status of the event is controlled by the decoration used.
 
 | Style | Status | Description |
-| :--- | :------ | :--- |
+| :--- | :------ | :------ |
 | ![pending](@assets/components/ns-timeline-event/status-pending.webp)| `pending` |Communicates that the event has yet to commence. |
 | ![in progress](@assets/components/ns-timeline-event/status-in-progress.webp) | `inprogress` | Indicates that progress is currently being made on this step. |
 | ![success](@assets/components/ns-timeline-event/status-completed.webp) | `completed` | The event has been successfully completed. |
@@ -88,7 +92,6 @@ These can be selected from a list to help convey meaning for each event and make
 For use when an order should be shown.
 
 Some icons are special and automatically reserved for use only with a particular status, such as Complete tick, Action required arrow, Warning triangle, and Error diamond. These show on all the variants of 'overview decoration'.
-
 
 ## Implementation
 
