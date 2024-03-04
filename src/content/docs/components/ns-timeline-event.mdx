@@ -58,6 +58,38 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 - Use any icon type with names ending `solid` or `outline`.
 :::
 
+### Status
+
+Each event has a status. The status of the event is controlled by the decoration used.
+
+| Style | Status | Description |
+| :--- | :------ | :--- |
+| ![pending](@assets/components/ns-timeline-event/status-pending.webp)| `pending` |Communicates that the event has yet to commence. |
+| ![in progress](@assets/components/ns-timeline-event/status-in-progress.webp) | `inprogress` | Indicates that progress is currently being made on this step. |
+| ![success](@assets/components/ns-timeline-event/status-completed.webp) | `completed` | The event has been successfully completed. |
+| ![action required](@assets/components/ns-timeline-event/status-action-required.webp) | `actionrequired` | This is used when a customer needs to take action in order to proceed with the process. |
+| ![warning](@assets/components/ns-timeline-event/status-warning.webp) | `warning` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
+| ![error](@assets/components/ns-timeline-event/status-error.webp) | `error` | This is a failure indication. Something couldn't be resolved and so has halted the whole process marking other `inprogress`\ `pending` event(s) `cancelled`. It should be accompanied by a helpful message. |
+
+### Icons & numerals
+
+There are 3 styles of timeline to choose from in the 'overview decorations' - default, icon, or number.
+
+#### Default
+
+Uses a circle and implies nothing other than it is an event.
+
+#### Icons
+
+These can be selected from a list to help convey meaning for each event and make it easier to identify a step. If selected, all events will need an icon chosen from the list.
+
+#### Numbers
+
+For use when an order should be shown.
+
+Some icons are special and automatically reserved for use only with a particular status, such as Complete tick, Action required arrow, Warning triangle, and Error diamond. These show on all the variants of 'overview decoration'.
+
+
 ## Implementation
 
 ### Placement
