@@ -16,7 +16,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 <CompDetails name={componentName} />
 
 :::caution
-This component can only be used within `ns-timeline`. Refer `ns-timeline` [slots specification table](/components/ns-timeline#slots) for usage.
+This component can only be placed within `ns-timeline`. Refer `ns-timeline` [specification](/components/ns-timeline#slots) for usage.
 :::
 
 ### Examples
@@ -68,7 +68,7 @@ Each event has a status. The status of the event is controlled by the decoration
 
 | Style | Status | Description |
 | :--- | :------ | :------ |
-| ![pending](@assets/components/ns-timeline-event/status-pending.webp)| `pending` |Communicates that the event has yet to commence. |
+| ![pending](@assets/components/ns-timeline-event/status-pending.webp)| `pending` | Communicates that the event has yet to commence. |
 | ![in progress](@assets/components/ns-timeline-event/status-in-progress.webp) | `inprogress` | Indicates that progress is currently being made on this step. |
 | ![success](@assets/components/ns-timeline-event/status-completed.webp) | `completed` | The event has been successfully completed. |
 | ![action required](@assets/components/ns-timeline-event/status-action-required.webp) | `actionrequired` | This is used when a customer needs to take action in order to proceed with the process. |
