@@ -32,7 +32,10 @@ const events = compDetails?.events;
 
 { 
   properties?.length > 0 &&  (
-    <h4 id="attributes">Attributes</h4>
+    <h4 id="attributes">
+      Attributes
+      <a aria-hidden="true" tabindex="-1" href="#attributes"><span class="icon icon-link"></span></a>
+    </h4>
     <div class="description-list">
       {
         properties?.map((property) => {
@@ -108,7 +111,10 @@ const events = compDetails?.events;
 
 {
   slots?.length > 0 && (
-    <h4 id="slots">Slots</h4>
+    <h4 id="slots">
+      Slots
+      <a aria-hidden="true" tabindex="-1" href="#slots"><span class="icon icon-link"></span></a>
+    </h4>
     <table class="spec">
       <thead>
         <tr>
@@ -138,7 +144,10 @@ const events = compDetails?.events;
 
 {
   events?.length > 0 && (
-    <h4 id="events">Events</h4>
+    <h4 id="events">
+      Events
+      <a aria-hidden="true" tabindex="-1" href="#events"><span class="icon icon-link"></span></a>
+    </h4>
     <table class="spec">
       <thead>
         <tr>
