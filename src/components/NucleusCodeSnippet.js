@@ -9,14 +9,16 @@ export class NucleusCodeSnippet extends LitElement {
   static get properties() {
     return {
       src: { type: String },
+      _hideTopBorderRadius: { type: Boolean, attribute: 'hide-top-radius' },
       _formattedSrc: {}
     };
   }
 
   constructor() {
     super();
+    this._hideTopBorderRadius = false;
     this._formattedSrc = new Task(this, {
-      task: async ([src], {signal} ) => {
+      task: async ([src, hideBorderRadius], {signal} ) => {
         const {ec, themeStyles, baseStyles, jsModules} = await createRenderer({
           themes:['github-dark', 'github-light'],
           useDarkModeMediaQuery: true
@@ -27,6 +29,7 @@ export class NucleusCodeSnippet extends LitElement {
           meta: ''
         });
 
+        const borderRadiusStyles = hideBorderRadius ? '0 0 var(--header-border-radius) var(--header-border-radius)' : 'var(--header-border-radius)';
         let htmlContent = toHtml(renderedGroupAst);
         const frameSelector = 'figure class="frame';
         let index = htmlContent.indexOf(frameSelector);
@@ -41,12 +44,24 @@ export class NucleusCodeSnippet extends LitElement {
         htmlContent = `${htmlContentParts[0]}${prefixToLookup}
           ${(baseStyles || themedStyles) ? '<style>' : ''}
           ${baseStyles ?? ''}
+          ${`
+            .expressive-code .frame {
+              border-radius: ${borderRadiusStyles}
+            }
+            .expressive-code pre {
+              border-radius: ${borderRadiusStyles}
+            }
+            .expressive-code .copy button {
+              opacity: initial;
+            }
+            `
+          }
           ${themedStyles ?? ''}
           ${(baseStyles || themedStyles) ? '</style>' : ''}
           ${htmlContentParts[1]}`;
         return html`${unsafeHTML(htmlContent)}`;
       },
-      args: () => [this._prettifySrc]
+      args: () => [this._prettifySrc, this._hideTopBorderRadius]
     });
   }
 
