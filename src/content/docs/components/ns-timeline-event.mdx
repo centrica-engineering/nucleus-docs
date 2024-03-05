@@ -71,13 +71,13 @@ This component can only be placed within `ns-timeline`. Refer [`<ns-timeline>` S
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">A</span> | Event Heading | Concise and clear heading description. Keep as short as possible. |
-| <span class="marker">B</span> | Event Icon | The icon decoration for that particular event. This can change depending on status. Refer [Status table](#status) below. |
-| <span class="marker">C</span> | Event Status | Status is also shown by colour and form of the interconnecting lines and circles in the timeline. E.g. In Progress is 'information blue' and has larger roundels and icons that are solid. Whereas Pending uses a grey outline and is smaller. Refer [Status table](#status) below. |
-| <span class="marker">D</span> | Additional Content | Add further information relevant to this step to aid customer understanding, or if an action is required. |
-| <span class="marker">E</span> | Event Completed Timestamp | Events that have been successfully completed, there is the option to display a time-stamp alongside the status. |
+| <span class="marker">A</span> | Icon | The icon decoration for that particular event. This can change depending on status. Refer [Status table](#event-status) below. |
+| <span class="marker">B</span> | Heading | Concise and clear heading description. Keep as short as possible. |
+| <span class="marker">C</span> | Status | Status is also shown by colour and form of the interconnecting lines and circles in the timeline. E.g. In Progress is 'information blue' and has larger roundels and icons that are solid. Whereas Pending uses a grey outline and is smaller. Refer [Status table](#event-status) below. |
+| <span class="marker">D</span> | Additional content | Add further information relevant to this step to aid customer understanding, or if an action is required. |
+| <span class="marker">E</span> | Completed status timestamp | Events that have been successfully completed, there is the option to display a time-stamp alongside the status. |
 
-### Status
+### Event Status
 
 Each event has a status. The status of the event is controlled by the decoration used.
 
@@ -120,3 +120,8 @@ Some icons are special and automatically reserved for use only with a particular
 
 <Specification name={componentName} />
 
+#### Specification notes
+
+##### `status`
+
+The `status` attribute should not be added when `<ns-timeline-event>` is placed in `<ns-timeline>` `step` variant.
