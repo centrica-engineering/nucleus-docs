@@ -16,7 +16,7 @@
     "@astrojs/starlight": "^0.15.0",
     "@astrojs/starlight-docsearch": "^0.1.0",
     "@connectedhomes/nucleus": "^3.3.4",
-    "@connectedhomes/nucleus-util": "^1.8.1",
+    "@connectedhomes/nucleus-util": "^1.8.2",
     "@fontsource/roboto": "^5.0.8",
     "@lit/task": "^1.0.0",
     "@webcomponents/template-shadowroot": "^0.2.1",
