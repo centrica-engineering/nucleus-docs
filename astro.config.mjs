@@ -188,6 +188,14 @@ export default defineConfig({
             {
               label: "Contributing",
               link: "/guidelines/contributing"
+            },
+            {
+              label: "Vanilla first",
+              link: "/guidelines/vanilla-first"
+            },
+            {
+              label: "Devices",
+              link: "/guidelines/devices"
             }
           ]
         },
