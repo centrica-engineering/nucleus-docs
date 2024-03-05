@@ -63,11 +63,25 @@ This component can only be placed within `ns-timeline`. Refer [`<ns-timeline>` S
 - Use any icon type with names ending `solid` or `outline`.
 :::
 
+### Standard
+
+![Labelled diagram of ns-timeline](@assets/components/ns-timeline-event/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Event Heading | Concise and clear heading description. Keep as short as possible. |
+| <span class="marker">B</span> | Event Icon | The icon decoration for that particular event. This can change depending on status. Refer [Status table](#status) below. |
+| <span class="marker">C</span> | Event Status | Status is also shown by colour and form of the interconnecting lines and circles in the timeline. E.g. In Progress is 'information blue' and has larger roundels and icons that are solid. Whereas Pending uses a grey outline and is smaller. Refer [Status table](#status) below. |
+| <span class="marker">D</span> | Additional Content | Add further information relevant to this step to aid customer understanding, or if an action is required. |
+| <span class="marker">E</span> | Event Completed Timestamp | Events that have been successfully completed, there is the option to display a time-stamp alongside the status. |
+
 ### Status
 
 Each event has a status. The status of the event is controlled by the decoration used.
 
-| Style | Status | Description |
+| Decoration | Status | Description |
 | :--- | :------ | :------ |
 | ![pending](@assets/components/ns-timeline-event/status-pending.webp)| `pending` | Communicates that the event has yet to commence. |
 | ![in progress](@assets/components/ns-timeline-event/status-in-progress.webp) | `inprogress` | Indicates that progress is currently being made on this step. |
@@ -75,6 +89,8 @@ Each event has a status. The status of the event is controlled by the decoration
 | ![action required](@assets/components/ns-timeline-event/status-action-required.webp) | `actionrequired` | This is used when a customer needs to take action in order to proceed with the process. |
 | ![warning](@assets/components/ns-timeline-event/status-warning.webp) | `warning` | Informs of a problem with low severity such as foreseeable delays or outages etc. The problem is expected to be automatically resolved as the situation changes. |
 | ![error](@assets/components/ns-timeline-event/status-error.webp) | `error` | This is a failure indication. Something couldn't be resolved and so has halted the whole process marking other `inprogress`\ `pending` event(s) `cancelled`. It should be accompanied by a helpful message. |
+| ![cancelled](@assets/components/ns-timeline-event/status-cancelled.webp)| `cancelled` | Communicates that the event has been cancelled because of the error in any `inprogress` events. |
+
 
 ### Icons & numerals
 
