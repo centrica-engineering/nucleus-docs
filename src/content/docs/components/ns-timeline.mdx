@@ -18,8 +18,14 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 The timeline gives an overview of a process and can show the progression of a customer journey. Its purpose is to create situational awareness for the user and manage expectations.
 
 ### Examples
-
-<ExampleViewer type="standard" />
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer type="standard" />
+  </TabItem>
+  <TabItem label="Step">
+    <ExampleViewer type="step" />
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
@@ -52,7 +58,7 @@ The timeline gives an overview of a process and can show the progression of a cu
 | <span class="marker">E</span> | Event | An individual step in the timeline. |
 | <span class="marker">F</span> | Event Heading | Concise and clear heading description. Keep as short as possible. |
 | <span class="marker">G</span> | Event Icon | The icon decoration for that particular event. This can change depending on status. |
-| <span class="marker">H</span> | Event Status | Status is also shown by colour and form of the interconnecting lines and circles in the timeline. E.g. In Progress is 'information blue' and has larger roundels and icons that are solid. Whereas Pending uses a grey outline and is smaller. (See [Status](#status) below.) |
+| <span class="marker">H</span> | Event Status | Status is also shown by colour and form of the interconnecting lines and circles in the timeline. E.g. In Progress is 'information blue' and has larger roundels and icons that are solid. Whereas Pending uses a grey outline and is smaller. (See [Status](/components/ns-timeline-event#status) below.) |
 | <span class="marker">I</span> | Additional Content | Add further information relevant to this step to aid customer understanding, or if an action is required. |
 | <span class="marker">J</span> | Event Completed Timestamp | Events that have been successfully completed, there is the option to display a time-stamp alongside the status. |
 
