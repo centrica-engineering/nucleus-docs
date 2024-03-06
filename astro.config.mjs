@@ -22,7 +22,7 @@ const componentSidebar = () => {
     label: "Components",
     collapsed: true,
     items: [
-      ...customElements.filter((customElement) => !customElement.internal && !customElement.category && !isDeprecated(customElement.name))
+      ...customElements.filter((customElement) => !customElement.category && !isDeprecated(customElement.name))
       .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
       .map((customElement) => {
         return {
@@ -34,7 +34,7 @@ const componentSidebar = () => {
       {
         label: "Form",
         items: 
-          customElements.filter((customElement) => !customElement.internal && customElement.category === 'Form' && !isDeprecated(customElement.name))
+          customElements.filter((customElement) => customElement.category === 'Form' && !isDeprecated(customElement.name))
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
           .map((customElement) => {
             return {
@@ -47,7 +47,7 @@ const componentSidebar = () => {
       {
         label: "Experience",
         items: 
-          customElements.filter((customElement) => !customElement.internal && customElement.category === 'Experience' && !isDeprecated(customElement.name))
+          customElements.filter((customElement) => customElement.category === 'Experience' && !isDeprecated(customElement.name))
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
           .map((customElement) => {
             return {
