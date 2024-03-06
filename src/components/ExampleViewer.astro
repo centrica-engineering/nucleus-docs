@@ -23,7 +23,7 @@ const htmlContent = await examples[htmlFile];
     )
   }
   <NucleusComponentRenderer src={htmlContent} name={componentName} client:only="lit"/>
-  <NucleusCodeSnippet src={htmlContent} client:visible />
+  <NucleusCodeSnippet src={htmlContent} hide-top-radius client:visible />
 </div>
 
 <style>
