@@ -52,16 +52,16 @@ export class NucleusCodeSnippet extends LitElement {
               border-radius: ${borderRadiusStyles}
             }
             .expressive-code .copy button {
-              opacity: initial;
+              opacity: var(--ec-frm-inlBtnBrdOpa);
               position: relative;
-              border: 1px solid rgb(225 228 232 / .4);
+              border: 1px solid var(--ec-frm-inlBtnBrd);
               
               &::before {
                 pointer-events: auto;
                 border: none;
                 content: 'Copy';
                 opacity: 1;
-                color: rgb(225 228 232);
+                color: var(--ec-codeFg);
                 width: max-content;
                 top: 50%;
                 transform: translate(min(calc(-100% - 0.5rem)), -50%);
