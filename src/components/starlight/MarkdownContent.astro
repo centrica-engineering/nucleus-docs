@@ -226,6 +226,19 @@ const classList = [
 
     .expressive-code .copy button {
       opacity: initial;
+      position: relative;
+      border: 1px solid rgb(225 228 232 / .4);
+      
+      &::before {
+        pointer-events: auto;
+        border: none;
+        content: 'Copy';
+        opacity: 1;
+        color: rgb(225 228 232);
+        width: max-content;
+        top: 50%;
+        transform: translate(min(calc(-100% - 0.5rem)), -50%);
+      }
     }
   }
 </style>
