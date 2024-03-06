@@ -113,6 +113,16 @@ export class NucleusComponentRenderer extends LitElement {
       this._customElement = ceDoc.find((ce) => ce.name === this.name);
     }
   }
+  connectedCallback() {
+    super.connectedCallback();
+    let observer;
+    const observe = () => {
+      if (observer) observer.disconnect();
+      observer = new IntersectionObserver(() => this.requestUpdate());
+      observer?.observe(this);
+    };
+    observe();
+  }
 
   get doc() {
     const timelineEventWrapper = this.name === 'ns-timeline-event' ? `<ns-timeline-event status="invalid"></ns-timeline-event>` : '';
@@ -160,7 +170,7 @@ export class NucleusComponentRenderer extends LitElement {
     const iframe = this.shadowRoot.querySelector('.example-iframe');
     if (iframe) {
       const iframeDoc = iframe.contentWindow.document;
-      this._minHeight = iframeDoc.body.scrollHeight;
+      this._minHeight = iframeDoc?.body.scrollHeight;
 
       const clickables = iframeDoc.body.querySelectorAll('[href^="#"]');
       clickables?.forEach((clickable) => {
