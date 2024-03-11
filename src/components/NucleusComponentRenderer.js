@@ -129,13 +129,21 @@ export class NucleusComponentRenderer extends LitElement {
     observe();
   }
 
+  get _componentWrapper() {
+    if (this.name === 'ns-selector') {
+      return `<ns-inputter>${this.src}</ns-inputter>`;
+    } else if (this.name === 'ns-timeline-event'){
+      return`${this.src}<ns-timeline-event status="invalid"></ns-timeline-event>`;
+    } else {
+      return this.src;
+    }
+  }
+
   get doc() {
-    const timelineEventWrapper = this.name === 'ns-timeline-event' ? `<ns-timeline-event status="invalid"></ns-timeline-event>` : '';
-    const wrapper = this._customElement?.placements?.includes('main') ? this.src : `
+    const wrapper = this._customElement?.placements?.includes('main') ? this._componentWrapper : `
       <ns-panel>
         <div>
-          ${this.src}
-          ${timelineEventWrapper}
+          ${this._componentWrapper}
         </div>
       </ns-panel>
     `;
