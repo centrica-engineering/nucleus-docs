@@ -53,12 +53,12 @@ This component can only be placed within `ns-timeline`. Refer [`<ns-timeline>` S
 
 :::do
 - Use text or `ns-card` within `additional content` to provide additional information.
-- Use either default, icon or number decoration for all events in the timeline sequence for the `standard` variant.
-- Use either number or fallback decoration for all events in the timeline sequence for the `Step` variant.
+- Use either default, icon or number decoration for all events in the timeline sequence for the `standard` type.
+- Use either number or fallback decoration for all events in the timeline sequence for the `Step` type.
 :::
 
 :::dont
-- Add status to an event for the `step` variant.
+- Add status to an event for the `step` type.
 - Mix two different decoration types in events.
 - Use any icon type with names ending `solid` or `outline`.
 :::
@@ -108,7 +108,7 @@ These can be selected from a list to help convey meaning for each event and make
 
 For use when an order should be shown.
 
-Some icons are special and automatically reserved for use only with a particular status, such as Complete tick, Action required arrow, Warning triangle, and Error diamond. These show on all the variants of 'overview decoration'.
+Some icons are special and automatically reserved for use only with a particular status, such as Complete tick, Action required arrow, Warning triangle, and Error diamond. These show on all the types of 'overview decoration'.
 
 ## Implementation
 
@@ -124,4 +124,4 @@ Some icons are special and automatically reserved for use only with a particular
 
 ##### `status`
 
-The `status` attribute should not be added when `<ns-timeline-event>` is placed in `<ns-timeline>` `step` variant.
+The `status` attribute should not be added when `<ns-timeline-event>` is placed in `<ns-timeline>` `step` type.
