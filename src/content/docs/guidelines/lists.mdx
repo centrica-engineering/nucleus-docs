@@ -5,24 +5,27 @@ import ExampleViewer from '@components/ExampleViewer.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Overview
-We have 6 styles of lists using the 3 different HTML markup techniques. Unordered lists, ordered lists and description lists.
 
-Some components are specifically designed to include these lists. To find out which, visit the Content guidance section of the component and you'll find the types of content that can be included.
+<div class="purpose">
+There are six styles of list using three different HTML markup techniques –  unordered lists, ordered lists and description lists.
+</div>
+
+Visit the Guidance section of a Component page to find out which types of content can be included.
 
 ## Unordered lists
 
-There are three list styles that can be with an unordered list. The familiar bullet list and the two decorative list styles.
+There are three styles of Unordered list – the familiar bullet style list and two decorative styles.
 
 Use the Unordered list element `<ul>` as the parent element and a List item `<li>` for each line.
 
 ### Bullet list
 `class="ul-bullet"`
 
-Bullet list can be nested up to four levels deep.
+Bullet lists can be nested up to four levels deep.
 <ExampleViewer type="bullet" />
 
-### Decorative lists
-Decorative lists display different bullet styles, we have a ticked list and a crossed list.
+### Decorative list
+Decorative lists display different bullet styles. These comprise a ticked list and a crossed list.
 
 #### Ticked list
 `class="ul-ticked"`
@@ -33,9 +36,9 @@ Decorative lists display different bullet styles, we have a ticked list and a cr
 <ExampleViewer type="crossed" />
 
 #### Accessibility considerations
-When using the these Decorative lists to represent services or features that are either available or not available it's important to present this list with a heading identifying this fact.
+When using these Decorative lists to represent services or features that are either available or not available, it's important to present this list with a heading identifying this.
 
-Screenreaders and assistive technologies will see a Decorative list as either an unordered list or an ordered list, depending on if it's marked up with an `<ul>` or an `<ol>`. The style of the bullet does not convey meaning to assistive technology. This could be very misleading and confusing, which is why a heading is so important.
+Screenreaders and assistive technologies will see a Decorative list as either an unordered list `<ul>` or an ordered list `<ol>`. The style of the bullet does not convey meaning to assistive technology – this could be very misleading and confusing, which is why a heading is so important.
 
 Ensure that the heading level is correct. For example, use an `<h3>`, not an `<h4>` if the previous heading is an `<h2>`. Heading levels should only increase by one.
 
@@ -48,7 +51,7 @@ Use the Ordered list element `<ol>` as the parent element and a List item `<li>`
 ### Numbered list
 `class="ol-numbered"`
 
-The Numbered list will display an incremental number alongside each list item. A Numbered list can be nested up to four levels deep.
+Numbered lists will display an incremental number alongside each list item. A Numbered list can be nested up to four levels deep.
 <Tabs>
   <TabItem label="Standard">
     <ExampleViewer type="numbered" />
@@ -64,9 +67,9 @@ The Numbered list will display an incremental number alongside each list item. A
 </Tabs>
 
 ## Description list
-Displaying data alongside it's accompanying label is accomplished using the Description List element `<dl>` and it's children `<dt>` and `<dd>` wrapped in a `<div>`.
+Displaying data alongside its accompanying label is accomplished using the Description list element `<dl>` and its children `<dt>` and `<dd>` wrapped in a `<div>`.
 
-There are two types of description lists which we have called `dl-row` and `dl-stack`.
+There are two types of Description list – `dl-row` and `dl-stack`.
 
 ### Description list row
 `class="dl-row"`
