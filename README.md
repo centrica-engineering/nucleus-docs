@@ -1,25 +1,42 @@
-# Welcome to Nucleus
+# Nucleus Docs
 
-A design system by and for British Gas
+Documentation to support the Nucleus Design System.
+
+It is built using [Astro](https://astro.build/) with the [Starlight](https://starlight.astro.build/) theme and [Lit](https://lit.dev/).
 
 ## Installation
 
-```console
+```sh
 npm install
 ```
 
-## Local Development
+## Local development
 
-```console
-npm start
+```sh
+npm run start
 ```
 
 This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
 
-## Build
+## Building the Docs
 
-```console
+To build the Docs, run the `build` script in the `package.json` file:
+
+```sh
 npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+The output will be in the `./build` directory.
+
+## Docs structure
+
+### Directories
+
+- `src/assets`: Contains the assets used in the project, including HTML snippets used in the Examples and Configurator.
+- `src/components`: Contains Astro and Lit components.
+- `src/content/docs`: Contains the `mdx` documentation files, including components, guidelines, page-types and patterns.
+
+### Files
+
+- `astro.config.mjs`: The Astro configuration file.
+- `src/content/docs/index.mdx`: The Homepage of https://nucleus.design/
