@@ -36,9 +36,14 @@ export class NucleusComponentRenderer extends LitElement {
         max-width: initial !important;
         min-height: var(--iframe-min-height);
 
-        &.zoom-out {
+        &.zoom-75 {
           transform: scale(0.75);
           width: 133% !important;
+        }
+
+        &.zoom-50 {
+          transform: scale(0.50);
+          width: 200% !important;
         }
 
         &.viewport-mobile {
@@ -105,7 +110,7 @@ export class NucleusComponentRenderer extends LitElement {
 
     this._minHeight = 200;
     this._viewport = 'desktop';
-    this.zoom = 'zoom-out';
+    this.zoom = '50';
   }
 
   willUpdate() {
@@ -188,8 +193,9 @@ export class NucleusComponentRenderer extends LitElement {
 
     const classes = {
       'example-iframe': true,
-      'zoom-in': this.zoom === 'zoom-in',
-      'zoom-out': this.zoom === 'zoom-out',
+      'zoom-100': this.zoom === '100',
+      'zoom-75': this.zoom === '75',
+      'zoom-50': this.zoom === '50',
       'viewport-mobile': this._viewport === 'mobile',
       'viewport-desktop': this._viewport === 'desktop',
     };
@@ -219,10 +225,13 @@ export class NucleusComponentRenderer extends LitElement {
           <div class="zoom">
             <span>Scale</span>
             <div class="radio-element">
-              <label><input type="radio" name="zoom" value="zoom-in"> 100%</label>
+              <label><input type="radio" name="zoom" value="100"> 100%</label>
             </div>
             <div class="radio-element">
-              <label><input type="radio" name="zoom" value="zoom-out"> 75%</label>
+              <label><input type="radio" name="zoom" value="75"> 75%</label>
+            </div>
+            <div class="radio-element">
+              <label><input type="radio" name="zoom" value="50"> 50%</label>
             </div>
           </div>
         </div>
