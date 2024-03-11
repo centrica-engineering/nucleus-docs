@@ -7,23 +7,25 @@ import BGIllustrations from '@components/BGIllustrations.astro';
 
 ## Icons
 
-Icons are used within our design system to represent an object or action visually to our users.
+<div class="purpose">
+Icons within the design system are used to visually represent an object or action to users.
+</div>
 
 ### Decorative
 
-Used as a visual aid for some functions, categories or actions. These are not used as a direct element of interaction themselves but can help to signify and support an action. It is recommended that these aren't used in isolation and should be accompanied by copy to add context.
+Used as a visual aid for some functions, categories or actions. These are not used as a direct element of interaction themselves but can help to signify and support an action. It is recommended that these aren't used in isolation and should be accompanied by a copy to add context.
 
-There are two types of Decorative icons to choose from – solid or outline (the default is solid). Be mindful to maintain the consistency when using in groups.
+There are two types of Decorative icons to choose from – solid or outline (the default is solid). Be mindful to maintain consistency when using in groups.
 
 ### Functional
 
-Used to show where an action needs to be taken. This includes components like buttons or controls. For instance a button might include an arrow to give the user an indication of what will happen next or a download icon to show that the user will receive something by pressing it.
+Used to show where an action needs to be taken. This includes components like buttons or controls. For instance, a button might include an arrow to give the user an indication of what will happen next or a download icon to show that the user will receive something by pressing it.
 
 <BGIcons />
 
 ## Illustrations
 
-We use illustrations to bring warmth of the British Gas brand personality to the website.
+Illustrations are used to bring the warmth of the British Gas brand personality to the website.
 
 <BGIllustrations />
 
@@ -31,21 +33,24 @@ We use illustrations to bring warmth of the British Gas brand personality to the
 
 ### Aspect ratios
 
-There are three aspect ratios used, 1:1, 4:3 and 16:9, which we use in various ways. Take a considered approach and do not overload with too many variants.
+There are three aspect ratios –  1:1, 4:3 and 16:9, which we use in various ways. Take a considered approach and do not overload with too many variants. 
+
+Note that the aspect ratios are specified in the code using a slash rather than a colon e.g. `16 / 9` = 16:9
 
 ### Responsive rules
 
-For all of the aspect ratios, there is a rule that all images scale proportionally to their ratio. This means that they will retain their shape from large screens to small ones.
-
-The aspect ratios always scale proportionally. If it is a full-width image the highest width should be 1440px.
+For all three aspect ratios, there is a rule that all images scale proportionally to their ratio. It means they will retain their shape from large screens to small ones.
+The aspect ratios always scale proportionally. If it is a full-width image, the largest width shall be 1440px.
 
 ### Placeholders
 
-| Placeholder | Aspect ratio | Dimension | Size |
-| :---- | :-------- | :---------- | :--- |
-| ![Placeholder 1440x810px](/placeholder-16x9-1440x810px.jpg) | `16 / 9` | 1440 x 810px | < 200kB |
-| ![Placeholder 800x450px](/placeholder-16x9-800x450px.jpg) | `16 / 9` | 800x450px | < 100kB |
-| ![Placeholder 640x360px](/placeholder-16x9-640x360px.jpg) | `16 / 9` | 640x360px | < 50kB |
-| ![Placeholder 800x600px](/placeholder-4x3-800x600px.jpg) | `4 / 3`  | 800x600px  | < 100kB |
-| ![Placeholder 480x360px](/placeholder-4x3-480x360px.jpg) | `4 / 3` | 480x360px |  < 50kB |
-| ![Placeholder 800x800px](/placeholder-1x1-800x800px.jpg) | `1 / 1`  | 800x800px  | < 100kB |
+These placeholder images can help visualise the image proportions and determine a focal point and ideal file size. It is recommended to utilise the .webp image format for optimal quality and size.
+
+| Placeholder | Aspect&nbsp;ratio | Dimension | Size |
+| :--- | :--- | :--- | :--- |
+| ![Placeholder 1440 x 810px](/placeholder-16x9-1440x810px.jpg) | `16 / 9` | 1440 x 810px | < 200kB |
+| ![Placeholder 800 x 450px](/placeholder-16x9-800x450px.jpg) | `16 / 9` | 800 x 450px | < 100kB |
+| ![Placeholder 640 x 360px](/placeholder-16x9-640x360px.jpg) | `16 / 9` | 640 x 360px | < 50kB |
+| ![Placeholder 800 x 600px](/placeholder-4x3-800x600px.jpg) | `4 / 3`  | 800 x 600px  | < 100kB |
+| ![Placeholder 480 x 360px](/placeholder-4x3-480x360px.jpg) | `4 / 3` | 480 x 360px |  < 50kB |
+| ![Placeholder 800 x 800px](/placeholder-1x1-800x800px.jpg) | `1 / 1`  | 800 x 800px  | < 100kB |
