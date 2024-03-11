@@ -93,9 +93,6 @@ const rehypeAutoLinkConfig = {
 };
 
 export default defineConfig({
-  redirects: {
-    '/docs/components/': '/components/'
-  },
   markdown: {
     remarkPlugins: [nucleusRemarkAside()],
     rehypePlugins: [

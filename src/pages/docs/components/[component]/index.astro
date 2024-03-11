@@ -1,0 +1,17 @@
+---
+import cesm from '@connectedhomes/nucleus/custom-elements.json';
+
+const {component} = Astro.params;
+
+export function getStaticPaths() {
+  return cesm.tags.map((tag) => {
+    return {
+      params: {
+        component: tag.name
+      }
+    }
+  });
+}
+---
+
+<meta http-equiv="refresh" content={`0;url=/components/${component}`} />
