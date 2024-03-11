@@ -1,0 +1,41 @@
+---
+import cesm from '@connectedhomes/nucleus/custom-elements.json';
+
+const { path } = Astro.params;
+
+export function getStaticPaths() {
+  const componentsPath = cesm.tags.map((tag) => {
+    return {
+      params: {
+        path: `/components/${tag.name}`
+      }
+    }
+  });
+
+  const pageTypes = ['article', 'confirmation', 'editorial', 'guide', 'home', 'hub', 'product', 'roadblock', 'start', 'stopgap'];
+  const pageTypesPath = pageTypes.map((pageType) => {
+    return {
+      params: {
+        path: `/pages-types/${pageType}`
+      }
+    }
+  });
+
+  const patterns = ['journeys', 'ask-for-information', 'experiences', 'loading', 'messaging', 'telephone-numbers'];
+  const patternsPath = patterns.map((pattern) => {
+    return {
+      params: {
+        path: `/patterns/${pattern}`
+      }
+    }
+  });
+
+  return [
+    ...componentsPath,
+    ...pageTypesPath,
+    ...patternsPath
+  ];
+}
+---
+
+<meta http-equiv="refresh" content={`0;url=${path}`} />
