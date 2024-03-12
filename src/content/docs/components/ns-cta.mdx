@@ -23,12 +23,51 @@ There is no distinction between a hyperlink or an action through the design of t
 
 <Tabs>
   <TabItem label="Direct">
+    <p>For the main action in the page. It provide more emphasised affordance, so should be used sparingly.</p>
     <ExampleViewer type="standard" />
   </TabItem>
   <TabItem label="Text">
+    <p>To support the `direct` type and help build hierarchy, it can be used for actions that are not the main reason for the page.</p>
     <ExampleViewer type="text" />
   </TabItem>
+  <TabItem label="Direct loading">
+    <ExampleViewer type="direct-loading" />
+  </TabItem>
+  <TabItem label="Text loading">
+    <ExampleViewer type="text-loading" />
+  </TabItem>
 </Tabs>
+
+#### How to identify when to use the `text` type
+
+For example, if the content starts with:
+
+- Learn more...
+- Find out...
+- Look up...
+- See our...
+- Discover...
+
+These are all supporting actions and our recommendation is to use the `text` type.
+
+If there is a group of more than three actions it would be preferable to make all these CTAs the `text` type. Or to find the main action in this group and place it in an alternative, more suitable component such as `ns-lockup` or `ns-standout` to establish hierarchy.
+
+### When to use `submit` and `reset` types
+The `submit` and `reset` types of `ns-cta` are there to facilitate  `ns-form` to do submit and reset actions respectively.
+
+The `submit` type is to be used in a page with `ns-form` to perform a native-like submit action. Upon submission it automatically validates the elements in `ns-form` and reports any warnings or will submit `ns-form`.
+
+The `reset` type is to be used in a page with `ns-form` to perform a native-like reset action. It will reset the elements back to their default or initial value.
+
+### Button vs link
+
+There is no visual distinction between a button and a link when using `ns-cta`. It's recommended not to use a native `<button>` element, but to use the CTA with the required events.
+
+The distinction for a user on either a navigation or an event is not based on the appearance but on the text content. It needs to be clear based on the text content that the user is either going to the next step in a journey / page, or that they are doing an action, such as submitting a form.
+
+### Decorative vs functional
+
+The `ns-cta` is a standalone component that can serve an action whether it is a link or an event. However, if required it can be used as a decoration and be wrapped within an `<a>` element or another routing component (such as for specific frameworks). This means that those functionalities will still look like the `ns-cta` even though the functional task is being done outside of it.
 
 ## Guidance
 
@@ -56,6 +95,17 @@ There is no distinction between a hyperlink or an action through the design of t
 ### Standard
 
 ![Labelled diagram of ns-cta](@assets/components/ns-cta/guidance-direct.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Text | Keep the text 'short, relevant, and actionable'. It should not exceed more than 24 characters. |
+| <span class="marker">B</span> | Icon | This is a decoration. It is intended to imply direction such as moving forwards and backwards in a journey. The [specification](#specification) has a list of options. |
+
+### Text
+
+![Labelled diagram of ns-cta](@assets/components/ns-cta/guidance-text.webp)
 
 #### Key
 
