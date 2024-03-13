@@ -73,7 +73,62 @@ export function getStaticPaths() {
         redirect: 'guidelines/process'
       }
     },
-    
+    {
+      params: {
+        path: 'foundations/typography'
+      },
+      props: {
+        redirect: 'guidelines/typography'
+      }
+    },
+    {
+      params: {
+        path: 'foundations/lists'
+      },
+      props: {
+        redirect: 'guidelines/lists'
+      }
+    },
+    {
+      params: {
+        path: 'foundations/colours'
+      },
+      props: {
+        redirect: 'guidelines/tokens/#colours'
+      }
+    },
+    {
+      params: {
+        path: 'foundations/icons'
+      },
+      props: {
+        redirect: 'guidelines/assets/#icons'
+      }
+    },
+    {
+      params: {
+        path: 'foundations/illustrations'
+      },
+      props: {
+        redirect: 'guidelines/assets/#illustrations'
+      }
+    },
+    {
+      params: {
+        path: 'community/contribute-to-nucleus'
+      },
+      props: {
+        redirect: 'guidelines/contributing'
+      }
+    },
+    {
+      params: {
+        path: 'community/vanilla-first'
+      },
+      props: {
+        redirect: 'guidelines/vanilla-first'
+      }
+    }
   ];
 
   return [
