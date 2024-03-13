@@ -74,20 +74,6 @@ const componentSidebar = () => {
   };
 }
 
-const plugins = () => {
-  const starlightPlugins = [];
-  if (process.env.NODE_ENV === 'production' && process.env.ALGOLIA_KEY) {
-    starlightPlugins.push(
-      starlightDocSearch({
-        appId: 'algolia',
-        apiKey: process.env.ALGOLIA_KEY,
-        indexName: 'nucleus',
-      })
-    );
-  }
-  return starlightPlugins;
-}
-
 const rehypeAutoLinkConfig = {
   behavior: 'append'
 };
@@ -210,10 +196,7 @@ export default defineConfig({
           collapsed: true,
           autogenerate: { directory: "page-types" },
         },
-      ],
-      // plugins: [
-      //   ...plugins()
-      // ],
+      ]
     }),
     lit(),
   ],
