@@ -15,7 +15,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
-The `ns-skeleton` can be a visual representation of a paragraph and there are also options for text, headings, and subheadings.
+The `ns-skeleton` can be a visual representation of a paragraph, there are options for headings, subheadings and text.
 
 ### Examples
 
@@ -23,17 +23,17 @@ The `ns-skeleton` can be a visual representation of a paragraph and there are al
   <TabItem label="Standard">
     <ExampleViewer type="standard" disableConfigure/>
   </TabItem>
+  <TabItem label="Paragraph">
+    <ExampleViewer type="standard-paragraph" disableConfigure/>
+  </TabItem>
   <TabItem label="Heading">
-    <ExampleViewer type="heading" disableConfigure/>
+    <ExampleViewer type="standard-heading" disableConfigure/>
   </TabItem>
   <TabItem label="Subheading">
-    <ExampleViewer type="subheading" disableConfigure/>
-  </TabItem>
-  <TabItem label="Paragraph">
-    <ExampleViewer type="paragraph" disableConfigure/>
+    <ExampleViewer type="standard-subheading" disableConfigure/>
   </TabItem>
   <TabItem label="Text">
-    <ExampleViewer type="text" disableConfigure/>
+    <ExampleViewer type="standard-text" disableConfigure/>
   </TabItem>
 </Tabs>
 

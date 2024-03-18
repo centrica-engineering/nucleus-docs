@@ -23,8 +23,8 @@ The table component consumes basic HTML table markup, which makes it accessible 
   <TabItem label="Standard">
     <ExampleViewer type="standard" />
   </TabItem>
-  <TabItem label="Fixed row heading">
-    <ExampleViewer type="fixed-heading" />
+  <TabItem label="Fixed column">
+    <ExampleViewer type="standard-fixed-column" />
   </TabItem>
 </Tabs>
 
@@ -53,9 +53,9 @@ The table component consumes basic HTML table markup, which makes it accessible 
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">A</span> | Heading | Use to provide context to the table content. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
-| <span class="marker">B</span> | Column Headings | A short description of the data or information found in the column cells below. |
-| <span class="marker">C</span> | Fixable Row Headings | This column can be used for data or information. It can also be set to a fixed column of headings for each row. |
+| <span class="marker">A</span> | Caption | Use to provide context to the table content. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">B</span> | Column Headers | A short description of the data or information found in the column cells below. |
+| <span class="marker">C</span> | Fixed Column | This column can be used for data or information. It can also be set to a fixed column of headers for each row. |
 | <span class="marker">D</span> | Table Cells | This should contain the data or information required for each relevant column and row. |
 
 ## Implementation
@@ -84,7 +84,7 @@ Always add a `<caption>` tag inside the `<table>`.  The caption should explain w
 
 ##### Column headers
 
-For column headings across the first row place header cells `<th>` within `<thead>`.
+For column headers across the first row place header cells `<th>` within `<thead>`.
 
 ```html
 <ns-table>
@@ -103,7 +103,7 @@ For column headings across the first row place header cells `<th>` within `<thea
 
 For row headers in the left-most column place the headers in `<th>` within the `<tbody>`.
 
-The component will automatically make these headings 'sticky' so that on smaller screens the table can scroll horizontally while the row headers stay in place.
+The component will automatically make these headers 'sticky' so that on smaller screens the table can scroll horizontally while the row headers stay in place.
 
 ```html
 <ns-table>

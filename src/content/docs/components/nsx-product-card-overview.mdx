@@ -18,23 +18,25 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 ### Examples
 
 <Tabs>
-  <TabItem label="Standard">
-    <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="with Excess">
-    <ExampleViewer type="with-excess" />
-  </TabItem>
-  <TabItem label="without Excess">
-    <ExampleViewer type="without-excess" />
+  <TabItem label="Excess">
+    The `excess` options available for the `<product-card>` components with the `<nsx-product-card-overview>`.
+    <Tabs>
+      <TabItem label="With excess">
+        <ExampleViewer type="standard-excess-with" />
+      </TabItem>
+      <TabItem label="Without excess">
+        <ExampleViewer type="standard-excess-without" />
+      </TabItem>
+    </Tabs>
   </TabItem>
   <TabItem label="Pricing">
-    <p>The `pricing` options available for the `<product-card>` components with the `<nsx-product-card-overview>`. </p>
+    The `pricing` options available for the `<product-card>` components with the `<nsx-product-card-overview>`.
     <Tabs>
-        <TabItem label="Was / Now">
-        <ExampleViewer type="was-now-pricing" />
+      <TabItem label="Was / Now">
+        <ExampleViewer type="standard-pricing-was-now" />
       </TabItem>
       <TabItem label="Monthly primary and secondary">
-        <ExampleViewer type="monthly-primary-secondary" />
+        <ExampleViewer type="standard-pricing-primary-secondary" />
       </TabItem>
     </Tabs>
   </TabItem>
