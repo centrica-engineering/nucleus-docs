@@ -1,0 +1,143 @@
+---
+import cesm from '@connectedhomes/nucleus/custom-elements.json';
+
+const { path } = Astro.params;
+const { redirect } = Astro.props;
+const redirectPath = redirect ? redirect : path;
+
+export function getStaticPaths() {
+  const componentsPath = cesm.tags.map((tag) => {
+    return {
+      params: {
+        path: `components/${tag.name}`
+      }
+    }
+  });
+
+  const pageTypes = ['article', 'confirmation', 'editorial', 'guide', 'home', 'hub', 'product', 'roadblock', 'start', 'stopgap'];
+  const pageTypesPath = pageTypes.map((pageType) => {
+    return {
+      params: {
+        path: `page-types/${pageType}`
+      }
+    }
+  });
+
+  const patterns = ['journeys', 'asking-for-information', 'experiences', 'loading', 'messaging', 'telephone-numbers'];
+  const patternsPath = patterns.map((pattern) => {
+    return {
+      params: {
+        path: `patterns/${pattern}`
+      }
+    }
+  });
+
+  const guidelinesPath = [
+    {
+      params: {
+        path: 'getting-started/introduction'
+      },
+      props: {
+        redirect: 'introduction'
+      }
+    },
+    {
+      params: {
+        path: 'getting-started/principles'
+      },
+      props: {
+        redirect: 'guidelines/principles'
+      }
+    },
+    {
+      params: {
+        path: 'getting-started/accessibility'
+      },
+      props: {
+        redirect: 'guidelines/accessibility'
+      }
+    },
+    {
+      params: {
+        path: 'getting-started/working-with-nucleus'
+      },
+      props: {
+        redirect: 'guidelines/working'
+      }
+    },
+    {
+      params: {
+        path: 'getting-started/our-process'
+      },
+      props: {
+        redirect: 'guidelines/process'
+      }
+    },
+    {
+      params: {
+        path: 'foundations/typography'
+      },
+      props: {
+        redirect: 'guidelines/typography'
+      }
+    },
+    {
+      params: {
+        path: 'foundations/lists'
+      },
+      props: {
+        redirect: 'guidelines/lists'
+      }
+    },
+    {
+      params: {
+        path: 'foundations/colours'
+      },
+      props: {
+        redirect: 'guidelines/tokens/#colours'
+      }
+    },
+    {
+      params: {
+        path: 'foundations/icons'
+      },
+      props: {
+        redirect: 'guidelines/assets/#icons'
+      }
+    },
+    {
+      params: {
+        path: 'foundations/illustrations'
+      },
+      props: {
+        redirect: 'guidelines/assets/#illustrations'
+      }
+    },
+    {
+      params: {
+        path: 'community/contribute-to-nucleus'
+      },
+      props: {
+        redirect: 'guidelines/contributing'
+      }
+    },
+    {
+      params: {
+        path: 'community/vanilla-first'
+      },
+      props: {
+        redirect: 'guidelines/vanilla-first'
+      }
+    }
+  ];
+
+  return [
+    ...componentsPath,
+    ...pageTypesPath,
+    ...patternsPath,
+    ...guidelinesPath
+  ];
+}
+---
+
+<meta http-equiv="refresh" content={`0;url=/${redirectPath}`} />
