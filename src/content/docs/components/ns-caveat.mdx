@@ -18,8 +18,14 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 Caveats link to content on the page, providing more information about legality and eligibility by separating it to the bottom of the page.
 
 ### Examples
-
-<ExampleViewer type="standard" />
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer type="standard" />
+  </TabItem>
+  <TabItem label="Link">
+    <ExampleViewer type="link" disableConfigure />
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
