@@ -110,7 +110,7 @@ export class NucleusComponentRenderer extends LitElement {
 
     this._minHeight = 200;
     this._viewport = 'desktop';
-    this.zoom = '50';
+    this.zoom = '75';
   }
 
   willUpdate() {
