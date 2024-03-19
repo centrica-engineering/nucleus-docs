@@ -68,7 +68,7 @@ Use landmarks to set the scene for what the page is for, what offers might be av
 | <span class="marker">A</span> | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
 | <span class="marker">B</span> | Content | A single, short paragraph works best. Can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | <span class="marker">C</span> | Action | See action guidance below |
-| <span class="marker">D</span> | Image path | This is the image that will be used inside `ns-landmark`. Ensure the important focus area of your image remains within the safe-area. It should have an aspect ratio of 16:9, the dimensions should be 1440x810 px, the file type should be jpg, and the file size should be no more than 150kb. Please make sure you work with a designer when selecting this image as finding the right one with the correct focus area can be challenging. **Note:** The image shouldn't hold any meaning and be only used as a decoration. This is why it doesn't have an `alt=""` attribute to avoid adding unnecessary content for users using assistive technology. |
+| <span class="marker">D</span> | Image | Ensure the important focus area of your image remains within the safe-area. Use an image size of [1440 x 810px](/guidelines/assets#1440x810px). Images should be WebP file type, the file size should be no more than 100kb. **Note:** The image shouldn't hold any meaning and be only used as a decoration. It doesn't have an `alt=""` attribute. This avoids adding unnecessary content for users using assistive technology. |
 
 :::do
 - Capture the moment.
@@ -119,7 +119,7 @@ The purpose of the valley landmark is to present an overview of a product or ser
 | <span class="marker">A</span> | Main Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
 | <span class="marker">B</span> | Content | Valley can accommodate multiple paragraph slots. However, be mindful of keeping it concise. To introduce a product or service we recommend 1 shot paragraph and three or four bullet point in a ticked list to showcase your key product benefits. It can contain bold copy `<b>`, inline links `<a>` and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`. |
 | <span class="marker">C</span> | Action | See action guidance below |
-| <span class="marker">D</span> | Image path | An aspect ratio of 4:3 or 16:9, the file type should be jpg, and the file size should be no more than 100kb. To see which image you can use - please see the Image Guidance section below. Don't use imagery with white backgrounds. Please make sure you work with a designer when selecting any imagery for the ns-landmark. **Note:** The image shouldn't hold any meaning and be only used as a decoration. This is why it doesn't have an `alt=""` attribute to avoid adding unnecessary content for users using assistive technology. |
+| <span class="marker">D</span> | Image | There is a choice of 2 image sizes: [720 x 405px](/guidelines/assets#720x405px) and [720 x 540px](/guidelines/assets#720x540px). Images should be WebP file type, the file size should be no more than 50kb. **Note:** The image shouldn't hold any meaning and be only used as a decoration. It doesn't have an `alt=""` attribute. This avoids adding unnecessary content for users using assistive technology. |
 | <span class="marker">E</span> | Decoration | Apply a colour to the offset. The [specification](#specification) has a list of options. |
 
 :::do
@@ -180,12 +180,7 @@ The purpose of the valley landmark is to present an overview of a product or ser
 
 <Specification name={componentName} />
 
-#### Image
-
-| Component | Type | Ratio | Dimensions | Size | Type | Placeholder |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `ns-landmark`| `summit` | 16:9 | 1440x810px | &lt; 200kb | jpeg | [ns-landmark-summit-1440x810px](https://user-images.githubusercontent.com/50207859/67642478-12140c80-f904-11e9-849d-5ffe39818c5b.jpg) |
-| `ns-landmark`| `valley` | 4:3 | 720x540px | &lt; 100kb | jpeg | [ns-landmark-valley-720x540px](https://user-images.githubusercontent.com/50207859/67642153-d461b480-f900-11e9-9520-11204c64a11b.jpg) |
+### Notes
 
 #### `slot="cta"`
 
