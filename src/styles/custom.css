@@ -431,6 +431,19 @@ main {
   }
 }
 
+/* NOTE: @drew - 2024-01-03 - this selector is to target the errorpage */
+:has(.errorpage) {
+  .hero {
+    padding-block-end: 1rem;
+
+    h1 {
+      color: var(--sl-color-heading);
+      font-size: var(--sl-text-h1);
+      font-weight: 500;
+    }
+  }
+}
+
 .sidebar-pane {
   border-inline-end-style: none;
 }
