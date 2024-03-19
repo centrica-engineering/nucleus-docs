@@ -28,6 +28,10 @@ const events = compDetails?.events;
       border-inline-end-width: 0;
     }
   }
+
+  h5 {
+    font-size: var(--sl-text-code) !important;
+  }
 </style>
 
 { 
@@ -44,7 +48,7 @@ const events = compDetails?.events;
           }
           const defaultValue = property.default?.replaceAll('"', '');
           return (
-            <p><code>{property.attribute}</code></p>
+            <h5 id={`specification-attribute-${property.attribute}`}><code>{property.attribute}</code> <a aria-hidden="true" tabindex="-1" href={`#specification-attribute-${property.attribute}`}><span class="icon icon-link"></span></a></h5>
             <dl>
               <div>
                 <dt>Property</dt>
@@ -172,5 +176,5 @@ const events = compDetails?.events;
 }
 
 <style>
-  
+
 </style>
