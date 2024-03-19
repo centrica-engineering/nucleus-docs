@@ -507,7 +507,7 @@ main {
   }
 }
 
-.layout:has(.homepage) {
+.layout:has(:is(.homepage, .errorpage)) {
   display: block;
 
   .main-pane {
