@@ -18,8 +18,40 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 British Gas has a variety of images to enhance content on the website and help sell a story. This component enables image use on the website at the correct ratios while ensuring the page loads quickly (utilising lazy loading).
 
 ### Examples
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer type="standard" />
+  </TabItem>
+  <TabItem label="Ratio">
+    Available aspect ratios.
+    <Tabs>
+      <TabItem label="16 / 9">
+        <ExampleViewer type="standard-ratio-16x9" />
+      </TabItem>
+      <TabItem label="4 / 3">
+        <ExampleViewer type="standard-ratio-4x3" />
+      </TabItem>
+      <TabItem label="1 / 1">
+        <ExampleViewer type="standard-ratio-1x1" />
+      </TabItem>
+    </Tabs>
+  </TabItem>
+  <TabItem label="Background">
+    To set the size of the background to fit the available space.
+    <Tabs>
+      <TabItem label="Background">
+        <ExampleViewer type="standard-background" />
+      </TabItem>
+      <TabItem label="Cover">
+        <ExampleViewer type="standard-background-size-cover" />
+      </TabItem>
+      <TabItem label="Contain">
+        <ExampleViewer type="standard-background-size-contain" />
+      </TabItem>
+    </Tabs>
+  </TabItem>
+</Tabs>
 
-<ExampleViewer type="standard" />
 
 ## Guidance
 

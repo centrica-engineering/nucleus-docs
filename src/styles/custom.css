@@ -563,3 +563,19 @@ main {
     font-weight: 500;
   }
 }
+
+.tablist-wrapper {
+  [role="tab"] {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
+    &[aria-selected="true"] {
+      color: var(--sl-color-gray-3);
+      font-weight: 400;
+      background-color: var(--sl-color-gray-6);
+      border-color: var(--sl-color-accent);
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+    }
+  }
+}
