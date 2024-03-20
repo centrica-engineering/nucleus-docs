@@ -537,7 +537,7 @@ main {
 .description-list {
   margin-block-end: 4rem;
 
-  p {
+  h5 {
     padding-block-end: 0.5em;
     border-block-end-style: solid;
     border-block-end-width: 1px;
