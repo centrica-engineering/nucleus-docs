@@ -3,12 +3,12 @@ import type { Props } from '@astrojs/starlight/props';
 
 const { slug } = Astro.params;
 const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
-const isHomePage = Astro.props.slug === '';
 
 const classList = [
 'sl-markdown-content',
 {'has-component': isComponentPage},
-{'homepage': isHomePage}
+{'homepage': Astro.props.slug === ''},
+{'errorpage': Astro.props.slug === '404'}
 ];
 ---
 
