@@ -46,7 +46,7 @@ const mastheadClassList = [
   }
 </div>
 
-{
+<!-- {
   isComponentPage && toc?.items?.length > 0 && (
     <section-tabs>
       <div class="section-tabs">
@@ -62,19 +62,20 @@ const mastheadClassList = [
     </div>
   </section-tabs>
   )
-}
+} -->
 
 <script src="./observer/NucleusSectionTabs"></script>
 
 <style>
   .masthead {
     background-color: var(--ns-color-teal);
-    margin-block-start: var(--sl-content-pad-x);
+    // margin-block-start: var(--sl-content-pad-x);
     margin-inline-start: var(--sl-content-pad-x);
     margin-inline-end: var(--sl-content-pad-x);
     padding-inline-start: var(--sl-content-pad-x);
     padding-inline-end: var(--sl-content-pad-x);
-    border-radius: 1.25rem;
+    border-end-start-radius: 1.25rem;
+    border-end-end-radius: 1.25rem;
     display: flex;
     min-height: 90px;
     position: relative;
