@@ -27,7 +27,8 @@ export class NucleusComponentRenderer extends LitElement {
         border-start-start-radius: 0.5rem;
         border-start-end-radius: 0.5rem;
         border: 1px solid var(--sl-color-gray-6);
-        min-height: var(--iframe-min-height);
+        height: var(--example-min-height);
+        overflow: hidden;
       }
 
       iframe {
@@ -118,6 +119,7 @@ export class NucleusComponentRenderer extends LitElement {
       this._customElement = ceDoc.find((ce) => ce.name === this.name);
     }
   }
+
   connectedCallback() {
     super.connectedCallback();
     let observer;
@@ -183,9 +185,10 @@ export class NucleusComponentRenderer extends LitElement {
     const iframe = this.shadowRoot.querySelector('.example-iframe');
     if (iframe) {
       const iframeDoc = iframe.contentWindow.document;
-      this._minHeight = iframeDoc?.body.scrollHeight;
+      const main = iframeDoc.getElementById('content');
+      this._minHeight = main?.offsetHeight;
 
-      const clickables = iframeDoc.body.querySelectorAll('[href^="#"]');
+      const clickables = iframeDoc?.body?.querySelectorAll('[href^="#"]');
       clickables?.forEach((clickable) => {
         clickable.addEventListener('click', function(e) {
           e.preventDefault();
@@ -195,8 +198,10 @@ export class NucleusComponentRenderer extends LitElement {
   }
 
   render() {
+    const wrapperHeight = (this._minHeight * this.zoom) / 100;
     const styles = {
-      '--iframe-min-height': `${this._minHeight}px !important`
+      '--iframe-min-height': `${this._minHeight}px !important`,
+      '--example-min-height': `${wrapperHeight < 300 ? 300 : wrapperHeight + 48}px !important`
     };
 
     const classes = {
@@ -209,17 +214,7 @@ export class NucleusComponentRenderer extends LitElement {
     };
 
     return html`
-      <div class="example preview">
-        <iframe
-          class=${classMap(classes)}
-          style=${styleMap(styles)}
-          srcdoc=${this.doc}
-          width="100%"
-          height="100%"
-          allowfullscreen
-          sandbox="allow-scripts allow-same-origin"
-          @load=${() => this._onIframeLoad()}
-        ></iframe>
+      <div class="example preview" style=${styleMap(styles)}>
         <div class="form">
           <div class="viewport">
             <span>Viewport</span>
@@ -243,6 +238,15 @@ export class NucleusComponentRenderer extends LitElement {
             </div>
           </div>
         </div>
+        <iframe
+          class=${classMap(classes)}
+          srcdoc=${this.doc}
+          width="100%"
+          height="100%"
+          allowfullscreen
+          sandbox="allow-scripts allow-same-origin"
+          @load=${() => setTimeout(() => this._onIframeLoad(), 300)}
+        ></iframe>
       </div>
     `;
   }
