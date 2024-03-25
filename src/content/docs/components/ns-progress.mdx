@@ -22,23 +22,23 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 ## Guidance
 
 :::do
-- Use to indicate progress of journey.
-- Info and Next parts should show a statement describing the step.
-- Keep Info and Next statements concise or omit if unnecessary or duplicating content.
-- Keep steps to a minimum for perceived simplicity.
-- Use up to 20 steps but ideally not more than 10.
-- Use decimal places to reduce the number of overall steps.
-- Use JavaScript to dynamically update the component rather than re-add on each page.
-- Use the completed state on the confirmation page.
+- Use to indicate the progress of the journey.
+- Use the `info` and `next` elements to describe only those steps.
+- Keep `info` and `next` statements concise or leave them out if unnecessary or duplicating content.
+- Keep `steps` to a minimum for perceived simplicity.
+- Use up to 20 `steps`, but ideally no more than 10.
+- Use decimal places to reduce the `number` of overall `steps`.
+- Use JavaScript to dynamically update the component rather than re-adding to each page.
+- Use the `complete` state on the confirmation page.
 :::
 
 :::dont
-- Use to show anything else such as loading.
-- Use questions on Info and Next - keep it informative.
-- Omit one step but not the rest for Info - instead use an 'all or nothing approach'.
-- Nest as sub-process.
-- Use less than 2 steps.
-- Use more than 1 on a page.
+- Use to show anything other than progress, e.g. loading.
+- Use questions for `info` and `next` statements - keep it informative.
+- Arbitrarily leave out `info` text - instead, use an ‘all or nothing' approach to the whole sequence.
+- Nest as a sub-process within another `<ns-progress>`.
+- Use less than two `steps`.
+- Use more than one `<ns-progress>` on a page.
 - Use the last step as the confirmation page.
 :::
 
