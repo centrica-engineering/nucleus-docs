@@ -31,16 +31,16 @@ The timeline gives an overview of a process and can show the progression of a cu
 
 :::do
 - Use a maximum of 10 steps.
-- Consider if the title duplicates page title.
+- Consider if the timeline heading duplicates the page heading.
 - Provide helpful messaging.
-- Use summary to set expectations for the `standard` type.
+- Use `summary` and `show-step-count` to help set expectations for the `standard` type.
 :::
 
 :::dont
 - Add too much detailed content.
-- Use illustrations or icons in additional content.
-- Use overly long event names.
-- Use timestamp if it causes confusion with a date elsewhere on the page for the `standard` type.
+- Use illustrations or icons within additional content.
+- Use excessively long event names.
+- Use the timestamp if it causes confusion with a date elsewhere on the page.
 :::
 
 ### Standard
@@ -51,7 +51,7 @@ The timeline gives an overview of a process and can show the progression of a cu
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">A</span> | Heading | Describes the process the whole timeline is showing. It can be left blank if, for example, there is a ns-landmark immediately preceding which describes it. |
+| <span class="marker">A</span> | Heading | Describes the process `ns-timeline` is showing. Leave it empty if there is an `ns-landmark` immediately preceding which describes the process. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
 | <span class="marker">B</span> | Summary | Optional. You can use a short sentence here to help manage expectations. |
 | <span class="marker">C</span> | Step Count | Display information on the number of events in a process (up to a maximum of 10) and how many have been completed so far. |
 | <span class="marker">D</span> | Decoration | Choose between default dots, icons or numbers. |
@@ -65,7 +65,7 @@ The timeline gives an overview of a process and can show the progression of a cu
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">A</span> | Heading | Describes the process the whole timeline is showing. It can be left blank if, for example, there is a ns-landmark immediately preceding which describes it. |
+| <span class="marker">A</span> | Heading | Describes the process `ns-timeline` is showing. Leave it empty if there is an `ns-landmark` immediately preceding which describes the process. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
 | <span class="marker">B</span> | Decoration | Number or Fallback. Number is default, the fallback is a dot if no index is specified. |
 | <span class="marker">C</span> | Event | An individual step in the timeline. Refer [`<ns-timeline-event>`](/components/ns-timeline-event) for individual step guidance. |
 | <span class="marker">D</span> | Event Heading | Concise and clear heading description. Keep as short as possible. |

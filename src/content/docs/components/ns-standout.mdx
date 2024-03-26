@@ -41,12 +41,12 @@ Use the `ns-standout` component to make information stand out from a page and to
 :::
 
 :::dont
-- Fill with many paragraphs.
-- Overuse it everywhere - it dilutes the impact.
-- Use it in place of ns-alert or ns-card – they have a different purpose.
+- Fill it with too many paragraphs.
+- Overuse it - it dilutes the impact.
+- Use it instead of [`<ns-alert>`](/components/ns-alert) or [`<ns-card>`](/components/ns-card) – they have different purposes.
 - Add icons, images or illustrations.
-- Use the direct ns-cta (you should consider using ns-card instead for that purpose).
-- Nest another ns-standout component within it.
+- Use the `direct` type [`<ns-cta>`](/components/ns-cta).
+- Nest a `<ns-standout>` component within another.
 - Use in a form where helper text is more appropriate.
 - Use for warning or error messages.
 :::
@@ -59,7 +59,7 @@ Use the `ns-standout` component to make information stand out from a page and to
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">A</span> | Decoration | You can choose to change the border colour from the default cyan to any of the colour options defined in the specifications. |
+| <span class="marker">A</span> | Decoration | The colour of the border. See [`decoration`](#specification-attribute-decoration) for the list of options. |
 | <span class="marker">B</span> | Content | The content can accommodate a heading and multiple paragraphs, these should be concise. Can contain bold copy `<b>`, inline links `<a>`, lists `<ul>` `<ol>`, and a caveat at the end of the relevant paragraph if required `<a href="#caveat">1</a>`.|
 
 ## Implementation
