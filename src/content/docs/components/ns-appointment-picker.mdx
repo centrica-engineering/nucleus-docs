@@ -24,15 +24,15 @@ The appointment-picker comprises a calendar to select a date and a radio-button 
 ## Guidance
 
 :::do
-- Use this when the customer needs to select a date and a time slot for an appointment.
-- Use `ns-inputter` to surface the best suitable slots for a customer before presenting the full appointment picker, where appropriate.
-- Use `ns-alert` alongside `ns-appointment-picker` to surface any important notifications regarding a customer booking.
-- Use multiple appointment pickers in ns-tabs so users can easily access different types of bookings.
+- Use it when the customer needs to select a date and a time slot for an appointment.
+- Use [`<ns-inputter>`](/components/ns-inputter) to surface the best suitable slots for a customer before presenting the full appointment picker, where appropriate.
+- Use [`<ns-alert>`](/components/ns-alert) alongside `<ns-appointment-picker>` to surface any important notifications regarding a customer booking.
+- Use multiple appointment pickers in [`<ns-tabs>`](/components/ns-tabs) so users can easily access different types of bookings.
 :::
 
 :::dont
-- Use to select an appointment slot on a single date. Use `ns-inputter` radio options instead.
-- Force customers to use the appointment picker first if there is very poor appointment availability. Present the next available appointments in an `ns-inputter` radio first.
+- Use it to select an appointment slot on a single date - use [`<ns-inputter>`](/components/ns-inputter#most-common-input-types) `radio` options instead.
+- Force customers to use the appointment picker first if there is very little availability. Present the next available appointments in a [`<ns-inputter>`](/components/ns-inputter#most-common-input-types) `radio` first.
 :::
 
 ### Standard
