@@ -24,15 +24,15 @@ The `ns-article` component is a container for long-form content such as blogs, e
 ## Guidance
 
 :::do
-- Split `ns-article` into multiple easy to consume sections.
-- Place all images and videos in `figure`.
-- Prefer to use a 16:9 ratio for images and videos.
+- Split `<ns-article>` into multiple easy-to-consume sections.
+- Place all [`<ns-images>`](/components/ns-image) and [`<ns-videos>`](/components/ns-video) within `<figure>`.
+- Prefer to use a `ratio` of `16 / 9`  for images and videos.
 - Include contextual text links with content.
 :::
 
 :::dont
-- Use to for non long form content.
-- Use to create layouts.
+- Use for content that is not long-form.
+- Use multiple `<ns-article>` instances to create page layouts.
 :::
 
 ### Standard
