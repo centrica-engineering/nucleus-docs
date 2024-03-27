@@ -130,26 +130,6 @@ A way to help the user understand why or why not enter information
 
 Used if the label is outside of `ns-inputter`, such as a heading for the page. Always try to use a label or the heading first. Only use this if the element you are referring to and the label are the same.
 
-#### `mask`
-
-This will create a max length on the input to the length of the mask.
-
-#### `separator`
-
-Requires a mask. Can only be one character.
-
-#### `ignore-separator`
-
-Setting the ignoreseparator property to true will force length validations (such as minLength and maxLength) to not include the separator when calculating the length. e.g. With '-' as the separator: '12-34-56' would have a length of 8, if ignoreseparator is true it would count it as 6 characters.
-
-#### `slot="label"`
-
-To be used for single input types (text, email, etc).
-
-#### `slot="tip-details"`
-
-This requires helper property which is initially hidden and can be revealed by the user when they click on the helper text.
-
 #### `validation`
 
 It is possible to have multiple validations. For example: `["isRequired", "isNumber", "isInteger"]`.
@@ -169,4 +149,3 @@ Some of the validation options can be configured by passing in values within the
 For single type inputs (text, email, etc), there's no need to add id/for unless you need to on the `<label>` and `<input>`
 Make sure to add id/for if it is a checkbox, select or radio input type.
 Be careful when adding additional elements outside of input and label * these scenarios haven't been tested and may need a request for change raised.
-
