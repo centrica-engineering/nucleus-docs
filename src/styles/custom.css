@@ -14,14 +14,14 @@
   --ns-hue-navy: 228;
 
   --ns-color-white: hsl(0, 0%, 100%);
-  --ns-color-teal: hsl(var(--ns-hue-teal), 40%, 32%);
+  --ns-color-teal: hsl(var(--ns-hue-teal), 19%, 66%);
   --ns-color-red: hsl(var(--ns-hue-red), 99%, 66%);
   --ns-color-orange: hsl(var(--ns-hue-orange), 74%, 66%);
   --ns-color-pink: hsl(var(--ns-hue-pink), 60%, 54%);
-  --ns-color-magenta: hsl(var(--ns-hue-magenta), 52%, 41%);
+  --ns-color-magenta: hsl(var(--ns-hue-magenta), 60%, 66%);
   --ns-color-purple: hsl(var(--ns-hue-purple), 43%, 66%);
   --ns-color-indigo: hsl(var(--ns-hue-indigo), 43%, 66%);
-  --ns-color-blue: hsl(var(--ns-hue-blue), 57%, 29%);
+  --ns-color-blue: hsl(var(--ns-hue-blue), 57%, 66%);
   --ns-color-green: hsl(var(--ns-hue-green), 43%, 66%);
   --ns-color-navy: hsl(var(--ns-hue-navy), 75%, 23%);
   --ns-color-black: hsl(var(--ns-hue-teal), 40%, 5%);
@@ -140,8 +140,11 @@
 
 :root[data-theme='light'] {
 
+  --ns-color-teal: hsl(var(--ns-hue-teal), 40%, 32%);
   --ns-color-indigo: hsl(var(--ns-hue-indigo), 43%, 35%);
+  --ns-color-blue: hsl(var(--ns-hue-blue), 57%, 29%);
   --ns-color-orange: hsl(var(--ns-hue-orange), 74%, 43%);
+  --ns-color-magenta: hsl(var(--ns-hue-magenta), 52%, 41%);
   --ns-color-purple: hsl(var(--ns-hue-purple), 43%, 35%);
   --ns-color-green: hsl(var(--ns-hue-green), 43%, 35%);
   --ns-color-red: hsl(var(--ns-hue-red), 99%, 39%);
