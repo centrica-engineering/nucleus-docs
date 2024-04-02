@@ -141,13 +141,13 @@
 :root[data-theme='light'] {
 
   --ns-color-teal: hsl(var(--ns-hue-teal), 40%, 32%);
-  --ns-color-indigo: hsl(var(--ns-hue-indigo), 43%, 35%);
-  --ns-color-blue: hsl(var(--ns-hue-blue), 57%, 29%);
+  --ns-color-red: hsl(var(--ns-hue-red), 99%, 39%);
   --ns-color-orange: hsl(var(--ns-hue-orange), 74%, 43%);
   --ns-color-magenta: hsl(var(--ns-hue-magenta), 52%, 41%);
   --ns-color-purple: hsl(var(--ns-hue-purple), 43%, 35%);
+  --ns-color-indigo: hsl(var(--ns-hue-indigo), 43%, 35%);
+  --ns-color-blue: hsl(var(--ns-hue-blue), 57%, 29%);
   --ns-color-green: hsl(var(--ns-hue-green), 43%, 35%);
-  --ns-color-red: hsl(var(--ns-hue-red), 99%, 39%);
 
   /* Light mode */
   --sl-color-white: var(--ns-color-black);
