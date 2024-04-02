@@ -9,14 +9,16 @@ export class NucleusCodeSnippet extends LitElement {
   static get properties() {
     return {
       src: { type: String },
+      _hideTopBorderRadius: { type: Boolean, attribute: 'hide-top-radius' },
       _formattedSrc: {}
     };
   }
 
   constructor() {
     super();
+    this._hideTopBorderRadius = false;
     this._formattedSrc = new Task(this, {
-      task: async ([src], {signal} ) => {
+      task: async ([src, hideBorderRadius], {signal} ) => {
         const {ec, themeStyles, baseStyles, jsModules} = await createRenderer({
           themes:['github-dark', 'github-light'],
           useDarkModeMediaQuery: true
@@ -27,6 +29,7 @@ export class NucleusCodeSnippet extends LitElement {
           meta: ''
         });
 
+        const borderRadiusStyles = hideBorderRadius ? '0 0 var(--header-border-radius) var(--header-border-radius)' : 'var(--header-border-radius)';
         let htmlContent = toHtml(renderedGroupAst);
         const frameSelector = 'figure class="frame';
         let index = htmlContent.indexOf(frameSelector);
@@ -41,12 +44,37 @@ export class NucleusCodeSnippet extends LitElement {
         htmlContent = `${htmlContentParts[0]}${prefixToLookup}
           ${(baseStyles || themedStyles) ? '<style>' : ''}
           ${baseStyles ?? ''}
+          ${`
+            .expressive-code .frame {
+              border-radius: ${borderRadiusStyles}
+            }
+            .expressive-code pre {
+              border-radius: ${borderRadiusStyles}
+            }
+            .expressive-code .copy button {
+              opacity: var(--ec-frm-inlBtnBrdOpa);
+              position: relative;
+              border: 1px solid var(--ec-frm-inlBtnBrd);
+              
+              &::before {
+                pointer-events: auto;
+                border: none;
+                content: 'Copy';
+                opacity: 1;
+                color: var(--ec-codeFg);
+                width: max-content;
+                top: 50%;
+                transform: translate(min(calc(-100% - 0.5rem)), -50%);
+              }
+            }
+            `
+          }
           ${themedStyles ?? ''}
           ${(baseStyles || themedStyles) ? '</style>' : ''}
           ${htmlContentParts[1]}`;
         return html`${unsafeHTML(htmlContent)}`;
       },
-      args: () => [this._prettifySrc]
+      args: () => [this._prettifySrc, this._hideTopBorderRadius]
     });
   }
 

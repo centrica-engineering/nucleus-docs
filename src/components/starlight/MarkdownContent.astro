@@ -3,12 +3,12 @@ import type { Props } from '@astrojs/starlight/props';
 
 const { slug } = Astro.params;
 const isComponentPage = (slug ?? '').indexOf('components/ns') > -1;
-const isHomePage = Astro.props.slug === '';
 
 const classList = [
 'sl-markdown-content',
 {'has-component': isComponentPage},
-{'homepage': isHomePage}
+{'homepage': Astro.props.slug === ''},
+{'errorpage': Astro.props.slug === '404'}
 ];
 ---
 
@@ -223,6 +223,23 @@ const classList = [
 
     .tab a {
       text-wrap: nowrap;
+    }
+
+    .expressive-code .copy button {
+      opacity: var(--ec-frm-inlBtnBrdOpa);
+      position: relative;
+      border: 1px solid var(--ec-frm-inlBtnBrd);
+      
+      &::before {
+        pointer-events: auto;
+        border: none;
+        content: 'Copy';
+        opacity: 1;
+        color: var(--ec-codeFg);
+        width: max-content;
+        top: 50%;
+        transform: translate(min(calc(-100% - 0.5rem)), -50%);
+      }
     }
   }
 </style>

@@ -27,7 +27,8 @@ export class NucleusComponentRenderer extends LitElement {
         border-start-start-radius: 0.5rem;
         border-start-end-radius: 0.5rem;
         border: 1px solid var(--sl-color-gray-6);
-        min-height: var(--iframe-min-height);
+        height: var(--example-min-height);
+        overflow: hidden;
       }
 
       iframe {
@@ -36,9 +37,14 @@ export class NucleusComponentRenderer extends LitElement {
         max-width: initial !important;
         min-height: var(--iframe-min-height);
 
-        &.zoom-out {
+        &.zoom-75 {
           transform: scale(0.75);
           width: 133% !important;
+        }
+
+        &.zoom-50 {
+          transform: scale(0.50);
+          width: 200% !important;
         }
 
         &.viewport-mobile {
@@ -105,7 +111,7 @@ export class NucleusComponentRenderer extends LitElement {
 
     this._minHeight = 200;
     this._viewport = 'desktop';
-    this.zoom = 'zoom-out';
+    this.zoom = '75';
   }
 
   willUpdate() {
@@ -114,13 +120,32 @@ export class NucleusComponentRenderer extends LitElement {
     }
   }
 
+  connectedCallback() {
+    super.connectedCallback();
+    let observer;
+    const observe = () => {
+      if (observer) observer.disconnect();
+      observer = new IntersectionObserver(() => this.requestUpdate());
+      observer?.observe(this);
+    };
+    observe();
+  }
+
+  get _componentWrapper() {
+    if (this.name === 'ns-selector') {
+      return `<ns-inputter>${this.src}</ns-inputter>`;
+    } else if (this.name === 'ns-timeline-event'){
+      return`${this.src}<ns-timeline-event status="invalid"></ns-timeline-event>`;
+    } else {
+      return this.src;
+    }
+  }
+
   get doc() {
-    const timelineEventWrapper = this.name === 'ns-timeline-event' ? `<ns-timeline-event status="invalid"></ns-timeline-event>` : '';
-    const wrapper = this._customElement?.placements?.includes('main') ? this.src : `
+    const wrapper = this._customElement?.placements?.includes('main') ? this._componentWrapper : `
       <ns-panel>
         <div>
-          ${this.src}
-          ${timelineEventWrapper}
+          ${this._componentWrapper}
         </div>
       </ns-panel>
     `;
@@ -160,9 +185,10 @@ export class NucleusComponentRenderer extends LitElement {
     const iframe = this.shadowRoot.querySelector('.example-iframe');
     if (iframe) {
       const iframeDoc = iframe.contentWindow.document;
-      this._minHeight = iframeDoc.body.scrollHeight;
+      const main = iframeDoc.getElementById('content');
+      this._minHeight = main?.offsetHeight;
 
-      const clickables = iframeDoc.body.querySelectorAll('[href^="#"]');
+      const clickables = iframeDoc?.body?.querySelectorAll('[href^="#"]');
       clickables?.forEach((clickable) => {
         clickable.addEventListener('click', function(e) {
           e.preventDefault();
@@ -172,30 +198,23 @@ export class NucleusComponentRenderer extends LitElement {
   }
 
   render() {
+    const wrapperHeight = (this._minHeight * this.zoom) / 100;
     const styles = {
-      '--iframe-min-height': `${this._minHeight}px !important`
+      '--iframe-min-height': `${this._minHeight}px !important`,
+      '--example-min-height': `${wrapperHeight < 300 ? 300 : wrapperHeight + 48}px !important`
     };
 
     const classes = {
       'example-iframe': true,
-      'zoom-in': this.zoom === 'zoom-in',
-      'zoom-out': this.zoom === 'zoom-out',
+      'zoom-100': this.zoom === '100',
+      'zoom-75': this.zoom === '75',
+      'zoom-50': this.zoom === '50',
       'viewport-mobile': this._viewport === 'mobile',
       'viewport-desktop': this._viewport === 'desktop',
     };
 
     return html`
-      <div class="example preview">
-        <iframe
-          class=${classMap(classes)}
-          style=${styleMap(styles)}
-          srcdoc=${this.doc}
-          width="100%"
-          height="100%"
-          allowfullscreen
-          sandbox="allow-scripts allow-same-origin"
-          @load=${() => this._onIframeLoad()}
-        ></iframe>
+      <div class="example preview" style=${styleMap(styles)}>
         <div class="form">
           <div class="viewport">
             <span>Viewport</span>
@@ -209,13 +228,25 @@ export class NucleusComponentRenderer extends LitElement {
           <div class="zoom">
             <span>Scale</span>
             <div class="radio-element">
-              <label><input type="radio" name="zoom" value="zoom-in"> 100%</label>
+              <label><input type="radio" name="zoom" value="100"> 100%</label>
             </div>
             <div class="radio-element">
-              <label><input type="radio" name="zoom" value="zoom-out"> 75%</label>
+              <label><input type="radio" name="zoom" value="75"> 75%</label>
+            </div>
+            <div class="radio-element">
+              <label><input type="radio" name="zoom" value="50"> 50%</label>
             </div>
           </div>
         </div>
+        <iframe
+          class=${classMap(classes)}
+          srcdoc=${this.doc}
+          width="100%"
+          height="100%"
+          allowfullscreen
+          sandbox="allow-scripts allow-same-origin"
+          @load=${() => setTimeout(() => this._onIframeLoad(), 300)}
+        ></iframe>
       </div>
     `;
   }

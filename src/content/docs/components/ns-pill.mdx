@@ -20,29 +20,36 @@ Pills can help to create a subtle sense of urgency or to draw a customer’s att
 
 ### Examples
 
-<ExampleViewer type="standard" />
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer type="standard" />
+  </TabItem>
+  <TabItem label="Icon">
+    <ExampleViewer type="standard-icon" />
+  </TabItem>
+  <TabItem label="Caveat">
+    <ExampleViewer type="standard-caveat" />
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
 :::do
 - Use solid versions of icons.
-- Use `ns-pill` very sparingly, ideally one or two per journey maximum. Less is more.
-- Use a `yellow` pill to draw attention to an offer or promotional message.
-- Use `red` and `lime` pills for dashboard notifications.
+- Use `<ns-pill>` sparingly, ideally one or two per journey maximum. (Less is more).
 - Keep your copy short and simple for maximum impact.
-- Use `ns-pill` in a component with a direct CTA.
+- Use `<ns-pill>` in a component with a `direct` CTA (Call To Action).
 - Choose colours that are consistent and relevant.
 :::
 
 :::dont
 - Use as validation messages.
-- Create a shouty experience by using `ns-pill` in multiple places. It dilutes the impact.
 - Create distraction or put undue pressure on customers to purchase unwanted or irrelevant products by overusing urgency elements.
-- Don’t use pills near a text CTA. Pills should not detract attention from your users’ next action.
+- Use pills near a `text` CTA. Pills should not detract the user's attention from their next action.
 - Use in the middle of a sentence.
-- Use the `ns-pill` as a link or button. (Caveat link excepted).
-- Use icons that can make `ns-pill` visually appear like an interactive component, for example an `ns-cta` or drop-down `ns-inputter/select`.
-- Use `ns-pill` as a heading.
+- Use the `<ns-pill>` as a link or button. (Caveat link excepted).
+- Use icons that can make `<ns-pill>` visually appear like an interactive component, for example, an [`<ns-cta>`](/components/ns-cta) or drop-down [`<ns-inputter>` `select`](/components/ns-inputter).
+- Use `<ns-pill>` as a heading.
 :::
 
 ### Standard
@@ -54,7 +61,7 @@ Pills can help to create a subtle sense of urgency or to draw a customer’s att
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | <span class="marker">A</span> | Icon | Use an icon to support your description. |
-| <span class="marker">B</span> | Content | Content should be very concise and catchy, ideally between 1 and 4 words. Your content should not run over one line on a `squash-court` viewport. |
+| <span class="marker">B</span> | Anonymous slot | Be concise and catchy, ideally between 1 and 4 words. Content should not run over more than one line on a `squash-court` viewport. |
 | <span class="marker">C</span> | Caveat | Use a link to [`<ns-caveat>`](/components/ns-caveat). |
 
 ## Implementation

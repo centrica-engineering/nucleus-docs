@@ -31,16 +31,16 @@ The timeline gives an overview of a process and can show the progression of a cu
 
 :::do
 - Use a maximum of 10 steps.
-- Consider if the title duplicates page title.
+- Consider if the timeline heading duplicates the page heading.
 - Provide helpful messaging.
-- Use summary to set expectations for the `standard` variant.
+- Use `summary` and `show-step-count` to help set expectations for the `standard` type.
 :::
 
 :::dont
 - Add too much detailed content.
-- Use illustrations or icons in additional content.
-- Use overly long event names.
-- Use timestamp if it causes confusion with a date elsewhere on the page for the `standard` variant.
+- Use illustrations or icons within additional content.
+- Use excessively long event names.
+- Use the timestamp if it causes confusion with a date elsewhere on the page.
 :::
 
 ### Standard
@@ -51,16 +51,11 @@ The timeline gives an overview of a process and can show the progression of a cu
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">A</span> | Heading | Describes the process the whole timeline is showing. It can be left blank if, for example, there is a ns-landmark immediately preceding which describes it. |
+| <span class="marker">A</span> | Heading | Describes the process `ns-timeline` is showing. Leave it empty if there is an `ns-landmark` immediately preceding which describes the process. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
 | <span class="marker">B</span> | Summary | Optional. You can use a short sentence here to help manage expectations. |
 | <span class="marker">C</span> | Step Count | Display information on the number of events in a process (up to a maximum of 10) and how many have been completed so far. |
 | <span class="marker">D</span> | Decoration | Choose between default dots, icons or numbers. |
-| <span class="marker">E</span> | Event | An individual step in the timeline. |
-| <span class="marker">F</span> | Event Heading | Concise and clear heading description. Keep as short as possible. |
-| <span class="marker">G</span> | Event Icon | The icon decoration for that particular event. This can change depending on status. |
-| <span class="marker">H</span> | Event Status | Status is also shown by colour and form of the interconnecting lines and circles in the timeline. E.g. In Progress is 'information blue' and has larger roundels and icons that are solid. Whereas Pending uses a grey outline and is smaller. (See [Status](/components/ns-timeline-event#status) below.) |
-| <span class="marker">I</span> | Additional Content | Add further information relevant to this step to aid customer understanding, or if an action is required. |
-| <span class="marker">J</span> | Event Completed Timestamp | Events that have been successfully completed, there is the option to display a time-stamp alongside the status. |
+| <span class="marker">E</span> | Event | An individual event in the timeline. Refer [`<ns-timeline-event>`](/components/ns-timeline-event) for individual event guidance. |
 
 ### Step
 
@@ -70,9 +65,9 @@ The timeline gives an overview of a process and can show the progression of a cu
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">A</span> | Heading | Describes the process the whole timeline is showing. It can be left blank if, for example, there is a ns-landmark immediately preceding which describes it. |
+| <span class="marker">A</span> | Heading | Describes the process `ns-timeline` is showing. Leave it empty if there is an `ns-landmark` immediately preceding which describes the process. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
 | <span class="marker">B</span> | Decoration | Number or Fallback. Number is default, the fallback is a dot if no index is specified. |
-| <span class="marker">C</span> | Event | An individual step in the timeline. |
+| <span class="marker">C</span> | Event | An individual step in the timeline. Refer [`<ns-timeline-event>`](/components/ns-timeline-event) for individual step guidance. |
 | <span class="marker">D</span> | Event Heading | Concise and clear heading description. Keep as short as possible. |
 | <span class="marker">E</span> | Additional Content | Add further information relevant to this step to aid customer understanding. |
 

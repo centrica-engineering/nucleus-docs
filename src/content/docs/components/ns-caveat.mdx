@@ -18,14 +18,20 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 Caveats link to content on the page, providing more information about legality and eligibility by separating it to the bottom of the page.
 
 ### Examples
-
-<ExampleViewer type="standard" />
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer type="standard" />
+  </TabItem>
+  <TabItem label="Link">
+    <ExampleViewer type="link" disableConfigure />
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
 :::do
 - Try to make the caveats positive.
-- Be transparent, if the legal details are short, add it to the content.
+- Be transparent – if the legal details are short then add them to the content.
 - Always have the legal caveats at the bottom of the page, before the footer.
 - Use an ordered list for the caveats that are linked in the page.
 - Use a `<p>` tag for the caveats that relate to the page or journey in general.
@@ -49,7 +55,7 @@ Caveats link to content on the page, providing more information about legality a
 | :--- | :--- | :--- |
 | <span class="marker">A</span> | Link | The link used to highlight there is further relevant information the user should read. This might provide specific stipulations, conditions, or limitations. Clicking on this will take the user to the content at the bottom of the page. |
 | <span class="marker">B</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
-| <span class="marker">C</span> | Content | A single, short paragraph works best. You can link to additional information if needed, such as terms and conditions. These should always be accompanied with a related description. |
+| <span class="marker">C</span> | Anonymous slot | An ordered list `<ol>` is recommended to associate the number used in the caveat link. A paragraph `<p>` is for generic fine print and legal information. |
 
 ## Implementation
 
