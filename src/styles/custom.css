@@ -245,6 +245,10 @@ main {
     transition-delay: 0ms;
     transition-duration: 1000ms;
     transition-timing-function: ease-in-out;
+
+    &[hidden] {
+      display: none;
+    }
   
     &.primary {
       background-color: var(--sl-color-text-accent);
