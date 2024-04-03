@@ -280,6 +280,13 @@ main {
       }
     }
 
+    &.spark {
+      &::before {
+        content: "✨";
+        background-color: transparent;
+      }
+    }
+
     &.reset {
       &::before {
         mask-image: var(--ns-icon-reset);
