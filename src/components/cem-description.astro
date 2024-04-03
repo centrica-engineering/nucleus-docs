@@ -14,7 +14,7 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
 
 <script is:inline>
   const fetchTldr = async () => {
-    const name = window.location.pathname.split("/").pop();
+    const name = window.location.pathname.split("/").filter((x) => x).pop();
     const response = await fetch(
       `https://nucleus-tldr.nucleus-c3a.workers.dev/?component=${name}`,
     );
