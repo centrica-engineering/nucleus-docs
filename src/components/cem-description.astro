@@ -13,8 +13,14 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
 <slot />
 
 <script is:inline>
+  const btn = document.querySelector(".spark");
+
   const fetchTldr = async () => {
-    const name = window.location.pathname.split("/").filter((x) => x).pop();
+    btn.hidden = true;
+    const name = window.location.pathname
+      .split("/")
+      .filter((x) => x)
+      .pop();
     const response = await fetch(
       `https://nucleus-tldr.nucleus-c3a.workers.dev/?component=${name}`,
     );
@@ -65,6 +71,5 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
     }
   };
 
-  const btn = document.querySelector(".spark");
   btn.addEventListener("click", fetchTldr);
 </script>
