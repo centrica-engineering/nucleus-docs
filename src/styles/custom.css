@@ -309,6 +309,13 @@ main {
       }
     }
   }
+
+  .tldr-info:not(:empty) {
+    padding: 1rem;
+    border: 2px solid var(--sl-color-hairline-shade);
+    border-radius: 0.25rem;
+    background-color: var(--sl-color-gray-7);
+  }
 }
 
 body {
