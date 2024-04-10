@@ -9,7 +9,13 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
   <p>{compDetails?.description}</p>
 </div>
 <button class="button secondary spark">TL;DR</button>
-<div class="tldr-info"></div>
+<div class="tldr-info">
+  <div class="tldr-warning">
+    ✨ This is an auto-generated AI summary of the {compDetails?.name ?? 'components'}'s documentation.
+    It may not be accurate. ✨
+  </div>
+  <div class="tldr-content"></div>
+</div>
 <slot />
 
 <script is:inline>
@@ -43,7 +49,7 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
         },
       });
 
-      const tldrInfo = document.querySelector(".tldr-info");
+      const tldrContent = document.querySelector(".tldr-content");
       const readerStream = stream
         .pipeThrough(new TextDecoderStream())
         .getReader();
@@ -59,11 +65,11 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
             value = "</p><p>";
           }
 
-          if (tldrInfo.innerHTML === "") {
+          if (tldrContent.innerHTML === "") {
             value = "<p>" + value;
           }
 
-          tldrInfo.innerHTML += value;
+          tldrContent.innerHTML += value;
           return pump();
         });
       };
