@@ -45,6 +45,9 @@ export class NucleusCodeSnippet extends LitElement {
           ${(baseStyles || themedStyles) ? '<style>' : ''}
           ${baseStyles ?? ''}
           ${`
+            .expressive-code {
+              max-width: calc(100vw - 2rem);
+            }
             .expressive-code .frame {
               border-radius: ${borderRadiusStyles}
             }
