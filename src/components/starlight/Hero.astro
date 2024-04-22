@@ -59,5 +59,11 @@ const isHomePage = Astro.props.slug === '';
         border-radius: 100px;
       }
     }
+    @media (width <= 75rem) {
+      .logo {
+        height: 3rem;
+        padding-block-start: 3rem;
+      }
+    }
   }
 </style>

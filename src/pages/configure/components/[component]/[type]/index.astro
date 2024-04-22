@@ -123,6 +123,19 @@ export function getStaticPaths() {
           grid-column: 1 / -1;
         }
       }
+
+      @media (width <= 75rem) {
+        .configurator {
+          grid-template-columns: 1fr;
+          padding-inline-start: 1rem;
+          padding-inline-end: 1rem;
+        }
+
+        .form,
+        example-view {
+            max-width: calc(100vw - 2rem);
+        }
+      }
     </style>
 
   </body>

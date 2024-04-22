@@ -336,6 +336,13 @@ main {
   padding-block-end: 0 !important;
 }
 
+/* Fix mobile view and stop horizontal scrolling */
+example-view,
+.sl-markdown-content,
+.action {
+  max-width: calc(100vw - 2rem);
+}
+
 
 /* NOTE: @drew - 2024-01-03 - this selector is to target the homepage */
 :root[data-has-hero] {
