@@ -8,4 +8,74 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
 <div class="purpose">
   <p>{compDetails?.description}</p>
 </div>
+<button class="button secondary sparkle">Summarise it!</button>
+<div class="tldr-info">
+  <div class="tldr-warning">
+    ✨ This is an auto-generated AI summary of the {compDetails?.name ?? 'components'}'s documentation.
+    It may not be accurate. ✨
+  </div>
+  <div class="tldr-content"></div>
+</div>
 <slot />
+
+<script is:inline>
+  const btn = document.querySelector(".sparkle");
+
+  const fetchTldr = async () => {
+    btn.hidden = true;
+    const name = window.location.pathname
+      .split("/")
+      .filter((x) => x)
+      .pop();
+    const response = await fetch(
+      `https://nucleus-tldr.nucleus-c3a.workers.dev/?component=${name}`,
+    );
+
+    if (response.ok) {
+      const reader = response.body.getReader();
+      const stream = new ReadableStream({
+        start(controller) {
+          const pump = () => {
+            return reader.read().then(({ done, value }) => {
+              if (done) {
+                controller.close();
+                return;
+              }
+              controller.enqueue(value);
+              return pump();
+            });
+          };
+          return pump();
+        },
+      });
+
+      const tldrContent = document.querySelector(".tldr-content");
+      const readerStream = stream
+        .pipeThrough(new TextDecoderStream())
+        .getReader();
+      const pump = () => {
+        return readerStream.read().then(({ done, value }) => {
+          if (done) {
+            return;
+          }
+
+          value = JSON.parse(value.split("data: ")[1]).response;
+
+          if (value === "\n") {
+            value = "</p><p>";
+          }
+
+          if (tldrContent.innerHTML === "") {
+            value = "<p>" + value;
+          }
+
+          tldrContent.innerHTML += value;
+          return pump();
+        });
+      };
+      return pump();
+    }
+  };
+
+  btn.addEventListener("click", fetchTldr);
+</script>
