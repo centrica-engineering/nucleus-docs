@@ -8,7 +8,7 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
 <div class="purpose">
   <p>{compDetails?.description}</p>
 </div>
-<button class="button secondary spark">Summarise it!</button>
+<button class="button secondary sparkle">Summarise it!</button>
 <div class="tldr-info">
   <div class="tldr-warning">
     ✨ This is an auto-generated AI summary of the {compDetails?.name ?? 'components'}'s documentation.
@@ -19,7 +19,7 @@ const compDetails = cem.tags.find((tag) => tag.name === name);
 <slot />
 
 <script is:inline>
-  const btn = document.querySelector(".spark");
+  const btn = document.querySelector(".sparkle");
 
   const fetchTldr = async () => {
     btn.hidden = true;
