@@ -5,6 +5,10 @@
       "badge": "updated"
     },
     {
+      "name": "ns-lockup",
+      "badge": "updated"
+    },
+    {
       "name": "ns-action-link",
       "badge": "new"
     },
@@ -12,6 +16,5 @@
       "name": "ns-date-time",
       "badge": "new"
     }
-
   ]
 }
