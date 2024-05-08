@@ -17,23 +17,24 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ### Examples
 
-<TabItem label="Bento">
-  <ExampleViewer type="bento" />
-</TabItem>
+<Tabs>
+  <TabItem label="Bento">
+    To visually narrate a story use `bento` type.
+    <ExampleViewer type="bento" />
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
 :::do
-- Use `bento` type to visually narrate a story.
-- Use pictures that are connected together to show the process of the story.
-- Place the images in the correct order.
+- Use media that are connected together to show the process of the story.
+- Place the media in the correct order.
+- Add appropriate `ratio` for each of the media.
 - Use `alt` to narrate the story textually. 
 :::
 
 :::dont
-- Change the ratio of the images.
 - Use `bento` type for other purpose than to narrate a story.
-- Change the order of the images.
 :::
 
 ## Implementation
@@ -49,32 +50,27 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 #### Specification notes
 
 ##### `media` attribute
+
 The structure of the each of `media` object.
 
 | Key | Options | Description |
 | :--- | :--- |:--- |
 |`type`| `image` | The type of the media that needs to be displayed. |
-|`src`| Refer [Assets](/guidelines/assets) for choice of image sizes. | The link to the media. |
+|`src`| Refer [Assets](/guidelines/assets#placeholder-images) for choice of image sizes. | The link to the media. |
 |`ratio`| `1 / 1` `4 / 3` `4 / 5` `16 / 9` | The aspect ratio of the media. |
 
-```
+```json
 [
-    {
-      'type':'image',
-      'src':'https://www.britishgas.co.uk/aem6/content/dam/britishgas/images/ns/image4_5.png',
-      'ratio':'4 / 5'
-    },{
-      'type':'image',
-      'src':'https://www.britishgas.co.uk/aem6/content/dam/britishgas/images/ns/image4_3.png',
-      'ratio':'4 / 3'
-    },{
-      'type':'image',
-      'src':'https://www.britishgas.co.uk/aem6/content/dam/britishgas/images/ns/image4_3.png',
-      'ratio':'4 / 3'
-    },{
-      'type':'image',
-      'src':'https://www.britishgas.co.uk/aem6/content/dam/britishgas/images/ns/image4_5.png',
-      'ratio':'4 / 5'
-    }
-  ]
+  {
+    "type": "image",
+    "src": "/placeholder-4x5-360x450px.webp",
+    "ratio": "4 / 5"
+  },
+  {
+    "type": "image",
+    "src": "/placeholder-4x3-480x360px.webp",
+    "ratio": "4 / 3"
+  },
+  ...
+]
 ```
