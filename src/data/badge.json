@@ -5,6 +5,10 @@
       "badge": "updated"
     },
     {
+      "name": "ns-lockup",
+      "badge": "updated"
+    },
+    {
       "name": "ns-action-link",
       "badge": "new"
     },
@@ -16,6 +20,5 @@
       "name": "ns-media-group",
       "badge": "new"
     }
-
   ]
 }
