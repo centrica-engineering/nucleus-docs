@@ -15,6 +15,10 @@
     {
       "name": "ns-date-time",
       "badge": "new"
+    },
+    {
+      "name": "ns-media-group",
+      "badge": "new"
     }
   ]
 }
