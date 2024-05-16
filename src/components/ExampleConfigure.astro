@@ -12,7 +12,7 @@ const customElement = customElements.find((customElement) => customElement.name 
 const cem = cesm.tags.find((tag) => tag.name === componentName);
 const htmlContent = Astro.props.src;
 
-const attributes = cem?.attributes;
+const attributes = cem?.attributes.filter((attribute) => !attribute.deprecated);
 const typeAttributeIndex = attributes?.findIndex((attribute) => attribute.name === 'type');
 const typeAttribute = attributes?.splice(typeAttributeIndex, 1);
 attributes?.splice(0, 0, typeAttribute[0]);
@@ -158,12 +158,12 @@ attributes?.splice(0, 0, typeAttribute[0]);
       <button class="button reset" id="reset-config">Reset</button>
     </div>
   {
-    cem?.attributes && (
+    attributes && (
       <h3>Attributes</h3>
     )
   }
   {
-    cem?.attributes?.map((attribute) => {
+    attributes?.map((attribute) => {
       const defaultValue = attribute.default?.replaceAll('"', '');
       if (attribute.type === 'string') {
         if (attribute.name === 'icon' || (componentName === 'ns-icon' && attribute.name === 'name') || (componentName !== 'ns-icon' && attribute.description?.includes('icon'))) {
