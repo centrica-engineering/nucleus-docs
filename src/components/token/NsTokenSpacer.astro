@@ -1,0 +1,63 @@
+---
+import { spacer } from "@scripts/tokens";
+
+const { type } = Astro.props;
+---
+
+<slot />
+
+{
+  spacer &&
+    type &&
+    spacer[type] &&
+    spacer[type].map(([key, value], i) => {
+      const style = `--ns-width: ${value};`;
+      const labelValue = key.substring(key.lastIndexOf("_") + 1, key.length);
+      return (
+        <div class={`ns-spacer width`}>
+          <div class="swatch" style={style} />
+          <span class="name">{labelValue}</span>
+          <span class="value">
+            <code>{value}</code>
+          </span>
+          <span>
+            <code>{key}</code>
+          </span>
+        </div>
+      );
+    })
+}
+
+<style>
+  .ns-spacer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+
+    .name {
+      font-spacer: 1.25rem;
+      font-weight: 500;
+      text-transform: lowercase;
+      min-width: 10ch;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    &.width {
+      .swatch {
+        height: var(--ns-width);
+        width: 2.5rem;
+        background: var(--sl-color-gray-5);
+      }
+    }
+  }
+
+  .swatch {
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+</style>

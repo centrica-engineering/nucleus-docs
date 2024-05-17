@@ -7,6 +7,8 @@ tableOfContents:
 import Colors from '@components/token/NsTokenColours.astro';
 import Border from '@components/token/NsTokenBorder.astro';
 import Typography from '@components/token/NsTokenTypography.astro';
+import Size from '@components/token/NsTokenSize.astro';
+import Spacer from '@components/token/NsTokenSpacer.astro';
 import ExampleViewer from '@components/ExampleViewer.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
@@ -38,6 +40,10 @@ System colours support and enhance communication with users throughout their jou
 
 <Colors type="system" />
 
+### Theme
+
+<Colors type="theme" />
+
 ## Border
 
 ### Radius
@@ -48,149 +54,169 @@ System colours support and enhance communication with users throughout their jou
 
 <Border type="width" />
 
+## Size
+
+### Theme
+
+<Size type="theme" />
+
+### System
+
+<Size type="system" />
+
+## Spacer
+
+### Theme
+
+<Spacer type="theme" />
+
+### System
+
+<Spacer type="system" />
+
 ## Typography
 
 The British Gas font is a typeface unique to British Gas. It has a clear, legible and elegant style. A fallback to sans-serif is present to allow the operating system to provide the substitute.
 
 ### Heading 1
 
-`<h1>` or `class="h1"`
+`<h1>`, `class="h1"`, `@extend %h1` or `@extend %h1-no-margin`
 
 <Tabs>
-  <TabItem label="Tokens">
-    <Typography level="h1" />
-  </TabItem>
   <TabItem label="Example">
     <ExampleViewer type="h1" />
+  </TabItem>
+  <TabItem label="Tokens">
+    <Typography level="h1" />
   </TabItem>
 </Tabs>
 
 ### Heading 2
 
-`<h2>` or `class="h2"`
+`<h2>`, `class="h2"`, `@extend %h2` or `@extend %h2-no-margin`
 
 <Tabs>
-  <TabItem label="Tokens">
-    <Typography level="h2" />
-  </TabItem>
   <TabItem label="Example">
     <ExampleViewer type="h2" />
+  </TabItem>
+  <TabItem label="Tokens">
+    <Typography level="h2" />
   </TabItem>
 </Tabs>
 
 ### Heading 3
 
-`<h3>` or `class="h3"`
+`<h3>`, `class="h3"`, `@extend %h3` or `@extend %h3-no-margin`
 
 <Tabs>
-  <TabItem label="Tokens">
-    <Typography level="h3" />
-  </TabItem>
   <TabItem label="Example">
     <ExampleViewer type="h3" />
+  </TabItem>
+  <TabItem label="Tokens">
+    <Typography level="h3" />
   </TabItem>
 </Tabs>
 
 ### Heading 4
 
-`<h4>` or `class="h4"`
+`<h4>`, `class="h4"`, `@extend %h4` or `@extend %h4-no-margin`
 
 <Tabs>
-  <TabItem label="Tokens">
-    <Typography level="h4" />
-  </TabItem>
   <TabItem label="Example">
     <ExampleViewer type="h4" />
+  </TabItem>
+  <TabItem label="Tokens">
+    <Typography level="h4" />
   </TabItem>
 </Tabs>
 
 ### Heading 5
 
-`<h5>` or `class="h5"`
+`<h5>`, `class="h5"`, `@extend %h5` or `@extend %h5-no-margin`
 
 <Tabs>
-  <TabItem label="Tokens">
-    <Typography level="h5" />
-  </TabItem>
   <TabItem label="Example">
     <ExampleViewer type="h5" />
+  </TabItem>
+  <TabItem label="Tokens">
+    <Typography level="h5" />
   </TabItem>
 </Tabs>
 
 ### Heading 6
 
-`<h6>` or `class="h6"`
+`<h6>`, `class="h6"`, `@extend %h6` or `@extend %h6-no-margin`
 
 <Tabs>
-  <TabItem label="Tokens">
-    <Typography level="h6" />
-  </TabItem>
   <TabItem label="Example">
     <ExampleViewer type="h6" />
+  </TabItem>
+  <TabItem label="Tokens">
+    <Typography level="h6" />
   </TabItem>
 </Tabs>
 
 ### Paragraph large
 
-`class="p-large"`
+`class="p-large"`, `@extend %p-large` or `@extend %p-large-no-margin`
 
 <Tabs>
-  <TabItem label="Tokens">
-    <Typography level="p-large" />
-  </TabItem>
   <TabItem label="Example">
     <ExampleViewer type="p-large" />
+  </TabItem>
+  <TabItem label="Tokens">
+    <Typography level="p-large" />
   </TabItem>
 </Tabs>
 
 ### Paragraph feature
 
-`class="p-feature"`
+`class="p-feature"`, `@extend %p-feature` or `@extend %p-feature-no-margin`
 
 <Tabs>
-  <TabItem label="Tokens">
-    <Typography level="p-feature" />
-  </TabItem>
   <TabItem label="Example">
     <ExampleViewer type="p-feature" />
+  </TabItem>
+  <TabItem label="Tokens">
+    <Typography level="p-feature" />
   </TabItem>
 </Tabs>
 
 ### Paragraph normal
 
-`class="p-normal"`
+`class="p-normal"`, `@extend %p-normal` or `@extend %p-normal-no-margin`
 
 <Tabs>
-  <TabItem label="Tokens">
-    <Typography level="p-normal" />
-  </TabItem>
   <TabItem label="Example">
     <ExampleViewer type="p-normal" />
+  </TabItem>
+  <TabItem label="Tokens">
+    <Typography level="p-normal" />
   </TabItem>
 </Tabs>
 
 ### Paragraph small
 
-`class="p-small"`
+`class="p-small"`, `@extend %p-small` or `@extend %p-small-no-margin`
 
 <Tabs>
-  <TabItem label="Tokens">
-    <Typography level="p-small" />
-  </TabItem>
   <TabItem label="Example">
     <ExampleViewer type="p-small" />
+  </TabItem>
+  <TabItem label="Tokens">
+    <Typography level="p-small" />
   </TabItem>
 </Tabs>
 
 ### Paragraph caption
 
-`class="p-caption"`
+`class="p-caption"`, `@extend %p-caption` or `@extend %p-caption-no-margin`
 
 <Tabs>
-  <TabItem label="Tokens">
-    <Typography level="p-caption" />
-  </TabItem>
   <TabItem label="Example">
     <ExampleViewer type="p-caption" />
+  </TabItem>
+  <TabItem label="Tokens">
+    <Typography level="p-caption" />
   </TabItem>
 </Tabs>
