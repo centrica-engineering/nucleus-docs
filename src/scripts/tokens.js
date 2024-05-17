@@ -18,7 +18,9 @@ const themeColors = () => tokensLike('THEME_COLOR_').filter((token) => {
     '_COLOR_INFORMATION',
     '_COLOR_ERROR',
     '_COLOR_SUCCESS',
-    '_COLOR_DISABLED'
+    '_COLOR_DISABLED',
+    '_COLOR_CURRENT',
+    '_COLOR_TRANSPARENT',
   ];
 
   return !ignoreList.some((ignore) => token[0].includes(ignore));
