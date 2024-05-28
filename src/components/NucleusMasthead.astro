@@ -2,8 +2,7 @@
 import type { Props } from "@astrojs/starlight/props";
 import Default from '@astrojs/starlight/components/PageTitle.astro';
 import { Image } from "astro:assets";
-import customElements from '@connectedhomes/nucleus/custom-elements.json';
-import ceDocs from '@connectedhomes/nucleus/ce-doc.json';
+import { customElements, ceJsDoc } from "../scripts/custom-elements";
 
 const toc = Astro.props.toc;
 const { slug } = Astro.params;
@@ -15,7 +14,7 @@ const mastheadImage = mastheadImages[`../assets/masthead/${slug}.svg`];
 const mastheadFolder = slug?.split('/')[0];
 
 const isDeprecated = customElements.tags.find((customElement) => customElement.name === componentName)?.deprecated;
-let category = isComponentPage && ceDocs.find((customElement) => customElement.name === componentName)?.category;
+let category = isComponentPage && ceJsDoc.find((customElement) => customElement.name === componentName)?.category;
 category = category ? category.toLowerCase() : false;
 
 const mastheadClassList = [

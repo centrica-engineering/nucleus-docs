@@ -1,8 +1,9 @@
 ---
 import LinkToComponent from "./LinkToComponent.astro";
 const { name } = Astro.props;
-import jsdoc from "@connectedhomes/nucleus/ce-doc.json";
-const placements = jsdoc.find((tag) => tag.name === name)?.placements;
+import { ceJsDoc } from "../scripts/custom-elements";
+
+const placements = ceJsDoc.find((tag) => tag.name === name)?.placements;
 
 ---
 {
@@ -11,10 +12,10 @@ const placements = jsdoc.find((tag) => tag.name === name)?.placements;
       <p>The <code>{name}</code> component can be used in the following components:</p>
       <ul>
         {placements?.map((placement) => {
-          if (placement.indexOf(' > ') > -1) {
-            const placementTree = placement.split(' > ');
-            return <li><LinkToComponent name={placementTree[1].trim()} /> wrapped in <LinkToComponent name={placementTree[0].trim()} /></li>;
-          }
+          // if (placement.indexOf(' > ') > -1) {
+          //   const placementTree = placement.split(' > ');
+          //   return <li><LinkToComponent name={placementTree[1].trim()} /> wrapped in <LinkToComponent name={placementTree[0].trim()} /></li>;
+          // }
           return <li><LinkToComponent name={placement.trim()} /></li>;
         })}
       </ul>

@@ -5,7 +5,7 @@ import '/node_modules/@astrojs/starlight/style/shiki.css';
 import '/node_modules/@astrojs/starlight/style/util.css';
 import '../../../../../styles/custom.css';
 import ExampleConfigure from '../../../../../components/ExampleConfigure.astro';
-import cesm from '@connectedhomes/nucleus/custom-elements.json';
+import { customElements } from "../../../../../scripts/custom-elements";
 
 const { component, type } = Astro.params;
 const exampleFileMatcher = `/assets/components/${component}/${type}.html`;
@@ -19,7 +19,7 @@ export function getStaticPaths() {
   const getComponentExample = (fileMatcher) => {
     return Object.keys(examples)?.filter((example) => example.indexOf(fileMatcher) > -1);
   } 
-  return cesm.tags.flatMap((tag) => {
+  return customElements.tags.flatMap((tag) => {
     const componentName = tag.name;
     const exampleComponentMatcher = `/assets/components/${componentName}/`;
     const componentExamples = getComponentExample(exampleComponentMatcher);

@@ -1,0 +1,1056 @@
+[
+  {
+    "name": "ns-video",
+    "display-name": "Video",
+    "slots": [],
+    "placements": [
+      "ns-lockup",
+      "ns-content"
+    ]
+  },
+  {
+    "name": "ns-icon",
+    "display-name": "Icon",
+    "slots": []
+  },
+  {
+    "name": "ns-timeline-event",
+    "display-name": "Timeline Event",
+    "internal": true,
+    "slots": [
+      {
+        "name": "heading",
+        "description": "The heading of the event and needs to be related to the content of the event."
+      },
+      {
+        "name": "",
+        "description": "The content of the event.",
+        "permittedTagNames": [
+          "ns-card",
+          "p"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-timeline"
+    ]
+  },
+  {
+    "name": "ns-timeline",
+    "display-name": "Timeline",
+    "slots": [
+      {
+        "name": "heading",
+        "description": "The heading to describe the process that the timeline represents.",
+        "permittedTagNames": [
+          "h2"
+        ]
+      },
+      {
+        "name": "summary",
+        "description": "The optional summary to manage the expectation of the process.",
+        "permittedTagNames": [
+          "p"
+        ]
+      },
+      {
+        "name": "event",
+        "description": "The individual step in the process.",
+        "permittedTagNames": [
+          "ns-timeline-event"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-panel"
+    ]
+  },
+  {
+    "name": "ns-testimonial",
+    "display-name": "Testimonial",
+    "slots": [
+      {
+        "name": "quote",
+        "description": "The testimonial content the author provided.",
+        "permittedTagNames": [
+          "p"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-panel > div",
+      "ns-column"
+    ]
+  },
+  {
+    "name": "ns-tabs",
+    "display-name": "Tabs",
+    "slots": [
+      {
+        "name": "tab",
+        "description": "The set of tabs displayed in the order they are added.",
+        "permittedTagNames": [
+          "ns-tab"
+        ]
+      },
+      {
+        "name": "panel",
+        "description": "The set of content panels.\nThe panels are mapped to the respective tabs in the same order as they are added.",
+        "permittedTagNames": [
+          "ns-panel"
+        ]
+      }
+    ],
+    "placements": [
+      "main"
+    ]
+  },
+  {
+    "name": "ns-table",
+    "display-name": "Table",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for html table element.",
+        "permittedTagNames": [
+          "table"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-panel",
+      "ns-content",
+      "ns-tab"
+    ]
+  },
+  {
+    "name": "ns-tab",
+    "display-name": "Tab",
+    "internal": true,
+    "slots": [
+      {
+        "name": "",
+        "description": "The text of the tab that needs to be related to the content of the associated element with `tabpanel` role."
+      }
+    ],
+    "placements": [
+      "ns-tabs"
+    ]
+  },
+  {
+    "name": "ns-standout",
+    "display-name": "Standout",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for the content.",
+        "permittedTagNames": [
+          "ns-content",
+          "ns-column"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-column",
+      "ns-content",
+      "ns-editorial",
+      "ns-form"
+    ]
+  },
+  {
+    "name": "ns-panel",
+    "display-name": "Panel",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for content.",
+        "permittedTagNames": [
+          "div",
+          "ns-column",
+          "ns-content",
+          "ns-lockup"
+        ]
+      }
+    ],
+    "placements": [
+      "main",
+      "ns-tabs"
+    ]
+  },
+  {
+    "name": "ns-skyline",
+    "display-name": "Skyline",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for one or more expanders.",
+        "permittedTagNames": [
+          "ns-expander"
+        ]
+      }
+    ],
+    "placements": [
+      "main"
+    ]
+  },
+  {
+    "name": "ns-skeleton",
+    "display-name": "Skeleton",
+    "slots": [],
+    "placements": [
+      "ns-lockup",
+      "ns-landmark",
+      "ns-card",
+      "ns-form",
+      "ns-form-group",
+      "ns-content",
+      "ns-article",
+      "ns-accordion",
+      "ns-caveat",
+      "ns-tabs",
+      "ns-testimonial",
+      "ns-skyline",
+      "ns-product-card"
+    ]
+  },
+  {
+    "name": "ns-illustration",
+    "display-name": "Illustration",
+    "slots": []
+  },
+  {
+    "name": "ns-selector",
+    "display-name": "Selector",
+    "category": "Form",
+    "slots": [
+      {
+        "name": "description",
+        "description": "The description of the selector and needs to be short and clear.\nIt is required when `decoration` is used and optional when `image` is used.",
+        "permittedTagNames": [
+          "div"
+        ]
+      },
+      {
+        "name": "",
+        "description": "The anonymous slot for form elements such as input and label.",
+        "permittedTagNames": [
+          "input",
+          "label"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-inputter > ns-column"
+    ]
+  },
+  {
+    "name": "ns-progress",
+    "display-name": "Progress",
+    "slots": [],
+    "placements": [
+      "ns-panel",
+      "ns-landmark"
+    ]
+  },
+  {
+    "name": "ns-product-card",
+    "display-name": "Product Card",
+    "slots": [
+      {
+        "name": "image",
+        "description": "The image that needs to be related to the product.",
+        "permittedTagNames": [
+          "ns-image"
+        ]
+      },
+      {
+        "name": "name",
+        "description": "The name of the product. Heading level depends on its place in the semantics of the page.",
+        "permittedTagNames": [
+          "h2",
+          "h3"
+        ]
+      },
+      {
+        "name": "price-heading",
+        "description": "The price heading of the product and\nthe heading level needs to one level lower than the heading level of the product.",
+        "permittedTagNames": [
+          "h3",
+          "h4"
+        ]
+      },
+      {
+        "name": "price",
+        "description": "The price of the product.",
+        "permittedTagNames": [
+          "div > ns-price"
+        ]
+      },
+      {
+        "name": "description",
+        "description": "The description of the product and needs to be short and clear.",
+        "permittedTagNames": [
+          "div > p",
+          "div > ul",
+          "div > ol"
+        ]
+      },
+      {
+        "name": "expander",
+        "description": "The expander to provide additional product detail.",
+        "permittedTagNames": [
+          "ns-expander"
+        ]
+      },
+      {
+        "name": "cta",
+        "description": "The interactive content to link to the product page.",
+        "permittedTagNames": [
+          "ns-cta"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-column"
+    ]
+  },
+  {
+    "name": "ns-price",
+    "display-name": "Price",
+    "slots": [],
+    "placements": [
+      "p",
+      "div"
+    ]
+  },
+  {
+    "name": "ns-pill",
+    "display-name": "Pill",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for pill text."
+      }
+    ],
+    "placements": [
+      "ns-card",
+      "ns-selector",
+      "ns-landmark"
+    ]
+  },
+  {
+    "name": "ns-inputter",
+    "display-name": "Inputter",
+    "category": "Form",
+    "slots": [
+      {
+        "name": "label",
+        "description": "The label for the input. The label content needs to be related to the purpose of the value.\nThis is required for single input types (text, email, etc).",
+        "permittedTagNames": [
+          "label"
+        ]
+      },
+      {
+        "name": "tip-details",
+        "description": "The tip details related to the `helper` text of the inputter.",
+        "permittedTagNames": [
+          "p"
+        ]
+      },
+      {
+        "name": "",
+        "description": "The form element wrapped by the inputter.",
+        "permittedTagNames": [
+          "input",
+          "label",
+          "select",
+          "textarea",
+          "ns-column -> ns-selector"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-form > form",
+      "ns-form-group"
+    ]
+  },
+  {
+    "name": "ns-cta",
+    "display-name": "CTA",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for text content and needs to be related to the action performed by the CTA."
+      }
+    ],
+    "placements": [
+      "ns-card",
+      "ns-content",
+      "ns-form",
+      "ns-form-group",
+      "ns-landmark",
+      "ns-lockup",
+      "ns-product-card"
+    ]
+  },
+  {
+    "name": "ns-password",
+    "display-name": "Password",
+    "category": "Form",
+    "slots": [
+      {
+        "name": "tip-details",
+        "description": "The tip details related to the `helper` text of the password.",
+        "permittedTagNames": [
+          "p"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-form > form",
+      "ns-form-group"
+    ]
+  },
+  {
+    "name": "ns-form",
+    "display-name": "Form",
+    "category": "Form",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for form elements.",
+        "permittedTagNames": [
+          "ns-inputter",
+          "ns-datepicker",
+          "ns-appointment-picker",
+          "nsx-address-selector",
+          "ns-password",
+          "ns-form-group",
+          "ns-cta"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-panel",
+      "ns-card",
+      "ns-landmark"
+    ]
+  },
+  {
+    "name": "ns-column",
+    "display-name": "Column",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for the content to that needs to be displayed in\nthe specified number of columns in their respective viewports."
+      }
+    ],
+    "placements": [
+      "ns-panel",
+      "ns-tabs",
+      "ns-inputter"
+    ]
+  },
+  {
+    "name": "nsx-product-card-overview",
+    "display-name": "Product Card Overview",
+    "category": "Experience",
+    "slots": [
+      {
+        "name": "heading",
+        "description": "The heading for product overview section.",
+        "permittedTagNames": [
+          "h2"
+        ]
+      },
+      {
+        "name": "content",
+        "description": "The content to provide overview about the list of products.",
+        "permittedTagNames": [
+          "ns-content"
+        ]
+      },
+      {
+        "name": "",
+        "description": "The dynamic slots for products."
+      },
+      {
+        "name": "download-files",
+        "description": "The download links related to the products.",
+        "permittedTagNames": [
+          "div > ns-download"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-panel"
+    ]
+  },
+  {
+    "name": "nsx-marketing-consent",
+    "display-name": "Marketing Consent",
+    "category": "Experience",
+    "slots": [
+      {
+        "name": "heading",
+        "description": "The alternative heading of the marketing consent.\nHeading level depends on its place in the semantics of the page.",
+        "permittedTagNames": [
+          "h2",
+          "h3"
+        ]
+      },
+      {
+        "name": "paragraph",
+        "description": "The alternative content of the marketing consent.",
+        "permittedTagNames": [
+          "p"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-form > form"
+    ]
+  },
+  {
+    "name": "ns-image",
+    "display-name": "Image",
+    "slots": [],
+    "placements": [
+      "ns-content",
+      "ns-product-card",
+      "ns-lockup"
+    ]
+  },
+  {
+    "name": "ns-card",
+    "display-name": "Card",
+    "slots": [
+      {
+        "name": "heading",
+        "description": "The heading of the card related to its content.\nHeading level depends on its place in the semantics of the page.",
+        "permittedTagNames": [
+          "h2",
+          "h3"
+        ]
+      },
+      {
+        "name": "paragraph",
+        "description": "The content of the card.",
+        "permittedTagNames": [
+          "p"
+        ]
+      },
+      {
+        "name": "cta",
+        "description": "The interactive content for the `section` type card.",
+        "permittedTagNames": [
+          "ns-cta",
+          "a"
+        ]
+      },
+      {
+        "name": "action",
+        "description": "The interactive content for the `support` and `flat` type cards.",
+        "permittedTagNames": [
+          "ns-cta",
+          "a",
+          "ns-form"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-panel",
+      "ns-column",
+      "ns-footer",
+      "nsx-footer",
+      "ns-timeline-event"
+    ]
+  },
+  {
+    "name": "ns-header",
+    "display-name": "Header",
+    "slots": [
+      {
+        "name": "",
+        "description": "` attribute in the link to override.\nThe slot value needs to be correlated to the link value to be overridden."
+      }
+    ],
+    "placements": [
+      "main"
+    ]
+  },
+  {
+    "name": "nsx-header",
+    "display-name": "Header",
+    "category": "Experience",
+    "slots": [
+      {
+        "name": "",
+        "description": "The dynamic slot for links to override links or utilise for frameworks."
+      }
+    ],
+    "placements": [
+      "main"
+    ]
+  },
+  {
+    "name": "ns-footer",
+    "display-name": "Footer",
+    "slots": [
+      {
+        "name": "section",
+        "description": "The list of links and needs to be grouped into sections with related headings.",
+        "permittedTagNames": [
+          "ns-card"
+        ]
+      }
+    ],
+    "placements": [
+      "main"
+    ]
+  },
+  {
+    "name": "nsx-footer",
+    "display-name": "Footer",
+    "category": "Experience",
+    "slots": [],
+    "placements": [
+      "main"
+    ]
+  },
+  {
+    "name": "nsx-address-selector",
+    "display-name": "Address Selector",
+    "category": "Experience",
+    "slots": [],
+    "placements": [
+      "ns-form > form"
+    ]
+  },
+  {
+    "name": "ns-labs-account-layout",
+    "display-name": "Account Layout",
+    "category": "Labs",
+    "slots": [],
+    "placements": [
+      "body"
+    ]
+  },
+  {
+    "name": "ns-media-group",
+    "display-name": "Media Group",
+    "slots": [],
+    "placements": [
+      "ns-lockup"
+    ]
+  },
+  {
+    "name": "ns-lockup",
+    "display-name": "Lockup",
+    "slots": [
+      {
+        "name": "heading",
+        "description": "The heading of the lockup and needs to be related to the content.",
+        "permittedTagNames": [
+          "h2"
+        ]
+      },
+      {
+        "name": "paragraph",
+        "description": "The content of the lockup.",
+        "permittedTagNames": [
+          "p"
+        ]
+      },
+      {
+        "name": "cta",
+        "description": "The interactive content for the lockup.",
+        "permittedTagNames": [
+          "ns-cta",
+          "a"
+        ]
+      },
+      {
+        "name": "image",
+        "description": "The media content and\nthe visual in the media needs to be related to the content.",
+        "permittedTagNames": [
+          "ns-image",
+          "ns-video",
+          "ns-media-group"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-panel"
+    ]
+  },
+  {
+    "name": "ns-live",
+    "display-name": "Live",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for any html flow content."
+      }
+    ]
+  },
+  {
+    "name": "ns-landmark",
+    "display-name": "Landmark",
+    "slots": [
+      {
+        "name": "heading",
+        "description": "The heading of the landmark and needs to be related to the content.",
+        "permittedTagNames": [
+          "h1"
+        ]
+      },
+      {
+        "name": "paragraph",
+        "description": "The content of the landmark.",
+        "permittedTagNames": [
+          "p"
+        ]
+      },
+      {
+        "name": "cta",
+        "description": "The interactive content for the landmark.",
+        "permittedTagNames": [
+          "ns-cta",
+          "a"
+        ]
+      },
+      {
+        "name": "pill",
+        "description": "The pill to attract attention to key information in the content.",
+        "permittedTagNames": [
+          "ns-pill"
+        ]
+      }
+    ],
+    "placements": [
+      "main"
+    ]
+  },
+  {
+    "name": "ns-alert",
+    "display-name": "Alert",
+    "slots": [
+      {
+        "name": "heading",
+        "description": "The heading of the alert toned with its `state`.\nHeading level depends on its place in the semantics of the page.",
+        "permittedTagNames": [
+          "h2",
+          "h3"
+        ]
+      },
+      {
+        "name": "",
+        "description": "The anonymous slot for alert message.",
+        "permittedTagNames": [
+          "p",
+          "div"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-panel > div",
+      "ns-form"
+    ]
+  },
+  {
+    "name": "ns-highlighter",
+    "display-name": "Highlighter",
+    "slots": [
+      {
+        "name": "heading",
+        "description": "The heading of the highlighter toned with its `type`.\nHeading level depends on its place in the semantics of the page.",
+        "permittedTagNames": [
+          "h2",
+          "h3"
+        ]
+      },
+      {
+        "name": "",
+        "description": "The anonymous slot for the highlighter message.",
+        "permittedTagNames": [
+          "p",
+          "div"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-form",
+      "ns-panel > div"
+    ]
+  },
+  {
+    "name": "ns-frame",
+    "display-name": "Frame",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for the content that needs to be displayed."
+      }
+    ],
+    "placements": [
+      "main"
+    ]
+  },
+  {
+    "name": "ns-form-group",
+    "display-name": "Form Group",
+    "category": "Form",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for the group of the related form inputs.",
+        "permittedTagNames": [
+          "ns-inputter",
+          "ns-datepicker",
+          "ns-appointment-picker",
+          "nsx-address-selector",
+          "ns-password"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-form > form"
+    ]
+  },
+  {
+    "name": "ns-fieldset",
+    "display-name": "Fieldset",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for the group of the related form inputs.",
+        "permittedTagNames": [
+          "ns-inputter",
+          "ns-datepicker",
+          "ns-appointment-picker",
+          "nsx-address-selector",
+          "ns-password"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-form"
+    ]
+  },
+  {
+    "name": "ns-expander",
+    "display-name": "Expander",
+    "slots": [
+      {
+        "name": "heading",
+        "description": "The heading of the expander and needs to be related to the content.\nHeading level depends on its place in the semantics of the page.",
+        "permittedTagNames": [
+          "h3",
+          "h4"
+        ]
+      },
+      {
+        "name": "",
+        "description": "The anonymous slot for content.",
+        "permittedTagNames": [
+          "p"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-accordion",
+      "ns-skyline",
+      "ns-card",
+      "ns-content",
+      "ns-product-card",
+      "ns-selector"
+    ]
+  },
+  {
+    "name": "ns-content",
+    "display-name": "Content",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for the content.",
+        "permittedTagNames": [
+          "h1",
+          "h2",
+          "h3",
+          "h4",
+          "h5",
+          "p",
+          "ul",
+          "ol",
+          "figure",
+          "ns-accordion",
+          "ns-cta",
+          "ns-table",
+          "ns-standout"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-article",
+      "ns-column",
+      "ns-expander",
+      "ns-form",
+      "ns-panel",
+      "nsx-product-card-overview"
+    ]
+  },
+  {
+    "name": "ns-editorial",
+    "display-name": "Editorial",
+    "slots": [
+      {
+        "name": "heading",
+        "description": "The heading of the editorial related to the content.\nHeading level depends on its place in the semantics of the page.",
+        "permittedTagNames": [
+          "h1",
+          "h2"
+        ]
+      },
+      {
+        "name": "",
+        "description": "The anonymous slot for editorial content."
+      }
+    ],
+    "placements": [
+      "main"
+    ]
+  },
+  {
+    "name": "ns-download",
+    "display-name": "Download",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for text content and needs to be related the file to download."
+      }
+    ],
+    "placements": [
+      "ns-card",
+      "ns-form",
+      "ns-content",
+      "ns-table",
+      "ns-product-card",
+      "ns-lockup"
+    ]
+  },
+  {
+    "name": "ns-datepicker",
+    "display-name": "Datepicker",
+    "category": "Form",
+    "slots": [
+      {
+        "name": "tip-details",
+        "description": "The tip details related to the `helper` text of the datepicker.",
+        "permittedTagNames": [
+          "p"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-form > form",
+      "ns-form-group"
+    ]
+  },
+  {
+    "name": "ns-date-time",
+    "display-name": "Date Time",
+    "slots": [],
+    "placements": [
+      "p",
+      "div"
+    ]
+  },
+  {
+    "name": "ns-caveat",
+    "display-name": "Caveat",
+    "slots": [
+      {
+        "name": "heading",
+        "description": "The heading of the caveat related to the additional information."
+      },
+      {
+        "name": "caveat",
+        "description": "The additional information in an unordered list or paragraphs.",
+        "permittedTagNames": [
+          "ol",
+          "p"
+        ]
+      }
+    ],
+    "placements": [
+      "main"
+    ]
+  },
+  {
+    "name": "ns-calendar",
+    "display-name": "Calendar",
+    "slots": []
+  },
+  {
+    "name": "ns-article",
+    "display-name": "Article",
+    "slots": [
+      {
+        "name": "",
+        "description": "The anonymous slot for content.",
+        "permittedTagNames": [
+          "ns-content",
+          "section > ns-content"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-panel"
+    ]
+  },
+  {
+    "name": "ns-appointment-picker",
+    "display-name": "Appointment Picker",
+    "category": "Form",
+    "slots": [],
+    "placements": [
+      "ns-form > form",
+      "ns-form-group"
+    ]
+  },
+  {
+    "name": "ns-action-link",
+    "display-name": "Action Link",
+    "slots": [],
+    "placements": [
+      "ns-column"
+    ]
+  },
+  {
+    "name": "ns-accordion",
+    "display-name": "Accordion",
+    "slots": [
+      {
+        "name": "heading",
+        "description": "The heading of the accordion that relates to the sections of content.\nHeading level depends on its place in the semantics of the page.",
+        "permittedTagNames": [
+          "h2",
+          "h3"
+        ]
+      },
+      {
+        "name": "",
+        "description": "The anonymous slot for group of related expanders.",
+        "permittedTagNames": [
+          "ns-expander"
+        ]
+      }
+    ],
+    "placements": [
+      "ns-panel > div",
+      "ns-content",
+      "ns-editorial"
+    ]
+  }
+]
