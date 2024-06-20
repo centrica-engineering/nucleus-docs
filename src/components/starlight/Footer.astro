@@ -12,7 +12,7 @@ const { editUrl, labels, entry, locale, isFallback } = Astro.props;
 const { slug } = Astro.params;
 const pageSlug = Astro.props.slug;
 const issueURL = 'https://github.com/centrica-engineering/nucleus-docs/issues/new';
-const viewURL = 'https://github.com/centrica-engineering/nucleus-docs/blob/astro-docs/src/content/docs/';
+const viewURL = 'https://github.com/centrica-engineering/nucleus-docs/blob/main/src/content/docs/';
 
 const githubEditUrl =
   entry.data.githubURL && (locale === 'en' || isFallback)
