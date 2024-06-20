@@ -99,7 +99,7 @@ export default defineConfig({
       },
       editLink: {
         baseUrl:
-          "https://github.com/centrica-engineering/nucleus-docs/edit/astro-docs/",
+          "https://github.com/centrica-engineering/nucleus-docs/edit/main/",
       },
       customCss: [
         "./src/styles/custom.css",
@@ -123,7 +123,7 @@ export default defineConfig({
         PageTitle: "./src/components/starlight/PageTitle.astro",
         PageSidebar: "./src/components/starlight/PageSidebar.astro",
         TableOfContents: "./src/components/starlight/TableOfContents.astro",
-        ThemeSelect: './src/components/starlight/ThemeSelect.astro',
+        // ThemeSelect: './src/components/starlight/ThemeSelect.astro',
         TwoColumnContent: "./src/components/starlight/TwoColumnContent.astro",
         Sidebar: "./src/components/starlight/Sidebar.astro"
       },
