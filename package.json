@@ -15,7 +15,7 @@
     "@astrojs/markdown-remark": "^4.2.0",
     "@astrojs/starlight": "^0.15.0",
     "@astrojs/starlight-docsearch": "^0.1.0",
-    "@connectedhomes/nucleus": "^3.8.2",
+    "@connectedhomes/nucleus": "^3.9.0",
     "@connectedhomes/nucleus-util": "^1.11.0",
     "@fontsource/roboto": "^5.0.8",
     "@lit/task": "^1.0.0",

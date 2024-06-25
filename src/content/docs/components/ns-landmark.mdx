@@ -24,20 +24,24 @@ Use landmarks to set the scene for what the page is for, what offers might be av
     <ExampleViewer type="standard" />
   </TabItem>
   <TabItem label="Summit">
-  `type="summit"`
+  If the page purpose is promotional we recommend using `type="summit"`.
     <ExampleViewer type="summit" />
   </TabItem>
   <TabItem label="Hillside">
-  `type="hillside"`
+  If you are designing a series of informative / educational pages that all follow a similar theme, it would be considered best practice to use the same coloured decoration within the `type="hillside"`.
     <ExampleViewer type="hillside" />
   </TabItem>
   <TabItem label="Valley">
-  `type="valley"`
+  If the page purpose is to showcase features and products, use `type="valley"`.
     <ExampleViewer type="valley" />
   </TabItem>
   <TabItem label="Lakeside">
-  `type="lakeside"`
+  If the page purpose is a 400 or 500 error page, use `type="lakeside"`.
     <ExampleViewer type="lakeside" />
+  </TabItem>
+  <TabItem label="Horizon">
+  If the page purpose is to match above-the-line marketing activity, use `type="horizon"`.
+    <ExampleViewer type="horizon" />
   </TabItem>
 </Tabs>
 
@@ -155,6 +159,36 @@ The purpose of the valley landmark is to present an overview of a product or ser
 - Use it to build a page.
 :::
 
+### Horizon
+
+![Labelled diagram of ns-landmark horizon](@assets/components/ns-landmark/guidance-horizon.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">B</span> | Paragraph | A single, short paragraph works best. The text length should not exceed two paragraphs of 3 lines. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. |
+| <span class="marker">C</span> | CTA | Keep the text short, relevant, and actionable. It should not exceed 24 characters. |
+| <span class="marker">D</span> | Image | Use a cut-out image paying close attention to the focus area in the image: [720 x 540px horizon](/guidelines/assets#720x540px-horizon). |
+| <span class="marker">E</span> | Decoration | Apply a colour background. The `decoration` values are restricted to `cyan`, `red`, `slate`. All other colours will default to `cyan` |
+
+:::do
+- Use at the top of the page.
+- Use for 'above-the-line' marketing messaging and promotions.
+- Keep the content concise.
+- Use a complementary image to add context to your product or service.
+- Use this on tier 1 pages - such as home page and overview pages.
+:::
+
+:::dont
+- Use long, wordy content. Instead, keep the user interested with a snappy overview.
+- Use images with a background.
+- Add a CTA if the page’s purpose is for users to consume the content.
+- Use the red decoration for something that is not a sale.
+- Use the slate decoration for something that is not Black Friday messaging.
+:::
+
 ### Considerations
 
 - Shorter and simpler words tend to work better in the heading.
@@ -162,11 +196,6 @@ The purpose of the valley landmark is to present an overview of a product or ser
 - The message must be in plain English, and help the user out of the situation by providing an actionable link if possible.
 - If the purpose of the page is to understand more about a product or service, then it is considered bad practice to include a CTA within the landmark, as users are likely to drop out. This is because users believe the next step is to click the CTA, rather than reading the page to get a better understanding of how they should proceed.
 - Let the page type define the type of landmark you use.
-- If the page purpose is to be informative / educational then we recommend using `hillside`.
-  - If the page purpose is promotional we recommend using `summit`.
-  - If the page purpose is a 400 or 500 error page, use `lakeside`.
-  - If the page purpose is to showcase features and products, use `valley`.
-  - If you are designing a series of informative / educational pages that all follow a similar theme, it would be considered best practice to use the same coloured decoration within the `hillside`.
 
 ## Implementation
 
