@@ -15,7 +15,21 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
+The `ns-frame` component comprises a header and buttons that are adjacent to an anonymous content area. When a button is clicked, it navigates through the content.
+
+The `ns-frame` component should not be used in conjunction with the `ns-header` and it can only be utilised as a child of the `<main>` element.
+
+The `ns-frame` component is particularly useful in scenarios such as when a user is logged into their account.
+
 ### Examples
+
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer type="standard" />
+  </TabItem>
+
+</Tabs>
+
 
 ## Guidance
 
