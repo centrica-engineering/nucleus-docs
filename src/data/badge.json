@@ -1,9 +1,6 @@
 {
   "components": [
-    {
-      "name": "ns-column",
-      "badge": "updated"
-    },
+    
     {
       "name": "ns-lockup",
       "badge": "updated"
