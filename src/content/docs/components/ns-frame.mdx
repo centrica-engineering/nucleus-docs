@@ -41,7 +41,6 @@ The `ns-frame` component comprises a header and buttons that are adjacent to an 
 
 </Tabs>
 
-
 ## Guidance
 
 :::do
@@ -66,6 +65,18 @@ The `ns-frame` component comprises a header and buttons that are adjacent to an 
 - Incorporate actions as navigation menu items.
 
 :::
+
+### All examples
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Header | Frames the top of the page with a logo and an interactive icon. This icon, along with its label, does not serve general navigation purposes. Instead, it activates a drop-down menu that presents items such as account information. There are also various Search options to choose from - refer to the [examples](/components/ns-frame#examples) provided above. |
+| <span class="marker">B</span> | Buttons | Each button includes an icon and a label and has states for active, hover, and selected. All buttons are contained within the menu, which becomes scrollable when the number of buttons exceeds the visible space. There is also the flexibility to hide all items, display as few as two, or show many items in the menu. |
+| <span class="marker">C</span> | Menu scroll chevrons | These are interactive elements that provide visual cues and a method to navigate through the menu of buttons. This allows buttons positioned outside the visible area to be scrolled into view. These chevrons will automatically disappear if the number of buttons fits within the visible area. |
+| <span class="marker">D</span> | Anonymous slot | Include headings, lists and paragraphs. Divide content into short paragraphs as it is easier to consume, and aids effective page scanning. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. This should be followed by the [nsx-footer](/components/nsx-footer) to indicate the end of the page. |
+
 
 ## Implementation
 
