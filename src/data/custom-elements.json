@@ -1,0 +1,4405 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ns-video",
+      "description": "Loads YouTube videos.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "The unique identifier of the YouTube video.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "title",
+          "description": "The title of the youtube video iframe.",
+          "type": "string",
+          "default": "\"YouTube video\""
+        },
+        {
+          "name": "ratio",
+          "description": "The aspect ratio of the youtube video.",
+          "type": "\"16 / 9\"|\"4 / 3\"|\"1 / 1\"",
+          "default": "\"16 / 9\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "id",
+          "attribute": "id",
+          "description": "The unique identifier of the YouTube video.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "title",
+          "attribute": "title",
+          "description": "The title of the youtube video iframe.",
+          "type": "string",
+          "default": "\"YouTube video\""
+        },
+        {
+          "name": "states",
+          "type": "object",
+          "default": "{\"0\":\"ended\",\"-1\":\"unstarted\"}"
+        },
+        {
+          "name": "ratio",
+          "attribute": "ratio",
+          "description": "The aspect ratio of the youtube video.",
+          "type": "\"16 / 9\"|\"4 / 3\"|\"1 / 1\"",
+          "default": "\"16 / 9\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "statechange",
+          "description": "Dispatched when the state of the youtube video changes.\nIt holds the video id, title and the state."
+        }
+      ]
+    },
+    {
+      "name": "ns-icon",
+      "description": "Icons are visual symbols used to represent functions, products and services.",
+      "attributes": [
+        {
+          "name": "size",
+          "description": "The size of the icon.\nThe empty value of `size` will make the icon to fill the parent element.",
+          "type": "\"\"|1|2|3|4|5"
+        },
+        {
+          "name": "name",
+          "description": "The name of the icon and needs to be in kebab case.",
+          "type": "string",
+          "default": "\"arrow\""
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "describe",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "size",
+          "attribute": "size",
+          "description": "The size of the icon.\nThe empty value of `size` will make the icon to fill the parent element.",
+          "type": "\"\"|1|2|3|4|5"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "The name of the icon and needs to be in kebab case.",
+          "type": "string",
+          "default": "\"arrow\""
+        },
+        {
+          "name": "category",
+          "attribute": "category",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "describe",
+          "attribute": "describe",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ]
+    },
+    {
+      "name": "ns-timeline-event",
+      "description": "A partial component for the timeline, to show an event.",
+      "attributes": [
+        {
+          "name": "aria-current",
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "description": "The status of the event.",
+          "type": "\"pending\"|\"inprogress\"|\"actionrequired\"|\"warning\"|\"error\"|\"completed\"|\"cancelled\"",
+          "default": "\"pending\""
+        },
+        {
+          "name": "icon",
+          "description": "The decorative icon to provide visual aid to the content of the event.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "index",
+          "description": "The index to indicate logical order of the event in the timeline.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "updated-at",
+          "description": "The optional date and time of the `completed ` event.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "role",
+          "type": "string",
+          "default": "\"listitem\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        },
+        {
+          "name": "updatedat",
+          "description": "Use `updated-at` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "ariaCurrent",
+          "attribute": "aria-current",
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "attribute": "status",
+          "description": "The status of the event.",
+          "type": "\"pending\"|\"inprogress\"|\"actionrequired\"|\"warning\"|\"error\"|\"completed\"|\"cancelled\"",
+          "default": "\"pending\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "The decorative icon to provide visual aid to the content of the event.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "index",
+          "attribute": "index",
+          "description": "The index to indicate logical order of the event in the timeline.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "updatedAt",
+          "attribute": "updated-at",
+          "description": "The optional date and time of the `completed ` event.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "role",
+          "attribute": "role",
+          "type": "string",
+          "default": "\"listitem\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "heading",
+          "description": "The heading of the event and needs to be related to the content of the event."
+        },
+        {
+          "name": "",
+          "description": "The content of the event."
+        }
+      ]
+    },
+    {
+      "name": "ns-timeline",
+      "description": "Represents a sequence of events that happen within a process, and shows the status.",
+      "attributes": [
+        {
+          "name": "show-step-count",
+          "description": "The toggle to display the completed vs total step count to represent the progress.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "description": "The type of the timeline.",
+          "type": "\"standard\"|\"step\"",
+          "default": "\"standard\""
+        },
+        {
+          "name": "showstepcount",
+          "description": "Use `show-step-count` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "showstepcount",
+          "attribute": "show-step-count",
+          "description": "The toggle to display the completed vs total step count to represent the progress.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of the timeline.",
+          "type": "\"standard\"|\"step\"",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "heading",
+          "description": "The heading to describe the process that the timeline represents."
+        },
+        {
+          "name": "summary",
+          "description": "The optional summary to manage the expectation of the process."
+        },
+        {
+          "name": "event",
+          "description": "The individual step in the process."
+        }
+      ]
+    },
+    {
+      "name": "ns-testimonial",
+      "description": "To promote a message that has been written or said by someone.",
+      "attributes": [
+        {
+          "name": "cite-url",
+          "description": "The link to the source of the testimonial.",
+          "type": "string",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "author",
+          "description": "The name of the author of the testimonial.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "medium",
+          "description": "The name of the medium where the testimonial is posted.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        },
+        {
+          "name": "citeurl",
+          "description": "Use `cite-url` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "figcaptionHtml",
+          "type": "\"\" | TemplateResult<1>"
+        },
+        {
+          "name": "citeUrl",
+          "attribute": "cite-url",
+          "description": "The link to the source of the testimonial.",
+          "type": "string",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "author",
+          "attribute": "author",
+          "description": "The name of the author of the testimonial.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "medium",
+          "attribute": "medium",
+          "description": "The name of the medium where the testimonial is posted.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "quote",
+          "description": "The testimonial content the author provided."
+        }
+      ]
+    },
+    {
+      "name": "ns-tabs",
+      "description": "Tabs provide organisation of content separated within the same context.",
+      "attributes": [
+        {
+          "name": "open",
+          "description": "The index of the tab to open.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "open",
+          "attribute": "open",
+          "description": "The index of the tab to open.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "tabchange",
+          "description": "Dispatched when the selected tab is changed."
+        }
+      ],
+      "slots": [
+        {
+          "name": "tab",
+          "description": "The set of tabs displayed in the order they are added."
+        },
+        {
+          "name": "panel",
+          "description": "The set of content panels.\nThe panels are mapped to the respective tabs in the same order as they are added."
+        }
+      ]
+    },
+    {
+      "name": "ns-table",
+      "description": "Table displays information in a grid-like format of rows and columns.\nIt organizes information in a way that’s easy to scan, so that users\ncan look for patterns and insights.",
+      "attributes": [
+        {
+          "name": "label-id",
+          "description": "The identifier of the element outside the table element.",
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        },
+        {
+          "name": "labelid",
+          "description": "Use `label-id` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "labelID",
+          "attribute": "label-id",
+          "description": "The identifier of the element outside the table element.",
+          "type": "string"
+        },
+        {
+          "name": "slottedStyles",
+          "description": "Styles for slotted elements."
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for html table element."
+        }
+      ]
+    },
+    {
+      "name": "ns-tab",
+      "description": "The singular tab that dictates what the area is about.",
+      "attributes": [
+        {
+          "name": "selected",
+          "description": "The toggle to show the content associated with the tab.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "icon",
+          "description": "The decorative icon provide visual aid to tab content.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "aria-selected",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "role",
+          "description": "The read-only accessibility feature to indicate\nthe tab will display the associated content in `tabpanel` role when selected.",
+          "type": "string",
+          "default": "\"tab\""
+        },
+        {
+          "name": "tabindex",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "selected",
+          "attribute": "selected",
+          "description": "The toggle to show the content associated with the tab.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "The decorative icon provide visual aid to tab content.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "ariaSelected",
+          "attribute": "aria-selected",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "role",
+          "attribute": "role",
+          "description": "The read-only accessibility feature to indicate\nthe tab will display the associated content in `tabpanel` role when selected.",
+          "type": "string",
+          "default": "\"tab\""
+        },
+        {
+          "name": "tabIndex",
+          "attribute": "tabindex",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "tabselected",
+          "description": "Dispatched with the tab is selected."
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The text of the tab that needs to be related to the content of the associated element with `tabpanel` role."
+        }
+      ]
+    },
+    {
+      "name": "ns-standout",
+      "description": "To visually draw attention to content.",
+      "attributes": [
+        {
+          "name": "decoration",
+          "description": "The decorative border colour to draw attention to the content of the standout.",
+          "type": "\"cyan\"|\"lime\"|\"navy\"|\"blue\"|\"forest\"|\"slate\"|\"orange\"|\"red\"|\"yellow\"",
+          "default": "\"cyan\""
+        },
+        {
+          "name": "type",
+          "default": "\"subtle\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "decoration",
+          "attribute": "decoration",
+          "description": "The decorative border colour to draw attention to the content of the standout.",
+          "type": "\"cyan\"|\"lime\"|\"navy\"|\"blue\"|\"forest\"|\"slate\"|\"orange\"|\"red\"|\"yellow\"",
+          "default": "\"cyan\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "default": "\"subtle\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for the content."
+        }
+      ]
+    },
+    {
+      "name": "ns-panel",
+      "description": "Panel is a decorative empty container that holds each section of a page.",
+      "attributes": [
+        {
+          "name": "decoration",
+          "description": "The decorative background colour of the panel with optional top and bottom offset percentages.",
+          "type": "\"cyan\"|\"lime\"|\"navy\"|\"blue\"|\"forest\"|\"orange\"|\"red\"|\"yellow\"|\"white\"|\"grey-light\"",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"panel\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "decoration",
+          "attribute": "decoration",
+          "description": "The decorative background colour of the panel with optional top and bottom offset percentages.",
+          "type": "\"cyan\"|\"lime\"|\"navy\"|\"blue\"|\"forest\"|\"orange\"|\"red\"|\"yellow\"|\"white\"|\"grey-light\"",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"panel\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for content."
+        }
+      ]
+    },
+    {
+      "name": "ns-skyline",
+      "description": "Global messaging to notify visitors of current, ongoing or upcoming events that they may be relevant to them.",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for one or more expanders."
+        }
+      ]
+    },
+    {
+      "name": "ns-skeleton",
+      "description": "A placeholder to show that content is loading.",
+      "attributes": [
+        {
+          "name": "type",
+          "description": "The type of skeleton and\nit is assigned automatically depending on the wrapper element.\nThis is required when the type is not related to the wrapper element.",
+          "type": "\"text\"|\"paragraph\"|\"heading\"|\"subheading\"",
+          "default": "\"text\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of skeleton and\nit is assigned automatically depending on the wrapper element.\nThis is required when the type is not related to the wrapper element.",
+          "type": "\"text\"|\"paragraph\"|\"heading\"|\"subheading\"",
+          "default": "\"text\""
+        }
+      ]
+    },
+    {
+      "name": "ns-illustration",
+      "description": "Illustrations are visual symbols used to bring the warmth of British Gas brand and personality to the website.",
+      "attributes": [
+        {
+          "name": "inactive",
+          "description": "The toggle to display inactive state of the illustration.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "size",
+          "description": "The size of the illustration.\nThe empty value of `size` will make the illustration to fill the parent element.",
+          "type": "\"\"|1|2|3|4|5"
+        },
+        {
+          "name": "name",
+          "description": "The name of the illustration and needs to be in kebab case.",
+          "type": "string",
+          "default": "\"gas\""
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "describe",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "inactive",
+          "attribute": "inactive",
+          "description": "The toggle to display inactive state of the illustration.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "size",
+          "attribute": "size",
+          "description": "The size of the illustration.\nThe empty value of `size` will make the illustration to fill the parent element.",
+          "type": "\"\"|1|2|3|4|5"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "The name of the illustration and needs to be in kebab case.",
+          "type": "string",
+          "default": "\"gas\""
+        },
+        {
+          "name": "category",
+          "attribute": "category",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "describe",
+          "attribute": "describe",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ]
+    },
+    {
+      "name": "ns-selector",
+      "description": "Selector is a checkbox or radio form control that has additional information to describe it.",
+      "attributes": [
+        {
+          "name": "decoration",
+          "description": "The decorative illustration to provide visual aid to the content of the selector option.",
+          "type": "string"
+        },
+        {
+          "name": "image",
+          "description": "The link to the image.\nThe visual in the image needs to be related to the content of the selector option.",
+          "type": "string"
+        },
+        {
+          "name": "keyline",
+          "description": "The keyline colour to distinguish and attract attention to the selector.",
+          "type": "\"cyan\"|\"lime\"|\"navy\"|\"blue\"|\"forest\"|\"slate\"|\"orange\"|\"red\"|\"yellow\"",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "decoration",
+          "attribute": "decoration",
+          "description": "The decorative illustration to provide visual aid to the content of the selector option.",
+          "type": "string"
+        },
+        {
+          "name": "image",
+          "attribute": "image",
+          "description": "The link to the image.\nThe visual in the image needs to be related to the content of the selector option.",
+          "type": "string"
+        },
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "keyline",
+          "attribute": "keyline",
+          "description": "The keyline colour to distinguish and attract attention to the selector.",
+          "type": "\"cyan\"|\"lime\"|\"navy\"|\"blue\"|\"forest\"|\"slate\"|\"orange\"|\"red\"|\"yellow\"",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "description",
+          "description": "The description of the selector and needs to be short and clear.\nIt is required when `decoration` is used and optional when `image` is used."
+        },
+        {
+          "name": "",
+          "description": "The anonymous slot for form elements such as input and label."
+        }
+      ]
+    },
+    {
+      "name": "ns-progress",
+      "description": "To indicate to a user how far through a journey they are and how many steps they have left to complete.",
+      "attributes": [
+        {
+          "name": "steps",
+          "description": "The total number of steps in the journey.",
+          "type": "number"
+        },
+        {
+          "name": "complete",
+          "description": "The toggle to indicate the journey is completed.",
+          "type": "boolean"
+        },
+        {
+          "name": "current",
+          "description": "The step number currently on in the journey.",
+          "type": "number"
+        },
+        {
+          "name": "next",
+          "description": "The information about the next step of the journey.",
+          "type": "string"
+        },
+        {
+          "name": "info",
+          "description": "The information about the current step of the journey.",
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "steps",
+          "attribute": "steps",
+          "description": "The total number of steps in the journey.",
+          "type": "number"
+        },
+        {
+          "name": "complete",
+          "attribute": "complete",
+          "description": "The toggle to indicate the journey is completed.",
+          "type": "boolean"
+        },
+        {
+          "name": "current",
+          "attribute": "current",
+          "description": "The step number currently on in the journey.",
+          "type": "number"
+        },
+        {
+          "name": "next",
+          "attribute": "next",
+          "description": "The information about the next step of the journey.",
+          "type": "string"
+        },
+        {
+          "name": "info",
+          "attribute": "info",
+          "description": "The information about the current step of the journey.",
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ]
+    },
+    {
+      "name": "ns-product-card",
+      "description": "The product card enables users to browse, compare and choose a product.",
+      "attributes": [
+        {
+          "name": "keyline",
+          "description": "The keyline colour to distinguish and attract attention to the product.",
+          "type": "\"cyan\"|\"lime\"|\"navy\"|\"blue\"|\"forest\"|\"slate\"|\"orange\"|\"red\"|\"yellow\"",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles",
+          "description": "Styles for slotted elements."
+        },
+        {
+          "name": "keyline",
+          "attribute": "keyline",
+          "description": "The keyline colour to distinguish and attract attention to the product.",
+          "type": "\"cyan\"|\"lime\"|\"navy\"|\"blue\"|\"forest\"|\"slate\"|\"orange\"|\"red\"|\"yellow\"",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "image",
+          "description": "The image that needs to be related to the product."
+        },
+        {
+          "name": "name",
+          "description": "The name of the product. Heading level depends on its place in the semantics of the page."
+        },
+        {
+          "name": "price-heading",
+          "description": "The price heading of the product and\nthe heading level needs to one level lower than the heading level of the product."
+        },
+        {
+          "name": "price",
+          "description": "The price of the product."
+        },
+        {
+          "name": "description",
+          "description": "The description of the product and needs to be short and clear."
+        },
+        {
+          "name": "expander",
+          "description": "The expander to provide additional product detail."
+        },
+        {
+          "name": "cta",
+          "description": "The interactive content to link to the product page."
+        }
+      ]
+    },
+    {
+      "name": "ns-price",
+      "description": "A standardised way to show how GBP prices are displayed.",
+      "attributes": [
+        {
+          "name": "pence",
+          "description": "The price in pence denomination to prevent the crawlling of unformatted price\nby the search engines and subsequently displaying the wrong price in the search results.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "show-decimal",
+          "description": "The toggle to show the decimal places when price is an integer.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "negative",
+          "description": "The toggle to show the price in negative.\nIt eliminates the use of various of characters for the minus symbol.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        },
+        {
+          "name": "showdecimal",
+          "description": "Use `show-decimal` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "pence",
+          "attribute": "pence",
+          "description": "The price in pence denomination to prevent the crawlling of unformatted price\nby the search engines and subsequently displaying the wrong price in the search results.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "showDecimal",
+          "attribute": "show-decimal",
+          "description": "The toggle to show the decimal places when price is an integer.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "negative",
+          "attribute": "negative",
+          "description": "The toggle to show the price in negative.\nIt eliminates the use of various of characters for the minus symbol.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ]
+    },
+    {
+      "name": "ns-pill",
+      "description": "A small coloured highlight which can be used to visually\ndraw a customer's attention to a piece of information.",
+      "attributes": [
+        {
+          "name": "colour",
+          "description": "The decorative background colour of the pill.",
+          "type": "\"cyan\"|\"lime\"|\"navy\"|\"forest\"|\"slate\"|\"orange\"|\"red\"|\"yellow\"",
+          "default": "\"slate\""
+        },
+        {
+          "name": "icon",
+          "description": "The decorative icon to provide visual aid to the content of the pill.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles",
+          "description": "Styles for slotted elements."
+        },
+        {
+          "name": "colour",
+          "attribute": "colour",
+          "description": "The decorative background colour of the pill.",
+          "type": "\"cyan\"|\"lime\"|\"navy\"|\"forest\"|\"slate\"|\"orange\"|\"red\"|\"yellow\"",
+          "default": "\"slate\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "The decorative icon to provide visual aid to the content of the pill.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for pill text."
+        }
+      ]
+    },
+    {
+      "name": "ns-inputter",
+      "description": "A component to allow for user inputs of type text, radio, checkbox, select,\ndate, tel, number, textarea, search.",
+      "attributes": [
+        {
+          "name": "helper",
+          "description": "The helper text for the input.",
+          "type": "string"
+        },
+        {
+          "name": "open-helper",
+          "description": "The toggle to open the helper text.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "validation",
+          "description": "The list of validations to validate the value of the input.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "disableNative",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showMessage",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "name",
+          "description": "The name of the input to reference in form data.",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "description": "The value of the input. It holds comma separated value for multi-input (eg., checkbox).",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelID",
+          "description": "The ID of the label element if outside of the component.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "description": "The heading to group related checkbox or radio inputs.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "mask",
+          "description": "A mask to show the format of the input. The value length is limited by the mask length.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "separator",
+          "description": "A separator character to be used in the mask format.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "ignore-separator",
+          "description": "The toggle to ignore the separator while validating tthe length of the `value`.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        },
+        {
+          "name": "ignoreseparator",
+          "description": "Use `ignore-separator` attribute.",
+          "deprecated": true
+        },
+        {
+          "name": "ishelperopen",
+          "description": "Use `open-helper` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "helper",
+          "attribute": "helper",
+          "description": "The helper text for the input.",
+          "type": "string"
+        },
+        {
+          "name": "slottedStyles",
+          "type": "array"
+        },
+        {
+          "name": "isHelperOpen",
+          "attribute": "open-helper",
+          "description": "The toggle to open the helper text.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "isPristine",
+          "description": "A getter method to get pristine state of the form element.",
+          "type": "boolean"
+        },
+        {
+          "name": "isDirty",
+          "description": "A getter method to get dirty state of the form element.",
+          "type": "boolean"
+        },
+        {
+          "name": "validity",
+          "description": "A getter method to get validity of the form element.",
+          "type": "ValidityState"
+        },
+        {
+          "name": "validationMessage",
+          "description": "A method to get a validation message combind from the validity states.",
+          "type": "string"
+        },
+        {
+          "name": "validation",
+          "attribute": "validation",
+          "description": "The list of validations to validate the value of the input.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "disableNative",
+          "attribute": "disableNative",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showMessage",
+          "attribute": "showMessage",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "The name of the input to reference in form data.",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "The value of the input. It holds comma separated value for multi-input (eg., checkbox).",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelID",
+          "attribute": "labelID",
+          "description": "The ID of the label element if outside of the component.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "attribute": "heading",
+          "description": "The heading to group related checkbox or radio inputs.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "mask",
+          "attribute": "mask",
+          "description": "A mask to show the format of the input. The value length is limited by the mask length.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "separator",
+          "attribute": "separator",
+          "description": "A separator character to be used in the mask format.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "ignoreSeparator",
+          "attribute": "ignore-separator",
+          "description": "The toggle to ignore the separator while validating tthe length of the `value`.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "change",
+          "description": "Dispatched when the input value changes. It holds the value of the input."
+        },
+        {
+          "name": "helper-toggle",
+          "description": "Dispatched when the helper is toggled. It holds the value of the `open` state of the helper."
+        }
+      ],
+      "slots": [
+        {
+          "name": "label",
+          "description": "The label for the input. The label content needs to be related to the purpose of the value.\nThis is required for single input types (text, email, etc)."
+        },
+        {
+          "name": "tip-details",
+          "description": "The tip details related to the `helper` text of the inputter."
+        },
+        {
+          "name": "",
+          "description": "The form element wrapped by the inputter."
+        }
+      ]
+    },
+    {
+      "name": "ns-cta",
+      "description": "A call-to-action allows users to take action once they are ready for it.",
+      "attributes": [
+        {
+          "name": "href",
+          "description": "The link to another page or section in the same page. This eliminates the use of a wrapper anchor tag.\nIt should not be used when `click` event listener is added.",
+          "type": "string"
+        },
+        {
+          "name": "loading",
+          "description": "The toggle to change to `loading` state.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "loading-message",
+          "description": "The message to display in the CTA text when toggled to `loading` state.",
+          "type": "string",
+          "default": "\"Loading...\""
+        },
+        {
+          "name": "disabled",
+          "default": "false"
+        },
+        {
+          "name": "icon",
+          "description": "The decorative icon and needs to be related to the text content.",
+          "type": "string",
+          "default": "\"arrow-right\""
+        },
+        {
+          "name": "type",
+          "description": "The type of the CTA to choose for the purpose.",
+          "type": "\"direct\"|\"text\"|\"submit\"|\"reset\"",
+          "default": "\"direct\""
+        },
+        {
+          "name": "loadingmessage",
+          "description": "Use `loading-message` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "href",
+          "attribute": "href",
+          "description": "The link to another page or section in the same page. This eliminates the use of a wrapper anchor tag.\nIt should not be used when `click` event listener is added.",
+          "type": "string"
+        },
+        {
+          "name": "loading",
+          "attribute": "loading",
+          "description": "The toggle to change to `loading` state.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "loadingMessage",
+          "attribute": "loading-message",
+          "description": "The message to display in the CTA text when toggled to `loading` state.",
+          "type": "string",
+          "default": "\"Loading...\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "default": "false"
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "description": "The decorative icon and needs to be related to the text content.",
+          "type": "string",
+          "default": "\"arrow-right\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of the CTA to choose for the purpose.",
+          "type": "\"direct\"|\"text\"|\"submit\"|\"reset\"",
+          "default": "\"direct\""
+        }
+      ],
+      "events": [
+        {
+          "name": "click",
+          "description": "Dispatched when the CTA is clicked."
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for text content and needs to be related to the action performed by the CTA."
+        }
+      ]
+    },
+    {
+      "name": "ns-password",
+      "description": "Supports users when entering an existing or creating a password.",
+      "attributes": [
+        {
+          "name": "helper",
+          "description": "The helper text of the password.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "description": "The label of the password used in `default` and `confirm` types.",
+          "type": "string",
+          "default": "\"Password\""
+        },
+        {
+          "name": "confirm-label",
+          "description": "The label of the confirm password used in `confirm` type.",
+          "type": "string",
+          "default": "\"Confirm Password\""
+        },
+        {
+          "name": "name",
+          "description": "The name of the password to reference in form data.",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "description": "The value of the password.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelID",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "description": "The type of the password to use.",
+          "type": "\"default\"|\"confirm\"",
+          "default": "\"standard\""
+        },
+        {
+          "name": "confirmlabel",
+          "description": "Use `confirm-label` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles",
+          "type": "array"
+        },
+        {
+          "name": "validity",
+          "type": "ValidityState"
+        },
+        {
+          "name": "helper",
+          "attribute": "helper",
+          "description": "The helper text of the password.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "The label of the password used in `default` and `confirm` types.",
+          "type": "string",
+          "default": "\"Password\""
+        },
+        {
+          "name": "confirmLabel",
+          "attribute": "confirm-label",
+          "description": "The label of the confirm password used in `confirm` type.",
+          "type": "string",
+          "default": "\"Confirm Password\""
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "The name of the password to reference in form data.",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "The value of the password.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelID",
+          "attribute": "labelID",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "attribute": "heading",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of the password to use.",
+          "type": "\"default\"|\"confirm\"",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "change",
+          "description": "Dispatched when the value changes. It holds the value of the password."
+        }
+      ],
+      "slots": [
+        {
+          "name": "tip-details",
+          "description": "The tip details related to the `helper` text of the password."
+        }
+      ]
+    },
+    {
+      "name": "ns-form",
+      "description": "Form is used to contain inputters and manage their validations and data.",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "elements"
+        },
+        {
+          "name": "isValid",
+          "type": "boolean"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "validated",
+          "description": "Dispatched when the form is validated. It holds the `ValidityState` object."
+        },
+        {
+          "name": "submit",
+          "description": "Dispatched when the form is validated and submitted. It holds the `submitter` element."
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for form elements."
+        }
+      ]
+    },
+    {
+      "name": "ns-column",
+      "description": "Brings flexibility and control to responsive layouts.",
+      "attributes": [
+        {
+          "name": "tennis-court",
+          "description": "The number of columns in the display layout for tennis court viewport.",
+          "type": "\"1\"|\"2\"",
+          "default": "\"\""
+        },
+        {
+          "name": "basketball-court",
+          "description": "The number of columns in the display layout for basketball court viewport.",
+          "type": "\"1\"|\"2\"",
+          "default": "\"\""
+        },
+        {
+          "name": "hockey-pitch",
+          "description": "The number of columns in the display layout for hockey pitch viewport.\nThe ratio denotes the ratio of column widths in the specified order.",
+          "type": "\"1\"|\"2\"|\"3\"|\"1:2\"|\"2:1\"",
+          "default": "\"\""
+        },
+        {
+          "name": "football-pitch",
+          "description": "The number of columns in the display layout for football pitch viewport.\nThe ratio denotes the ratio of column widths in the specified order.",
+          "type": "\"1\"|\"2\"|\"3\"|\"4\"|\"1:2\"|\"2:1\"|\"1:3\"|\"3:1\"|\"1:4\"|\"4:1\"|\"2:3\"|\"3:2\"",
+          "default": "\"\""
+        },
+        {
+          "name": "rugby-pitch",
+          "description": "The number of columns in the display layout for rugby pitch viewport.\nThe ratio denotes the ratio of column widths in the specified order.",
+          "type": "\"1\"|\"2\"|\"3\"|\"4\"|\"1:2\"|\"2:1\"|\"1:3\"|\"3:1\"|\"1:4\"|\"4:1\"|\"2:3\"|\"3:2\"",
+          "default": "\"\""
+        },
+        {
+          "name": "polo-field",
+          "description": "The number of columns in the display layout for polo field viewport.\nThe ratio denotes the ratio of column widths in the specified order.",
+          "type": "\"1\"|\"2\"|\"3\"|\"4\"|\"1:2\"|\"2:1\"|\"1:3\"|\"3:1\"|\"1:4\"|\"4:1\"|\"2:3\"|\"3:2\"",
+          "default": "\"\""
+        },
+        {
+          "name": "auto",
+          "description": "Toggle to automatically adjust the number of columns based on the viewport and content size.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "tenniscourt",
+          "attribute": "tennis-court",
+          "description": "The number of columns in the display layout for tennis court viewport.",
+          "type": "\"1\"|\"2\"",
+          "default": "\"\""
+        },
+        {
+          "name": "basketballcourt",
+          "attribute": "basketball-court",
+          "description": "The number of columns in the display layout for basketball court viewport.",
+          "type": "\"1\"|\"2\"",
+          "default": "\"\""
+        },
+        {
+          "name": "hockeypitch",
+          "attribute": "hockey-pitch",
+          "description": "The number of columns in the display layout for hockey pitch viewport.\nThe ratio denotes the ratio of column widths in the specified order.",
+          "type": "\"1\"|\"2\"|\"3\"|\"1:2\"|\"2:1\"",
+          "default": "\"\""
+        },
+        {
+          "name": "footballpitch",
+          "attribute": "football-pitch",
+          "description": "The number of columns in the display layout for football pitch viewport.\nThe ratio denotes the ratio of column widths in the specified order.",
+          "type": "\"1\"|\"2\"|\"3\"|\"4\"|\"1:2\"|\"2:1\"|\"1:3\"|\"3:1\"|\"1:4\"|\"4:1\"|\"2:3\"|\"3:2\"",
+          "default": "\"\""
+        },
+        {
+          "name": "rugbypitch",
+          "attribute": "rugby-pitch",
+          "description": "The number of columns in the display layout for rugby pitch viewport.\nThe ratio denotes the ratio of column widths in the specified order.",
+          "type": "\"1\"|\"2\"|\"3\"|\"4\"|\"1:2\"|\"2:1\"|\"1:3\"|\"3:1\"|\"1:4\"|\"4:1\"|\"2:3\"|\"3:2\"",
+          "default": "\"\""
+        },
+        {
+          "name": "polofield",
+          "attribute": "polo-field",
+          "description": "The number of columns in the display layout for polo field viewport.\nThe ratio denotes the ratio of column widths in the specified order.",
+          "type": "\"1\"|\"2\"|\"3\"|\"4\"|\"1:2\"|\"2:1\"|\"1:3\"|\"3:1\"|\"1:4\"|\"4:1\"|\"2:3\"|\"3:2\"",
+          "default": "\"\""
+        },
+        {
+          "name": "auto",
+          "attribute": "auto",
+          "description": "Toggle to automatically adjust the number of columns based on the viewport and content size.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for the content to that needs to be displayed in\nthe specified number of columns in their respective viewports."
+        }
+      ]
+    },
+    {
+      "name": "nsx-product-card-overview",
+      "description": "Showcases a group of products with their price, excess and other details.",
+      "attributes": [
+        {
+          "name": "initial-excess",
+          "description": "The excess value that needs to be selected by default.",
+          "type": "number"
+        },
+        {
+          "name": "excess",
+          "description": "The list of excess options available for selection.",
+          "type": "Array"
+        },
+        {
+          "name": "price-heading",
+          "description": "The heading that needs to be updated in `price-heading` of the products.",
+          "type": "string",
+          "default": "\"Estimated Price\""
+        },
+        {
+          "name": "pricing",
+          "description": "The list of pricing objects mapped to the products.\nThe order of pricing in the list needs to match the order of products in the dynamic slot.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        },
+        {
+          "name": "priceheading",
+          "description": "Use `price-heading` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "initialExcess",
+          "attribute": "initial-excess",
+          "description": "The excess value that needs to be selected by default.",
+          "type": "number"
+        },
+        {
+          "name": "excess",
+          "attribute": "excess",
+          "description": "The list of excess options available for selection.",
+          "type": "Array"
+        },
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "priceheading",
+          "attribute": "price-heading",
+          "description": "The heading that needs to be updated in `price-heading` of the products.",
+          "type": "string",
+          "default": "\"Estimated Price\""
+        },
+        {
+          "name": "pricing",
+          "attribute": "pricing",
+          "description": "The list of pricing objects mapped to the products.\nThe order of pricing in the list needs to match the order of products in the dynamic slot.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "excess-change",
+          "description": "Dispatched when the excess price option is changed. It holds the selected excess price."
+        }
+      ],
+      "slots": [
+        {
+          "name": "heading",
+          "description": "The heading for product overview section."
+        },
+        {
+          "name": "content",
+          "description": "The content to provide overview about the list of products."
+        },
+        {
+          "name": "",
+          "description": "The dynamic slots for products."
+        },
+        {
+          "name": "download-files",
+          "description": "The download links related to the products."
+        }
+      ]
+    },
+    {
+      "name": "nsx-marketing-consent",
+      "description": "A legally compliant way to collect marketing consent from the user.",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "default": "\"marketing-consent\""
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelID",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "validity"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string",
+          "default": "\"marketing-consent\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelID",
+          "attribute": "labelID",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "attribute": "heading",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "change"
+        }
+      ],
+      "slots": [
+        {
+          "name": "heading",
+          "description": "The alternative heading of the marketing consent.\nHeading level depends on its place in the semantics of the page."
+        },
+        {
+          "name": "paragraph",
+          "description": "The alternative content of the marketing consent."
+        }
+      ]
+    },
+    {
+      "name": "ns-image",
+      "description": "Component that can be used to display images in a consistent and structured way.",
+      "attributes": [
+        {
+          "name": "src",
+          "description": "The link of the image.",
+          "type": "string"
+        },
+        {
+          "name": "background",
+          "description": "The toggle to indicate the image needs to be added as decorative background.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "background-size",
+          "description": "The background size of the image.",
+          "type": "string",
+          "default": "\"cover\""
+        },
+        {
+          "name": "alt",
+          "description": "The alternate text of the image and needs to be related to the visual content in the image.\nThis is required for non decorative images.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "ratio",
+          "description": "The aspect ratio of the image.",
+          "type": "\"16 / 9\"| \"4 / 3\"| \"1 / 1\"",
+          "default": "\"\""
+        },
+        {
+          "name": "placeholder",
+          "description": "The placeholder image to be displayed while the specified image in `src` is loading.\n`(src)` can be used to place src into the placeholder.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "loading",
+          "description": "The loading strategy of the image.",
+          "type": "\"eager\"| \"lazy\"",
+          "default": "\"lazy\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        },
+        {
+          "name": "backgroundsize",
+          "description": "Use `background-size` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "src",
+          "attribute": "src",
+          "description": "The link of the image.",
+          "type": "string"
+        },
+        {
+          "name": "background",
+          "attribute": "background",
+          "description": "The toggle to indicate the image needs to be added as decorative background.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "backgroundSize",
+          "attribute": "background-size",
+          "description": "The background size of the image.",
+          "type": "string",
+          "default": "\"cover\""
+        },
+        {
+          "name": "alt",
+          "attribute": "alt",
+          "description": "The alternate text of the image and needs to be related to the visual content in the image.\nThis is required for non decorative images.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "ratio",
+          "attribute": "ratio",
+          "description": "The aspect ratio of the image.",
+          "type": "\"16 / 9\"| \"4 / 3\"| \"1 / 1\"",
+          "default": "\"\""
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "description": "The placeholder image to be displayed while the specified image in `src` is loading.\n`(src)` can be used to place src into the placeholder.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "loading",
+          "attribute": "loading",
+          "description": "The loading strategy of the image.",
+          "type": "\"eager\"| \"lazy\"",
+          "default": "\"lazy\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "image-loaded",
+          "description": "Dispatched when the image is loaded."
+        },
+        {
+          "name": "image-failed",
+          "description": "Dispatched when the image failed to load."
+        }
+      ]
+    },
+    {
+      "name": "ns-card",
+      "description": "Cards can be used to contain content in a consistent and structured way.",
+      "attributes": [
+        {
+          "name": "decoration",
+          "description": "The decorative illustration to provide visual aid to the content of `section` type card.",
+          "type": "string"
+        },
+        {
+          "name": "pill-over-image",
+          "description": "The toggle to display the pill over the image for `support` type card.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "image",
+          "description": "The link to the image.\nThe visual in the image needs to be related to the content of the `support` type card.\nImage should be of ratio `16 / 9`.",
+          "type": "string"
+        },
+        {
+          "name": "alt",
+          "description": "The alternate text of the image and needs to be related to the visual content in the image.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "background",
+          "type": "boolean"
+        },
+        {
+          "name": "type",
+          "description": "The type of the card.",
+          "type": "\"section\"|\"support\"|\"flat\"",
+          "default": "\"section\""
+        },
+        {
+          "name": "pilloverimage",
+          "description": "Use `pill-over-image` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "decoration",
+          "attribute": "decoration",
+          "description": "The decorative illustration to provide visual aid to the content of `section` type card.",
+          "type": "string"
+        },
+        {
+          "name": "isPillOverImage",
+          "attribute": "pill-over-image",
+          "description": "The toggle to display the pill over the image for `support` type card.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "image",
+          "attribute": "image",
+          "description": "The link to the image.\nThe visual in the image needs to be related to the content of the `support` type card.\nImage should be of ratio `16 / 9`.",
+          "type": "string"
+        },
+        {
+          "name": "alt",
+          "attribute": "alt",
+          "description": "The alternate text of the image and needs to be related to the visual content in the image.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "background",
+          "attribute": "background",
+          "type": "boolean"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of the card.",
+          "type": "\"section\"|\"support\"|\"flat\"",
+          "default": "\"section\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "heading",
+          "description": "The heading of the card related to its content.\nHeading level depends on its place in the semantics of the page."
+        },
+        {
+          "name": "paragraph",
+          "description": "The content of the card."
+        },
+        {
+          "name": "cta",
+          "description": "The interactive content for the `section` type card."
+        },
+        {
+          "name": "action",
+          "description": "The interactive content for the `support` and `flat` type cards."
+        }
+      ]
+    },
+    {
+      "name": "ns-header",
+      "description": "Primary navigation for the website.",
+      "attributes": [
+        {
+          "name": "primary",
+          "description": "The list of primary navigation link objects. The list can be flat or nested.",
+          "type": "Array"
+        },
+        {
+          "name": "secondary",
+          "description": "The list of secondary navigation link objects.",
+          "type": "Array"
+        },
+        {
+          "name": "secondary-banner",
+          "description": "The list of secondary banner link objects.",
+          "type": "Array"
+        },
+        {
+          "name": "menu-banner",
+          "description": "The list of menu banner link objects.",
+          "type": "Array"
+        },
+        {
+          "name": "quick-links",
+          "description": "The list of quick links objects. Each quick link can have nested links.",
+          "type": "Array"
+        },
+        {
+          "name": "skip-subdomain",
+          "type": "string"
+        },
+        {
+          "name": "logo",
+          "description": "The link to the logo image.",
+          "type": "string",
+          "default": "\"https://www.britishgas.co.uk/nucleus/images/logo.svg\""
+        },
+        {
+          "name": "alt",
+          "description": "The alternate text of the logo image and needs to be the company name.",
+          "type": "string",
+          "default": "\"British Gas\""
+        },
+        {
+          "name": "hide-links",
+          "description": "The toggle to hide links in the header.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "no-root-link",
+          "description": "The toggle to hide the root link in the logo.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "description": "The type of the header.",
+          "type": "\"standard\"|\"simple\"",
+          "default": "\"header\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "primary",
+          "attribute": "primary",
+          "description": "The list of primary navigation link objects. The list can be flat or nested.",
+          "type": "Array"
+        },
+        {
+          "name": "secondary",
+          "attribute": "secondary",
+          "description": "The list of secondary navigation link objects.",
+          "type": "Array"
+        },
+        {
+          "name": "secondaryBanner",
+          "attribute": "secondary-banner",
+          "description": "The list of secondary banner link objects.",
+          "type": "Array"
+        },
+        {
+          "name": "menuBanner",
+          "attribute": "menu-banner",
+          "description": "The list of menu banner link objects.",
+          "type": "Array"
+        },
+        {
+          "name": "quickLinks",
+          "attribute": "quick-links",
+          "description": "The list of quick links objects. Each quick link can have nested links.",
+          "type": "Array"
+        },
+        {
+          "name": "skipSubdomain",
+          "attribute": "skip-subdomain",
+          "type": "string"
+        },
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "logo",
+          "attribute": "logo",
+          "description": "The link to the logo image.",
+          "type": "string",
+          "default": "\"https://www.britishgas.co.uk/nucleus/images/logo.svg\""
+        },
+        {
+          "name": "alt",
+          "attribute": "alt",
+          "description": "The alternate text of the logo image and needs to be the company name.",
+          "type": "string",
+          "default": "\"British Gas\""
+        },
+        {
+          "name": "hideLinks",
+          "attribute": "hide-links",
+          "description": "The toggle to hide links in the header.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "noRootLink",
+          "attribute": "no-root-link",
+          "description": "The toggle to hide the root link in the logo.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of the header.",
+          "type": "\"standard\"|\"simple\"",
+          "default": "\"header\""
+        }
+      ],
+      "events": [
+        {
+          "name": "header-init"
+        },
+        {
+          "name": "header-click"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "` attribute in the link to override.\nThe slot value needs to be correlated to the link value to be overridden."
+        }
+      ]
+    },
+    {
+      "name": "nsx-header",
+      "description": "Navigation segments contained within the header.",
+      "attributes": [
+        {
+          "name": "sections",
+          "description": "The list of heading sections to display in the header. Each section can have list of links.",
+          "type": "Array"
+        },
+        {
+          "name": "secondary-banner",
+          "type": "array"
+        },
+        {
+          "name": "menu-banner",
+          "type": "array"
+        },
+        {
+          "name": "quick-links",
+          "type": "array"
+        },
+        {
+          "name": "hide-a11y-btn",
+          "description": "The toggle to hide the accessibility button.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "description": "The type of the header.",
+          "type": "\"standard\"|\"business\"",
+          "default": "\"standard\""
+        },
+        {
+          "name": "hidea11ybtn",
+          "description": "Use `hide-a11y-btn` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "sections",
+          "attribute": "sections",
+          "description": "The list of heading sections to display in the header. Each section can have list of links.",
+          "type": "Array"
+        },
+        {
+          "name": "secondaryBanner",
+          "attribute": "secondary-banner",
+          "type": "array"
+        },
+        {
+          "name": "menuBanner",
+          "attribute": "menu-banner",
+          "type": "array"
+        },
+        {
+          "name": "quickLinks",
+          "attribute": "quick-links",
+          "type": "array"
+        },
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "hideA11yBtn",
+          "attribute": "hide-a11y-btn",
+          "description": "The toggle to hide the accessibility button.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of the header.",
+          "type": "\"standard\"|\"business\"",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "header-click",
+          "description": "Dispatched when a link is clicked."
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The dynamic slot for links to override links or utilise for frameworks."
+        }
+      ]
+    },
+    {
+      "name": "ns-footer",
+      "description": "Required links and information that need to be repeated on every page.",
+      "attributes": [
+        {
+          "name": "company",
+          "description": "The name of the company related to the website.",
+          "type": "string",
+          "default": "\"British Gas\""
+        },
+        {
+          "name": "hide-logo",
+          "description": "The toggle to hide the logo in the footer.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        },
+        {
+          "name": "hidelogo",
+          "description": "Use `hide-logo` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "company",
+          "attribute": "company",
+          "description": "The name of the company related to the website.",
+          "type": "string",
+          "default": "\"British Gas\""
+        },
+        {
+          "name": "hideLogo",
+          "attribute": "hide-logo",
+          "description": "The toggle to hide the logo in the footer.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "section",
+          "description": "The list of links and needs to be grouped into sections with related headings."
+        }
+      ]
+    },
+    {
+      "name": "nsx-footer",
+      "description": "Footer with all the links and company information.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "The read-only unique identifier to identify the footer when linking.",
+          "type": "\"string\"",
+          "default": "\"footer\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "id",
+          "attribute": "id",
+          "description": "The read-only unique identifier to identify the footer when linking.",
+          "type": "\"string\"",
+          "default": "\"footer\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ]
+    },
+    {
+      "name": "nsx-address-selector",
+      "description": "Address selector is used to search a specific address, add / edit a new address.",
+      "attributes": [
+        {
+          "name": "selected-address",
+          "description": "The value of the selected address.",
+          "type": "object"
+        },
+        {
+          "name": "selectedaddress",
+          "description": "Use `selectedAddress / selected-address` property / attribute.",
+          "type": "object",
+          "deprecated": true
+        },
+        {
+          "name": "postcode",
+          "description": "The postcode of the address selector.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "addresses",
+          "description": "The list of addresses available for the given `postcode`.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "required",
+          "description": "Use `validation=['isRequired']` attribute.",
+          "type": "boolean",
+          "default": "false",
+          "deprecated": true
+        },
+        {
+          "name": "manual-form-enabled",
+          "description": "The toggle to show manual address entry form.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "allow-manual-address",
+          "description": "The toggle to manually edit the given address.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "validation",
+          "type": "never[]",
+          "default": "[]"
+        },
+        {
+          "name": "disableNative",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showMessage",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "name",
+          "description": "The name of the address selector to reference in form data.",
+          "type": "string",
+          "default": "\"address-selector\""
+        },
+        {
+          "name": "value",
+          "description": "The value of the selected address.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelID",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "selectedAddress",
+          "attribute": "selected-address",
+          "description": "The value of the selected address.",
+          "type": "object"
+        },
+        {
+          "name": "selectedaddress",
+          "attribute": "selectedaddress",
+          "description": "Use `selectedAddress / selected-address` property / attribute.",
+          "type": "object",
+          "deprecated": true
+        },
+        {
+          "name": "postcode",
+          "attribute": "postcode",
+          "description": "The postcode of the address selector.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "addresses",
+          "attribute": "addresses",
+          "description": "The list of addresses available for the given `postcode`.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "required",
+          "attribute": "required",
+          "description": "Use `validation=['isRequired']` attribute.",
+          "type": "boolean",
+          "default": "false",
+          "deprecated": true
+        },
+        {
+          "name": "manualFormEnabled",
+          "attribute": "manual-form-enabled",
+          "description": "The toggle to show manual address entry form.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "allowManualAddress",
+          "attribute": "allow-manual-address",
+          "description": "The toggle to manually edit the given address.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "isPristine",
+          "description": "A getter method to get pristine state of the form element.",
+          "type": "boolean"
+        },
+        {
+          "name": "isDirty",
+          "description": "A getter method to get dirty state of the form element.",
+          "type": "boolean"
+        },
+        {
+          "name": "validity",
+          "description": "A getter method to get validity of the form element.",
+          "type": "ValidityState"
+        },
+        {
+          "name": "validationMessage",
+          "description": "A method to get a validation message combind from the validity states.",
+          "type": "string"
+        },
+        {
+          "name": "validation",
+          "attribute": "validation",
+          "type": "never[]",
+          "default": "[]"
+        },
+        {
+          "name": "disableNative",
+          "attribute": "disableNative",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showMessage",
+          "attribute": "showMessage",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "The name of the address selector to reference in form data.",
+          "type": "string",
+          "default": "\"address-selector\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "The value of the selected address.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelID",
+          "attribute": "labelID",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "attribute": "heading",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "postcode-selected",
+          "description": "Dispatched when the postcode is selected. It holds the postcode value."
+        },
+        {
+          "name": "address-selected",
+          "description": "Dispatched when the address is selected. It holds the selected address."
+        },
+        {
+          "name": "manual-address-click",
+          "description": "Dispatched when the manual address button is clicked."
+        },
+        {
+          "name": "change"
+        }
+      ]
+    },
+    {
+      "name": "ns-labs-account-layout",
+      "attributes": [
+        {
+          "name": "spacing",
+          "description": "The spacing between content.",
+          "type": "\"compact\"|\"normal\"|\"loose\"",
+          "default": "\"compact\""
+        },
+        {
+          "name": "active-tab",
+          "description": "The active tab index.",
+          "type": "number",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "name",
+          "description": "The user's name.",
+          "type": "string",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "has-search",
+          "description": "Whether the layout has a search bar.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hide-tabs",
+          "description": "Hide tabs from account layout.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hide-header",
+          "description": "Hide header from account layout.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "ignore-prefix-path",
+          "description": "Ignore the prefix path.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "nav",
+          "description": "The navigation items.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "menu",
+          "description": "The account menu items.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "standardTemplate",
+          "type": "TemplateResult<1>"
+        },
+        {
+          "name": "spacing",
+          "attribute": "spacing",
+          "description": "The spacing between content.",
+          "type": "\"compact\"|\"normal\"|\"loose\"",
+          "default": "\"compact\""
+        },
+        {
+          "name": "activeTab",
+          "attribute": "active-tab",
+          "description": "The active tab index.",
+          "type": "number",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "The user's name.",
+          "type": "string",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "hasSearch",
+          "attribute": "has-search",
+          "description": "Whether the layout has a search bar.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hideTabs",
+          "attribute": "hide-tabs",
+          "description": "Hide tabs from account layout.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hideHeader",
+          "attribute": "hide-header",
+          "description": "Hide header from account layout.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "ignorePrefixPath",
+          "attribute": "ignore-prefix-path",
+          "description": "Ignore the prefix path.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "nav",
+          "attribute": "nav",
+          "description": "The navigation items.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "menu",
+          "attribute": "menu",
+          "description": "The account menu items.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "tab-click"
+        },
+        {
+          "name": "search-click"
+        },
+        {
+          "name": "logout-click"
+        },
+        {
+          "name": "menu-click"
+        }
+      ]
+    },
+    {
+      "name": "ns-media-group",
+      "description": "A component to display a group of related media elements.",
+      "attributes": [
+        {
+          "name": "media",
+          "description": "The list of media elements that needs to be displayed as a group.",
+          "type": "Array"
+        },
+        {
+          "name": "alt",
+          "description": "The alternate text of the media group and\nneeds to be related to the visual content in the media elements.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "description": "The type of the media group.",
+          "type": "\"bento\"",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "media",
+          "attribute": "media",
+          "description": "The list of media elements that needs to be displayed as a group.",
+          "type": "Array"
+        },
+        {
+          "name": "standardTemplate",
+          "type": "TemplateResult<1>"
+        },
+        {
+          "name": "alt",
+          "attribute": "alt",
+          "description": "The alternate text of the media group and\nneeds to be related to the visual content in the media elements.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of the media group.",
+          "type": "\"bento\"",
+          "default": "\"standard\""
+        }
+      ]
+    },
+    {
+      "name": "ns-lockup",
+      "description": "Lockups are a promotional component that signpost to a product or service, highlighting key messages.",
+      "attributes": [
+        {
+          "name": "decoration",
+          "description": "The decorative illustration to provide visual aid to the content.",
+          "type": "string"
+        },
+        {
+          "name": "reverse",
+          "description": "The toggle to reverse the order of content and image in the lockup.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "ratio",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "description": "The type of the lockup.",
+          "type": "\"standard\"",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "decoration",
+          "attribute": "decoration",
+          "description": "The decorative illustration to provide visual aid to the content.",
+          "type": "string"
+        },
+        {
+          "name": "slottedStyles",
+          "description": "Styles for slotted elements."
+        },
+        {
+          "name": "reverse",
+          "attribute": "reverse",
+          "description": "The toggle to reverse the order of content and image in the lockup.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "ratio",
+          "attribute": "ratio",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of the lockup.",
+          "type": "\"standard\"",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "heading",
+          "description": "The heading of the lockup and needs to be related to the content."
+        },
+        {
+          "name": "paragraph",
+          "description": "The content of the lockup."
+        },
+        {
+          "name": "cta",
+          "description": "The interactive content for the lockup."
+        },
+        {
+          "name": "image",
+          "description": "The media content and\nthe visual in the media needs to be related to the content."
+        }
+      ]
+    },
+    {
+      "name": "ns-live",
+      "description": "Live draws attention to areas of the page that are dynamically updating.",
+      "attributes": [
+        {
+          "name": "busy",
+          "description": "The toggle to indicate the state of the live.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "busy-message",
+          "description": "The message to display when in `busy` state.",
+          "type": "string",
+          "default": "\"Updating\""
+        },
+        {
+          "name": "aria-live",
+          "description": "The accessibility feature to indicate\nthe content will be updated after the initial page load.",
+          "type": "\"polite\"|\"assertive\"",
+          "default": "\"polite\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        },
+        {
+          "name": "arialive",
+          "description": "Use `aria-live` attribute.",
+          "deprecated": true
+        },
+        {
+          "name": "busymessage",
+          "description": "Use `busy-message` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "busy",
+          "attribute": "busy",
+          "description": "The toggle to indicate the state of the live.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "busyMessage",
+          "attribute": "busy-message",
+          "description": "The message to display when in `busy` state.",
+          "type": "string",
+          "default": "\"Updating\""
+        },
+        {
+          "name": "ariaLive",
+          "attribute": "aria-live",
+          "description": "The accessibility feature to indicate\nthe content will be updated after the initial page load.",
+          "type": "\"polite\"|\"assertive\"",
+          "default": "\"polite\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for any html flow content."
+        }
+      ]
+    },
+    {
+      "name": "ns-landmark",
+      "description": "Landmarks are used to introduce the page, informing users of their current location and its primary purpose.",
+      "attributes": [
+        {
+          "name": "gradient",
+          "description": "Use `decoration` attribute / property.",
+          "type": "string",
+          "deprecated": true
+        },
+        {
+          "name": "image",
+          "description": "The link to the decorative image. The visual in the image needs to be related to the content.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "pill-over-image",
+          "description": "The toggle to display the pill over the image.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "decoration",
+          "description": "The decorative background colour for the landmark.",
+          "type": "\"cyan\"|\"lime\"|\"navy\"|\"blue\"|\"forest\"|\"orange\"|\"red\"|\"yellow\"",
+          "default": "\"cyan\""
+        },
+        {
+          "name": "ratio",
+          "description": "The aspect ratio of the image.",
+          "type": "\"16 / 9\"|\"4 / 3\"",
+          "default": "\"4 / 3\""
+        },
+        {
+          "name": "type",
+          "description": "The type of the landmark.",
+          "type": "\"summit\"|\"hillside\"|\"lakeside\"|\"valley\"",
+          "default": "\"summit\""
+        },
+        {
+          "name": "pilloverimage",
+          "description": "Use `pill-over-image` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "gradient",
+          "attribute": "gradient",
+          "description": "Use `decoration` attribute / property.",
+          "type": "string",
+          "deprecated": true
+        },
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "image",
+          "attribute": "image",
+          "description": "The link to the decorative image. The visual in the image needs to be related to the content.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "pillOverImage",
+          "attribute": "pill-over-image",
+          "description": "The toggle to display the pill over the image.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "decoration",
+          "attribute": "decoration",
+          "description": "The decorative background colour for the landmark.",
+          "type": "\"cyan\"|\"lime\"|\"navy\"|\"blue\"|\"forest\"|\"orange\"|\"red\"|\"yellow\"",
+          "default": "\"cyan\""
+        },
+        {
+          "name": "ratio",
+          "attribute": "ratio",
+          "description": "The aspect ratio of the image.",
+          "type": "\"16 / 9\"|\"4 / 3\"",
+          "default": "\"4 / 3\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of the landmark.",
+          "type": "\"summit\"|\"hillside\"|\"lakeside\"|\"valley\"",
+          "default": "\"summit\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "heading",
+          "description": "The heading of the landmark and needs to be related to the content."
+        },
+        {
+          "name": "paragraph",
+          "description": "The content of the landmark."
+        },
+        {
+          "name": "cta",
+          "description": "The interactive content for the landmark."
+        },
+        {
+          "name": "pill",
+          "description": "The pill to attract attention to key information in the content."
+        }
+      ]
+    },
+    {
+      "name": "ns-alert",
+      "description": "Alert can be used to communicate error, info, success and warning messages in an accessible and visual way.",
+      "attributes": [
+        {
+          "name": "dismissible",
+          "type": "boolean"
+        },
+        {
+          "name": "state",
+          "description": "The contextual role of the alert message.",
+          "type": "\"error\"|\"info\"|\"success\"|\"warning\"",
+          "default": "\"error\""
+        },
+        {
+          "name": "type",
+          "description": "The type of alert to use.",
+          "type": "\"standard\"|\"highlighter\"",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "dismissible",
+          "attribute": "dismissible",
+          "type": "boolean"
+        },
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "state",
+          "attribute": "state",
+          "description": "The contextual role of the alert message.",
+          "type": "\"error\"|\"info\"|\"success\"|\"warning\"",
+          "default": "\"error\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of alert to use.",
+          "type": "\"standard\"|\"highlighter\"",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "close-alert",
+          "description": "Dispatched when the alert is closed."
+        }
+      ],
+      "slots": [
+        {
+          "name": "heading",
+          "description": "The heading of the alert toned with its `state`.\nHeading level depends on its place in the semantics of the page."
+        },
+        {
+          "name": "",
+          "description": "The anonymous slot for alert message."
+        }
+      ]
+    },
+    {
+      "name": "ns-highlighter",
+      "description": "Highlighter can be used to communicate error, info, success and warning messages.",
+      "attributes": [
+        {
+          "name": "type",
+          "description": "The type of the highlighter related to the contextual role.",
+          "type": "\"error\"|\"info\"|\"success\"|\"warning\"",
+          "default": "\"error\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "standardTemplate",
+          "type": "TemplateResult<1>"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of the highlighter related to the contextual role.",
+          "type": "\"error\"|\"info\"|\"success\"|\"warning\"",
+          "default": "\"error\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "heading",
+          "description": "The heading of the highlighter toned with its `type`.\nHeading level depends on its place in the semantics of the page."
+        },
+        {
+          "name": "",
+          "description": "The anonymous slot for the highlighter message."
+        }
+      ],
+      "deprecated": true
+    },
+    {
+      "name": "ns-frame",
+      "description": "Frame provides page navigation layout specific to a particular context eg.. User account.",
+      "attributes": [
+        {
+          "name": "active-button",
+          "description": "The optional button index that needs to be selected by default.",
+          "type": "number",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "name",
+          "description": "The account holder name that needs to be displayed.",
+          "type": "string",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "show-search",
+          "description": "The toggle to show search option in the header.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hide-buttons",
+          "description": "The toggle to hide the navigational buttons.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hide-menu",
+          "description": "The toggle to hide the menu in the header.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "ignore-prefix-path",
+          "description": "The path pattern to be ignored from the window location\nto match the button navigation link.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "buttons",
+          "description": "The list of button objects. Each button has navigation link.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "menu",
+          "description": "The list of menu items that needs to be displayed in the navigation header.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "standardTemplate",
+          "type": "TemplateResult<1>"
+        },
+        {
+          "name": "activeButton",
+          "attribute": "active-button",
+          "description": "The optional button index that needs to be selected by default.",
+          "type": "number",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "The account holder name that needs to be displayed.",
+          "type": "string",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "showSearch",
+          "attribute": "show-search",
+          "description": "The toggle to show search option in the header.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hideButtons",
+          "attribute": "hide-buttons",
+          "description": "The toggle to hide the navigational buttons.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hideMenu",
+          "attribute": "hide-menu",
+          "description": "The toggle to hide the menu in the header.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "ignorePrefixPath",
+          "attribute": "ignore-prefix-path",
+          "description": "The path pattern to be ignored from the window location\nto match the button navigation link.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "buttons",
+          "attribute": "buttons",
+          "description": "The list of button objects. Each button has navigation link.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "menu",
+          "attribute": "menu",
+          "description": "The list of menu items that needs to be displayed in the navigation header.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "search-click",
+          "description": "Dispatched when the search option is clicked."
+        },
+        {
+          "name": "menu-click",
+          "description": "Dispatched when the menu item is clicked. It holds the menu details."
+        },
+        {
+          "name": "logout-click",
+          "description": "Dispatched when the logout CTA is clicked from the account menu."
+        },
+        {
+          "name": "button-click",
+          "description": "Dispatched when the navigational button is clicked. It holds the button details."
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for the content that needs to be displayed."
+        }
+      ]
+    },
+    {
+      "name": "ns-form-group",
+      "description": "Form Group is used to group related inputters.",
+      "attributes": [
+        {
+          "name": "legend",
+          "description": "The legend of the form group and\nneeds to be related to the group of form inputs the form group wraps.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "legend",
+          "attribute": "legend",
+          "description": "The legend of the form group and\nneeds to be related to the group of form inputs the form group wraps.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for the group of the related form inputs."
+        }
+      ]
+    },
+    {
+      "name": "ns-fieldset",
+      "description": "Fieldset is used to group related inputters.",
+      "attributes": [
+        {
+          "name": "legend",
+          "description": "The legend of the form group and\nneeds to be related to the group of form inputs the form group wraps.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "legend",
+          "attribute": "legend",
+          "description": "The legend of the form group and\nneeds to be related to the group of form inputs the form group wraps.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for the group of the related form inputs."
+        }
+      ],
+      "deprecated": true
+    },
+    {
+      "name": "ns-expander",
+      "description": "A component to show and hide content related to heading.",
+      "attributes": [
+        {
+          "name": "colour",
+          "description": "The optional colour that can be applied to highlight the expander.",
+          "type": "\"\"|\"yellow\"",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "open",
+          "description": "The toggle to open the expander.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "description": "The type of the expander.",
+          "type": "\"standard\"",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "colour",
+          "attribute": "colour",
+          "description": "The optional colour that can be applied to highlight the expander.",
+          "type": "\"\"|\"yellow\"",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "open",
+          "attribute": "open",
+          "description": "The toggle to open the expander.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of the expander.",
+          "type": "\"standard\"",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "expander-toggle",
+          "description": "Dispatched when the expander is toggled. It holds the `open` state."
+        }
+      ],
+      "slots": [
+        {
+          "name": "heading",
+          "description": "The heading of the expander and needs to be related to the content.\nHeading level depends on its place in the semantics of the page."
+        },
+        {
+          "name": "",
+          "description": "The anonymous slot for content."
+        }
+      ]
+    },
+    {
+      "name": "ns-content",
+      "description": "Content is used to display typography and media.",
+      "attributes": [
+        {
+          "name": "spacing",
+          "description": "The spacing strategy for the content.",
+          "type": "\"compact\"|\"cosy\"|\"normal\"|\"loose\"",
+          "default": "\"normal\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "spacing",
+          "attribute": "spacing",
+          "description": "The spacing strategy for the content.",
+          "type": "\"compact\"|\"cosy\"|\"normal\"|\"loose\"",
+          "default": "\"normal\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for the content."
+        }
+      ]
+    },
+    {
+      "name": "ns-editorial",
+      "description": "The editorial component is a self-contained or supporting piece of content\nthat is more informative than promotional in nature. In some cases,\nit is necessary to explain something in more detail without the user\nneeding to take an immediate action.",
+      "attributes": [
+        {
+          "name": "image",
+          "description": "The link to the decorative image. The visual in the image needs to be related to the content.",
+          "type": "string"
+        },
+        {
+          "name": "reverse",
+          "description": "The toggle to display the image reversed.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "image",
+          "attribute": "image",
+          "description": "The link to the decorative image. The visual in the image needs to be related to the content.",
+          "type": "string"
+        },
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "reverse",
+          "attribute": "reverse",
+          "description": "The toggle to display the image reversed.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "heading",
+          "description": "The heading of the editorial related to the content.\nHeading level depends on its place in the semantics of the page."
+        },
+        {
+          "name": "",
+          "description": "The anonymous slot for editorial content."
+        }
+      ]
+    },
+    {
+      "name": "ns-download",
+      "description": "Highlights an item that can be downloaded.",
+      "attributes": [
+        {
+          "name": "href",
+          "description": "The link to the file to be downloaded.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "file-size",
+          "description": "The size of the file to download.",
+          "type": "\"B\"|\"kB\"|\"MB\"|\"GB\"",
+          "default": "\"\""
+        },
+        {
+          "name": "file-type",
+          "description": "The type of the file to download.\nThis is required when file extension is not present in `href` link value.",
+          "type": "\"pdf\"|\"xls\"",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        },
+        {
+          "name": "filesize",
+          "description": "Use `file-size` attribute.",
+          "deprecated": true
+        },
+        {
+          "name": "filetype",
+          "description": "Use `file-type` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "href",
+          "attribute": "href",
+          "description": "The link to the file to be downloaded.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "fileSize",
+          "attribute": "file-size",
+          "description": "The size of the file to download.",
+          "type": "\"B\"|\"kB\"|\"MB\"|\"GB\"",
+          "default": "\"\""
+        },
+        {
+          "name": "fileType",
+          "attribute": "file-type",
+          "description": "The type of the file to download.\nThis is required when file extension is not present in `href` link value.",
+          "type": "\"pdf\"|\"xls\"",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for text content and needs to be related the file to download."
+        }
+      ]
+    },
+    {
+      "name": "ns-datepicker",
+      "description": "Use to help the user enter a date in a form.",
+      "attributes": [
+        {
+          "name": "helper",
+          "description": "The helper text of the datepicker.",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "description": "The label of the datepicker and needs to be related to the purpose of the date.",
+          "type": "string"
+        },
+        {
+          "name": "autocomplete",
+          "description": "The autocomplete for the datepicker input.",
+          "type": "\"off\"|\"bday\"",
+          "default": "\"off\""
+        },
+        {
+          "name": "min",
+          "description": "The minimum date available for selection.",
+          "type": "string",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "max",
+          "description": "The maximum date available for selection.",
+          "type": "string",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "validation",
+          "description": "The list of validations to validate the selected date of the datepicker.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "name",
+          "description": "The name of the datepicker to reference in form data.",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "description": "The value of the selected date.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelID",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "description": "The type of the datepicker.",
+          "type": "\"standard\"|\"mask\"",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles",
+          "type": "array"
+        },
+        {
+          "name": "helper",
+          "attribute": "helper",
+          "description": "The helper text of the datepicker.",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "The label of the datepicker and needs to be related to the purpose of the date.",
+          "type": "string"
+        },
+        {
+          "name": "validity"
+        },
+        {
+          "name": "autocomplete",
+          "attribute": "autocomplete",
+          "description": "The autocomplete for the datepicker input.",
+          "type": "\"off\"|\"bday\"",
+          "default": "\"off\""
+        },
+        {
+          "name": "min",
+          "attribute": "min",
+          "description": "The minimum date available for selection.",
+          "type": "string",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "max",
+          "attribute": "max",
+          "description": "The maximum date available for selection.",
+          "type": "string",
+          "default": "\"undefined\""
+        },
+        {
+          "name": "validation",
+          "attribute": "validation",
+          "description": "The list of validations to validate the selected date of the datepicker.",
+          "type": "Array",
+          "default": "[]"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "The name of the datepicker to reference in form data.",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "The value of the selected date.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelID",
+          "attribute": "labelID",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "attribute": "heading",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of the datepicker.",
+          "type": "\"standard\"|\"mask\"",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "change",
+          "description": "Dispatched when the value changes. It holds the value of the datepicker."
+        }
+      ],
+      "slots": [
+        {
+          "name": "tip-details",
+          "description": "The tip details related to the `helper` text of the datepicker."
+        }
+      ]
+    },
+    {
+      "name": "ns-date-time",
+      "description": "A standardised way to show the date and time.",
+      "attributes": [
+        {
+          "name": "date",
+          "description": "The date to display inline with British Gas tone of voice.\nThe time part follows 24 hours format ending with am/pm.\nWhen using timezone as part of the date be cautious to consider British Summer Time.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "hide-date",
+          "description": "The toggle to hide the date from display.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hide-time",
+          "description": "The toggle to hide the time from display.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hide-day",
+          "description": "The toggle to hide the day from the display.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hide-month",
+          "description": "The toggle to hide the month from the display.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hide-year",
+          "description": "The toggle to hide the year from the display.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "standardTemplate",
+          "type": "TemplateResult<1> | undefined"
+        },
+        {
+          "name": "date",
+          "attribute": "date",
+          "description": "The date to display inline with British Gas tone of voice.\nThe time part follows 24 hours format ending with am/pm.\nWhen using timezone as part of the date be cautious to consider British Summer Time.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "hideDate",
+          "attribute": "hide-date",
+          "description": "The toggle to hide the date from display.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hideTime",
+          "attribute": "hide-time",
+          "description": "The toggle to hide the time from display.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hideDay",
+          "attribute": "hide-day",
+          "description": "The toggle to hide the day from the display.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hideMonth",
+          "attribute": "hide-month",
+          "description": "The toggle to hide the month from the display.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "hideYear",
+          "attribute": "hide-year",
+          "description": "The toggle to hide the year from the display.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ]
+    },
+    {
+      "name": "ns-caveat",
+      "description": "Caveats provide additional information and legal details to content.",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "default": "\"caveat\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "id",
+          "attribute": "id",
+          "type": "string",
+          "default": "\"caveat\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "heading",
+          "description": "The heading of the caveat related to the additional information."
+        },
+        {
+          "name": "caveat",
+          "description": "The additional information in an unordered list or paragraphs."
+        }
+      ]
+    },
+    {
+      "name": "ns-calendar",
+      "description": "Calendar shows the dates of a month or year.",
+      "attributes": [
+        {
+          "name": "disabled-dates",
+          "description": "The set of dates that are disabled for selection.",
+          "type": "Array"
+        },
+        {
+          "name": "enabled-dates",
+          "description": "The set of dates that are enabled for selection.",
+          "type": "Array"
+        },
+        {
+          "name": "min-date",
+          "description": "The minimum date available for selection.",
+          "type": "string"
+        },
+        {
+          "name": "max-date",
+          "description": "The maximum date available for selection.",
+          "type": "string"
+        },
+        {
+          "name": "iso-selected-date",
+          "description": "The value of the selected date in ISO format.",
+          "type": "string"
+        },
+        {
+          "name": "month",
+          "description": "The month of the calendar.",
+          "type": "number"
+        },
+        {
+          "name": "year",
+          "description": "The year of the calendar.",
+          "type": "number"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "disabledDates",
+          "attribute": "disabled-dates",
+          "description": "The set of dates that are disabled for selection.",
+          "type": "Array"
+        },
+        {
+          "name": "enabledDates",
+          "attribute": "enabled-dates",
+          "description": "The set of dates that are enabled for selection.",
+          "type": "Array"
+        },
+        {
+          "name": "minDate",
+          "attribute": "min-date",
+          "description": "The minimum date available for selection.",
+          "type": "string"
+        },
+        {
+          "name": "maxDate",
+          "attribute": "max-date",
+          "description": "The maximum date available for selection.",
+          "type": "string"
+        },
+        {
+          "name": "isoSelectedDate",
+          "attribute": "iso-selected-date",
+          "description": "The value of the selected date in ISO format.",
+          "type": "string"
+        },
+        {
+          "name": "month",
+          "attribute": "month",
+          "description": "The month of the calendar.",
+          "type": "number"
+        },
+        {
+          "name": "year",
+          "attribute": "year",
+          "description": "The year of the calendar.",
+          "type": "number"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "change",
+          "description": "Dispatched when a specific date is selected. It holds the selected date."
+        }
+      ]
+    },
+    {
+      "name": "ns-article",
+      "description": "Article is used to display long-form content.",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The anonymous slot for content."
+        }
+      ]
+    },
+    {
+      "name": "ns-appointment-picker",
+      "description": "Appointment picker is used to select a date and time slot for an appointment.",
+      "attributes": [
+        {
+          "name": "slot-data",
+          "description": "An array of time slots available for an appointment.",
+          "type": "object",
+          "default": "[]"
+        },
+        {
+          "name": "validation",
+          "type": "string[]",
+          "default": "[\"isRequired\"]"
+        },
+        {
+          "name": "disableNative",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "showMessage",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "name",
+          "description": "The name of the appointment picker to reference in form data.",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "description": "The value of the selected appointment time slot.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelID",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"standard\""
+        },
+        {
+          "name": "slotdata",
+          "description": "Use `slot-data` attribute.",
+          "deprecated": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "slotData",
+          "attribute": "slot-data",
+          "description": "An array of time slots available for an appointment.",
+          "type": "object",
+          "default": "[]"
+        },
+        {
+          "name": "isPristine",
+          "description": "A getter method to get pristine state of the form element.",
+          "type": "boolean"
+        },
+        {
+          "name": "isDirty",
+          "description": "A getter method to get dirty state of the form element.",
+          "type": "boolean"
+        },
+        {
+          "name": "validity",
+          "description": "A getter method to get validity of the form element.",
+          "type": "ValidityState"
+        },
+        {
+          "name": "validationMessage",
+          "description": "A method to get a validation message combind from the validity states.",
+          "type": "string"
+        },
+        {
+          "name": "validation",
+          "attribute": "validation",
+          "type": "string[]",
+          "default": "[\"isRequired\"]"
+        },
+        {
+          "name": "disableNative",
+          "attribute": "disableNative",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "showMessage",
+          "attribute": "showMessage",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "The name of the appointment picker to reference in form data.",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "The value of the selected appointment time slot.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "labelID",
+          "attribute": "labelID",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "heading",
+          "attribute": "heading",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "events": [
+        {
+          "name": "change",
+          "description": "Dispatched when a time slot is selected. It holds the value of the selected time slot."
+        }
+      ]
+    },
+    {
+      "name": "ns-action-link",
+      "description": "Action links are decorative links used to navigate to another page or perform an action.",
+      "attributes": [
+        {
+          "name": "link",
+          "description": "Use `href` attribute.",
+          "type": "string",
+          "deprecated": true
+        },
+        {
+          "name": "href",
+          "description": "The link to another page or section in the same page.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "description": "The text to display and needs to be related to the link.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "decoration",
+          "description": "The decorative illustration to provide visual aid to the link.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "description": "The type of action link.",
+          "type": "\"standard\"|\"stacked\"",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "standardTemplate",
+          "type": "TemplateResult<1>"
+        },
+        {
+          "name": "stackedTemplate",
+          "type": "TemplateResult<1>"
+        },
+        {
+          "name": "link",
+          "attribute": "link",
+          "description": "Use `href` attribute.",
+          "type": "string",
+          "deprecated": true
+        },
+        {
+          "name": "href",
+          "attribute": "href",
+          "description": "The link to another page or section in the same page.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "The text to display and needs to be related to the link.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "decoration",
+          "attribute": "decoration",
+          "description": "The decorative illustration to provide visual aid to the link.",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of action link.",
+          "type": "\"standard\"|\"stacked\"",
+          "default": "\"standard\""
+        }
+      ]
+    },
+    {
+      "name": "ns-accordion",
+      "description": "Accordion enables users to expand and collapse multiple sections of content.",
+      "attributes": [
+        {
+          "name": "type",
+          "description": "The type of the accordion.",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "slottedStyles"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "description": "The type of the accordion.",
+          "type": "string",
+          "default": "\"standard\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "heading",
+          "description": "The heading of the accordion that relates to the sections of content.\nHeading level depends on its place in the semantics of the page."
+        },
+        {
+          "name": "",
+          "description": "The anonymous slot for group of related expanders."
+        }
+      ]
+    }
+  ]
+}

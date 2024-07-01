@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { styleMap } from 'lit/directives/style-map.js';
 import { classMap } from 'lit/directives/class-map.js';
-import ceDoc from '@connectedhomes/nucleus/ce-doc.json';
+import { ceJsDoc } from '../scripts/custom-elements';
 
 export class NucleusComponentRenderer extends LitElement {
 
@@ -117,7 +117,7 @@ export class NucleusComponentRenderer extends LitElement {
 
   willUpdate() {
     if (this.name) {
-      this._customElement = ceDoc.find((ce) => ce.name === this.name);
+      this._customElement = ceJsDoc.find((ce) => ce.name === this.name);
     }
   }
 

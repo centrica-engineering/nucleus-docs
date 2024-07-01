@@ -11,6 +11,10 @@
     {
       "name": "ns-media-group",
       "badge": "new"
+    },
+    {
+      "name": "ns-frame",
+      "badge": "new"
     }
   ]
 }
