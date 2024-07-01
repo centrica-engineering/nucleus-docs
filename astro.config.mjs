@@ -98,7 +98,7 @@ export default defineConfig({
       },
       editLink: {
         baseUrl:
-          "https://github.com/centrica-engineering/nucleus-docs/edit/astro-docs/",
+          "https://github.com/centrica-engineering/nucleus-docs/edit/main/",
       },
       customCss: [
         "./src/styles/custom.css",
