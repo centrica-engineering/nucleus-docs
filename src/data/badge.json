@@ -1,10 +1,6 @@
 {
   "components": [
     {
-      "name": "ns-landmark",
-      "badge": "updated"
-    },
-    {
       "name": "ns-lockup",
       "badge": "updated"
     },
