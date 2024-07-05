@@ -12,7 +12,8 @@ export class NucleusComponentRenderer extends LitElement {
       _minHeight: { type: Number, state: true },
       zoom: { type: Boolean },
       _viewport: { type: String, state: true },
-      _customElement: { type: Object, state: true }
+      _customElement: { type: Object, state: true },
+      _loading: { type: Boolean }
     }
   }
 
@@ -113,6 +114,7 @@ export class NucleusComponentRenderer extends LitElement {
     this._minHeight = 200;
     this._viewport = 'desktop';
     this.zoom = '75';
+    this._loading = false;
   }
 
   willUpdate() {
@@ -150,36 +152,52 @@ export class NucleusComponentRenderer extends LitElement {
         </div>
       </ns-panel>
     `;
+
+    /* TODO: @mekala - 2024-07-05 - temporary fix - change the logic to component placement of `body` tag */
+    const mainWrapper = this.name === 'ns-frame' ? wrapper : `
+      <main id="content">
+        ${wrapper}
+      </main>
+    `;
+
     return `
       <head>
         <script src="https://www.britishgas.co.uk/nucleus/nucleus.min.js" type="text/javascript"></script>
       </head>
-      <body>
-        <main class="ndsn" id="content">
-          ${wrapper}
-        </main>
+      <body class="ndsn">
+        ${mainWrapper}
       </body>
     `;
   }
 
   firstUpdated() {
     super.firstUpdated();
+    this._onIframeLoad();
     const viewports = this.shadowRoot.querySelectorAll('input[name="viewport"]');
     viewports?.forEach((viewport) => {
       viewport.checked = viewport.value === this._viewport;
-      viewport.addEventListener('change', (event) => this._viewport = event.target.value);
+      viewport.addEventListener('change', (event) => {
+        this._loading = true;
+        this._viewport = event.target.value;
+      });
     });
 
     const zoomOptions = this.shadowRoot.querySelectorAll('input[name="zoom"]');
     zoomOptions?.forEach((zoomOption) => {
       zoomOption.checked = zoomOption.value === this.zoom;
-      zoomOption.addEventListener('change', (event) => this.zoom =  event.target.value );
+      zoomOption.addEventListener('change', (event) => {
+        this._loading = true;
+        this.zoom =  event.target.value;
+      });
     });
   }
 
-  updated() {
+  updated(changedProperties) {
     super.updated();
-    this._onIframeLoad();
+    if (changedProperties?.length > 0 && this._loading) {
+      this._loading = false;
+      this._onIframeLoad();
+    }
   }
 
   _onIframeLoad() {
@@ -246,7 +264,10 @@ export class NucleusComponentRenderer extends LitElement {
           height="100%"
           allowfullscreen
           sandbox="allow-scripts allow-same-origin"
-          @load=${() => setTimeout(() => this._onIframeLoad(), 300)}
+          @load=${() => setTimeout(() => {
+            this._loading = true;
+            this._onIframeLoad();
+          }, 300)}
         ></iframe>
       </div>
     `;
