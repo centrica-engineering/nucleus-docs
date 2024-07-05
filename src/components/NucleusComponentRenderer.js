@@ -152,14 +152,20 @@ export class NucleusComponentRenderer extends LitElement {
         </div>
       </ns-panel>
     `;
+
+    /* TODO: @mekala - 2024-07-05 - temporary fix - change the logic to component placement of `body` tag */
+    const mainWrapper = this.name === 'ns-frame' ? wrapper : `
+      <main id="content">
+        ${wrapper}
+      </main>
+    `;
+
     return `
       <head>
         <script src="https://www.britishgas.co.uk/nucleus/nucleus.min.js" type="text/javascript"></script>
       </head>
-      <body>
-        <main class="ndsn" id="iframe-content">
-          ${wrapper}
-        </main>
+      <body class="ndsn">
+        ${mainWrapper}
       </body>
     `;
   }
@@ -198,7 +204,7 @@ export class NucleusComponentRenderer extends LitElement {
     const iframe = this.shadowRoot.querySelector('.example-iframe');
     if (iframe) {
       const iframeDoc = iframe.contentWindow.document;
-      const main = iframeDoc.getElementById('iframe-content');
+      const main = iframeDoc.getElementById('content');
       this._minHeight = main?.offsetHeight;
 
       const clickables = iframeDoc?.body?.querySelectorAll('[href^="#"]');
