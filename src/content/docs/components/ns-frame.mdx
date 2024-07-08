@@ -70,3 +70,44 @@ The `ns-frame` component comprises a header and buttons that are adjacent to an 
 ### Specification
 
 <Specification name={componentName} />
+
+#### Specification notes
+
+##### Buttons structure
+
+```json
+[
+  {
+    "icon" : "meter",
+    "label" : "Meters",
+    "url" : "/url/to/meter/page"
+  }
+  ...
+]
+```
+
+##### Menu structure
+
+```json
+[
+  {
+    "label" : "Energy account",
+    "data" : [
+      {
+        "label" : "Address",
+        "value" : "123 Kings Road, Townsville, AA12 3BB",
+        "links" : [
+          {
+            "label" : "Switch address",
+            "url" : "/url/to/switch-address",
+            "icon" : "location"
+          },
+          ...
+        ]
+      },
+      ...
+    ]
+  },
+  ...
+]
+```
