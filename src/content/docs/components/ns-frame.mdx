@@ -24,29 +24,21 @@ The `ns-frame` component comprises a header and buttons that are adjacent to an 
 ## Guidance
 
 :::do
-
-- Keep labels short, ideally single words.
-- Minimise the number of menu options.
-- Strive for concise labels.
+- Keep button labels short and concise, ideally single words.
 - Ensure labels are composed of words that resonate with customers.
-- Use this as the primary navigation.
-- Utilise the account menu in the header for customer account management items.
-- Employ menu items as overarching categories for customer content.
+- Keep the data in the menu to a minimum.
+- Use the menu for customer account management.
 
 :::
 
 :::dont
-
-- Nest one navigation within another – it can confuse the user experience.
-- Use business terminology for the labels on the navigation.
-- Hide navigation items unless absolutely necessary.
-- Use menu items to link to pages outside of the logged-in experience.
-- Place core account management items within the left-hand menu.
-- Incorporate actions as navigation menu items.
-
+- Use business terminology for the button labels.
+- Hide header unless using within an app.
+- Use buttons to link to pages outside of `ns-frame`.
+- Place customer account management links within the buttons.
 :::
 
-### All examples
+### Standard
 
 ![Labelled diagram of ns-frame](@assets/components/ns-frame/guidance.webp)
 
@@ -54,12 +46,12 @@ The `ns-frame` component comprises a header and buttons that are adjacent to an 
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">A</span> | Header | Frames the top of the page with a logo and an interactive icon. This icon, along with its label, does not serve general navigation purposes. Instead, it activates a drop-down menu that presents items such as account information. There are also various Search options to choose from - refer to the [examples](/components/ns-frame#examples) provided above. |
-| <span class="marker">B</span> | Buttons | Each button includes an icon and a label and has states for active, hover, and selected. All buttons are contained within the menu, which becomes scrollable when the number of buttons exceeds the visible space. There is also the flexibility to hide all items, display as few as two, or show many items in the menu. |
+| <span class="marker">A</span> | Header | At the top of the page with the Search and Account buttons. Header can be presented with options like hide header, show search and hide menu. Refer to the [Specification](#specification) for how to use these options. |
+| <span class="marker">B</span> | Buttons | Each button includes an icon and a label and an associated url.  When the number of buttons exceeds the visible space, it becomes scrollable. There is an option to hide the buttons. Refer to the [Specification] (#specification) for how to use this option.|
 | <span class="marker">C</span> | Menu scroll chevrons | These are interactive elements that provide visual cues and a method to navigate through the menu of buttons. This allows buttons positioned outside the visible area to be scrolled into view. These chevrons will automatically disappear if the number of buttons fits within the visible area. |
-| <span class="marker">D</span> | Anonymous slot | Include headings, lists and paragraphs. Divide content into short paragraphs as it is easier to consume, and aids effective page scanning. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. This should be followed by the [nsx-footer](/components/nsx-footer) to indicate the end of the page. |
-| <span class="marker">E</span> | Search | The search feature can be displayed and allows personalisation based on the account credentials. |
-| <span class="marker">F</span> | Account | Include relevant account information in the bubble that appears when the Account icon and label are clicked.  |
+| <span class="marker">D</span> | Anonymous slot | To contain [`<ns-panel>`](/components/ns-panel). Pay attention to how the content displays at all resolutions. [`<nsx-footer>`](/components/nsx-footer) should be the last component. |
+| <span class="marker">E</span> | Search | When Search is shown, it will contain the value of the `name` attribute, allowing for personalisation. Refer to the [`show-search` attribute](##specification-attribute-show-search) on how to use this option. |
+| <span class="marker">F</span> | Menu | Include relevant account information in the menu that appears when the Account button is clicked.  |
 
 ## Implementation
 
