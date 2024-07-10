@@ -8,6 +8,7 @@ import Specification from '@components/specification.astro';
 import Placement from '@components/placement.astro';
 import CompDetails from '@components/cem-description.astro';
 import ExampleViewer from '@components/ExampleViewer.astro';
+import LinkToComponent from '@components/LinkToComponent.astro';
 import RelatedLinks from '@components/related-links.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
@@ -15,7 +16,10 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 <CompDetails name={componentName} />
 
-The `ns-frame` component comprises a header and buttons that are adjacent to an anonymous content area. When a button is clicked, it navigates through the content. This component should not be used in conjunction with the `ns-header`. It is particularly useful in scenarios such as when a user is logged into their account.
+The `ns-frame` component comprises navigational `buttons`, customer account management `menu` and `content` area. Each of the button is mapped to different content for the specific context. 
+The account menu holds group of related links for customer account management. 
+
+It is useful in scenarios such as when a user is logged into their account.
 
 ### Examples
 
@@ -28,7 +32,6 @@ The `ns-frame` component comprises a header and buttons that are adjacent to an 
 - Ensure labels are composed of words that resonate with customers.
 - Keep the data in the menu to a minimum.
 - Use the menu for customer account management.
-
 :::
 
 :::dont
@@ -36,6 +39,7 @@ The `ns-frame` component comprises a header and buttons that are adjacent to an 
 - Hide header unless using within an app.
 - Use buttons to link to pages outside of `ns-frame`.
 - Place customer account management links within the buttons.
+- Use in conjunction with `nsx-header` or `ns-header`.
 :::
 
 ### Standard
@@ -46,12 +50,10 @@ The `ns-frame` component comprises a header and buttons that are adjacent to an 
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">A</span> | Header | At the top of the page with the Search and Account buttons. Header can be presented with options like hide header, show search and hide menu. Refer to the [Specification](#specification) for how to use these options. |
-| <span class="marker">B</span> | Buttons | Each button includes an icon and a label and an associated url.  When the number of buttons exceeds the visible space, it becomes scrollable. There is an option to hide the buttons. Refer to the [Specification] (#specification) for how to use this option.|
-| <span class="marker">C</span> | Menu scroll chevrons | These are interactive elements that provide visual cues and a method to navigate through the menu of buttons. This allows buttons positioned outside the visible area to be scrolled into view. These chevrons will automatically disappear if the number of buttons fits within the visible area. |
-| <span class="marker">D</span> | Anonymous slot | To contain [`<ns-panel>`](/components/ns-panel). Pay attention to how the content displays at all resolutions. [`<nsx-footer>`](/components/nsx-footer) should be the last component. |
-| <span class="marker">E</span> | Search | When Search is shown, it will contain the value of the `name` attribute, allowing for personalisation. Refer to the [`show-search` attribute](##specification-attribute-show-search) on how to use this option. |
-| <span class="marker">F</span> | Menu | Include relevant account information in the menu that appears when the Account button is clicked.  |
+| <span class="marker">A</span> | Account menu | The list of links and needs to be grouped into sections with related labels. Refer to [menu structure](#menu-structure). |
+| <span class="marker">B</span> | Search | When Search is shown, it will contain the value of the `name` attribute, allowing for personalisation. Refer to [`show-search`](#specification-attribute-show-search).|
+| <span class="marker">C</span> | Buttons | Each button includes an icon and a label and an associated url.  When the number of buttons exceeds the visible space, it becomes scrollable. There is an option to hide the buttons. Refer to [`hide-buttons`](#specification-attribute-hide-buttons).|
+| <span class="marker">D</span> | Anonymous slot | To contain `<main>` element with relavent content. Refer to [Anonymous slot](#anonymous-slot) for the list of components that can be placed within `<main>` element. Pay attention to how the content displays at all resolutions.|
 
 ## Implementation
 
@@ -103,3 +105,17 @@ The `ns-frame` component comprises a header and buttons that are adjacent to an 
   ...
 ]
 ```
+
+##### Anonymous slot
+
+The `<main>` element should have,
+
+- <LinkToComponent name="ns-panel" />
+- <LinkToComponent name="ns-footer" /> or <LinkToComponent name="nsx-footer" />
+
+Optionally the `<main>` element could have,
+
+- <LinkToComponent name="ns-skyline" />
+- <LinkToComponent name="ns-landmark" />
+- <LinkToComponent name="ns-editorial" />
+- <LinkToComponent name="ns-tabs" />
