@@ -46,12 +46,10 @@ The `ns-frame` component comprises a header and buttons that are adjacent to an 
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">A</span> | Header | At the top of the page with the Search and Account buttons. Header can be presented with options like hide header, show search and hide menu. Refer to the [Specification](#specification) for how to use these options. |
-| <span class="marker">B</span> | Buttons | Each button includes an icon and a label and an associated url.  When the number of buttons exceeds the visible space, it becomes scrollable. There is an option to hide the buttons. Refer to the [Specification] (#specification) for how to use this option.|
-| <span class="marker">C</span> | Menu scroll chevrons | These are interactive elements that provide visual cues and a method to navigate through the menu of buttons. This allows buttons positioned outside the visible area to be scrolled into view. These chevrons will automatically disappear if the number of buttons fits within the visible area. |
+| <span class="marker">A</span> | Account menu | Include relevant account management information in the menu that appears when the Account button is clicked.  |
+| <span class="marker">B</span> | Search | When Search is shown, it will contain the value of the `name` attribute, allowing for personalisation. Refer to the [`show-search` attribute](##specification-attribute-show-search) on how to use this option. |
+| <span class="marker">C</span> | Buttons | Each button includes an icon and a label and an associated url.  When the number of buttons exceeds the visible space, it becomes scrollable. There is an option to hide the buttons. Refer to the [Specification] (#specification) for how to use this option.|
 | <span class="marker">D</span> | Anonymous slot | To contain [`<ns-panel>`](/components/ns-panel). Pay attention to how the content displays at all resolutions. [`<nsx-footer>`](/components/nsx-footer) should be the last component. |
-| <span class="marker">E</span> | Search | When Search is shown, it will contain the value of the `name` attribute, allowing for personalisation. Refer to the [`show-search` attribute](##specification-attribute-show-search) on how to use this option. |
-| <span class="marker">F</span> | Menu | Include relevant account information in the menu that appears when the Account button is clicked.  |
 
 ## Implementation
 
