@@ -1,8 +1,9 @@
 ---
 import LinkToComponent from "./LinkToComponent.astro";
 const { name } = Astro.props;
-import jsdoc from "@connectedhomes/nucleus/ce-doc.json";
-const placements = jsdoc.find((tag) => tag.name === name)?.placements;
+import { ceJsDoc } from "../scripts/custom-elements";
+
+const placements = ceJsDoc.find((tag) => tag.name === name)?.placements;
 
 ---
 {

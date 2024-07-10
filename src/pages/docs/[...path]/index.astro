@@ -1,12 +1,12 @@
 ---
-import cesm from '@connectedhomes/nucleus/custom-elements.json';
+import { customElements } from "../../../scripts/custom-elements";;
 
 const { path } = Astro.params;
 const { redirect } = Astro.props;
 const redirectPath = redirect ? redirect : path;
 
 export function getStaticPaths() {
-  const componentsPath = cesm.tags.map((tag) => {
+  const componentsPath = customElements.tags.map((tag) => {
     return {
       params: {
         path: `components/${tag.name}`

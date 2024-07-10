@@ -1,8 +1,8 @@
 ---
 const { name } = Astro.props;
 
-import cem from "@connectedhomes/nucleus/custom-elements.json";
-const compDetails = cem.tags.find((tag) => tag.name === name);
+import { customElements } from "../scripts/custom-elements";
+const compDetails = customElements.tags.find((tag) => tag.name === name);
 ---
 
 <div class="purpose">

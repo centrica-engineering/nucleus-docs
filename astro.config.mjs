@@ -4,12 +4,11 @@ import starlightDocSearch from '@astrojs/starlight-docsearch';
 import lit from "@astrojs/lit";
 import { rehypeHeadingIds } from '@astrojs/markdown-remark';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import customElements from "@connectedhomes/nucleus/ce-doc.json";
-import cem from "@connectedhomes/nucleus/custom-elements.json";
+import { customElements, ceJsDoc } from "./src/scripts/custom-elements";
 import badges from "./src/data/badge.json";
 import { nucleusRemarkAside } from "./src/plugins/nucleus-remark-aside";
 
-const isDeprecated = (componentName) =>  cem.tags.find((tag) => tag.name === componentName)?.deprecated;
+const isDeprecated = (componentName) => customElements.tags.find((tag) => tag.name === componentName)?.deprecated;
 const badge = (componentName) => {
   const componentBadge = badges.components?.find((component) => component.name === componentName)?.badge;
   return {
@@ -22,7 +21,7 @@ const componentSidebar = () => {
     label: "Components",
     collapsed: true,
     items: [
-      ...customElements.filter((customElement) => !customElement.category && !isDeprecated(customElement.name))
+      ...ceJsDoc.filter((customElement) => !customElement.category && !isDeprecated(customElement.name))
       .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
       .map((customElement) => {
         return {
@@ -34,7 +33,7 @@ const componentSidebar = () => {
       {
         label: "Form",
         items: 
-          customElements.filter((customElement) => customElement.category === 'Form' && !isDeprecated(customElement.name))
+          ceJsDoc.filter((customElement) => customElement.category === 'Form' && !isDeprecated(customElement.name))
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
           .map((customElement) => {
             return {
@@ -47,7 +46,7 @@ const componentSidebar = () => {
       {
         label: "Experience",
         items: 
-          customElements.filter((customElement) => customElement.category === 'Experience' && !isDeprecated(customElement.name))
+          ceJsDoc.filter((customElement) => customElement.category === 'Experience' && !isDeprecated(customElement.name))
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
           .map((customElement) => {
             return {
@@ -60,10 +59,10 @@ const componentSidebar = () => {
       {
         label: "Deprecated",
         items: 
-          cem.tags.filter((tag) => tag.deprecated)
+          customElements.tags.filter((tag) => tag.deprecated)
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
           .map((tag) => {
-            const customElement = customElements.find((customElement) => customElement.name === tag.name);
+            const customElement = ceJsDoc.find((customElement) => customElement.name === tag.name);
             return {
               label: customElement['display-name'],
               link: `/components/${customElement.name}`

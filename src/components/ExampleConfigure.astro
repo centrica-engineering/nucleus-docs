@@ -4,15 +4,13 @@ const { componentName } = Astro.props;
 import { NucleusComponentRenderer } from './NucleusComponentRenderer';
 import { NucleusCodeSnippet } from './NucleusCodeSnippet';
 
-import customElements from '@connectedhomes/nucleus/ce-doc.json';
-import cesm from '@connectedhomes/nucleus/custom-elements.json';
+import { customElements } from "../scripts/custom-elements";
 import { iconOptions, illustrationOptions } from '@scripts/assets';
 
-const customElement = customElements.find((customElement) => customElement.name === componentName);
-const cem = cesm.tags.find((tag) => tag.name === componentName);
+const customElement = customElements.tags.find((tag) => tag.name === componentName);
 const htmlContent = Astro.props.src;
 
-const attributes = cem?.attributes;
+const attributes = customElement?.attributes;
 const typeAttributeIndex = attributes?.findIndex((attribute) => attribute.name === 'type');
 const typeAttribute = attributes?.splice(typeAttributeIndex, 1);
 attributes?.splice(0, 0, typeAttribute[0]);
@@ -158,12 +156,12 @@ attributes?.splice(0, 0, typeAttribute[0]);
       <button class="button reset" id="reset-config">Reset</button>
     </div>
   {
-    cem?.attributes && (
+    customElement?.attributes && (
       <h3>Attributes</h3>
     )
   }
   {
-    cem?.attributes?.map((attribute) => {
+    customElement?.attributes?.map((attribute) => {
       const defaultValue = attribute.default?.replaceAll('"', '');
       if (attribute.type === 'string') {
         if (attribute.name === 'icon' || (componentName === 'ns-icon' && attribute.name === 'name') || (componentName !== 'ns-icon' && attribute.description?.includes('icon'))) {
@@ -256,12 +254,12 @@ attributes?.splice(0, 0, typeAttribute[0]);
     })
   }
   {
-    cem.slots && (
+    customElement.slots && (
       <h3>Slots</h3>
     )
   }
   {
-    cem.slots?.map((slot) => {
+    customElement.slots?.map((slot) => {
       return (
         <div class="slot-elements">
           <label>{slot.name !== '' ? slot.name : 'Anonymous slot' }</label>

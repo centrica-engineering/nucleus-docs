@@ -1,11 +1,11 @@
 ---
 import LinkToComponent from "./LinkToComponent.astro";
 const { name } = Astro.props;
-import cem from "@connectedhomes/nucleus/custom-elements.json";
-import jsdoc from "@connectedhomes/nucleus/ce-doc.json";
 
-const compDetails = cem.tags.find((tag) => tag.name === name);
-const jsdocDetails = jsdoc.find((tag) => tag.name === name);
+import { customElements, ceJsDoc } from "../scripts/custom-elements";
+
+const compDetails = customElements.tags.find((tag) => tag.name === name);
+const jsdocDetails = ceJsDoc.find((tag) => tag.name === name);
 
 const properties = compDetails?.properties;
 const slots = jsdocDetails?.slots;
