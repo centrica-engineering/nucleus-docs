@@ -1,11 +1,25 @@
 ---
 const { name } = Astro.props;
+const nestedElements = name.split(' > ');
 ---
 
 {
-  name?.startsWith('ns') ? (
-  <a href=`/components/${name}`><code>&lt;{name}&gt;</code></a>
-  ) : (
-  <code>&lt;{name}&gt;</code>
+  nestedElements && (
+    nestedElements?.reverse().map((element, index) => {
+      return (
+        <span>
+          {
+            (index > 0) && (<span> wrapped in </span>)
+          }
+          {
+            element?.startsWith('ns') ? (
+            <a href=`/components/${element}`><code>&lt;{element}&gt;</code></a>
+            ) : (
+            <code>&lt;{element}&gt;</code>
+            )
+          }
+        </span>
+      )
+    })
   )
 }
