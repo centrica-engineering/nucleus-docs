@@ -11,8 +11,9 @@ const compDetails = customElements.tags.find((tag) => tag.name === name);
 <button class="button secondary sparkle">Summarise it!</button>
 <div class="tldr-info">
   <div class="tldr-warning">
-    ✨ This is an auto-generated AI summary of the {compDetails?.name ?? 'components'}'s documentation.
-    It may not be accurate. ✨
+    ✨ This is an auto-generated AI summary of the {
+      compDetails?.name ?? "components"
+    }'s documentation. It may not be accurate. ✨
   </div>
   <div class="tldr-content"></div>
 </div>
@@ -60,13 +61,8 @@ const compDetails = customElements.tags.find((tag) => tag.name === name);
           }
 
           value = JSON.parse(value.split("data: ")[1]).response;
-
-          if (value === "\n") {
-            value = "</p><p>";
-          }
-
-          if (tldrContent.innerHTML === "") {
-            value = "<p>" + value;
+          if (value.includes("\n")) {
+            value = value.trim() + "<br />";
           }
 
           tldrContent.innerHTML += value;
