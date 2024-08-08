@@ -65,10 +65,6 @@ const compDetails = customElements.tags.find((tag) => tag.name === name);
             value = value.trim() + "<br />";
           }
 
-          if (tldrContent.innerHTML === "") {
-            value = value;
-          }
-
           tldrContent.innerHTML += value;
           return pump();
         });
