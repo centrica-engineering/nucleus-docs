@@ -321,6 +321,12 @@ main {
     border: 2px solid var(--sl-color-hairline-shade);
     border-radius: 0.25rem;
     background-color: var(--sl-color-gray-7);
+
+    & br {
+      margin-top: 1rem;
+      width: 100%;
+      display: block;
+    }
   }
 
   .tldr-warning {
