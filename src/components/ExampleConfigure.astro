@@ -263,7 +263,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
       return (
         <div class="slot-elements">
           <label>{slot.name !== '' ? slot.name : 'Anonymous slot' }</label>
-          <textarea name={slot.name !== '' ? slot.name : 'default'}></textarea>
+          <textarea rows="1" name={slot.name !== '' ? slot.name : 'default'}></textarea>
         </div>
       );
     })
@@ -367,8 +367,14 @@ attributes?.splice(0, 0, typeAttribute[0]);
   textarea {
     font-size: 0.85rem;
     font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;
-    padding-block: 0.36278125rem !important;
+    padding-block: 0.25rem !important;
     resize: vertical;
+    field-sizing: content;
+    max-height: 90svh;
+
+    &[name="default"] {
+      min-height: calc(0.5rem + 7lh);
+    }
   }
 
   @media (width <= 75rem) {
