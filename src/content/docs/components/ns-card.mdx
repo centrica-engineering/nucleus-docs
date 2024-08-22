@@ -21,49 +21,57 @@ Cards are to be used to apply a container around a related grouping of informati
 
 <Tabs>
   <TabItem label="Standard">
+    To group content within a visual container.
     <ExampleViewer type="standard" />
   </TabItem>
-  <TabItem label="Section">
-    To navigate users to the primary actions in the page.
-    <ExampleViewer type="section" />
+  <TabItem label="Standard + illustration">
+    To add an illustrative icon to the card to illustrate the content of the card.
+    <ExampleViewer type="standard-illustration" />
   </TabItem>
-  <TabItem label="Support">
-    To provide additional or supporting information about the actions in the page.
+  <TabItem label="Standard + image">
+    To add an image to the card to illustrate the content of the card.
+    <ExampleViewer type="standard-image" />
+  </TabItem>
+  <TabItem label="Standard + pill">
+    To highlight a status or characteristic of a card
     <Tabs>
-      <TabItem label="Support">
-        <ExampleViewer type="support" />
+      <TabItem label="Standard + pill">
+      To add an image to the card to illustrate the content of the card.
+      <ExampleViewer type="standard-pill" />
       </TabItem>
-      <TabItem label="with image">
-        <ExampleViewer type="support-image" />
-      </TabItem>
-      <TabItem label="with pill over image">
-        <p>To place the pill over the image using the [`pill-over-image`](#specification-attributes-pill-over-image) attribute.</p>
-        <ExampleViewer type="support-pill-over-image" />
+      <TabItem label="Standard + pill over image">
+      To add an image to the card to illustrate the content of the card.
+      <ExampleViewer type="standard-pill-over-image" />
       </TabItem>
     </Tabs>
-  </TabItem>
+  </TabItem>   
   <TabItem label="Flat">
-    To group content and action that are part of the page.
+    To group content only using proximity, with no visual background.
     <ExampleViewer type="flat" />
-  </TabItem>
+  </TabItem>    
+  <TabItem label="Support">
+    To get a different responsive behaviour on narrower viewports/layouts.
+    <ExampleViewer type="support" />
+  </TabItem>    
 </Tabs>
 
 ## Guidance
 
 :::do
+- Use to group content that belongs together about a specific item, action, etc..
 - Use to direct customers to the actions.
 - Embolden text in the paragraph that is important.
 - Make the [CTA](/components/ns-cta) (Call To Action) wording unique, stating the action.
-- Use [section cards](#section) to navigate users to primary actions.
+- The visual in the image or illustration should be related to the content of the card
 - Consider adding a [decoration](/components/ns-panel/#specification-attribute-decoration) to the panel to emphasise the cards.
+- Use "support" type in a one-column layout at basketball-court when you have 3 elements in a row to avoid widow cards and empty spaces on small to medium viewports.
 :::
 
 :::dont
 - Mix different card types in a row.
 - Have more than one CTA on a card.
 - Repeat the CTA wording on each card.
-- Use inline links in the paragraph.
-- Use the section card without a decoration.
+- Use support type cards in 2 column layouts at basketball (use standard cards or set layout to 1 column)
 - Use in place of the [`<ns-product-card>`](/components/ns-product-card) component.
 :::
 
