@@ -1,6 +1,10 @@
 {
   "components": [
     {
+      "name": "ns-card",
+      "badge": "updated"
+    },
+    {
       "name": "ns-landmark",
       "badge": "updated"
     },
