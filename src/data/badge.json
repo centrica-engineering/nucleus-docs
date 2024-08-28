@@ -1,16 +1,12 @@
 {
   "components": [
     {
+      "name": "ns-card",
+      "badge": "updated"
+    },
+    {
       "name": "ns-landmark",
       "badge": "updated"
-    },
-    {
-      "name": "ns-lockup",
-      "badge": "updated"
-    },
-    {
-      "name": "ns-media-group",
-      "badge": "new"
     },
     {
       "name": "ns-frame",
