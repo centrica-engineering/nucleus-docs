@@ -53,6 +53,8 @@
   --ns-color-red-high: hsl(var(--ns-hue-red), 99%, 97%);
   --ns-color-green-low: hsl(var(--ns-hue-green), 43%, 16%);
   --ns-color-green-high: hsl(var(--ns-hue-green), 43%, 97%);
+  --ns-color-pink-low: hsl(var(--ns-hue-pink), 43%, 16%);
+  --ns-color-pink-high: hsl(var(--ns-hue-pink), 43%, 97%);
 
   /* Map Nucleus colours to Starlight variables */
 
@@ -188,6 +190,8 @@
   --ns-color-red-low: hsl(var(--ns-hue-red), 99%, 97%);
   --ns-color-green-high: hsl(var(--ns-hue-green), 43%, 23%);
   --ns-color-green-low: hsl(var(--ns-hue-green), 43%, 97%);
+  --ns-color-pink-high: hsl(var(--ns-hue-pink), 43%, 23%);
+  --ns-color-pink-low: hsl(var(--ns-hue-pink), 43%, 97%);
 }
 
 main {
