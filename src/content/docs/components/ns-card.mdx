@@ -18,6 +18,13 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 Cards are to be used to apply a container around a related grouping of information. Achieve this through a combination of imagery, illustrations and typography.
 
 :::updated
+**8 September 2024**
+
+Additional feature for an `inactive` state has been added:
+
+- This feature is used to indicate that the card contains content that is inactive.
+- The `inactive` state is applied to the card by adding the `inactive` attribute to the card element.
+
 **28 August 2024**
 
 The card component has been simplified:
@@ -52,6 +59,10 @@ The card component has been simplified:
       <TabItem label="with pill over image">
         To add a pill that is over the image.
         <ExampleViewer type="standard-pill-over-image" />
+      </TabItem>
+      <TabItem label="is inactive">
+        To indicate that the card contains content that is inactive.
+        <ExampleViewer type="standard-inactive" />
       </TabItem>
     </Tabs>
   </TabItem>   
