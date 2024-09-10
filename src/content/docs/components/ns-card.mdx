@@ -18,6 +18,13 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 Cards are to be used to apply a container around a related grouping of information. Achieve this through a combination of imagery, illustrations and typography.
 
 :::updated
+**8 September 2024**
+
+Additional feature for an `inactive` state has been added:
+
+- This feature is used to indicate that the card contains content that is inactive.
+- The `inactive` state is applied to the card by adding the `inactive` attribute to the card element.
+
 **28 August 2024**
 
 The card component has been simplified:
@@ -52,6 +59,10 @@ The card component has been simplified:
       <TabItem label="with pill over image">
         To add a pill that is over the image.
         <ExampleViewer type="standard-pill-over-image" />
+      </TabItem>
+      <TabItem label="is inactive">
+        To indicate that the card contains content that is inactive.
+        <ExampleViewer type="standard-inactive" />
       </TabItem>
     </Tabs>
   </TabItem>   
@@ -141,13 +152,21 @@ The support card has a responsive behaviour at basketball-court viewport, to ena
 
 <Specification name={componentName} />
 
-#### Specification notes
+## Accessibility
 
-#### `<ns-pill>`
+### `inactive`
 
-To add a [`<ns-pill>`](/components/ns-pill) to the card it needs to be placed inside one of the slots. Be careful about using it within the heading slot, as the pill content will be read out as part of the heading for screen readers.
+The [`inactive`](#specification-attribute-inactive) attribute indicates that the card's content is inactive. The card will appear greyed-out to indicate this to a sighted user.
 
-##### Screen readers with ns-pill
+For a screen reader user the value of [`inactive-message`](#specification-attribute-inactive-message) provides context about why the content is inactive. This message will be read out by screen readers after announcing the heading. This `inactive-message` is hidden from sighted users.
+
+### `<ns-pill>`
+
+Be careful adding [`<ns-pill>`](/components/ns-pill) within the heading slot, as the content of the pill will be read out as part of the heading for screen readers.
+
+In this example using Safari on a Mac with VoiceOver it will read out:
+
+> Heading level 3, 2 items - Special Offer Get energy with us. You are currently on a heading level 3.
 
 ```html
 <ns-card>
@@ -159,4 +178,6 @@ To add a [`<ns-pill>`](/components/ns-pill) to the card it needs to be placed in
 </ns-card>
 ```
 
-In the above example the screen reader will read out "Special Offer Get energy with us". Make sure that is what is expected. Remember the pill cannot be used on its own within a heading. Our advice is to rarely put pills in headings as they are normally conveying a message related to the heading, but is not heading content.
+Make sure that is what is expected. Remember the pill cannot be used on its own within a heading.
+
+Our advice is to rarely include pills in headings, as they typically convey a message related to the heading but are not part of the heading content itself.
