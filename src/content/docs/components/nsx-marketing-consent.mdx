@@ -21,12 +21,16 @@ Use this experience pattern in any journey where there is a need to capture and 
 
 <Tabs>
   <TabItem label="Standard">
-      The default content as prescribed by the legal team.
-        <ExampleViewer type="standard" />
-  </TabItem>
-  <TabItem label="Custom">
-        The heading and first paragraph may be customised if the default content is not suitable.
-        <ExampleViewer type="standard-custom" />
+        <Tabs>
+          <TabItem label="Default content">
+          The default content as prescribed by the legal team.
+            <ExampleViewer type="standard" />
+          </TabItem>
+          <TabItem label="Custom content">
+            The heading and first paragraph may be customised if the default content is not suitable.
+            <ExampleViewer type="standard-custom" />
+         </TabItem>
+    </Tabs>
   </TabItem>
   <TabItem label="Light">
     The Light type uses less space. Further content is available via the helper.
