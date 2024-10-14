@@ -1,0 +1,62 @@
+---
+title: Scroller
+---
+
+export const componentName = "ns-scroller";
+
+import Specification from '@components/specification.astro';
+import Placement from '@components/placement.astro';
+import CompDetails from '@components/cem-description.astro';
+import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Overview
+
+<CompDetails name={componentName} />
+(Purpose, to be added dynamically:)
+Creates space for product upsells and recommendations, engaging users with a horizontally scrollable list to explore and choose from various options without extending the page length.
+
+### Examples (TBD)
+
+<ExampleViewer type="standard" />
+
+## Guidance
+
+:::do
+- Use when there are 2 or more items
+- Consider the position of the content. Items in the first few positions could be seen and interacted with more than those that are effectively hidden.
+- Use the same type of content for the entire scroller, (eg. all `ns-card` components with images and direct CTAs).
+:::
+
+:::dont
+- Use excessively long content. Users should not need to vertcially scroll in addition when horizontally scrolling.
+- Idealy use more than 9 items in one `ns-scroller` to keep cognitive load manageable for the user (Hick's law).
+- Override with with custom CSS for aesthetics, as this can cause issues elsewhere and creates technical debt.
+- Nest a `ns-scroller` within another.
+:::
+
+### Standard (Replace with ns-scroller image)
+
+![Labelled diagram of ns-scroller](@assets/components/ns-scroller/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Heading | Introduces an single instance or group of `ns-scroller` components. |
+| <span class="marker">B</span> | Controls | Helps the user navigate the list of items incrementally in both directions |
+| <span class="marker">C</span> | Content items | A list of same type components such as ns-cards, for the user to choose from. |
+| <span class="marker">D</span> | Pagination | Provides a visual indication to the user as to where they are in the list. (OMIT THIS FOR FIRST RELEASE!) |
+
+## Implementation
+
+### Placement
+
+<Placement name={componentName} />
+(Placement, to be added dynamically:)Within a `ns-panel`, or as a child of `main`.
+
+### Specification
+
+<Specification name={componentName} />
+(Spec, to be added dynamically:) Content types... `ns-action-link`, `ns-card`, `ns-video`...
