@@ -1,11 +1,11 @@
 ---
-import "/node_modules/@astrojs/starlight/style/props.css";
-import "/node_modules/@astrojs/starlight/style/reset.css";
-import "/node_modules/@astrojs/starlight/style/shiki.css";
-import "/node_modules/@astrojs/starlight/style/util.css";
-import "../../../../../styles/custom.css";
-import ExampleConfigure from "../../../../../components/ExampleConfigure.astro";
-import { customElements } from "../../../../../scripts/custom-elements";
+import '/node_modules/@astrojs/starlight/style/props.css';
+import '/node_modules/@astrojs/starlight/style/reset.css';
+import '/node_modules/@astrojs/starlight/style/shiki.css';
+import '/node_modules/@astrojs/starlight/style/util.css';
+import '../../../../../styles/custom.css';
+import ExampleConfigure from '../../../../../components/ExampleConfigure.astro';
+import { customElements } from '../../../../../scripts/custom-elements';
 
 const { component, type } = Astro.params;
 const { allTagNames } = Astro.props;
@@ -25,12 +25,10 @@ export function getStaticPaths() {
     "../../../../../assets/components/**/*.html",
   );
   const getComponentExample = (fileMatcher) => {
-    return Object.keys(examples)?.filter(
-      (example) => example.indexOf(fileMatcher) > -1,
-    );
+    return Object.keys(examples)?.filter((example) => example.indexOf(fileMatcher) > -1); 
   };
 
-  const allTagNames = customElements.tags
+  const allNames = customElements.tags
     .map((tag) => {
       return tag.name;
     })
@@ -42,16 +40,14 @@ export function getStaticPaths() {
     const componentExamples = getComponentExample(exampleComponentMatcher);
     if (componentExamples) {
       return componentExamples.map((componentExample) => {
-        const type = componentExample
-          ?.split(exampleComponentMatcher)[1]
-          .replaceAll(".html", "");
+        const type = componentExample?.split(exampleComponentMatcher)[1].replaceAll(".html", "");
         return {
           params: {
             component: tag.name,
             type,
           },
           props: {
-            allTagNames,
+            allTagNames: allNames,
           },
         };
       });
@@ -59,7 +55,7 @@ export function getStaticPaths() {
       return {
         params: {
           component: tag.name,
-          type: "standard",
+          type: 'standard',
           allTagNames,
         },
       };
@@ -67,6 +63,7 @@ export function getStaticPaths() {
   });
 }
 ---
+
 <!doctype html>
 <html lang="en" data-theme="light">
   <head>
