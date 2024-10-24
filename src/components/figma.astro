@@ -1,29 +1,28 @@
 ---
+
 import LinkToComponent from "./LinkToComponent.astro";
 const { name } = Astro.props;
 import { ceJsDoc } from "../scripts/custom-elements";
 
-// Define the URLs for different component names
-const urlFigmaUIKit = {
-    "https://www.figma.com/design/HdnAatpIIliZhoj6C77aHx/Nucleus-BritishGas---Components"
-};
+// Define the common URL for the Figma UI Kit that prepends the node ID
+const urlFigmaUIKit = "https://www.figma.com/design/HdnAatpIIliZhoj6C77aHx/Nucleus-BritishGas---Components";
+
+// Define the URL's node IDs for different component names
 const urlMap = {
   "ns-accordion": "?m=auto&node-id=1876-35073&t=IwNdEWK1sFgZAbou-1",
-  "ns-action-link": "https://www.figma.com/design/HdnAatpIIliZhoj6C77aHx/Nucleus-BritishGas---Components?m=auto&node-id=9877-14132&t=tCrpYDpDRQYfeXPd-1",
-  "ns-alert": "https://www.figma.com/design/HdnAatpIIliZhoj6C77aHx/Nucleus-BritishGas---Components?m=auto&node-id=10013-256&t=qbpKLSXtaKh2y90v-1"
+  "ns-action-link": "?m=auto&node-id=9877-14132&t=tCrpYDpDRQYfeXPd-1",
+  "ns-alert": "?m=auto&node-id=10013-256&t=qbpKLSXtaKh2y90v-1"
 };
 
-// Get the correct URL based on the component name - 2nd part is default if no urlMap name in list above
-const componentUrl = urlMap[name] || "https://www.figma.com/design/HdnAatpIIliZhoj6C77aHx/Nucleus-BritishGas---Components";
+// Get the correct URL based on the component name - last part after colon is the default if no urlMap name found
+const componentUrl = name in urlMap ? `${urlFigmaUIKit}${urlMap[name]}` : urlFigmaUIKit;
 ---
 
-{
 
-    <p>Please note that the <code>{name}</code> Figma component configuration instructions are available only to members of the British Gas workspace who have access to the Nucleus Figma UI Kit:
-    </p>
-    <p>
-        <a href={componentUrl}>Configuration instructions</a>
-    </p>
-      
-}
+<p>
+  Please note that the <code>{name}</code> Figma component configuration instructions are available only to members of the British Gas workspace who have access to the Nucleus Figma UI Kit:
+</p>
+<p>
+  <a href={componentUrl}>Configuration instructions</a>
+</p>
 
