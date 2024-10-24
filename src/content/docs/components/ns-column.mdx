@@ -11,6 +11,8 @@ import ExampleViewer from '@components/ExampleViewer.astro';
 import RelatedLinks from '@components/related-links.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+import Figma from '@components/figma.astro';
+
 ## Overview
 
 <CompDetails name={componentName} />
@@ -117,3 +119,7 @@ The markup would look like:
   <div>This will have width of 1</div>
 </ns-column>
 ```
+
+### Figma
+
+<Figma name={componentName} />
