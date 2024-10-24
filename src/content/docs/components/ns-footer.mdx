@@ -11,6 +11,8 @@ import ExampleViewer from '@components/ExampleViewer.astro';
 import RelatedLinks from '@components/related-links.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+import Figma from '@components/figma.astro';
+
 ## Overview
 
 <CompDetails name={componentName} />
@@ -51,3 +53,7 @@ The footer is the last component on the page and holds links and copyright notic
 ##### Section slot
 
 Use multiple `<ns-card>` of type `nav` to group the related footer links.
+
+### Figma
+
+<Figma name={componentName} />

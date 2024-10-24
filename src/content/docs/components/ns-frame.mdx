@@ -12,6 +12,8 @@ import LinkToComponent from '@components/LinkToComponent.astro';
 import RelatedLinks from '@components/related-links.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+import Figma from '@components/figma.astro';
+
 ## Overview
 
 <CompDetails name={componentName} />
@@ -125,3 +127,7 @@ Optionally the `<main>` element could have,
 - <LinkToComponent name="ns-landmark" />
 - <LinkToComponent name="ns-editorial" />
 - <LinkToComponent name="ns-tabs" />
+
+### Figma
+
+<Figma name={componentName} />
