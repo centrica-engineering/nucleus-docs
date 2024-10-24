@@ -66,11 +66,7 @@ const urlMap = {
 const componentUrl = name in urlMap ? `${urlFigmaUIKit}${urlMap[name]}` : urlFigmaUIKit;
 ---
 
-
-<p>
-  Please note that the <code>{name}</code> Figma component configuration instructions are available only to members of the British Gas workspace who have access to the Nucleus Figma UI Kit:
-</p>
-<p>
-  <a href={componentUrl}>Configuration instructions</a>
-</p>
+<p>Please note that the <code>{name}</code> Figma component configuration instructions are available only to members of the British Gas workspace who have access to the Nucleus Figma UI Kit:</p>
+<img src="/src/assets/components/generic/figma-logo.svg" alt="Figma logo" width="32">
+<p><a href={componentUrl}>Configuration instructions</a></p>
 
