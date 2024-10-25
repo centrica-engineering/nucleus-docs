@@ -64,7 +64,7 @@ const urlMap = {
 
 // Get the correct URL based on the component name - last part after colon is the default if no urlMap name found
 const componentUrl = name in urlMap ? `${urlFigmaUIKit}${urlMap[name]}` : urlFigmaUIKit;
-const inputterAdditionalUrl = "https://www.figma.com/design/HdnAatpIIliZhoj6C77aHx/Nucleus-BritishGas---Components?m=auto&node-id=1283-39959&t=0cyP8uC7iqnlpc2w-1";
+const inputterAdditionalUrl = `${urlFigmaUIKit}?m=auto&node-id=1283-39959&t=0cyP8uC7iqnlpc2w-1`;
 ---
 
 <p>Please note that the <code>{name}</code> Figma component configuration instructions are available only to members of the British Gas workspace who have access to the Nucleus Figma UI Kit:</p>
@@ -80,20 +80,21 @@ const inputterAdditionalUrl = "https://www.figma.com/design/HdnAatpIIliZhoj6C77a
             </p>
         </td>
     </tr>
-            {name === "ns-inputter" && (
-                <tr>
+
+    {name === "ns-inputter" && (
+    <tr>
         <td height="64" width="64">
             <img src="/src/assets/components/generic/figma-logo.svg" alt="Figma logo" width="32">
         </td>
         <td>
-                <p>
-                    <a href={inputterAdditionalUrl}>Additional configuration instructions</a> for radio and checkbox types.
-                    <br>(Opens in Figma).
-                </p>
-            
+            <p>
+                <a href={inputterAdditionalUrl}>Additional configuration instructions</a> for radio and checkbox types.
+                <br>(Opens in Figma).
+            </p>
         </td>
     </tr>
     )}
+    
 </table>
 
 
