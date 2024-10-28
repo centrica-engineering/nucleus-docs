@@ -82,17 +82,17 @@ const inputterAdditionalUrl = `${urlFigmaUIKit}?m=auto&node-id=1283-39959&t=0cyP
         Configuration instructions
         <Icon name="external" size="1em" />
       </a>
-      <span>(Opens in Figma).</span>
+      <div>(Opens in Figma).</div>
     </p>
     <!-- Only shows on the ns-inputter page-->
     {
       name === "ns-inputter" && (
         <p>
           <a href={inputterAdditionalUrl}>
-            Additional configuration instructions
+            Additional configuration instructions for radio and checkbox 
             <Icon name="external" size="1em" />
-          </a>{" "}
-          <span>for radio and checkbox (Opens in Figma).</span>
+          </a>&nbsp;
+          <div>(Opens in Figma).</div>
         </p>
       )
     }
