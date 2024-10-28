@@ -1,11 +1,12 @@
 ---
-
 import LinkToComponent from "./LinkToComponent.astro";
 const { name } = Astro.props;
+import { Icon } from "@astrojs/starlight/components";
 import { ceJsDoc } from "../scripts/custom-elements";
 
 // Define the common URL for the Figma UI Kit that prepends the node ID
-const urlFigmaUIKit = "https://www.figma.com/design/HdnAatpIIliZhoj6C77aHx/Nucleus-BritishGas---Components";
+const urlFigmaUIKit =
+  "https://www.figma.com/design/HdnAatpIIliZhoj6C77aHx/Nucleus-BritishGas---Components";
 
 // Define the URL's node IDs for different component names
 const urlMap = {
@@ -59,45 +60,65 @@ const urlMap = {
   //"nsx-header": "", - Does not have Figma configuration instructions
   "nsx-marketing-consent": "?m=auto&node-id=12008-10266&t=yVg9bPLnlT3xUSfQ-1",
   //"nsx-product-card-overview": ""
-
-
 };
 
 // Get the correct URL based on the component name - last part after colon is the default if no urlMap name found
-const componentUrl = name in urlMap ? `${urlFigmaUIKit}${urlMap[name]}` : urlFigmaUIKit;
+const componentUrl =
+  name in urlMap ? `${urlFigmaUIKit}${urlMap[name]}` : urlFigmaUIKit;
 const inputterAdditionalUrl = `${urlFigmaUIKit}?m=auto&node-id=1283-39959&t=0cyP8uC7iqnlpc2w-1`;
 ---
 
-<p>Please note that the <code>{name}</code> Figma component configuration instructions are available only to members of the British Gas workspace who have access to the Nucleus Figma UI Kit:</p>
-<table cellspacing="0" cellpadding="0" border="0">
-    <tr>
-        <td height="64" width="64">
-            <img src="/src/assets/components/generic/figma-logo.svg" alt="Figma logo" width="32">
-        </td>
-        <td>
-            <p>
-                <a href={componentUrl}>Configuration instructions</a>
-                <br>(Opens in Figma).
-            </p>
-        </td>
-    </tr>
-<!--This additional row only shows on the ns-inputter page-->
-    {name === "ns-inputter" && (
-    <tr>
-        <td height="64" width="64">
-            <img src="/src/assets/components/generic/figma-logo.svg" alt="Figma logo" width="32">
-        </td>
-        <td>
-            <p>
-                <a href={inputterAdditionalUrl}>Additional configuration instructions</a> for radio and checkbox types.
-                <br>(Opens in Figma).
-            </p>
-        </td>
-    </tr>
-    )}
+<p>
+  Please note: The <code>{name}</code> Figma component configuration instructions
+  are available only to members of the British Gas workspace who have access to the
+  Nucleus Figma UI Kit.
+</p>
 
-</table>
+<div class="figma">
+  <img src="/logo-figma.svg" alt="Figma logo" width="32" />
+  <div>
+    <p>
+      <a href={componentUrl} target="_blank" rel="noopener noreferrer">
+        Configuration instructions
+        <Icon name="external" size="1em" />
+      </a>
+      <span>(Opens in Figma).</span>
+    </p>
+    <!-- Only shows on the ns-inputter page-->
+    {
+      name === "ns-inputter" && (
+        <p>
+          <a href={inputterAdditionalUrl}>
+            Additional configuration instructions
+            <Icon name="external" size="1em" />
+          </a>{" "}
+          <span>for radio and checkbox (Opens in Figma).</span>
+        </p>
+      )
+    }
+  </div>
+</div>
 
+<style>
+  .figma {
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    padding-block-end: 1rem;
+    margin-block-end: 1rem;
+    border-color: var(--sl-color-hairline-light);
+    border-block-end-style: solid;
+    border-block-end-width: 1px;
 
+    div {
+      margin-block-start: 0.25rem !important;
+    }
 
-
+    p,
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.125rem;
+    }
+  }
+</style>
