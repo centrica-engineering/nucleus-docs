@@ -11,6 +11,8 @@ import ExampleViewer from '@components/ExampleViewer.astro';
 import RelatedLinks from '@components/related-links.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+import Figma from '@components/figma.astro';
+
 ## Overview
 
 <CompDetails name={componentName} />
@@ -240,3 +242,7 @@ Use the [720x540px horizon placeholder](/guidelines/assets#720x540px-horizon) sp
 - A form is optional and recommended in scenarios where you need some information from the user to start a journey or dynamically change the content on the rest of the page.
 - Don't use `ns-selector`, `ns-datepicker`, `nsx-address-selector`, or `nsx-marketing-consent` as these require more space than is available in the landmark.
 - Keep forms short in `hillside` to avoid distorting and stretching the background decoration colour.
+
+### Figma
+
+<Figma name={componentName} />

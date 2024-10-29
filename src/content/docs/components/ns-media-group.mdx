@@ -11,6 +11,8 @@ import ExampleViewer from '@components/ExampleViewer.astro';
 import RelatedLinks from '@components/related-links.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+import Figma from '@components/figma.astro';
+
 ## Overview
 
 <CompDetails name={componentName} />
@@ -74,3 +76,7 @@ The structure of the each of `media` object.
   ...
 ]
 ```
+
+### Figma
+
+<Figma name={componentName} />

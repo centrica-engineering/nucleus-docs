@@ -12,6 +12,8 @@ import ExampleViewer from '@components/ExampleViewer.astro';
 import RelatedLinks from '@components/related-links.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+import Figma from '@components/figma.astro';
+
 ## Overview
 
 <CompDetails name={componentName} />
@@ -28,11 +30,11 @@ Use `ns-accordion` to break down content into meaningful sections, helping to re
 - Use for FAQs (Frequently Asked Questions).
 - Use to split up related content.
 - Make sure the heading relates to the content.
-- Use as a supporting component to the rest of the page’s content.
+- Use as a supporting component to the rest of the page's content.
 :::
 
 :::dont
-- Use a background with an accordion – the expanded state is white.
+- Use a background with an accordion - the expanded state is white.
 - Use more than 8 expanders.
 - Use to hide critical information (such as caveats).
 - Use as a solution to excessive copy on a page.
@@ -65,3 +67,7 @@ If there isn't a inherent logical order to the expanders, use alphabetical order
 ### Specification
 
 <Specification name={componentName} />
+
+### Figma
+
+<Figma name={componentName} />

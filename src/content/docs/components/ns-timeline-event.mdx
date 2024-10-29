@@ -11,6 +11,8 @@ import ExampleViewer from '@components/ExampleViewer.astro';
 import RelatedLinks from '@components/related-links.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+import Figma from '@components/figma.astro';
+
 ## Overview
 
 <CompDetails name={componentName} />
@@ -125,3 +127,7 @@ Some icons are special and automatically reserved for use only with a particular
 ##### `status`
 
 The `status` attribute should not be added when `<ns-timeline-event>` is placed in `<ns-timeline>` `step` type.
+
+### Figma
+
+<Figma name={componentName} />

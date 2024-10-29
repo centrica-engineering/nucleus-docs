@@ -11,6 +11,8 @@ import ExampleViewer from '@components/ExampleViewer.astro';
 import RelatedLinks from '@components/related-links.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+import Figma from '@components/figma.astro';
+
 ## Overview
 
 <CompDetails name={componentName} />
@@ -152,3 +154,7 @@ Some of the validation options can be configured by passing in values within the
 For single type inputs (text, email, etc), there's no need to add id/for unless you need to on the `<label>` and `<input>`
 Make sure to add id/for if it is a checkbox, select or radio input type.
 Be careful when adding additional elements outside of input and label * these scenarios haven't been tested and may need a request for change raised.
+
+### Figma
+
+<Figma name={componentName} /> 

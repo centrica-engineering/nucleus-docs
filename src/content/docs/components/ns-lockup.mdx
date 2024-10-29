@@ -11,6 +11,8 @@ import ExampleViewer from '@components/ExampleViewer.astro';
 import RelatedLinks from '@components/related-links.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+import Figma from '@components/figma.astro';
+
 ## Overview
 
 <CompDetails name={componentName} />
@@ -105,3 +107,7 @@ Use `ns-lockup` to engage customers and promote products or services. The more r
 
 - Use `<ns-video>` instead of `<ns-image>` when including a video instead of an image. The overlap is in front of the card so neither the video nor its captions are obscured. The content wraps around the video edge. (See the [Video example](#examples) above)
 - It is not possible to use an illustration decoration when including `<ns-video>`.
+
+### Figma
+
+<Figma name={componentName} />

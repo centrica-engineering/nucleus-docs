@@ -1,0 +1,124 @@
+---
+import LinkToComponent from "./LinkToComponent.astro";
+const { name } = Astro.props;
+import { Icon } from "@astrojs/starlight/components";
+import { ceJsDoc } from "../scripts/custom-elements";
+
+// Define the common URL for the Figma UI Kit that prepends the node ID
+const urlFigmaUIKit =
+  "https://www.figma.com/design/HdnAatpIIliZhoj6C77aHx/Nucleus-BritishGas---Components";
+
+// Define the URL's node IDs for different component names
+const urlMap = {
+  "ns-accordion": "?m=auto&node-id=1876-35073&t=IwNdEWK1sFgZAbou-1",
+  "ns-action-link": "?m=auto&node-id=9877-14132&t=tCrpYDpDRQYfeXPd-1",
+  "ns-alert": "?m=auto&node-id=10013-256&t=qbpKLSXtaKh2y90v-1",
+  "ns-card": "?m=auto&node-id=3630-44734&t=uzmGar0mVEFGnydM-1",
+  "ns-caveat": "?m=auto&node-id=2309-42948&t=uzmGar0mVEFGnydM-1",
+  "ns-column": "?m=auto&node-id=3003-47012&t=uzmGar0mVEFGnydM-1",
+  "ns-content": "?m=auto&node-id=2331-59364&t=uzmGar0mVEFGnydM-1",
+  "ns-cta": "?m=auto&node-id=3692-43337&t=HqToAgu2yibfsMPX-1",
+  "ns-date-time": "?m=auto&node-id=10030-84&t=brtNtKyzK35CwZzN-1",
+  "ns-download": "?m=auto&node-id=4332-43971&t=KQzK6kanazrBDpJG-1",
+  "ns-expander": "?m=auto&node-id=1876-34878&t=wwsiVDPKQb3KSwX0-1",
+  "ns-footer": "?m=auto&node-id=2623-45861&t=wwsiVDPKQb3KSwX0-1",
+  "ns-frame": "?m=auto&node-id=11123-1235&t=wwsiVDPKQb3KSwX0-1",
+  "ns-header": "?m=auto&node-id=2437-60535&t=wwsiVDPKQb3KSwX0-1",
+  //"ns-icon": "", - Does not have Figma configuration instructions
+  //"ns-illustration": "", - Does not have Figma configuration instructions
+  //"ns-image": "", - Does not have Figma configuration instructions
+  "ns-landmark": "?m=auto&node-id=3613-43096&t=wwsiVDPKQb3KSwX0-1",
+  "ns-live": "?m=auto&node-id=3192-43660&t=wwsiVDPKQb3KSwX0-1",
+  "ns-lockup": "?m=auto&node-id=3942-42927&t=0cyP8uC7iqnlpc2w-1",
+  "ns-media-group": "?m=auto&node-id=10576-16541&t=0cyP8uC7iqnlpc2w-1",
+  "ns-panel": "?m=auto&node-id=2652-43547&t=0cyP8uC7iqnlpc2w-1",
+  "ns-pill": "?m=auto&node-id=1748-57107&t=0cyP8uC7iqnlpc2w-1",
+  "ns-price": "?m=auto&node-id=5311-47774&t=0cyP8uC7iqnlpc2w-1",
+  "ns-product-card": "?m=auto&node-id=1932-38754&t=0cyP8uC7iqnlpc2w-1",
+  "ns-progress": "?m=auto&node-id=1009-25064&t=0cyP8uC7iqnlpc2w-1",
+  "ns-scroller": "?m=auto&node-id=12240-100&t=FRG6rjg1LcsQqsbg-1",
+  "ns-skeleton": "?m=auto&node-id=3309-43801&t=0cyP8uC7iqnlpc2w-1",
+  "ns-skyline": "?m=auto&node-id=3018-44365&t=0cyP8uC7iqnlpc2w-1",
+  "ns-standout": "?m=auto&node-id=2046-38847&t=0cyP8uC7iqnlpc2w-1",
+  "ns-tab": "?m=auto&node-id=4384-43934&t=0cyP8uC7iqnlpc2w-1",
+  "ns-table": "?m=auto&node-id=1777-40592&t=0cyP8uC7iqnlpc2w-1",
+  "ns-tabs": "?m=auto&node-id=1246-37859&t=0cyP8uC7iqnlpc2w-1",
+  "ns-testimonial": "?m=auto&node-id=3238-43841&t=0cyP8uC7iqnlpc2w-1",
+  "ns-timeline": "?m=auto&node-id=989-37039&t=0cyP8uC7iqnlpc2w-1",
+  "ns-timeline-event": "?m=auto&node-id=989-37039&t=0cyP8uC7iqnlpc2w-1",
+  //"ns-video": "", - Does not have Figma configuration instructions
+  "ns-appointment-picker": "?m=auto&node-id=1605-40167&t=0cyP8uC7iqnlpc2w-1",
+  "ns-datepicker": "?m=auto&node-id=1701-44403&t=0cyP8uC7iqnlpc2w-1",
+  //"ns-form": "", - Does not have Figma configuration instructions
+  "ns-form-group": "?m=auto&node-id=10894-239&t=0cyP8uC7iqnlpc2w-1",
+  "ns-inputter": "?m=auto&node-id=1161-25456&t=WYsKmqeRIAVFtXEL-1",
+  // Note the inputter has 2 pages in Figma - the checkbox and radio version is linked inline in the page to avoid repeating the inserted paragraph.
+  "ns-password": "?m=auto&node-id=3121-52755&t=yVg9bPLnlT3xUSfQ-1",
+  "ns-selector": "?m=auto&node-id=2218-48462&t=yVg9bPLnlT3xUSfQ-1",
+  "nsx-address-selector": "?m=auto&node-id=6856-52255&t=yVg9bPLnlT3xUSfQ-1",
+  //"nsx-footer": "", - Does not have Figma configuration instructions
+  //"nsx-header": "", - Does not have Figma configuration instructions
+  "nsx-marketing-consent": "?m=auto&node-id=12008-10266&t=yVg9bPLnlT3xUSfQ-1",
+  //"nsx-product-card-overview": ""
+};
+
+// Get the correct URL based on the component name - last part after colon is the default if no urlMap name found
+const componentUrl =
+  name in urlMap ? `${urlFigmaUIKit}${urlMap[name]}` : urlFigmaUIKit;
+const inputterAdditionalUrl = `${urlFigmaUIKit}?m=auto&node-id=1283-39959&t=0cyP8uC7iqnlpc2w-1`;
+---
+
+<p>
+  Please note: The <code>{name}</code> Figma component configuration instructions
+  are available only to members of the British Gas workspace who have access to the
+  Nucleus Figma UI Kit.
+</p>
+
+<div class="figma">
+  <img src="/logo-figma.svg" alt="Figma logo" width="32" />
+  <div>
+    <p>
+      <a href={componentUrl} target="_blank" rel="noopener noreferrer">
+        Configuration instructions
+        <Icon name="external" size="1em" />
+      </a>
+      <div>(Opens in Figma).</div>
+    </p>
+    <!-- Only shows on the ns-inputter page-->
+    {
+      name === "ns-inputter" && (
+        <p>
+          <a href={inputterAdditionalUrl} target="_blank" rel="noopener noreferrer">
+            Additional configuration instructions for radio and checkbox 
+            <Icon name="external" size="1em" />
+          </a>&nbsp;
+          <div>(Opens in Figma).</div>
+        </p>
+      )
+    }
+  </div>
+</div>
+
+<style>
+  .figma {
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    padding-block-end: 1rem;
+    margin-block-end: 1rem;
+    border-color: var(--sl-color-hairline-light);
+    border-block-end-style: solid;
+    border-block-end-width: 1px;
+
+    div {
+      margin-block-start: 0.25rem !important;
+    }
+
+    p,
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.125rem;
+    }
+  }
+</style>
