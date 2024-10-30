@@ -19,7 +19,15 @@ import Figma from '@components/figma.astro';
 
 ### Examples
 
-<ExampleViewer type="standard" />
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer type="standard" />
+  </TabItem>
+  <TabItem label="Horizontal">
+    For a horizontal format at wider viewports with rich features. Use for listing filtered products.
+    <ExampleViewer type="horizontal" />
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
@@ -28,6 +36,8 @@ import Figma from '@components/figma.astro';
 - Use the same sections for all products in a group.
 - Give multiple cards the same HTML parent.
 - Use `role="list"` and `role="listitem"` when used in multiples.
+- Use the `horizontal` type for listing products in conjunction with `ns-filter` (TBR)
+- Utislise the additional features of decoration, image ratios and pills in the `horizontal` type.
 :::
 
 :::dont
@@ -35,6 +45,7 @@ import Figma from '@components/figma.astro';
 - Use in a form.
 - Use different ratio images across a set of multiple cards.
 - Overuse the keyline - its purpose is to make that card stand out from others.
+- Use `horizontal` types in multiple columns with (`ns-column`)
 :::
 
 ### Standard
@@ -48,13 +59,24 @@ import Figma from '@components/figma.astro';
 | <span class="marker">A</span> | Product name | The product name should be brief and memorable, ideally 2 to 3 words (10 to 15 characters). Maximum 25 characters. |
 | <span class="marker">B</span> | Price subtitle | This should be used to give context to your product price. 15 to 23 characters maximum. |
 | <span class="marker">C</span> | Keyline | An optional colour keyline can be added to distinguish and draw attention to your products. |
-| <span class="marker">D</span> | Image | There is a choice of 2 image sizes: [720 x 405px](/guidelines/assets#720x405px) and [720 x 540px](/guidelines/assets#720x540px). Images should be WebP file type, the file size should be no more than 50kb. |
+| <span class="marker">D</span> | Image | There is a choice of 2 image sizes for Standard: [720 x 405px](/guidelines/assets#720x405px) and [720 x 540px](/guidelines/assets#720x540px). |
 | <span class="marker">E</span> | Primary price | The is the leading product price. This is optional as a product price may not always be available. |
 | <span class="marker">F</span> | Secondary price | This is the secondary product price. This is also optional.|
 | <span class="marker">G</span> | Product description | The product description can accommodate multiple sub headings, lists and paragraphs. The content should be concise and use bulleted or checked lists to support skim reading. Comparable product features should be repeated in the same list order across all products. Content can contain bold copy `<b>` `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`, and caveats if required `<a href="#caveat">Caveat</a>`. |
 | <span class="marker">H</span> | Expander | Expanders can be used to provide additional product detail. Each product should have a maximum of 3 expanders. |
 | <span class="marker">I</span> | CTA | Keep the text short, relevant, and actionable. It should not exceed 24 characters. |
 
+### Horizontal
+
+![Labelled diagram of ns-product-card](@assets/components/ns-product-card/guidance.webp)
+ (Replace with Horizontal type image and labels continued from above)
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">J</span> | Decoration | Display an optional `ns-illustration` to aid recognition when scanning a list consisting of horizontal `ns-product-card`. |
+| <span class="marker">K</span> | Image | There is a choice of 3 image sizes for Horizontal: [720 x 405px](/guidelines/assets#720x405px), [720 x 540px](/guidelines/assets#720x540px) and [720 x 720px](guidlines/assets#720x720px) (Add this 1x1 asset). Images should be WebP file type, the file size should be no more than 50kb. |
+| <span class="marker">L</span> | Pill | Display an optional `ns-pill` to highlight a key feature eg. 'Greenest tariff'. |
+| <span class="marker">M</span> | CTA-style expander | This is the cue to open and close an expander on the Horizontal type, specifically designed to increase affordance. |
 
 ## Implementation
 
@@ -65,6 +87,7 @@ import Figma from '@components/figma.astro';
 ### Specification
 
 <Specification name={componentName} />
+[include extras here for horizontal?]
 
 ### Figma
 
