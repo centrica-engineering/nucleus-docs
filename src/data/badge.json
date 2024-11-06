@@ -15,6 +15,10 @@
     {
       "name": "ns-scroller",
       "badge": "new"
+    },
+    {
+      "name": "ns-product-card",
+      "badge": "updated"
     }
   ]
 }
