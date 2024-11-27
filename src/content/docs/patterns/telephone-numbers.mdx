@@ -103,6 +103,26 @@ It cannot always be determined if the user's device supports calls or not, as th
 
 If you don't want to display a number as a link do not use the `<a>` tag. For example, when displaying a customer's phone number they have provided, they don't need to be able to call themselves. 
 
+#### Prevention of iOS automatic behaviour
+
+In iOS, Safari automatically detects phone numbers on web pages and converts them into clickable links. This feature is designed to make it easier for users to call a phone number directly from a webpage. However, this automatic behaviour can sometimes interfere with the intended design or functionality of a webpage.
+
+To prevent Safari from automatically detecting and linking phone numbers, a format-detection meta tag can be used in the HTML head section:
+
+```html
+<head>
+    <meta name="format-detection" content="telephone=no">
+</head>
+```
+
+By adding this meta tag, it disables the automatic phone number detection for the entire page. Then, where it is required to include a clickable phone number link, it can be manually created using `tel:`:
+
+```html
+<a href="tel:0123456789">01234 567890</a>
+```
+
+This approach ensures that only the specified phone numbers are clickable, while other numbers remain unlinked.
+
 ### Supportive text
 
 Using precursory text with the number can help the user understand the intention. For example: 
