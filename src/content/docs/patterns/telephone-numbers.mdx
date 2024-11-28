@@ -105,7 +105,9 @@ If you don't want to display a number as a link do not use the `<a>` tag. For ex
 
 #### Prevention of iOS automatic behaviour
 
-In iOS, Safari automatically detects phone numbers on web pages and converts them into clickable links. This feature is designed to make it easier for users to call a phone number directly from a webpage. However, this automatic behaviour can sometimes interfere with the intended design or functionality of a webpage.
+In iOS, Safari automatically detects numbers that it assumes are phone numbers and converts them into hyperlinks. This feature is designed to make it easier for users to call a phone number directly. However, this automatic behaviour can sometimes interfere with the user experience.
+
+For example; a reference number could be misinterpreted as a phone number.
 
 To prevent Safari from automatically detecting and linking phone numbers, a format-detection meta tag can be used in the HTML head section:
 
