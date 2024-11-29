@@ -12,10 +12,10 @@ const placements = ceJsDoc.find((tag) => tag.name === name)?.placements;
       <p>The <code>{name}</code> component can be used in the following components:</p>
       <ul>
         {placements?.map((placement) => {
-          if (placement.indexOf(' > ') > -1) {
-            const placementTree = placement.split(' > ');
-            return <li><LinkToComponent name={placementTree[1].trim()} /> wrapped in <LinkToComponent name={placementTree[0].trim()} /></li>;
-          }
+          // if (placement.indexOf(' > ') > -1) {
+          //   const placementTree = placement.split(' > ');
+          //   return <li><LinkToComponent name={placementTree[1].trim()} /> wrapped in <LinkToComponent name={placementTree[0].trim()} /></li>;
+          // }
           return <li><LinkToComponent name={placement.trim()} /></li>;
         })}
       </ul>
