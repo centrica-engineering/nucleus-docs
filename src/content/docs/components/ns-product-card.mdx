@@ -17,6 +17,15 @@ import Figma from '@components/figma.astro';
 
 <CompDetails name={componentName} />
 
+:::updated
+**16th December 2024**
+
+Additional feature `type="horizontal"` has been added:
+
+- This type is suitable for wide and narrow content areas.
+- Additional features include: `pill`, `decoration`, and `details`.
+:::
+
 ### Examples
 
 <Tabs>
@@ -24,7 +33,7 @@ import Figma from '@components/figma.astro';
     <ExampleViewer type="standard" />
   </TabItem>
   <TabItem label="Horizontal">
-    For a horizontal format at wider viewports with rich features. Use for listing filtered products.
+    A horizontal layout in wider content ares, including additional features.
     <ExampleViewer type="horizontal" />
   </TabItem>
 </Tabs>
@@ -34,22 +43,19 @@ import Figma from '@components/figma.astro';
 :::do
 - Use for products.
 - Use the same sections for all products in a group.
-- Give multiple cards the same HTML parent.
 - Use `role="list"` and `role="listitem"` when used in multiples.
-- Use the `horizontal` type for a wider format at desktop size viewports.
-- Display a `ns-illustration` by utilising the `horizontal` type's decoration attribute.
-- Choose between image ratios if a product image is beneficial.
-- Add `ns-pill` to draw attention to a particular product using the `horizontal` type.
-- Choose from 3 designated positions for the `ns-pill`.
-- Make a card stand out by using a colour option of the keyline attribute.
+- `type="horizontal"` is suitable for wide content ares.
+- Include a `decoration` to support and highlight the product _(only available in `type="horizontal"`)_..
+- Add a product image if it is beneficial.
+- Add `ns-pill` to draw attention to a particular product _(only available in `type="horizontal"`)_.
+- Make a card stand out by adding a `keyline`.
 :::
 
 :::dont
 - Use for other content types - use [`<ns-card>`](/components/ns-card) instead.
 - Use in a form.
 - Use different ratio images across a set of multiple cards.
-- Overuse the keyline - its purpose is to make that card stand out from others.
-- Use `horizontal` types in multiple columns with (`ns-column`)
+- Overuse the keyline - its purpose is to make one product card stand out from others.
 :::
 
 ### Standard
@@ -63,7 +69,7 @@ import Figma from '@components/figma.astro';
 | <span class="marker">A</span> | Product name | The product name should be brief and memorable, ideally 2 to 3 words (10 to 15 characters). Maximum 25 characters. |
 | <span class="marker">B</span> | Price subtitle | This should be used to give context to your product price. 15 to 23 characters maximum. |
 | <span class="marker">C</span> | Keyline | An optional colour keyline can be added to distinguish and draw attention to your products. |
-| <span class="marker">D</span> | Image | There is a choice of 2 image sizes for Standard: [720 x 405px](/guidelines/assets#720x405px) and [720 x 540px](/guidelines/assets#720x540px). |
+| <span class="marker">D</span> | Image | There is a choice of 2 image sizes for Standard: [720 x 405px](/guidelines/assets#720x405px) and [720 x 540px](/guidelines/assets#720x540px). Images should be WebP file type, the file size should be no more than 50kb. |
 | <span class="marker">E</span> | Primary price | The is the leading product price. This is optional as a product price may not always be available. |
 | <span class="marker">F</span> | Secondary price | This is the secondary product price. This is also optional.|
 | <span class="marker">G</span> | Product description | The product description can accommodate multiple sub headings, lists and paragraphs. The content should be concise and use bulleted or checked lists to support skim reading. Comparable product features should be repeated in the same list order across all products. Content can contain bold copy `<b>` `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`, and caveats if required `<a href="#caveat">Caveat</a>`. |
@@ -76,10 +82,10 @@ import Figma from '@components/figma.astro';
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">J</span> | Pill | Display an optional `ns-pill` to highlight a key feature eg. 'Greenest tariff'. Choose from 3 different positions, over image, over heading or under price. |
-| <span class="marker">K</span> | Decoration | Display an optional `ns-illustration` to aid recognition when scanning a list consisting of horizontal `ns-product-card`. |
-| <span class="marker">L</span> | Progressive disclosure | This is the CTA-like cue to open and close additional information in an expander on the Horizontal type, specifically designed to increase click-through and exposure of that content without overwhelming the initial view. This is an option that can also be switched with a standard `ns-cta` if no additional information is required. |
-| <span class="marker">M</span> | Image | There is a choice of 3 image sizes for Horizontal: [720 x 405px](/guidelines/assets#720x405px), [720 x 540px](/guidelines/assets#720x540px) and [720 x 720px](/guidelines/assets#720x720px). Images should be WebP file type, the file size should be no more than 50kb. |
+| <span class="marker">J</span> | Image | There is a choice of 3 image sizes for Horizontal: [640 x 360px](/guidelines/assets#640x360px), [640 x 480px](/guidelines/assets#640x480px) and [640 x 640px](/guidelines/assets#640x640px). Images should be WebP file type, the file size should be no more than 25kb. |
+| <span class="marker">K</span> | Pill | Use [`ns-pill`](/components/ns-pill) to promote an option that has something special like a discount, a promotion or a because it's eco-friendly. |
+| <span class="marker">L</span> | Decoration | Use to support and highlight the product. [See illustrations](/guidelines/assets/#illustrations). |
+| <span class="marker">M</span> | Details | Details can be opened displaying additional information. It's specifically designed to increase click-through and expose additional information without overwhelming the initial view. If no `slot="details"` is present, the CTA will assume this position. |
 
 ## Implementation
 
