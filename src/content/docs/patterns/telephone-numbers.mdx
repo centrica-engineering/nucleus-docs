@@ -11,6 +11,12 @@ tableOfContents:
 
 There are several display formats that describe how numbers should be shown and these should be used along with accessibility considerations.
 
+:::caution
+In iOS, Safari automatically detects numbers that it assumes are phone numbers and converts them into hyperlinks.
+
+[How to prevent issues with this](#prevention-of-ios-automatic-behaviour)
+:::
+
 ## Guidance
 
 :::do
@@ -32,12 +38,12 @@ There are several display formats that describe how numbers should be shown and 
 - Disclose customer phone numbers to the public.
 :::
 
-### Special numbers 
+### Special numbers
 
 To aid memorability, the patterns we use for freephone, non-geographical or emergency numbers are as follows:
 
-| Format | Usage
-| :--- | :--- 
+| Format | Usage |
+| :--- | :--- |
 | 0800&nbsp;XXX&nbsp;XXX / 0800&nbsp;XXX&nbsp;XXXX | Freephone |
 | 0333&nbsp;XXX&nbsp;XXX / 0333&nbsp;XXX&nbsp;XXXX | Non-geographic |
 | 105 | Electrical emergency |
@@ -45,12 +51,12 @@ To aid memorability, the patterns we use for freephone, non-geographical or emer
 
 In some cases, if you have a number such as 0800 112 233, it could be more memorable to display it as 0800 11 22 33.
 
-### Area codes and local numbers 
+### Area codes and local numbers
 
 The length of area codes and local numbers varies across the UK, which means there are several valid formats (X = any digit 0-9):
 
-| Format | Usage
-| :--- | :--- 
+| Format | Usage |
+| :--- | :--- |
 | 02X&nbsp;XXXX&nbsp;XXXX | Cardiff, Coventry, London, Portsmouth, Southampton and all of Northern Ireland |
 | 01X1&nbsp;XXX&nbsp;XXXX / 011X&nbsp;XXX&nbsp;XXXX | Most other major cities |
 | 01XXX&nbsp;XXXXXX / 01XXX&nbsp;XXXXX | Smaller cities, provincial towns and rural areas |
@@ -75,7 +81,7 @@ SMS (Short Message System) numbers are typically 5 digits long with no spaces.
 
 Ref: [area-codes.org.uk](http://www.area-codes.org.uk/formatting.php)
 
-### Displaying numbers as links 
+### Displaying numbers as links
 
 If you intend for a telephone number to be a link, put "tel:..." in the href without any spacing. 
 
@@ -101,19 +107,41 @@ Using intentional links, especially when used with supportive text, help define 
 
 It cannot always be determined if the user's device supports calls or not, as this depends on the software (eg. Skype) they may have installed on mobile or desktop devices.
 
-If you don't want to display a number as a link do not use the `<a>` tag. For example, when displaying a customer's phone number they have provided, they don't need to be able to call themselves. 
+If you don't want to display a number as a link do not use the `<a>` tag. For example, when displaying a customer's phone number they have provided, they don't need to be able to call themselves.
+
+#### Prevention of iOS automatic behaviour
+
+In iOS, Safari automatically detects numbers that it assumes are phone numbers and converts them into hyperlinks. This feature is designed to make it easier for users to call a phone number directly. However, this automatic behaviour can sometimes interfere with the user experience.
+
+For example, a reference number could be misinterpreted as a phone number.
+
+To prevent Safari from automatically detecting and linking phone numbers, a format-detection meta tag can be used in the `<head>` of the HTML document:
+
+```html
+<meta name="format-detection" content="telephone=no">
+```
+
+Adding this meta tag disables automatic phone number detection.
+
+When it is required to include a clickable phone number link, create it using `tel:`:
+
+```html
+<a href="tel:0123456789">01234 567890</a>
+```
+
+This approach ensures that only the specified phone numbers are clickable, while other numbers remain unlinked.
 
 ### Supportive text
 
-Using precursory text with the number can help the user understand the intention. For example: 
+Using precursory text with the number can help the user understand the intention. For example:
 
 > Call us on 0800 123123
 
-With the addition of a time frame can also a good idea to help set expectations: 
+With the addition of a time frame can also a good idea to help set expectations:
 
 > Call us on 0330 123123 9.00am – 5.00pm, Monday to Friday.
 
-In the context of requesting a number from a customer (such as in a form), it can be helpful to explain to them why you might contact them and when. 
+In the context of requesting a number from a customer (such as in a form), it can be helpful to explain to them why you might contact them and when.
 
 ### Icon
 

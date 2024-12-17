@@ -1,10 +1,6 @@
 {
   "components": [
     {
-      "name": "ns-card",
-      "badge": "updated"
-    },
-    {
       "name": "ns-landmark",
       "badge": "updated"
     },
@@ -14,6 +10,10 @@
     },
     {
       "name": "ns-product-card",
+      "badge": "updated"
+    },
+    {
+      "name": "ns-panel",
       "badge": "updated"
     }
   ]
