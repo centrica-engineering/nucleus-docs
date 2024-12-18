@@ -97,6 +97,25 @@ Additional feature `type="horizontal"` has been added:
 
 <Specification name={componentName} />
 
+#### Specification notes
+
+##### `show-more`
+The [`show-more`](#specification-attribute-show-more) attribute is an object consist of `open-label`, `close-label` and `open` properties.
+
+| Property | Description |
+| :------- | :---------- |
+|`open-label` | Copy of the CTA when details is in collapsed state.|
+|`close-label` | Copy of the CTA when details is in expanded state.|
+|`open` | Expand the details by default.|
+
+```js
+const show-more = {
+  'open-label': 'Show more',
+  'close-label': `Show less`,
+  open: true
+}
+```
+
 ### Figma
 
 <Figma name={componentName} />
