@@ -99,14 +99,17 @@ Additional feature `type="horizontal"` has been added:
 
 #### Specification notes
 
+#### Specification notes
+
 ##### `show-more`
-The [`show-more`](#specification-attribute-show-more) attribute is an object consist of `open-label`, `close-label` and `open` properties.
+
+The [`show-more`](#specification-attribute-show-more) attribute is an object that consists of `open-label`, `close-label` and `open` properties.
 
 | Property | Description |
-| :------- | :---------- |
-|`open-label` | Copy of the CTA when details is in collapsed state.|
-|`close-label` | Copy of the CTA when details is in expanded state.|
-|`open` | Expand the details by default.|
+| :--- | :--- |
+| `open-label` | The label for CTA when details is in closed state. |
+| `close-label` | The label for CTA when details is in opened state. |
+| `open` | When `true`, the details is expanded by default. |
 
 ```js
 const show-more = {
