@@ -5,16 +5,16 @@
       "badge": "updated"
     },
     {
-      "name": "ns-frame",
-      "badge": "new"
-    },
-    {
       "name": "ns-scroller",
       "badge": "new"
     },
     {
+      "name": "ns-product-card",
+      "badge": "updated"
+    },
+    {
       "name": "ns-panel",
       "badge": "updated"
-    }    
+    }
   ]
 }
