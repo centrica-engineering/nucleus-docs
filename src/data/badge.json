@@ -1,10 +1,6 @@
 {
   "components": [
     {
-      "name": "ns-landmark",
-      "badge": "updated"
-    },
-    {
       "name": "ns-scroller",
       "badge": "new"
     },
@@ -15,6 +11,10 @@
     {
       "name": "ns-panel",
       "badge": "updated"
+    },
+    {
+      "name": "nsx-filter",
+      "badge": "new"
     }
   ]
 }
