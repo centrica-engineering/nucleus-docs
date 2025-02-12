@@ -17,15 +17,35 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 Sometimes, a more detailed explanation of something can be helpful – without requiring the user to take immediate action. That is where the `ns-editorial` component can help.
 
+:::updated
+**12 February 2025**
+
+The `ns-editorial` component now supports a `4 / 3`, `16 / 9` and `1 / 1` aspect ratio images.
+:::
+
 ### Examples
 
-<ExampleViewer type="standard" />
+<Tabs>
+  <TabItem label="Standard">
+    <Tabs>
+      <TabItem label="Standard">
+        <ExampleViewer type="standard" />
+      </TabItem>
+      <TabItem label="ratio 16 / 9">
+        <ExampleViewer type="standard-16x9" />
+      </TabItem>
+      <TabItem label="ratio 1 / 1">
+        <ExampleViewer type="standard-1x1" />
+      </TabItem>
+    </Tabs>
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
 :::do
 - Use subheadings to split large paragraphs.
-- Use a `ratio` of `4 / 3` for the `image`.
+- Choose the relevant image aspect ratio to suit the content.
 - Include contextual text links with content.
 :::
 
@@ -45,7 +65,7 @@ Sometimes, a more detailed explanation of something can be helpful – without r
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | <span class="marker">A</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
-| <span class="marker">B</span> | Image | Use an image size of [480 x 360px](/guidelines/assets#480x360px). Images should be WebP file type, the file size should be no more than 25kb. |
+| <span class="marker">B</span> | Image | Choose an image size of: [640x360px](/guidelines/assets#640x360px), [640x480px](/guidelines/assets#640x480px) or [640x640px](/guidelines/assets#640x640px). Images should be WebP file type, the file size should be no more than 25kb. |
 | <span class="marker">C</span> | Anonymous slot | Include headings, lists and paragraphs. Divide content into short paragraphs as it is easier to consume, and aids effective page scanning. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. |
 
 ## Implementation
