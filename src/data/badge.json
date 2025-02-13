@@ -1,6 +1,10 @@
 {
   "components": [
     {
+      "name": "ns-editorial",
+      "badge": "updated"
+    },
+    {
       "name": "ns-scroller",
       "badge": "new"
     },
