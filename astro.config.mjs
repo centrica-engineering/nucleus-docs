@@ -4,7 +4,7 @@ import starlightDocSearch from '@astrojs/starlight-docsearch';
 import lit from "@astrojs/lit";
 import { rehypeHeadingIds } from '@astrojs/markdown-remark';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import { customElements, ceJsDoc } from "./src/scripts/custom-elements";
+import { customElements, ceJsDoc, sfCustomElements, sfCEJsDoc } from "./src/scripts/custom-elements";
 import badges from "./src/data/badge.json";
 import { nucleusRemarkAside } from "./src/plugins/nucleus-remark-aside";
 
@@ -48,6 +48,18 @@ const componentSidebar = () => {
         items: 
           ceJsDoc.filter((customElement) => customElement.category === 'Experience' && !isDeprecated(customElement.name))
           .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
+          .map((customElement) => {
+            return {
+              label: customElement['display-name'],
+              link: `/components/${customElement.name}`,
+              ...badge(customElement.name)
+            }
+          }),
+      },
+      {
+        label: "Snowflakes",
+        items: 
+          sfCEJsDoc.sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
           .map((customElement) => {
             return {
               label: customElement['display-name'],
