@@ -1,24 +1,12 @@
 {
   "components": [
     {
-      "name": "ns-editorial",
+      "name": "ns-pill",
       "badge": "updated"
     },
     {
-      "name": "ns-scroller",
-      "badge": "new"
-    },
-    {
-      "name": "ns-product-card",
+      "name": "ns-standout",
       "badge": "updated"
-    },
-    {
-      "name": "ns-panel",
-      "badge": "updated"
-    },
-    {
-      "name": "nsx-filter",
-      "badge": "new"
     }
   ]
 }
