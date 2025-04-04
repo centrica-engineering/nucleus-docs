@@ -1,10 +1,10 @@
 ---
 import LinkToComponent from "./LinkToComponent.astro";
 const { name } = Astro.props;
-import { ceJsDoc } from "../scripts/custom-elements";
+import { ceJsDoc, sfCEJsDoc } from "../scripts/custom-elements";
 
-const placements = ceJsDoc.find((tag) => tag.name === name)?.placements;
-
+const placements = [...ceJsDoc, ...sfCEJsDoc].find((tag) => tag.name === name)?.placements;
+console.log('placements ', placements);
 ---
 {
   placements?.length > 0 && (
