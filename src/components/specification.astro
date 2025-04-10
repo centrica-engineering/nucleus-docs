@@ -2,10 +2,10 @@
 import LinkToComponent from "./LinkToComponent.astro";
 const { name } = Astro.props;
 
-import { customElements, ceJsDoc } from "../scripts/custom-elements";
+import { customElements, ceJsDoc, sfCustomElements, sfCEJsDoc } from "../scripts/custom-elements";
 
-const compDetails = customElements.tags.find((tag) => tag.name === name);
-const jsdocDetails = ceJsDoc.find((tag) => tag.name === name);
+const compDetails = {...customElements, ...sfCustomElements}.tags.find((tag) => tag.name === name);
+const jsdocDetails = [...ceJsDoc, ...sfCEJsDoc].find((tag) => tag.name === name);
 
 const properties = compDetails?.properties;
 const slots = jsdocDetails?.slots;
