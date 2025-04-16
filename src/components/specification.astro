@@ -1,6 +1,7 @@
 ---
 import LinkToComponent from "./LinkToComponent.astro";
 const { name } = Astro.props;
+const { exclude } = Astro.props;
 
 import { customElements, ceJsDoc } from "../scripts/custom-elements";
 
@@ -10,6 +11,8 @@ const jsdocDetails = ceJsDoc.find((tag) => tag.name === name);
 const properties = compDetails?.properties;
 const slots = jsdocDetails?.slots;
 const events = compDetails?.events;
+
+const excludedAttributes = exclude?.split(',').map((item) => item.trim());
 ---
 
 <style>
@@ -43,7 +46,7 @@ const events = compDetails?.events;
     <div class="description-list">
       {
         properties?.map((property) => {
-          if (!property.attribute || property.deprecated || ['slottedStyles'].includes(property.name)) {
+          if (!property.attribute || property.deprecated || ['slottedStyles'].includes(property.name) || excludedAttributes?.includes(property.attribute)) {
             return undefined;
           }
           const defaultValue = property.default?.replaceAll('"', '');
