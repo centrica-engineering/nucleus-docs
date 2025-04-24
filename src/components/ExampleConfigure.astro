@@ -1,5 +1,7 @@
 ---
 const { componentName } = Astro.props;
+const { disableAttributes } = Astro.props;
+const { snowflake = false } = Astro.props;
 
 import { NucleusComponentRenderer } from './NucleusComponentRenderer';
 import { NucleusCodeSnippet } from './NucleusCodeSnippet';
@@ -163,6 +165,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
   {
     customElement?.attributes?.map((attribute) => {
       const defaultValue = attribute.default?.replaceAll('"', '');
+      const disabled = disableAttributes?.includes(attribute.name) ? 'disabled' : '';
       if (attribute.type === 'string') {
         if (attribute.name === 'icon' || (componentName === 'ns-icon' && attribute.name === 'name') || (componentName !== 'ns-icon' && attribute.description?.includes('icon'))) {
           return (
@@ -196,7 +199,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
           return (
             <div class="config-elements">
               <label>{attribute.name}</label>
-              <input type="text" name={attribute.name} value={defaultValue}>
+              <input type="text" name={attribute.name} value={defaultValue} {disabled}>
             </div>
           );
         }
@@ -222,7 +225,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
         return (
           <div class="config-elements">
             <label>{attribute.name}</label>
-            <input type="number" name={attribute.name} value={defaultValue}>
+            <input type="number" name={attribute.name} value={defaultValue} {disabled}>
           </div>
         );
       } else if (attribute.type === 'boolean') {
@@ -235,7 +238,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
                   const checked = defaultValue === option ? true : false;
                   return (
                   <div class="radio-element">
-                    <label><input type="radio" name={attribute.name} value={option} {checked}> {option}</label>
+                    <label><input type="radio" name={attribute.name} value={option} {checked} {disabled}> {option}</label>
                   </div>
                   )
                 })
@@ -247,7 +250,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
         return (
           <div class="config-elements">
             <label>{attribute.name}</label>
-            <input type="text" name={attribute.name} />
+            <input type="text" name={attribute.name} {disabled}/>
           </div>
         );
       }
@@ -273,7 +276,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
 
   <div class="preview">
     <h2>Preview</h2>
-    <NucleusComponentRenderer src={htmlContent} name={componentName} zoom="100" client:visible/>
+    <NucleusComponentRenderer src={htmlContent} name={componentName} zoom="100" snowflake={snowflake} client:visible/>
     <NucleusCodeSnippet src={htmlContent} hide-top-radius client:visible/>
   </div>
 
