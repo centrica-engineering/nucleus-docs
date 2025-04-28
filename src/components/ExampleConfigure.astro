@@ -1,7 +1,7 @@
 ---
 const { componentName } = Astro.props;
 const { disableAttributes } = Astro.props;
-const { snowflake = false } = Astro.props;
+const snowflake  = componentName.split('-')[0] === 'nss';
 
 import { NucleusComponentRenderer } from './NucleusComponentRenderer';
 import { NucleusCodeSnippet } from './NucleusCodeSnippet';

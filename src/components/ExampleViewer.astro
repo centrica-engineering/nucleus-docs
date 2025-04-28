@@ -8,7 +8,7 @@ const componentName = slug?.replace('components/', '');
 
 const { type } = Astro.props;
 const { disableConfigure = false } = Astro.props;
-const { snowflake = false } = Astro.props;
+const snowflake  = componentName?.split('-')[0] === 'nss';
 const exampleFileMatcher = `/assets/${slug}/${type}.html`;
 const examples = import.meta.glob("../assets/**/*.html", { import: 'default', as: 'raw', eager: true});
 const htmlFile = Object.keys(examples).find((example) => example?.endsWith(exampleFileMatcher));
