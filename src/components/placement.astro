@@ -4,7 +4,6 @@ const { name } = Astro.props;
 import { ceJsDoc } from "../scripts/custom-elements";
 
 const placements = ceJsDoc.find((tag) => tag.name === name)?.placements;
-
 ---
 {
   placements?.length > 0 && (
