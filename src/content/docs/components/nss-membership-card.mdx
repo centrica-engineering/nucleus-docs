@@ -15,8 +15,6 @@ import Figma from '@components/figma.astro';
 
 ## Overview
 
-**The purpose of the membership card is to provide details of a single offer or benefit exclusively for a particular customer.**
-
 <CompDetails name={componentName} />
 
 The snowflake `nss-membership-card` is specific to the 'membership wallet'. It utilises the membership styling and colour scheme that sets it apart from `ns-card`.
@@ -27,10 +25,10 @@ The snowflake `nss-membership-card` is specific to the 'membership wallet'. It u
   <TabItem label="Standard">
     <Tabs>
       <TabItem label="Membership scheme">
-        <ExampleViewer type="standard" />
+        <ExampleViewer type="standard"/>
       </TabItem>
       <TabItem label="Navy scheme">
-        <ExampleViewer type="scheme-navy" />
+        <ExampleViewer type="scheme-navy"/>
       </TabItem>
     </Tabs>
   </TabItem>
@@ -76,7 +74,7 @@ The snowflake `nss-membership-card` is specific to the 'membership wallet'. It u
 
 ### Specification
 
-<Specification name={componentName} />
+<Specification name={componentName} exclude='inactive, inactive-message, background, pill-over-image, decoration' />
 
 ### Figma
 
