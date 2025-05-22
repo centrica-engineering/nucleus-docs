@@ -1,6 +1,6 @@
 ---
 const { componentName } = Astro.props;
-const { disableAttributes } = Astro.props;
+const { disableAttributes = [ ]} = Astro.props;
 const snowflake  = componentName.split('-')[0] === 'nss';
 
 import { NucleusComponentRenderer } from './NucleusComponentRenderer';
@@ -165,7 +165,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
   {
     customElement?.attributes?.map((attribute) => {
       const defaultValue = attribute.default?.replaceAll('"', '');
-      const disabled = disableAttributes?.includes(attribute.name) ? 'disabled' : '';
+      const disableAttribute = disableAttributes?.includes(attribute.name) ? 'disabled' : '';
       if (attribute.type === 'string') {
         if (attribute.name === 'icon' || (componentName === 'ns-icon' && attribute.name === 'name') || (componentName !== 'ns-icon' && attribute.description?.includes('icon'))) {
           return (
@@ -199,7 +199,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
           return (
             <div class="config-elements">
               <label>{attribute.name}</label>
-              <input type="text" name={attribute.name} value={defaultValue} {disabled}>
+              <input type="text" name={attribute.name} value={defaultValue} {disableAttribute}/>
             </div>
           );
         }
@@ -211,7 +211,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
           const checked = defaultValue === option ? '' : undefined;
           return (
             <div class="radio-element">
-              <label><input type="radio" name={attribute.name} value={option ?? " "} {checked}> {option ? option : "empty"}</label>
+              <label><input type="radio" name={attribute.name} value={option ?? " "} {checked} {disableAttribute}/> {option ? option : "empty"}</label>
             </div>
           );
         });
@@ -225,7 +225,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
         return (
           <div class="config-elements">
             <label>{attribute.name}</label>
-            <input type="number" name={attribute.name} value={defaultValue} {disabled}>
+            <input type="number" name={attribute.name} value={defaultValue} {disableAttribute}/>
           </div>
         );
       } else if (attribute.type === 'boolean') {
@@ -238,7 +238,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
                   const checked = defaultValue === option ? true : false;
                   return (
                   <div class="radio-element">
-                    <label><input type="radio" name={attribute.name} value={option} {checked} {disabled}> {option}</label>
+                    <label><input type="radio" name={attribute.name} value={option} {checked} {disableAttribute}/> {option}</label>
                   </div>
                   )
                 })
@@ -250,7 +250,7 @@ attributes?.splice(0, 0, typeAttribute[0]);
         return (
           <div class="config-elements">
             <label>{attribute.name}</label>
-            <input type="text" name={attribute.name} {disabled}/>
+            <input type="text" name={attribute.name} {disableAttribute}/>
           </div>
         );
       }
