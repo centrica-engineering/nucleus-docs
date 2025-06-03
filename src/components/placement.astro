@@ -4,23 +4,29 @@ const { name } = Astro.props;
 import { ceJsDoc } from "../scripts/custom-elements";
 
 const placements = ceJsDoc.find((tag) => tag.name === name)?.placements;
+const placementWrapper = (placement: string) => placement.indexOf(' > ') > -1 ? placement.split(' > ') : [placement];
 ---
 {
-  placements?.length > 0 && (
-    placements.length > 1 ?(
-      <p>The <code>{name}</code> component can be used in the following components:</p>
-      <ul>
-        {placements?.map((placement) => {
-          if (placement.indexOf(' > ') > -1) {
-            const placementTree = placement.split(' > ');
-            return <li><LinkToComponent name={placementTree[1].trim()} /> wrapped in <LinkToComponent name={placementTree[0].trim()} /></li>;
-          }
-          return <li><LinkToComponent name={placement.trim()} /></li>;
-        })}
-      </ul>
-    ) : (
-      <p>The <code>{name}</code> component can only be used as a child of the <LinkToComponent name={placements.toString()} /> element.</p>
-    )
+  placements?.length > 1 && (
+    <p>The <code>{name}</code> component can be used in the following components:</p>
+    <ul>
+      {placements?.map((placement) => {
+        if (placement.indexOf(' > ') > -1) {
+          const placementTree = placement.split(' > ');
+          return <li><LinkToComponent name={placementTree[1].trim()} /> wrapped in <LinkToComponent name={placementTree[0].trim()} /></li>;
+        }
+        return <li><LinkToComponent name={placement.trim()} /></li>;
+      })}
+    </ul>
+  )
+}
+{  
+  placements?.length === 1 && (
+  <div>
+    {placements[0].indexOf(' > ') > -1 ? 
+         <p>The <code>{name}</code> component can be used as a child of <LinkToComponent name={placementWrapper(placements[0])[1].trim()} /> wrapped in <LinkToComponent name={placementWrapper(placements[0])[0].trim()} />.</p>
+        : <p>The <code>{name}</code> component can only be used as a child of the <LinkToComponent name={placements.toString()} /> element.</p>}
+  </div>
   )
 }
 
