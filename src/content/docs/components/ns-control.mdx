@@ -1,0 +1,86 @@
+---
+title: Control
+---
+
+export const componentName = "ns-cta";
+
+import Specification from '@components/specification.astro';
+import Placement from '@components/placement.astro';
+import CompDetails from '@components/cem-description.astro';
+import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+import Figma from '@components/figma.astro';
+
+## Overview
+
+<CompDetails name={componentName} />
+
+`ns-control` allows users to take actions or make choices with a single interaction. These buttons can have text visible or hidden if the icon is enough to convey meaning. 
+
+### Examples
+
+<ExampleViewer type="standard" />
+
+## Guidance
+
+:::do
+- Group related filters logically (e.g., by category or relevance).
+- Provide clear, descriptive headings for each filter group.
+- Highlight default filters only if they clearly align with the user’s likely needs or preferences.
+:::
+
+:::dont
+- Use filters to hide essential information from users.
+- Overload the page with too many filter options visible at once.
+- Nest filters within other filters, creating complex navigation.
+- Use vague or unclear labels that confuse users.
+- Show filter options that result in 0 results without providing feedback or alternatives.
+:::
+
+## Implementation
+
+### Placement
+
+<Placement name={componentName} />
+
+### Specification
+
+<Specification name={componentName} />
+
+#### Specification notes
+
+##### `filter-data`
+
+```json
+[
+  {
+    "heading": "Typewriter artisan",
+    "expand": false,
+    "name": "typewriter-artisan",
+    "value": "2",
+    "option": "radio",
+    "helper": "Activated charcoal praxis bespoke glossier tacos?",
+    "optionData": [
+      {
+        "label": "Helvetica gentrify",
+        "value": "Z",
+        "checked": true,
+        "counter": 2
+      },
+      {
+        "label": "Post-ironic messenger",
+        "value": "Y",
+        "checked": false
+      }
+      ...
+    ]
+  }
+  ...
+]
+```
+
+### Figma
+
+<Figma name={componentName} />
