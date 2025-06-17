@@ -26,17 +26,16 @@ import Figma from '@components/figma.astro';
 ## Guidance
 
 :::do
-- Group related filters logically (e.g., by category or relevance).
-- Provide clear, descriptive headings for each filter group.
-- Highlight default filters only if they clearly align with the user’s likely needs or preferences.
+- Use short text to describe the action being taken.
+- Use for lower emphasis actions, such as opening a modal.
+- Relate the action to the adjacent content.
 :::
 
 :::dont
-- Use filters to hide essential information from users.
-- Overload the page with too many filter options visible at once.
-- Nest filters within other filters, creating complex navigation.
-- Use vague or unclear labels that confuse users.
-- Show filter options that result in 0 results without providing feedback or alternatives.
+- Try to use within an `ns-cta` to render an icon. Use the `ns-cta`'s icon attribute instead.
+- Make it overly wordy.
+- Use for downloads – use [`<ns-download>`](/components/ns-download) instead.
+- Use more than 4 `ns-controls` at once as it can cause cognitive load and usability issues. 
 :::
 
 ## Implementation
@@ -51,35 +50,6 @@ import Figma from '@components/figma.astro';
 
 #### Specification notes
 
-##### `filter-data`
-
-```json
-[
-  {
-    "heading": "Typewriter artisan",
-    "expand": false,
-    "name": "typewriter-artisan",
-    "value": "2",
-    "option": "radio",
-    "helper": "Activated charcoal praxis bespoke glossier tacos?",
-    "optionData": [
-      {
-        "label": "Helvetica gentrify",
-        "value": "Z",
-        "checked": true,
-        "counter": 2
-      },
-      {
-        "label": "Post-ironic messenger",
-        "value": "Y",
-        "checked": false
-      }
-      ...
-    ]
-  }
-  ...
-]
-```
 
 ### Figma
 
