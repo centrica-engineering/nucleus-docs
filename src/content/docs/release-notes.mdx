@@ -1,0 +1,25 @@
+---
+title: Release Notes
+---
+
+import ReleaseNotes from '@components/NucleusReleaseNotes.astro';
+
+## Nucleus
+
+<ReleaseNotes version="1.18.0" date="29/02/2024">
+<h4>New components</h4>
+<ul>
+<li>First, we released ns-column, to open up support for more column options, and we'll start with a 4-columns layout! Stay tuned for more options.
+Very excited to release this one: ns-slot-picker it's the last piece of something big to come... a complete appointment selector.
+ns-slot-picker + ns-calendar = ns-appointment-selector</li>
+</ul>
+<h4>Improvement</h4>
+<ul><li>
+We have chosen the winner of the testimonial A/B test. The winning version is the card version, and the loser is the flat version. This is now available as of today!
+We added bubbles to the manual-address event on nsx-address-selector
+</li></ul>
+<h4>Bug fixes</h4>
+<ul><li>The lockjaw version of ns-lockup had its layout breaking when the image failed to load.... well not anymore!
+The values passed by the experience pattern nsx-marketing-consent were not consistent with the API, they now speak the same language.
+There was an issue when firing multiple change events for radio buttons and checkboxes in ns-inputter... no more.</li></ul>
+</ReleaseNotes>

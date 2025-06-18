@@ -208,6 +208,10 @@ export default defineConfig({
           collapsed: true,
           autogenerate: { directory: "page-types" },
         },
+        {
+          label: "Release notes",
+          link: "/release-notes",
+        }
       ]
     }),
     lit(),
