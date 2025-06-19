@@ -7,6 +7,10 @@
     {
       "name": "ns-standout",
       "badge": "updated"
+    },
+    {
+      "name": "ns-control",
+      "badge": "new"
     }
   ]
 }
