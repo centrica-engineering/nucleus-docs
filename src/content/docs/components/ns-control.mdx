@@ -26,30 +26,31 @@ import Figma from '@components/figma.astro';
 ## Guidance
 
 :::do
-- Use short text to describe the action being taken.
-- Use for lower emphasis actions, such as opening a modal.
-- Relate the action to the adjacent content.
+- Use to control the user interface.
+- Relate the label to the icon in the control.
+- Use short text to describe the control.
 :::
 
 :::dont
-- Try to use within an `ns-cta` to render an icon. Use the `ns-cta`'s icon attribute instead.
-- Make it overly wordy.
+- Make the label overly wordy.
+- Try to use within an `ns-cta` to render an icon. Use the `ns-cta`'s icon attribute.
 - Use for downloads – use [`<ns-download>`](/components/ns-download) instead.
-- Use more than 4 `ns-controls` at once as it can cause cognitive load and usability issues. 
+- Use more than 4 `ns-control` components together as it can cause cognitive load.
 :::
 
+### Standard
+
+![Labelled diagram of ns-control](@assets/components/ns-control/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Label | Keep the text short, relevant, and actionable. It should not exceed 24 characters. |
+| <span class="marker">B</span> | Icon | Use to support and highlight the type of control. |
+
 ## Implementation
 
-### Placement
-
-<Placement name={componentName} />
-
-## Implementation
-
-#### Specification notes
+### Specification
 
 <Specification name={componentName} />
-
-### Figma
-
-<Figma name={componentName} />
