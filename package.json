@@ -13,7 +13,7 @@
   "dependencies": {
     "@astrojs/lit": "^4.0.1",
     "@astrojs/markdown-remark": "^4.2.0",
-    "@astrojs/starlight": "^0.15.0",
+    "@astrojs/starlight": "^0.26.2",
     "@astrojs/starlight-docsearch": "^0.1.0",
     "@connectedhomes/nucleus": "^3.22.0",
     "@connectedhomes/nucleus-snowflakes": "^1.0.1",
@@ -21,12 +21,15 @@
     "@fontsource/roboto": "^5.0.8",
     "@lit/task": "^1.0.0",
     "@webcomponents/template-shadowroot": "^0.2.1",
-    "astro": "^4.0.0",
+    "astro": "^4.10.2",
     "hast-util-to-html": "^9.0.0",
     "htmlfy": "^0.1.0",
     "lit": "^3.1.0",
     "rehype-autolink-headings": "^7.1.0",
-    "sharp": "^0.32.5"
+    "rehype-expressive-code": "^0.35.6",
+    "sharp": "^0.32.5",
+    "unist-util-remove": "^4.0.0",
+    "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
     "deepmerge": "^4.3.1"
