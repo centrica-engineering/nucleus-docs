@@ -1,14 +1,6 @@
 {
   "components": [
     {
-      "name": "ns-pill",
-      "badge": "updated"
-    },
-    {
-      "name": "ns-standout",
-      "badge": "updated"
-    },
-    {
       "name": "ns-control",
       "badge": "new"
     }
