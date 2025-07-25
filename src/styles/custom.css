@@ -64,6 +64,7 @@
   --button-secondary-bg-hover: var(--ns-color-base-700);
   --button-secondary-color: var(--ns-color-white);
   --button-secondary-color-hover: var(--ns-color-white);
+  --button-tertiary-color-hover: var(--ns-color-white);
 
   /* Map Nucleus colours to Starlight variables */
 
@@ -191,6 +192,7 @@
   --button-secondary-bg-hover: var(--ns-color-base-200);
   --button-secondary-color: var(--ns-color-teal);
   --button-secondary-color-hover: var(--ns-color-base-800);
+  --button-tertiary-color-hover: var(--ns-color-base-800);
 
   /* Homepage logo */
   --ns-logo-homepage: url('/logo-light.svg');
@@ -320,6 +322,9 @@ main {
     }
 
     &.reset {
+      &:hover {
+        color: var(--button-tertiary-color-hover) !important;
+      }
       &::before {
         mask-image: var(--ns-icon-reset);
       }
