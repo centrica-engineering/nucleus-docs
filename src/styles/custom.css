@@ -279,10 +279,12 @@ main {
     }
   
     &.secondary {
-      background-color: var(--sl-color-gray-7);
+      background-color: var(--button-secondary-bg);
+      color: var(--button-secondary-color);
   
       &:hover {
-        color: var(--sl-color-gray-1);
+        background-color: var(--button-secondary-bg-hover);
+        color: var(--button-secondary-color-hover);
       }
     
       &:focus {
