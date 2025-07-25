@@ -276,7 +276,11 @@ main {
     &.primary {
       background-color: var(--sl-color-text-accent);
       color: var(--sl-color-black) !important;
-    }
+
+      &:hover {
+        background-color: var(--button-primary-bg-hover);
+      }      
+    }   
   
     &.secondary {
       background-color: var(--button-secondary-bg);
