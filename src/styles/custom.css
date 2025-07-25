@@ -58,8 +58,12 @@
   --ns-color-pink-low: hsl(var(--ns-hue-pink), 43%, 16%);
   --ns-color-pink-high: hsl(var(--ns-hue-pink), 43%, 97%);
 
-  /* Action button colours */
+  /* Action / button colours */
   --button-primary-bg-hover: var(--ns-color-pink-500);
+  --button-secondary-bg: var(--ns-color-base-800);
+  --button-secondary-bg-hover: var(--ns-color-base-700);
+  --button-secondary-color: var(--ns-color-white);
+  --button-secondary-color-hover: var(--ns-color-white);
 
   /* Map Nucleus colours to Starlight variables */
 
@@ -181,8 +185,12 @@
   --sl-color-text: var(--ns-color-navy);
   --sl-color-heading: var(--ns-color-navy);
 
-  /* Action button colours */
+  /* Action / button colours */
   --button-primary-bg-hover: var(--ns-color-pink-600);
+  --button-secondary-bg: var(--ns-color-base-100);
+  --button-secondary-bg-hover: var(--ns-color-base-200);
+  --button-secondary-color: var(--ns-color-teal);
+  --button-secondary-color-hover: var(--ns-color-base-800);
 
   /* Homepage logo */
   --ns-logo-homepage: url('/logo-light.svg');

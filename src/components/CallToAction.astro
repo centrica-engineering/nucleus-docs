@@ -22,8 +22,8 @@ const { link, variant, icon } = Astro.props;
     font-weight: 500;
 
     &.primary {
-    background: var(--sl-color-text-accent);
-    color: var(--sl-color-black);
+      background: var(--sl-color-text-accent);
+      color: var(--sl-color-black);
 
       &:hover {
         background: var(--button-primary-bg-hover);
@@ -31,7 +31,12 @@ const { link, variant, icon } = Astro.props;
     }
 
     &.secondary {
-      border: 1px solid;
+      background-color: var(--button-secondary-bg);
+      color: var(--button-secondary-color);
+
+      &:hover {
+        background: var(--button-secondary-bg-hover);
+      }
     }
 
     &.minimal {
