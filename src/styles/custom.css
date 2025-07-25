@@ -18,6 +18,8 @@
   --ns-color-red: hsl(var(--ns-hue-red), 99%, 66%);
   --ns-color-orange: hsl(var(--ns-hue-orange), 74%, 66%);
   --ns-color-pink: hsl(var(--ns-hue-pink), 60%, 54%);
+  --ns-color-pink-500: hsl(var(--ns-hue-pink), 60%, 47%);
+  --ns-color-pink-600: hsl(var(--ns-hue-pink), 60%, 36%);
   --ns-color-magenta: hsl(var(--ns-hue-magenta), 52%, 41%);
   --ns-color-purple: hsl(var(--ns-hue-purple), 43%, 66%);
   --ns-color-indigo: hsl(var(--ns-hue-indigo), 43%, 66%);
@@ -75,7 +77,7 @@
 
   --sl-color-accent-low: hsl(var(--ns-hue-orange), 54%, 20%);
   --sl-color-accent: var(--ns-color-orange);
-  --sl-color-accent-high: hsl(var(--ns-hue-pink), 60%, 36%);
+  --sl-color-accent-high: var(--ns-color-pink-600);
   
   --sl-color-text-accent : var(--sl-color-accent-high);
   --sl-color-bg-accent: var(--sl-color-accent);
@@ -168,7 +170,7 @@
 
   --sl-color-accent-low: hsl(var(--ns-hue-orange), 88%, 90%);
   --sl-color-accent: var(--ns-color-orange);
-  --sl-color-accent-high: hsl(var(--ns-hue-pink), 60%, 47%);
+  --sl-color-accent-high: var(--ns-color-pink-500);
 
   --sl-color-text-accent: var(--sl-color-accent-high);
   --sl-color-bg-accent: var(--sl-color-accent);
