@@ -20,25 +20,24 @@ const { link, variant, icon } = Astro.props;
     text-decoration: none;
     font-size: var(--sl-text-sm);
     font-weight: 500;
-  }
 
-  .action.primary {
+    &.primary {
     background: var(--sl-color-text-accent);
     color: var(--sl-color-black);
-  }
 
-  .action.primary:hover {
-    background: var(--button-primary-bg-hover);
-  }
+      &:hover {
+        background: var(--button-primary-bg-hover);
+      }
+    }
 
-  .action.secondary {
-    border: 1px solid;
-  }
+    &.secondary {
+      border: 1px solid;
+    }
 
-  .action.minimal {
-    padding-inline: 0;
+    &.minimal {
+      padding-inline: 0;
+    } 
   }
-
   @media (min-width: 50rem) {
     .action {
       font-size: var(--sl-text-base);
