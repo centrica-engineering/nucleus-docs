@@ -3,6 +3,10 @@
     {
       "name": "ns-control",
       "badge": "new"
+    },
+        {
+      "name": "ns-video",
+      "badge": "updated"
     }
   ]
 }
