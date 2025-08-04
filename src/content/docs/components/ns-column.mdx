@@ -21,11 +21,19 @@ Use for arranging components and content, not for gratuitous numerous columns as
 
 ### Examples
 
-<ExampleViewer type="standard" />
+<Tabs>
+  <TabItem label="Standard">
+    <ExampleViewer type="standard" />
+  </TabItem>
+  <TabItem label="Auto">
+    <ExampleViewer type="auto" />
+  </TabItem>
+</Tabs>
 
 ## Guidance
 
 :::do
+- Use the `auto` attribute when you want your content to take the best available space or with dynamic content.
 - Pick the number of columns to complement the content.
 - Test the full responsive range of pages and not just the defined viewports.
 - Try to stick to one column as much as possible.
@@ -38,6 +46,7 @@ Use for arranging components and content, not for gratuitous numerous columns as
 - Use in components that are too small to support multiple components.
 - Use to place components in columns that have been designed to be standalone.
 - Use to create newspaper-style columns and layouts.
+- Use `auto` for when you want to have ratios.
 :::
 
 ## Implementation
@@ -94,7 +103,7 @@ Each value is applied at that viewpoint and each larger viewport unless the larg
   </TabItem>
 </Tabs>
 
-##### How do the 2:1, 3:1 columns work?
+##### How do the 2:1, 3:1 column ratios work?
 
 Ratios are used in order to have different widths for the columns. The ratios can be `1:2`, `2:1`, `1:3` and `3:1`. The first value will be applied to the width of all odd child elements, and the second to all child even elements.
 
@@ -108,4 +117,3 @@ The markup would look like:
   <div>This will have width of 1</div>
 </ns-column>
 ```
-

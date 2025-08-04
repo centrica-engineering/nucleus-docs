@@ -54,8 +54,8 @@ The skyline contains the [`<ns-expander>`](/components/ns-expander). We recommen
 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
-| <span class="marker">A</span> | Icon | This is an optional icon. It can be either an information or warning icon depending on the type of message you wish to display. |
-| <span class="marker">B</span> | Heading | The heading to the anonymous content. When the heading is clicked the component opens to reveal the content. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">A</span> | Icon | Either an `info` or `warning` icon. Relevant to the message. |
+| <span class="marker">B</span> | Heading | Introduces the content in the anonymous slot. Clicking the headings reveals the content. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
 | <span class="marker">C</span> | Anonymous slot | A single, short paragraph works best. Include emphasis with `<strong>`, inline links `<a>`. |
 
 ## Implementation
@@ -67,4 +67,3 @@ The skyline contains the [`<ns-expander>`](/components/ns-expander). We recommen
 ### Specification
 
 <Specification name={componentName} />
-

@@ -55,6 +55,7 @@ export class NucleusComponentRenderer extends LitElement {
       .form {
         display: flex;
         background-color: var(--sl-color-bg-nav);
+        border-bottom: 1px solid var(--sl-color-gray-6);
         padding-inline: 1rem;
         padding-block: 0.5rem;
 

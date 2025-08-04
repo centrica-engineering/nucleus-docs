@@ -35,17 +35,6 @@ The appointment-picker comprises a calendar to select a date and a radio-button 
 - Force customers to use the appointment picker first if there is very little availability. Present the next available appointments in a [`<ns-inputter>`](/components/ns-inputter#most-common-input-types) `radio` first.
 :::
 
-### Standard
-
-![Labelled diagram of ns-appointment-picker](@assets/components/ns-appointment-picker/guidance.webp)
-
-#### Key
-
-| Key | Field type | Guidelines |
-| :--- | :--- | :--- |
-| <span class="marker">A</span> | `ns-calendar` | The calendar to select the date. |
-| <span class="marker">B</span> | `ns-inputter` | The picker to select the time. |
-
 ## Implementation
 
 ### Placement
@@ -56,9 +45,11 @@ The appointment-picker comprises a calendar to select a date and a radio-button 
 
 <Specification name={componentName} />
 
-#### `slot-data`
+#### Specification notes
 
-The `slot-data` attribute (`slotData` property) should consist of array of objects containing a `date` and a `slots` property.
+##### `slot-data`
+
+The [`slot-data`](#specification-attribute-slot-data) attribute should consist of array of objects containing a `date` and a `slots` property.
 
 date: String - eg. 2020-01-28 (28th January 2020).
 slots: Array of objects with a name and value pair.
@@ -84,4 +75,3 @@ const slotData = [
   { date: "2020-01-29", slots: slots },
 ];
 ```
-
