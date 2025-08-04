@@ -45,12 +45,24 @@ export function getStaticPaths() {
 }
 ---
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurator</title>
   </head>
+  <script is:inline>
+    // Copied from @astrojs/starlight/components/ThemeProvider.astro
+    // To set the theme based on localStorage or prefers-color-scheme preference
+    (() => {
+      const storedTheme =
+        typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+      const theme =
+        storedTheme ||
+        (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+    })();
+  </script>
   <body>
     <header>
       <div class="header">
