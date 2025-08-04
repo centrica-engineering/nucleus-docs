@@ -1,19 +1,11 @@
 {
   "components": [
     {
-      "name": "ns-landmark",
-      "badge": "updated"
-    },
-    {
-      "name": "ns-scroller",
+      "name": "ns-control",
       "badge": "new"
     },
-    {
-      "name": "ns-product-card",
-      "badge": "updated"
-    },
-    {
-      "name": "ns-panel",
+        {
+      "name": "ns-video",
       "badge": "updated"
     }
   ]

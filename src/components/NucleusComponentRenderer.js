@@ -11,6 +11,7 @@ export class NucleusComponentRenderer extends LitElement {
       src: { type: String },
       _minHeight: { type: Number, state: true },
       zoom: { type: Boolean },
+      snowflake: { type: Boolean },
       _viewport: { type: String, state: true },
       _customElement: { type: Object, state: true },
       _loading: { type: Boolean }
@@ -115,6 +116,7 @@ export class NucleusComponentRenderer extends LitElement {
     this._viewport = 'desktop';
     this.zoom = '75';
     this._loading = false;
+    this.snowflake = false;
   }
 
   willUpdate() {
@@ -163,6 +165,7 @@ export class NucleusComponentRenderer extends LitElement {
     return `
       <head>
         <script src="https://www.britishgas.co.uk/nucleus/nucleus.min.js" type="text/javascript"></script>
+        ${this.snowflake ? '<script src="https://www.britishgas.co.uk/nucleus-snowflakes/nucleus-snowflakes.min.js" type="text/javascript"></script>' : ''}
       </head>
       <body class="ndsn">
         ${mainWrapper}

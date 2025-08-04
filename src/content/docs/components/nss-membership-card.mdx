@@ -1,0 +1,81 @@
+---
+title: Membership Card
+---
+
+export const componentName = "nss-membership-card";
+
+import Specification from '@components/specification.astro';
+import Placement from '@components/placement.astro';
+import CompDetails from '@components/cem-description.astro';
+import ExampleViewer from '@components/ExampleViewer.astro';
+import RelatedLinks from '@components/related-links.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+import Figma from '@components/figma.astro';
+
+## Overview
+
+<CompDetails name={componentName} />
+
+The snowflake `nss-membership-card` is specific to the 'membership wallet'. It utilises the membership styling and colour scheme that sets it apart from `ns-card`.
+
+### Examples
+
+<Tabs>
+  <TabItem label="Standard">
+    <Tabs>
+      <TabItem label="Membership scheme">
+        <ExampleViewer type="standard"/>
+      </TabItem>
+      <TabItem label="Navy scheme">
+        <ExampleViewer type="scheme-navy"/>
+      </TabItem>
+    </Tabs>
+  </TabItem>
+</Tabs>
+
+## Guidance
+
+:::do
+
+- Use specifically for membership.
+- Use both `membership` and `navy` schemes to provide visual variety.
+- Carefully consider content and how it will display across different viewports.
+
+:::
+
+:::dont
+
+- Use excessively long content.
+- Add lists `<ul>` `<ol>` due to the centred content.
+- Try to use additional colours that are not part of the membership scheming.
+- Repetitively use images on adjacent cards as it harms the recognition factor.
+
+:::
+
+### Standard
+
+![Labelled diagram of nss-membership-card](@assets/components/nss-membership-card/guidance.webp)
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Image | Use an image size of [640 x 360px](/guidelines/assets#640x360px). Images should be WebP file type, the file size should be no more than 25kb. |
+| <span class="marker">B</span> | Heading | The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">C</span> | Paragraph | A single, short paragraph works best. The text length should not exceed two paragraphs of 3 lines. Include emphasis with `<strong>`, inline links `<a>`. Add a [caveat link](/components/ns-caveat) if required. |
+| <span class="marker">D</span> | CTA | Keep the text short, relevant, and actionable. It should not exceed 24 characters. |
+
+### Considerations
+
+### Placement
+
+<Placement name={componentName} />
+
+### Specification
+
+<Specification name={componentName} exclude='inactive, inactive-message, background, pill-over-image, decoration' />
+
+### Figma
+
+<Figma name={componentName} />

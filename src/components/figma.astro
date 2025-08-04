@@ -1,8 +1,7 @@
 ---
-import LinkToComponent from "./LinkToComponent.astro";
 const { name } = Astro.props;
+const namespace = name.split("-")[0];
 import { Icon } from "@astrojs/starlight/components";
-import { ceJsDoc } from "../scripts/custom-elements";
 
 // Define the common URL for the Figma UI Kit that prepends the node ID
 const urlFigmaUIKit =
@@ -56,6 +55,7 @@ const urlMap = {
   "ns-password": "?m=auto&node-id=3121-52755&t=yVg9bPLnlT3xUSfQ-1",
   "ns-selector": "?m=auto&node-id=2218-48462&t=yVg9bPLnlT3xUSfQ-1",
   "nsx-address-selector": "?m=auto&node-id=6856-52255&t=yVg9bPLnlT3xUSfQ-1",
+  "nsx-filter": "?m=auto&node-id=13489-647&t=0Q5kJoUEj6yyeAU4-1",
   //"nsx-footer": "", - Does not have Figma configuration instructions
   //"nsx-header": "", - Does not have Figma configuration instructions
   "nsx-marketing-consent": "?m=auto&node-id=12008-10266&t=yVg9bPLnlT3xUSfQ-1",
@@ -67,37 +67,42 @@ const componentUrl =
   name in urlMap ? `${urlFigmaUIKit}${urlMap[name]}` : urlFigmaUIKit;
 const inputterAdditionalUrl = `${urlFigmaUIKit}?m=auto&node-id=1283-39959&t=0cyP8uC7iqnlpc2w-1`;
 ---
+{ namespace === "nss" &&
+  <p>The Figma UI Kit only reflects reusable components in the system. This particular component is a unique 'snowflake' and therefore only has a single use case so far. In order to re-use <code>{name}</code>, please raise an RFC to move it from snowflake to Nucleus component library.</p>
+}
 
-<p>
-  Please note: The <code>{name}</code> Figma component configuration instructions
-  are available only to members of the British Gas workspace who have access to the
-  Nucleus Figma UI Kit.
-</p>
+{ namespace !== "nss" && (
+  <p>
+    Please note: The <code>{name}</code> Figma component configuration instructions
+    are available only to members of the British Gas workspace who have access to the
+    Nucleus Figma UI Kit.
+  </p>
 
-<div class="figma">
-  <img src="/logo-figma.svg" alt="Figma logo" width="32" />
-  <div>
-    <p>
-      <a href={componentUrl} target="_blank" rel="noopener noreferrer">
-        Configuration instructions
-        <Icon name="external" size="1em" />
-      </a>
-      <div>(Opens in Figma).</div>
-    </p>
-    <!-- Only shows on the ns-inputter page-->
-    {
-      name === "ns-inputter" && (
-        <p>
-          <a href={inputterAdditionalUrl} target="_blank" rel="noopener noreferrer">
-            Additional configuration instructions for radio and checkbox 
-            <Icon name="external" size="1em" />
-          </a>&nbsp;
-          <div>(Opens in Figma).</div>
-        </p>
-      )
-    }
-  </div>
-</div>
+  <div class="figma">
+    <img src="/logo-figma.svg" alt="Figma logo" width="32" />
+    <div>
+      <p>
+        <a href={componentUrl} target="_blank" rel="noopener noreferrer">
+          Configuration instructions
+          <Icon name="external" size="1em" />
+        </a>
+        <div>(Opens in Figma).</div>
+      </p>
+      <!-- Only shows on the ns-inputter page-->
+      {
+        name === "ns-inputter" && (
+          <p>
+            <a href={inputterAdditionalUrl} target="_blank" rel="noopener noreferrer">
+              Additional configuration instructions for radio and checkbox 
+              <Icon name="external" size="1em" />
+            </a>&nbsp;
+            <div>(Opens in Figma).</div>
+          </p>
+        )
+      }
+    </div>
+  </div>)
+}
 
 <style>
   .figma {

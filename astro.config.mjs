@@ -57,6 +57,19 @@ const componentSidebar = () => {
           }),
       },
       {
+        label: "Snowflakes",
+        items: 
+        ceJsDoc.filter((customElement) => customElement.category === 'Snowflakes' && !isDeprecated(customElement.name))
+          .sort((ce1, ce2) => ce1.name > ce2.name ? 1 : -1)
+          .map((customElement) => {
+            return {
+              label: customElement['display-name'],
+              link: `/components/${customElement.name}`,
+              ...badge(customElement.name)
+            }
+          }),
+      },
+      {
         label: "Deprecated",
         items: 
           customElements.tags.filter((tag) => tag.deprecated)
