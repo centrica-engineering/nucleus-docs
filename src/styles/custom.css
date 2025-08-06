@@ -15,7 +15,7 @@
 
   --ns-color-white: hsl(0, 0%, 100%);
   --ns-color-teal: hsl(var(--ns-hue-teal), 40%, 32%);
-  --ns-color-red: hsl(var(--ns-hue-red), 99%, 66%);
+  --ns-color-red: hsl(var(--ns-hue-red), 99%, 70%);
   --ns-color-orange: hsl(var(--ns-hue-orange), 74%, 66%);
   --ns-color-pink: hsl(var(--ns-hue-pink), 60%, 54%);
   --ns-color-magenta: hsl(var(--ns-hue-magenta), 52%, 41%);
