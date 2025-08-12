@@ -15,7 +15,7 @@
 
   --ns-color-white: hsl(0, 0%, 100%);
   --ns-color-teal: hsl(var(--ns-hue-teal), 40%, 32%);
-  --ns-color-red: hsl(var(--ns-hue-red), 99%, 66%);
+  --ns-color-red: hsl(var(--ns-hue-red), 99%, 70%);
   --ns-color-orange: hsl(var(--ns-hue-orange), 74%, 66%);
   --ns-color-pink: hsl(var(--ns-hue-pink), 60%, 54%);
   --ns-color-pink-500: hsl(var(--ns-hue-pink), 60%, 47%);
@@ -46,16 +46,22 @@
 
   /* Aside colours */
   --ns-color-orange-low: hsl(var(--ns-hue-orange), 74%, 16%);
+  --ns-color-orange-mid: hsl(var(--ns-hue-orange), 74%, 21%);
   --ns-color-orange-high: hsl(var(--ns-hue-orange), 74%, 97%);
   --ns-color-indigo-low: hsl(var(--ns-hue-indigo), 43%, 16%);
+  --ns-color-indigo-mid: hsl(var(--ns-hue-indigo), 43%, 21%);
   --ns-color-indigo-high: hsl(var(--ns-hue-indigo), 43%, 97%);
   --ns-color-purple-low: hsl(var(--ns-hue-purple), 43%, 16%);
+  --ns-color-purple-mid: hsl(var(--ns-hue-purple), 43%, 21%);
   --ns-color-purple-high: hsl(var(--ns-hue-purple), 43%, 97%);
   --ns-color-red-low: hsl(var(--ns-hue-red), 99%, 16%);
+  --ns-color-red-mid: hsl(var(--ns-hue-red), 99%, 21%);
   --ns-color-red-high: hsl(var(--ns-hue-red), 99%, 97%);
   --ns-color-green-low: hsl(var(--ns-hue-green), 43%, 16%);
+  --ns-color-green-mid: hsl(var(--ns-hue-green), 43%, 21%);
   --ns-color-green-high: hsl(var(--ns-hue-green), 43%, 97%);
   --ns-color-pink-low: hsl(var(--ns-hue-pink), 43%, 16%);
+  --ns-color-pink-mid: hsl(var(--ns-hue-pink), 43%, 21%);
   --ns-color-pink-high: hsl(var(--ns-hue-pink), 43%, 97%);
 
   /* Action / button colours */
@@ -92,6 +98,7 @@
   
   --sl-color-text: var(--sl-color-gray-2);
   --sl-color-heading: var(--sl-color-gray-2);
+  --sl-color-bg-inline-code: var(--sl-color-accent-low);
 
   /* Text size and line height */
   --sl-text-2xs: 0.75rem; /* 12px */
@@ -185,6 +192,7 @@
 
   --sl-color-text: var(--ns-color-navy);
   --sl-color-heading: var(--ns-color-navy);
+  --sl-color-bg-inline-code: var(--sl-color-accent-low);
 
   /* Action / button colours */
   --button-primary-bg-hover: var(--ns-color-pink-600);
@@ -199,16 +207,22 @@
 
   /* Aside colours */
   --ns-color-orange-high: hsl(var(--ns-hue-orange), 74%, 23%);
+  --ns-color-orange-mid: hsl(var(--ns-hue-orange), 74%, 90%);
   --ns-color-orange-low: hsl(var(--ns-hue-orange), 74%, 97%);
   --ns-color-indigo-high: hsl(var(--ns-hue-indigo), 43%, 23%);
+  --ns-color-indigo-mid: hsl(var(--ns-hue-indigo), 43%, 90%);
   --ns-color-indigo-low: hsl(var(--ns-hue-indigo), 43%, 97%);
   --ns-color-purple-high: hsl(var(--ns-hue-purple), 43%, 23%);
+  --ns-color-purple-mid: hsl(var(--ns-hue-purple), 43%, 90%);
   --ns-color-purple-low: hsl(var(--ns-hue-purple), 43%, 97%);
   --ns-color-red-high: hsl(var(--ns-hue-red), 99%, 23%);
+  --ns-color-red-mid: hsl(var(--ns-hue-red), 99%, 90%);
   --ns-color-red-low: hsl(var(--ns-hue-red), 99%, 97%);
   --ns-color-green-high: hsl(var(--ns-hue-green), 43%, 23%);
+  --ns-color-green-mid: hsl(var(--ns-hue-green), 43%, 90%);
   --ns-color-green-low: hsl(var(--ns-hue-green), 43%, 97%);
   --ns-color-pink-high: hsl(var(--ns-hue-pink), 43%, 23%);
+  --ns-color-pink-mid: hsl(var(--ns-hue-pink), 43%, 90%);
   --ns-color-pink-low: hsl(var(--ns-hue-pink), 43%, 97%);
 }
 
