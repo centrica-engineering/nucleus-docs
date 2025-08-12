@@ -91,7 +91,7 @@
 
   --sl-color-accent-low: hsl(var(--ns-hue-orange), 54%, 20%);
   --sl-color-accent: var(--ns-color-orange);
-  --sl-color-accent-high: var(--ns-color-pink-600);
+  --sl-color-accent-high: hsl(var(--ns-hue-pink), 100%, 85%);
   
   --sl-color-text-accent : var(--sl-color-accent-high);
   --sl-color-bg-accent: var(--sl-color-accent);
@@ -185,7 +185,7 @@
 
   --sl-color-accent-low: hsl(var(--ns-hue-orange), 88%, 90%);
   --sl-color-accent: var(--ns-color-orange);
-  --sl-color-accent-high: var(--ns-color-pink-500);
+  --sl-color-accent-high: hsl(var(--ns-hue-pink), 60%, 54%);
 
   --sl-color-text-accent: var(--sl-color-accent-high);
   --sl-color-bg-accent: var(--sl-color-accent);
@@ -290,8 +290,8 @@ main {
     }
   
     &.primary {
-      background-color: var(--sl-color-text-accent);
-      color: var(--sl-color-black) !important;
+      background-color: var(--sl-color-accent-high);
+      color: var(--sl-color-black);
 
       &:hover {
         background-color: var(--button-primary-bg-hover);
