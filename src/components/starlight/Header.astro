@@ -2,13 +2,11 @@
 import config from 'virtual:starlight/user-config';
 import type { Props } from '@astrojs/starlight/props';
 
-import {
-	LanguageSelect,
-	Search,
-	SiteTitle,
-	SocialIcons,
-	ThemeSelect,
-} from 'virtual:starlight/components';
+import Search from 'virtual:starlight/components/Search';
+import LanguageSelect from 'virtual:starlight/components/LanguageSelect';
+import SiteTitle from 'virtual:starlight/components/SiteTitle';
+import SocialIcons from 'virtual:starlight/components/SocialIcons';
+import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
 
 const isHomePage = Astro.props.slug === '';
 
