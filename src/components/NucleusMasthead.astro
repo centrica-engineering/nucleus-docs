@@ -67,7 +67,7 @@ const mastheadClassList = [
 
 <style>
   .masthead {
-    background-color: var(--ns-masthead-background-color, var(--ns-color-teal));
+    background-color: var(--ns-color-teal));
     margin-block-start: var(--sl-content-pad-x);
     margin-inline-start: var(--sl-content-pad-x);
     margin-inline-end: var(--sl-content-pad-x);
@@ -91,33 +91,31 @@ const mastheadClassList = [
     }
 
     &.components {
-      --ns-masthead-background-color: var(--ns-color-masthead-components);
+      background-color: var(--ns-color-masthead-components);
     }
 
     &.experience {
-      --ns-masthead-background-color: var(--ns-color-masthead-experience);
+      background-color: var(--ns-color-masthead-experience);
     }
 
     &.form {
-      --ns-masthead-background-color: var(--ns-color-masthead-form);
+      background-color: var(--ns-color-masthead-form);
     }
 
     &.deprecated {
-      --ns-masthead-background-color: var(--ns-color-masthead-deprecated);
+      background-color: var(--ns-color-masthead-deprecated);
     }
 
     &.guidelines {
-      /* TODO: @drew - 2025-10-13 - setting the background color directly due to #801. Suggest to improve this by using the same technique used in asides.css */
-      --ns-masthead-background-color: hsl(var(--ns-hue-orange), 74%, 43%);
+      background-color: hsl(--ns-color-masthead-guidelines);
     }
 
     &.patterns {
-      /* TODO: @drew - 2025-10-13 - setting the background color directly due to #801. Suggest to improve this by using the same technique used in asides.css */
-      --ns-masthead-background-color: hsl(var(--ns-hue-purple), 43%, 35%);
+      background-color: hsl(--ns-color-masthead-patterns);
     }
 
     &.page-types {
-      --ns-masthead-background-color: var(--ns-color-masthead-page-types);
+      background-color: var(--ns-color-masthead-page-types);
     }
 
     .folder {
