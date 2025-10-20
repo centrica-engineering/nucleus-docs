@@ -9,11 +9,18 @@ import badges from "./src/data/badge.json";
 import { nucleusRemarkAside } from "./src/plugins/nucleus-remark-aside";
 
 const isDeprecated = (componentName) => customElements.tags.find((tag) => tag.name === componentName)?.deprecated;
-const badge = (componentName) => {
-  const componentBadge = badges.components?.find((component) => component.name === componentName)?.badge;
-  return {
-    badge: componentBadge
+
+const getBadge = (itemName, scope = 'components') => {
+  const scopeData = badges[scope];
+  
+  if (!scopeData) {
+    console.warn(`Badge scope "${scope}" not found in badges.json`);
+    return {};
   }
+
+  const item = scopeData.find((item) => item.name === itemName);
+  
+  return item?.badge ? { badge: item.badge } : {};
 };
 
 const componentSidebar = () => {
@@ -27,7 +34,7 @@ const componentSidebar = () => {
         return {
           label: customElement['display-name'],
           link: `/components/${customElement.name}`,
-          ...badge(customElement.name)
+          ...getBadge(customElement.name)
         }
       }),
       {
@@ -39,7 +46,7 @@ const componentSidebar = () => {
             return {
               label: customElement['display-name'],
               link: `/components/${customElement.name}`,
-              ...badge(customElement.name)
+              ...getBadge(customElement.name)
             }
           }),
       },
@@ -52,7 +59,7 @@ const componentSidebar = () => {
             return {
               label: customElement['display-name'],
               link: `/components/${customElement.name}`,
-              ...badge(customElement.name)
+              ...getBadge(customElement.name)
             }
           }),
       },
@@ -65,7 +72,7 @@ const componentSidebar = () => {
             return {
               label: customElement['display-name'],
               link: `/components/${customElement.name}`,
-              ...badge(customElement.name)
+              ...getBadge(customElement.name)
             }
           }),
       },
@@ -168,11 +175,13 @@ export default defineConfig({
             },
             {
               label: "Assets",
-              link: "/guidelines/assets"
+              link: "/guidelines/assets",
+              ...getBadge("assets", 'guidelines')
             },
             {
               label: "Tokens",
-              link: "/guidelines/tokens"
+              link: "/guidelines/tokens",
+              ...getBadge("tokens", 'guidelines')
             },
             {
               label: "Working with Nucleus",
