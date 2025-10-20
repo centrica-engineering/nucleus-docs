@@ -55,7 +55,8 @@ You can add a styled aside to a page with the following syntax:
 
 The above code will render the following:
 
-put image in here
+<img width="813" height="103" alt="tip-aside" src="https://github.com/user-attachments/assets/1672e0cd-71b8-48ea-b35c-33b074026dca" />
+
 
 The available aside types are currently as follows:
 
