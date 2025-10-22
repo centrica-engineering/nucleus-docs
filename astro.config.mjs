@@ -14,7 +14,6 @@ const getBadge = (itemName, scope = 'components') => {
   const scopeData = badges[scope];
   
   if (!scopeData) {
-    console.warn(`Badge scope "${scope}" not found in badges.json`);
     return {};
   }
 
