@@ -1,12 +1,11 @@
 ---
 import { iconOptions } from "@scripts/assets";
-import { blacklist } from '../data/blacklist.json';
 ---
 
 <div class="icons">
   {
     iconOptions && 
-    iconOptions().filter((icon) => !blacklist.icon.includes(icon.name)).map((icon, i) => {
+    iconOptions().map((icon, i) => {
       return (
         <div class="icon">
           <div class="svg" set:html={icon.svg} />
