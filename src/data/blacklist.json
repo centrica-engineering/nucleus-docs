@@ -1,0 +1,6 @@
+{
+  "blacklist": {
+    "icon": [],
+    "illustration": ["ai", "gauge-left", "gauge-right", "gauge-middle", "gauge-neutral" ]
+  }
+}
