@@ -1,11 +1,7 @@
 {
   "components": [
     {
-      "name": "ns-control",
-      "badge": "new"
-    },
-        {
-      "name": "ns-video",
+      "name": "ns-download",
       "badge": "updated"
     }
   ]
