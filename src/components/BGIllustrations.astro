@@ -1,11 +1,12 @@
 ---
 import { illustrationOptions } from '@scripts/assets';
+import { blacklist } from '../data/blacklist.json';
 ---
 
 <div class="illustrations">
   {
     illustrationOptions && 
-    illustrationOptions().map((illustration, i) => {
+    illustrationOptions().filter((illustration) => !blacklist.illustration.includes(illustration.name)).map((illustration, i) => {
       return (
         <div class="illustration">
           <div class="svg" set:html={illustration.svg} />
