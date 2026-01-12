@@ -25,32 +25,52 @@ export class NucleusComponentRenderer extends LitElement {
       }
 
       .example {
-        background: #fff;
         border-start-start-radius: 0.5rem;
         border-start-end-radius: 0.5rem;
         border: 1px solid var(--sl-color-gray-6);
-        height: var(--example-min-height);
+        /* height: var(--example-min-height); */
         overflow: hidden;
+
+        &:has(.viewport-mobile) {
+          display: grid;
+
+          & iframe {
+            justify-self: center;
+          }
+
+          & .form {
+            & .zoom {
+              display: none;
+            }
+          }
+        }
+
+        &:has(.viewport-desktop) {
+          aspect-ratio: 4 / 3;
+        }
       }
 
       iframe {
         border: none;
         transform-origin: 0 0;
-        max-width: initial !important;
-        min-height: var(--iframe-min-height);
+        /* max-width: initial !important; */
+        /* min-height: var(--iframe-min-height); */
 
         &.zoom-75 {
           transform: scale(0.75);
           width: 133% !important;
+          height: 133% !important;
         }
 
         &.zoom-50 {
           transform: scale(0.50);
           width: 200% !important;
+          height: 200% !important;
         }
 
         &.viewport-mobile {
-          width: 45% !important;
+          width: 375px !important;
+          height: 667px !important;
         }
       }
 
@@ -113,8 +133,8 @@ export class NucleusComponentRenderer extends LitElement {
     super();
 
     this._minHeight = 200;
-    this._viewport = 'desktop';
-    this.zoom = '75';
+    this._viewport = 'mobile';
+    this.zoom = '100';
     this._loading = false;
     this.snowflake = false;
   }
