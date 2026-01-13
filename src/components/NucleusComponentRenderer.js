@@ -202,12 +202,16 @@ export class NucleusComponentRenderer extends LitElement {
       viewport.addEventListener('change', (event) => {
         this._loading = true;
         this._viewport = event.target.value;
+        if (event.target.value === 'mobile') {
+          this.zoom = '100';
+        } else if (event.target.value === 'desktop') {
+          this.zoom = '75';
+        }
       });
     });
 
     const zoomOptions = this.shadowRoot.querySelectorAll('input[name="zoom"]');
     zoomOptions?.forEach((zoomOption) => {
-      zoomOption.checked = zoomOption.value === this.zoom;
       zoomOption.addEventListener('change', (event) => {
         this._loading = true;
         this.zoom =  event.target.value;
@@ -270,13 +274,13 @@ export class NucleusComponentRenderer extends LitElement {
           <div class="zoom">
             <span>Scale</span>
             <div class="radio-element">
-              <label><input type="radio" name="zoom" value="100"> 100%</label>
+              <label><input type="radio" name="zoom" value="100" ?disabled=${this._viewport === 'mobile'} .checked=${this.zoom === '100'}> 100%</label>
             </div>
             <div class="radio-element">
-              <label><input type="radio" name="zoom" value="75"> 75%</label>
+              <label><input type="radio" name="zoom" value="75" ?disabled=${this._viewport === 'mobile'} .checked=${this.zoom === '75'}> 75%</label>
             </div>
             <div class="radio-element">
-              <label><input type="radio" name="zoom" value="50"> 50%</label>
+              <label><input type="radio" name="zoom" value="50" ?disabled=${this._viewport === 'mobile'} .checked=${this.zoom === '50'}> 50%</label>
             </div>
           </div>
         </div>
