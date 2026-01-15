@@ -147,7 +147,8 @@ export class NucleusComponentRenderer extends LitElement {
   }
 
   get doc() {
-    const wrapper = this._customElement?.placements?.includes('main') ? this._componentWrapper : `
+    const isMainContent = this._customElement?.placements?.includes('main') || this._customElement?.placements?.includes('body');
+    const wrapper =   isMainContent ? this._componentWrapper : `
       <ns-panel>
         <div>
           ${this._componentWrapper}
@@ -155,8 +156,7 @@ export class NucleusComponentRenderer extends LitElement {
       </ns-panel>
     `;
 
-    /* TODO: @mekala - 2024-07-05 - temporary fix - change the logic to component placement of `body` tag */
-    const mainWrapper = this.name === 'ns-frame' ? wrapper : `
+    const mainWrapper = this._customElement?.placements?.includes('body') ? wrapper : `
       <main id="content">
         ${wrapper}
       </main>
