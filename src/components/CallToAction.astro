@@ -19,21 +19,25 @@ const { link, variant, icon } = Astro.props;
     line-height: 1.1875;
     text-decoration: none;
     font-size: var(--sl-text-sm);
-  }
+    font-weight: 500;
 
-  .action.primary {
-    background: var(--sl-color-text-accent);
-    color: var(--sl-color-black);
-  }
+    &.primary {
+      background: var(--sl-color-accent-high);
+      color: var(--sl-color-black);
 
-  .action.secondary {
-    border: 1px solid;
-  }
+      &:hover {
+        background: var(--button-primary-bg-hover);
+      }
+    }
 
-  .action.minimal {
-    padding-inline: 0;
-  }
+    &.secondary {
+      border: solid 2px var(--sl-color-accent-high);
+    }
 
+    &.minimal {
+      padding-inline: 0;
+    } 
+  }
   @media (min-width: 50rem) {
     .action {
       font-size: var(--sl-text-base);

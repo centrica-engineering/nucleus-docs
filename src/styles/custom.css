@@ -18,6 +18,8 @@
   --ns-color-red: hsl(var(--ns-hue-red), 99%, 70%);
   --ns-color-orange: hsl(var(--ns-hue-orange), 74%, 66%);
   --ns-color-pink: hsl(var(--ns-hue-pink), 60%, 54%);
+  --ns-color-pink-500: hsl(var(--ns-hue-pink), 60%, 47%);
+  --ns-color-pink-600: hsl(var(--ns-hue-pink), 60%, 36%);
   --ns-color-magenta: hsl(var(--ns-hue-magenta), 52%, 41%);
   --ns-color-purple: hsl(var(--ns-hue-purple), 43%, 66%);
   --ns-color-indigo: hsl(var(--ns-hue-indigo), 43%, 66%);
@@ -61,6 +63,14 @@
   --ns-color-pink-low: hsl(var(--ns-hue-pink), 43%, 16%);
   --ns-color-pink-mid: hsl(var(--ns-hue-pink), 43%, 21%);
   --ns-color-pink-high: hsl(var(--ns-hue-pink), 43%, 97%);
+
+  /* Action / button colours */
+  --button-primary-bg-hover: var(--ns-color-pink-500);
+  --button-secondary-bg: var(--ns-color-base-800);
+  --button-secondary-bg-hover: var(--ns-color-base-700);
+  --button-secondary-color: var(--ns-color-white);
+  --button-secondary-color-hover: var(--ns-color-white);
+  --button-tertiary-color-hover: var(--ns-color-white);
 
   /* Map Nucleus colours to Starlight variables */
 
@@ -184,6 +194,14 @@
   --sl-color-heading: var(--ns-color-navy);
   --sl-color-bg-inline-code: var(--sl-color-accent-low);
 
+  /* Action / button colours */
+  --button-primary-bg-hover: var(--ns-color-pink-600);
+  --button-secondary-bg: var(--ns-color-base-100);
+  --button-secondary-bg-hover: var(--ns-color-base-200);
+  --button-secondary-color: var(--ns-color-teal);
+  --button-secondary-color-hover: var(--ns-color-base-800);
+  --button-tertiary-color-hover: var(--ns-color-base-800);
+
   /* Homepage logo */
   --ns-logo-homepage: url('/logo-light.svg');
 
@@ -272,15 +290,21 @@ main {
     }
   
     &.primary {
-      background-color: var(--sl-color-text-accent);
-      color: var(--sl-color-black) !important;
-    }
+      background-color: var(--sl-color-accent-high);
+      color: var(--sl-color-black);
+
+      &:hover {
+        background-color: var(--button-primary-bg-hover);
+      }      
+    }   
   
     &.secondary {
-      background-color: var(--sl-color-gray-7);
+      background-color: var(--button-secondary-bg);
+      color: var(--button-secondary-color);
   
       &:hover {
-        color: var(--sl-color-gray-1);
+        background-color: var(--button-secondary-bg-hover);
+        color: var(--button-secondary-color-hover);
       }
     
       &:focus {
@@ -312,6 +336,9 @@ main {
     }
 
     &.reset {
+      &:hover {
+        color: var(--button-tertiary-color-hover) !important;
+      }
       &::before {
         mask-image: var(--ns-icon-reset);
       }
