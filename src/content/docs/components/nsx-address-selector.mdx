@@ -24,6 +24,13 @@ Use the address selector for any of the following tasks:
 - Amending an existing address
 - Selecting an address from a list of existing premises (e.g. multi-premise landlords)
 
+:::updated
+**02 February 2026**
+- The `property-type` attribute defines the type of property for manual address entry forms.
+
+Check this option in [the specification](#specification) down below!
+:::
+
 ### Examples
 
 <Tabs>
@@ -32,6 +39,16 @@ Use the address selector for any of the following tasks:
   </TabItem>
   <TabItem label="Allow manual address">
     <ExampleViewer type="standard-allow-manual-address" />
+  </TabItem>
+  <TabItem label="Manual address form">
+    <Tabs>
+      <TabItem label="Manual address form">
+        <ExampleViewer type="standard-manual-address-form" />
+      </TabItem>
+      <TabItem label="with property-type">
+        <ExampleViewer type="property-manual-address-form" />
+      </TabItem>      
+    </Tabs>
   </TabItem>
   <TabItem label="Single address">
     <ExampleViewer type="standard-addresses-single" />
