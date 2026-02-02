@@ -7,6 +7,10 @@
     {
       "name": "ns-landmark",
       "badge": "updated"
+    },
+    {
+      "name": "nsx-address-selector",
+      "badge": "updated"
     }
   ]
 }
