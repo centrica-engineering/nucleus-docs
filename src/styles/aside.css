@@ -1,6 +1,16 @@
 .starlight-aside {
   border-start-end-radius: 0.5rem;
   border-end-end-radius: 0.5rem;
+
+  details {
+    & > summary {
+      max-width: fit-content;
+      color: var(--sl-color-text-accent);
+      font-weight: bold;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
 }
 
 .starlight-aside--note {
