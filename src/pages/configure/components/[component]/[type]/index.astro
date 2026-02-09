@@ -83,6 +83,31 @@ export function getStaticPaths() {
       document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
     })();
   </script>
+  <script is:inline>
+    // Set viewport class on main element from localStorage
+    (() => {
+      const updateViewportClass = () => {
+        const viewport = typeof localStorage !== 'undefined' && localStorage.getItem('nucleus-viewport');
+        const main = document.querySelector('main.configurator');
+        if (main && viewport) {
+          // Remove any existing nucleus-viewport-* classes
+          main.classList.remove('nucleus-viewport-mobile', 'nucleus-viewport-desktop');
+          // Add the current viewport class
+          main.classList.add(`nucleus-viewport-${viewport}`);
+        }
+      };
+
+      // Set initial class on page load
+      document.addEventListener('DOMContentLoaded', updateViewportClass);
+
+      // Listen for viewport changes from NucleusComponentRenderer
+      window.addEventListener('nucleus-settings-change', (event) => {
+        if (event.detail?.viewport) {
+          updateViewportClass();
+        }
+      });
+    })();
+  </script>
   <body>
     <header>
       <div class="header">
@@ -165,6 +190,18 @@ export function getStaticPaths() {
         padding-inline-end: 5%;
         padding-block-start: 2rem;
         padding-block-end: 2rem;
+
+        &.nucleus-viewport-desktop {
+          grid-template-columns: 1fr;
+          padding-inline-start: 1rem;
+          padding-inline-end: 1rem;
+
+          .action {
+            flex-direction: column;
+            gap: 1rem;
+            align-items: start;
+          }
+        }
 
         .action {
           display: flex;

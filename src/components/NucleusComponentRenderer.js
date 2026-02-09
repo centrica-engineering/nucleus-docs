@@ -10,7 +10,7 @@ export class NucleusComponentRenderer extends LitElement {
       name: { type: String },
       src: { type: String },
       _minHeight: { type: Number, state: true },
-      zoom: { type: Boolean },
+      zoom: { type: String },
       snowflake: { type: Boolean },
       _viewport: { type: String, state: true },
       _customElement: { type: Object, state: true },
@@ -133,8 +133,8 @@ export class NucleusComponentRenderer extends LitElement {
     super();
 
     this._minHeight = 200;
-    this._viewport = 'mobile';
-    this.zoom = '100';
+    this._viewport = (typeof localStorage !== 'undefined' && localStorage.getItem('nucleus-viewport')) || 'mobile';
+    this.zoom = (typeof localStorage !== 'undefined' && localStorage.getItem('nucleus-zoom')) || '100';
     this._loading = false;
     this.snowflake = false;
   }
@@ -154,6 +154,19 @@ export class NucleusComponentRenderer extends LitElement {
       observer?.observe(this);
     };
     observe();
+
+    // Listen for viewport/zoom changes from other instances
+    this._handleViewportChange = (event) => {
+      this._loading = true;
+      this._viewport = event.detail.viewport;
+      this.zoom = event.detail.zoom;
+    };
+    window.addEventListener('nucleus-settings-change', this._handleViewportChange);
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    window.removeEventListener('nucleus-settings-change', this._handleViewportChange);
   }
 
   get _componentWrapper() {
@@ -198,15 +211,27 @@ export class NucleusComponentRenderer extends LitElement {
     this._onIframeLoad();
     const viewports = this.shadowRoot.querySelectorAll('input[name="viewport"]');
     viewports?.forEach((viewport) => {
-      viewport.checked = viewport.value === this._viewport;
       viewport.addEventListener('change', (event) => {
         this._loading = true;
         this._viewport = event.target.value;
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('nucleus-viewport', event.target.value);
+        }
         if (event.target.value === 'mobile') {
           this.zoom = '100';
+          if (typeof localStorage !== 'undefined') {
+            localStorage.setItem('nucleus-zoom', '100');
+          }
         } else if (event.target.value === 'desktop') {
-          this.zoom = '75';
+          this.zoom = '50';
+          if (typeof localStorage !== 'undefined') {
+            localStorage.setItem('nucleus-zoom', '50');
+          }
         }
+        // Broadcast change to other instances
+        window.dispatchEvent(new CustomEvent('nucleus-settings-change', {
+          detail: { viewport: this._viewport, zoom: this.zoom }
+        }));
       });
     });
 
@@ -215,13 +240,20 @@ export class NucleusComponentRenderer extends LitElement {
       zoomOption.addEventListener('change', (event) => {
         this._loading = true;
         this.zoom =  event.target.value;
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('nucleus-zoom', event.target.value);
+        }
+        // Broadcast change to other instances
+        window.dispatchEvent(new CustomEvent('nucleus-settings-change', {
+          detail: { viewport: this._viewport, zoom: this.zoom }
+        }));
       });
     });
   }
 
   updated(changedProperties) {
     super.updated();
-    if (changedProperties?.length > 0 && this._loading) {
+    if (changedProperties?.size > 0 && this._loading) {
       this._loading = false;
       this._onIframeLoad();
     }
@@ -265,10 +297,10 @@ export class NucleusComponentRenderer extends LitElement {
           <div class="viewport">
             <span>Viewport</span>
             <div class="radio-element">
-              <label><input type="radio" name="viewport" value="mobile"> Mobile</label>
+              <label><input type="radio" name="viewport" value="mobile" .checked=${this._viewport === 'mobile'}> Mobile</label>
             </div>
             <div class="radio-element">
-              <label><input type="radio" name="viewport" value="desktop"> Desktop</label>
+              <label><input type="radio" name="viewport" value="desktop" .checked=${this._viewport === 'desktop'}> Desktop</label>
             </div>
           </div>
           <div class="zoom">
