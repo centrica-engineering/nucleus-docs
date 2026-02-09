@@ -1,5 +1,5 @@
 {
-  "description": "See documentation: https://github.com/centrica-engineering/nucleus-docs#adding-a-badge",
+  "description": "See documentation in 'Adding a badge' section of README.md for information.",
   "components": [
     {
       "name": "ns-download",

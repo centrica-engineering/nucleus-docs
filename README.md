@@ -71,7 +71,10 @@ The available aside types are currently as follows:
 ### Adding a badge
 
 Badges are managed by a JSON file (src > data > badges.json) for simple badge management.
+
 Badges can be added to `components`, `assets` or `tokens`.
+
+To retain the affordance, only display badges that are relevant to the last two minor (feature) releases.
 
 ```json
 {
