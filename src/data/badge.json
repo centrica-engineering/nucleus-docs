@@ -1,5 +1,5 @@
 {
-  "description": "Nucleus component badges indicating any components that have been updated in the last 2 releases.",
+  "description": "See documentation: https://github.com/centrica-engineering/nucleus-docs#adding-a-badge",
   "components": [
     {
       "name": "ns-download",
