@@ -19,15 +19,91 @@ import Figma from '@components/figma.astro';
 
 Use this experience pattern in any journey where there is a need to capture and submit customer marketing preferences. Only use it for this purpose – do not use it for viewing or changing existing preferences.
 
+:::updated
+**xx March 2026**
+
+### Upgrade
+
+A new `version` attribute is available which toggles the following: 
+
+- new content and checkbox layout
+- `has-opt-out` attribute will toggle an opt-out checkbox instead of a link
+- `is-required` attribute toggles validation
+
+Check those options in [the specification](#specification) down below!
+:::
+
 ### Examples
+
+#### V1
 
 <Tabs>
   <TabItem label="Standard">
-    <ExampleViewer type="standard" />
+    <Tabs>
+      <TabItem label="Standard">
+        <ExampleViewer type="v1-standard" />
+      </TabItem>
+      <TabItem label="Custom content">
+        The heading and first paragraph may be customised if the default content is not suitable.
+        <ExampleViewer type="v1-standard-custom" />
+      </TabItem>
+      <TabItem label="Opt out">
+        Renders a paragraph with a link to chat to advisors
+        <ExampleViewer type="v1-standard-opt-out" />
+      </TabItem>
+    </Tabs>
   </TabItem>
-  <TabItem label="Custom">
-  The heading and first paragraph may be customised if the default content is not suitable.
-    <ExampleViewer type="standard-custom" />
+  <TabItem label="Light">
+    <Tabs>
+      <TabItem label="Light">
+        <ExampleViewer type="v1-light" />
+      </TabItem>
+      <TabItem label="Custom content">
+        In `light` only the opt-out button can be customised. 
+        <ExampleViewer type="v1-light-custom" />
+      </TabItem>
+      <TabItem label="Opt out">
+        Renders a link to chat to advisors
+        <ExampleViewer type="v1-light-opt-out" />
+      </TabItem>      
+    </Tabs>
+  </TabItem>
+</Tabs>
+
+#### V2
+
+<Tabs>
+  <TabItem label="Standard">
+    <Tabs>
+      <TabItem label="Standard">
+        <ExampleViewer type="v2-standard" />
+      </TabItem>
+      <TabItem label="Custom content">
+        The heading and first paragraph may be customised if the default content is not suitable.
+        <ExampleViewer type="v2-standard-custom" />
+      </TabItem>
+      <TabItem label="Opt out">
+        Renders an opt-out checkbox
+        <ExampleViewer type="v2-standard-opt-out" />
+      </TabItem>
+      <TabItem label="Validation">
+        <ExampleViewer type="v2-standard-validation" />
+      </TabItem>
+    </Tabs>
+  </TabItem>
+  <TabItem label="Light">
+    <Tabs>
+      <TabItem label="Light">
+        <ExampleViewer type="v2-light" />
+      </TabItem>
+      <TabItem label="Opt out">
+        Renders a link to chat to advisors
+        <ExampleViewer type="v2-light-opt-out" />
+      </TabItem> 
+      <TabItem label="Validation">
+        <ExampleViewer type="v2-light-validation" />
+      </TabItem>           
+    </Tabs>
   </TabItem>
 </Tabs>
 

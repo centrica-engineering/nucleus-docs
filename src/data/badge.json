@@ -2,15 +2,15 @@
   "description": "See documentation in 'Adding a badge' section of README.md for information.",
   "components": [
     {
-      "name": "ns-download",
-      "badge": "updated"
-    },
-    {
       "name": "ns-landmark",
       "badge": "updated"
     },
     {
       "name": "nsx-address-selector",
+      "badge": "updated"
+    },
+    {
+      "name": "nsx-marketing-consent",
       "badge": "updated"
     }
   ]
