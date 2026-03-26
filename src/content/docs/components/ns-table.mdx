@@ -38,16 +38,12 @@ The table component consumes basic HTML table markup, which makes it accessible 
 - Use for displaying data in tables.
 - Use simple text or numbers.
 - Include at least one column header or row header.
-- Make use of attributes to provide inclusive experiences for all
-  - The automatically generated `scope` attribute in the `<th>`s enables relationship definitions between cells and their headers. For simple tables the browser infers the relationships automatically but being explicit will prevent any unexpected experiences.
-  - For complex layouts use the `id` attribute in `<th>`s and the `header` attribute in `<td>`s to define within which header's scope they sit.
 - Keep column and row headers concise.
 - Structure them in a logical and expected way.
 :::
 
 :::dont
 - Use tables for anything but tabular data.
-- Leave `<th>` elements empty.
 :::
 
 ### Standard
@@ -72,6 +68,12 @@ The table component consumes basic HTML table markup, which makes it accessible 
 ### Specification
 
 <Specification name={componentName} />
+
+#### Specification notes
+
+- The automatically generated `scope` attribute in the `<th>` elements enable relationship definitions between cells and their headers.
+- If complex layouts are required, apply an `id` attribute in `<th>` elements and the `header` attribute in `<td>` elementss to define header relationships.
+- If a table is to have empty `<th>` elements, we recommend the use of the css classname `visually-hidden` along with a piece of content that provides context to users of assistive tech. 
 
 ### Figma
 
