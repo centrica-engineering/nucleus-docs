@@ -19,6 +19,14 @@ import Figma from '@components/figma.astro';
 
 Showcase a product, service or option which users can select. The `ns-selector` component can function as a single or multiple selection for the user.
 
+:::updated
+**27 March 2026**
+
+Selector documentation now includes the `inform` and `lockup` variants.
+
+Use `inform` when the supporting content should be understood before the user makes a selection. Use `type="lockup"` when the options need stronger hierarchy, richer imagery, and more emphasis.
+:::
+
 ### Examples
 
 <Tabs>
@@ -50,6 +58,28 @@ Showcase a product, service or option which users can select. The `ns-selector` 
       </TabItem>
     </Tabs>
   </TabItem>
+  <TabItem label="Inform">
+    Use `inform` when the user should read the supporting content before committing to a choice.
+    <Tabs>
+      <TabItem label="Standard">
+        <ExampleViewer type="standard-checkbox-inform" />
+      </TabItem>
+      <TabItem label="Illustration">
+        <ExampleViewer type="standard-checkbox-inform-illustration" />
+      </TabItem>
+      <TabItem label="Image">
+        <ExampleViewer type="standard-checkbox-inform-image" />
+      </TabItem>
+    </Tabs>
+  </TabItem>
+  <TabItem label="Lockup">
+    Use `type="lockup"` when the selector needs stronger visual hierarchy and a more promotional, feature-led layout.
+    <Tabs>
+      <TabItem label="Image">
+        <ExampleViewer type="lockup-checkbox-image" />
+      </TabItem>
+    </Tabs>
+  </TabItem>
 </Tabs>
 
 ## Guidance
@@ -61,6 +91,9 @@ Showcase a product, service or option which users can select. The `ns-selector` 
 - Use a `radio` button or `checkbox`.
 - Use a [`<ns-expander>`](/components/ns-expander) if there's a need to include more details.
 - Use a description when using a `decoration` (illustration).
+- Use `inform` when the decision depends on the supporting content, such as benefits, pricing, eligibility, or caveats.
+- Use `type="lockup"` when selectors need richer imagery and stronger visual hierarchy.
+- Keep the same selector layout style across a related group of options.
 :::
 
 :::dont
@@ -70,7 +103,18 @@ Showcase a product, service or option which users can select. The `ns-selector` 
 - Use images that contain embedded text.
 - Use an `image` and a `decoration` together.
 - Exceed five expanders on a `<ns-selector>`.
+- Use `inform` when users need to scan and compare many options quickly.
+- Mix `type="lockup"` with standard selectors in the same group.
+- Use `keyline` with `type="lockup"`; use `scheme` instead.
 :::
+
+### Inform
+
+Use `inform` when the supporting content is the reason the option is being chosen, not just supporting detail. Moving the form control beneath the content encourages users to read the benefits, caveats, or explanatory copy before selecting, which is useful for comparisons and decision-heavy journeys.
+
+### Lockup
+
+Use `type="lockup"` when the selector should feel more like a richer product or service card. This layout works well when imagery and visual hierarchy are helping the user understand the offer, but it should be applied consistently across the whole selector group.
 
 ### Illustration
 
@@ -82,11 +126,11 @@ Showcase a product, service or option which users can select. The `ns-selector` 
 | :--- | :--- | :--- |
 | <span class="marker">A</span> | Label | Describe the selection concisely. It should not exceed 24 characters. |
 | <span class="marker">B</span> | Heading | A heading provides further description to the label. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
-| <span class="marker">C</span> | Paragraph | A single, short paragraph followed by an unordered list work best. The text length should not exceed one paragraph and a ticked list of 3 to 5 items. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. |
+| <span class="marker">C</span> | Paragraph | A single, short paragraph followed by an unordered list works best. The text length should not exceed one paragraph and a ticked list of 3 to 5 items. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. In an `inform` selector, this content should explain the value of the option before the user selects it. |
 | <span class="marker">D</span> | Decoration | Use to support and highlight the content. [See illustrations](/guidelines/assets/#illustrations). |
-| <span class="marker">E</span> | Keyline | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
-| <span class="marker">F</span> | Pill | You can use a pill to promote an option that has something special like a discount, a promotion or a because it's eco-friendly. Use the pill the `h3` and the list. Try not to add a pill to each option as it may lose its attention grabbing power. |
-| <span class="marker">G</span> | Expanders | An optional addition of an [ns-expander](/components/ns-expander) component within the selector allows for more detail to be discoverable. It consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content.
+| <span class="marker">E</span> | Keyline | An optional colour keyline can be added to distinguish and draw attention to standard and `inform` selectors. `keyline` is not supported on `type="lockup"`. |
+| <span class="marker">F</span> | Pill | Use a pill to highlight something distinctive, such as a discount, promotion, or eco benefit. Place it above the heading and supporting content. Use it sparingly so it keeps its attention-grabbing impact. |
+| <span class="marker">G</span> | Expanders | An optional [`<ns-expander>`](/components/ns-expander) can be added within the selector to reveal more detail. It contains a heading and anonymous content slot. When the heading is clicked the content opens, and clicking the heading again hides it. |
 
 ### Image
 
@@ -97,10 +141,10 @@ Showcase a product, service or option which users can select. The `ns-selector` 
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | <span class="marker">A</span> | Label | Describe the selection concisely. It should not exceed 24 characters. |
-| <span class="marker">B</span> | Paragraph | A single, short paragraph followed by an unordered list work best. The text length should not exceed one paragraph and a ticked list of 3 to 5 items. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. |
-| <span class="marker">C</span> | Image | Use an image size of [640 x 360px](/guidelines/assets#640x360px). Images should be WebP file type, the file size should be no more than 25kb. |
-| <span class="marker">D</span> | Keyline | An optional colour keyline can be added to distinguish and draw attention to your selectors. |
-| <span class="marker">E</span> | Expanders | An optional addition of an [ns-expander](/components/ns-expander) component within the selector allows for more detail to be discoverable. It consists of a heading and an anonymous content slot. When the heading is clicked the component opens to reveal the content. When in an open state, clicking the heading will hide the content.
+| <span class="marker">B</span> | Paragraph | A single, short paragraph followed by an unordered list works best. The text length should not exceed one paragraph and a ticked list of 3 to 5 items. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. In an `inform` selector, place the most important explanatory detail here so it is read before the control. |
+| <span class="marker">C</span> | Image | Use an image size of [640 x 360px](/guidelines/assets#640x360px). Images should be WebP file type, the file size should be no more than 25kb. The same 16:9 image treatment can be used in standard, `inform`, and `lockup` selectors. |
+| <span class="marker">D</span> | Keyline | An optional colour keyline can be added to distinguish and draw attention to standard and `inform` selectors. `keyline` is not supported on `type="lockup"`. |
+| <span class="marker">E</span> | Expanders | An optional [`<ns-expander>`](/components/ns-expander) can be added within the selector to reveal more detail. It contains a heading and anonymous content slot. When the heading is clicked the content opens, and clicking the heading again hides it.
 
 ## Implementation
 
