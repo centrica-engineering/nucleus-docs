@@ -75,7 +75,7 @@ Use `inform` when the supporting content should be understood before the user ma
   <TabItem label="Lockup">
     Use `type="lockup"` when the selector needs stronger visual hierarchy and a more promotional, feature-led layout.
     <Tabs>
-      <TabItem label="Image">
+      <TabItem label="Lockup">
         <ExampleViewer type="lockup-checkbox-image" />
       </TabItem>
     </Tabs>
@@ -106,15 +106,16 @@ Use `inform` when the supporting content should be understood before the user ma
 - Use `inform` when users need to scan and compare many options quickly.
 - Mix `type="lockup"` with standard selectors in the same group.
 - Use `keyline` with `type="lockup"`; use `scheme` instead.
+- Put `type="lockup"` in any component that has any padding. It inherits the same layout as [`<ns-panel inset>`](/components/ns-panel#inset).
 :::
 
 ### Inform
 
-Use `inform` when the supporting content is the reason the option is being chosen, not just supporting detail. Moving the form control beneath the content encourages users to read the benefits, caveats, or explanatory copy before selecting, which is useful for comparisons and decision-heavy journeys.
+Use `inform` when the supporting content is the reason the option is being chosen, not just supporting detail. Moving the form control beneath the description encourages users to read the benefits, caveats, or explanatory copy before selecting, which is useful for comparisons and decision-heavy journeys.
 
 ### Lockup
 
-Use `type="lockup"` when the selector should feel more like a richer product or service card. This layout works well when imagery and visual hierarchy are helping the user understand the offer, but it should be applied consistently across the whole selector group.
+Use `type="lockup"` when the selector is used for marketing and offers. This layout works well when imagery and visual hierarchy are helping the user understand the offer.
 
 ### Illustration
 
@@ -151,6 +152,20 @@ Use `type="lockup"` when the selector should feel more like a richer product or 
 ### Placement
 
 <Placement name={componentName} />
+
+#### Lockup placement
+
+Pay close attention to the placement of `type="lockup"`. The HTML markup **must** be:
+
+```html
+<ns-panel inset>
+  <ns-inputter>
+    <ns-selector type="lockup">
+        <!-- content -->
+    </ns-selector>
+  </ns-inputter>
+</ns-panel>
+```
 
 ### Specification
 

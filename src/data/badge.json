@@ -2,7 +2,7 @@
   "description": "See documentation in 'Adding a badge' section of README.md for information.",
   "components": [
     {
-      "name": "ns-download",
+      "name": "ns-selector",
       "badge": "updated"
     },
     {
