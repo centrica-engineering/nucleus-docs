@@ -109,14 +109,6 @@ Use `inform` when the supporting content should be understood before the user ma
 - Put `type="lockup"` in any component that has any padding. It inherits the same layout as [`<ns-panel inset>`](/components/ns-panel#inset).
 :::
 
-### Inform
-
-Use `inform` when the supporting content is the reason the option is being chosen, not just supporting detail. Moving the form control beneath the description encourages users to read the benefits, caveats, or explanatory copy before selecting, which is useful for comparisons and decision-heavy journeys.
-
-### Lockup
-
-Use `type="lockup"` when the selector is used for marketing and offers. This layout works well when imagery and visual hierarchy are helping the user understand the offer.
-
 ### Illustration
 
 ![Labelled diagram of ns-selector illustration](@assets/components/ns-selector/guidance-illustration.webp)
@@ -147,9 +139,24 @@ Use `type="lockup"` when the selector is used for marketing and offers. This lay
 | <span class="marker">D</span> | Keyline | An optional colour keyline can be added to distinguish and draw attention to standard and `inform` selectors. `keyline` is not supported on `type="lockup"`. |
 | <span class="marker">E</span> | Expanders | An optional [`<ns-expander>`](/components/ns-expander) can be added within the selector to reveal more detail. It contains a heading and anonymous content slot. When the heading is clicked the content opens, and clicking the heading again hides it.
 
+### Inform
+
+![Labelled diagram of ns-selector inform](@assets/components/ns-selector/guidance-inform.webp)
+
+Use the `inform` attribute when the content is informing the user of the option, not supporting information. Placing the form control beneath the description encourages users to read the benefits, caveats, or explanatory copy before selecting.
+
+#### Key
+
+| Key | Field type | Guidelines |
+| :--- | :--- | :--- |
+| <span class="marker">A</span> | Label | Describe the selection concisely. It should not exceed 24 characters. |
+| <span class="marker">B</span> | Paragraph | A single, short paragraph followed by an unordered list works best. The text length should not exceed one paragraph and a ticked list of 3 to 5 items. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. In an `inform` selector, place the most important explanatory detail here so it is read before the control. |
+
 ### Lockup
 
 ![Labelled diagram of ns-selector lockup](@assets/components/ns-selector/guidance-lockup.webp)
+
+Use `type="lockup"` when the selector is used for marketing and offers. This layout works well when imagery and visual hierarchy are helping the user understand the offer.
 
 #### Key
 
