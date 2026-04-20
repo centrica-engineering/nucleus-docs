@@ -30,45 +30,36 @@ Use `inform` when the supporting content should be understood before the user ma
 ### Examples
 
 <Tabs>
-  <TabItem label="Radio">
-    Use radio buttons when only one choice may be selected.
+  <TabItem label="Standard">
     <Tabs>
       <TabItem label="Standard">
         <ExampleViewer type="standard-radio" />
       </TabItem>
-      <TabItem label="Illustration">
-        <ExampleViewer type="standard-radio-illustration" />
-      </TabItem>
-      <TabItem label="Image">
-        <ExampleViewer type="standard-radio-image" />
-      </TabItem>
-    </Tabs>
-  </TabItem>
-  <TabItem label="Checkbox">
-    Use checkboxes when multiple choices may be selected.
-    <Tabs>
-      <TabItem label="Standard">
+      <TabItem label="with checkbox">
         <ExampleViewer type="standard-checkbox" />
       </TabItem>
-      <TabItem label="Illustration">
-        <ExampleViewer type="standard-checkbox-illustration" />
+      <TabItem label="with illustration">
+        <ExampleViewer type="standard-illustration" />
       </TabItem>
-      <TabItem label="Image">
-        <ExampleViewer type="standard-checkbox-image" />
+      <TabItem label="with image">
+        <ExampleViewer type="standard-image" />
       </TabItem>
     </Tabs>
   </TabItem>
   <TabItem label="Inform">
     Use `inform` when the user should read the supporting content before committing to a choice.
     <Tabs>
-      <TabItem label="Standard">
-        <ExampleViewer type="standard-checkbox-inform" />
+      <TabItem label="Inform">
+        <ExampleViewer type="inform-radio" />
       </TabItem>
-      <TabItem label="Illustration">
-        <ExampleViewer type="standard-checkbox-inform-illustration" />
+      <TabItem label="with checkbox">
+        <ExampleViewer type="inform-checkbox" />
       </TabItem>
-      <TabItem label="Image">
-        <ExampleViewer type="standard-checkbox-inform-image" />
+      <TabItem label="with illustration">
+        <ExampleViewer type="inform-illustration" />
+      </TabItem>
+      <TabItem label="with image">
+        <ExampleViewer type="inform-image" />
       </TabItem>
     </Tabs>
   </TabItem>
@@ -76,7 +67,10 @@ Use `inform` when the supporting content should be understood before the user ma
     Use `type="lockup"` when the selector needs stronger visual hierarchy and a more promotional, feature-led layout.
     <Tabs>
       <TabItem label="Lockup">
-        <ExampleViewer type="lockup-checkbox-image" />
+        <ExampleViewer type="lockup-radio" />
+      </TabItem>
+      <TabItem label="with checkbox">
+        <ExampleViewer type="lockup-checkbox" />
       </TabItem>
     </Tabs>
   </TabItem>
@@ -85,13 +79,14 @@ Use `inform` when the supporting content should be understood before the user ma
 ## Guidance
 
 :::do
-- Use an `image` or a `decoration` to support the label.  
+- Use an `image` or a `decoration` to support the label.
+- Use an image size of [640 x 360px](/guidelines/assets#640x360px). Images should be WebP file type, the file size should be no more than 25kb.
 - Use a heading within the content when providing supporting text.
 - Use inline text links within supporting content if necessary.
 - Use a `radio` button or `checkbox`.
 - Use a [`<ns-expander>`](/components/ns-expander) if there's a need to include more details.
 - Use a description when using a `decoration` (illustration).
-- Use `inform` when the decision depends on the supporting content, such as benefits, pricing, eligibility, or caveats.
+- Use `inform` when the decision depends on the supporting content.
 - Use `type="lockup"` when selectors need richer imagery and stronger visual hierarchy.
 - Keep the same selector layout style across a related group of options.
 :::
@@ -106,12 +101,12 @@ Use `inform` when the supporting content should be understood before the user ma
 - Use `inform` when users need to scan and compare many options quickly.
 - Mix `type="lockup"` with standard selectors in the same group.
 - Use `keyline` with `type="lockup"`; use `scheme` instead.
-- Put `type="lockup"` in any component that has any padding. It inherits the same layout as [`<ns-panel inset>`](/components/ns-panel#inset).
+- Put `type="lockup"` in a component that has padding, see [Lockup placement](#lockup-placement) for details.
 :::
 
-### Illustration
+### Standard
 
-![Labelled diagram of ns-selector illustration](@assets/components/ns-selector/guidance-illustration.webp)
+![Labelled diagram of ns-selector standard](@assets/components/ns-selector/guidance-standard.webp)
 
 #### Key
 
@@ -119,25 +114,11 @@ Use `inform` when the supporting content should be understood before the user ma
 | :--- | :--- | :--- |
 | <span class="marker">A</span> | Label | Describe the selection concisely. It should not exceed 24 characters. |
 | <span class="marker">B</span> | Heading | A heading provides further description to the label. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
-| <span class="marker">C</span> | Paragraph | A single, short paragraph followed by an unordered list works best. The text length should not exceed one paragraph and a ticked list of 3 to 5 items. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. In an `inform` selector, this content should explain the value of the option before the user selects it. |
+| <span class="marker">C</span> | Paragraph | A single, short paragraph followed by an unordered list works best. The text length should not exceed one paragraph and a ticked list of 3 to 5 items. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. In an `standard` selector, this content should support the value of the label. |
 | <span class="marker">D</span> | Decoration | Use to support and highlight the content. [See illustrations](/guidelines/assets/#illustrations). |
 | <span class="marker">E</span> | Keyline | An optional colour keyline can be added to distinguish and draw attention to standard and `inform` selectors. `keyline` is not supported on `type="lockup"`. |
 | <span class="marker">F</span> | Pill | Use a pill to highlight something distinctive, such as a discount, promotion, or eco benefit. Place it above the heading and supporting content. Use it sparingly so it keeps its attention-grabbing impact. |
 | <span class="marker">G</span> | Expanders | An optional [`<ns-expander>`](/components/ns-expander) can be added within the selector to reveal more detail. It contains a heading and anonymous content slot. When the heading is clicked the content opens, and clicking the heading again hides it. |
-
-### Image
-
-![Labelled diagram of ns-selector image](@assets/components/ns-selector/guidance-image.webp)
-
-#### Key
-
-| Key | Field type | Guidelines |
-| :--- | :--- | :--- |
-| <span class="marker">A</span> | Label | Describe the selection concisely. It should not exceed 24 characters. |
-| <span class="marker">B</span> | Paragraph | A single, short paragraph followed by an unordered list works best. The text length should not exceed one paragraph and a ticked list of 3 to 5 items. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. In an `inform` selector, place the most important explanatory detail here so it is read before the control. |
-| <span class="marker">C</span> | Image | Use an image size of [640 x 360px](/guidelines/assets#640x360px). Images should be WebP file type, the file size should be no more than 25kb. The same 16:9 image treatment can be used in standard, `inform`, and `lockup` selectors. |
-| <span class="marker">D</span> | Keyline | An optional colour keyline can be added to distinguish and draw attention to standard and `inform` selectors. `keyline` is not supported on `type="lockup"`. |
-| <span class="marker">E</span> | Expanders | An optional [`<ns-expander>`](/components/ns-expander) can be added within the selector to reveal more detail. It contains a heading and anonymous content slot. When the heading is clicked the content opens, and clicking the heading again hides it.
 
 ### Inform
 
@@ -150,7 +131,8 @@ Use the `inform` attribute when the content is informing the user of the option,
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | <span class="marker">A</span> | Label | Describe the selection concisely. It should not exceed 24 characters. |
-| <span class="marker">B</span> | Paragraph | A single, short paragraph followed by an unordered list works best. The text length should not exceed one paragraph and a ticked list of 3 to 5 items. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. In an `inform` selector, place the most important explanatory detail here so it is read before the control. |
+| <span class="marker">B</span> | Heading | A heading provides further description to the label. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">C</span> | Paragraph | A single, short paragraph followed by an unordered list works best. The text length should not exceed one paragraph and a ticked list of 3 to 5 items. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. In an `inform` selector, this content should explain the value of the label before the user selects it. |
 
 ### Lockup
 
@@ -163,9 +145,10 @@ Use `type="lockup"` when the selector is used for marketing and offers. This lay
 | Key | Field type | Guidelines |
 | :--- | :--- | :--- |
 | <span class="marker">A</span> | Label | Describe the selection concisely. It should not exceed 24 characters. |
-| <span class="marker">B</span> | Paragraph | A heading with a single, short paragraph followed by an unordered list works best. The text length should not exceed one paragraph and a ticked list of 3 to 5 items. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. |
-| <span class="marker">C</span> | Image | Use an image size of [640 x 360px](/guidelines/assets#640x360px). Images should be WebP file type, the file size should be no more than 25kb. |
-| <span class="marker">D</span> | Scheme | Use a `scheme` to distinguish and draw attention to `lockup` selectors. The scheme is applied to the whole selector |
+| <span class="marker">B</span> | Heading | A heading provides further description to the label. The recommended length is between 4 and 12 words, not exceeding 50 characters in total. |
+| <span class="marker">C</span> | Paragraph | A heading with a single, short paragraph followed by an unordered list works best. The text length should not exceed one paragraph and a ticked list of 3 to 5 items. Include emphasis with `<strong>`, inline links `<a>`, lists `<ul>` `<ol>`. Add a [caveat link](/components/ns-caveat) if required. |
+| <span class="marker">D</span> | Image | Use an image size of [640 x 360px](/guidelines/assets#640x360px). Images should be WebP file type, the file size should be no more than 25kb. |
+| <span class="marker">E</span> | Scheme | Use a `scheme` to distinguish and draw attention to `lockup` selectors. The scheme is applied to the whole selector |
 
 ## Implementation
 
