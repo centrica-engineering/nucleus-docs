@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
-import { createRenderer } from 'remark-expressive-code';
+import { createRenderer } from 'rehype-expressive-code';
 import { toHtml } from 'hast-util-to-html';
 import { prettify } from 'htmlfy';
 import { Task, TaskStatus } from '@lit/task';
