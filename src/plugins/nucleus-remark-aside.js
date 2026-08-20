@@ -136,10 +136,10 @@ export function nucleusRemarkAside() {
         'aside',
         {
           'aria-label': title,
-          class: `starlight-aside starlight-aside--${variant}`,
+          class: `starlight-aside starlight-aside--${variant} not-content`,
         },
         [
-          h('p', { class: 'starlight-aside__title', 'aria-hidden': 'true' }, [
+          h('h3', { class: 'starlight-aside__title' }, [
             s(
               'svg',
               {
@@ -148,6 +148,7 @@ export function nucleusRemarkAside() {
                 height: 16,
                 fill: 'currentColor',
                 class: 'starlight-aside__icon',
+                'aria-hidden': 'true'
               },
               iconPaths[variant]
             ),
