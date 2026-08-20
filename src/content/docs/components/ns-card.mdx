@@ -19,6 +19,27 @@ import Figma from '@components/figma.astro';
 
 Cards are to be used to apply a container around a related grouping of information. Achieve this through a combination of imagery, illustrations and typography.
 
+:::updated
+**8 September 2024**
+
+Additional feature for an `inactive` state has been added:
+
+- This feature is used to indicate that the card contains content that is inactive.
+- The `inactive` state is applied to the card by adding the `inactive` attribute to the card element.
+
+<details>
+  <summary>Historical updates</summary>
+
+  **28 August 2024**
+
+  The card component has been simplified:
+
+  - The `type="section"` card has been deprecated. The `type` will switch to `standard` when `section` is applied.
+  - The standard card (with no `type=""`) now allows for options for image, decoration, and pill.
+  - The `type="support"` type is now used for a better responsive behaviour for cards with images at `basketball-court` viewports.
+</details>
+:::
+
 ### Examples
 
 <Tabs>
